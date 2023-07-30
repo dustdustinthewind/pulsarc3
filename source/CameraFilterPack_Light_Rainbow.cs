@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Light/Rainbow")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Light/Rainbow")]
 public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 {
 	public Shader SCShader;
@@ -40,9 +40,9 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 				HBJJOCHGOPH = 1042f;
 			}
 			NBPKMLMCHFN.SetFloat("_Value6", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("MenuScene", Value);
-			DBOLLHHMKKN().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 408f, 1002f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			DOHGBNPMBKG().SetFloat("#updateoutdatedmap", Value);
+			NBPKMLMCHFN.SetVector("CameraFilterPack/Oculus_NightVision3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 408f, 1002f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{
@@ -114,7 +114,7 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("Ev OwnershipRequest ");
+		SCShader = Shader.Find("OnEvent: {0}");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -130,10 +130,10 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 			{
 				HBJJOCHGOPH = 489f;
 			}
-			HHIFMIPPMPF().SetFloat("settings.arcshitsoundtimedelay", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("[RanksSystem] Ranks: no need to update", Value);
-			DBOLLHHMKKN().SetVector("_Bloom", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1284f, 1001f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			LONNIJMNKFB().SetFloat("settings.arcsnohitsoundtimedelay", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("[RanksSystem] Ranks updated. Next update: ", Value);
+			ACHNOHCLGOO().SetVector("_Parameter", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1284f, 1001f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -151,7 +151,7 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("_MidGrey");
+		SCShader = Shader.Find("_NoiseTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -168,7 +168,7 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find(": ");
+		SCShader = Shader.Find("[PlayerController] ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -185,9 +185,9 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 				HBJJOCHGOPH = 1174f;
 			}
 			HHIFMIPPMPF().SetFloat("_Red_B", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("MusicFileSelector", Value);
-			ACHNOHCLGOO().SetVector("AudioSampler", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 716f, 364f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			NBPKMLMCHFN.SetFloat("IconFileSelector", Value);
+			NBPKMLMCHFN.SetVector("AudioSampler", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 716f, 364f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -212,10 +212,10 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 			{
 				HBJJOCHGOPH = 115f;
 			}
-			DBOLLHHMKKN().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("RecieveChatMessage", Value);
-			HFBJAOFLCJI().SetVector("workshop.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 237f, 997f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
+			ACHNOHCLGOO().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("RecieveChatMessage", Value);
+			ACHNOHCLGOO().SetVector("workshop.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 237f, 997f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{
@@ -248,7 +248,7 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		SCShader = Shader.Find("menu.hardcoreinfo");
+		SCShader = Shader.Find("settings.hitvariation");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -304,7 +304,7 @@ public class CameraFilterPack_Light_Rainbow : MonoBehaviour
 
 	private void KDMANOEMOCA()
 	{
-		SCShader = Shader.Find("player.currentrank");
+		SCShader = Shader.Find("settings.enablerankingnotifications");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

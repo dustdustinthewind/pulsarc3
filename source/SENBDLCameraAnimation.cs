@@ -8,171 +8,555 @@ public class SENBDLCameraAnimation : MonoBehaviour
 
 	private Vector3 GCOMBGJLPGL;
 
-	private void AIJGAJIOJDJ()
+	private void JNBPKNNBMDI()
 	{
-		float num = 921f + Mathf.Pow(Mathf.Cos(Time.time * 473f / 837f) * 70f + 1924f, 1576f) * 367f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 393f) * (Vector3.up * num);
+		float num = 843f + Mathf.Pow(Mathf.Cos(Time.time * 1916f / 1545f) * 653f + 1165f, 1087f) * 1462f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 370f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
 	}
 
-	private void DPIPGGDNGHN()
+	private void HJPCJGOEKMF()
 	{
-		float num = 1652f + Mathf.Pow(Mathf.Cos(Time.time * 692f / 76f) * 21f + 1594f, 151f) * 619f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1235f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void AEIJFLJEABG()
-	{
-		float num = 848f + Mathf.Pow(Mathf.Cos(Time.time * 244f / 1649f) * 367f + 1625f, 772f) * 991f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1965f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void JAAJECBCCFM()
-	{
-		float num = 1683f + Mathf.Pow(Mathf.Cos(Time.time * 789f / 1585f) * 1620f + 213f, 147f) * 186f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1242f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void JOACBIEHHCE()
-	{
-		float num = 480f + Mathf.Pow(Mathf.Cos(Time.time * 531f / 1298f) * 1121f + 307f, 1490f) * 1561f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1123f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void LJIHHJOAJCN()
-	{
-		float num = 245f + Mathf.Pow(Mathf.Cos(Time.time * 1547f / 1235f) * 1899f + 1928f, 1768f) * 1231f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1780f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void MAOCOEGAFND()
-	{
-		float num = 458f + Mathf.Pow(Mathf.Cos(Time.time * 853f / 1508f) * 1705f + 1807f, 900f) * 1709f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1687f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void KCCIEMBMOBA()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(683f, 1997f), UnityEngine.Random.Range(463f, 1630f), UnityEngine.Random.Range(675f, 242f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1391f, 354f), UnityEngine.Random.Range(33f, 1323f), UnityEngine.Random.Range(1728f, 460f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(672f, 1924f), UnityEngine.Random.Range(1839f, 1993f), UnityEngine.Random.Range(1668f, 1283f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(810f, 687f), UnityEngine.Random.Range(1426f, 1690f), UnityEngine.Random.Range(220f, 95f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
-	private void POIMNOBDBBN()
+	private void CHOPDIGHJNH()
 	{
-		float num = 4f + Mathf.Pow(Mathf.Cos(Time.time * 912f / 1929f) * 719f + 479f, 1096f) * 1423f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 641f) * (Vector3.up * num);
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1506f, 1665f), UnityEngine.Random.Range(143f, 810f), UnityEngine.Random.Range(1044f, 893f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1484f, 1607f), UnityEngine.Random.Range(204f, 1535f), UnityEngine.Random.Range(217f, 1075f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void GCHBGCGBMCK()
+	{
+		float num = 712f + Mathf.Pow(Mathf.Cos(Time.time * 1175f / 1017f) * 338f + 1867f, 1955f) * 801f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 55f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void EJFJENFKLND()
+	{
+		float num = 517f + Mathf.Pow(Mathf.Cos(Time.time * 1221f / 548f) * 1537f + 1687f, 1005f) * 1204f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1383f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void LGHCJCFHEMF()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1979f, 568f), UnityEngine.Random.Range(1424f, 1941f), UnityEngine.Random.Range(1319f, 527f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1450f, 550f), UnityEngine.Random.Range(1647f, 1492f), UnityEngine.Random.Range(514f, 837f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void NKFDNIAKGEO()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(688f, 1769f), UnityEngine.Random.Range(1367f, 1176f), UnityEngine.Random.Range(1889f, 955f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1079f, 645f), UnityEngine.Random.Range(57f, 1485f), UnityEngine.Random.Range(460f, 1058f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void LLJLDLLNFBH()
+	{
+		float num = 390f + Mathf.Pow(Mathf.Cos(Time.time * 351f / 77f) * 1886f + 106f, 924f) * 1056f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1622f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void OMCLOFCJMPG()
+	{
+		float num = 1620f + Mathf.Pow(Mathf.Cos(Time.time * 825f / 1647f) * 65f + 55f, 1813f) * 1460f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 4f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void MJNPIDGNJMK()
+	{
+		float num = 976f + Mathf.Pow(Mathf.Cos(Time.time * 526f / 157f) * 1773f + 1250f, 166f) * 235f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 941f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void NNCCPEBIAKH()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1000f, 1011f), UnityEngine.Random.Range(882f, 1263f), UnityEngine.Random.Range(1935f, 1418f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(160f, 1690f), UnityEngine.Random.Range(1070f, 984f), UnityEngine.Random.Range(1455f, 356f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void MGMAOBPPOBJ()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1755f, 752f), UnityEngine.Random.Range(1132f, 979f), UnityEngine.Random.Range(584f, 1901f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1411f, 927f), UnityEngine.Random.Range(1653f, 224f), UnityEngine.Random.Range(68f, 1219f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void HNDNDPECBPL()
+	{
+		float num = 610f + Mathf.Pow(Mathf.Cos(Time.time * 951f / 1298f) * 1333f + 304f, 1213f) * 132f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 281f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void HMNLHMLILKD()
+	{
+		float num = 816f + Mathf.Pow(Mathf.Cos(Time.time * 1123f / 1363f) * 1840f + 1185f, 1026f) * 708f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1754f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void DLBODOFAJGM()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(785f, 610f), UnityEngine.Random.Range(1464f, 756f), UnityEngine.Random.Range(629f, 1301f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(519f, 221f), UnityEngine.Random.Range(1451f, 62f), UnityEngine.Random.Range(1708f, 1858f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void JKBMKPDGCHG()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(337f, 1606f), UnityEngine.Random.Range(607f, 1420f), UnityEngine.Random.Range(122f, 1414f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1067f, 736f), UnityEngine.Random.Range(1972f, 1301f), UnityEngine.Random.Range(1273f, 1233f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void BGDONBMDPGM()
+	{
+		float num = 1193f + Mathf.Pow(Mathf.Cos(Time.time * 392f / 600f) * 612f + 531f, 1480f) * 1770f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1940f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void JHPOIOELNCG()
+	{
+		float num = 1970f + Mathf.Pow(Mathf.Cos(Time.time * 1715f / 1014f) * 794f + 1824f, 1591f) * 1482f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1484f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void GMELGGJOPBB()
+	{
+		float num = 492f + Mathf.Pow(Mathf.Cos(Time.time * 1136f / 916f) * 1636f + 1838f, 1390f) * 973f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1819f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void FHGKIOOMMOH()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1710f, 1158f), UnityEngine.Random.Range(316f, 326f), UnityEngine.Random.Range(1390f, 1946f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(951f, 1376f), UnityEngine.Random.Range(1219f, 548f), UnityEngine.Random.Range(1450f, 610f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void FABMDEHEDNO()
+	{
+		float num = 18f + Mathf.Pow(Mathf.Cos(Time.time * 1116f / 434f) * 1576f + 162f, 886f) * 1841f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 569f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void JECMJNFGBGC()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1654f, 1784f), UnityEngine.Random.Range(1045f, 572f), UnityEngine.Random.Range(0f, 1016f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1591f, 1751f), UnityEngine.Random.Range(819f, 882f), UnityEngine.Random.Range(1529f, 1328f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void EPEGAEGDJAM()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1010f, 1280f), UnityEngine.Random.Range(21f, 140f), UnityEngine.Random.Range(1174f, 738f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1245f, 1641f), UnityEngine.Random.Range(1065f, 193f), UnityEngine.Random.Range(1679f, 690f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void AAPKBNDHBLI()
+	{
+		float num = 1293f + Mathf.Pow(Mathf.Cos(Time.time * 108f / 229f) * 1197f + 1956f, 1541f) * 922f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1025f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void FBMDHDBELEK()
+	{
+		float num = 1993f + Mathf.Pow(Mathf.Cos(Time.time * 1101f / 1116f) * 783f + 483f, 1848f) * 701f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 877f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void LCHBFNIPBHB()
+	{
+		float num = 1622f + Mathf.Pow(Mathf.Cos(Time.time * 1690f / 1268f) * 466f + 872f, 447f) * 286f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 951f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void PFNFPINPCMH()
+	{
+		float num = 482f + Mathf.Pow(Mathf.Cos(Time.time * 392f / 1f) * 472f + 1867f, 214f) * 781f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1743f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void BGDPIHMAACO()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1713f, 1578f), UnityEngine.Random.Range(1524f, 362f), UnityEngine.Random.Range(1636f, 609f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(115f, 1938f), UnityEngine.Random.Range(1232f, 544f), UnityEngine.Random.Range(661f, 1041f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void EGEPLFGKGLI()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(865f, 155f), UnityEngine.Random.Range(692f, 1561f), UnityEngine.Random.Range(235f, 827f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1335f, 795f), UnityEngine.Random.Range(1634f, 485f), UnityEngine.Random.Range(1413f, 1012f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
 	private void HLDFOJMHKNL()
 	{
-		float num = 760f + Mathf.Pow(Mathf.Cos(Time.time * 578f / 426f) * 1260f + 723f, 1791f) * 1347f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 756f) * (Vector3.up * num);
+		float num = 12f + Mathf.Pow(Mathf.Cos(Time.time * 1258f / 318f) * 1877f + 856f, 1152f) * 1814f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 2f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void IMCKJCHKMKB()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1837f, 1707f), UnityEngine.Random.Range(350f, 797f), UnityEngine.Random.Range(573f, 1643f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(92f, 1497f), UnityEngine.Random.Range(624f, 990f), UnityEngine.Random.Range(1943f, 1940f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void HIPEHGNBJMN()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(944f, 1613f), UnityEngine.Random.Range(881f, 961f), UnityEngine.Random.Range(1219f, 1256f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1475f, 1543f), UnityEngine.Random.Range(828f, 1899f), UnityEngine.Random.Range(472f, 1669f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void OKLAJINHPAN()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(183f, 328f), UnityEngine.Random.Range(1479f, 1876f), UnityEngine.Random.Range(107f, 1182f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1409f, 846f), UnityEngine.Random.Range(634f, 1484f), UnityEngine.Random.Range(531f, 783f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void CNGAJDBOCLJ()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(108f, 826f), UnityEngine.Random.Range(145f, 725f), UnityEngine.Random.Range(1195f, 917f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1943f, 1038f), UnityEngine.Random.Range(948f, 623f), UnityEngine.Random.Range(580f, 1893f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void IKIDIJLIGOH()
+	{
+		float num = 1757f + Mathf.Pow(Mathf.Cos(Time.time * 917f / 825f) * 56f + 1720f, 1709f) * 1841f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1166f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void LMBDNPLDGIJ()
+	{
+		float num = 1149f + Mathf.Pow(Mathf.Cos(Time.time * 1086f / 1699f) * 571f + 571f, 447f) * 68f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1611f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void COOHIILCOCO()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(217f, 1351f), UnityEngine.Random.Range(420f, 1976f), UnityEngine.Random.Range(1392f, 1598f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1530f, 1075f), UnityEngine.Random.Range(1901f, 1949f), UnityEngine.Random.Range(278f, 1311f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void GPNAOAKCMHC()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(562f, 1118f), UnityEngine.Random.Range(804f, 1702f), UnityEngine.Random.Range(284f, 224f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(869f, 787f), UnityEngine.Random.Range(752f, 250f), UnityEngine.Random.Range(243f, 99f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void IEMEHGCFAPD()
+	{
+		float num = 586f + Mathf.Pow(Mathf.Cos(Time.time * 1048f / 1072f) * 1271f + 726f, 1783f) * 416f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1026f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void KCDOMIJBFLL()
+	{
+		float num = 1433f + Mathf.Pow(Mathf.Cos(Time.time * 269f / 1633f) * 1188f + 1781f, 1334f) * 1310f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 855f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void POIMNOBDBBN()
+	{
+		float num = 726f + Mathf.Pow(Mathf.Cos(Time.time * 1297f / 752f) * 1676f + 1492f, 1117f) * 492f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 441f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void EHJJFJCKGAJ()
+	{
+		float num = 1323f + Mathf.Pow(Mathf.Cos(Time.time * 1574f / 896f) * 583f + 658f, 497f) * 252f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1528f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void CIPKEPDELJB()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(646f, 1196f), UnityEngine.Random.Range(384f, 312f), UnityEngine.Random.Range(888f, 644f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(971f, 613f), UnityEngine.Random.Range(1654f, 558f), UnityEngine.Random.Range(1585f, 652f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void OEENOOGEEHD()
+	{
+		float num = 1169f + Mathf.Pow(Mathf.Cos(Time.time * 785f / 602f) * 1149f + 1302f, 883f) * 503f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 127f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void FDNONDCGGCG()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(40f, 1081f), UnityEngine.Random.Range(1428f, 968f), UnityEngine.Random.Range(1634f, 1633f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(693f, 1922f), UnityEngine.Random.Range(1724f, 1864f), UnityEngine.Random.Range(1102f, 1566f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void EHCGBJDFMHG()
+	{
+		float num = 982f + Mathf.Pow(Mathf.Cos(Time.time * 1574f / 1273f) * 214f + 1891f, 572f) * 1917f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 978f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void DNNFHBOOPIN()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(624f, 744f), UnityEngine.Random.Range(1432f, 741f), UnityEngine.Random.Range(295f, 16f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(186f, 279f), UnityEngine.Random.Range(277f, 280f), UnityEngine.Random.Range(531f, 1786f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void EPJJDKJEDMM()
+	{
+		float num = 189f + Mathf.Pow(Mathf.Cos(Time.time * 41f / 1704f) * 1945f + 1560f, 1970f) * 303f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 187f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void KMEONPMCNJG()
+	{
+		float num = 190f + Mathf.Pow(Mathf.Cos(Time.time * 1025f / 560f) * 996f + 698f, 606f) * 712f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 159f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
 	}
 
 	private void FMFNILJIEIA()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1024f, 740f), UnityEngine.Random.Range(1161f, 1082f), UnityEngine.Random.Range(754f, 1223f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(773f, 1651f), UnityEngine.Random.Range(388f, 781f), UnityEngine.Random.Range(1243f, 1663f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1624f, 925f), UnityEngine.Random.Range(1582f, 797f), UnityEngine.Random.Range(785f, 610f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(960f, 760f), UnityEngine.Random.Range(1456f, 211f), UnityEngine.Random.Range(1537f, 1082f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
-	private void DNENFLNCIJP()
+	private void KDMKDEKCELE()
 	{
-		float num = 523f + Mathf.Pow(Mathf.Cos(Time.time * 496f / 460f) * 1942f + 1582f, 931f) * 1062f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 752f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void GPFJMKCGHGB()
-	{
-		float num = 1491f + Mathf.Pow(Mathf.Cos(Time.time * 774f / 7f) * 1783f + 1498f, 1670f) * 616f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1308f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void BEBNOKFLJPH()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(700f, 502f), UnityEngine.Random.Range(646f, 1048f), UnityEngine.Random.Range(90f, 1689f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(86f, 30f), UnityEngine.Random.Range(1378f, 1525f), UnityEngine.Random.Range(377f, 1301f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1284f, 911f), UnityEngine.Random.Range(1250f, 714f), UnityEngine.Random.Range(1207f, 1818f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1706f, 1342f), UnityEngine.Random.Range(1250f, 1729f), UnityEngine.Random.Range(1635f, 1971f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
-	private void JHPOIOELNCG()
+	private void CCLNNLCOPBL()
 	{
-		float num = 183f + Mathf.Pow(Mathf.Cos(Time.time * 712f / 644f) * 1487f + 1201f, 1661f) * 1509f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 160f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void LCJHDLKJEOM()
-	{
-		float num = 512f + Mathf.Pow(Mathf.Cos(Time.time * 772f / 296f) * 1809f + 1202f, 903f) * 875f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 623f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void FJHFOBHJEHL()
-	{
-		float num = 1602f + Mathf.Pow(Mathf.Cos(Time.time * 771f / 1295f) * 1650f + 1234f, 199f) * 912f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 970f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void MDCFIHDPLIG()
-	{
-		float num = 1014f + Mathf.Pow(Mathf.Cos(Time.time * 1591f / 1492f) * 585f + 846f, 800f) * 387f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 381f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void HIKKPDACJGI()
-	{
-		float num = 1311f + Mathf.Pow(Mathf.Cos(Time.time * 12f / 1258f) * 318f + 1877f, 856f) * 1152f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1814f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void LMADKINICIN()
-	{
-		float num = 1465f + Mathf.Pow(Mathf.Cos(Time.time * 18f / 1116f) * 434f + 1576f, 162f) * 886f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1841f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void CFFCLAHMBAA()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1195f, 917f), UnityEngine.Random.Range(1943f, 1038f), UnityEngine.Random.Range(948f, 623f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1697f, 437f), UnityEngine.Random.Range(1970f, 1602f), UnityEngine.Random.Range(771f, 1295f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(580f, 1893f), UnityEngine.Random.Range(1917f, 1993f), UnityEngine.Random.Range(1101f, 1116f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1650f, 1234f), UnityEngine.Random.Range(199f, 912f), UnityEngine.Random.Range(970f, 336f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void JMEOGJHCONJ()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1611f, 1873f), UnityEngine.Random.Range(1798f, 1105f), UnityEngine.Random.Range(842f, 409f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1264f, 371f), UnityEngine.Random.Range(14f, 1165f), UnityEngine.Random.Range(773f, 1435f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void ONMGIPAILOH()
+	{
+		float num = 1583f + Mathf.Pow(Mathf.Cos(Time.time * 1610f / 1664f) * 811f + 1798f, 830f) * 515f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1455f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void NEKCPLGFOFD()
+	{
+		float num = 238f + Mathf.Pow(Mathf.Cos(Time.time * 823f / 1020f) * 1669f + 201f, 982f) * 591f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 33f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void FIKFJDFELIP()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(602f, 41f), UnityEngine.Random.Range(1321f, 202f), UnityEngine.Random.Range(974f, 1756f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1743f, 1027f), UnityEngine.Random.Range(127f, 733f), UnityEngine.Random.Range(1402f, 485f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void IDJKNBDKHBD()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(84f, 888f), UnityEngine.Random.Range(1736f, 519f), UnityEngine.Random.Range(1367f, 718f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(420f, 1895f), UnityEngine.Random.Range(1645f, 327f), UnityEngine.Random.Range(27f, 1122f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void PKLOBJHKFEO()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(100f, 195f), UnityEngine.Random.Range(140f, 1718f), UnityEngine.Random.Range(910f, 588f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(320f, 427f), UnityEngine.Random.Range(1367f, 1222f), UnityEngine.Random.Range(947f, 835f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void AEDDNDHCLNN()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1964f, 653f), UnityEngine.Random.Range(509f, 1594f), UnityEngine.Random.Range(245f, 1987f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(995f, 383f), UnityEngine.Random.Range(1011f, 545f), UnityEngine.Random.Range(1719f, 548f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void BMODOIJGIOO()
+	{
+		float num = 1493f + Mathf.Pow(Mathf.Cos(Time.time * 615f / 102f) * 794f + 880f, 195f) * 704f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1431f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void MAOCOEGAFND()
+	{
+		float num = 589f + Mathf.Pow(Mathf.Cos(Time.time * 585f / 1816f) * 951f + 432f, 1752f) * 1178f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1279f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void LDDKCCMHMIC()
+	{
+		float num = 76f + Mathf.Pow(Mathf.Cos(Time.time * 109f / 1717f) * 1075f + 1824f, 36f) * 177f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1178f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void ODBNMPGBCGO()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1512f, 114f), UnityEngine.Random.Range(48f, 391f), UnityEngine.Random.Range(845f, 1457f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1859f, 1992f), UnityEngine.Random.Range(1652f, 1000f), UnityEngine.Random.Range(1373f, 55f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void DBLILJGKGHJ()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1929f, 1726f), UnityEngine.Random.Range(207f, 433f), UnityEngine.Random.Range(744f, 552f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(768f, 1423f), UnityEngine.Random.Range(1101f, 1226f), UnityEngine.Random.Range(1603f, 475f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void DIPDEHOOBPG()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(617f, 630f), UnityEngine.Random.Range(1773f, 1312f), UnityEngine.Random.Range(1113f, 1938f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1577f, 893f), UnityEngine.Random.Range(18f, 1104f), UnityEngine.Random.Range(190f, 1191f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void JILOMOBDPIA()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1107f, 1972f), UnityEngine.Random.Range(1301f, 1420f), UnityEngine.Random.Range(1913f, 768f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1748f, 1999f), UnityEngine.Random.Range(1187f, 1120f), UnityEngine.Random.Range(1798f, 1666f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void ANCKKLFPGDI()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(777f, 764f), UnityEngine.Random.Range(334f, 1501f), UnityEngine.Random.Range(288f, 1894f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(567f, 468f), UnityEngine.Random.Range(1469f, 968f), UnityEngine.Random.Range(882f, 495f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void KNBJBNDGCIJ()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(722f, 1064f), UnityEngine.Random.Range(1557f, 1166f), UnityEngine.Random.Range(1559f, 1705f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(258f, 699f), UnityEngine.Random.Range(251f, 663f), UnityEngine.Random.Range(882f, 843f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void PDHKMDBNGGN()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(314f, 1245f), UnityEngine.Random.Range(77f, 880f), UnityEngine.Random.Range(1302f, 1981f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1196f, 1163f), UnityEngine.Random.Range(1206f, 1308f), UnityEngine.Random.Range(1221f, 1546f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
@@ -184,91 +568,179 @@ public class SENBDLCameraAnimation : MonoBehaviour
 		base.transform.LookAt(Vector3.zero);
 	}
 
-	private void LEAHIBJDMBI()
+	private void PBEPCAPAKLG()
 	{
-		float num = 1379f + Mathf.Pow(Mathf.Cos(Time.time * 1484f / 779f) * 947f + 871f, 706f) * 274f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 488f) * (Vector3.up * num);
+		float num = 259f + Mathf.Pow(Mathf.Cos(Time.time * 725f / 1304f) * 1438f + 926f, 251f) * 1861f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1428f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
 	}
 
-	private void KLILJHJNICK()
+	private void AEEGKLABFLN()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(842f, 811f), UnityEngine.Random.Range(212f, 1692f), UnityEngine.Random.Range(947f, 763f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1921f, 1366f), UnityEngine.Random.Range(1781f, 333f), UnityEngine.Random.Range(1292f, 1410f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void OBAEDJJDCPN()
-	{
-		float num = 1911f + Mathf.Pow(Mathf.Cos(Time.time * 101f / 458f) * 1634f + 625f, 1959f) * 1f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 782f) * (Vector3.up * num);
+		float num = 98f + Mathf.Pow(Mathf.Cos(Time.time * 1700f / 1483f) * 988f + 1093f, 347f) * 555f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1452f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
 	}
 
-	private void HPNNCNNFMGK()
+	private void HMPGIFBJFIK()
 	{
-		float num = 207f + Mathf.Pow(Mathf.Cos(Time.time * 1000f / 1011f) * 882f + 1263f, 1935f) * 1418f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 160f) * (Vector3.up * num);
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1263f, 555f), UnityEngine.Random.Range(668f, 1804f), UnityEngine.Random.Range(160f, 216f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(844f, 606f), UnityEngine.Random.Range(669f, 415f), UnityEngine.Random.Range(427f, 1667f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void PKHPNHBEKHA()
+	{
+		float num = 28f + Mathf.Pow(Mathf.Cos(Time.time * 1122f / 1322f) * 553f + 823f, 1319f) * 925f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1081f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
 	}
 
-	private void FANADGBGCPI()
+	private void NPLCENPNJBM()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(678f, 1177f), UnityEngine.Random.Range(1383f, 91f), UnityEngine.Random.Range(1683f, 1502f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1904f, 912f), UnityEngine.Random.Range(521f, 353f), UnityEngine.Random.Range(1408f, 1295f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1289f, 1743f), UnityEngine.Random.Range(588f, 1789f), UnityEngine.Random.Range(268f, 1748f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1083f, 1912f), UnityEngine.Random.Range(312f, 713f), UnityEngine.Random.Range(1442f, 1720f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
-	private void FEHCNJLLJMP()
+	private void LCJHDLKJEOM()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(423f, 1531f), UnityEngine.Random.Range(1669f, 1208f), UnityEngine.Random.Range(366f, 287f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(615f, 667f), UnityEngine.Random.Range(1446f, 54f), UnityEngine.Random.Range(691f, 164f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void ONMGIPAILOH()
-	{
-		float num = 923f + Mathf.Pow(Mathf.Cos(Time.time * 157f / 1008f) * 1177f + 930f, 1939f) * 344f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1391f) * (Vector3.up * num);
+		float num = 740f + Mathf.Pow(Mathf.Cos(Time.time * 1161f / 1082f) * 754f + 1223f, 1624f) * 925f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1582f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
 	}
 
-	private void ILCFPCIPENO()
+	private void OHFOLGANOLC()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(360f, 602f), UnityEngine.Random.Range(41f, 1321f), UnityEngine.Random.Range(202f, 974f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1166f, 1479f), UnityEngine.Random.Range(813f, 1153f), UnityEngine.Random.Range(1518f, 184f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1756f, 1743f), UnityEngine.Random.Range(1027f, 127f), UnityEngine.Random.Range(733f, 1402f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1417f, 821f), UnityEngine.Random.Range(1898f, 1074f), UnityEngine.Random.Range(999f, 1502f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
-	private void CNGAJDBOCLJ()
+	private void KIMMMCJFMAB()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1774f, 1228f), UnityEngine.Random.Range(701f, 291f), UnityEngine.Random.Range(1994f, 1192f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(221f, 20f), UnityEngine.Random.Range(1238f, 1442f), UnityEngine.Random.Range(1544f, 257f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1597f, 1513f), UnityEngine.Random.Range(1049f, 1644f), UnityEngine.Random.Range(374f, 1544f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1747f, 55f), UnityEngine.Random.Range(210f, 1643f), UnityEngine.Random.Range(303f, 543f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
-	private void CGBHOELMAOC()
+	private void OPCLBGHAPMG()
 	{
-		float num = 1930f + Mathf.Pow(Mathf.Cos(Time.time * 492f / 1114f) * 1443f + 533f, 1330f) * 1977f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1682f) * (Vector3.up * num);
+		float num = 561f + Mathf.Pow(Mathf.Cos(Time.time * 13f / 1353f) * 795f + 640f, 1667f) * 419f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1925f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
 	}
 
-	private void JONGNKNLLND()
+	private void MMBPLGGLPDB()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1973f, 1433f), UnityEngine.Random.Range(269f, 1633f), UnityEngine.Random.Range(1188f, 1781f));
+		float num = 1132f + Mathf.Pow(Mathf.Cos(Time.time * 696f / 973f) * 897f + 704f, 1596f) * 1403f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 366f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void AEOLJEIDMDB()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(567f, 1164f), UnityEngine.Random.Range(709f, 594f), UnityEngine.Random.Range(1872f, 2f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1334f, 1310f), UnityEngine.Random.Range(855f, 1176f), UnityEngine.Random.Range(1583f, 1610f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1175f, 1826f), UnityEngine.Random.Range(410f, 244f), UnityEngine.Random.Range(625f, 1500f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void PAKPHKPDKGE()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(79f, 1567f), UnityEngine.Random.Range(1761f, 1014f), UnityEngine.Random.Range(1591f, 1492f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(585f, 846f), UnityEngine.Random.Range(800f, 387f), UnityEngine.Random.Range(381f, 1552f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void IBHACCEEFFI()
+	{
+		float num = 542f + Mathf.Pow(Mathf.Cos(Time.time * 653f / 1873f) * 714f + 1946f, 586f) * 1539f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1884f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void LKJMIODJGCM()
+	{
+		float num = 1839f + Mathf.Pow(Mathf.Cos(Time.time * 596f / 1737f) * 1572f + 1110f, 1695f) * 926f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1946f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void CGDMLHLJIDK()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1174f, 1066f), UnityEngine.Random.Range(281f, 797f), UnityEngine.Random.Range(741f, 950f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(881f, 863f), UnityEngine.Random.Range(593f, 1583f), UnityEngine.Random.Range(1204f, 565f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void NNFMIAFHMJM()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1724f, 1402f), UnityEngine.Random.Range(501f, 1340f), UnityEngine.Random.Range(801f, 1352f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(124f, 1378f), UnityEngine.Random.Range(828f, 1429f), UnityEngine.Random.Range(1472f, 943f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void CFIAKIJAILI()
+	{
+		float num = 1069f + Mathf.Pow(Mathf.Cos(Time.time * 148f / 1103f) * 130f + 362f, 1897f) * 929f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 889f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void IDIIELPAMCJ()
+	{
+		float num = 113f + Mathf.Pow(Mathf.Cos(Time.time * 1846f / 1993f) * 142f + 1884f, 300f) * 693f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 266f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void DNENFLNCIJP()
+	{
+		float num = 107f + Mathf.Pow(Mathf.Cos(Time.time * 288f / 1560f) * 1818f + 1939f, 523f) * 1974f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 932f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void FLKEJJEGCFA()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(704f, 1612f), UnityEngine.Random.Range(1362f, 953f), UnityEngine.Random.Range(575f, 1086f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(31f, 533f), UnityEngine.Random.Range(799f, 753f), UnityEngine.Random.Range(1478f, 1867f));
+		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
+	}
+
+	private void HDDECCMEJKA()
+	{
+		float num = 1059f + Mathf.Pow(Mathf.Cos(Time.time * 1665f / 780f) * 367f + 1390f, 1133f) * 1552f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1776f) * (Vector3.up * num);
+		base.transform.position = position;
+		base.transform.LookAt(Vector3.zero);
+	}
+
+	private void ECBILENEOOL()
+	{
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(843f, 1822f), UnityEngine.Random.Range(1233f, 1146f), UnityEngine.Random.Range(238f, 1013f));
+		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1040f, 1210f), UnityEngine.Random.Range(204f, 535f), UnityEngine.Random.Range(115f, 1840f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
@@ -280,379 +752,27 @@ public class SENBDLCameraAnimation : MonoBehaviour
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
-	private void EPEGAEGDJAM()
+	private void JDKHBGDEONK()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(61f, 550f), UnityEngine.Random.Range(857f, 1651f), UnityEngine.Random.Range(722f, 363f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(336f, 769f), UnityEngine.Random.Range(1670f, 1014f), UnityEngine.Random.Range(1223f, 1541f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1606f, 1255f), UnityEngine.Random.Range(924f, 1927f), UnityEngine.Random.Range(537f, 1951f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1530f, 354f), UnityEngine.Random.Range(136f, 678f), UnityEngine.Random.Range(751f, 543f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
 	}
 
-	private void AGMJDGHLBMN()
+	private void NCPAFCKGJEA()
 	{
-		float num = 1578f + Mathf.Pow(Mathf.Cos(Time.time * 992f / 1994f) * 1100f + 1243f, 1368f) * 1233f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 281f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void IIFCIDDJHPM()
-	{
-		float num = 1327f + Mathf.Pow(Mathf.Cos(Time.time * 1253f / 886f) * 1658f + 1462f, 1237f) * 1466f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1699f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void IBHACCEEFFI()
-	{
-		float num = 1148f + Mathf.Pow(Mathf.Cos(Time.time * 288f / 918f) * 488f + 1194f, 145f) * 152f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1722f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void EGEGNHLODAA()
-	{
-		float num = 1070f + Mathf.Pow(Mathf.Cos(Time.time * 984f / 1455f) * 356f + 1125f, 1970f) * 1715f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1014f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void DKGBFNCOAEO()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(277f, 280f), UnityEngine.Random.Range(531f, 1786f), UnityEngine.Random.Range(1839f, 1293f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(108f, 229f), UnityEngine.Random.Range(1197f, 1956f), UnityEngine.Random.Range(1541f, 922f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void KDMANOEMOCA()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1841f, 998f), UnityEngine.Random.Range(1217f, 352f), UnityEngine.Random.Range(769f, 298f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1145f, 947f), UnityEngine.Random.Range(1948f, 1146f), UnityEngine.Random.Range(1423f, 872f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void MFMIODIAKNI()
-	{
-		float num = 1060f + Mathf.Pow(Mathf.Cos(Time.time * 610f / 1269f) * 1251f + 1654f, 1267f) * 382f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1404f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void DGCGGKMNPLD()
-	{
-		float num = 1098f + Mathf.Pow(Mathf.Cos(Time.time * 1069f / 148f) * 1103f + 130f, 362f) * 1897f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 929f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void JKBMKPDGCHG()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(483f, 1848f), UnityEngine.Random.Range(701f, 877f), UnityEngine.Random.Range(50f, 865f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(155f, 692f), UnityEngine.Random.Range(1561f, 235f), UnityEngine.Random.Range(827f, 1335f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void KMEONPMCNJG()
-	{
-		float num = 1232f + Mathf.Pow(Mathf.Cos(Time.time * 544f / 661f) * 1041f + 231f, 1904f) * 912f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 521f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void EFJDNLGNACH()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(219f, 1543f), UnityEngine.Random.Range(758f, 132f), UnityEngine.Random.Range(1682f, 720f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(998f, 38f), UnityEngine.Random.Range(153f, 1993f), UnityEngine.Random.Range(599f, 1007f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void GCHBGCGBMCK()
-	{
-		float num = 1926f + Mathf.Pow(Mathf.Cos(Time.time * 113f / 1846f) * 1993f + 142f, 1884f) * 300f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 693f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void KMKLDAJLCNM()
-	{
-		float num = 1695f + Mathf.Pow(Mathf.Cos(Time.time * 293f / 1878f) * 1040f + 1468f, 1623f) * 1895f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 202f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void HNDNDPECBPL()
-	{
-		float num = 811f + Mathf.Pow(Mathf.Cos(Time.time * 1798f / 830f) * 515f + 1455f, 525f) * 79f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1567f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void MJEFMIPLFAB()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1408f, 1295f), UnityEngine.Random.Range(1083f, 1912f), UnityEngine.Random.Range(312f, 713f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1442f, 1720f), UnityEngine.Random.Range(691f, 108f), UnityEngine.Random.Range(826f, 145f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void ICILLMAKLMI()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(210f, 1643f), UnityEngine.Random.Range(303f, 543f), UnityEngine.Random.Range(1140f, 390f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(351f, 77f), UnityEngine.Random.Range(1886f, 106f), UnityEngine.Random.Range(924f, 1056f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void CGDMLHLJIDK()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(545f, 1869f), UnityEngine.Random.Range(535f, 373f), UnityEngine.Random.Range(407f, 157f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(337f, 1737f), UnityEngine.Random.Range(1732f, 59f), UnityEngine.Random.Range(1724f, 514f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void KMCPMOGKDEH()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1669f, 1413f), UnityEngine.Random.Range(344f, 1625f), UnityEngine.Random.Range(1732f, 1797f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1184f, 1518f), UnityEngine.Random.Range(1410f, 150f), UnityEngine.Random.Range(1740f, 1665f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void BMIOFJFMCBG()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1390f, 536f), UnityEngine.Random.Range(1107f, 823f), UnityEngine.Random.Range(1541f, 1648f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1186f, 1994f), UnityEngine.Random.Range(281f, 1498f), UnityEngine.Random.Range(1596f, 1851f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void LLJLDLLNFBH()
-	{
-		float num = 428f + Mathf.Pow(Mathf.Cos(Time.time * 431f / 426f) * 1840f + 1133f, 5f) * 1617f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1825f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void LDDKCCMHMIC()
-	{
-		float num = 531f + Mathf.Pow(Mathf.Cos(Time.time * 1713f / 1578f) * 1524f + 362f, 1636f) * 609f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 115f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void NKLIHNJCHOG()
-	{
-		float num = 690f + Mathf.Pow(Mathf.Cos(Time.time * 1664f / 927f) * 1281f + 1240f, 556f) * 875f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1932f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void DKOPKPBLDHH()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(506f, 1483f), UnityEngine.Random.Range(269f, 1202f), UnityEngine.Random.Range(100f, 191f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(209f, 1590f), UnityEngine.Random.Range(1309f, 1446f), UnityEngine.Random.Range(1721f, 1023f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void MGMAOBPPOBJ()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(832f, 1837f), UnityEngine.Random.Range(1707f, 350f), UnityEngine.Random.Range(797f, 573f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1643f, 92f), UnityEngine.Random.Range(1497f, 624f), UnityEngine.Random.Range(990f, 1943f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void FABKIGNFECE()
-	{
-		float num = 72f + Mathf.Pow(Mathf.Cos(Time.time * 1899f / 1295f) * 1981f + 1358f, 253f) * 404f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1095f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void BMODOIJGIOO()
-	{
-		float num = 1484f + Mathf.Pow(Mathf.Cos(Time.time * 31f / 1617f) * 229f + 1148f, 1623f) * 329f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1046f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void OHFOLGANOLC()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1544f, 969f), UnityEngine.Random.Range(346f, 1788f), UnityEngine.Random.Range(1417f, 343f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1306f, 1963f), UnityEngine.Random.Range(131f, 547f), UnityEngine.Random.Range(400f, 1430f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void PKLOBJHKFEO()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(10f, 646f), UnityEngine.Random.Range(1196f, 384f), UnityEngine.Random.Range(312f, 888f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(644f, 971f), UnityEngine.Random.Range(613f, 1654f), UnityEngine.Random.Range(558f, 1585f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void POJFHDFJOPE()
-	{
-		float num = 756f + Mathf.Pow(Mathf.Cos(Time.time * 629f / 1301f) * 519f + 221f, 1451f) * 62f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1708f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void KDMKDEKCELE()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(378f, 433f), UnityEngine.Random.Range(1469f, 1021f), UnityEngine.Random.Range(964f, 1369f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(63f, 1792f), UnityEngine.Random.Range(286f, 1583f), UnityEngine.Random.Range(1328f, 1423f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void PBEPCAPAKLG()
-	{
-		float num = 1412f + Mathf.Pow(Mathf.Cos(Time.time * 1132f / 696f) * 973f + 897f, 704f) * 1596f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1403f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void HAIAHJPCPAG()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1500f, 589f), UnityEngine.Random.Range(585f, 1816f), UnityEngine.Random.Range(951f, 432f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1752f, 1178f), UnityEngine.Random.Range(1279f, 121f), UnityEngine.Random.Range(1697f, 437f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void MKIMDFLBFOM()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1705f, 434f), UnityEngine.Random.Range(1795f, 1668f), UnityEngine.Random.Range(740f, 72f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(592f, 855f), UnityEngine.Random.Range(1158f, 1877f), UnityEngine.Random.Range(334f, 1617f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void IDIIELPAMCJ()
-	{
-		float num = 483f + Mathf.Pow(Mathf.Cos(Time.time * 1596f / 1076f) * 1844f + 1153f, 278f) * 659f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 387f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void AEEGKLABFLN()
-	{
-		float num = 1243f + Mathf.Pow(Mathf.Cos(Time.time * 1586f / 1389f) * 1892f + 528f, 776f) * 379f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1433f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void FHPFJBFCOOF()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1944f, 526f), UnityEngine.Random.Range(1662f, 1494f), UnityEngine.Random.Range(1060f, 134f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1885f, 521f), UnityEngine.Random.Range(1440f, 1679f), UnityEngine.Random.Range(1403f, 1350f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void JOPCCCCHNLI()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(525f, 1600f), UnityEngine.Random.Range(1678f, 1439f), UnityEngine.Random.Range(1759f, 395f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(389f, 1711f), UnityEngine.Random.Range(814f, 712f), UnityEngine.Random.Range(261f, 1199f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void KOJKBFDNGDK()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(754f, 1107f), UnityEngine.Random.Range(1972f, 1301f), UnityEngine.Random.Range(1420f, 1913f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(768f, 1748f), UnityEngine.Random.Range(1999f, 1187f), UnityEngine.Random.Range(1120f, 1798f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void NNCCPEBIAKH()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1679f, 1905f), UnityEngine.Random.Range(637f, 998f), UnityEngine.Random.Range(1532f, 411f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1592f, 987f), UnityEngine.Random.Range(1374f, 1049f), UnityEngine.Random.Range(1245f, 1787f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void DIPDEHOOBPG()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1480f, 1030f), UnityEngine.Random.Range(1220f, 1046f), UnityEngine.Random.Range(1039f, 1302f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(383f, 1958f), UnityEngine.Random.Range(704f, 1987f), UnityEngine.Random.Range(1140f, 1862f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void JNBPKNNBMDI()
-	{
-		float num = 446f + Mathf.Pow(Mathf.Cos(Time.time * 474f / 866f) * 1791f + 963f, 1696f) * 1733f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 841f) * (Vector3.up * num);
+		float num = 725f + Mathf.Pow(Mathf.Cos(Time.time * 1619f / 321f) * 1516f + 1974f, 651f) * 1436f;
+		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 441f) * (Vector3.up * num);
 		base.transform.position = position;
 		base.transform.LookAt(Vector3.zero);
 	}
 
 	private void MNBPNHNAEBK()
 	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(746f, 617f), UnityEngine.Random.Range(630f, 1773f), UnityEngine.Random.Range(1312f, 1113f));
+		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1126f, 1375f), UnityEngine.Random.Range(1544f, 1064f), UnityEngine.Random.Range(371f, 1107f));
 		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1938f, 1577f), UnityEngine.Random.Range(893f, 18f), UnityEngine.Random.Range(1104f, 190f));
+		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(1485f, 1598f), UnityEngine.Random.Range(1379f, 379f), UnityEngine.Random.Range(89f, 1396f));
 		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void CHOPDIGHJNH()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1824f, 1591f), UnityEngine.Random.Range(1482f, 1484f), UnityEngine.Random.Range(394f, 624f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(744f, 1432f), UnityEngine.Random.Range(741f, 295f), UnityEngine.Random.Range(16f, 186f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void BGDONBMDPGM()
-	{
-		float num = 1590f + Mathf.Pow(Mathf.Cos(Time.time * 1112f / 921f) * 1151f + 1376f, 1886f) * 1116f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 1766f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
-	}
-
-	private void FJNCHGLIEMA()
-	{
-		NCJDPNOIJCD = new Vector3(UnityEngine.Random.Range(1634f, 485f), UnityEngine.Random.Range(1413f, 1012f), UnityEngine.Random.Range(28f, 221f));
-		NCJDPNOIJCD = Vector3.Normalize(NCJDPNOIJCD);
-		GCOMBGJLPGL = new Vector3(UnityEngine.Random.Range(20f, 1238f), UnityEngine.Random.Range(1442f, 1544f), UnityEngine.Random.Range(257f, 1747f));
-		GCOMBGJLPGL = Vector3.Normalize(GCOMBGJLPGL);
-	}
-
-	private void NDAJBJFJGCF()
-	{
-		float num = 962f + Mathf.Pow(Mathf.Cos(Time.time * 464f / 941f) * 647f + 405f, 1183f) * 994f;
-		Vector3 position = Quaternion.Euler(NCJDPNOIJCD * Time.time * 116f) * (Vector3.up * num);
-		base.transform.position = position;
-		base.transform.LookAt(Vector3.zero);
 	}
 }

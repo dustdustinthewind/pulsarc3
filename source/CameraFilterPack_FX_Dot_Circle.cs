@@ -1,8 +1,8 @@
 // CameraFilterPack_FX_Dot_Circle
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/FX/Dot_Circle")]
+[ExecuteInEditMode]
 public class CameraFilterPack_FX_Dot_Circle : MonoBehaviour
 {
 	public Shader SCShader;
@@ -46,9 +46,9 @@ public class CameraFilterPack_FX_Dot_Circle : MonoBehaviour
 			{
 				HBJJOCHGOPH = 914f;
 			}
-			NBPKMLMCHFN.SetFloat("<command>", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("ENABLE_EYE_ADAPTATION", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1653f, 1341f));
-			NBPKMLMCHFN.SetFloat("_Value4", Value);
+			NBPKMLMCHFN.SetFloat("ls", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetVector("_AdaptationMax", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1653f, 1341f));
+			NBPKMLMCHFN.SetFloat("_Value3", Value);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -70,9 +70,9 @@ public class CameraFilterPack_FX_Dot_Circle : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1984f;
 			}
-			NBPKMLMCHFN.SetFloat("_Noise", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("mapselector.filter.officialsortmode", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1928f, 398f));
-			NBPKMLMCHFN.SetFloat("ConfigVersionSlider", Value);
+			NBPKMLMCHFN.SetFloat("_TimeX", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetVector("mapselector.orderby", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1928f, 398f));
+			NBPKMLMCHFN.SetFloat(".sawoutdatedmessage", Value);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -87,7 +87,7 @@ public class CameraFilterPack_FX_Dot_Circle : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		SCShader = Shader.Find("_BlurVector");
+		SCShader = Shader.Find("_OcclusionTexture");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -104,7 +104,7 @@ public class CameraFilterPack_FX_Dot_Circle : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		SCShader = Shader.Find("Warning: Unhandled event ");
+		SCShader = Shader.Find(". Sent by actorNr: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -162,7 +162,7 @@ public class CameraFilterPack_FX_Dot_Circle : MonoBehaviour
 				HBJJOCHGOPH = 220f;
 			}
 			NBPKMLMCHFN.SetFloat("CameraFilterPack/Colors_Adjust_PreFilters", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1816f, 74f));
+			NBPKMLMCHFN.SetVector("_Distance", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1816f, 74f));
 			NBPKMLMCHFN.SetFloat("_Value2", Value);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
@@ -181,9 +181,9 @@ public class CameraFilterPack_FX_Dot_Circle : MonoBehaviour
 			{
 				HBJJOCHGOPH = 240f;
 			}
-			NBPKMLMCHFN.SetFloat("ticket", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("[", HBJJOCHGOPH);
 			NBPKMLMCHFN.SetVector("PossibleMapPointsText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 121f, 1639f));
-			NBPKMLMCHFN.SetFloat("#alreadyexist", Value);
+			NBPKMLMCHFN.SetFloat("#ok", Value);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -201,9 +201,9 @@ public class CameraFilterPack_FX_Dot_Circle : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1273f;
 			}
-			NBPKMLMCHFN.SetFloat("x", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("Clears the console and prints the logs in the specified range", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 581f, 770f));
-			NBPKMLMCHFN.SetFloat("USE_CORNER_DETECTION", Value);
+			NBPKMLMCHFN.SetFloat("InfoCanvas", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetVector("Closes the app", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 581f, 770f));
+			NBPKMLMCHFN.SetFloat("USE_DIAG_SEARCH", Value);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else

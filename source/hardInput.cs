@@ -12,9 +12,169 @@ public class hardInput : MonoBehaviour
 		XBOX360
 	}
 
-	public static string NFAMPNFLAEJ(string AKOENHBOCOD, bool BIDPCNEDFME)
+	public static void LDLFOPMMPPK(string HPLOOEJMLFD)
 	{
-		return Singleton<hardManager>.Instance.HDELGDBGOCG(AKOENHBOCOD, BIDPCNEDFME);
+		Singleton<hardManager>.Instance.DDLKICGHJNL(HPLOOEJMLFD);
+	}
+
+	public static void ResetBinding(string HPLOOEJMLFD)
+	{
+		Singleton<hardManager>.Instance.resetKey(HPLOOEJMLFD);
+	}
+
+	public static controllerType IGGONOJJBLD()
+	{
+		switch (Singleton<hardManager>.Instance.controllerType)
+		{
+		default:
+			return controllerType.PS3;
+		case 0:
+			return controllerType.PS3;
+		case 1:
+			return (controllerType)6;
+		case 2:
+			return controllerType.XBOX1;
+		}
+	}
+
+	public static float DCOBLPDBKID(string AKOENHBOCOD, float IKOENAGPJCG)
+	{
+		return Singleton<hardManager>.Instance.MKLBODKLFBA(AKOENHBOCOD, IKOENAGPJCG);
+	}
+
+	public static void HLJEEHDNLBE(bool JOKLAPMFDGO)
+	{
+		Singleton<hardManager>.Instance.EAIKAGGFJNI(JOKLAPMFDGO);
+	}
+
+	public static float PKIDLNBMMBO(string AKOENHBOCOD, float IKOENAGPJCG)
+	{
+		return Singleton<hardManager>.Instance.GGJNNKKADDK(AKOENHBOCOD, IKOENAGPJCG);
+	}
+
+	public static void ResetAllBindings()
+	{
+		Singleton<hardManager>.Instance.resetSavedKeys();
+	}
+
+	public static void HNBKMEONOCC(controllerType HMGBJCGOLMI)
+	{
+		Singleton<hardManager>.Instance.KKIAEHMOELK(HMGBJCGOLMI);
+	}
+
+	public static float POLDEEDNMBE(string AKOENHBOCOD, string CBHEHDPFFGE, float IKOENAGPJCG)
+	{
+		return Singleton<hardManager>.Instance.PMJHMIKCPBI(AKOENHBOCOD, CBHEHDPFFGE, IKOENAGPJCG);
+	}
+
+	public static KeyCode GetKeyCode(string AKOENHBOCOD, bool DFBNBCOFIFK)
+	{
+		return Singleton<hardManager>.Instance.GetKeyCode(AKOENHBOCOD, DFBNBCOFIFK);
+	}
+
+	public static void KNGEJHAFMBM(bool CGCEBPNHLIP)
+	{
+		Singleton<hardManager>.Instance.MouseVisble(CGCEBPNHLIP);
+	}
+
+	public static float PPKDBNLBDIJ(string AKOENHBOCOD, float IKOENAGPJCG)
+	{
+		return Singleton<hardManager>.Instance.MKLBODKLFBA(AKOENHBOCOD, IKOENAGPJCG);
+	}
+
+	public static void MNFDINLLKPJ(string HPLOOEJMLFD)
+	{
+		Singleton<hardManager>.Instance.NMKNHFOJPKL(HPLOOEJMLFD);
+	}
+
+	public static void IKDPOCMBBGL()
+	{
+		Singleton<hardManager>.Instance.resetSavedKeys();
+	}
+
+	public static void MouseVisible(bool CGCEBPNHLIP)
+	{
+		Singleton<hardManager>.Instance.MouseVisble(CGCEBPNHLIP);
+	}
+
+	public static KeyCode DGNMCOJNFPF(string AKOENHBOCOD, bool DFBNBCOFIFK)
+	{
+		return Singleton<hardManager>.Instance.DOGMPIJBDAA(AKOENHBOCOD, DFBNBCOFIFK);
+	}
+
+	public static bool GetKey(string AKOENHBOCOD)
+	{
+		return Singleton<hardManager>.Instance.GetKey(AKOENHBOCOD);
+	}
+
+	public static string DKGJEOGFHNM(string AKOENHBOCOD, bool BIDPCNEDFME)
+	{
+		return Singleton<hardManager>.Instance.BKMPLGKMBCN(AKOENHBOCOD, BIDPCNEDFME);
+	}
+
+	public static KeyCode IJEMPIMFANK(string AKOENHBOCOD, bool DFBNBCOFIFK)
+	{
+		return Singleton<hardManager>.Instance.JNJACKEDCDH(AKOENHBOCOD, DFBNBCOFIFK);
+	}
+
+	public static bool MPEJLGDDIDN(string AKOENHBOCOD)
+	{
+		return Singleton<hardManager>.Instance.CBPPMILAGLL(AKOENHBOCOD);
+	}
+
+	public static void JGBGCNCOBBN(string HPLOOEJMLFD)
+	{
+		Singleton<hardManager>.Instance.MPHEDKMKLKN(HPLOOEJMLFD);
+	}
+
+	public static float EBBBDEAMIKO(string AKOENHBOCOD, float IKOENAGPJCG)
+	{
+		return Singleton<hardManager>.Instance.MKLBODKLFBA(AKOENHBOCOD, IKOENAGPJCG);
+	}
+
+	public static KeyCode HMFEDKILJAO(string AKOENHBOCOD, bool DFBNBCOFIFK)
+	{
+		return Singleton<hardManager>.Instance.GetKeyCode(AKOENHBOCOD, DFBNBCOFIFK);
+	}
+
+	public static KeyCode PPMMIHAFODH(string AKOENHBOCOD, bool DFBNBCOFIFK)
+	{
+		return Singleton<hardManager>.Instance.JNJACKEDCDH(AKOENHBOCOD, DFBNBCOFIFK);
+	}
+
+	public static void MouseLock(bool JOKLAPMFDGO)
+	{
+		Singleton<hardManager>.Instance.MouseLock(JOKLAPMFDGO);
+	}
+
+	public static float EAFHOGEHLDJ(string AKOENHBOCOD, string CBHEHDPFFGE, float IKOENAGPJCG)
+	{
+		return Singleton<hardManager>.Instance.GMNJKCNIPGD(AKOENHBOCOD, CBHEHDPFFGE, IKOENAGPJCG);
+	}
+
+	public static bool GetKeyDown(string AKOENHBOCOD)
+	{
+		return Singleton<hardManager>.Instance.GetKeyDown(AKOENHBOCOD);
+	}
+
+	public static float ELDCBALLLJI(string AKOENHBOCOD, string CBHEHDPFFGE, float IKOENAGPJCG)
+	{
+		return Singleton<hardManager>.Instance.LEDKFLABOFN(AKOENHBOCOD, CBHEHDPFFGE, IKOENAGPJCG);
+	}
+
+	public static string MJMDINDGIBA(string AKOENHBOCOD, bool BIDPCNEDFME)
+	{
+		return Singleton<hardManager>.Instance.BKMPLGKMBCN(AKOENHBOCOD, BIDPCNEDFME);
+	}
+
+	public static void GADCEGEPFCN(bool JOKLAPMFDGO)
+	{
+		Singleton<hardManager>.Instance.GLDDFDJLKMM(JOKLAPMFDGO);
+	}
+
+	public static void BMHDDDOPPJK(bool JOKLAPMFDGO)
+	{
+		Singleton<hardManager>.Instance.GLDDFDJLKMM(JOKLAPMFDGO);
 	}
 
 	public static float GetAxis(string AKOENHBOCOD, string CBHEHDPFFGE, float IKOENAGPJCG)
@@ -22,9 +182,59 @@ public class hardInput : MonoBehaviour
 		return Singleton<hardManager>.Instance.GetAxis(AKOENHBOCOD, CBHEHDPFFGE, IKOENAGPJCG);
 	}
 
-	public static bool CHAJOGCCKDA(string AKOENHBOCOD)
+	public static void BAHDOGHKOLG(controllerType HMGBJCGOLMI)
 	{
-		return Singleton<hardManager>.Instance.GetKeyDown(AKOENHBOCOD);
+		Singleton<hardManager>.Instance.setControllerType(HMGBJCGOLMI);
+	}
+
+	public static void APKDDNPJOHA(controllerType HMGBJCGOLMI)
+	{
+		Singleton<hardManager>.Instance.LJPDKALDNEI(HMGBJCGOLMI);
+	}
+
+	public static void ForceRebind(string AKOENHBOCOD, bool DFBNBCOFIFK, KeyCode PDBIJAAEGAP)
+	{
+		Singleton<hardManager>.Instance.HardStartRebind(AKOENHBOCOD, DFBNBCOFIFK, PDBIJAAEGAP);
+	}
+
+	public static controllerType BPHCPGLEDNL()
+	{
+		switch (Singleton<hardManager>.Instance.controllerType)
+		{
+		default:
+			return controllerType.PS3;
+		case 0:
+			return controllerType.PS3;
+		case 1:
+			return (controllerType)4;
+		case 2:
+			return (controllerType)7;
+		}
+	}
+
+	public static void LEKAKMDBNKH()
+	{
+		Singleton<hardManager>.Instance.GCAHFCDJODP();
+	}
+
+	public static bool EBAHBLEMKKC(string AKOENHBOCOD)
+	{
+		return Singleton<hardManager>.Instance.KGLEKOOEKMP(AKOENHBOCOD);
+	}
+
+	public static float BMDFLMLNPHN(string AKOENHBOCOD, string CBHEHDPFFGE, float IKOENAGPJCG)
+	{
+		return Singleton<hardManager>.Instance.PMJHMIKCPBI(AKOENHBOCOD, CBHEHDPFFGE, IKOENAGPJCG);
+	}
+
+	public static int KCPKOCCMJDP()
+	{
+		return Singleton<hardManager>.Instance.controllerType;
+	}
+
+	public static void ALPEDOCMBGL(controllerType HMGBJCGOLMI)
+	{
+		Singleton<hardManager>.Instance.LBBAGIOGKHL(HMGBJCGOLMI);
 	}
 
 	public static controllerType GetControllerType()
@@ -42,49 +252,19 @@ public class hardInput : MonoBehaviour
 		}
 	}
 
-	public static bool GKLCHNPAEAL(string AKOENHBOCOD)
-	{
-		return Singleton<hardManager>.Instance.GetKey(AKOENHBOCOD);
-	}
-
-	public static void OLHMLFIEIDO(string MDDCBDHGNPA, bool CKLPEJDAMME, hardInputUI FEFOLHEFCKP)
-	{
-		Singleton<hardManager>.Instance.BAIMLCIHANB(MDDCBDHGNPA, CKLPEJDAMME, FEFOLHEFCKP);
-	}
-
-	public static bool NGFFMGKPMNP(string AKOENHBOCOD)
-	{
-		return Singleton<hardManager>.Instance.GJPKJMNGJKG(AKOENHBOCOD);
-	}
-
-	public static int DMPGINIIIFJ()
+	public static int GetControllerTypeIndex()
 	{
 		return Singleton<hardManager>.Instance.controllerType;
 	}
 
-	public static string EPIFCBNFKNO(string AKOENHBOCOD, bool BIDPCNEDFME)
+	public static float NPAAKMHOGBO(string AKOENHBOCOD, float IKOENAGPJCG)
 	{
-		return Singleton<hardManager>.Instance.MKCKJLLCMED(AKOENHBOCOD, BIDPCNEDFME);
+		return Singleton<hardManager>.Instance.GGJNNKKADDK(AKOENHBOCOD, IKOENAGPJCG);
 	}
 
-	public static void ForceRebind(string AKOENHBOCOD, bool DFBNBCOFIFK, KeyCode PDBIJAAEGAP)
+	public static void KJOKNAIHIED(string HPLOOEJMLFD)
 	{
-		Singleton<hardManager>.Instance.HardStartRebind(AKOENHBOCOD, DFBNBCOFIFK, PDBIJAAEGAP);
-	}
-
-	public static float DAKLFCPPJDB(string AKOENHBOCOD, string CBHEHDPFFGE, float IKOENAGPJCG)
-	{
-		return Singleton<hardManager>.Instance.FALNNGMABKM(AKOENHBOCOD, CBHEHDPFFGE, IKOENAGPJCG);
-	}
-
-	public static bool KFKHHOLEGOK(string AKOENHBOCOD)
-	{
-		return Singleton<hardManager>.Instance.KDHDPECKBJC(AKOENHBOCOD);
-	}
-
-	public static KeyCode DOGMPIJBDAA(string AKOENHBOCOD, bool DFBNBCOFIFK)
-	{
-		return Singleton<hardManager>.Instance.CLBENCAJDKH(AKOENHBOCOD, DFBNBCOFIFK);
+		Singleton<hardManager>.Instance.JBICLAFJNCO(HPLOOEJMLFD);
 	}
 
 	public static void HardStartRebind(string MDDCBDHGNPA, bool CKLPEJDAMME, hardInputUI FEFOLHEFCKP)
@@ -92,22 +272,7 @@ public class hardInput : MonoBehaviour
 		Singleton<hardManager>.Instance.HardStartRebind(MDDCBDHGNPA, CKLPEJDAMME, FEFOLHEFCKP);
 	}
 
-	public static void OAIAELNMMKC(bool JOKLAPMFDGO)
-	{
-		Singleton<hardManager>.Instance.LJFEBNEOADJ(JOKLAPMFDGO);
-	}
-
-	public static bool AADFFLGEJPP(string AKOENHBOCOD)
-	{
-		return Singleton<hardManager>.Instance.MOFCDBDBOOL(AKOENHBOCOD);
-	}
-
-	public static int MHGLJHAPGAH()
-	{
-		return Singleton<hardManager>.Instance.controllerType;
-	}
-
-	public static controllerType PJLOEACMLHO()
+	public static controllerType NNFHBGJJDLK()
 	{
 		switch (Singleton<hardManager>.Instance.controllerType)
 		{
@@ -116,30 +281,45 @@ public class hardInput : MonoBehaviour
 		case 1:
 			return controllerType.PS3;
 		case 2:
-			return (controllerType)4;
+			return (controllerType)8;
 		case 3:
-			return controllerType.PS3;
+			return controllerType.XBOX1;
 		}
 	}
 
-	public static int OKOPFPIEOLE()
+	public static controllerType PLKCMNPAMFB()
 	{
-		return Singleton<hardManager>.Instance.controllerType;
+		switch (Singleton<hardManager>.Instance.controllerType)
+		{
+		default:
+			return controllerType.PS4;
+		case 1:
+			return controllerType.PS4;
+		case 2:
+			return controllerType.XBOX1;
+		case 3:
+			return (controllerType)7;
+		}
 	}
 
-	public static void ADDMOGHAPPA(string HPLOOEJMLFD)
+	public static float GMKFPOJIHOH(string AKOENHBOCOD, float IKOENAGPJCG)
 	{
-		Singleton<hardManager>.Instance.LDCDBIBDNAN(HPLOOEJMLFD);
+		return Singleton<hardManager>.Instance.MKLBODKLFBA(AKOENHBOCOD, IKOENAGPJCG);
 	}
 
-	public static void JOJBOPLIEIF(controllerType HMGBJCGOLMI)
+	public static void PFADFILLLCA(bool CGCEBPNHLIP)
 	{
-		Singleton<hardManager>.Instance.MPIEAKCINJD(HMGBJCGOLMI);
+		Singleton<hardManager>.Instance.GHCCHFJJAJA(CGCEBPNHLIP);
 	}
 
-	public static bool GetKeyDown(string AKOENHBOCOD)
+	public static void LHJKPAAJPJL(string HPLOOEJMLFD)
 	{
-		return Singleton<hardManager>.Instance.GetKeyDown(AKOENHBOCOD);
+		Singleton<hardManager>.Instance.DDLKICGHJNL(HPLOOEJMLFD);
+	}
+
+	public static void AENJDJLFOOC()
+	{
+		Singleton<hardManager>.Instance.resetSavedKeys();
 	}
 
 	public static void SetControllerType(controllerType HMGBJCGOLMI)
@@ -147,109 +327,9 @@ public class hardInput : MonoBehaviour
 		Singleton<hardManager>.Instance.setControllerType(HMGBJCGOLMI);
 	}
 
-	public static void ECIMNKJADCB(string AKOENHBOCOD, bool DFBNBCOFIFK, KeyCode PDBIJAAEGAP)
+	public static float GetAxis(string AKOENHBOCOD, float IKOENAGPJCG)
 	{
-		Singleton<hardManager>.Instance.ECIEMPEMHPL(AKOENHBOCOD, DFBNBCOFIFK, PDBIJAAEGAP);
-	}
-
-	public static void CNHLFADKBOL(bool CGCEBPNHLIP)
-	{
-		Singleton<hardManager>.Instance.GPFKHMIPLEP(CGCEBPNHLIP);
-	}
-
-	public static void HBGCDCCFNDJ(string AKOENHBOCOD, bool DFBNBCOFIFK, KeyCode PDBIJAAEGAP)
-	{
-		Singleton<hardManager>.Instance.ECIEMPEMHPL(AKOENHBOCOD, DFBNBCOFIFK, PDBIJAAEGAP);
-	}
-
-	public static bool GetKey(string AKOENHBOCOD)
-	{
-		return Singleton<hardManager>.Instance.GetKey(AKOENHBOCOD);
-	}
-
-	public static void JKCPGIDFPOF(bool JOKLAPMFDGO)
-	{
-		Singleton<hardManager>.Instance.GJKHADOOHAG(JOKLAPMFDGO);
-	}
-
-	public static int GetControllerTypeIndex()
-	{
-		return Singleton<hardManager>.Instance.controllerType;
-	}
-
-	public static void BAHDOGHKOLG(controllerType HMGBJCGOLMI)
-	{
-		Singleton<hardManager>.Instance.MGHMFJAHGOC(HMGBJCGOLMI);
-	}
-
-	public static int KPJLKHBOGGI()
-	{
-		return Singleton<hardManager>.Instance.controllerType;
-	}
-
-	public static controllerType ONBPEBFBKNH()
-	{
-		switch (Singleton<hardManager>.Instance.controllerType)
-		{
-		default:
-			return controllerType.PS4;
-		case 1:
-			return controllerType.PS3;
-		case 2:
-			return (controllerType)8;
-		case 3:
-			return controllerType.PS3;
-		}
-	}
-
-	public static void MLBHACCKKDF(string AKOENHBOCOD, bool DFBNBCOFIFK, KeyCode PDBIJAAEGAP)
-	{
-		Singleton<hardManager>.Instance.PFBDLOENJGP(AKOENHBOCOD, DFBNBCOFIFK, PDBIJAAEGAP);
-	}
-
-	public static void LDNIGNMHCOM(string HPLOOEJMLFD)
-	{
-		Singleton<hardManager>.Instance.LDCDBIBDNAN(HPLOOEJMLFD);
-	}
-
-	public static void BDDFOBPPHMC(bool JOKLAPMFDGO)
-	{
-		Singleton<hardManager>.Instance.JBCPEEBCPKF(JOKLAPMFDGO);
-	}
-
-	public static controllerType MMOLCHLLCMM()
-	{
-		switch (Singleton<hardManager>.Instance.controllerType)
-		{
-		default:
-			return controllerType.PS4;
-		case 0:
-			return controllerType.PS4;
-		case 1:
-			return (controllerType)4;
-		case 2:
-			return controllerType.PS3;
-		}
-	}
-
-	public static void ResetBinding(string HPLOOEJMLFD)
-	{
-		Singleton<hardManager>.Instance.resetKey(HPLOOEJMLFD);
-	}
-
-	public static float PMJHMIKCPBI(string AKOENHBOCOD, float IKOENAGPJCG)
-	{
-		return Singleton<hardManager>.Instance.GFIOHABJNCG(AKOENHBOCOD, IKOENAGPJCG);
-	}
-
-	public static KeyCode MBEBKPNJGOP(string AKOENHBOCOD, bool DFBNBCOFIFK)
-	{
-		return Singleton<hardManager>.Instance.FPNHCCEFMPJ(AKOENHBOCOD, DFBNBCOFIFK);
-	}
-
-	public static KeyCode GetKeyCode(string AKOENHBOCOD, bool DFBNBCOFIFK)
-	{
-		return Singleton<hardManager>.Instance.GetKeyCode(AKOENHBOCOD, DFBNBCOFIFK);
+		return Singleton<hardManager>.Instance.GetAxis(AKOENHBOCOD, IKOENAGPJCG);
 	}
 
 	public static string GetKeyName(string AKOENHBOCOD, bool BIDPCNEDFME)
@@ -257,93 +337,28 @@ public class hardInput : MonoBehaviour
 		return Singleton<hardManager>.Instance.GetKeyName(AKOENHBOCOD, BIDPCNEDFME);
 	}
 
-	public static void ResetAllBindings()
+	public static bool GEGAOEFONPM(string AKOENHBOCOD)
+	{
+		return Singleton<hardManager>.Instance.CBPPMILAGLL(AKOENHBOCOD);
+	}
+
+	public static bool NHJCNJBKDMK(string AKOENHBOCOD)
+	{
+		return Singleton<hardManager>.Instance.CHAJOGCCKDA(AKOENHBOCOD);
+	}
+
+	public static void OCCLMHJBMHF()
 	{
 		Singleton<hardManager>.Instance.resetSavedKeys();
 	}
 
-	public static void JONAFAINKKM()
+	public static int GEHJOGNGMLB()
 	{
-		Singleton<hardManager>.Instance.JDFLEIALCNP();
+		return Singleton<hardManager>.Instance.controllerType;
 	}
 
-	public static void KNFDDKEBKJC(string MDDCBDHGNPA, bool CKLPEJDAMME, hardInputUI FEFOLHEFCKP)
+	public static void ABKPOGKCGDL(controllerType HMGBJCGOLMI)
 	{
-		Singleton<hardManager>.Instance.HKMGFPGHALH(MDDCBDHGNPA, CKLPEJDAMME, FEFOLHEFCKP);
-	}
-
-	public static void MouseLock(bool JOKLAPMFDGO)
-	{
-		Singleton<hardManager>.Instance.MouseLock(JOKLAPMFDGO);
-	}
-
-	public static void CEEHKMILMFP(controllerType HMGBJCGOLMI)
-	{
-		Singleton<hardManager>.Instance.MPIEAKCINJD(HMGBJCGOLMI);
-	}
-
-	public static float GMNJKCNIPGD(string AKOENHBOCOD, float IKOENAGPJCG)
-	{
-		return Singleton<hardManager>.Instance.GCDMKFIGIPC(AKOENHBOCOD, IKOENAGPJCG);
-	}
-
-	public static void OLLPEIBAMOG(string AKOENHBOCOD, bool DFBNBCOFIFK, KeyCode PDBIJAAEGAP)
-	{
-		Singleton<hardManager>.Instance.FGNFNHNPOHJ(AKOENHBOCOD, DFBNBCOFIFK, PDBIJAAEGAP);
-	}
-
-	public static void ALPEDOCMBGL(controllerType HMGBJCGOLMI)
-	{
-		Singleton<hardManager>.Instance.HJMOHHOAEHL(HMGBJCGOLMI);
-	}
-
-	public static controllerType IGGONOJJBLD()
-	{
-		switch (Singleton<hardManager>.Instance.controllerType)
-		{
-		default:
-			return controllerType.PS3;
-		case 1:
-			return controllerType.PS3;
-		case 2:
-			return controllerType.PS3;
-		case 3:
-			return (controllerType)8;
-		}
-	}
-
-	public static void GLPGDEKMIGI(bool CGCEBPNHLIP)
-	{
-		Singleton<hardManager>.Instance.LOAPPGBKBIE(CGCEBPNHLIP);
-	}
-
-	public static void HBJILCLJEDH(bool JOKLAPMFDGO)
-	{
-		Singleton<hardManager>.Instance.GJKHADOOHAG(JOKLAPMFDGO);
-	}
-
-	public static float JLPPEGBDNKA(string AKOENHBOCOD, string CBHEHDPFFGE, float IKOENAGPJCG)
-	{
-		return Singleton<hardManager>.Instance.GetAxis(AKOENHBOCOD, CBHEHDPFFGE, IKOENAGPJCG);
-	}
-
-	public static float GetAxis(string AKOENHBOCOD, float IKOENAGPJCG)
-	{
-		return Singleton<hardManager>.Instance.GetAxis(AKOENHBOCOD, IKOENAGPJCG);
-	}
-
-	public static void HIOAICLAMNA(string AKOENHBOCOD, bool DFBNBCOFIFK, KeyCode PDBIJAAEGAP)
-	{
-		Singleton<hardManager>.Instance.FGNFNHNPOHJ(AKOENHBOCOD, DFBNBCOFIFK, PDBIJAAEGAP);
-	}
-
-	public static void EAIKAGGFJNI(bool JOKLAPMFDGO)
-	{
-		Singleton<hardManager>.Instance.MouseLock(JOKLAPMFDGO);
-	}
-
-	public static void MouseVisible(bool CGCEBPNHLIP)
-	{
-		Singleton<hardManager>.Instance.MouseVisble(CGCEBPNHLIP);
+		Singleton<hardManager>.Instance.LBBAGIOGKHL(HMGBJCGOLMI);
 	}
 }

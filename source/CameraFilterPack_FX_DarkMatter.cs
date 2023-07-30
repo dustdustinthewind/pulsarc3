@@ -94,15 +94,15 @@ public class CameraFilterPack_FX_DarkMatter : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1197f;
 			}
-			DNLMFEGJJDD().SetFloat("F3", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("\n", Speed);
-			DBOLLHHMKKN().SetFloat("No child content found, exiting..", Intensity);
-			NBPKMLMCHFN.SetFloat("StartButton", PosX);
-			OIMMPLPBLBK().SetFloat("_BlurParams", PosY);
-			OIMMPLPBLBK().SetFloat("_TimeX", Zoom);
-			DNLMFEGJJDD().SetFloat("settings.arcsnohitsoundtimedelay", DarkIntensity);
-			DBOLLHHMKKN().SetVector("CameraFilterPack/Blur_Movie", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1855f, 1499f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			NBPKMLMCHFN.SetFloat("F3", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat("]", Speed);
+			DBOLLHHMKKN().SetFloat("Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results", Intensity);
+			DBOLLHHMKKN().SetFloat(" joined", PosX);
+			OIMMPLPBLBK().SetFloat("_SpawnHeuristic", PosY);
+			DNLMFEGJJDD().SetFloat("CameraFilterPack/TV_Posterize", Zoom);
+			OIMMPLPBLBK().SetFloat("settings.arcsdestroydelay", DarkIntensity);
+			DBOLLHHMKKN().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1855f, 1499f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -130,15 +130,15 @@ public class CameraFilterPack_FX_DarkMatter : MonoBehaviour
 			{
 				HBJJOCHGOPH = 485f;
 			}
-			DBOLLHHMKKN().SetFloat(": ", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("CameraFilterPack/Blur_Blurry", Speed);
-			DNLMFEGJJDD().SetFloat("Tried to Initialize the SteamAPI twice in one session!", Intensity);
-			DNLMFEGJJDD().SetFloat("SetParticlesColor", PosX);
-			DBOLLHHMKKN().SetFloat("x", PosY);
-			DBOLLHHMKKN().SetFloat("#,0.00", Zoom);
+			DNLMFEGJJDD().SetFloat("[PlayerController] ", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("_ScreenResolution", Speed);
+			DBOLLHHMKKN().SetFloat("???", Intensity);
+			DBOLLHHMKKN().SetFloat("SetSatelliteSensitivity", PosX);
+			OIMMPLPBLBK().SetFloat("b", PosY);
+			NBPKMLMCHFN.SetFloat("#,0", Zoom);
 			OIMMPLPBLBK().SetFloat("_Visualize", DarkIntensity);
-			DBOLLHHMKKN().SetVector("_EmissionColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 884f, 1781f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			DBOLLHHMKKN().SetVector("/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 884f, 1781f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -167,15 +167,15 @@ public class CameraFilterPack_FX_DarkMatter : MonoBehaviour
 			{
 				HBJJOCHGOPH = 724f;
 			}
-			DBOLLHHMKKN().SetFloat("CameraFilterPack/3D_BlackHole", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat(" | Level: ", Speed);
-			DBOLLHHMKKN().SetFloat(".icon", Intensity);
-			NBPKMLMCHFN.SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", PosX);
-			OIMMPLPBLBK().SetFloat("#updateoutdatedmap", PosY);
-			OIMMPLPBLBK().SetFloat("TimeBGSlider", Zoom);
-			DBOLLHHMKKN().SetFloat("Please attach component to a Graphical UI component", DarkIntensity);
-			NBPKMLMCHFN.SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 64f, 1836f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			OIMMPLPBLBK().SetFloat("CameraFilterPack/3D_BlackHole", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Emergency Help:", Speed);
+			NBPKMLMCHFN.SetFloat(".icon", Intensity);
+			NBPKMLMCHFN.SetFloat("Vertical", PosX);
+			NBPKMLMCHFN.SetFloat("Tab1Content", PosY);
+			DBOLLHHMKKN().SetFloat("TimeBGSlider", Zoom);
+			DBOLLHHMKKN().SetFloat("Default UI Material", DarkIntensity);
+			OIMMPLPBLBK().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 64f, 1836f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -194,7 +194,7 @@ public class CameraFilterPack_FX_DarkMatter : MonoBehaviour
 
 	private void DNNFHBOOPIN()
 	{
-		SCShader = Shader.Find(" to: ");
+		SCShader = Shader.Find(" from: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -203,7 +203,7 @@ public class CameraFilterPack_FX_DarkMatter : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		SCShader = Shader.Find("Have you fully accept the terms?");
+		SCShader = Shader.Find("/files/mods_terms.pdf");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -227,15 +227,15 @@ public class CameraFilterPack_FX_DarkMatter : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1862f;
 			}
-			DNLMFEGJJDD().SetFloat("_MainTex2", HBJJOCHGOPH);
-			DNLMFEGJJDD().SetFloat("CameraFilterPack_3D_Computer1", Speed);
-			DBOLLHHMKKN().SetFloat("\" for viewID ", Intensity);
-			DNLMFEGJJDD().SetFloat("SetSatelliteSensitivity", PosX);
-			DBOLLHHMKKN().SetFloat("Texture2", PosY);
-			NBPKMLMCHFN.SetFloat("SpawnObj", Zoom);
-			DBOLLHHMKKN().SetFloat("#", DarkIntensity);
-			OIMMPLPBLBK().SetVector("HightScoreMaxPointsText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 832f, 835f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			DBOLLHHMKKN().SetFloat("_MainTex2", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack_3D_Computer1", Speed);
+			DBOLLHHMKKN().SetFloat(" Remote called.", Intensity);
+			NBPKMLMCHFN.SetFloat("Set satellite lerp speed", PosX);
+			NBPKMLMCHFN.SetFloat("Texture2", PosY);
+			NBPKMLMCHFN.SetFloat("[Up]", Zoom);
+			DNLMFEGJJDD().SetFloat("GameModeText", DarkIntensity);
+			NBPKMLMCHFN.SetVector("EndlessLoopsScoreText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 832f, 835f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{

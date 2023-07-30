@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Pixelisation/Pixelisation_Sweater")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Pixelisation/Pixelisation_Sweater")]
 public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 {
 	public Shader SCShader;
@@ -60,8 +60,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void JONGNKNLLND()
 	{
-		FPHEBLMINDA = Resources.Load("SettingsCanvas") as Texture2D;
-		SCShader = Shader.Find("Unknown player asked for PickupItems");
+		FPHEBLMINDA = Resources.Load(" x ") as Texture2D;
+		SCShader = Shader.Find("Cant ask anyone else for PickupItem spawn times.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -87,12 +87,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1610f;
 			}
-			KAFBNOBOIAJ().SetFloat(".png", HBJJOCHGOPH);
-			BFGNMFCNDBC().SetFloat("inventory.lastitemscount", Fade);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", SweaterSize);
-			OIMMPLPBLBK().SetFloat("time", _Intensity);
-			OIMMPLPBLBK().SetTexture("Left", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLOHGDECHHH());
+			EMDFHOKEGNG().SetFloat(".jpg", HBJJOCHGOPH);
+			CEKJODEAMGB().SetFloat("LoadingStatusText", Fade);
+			BFGNMFCNDBC().SetFloat("_ScreenResolution", SweaterSize);
+			BFGNMFCNDBC().SetFloat("https://api.steampowered.com/IInventoryService/AddItem/v001", _Intensity);
+			NBPKMLMCHFN.SetTexture("Right", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
 		}
 		else
 		{
@@ -113,12 +113,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1445f;
 			}
-			GCDFNHMJMIP().SetFloat(". The group number should be at least 1.", HBJJOCHGOPH);
-			BFGNMFCNDBC().SetFloat("challenges.", Fade);
-			LPDOGGFOBDH().SetFloat("22x3", SweaterSize);
-			NBPKMLMCHFN.SetFloat("_Value2", _Intensity);
-			LPDOGGFOBDH().SetTexture("CameraFilterPack/Drawing_Laplacian", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			GCDFNHMJMIP().SetFloat("Unsupported target enum: ", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("challenges.", Fade);
+			EMDFHOKEGNG().SetFloat("3;4;9;10;21x6", SweaterSize);
+			BFGNMFCNDBC().SetFloat("_Value2", _Intensity);
+			NBPKMLMCHFN.SetTexture("CameraFilterPack/Drawing_Laplacian", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
 		}
 		else
 		{
@@ -140,8 +140,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void MJEFMIPLFAB()
 	{
-		FPHEBLMINDA = Resources.Load("x") as Texture2D;
-		SCShader = Shader.Find("Bad parameters for reset! Use \"reset <challengeid>\"");
+		FPHEBLMINDA = Resources.Load("b") as Texture2D;
+		SCShader = Shader.Find("resetall");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -165,12 +165,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 889f;
 			}
-			DBOLLHHMKKN().SetFloat("_TapMedium", HBJJOCHGOPH);
-			FLOHGDECHHH().SetFloat("_Intensity", Fade);
-			BFGNMFCNDBC().SetFloat(".lastCheckpoint.powerupsScore", SweaterSize);
-			LPDOGGFOBDH().SetFloat("elapsed: {0:0.000}", _Intensity);
-			LONNIJMNKFB().SetTexture("Received RPC: ", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
+			CEKJODEAMGB().SetFloat("_TapLow", HBJJOCHGOPH);
+			CEKJODEAMGB().SetFloat("_PrefilterOffs", Fade);
+			FLOHGDECHHH().SetFloat(".lastCheckpoint.maxLongestCombo", SweaterSize);
+			NFMGLIKNOOC().SetFloat("st", _Intensity);
+			IGIAPKPKGPK().SetTexture(". The RPC has been ignored.", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLOHGDECHHH());
 		}
 		else
 		{
@@ -191,8 +191,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void NNFMIAFHMJM()
 	{
-		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
-		SCShader = Shader.Find("_BlurCoe");
+		FPHEBLMINDA = Resources.Load("_Value") as Texture2D;
+		SCShader = Shader.Find("_Offsets");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -220,8 +220,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void CHOPDIGHJNH()
 	{
-		FPHEBLMINDA = Resources.Load("[Up]") as Texture2D;
-		SCShader = Shader.Find("CameraFilterPack/Blur_Noise");
+		FPHEBLMINDA = Resources.Load("Gameplay/satellite") as Texture2D;
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -237,12 +237,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 117f;
 			}
-			LPDOGGFOBDH().SetFloat("Room: '{0}' {1},{2} {4}/{3} players.", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack_Paper3", Fade);
+			DBOLLHHMKKN().SetFloat("open", HBJJOCHGOPH);
+			LPDOGGFOBDH().SetFloat("_MainTex2", Fade);
 			EMDFHOKEGNG().SetFloat("LastHighScoreText", SweaterSize);
-			DBOLLHHMKKN().SetFloat(":</b> ", _Intensity);
-			NBPKMLMCHFN.SetTexture("_Value", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			CEKJODEAMGB().SetFloat("[#clicktogetreward]", _Intensity);
+			EMDFHOKEGNG().SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -261,7 +261,7 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 	private void FBPHNEJBDJN()
 	{
 		FPHEBLMINDA = Resources.Load("CameraFilterPack/3D_Myst") as Texture2D;
-		SCShader = Shader.Find("Scrollbar");
+		SCShader = Shader.Find("Overlay");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -271,7 +271,7 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 	private void JKFDDNMPOJH()
 	{
 		FPHEBLMINDA = Resources.Load("settings.disablestoryboard") as Texture2D;
-		SCShader = Shader.Find("Sent count: ");
+		SCShader = Shader.Find(" timeUntilRespawn: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -287,12 +287,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1681f;
 			}
-			OIMMPLPBLBK().SetFloat("Set Particles Color", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("_Bullet_5", Fade);
-			NFMGLIKNOOC().SetFloat("ItemNameText", SweaterSize);
-			EMDFHOKEGNG().SetFloat("TwoHands", _Intensity);
-			BFGNMFCNDBC().SetTexture("OK", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			KAFBNOBOIAJ().SetFloat("SetParticlesColor", HBJJOCHGOPH);
+			CEKJODEAMGB().SetFloat("_Bullet_4", Fade);
+			EOCCJGIGEGJ().SetFloat("ItemNameBGImage", SweaterSize);
+			EOCCJGIGEGJ().SetFloat("OneHand", _Intensity);
+			CEKJODEAMGB().SetTexture("OK", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -306,8 +306,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void JHANGPCOCIG()
 	{
-		FPHEBLMINDA = Resources.Load("steamid") as Texture2D;
-		SCShader = Shader.Find("sounds/hit_wrong");
+		FPHEBLMINDA = Resources.Load("ERROR") as Texture2D;
+		SCShader = Shader.Find("skin.no_hit");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -373,12 +373,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 911f;
 			}
-			OIMMPLPBLBK().SetFloat("_TimeX", HBJJOCHGOPH);
-			LONNIJMNKFB().SetFloat("menu.playedsolo", Fade);
-			NFMGLIKNOOC().SetFloat("workshop.", SweaterSize);
-			LONNIJMNKFB().SetFloat("Creating new item...", _Intensity);
-			NBPKMLMCHFN.SetTexture("No Dispatcher exists in the scene. Actions will not be invoked!", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			NFMGLIKNOOC().SetFloat("CameraFilterPack/FX_superDot", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("menu.playedsolo", Fade);
+			EOCCJGIGEGJ().SetFloat("workshop.", SweaterSize);
+			CEKJODEAMGB().SetFloat("arcs", _Intensity);
+			KAFBNOBOIAJ().SetTexture("No Dispatcher exists in the scene. Actions will not be invoked!", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
 		{
@@ -418,12 +418,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 622f;
 			}
-			LONNIJMNKFB().SetFloat("Sending RPC \"", HBJJOCHGOPH);
-			FLOHGDECHHH().SetFloat("NO", Fade);
-			EOCCJGIGEGJ().SetFloat("</color>", SweaterSize);
-			OIMMPLPBLBK().SetFloat("OpJoinRandomRoom()", _Intensity);
-			NFKFAAHHLLM().SetTexture("[MapsData] Bad map: ", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			EOCCJGIGEGJ().SetFloat(" method: ", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("ACCEPT", Fade);
+			CEKJODEAMGB().SetFloat("</color>", SweaterSize);
+			DBOLLHHMKKN().SetFloat("OpCreateRoom()", _Intensity);
+			CEKJODEAMGB().SetTexture("[MapsData] Caching ", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
 		{
@@ -459,12 +459,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 182f;
 			}
-			DBOLLHHMKKN().SetFloat("_Value", HBJJOCHGOPH);
-			GCDFNHMJMIP().SetFloat("_Bullet_3", Fade);
-			KAFBNOBOIAJ().SetFloat("_Bullet_8", SweaterSize);
-			NBPKMLMCHFN.SetFloat("/icon", _Intensity);
-			KAFBNOBOIAJ().SetTexture("_TimeX", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
+			KAFBNOBOIAJ().SetFloat("_TimeX", HBJJOCHGOPH);
+			NFKFAAHHLLM().SetFloat("_Bullet_1", Fade);
+			NFKFAAHHLLM().SetFloat("_Bullet_7", SweaterSize);
+			FLOHGDECHHH().SetFloat("/icon", _Intensity);
+			KAFBNOBOIAJ().SetTexture("CameraFilterPack/Color_Sepia", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -478,8 +478,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void NPLCENPNJBM()
 	{
-		FPHEBLMINDA = Resources.Load("UseScanLineSize") as Texture2D;
-		SCShader = Shader.Find("#failed!");
+		FPHEBLMINDA = Resources.Load("GlassColor") as Texture2D;
+		SCShader = Shader.Find("Uploading preview image");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -506,12 +506,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1218f;
 			}
-			NFKFAAHHLLM().SetFloat("GlassAberration", HBJJOCHGOPH);
-			BFGNMFCNDBC().SetFloat("_Distortion", Fade);
-			KAFBNOBOIAJ().SetFloat("GlassAberration", SweaterSize);
-			BFGNMFCNDBC().SetFloat("settings.selectormapsperpage", _Intensity);
-			OIMMPLPBLBK().SetTexture("y", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
+			EMDFHOKEGNG().SetFloat("GlassDistortion", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("_Distortion", Fade);
+			EMDFHOKEGNG().SetFloat("GlassDistortion", SweaterSize);
+			NBPKMLMCHFN.SetFloat("settings.enablehitsoundsinnormal", _Intensity);
+			EMDFHOKEGNG().SetTexture("z", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -539,12 +539,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 894f;
 			}
-			EMDFHOKEGNG().SetFloat("/../", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("_Value4", Fade);
-			NBPKMLMCHFN.SetFloat("cmd.exe", SweaterSize);
-			OIMMPLPBLBK().SetFloat("_MainTex", _Intensity);
-			EMDFHOKEGNG().SetTexture("GameScene", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
+			NBPKMLMCHFN.SetFloat("/", HBJJOCHGOPH);
+			CEKJODEAMGB().SetFloat("_Value2", Fade);
+			DBOLLHHMKKN().SetFloat("cmd.exe", SweaterSize);
+			NBPKMLMCHFN.SetFloat("_SecondTex", _Intensity);
+			LPDOGGFOBDH().SetTexture("GameScene", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFKFAAHHLLM());
 		}
 		else
 		{
@@ -597,7 +597,7 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 	private void FJNCHGLIEMA()
 	{
 		FPHEBLMINDA = Resources.Load("AccuracyScoreText") as Texture2D;
-		SCShader = Shader.Find("Case-Sensitive");
+		SCShader = Shader.Find("set environment id");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -606,8 +606,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void FLKEJJEGCFA()
 	{
-		FPHEBLMINDA = Resources.Load("#getrewardnow ") as Texture2D;
-		SCShader = Shader.Find("Up ");
+		FPHEBLMINDA = Resources.Load("#timeuntilend: ") as Texture2D;
+		SCShader = Shader.Find("Up");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -623,12 +623,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1868f;
 			}
-			CEKJODEAMGB().SetFloat("action", HBJJOCHGOPH);
-			CEKJODEAMGB().SetFloat("_Blue_G", Fade);
-			FLOHGDECHHH().SetFloat("{0}", SweaterSize);
-			GCDFNHMJMIP().SetFloat("stats on", _Intensity);
-			FLOHGDECHHH().SetTexture("#yes", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLOHGDECHHH());
+			EMDFHOKEGNG().SetFloat("settings.volume.menu", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_Blue_R", Fade);
+			BFGNMFCNDBC().SetFloat("false", SweaterSize);
+			DBOLLHHMKKN().SetFloat("Out {0,4} | In {1,4} | Sum {2,4}", _Intensity);
+			KAFBNOBOIAJ().SetTexture("#useticket", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -654,8 +654,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void DLBODOFAJGM()
 	{
-		FPHEBLMINDA = Resources.Load("HighScaleShot") as Texture2D;
-		SCShader = Shader.Find("action");
+		FPHEBLMINDA = Resources.Load(").png") as Texture2D;
+		SCShader = Shader.Find("settings.volume.menu");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -664,7 +664,7 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void PMPKMGKAAJH()
 	{
-		FPHEBLMINDA = Resources.Load("_Glitch") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_TimeX") as Texture2D;
 		SCShader = Shader.Find("float,1.5");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -681,12 +681,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 200f;
 			}
-			FLOHGDECHHH().SetFloat("<b>", HBJJOCHGOPH);
-			IGIAPKPKGPK().SetFloat(". Check if the server is available.", Fade);
-			LPDOGGFOBDH().SetFloat("HightScoreMaxPointsText", SweaterSize);
-			OIMMPLPBLBK().SetFloat("Set camera (or player) distance. Base player distance - 14", _Intensity);
-			NFMGLIKNOOC().SetTexture("Fade", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
+			OIMMPLPBLBK().SetFloat("Loading...", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("The server address is 127.0.0.1 (localhost): Make sure the server is running on this machine. Android and iOS emulators have their own localhost.", Fade);
+			LONNIJMNKFB().SetFloat("HightScoreMaxPointsText", SweaterSize);
+			EMDFHOKEGNG().SetFloat("Set camera (or player) distance. Base player distance - 14", _Intensity);
+			GCDFNHMJMIP().SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
 		{
@@ -725,12 +725,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1276f;
 			}
-			EMDFHOKEGNG().SetFloat("_VignettingColor", HBJJOCHGOPH);
-			NFKFAAHHLLM().SetFloat("workshop.", Fade);
-			DBOLLHHMKKN().SetFloat("Chat", SweaterSize);
-			KAFBNOBOIAJ().SetFloat("\" for viewID ", _Intensity);
-			EOCCJGIGEGJ().SetTexture("CameraFilterPack/Real_VHS", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
+			KAFBNOBOIAJ().SetFloat("_Vignetting", HBJJOCHGOPH);
+			CEKJODEAMGB().SetFloat("workshop.", Fade);
+			GCDFNHMJMIP().SetFloat("OnPress", SweaterSize);
+			OIMMPLPBLBK().SetFloat("Could not find RPC with index: ", _Intensity);
+			FLOHGDECHHH().SetTexture("Texture2", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -744,8 +744,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		FPHEBLMINDA = Resources.Load("[LevelEditorScene] Print Audio Wave: Done") as Texture2D;
-		SCShader = Shader.Find("rd");
+		FPHEBLMINDA = Resources.Load("[LevelEditorScene] Print Audio Wave: Start") as Texture2D;
+		SCShader = Shader.Find("3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -758,7 +758,7 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void ANCKKLFPGDI()
 	{
-		FPHEBLMINDA = Resources.Load("\n") as Texture2D;
+		FPHEBLMINDA = Resources.Load("Is Clone ?: ") as Texture2D;
 		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -775,11 +775,11 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 753f;
 			}
-			GCDFNHMJMIP().SetFloat("CameraFilterPack/Glasses_On", HBJJOCHGOPH);
-			EOCCJGIGEGJ().SetFloat("Down", Fade);
-			OIMMPLPBLBK().SetFloat("Texture2", SweaterSize);
-			KAFBNOBOIAJ().SetFloat("Value", _Intensity);
-			BFGNMFCNDBC().SetTexture("_Skybox", FPHEBLMINDA);
+			FLOHGDECHHH().SetFloat("CameraFilterPack_Glasses_On5", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("Up ", Fade);
+			EMDFHOKEGNG().SetFloat("Texture2", SweaterSize);
+			EOCCJGIGEGJ().SetFloat("_TimeX", _Intensity);
+			NFKFAAHHLLM().SetTexture("_SunPosition", FPHEBLMINDA);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -809,7 +809,7 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		FPHEBLMINDA = Resources.Load(" - ") as Texture2D;
+		FPHEBLMINDA = Resources.Load("Reading preview file failed!: \"{0}\"") as Texture2D;
 		SCShader = Shader.Find("RanksButton");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -830,8 +830,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void ILCFPCIPENO()
 	{
-		FPHEBLMINDA = Resources.Load("_SSRMultiplier") as Texture2D;
-		SCShader = Shader.Find("Something is setup incorrectly with the dropdownlist component causing a Null Refernece Exception");
+		FPHEBLMINDA = Resources.Load("_FadeDistance") as Texture2D;
+		SCShader = Shader.Find("Items");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -847,12 +847,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 665f;
 			}
-			EOCCJGIGEGJ().SetFloat("_Value", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("SupportLogger OnJoinedRoom(", Fade);
-			NFMGLIKNOOC().SetFloat("Value", SweaterSize);
-			NFMGLIKNOOC().SetFloat("Can not SetMasterClient(). Not in room or in offlineMode.", _Intensity);
-			KAFBNOBOIAJ().SetTexture("InventoryButton", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			IGIAPKPKGPK().SetFloat("_Value", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("SupportLogger OnJoinedLobby(", Fade);
+			NFMGLIKNOOC().SetFloat("ScreenResolutionPanel", SweaterSize);
+			IGIAPKPKGPK().SetFloat(". No ViewIDs are free to use. Max is: ", _Intensity);
+			CEKJODEAMGB().SetTexture("InventoryButton", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -899,8 +899,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void JMEOGJHCONJ()
 	{
-		FPHEBLMINDA = Resources.Load("inventory.selected.") as Texture2D;
-		SCShader = Shader.Find("[MapsData] Base maps loaded");
+		FPHEBLMINDA = Resources.Load("shader.invert") as Texture2D;
+		SCShader = Shader.Find("[MapsData] Workshop maps was loaded");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -909,8 +909,8 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 
 	private void JILOMOBDPIA()
 	{
-		FPHEBLMINDA = Resources.Load("No info") as Texture2D;
-		SCShader = Shader.Find("_Value5");
+		FPHEBLMINDA = Resources.Load("icon.png") as Texture2D;
+		SCShader = Shader.Find("_Value4");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -931,7 +931,7 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 	private void ODBNMPGBCGO()
 	{
 		FPHEBLMINDA = Resources.Load("DisableStoryboardToggle") as Texture2D;
-		SCShader = Shader.Find("mapselector.filter.favoriteonly");
+		SCShader = Shader.Find("mapselector.filter.rateduponly");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -955,12 +955,12 @@ public class CameraFilterPack_Pixelisation_Sweater : MonoBehaviour
 			{
 				HBJJOCHGOPH = 269f;
 			}
-			DBOLLHHMKKN().SetFloat(".icon", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_History3LumaTex", Fade);
-			NFKFAAHHLLM().SetFloat("SetSunMaxSize", SweaterSize);
-			BFGNMFCNDBC().SetFloat("menu.playedsolo", _Intensity);
-			NFMGLIKNOOC().SetTexture(">", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
+			CEKJODEAMGB().SetFloat("skin.", HBJJOCHGOPH);
+			NFKFAAHHLLM().SetFloat("_History1LumaTex", Fade);
+			NBPKMLMCHFN.SetFloat("SetSunMaxSize", SweaterSize);
+			LONNIJMNKFB().SetFloat("original.tutorial", _Intensity);
+			DBOLLHHMKKN().SetTexture("file://", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{

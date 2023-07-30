@@ -11,403 +11,259 @@ public class FollowClick : MonoBehaviour
 
 	public Transform RootCanvas;
 
-	private void LCHBFNIPBHB()
+	private void IDIIELPAMCJ()
 	{
 		if (Input.GetMouseButtonDown(1))
 		{
-			CILEALNEGAI(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			NKJOOIFGNEF(RightClick);
-		}
-	}
-
-	private void CHBANIHKAFN(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 754f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void GFEKPHFDENH(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1533f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void KJFFGNHEKDA(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 813f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void AEEGKLABFLN()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			FGPNEPGJOGI(LeftClick);
+			LAIDIAGPBGO(LeftClick);
 		}
 		else if (Input.GetMouseButtonDown(0))
 		{
-			JPENMJLBKAF(RightClick);
+			KNJFMLBLOPF(RightClick);
 		}
 	}
 
-	private void EHANNFEOCKB(AnimationCurve OLGKOFKLAOP)
+	private void HELCCDAIGNE(AnimationCurve OLGKOFKLAOP)
 	{
 		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 854f);
-		if (!TweenToControl.FJFANHLGGHL())
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 721f);
+		if (!TweenToControl.JEEOPHJBDNO())
 		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.ABIPHKLOLPK(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
 		else
 		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.BBINADBINLO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		TweenToControl.OpenCloseObjectAnimation();
+		TweenToControl.BAGJNDODMCP();
 	}
 
-	private void GCPNPMELIGP(AnimationCurve OLGKOFKLAOP)
+	private void LAIDIAGPBGO(AnimationCurve OLGKOFKLAOP)
 	{
 		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 887f);
-		if (!TweenToControl.IsObjectOpened())
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 462f);
+		if (!TweenToControl.BBHGMKJBJDD())
 		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.ABIPHKLOLPK(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
 		else
 		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.ABIPHKLOLPK(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void MMBPLGGLPDB()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			HKMGEDGBGKM(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			BHNFCLDFEFD(RightClick);
-		}
-	}
-
-	private void OEENOOGEEHD()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			PHPCFLJLDCE(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			CILEALNEGAI(RightClick);
-		}
-	}
-
-	private void JBNPEHMDCMI()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			GHMCFOOAFHF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			EHANNFEOCKB(RightClick);
-		}
-	}
-
-	private void NCPAFCKGJEA()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			HKMGEDGBGKM(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			HELCCDAIGNE(RightClick);
-		}
-	}
-
-	private void IKIDIJLIGOH()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			GHMCFOOAFHF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			FGPNEPGJOGI(RightClick);
-		}
-	}
-
-	private void KNJFMLBLOPF(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 231f);
-		if (!TweenToControl.IsObjectOpened())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void JPENMJLBKAF(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1461f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void HKMGEDGBGKM(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1800f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void GHMCFOOAFHF(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 248f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void ILKFPGNBHJC(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1306f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void MECJHOJPODB()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			KJFFGNHEKDA(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			KJFFGNHEKDA(RightClick);
-		}
-	}
-
-	private void NOMCCMELEDE(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 291f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void DNENFLNCIJP()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			NKJOOIFGNEF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			FFEHADCOLPF(RightClick);
-		}
-	}
-
-	private void LEAHIBJDMBI()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			KJFFGNHEKDA(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			GCPNPMELIGP(RightClick);
-		}
-	}
-
-	private void IABHEJLDKLG(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 762f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void PBEPCAPAKLG()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			KNJFMLBLOPF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			PMEHFFIEEKI(RightClick);
-		}
+		TweenToControl.LMHFGDCFHOD();
 	}
 
 	private void OFPEHPLFBAG(AnimationCurve OLGKOFKLAOP)
 	{
 		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1913f);
-		if (!TweenToControl.IsObjectOpened())
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1165f);
+		if (!TweenToControl.JEEOPHJBDNO())
 		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.PGOIEGKLAKO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
 		else
 		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.HEGLICFNJCM(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		TweenToControl.NIOMFNEEMDF();
+		TweenToControl.DJLKKODJHNP();
 	}
 
-	private void JNMBPNPNNBN(AnimationCurve OLGKOFKLAOP)
+	private void IABHEJLDKLG(AnimationCurve OLGKOFKLAOP)
 	{
 		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 699f);
-		if (!TweenToControl.IsObjectOpened())
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1811f);
+		if (!TweenToControl.FDPFHFMNBEA())
 		{
 			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
 		else
 		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.PGOIEGKLAKO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		TweenToControl.NIOMFNEEMDF();
+		TweenToControl.DJLKKODJHNP();
 	}
 
-	private void MFMIODIAKNI()
+	private void GECFFPHCFHA(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1733f);
+		if (!TweenToControl.IsObjectOpened())
+		{
+			TweenToControl.OHDOCLGPIOE(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.AILAMHCFDOB();
+	}
+
+	private void KNJFMLBLOPF(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 327f);
+		if (!TweenToControl.FDPFHFMNBEA())
+		{
+			TweenToControl.HEGLICFNJCM(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.GIAJEMNMCDA();
+	}
+
+	private void MAOCOEGAFND()
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			GLPADIGNIJA(LeftClick);
+			JNMBPNPNNBN(LeftClick);
 		}
-		else if (Input.GetMouseButtonDown(1))
+		else if (Input.GetMouseButtonDown(0))
 		{
-			PMEHFFIEEKI(RightClick);
+			HCJGKNBCINH(RightClick);
 		}
 	}
 
-	private void FHDOICBNMNC(AnimationCurve OLGKOFKLAOP)
+	private void BLDPKPHKFHJ(AnimationCurve OLGKOFKLAOP)
 	{
 		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 83f);
-		if (!TweenToControl.IsObjectOpened())
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1353f);
+		if (!TweenToControl.BBHGMKJBJDD())
 		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.OHDOCLGPIOE(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
 		else
 		{
 			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		TweenToControl.NIOMFNEEMDF();
+		TweenToControl.ODJBGKGFCOE();
 	}
 
-	private void FFEHADCOLPF(AnimationCurve OLGKOFKLAOP)
+	private void HJIKCGAKIBL(AnimationCurve OLGKOFKLAOP)
 	{
 		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 757f);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 790f);
 		if (!TweenToControl.IsObjectOpened())
+		{
+			TweenToControl.BBINADBINLO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.HEGLICFNJCM(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.GIAJEMNMCDA();
+	}
+
+	private void HKMGEDGBGKM(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1300f);
+		if (!TweenToControl.KMCEIMLEPHI())
+		{
+			TweenToControl.BBINADBINLO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.OHDOCLGPIOE(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.BAGJNDODMCP();
+	}
+
+	private void FBMDHDBELEK()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			BLDPKPHKFHJ(LeftClick);
+		}
+		else if (Input.GetMouseButtonDown(0))
+		{
+			CCPCGOGDHIA(RightClick);
+		}
+	}
+
+	private void NEKCPLGFOFD()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			EHANNFEOCKB(LeftClick);
+		}
+		else if (Input.GetMouseButtonDown(0))
+		{
+			IKDPMFCJAIK(RightClick);
+		}
+	}
+
+	private void CFFIBEFJPMC(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 219f);
+		if (!TweenToControl.KMCEIMLEPHI())
 		{
 			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
 		else
 		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.OHDOCLGPIOE(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		TweenToControl.NIOMFNEEMDF();
+		TweenToControl.AILAMHCFDOB();
 	}
 
-	private void INBBPACAPGK(AnimationCurve OLGKOFKLAOP)
+	private void DDMJPHIKODF(AnimationCurve OLGKOFKLAOP)
 	{
 		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 205f);
-		if (!TweenToControl.IsObjectOpened())
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1206f);
+		if (!TweenToControl.HEHPNAJNACK())
+		{
+			TweenToControl.HEGLICFNJCM(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.BBINADBINLO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.BAGJNDODMCP();
+	}
+
+	private void IKDPMFCJAIK(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1738f);
+		if (!TweenToControl.FDPFHFMNBEA())
 		{
 			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
 		else
 		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+			TweenToControl.BBINADBINLO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		TweenToControl.OpenCloseObjectAnimation();
+		TweenToControl.BAGJNDODMCP();
+	}
+
+	private void CHBANIHKAFN(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1307f);
+		if (!TweenToControl.HEHPNAJNACK())
+		{
+			TweenToControl.HEGLICFNJCM(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.OHDOCLGPIOE(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.DMMEHNCIKDG();
+	}
+
+	private void GPFJMKCGHGB()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			PLDLEHLKGHG(LeftClick);
+		}
+		else if (Input.GetMouseButtonDown(0))
+		{
+			OJAJOKAJDDC(RightClick);
+		}
 	}
 
 	private void GLPADIGNIJA(AnimationCurve OLGKOFKLAOP)
@@ -425,59 +281,68 @@ public class FollowClick : MonoBehaviour
 		TweenToControl.OpenCloseObjectAnimation();
 	}
 
-	private void EHCGBJDFMHG()
+	private void CHKBAIMCILO(AnimationCurve OLGKOFKLAOP)
 	{
-		if (Input.GetMouseButtonDown(1))
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1964f);
+		if (!TweenToControl.KMCEIMLEPHI())
+		{
+			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.PGOIEGKLAKO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.OpenCloseObjectAnimation();
+	}
+
+	private void PMEHFFIEEKI(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1142f);
+		if (!TweenToControl.BBHGMKJBJDD())
+		{
+			TweenToControl.BBINADBINLO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.OHDOCLGPIOE(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.ODJBGKGFCOE();
+	}
+
+	private void CCPCGOGDHIA(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1525f);
+		if (!TweenToControl.FDPFHFMNBEA())
+		{
+			TweenToControl.OHDOCLGPIOE(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.ABIPHKLOLPK(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.GIAJEMNMCDA();
+	}
+
+	private void EJFJENFKLND()
+	{
+		if (Input.GetMouseButtonDown(0))
 		{
 			CILEALNEGAI(LeftClick);
 		}
 		else if (Input.GetMouseButtonDown(1))
 		{
-			FHDOICBNMNC(RightClick);
+			KJFFGNHEKDA(RightClick);
 		}
 	}
 
-	private void DGCGGKMNPLD()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			FGPNEPGJOGI(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			ILKFPGNBHJC(RightClick);
-		}
-	}
-
-	private void JOACBIEHHCE()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			GHMCFOOAFHF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			FHDOICBNMNC(RightClick);
-		}
-	}
-
-	private void IDIIELPAMCJ()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			DDMJPHIKODF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			GHMCFOOAFHF(RightClick);
-		}
-	}
-
-	private void ANKECMMLNOP(AnimationCurve OLGKOFKLAOP)
+	private void CILEALNEGAI(AnimationCurve OLGKOFKLAOP)
 	{
 		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1724f);
-		if (!TweenToControl.FJFANHLGGHL())
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 137f);
+		if (!TweenToControl.FDPFHFMNBEA())
 		{
 			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
@@ -485,91 +350,250 @@ public class FollowClick : MonoBehaviour
 		{
 			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
+		TweenToControl.GIAJEMNMCDA();
+	}
+
+	private void KJFFGNHEKDA(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1152f);
+		if (!TweenToControl.JEEOPHJBDNO())
+		{
+			TweenToControl.HEGLICFNJCM(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.DJLKKODJHNP();
+	}
+
+	private void EHANNFEOCKB(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 769f);
+		if (!TweenToControl.IsObjectOpened())
+		{
+			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.ABIPHKLOLPK(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.LMHFGDCFHOD();
+	}
+
+	private void HLPMABFDAGL(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1809f);
+		if (!TweenToControl.IsObjectOpened())
+		{
+			TweenToControl.PGOIEGKLAKO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.PGOIEGKLAKO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.GIAJEMNMCDA();
+	}
+
+	private void JPENMJLBKAF(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 314f);
+		if (!TweenToControl.HEHPNAJNACK())
+		{
+			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.BBINADBINLO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
 		TweenToControl.OpenCloseObjectAnimation();
+	}
+
+	private void OJAJOKAJDDC(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1327f);
+		if (!TweenToControl.IsObjectOpened())
+		{
+			TweenToControl.PGOIEGKLAKO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.BBINADBINLO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.DMMEHNCIKDG();
+	}
+
+	private void HCJGKNBCINH(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1285f);
+		if (!TweenToControl.FDPFHFMNBEA())
+		{
+			TweenToControl.PGOIEGKLAKO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.OHDOCLGPIOE(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.OpenCloseObjectAnimation();
+	}
+
+	private void DPIPGGDNGHN()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			HLPMABFDAGL(LeftClick);
+		}
+		else if (Input.GetMouseButtonDown(1))
+		{
+			IABHEJLDKLG(RightClick);
+		}
+	}
+
+	private void MFMIODIAKNI()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			ANKECMMLNOP(LeftClick);
+		}
+		else if (Input.GetMouseButtonDown(0))
+		{
+			PMEHFFIEEKI(RightClick);
+		}
+	}
+
+	private void ANKECMMLNOP(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 776f);
+		if (!TweenToControl.KMCEIMLEPHI())
+		{
+			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.DJLKKODJHNP();
+	}
+
+	private void ANJNEJPDBMI(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1646f);
+		if (!TweenToControl.FDPFHFMNBEA())
+		{
+			TweenToControl.PGOIEGKLAKO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.DMMEHNCIKDG();
+	}
+
+	private void PLDLEHLKGHG(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 941f);
+		if (!TweenToControl.FDPFHFMNBEA())
+		{
+			TweenToControl.OHDOCLGPIOE(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.OHDOCLGPIOE(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.BAGJNDODMCP();
 	}
 
 	private void LPMINJJPDCH()
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			GCPNPMELIGP(LeftClick);
+			HKMGEDGBGKM(LeftClick);
 		}
 		else if (Input.GetMouseButtonDown(0))
 		{
-			CHBANIHKAFN(RightClick);
+			KNJFMLBLOPF(RightClick);
 		}
 	}
 
-	private void MJNPIDGNJMK()
+	private void JNMBPNPNNBN(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 574f);
+		if (!TweenToControl.KMCEIMLEPHI())
+		{
+			TweenToControl.ABIPHKLOLPK(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.HEGLICFNJCM(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.OpenCloseObjectAnimation();
+	}
+
+	private void DBCOKDJBCAK(AnimationCurve OLGKOFKLAOP)
+	{
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 743f);
+		if (!TweenToControl.JEEOPHJBDNO())
+		{
+			TweenToControl.HEGLICFNJCM(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		else
+		{
+			TweenToControl.HEGLICFNJCM(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
+		}
+		TweenToControl.DJLKKODJHNP();
+	}
+
+	private void OEENOOGEEHD()
 	{
 		if (Input.GetMouseButtonDown(1))
 		{
-			NKJOOIFGNEF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			OFPEHPLFBAG(RightClick);
-		}
-	}
-
-	private void GPFJMKCGHGB()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			HKMGEDGBGKM(LeftClick);
+			EHANNFEOCKB(LeftClick);
 		}
 		else if (Input.GetMouseButtonDown(1))
 		{
-			JFKEIMGOJOM(RightClick);
+			HELCCDAIGNE(RightClick);
 		}
 	}
 
-	private void LMBDNPLDGIJ()
+	private void INBBPACAPGK(AnimationCurve OLGKOFKLAOP)
 	{
-		if (Input.GetMouseButtonDown(0))
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1973f);
+		if (!TweenToControl.JEEOPHJBDNO())
 		{
-			KJFFGNHEKDA(LeftClick);
+			TweenToControl.BBINADBINLO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		else if (Input.GetMouseButtonDown(0))
+		else
 		{
-			BHNFCLDFEFD(RightClick);
+			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
+		TweenToControl.ODJBGKGFCOE();
 	}
 
-	private void FABMDEHEDNO()
+	private void FGPNEPGJOGI(AnimationCurve OLGKOFKLAOP)
 	{
-		if (Input.GetMouseButtonDown(0))
+		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1399f);
+		if (!TweenToControl.IsObjectOpened())
 		{
-			FGPNEPGJOGI(LeftClick);
+			TweenToControl.BBINADBINLO(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-		else if (Input.GetMouseButtonDown(0))
+		else
 		{
-			IKDPMFCJAIK(RightClick);
+			TweenToControl.BBINADBINLO(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
 		}
-	}
-
-	private void HDDECCMEJKA()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			FHDOICBNMNC(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			GFEKPHFDENH(RightClick);
-		}
-	}
-
-	private void EGEGNHLODAA()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			IKDPMFCJAIK(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			KJFFGNHEKDA(RightClick);
-		}
+		TweenToControl.DMMEHNCIKDG();
 	}
 
 	private void Update()
@@ -584,205 +608,19 @@ public class FollowClick : MonoBehaviour
 		}
 	}
 
-	private void FBMDHDBELEK()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			NKJOOIFGNEF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			FFEHADCOLPF(RightClick);
-		}
-	}
-
-	private void LJIHHJOAJCN()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			CILEALNEGAI(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			FGPNEPGJOGI(RightClick);
-		}
-	}
-
-	private void AIJGAJIOJDJ()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			PHPCFLJLDCE(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			CHBANIHKAFN(RightClick);
-		}
-	}
-
-	private void NEKCPLGFOFD()
+	private void JBNPEHMDCMI()
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			NOMCCMELEDE(LeftClick);
+			BLDPKPHKFHJ(LeftClick);
 		}
 		else if (Input.GetMouseButtonDown(1))
 		{
-			INBBPACAPGK(RightClick);
+			CILEALNEGAI(RightClick);
 		}
 	}
 
-	private void KIEJKBNBHMD()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			GHMCFOOAFHF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			EHANNFEOCKB(RightClick);
-		}
-	}
-
-	private void BMODOIJGIOO()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			OFPEHPLFBAG(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			KJFFGNHEKDA(RightClick);
-		}
-	}
-
-	private void NKJOOIFGNEF(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1867f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void OCMKCBBCEFG()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			JFKEIMGOJOM(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			PLDLEHLKGHG(RightClick);
-		}
-	}
-
-	private void FGPNEPGJOGI(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1465f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void DDMJPHIKODF(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1974f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void CILEALNEGAI(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 632f);
-		if (!TweenToControl.IsObjectOpened())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void AGMJDGHLBMN()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			NOMCCMELEDE(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			FGPNEPGJOGI(RightClick);
-		}
-	}
-
-	private void AAPKBNDHBLI()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			NOMCCMELEDE(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(0))
-		{
-			OFPEHPLFBAG(RightClick);
-		}
-	}
-
-	private void PLDLEHLKGHG(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1552f);
-		if (!TweenToControl.IsObjectOpened())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void HELCCDAIGNE(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 348f);
-		if (!TweenToControl.IsObjectOpened())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void MAOCOEGAFND()
+	private void LLJLDLLNFBH()
 	{
 		if (Input.GetMouseButtonDown(1))
 		{
@@ -790,130 +628,7 @@ public class FollowClick : MonoBehaviour
 		}
 		else if (Input.GetMouseButtonDown(1))
 		{
-			FGPNEPGJOGI(RightClick);
+			OFPEHPLFBAG(RightClick);
 		}
-	}
-
-	private void BHNFCLDFEFD(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 718f);
-		if (!TweenToControl.IsObjectOpened())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void PMEHFFIEEKI(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1382f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void AEIJFLJEABG()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			KJFFGNHEKDA(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			NOMCCMELEDE(RightClick);
-		}
-	}
-
-	private void IKDPMFCJAIK(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 118f);
-		if (!TweenToControl.IsObjectOpened())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
-	}
-
-	private void PHPCFLJLDCE(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 331f);
-		if (!TweenToControl.FJFANHLGGHL())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.NIOMFNEEMDF();
-	}
-
-	private void ONMGIPAILOH()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			HKMGEDGBGKM(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			IKDPMFCJAIK(RightClick);
-		}
-	}
-
-	private void HPNNCNNFMGK()
-	{
-		if (Input.GetMouseButtonDown(1))
-		{
-			GHMCFOOAFHF(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			PHPCFLJLDCE(RightClick);
-		}
-	}
-
-	private void JDGFCEPDKAJ()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			FGPNEPGJOGI(LeftClick);
-		}
-		else if (Input.GetMouseButtonDown(1))
-		{
-			BHNFCLDFEFD(RightClick);
-		}
-	}
-
-	private void JFKEIMGOJOM(AnimationCurve OLGKOFKLAOP)
-	{
-		Vector3 vector = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		vector = new Vector3(vector.x * (float)Screen.width / RootCanvas.localScale.x, vector.y * (float)Screen.height / RootCanvas.localScale.y, 1582f);
-		if (!TweenToControl.IsObjectOpened())
-		{
-			TweenToControl.SetAnimationPosition(TweenToControl.rectTransform.anchoredPosition, vector, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		else
-		{
-			TweenToControl.SetAnimationPosition(vector, TweenToControl.rectTransform.anchoredPosition, OLGKOFKLAOP, OLGKOFKLAOP);
-		}
-		TweenToControl.OpenCloseObjectAnimation();
 	}
 }

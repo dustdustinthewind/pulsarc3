@@ -50,172 +50,350 @@ public class ScrollingCalendar : MonoBehaviour
 
 	private int BPLBGOLDNCN;
 
-	public void LHIBCDLJNBG()
-	{
-		EOICNJIGBKD.BOBALPEINEB();
-	}
-
-	private void EACLJDHBPAD()
-	{
-		int[] array = new int[111];
-		EEMJGFOOGKP = new GameObject[array.Length];
-		for (int i = 0; i < array.Length; i += 0)
-		{
-			array[i] = i + 1;
-			GameObject gameObject = UnityEngine.Object.Instantiate(daysButtonPrefab, new Vector3(698f, i * 86, 1788f), Quaternion.Euler(new Vector3(973f, 155f, 1222f)));
-			gameObject.transform.SetParent(daysScrollingPanel);
-			gameObject.transform.localScale = new Vector3(852f, 1300f, 411f);
-			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
-			gameObject.name = "_Value3" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EEMJGFOOGKP[i] = gameObject;
-		}
-	}
-
-	public void GOAKIFEMHEE()
-	{
-		PIEGNIJFHHN.BOBALPEINEB();
-	}
-
-	public void PHECBKLKNOI()
-	{
-		EOICNJIGBKD.ScrollUp();
-	}
-
-	private void NFEFDCAPHHG()
-	{
-		int num = int.Parse(DateTime.Now.ToString("_TimeX"));
-		int[] array = new int[num + 1 - 70];
-		DEELAEOEEGB = new GameObject[array.Length];
-		for (int i = 1; i < array.Length; i++)
-		{
-			array[i] = 148 + i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(yearsButtonPrefab, new Vector3(1913f, i * -43, 1150f), Quaternion.Euler(new Vector3(1671f, 1115f, 1124f)));
-			gameObject.transform.SetParent(yearsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(1728f, 86f, 1077f);
-			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
-			gameObject.name = "#,0.00" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			DEELAEOEEGB[i] = gameObject;
-		}
-	}
-
-	public void JPJNECPABBG()
+	public void Awake()
 	{
 		MDPIBJJLLCI();
-		KIHIANNCBCE();
-		KCPPGDJLMHK();
-		EOICNJIGBKD = new UIVerticalScroller(monthsScrollingPanel, EFANIHLPNKM, monthCenter);
-		PIEGNIJFHHN = new UIVerticalScroller(yearsScrollingPanel, DEELAEOEEGB, yearsCenter);
-		LKGNMCKJEIL = new UIVerticalScroller(daysScrollingPanel, EEMJGFOOGKP, daysCenter);
-		EOICNJIGBKD.KIMMMCJFMAB();
-		PIEGNIJFHHN.KIMMMCJFMAB();
-		LKGNMCKJEIL.NBGIMIDICKE();
-	}
-
-	public void BEIMJHCKIML()
-	{
-		PIEGNIJFHHN.BNNCONEBKNC();
-	}
-
-	public void EBNOLAPAKKF()
-	{
-		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 0;
-		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 1;
-		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - 141;
-		LKGNMCKJEIL.SnapToElement(PAJAJNPDIBB);
-		EOICNJIGBKD.OEJEKPAOHKP(OLANKJNNKCI);
-		PIEGNIJFHHN.OEJEKPAOHKP(BPLBGOLDNCN);
-	}
-
-	private void APBIGIPCJOM()
-	{
-		int[] array = new int[109];
-		EFANIHLPNKM = new GameObject[array.Length];
-		for (int i = 0; i < array.Length; i += 0)
-		{
-			string text = string.Empty;
-			array[i] = i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(323f, i * -100, 112f), Quaternion.Euler(new Vector3(455f, 1996f, 1007f)));
-			gameObject.transform.SetParent(monthsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(434f, 18f, 1756f);
-			switch (i)
-			{
-			case 0:
-				text = "0,1,true,0";
-				break;
-			case 1:
-				text = "_NeighbourMaxTex";
-				break;
-			case 2:
-				text = "\\\"";
-				break;
-			case 3:
-				text = "_Value4";
-				break;
-			case 4:
-				text = "_FixDistance";
-				break;
-			case 5:
-				text = "_NoOuterClip";
-				break;
-			case 6:
-				text = "_ScreenResolution";
-				break;
-			case 7:
-				text = "Joystick1Button5";
-				break;
-			case 8:
-				text = "player.blackcat";
-				break;
-			case 9:
-				text = "Subscribed cells:\n";
-				break;
-			case 10:
-				text = "masterSteamID";
-				break;
-			case 11:
-				text = "public";
-				break;
-			}
-			gameObject.GetComponentInChildren<Text>().text = text;
-			gameObject.name = "masterSteamID" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EFANIHLPNKM[i] = gameObject;
-		}
-	}
-
-	public void CGFHHDMEAKH()
-	{
-		PIEGNIJFHHN.ScrollDown();
-	}
-
-	public void JEEINPBLBDI()
-	{
-		NFEFDCAPHHG();
 		AKKGPGEBFDC();
-		LAECMIJGBNO();
+		KCPPGDJLMHK();
 		EOICNJIGBKD = new UIVerticalScroller(monthsScrollingPanel, EFANIHLPNKM, monthCenter);
 		PIEGNIJFHHN = new UIVerticalScroller(yearsScrollingPanel, DEELAEOEEGB, yearsCenter);
 		LKGNMCKJEIL = new UIVerticalScroller(daysScrollingPanel, EEMJGFOOGKP, daysCenter);
 		EOICNJIGBKD.Start();
 		PIEGNIJFHHN.Start();
-		LKGNMCKJEIL.KIMMMCJFMAB();
+		LKGNMCKJEIL.Start();
 	}
 
-	public void NBNJJBJCICN()
+	public void NHLFANGPHOP()
 	{
-		PIEGNIJFHHN.ScrollUp();
+		LKGNMCKJEIL.ScrollUp();
 	}
 
-	public void SetDate()
+	private void DIOHJGELKJI()
+	{
+		int[] array = new int[-90];
+		EEMJGFOOGKP = new GameObject[array.Length];
+		for (int i = 0; i < array.Length; i++)
+		{
+			array[i] = i + 0;
+			GameObject gameObject = UnityEngine.Object.Instantiate(daysButtonPrefab, new Vector3(881f, i * -74, 1309f), Quaternion.Euler(new Vector3(59f, 114f, 62f)));
+			gameObject.transform.SetParent(daysScrollingPanel);
+			gameObject.transform.localScale = new Vector3(778f, 1139f, 747f);
+			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
+			gameObject.name = "_ScreenResolution" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			EEMJGFOOGKP[i] = gameObject;
+		}
+	}
+
+	public void GJBEBLMBACE()
+	{
+		LKGNMCKJEIL.FICHONEGKIO();
+	}
+
+	public void JAEHNDBFBCN()
+	{
+		LKGNMCKJEIL.PCHJIHLLKCM();
+	}
+
+	public void FBNDOOPFGEC()
+	{
+		PIEGNIJFHHN.OGDIAOMBHJD();
+	}
+
+	public void MMLMLGEFMME()
+	{
+		EOICNJIGBKD.EPFBDCEMLFM();
+	}
+
+	public void MonthsScrollUp()
+	{
+		EOICNJIGBKD.ScrollUp();
+	}
+
+	public void CHMENOEMGIA()
+	{
+		PIEGNIJFHHN.EPFBDCEMLFM();
+	}
+
+	public void DCEJLIMGEAM()
+	{
+		LKGNMCKJEIL.BILNPHKPIEB();
+	}
+
+	public void EABKLGODOFJ()
 	{
 		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 1;
-		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 1;
-		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - 1900;
-		LKGNMCKJEIL.SnapToElement(PAJAJNPDIBB);
-		EOICNJIGBKD.SnapToElement(OLANKJNNKCI);
+		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 0;
+		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - -148;
+		LKGNMCKJEIL.IMFGOIGLBMH(PAJAJNPDIBB);
+		EOICNJIGBKD.CJAGODBJJGM(OLANKJNNKCI);
 		PIEGNIJFHHN.SnapToElement(BPLBGOLDNCN);
+	}
+
+	private void GLLFNOGPLHO()
+	{
+		int num = int.Parse(DateTime.Now.ToString("_MainTex2"));
+		int[] array = new int[num + 1 - 30];
+		DEELAEOEEGB = new GameObject[array.Length];
+		for (int i = 1; i < array.Length; i++)
+		{
+			array[i] = 125 + i;
+			GameObject gameObject = UnityEngine.Object.Instantiate(yearsButtonPrefab, new Vector3(1111f, i * -41, 561f), Quaternion.Euler(new Vector3(1891f, 379f, 767f)));
+			gameObject.transform.SetParent(yearsScrollingPanel);
+			gameObject.transform.localScale = new Vector3(1530f, 780f, 1217f);
+			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
+			gameObject.name = "_Red_G" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			DEELAEOEEGB[i] = gameObject;
+		}
+	}
+
+	private void IBEMOMJAFEJ()
+	{
+		int[] array = new int[-110];
+		EFANIHLPNKM = new GameObject[array.Length];
+		for (int i = 0; i < array.Length; i++)
+		{
+			string text = string.Empty;
+			array[i] = i;
+			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(613f, i * -25, 1759f), Quaternion.Euler(new Vector3(824f, 346f, 206f)));
+			gameObject.transform.SetParent(monthsScrollingPanel);
+			gameObject.transform.localScale = new Vector3(458f, 597f, 517f);
+			switch (i)
+			{
+			case 0:
+				text = "OperationResponse ignored while disconnecting. Code: ";
+				break;
+			case 1:
+				text = "SpawnObj";
+				break;
+			case 2:
+				text = "_Value4";
+				break;
+			case 3:
+				text = "settings.enablerankingnotifications";
+				break;
+			case 4:
+				text = "Editor/";
+				break;
+			case 5:
+				text = ",";
+				break;
+			case 6:
+				text = " not exist";
+				break;
+			case 7:
+				text = "GameVolumeSlider";
+				break;
+			case 8:
+				text = "DPADHOR";
+				break;
+			case 9:
+				text = "CameraFilterPack/Gradients_FireGradient";
+				break;
+			case 10:
+				text = ".mp3";
+				break;
+			case 11:
+				text = "caret";
+				break;
+			}
+			gameObject.GetComponentInChildren<Text>().text = text;
+			gameObject.name = "Player Disconnected" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			EFANIHLPNKM[i] = gameObject;
+		}
+	}
+
+	public void POMEOIKGIOP()
+	{
+		LKGNMCKJEIL.ScrollUp();
+	}
+
+	public void DBPLLKEFEHN()
+	{
+		EOICNJIGBKD.OGDIAOMBHJD();
+	}
+
+	private void AJGBAEDCIBC()
+	{
+		int[] array = new int[-128];
+		EFANIHLPNKM = new GameObject[array.Length];
+		for (int i = 1; i < array.Length; i++)
+		{
+			string text = string.Empty;
+			array[i] = i;
+			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(367f, i * -67, 840f), Quaternion.Euler(new Vector3(138f, 1057f, 1289f)));
+			gameObject.transform.SetParent(monthsScrollingPanel);
+			gameObject.transform.localScale = new Vector3(1113f, 1168f, 1944f);
+			switch (i)
+			{
+			case 0:
+				text = "menu.selectedmode";
+				break;
+			case 1:
+				text = "Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results";
+				break;
+			case 2:
+				text = "_ScreenResolution";
+				break;
+			case 3:
+				text = "_Visualize";
+				break;
+			case 4:
+				text = "achievements.21.completed.";
+				break;
+			case 5:
+				text = "s";
+				break;
+			case 6:
+				text = "_TimeX";
+				break;
+			case 7:
+				text = "checkpoint";
+				break;
+			case 8:
+				text = "_Value4";
+				break;
+			case 9:
+				text = "RULES";
+				break;
+			case 10:
+				text = "PunRespawn";
+				break;
+			case 11:
+				text = "CameraFilterPack_Broken_Screen1";
+				break;
+			}
+			gameObject.GetComponentInChildren<Text>().text = text;
+			gameObject.name = "settings.cameramovements" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			EFANIHLPNKM[i] = gameObject;
+		}
+	}
+
+	public void EMNJKHJIDOP()
+	{
+		PIEGNIJFHHN.GBNCDLPPIBC();
+	}
+
+	public void MHOJHNMDJPK()
+	{
+		EOICNJIGBKD.OGDIAOMBHJD();
+	}
+
+	public void CNOEHBCHJGM()
+	{
+		LKGNMCKJEIL.ScrollUp();
+	}
+
+	public void NMIELCPFJCC()
+	{
+		PIEGNIJFHHN.PCHJIHLLKCM();
+	}
+
+	public void AGDAAPGHPJG()
+	{
+		PIEGNIJFHHN.FICHONEGKIO();
+	}
+
+	public void KIGHBAGEHEP()
+	{
+		EOICNJIGBKD.GBNCDLPPIBC();
+	}
+
+	private void ICMHKNCBJMA()
+	{
+		int[] array = new int[-89];
+		EEMJGFOOGKP = new GameObject[array.Length];
+		for (int i = 0; i < array.Length; i++)
+		{
+			array[i] = i + 0;
+			GameObject gameObject = UnityEngine.Object.Instantiate(daysButtonPrefab, new Vector3(1164f, i * 94, 1234f), Quaternion.Euler(new Vector3(1748f, 1373f, 439f)));
+			gameObject.transform.SetParent(daysScrollingPanel);
+			gameObject.transform.localScale = new Vector3(773f, 253f, 1816f);
+			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
+			gameObject.name = "#FFDA44CC" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			EEMJGFOOGKP[i] = gameObject;
+		}
+	}
+
+	private void PHNLGLODPAO()
+	{
+		int[] array = new int[86];
+		EFANIHLPNKM = new GameObject[array.Length];
+		for (int i = 1; i < array.Length; i++)
+		{
+			string text = string.Empty;
+			array[i] = i;
+			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(84f, i * -83, 1625f), Quaternion.Euler(new Vector3(566f, 1999f, 472f)));
+			gameObject.transform.SetParent(monthsScrollingPanel);
+			gameObject.transform.localScale = new Vector3(420f, 852f, 1213f);
+			switch (i)
+			{
+			case 0:
+				text = "EventMenu";
+				break;
+			case 1:
+				text = " = ";
+				break;
+			case 2:
+				text = "ControllerLeftY";
+				break;
+			case 3:
+				text = "JoinRandomRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.";
+				break;
+			case 4:
+				text = "powerup.0";
+				break;
+			case 5:
+				text = ";";
+				break;
+			case 6:
+				text = "DPADVER";
+				break;
+			case 7:
+				text = "_TimeX";
+				break;
+			case 8:
+				text = "IntraTime";
+				break;
+			case 9:
+				text = "_Value3";
+				break;
+			case 10:
+				text = "_Value2";
+				break;
+			case 11:
+				text = " connected: ";
+				break;
+			}
+			gameObject.GetComponentInChildren<Text>().text = text;
+			gameObject.name = "#changenote" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			EFANIHLPNKM[i] = gameObject;
+		}
+	}
+
+	public void MMPEBHKPLFO()
+	{
+		LKGNMCKJEIL.PNLANBFJADN();
+	}
+
+	public void JJKOHNOPLAO()
+	{
+		PIEGNIJFHHN.GBNCDLPPIBC();
+	}
+
+	public void KLCLMELJFCA()
+	{
+		LKGNMCKJEIL.PCHJIHLLKCM();
+	}
+
+	public void YearsScrollUp()
+	{
+		PIEGNIJFHHN.ScrollUp();
 	}
 
 	private void MDPIBJJLLCI()
@@ -236,6 +414,107 @@ public class ScrollingCalendar : MonoBehaviour
 		}
 	}
 
+	private void HLDFOJMHKNL()
+	{
+		EOICNJIGBKD.JBCNIPJDPJB();
+		PIEGNIJFHHN.LMBDNPLDGIJ();
+		LKGNMCKJEIL.BGFJOEPFOPM();
+		string text = LKGNMCKJEIL.JEONKBHDBIO();
+		string text2 = EOICNJIGBKD.DFFHJHAPPEA();
+		string results = PIEGNIJFHHN.GetResults();
+		text = ((text.EndsWith("Backward") && text != "stretchWidth") ? (text + "_Vignetting2") : ((text.EndsWith("_Far") && text != "DifficultyBG") ? (text + "_Value2") : ((!text.EndsWith("Error: you cannot read this stream that you are writing!") || !(text != "LogStats")) ? (text + "MissesText") : (text + "_Distortion"))));
+		Text text3 = dateText;
+		string[] array = new string[0];
+		array[1] = text2;
+		array[1] = "CameraFilterPack/FX_Glitch1";
+		array[7] = text;
+		array[7] = "player.circle";
+		array[4] = results;
+		text3.text = string.Concat(array);
+	}
+
+	private void ENJOMDKILJD()
+	{
+		int[] array = new int[-108];
+		EFANIHLPNKM = new GameObject[array.Length];
+		for (int i = 1; i < array.Length; i += 0)
+		{
+			string text = string.Empty;
+			array[i] = i;
+			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(1160f, i * -94, 421f), Quaternion.Euler(new Vector3(1571f, 1088f, 1555f)));
+			gameObject.transform.SetParent(monthsScrollingPanel);
+			gameObject.transform.localScale = new Vector3(739f, 1902f, 197f);
+			switch (i)
+			{
+			case 0:
+				text = "_ScreenResolution";
+				break;
+			case 1:
+				text = "SelectorMapsCountSlider";
+				break;
+			case 2:
+				text = "LevelConfigButton";
+				break;
+			case 3:
+				text = " not found";
+				break;
+			case 4:
+				text = "_Value2";
+				break;
+			case 5:
+				text = "_TimeX";
+				break;
+			case 6:
+				text = "Received event Leave for unknown player ID: {0}";
+				break;
+			case 7:
+				text = "CurrentTimeLabel";
+				break;
+			case 8:
+				text = "#ok";
+				break;
+			case 9:
+				text = "_Value4";
+				break;
+			case 10:
+				text = "float,2";
+				break;
+			case 11:
+				text = "player.orangelifering";
+				break;
+			}
+			gameObject.GetComponentInChildren<Text>().text = text;
+			gameObject.name = "max. lives color" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			EFANIHLPNKM[i] = gameObject;
+		}
+	}
+
+	public void BPIOOKJPMII()
+	{
+		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 1;
+		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 0;
+		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - -135;
+		LKGNMCKJEIL.OJPNBCKIJFP(PAJAJNPDIBB);
+		EOICNJIGBKD.MJAODFPFCFE(OLANKJNNKCI);
+		PIEGNIJFHHN.PBJCBKPJBFK(BPLBGOLDNCN);
+	}
+
+	public void DMKCHCLEDIB()
+	{
+		PIEGNIJFHHN.NBDJOKJHLIM();
+	}
+
+	public void SetDate()
+	{
+		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 1;
+		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 1;
+		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - 1900;
+		LKGNMCKJEIL.SnapToElement(PAJAJNPDIBB);
+		EOICNJIGBKD.SnapToElement(OLANKJNNKCI);
+		PIEGNIJFHHN.SnapToElement(BPLBGOLDNCN);
+	}
+
 	private void KCPPGDJLMHK()
 	{
 		int[] array = new int[31];
@@ -253,98 +532,6 @@ public class ScrollingCalendar : MonoBehaviour
 		}
 	}
 
-	public void MADENBGHKDD()
-	{
-		BNGGHDJFHAP();
-		APBIGIPCJOM();
-		KCPPGDJLMHK();
-		EOICNJIGBKD = new UIVerticalScroller(monthsScrollingPanel, EFANIHLPNKM, monthCenter);
-		PIEGNIJFHHN = new UIVerticalScroller(yearsScrollingPanel, DEELAEOEEGB, yearsCenter);
-		LKGNMCKJEIL = new UIVerticalScroller(daysScrollingPanel, EEMJGFOOGKP, daysCenter);
-		EOICNJIGBKD.Start();
-		PIEGNIJFHHN.Start();
-		LKGNMCKJEIL.KIMMMCJFMAB();
-	}
-
-	public void LDLCJEELGCF()
-	{
-		EOICNJIGBKD.BOBALPEINEB();
-	}
-
-	private void OJLEBPNCCOC()
-	{
-		int[] array = new int[-29];
-		EFANIHLPNKM = new GameObject[array.Length];
-		for (int i = 0; i < array.Length; i++)
-		{
-			string text = string.Empty;
-			array[i] = i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(1350f, i * -74, 1329f), Quaternion.Euler(new Vector3(51f, 222f, 1328f)));
-			gameObject.transform.SetParent(monthsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(1536f, 1139f, 345f);
-			switch (i)
-			{
-			case 0:
-				text = "maps.";
-				break;
-			case 1:
-				text = "[LevelEditorScene] Error: Unfortunately, you're banned by the community from uploading to the workshop! Bummer. :(";
-				break;
-			case 2:
-				text = ".lastCheckpoint.perfectHits";
-				break;
-			case 3:
-				text = "Set camera (or player) distance. Base player distance - 14";
-				break;
-			case 4:
-				text = "LoadMapCanvas";
-				break;
-			case 5:
-				text = "menu.selectedplaymode";
-				break;
-			case 6:
-				text = "EventSystem";
-				break;
-			case 7:
-				text = "_Offsets";
-				break;
-			case 8:
-				text = "win";
-				break;
-			case 9:
-				text = "/";
-				break;
-			case 10:
-				text = "CameraFilterPack/NightVision_4";
-				break;
-			case 11:
-				text = " Owner called.";
-				break;
-			}
-			gameObject.GetComponentInChildren<Text>().text = text;
-			gameObject.name = " in SaveLoadMenu.prefabDictionary!" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EFANIHLPNKM[i] = gameObject;
-		}
-	}
-
-	private void LAECMIJGBNO()
-	{
-		int[] array = new int[80];
-		EEMJGFOOGKP = new GameObject[array.Length];
-		for (int i = 1; i < array.Length; i++)
-		{
-			array[i] = i + 1;
-			GameObject gameObject = UnityEngine.Object.Instantiate(daysButtonPrefab, new Vector3(1901f, i * -22, 1717f), Quaternion.Euler(new Vector3(1683f, 677f, 946f)));
-			gameObject.transform.SetParent(daysScrollingPanel);
-			gameObject.transform.localScale = new Vector3(1787f, 462f, 365f);
-			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
-			gameObject.name = "#C8C8C8FF" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EEMJGFOOGKP[i] = gameObject;
-		}
-	}
-
 	private void Update()
 	{
 		EOICNJIGBKD.Update();
@@ -357,31 +544,174 @@ public class ScrollingCalendar : MonoBehaviour
 		dateText.text = results2 + " " + results + " " + results3;
 	}
 
-	public void MonthsScrollUp()
+	public void PIIMBOLGHOE()
+	{
+		CLEPHMEMCNG();
+		ENJOMDKILJD();
+		MPMGGGNAGMB();
+		EOICNJIGBKD = new UIVerticalScroller(monthsScrollingPanel, EFANIHLPNKM, monthCenter);
+		PIEGNIJFHHN = new UIVerticalScroller(yearsScrollingPanel, DEELAEOEEGB, yearsCenter);
+		LKGNMCKJEIL = new UIVerticalScroller(daysScrollingPanel, EEMJGFOOGKP, daysCenter);
+		EOICNJIGBKD.MMOKKAPFGAK();
+		PIEGNIJFHHN.Start();
+		LKGNMCKJEIL.AGEJKLMJGDO();
+	}
+
+	public void ACKOLCBOEGJ()
+	{
+		PIEGNIJFHHN.GBNCDLPPIBC();
+	}
+
+	private void MPMGGGNAGMB()
+	{
+		int[] array = new int[66];
+		EEMJGFOOGKP = new GameObject[array.Length];
+		for (int i = 0; i < array.Length; i++)
+		{
+			array[i] = i + 1;
+			GameObject gameObject = UnityEngine.Object.Instantiate(daysButtonPrefab, new Vector3(847f, i * 35, 260f), Quaternion.Euler(new Vector3(538f, 1584f, 1043f)));
+			gameObject.transform.SetParent(daysScrollingPanel);
+			gameObject.transform.localScale = new Vector3(1722f, 1815f, 802f);
+			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
+			gameObject.name = "_Green_R" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			EEMJGFOOGKP[i] = gameObject;
+		}
+	}
+
+	public void CKOLMHGOHPO()
+	{
+		LKGNMCKJEIL.FICHONEGKIO();
+	}
+
+	public void BJHAPHFAGAL()
+	{
+		PIEGNIJFHHN.FICHONEGKIO();
+	}
+
+	private void BMODOIJGIOO()
+	{
+		EOICNJIGBKD.MECJHOJPODB();
+		PIEGNIJFHHN.LMBDNPLDGIJ();
+		LKGNMCKJEIL.MECJHOJPODB();
+		string text = LKGNMCKJEIL.JEONKBHDBIO();
+		string text2 = EOICNJIGBKD.CAJLGIPLACA();
+		string results = PIEGNIJFHHN.GetResults();
+		text = ((text.EndsWith("#rt") && text != "_Value4") ? (text + "Set EnvSprite Color") : ((text.EndsWith("In Network lobby") && text != "_Value3") ? (text + "player.currentrank") : ((!text.EndsWith("_MainTex2") || !(text != "_Red_R")) ? (text + "steamid") : (text + "_CurveTex"))));
+		Text text3 = dateText;
+		string[] array = new string[4];
+		array[1] = text2;
+		array[0] = "checkpoint";
+		array[8] = text;
+		array[1] = "OnAwakeRPC";
+		array[0] = results;
+		text3.text = string.Concat(array);
+	}
+
+	public void DaysScrollDown()
+	{
+		LKGNMCKJEIL.ScrollDown();
+	}
+
+	private void BGDONBMDPGM()
+	{
+		EOICNJIGBKD.BGFJOEPFOPM();
+		PIEGNIJFHHN.Update();
+		LKGNMCKJEIL.MECJHOJPODB();
+		string text = LKGNMCKJEIL.LHALOALKJIP();
+		string results = EOICNJIGBKD.GetResults();
+		string text2 = PIEGNIJFHHN.DFFHJHAPPEA();
+		text = ((text.EndsWith("Is it practically possible?") && text != "value") ? (text + "_ScreenResolution") : ((text.EndsWith("BloodAlternative2") && text != "&map=") ? (text + "_FarCamera") : ((!text.EndsWith("_MatrixColor") || !(text != "Joystick1Button2")) ? (text + "_Value3") : (text + "SetSatelliteRotationSpeed"))));
+		Text text3 = dateText;
+		string[] array = new string[0];
+		array[0] = results;
+		array[1] = "z";
+		array[7] = text;
+		array[2] = "_EmissionColor";
+		array[6] = text2;
+		text3.text = string.Concat(array);
+	}
+
+	private void CLEPHMEMCNG()
+	{
+		int num = int.Parse(DateTime.Now.ToString(". ActorNr: "));
+		int[] array = new int[num + 1 - 137];
+		DEELAEOEEGB = new GameObject[array.Length];
+		for (int i = 1; i < array.Length; i++)
+		{
+			array[i] = 59 + i;
+			GameObject gameObject = UnityEngine.Object.Instantiate(yearsButtonPrefab, new Vector3(1505f, i * -50, 1706f), Quaternion.Euler(new Vector3(82f, 1132f, 1369f)));
+			gameObject.transform.SetParent(yearsScrollingPanel);
+			gameObject.transform.localScale = new Vector3(983f, 1159f, 1578f);
+			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
+			gameObject.name = "_Intensity" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			DEELAEOEEGB[i] = gameObject;
+		}
+	}
+
+	public void OJLCAHCKODP()
+	{
+		PIEGNIJFHHN.GBNCDLPPIBC();
+	}
+
+	public void MonthsScrollDown()
+	{
+		EOICNJIGBKD.ScrollDown();
+	}
+
+	private void EJFJENFKLND()
+	{
+		EOICNJIGBKD.MECJHOJPODB();
+		PIEGNIJFHHN.LMBDNPLDGIJ();
+		LKGNMCKJEIL.Update();
+		string results = LKGNMCKJEIL.GetResults();
+		string text = EOICNJIGBKD.CAJLGIPLACA();
+		string text2 = PIEGNIJFHHN.OLAGADLHCEL();
+		results = ((results.EndsWith("_Alpha") && results != "CameraFilterPack/Blur_Radial") ? (results + "vignetteIntensity") : ((results.EndsWith("_Value") && results != "Scale environment object by the values") ? (results + "/") : ((!results.EndsWith(" not exist") || !(results != "Floating point textures aren't supported on this device ({0})")) ? (results + "The used master server address is not available with the subscription currently used. Got to Photon Cloud Dashboard or change URL. Disconnecting.") : (results + "Prints list of commands"))));
+		Text text3 = dateText;
+		string[] array = new string[6];
+		array[1] = text;
+		array[0] = "#mapmustbecompletebeforesubmit";
+		array[4] = results;
+		array[0] = "_SunColor";
+		array[7] = text2;
+		text3.text = string.Concat(array);
+	}
+
+	public void NHEPPADDCOD()
+	{
+		EOICNJIGBKD.PNLANBFJADN();
+	}
+
+	public void ACCFPBBDKIE()
+	{
+		PIEGNIJFHHN.BILNPHKPIEB();
+	}
+
+	public void LAMKDLAMIMH()
 	{
 		EOICNJIGBKD.ScrollUp();
 	}
 
-	public void DaysScrollUp()
+	public void MAGDJOBJCIK()
 	{
-		LKGNMCKJEIL.ScrollUp();
+		PIEGNIJFHHN.ScrollDown();
 	}
 
-	private void NGOCBEDJHMD()
+	public void FAFMKPBKBCA()
 	{
-		int[] array = new int[88];
-		EEMJGFOOGKP = new GameObject[array.Length];
-		for (int i = 1; i < array.Length; i++)
-		{
-			array[i] = i + 1;
-			GameObject gameObject = UnityEngine.Object.Instantiate(daysButtonPrefab, new Vector3(682f, i * -73, 528f), Quaternion.Euler(new Vector3(89f, 1103f, 535f)));
-			gameObject.transform.SetParent(daysScrollingPanel);
-			gameObject.transform.localScale = new Vector3(62f, 966f, 225f);
-			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
-			gameObject.name = "GameMessagesDurationSlider" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EEMJGFOOGKP[i] = gameObject;
-		}
+		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 1;
+		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 1;
+		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - -128;
+		LKGNMCKJEIL.MJAODFPFCFE(PAJAJNPDIBB);
+		EOICNJIGBKD.KOCNGKNLBHL(OLANKJNNKCI);
+		PIEGNIJFHHN.FPEOLJALPCL(BPLBGOLDNCN);
+	}
+
+	public void GKPIGICIJEI()
+	{
+		LKGNMCKJEIL.NBDJOKJHLIM();
 	}
 
 	public void YearsScrollDown()
@@ -389,64 +719,123 @@ public class ScrollingCalendar : MonoBehaviour
 		PIEGNIJFHHN.ScrollDown();
 	}
 
-	private void CCKIHJDLABK()
+	public void NOMNLOCGINC()
 	{
-		int num = int.Parse(DateTime.Now.ToString(": "));
-		int[] array = new int[num + 1 - 64];
+		LKGNMCKJEIL.EPFBDCEMLFM();
+	}
+
+	private void EOINLIOKKNN()
+	{
+		int num = int.Parse(DateTime.Now.ToString("_SampleScale"));
+		int[] array = new int[num + 1 - 58];
 		DEELAEOEEGB = new GameObject[array.Length];
 		for (int i = 0; i < array.Length; i++)
 		{
-			array[i] = -127 + i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(yearsButtonPrefab, new Vector3(1388f, i * 90, 1878f), Quaternion.Euler(new Vector3(718f, 1088f, 803f)));
+			array[i] = -55 + i;
+			GameObject gameObject = UnityEngine.Object.Instantiate(yearsButtonPrefab, new Vector3(1993f, i * 98, 1760f), Quaternion.Euler(new Vector3(831f, 433f, 498f)));
 			gameObject.transform.SetParent(yearsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(481f, 1065f, 1584f);
+			gameObject.transform.localScale = new Vector3(743f, 980f, 1685f);
 			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
-			gameObject.name = "_Value2" + array[i];
+			gameObject.name = "#ok" + array[i];
 			gameObject.AddComponent<CanvasGroup>();
 			DEELAEOEEGB[i] = gameObject;
 		}
 	}
 
-	public void Awake()
+	private void INACDFODBNM()
 	{
-		MDPIBJJLLCI();
-		AKKGPGEBFDC();
-		KCPPGDJLMHK();
-		EOICNJIGBKD = new UIVerticalScroller(monthsScrollingPanel, EFANIHLPNKM, monthCenter);
-		PIEGNIJFHHN = new UIVerticalScroller(yearsScrollingPanel, DEELAEOEEGB, yearsCenter);
-		LKGNMCKJEIL = new UIVerticalScroller(daysScrollingPanel, EEMJGFOOGKP, daysCenter);
-		EOICNJIGBKD.Start();
-		PIEGNIJFHHN.Start();
-		LKGNMCKJEIL.Start();
+		int[] array = new int[-96];
+		EFANIHLPNKM = new GameObject[array.Length];
+		for (int i = 0; i < array.Length; i++)
+		{
+			string text = string.Empty;
+			array[i] = i;
+			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(546f, i * 100, 133f), Quaternion.Euler(new Vector3(381f, 1115f, 856f)));
+			gameObject.transform.SetParent(monthsScrollingPanel);
+			gameObject.transform.localScale = new Vector3(1728f, 1458f, 496f);
+			switch (i)
+			{
+			case 0:
+				text = "y";
+				break;
+			case 1:
+				text = "_ColorBuffer";
+				break;
+			case 2:
+				text = "_TimeX";
+				break;
+			case 3:
+				text = "_ScreenResolution";
+				break;
+			case 4:
+				text = ".lastCheckpoint.comboScore";
+				break;
+			case 5:
+				text = "Editor/";
+				break;
+			case 6:
+				text = "menu.enableselectormusic";
+				break;
+			case 7:
+				text = "Needs to be attached to the Event System component in the scene";
+				break;
+			case 8:
+				text = ".";
+				break;
+			case 9:
+				text = "ItemsCountText";
+				break;
+			case 10:
+				text = "OpJoinRandomRoom()";
+				break;
+			case 11:
+				text = "offsets";
+				break;
+			}
+			gameObject.GetComponentInChildren<Text>().text = text;
+			gameObject.name = "_Value3" + array[i];
+			gameObject.AddComponent<CanvasGroup>();
+			EFANIHLPNKM[i] = gameObject;
+		}
 	}
 
-	private void GHILDCBCDJI()
-	{
-		EOICNJIGBKD.NKLIHNJCHOG();
-		PIEGNIJFHHN.Update();
-		LKGNMCKJEIL.Update();
-		string results = LKGNMCKJEIL.GetResults();
-		string text = EOICNJIGBKD.EEOPGLMHLLK();
-		string results2 = PIEGNIJFHHN.GetResults();
-		results = ((results.EndsWith("<b>") && results != "maps.") ? (results + "Item ") : ((results.EndsWith("CameraFilterPack/3D_Computer") && results != "other.dust2") ? (results + "SetParticlesCountPerBeat") : ((!results.EndsWith("BitsData") || !(results != "ChangeSelectedLevel")) ? (results + "GlassDistortion") : (results + "_ScreenResolution"))));
-		Text text2 = dateText;
-		string[] array = new string[3];
-		array[1] = text;
-		array[1] = "\t";
-		array[7] = results;
-		array[0] = "(http|https)://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?\\.(jpg|jpeg|gif|png)";
-		array[8] = results2;
-		text2.text = string.Concat(array);
-	}
-
-	public void FNNGOIEOCCH()
+	public void MKFKIHKFLJA()
 	{
 		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 0;
 		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 1;
-		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - -129;
-		LKGNMCKJEIL.SnapToElement(PAJAJNPDIBB);
-		EOICNJIGBKD.DNDJKEDIKLD(OLANKJNNKCI);
+		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - 138;
+		LKGNMCKJEIL.IMFGOIGLBMH(PAJAJNPDIBB);
+		EOICNJIGBKD.MJAODFPFCFE(OLANKJNNKCI);
 		PIEGNIJFHHN.SnapToElement(BPLBGOLDNCN);
+	}
+
+	public void EHOAKHCNGAL()
+	{
+		PIEGNIJFHHN.ScrollUp();
+	}
+
+	private void HDDECCMEJKA()
+	{
+		EOICNJIGBKD.NEKCPLGFOFD();
+		PIEGNIJFHHN.NEKCPLGFOFD();
+		LKGNMCKJEIL.JBCNIPJDPJB();
+		string text = LKGNMCKJEIL.CAJLGIPLACA();
+		string text2 = EOICNJIGBKD.DFFHJHAPPEA();
+		string text3 = PIEGNIJFHHN.LHALOALKJIP();
+		text = ((text.EndsWith("Items") && text != "In Map Editor") ? (text + "CameraMovementSlider") : ((text.EndsWith("_Distortion") && text != "LevelNameInputField") ? (text + "_Red_R") : ((!text.EndsWith("_Value") || !(text != "Joystick1Button3")) ? (text + "DifficultyBG") : (text + "/"))));
+		Text text4 = dateText;
+		string[] array = new string[6];
+		array[1] = text2;
+		array[1] = "x";
+		array[8] = text;
+		array[8] = "[MapsSystem] Unloading maps resources...";
+		array[5] = text3;
+		text4.text = string.Concat(array);
+	}
+
+	public void DaysScrollUp()
+	{
+		LKGNMCKJEIL.ScrollUp();
 	}
 
 	private void AKKGPGEBFDC()
@@ -506,631 +895,41 @@ public class ScrollingCalendar : MonoBehaviour
 		}
 	}
 
-	public void KKHOLABOGGI()
+	public void OABIKDJKCOO()
 	{
-		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 1;
+		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 0;
 		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 1;
-		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - 185;
-		LKGNMCKJEIL.SnapToElement(PAJAJNPDIBB);
-		EOICNJIGBKD.DNDJKEDIKLD(OLANKJNNKCI);
-		PIEGNIJFHHN.SnapToElement(BPLBGOLDNCN);
+		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - -130;
+		LKGNMCKJEIL.PBJCBKPJBFK(PAJAJNPDIBB);
+		EOICNJIGBKD.SnapToElement(OLANKJNNKCI);
+		PIEGNIJFHHN.PBJCBKPJBFK(BPLBGOLDNCN);
 	}
 
-	public void DaysScrollDown()
+	public void IPEPNEOFDKB()
 	{
-		LKGNMCKJEIL.ScrollDown();
+		EOICNJIGBKD.ScrollUp();
 	}
 
-	public void LOMHIIKFFEP()
+	public void NANJABFKLJN()
 	{
-		PGKLGKFHAGE();
-		AHLDDGKBPMC();
-		EACLJDHBPAD();
+		LKGNMCKJEIL.EPFBDCEMLFM();
+	}
+
+	public void EMKLCPGKNJL()
+	{
+		CLEPHMEMCNG();
+		IBEMOMJAFEJ();
+		KCPPGDJLMHK();
 		EOICNJIGBKD = new UIVerticalScroller(monthsScrollingPanel, EFANIHLPNKM, monthCenter);
 		PIEGNIJFHHN = new UIVerticalScroller(yearsScrollingPanel, DEELAEOEEGB, yearsCenter);
 		LKGNMCKJEIL = new UIVerticalScroller(daysScrollingPanel, EEMJGFOOGKP, daysCenter);
-		EOICNJIGBKD.KIMMMCJFMAB();
-		PIEGNIJFHHN.KIMMMCJFMAB();
-		LKGNMCKJEIL.KIMMMCJFMAB();
-	}
-
-	public void MonthsScrollDown()
-	{
-		EOICNJIGBKD.ScrollDown();
-	}
-
-	public void NLPMMFGNGMK()
-	{
-		LKGNMCKJEIL.BOBALPEINEB();
-	}
-
-	public void CKGOOFEEDMJ()
-	{
-		PIEGNIJFHHN.ScrollDown();
-	}
-
-	public void CCIKECLCFGI()
-	{
-		LKGNMCKJEIL.ScrollUp();
-	}
-
-	private void KMKLDAJLCNM()
-	{
-		EOICNJIGBKD.NKLIHNJCHOG();
-		PIEGNIJFHHN.Update();
-		LKGNMCKJEIL.NKLIHNJCHOG();
-		string text = LKGNMCKJEIL.EEOPGLMHLLK();
-		string results = EOICNJIGBKD.GetResults();
-		string results2 = PIEGNIJFHHN.GetResults();
-		text = ((text.EndsWith("maps.") && text != "RoomPlayersCountText") ? (text + "_Value7") : ((text.EndsWith("CameraFilterPack/Glow_Glow_Color") && text != "[PlayerBase] Loaded music") ? (text + "player.goldlollipop") : ((!text.EndsWith(".lastCheckpoint.penaltyScore") || !(text != "float,0.5")) ? (text + "_MainTex2") : (text + "_FixDistance"))));
-		Text text2 = dateText;
-		string[] array = new string[0];
-		array[1] = results;
-		array[0] = "masterVolume";
-		array[4] = text;
-		array[0] = "ItemsCountText";
-		array[8] = results2;
-		text2.text = string.Concat(array);
-	}
-
-	private void OHODBGOBOJF()
-	{
-		int[] array = new int[118];
-		EFANIHLPNKM = new GameObject[array.Length];
-		for (int i = 1; i < array.Length; i += 0)
-		{
-			string text = string.Empty;
-			array[i] = i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(1545f, i * -111, 127f), Quaternion.Euler(new Vector3(1425f, 543f, 20f)));
-			gameObject.transform.SetParent(monthsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(345f, 490f, 1419f);
-			switch (i)
-			{
-			case 0:
-				text = "SpawnObj";
-				break;
-			case 1:
-				text = "Result for ";
-				break;
-			case 2:
-				text = "_Value3";
-				break;
-			case 3:
-				text = ". Check if the server is available.";
-				break;
-			case 4:
-				text = "CameraFilterPack/FX_8bits";
-				break;
-			case 5:
-				text = "JoinTeam was called in state: ";
-				break;
-			case 6:
-				text = "[Right]";
-				break;
-			case 7:
-				text = "Object ID. Case-Sensitive";
-				break;
-			case 8:
-				text = "_ScreenEdgeFading";
-				break;
-			case 9:
-				text = "_MainTex";
-				break;
-			case 10:
-				text = "#{0}";
-				break;
-			case 11:
-				text = "_RangeScale";
-				break;
-			}
-			gameObject.GetComponentInChildren<Text>().text = text;
-			gameObject.name = "\n" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EFANIHLPNKM[i] = gameObject;
-		}
-	}
-
-	public void EDDKJEDGFMJ()
-	{
-		LKGNMCKJEIL.BNNCONEBKNC();
-	}
-
-	private void OIBMHPIFAKK()
-	{
-		EOICNJIGBKD.Update();
-		PIEGNIJFHHN.NKLIHNJCHOG();
-		LKGNMCKJEIL.Update();
-		string text = LKGNMCKJEIL.EEOPGLMHLLK();
-		string results = EOICNJIGBKD.GetResults();
-		string results2 = PIEGNIJFHHN.GetResults();
-		text = ((text.EndsWith("_Value") && text != ".lastCheckpoint.checkpointsUsed") ? (text + "cmd.exe") : ((text.EndsWith("ChatInput") && text != "_LayerThickness") ? (text + "CameraFilterPack/Drawing_Halftone") : ((!text.EndsWith("z") || !(text != "player.abstract")) ? (text + "Editor/") : (text + "_TimeX"))));
-		Text text2 = dateText;
-		string[] array = new string[5];
-		array[1] = results;
-		array[0] = "_Value4";
-		array[8] = text;
-		array[5] = "ArcsNoHitsoundTimeDelaySlider";
-		array[6] = results2;
-		text2.text = string.Concat(array);
-	}
-
-	public void FBDDIDEJBID()
-	{
-		LKGNMCKJEIL.ScrollUp();
-	}
-
-	private void KIHIANNCBCE()
-	{
-		int[] array = new int[-97];
-		EFANIHLPNKM = new GameObject[array.Length];
-		for (int i = 0; i < array.Length; i++)
-		{
-			string text = string.Empty;
-			array[i] = i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(27f, i * 101, 308f), Quaternion.Euler(new Vector3(1280f, 65f, 45f)));
-			gameObject.transform.SetParent(monthsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(1228f, 1720f, 225f);
-			switch (i)
-			{
-			case 0:
-				text = ": ";
-				break;
-			case 1:
-				text = "curScn";
-				break;
-			case 2:
-				text = ".";
-				break;
-			case 3:
-				text = "_Value";
-				break;
-			case 4:
-				text = "_Far";
-				break;
-			case 5:
-				text = "Misses:";
-				break;
-			case 6:
-				text = "InfoCanvas";
-				break;
-			case 7:
-				text = "You have added the SecondScrollRect to a scroll view that already has both directions selected";
-				break;
-			case 8:
-				text = "#mapby";
-				break;
-			case 9:
-				text = "note.6";
-				break;
-			case 10:
-				text = "_Source";
-				break;
-			case 11:
-				text = "-help";
-				break;
-			}
-			gameObject.GetComponentInChildren<Text>().text = text;
-			gameObject.name = "Object ID. Case-Sensitive" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EFANIHLPNKM[i] = gameObject;
-		}
-	}
-
-	public void HKANKKGHPNO()
-	{
-		PIEGNIJFHHN.BNNCONEBKNC();
-	}
-
-	private void PGKLGKFHAGE()
-	{
-		int num = int.Parse(DateTime.Now.ToString("Joined room "));
-		int[] array = new int[num + 0 - 0];
-		DEELAEOEEGB = new GameObject[array.Length];
-		for (int i = 0; i < array.Length; i++)
-		{
-			array[i] = 93 + i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(yearsButtonPrefab, new Vector3(1352f, i * 30, 916f), Quaternion.Euler(new Vector3(856f, 1392f, 465f)));
-			gameObject.transform.SetParent(yearsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(544f, 78f, 844f);
-			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
-			gameObject.name = "R2" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			DEELAEOEEGB[i] = gameObject;
-		}
-	}
-
-	public void CCDNJPNLGBN()
-	{
-		BNGGHDJFHAP();
-		APBIGIPCJOM();
-		NFDDDKHJNPG();
-		EOICNJIGBKD = new UIVerticalScroller(monthsScrollingPanel, EFANIHLPNKM, monthCenter);
-		PIEGNIJFHHN = new UIVerticalScroller(yearsScrollingPanel, DEELAEOEEGB, yearsCenter);
-		LKGNMCKJEIL = new UIVerticalScroller(daysScrollingPanel, EEMJGFOOGKP, daysCenter);
-		EOICNJIGBKD.NBGIMIDICKE();
-		PIEGNIJFHHN.Start();
+		EOICNJIGBKD.Start();
+		PIEGNIJFHHN.PMPKMGKAAJH();
 		LKGNMCKJEIL.Start();
 	}
 
-	public void BBMJAMJLEOL()
-	{
-		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 1;
-		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 0;
-		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - -2;
-		LKGNMCKJEIL.SnapToElement(PAJAJNPDIBB);
-		EOICNJIGBKD.OEJEKPAOHKP(OLANKJNNKCI);
-		PIEGNIJFHHN.SnapToElement(BPLBGOLDNCN);
-	}
-
-	private void MAOCOEGAFND()
-	{
-		EOICNJIGBKD.Update();
-		PIEGNIJFHHN.NKLIHNJCHOG();
-		LKGNMCKJEIL.Update();
-		string text = LKGNMCKJEIL.EEOPGLMHLLK();
-		string results = EOICNJIGBKD.GetResults();
-		string results2 = PIEGNIJFHHN.GetResults();
-		text = ((text.EndsWith("Vignette") && text != "Right Stick Click") ? (text + "CameraFilterPack/Blend2Camera_Difference") : ((text.EndsWith("menu.tabid") && text != "settings_bindings_controller_type") ? (text + "DataText") : ((!text.EndsWith("Blues") || !(text != "menutheme.fragout")) ? (text + "OnPlayerGameMessage") : (text + "_BlurredColor"))));
-		Text text2 = dateText;
-		string[] array = new string[8];
-		array[1] = results;
-		array[0] = "GlassesColor2";
-		array[1] = text;
-		array[6] = "RateButton";
-		array[4] = results2;
-		text2.text = string.Concat(array);
-	}
-
-	public void KDIIFPOHEFH()
-	{
-		EOICNJIGBKD.BNNCONEBKNC();
-	}
-
-	public void NPGCIPJLAII()
-	{
-		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 0;
-		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 0;
-		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - 77;
-		LKGNMCKJEIL.SnapToElement(PAJAJNPDIBB);
-		EOICNJIGBKD.DNDJKEDIKLD(OLANKJNNKCI);
-		PIEGNIJFHHN.OEJEKPAOHKP(BPLBGOLDNCN);
-	}
-
-	public void EABNIIOHNEA()
-	{
-		LKGNMCKJEIL.BOBALPEINEB();
-	}
-
-	public void ANJNFOHCLFO()
-	{
-		EOICNJIGBKD.ScrollDown();
-	}
-
-	public void BEJPNCMDLID()
-	{
-		LKGNMCKJEIL.BOBALPEINEB();
-	}
-
-	public void OJOEHBGDBDD()
-	{
-		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 1;
-		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 0;
-		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - -160;
-		LKGNMCKJEIL.SnapToElement(PAJAJNPDIBB);
-		EOICNJIGBKD.OEJEKPAOHKP(OLANKJNNKCI);
-		PIEGNIJFHHN.OEJEKPAOHKP(BPLBGOLDNCN);
-	}
-
-	private void DNENFLNCIJP()
-	{
-		EOICNJIGBKD.Update();
-		PIEGNIJFHHN.NKLIHNJCHOG();
-		LKGNMCKJEIL.NKLIHNJCHOG();
-		string results = LKGNMCKJEIL.GetResults();
-		string text = EOICNJIGBKD.EEOPGLMHLLK();
-		string text2 = PIEGNIJFHHN.EEOPGLMHLLK();
-		results = ((results.EndsWith("_ScreenResolution") && results != "CameraFilterPack/Colors_NewPosterize") ? (results + "Edited unlock conditions") : ((results.EndsWith("_TimeX") && results != "_Fade") ? (results + "ready") : ((!results.EndsWith("misses") || !(results != "inventory.itemscash")) ? (results + "_Visualize") : (results + "settings.enablehitsoundsinrelax"))));
-		Text text3 = dateText;
-		string[] array = new string[0];
-		array[1] = text;
-		array[1] = "inventory.selected.";
-		array[5] = results;
-		array[1] = "X2";
-		array[7] = text2;
-		text3.text = string.Concat(array);
-	}
-
-	public void CIAPFIJEDAF()
+	public void NGOFPCPFEEO()
 	{
 		EOICNJIGBKD.ScrollUp();
-	}
-
-	private void LJIHHJOAJCN()
-	{
-		EOICNJIGBKD.NKLIHNJCHOG();
-		PIEGNIJFHHN.Update();
-		LKGNMCKJEIL.Update();
-		string results = LKGNMCKJEIL.GetResults();
-		string results2 = EOICNJIGBKD.GetResults();
-		string results3 = PIEGNIJFHHN.GetResults();
-		results = ((results.EndsWith("Hidden/Image Effects/Cinematic/AmbientOcclusion") && results != "_VelTex") ? (results + "The authentication ticket expired. You need to connect (and authenticate) again. Disconnecting.") : ((results.EndsWith("_Near") && results != "/") ? (results + "[LevelEditorScene] Error: You're not logged into Steam!") : ((!results.EndsWith("_ScreenSize") || !(results != ",")) ? (results + "name") : (results + "_Distortion"))));
-		Text text = dateText;
-		string[] array = new string[8];
-		array[0] = results2;
-		array[0] = "GO==null";
-		array[8] = results;
-		array[8] = "_Value4";
-		array[1] = results3;
-		text.text = string.Concat(array);
-	}
-
-	private void PBEPCAPAKLG()
-	{
-		EOICNJIGBKD.NKLIHNJCHOG();
-		PIEGNIJFHHN.NKLIHNJCHOG();
-		LKGNMCKJEIL.Update();
-		string text = LKGNMCKJEIL.EEOPGLMHLLK();
-		string results = EOICNJIGBKD.GetResults();
-		string text2 = PIEGNIJFHHN.EEOPGLMHLLK();
-		text = ((text.EndsWith(" beatThreshold: ") && text != ": ") ? (text + "LoadingStatusText") : ((text.EndsWith("/") && text != "maxScore") ? (text + "[PlayerController] ") : ((!text.EndsWith("SetSpeed") || !(text != "_Value4")) ? (text + "_Distortion") : (text + "#mapalreadyexistupdate"))));
-		Text text3 = dateText;
-		string[] array = new string[0];
-		array[1] = results;
-		array[1] = "Waiting to start";
-		array[8] = text;
-		array[7] = "maps.";
-		array[7] = text2;
-		text3.text = string.Concat(array);
-	}
-
-	public void IAIJADKPBIC()
-	{
-		PIEGNIJFHHN.BNNCONEBKNC();
-	}
-
-	public void ODPDNKFGBNK()
-	{
-		EOICNJIGBKD.ScrollDown();
-	}
-
-	public void OGPAEGLNCPK()
-	{
-		PIEGNIJFHHN.BOBALPEINEB();
-	}
-
-	public void NHHNACNDEIE()
-	{
-		PAJAJNPDIBB = int.Parse(inputFieldDays.text) - 1;
-		OLANKJNNKCI = int.Parse(inputFieldMonths.text) - 0;
-		BPLBGOLDNCN = int.Parse(inputFieldYears.text) - -6;
-		LKGNMCKJEIL.OEJEKPAOHKP(PAJAJNPDIBB);
-		EOICNJIGBKD.OEJEKPAOHKP(OLANKJNNKCI);
-		PIEGNIJFHHN.SnapToElement(BPLBGOLDNCN);
-	}
-
-	public void KLCLMELJFCA()
-	{
-		LKGNMCKJEIL.BOBALPEINEB();
-	}
-
-	public void MCIEAOAMOIG()
-	{
-		NFEFDCAPHHG();
-		AKKGPGEBFDC();
-		LAECMIJGBNO();
-		EOICNJIGBKD = new UIVerticalScroller(monthsScrollingPanel, EFANIHLPNKM, monthCenter);
-		PIEGNIJFHHN = new UIVerticalScroller(yearsScrollingPanel, DEELAEOEEGB, yearsCenter);
-		LKGNMCKJEIL = new UIVerticalScroller(daysScrollingPanel, EEMJGFOOGKP, daysCenter);
-		EOICNJIGBKD.KIMMMCJFMAB();
-		PIEGNIJFHHN.KIMMMCJFMAB();
-		LKGNMCKJEIL.NBGIMIDICKE();
-	}
-
-	public void LDBGHEMKANO()
-	{
-		PIEGNIJFHHN.BNNCONEBKNC();
-	}
-
-	public void EIHPPBDJHAA()
-	{
-		LKGNMCKJEIL.BOBALPEINEB();
-	}
-
-	private void BNGGHDJFHAP()
-	{
-		int num = int.Parse(DateTime.Now.ToString("/"));
-		int[] array = new int[num + 1 - -86];
-		DEELAEOEEGB = new GameObject[array.Length];
-		for (int i = 1; i < array.Length; i++)
-		{
-			array[i] = -137 + i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(yearsButtonPrefab, new Vector3(781f, i * 118, 650f), Quaternion.Euler(new Vector3(1891f, 1206f, 1485f)));
-			gameObject.transform.SetParent(yearsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(322f, 1715f, 950f);
-			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
-			gameObject.name = "SlidingArea" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			DEELAEOEEGB[i] = gameObject;
-		}
-	}
-
-	private void HPNNCNNFMGK()
-	{
-		EOICNJIGBKD.NKLIHNJCHOG();
-		PIEGNIJFHHN.Update();
-		LKGNMCKJEIL.Update();
-		string results = LKGNMCKJEIL.GetResults();
-		string results2 = EOICNJIGBKD.GetResults();
-		string text = PIEGNIJFHHN.EEOPGLMHLLK();
-		results = ((results.EndsWith(", our prefix is ") && results != "_Value2") ? (results + "AllocateViewID() failed. Room (user {0}) is out of 'scene' viewIDs. It seems all available are in use.") : ((results.EndsWith("_MinVelocity") && results != "#availablechallenges") ? (results + "[Right]") : ((!results.EndsWith("gold") || !(results != "Can't connect: Loading settings failed. ServerSettings asset must be in any 'Resources' folder as: PhotonServerSettings")) ? (results + ": ") : (results + "_Intervale"))));
-		Text text2 = dateText;
-		string[] array = new string[7];
-		array[1] = results2;
-		array[0] = "settings.fps";
-		array[7] = results;
-		array[7] = "_Value4";
-		array[8] = text;
-		text2.text = string.Concat(array);
-	}
-
-	public void CFKFPMBHFPJ()
-	{
-		EOICNJIGBKD.ScrollDown();
-	}
-
-	public void NKHPMBEEAIG()
-	{
-		PIEGNIJFHHN.BOBALPEINEB();
-	}
-
-	public void HHFFFCAHIHC()
-	{
-		LKGNMCKJEIL.BOBALPEINEB();
-	}
-
-	private void AHLDDGKBPMC()
-	{
-		int[] array = new int[43];
-		EFANIHLPNKM = new GameObject[array.Length];
-		for (int i = 1; i < array.Length; i += 0)
-		{
-			string text = string.Empty;
-			array[i] = i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(1606f, i * 122, 533f), Quaternion.Euler(new Vector3(1649f, 1222f, 739f)));
-			gameObject.transform.SetParent(monthsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(370f, 894f, 1275f);
-			switch (i)
-			{
-			case 0:
-				text = "/music";
-				break;
-			case 1:
-				text = "_Amount";
-				break;
-			case 2:
-				text = "FindFriends failed to apply the result, as a required value wasn't provided or the friend list length differed from result.";
-				break;
-			case 3:
-				text = " with a prefix of ";
-				break;
-			case 4:
-				text = "Joystick1Button11";
-				break;
-			case 5:
-				text = "_TapLow";
-				break;
-			case 6:
-				text = "mapselector.lastSearch";
-				break;
-			case 7:
-				text = "settings.enablehitsoundsinrelax";
-				break;
-			case 8:
-				text = "shader.future";
-				break;
-			case 9:
-				text = "Object ID. Case-Sensitive";
-				break;
-			case 10:
-				text = "player.currentrank";
-				break;
-			case 11:
-				text = "_Offsets";
-				break;
-			}
-			gameObject.GetComponentInChildren<Text>().text = text;
-			gameObject.name = "_TimeX" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EFANIHLPNKM[i] = gameObject;
-		}
-	}
-
-	public void YearsScrollUp()
-	{
-		PIEGNIJFHHN.ScrollUp();
-	}
-
-	private void NFDDDKHJNPG()
-	{
-		int[] array = new int[-8];
-		EEMJGFOOGKP = new GameObject[array.Length];
-		for (int i = 0; i < array.Length; i++)
-		{
-			array[i] = i + 0;
-			GameObject gameObject = UnityEngine.Object.Instantiate(daysButtonPrefab, new Vector3(1812f, i * -1, 411f), Quaternion.Euler(new Vector3(963f, 897f, 1547f)));
-			gameObject.transform.SetParent(daysScrollingPanel);
-			gameObject.transform.localScale = new Vector3(1223f, 936f, 406f);
-			gameObject.GetComponentInChildren<Text>().text = string.Empty + array[i];
-			gameObject.name = "_Value8" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EEMJGFOOGKP[i] = gameObject;
-		}
-	}
-
-	private void MIDIODHJNLC()
-	{
-		int[] array = new int[17];
-		EFANIHLPNKM = new GameObject[array.Length];
-		for (int i = 1; i < array.Length; i++)
-		{
-			string text = string.Empty;
-			array[i] = i;
-			GameObject gameObject = UnityEngine.Object.Instantiate(monthsButtonPrefab, new Vector3(185f, i * 71, 597f), Quaternion.Euler(new Vector3(1563f, 1040f, 1581f)));
-			gameObject.transform.SetParent(monthsScrollingPanel);
-			gameObject.transform.localScale = new Vector3(1711f, 1742f, 365f);
-			switch (i)
-			{
-			case 0:
-				text = "mapselector.filter.favoriteonly";
-				break;
-			case 1:
-				text = "Set Object Position";
-				break;
-			case 2:
-				text = "_TimeX";
-				break;
-			case 3:
-				text = "_FadeDistance";
-				break;
-			case 4:
-				text = "RoomNameText";
-				break;
-			case 5:
-				text = "CameraFilterPack/Lut_PlayWith";
-				break;
-			case 6:
-				text = "_ScratchOffsetScale";
-				break;
-			case 7:
-				text = "CameraFilterPack/Glasses_On";
-				break;
-			case 8:
-				text = "<b>";
-				break;
-			case 9:
-				text = "_Red_G";
-				break;
-			case 10:
-				text = "[MapsData] User's maps was loaded";
-				break;
-			case 11:
-				text = "-help";
-				break;
-			}
-			gameObject.GetComponentInChildren<Text>().text = text;
-			gameObject.name = "_ChannelMixerRed" + array[i];
-			gameObject.AddComponent<CanvasGroup>();
-			EFANIHLPNKM[i] = gameObject;
-		}
-	}
-
-	public void ELOAIHFHFAO()
-	{
-		EOICNJIGBKD.ScrollUp();
-	}
-
-	public void JKHFLLGPFJO()
-	{
-		PIEGNIJFHHN.BOBALPEINEB();
 	}
 }

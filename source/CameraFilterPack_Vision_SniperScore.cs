@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Vision/SniperScore")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Vision/SniperScore")]
 public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 {
 	public Shader SCShader;
@@ -133,22 +133,22 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1657f;
 			}
-			IONHGBPGCHK().SetFloat("_Y", Fade);
-			IIBLJCKLGFG().SetFloat("skin.no_hit", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat(" Time: ", Size);
-			NBPKMLMCHFN.SetFloat(" elements", Smooth);
-			HEHKGPKLAKK().SetFloat("_TimeX", ICABEDDNGIH);
-			EMDFHOKEGNG().SetFloat("float,1", LHOMPJOPKHE);
-			EMDFHOKEGNG().SetFloat("[Right]", _Cible);
-			FAIFBBGFAIB().SetFloat("Show Image", _ExtraColor);
-			MCDGIILBNIF().SetFloat("System.Int64", _Distortion);
-			IONHGBPGCHK().SetFloat("CameraFilterPack/Blur_Radial_Fast", _PosX);
-			IONHGBPGCHK().SetFloat("menu.enableselectormusic", _PosY);
-			ADBKPGFMNKO().SetColor("ClearEnvironment", _Tint);
-			IIBLJCKLGFG().SetFloat("TransferOwnership() view ", _ExtraLight);
+			HEHKGPKLAKK().SetFloat("_TimeX", Fade);
+			MMOODGIODPC().SetFloat("MainThreadExecuter", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("Ev OwnershipTransfer. ViewID ", Size);
+			KEMJNOMIPHN().SetFloat("PlayerPrefs::Deserialize() parameterContent has ", Smooth);
+			OIMMPLPBLBK().SetFloat("_TimeX", ICABEDDNGIH);
+			HEHKGPKLAKK().SetFloat("float,1", LHOMPJOPKHE);
+			FAIFBBGFAIB().SetFloat("[Right]", _Cible);
+			MMOODGIODPC().SetFloat("Show Image", _ExtraColor);
+			OIMMPLPBLBK().SetFloat("System.Single", _Distortion);
+			JLHLHKPHDFO().SetFloat("CameraFilterPack/Blur_Radial_Fast", _PosX);
+			HEHKGPKLAKK().SetFloat("menu.enableselectormusic", _PosY);
+			OIMMPLPBLBK().SetColor("ClearEnvironment", _Tint);
+			OIMMPLPBLBK().SetFloat("RequestOwnership(): ", _ExtraLight);
 			Vector2 vector = new Vector2(Screen.width, Screen.height);
-			KEMJNOMIPHN().SetVector("ns", new Vector4(vector.x, vector.y, vector.y / vector.x, 987f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBMPPNFKFLB().SetVector("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.", new Vector4(vector.x, vector.y, vector.y / vector.x, 987f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
 		}
 		else
 		{
@@ -186,20 +186,20 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 				HBJJOCHGOPH = 1502f;
 			}
 			EMDFHOKEGNG().SetFloat("EventTimeInputField", Fade);
-			MMOODGIODPC().SetFloat("_Value4", HBJJOCHGOPH);
-			JLHLHKPHDFO().SetFloat("[RanksSystem] Ranks: no need to update", Size);
-			JLHLHKPHDFO().SetFloat("id", Smooth);
-			IONHGBPGCHK().SetFloat("_TimeX", ICABEDDNGIH);
-			EMDFHOKEGNG().SetFloat("A", LHOMPJOPKHE);
-			EMDFHOKEGNG().SetFloat("GameModeText", _Cible);
-			FAIFBBGFAIB().SetFloat(".icon", _ExtraColor);
-			NBMPPNFKFLB().SetFloat("BackButton", _Distortion);
-			HEHKGPKLAKK().SetFloat("bool", _PosX);
-			HEHKGPKLAKK().SetFloat("[MapsData] Bad map: ", _PosY);
-			JLHLHKPHDFO().SetColor("_Value2", _Tint);
-			EMDFHOKEGNG().SetFloat("_Value3", _ExtraLight);
+			IIBLJCKLGFG().SetFloat("_Value3", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Connection error: ", Size);
+			HEHKGPKLAKK().SetFloat("Set Satellite Trail Width", Smooth);
+			FAIFBBGFAIB().SetFloat("CameraFilterPack/Distortion_Twist", ICABEDDNGIH);
+			ADBKPGFMNKO().SetFloat("X", LHOMPJOPKHE);
+			OIMMPLPBLBK().SetFloat("PossibleMapMaxScoreText", _Cible);
+			ADBKPGFMNKO().SetFloat("skin.", _ExtraColor);
+			MCDGIILBNIF().SetFloat("BackButton", _Distortion);
+			IIBLJCKLGFG().SetFloat("true", _PosX);
+			NBPKMLMCHFN.SetFloat("[MapsData] Caching ", _PosY);
+			HEHKGPKLAKK().SetColor("_Value", _Tint);
+			ADBKPGFMNKO().SetFloat("_Value2", _ExtraLight);
 			Vector2 vector = new Vector2(Screen.width, Screen.height);
-			ADBKPGFMNKO().SetVector("Failed to 'network-remove' GameObject because it's null.", new Vector4(vector.x, vector.y, vector.y / vector.x, 776f));
+			KEMJNOMIPHN().SetVector("]. Please verify you have this gameobject in a Resources folder.", new Vector4(vector.x, vector.y, vector.y / vector.x, 776f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
 		}
 		else
@@ -255,7 +255,7 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 
 	private void NNFMIAFHMJM()
 	{
-		SCShader = Shader.Find("_Value2");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -279,22 +279,22 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 			{
 				HBJJOCHGOPH = 272f;
 			}
-			IONHGBPGCHK().SetFloat("Did not read byte array properly", Fade);
-			MMOODGIODPC().SetFloat("z", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("[PlayerController] ", Size);
-			MCDGIILBNIF().SetFloat("_Value", Smooth);
-			EMDFHOKEGNG().SetFloat("_Value", ICABEDDNGIH);
-			MCDGIILBNIF().SetFloat("LevelEditor/patterns", LHOMPJOPKHE);
-			IONHGBPGCHK().SetFloat("maps.", _Cible);
-			OIMMPLPBLBK().SetFloat("-1", _ExtraColor);
-			MCDGIILBNIF().SetFloat("CountEventsGoal", _Distortion);
-			MCDGIILBNIF().SetFloat("Set the end of the map. Use this if you want to cut the long music.", _PosX);
-			NBMPPNFKFLB().SetFloat("_TimeX", _PosY);
-			HEHKGPKLAKK().SetColor("Set crosshair emission (glow)", _Tint);
-			FAIFBBGFAIB().SetFloat("1,30,true,0", _ExtraLight);
+			NBMPPNFKFLB().SetFloat("Stream did not contain properly formatted byte array", Fade);
+			KEMJNOMIPHN().SetFloat("float,1.5", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat(" not exist", Size);
+			IONHGBPGCHK().SetFloat("_TimeX", Smooth);
+			JLHLHKPHDFO().SetFloat("_TimeX", ICABEDDNGIH);
+			IIBLJCKLGFG().SetFloat("Editing: ", LHOMPJOPKHE);
+			EMDFHOKEGNG().SetFloat("maps.", _Cible);
+			EMDFHOKEGNG().SetFloat("Right", _ExtraColor);
+			ADBKPGFMNKO().SetFloat(",", _Distortion);
+			IONHGBPGCHK().SetFloat("Set the end of the map. Use this if you want to cut the long music.", _PosX);
+			FAIFBBGFAIB().SetFloat("CameraFilterPack/Color_Chromatic_Plus", _PosY);
+			MMOODGIODPC().SetColor("float,1.5", _Tint);
+			EMDFHOKEGNG().SetFloat("1,30,true,0", _ExtraLight);
 			Vector2 vector = new Vector2(Screen.width, Screen.height);
-			KEMJNOMIPHN().SetVector("_History3Weight", new Vector4(vector.x, vector.y, vector.y / vector.x, 289f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			JLHLHKPHDFO().SetVector("_History1Weight", new Vector4(vector.x, vector.y, vector.y / vector.x, 289f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MCDGIILBNIF());
 		}
 		else
 		{
@@ -418,7 +418,7 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 
 	private void AGEJKLMJGDO()
 	{
-		SCShader = Shader.Find("OnRenderImage in Helper called ...");
+		SCShader = Shader.Find(" on effect ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -435,7 +435,7 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("[NetworkManager] Join failed");
+		SCShader = Shader.Find("masterSteamID");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -444,7 +444,7 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 
 	private void DLBODOFAJGM()
 	{
-		SCShader = Shader.Find("Joystick1Button12");
+		SCShader = Shader.Find("Right Stick Click");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -453,7 +453,7 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 
 	private void EFJDNLGNACH()
 	{
-		SCShader = Shader.Find("{0}\n{1}\n{2}\n{3}\n{4}\n{5}");
+		SCShader = Shader.Find("Health Stats");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -474,7 +474,7 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find(" / ");
+		SCShader = Shader.Find(": ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -507,7 +507,7 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 
 	private void KNBJBNDGCIJ()
 	{
-		SCShader = Shader.Find("shader.ghost");
+		SCShader = Shader.Find("shader.crispwinter");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -543,22 +543,22 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1978f;
 			}
-			KEMJNOMIPHN().SetFloat("_Value6", Fade);
-			OIMMPLPBLBK().SetFloat(". Should be just one?", HBJJOCHGOPH);
+			EMDFHOKEGNG().SetFloat("_Value6", Fade);
+			IIBLJCKLGFG().SetFloat(" methods \"", HBJJOCHGOPH);
 			JLHLHKPHDFO().SetFloat("Fill Area", Size);
-			MMOODGIODPC().SetFloat("_Green_C", Smooth);
-			OIMMPLPBLBK().SetFloat("SetEnvSpriteImage", ICABEDDNGIH);
-			IIBLJCKLGFG().SetFloat("sfxVolume", LHOMPJOPKHE);
+			MMOODGIODPC().SetFloat("_Red_C", Smooth);
+			MCDGIILBNIF().SetFloat("SetParticlesParticleSpeed", ICABEDDNGIH);
+			MMOODGIODPC().SetFloat("[Sound Manager] Audio clip is null, cannot play music", LHOMPJOPKHE);
 			MMOODGIODPC().SetFloat("maps.", _Cible);
-			FAIFBBGFAIB().SetFloat("</color>", _ExtraColor);
-			IONHGBPGCHK().SetFloat("_TimeX", _Distortion);
-			EMDFHOKEGNG().SetFloat("Editor", _PosX);
-			ADBKPGFMNKO().SetFloat("SetLives", _PosY);
-			ADBKPGFMNKO().SetColor("offline", _Tint);
-			IIBLJCKLGFG().SetFloat("_MainTex2", _ExtraLight);
+			HEHKGPKLAKK().SetFloat("[ResourcesManager] Load audio error: ", _ExtraColor);
+			MCDGIILBNIF().SetFloat("CameraFilterPack/TV_Old_Movie", _Distortion);
+			IONHGBPGCHK().SetFloat("#ok", _PosX);
+			OIMMPLPBLBK().SetFloat("_EmissionColor", _PosY);
+			IIBLJCKLGFG().SetColor("offline", _Tint);
+			IIBLJCKLGFG().SetFloat("_ScreenResolution", _ExtraLight);
 			Vector2 vector = new Vector2(Screen.width, Screen.height);
-			IIBLJCKLGFG().SetVector("settings_bindings_controller_type", new Vector4(vector.x, vector.y, vector.y / vector.x, 1974f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			EMDFHOKEGNG().SetVector("settings_bindings_controller_type", new Vector4(vector.x, vector.y, vector.y / vector.x, 1974f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
 		}
 		else
 		{
@@ -630,22 +630,22 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 			{
 				HBJJOCHGOPH = 455f;
 			}
-			EMDFHOKEGNG().SetFloat("Tab2Content", Fade);
-			FAIFBBGFAIB().SetFloat("  |  Events Count: ", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("settings_bindings_controller_type", Size);
+			MMOODGIODPC().SetFloat("Tab2Content", Fade);
+			OIMMPLPBLBK().SetFloat("PlayButton", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("settings_bindings_sec_", Size);
 			IIBLJCKLGFG().SetFloat("Joined room ", Smooth);
-			MCDGIILBNIF().SetFloat("{0}{1}{2}={3}", ICABEDDNGIH);
-			FAIFBBGFAIB().SetFloat("_TimeX", LHOMPJOPKHE);
-			ADBKPGFMNKO().SetFloat("_EmissionColor", _Cible);
-			IIBLJCKLGFG().SetFloat("Hidden/Subpixel Morphological Anti-aliasing", _ExtraColor);
-			IONHGBPGCHK().SetFloat("_SizeY", _Distortion);
-			EMDFHOKEGNG().SetFloat(".g", _PosX);
-			KEMJNOMIPHN().SetFloat("Set environment sprite color and alpha.", _PosY);
-			HEHKGPKLAKK().SetColor("BitsData", _Tint);
-			KEMJNOMIPHN().SetFloat("_SampleCount", _ExtraLight);
+			MCDGIILBNIF().SetFloat("TypedLobbyInfo '{0}'[{1}] rooms: {2} players: {3}", ICABEDDNGIH);
+			IIBLJCKLGFG().SetFloat("_TimeX", LHOMPJOPKHE);
+			FAIFBBGFAIB().SetFloat("settings.crosshairopacity", _Cible);
+			NBMPPNFKFLB().SetFloat("_QualitySettings", _ExtraColor);
+			NBPKMLMCHFN.SetFloat("_SizeY", _Distortion);
+			KEMJNOMIPHN().SetFloat(".r", _PosX);
+			ADBKPGFMNKO().SetFloat("Set environment sprite color and alpha.", _PosY);
+			MCDGIILBNIF().SetColor("BitsData", _Tint);
+			MMOODGIODPC().SetFloat("_TargetScale", _ExtraLight);
 			Vector2 vector = new Vector2(Screen.width, Screen.height);
-			IONHGBPGCHK().SetVector("CameraFilterPack/EyesVision_1", new Vector4(vector.x, vector.y, vector.y / vector.x, 792f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			IIBLJCKLGFG().SetVector("CameraFilterPack_eyes_vision_1", new Vector4(vector.x, vector.y, vector.y / vector.x, 792f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
 		}
 		else
 		{
@@ -670,22 +670,22 @@ public class CameraFilterPack_Vision_SniperScore : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1408f;
 			}
-			OIMMPLPBLBK().SetFloat("_TimeX", Fade);
-			NBPKMLMCHFN.SetFloat("Committing changes...", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetFloat("CameraFilterPack/Noise_TV", Fade);
+			KEMJNOMIPHN().SetFloat("HIDE CONFIG [Ctrl+E]", HBJJOCHGOPH);
 			MMOODGIODPC().SetFloat("CameraFilterPack/Blend2Camera_GreenScreen", Size);
-			FAIFBBGFAIB().SetFloat("inventory.selected.", Smooth);
-			ADBKPGFMNKO().SetFloat("_TimeX", ICABEDDNGIH);
-			ADBKPGFMNKO().SetFloat("Added event", LHOMPJOPKHE);
-			IIBLJCKLGFG().SetFloat("_ScreenResolution", _Cible);
-			ADBKPGFMNKO().SetFloat("\\\"", _ExtraColor);
-			IONHGBPGCHK().SetFloat("Expected protocol set to UDP, due to encryption mode DatagramEncryption. Changing protocol in PhotonServerSettings from: ", _Distortion);
-			OIMMPLPBLBK().SetFloat("_Near", _PosX);
-			NBMPPNFKFLB().SetFloat("_CenterY", _PosY);
-			NBPKMLMCHFN.SetColor("L2", _Tint);
-			JLHLHKPHDFO().SetFloat(" not exist", _ExtraLight);
+			KEMJNOMIPHN().SetFloat("inventory.selected.", Smooth);
+			MMOODGIODPC().SetFloat("_MainTex2", ICABEDDNGIH);
+			EMDFHOKEGNG().SetFloat("event", LHOMPJOPKHE);
+			FAIFBBGFAIB().SetFloat("_TimeX", _Cible);
+			HEHKGPKLAKK().SetFloat("{\"items\":", _ExtraColor);
+			MMOODGIODPC().SetFloat("Error calling OpAuthenticate! Did not work. Check log output, AuthValues and if you're connected.", _Distortion);
+			KEMJNOMIPHN().SetFloat("_Near", _PosX);
+			OIMMPLPBLBK().SetFloat("_CenterY", _PosY);
+			OIMMPLPBLBK().SetColor("R1", _Tint);
+			OIMMPLPBLBK().SetFloat("[PlayerController] ", _ExtraLight);
 			Vector2 vector = new Vector2(Screen.width, Screen.height);
-			JLHLHKPHDFO().SetVector("Set Particles Input", new Vector4(vector.x, vector.y, vector.y / vector.x, 134f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
+			IIBLJCKLGFG().SetVector("SetParticlesInput", new Vector4(vector.x, vector.y, vector.y / vector.x, 134f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{

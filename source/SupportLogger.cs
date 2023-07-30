@@ -5,48 +5,12 @@ public class SupportLogger : MonoBehaviour
 {
 	public bool LogTrafficStats = true;
 
-	public void HMPGIFBJFIK()
+	public void NPLCENPNJBM()
 	{
-		GameObject gameObject = GameObject.Find("yyyy-MM-dd HH:mm:ss");
+		GameObject gameObject = GameObject.Find("%");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("maps.");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void KIMMMCJFMAB()
-	{
-		GameObject gameObject = GameObject.Find("_PColor");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("music.ogg");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void PMPKMGKAAJH()
-	{
-		GameObject gameObject = GameObject.Find("_Distortion");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("Populate Mesh Data");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void JHANGPCOCIG()
-	{
-		GameObject gameObject = GameObject.Find("_TimeX");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject(".mp3");
+			gameObject = new GameObject("DISTORT");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
@@ -55,166 +19,10 @@ public class SupportLogger : MonoBehaviour
 
 	public void HLIAEEMGBHN()
 	{
-		GameObject gameObject = GameObject.Find("_ScreenResolution");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("CameraFilterPack/NightVisionFX");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void JILOMOBDPIA()
-	{
-		GameObject gameObject = GameObject.Find("BlockSize");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("[SERVER] Kicked ");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void JMEOGJHCONJ()
-	{
-		GameObject gameObject = GameObject.Find("[NetworkManager] Connecting...");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("EventData0DropDownList");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void KDMKDEKCELE()
-	{
-		GameObject gameObject = GameObject.Find("_AlphaMask");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("BitsData");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void KDMANOEMOCA()
-	{
-		GameObject gameObject = GameObject.Find("SpawnObj");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("???");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void EPEGAEGDJAM()
-	{
-		GameObject gameObject = GameObject.Find(":</b> ");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_Value");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void FHPFJBFCOOF()
-	{
-		GameObject gameObject = GameObject.Find("HPToggle");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject(": ");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void CIPKEPDELJB()
-	{
-		GameObject gameObject = GameObject.Find("_GrainTex");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("/?player=");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void JKFDDNMPOJH()
-	{
-		GameObject gameObject = GameObject.Find("Command not found!");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("Using PhotonServerSettings.Protocol when leaving the NameServer (AuthMode is AuthOnceWss): ");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void NBGIMIDICKE()
-	{
 		GameObject gameObject = GameObject.Find("_Value4");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("_BlurCoe");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void MKIMDFLBFOM()
-	{
-		GameObject gameObject = GameObject.Find("CameraFilterPack_TV_Noise");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("steamid");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void FNCDAPDOBBI()
-	{
-		GameObject gameObject = GameObject.Find("player.orangelifering");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("settings.hitvariation");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void KLILJHJNICK()
-	{
-		GameObject gameObject = GameObject.Find("[MapsData] Found ");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("player.xp");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void IHLMNAGPKDA()
-	{
-		GameObject gameObject = GameObject.Find("team");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("PLEASE WAIT");
+			gameObject = new GameObject("_Blue_C");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
@@ -223,190 +31,10 @@ public class SupportLogger : MonoBehaviour
 
 	public void DIPDEHOOBPG()
 	{
-		GameObject gameObject = GameObject.Find("OpChangeGroups()");
+		GameObject gameObject = GameObject.Find("UseScanLine");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject(".b");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void CNGAJDBOCLJ()
-	{
-		GameObject gameObject = GameObject.Find("PLAY [SPACE]");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("ComboScoreText");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void CCLNNLCOPBL()
-	{
-		GameObject gameObject = GameObject.Find("EndlessLoopsScoreText");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("<b>Intralism Items Uploader</b> by Oxy949");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void FBPHNEJBDJN()
-	{
-		GameObject gameObject = GameObject.Find("gamemode");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("[MapsData] Found ");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void OHFOLGANOLC()
-	{
-		GameObject gameObject = GameObject.Find("#reward: ");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject(" ");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void MMMDPANNAIO()
-	{
-		GameObject gameObject = GameObject.Find("_MainTex2");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_Extra2");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void GPNAOAKCMHC()
-	{
-		GameObject gameObject = GameObject.Find("There are too many cells created by your subdivision options. Maximum allowed number of cells is ");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("Connection error: ");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void BMOFEBKGLFI()
-	{
-		GameObject gameObject = GameObject.Find("PlayMapGoal");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("note.5");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void NPLCENPNJBM()
-	{
-		GameObject gameObject = GameObject.Find("CameraFilterPack/TV_Horror");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("wss://");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void IMCKJCHKMKB()
-	{
-		GameObject gameObject = GameObject.Find("CameraFilterPack/Distortion_Water_Drop");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("<b>#");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void FEHCNJLLJMP()
-	{
-		GameObject gameObject = GameObject.Find(" SecondsBeforeRespawn: ");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_Value2");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void FIKFJDFELIP()
-	{
-		GameObject gameObject = GameObject.Find("_TimeX");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_Value3");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void CGDMLHLJIDK()
-	{
-		GameObject gameObject = GameObject.Find("ready");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject(" not exist");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void BEBNOKFLJPH()
-	{
-		GameObject gameObject = GameObject.Find("mapselector.filter.rateduponly");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("Dance");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void MMOKKAPFGAK()
-	{
-		GameObject gameObject = GameObject.Find(".lastCheckpoint.incorrectScore");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_MainTex2");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void PAKPHKPDKGE()
-	{
-		GameObject gameObject = GameObject.Find("float,0.5");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_FixDistance");
+			gameObject = new GameObject(". Prefab must have a PhotonView component.");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
@@ -415,178 +43,70 @@ public class SupportLogger : MonoBehaviour
 
 	public void NCNPAKFAFOE()
 	{
-		GameObject gameObject = GameObject.Find("_CurTex");
+		GameObject gameObject = GameObject.Find("achievements.21.completed.workshop.");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("mapselector.filter.favoriteonly");
+			gameObject = new GameObject("_SizeX");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
 		}
 	}
 
-	public void BMIOFJFMCBG()
+	public void KDMANOEMOCA()
 	{
-		GameObject gameObject = GameObject.Find("value");
+		GameObject gameObject = GameObject.Find("_BlurCoe");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("_ScratchTex");
+			gameObject = new GameObject("_Value1");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
 		}
 	}
 
-	public void DLBODOFAJGM()
+	public void NBGIMIDICKE()
 	{
-		GameObject gameObject = GameObject.Find("[DiscordController] Sectate ({0})");
+		GameObject gameObject = GameObject.Find("CameraFilterPack/Glasses_On");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("_Value3");
+			gameObject = new GameObject("USE_PREDICATION");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
 		}
 	}
 
-	public void BGDPIHMAACO()
+	public void IMCKJCHKMKB()
 	{
-		GameObject gameObject = GameObject.Find("Left");
+		GameObject gameObject = GameObject.Find("OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one. Calling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("settings.shaders.bloomintencity");
+			gameObject = new GameObject("PS Home");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
 		}
 	}
 
-	public void KCCIEMBMOBA()
+	public void FIKFJDFELIP()
 	{
-		GameObject gameObject = GameObject.Find("/../");
+		GameObject gameObject = GameObject.Find("_Value2");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("float,1.5");
+			gameObject = new GameObject("': ");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
 		}
 	}
 
-	public void DKOPKPBLDHH()
+	public void CNGAJDBOCLJ()
 	{
-		GameObject gameObject = GameObject.Find("player.goldabstract");
+		GameObject gameObject = GameObject.Find("_EdgeSize");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("Tab1Content");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void NNCCPEBIAKH()
-	{
-		GameObject gameObject = GameObject.Find("settings_bindings_");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("Copy from ");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void DNNFHBOOPIN()
-	{
-		GameObject gameObject = GameObject.Find("[SERVER] Kicked ");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("id");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void KMCPMOGKDEH()
-	{
-		GameObject gameObject = GameObject.Find("Pop");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("maps.");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void DAHFFNNIGML()
-	{
-		GameObject gameObject = GameObject.Find("JoinRoom failed. A roomname is required. If you don't know one, how will you join?");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("[PlayerBase] Delete checkpoint data");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void JOPCCCCHNLI()
-	{
-		GameObject gameObject = GameObject.Find("checkpoint");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_Value2");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void EFJDNLGNACH()
-	{
-		GameObject gameObject = GameObject.Find("UI Extensions/SoftMaskShader");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_Value4");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void KNBJBNDGCIJ()
-	{
-		GameObject gameObject = GameObject.Find("OK");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("colorC");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void EGEPLFGKGLI()
-	{
-		GameObject gameObject = GameObject.Find(". local RequestedView.ownerId: ");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("_MainTexBlurred");
-			Object.DontDestroyOnLoad(gameObject);
-			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
-			supportLogging.LogTrafficStats = LogTrafficStats;
-		}
-	}
-
-	public void FANADGBGCPI()
-	{
-		GameObject gameObject = GameObject.Find("GroupNameText");
-		if (gameObject == null)
-		{
-			gameObject = new GameObject("USE_CORNER_DETECTION");
+			gameObject = new GameObject("checkpoint");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
@@ -605,36 +125,168 @@ public class SupportLogger : MonoBehaviour
 		}
 	}
 
-	public void AGEJKLMJGDO()
+	public void PAKPHKPDKGE()
 	{
-		GameObject gameObject = GameObject.Find("Item ");
+		GameObject gameObject = GameObject.Find("Aimer Input Module is incompatible with the StandAloneInputSystem, please remove it from the Event System in this scene or disable it when this module is in use");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("CameraFilterPack/Drawing_CellShading");
+			gameObject = new GameObject("_ReprojectionMatrix");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
 		}
 	}
 
-	public void DKGBFNCOAEO()
+	public void DAHFFNNIGML()
 	{
-		GameObject gameObject = GameObject.Find("_TimeX");
+		GameObject gameObject = GameObject.Find("_Offsets");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("ItemNameText");
+			gameObject = new GameObject("maps.");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;
 		}
 	}
 
-	public void FHGKIOOMMOH()
+	public void JKFDDNMPOJH()
 	{
-		GameObject gameObject = GameObject.Find("PerfectHitsScoreText");
+		GameObject gameObject = GameObject.Find(" GameServer:");
 		if (gameObject == null)
 		{
-			gameObject = new GameObject("mapselector.filter.officialsortmode");
+			gameObject = new GameObject("action");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void BGDPIHMAACO()
+	{
+		GameObject gameObject = GameObject.Find("/");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("_Value2");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void KMCPMOGKDEH()
+	{
+		GameObject gameObject = GameObject.Find("Back");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("DPADVER");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void CCLNNLCOPBL()
+	{
+		GameObject gameObject = GameObject.Find("Set crosshair emission (glow)");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("UseFinalGlassColor");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void CIPKEPDELJB()
+	{
+		GameObject gameObject = GameObject.Find("EventMenu");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("CameraFilterPack/Blizzard");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void KIMMMCJFMAB()
+	{
+		GameObject gameObject = GameObject.Find("_EmissionColor");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("ExitButton");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void KLILJHJNICK()
+	{
+		GameObject gameObject = GameObject.Find("settings.showHP");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("Share");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void NNCCPEBIAKH()
+	{
+		GameObject gameObject = GameObject.Find("value");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("_Blue_G");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void FEHCNJLLJMP()
+	{
+		GameObject gameObject = GameObject.Find("_DiffuseColor");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("EventData0DropDownList");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void BEBNOKFLJPH()
+	{
+		GameObject gameObject = GameObject.Find("_ScreenResolution");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("roomDescription");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void DNNFHBOOPIN()
+	{
+		GameObject gameObject = GameObject.Find("Set Satellite Lerp Speed");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("CameraFilterPack/Distortion_BlackHole");
+			Object.DontDestroyOnLoad(gameObject);
+			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
+			supportLogging.LogTrafficStats = LogTrafficStats;
+		}
+	}
+
+	public void EGEPLFGKGLI()
+	{
+		GameObject gameObject = GameObject.Find("{0}{1}{2}");
+		if (gameObject == null)
+		{
+			gameObject = new GameObject("USE_CORNER_DETECTION");
 			Object.DontDestroyOnLoad(gameObject);
 			SupportLogging supportLogging = gameObject.AddComponent<SupportLogging>();
 			supportLogging.LogTrafficStats = LogTrafficStats;

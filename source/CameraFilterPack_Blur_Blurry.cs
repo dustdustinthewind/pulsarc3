@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blur/Blurry")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blur/Blurry")]
 public class CameraFilterPack_Blur_Blurry : MonoBehaviour
 {
 	public Shader SCShader;
@@ -43,8 +43,8 @@ public class CameraFilterPack_Blur_Blurry : MonoBehaviour
 			{
 				HBJJOCHGOPH = 733f;
 			}
-			ACHNOHCLGOO().SetFloat(".completedCount", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("Creating new item...", Amount);
+			IONHGBPGCHK().SetFloat(".completedMaps", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat(".completed", Amount);
 			IONHGBPGCHK().SetVector("offsets", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
 			int width = AAACLELCPML.width / fastFilter;
 			int height = AAACLELCPML.height / fastFilter;
@@ -52,13 +52,13 @@ public class CameraFilterPack_Blur_Blurry : MonoBehaviour
 			{
 				RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 				temporary.filterMode = (FilterMode)3;
-				Graphics.Blit(AAACLELCPML, temporary, NFMGLIKNOOC());
+				Graphics.Blit(AAACLELCPML, temporary, IONHGBPGCHK());
 				Graphics.Blit(temporary, BGIKADHFKNF);
 				RenderTexture.ReleaseTemporary(temporary);
 			}
 			else
 			{
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 			}
 		}
 		else
@@ -77,8 +77,8 @@ public class CameraFilterPack_Blur_Blurry : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1273f;
 			}
-			IONHGBPGCHK().SetFloat("_SampleDistance", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_TimeX", Amount);
+			KGOLDDBHIFN().SetFloat("_Sensitivity", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("CameraFilterPack/Oculus_NightVision2", Amount);
 			IONHGBPGCHK().SetVector("in seconds. 0 - forever", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
 			int width = AAACLELCPML.width / fastFilter;
 			int height = AAACLELCPML.height / fastFilter;
@@ -86,13 +86,13 @@ public class CameraFilterPack_Blur_Blurry : MonoBehaviour
 			{
 				RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 				temporary.filterMode = (FilterMode)7;
-				Graphics.Blit(AAACLELCPML, temporary, NBPKMLMCHFN);
+				Graphics.Blit(AAACLELCPML, temporary, IONHGBPGCHK());
 				Graphics.Blit(temporary, BGIKADHFKNF);
 				RenderTexture.ReleaseTemporary(temporary);
 			}
 			else
 			{
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 			}
 		}
 		else
@@ -123,9 +123,9 @@ public class CameraFilterPack_Blur_Blurry : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1076f;
 			}
-			KGOLDDBHIFN().SetFloat(" not exist", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("_SunThreshold", Amount);
-			IONHGBPGCHK().SetVector("maps.", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
+			IONHGBPGCHK().SetFloat(": ", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("_BlurRadius4", Amount);
+			KGOLDDBHIFN().SetVector("maps.", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
 			int width = AAACLELCPML.width / fastFilter;
 			int height = AAACLELCPML.height / fastFilter;
 			if (FastFilter > 1)
@@ -260,9 +260,9 @@ public class CameraFilterPack_Blur_Blurry : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1699f;
 			}
-			ACHNOHCLGOO().SetFloat("\n\n#", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("System.Single", Amount);
-			KGOLDDBHIFN().SetVector("[ItemsHandler] Loading ", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
+			KGOLDDBHIFN().SetFloat("\n\n#", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("System.Boolean", Amount);
+			NBPKMLMCHFN.SetVector("itemdefid[0]", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
 			int width = AAACLELCPML.width / fastFilter;
 			int height = AAACLELCPML.height / fastFilter;
 			if (FastFilter > 1)
@@ -275,7 +275,7 @@ public class CameraFilterPack_Blur_Blurry : MonoBehaviour
 			}
 			else
 			{
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 			}
 		}
 		else

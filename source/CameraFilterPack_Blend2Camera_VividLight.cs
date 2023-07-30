@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/VividLight")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/VividLight")]
 public class CameraFilterPack_Blend2Camera_VividLight : MonoBehaviour
 {
 	private string ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_VividLight";
@@ -70,11 +70,11 @@ public class CameraFilterPack_Blend2Camera_VividLight : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				PLBEJJIHFPB().SetTexture("OpGetGameList not sent. Lobby cannot be null.", JDMCFBKJHDD);
+				PLBEJJIHFPB().SetTexture("OpJoinRandomRoom()", JDMCFBKJHDD);
 			}
-			PLBEJJIHFPB().SetFloat("Distortion", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("_ScreenResolution", BlendFX);
-			NBPKMLMCHFN.SetFloat("_PColor", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetFloat("Fade", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("_Fade", BlendFX);
+			HFBJAOFLCJI().SetFloat("_TimeX", SwitchCameraToCamera2);
 			NBPKMLMCHFN.SetVector("offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 246f, 42f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
@@ -395,13 +395,13 @@ public class CameraFilterPack_Blend2Camera_VividLight : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("_Value", JDMCFBKJHDD);
+				HFBJAOFLCJI().SetTexture("_TimeX", JDMCFBKJHDD);
 			}
-			HFBJAOFLCJI().SetFloat("_Value1", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("menu.resetlevelcheckpoint", BlendFX);
-			NBPKMLMCHFN.SetFloat("_Distortion", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetFloat("_Amount", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("VoteUpToggle", BlendFX);
+			PLBEJJIHFPB().SetFloat("_TimeX", SwitchCameraToCamera2);
 			NBPKMLMCHFN.SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 479f, 395f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{

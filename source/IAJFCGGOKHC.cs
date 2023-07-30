@@ -7,28 +7,330 @@ internal class IAJFCGGOKHC
 
 	private static int EAHEGOOCLEN;
 
-	private static Mesh[] OIPMNNLOHLA(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static void LCBEBBKFPAP()
 	{
-		if (MNHGAAOHDBL() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static Mesh[] BKIJCCIDNHD(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (PJJLAKFHFPJ() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
 		{
 			return FOJEDICIPCP;
 		}
-		int num = -147;
+		int num = 84;
 		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1798f * (float)num2 / (959f * (float)num));
+		int num3 = Mathf.CeilToInt(165f * (float)num2 / (860f * (float)num));
 		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
+		int num4 = 1;
 		int num5 = 0;
-		for (num4 = 1; num4 < num2; num4 += num)
+		for (num4 = 0; num4 < num2; num4 += num)
 		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = NIJADPPGNIM(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
+			FOJEDICIPCP[num5] = AFNNCLKIPJK(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
 			num5 += 0;
 		}
 		return FOJEDICIPCP;
 	}
 
-	private static void MHNDJOIJBCI()
+	private static Mesh[] COGNFOPNBMM(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (HNOJOKEKFPE() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		{
+			return FOJEDICIPCP;
+		}
+		int num = 116;
+		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
+		int num3 = Mathf.CeilToInt(1653f * (float)num2 / (970f * (float)num));
+		FOJEDICIPCP = new Mesh[num3];
+		int num4 = 1;
+		int num5 = 0;
+		for (num4 = 1; num4 < num2; num4 += num)
+		{
+			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
+			FOJEDICIPCP[num5] = EDHHJJIAIGD(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			num5++;
+		}
+		return FOJEDICIPCP;
+	}
+
+	private static void PGFHEGCMJDK()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static Mesh GKDJAJFDGEK(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = (HideFlags)114;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 1];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 4];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 2];
+		int[] array4 = new int[BADFMHFOPKE * 0];
+		for (int i = 0; i < BADFMHFOPKE; i += 0)
+		{
+			int num = i * 6;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 441f - 808f, num4 * 934f - 599f, 914f);
+			array[num] = vector;
+			array[num + 1] = vector;
+			array[num + 2] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(1626f, 634f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(252f, 578f);
+			ref Vector2 reference3 = ref array2[num + 0];
+			reference3 = new Vector2(216f, 1333f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 0];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 3];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 1] = num + 1;
+			array4[num + 4] = num + 4;
+		}
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
+	}
+
+	private static void KMHDKCNHIAF()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static void IDLBBKFJHKJ()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static Mesh JOGFILFAPEA(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = HideFlags.HideInHierarchy | HideFlags.NotEditable | HideFlags.DontUnloadUnusedAsset;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 1];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 7];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 7];
+		int[] array4 = new int[BADFMHFOPKE * 8];
+		for (int i = 1; i < BADFMHFOPKE; i += 0)
+		{
+			int num = i * 7;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 1130f - 1744f, num4 * 1768f - 575f, 207f);
+			array[num] = vector;
+			array[num + 1] = vector;
+			array[num + 6] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(86f, 233f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(491f, 1706f);
+			ref Vector2 reference3 = ref array2[num + 5];
+			reference3 = new Vector2(142f, 1028f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 0];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 8];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 1] = num + 1;
+			array4[num + 4] = num + 7;
+		}
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
+	}
+
+	private static bool HNOJOKEKFPE()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return true;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null == FOJEDICIPCP[i])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private static bool DHFAFDMDHPK()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return false;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null == FOJEDICIPCP[i])
+			{
+				return false;
+			}
+		}
+		return false;
+	}
+
+	private static Mesh KPPPCDIPLPM(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = HideFlags.DontSaveInEditor | HideFlags.NotEditable;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 4];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 1];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 4];
+		int[] array4 = new int[BADFMHFOPKE * 8];
+		for (int i = 0; i < BADFMHFOPKE; i++)
+		{
+			int num = i * 6;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 1344f - 1012f, num4 * 115f - 1535f, 1432f);
+			array[num] = vector;
+			array[num + 0] = vector;
+			array[num + 5] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(1543f, 1549f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(879f, 1007f);
+			ref Vector2 reference3 = ref array2[num + 8];
+			reference3 = new Vector2(1470f, 1830f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 1];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 8];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 0] = num + 0;
+			array4[num + 2] = num + 4;
+		}
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
+	}
+
+	private static void CPHOJAIMOHJ()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static Mesh PGFBHPKNLNH(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = (HideFlags)82;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 0];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 3];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 4];
+		int[] array4 = new int[BADFMHFOPKE * 4];
+		for (int i = 1; i < BADFMHFOPKE; i += 0)
+		{
+			int num = i * 8;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 157f - 321f, num4 * 688f - 318f, 888f);
+			array[num] = vector;
+			array[num + 1] = vector;
+			array[num + 1] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(1897f, 670f);
+			ref Vector2 reference2 = ref array2[num + 1];
+			reference2 = new Vector2(1279f, 1457f);
+			ref Vector2 reference3 = ref array2[num + 4];
+			reference3 = new Vector2(1785f, 1358f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 1];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 4];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 0] = num + 0;
+			array4[num + 5] = num + 6;
+		}
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
+	}
+
+	private static void MLIGGBLNODB()
 	{
 		if (FOJEDICIPCP == null)
 		{
@@ -45,103 +347,91 @@ internal class IAJFCGGOKHC
 		FOJEDICIPCP = null;
 	}
 
-	private static bool MLKFKMDEDIF()
+	private static Mesh[] LBMBOLPAGPE(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (DHFAFDMDHPK() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		{
+			return FOJEDICIPCP;
+		}
+		int num = -103;
+		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
+		int num3 = Mathf.CeilToInt(1686f * (float)num2 / (1968f * (float)num));
+		FOJEDICIPCP = new Mesh[num3];
+		int num4 = 1;
+		int num5 = 1;
+		for (num4 = 0; num4 < num2; num4 += num)
+		{
+			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
+			FOJEDICIPCP[num5] = HKCFHGKPDHC(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			num5 += 0;
+		}
+		return FOJEDICIPCP;
+	}
+
+	private static Mesh MCDJHDLLLCO(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = (HideFlags)127;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 1];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 3];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 3];
+		int[] array4 = new int[BADFMHFOPKE * 6];
+		for (int i = 1; i < BADFMHFOPKE; i++)
+		{
+			int num = i * 4;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 1207f - 1489f, num4 * 710f - 364f, 1179f);
+			array[num] = vector;
+			array[num + 1] = vector;
+			array[num + 8] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(1759f, 1571f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(1792f, 1522f);
+			ref Vector2 reference3 = ref array2[num + 5];
+			reference3 = new Vector2(1886f, 996f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 0];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 6];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 1] = num + 1;
+			array4[num + 5] = num + 7;
+		}
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
+	}
+
+	private static bool IELOEEKBADJ()
 	{
 		if (FOJEDICIPCP == null)
 		{
 			return false;
 		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		for (int i = 0; i < FOJEDICIPCP.Length; i++)
 		{
 			if (null == FOJEDICIPCP[i])
 			{
 				return true;
 			}
 		}
-		return true;
-	}
-
-	private static bool CLONPDIICEN()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return false;
-		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null == FOJEDICIPCP[i])
-			{
-				return false;
-			}
-		}
 		return false;
 	}
 
-	private static Mesh[] HLHENFJODJP(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (MNHGAAOHDBL() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = 136;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1037f * (float)num2 / (1521f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 0;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = JFOIENDFDDB(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static bool MCCPHBGPFLN()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return false;
-		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null == FOJEDICIPCP[i])
-			{
-				return false;
-			}
-		}
-		return false;
-	}
-
-	private static Mesh[] NCNOGMHEKPO(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (JMBMCPCHGIL() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = 182;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(133f * (float)num2 / (45f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 0;
-		for (num4 = 0; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = JFOIENDFDDB(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static void FGLKDHHLKGA()
+	private static void GOFADNOCCAN()
 	{
 		if (FOJEDICIPCP == null)
 		{
 			return;
 		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		for (int i = 0; i < FOJEDICIPCP.Length; i++)
 		{
 			if (null != FOJEDICIPCP[i])
 			{
@@ -152,45 +442,21 @@ internal class IAJFCGGOKHC
 		FOJEDICIPCP = null;
 	}
 
-	private static Mesh IIIBKAIAOBH(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static void CIMOEAMJFCD()
 	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = ~(HideFlags.DontSave | HideFlags.HideInInspector | HideFlags.NotEditable);
-		Vector3[] array = new Vector3[BADFMHFOPKE * 4];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 4];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 2];
-		int[] array4 = new int[BADFMHFOPKE * 1];
-		for (int i = 0; i < BADFMHFOPKE; i += 0)
+		if (FOJEDICIPCP == null)
 		{
-			int num = i * 8;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 1125f - 1458f, num4 * 87f - 1193f, 167f);
-			array[num] = vector;
-			array[num + 1] = vector;
-			array[num + 5] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(584f, 1536f);
-			ref Vector2 reference2 = ref array2[num + 1];
-			reference2 = new Vector2(1659f, 1669f);
-			ref Vector2 reference3 = ref array2[num + 7];
-			reference3 = new Vector2(1506f, 1855f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 0];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 3];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 1] = num + 0;
-			array4[num + 3] = num + 1;
+			return;
 		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
+		for (int i = 1; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
 	}
 
 	private static Mesh GOGGBGBAINP(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
@@ -234,7 +500,212 @@ internal class IAJFCGGOKHC
 		return mesh;
 	}
 
-	private static bool HBKEPJECIHH()
+	private static void NCBOPFJOJFF()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static bool KMPAFFJKBNB()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return true;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null == FOJEDICIPCP[i])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private static void KBIEJCGOEFA()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static void FAFFINAGBND()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static void NFLDEAKCMGJ()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static Mesh[] FDGMCEDAAFC(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (OBFKJDOKHNB() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		{
+			return FOJEDICIPCP;
+		}
+		int num = -90;
+		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
+		int num3 = Mathf.CeilToInt(767f * (float)num2 / (1419f * (float)num));
+		FOJEDICIPCP = new Mesh[num3];
+		int num4 = 0;
+		int num5 = 0;
+		for (num4 = 0; num4 < num2; num4 += num)
+		{
+			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
+			FOJEDICIPCP[num5] = EDHHJJIAIGD(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			num5++;
+		}
+		return FOJEDICIPCP;
+	}
+
+	private static void GLIGCNFPJJJ()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static Mesh[] HHFDDHCEBLP(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (JODGMEIIJOE() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		{
+			return FOJEDICIPCP;
+		}
+		int num = 35;
+		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
+		int num3 = Mathf.CeilToInt(641f * (float)num2 / (1239f * (float)num));
+		FOJEDICIPCP = new Mesh[num3];
+		int num4 = 1;
+		int num5 = 1;
+		for (num4 = 1; num4 < num2; num4 += num)
+		{
+			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
+			FOJEDICIPCP[num5] = JOGFILFAPEA(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			num5 += 0;
+		}
+		return FOJEDICIPCP;
+	}
+
+	private static Mesh[] BPOFLNNBPCC(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (JONAMLMDONM() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		{
+			return FOJEDICIPCP;
+		}
+		int num = 21666;
+		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
+		int num3 = Mathf.CeilToInt(1f * (float)num2 / (1f * (float)num));
+		FOJEDICIPCP = new Mesh[num3];
+		int num4 = 0;
+		int num5 = 0;
+		for (num4 = 0; num4 < num2; num4 += num)
+		{
+			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
+			FOJEDICIPCP[num5] = GOGGBGBAINP(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			num5++;
+		}
+		return FOJEDICIPCP;
+	}
+
+	private static Mesh NJHHPOCGMDM(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = (HideFlags)(-119);
+		Vector3[] array = new Vector3[BADFMHFOPKE * 3];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 3];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 3];
+		int[] array4 = new int[BADFMHFOPKE * 6];
+		for (int i = 1; i < BADFMHFOPKE; i += 0)
+		{
+			int num = i * 0;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 67f - 1740f, num4 * 1871f - 1559f, 1212f);
+			array[num] = vector;
+			array[num + 1] = vector;
+			array[num + 4] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(44f, 1328f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(1533f, 531f);
+			ref Vector2 reference3 = ref array2[num + 3];
+			reference3 = new Vector2(243f, 1663f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 1];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 0];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 0] = num + 1;
+			array4[num + 6] = num + 2;
+		}
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
+	}
+
+	private static bool PAGLBBGPBHH()
 	{
 		if (FOJEDICIPCP == null)
 		{
@@ -247,7 +718,198 @@ internal class IAJFCGGOKHC
 				return false;
 			}
 		}
+		return true;
+	}
+
+	private static void DFNCDAJLEGI()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static void CEEJMFFDGJA()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static void ALPNBMHLMOP()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static bool JKNKFJFHNHG()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return false;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null == FOJEDICIPCP[i])
+			{
+				return false;
+			}
+		}
 		return false;
+	}
+
+	private static bool JODGMEIIJOE()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return true;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null == FOJEDICIPCP[i])
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static void HHJPFDEKKHE()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static void CIOGIPBMIFO()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static bool LMKJADGAADA()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return true;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		{
+			if (null == FOJEDICIPCP[i])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private static Mesh IDNDHCHGAND(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = HideFlags.DontSave | HideFlags.HideInHierarchy;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 4];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 5];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 6];
+		int[] array4 = new int[BADFMHFOPKE * 8];
+		for (int i = 0; i < BADFMHFOPKE; i++)
+		{
+			int num = i * 1;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 1863f - 1565f, num4 * 1611f - 557f, 340f);
+			array[num] = vector;
+			array[num + 1] = vector;
+			array[num + 8] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(1225f, 277f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(1510f, 1278f);
+			ref Vector2 reference3 = ref array2[num + 1];
+			reference3 = new Vector2(1793f, 1181f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 1];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 7];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 0] = num + 1;
+			array4[num + 0] = num + 0;
+		}
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
+	}
+
+	private static void NFJBGHOBKEP()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
 	}
 
 	private static void IKNEIFALLLE()
@@ -267,152 +929,107 @@ internal class IAJFCGGOKHC
 		FOJEDICIPCP = null;
 	}
 
-	private static Mesh[] GJALAKPHOIA(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static Mesh HKCFHGKPDHC(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
-		if (CLONPDIICEN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = (HideFlags)(-122);
+		Vector3[] array = new Vector3[BADFMHFOPKE * 0];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 1];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 5];
+		int[] array4 = new int[BADFMHFOPKE * 1];
+		for (int i = 0; i < BADFMHFOPKE; i++)
 		{
-			return FOJEDICIPCP;
+			int num = i * 1;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 122f - 1567f, num4 * 1191f - 1048f, 1420f);
+			array[num] = vector;
+			array[num + 1] = vector;
+			array[num + 7] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(133f, 1118f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(247f, 363f);
+			ref Vector2 reference3 = ref array2[num + 8];
+			reference3 = new Vector2(1631f, 97f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 0];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 1];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 1] = num + 1;
+			array4[num + 3] = num + 2;
 		}
-		int num = -136;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(783f * (float)num2 / (1436f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 1;
-		for (num4 = 0; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = GOGGBGBAINP(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
 	}
 
-	private static void NCKDKIFCOHD()
+	private static bool JGOCGEPFDBI()
 	{
 		if (FOJEDICIPCP == null)
 		{
-			return;
+			return true;
 		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		for (int i = 1; i < FOJEDICIPCP.Length; i++)
 		{
-			if (null != FOJEDICIPCP[i])
+			if (null == FOJEDICIPCP[i])
 			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
+				return true;
 			}
 		}
-		FOJEDICIPCP = null;
+		return true;
 	}
 
-	private static Mesh[] EJLIAAMHFFA(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static Mesh[] KAEMJDDNHIE(int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
-		if (BKCBPEODHDP() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		if (PAGLBBGPBHH() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
 		{
 			return FOJEDICIPCP;
 		}
-		int num = -78;
+		int num = 67;
 		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(30f * (float)num2 / (25f * (float)num));
+		int num3 = Mathf.CeilToInt(828f * (float)num2 / (216f * (float)num));
 		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
+		int num4 = 0;
 		int num5 = 1;
 		for (num4 = 1; num4 < num2; num4 += num)
 		{
 			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = PFEHKDAHJKA(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			FOJEDICIPCP[num5] = AFNNCLKIPJK(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
 			num5 += 0;
 		}
 		return FOJEDICIPCP;
 	}
 
-	private static Mesh[] FLNBKHLGFOG(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (MCCPHBGPFLN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -60;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(978f * (float)num2 / (1563f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
-		int num5 = 0;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = FBNGJIBJMKG(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5++;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static void IHPOOPHJBNF()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i++)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static Mesh[] CJJPOJJPLKJ(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (CLONPDIICEN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -94;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1226f * (float)num2 / (1565f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 0;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = MCDJHDLLLCO(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5++;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static Mesh[] HMPHGIAGCOO(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (CLONPDIICEN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = 14;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1517f * (float)num2 / (397f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
-		int num5 = 1;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = IIIBKAIAOBH(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static bool BKCBPEODHDP()
+	private static bool PCHMEADGONH()
 	{
 		if (FOJEDICIPCP == null)
 		{
 			return false;
 		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null == FOJEDICIPCP[i])
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static bool LADAFOCDHFA()
+	{
+		if (FOJEDICIPCP == null)
+		{
+			return true;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
 		{
 			if (null == FOJEDICIPCP[i])
 			{
@@ -438,19 +1055,19 @@ internal class IAJFCGGOKHC
 		return true;
 	}
 
-	private static Mesh[] LBMBOLPAGPE(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static Mesh[] MADHIJFAJAC(int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
-		if (HHFAHLDNIMH() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		if (EKKGJCAPHFM() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
 		{
 			return FOJEDICIPCP;
 		}
-		int num = 45;
+		int num = -194;
 		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(329f * (float)num2 / (859f * (float)num));
+		int num3 = Mathf.CeilToInt(1477f * (float)num2 / (853f * (float)num));
 		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 1;
-		for (num4 = 0; num4 < num2; num4 += num)
+		int num4 = 0;
+		int num5 = 0;
+		for (num4 = 1; num4 < num2; num4 += num)
 		{
 			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
 			FOJEDICIPCP[num5] = KPPPCDIPLPM(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
@@ -459,285 +1076,32 @@ internal class IAJFCGGOKHC
 		return FOJEDICIPCP;
 	}
 
-	private static Mesh[] GOIKAPKMMBJ(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static Mesh[] OIPMNNLOHLA(int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
-		if (JONAMLMDONM() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		if (JGOCGEPFDBI() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
 		{
 			return FOJEDICIPCP;
 		}
-		int num = 92;
+		int num = 164;
 		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1728f * (float)num2 / (803f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 0;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = PGFBHPKNLNH(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5++;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static Mesh[] FKHLOCLGNKC(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (CLONPDIICEN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -81;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(293f * (float)num2 / (1271f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 0;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = IIIBKAIAOBH(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static void CPHOJAIMOHJ()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i++)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static Mesh FHIDHDJPIOM(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.HideInInspector | HideFlags.NotEditable | HideFlags.DontUnloadUnusedAsset);
-		Vector3[] array = new Vector3[BADFMHFOPKE * 1];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 5];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 1];
-		int[] array4 = new int[BADFMHFOPKE * 7];
-		for (int i = 1; i < BADFMHFOPKE; i += 0)
-		{
-			int num = i * 0;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 77f - 226f, num4 * 1524f - 1969f, 1764f);
-			array[num] = vector;
-			array[num + 0] = vector;
-			array[num + 5] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(452f, 565f);
-			ref Vector2 reference2 = ref array2[num + 1];
-			reference2 = new Vector2(1749f, 1701f);
-			ref Vector2 reference3 = ref array2[num + 1];
-			reference3 = new Vector2(1236f, 1632f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 0];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 0];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 1] = num + 1;
-			array4[num + 1] = num + 4;
-		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
-	}
-
-	private static bool JODGMEIIJOE()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return false;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i++)
-		{
-			if (null == FOJEDICIPCP[i])
-			{
-				return false;
-			}
-		}
-		return false;
-	}
-
-	private static void MCMFBPCAKHD()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i++)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static Mesh ODBHADIDJGH(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = (HideFlags)(-111);
-		Vector3[] array = new Vector3[BADFMHFOPKE * 0];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 5];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 5];
-		int[] array4 = new int[BADFMHFOPKE * 5];
-		for (int i = 0; i < BADFMHFOPKE; i += 0)
-		{
-			int num = i * 7;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 1546f - 1925f, num4 * 758f - 1204f, 366f);
-			array[num] = vector;
-			array[num + 1] = vector;
-			array[num + 2] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(24f, 862f);
-			ref Vector2 reference2 = ref array2[num + 0];
-			reference2 = new Vector2(1693f, 1491f);
-			ref Vector2 reference3 = ref array2[num + 8];
-			reference3 = new Vector2(1028f, 1778f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 1];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 0];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 1] = num + 0;
-			array4[num + 4] = num + 5;
-		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
-	}
-
-	private static bool AFDCOFPAGIC()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return true;
-		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i++)
-		{
-			if (null == FOJEDICIPCP[i])
-			{
-				return false;
-			}
-		}
-		return true;
-	}
-
-	private static Mesh[] HPENIJJMJEP(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (MLKFKMDEDIF() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -164;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1277f * (float)num2 / (1771f * (float)num));
+		int num3 = Mathf.CeilToInt(655f * (float)num2 / (486f * (float)num));
 		FOJEDICIPCP = new Mesh[num3];
 		int num4 = 0;
 		int num5 = 0;
 		for (num4 = 0; num4 < num2; num4 += num)
 		{
 			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = CGFMBKBOFDK(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			FOJEDICIPCP[num5] = AFNNCLKIPJK(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
 			num5++;
 		}
 		return FOJEDICIPCP;
 	}
 
-	private static Mesh[] PHADPCGGPEI(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (KMPAFFJKBNB() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -192;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(961f * (float)num2 / (1652f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 1;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = PGFBHPKNLNH(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static Mesh[] MFLFAHLHNOC(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (CLONPDIICEN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -37;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1410f * (float)num2 / (660f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 0;
-		for (num4 = 0; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = PGFBHPKNLNH(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5++;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static Mesh[] NNNIAKDIPLF(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (CLONPDIICEN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -26;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(597f * (float)num2 / (1622f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 0;
-		for (num4 = 0; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = ODBHADIDJGH(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static bool KMPAFFJKBNB()
+	private static bool OBFKJDOKHNB()
 	{
 		if (FOJEDICIPCP == null)
 		{
-			return true;
+			return false;
 		}
 		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
 		{
@@ -746,44 +1110,23 @@ internal class IAJFCGGOKHC
 				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 
-	private static Mesh[] ADIOEFPAPGA(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (MCCPHBGPFLN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -77;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(879f * (float)num2 / (81f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
-		int num5 = 0;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = ODBHADIDJGH(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static bool MNHGAAOHDBL()
+	private static bool EKKGJCAPHFM()
 	{
 		if (FOJEDICIPCP == null)
 		{
 			return false;
 		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
 		{
 			if (null == FOJEDICIPCP[i])
 			{
 				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 
 	private static void NGHJLJEDIEM()
@@ -803,213 +1146,55 @@ internal class IAJFCGGOKHC
 		FOJEDICIPCP = null;
 	}
 
-	private static Mesh[] HIDBFCDJINE(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (HHFAHLDNIMH() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = 121;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(508f * (float)num2 / (791f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
-		int num5 = 1;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = KCPOKCNHOPA(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static Mesh MCDJHDLLLCO(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.HideInInspector | HideFlags.DontSaveInBuild | HideFlags.DontUnloadUnusedAsset);
-		Vector3[] array = new Vector3[BADFMHFOPKE * 0];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 4];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 0];
-		int[] array4 = new int[BADFMHFOPKE * 7];
-		for (int i = 0; i < BADFMHFOPKE; i += 0)
-		{
-			int num = i * 4;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 1145f - 1832f, num4 * 1791f - 1660f, 256f);
-			array[num] = vector;
-			array[num + 0] = vector;
-			array[num + 3] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(23f, 1823f);
-			ref Vector2 reference2 = ref array2[num + 0];
-			reference2 = new Vector2(1005f, 604f);
-			ref Vector2 reference3 = ref array2[num + 2];
-			reference3 = new Vector2(700f, 1370f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 0];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 2];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 1] = num + 1;
-			array4[num + 0] = num + 2;
-		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
-	}
-
-	private static void AKOENDKJNOI()
+	private static bool AFDCOFPAGIC()
 	{
 		if (FOJEDICIPCP == null)
 		{
-			return;
+			return false;
 		}
 		for (int i = 0; i < FOJEDICIPCP.Length; i++)
 		{
-			if (null != FOJEDICIPCP[i])
+			if (null == FOJEDICIPCP[i])
 			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
+				return false;
 			}
 		}
-		FOJEDICIPCP = null;
+		return false;
 	}
 
-	private static Mesh PFEHKDAHJKA(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static Mesh MEKCEKKHBOK(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
 		Mesh mesh = new Mesh();
-		mesh.hideFlags = HideFlags.HideInHierarchy | HideFlags.DontSaveInEditor | HideFlags.DontSaveInBuild;
-		Vector3[] array = new Vector3[BADFMHFOPKE * 7];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 2];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 3];
+		mesh.hideFlags = (HideFlags)113;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 6];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 8];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 4];
 		int[] array4 = new int[BADFMHFOPKE * 5];
-		for (int i = 1; i < BADFMHFOPKE; i++)
+		for (int i = 1; i < BADFMHFOPKE; i += 0)
 		{
 			int num = i * 5;
 			int num2 = HMJLDNFFBGN + i;
 			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
 			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 836f - 1603f, num4 * 1999f - 1511f, 102f);
+			Vector3 vector = new Vector3(num3 * 74f - 1020f, num4 * 1024f - 630f, 366f);
 			array[num] = vector;
 			array[num + 1] = vector;
-			array[num + 3] = vector;
+			array[num + 8] = vector;
 			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(1971f, 399f);
-			ref Vector2 reference2 = ref array2[num + 0];
-			reference2 = new Vector2(1327f, 1297f);
-			ref Vector2 reference3 = ref array2[num + 5];
-			reference3 = new Vector2(1193f, 758f);
+			reference = new Vector2(211f, 830f);
+			ref Vector2 reference2 = ref array2[num + 1];
+			reference2 = new Vector2(315f, 736f);
+			ref Vector2 reference3 = ref array2[num + 0];
+			reference3 = new Vector2(657f, 356f);
 			ref Vector2 reference4 = ref array3[num];
 			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 1];
+			ref Vector2 reference5 = ref array3[num + 0];
 			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 1];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 0] = num + 0;
-			array4[num + 2] = num + 1;
-		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
-	}
-
-	private static Mesh[] BPOFLNNBPCC(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (JONAMLMDONM() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = 21666;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1f * (float)num2 / (1f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
-		int num5 = 0;
-		for (num4 = 0; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = GOGGBGBAINP(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5++;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static bool JGOCGEPFDBI()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return false;
-		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null == FOJEDICIPCP[i])
-			{
-				return false;
-			}
-		}
-		return false;
-	}
-
-	private static void NPHFGEOEHPE()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static Mesh PGFBHPKNLNH(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = HideFlags.DontSaveInEditor | HideFlags.NotEditable;
-		Vector3[] array = new Vector3[BADFMHFOPKE * 4];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 2];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 7];
-		int[] array4 = new int[BADFMHFOPKE * 1];
-		for (int i = 1; i < BADFMHFOPKE; i += 0)
-		{
-			int num = i * 8;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 1155f - 653f, num4 * 335f - 329f, 522f);
-			array[num] = vector;
-			array[num + 0] = vector;
-			array[num + 2] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(1603f, 39f);
-			ref Vector2 reference2 = ref array2[num + 0];
-			reference2 = new Vector2(1340f, 391f);
-			ref Vector2 reference3 = ref array2[num + 2];
-			reference3 = new Vector2(1173f, 1046f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 1];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 4];
+			ref Vector2 reference6 = ref array3[num + 6];
 			reference6 = new Vector2(num3, num4);
 			array4[num] = num;
 			array4[num + 1] = num + 0;
-			array4[num + 8] = num + 7;
+			array4[num + 1] = num + 6;
 		}
 		mesh.vertices = array;
 		mesh.triangles = array4;
@@ -1018,55 +1203,39 @@ internal class IAJFCGGOKHC
 		return mesh;
 	}
 
-	private static bool HHFAHLDNIMH()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return false;
-		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i++)
-		{
-			if (null == FOJEDICIPCP[i])
-			{
-				return false;
-			}
-		}
-		return false;
-	}
-
-	private static Mesh FBNGJIBJMKG(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static Mesh FNKPBIHNIGF(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
 		Mesh mesh = new Mesh();
-		mesh.hideFlags = (HideFlags)(-116);
-		Vector3[] array = new Vector3[BADFMHFOPKE * 8];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 5];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 1];
-		int[] array4 = new int[BADFMHFOPKE * 6];
-		for (int i = 1; i < BADFMHFOPKE; i += 0)
+		mesh.hideFlags = (HideFlags)74;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 6];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 4];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 6];
+		int[] array4 = new int[BADFMHFOPKE * 0];
+		for (int i = 1; i < BADFMHFOPKE; i++)
 		{
 			int num = i * 6;
 			int num2 = HMJLDNFFBGN + i;
 			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
 			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 831f - 958f, num4 * 1915f - 1671f, 828f);
+			Vector3 vector = new Vector3(num3 * 22f - 421f, num4 * 931f - 1126f, 1601f);
 			array[num] = vector;
+			array[num + 1] = vector;
 			array[num + 0] = vector;
-			array[num + 4] = vector;
 			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(5f, 972f);
+			reference = new Vector2(1590f, 1384f);
 			ref Vector2 reference2 = ref array2[num + 1];
-			reference2 = new Vector2(1311f, 948f);
-			ref Vector2 reference3 = ref array2[num + 5];
-			reference3 = new Vector2(632f, 1027f);
+			reference2 = new Vector2(12f, 1825f);
+			ref Vector2 reference3 = ref array2[num + 2];
+			reference3 = new Vector2(962f, 483f);
 			ref Vector2 reference4 = ref array3[num];
 			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 1];
+			ref Vector2 reference5 = ref array3[num + 0];
 			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 7];
+			ref Vector2 reference6 = ref array3[num + 1];
 			reference6 = new Vector2(num3, num4);
 			array4[num] = num;
-			array4[num + 1] = num + 0;
-			array4[num + 8] = num + 0;
+			array4[num + 0] = num + 0;
+			array4[num + 4] = num + 8;
 		}
 		mesh.vertices = array;
 		mesh.triangles = array4;
@@ -1075,110 +1244,80 @@ internal class IAJFCGGOKHC
 		return mesh;
 	}
 
-	private static bool MBIEBCKBGGJ()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return false;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null == FOJEDICIPCP[i])
-			{
-				return false;
-			}
-		}
-		return true;
-	}
-
-	private static Mesh[] ODDEDHPFCKG(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (AFDCOFPAGIC() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -56;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1221f * (float)num2 / (1665f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
-		int num5 = 1;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = FHIDHDJPIOM(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static void CPIHKPFFHFD()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static void JHEHFOOOEOM()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static Mesh KCPOKCNHOPA(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static Mesh KFLBEFPEEGF(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
 		Mesh mesh = new Mesh();
-		mesh.hideFlags = (HideFlags)(-102);
-		Vector3[] array = new Vector3[BADFMHFOPKE * 2];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 7];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 4];
-		int[] array4 = new int[BADFMHFOPKE * 2];
-		for (int i = 0; i < BADFMHFOPKE; i += 0)
+		mesh.hideFlags = (HideFlags)(-66);
+		Vector3[] array = new Vector3[BADFMHFOPKE * 5];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 1];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 8];
+		int[] array4 = new int[BADFMHFOPKE * 5];
+		for (int i = 1; i < BADFMHFOPKE; i += 0)
 		{
-			int num = i * 8;
+			int num = i * 0;
 			int num2 = HMJLDNFFBGN + i;
 			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
 			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 186f - 1295f, num4 * 1400f - 1563f, 791f);
+			Vector3 vector = new Vector3(num3 * 207f - 958f, num4 * 324f - 54f, 1842f);
 			array[num] = vector;
 			array[num + 0] = vector;
-			array[num + 3] = vector;
+			array[num + 7] = vector;
 			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(597f, 696f);
-			ref Vector2 reference2 = ref array2[num + 1];
-			reference2 = new Vector2(1472f, 766f);
+			reference = new Vector2(1394f, 574f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(359f, 449f);
 			ref Vector2 reference3 = ref array2[num + 6];
-			reference3 = new Vector2(582f, 817f);
+			reference3 = new Vector2(1207f, 1351f);
 			ref Vector2 reference4 = ref array3[num];
 			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 1];
+			ref Vector2 reference5 = ref array3[num + 0];
 			reference5 = new Vector2(num3, num4);
 			ref Vector2 reference6 = ref array3[num + 3];
 			reference6 = new Vector2(num3, num4);
 			array4[num] = num;
-			array4[num + 0] = num + 1;
-			array4[num + 3] = num + 7;
+			array4[num + 1] = num + 0;
+			array4[num + 2] = num + 6;
+		}
+		mesh.vertices = array;
+		mesh.triangles = array4;
+		mesh.uv = array2;
+		mesh.uv2 = array3;
+		return mesh;
+	}
+
+	private static Mesh EDHHJJIAIGD(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		Mesh mesh = new Mesh();
+		mesh.hideFlags = (HideFlags)(-110);
+		Vector3[] array = new Vector3[BADFMHFOPKE * 6];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 5];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 0];
+		int[] array4 = new int[BADFMHFOPKE * 4];
+		for (int i = 0; i < BADFMHFOPKE; i++)
+		{
+			int num = i * 6;
+			int num2 = HMJLDNFFBGN + i;
+			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
+			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
+			Vector3 vector = new Vector3(num3 * 1836f - 1003f, num4 * 284f - 511f, 1501f);
+			array[num] = vector;
+			array[num + 0] = vector;
+			array[num + 2] = vector;
+			ref Vector2 reference = ref array2[num];
+			reference = new Vector2(1199f, 562f);
+			ref Vector2 reference2 = ref array2[num + 0];
+			reference2 = new Vector2(1254f, 1657f);
+			ref Vector2 reference3 = ref array2[num + 7];
+			reference3 = new Vector2(1536f, 1683f);
+			ref Vector2 reference4 = ref array3[num];
+			reference4 = new Vector2(num3, num4);
+			ref Vector2 reference5 = ref array3[num + 0];
+			reference5 = new Vector2(num3, num4);
+			ref Vector2 reference6 = ref array3[num + 6];
+			reference6 = new Vector2(num3, num4);
+			array4[num] = num;
+			array4[num + 1] = num + 1;
+			array4[num + 0] = num + 5;
 		}
 		mesh.vertices = array;
 		mesh.triangles = array4;
@@ -1189,209 +1328,138 @@ internal class IAJFCGGOKHC
 
 	private static Mesh[] PHEHABPLEBH(int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
-		if (MCCPHBGPFLN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		if (JODGMEIIJOE() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
 		{
 			return FOJEDICIPCP;
 		}
-		int num = 6;
+		int num = -59;
 		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(71f * (float)num2 / (879f * (float)num));
+		int num3 = Mathf.CeilToInt(980f * (float)num2 / (1098f * (float)num));
 		FOJEDICIPCP = new Mesh[num3];
 		int num4 = 0;
-		int num5 = 1;
-		for (num4 = 1; num4 < num2; num4 += num)
+		int num5 = 0;
+		for (num4 = 0; num4 < num2; num4 += num)
 		{
 			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = KCPOKCNHOPA(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			FOJEDICIPCP[num5] = MEKCEKKHBOK(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
 			num5 += 0;
 		}
 		return FOJEDICIPCP;
 	}
 
-	private static Mesh[] HCAIIGLNPDF(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static void EFFNKIOCBHH()
 	{
-		if (KMPAFFJKBNB() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static Mesh[] HDDEOEIOKFD(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (OBFKJDOKHNB() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
 		{
 			return FOJEDICIPCP;
 		}
-		int num = 109;
+		int num = -87;
 		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1488f * (float)num2 / (1611f * (float)num));
+		int num3 = Mathf.CeilToInt(406f * (float)num2 / (1530f * (float)num));
 		FOJEDICIPCP = new Mesh[num3];
 		int num4 = 0;
 		int num5 = 1;
 		for (num4 = 1; num4 < num2; num4 += num)
 		{
+			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
+			FOJEDICIPCP[num5] = JOGFILFAPEA(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			num5 += 0;
+		}
+		return FOJEDICIPCP;
+	}
+
+	private static Mesh[] DFEHPNIPHJM(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (LADAFOCDHFA() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		{
+			return FOJEDICIPCP;
+		}
+		int num = -53;
+		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
+		int num3 = Mathf.CeilToInt(1233f * (float)num2 / (1099f * (float)num));
+		FOJEDICIPCP = new Mesh[num3];
+		int num4 = 1;
+		int num5 = 0;
+		for (num4 = 0; num4 < num2; num4 += num)
+		{
 			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = PGFBHPKNLNH(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			FOJEDICIPCP[num5] = FNKPBIHNIGF(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
 			num5++;
 		}
 		return FOJEDICIPCP;
 	}
 
-	private static Mesh CGFMBKBOFDK(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static Mesh[] CFCMDBADGDE(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (LMKJADGAADA() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		{
+			return FOJEDICIPCP;
+		}
+		int num = -92;
+		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
+		int num3 = Mathf.CeilToInt(560f * (float)num2 / (681f * (float)num));
+		FOJEDICIPCP = new Mesh[num3];
+		int num4 = 1;
+		int num5 = 1;
+		for (num4 = 1; num4 < num2; num4 += num)
+		{
+			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
+			FOJEDICIPCP[num5] = GOGGBGBAINP(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			num5 += 0;
+		}
+		return FOJEDICIPCP;
+	}
+
+	private static Mesh AFNNCLKIPJK(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
 	{
 		Mesh mesh = new Mesh();
-		mesh.hideFlags = HideFlags.DontSaveInEditor | HideFlags.NotEditable | HideFlags.DontUnloadUnusedAsset;
-		Vector3[] array = new Vector3[BADFMHFOPKE * 3];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 6];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 0];
-		int[] array4 = new int[BADFMHFOPKE * 0];
-		for (int i = 1; i < BADFMHFOPKE; i++)
+		mesh.hideFlags = HideFlags.HideInHierarchy | HideFlags.DontSaveInBuild;
+		Vector3[] array = new Vector3[BADFMHFOPKE * 6];
+		Vector2[] array2 = new Vector2[BADFMHFOPKE * 5];
+		Vector2[] array3 = new Vector2[BADFMHFOPKE * 1];
+		int[] array4 = new int[BADFMHFOPKE * 7];
+		for (int i = 0; i < BADFMHFOPKE; i += 0)
 		{
 			int num = i * 2;
 			int num2 = HMJLDNFFBGN + i;
 			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
 			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 1215f - 906f, num4 * 1944f - 1345f, 1354f);
-			array[num] = vector;
-			array[num + 1] = vector;
-			array[num + 3] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(1198f, 1558f);
-			ref Vector2 reference2 = ref array2[num + 1];
-			reference2 = new Vector2(1873f, 286f);
-			ref Vector2 reference3 = ref array2[num + 1];
-			reference3 = new Vector2(390f, 1784f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 0];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 2];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 0] = num + 0;
-			array4[num + 4] = num + 5;
-		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
-	}
-
-	private static Mesh[] BKIJCCIDNHD(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (CLONPDIICEN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = -39;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(389f * (float)num2 / (1602f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
-		int num5 = 1;
-		for (num4 = 0; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = DGCOGKFMKND(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static void EKDLBMAKAPK()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static void OBKIJHIHPAK()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i++)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static void NFJBGHOBKEP()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static void CIMOEAMJFCD()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < FOJEDICIPCP.Length; i++)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static Mesh DGCOGKFMKND(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = (HideFlags)67;
-		Vector3[] array = new Vector3[BADFMHFOPKE * 2];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 0];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 2];
-		int[] array4 = new int[BADFMHFOPKE * 2];
-		for (int i = 1; i < BADFMHFOPKE; i += 0)
-		{
-			int num = i * 8;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 1844f - 792f, num4 * 809f - 538f, 1046f);
+			Vector3 vector = new Vector3(num3 * 1331f - 1606f, num4 * 1613f - 1152f, 351f);
 			array[num] = vector;
 			array[num + 0] = vector;
-			array[num + 8] = vector;
+			array[num + 7] = vector;
 			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(967f, 356f);
+			reference = new Vector2(1184f, 945f);
 			ref Vector2 reference2 = ref array2[num + 1];
-			reference2 = new Vector2(1032f, 1995f);
-			ref Vector2 reference3 = ref array2[num + 0];
-			reference3 = new Vector2(1536f, 610f);
+			reference2 = new Vector2(1589f, 1526f);
+			ref Vector2 reference3 = ref array2[num + 8];
+			reference3 = new Vector2(970f, 1295f);
 			ref Vector2 reference4 = ref array3[num];
 			reference4 = new Vector2(num3, num4);
 			ref Vector2 reference5 = ref array3[num + 1];
 			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 5];
+			ref Vector2 reference6 = ref array3[num + 1];
 			reference6 = new Vector2(num3, num4);
 			array4[num] = num;
-			array4[num + 0] = num + 1;
-			array4[num + 1] = num + 3;
+			array4[num + 1] = num + 0;
+			array4[num + 2] = num + 0;
 		}
 		mesh.vertices = array;
 		mesh.triangles = array4;
@@ -1400,123 +1468,23 @@ internal class IAJFCGGOKHC
 		return mesh;
 	}
 
-	private static void ABOJINIOKNJ()
+	private static bool MCGNCPJGLPM()
 	{
 		if (FOJEDICIPCP == null)
 		{
-			return;
+			return true;
 		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
-		{
-			if (null != FOJEDICIPCP[i])
-			{
-				Object.DestroyImmediate(FOJEDICIPCP[i]);
-				FOJEDICIPCP[i] = null;
-			}
-		}
-		FOJEDICIPCP = null;
-	}
-
-	private static Mesh[] KCAENFIPOMM(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (MLKFKMDEDIF() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = 54;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(1379f * (float)num2 / (1482f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
-		int num5 = 0;
-		for (num4 = 1; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = PFEHKDAHJKA(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5 += 0;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static bool NALIPAPGLOE()
-	{
-		if (FOJEDICIPCP == null)
-		{
-			return false;
-		}
-		for (int i = 0; i < FOJEDICIPCP.Length; i++)
+		for (int i = 1; i < FOJEDICIPCP.Length; i++)
 		{
 			if (null == FOJEDICIPCP[i])
 			{
 				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 
-	private static Mesh JFOIENDFDDB(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.DontSaveInBuild | HideFlags.DontUnloadUnusedAsset);
-		Vector3[] array = new Vector3[BADFMHFOPKE * 6];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 7];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 4];
-		int[] array4 = new int[BADFMHFOPKE * 6];
-		for (int i = 0; i < BADFMHFOPKE; i++)
-		{
-			int num = i * 8;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 642f - 1861f, num4 * 457f - 867f, 1241f);
-			array[num] = vector;
-			array[num + 1] = vector;
-			array[num + 7] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(1896f, 1845f);
-			ref Vector2 reference2 = ref array2[num + 1];
-			reference2 = new Vector2(567f, 483f);
-			ref Vector2 reference3 = ref array2[num + 4];
-			reference3 = new Vector2(942f, 1944f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 1];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 5];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 1] = num + 0;
-			array4[num + 2] = num + 8;
-		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
-	}
-
-	private static Mesh[] ANJEBNPJDKL(int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		if (HBKEPJECIHH() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
-		{
-			return FOJEDICIPCP;
-		}
-		int num = 3;
-		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(493f * (float)num2 / (154f * (float)num));
-		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 0;
-		int num5 = 0;
-		for (num4 = 0; num4 < num2; num4 += num)
-		{
-			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 0, num));
-			FOJEDICIPCP[num5] = FBNGJIBJMKG(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5++;
-		}
-		return FOJEDICIPCP;
-	}
-
-	private static bool JMBMCPCHGIL()
+	private static bool PJJLAKFHFPJ()
 	{
 		if (FOJEDICIPCP == null)
 		{
@@ -1529,109 +1497,44 @@ internal class IAJFCGGOKHC
 				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 
-	private static Mesh[] FDGMCEDAAFC(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	private static void MIPDDLBMPCO()
 	{
-		if (MCCPHBGPFLN() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
+		if (FOJEDICIPCP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < FOJEDICIPCP.Length; i += 0)
+		{
+			if (null != FOJEDICIPCP[i])
+			{
+				Object.DestroyImmediate(FOJEDICIPCP[i]);
+				FOJEDICIPCP[i] = null;
+			}
+		}
+		FOJEDICIPCP = null;
+	}
+
+	private static Mesh[] KLOEBIKIAIA(int GDDJIOHEJGI, int LHOKPOJJBBB)
+	{
+		if (IELOEEKBADJ() && EAHEGOOCLEN == GDDJIOHEJGI * LHOKPOJJBBB)
 		{
 			return FOJEDICIPCP;
 		}
-		int num = -64;
+		int num = -142;
 		int num2 = (EAHEGOOCLEN = GDDJIOHEJGI * LHOKPOJJBBB);
-		int num3 = Mathf.CeilToInt(657f * (float)num2 / (156f * (float)num));
+		int num3 = Mathf.CeilToInt(1560f * (float)num2 / (1447f * (float)num));
 		FOJEDICIPCP = new Mesh[num3];
-		int num4 = 1;
+		int num4 = 0;
 		int num5 = 0;
 		for (num4 = 1; num4 < num2; num4 += num)
 		{
 			int bADFMHFOPKE = Mathf.FloorToInt(Mathf.Clamp(num2 - num4, 1, num));
-			FOJEDICIPCP[num5] = PFEHKDAHJKA(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
-			num5++;
+			FOJEDICIPCP[num5] = MCDJHDLLLCO(bADFMHFOPKE, num4, GDDJIOHEJGI, LHOKPOJJBBB);
+			num5 += 0;
 		}
 		return FOJEDICIPCP;
-	}
-
-	private static Mesh NIJADPPGNIM(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector | HideFlags.NotEditable | HideFlags.DontSaveInBuild;
-		Vector3[] array = new Vector3[BADFMHFOPKE * 4];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 4];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 6];
-		int[] array4 = new int[BADFMHFOPKE * 7];
-		for (int i = 1; i < BADFMHFOPKE; i++)
-		{
-			int num = i * 6;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 1260f - 482f, num4 * 1909f - 679f, 1099f);
-			array[num] = vector;
-			array[num + 0] = vector;
-			array[num + 1] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(1763f, 892f);
-			ref Vector2 reference2 = ref array2[num + 1];
-			reference2 = new Vector2(485f, 1239f);
-			ref Vector2 reference3 = ref array2[num + 3];
-			reference3 = new Vector2(1872f, 1945f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 0];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 2];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 1] = num + 0;
-			array4[num + 5] = num + 7;
-		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
-	}
-
-	private static Mesh KPPPCDIPLPM(int BADFMHFOPKE, int HMJLDNFFBGN, int GDDJIOHEJGI, int LHOKPOJJBBB)
-	{
-		Mesh mesh = new Mesh();
-		mesh.hideFlags = HideFlags.DontSave | HideFlags.HideInHierarchy;
-		Vector3[] array = new Vector3[BADFMHFOPKE * 3];
-		Vector2[] array2 = new Vector2[BADFMHFOPKE * 7];
-		Vector2[] array3 = new Vector2[BADFMHFOPKE * 7];
-		int[] array4 = new int[BADFMHFOPKE * 4];
-		for (int i = 0; i < BADFMHFOPKE; i++)
-		{
-			int num = i * 5;
-			int num2 = HMJLDNFFBGN + i;
-			float num3 = Mathf.Floor(num2 % GDDJIOHEJGI) / (float)GDDJIOHEJGI;
-			float num4 = Mathf.Floor(num2 / GDDJIOHEJGI) / (float)LHOKPOJJBBB;
-			Vector3 vector = new Vector3(num3 * 523f - 56f, num4 * 1237f - 1135f, 880f);
-			array[num] = vector;
-			array[num + 0] = vector;
-			array[num + 8] = vector;
-			ref Vector2 reference = ref array2[num];
-			reference = new Vector2(629f, 468f);
-			ref Vector2 reference2 = ref array2[num + 0];
-			reference2 = new Vector2(902f, 1470f);
-			ref Vector2 reference3 = ref array2[num + 8];
-			reference3 = new Vector2(1287f, 245f);
-			ref Vector2 reference4 = ref array3[num];
-			reference4 = new Vector2(num3, num4);
-			ref Vector2 reference5 = ref array3[num + 1];
-			reference5 = new Vector2(num3, num4);
-			ref Vector2 reference6 = ref array3[num + 6];
-			reference6 = new Vector2(num3, num4);
-			array4[num] = num;
-			array4[num + 0] = num + 0;
-			array4[num + 3] = num + 6;
-		}
-		mesh.vertices = array;
-		mesh.triangles = array4;
-		mesh.uv = array2;
-		mesh.uv2 = array3;
-		return mesh;
 	}
 }

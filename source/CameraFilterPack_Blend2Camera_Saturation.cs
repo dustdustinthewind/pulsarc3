@@ -343,13 +343,13 @@ public class CameraFilterPack_Blend2Camera_Saturation : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IIJMIPBMMBF().SetTexture("_MainTexBlurred", JDMCFBKJHDD);
+				DEFBJOCJJKF().SetTexture("offsets", JDMCFBKJHDD);
 			}
-			JFDGLLEOPGB().SetFloat("_Offsets", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/FX_Glitch2", BlendFX);
-			MMOODGIODPC().SetFloat("DISTORT", SwitchCameraToCamera2);
-			DEFBJOCJJKF().SetVector("CameraFilterPack/Distortion_Twist_Square", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 999f, 454f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("_Offsets", HBJJOCHGOPH);
+			MMOODGIODPC().SetFloat("_ScreenResolution", BlendFX);
+			MMOODGIODPC().SetFloat("_Luminance", SwitchCameraToCamera2);
+			JFDGLLEOPGB().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 999f, 454f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
 		}
 		else
 		{
@@ -429,13 +429,13 @@ public class CameraFilterPack_Blend2Camera_Saturation : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IIJMIPBMMBF().SetTexture("[MapEditor] Created new map: ", JDMCFBKJHDD);
+				JFDGLLEOPGB().SetTexture("Editor/", JDMCFBKJHDD);
 			}
-			JFDGLLEOPGB().SetFloat("SetSunColors", HBJJOCHGOPH);
-			IIJMIPBMMBF().SetFloat("/../", BlendFX);
-			JFDGLLEOPGB().SetFloat("checkpoint", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 455f, 583f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			IIJMIPBMMBF().SetFloat("SetPosition", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("/", BlendFX);
+			IIJMIPBMMBF().SetFloat("Added checkpoint", SwitchCameraToCamera2);
+			MMOODGIODPC().SetVector("CameraFilterPack/Gradients_FireGradient", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 455f, 583f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
 		}
 		else
 		{
@@ -486,12 +486,12 @@ public class CameraFilterPack_Blend2Camera_Saturation : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				DEFBJOCJJKF().SetTexture("[PlayerController] ", JDMCFBKJHDD);
+				IIJMIPBMMBF().SetTexture(" not exist", JDMCFBKJHDD);
 			}
-			MMOODGIODPC().SetFloat("Fade", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat(" {0}", BlendFX);
-			MMOODGIODPC().SetFloat(" AuthMode ", SwitchCameraToCamera2);
-			MMOODGIODPC().SetVector("_ChannelMixerBlue", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 545f, 1658f));
+			JFDGLLEOPGB().SetFloat("_Size", HBJJOCHGOPH);
+			JFDGLLEOPGB().SetFloat("{0}", BlendFX);
+			EPCGJFCCAFH().SetFloat("Skipping EstablishEncryption. Protocol is secure.", SwitchCameraToCamera2);
+			EPCGJFCCAFH().SetVector("_ChannelMixerRed", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 545f, 1658f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
 		}
 		else

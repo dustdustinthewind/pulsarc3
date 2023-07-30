@@ -32,7 +32,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void PKLOBJHKFEO()
 	{
-		SCShader = Shader.Find("_TileMaxLoop");
+		SCShader = Shader.Find("_MaxBlurRadius");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -59,8 +59,8 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1306f;
 			}
-			OGMEGHKECAH().SetFloat("#ok", HBJJOCHGOPH);
-			KDMBOKLMADJ().SetFloat("offline", DotSize);
+			BFGNMFCNDBC().SetFloat("[PlayerBase] Config error: musicTime <= 0", HBJJOCHGOPH);
+			DOHGBNPMBKG().SetFloat("offline", DotSize);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
@@ -71,7 +71,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void BMOFEBKGLFI()
 	{
-		SCShader = Shader.Find("(master)");
+		SCShader = Shader.Find("#{0:00}{1}{2}");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -80,7 +80,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void DKGBFNCOAEO()
 	{
-		SCShader = Shader.Find("mapselector.filter.rateduponly");
+		SCShader = Shader.Find("mapselector.filter.officialsortmode");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -107,9 +107,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1457f;
 			}
-			DOHGBNPMBKG().SetFloat("cancel", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat("cancel", HBJJOCHGOPH);
 			KDMBOKLMADJ().SetFloat("_ScreenResolution", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KDMBOKLMADJ());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
 		{
@@ -130,7 +130,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void JMEOGJHCONJ()
 	{
-		SCShader = Shader.Find("CameraFilterPack_Fly_VisionFX");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -174,9 +174,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1440f;
 			}
-			DOHGBNPMBKG().SetFloat("0 seconds", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("_Value3", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOMEEFLPEPJ());
+			NDMPCDHADMJ().SetFloat("0 seconds", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat("_Value", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FGENHBKMPDA());
 		}
 		else
 		{
@@ -198,7 +198,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void PMPKMGKAAJH()
 	{
-		SCShader = Shader.Find("NEW_ACHIEVEMENT_1_21");
+		SCShader = Shader.Find("achievements.21.progress");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -224,7 +224,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("_Distortion");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -282,9 +282,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 659f;
 			}
-			LDNADDJMIPK().SetFloat("_DotSize", HBJJOCHGOPH);
-			CBCNOEIALHB().SetFloat("_Intervale", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CBCNOEIALHB());
+			OGMEGHKECAH().SetFloat("_DotSize", HBJJOCHGOPH);
+			BFGNMFCNDBC().SetFloat("_Heigh", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ECCPAOBFDKP());
 		}
 		else
 		{
@@ -312,9 +312,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 765f;
 			}
-			OCMBHMLNCEK().SetFloat("_Brightness", HBJJOCHGOPH);
-			BAGICADFBAB().SetFloat("_Offsets", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			BAGICADFBAB().SetFloat("CameraFilterPack/Color_BrightContrastSaturation", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat("_SecondTex", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NDMPCDHADMJ());
 		}
 		else
 		{
@@ -331,9 +331,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 880f;
 			}
-			CBCNOEIALHB().SetFloat("_CurrentMipLevel", HBJJOCHGOPH);
-			KJMECMIGJJA().SetFloat("_TimeX", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ECCPAOBFDKP());
+			BAGICADFBAB().SetFloat("Screen Space Reflections", HBJJOCHGOPH);
+			KDMBOKLMADJ().SetFloat("CameraFilterPack/FX_Hexagon_Black", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
 		}
 		else
 		{
@@ -381,8 +381,8 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 573f;
 			}
-			LONNIJMNKFB().SetFloat("shader.pixel", HBJJOCHGOPH);
-			OGMEGHKECAH().SetFloat("CameraFilterPack/FX_Drunk", DotSize);
+			BFGNMFCNDBC().SetFloat("shader.future", HBJJOCHGOPH);
+			FHFLKLMFHOI().SetFloat("_Value", DotSize);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BAGICADFBAB());
 		}
 		else
@@ -393,7 +393,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void BMIOFJFMCBG()
 	{
-		SCShader = Shader.Find("[SaveSystem] Outdated savefile found");
+		SCShader = Shader.Find("[SaveSystem] Init from ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -424,9 +424,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1285f;
 			}
-			BAGICADFBAB().SetFloat("[PlayerBase] Current attempt: ", HBJJOCHGOPH);
-			DOHGBNPMBKG().SetFloat("_TimeX", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			MMOODGIODPC().SetFloat("maps.", HBJJOCHGOPH);
+			DOMEEFLPEPJ().SetFloat("CameraFilterPack/TV_VHS_Rewind", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
 		{
@@ -444,7 +444,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void MGMAOBPPOBJ()
 	{
-		SCShader = Shader.Find("_HeightParams");
+		SCShader = Shader.Find("_FrustumCornersWS");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -496,9 +496,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 713f;
 			}
-			NMDBCDFPGOK().SetFloat("_BlurVector", HBJJOCHGOPH);
-			FKEOGPDLBDD().SetFloat("#yes", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			OGMEGHKECAH().SetFloat("_BlurVector", HBJJOCHGOPH);
+			ABHDNGIHBKE().SetFloat("maps.", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
 		}
 		else
 		{
@@ -553,9 +553,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 323f;
 			}
-			NBPKMLMCHFN.SetFloat("MessageText", HBJJOCHGOPH);
-			DONENAMLFLF().SetFloat("g", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
+			PDEAHJPOMEF().SetFloat("MessageText", HBJJOCHGOPH);
+			MMOODGIODPC().SetFloat("b", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KDMBOKLMADJ());
 		}
 		else
 		{
@@ -620,7 +620,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void DOKAKEMDALN()
 	{
-		SCShader = Shader.Find("#tryagain");
+		SCShader = Shader.Find("#ok");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -636,9 +636,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 561f;
 			}
-			DOMEEFLPEPJ().SetFloat("maps.", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("Image", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			EOCCJGIGEGJ().SetFloat("maps.", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("skins", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FGENHBKMPDA());
 		}
 		else
 		{
@@ -648,7 +648,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void JABNHMIHBHC()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Vision_AuraDistortion");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -657,7 +657,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void MMMDPANNAIO()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Blend2Camera_Lighten");
+		SCShader = Shader.Find("CameraFilterPack/Blend2Camera_DarkerColor");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -681,9 +681,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1167f;
 			}
-			LMLENGFLEBD().SetFloat("CameraFilterPack/Lut_Simple", HBJJOCHGOPH);
-			DONENAMLFLF().SetFloat("editorVolume", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
+			LDNADDJMIPK().SetFloat("_LutTex", HBJJOCHGOPH);
+			NMDBCDFPGOK().SetFloat("sfxVolume", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -708,9 +708,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1125f;
 			}
-			FGENHBKMPDA().SetFloat("_DotSize", HBJJOCHGOPH);
-			NMDBCDFPGOK().SetFloat("Winter2020", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OCMBHMLNCEK());
+			HFBJAOFLCJI().SetFloat("_TimeX", HBJJOCHGOPH);
+			OGMEGHKECAH().SetFloat("Winter2020", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OGMEGHKECAH());
 		}
 		else
 		{
@@ -750,9 +750,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1400f;
 			}
-			HFBJAOFLCJI().SetFloat("#close", HBJJOCHGOPH);
-			LMLENGFLEBD().SetFloat("/", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LMLENGFLEBD());
+			ECCPAOBFDKP().SetFloat("#tryagain", HBJJOCHGOPH);
+			ECCPAOBFDKP().SetFloat("/icon", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DONENAMLFLF());
 		}
 		else
 		{
@@ -773,9 +773,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1807f;
 			}
-			PDEAHJPOMEF().SetFloat("_Value2", HBJJOCHGOPH);
-			DONENAMLFLF().SetFloat("Failed to Instantiate prefab:", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD());
+			LONNIJMNKFB().SetFloat("_Value", HBJJOCHGOPH);
+			MMOODGIODPC().SetFloat(". Client should be in a room. Current connectionStateDetailed: ", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LMLENGFLEBD());
 		}
 		else
 		{
@@ -792,9 +792,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1222f;
 			}
-			LONNIJMNKFB().SetFloat("Texture2", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("_Blue_R", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
+			LDNADDJMIPK().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			FGENHBKMPDA().SetFloat("_Green_B", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OOMFJGPAOKL());
 		}
 		else
 		{
@@ -820,9 +820,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 396f;
 			}
-			OOMFJGPAOKL().SetFloat("_MainTex2", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("HH:mm:ss", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			DOMEEFLPEPJ().SetFloat("_MainTex2", HBJJOCHGOPH);
+			OOMFJGPAOKL().SetFloat("[", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ABHDNGIHBKE());
 		}
 		else
 		{
@@ -832,7 +832,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void IHLMNAGPKDA()
 	{
-		SCShader = Shader.Find("SpawnObj");
+		SCShader = Shader.Find("[EditorEvent] Exception: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -887,9 +887,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1669f;
 			}
-			ECCPAOBFDKP().SetFloat("_TimeX", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("_TimeX", HBJJOCHGOPH);
 			DOHGBNPMBKG().SetFloat("_Level", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -906,9 +906,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 324f;
 			}
-			KJMECMIGJJA().SetFloat("?", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("_Params3", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FGENHBKMPDA());
+			KGOLDDBHIFN().SetFloat(".icon", HBJJOCHGOPH);
+			MMOODGIODPC().SetFloat("USE_PREDICATION", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -929,7 +929,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void LFBGJIIECLD()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Vision_Tunnel");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -942,7 +942,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		SCShader = Shader.Find("[ResourcesManager] Unloading data resources");
+		SCShader = Shader.Find(",viewkeys");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -969,9 +969,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1427f;
 			}
-			ACHNOHCLGOO().SetFloat("Reading preview file failed! Make sure JSON file is filled properly and/or file exists: \"{0}\"", HBJJOCHGOPH);
-			BAGICADFBAB().SetFloat("float,1.5", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LMLENGFLEBD());
+			KGOLDDBHIFN().SetFloat("addNewButton", HBJJOCHGOPH);
+			KJMECMIGJJA().SetFloat("Zoom speed. Base 1.5", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOMEEFLPEPJ());
 		}
 		else
 		{
@@ -1034,7 +1034,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void KOJKBFDNGDK()
 	{
-		SCShader = Shader.Find("settings.hideui");
+		SCShader = Shader.Find("' found!");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1069,9 +1069,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1888f;
 			}
-			DONENAMLFLF().SetFloat("default", HBJJOCHGOPH);
-			ECCPAOBFDKP().SetFloat("LevelConfigButton", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OGMEGHKECAH());
+			NDMPCDHADMJ().SetFloat(".wav", HBJJOCHGOPH);
+			ABHDNGIHBKE().SetFloat("LevelConfigButton", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OOMFJGPAOKL());
 		}
 		else
 		{
@@ -1081,7 +1081,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void CFFCLAHMBAA()
 	{
-		SCShader = Shader.Find(" is not observed by this object's photonView! OnPhotonSerializeView() in this class won't be used.");
+		SCShader = Shader.Find("Connecting");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1090,7 +1090,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void DPLLKHHLDBB()
 	{
-		SCShader = Shader.Find("note.0");
+		SCShader = Shader.Find("#outdatedmap! Challenges will not work!");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1118,9 +1118,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1051f;
 			}
-			LMLENGFLEBD().SetFloat(" respawn: ", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("_ArScale", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			CBCNOEIALHB().SetFloat("No player left to ask", HBJJOCHGOPH);
+			HEINDEMCGIK().SetFloat("_Source", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OGMEGHKECAH());
 		}
 		else
 		{
@@ -1214,7 +1214,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void CEAGPJBGBMH()
 	{
-		SCShader = Shader.Find("_Value4");
+		SCShader = Shader.Find("_Value2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1249,9 +1249,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1662f;
 			}
-			BAGICADFBAB().SetFloat("CameraFilterPack/TV_BrokenGlass", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("_Bloom", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			FGENHBKMPDA().SetFloat("CameraFilterPack_TV_BrokenGlass1", HBJJOCHGOPH);
+			MMOODGIODPC().SetFloat("_Parameter", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD());
 		}
 		else
 		{
@@ -1287,9 +1287,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1105f;
 			}
-			FKEOGPDLBDD().SetFloat("_ColorBuffer", HBJJOCHGOPH);
-			BAGICADFBAB().SetFloat("_Value3", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			EOCCJGIGEGJ().SetFloat("_SunColor", HBJJOCHGOPH);
+			NMDBCDFPGOK().SetFloat("_Value2", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LMLENGFLEBD());
 		}
 		else
 		{
@@ -1310,7 +1310,7 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 
 	private void CHOPDIGHJNH()
 	{
-		SCShader = Shader.Find("Fake");
+		SCShader = Shader.Find("From {0} at Index {1} \n");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1326,9 +1326,9 @@ public class CameraFilterPack_Drawing_Manga_Color : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1839f;
 			}
-			HEINDEMCGIK().SetFloat("_Value2", HBJJOCHGOPH);
-			FGENHBKMPDA().SetFloat("Error: Can not set the OnSerialize rate higher than the overall SendRate.", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LMLENGFLEBD());
+			FKEOGPDLBDD().SetFloat("_Value", HBJJOCHGOPH);
+			FHFLKLMFHOI().SetFloat("<not connected>", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NMDBCDFPGOK());
 		}
 		else
 		{

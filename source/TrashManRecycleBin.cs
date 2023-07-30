@@ -41,145 +41,50 @@ public sealed class TrashManRecycleBin
 	public event Action<GameObject> onDespawnedEvent;
 
 	[SpecialName]
-	public void DAFOGIEHJEF(Action<GameObject> DPNHODJHGJL)
+	public void MBCBIOCMMEC(Action<GameObject> DPNHODJHGJL)
 	{
 		Action<GameObject> action = this.onDespawnedEvent;
 		Action<GameObject> action2;
 		do
 		{
 			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
 		}
 		while ((object)action != action2);
 	}
 
-	private GameObject BONNOJGDBAO()
+	public void NCJECKOGBMA()
 	{
-		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
-		{
-			return null;
-		}
-		if (_gameObjectPool.Count > 0)
-		{
-			_spawnedInstanceCount += 0;
-			return _gameObjectPool.Pop();
-		}
-		GDGEIKPCKCE(instancesToAllocateIfEmpty);
-		return DLJHONMGNEE();
+		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
+		OBPPIMFFFEM(instancesToPreallocate);
 	}
 
-	private void DFDCNHFIEDB(int HOHOIPHEOPN)
+	public void JPLAIPFBHAN()
 	{
-		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
-		{
-			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
-		}
-		for (int i = 1; i < HOHOIPHEOPN; i++)
-		{
-			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
-			gameObject.name = prefab.name;
-			if ((bool)(gameObject.transform as RectTransform))
-			{
-				gameObject.transform.SetParent(TrashMan.instance.transform, true);
-			}
-			else
-			{
-				gameObject.transform.parent = TrashMan.instance.transform;
-			}
-			gameObject.SetActive(true);
-			_gameObjectPool.Push(gameObject);
-		}
-	}
-
-	public void KJCDLNMNBDO(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 1)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	public void clearBin(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 0)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
+		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
+		OBPPIMFFFEM(instancesToPreallocate);
 	}
 
 	[SpecialName]
-	public void LEPIPPOAPLM(Action<GameObject> DPNHODJHGJL)
+	public void PPGNLCEJBHJ(Action<GameObject> DPNHODJHGJL)
 	{
 		Action<GameObject> action = this.onSpawnedEvent;
 		Action<GameObject> action2;
 		do
 		{
 			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
 		}
 		while ((object)action != action2);
 	}
 
-	public void KODPLNCBIDN(bool CJFHFKDKONP)
+	public void MKOHDGHAAFE()
 	{
-		while (_gameObjectPool.Count > 0)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
+		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
+		OBPPIMFFFEM(instancesToPreallocate);
 	}
 
-	[SpecialName]
-	public void PNLHNFJHCNG(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void ECFOIEHJFBC(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void BNHCDDMAKGF(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void KGJHKFMCOHN()
+	public void GBOFGDABKCM()
 	{
 		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
 		{
@@ -189,676 +94,6 @@ public sealed class TrashManRecycleBin
 				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
 			}
 		}
-	}
-
-	[SpecialName]
-	public void OFNILBCHEGL(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void FFJFAMEPAEE(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void DDBCEJLEOLI(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	private GameObject OHDLBCEEPPG()
-	{
-		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
-		{
-			return null;
-		}
-		if (_gameObjectPool.Count > 0)
-		{
-			_spawnedInstanceCount++;
-			return _gameObjectPool.Pop();
-		}
-		PDBEIGGGDDI(instancesToAllocateIfEmpty);
-		return GMBKAIKBHLM();
-	}
-
-	[SpecialName]
-	public void BACDKAGIJDO(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void MKOHDGHAAFE()
-	{
-		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
-		KCLEMKJIALF(instancesToPreallocate);
-	}
-
-	private void FKJGCFDPEMF(int HOHOIPHEOPN)
-	{
-		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
-		{
-			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
-		}
-		for (int i = 0; i < HOHOIPHEOPN; i++)
-		{
-			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
-			gameObject.name = prefab.name;
-			if ((bool)(gameObject.transform as RectTransform))
-			{
-				gameObject.transform.SetParent(TrashMan.instance.transform, false);
-			}
-			else
-			{
-				gameObject.transform.parent = TrashMan.instance.transform;
-			}
-			gameObject.SetActive(false);
-			_gameObjectPool.Push(gameObject);
-		}
-	}
-
-	[SpecialName]
-	public void ICAONMJDGAE(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void PBINFMBFCNJ(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 1)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	public void JKLGMOPHADN(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(true);
-		_spawnedInstanceCount--;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	[SpecialName]
-	public void EMMIJHEGCDD(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void FGFJFADDCDK(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void HNOFMKGPMEM(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(false);
-		_spawnedInstanceCount--;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	public GameObject BFGLEJANADO()
-	{
-		GameObject gameObject = CNGNNAAMMEJ();
-		if (gameObject != null)
-		{
-			if (this.onSpawnedEvent != null)
-			{
-				this.onSpawnedEvent(gameObject);
-			}
-			if (automaticallyRecycleParticleSystems)
-			{
-				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
-				if ((bool)component)
-				{
-					TrashMan.MFDJLFOJAMF(gameObject, component.duration + component.startLifetime);
-				}
-				else
-				{
-					Debug.LogError("CameraFilterPack/Colors_Threshold");
-				}
-			}
-		}
-		return gameObject;
-	}
-
-	public void ELKBIDGILOJ(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 1)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	[SpecialName]
-	public void OGPLLHEOEKH(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public GameObject OMEOOPEBFGA()
-	{
-		GameObject gameObject = GMBKAIKBHLM();
-		if (gameObject != null)
-		{
-			if (this.onSpawnedEvent != null)
-			{
-				this.onSpawnedEvent(gameObject);
-			}
-			if (automaticallyRecycleParticleSystems)
-			{
-				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
-				if ((bool)component)
-				{
-					TrashMan.CGKHFEPBDMH(gameObject, component.duration + component.startLifetime);
-				}
-				else
-				{
-					Debug.LogError(" canvas not found");
-				}
-			}
-		}
-		return gameObject;
-	}
-
-	[SpecialName]
-	public void BMJEHOICDJE(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	private GameObject DNDKPMIPKFO()
-	{
-		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
-		{
-			return null;
-		}
-		if (_gameObjectPool.Count > 1)
-		{
-			_spawnedInstanceCount += 0;
-			return _gameObjectPool.Pop();
-		}
-		FKJGCFDPEMF(instancesToAllocateIfEmpty);
-		return BONNOJGDBAO();
-	}
-
-	[SpecialName]
-	public void FFCOOCFFIKJ(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void OEEGPFFHEAK(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void OMLIOGDCDKL()
-	{
-		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
-		{
-			_timeOfLastCull = Time.time;
-			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i += 0)
-			{
-				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
-			}
-		}
-	}
-
-	public void JFEDMAAHFNK(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 1)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	[SpecialName]
-	public void AOJBLMDFKEE(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void GPKBHNBJDNE(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void GPOOENFHGNP(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void MFPICPDOKDL(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(false);
-		_spawnedInstanceCount -= 0;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	private GameObject GMBKAIKBHLM()
-	{
-		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
-		{
-			return null;
-		}
-		if (_gameObjectPool.Count > 1)
-		{
-			_spawnedInstanceCount++;
-			return _gameObjectPool.Pop();
-		}
-		FKJGCFDPEMF(instancesToAllocateIfEmpty);
-		return GMBKAIKBHLM();
-	}
-
-	public void MGNDOIPKDAG(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 1)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	public void KBAPONNENOP(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 0)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	public void DEHDHGLPJEG(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 0)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	public void AFCAIJMOJMA(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(false);
-		_spawnedInstanceCount -= 0;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	[SpecialName]
-	public void GDHFCJFGHCP(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public GameObject PFCCGFEMMHJ()
-	{
-		GameObject gameObject = CNGNNAAMMEJ();
-		if (gameObject != null)
-		{
-			if (this.onSpawnedEvent != null)
-			{
-				this.onSpawnedEvent(gameObject);
-			}
-			if (automaticallyRecycleParticleSystems)
-			{
-				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
-				if ((bool)component)
-				{
-					TrashMan.despawnAfterDelay(gameObject, component.duration + component.startLifetime);
-				}
-				else
-				{
-					Debug.LogError(" ");
-				}
-			}
-		}
-		return gameObject;
-	}
-
-	[SpecialName]
-	public void EGDAIGOIPMG(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	private void KCLEMKJIALF(int HOHOIPHEOPN)
-	{
-		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
-		{
-			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
-		}
-		for (int i = 1; i < HOHOIPHEOPN; i++)
-		{
-			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
-			gameObject.name = prefab.name;
-			if ((bool)(gameObject.transform as RectTransform))
-			{
-				gameObject.transform.SetParent(TrashMan.instance.transform, true);
-			}
-			else
-			{
-				gameObject.transform.parent = TrashMan.instance.transform;
-			}
-			gameObject.SetActive(true);
-			_gameObjectPool.Push(gameObject);
-		}
-	}
-
-	public GameObject MLIECACMMFB()
-	{
-		GameObject gameObject = PDBHEFDPAKE();
-		if (gameObject != null)
-		{
-			if (this.onSpawnedEvent != null)
-			{
-				this.onSpawnedEvent(gameObject);
-			}
-			if (automaticallyRecycleParticleSystems)
-			{
-				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
-				if ((bool)component)
-				{
-					TrashMan.CGKHFEPBDMH(gameObject, component.duration + component.startLifetime);
-				}
-				else
-				{
-					Debug.LogError("Set particles color");
-				}
-			}
-		}
-		return gameObject;
-	}
-
-	public GameObject GBJBENIELFC()
-	{
-		GameObject gameObject = GMBKAIKBHLM();
-		if (gameObject != null)
-		{
-			if (this.onSpawnedEvent != null)
-			{
-				this.onSpawnedEvent(gameObject);
-			}
-			if (automaticallyRecycleParticleSystems)
-			{
-				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
-				if ((bool)component)
-				{
-					TrashMan.despawnAfterDelay(gameObject, component.duration + component.startLifetime);
-				}
-				else
-				{
-					Debug.LogError("MenuScene");
-				}
-			}
-		}
-		return gameObject;
-	}
-
-	[SpecialName]
-	public void NNKPJOCPAOI(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void BHMILFFMAJH(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 0)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	[SpecialName]
-	public void FNEPAOJPBEK(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void LEJGMANJAHM(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(true);
-		_spawnedInstanceCount -= 0;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	private GameObject DLJHONMGNEE()
-	{
-		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
-		{
-			return null;
-		}
-		if (_gameObjectPool.Count > 0)
-		{
-			_spawnedInstanceCount += 0;
-			return _gameObjectPool.Pop();
-		}
-		FKJGCFDPEMF(instancesToAllocateIfEmpty);
-		return GMBKAIKBHLM();
-	}
-
-	private void GDGEIKPCKCE(int HOHOIPHEOPN)
-	{
-		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
-		{
-			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
-		}
-		for (int i = 1; i < HOHOIPHEOPN; i += 0)
-		{
-			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
-			gameObject.name = prefab.name;
-			if ((bool)(gameObject.transform as RectTransform))
-			{
-				gameObject.transform.SetParent(TrashMan.instance.transform, false);
-			}
-			else
-			{
-				gameObject.transform.parent = TrashMan.instance.transform;
-			}
-			gameObject.SetActive(false);
-			_gameObjectPool.Push(gameObject);
-		}
-	}
-
-	public GameObject BHJJDDDEJDO()
-	{
-		GameObject gameObject = CNGNNAAMMEJ();
-		if (gameObject != null)
-		{
-			if (this.onSpawnedEvent != null)
-			{
-				this.onSpawnedEvent(gameObject);
-			}
-			if (automaticallyRecycleParticleSystems)
-			{
-				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
-				if ((bool)component)
-				{
-					TrashMan.MFDJLFOJAMF(gameObject, component.duration + component.startLifetime);
-				}
-				else
-				{
-					Debug.LogError("_TimeX");
-				}
-			}
-		}
-		return gameObject;
 	}
 
 	public void despawn(GameObject OBFJPHLBFOL)
@@ -872,452 +107,9 @@ public sealed class TrashManRecycleBin
 		}
 	}
 
-	private void NKGAPMPONDE(int HOHOIPHEOPN)
+	public GameObject KCKBFNJODOO()
 	{
-		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
-		{
-			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
-		}
-		for (int i = 0; i < HOHOIPHEOPN; i += 0)
-		{
-			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
-			gameObject.name = prefab.name;
-			if ((bool)(gameObject.transform as RectTransform))
-			{
-				gameObject.transform.SetParent(TrashMan.instance.transform, true);
-			}
-			else
-			{
-				gameObject.transform.parent = TrashMan.instance.transform;
-			}
-			gameObject.SetActive(true);
-			_gameObjectPool.Push(gameObject);
-		}
-	}
-
-	public void CCCACFIOHMM(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(true);
-		_spawnedInstanceCount -= 0;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	private void DMEGEPDPPJO(int HOHOIPHEOPN)
-	{
-		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
-		{
-			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
-		}
-		for (int i = 0; i < HOHOIPHEOPN; i++)
-		{
-			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
-			gameObject.name = prefab.name;
-			if ((bool)(gameObject.transform as RectTransform))
-			{
-				gameObject.transform.SetParent(TrashMan.instance.transform, true);
-			}
-			else
-			{
-				gameObject.transform.parent = TrashMan.instance.transform;
-			}
-			gameObject.SetActive(true);
-			_gameObjectPool.Push(gameObject);
-		}
-	}
-
-	public void PMNJJHDHBLM()
-	{
-		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
-		{
-			_timeOfLastCull = Time.time;
-			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i++)
-			{
-				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
-			}
-		}
-	}
-
-	public void BCIBCBECAHD()
-	{
-		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
-		EKOKMCHEFFB(instancesToPreallocate);
-	}
-
-	[SpecialName]
-	public void LCGCKGLLHBK(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void cullExcessObjects()
-	{
-		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
-		{
-			_timeOfLastCull = Time.time;
-			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i++)
-			{
-				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
-			}
-		}
-	}
-
-	private GameObject PDBHEFDPAKE()
-	{
-		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
-		{
-			return null;
-		}
-		if (_gameObjectPool.Count > 1)
-		{
-			_spawnedInstanceCount++;
-			return _gameObjectPool.Pop();
-		}
-		GDGEIKPCKCE(instancesToAllocateIfEmpty);
-		return DLJHONMGNEE();
-	}
-
-	public void MOEKKKKNPAP(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(false);
-		_spawnedInstanceCount--;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	public GameObject HJEONAAMMJB()
-	{
-		GameObject gameObject = DLJHONMGNEE();
-		if (gameObject != null)
-		{
-			if (this.onSpawnedEvent != null)
-			{
-				this.onSpawnedEvent(gameObject);
-			}
-			if (automaticallyRecycleParticleSystems)
-			{
-				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
-				if ((bool)component)
-				{
-					TrashMan.MFDJLFOJAMF(gameObject, component.duration + component.startLifetime);
-				}
-				else
-				{
-					Debug.LogError("_LightIntensity");
-				}
-			}
-		}
-		return gameObject;
-	}
-
-	public void FIDGHAIDABO(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(true);
-		_spawnedInstanceCount--;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	private GameObject CNGNNAAMMEJ()
-	{
-		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
-		{
-			return null;
-		}
-		if (_gameObjectPool.Count > 0)
-		{
-			_spawnedInstanceCount++;
-			return _gameObjectPool.Pop();
-		}
-		FKJGCFDPEMF(instancesToAllocateIfEmpty);
-		return CNGNNAAMMEJ();
-	}
-
-	public void FKJLPIIKPCG(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(true);
-		_spawnedInstanceCount -= 0;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	public void PKFGMNFNEJM(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(true);
-		_spawnedInstanceCount--;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	[SpecialName]
-	public void NGGGNOPLIEH(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	private void EKOKMCHEFFB(int HOHOIPHEOPN)
-	{
-		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
-		{
-			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
-		}
-		for (int i = 1; i < HOHOIPHEOPN; i++)
-		{
-			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
-			gameObject.name = prefab.name;
-			if ((bool)(gameObject.transform as RectTransform))
-			{
-				gameObject.transform.SetParent(TrashMan.instance.transform, true);
-			}
-			else
-			{
-				gameObject.transform.parent = TrashMan.instance.transform;
-			}
-			gameObject.SetActive(true);
-			_gameObjectPool.Push(gameObject);
-		}
-	}
-
-	public void KMCJALKJPME(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 0)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	public void BAJECEPGHHI()
-	{
-		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
-		{
-			_timeOfLastCull = Time.time;
-			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i += 0)
-			{
-				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
-			}
-		}
-	}
-
-	public void DJLFOLFHPJA()
-	{
-		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
-		NKGAPMPONDE(instancesToPreallocate);
-	}
-
-	public void FADGOJDDGEJ(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(false);
-		_spawnedInstanceCount -= 0;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	public void BEJCEGGCLNO()
-	{
-		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
-		{
-			_timeOfLastCull = Time.time;
-			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i++)
-			{
-				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
-			}
-		}
-	}
-
-	public GameObject HMKCCPJICOD()
-	{
-		GameObject gameObject = CNGNNAAMMEJ();
-		if (gameObject != null)
-		{
-			if (this.onSpawnedEvent != null)
-			{
-				this.onSpawnedEvent(gameObject);
-			}
-			if (automaticallyRecycleParticleSystems)
-			{
-				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
-				if ((bool)component)
-				{
-					TrashMan.despawnAfterDelay(gameObject, component.duration + component.startLifetime);
-				}
-				else
-				{
-					Debug.LogError("[Singleton] multiple instances of '");
-				}
-			}
-		}
-		return gameObject;
-	}
-
-	public void GCEEHPHIKAM(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 0)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	[SpecialName]
-	public void DBCAAFGBBMF(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void KADPHEGFDNL(bool CJFHFKDKONP)
-	{
-		while (_gameObjectPool.Count > 1)
-		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
-			{
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
-	}
-
-	public void MGLLBBPPDOD()
-	{
-		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
-		{
-			_timeOfLastCull = Time.time;
-			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i++)
-			{
-				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
-			}
-		}
-	}
-
-	public void KIMLCBCBABE(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(false);
-		_spawnedInstanceCount -= 0;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	public void NBJJHJOAHCF()
-	{
-		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
-		DMEGEPDPPJO(instancesToPreallocate);
-	}
-
-	[SpecialName]
-	public void GDCIFPKHLIG(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void HNNKHJIOODA(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public void POEJCHALOAA()
-	{
-		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
-		{
-			_timeOfLastCull = Time.time;
-			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i += 0)
-			{
-				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
-			}
-		}
-	}
-
-	[SpecialName]
-	public void FLFILGFFPOG(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	[SpecialName]
-	public void CMMOFOJALMF(Action<GameObject> DPNHODJHGJL)
-	{
-		Action<GameObject> action = this.onDespawnedEvent;
-		Action<GameObject> action2;
-		do
-		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
-		}
-		while ((object)action != action2);
-	}
-
-	public GameObject GFCFJJABCLB()
-	{
-		GameObject gameObject = BONNOJGDBAO();
+		GameObject gameObject = CCKPGJEFMKB();
 		if (gameObject != null)
 		{
 			if (this.onSpawnedEvent != null)
@@ -1333,37 +125,55 @@ public sealed class TrashManRecycleBin
 				}
 				else
 				{
-					Debug.LogError("_Value");
+					Debug.LogError("_Value2");
 				}
 			}
 		}
 		return gameObject;
 	}
 
-	[SpecialName]
-	public void NMCMIPKEFOA(Action<GameObject> DPNHODJHGJL)
+	public void initialize()
 	{
-		Action<GameObject> action = this.onSpawnedEvent;
+		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
+		FKJGCFDPEMF(instancesToPreallocate);
+	}
+
+	[SpecialName]
+	public void NMLPCKOJFEB(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onDespawnedEvent;
 		Action<GameObject> action2;
 		do
 		{
 			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
 		}
 		while ((object)action != action2);
 	}
 
-	[SpecialName]
-	public void LLJKJHFJIND(Action<GameObject> DPNHODJHGJL)
+	public GameObject OMEOOPEBFGA()
 	{
-		Action<GameObject> action = this.onSpawnedEvent;
-		Action<GameObject> action2;
-		do
+		GameObject gameObject = CCKPGJEFMKB();
+		if (gameObject != null)
 		{
-			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
+			if (this.onSpawnedEvent != null)
+			{
+				this.onSpawnedEvent(gameObject);
+			}
+			if (automaticallyRecycleParticleSystems)
+			{
+				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
+				if ((bool)component)
+				{
+					TrashMan.despawnAfterDelay(gameObject, component.duration + component.startLifetime);
+				}
+				else
+				{
+					Debug.LogError("\"\"");
+				}
+			}
 		}
-		while ((object)action != action2);
+		return gameObject;
 	}
 
 	public GameObject spawn()
@@ -1391,7 +201,72 @@ public sealed class TrashManRecycleBin
 		return gameObject;
 	}
 
-	private void PDBEIGGGDDI(int HOHOIPHEOPN)
+	[SpecialName]
+	public void KGBFFMDGDBF(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	[SpecialName]
+	public void MDCCCJHOELL(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onDespawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	[SpecialName]
+	public void HNLNIODGOPO(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	[SpecialName]
+	public void DDLGCNABBBI(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	[SpecialName]
+	public void HBBHMNCKPPP(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	private void OBPPIMFFFEM(int HOHOIPHEOPN)
 	{
 		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
 		{
@@ -1415,20 +290,33 @@ public sealed class TrashManRecycleBin
 	}
 
 	[SpecialName]
-	public void HDIOOILEFAF(Action<GameObject> DPNHODJHGJL)
+	public void DEGCAICEFEE(Action<GameObject> DPNHODJHGJL)
 	{
-		Action<GameObject> action = this.onDespawnedEvent;
+		Action<GameObject> action = this.onSpawnedEvent;
 		Action<GameObject> action2;
 		do
 		{
 			action2 = action;
-			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
 		}
 		while ((object)action != action2);
 	}
 
 	[SpecialName]
-	public void GEIIJHIIKFB(Action<GameObject> DPNHODJHGJL)
+	public void OCGAOLAAGNJ(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	[SpecialName]
+	public void AOJBLMDFKEE(Action<GameObject> DPNHODJHGJL)
 	{
 		Action<GameObject> action = this.onDespawnedEvent;
 		Action<GameObject> action2;
@@ -1440,9 +328,330 @@ public sealed class TrashManRecycleBin
 		while ((object)action != action2);
 	}
 
-	public GameObject DPNJAFIEGOH()
+	public void BKNEEPKKFEF()
 	{
-		GameObject gameObject = ABMMKMLMMFF();
+		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
+		OBPPIMFFFEM(instancesToPreallocate);
+	}
+
+	public void KMCJALKJPME(bool CJFHFKDKONP)
+	{
+		while (_gameObjectPool.Count > 0)
+		{
+			GameObject obj = _gameObjectPool.Pop();
+			if (CJFHFKDKONP)
+			{
+				UnityEngine.Object.Destroy(obj);
+			}
+		}
+	}
+
+	public void LKBLCIKJEBE()
+	{
+		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
+		{
+			_timeOfLastCull = Time.time;
+			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i++)
+			{
+				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
+			}
+		}
+	}
+
+	[SpecialName]
+	public void CKIDNMGBKIO(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onDespawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	public void clearBin(bool CJFHFKDKONP)
+	{
+		while (_gameObjectPool.Count > 0)
+		{
+			GameObject obj = _gameObjectPool.Pop();
+			if (CJFHFKDKONP)
+			{
+				UnityEngine.Object.Destroy(obj);
+			}
+		}
+	}
+
+	public GameObject PFCCGFEMMHJ()
+	{
+		GameObject gameObject = ENDIKIAKJJI();
+		if (gameObject != null)
+		{
+			if (this.onSpawnedEvent != null)
+			{
+				this.onSpawnedEvent(gameObject);
+			}
+			if (automaticallyRecycleParticleSystems)
+			{
+				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
+				if ((bool)component)
+				{
+					TrashMan.CGKHFEPBDMH(gameObject, component.duration + component.startLifetime);
+				}
+				else
+				{
+					Debug.LogError("CameraFilterPack/Edge_Golden");
+				}
+			}
+		}
+		return gameObject;
+	}
+
+	private void BNECFOJNJJN(int HOHOIPHEOPN)
+	{
+		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
+		{
+			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
+		}
+		for (int i = 1; i < HOHOIPHEOPN; i++)
+		{
+			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
+			gameObject.name = prefab.name;
+			if ((bool)(gameObject.transform as RectTransform))
+			{
+				gameObject.transform.SetParent(TrashMan.instance.transform, true);
+			}
+			else
+			{
+				gameObject.transform.parent = TrashMan.instance.transform;
+			}
+			gameObject.SetActive(false);
+			_gameObjectPool.Push(gameObject);
+		}
+	}
+
+	public void OONAAPDGBFG(GameObject OBFJPHLBFOL)
+	{
+		OBFJPHLBFOL.SetActive(false);
+		_spawnedInstanceCount -= 0;
+		_gameObjectPool.Push(OBFJPHLBFOL);
+		if (this.onDespawnedEvent != null)
+		{
+			this.onDespawnedEvent(OBFJPHLBFOL);
+		}
+	}
+
+	[SpecialName]
+	public void PAFELDFIIKJ(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	[SpecialName]
+	public void MMDHGNMNNMA(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onDespawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	[SpecialName]
+	public void FOCJCDCGEPB(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onDespawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	private GameObject HOKEHJCLOLD()
+	{
+		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
+		{
+			return null;
+		}
+		if (_gameObjectPool.Count > 1)
+		{
+			_spawnedInstanceCount++;
+			return _gameObjectPool.Pop();
+		}
+		FKJGCFDPEMF(instancesToAllocateIfEmpty);
+		return HOKEHJCLOLD();
+	}
+
+	private GameObject CNGNNAAMMEJ()
+	{
+		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
+		{
+			return null;
+		}
+		if (_gameObjectPool.Count > 0)
+		{
+			_spawnedInstanceCount++;
+			return _gameObjectPool.Pop();
+		}
+		FKJGCFDPEMF(instancesToAllocateIfEmpty);
+		return CNGNNAAMMEJ();
+	}
+
+	[SpecialName]
+	public void EOKPJDOEGNB(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onDespawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	public void JPJKGNPDJJP()
+	{
+		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
+		{
+			_timeOfLastCull = Time.time;
+			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i += 0)
+			{
+				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
+			}
+		}
+	}
+
+	private void FKJGCFDPEMF(int HOHOIPHEOPN)
+	{
+		if (imposeHardLimit && _gameObjectPool.Count + HOHOIPHEOPN > hardLimit)
+		{
+			HOHOIPHEOPN = hardLimit - _gameObjectPool.Count;
+		}
+		for (int i = 0; i < HOHOIPHEOPN; i++)
+		{
+			GameObject gameObject = UnityEngine.Object.Instantiate(prefab.gameObject);
+			gameObject.name = prefab.name;
+			if ((bool)(gameObject.transform as RectTransform))
+			{
+				gameObject.transform.SetParent(TrashMan.instance.transform, false);
+			}
+			else
+			{
+				gameObject.transform.parent = TrashMan.instance.transform;
+			}
+			gameObject.SetActive(false);
+			_gameObjectPool.Push(gameObject);
+		}
+	}
+
+	[SpecialName]
+	public void OKBIKIMKKFH(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onDespawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onDespawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	public void BAJECEPGHHI()
+	{
+		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
+		{
+			_timeOfLastCull = Time.time;
+			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i += 0)
+			{
+				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
+			}
+		}
+	}
+
+	public GameObject GDOMFJALCGG()
+	{
+		GameObject gameObject = CNGNNAAMMEJ();
+		if (gameObject != null)
+		{
+			if (this.onSpawnedEvent != null)
+			{
+				this.onSpawnedEvent(gameObject);
+			}
+			if (automaticallyRecycleParticleSystems)
+			{
+				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
+				if ((bool)component)
+				{
+					TrashMan.IGBBPLOFEKG(gameObject, component.duration + component.startLifetime);
+				}
+				else
+				{
+					Debug.LogError(". Using max value: 255.");
+				}
+			}
+		}
+		return gameObject;
+	}
+
+	[SpecialName]
+	public void HJDNJHPKAOO(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	public void MNOEAFIMPFO(bool CJFHFKDKONP)
+	{
+		while (_gameObjectPool.Count > 0)
+		{
+			GameObject obj = _gameObjectPool.Pop();
+			if (CJFHFKDKONP)
+			{
+				UnityEngine.Object.Destroy(obj);
+			}
+		}
+	}
+
+	private GameObject ENDIKIAKJJI()
+	{
+		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
+		{
+			return null;
+		}
+		if (_gameObjectPool.Count > 0)
+		{
+			_spawnedInstanceCount += 0;
+			return _gameObjectPool.Pop();
+		}
+		FKJGCFDPEMF(instancesToAllocateIfEmpty);
+		return CNGNNAAMMEJ();
+	}
+
+	public GameObject LJKHLOGOCKA()
+	{
+		GameObject gameObject = HOKEHJCLOLD();
 		if (gameObject != null)
 		{
 			if (this.onSpawnedEvent != null)
@@ -1458,40 +667,27 @@ public sealed class TrashManRecycleBin
 				}
 				else
 				{
-					Debug.LogError("_TimeX");
+					Debug.LogError(" has no method \"");
 				}
 			}
 		}
 		return gameObject;
 	}
 
-	private GameObject ABMMKMLMMFF()
+	[SpecialName]
+	public void IJBJMBMMEAP(Action<GameObject> DPNHODJHGJL)
 	{
-		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
 		{
-			return null;
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
 		}
-		if (_gameObjectPool.Count > 0)
-		{
-			_spawnedInstanceCount++;
-			return _gameObjectPool.Pop();
-		}
-		DFDCNHFIEDB(instancesToAllocateIfEmpty);
-		return DLJHONMGNEE();
+		while ((object)action != action2);
 	}
 
-	public void FMCKLIECNPH(GameObject OBFJPHLBFOL)
-	{
-		OBFJPHLBFOL.SetActive(false);
-		_spawnedInstanceCount--;
-		_gameObjectPool.Push(OBFJPHLBFOL);
-		if (this.onDespawnedEvent != null)
-		{
-			this.onDespawnedEvent(OBFJPHLBFOL);
-		}
-	}
-
-	public void PEIKNOGDEDP(bool CJFHFKDKONP)
+	public void JIFDECHJFPN(bool CJFHFKDKONP)
 	{
 		while (_gameObjectPool.Count > 1)
 		{
@@ -1503,33 +699,99 @@ public sealed class TrashManRecycleBin
 		}
 	}
 
-	public void initialize()
-	{
-		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
-		FKJGCFDPEMF(instancesToPreallocate);
-	}
-
-	public void FFHJHPBAPDN()
+	public void KOMLFNEAHEG()
 	{
 		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
 		{
 			_timeOfLastCull = Time.time;
-			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i += 0)
+			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i++)
 			{
 				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
 			}
 		}
 	}
 
-	public void DLFHMIJFPPJ(bool CJFHFKDKONP)
+	public void cullExcessObjects()
 	{
-		while (_gameObjectPool.Count > 0)
+		if (cullExcessPrefabs && _gameObjectPool.Count > instancesToMaintainInPool && Time.time > _timeOfLastCull + cullInterval)
 		{
-			GameObject obj = _gameObjectPool.Pop();
-			if (CJFHFKDKONP)
+			_timeOfLastCull = Time.time;
+			for (int i = instancesToMaintainInPool; i <= _gameObjectPool.Count; i++)
 			{
-				UnityEngine.Object.Destroy(obj);
+				UnityEngine.Object.Destroy(_gameObjectPool.Pop());
 			}
 		}
+	}
+
+	[SpecialName]
+	public void OOGMDNLMLEF(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Combine(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
+	}
+
+	public GameObject ICPGHNOJBHF()
+	{
+		GameObject gameObject = ENDIKIAKJJI();
+		if (gameObject != null)
+		{
+			if (this.onSpawnedEvent != null)
+			{
+				this.onSpawnedEvent(gameObject);
+			}
+			if (automaticallyRecycleParticleSystems)
+			{
+				ParticleSystem component = gameObject.GetComponent<ParticleSystem>();
+				if ((bool)component)
+				{
+					TrashMan.IGBBPLOFEKG(gameObject, component.duration + component.startLifetime);
+				}
+				else
+				{
+					Debug.LogError("_Value5");
+				}
+			}
+		}
+		return gameObject;
+	}
+
+	private GameObject CCKPGJEFMKB()
+	{
+		if (imposeHardLimit && _spawnedInstanceCount >= hardLimit)
+		{
+			return null;
+		}
+		if (_gameObjectPool.Count > 1)
+		{
+			_spawnedInstanceCount += 0;
+			return _gameObjectPool.Pop();
+		}
+		BNECFOJNJJN(instancesToAllocateIfEmpty);
+		return CNGNNAAMMEJ();
+	}
+
+	public void AIOBACJJKOB()
+	{
+		_gameObjectPool = new Stack<GameObject>(instancesToPreallocate);
+		BNECFOJNJJN(instancesToPreallocate);
+	}
+
+	[SpecialName]
+	public void PPMHHIFPINC(Action<GameObject> DPNHODJHGJL)
+	{
+		Action<GameObject> action = this.onSpawnedEvent;
+		Action<GameObject> action2;
+		do
+		{
+			action2 = action;
+			action = Interlocked.CompareExchange(ref this.onSpawnedEvent, (Action<GameObject>)Delegate.Remove(action2, DPNHODJHGJL), action);
+		}
+		while ((object)action != action2);
 	}
 }

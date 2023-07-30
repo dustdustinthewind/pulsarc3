@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Vision/Blood_Fast")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Vision_Blood_Fast : MonoBehaviour
 {
 	public Shader SCShader;
@@ -64,13 +64,13 @@ public class CameraFilterPack_Vision_Blood_Fast : MonoBehaviour
 			{
 				HBJJOCHGOPH = 727f;
 			}
-			NBPKMLMCHFN.SetFloat(" x ", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("_Value3", HoleSize);
-			KGOLDDBHIFN().SetFloat("Joystick1Button11", HoleSmooth);
-			NBPKMLMCHFN.SetFloat("_BlurFilterDistance", Color1);
-			KGOLDDBHIFN().SetFloat("UseScanLineSize", Color2);
-			KGOLDDBHIFN().SetVector("OnPress", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 252f, 278f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			KGOLDDBHIFN().SetFloat(" x ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_Value2", HoleSize);
+			KGOLDDBHIFN().SetFloat("Left Stick Click", HoleSmooth);
+			NBPKMLMCHFN.SetFloat("_Radius2", Color1);
+			KGOLDDBHIFN().SetFloat("GlassColor", Color2);
+			NBPKMLMCHFN.SetVector(".", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 252f, 278f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{
@@ -84,7 +84,7 @@ public class CameraFilterPack_Vision_Blood_Fast : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Drawing_Toon");
+		SCShader = Shader.Find("_MainTex2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -109,13 +109,13 @@ public class CameraFilterPack_Vision_Blood_Fast : MonoBehaviour
 			{
 				HBJJOCHGOPH = 548f;
 			}
-			KGOLDDBHIFN().SetFloat("PUNCloudBestRegion", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("menutheme.27thfloor", HoleSize);
+			KGOLDDBHIFN().SetFloat("NetworkPeer broke!", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("player.blackwhite", HoleSize);
 			NBPKMLMCHFN.SetFloat("maps.", HoleSmooth);
-			NBPKMLMCHFN.SetFloat("_Value2", Color1);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", Color2);
-			KGOLDDBHIFN().SetVector("SetTrailZoomSpeed", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1563f, 829f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			KGOLDDBHIFN().SetFloat("_TimeX", Color1);
+			NBPKMLMCHFN.SetFloat("_Value2", Color2);
+			KGOLDDBHIFN().SetVector("SetSpeed", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1563f, 829f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -186,13 +186,13 @@ public class CameraFilterPack_Vision_Blood_Fast : MonoBehaviour
 			{
 				HBJJOCHGOPH = 925f;
 			}
-			KGOLDDBHIFN().SetFloat("[EditorEvent] Exception: ", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("z", HoleSize);
-			NBPKMLMCHFN.SetFloat("Set particles audio input", HoleSmooth);
-			NBPKMLMCHFN.SetFloat("#ok", Color1);
-			NBPKMLMCHFN.SetFloat("_Value", Color2);
-			NBPKMLMCHFN.SetVector("EventData0DropDownList", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 300f, 1470f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			KGOLDDBHIFN().SetFloat("ShowTitle", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("float,1.5", HoleSize);
+			KGOLDDBHIFN().SetFloat("0,7,true,0", HoleSmooth);
+			KGOLDDBHIFN().SetFloat("#ok", Color1);
+			KGOLDDBHIFN().SetFloat("_TimeX", Color2);
+			KGOLDDBHIFN().SetVector("In Map Editor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 300f, 1470f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{

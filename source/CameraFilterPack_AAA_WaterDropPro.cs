@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/AAA/WaterDropPro")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/AAA/WaterDropPro")]
 public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 {
 	public Shader SCShader;
@@ -53,7 +53,7 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		FPHEBLMINDA = Resources.Load("EnvironmentSlider") as Texture2D;
+		FPHEBLMINDA = Resources.Load("Tab2Content") as Texture2D;
 		SCShader = Shader.Find("workshop.");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -115,12 +115,12 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 			{
 				HBJJOCHGOPH = 378f;
 			}
-			HFBJAOFLCJI().SetFloat("open", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("_SSAO", Distortion);
-			HNICHJCGJOC().SetFloat("_Value", SizeX);
-			HFBJAOFLCJI().SetFloat("_Value3", SizeY);
-			HFBJAOFLCJI().SetFloat("--------------------------------", Speed);
-			DNLMFEGJJDD().SetTexture("_QualitySettings", FPHEBLMINDA);
+			HNICHJCGJOC().SetFloat("Room: '{0}' {1},{2} {4}/{3} players.", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("_Params", Distortion);
+			EFDEIFCDAFG().SetFloat("_Value", SizeX);
+			EFDEIFCDAFG().SetFloat("_Value2", SizeY);
+			NBPKMLMCHFN.SetFloat("0.00", Speed);
+			NBPKMLMCHFN.SetTexture("_SampleCount", FPHEBLMINDA);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
@@ -138,13 +138,13 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 			{
 				HBJJOCHGOPH = 982f;
 			}
-			EFDEIFCDAFG().SetFloat(": ", HBJJOCHGOPH);
-			EFDEIFCDAFG().SetFloat("_FgOverlap", Distortion);
-			HFBJAOFLCJI().SetFloat(".a", SizeX);
-			HNICHJCGJOC().SetFloat("{0}", SizeY);
-			HNICHJCGJOC().SetFloat("_Glitch", Speed);
-			EFDEIFCDAFG().SetTexture("Scale environment object by the values", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			NBPKMLMCHFN.SetFloat(": ", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("_Offsets", Distortion);
+			EFDEIFCDAFG().SetFloat(".a", SizeX);
+			HNICHJCGJOC().SetFloat("[DiscordController] Shutdown", SizeY);
+			DNLMFEGJJDD().SetFloat("_TimeX", Speed);
+			DNLMFEGJJDD().SetTexture("Scale environment object by the values", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
 		{
@@ -172,13 +172,13 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1092f;
 			}
-			NBPKMLMCHFN.SetFloat("achievements.26.progress", HBJJOCHGOPH);
-			EFDEIFCDAFG().SetFloat("id", Distortion);
-			EFDEIFCDAFG().SetFloat("float,1", SizeX);
-			DNLMFEGJJDD().SetFloat("_ScreenResolution", SizeY);
-			EFDEIFCDAFG().SetFloat("_ScreenResolution", Speed);
-			NBPKMLMCHFN.SetTexture("CameraFilterPack/FX_Funk", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			HNICHJCGJOC().SetFloat("achievements.26.progress", HBJJOCHGOPH);
+			HNICHJCGJOC().SetFloat("id", Distortion);
+			NBPKMLMCHFN.SetFloat("Message duration multiplier. Recomended 1", SizeX);
+			HFBJAOFLCJI().SetFloat("_ScreenResolution", SizeY);
+			EFDEIFCDAFG().SetFloat("_Noise", Speed);
+			HFBJAOFLCJI().SetTexture("_ScreenResolution", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -206,13 +206,13 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1614f;
 			}
-			HNICHJCGJOC().SetFloat("/", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("master", Distortion);
-			HFBJAOFLCJI().SetFloat("RT", SizeX);
-			NBPKMLMCHFN.SetFloat("Testing, a toggle has toggled [", SizeY);
-			DNLMFEGJJDD().SetFloat("NetworkCanvas", Speed);
-			HFBJAOFLCJI().SetTexture("_Value2", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			NBPKMLMCHFN.SetFloat("PublishButton", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("open", Distortion);
+			DNLMFEGJJDD().SetFloat("LT", SizeX);
+			EFDEIFCDAFG().SetFloat("Testing, the group has toggled [", SizeY);
+			HFBJAOFLCJI().SetFloat("NetworkCanvas", Speed);
+			NBPKMLMCHFN.SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
 		{
@@ -222,8 +222,8 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		FPHEBLMINDA = Resources.Load("_TimeX") as Texture2D;
-		SCShader = Shader.Find("OneHand");
+		FPHEBLMINDA = Resources.Load("_MainTex2") as Texture2D;
+		SCShader = Shader.Find("event");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -256,7 +256,7 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 	private void NPLCENPNJBM()
 	{
 		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
-		SCShader = Shader.Find("CameraFilterPack/Lut_TestMode");
+		SCShader = Shader.Find("_LutTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -266,7 +266,7 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 	private void JILOMOBDPIA()
 	{
 		FPHEBLMINDA = Resources.Load("_LightIntensity") as Texture2D;
-		SCShader = Shader.Find("<color=#{0}>{1}</color>");
+		SCShader = Shader.Find("$ {0}");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -295,12 +295,12 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 				HBJJOCHGOPH = 1503f;
 			}
 			EFDEIFCDAFG().SetFloat("_Value4", HBJJOCHGOPH);
-			EFDEIFCDAFG().SetFloat("_TimeX", Distortion);
-			DNLMFEGJJDD().SetFloat("/512px-512px.png", SizeX);
-			EFDEIFCDAFG().SetFloat("NEW_ACHIEVEMENT_1_26", SizeY);
+			DNLMFEGJJDD().SetFloat("_TimeX", Distortion);
+			HNICHJCGJOC().SetFloat("/", SizeX);
+			HFBJAOFLCJI().SetFloat("NEW_ACHIEVEMENT_1_26", SizeY);
 			DNLMFEGJJDD().SetFloat("IconImage", Speed);
-			HNICHJCGJOC().SetTexture("settings.enablehitsoundsinrelax", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			HNICHJCGJOC().SetTexture("HitInRelaxMusicToggle", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -317,12 +317,12 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 			{
 				HBJJOCHGOPH = 567f;
 			}
-			DNLMFEGJJDD().SetFloat("Tab2Content", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("InstantiateRpc", Distortion);
-			DNLMFEGJJDD().SetFloat("RanksButton", SizeX);
-			HFBJAOFLCJI().SetFloat("plogs", SizeY);
-			NBPKMLMCHFN.SetFloat("\\", Speed);
-			HNICHJCGJOC().SetTexture("ICollection", FPHEBLMINDA);
+			EFDEIFCDAFG().SetFloat("ConfigVersionSlider", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("#rt", Distortion);
+			NBPKMLMCHFN.SetFloat("RanksButton", SizeX);
+			EFDEIFCDAFG().SetFloat("achievements.21.progress", SizeY);
+			DNLMFEGJJDD().SetFloat("\\", Speed);
+			NBPKMLMCHFN.SetTexture("z", FPHEBLMINDA);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
@@ -337,8 +337,8 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		FPHEBLMINDA = Resources.Load("Texture2") as Texture2D;
-		SCShader = Shader.Find("[MapsData] Caching ");
+		FPHEBLMINDA = Resources.Load("_ScreenResolution") as Texture2D;
+		SCShader = Shader.Find("/");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -347,7 +347,7 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		FPHEBLMINDA = Resources.Load("_NoisePerChannel") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_DX11NoiseTime") as Texture2D;
 		SCShader = Shader.Find("SubBass");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -357,8 +357,8 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 
 	private void KDMANOEMOCA()
 	{
-		FPHEBLMINDA = Resources.Load("#,0.00") as Texture2D;
-		SCShader = Shader.Find("_TimeX");
+		FPHEBLMINDA = Resources.Load("#,0") as Texture2D;
+		SCShader = Shader.Find("CameraFilterPack/Edge_Edge_filter");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -374,13 +374,13 @@ public class CameraFilterPack_AAA_WaterDropPro : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1196f;
 			}
-			HNICHJCGJOC().SetFloat("id", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("id", HBJJOCHGOPH);
 			HNICHJCGJOC().SetFloat("OK", Distortion);
-			HFBJAOFLCJI().SetFloat("Gameplay/sun", SizeX);
-			EFDEIFCDAFG().SetFloat("ItemsCountText", SizeY);
-			NBPKMLMCHFN.SetFloat("settings.enableselectormusic", Speed);
-			NBPKMLMCHFN.SetTexture("Scrollbar", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			EFDEIFCDAFG().SetFloat("/Segment-[Down]", SizeX);
+			NBPKMLMCHFN.SetFloat("InfoText", SizeY);
+			HNICHJCGJOC().SetFloat("settings.disablestoryboard", Speed);
+			HNICHJCGJOC().SetTexture("InputField", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{

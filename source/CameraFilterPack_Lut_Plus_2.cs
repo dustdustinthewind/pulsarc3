@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Lut/Plus")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Lut/Plus")]
 public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 {
 	public Shader SCShader;
@@ -322,12 +322,12 @@ public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				Convert(LutTexture);
+				FLLICIHANPO(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			NBPKMLMCHFN.SetFloat("Encryption wasn't established: ", Blend);
-			FAIFBBGFAIB().SetTexture("LocalPlayer is null or not in mActors! LocalPlayer: {0} mActors==null: {1} newID: {2}", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NDMPCDHADMJ(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 0 : 0);
+			FAIFBBGFAIB().SetFloat("didAuthenticate ", Blend);
+			KBOPGONOCNP().SetTexture("Can't execute Disconnect() while not connected. Nothing changed. State: {0}", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 0 : 0);
 		}
 		else
 		{
@@ -341,9 +341,9 @@ public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!ValidDimensions(MKEKCIPLJNC))
+			if (!OCIOLHMEKII(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_TapMedium" + MKEKCIPLJNC.name + "list");
+				Debug.LogWarning("_Threshhold" + MKEKCIPLJNC.name + "keys");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -370,7 +370,7 @@ public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 		}
 		else
 		{
-			MPBFDNDBHBM();
+			MGBOJGMOEGA();
 		}
 	}
 
@@ -393,11 +393,11 @@ public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				KLGGNGCHCEN(LutTexture);
+				Convert(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			NBPKMLMCHFN.SetFloat("cmd.exe", Blend);
-			GCDFNHMJMIP().SetTexture("JoinButton", PKINFPNDDAJ);
+			GCDFNHMJMIP().SetFloat("cmd.exe", Blend);
+			JFDGLLEOPGB().SetTexture("JoinButton", PKINFPNDDAJ);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB(), (QualitySettings.activeColorSpace == ColorSpace.Gamma) ? 1 : 0);
 		}
 		else
@@ -446,12 +446,12 @@ public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				FLLICIHANPO(LutTexture);
+				KLGGNGCHCEN(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			LONNIJMNKFB().SetFloat("UseFinalGlassColor", Blend);
-			LONNIJMNKFB().SetTexture("note.3", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
+			NDMPCDHADMJ().SetFloat("_TimeX", Blend);
+			GCDFNHMJMIP().SetTexture("CheckCombo", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
 		}
 		else
 		{
@@ -481,9 +481,9 @@ public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!JLLFEBOHAIA(MKEKCIPLJNC))
+			if (!ValidDimensions(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_Value" + MKEKCIPLJNC.name + "PunRespawn with Position.");
+				Debug.LogWarning("_TimeX" + MKEKCIPLJNC.name + "OnPickedUp");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -510,7 +510,7 @@ public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 		}
 		else
 		{
-			GAIOPDKLKOA();
+			MPBFDNDBHBM();
 		}
 	}
 
@@ -540,8 +540,8 @@ public class CameraFilterPack_Lut_Plus_2 : MonoBehaviour
 				KLGGNGCHCEN(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			NDMPCDHADMJ().SetFloat("maps.", Blend);
-			NDMPCDHADMJ().SetTexture("_SmallTex", PKINFPNDDAJ);
+			NBPKMLMCHFN.SetFloat("maps.", Blend);
+			GCDFNHMJMIP().SetTexture("_AdaptionSpeed", PKINFPNDDAJ);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB(), (QualitySettings.activeColorSpace == ColorSpace.Gamma) ? 1 : 0);
 		}
 		else

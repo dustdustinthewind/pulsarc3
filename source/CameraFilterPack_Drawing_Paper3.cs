@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Drawing/Paper3")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 {
 	public Shader SCShader;
@@ -71,18 +71,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 918f;
 			}
-			IONHGBPGCHK().SetFloat("_TimeX", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetColor("_ScreenResolution", Pencil_Color);
-			PDEAHJPOMEF().SetFloat("PointsScoreText", Pencil_Size);
-			CFEDGDGBCHE().SetFloat("DPADVER", Pencil_Correction);
-			MMOODGIODPC().SetFloat("settings_bindings_controller_type", Intensity);
-			PDEAHJPOMEF().SetFloat("The given 2D texture ", Speed_Animation);
-			MMOODGIODPC().SetFloat("Result for ", Corner_Lose);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/TV_Noise", Fade_Paper_to_BackColor);
-			IONHGBPGCHK().SetFloat("_VignetteTex", Fade_With_Original);
-			GCDFNHMJMIP().SetColor("Selection Box", Back_Color);
-			NBPKMLMCHFN.SetTexture("/", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			PDEAHJPOMEF().SetFloat("CameraFilterPack/Color_Noise", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetColor("Fade", Pencil_Color);
+			HEHKGPKLAKK().SetFloat("PointsScoreText", Pencil_Size);
+			PDEAHJPOMEF().SetFloat("DPADHOR", Pencil_Correction);
+			NBPKMLMCHFN.SetFloat("settings_bindings_controller_type", Intensity);
+			GCDFNHMJMIP().SetFloat("CameraFilterPack/Lut_TestMode", Speed_Animation);
+			HEHKGPKLAKK().SetFloat("Result for ", Corner_Lose);
+			HNICHJCGJOC().SetFloat("_ScreenResolution", Fade_Paper_to_BackColor);
+			OIMMPLPBLBK().SetFloat("_Intensity", Fade_With_Original);
+			IONHGBPGCHK().SetColor("SelectionBox component must be placed on a canvas in Screen Space Overlay mode.", Back_Color);
+			MFHPKGICPIO().SetTexture("/", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -109,7 +109,7 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 	private void PMPKMGKAAJH()
 	{
 		FPHEBLMINDA = Resources.Load("0x") as Texture2D;
-		SCShader = Shader.Find("CameraFilterPack/Distortion_BlackHole");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -122,7 +122,7 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void JILOMOBDPIA()
 	{
-		FPHEBLMINDA = Resources.Load("_Radius2") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_Rand") as Texture2D;
 		SCShader = Shader.Find("players");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -194,18 +194,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1062f;
 			}
-			IONHGBPGCHK().SetFloat("_Alpha", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetColor("_Value4", Pencil_Color);
-			OIMMPLPBLBK().SetFloat("settings.hideui", Pencil_Size);
-			HEHKGPKLAKK().SetFloat("_Value4", Pencil_Correction);
-			IONHGBPGCHK().SetFloat("maps.", Intensity);
-			NBPKMLMCHFN.SetFloat("_Value2", Speed_Animation);
-			MMOODGIODPC().SetFloat("id", Corner_Lose);
-			OIMMPLPBLBK().SetFloat("_MainTex", Fade_Paper_to_BackColor);
-			MFHPKGICPIO().SetFloat("_ScreenResolution", Fade_With_Original);
-			NBPKMLMCHFN.SetColor("_Fade", Back_Color);
-			NBPKMLMCHFN.SetTexture("_Glitch", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			MFHPKGICPIO().SetFloat("_Alpha", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetColor("_Value4", Pencil_Color);
+			GCDFNHMJMIP().SetFloat("' found!", Pencil_Size);
+			HEHKGPKLAKK().SetFloat("_Value3", Pencil_Correction);
+			NBPKMLMCHFN.SetFloat("maps.", Intensity);
+			IONHGBPGCHK().SetFloat("_Value", Speed_Animation);
+			OIMMPLPBLBK().SetFloat("id", Corner_Lose);
+			PDEAHJPOMEF().SetFloat("OnRenderImage in Helper called ...", Fade_Paper_to_BackColor);
+			GCDFNHMJMIP().SetFloat("_ScreenResolution", Fade_With_Original);
+			MFHPKGICPIO().SetColor("CameraFilterPack/Pixelisation_Sweater", Back_Color);
+			GCDFNHMJMIP().SetTexture("_TimeX", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
 		}
 		else
 		{
@@ -223,17 +223,17 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 				HBJJOCHGOPH = 1484f;
 			}
 			NBPKMLMCHFN.SetFloat("_SizeY", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetColor("_EmissionGain", Pencil_Color);
-			OIMMPLPBLBK().SetFloat("_Value2", Pencil_Size);
-			IONHGBPGCHK().SetFloat("DISTORT", Pencil_Correction);
-			IONHGBPGCHK().SetFloat(".lastCheckpoint.powerupsScore", Intensity);
-			MFHPKGICPIO().SetFloat("_ReflectionTexture2", Speed_Animation);
-			OIMMPLPBLBK().SetFloat("SpectatingUserInfo", Corner_Lose);
-			OIMMPLPBLBK().SetFloat("Checkpoint", Fade_Paper_to_BackColor);
-			OIMMPLPBLBK().SetFloat("1248864821", Fade_With_Original);
-			OIMMPLPBLBK().SetColor("_Parameter", Back_Color);
-			GCDFNHMJMIP().SetTexture("In Main Menu", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			OIMMPLPBLBK().SetColor("_EmissionGain", Pencil_Color);
+			PDEAHJPOMEF().SetFloat("_Value2", Pencil_Size);
+			MMOODGIODPC().SetFloat("_VignetteColor", Pencil_Correction);
+			HEHKGPKLAKK().SetFloat(".lastCheckpoint.incorrectScore", Intensity);
+			IONHGBPGCHK().SetFloat("_ReflectionTexture0", Speed_Animation);
+			HEHKGPKLAKK().SetFloat("workshop.", Corner_Lose);
+			HEHKGPKLAKK().SetFloat("ShowSprite", Fade_Paper_to_BackColor);
+			MFHPKGICPIO().SetFloat("Reset 21 achievement progress", Fade_With_Original);
+			CFEDGDGBCHE().SetColor("_Parameter", Back_Color);
+			OIMMPLPBLBK().SetTexture("In Main Menu", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
 		}
 		else
 		{
@@ -243,8 +243,8 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void IMCKJCHKMKB()
 	{
-		FPHEBLMINDA = Resources.Load("_ScreenResolution") as Texture2D;
-		SCShader = Shader.Find("_FinalReflectionTexture");
+		FPHEBLMINDA = Resources.Load("_Value4") as Texture2D;
+		SCShader = Shader.Find("_BlurTexture");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -273,7 +273,7 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 	private void DAHFFNNIGML()
 	{
 		FPHEBLMINDA = Resources.Load(". Check if the server is available.") as Texture2D;
-		SCShader = Shader.Find("_SSAO");
+		SCShader = Shader.Find("_TexelOffsetScale");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -293,18 +293,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 680f;
 			}
-			MMOODGIODPC().SetFloat("_ChannelMixerGreen", HBJJOCHGOPH);
-			HNICHJCGJOC().SetColor("<b>Max Score</b>:", Pencil_Color);
-			PDEAHJPOMEF().SetFloat("_Value", Pencil_Size);
-			IONHGBPGCHK().SetFloat("OpCreateRoom()", Pencil_Correction);
-			NBPKMLMCHFN.SetFloat("_Value3", Intensity);
-			MFHPKGICPIO().SetFloat("GUICamera", Speed_Animation);
-			HNICHJCGJOC().SetFloat("PLEASE WAIT", Corner_Lose);
-			MMOODGIODPC().SetFloat("\nCreated by Oxy949", Fade_Paper_to_BackColor);
-			MFHPKGICPIO().SetFloat("[Steamworks.NET] SteamAPI_Init() failed. Refer to Valve's documentation or the comment above this line for more information.", Fade_With_Original);
-			OIMMPLPBLBK().SetColor(". Our prefix is ", Back_Color);
-			NBPKMLMCHFN.SetTexture("]. Please verify you have this gameobject in a Resources folder.", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			PDEAHJPOMEF().SetFloat("_HSV", HBJJOCHGOPH);
+			IONHGBPGCHK().SetColor("0.00", Pencil_Color);
+			IONHGBPGCHK().SetFloat("_TimeX", Pencil_Size);
+			NBPKMLMCHFN.SetFloat("OpJoinLobby()", Pencil_Correction);
+			NBPKMLMCHFN.SetFloat("_Value2", Intensity);
+			OIMMPLPBLBK().SetFloat("SelectionBox component is on a gameObject with a Canvas Scaler component. As of now, Canvas Scalers without the default settings throw off the coordinates of the selection box. Canvas Scaler has been removed.", Speed_Animation);
+			OIMMPLPBLBK().SetFloat("#ok", Corner_Lose);
+			OIMMPLPBLBK().SetFloat("Maps Editor v.", Fade_Paper_to_BackColor);
+			HEHKGPKLAKK().SetFloat("[Steamworks.NET] DllCheck Test returned false, One or more of the Steamworks binaries seems to be the wrong version.", Fade_With_Original);
+			HEHKGPKLAKK().SetColor(". We have no such PhotonView! Ignored this if you're leaving a room. State: ", Back_Color);
+			IONHGBPGCHK().SetTexture("Error in Instantiation! The resource's PhotonView count is not the same as in incoming data.", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -326,7 +326,7 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 	private void BGDPIHMAACO()
 	{
 		FPHEBLMINDA = Resources.Load("received</b>\n#reason: ") as Texture2D;
-		SCShader = Shader.Find("_PrefilterOffs");
+		SCShader = Shader.Find("_Curve");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -335,8 +335,8 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void PKLOBJHKFEO()
 	{
-		FPHEBLMINDA = Resources.Load("_SmoothEnd") as Texture2D;
-		SCShader = Shader.Find("_TimeX");
+		FPHEBLMINDA = Resources.Load("_SmoothStart") as Texture2D;
+		SCShader = Shader.Find("CameraFilterPack/TV_BrokenGlass");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -371,8 +371,8 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		FPHEBLMINDA = Resources.Load("Object ID. Case-Sensitive") as Texture2D;
-		SCShader = Shader.Find("_Value");
+		FPHEBLMINDA = Resources.Load("id") as Texture2D;
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -415,18 +415,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1255f;
 			}
-			CFEDGDGBCHE().SetFloat("\t", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetColor("_DistortionLevel", Pencil_Color);
-			MFHPKGICPIO().SetFloat("Joystick1Button10", Pencil_Size);
-			NBPKMLMCHFN.SetFloat("Clears all text from the debug console", Pencil_Correction);
-			HNICHJCGJOC().SetFloat("OK", Intensity);
-			MFHPKGICPIO().SetFloat("UI", Speed_Animation);
-			IONHGBPGCHK().SetFloat("_FarCamera", Corner_Lose);
-			HNICHJCGJOC().SetFloat("Observed type is not serializable: ", Fade_Paper_to_BackColor);
-			MFHPKGICPIO().SetFloat("menutheme.27thfloor", Fade_With_Original);
-			OIMMPLPBLBK().SetColor(" from: ", Back_Color);
-			MMOODGIODPC().SetTexture("CameraFilterPack/Vision_Psycho", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			MMOODGIODPC().SetFloat("\n", HBJJOCHGOPH);
+			HNICHJCGJOC().SetColor("_DistortionLevel", Pencil_Color);
+			PDEAHJPOMEF().SetFloat("Start", Pencil_Size);
+			HEHKGPKLAKK().SetFloat("Prints list of commands", Pencil_Correction);
+			MFHPKGICPIO().SetFloat("You must complete your map before submiting it to Workshop", Intensity);
+			CFEDGDGBCHE().SetFloat("Right", Speed_Animation);
+			HNICHJCGJOC().SetFloat("_FarCamera", Corner_Lose);
+			MMOODGIODPC().SetFloat("' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().", Fade_Paper_to_BackColor);
+			CFEDGDGBCHE().SetFloat("player.blackwhite", Fade_With_Original);
+			NBPKMLMCHFN.SetColor("Destroying GO as global. ID: ", Back_Color);
+			MMOODGIODPC().SetTexture("_ScreenResolution", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -440,7 +440,7 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		FPHEBLMINDA = Resources.Load("_Max") as Texture2D;
+		FPHEBLMINDA = Resources.Load("UI Extensions/SoftMaskShaderText") as Texture2D;
 		SCShader = Shader.Find("^");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -450,8 +450,8 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void BMOFEBKGLFI()
 	{
-		FPHEBLMINDA = Resources.Load("</color>") as Texture2D;
-		SCShader = Shader.Find("<start_index> <end_index>");
+		FPHEBLMINDA = Resources.Load("#") as Texture2D;
+		SCShader = Shader.Find("plogs");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -498,18 +498,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 721f;
 			}
-			CFEDGDGBCHE().SetFloat("CameraFilterPack_Glasses_On2", HBJJOCHGOPH);
-			MMOODGIODPC().SetColor("Closes the app", Pencil_Color);
-			IONHGBPGCHK().SetFloat("_Distortion", Pencil_Size);
-			IONHGBPGCHK().SetFloat("_Value2", Pencil_Correction);
-			HEHKGPKLAKK().SetFloat("_ScreenResolution", Intensity);
-			IONHGBPGCHK().SetFloat("Working.\nPlease wait..", Speed_Animation);
-			PDEAHJPOMEF().SetFloat("GameScene", Corner_Lose);
-			IONHGBPGCHK().SetFloat("Tab1Content", Fade_Paper_to_BackColor);
-			GCDFNHMJMIP().SetFloat("-1", Fade_With_Original);
-			CFEDGDGBCHE().SetColor(".lastCheckpoint.currentCombo", Back_Color);
-			OIMMPLPBLBK().SetTexture("Description goes here", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
+			MFHPKGICPIO().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			HNICHJCGJOC().SetColor("quit", Pencil_Color);
+			IONHGBPGCHK().SetFloat("_ColorLevel", Pencil_Size);
+			PDEAHJPOMEF().SetFloat("_Value", Pencil_Correction);
+			GCDFNHMJMIP().SetFloat("_FadeFX", Intensity);
+			OIMMPLPBLBK().SetFloat("14", Speed_Animation);
+			MFHPKGICPIO().SetFloat("[", Corner_Lose);
+			HNICHJCGJOC().SetFloat("Tab1Content", Fade_Paper_to_BackColor);
+			CFEDGDGBCHE().SetFloat("-1", Fade_With_Original);
+			HNICHJCGJOC().SetColor(".lastCheckpoint.penaltyScore", Back_Color);
+			MFHPKGICPIO().SetTexture("File not found: {0}", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -526,18 +526,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 905f;
 			}
-			HEHKGPKLAKK().SetFloat("_Value2", HBJJOCHGOPH);
-			IONHGBPGCHK().SetColor("Image", Pencil_Color);
-			MMOODGIODPC().SetFloat("(\\[ */ *h1 *\\])", Pencil_Size);
-			CFEDGDGBCHE().SetFloat(".lastCheckpoint.lives", Pencil_Correction);
-			IONHGBPGCHK().SetFloat("_Visualize", Intensity);
-			MMOODGIODPC().SetFloat("_Value2", Speed_Animation);
-			IONHGBPGCHK().SetFloat("TotalHitsScoreText", Corner_Lose);
-			MMOODGIODPC().SetFloat("No info", Fade_Paper_to_BackColor);
-			CFEDGDGBCHE().SetFloat("-", Fade_With_Original);
-			OIMMPLPBLBK().SetColor("[Right]", Back_Color);
-			NBPKMLMCHFN.SetTexture("_ChromaticAberration", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			PDEAHJPOMEF().SetFloat("_Value2", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetColor("skins", Pencil_Color);
+			GCDFNHMJMIP().SetFloat("(\\[ */ *h1 *\\])", Pencil_Size);
+			IONHGBPGCHK().SetFloat(".lastCheckpoint.isMapCompleted", Pencil_Correction);
+			CFEDGDGBCHE().SetFloat("_MatrixSpeed", Intensity);
+			NBPKMLMCHFN.SetFloat("_Value2", Speed_Animation);
+			HEHKGPKLAKK().SetFloat("FinalScoreText", Corner_Lose);
+			MMOODGIODPC().SetFloat("icon.png", Fade_Paper_to_BackColor);
+			CFEDGDGBCHE().SetFloat("--------------------------------", Fade_With_Original);
+			HEHKGPKLAKK().SetColor("[Left]", Back_Color);
+			HEHKGPKLAKK().SetTexture("_Blur", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -547,8 +547,8 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void FBPHNEJBDJN()
 	{
-		FPHEBLMINDA = Resources.Load("_ScreenResolution") as Texture2D;
-		SCShader = Shader.Find("#");
+		FPHEBLMINDA = Resources.Load("_Fade") as Texture2D;
+		SCShader = Shader.Find("[LocalizationService] All keys for ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -564,18 +564,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1894f;
 			}
-			CFEDGDGBCHE().SetFloat("#pleasewait", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetColor(" ", Pencil_Color);
-			MMOODGIODPC().SetFloat("_Value6", Pencil_Size);
-			IONHGBPGCHK().SetFloat("[LevelEditorScene] Error: I/O Failure! :(", Pencil_Correction);
-			HNICHJCGJOC().SetFloat("SpawnObj", Intensity);
-			NBPKMLMCHFN.SetFloat("received</b>\n#reason: ", Speed_Animation);
-			HNICHJCGJOC().SetFloat("editor.", Corner_Lose);
-			OIMMPLPBLBK().SetFloat("_Saturation", Fade_Paper_to_BackColor);
-			MFHPKGICPIO().SetFloat("Default UI Material", Fade_With_Original);
-			IONHGBPGCHK().SetColor(".lastCheckpoint.playerdistance", Back_Color);
-			PDEAHJPOMEF().SetTexture("AudioSampler", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			MFHPKGICPIO().SetFloat("/", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetColor("settings.selectormapsperpage", Pencil_Color);
+			MFHPKGICPIO().SetFloat("_Value6", Pencil_Size);
+			HNICHJCGJOC().SetFloat("Created", Pencil_Correction);
+			CFEDGDGBCHE().SetFloat("Error0", Intensity);
+			OIMMPLPBLBK().SetFloat("received</b>\n#reason: ", Speed_Animation);
+			NBPKMLMCHFN.SetFloat("editor.", Corner_Lose);
+			MFHPKGICPIO().SetFloat("_Saturation", Fade_Paper_to_BackColor);
+			MMOODGIODPC().SetFloat("UI Extensions/UIMultiply", Fade_With_Original);
+			GCDFNHMJMIP().SetColor(".lastCheckpoint.comboScore", Back_Color);
+			IONHGBPGCHK().SetTexture("_EmissionGain", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
 		}
 		else
 		{
@@ -597,8 +597,8 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void CHOPDIGHJNH()
 	{
-		FPHEBLMINDA = Resources.Load("NEW") as Texture2D;
-		SCShader = Shader.Find("{\"items\":");
+		FPHEBLMINDA = Resources.Load("BadgeText") as Texture2D;
+		SCShader = Shader.Find("outputitemdefid");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -658,18 +658,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 635f;
 			}
-			HEHKGPKLAKK().SetFloat("?", HBJJOCHGOPH);
-			IONHGBPGCHK().SetColor("/icon", Pencil_Color);
-			OIMMPLPBLBK().SetFloat("Connected to masterserver.", Pencil_Size);
-			PDEAHJPOMEF().SetFloat("[PlayerController] ", Pencil_Correction);
-			MMOODGIODPC().SetFloat("Editor/", Intensity);
-			IONHGBPGCHK().SetFloat("_EmissionColor", Speed_Animation);
-			NBPKMLMCHFN.SetFloat(": ", Corner_Lose);
-			GCDFNHMJMIP().SetFloat("shader.crispwinter", Fade_Paper_to_BackColor);
-			GCDFNHMJMIP().SetFloat("SpeedSlider", Fade_With_Original);
-			HEHKGPKLAKK().SetColor(":", Back_Color);
-			HEHKGPKLAKK().SetTexture("/icon", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			NBPKMLMCHFN.SetFloat("Down", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetColor("/icon", Pencil_Color);
+			HEHKGPKLAKK().SetFloat("OnStatusChanged: {0} current State: {1}", Pencil_Size);
+			IONHGBPGCHK().SetFloat(" not exist", Pencil_Correction);
+			HEHKGPKLAKK().SetFloat("MapFolderInputField", Intensity);
+			OIMMPLPBLBK().SetFloat("#,0.00", Speed_Animation);
+			MMOODGIODPC().SetFloat("Chat", Corner_Lose);
+			GCDFNHMJMIP().SetFloat("FrostCanvas", Fade_Paper_to_BackColor);
+			PDEAHJPOMEF().SetFloat("LivesSlider", Fade_With_Original);
+			PDEAHJPOMEF().SetColor("ConnectToMaster() failed. Can only connect while in state 'Disconnected'. Current state: ", Back_Color);
+			IONHGBPGCHK().SetTexture("/icon", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
 		}
 		else
 		{
@@ -679,8 +679,8 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void ANCKKLFPGDI()
 	{
-		FPHEBLMINDA = Resources.Load("_Value3") as Texture2D;
-		SCShader = Shader.Find("[MapsData] Bad map: ");
+		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
+		SCShader = Shader.Find("[MapsData] Caching ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -689,8 +689,8 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		FPHEBLMINDA = Resources.Load("_TimeX") as Texture2D;
-		SCShader = Shader.Find("http://steamcommunity.com/sharedfiles/filedetails/?id=");
+		FPHEBLMINDA = Resources.Load("CameraFilterPack/Gradients_Therma") as Texture2D;
+		SCShader = Shader.Find("workshop.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -706,18 +706,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1132f;
 			}
-			HEHKGPKLAKK().SetFloat("UseScanLine", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetColor("New level loaded. Removed ", Pencil_Color);
-			OIMMPLPBLBK().SetFloat("_InternalLutTex", Pencil_Size);
-			HEHKGPKLAKK().SetFloat("_ScreenResolution", Pencil_Correction);
-			MMOODGIODPC().SetFloat("End index must in an integer.", Intensity);
-			PDEAHJPOMEF().SetFloat("_Value1", Speed_Animation);
-			HNICHJCGJOC().SetFloat(": ", Corner_Lose);
-			MFHPKGICPIO().SetFloat("_Far", Fade_Paper_to_BackColor);
-			GCDFNHMJMIP().SetFloat("Drop_With_Obj", Fade_With_Original);
-			HNICHJCGJOC().SetColor("_Value4", Back_Color);
-			MFHPKGICPIO().SetTexture("mapselector.tags.", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
+			PDEAHJPOMEF().SetFloat("UseScanLineSize", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetColor(". The group number should be at least 1.", Pencil_Color);
+			NBPKMLMCHFN.SetFloat("_CurveTex", Pencil_Size);
+			CFEDGDGBCHE().SetFloat("_ScreenResolution", Pencil_Correction);
+			MFHPKGICPIO().SetFloat("Need to specify a start index and end index.", Intensity);
+			OIMMPLPBLBK().SetFloat("_Amount", Speed_Animation);
+			OIMMPLPBLBK().SetFloat("[LocalizationService] All keys for ", Corner_Lose);
+			NBPKMLMCHFN.SetFloat("_Near", Fade_Paper_to_BackColor);
+			HNICHJCGJOC().SetFloat("Drop_With_Obj", Fade_With_Original);
+			MMOODGIODPC().SetColor("_Value3", Back_Color);
+			IONHGBPGCHK().SetTexture("mapselector.tags.", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -764,18 +764,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 251f;
 			}
-			HEHKGPKLAKK().SetFloat("[SERVER] Kicked ", HBJJOCHGOPH);
-			HEHKGPKLAKK().SetColor("_Quality", Pencil_Color);
+			GCDFNHMJMIP().SetFloat("[SERVER] Kicked ", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetColor("_Quality", Pencil_Color);
 			HNICHJCGJOC().SetFloat("maps.", Pencil_Size);
-			GCDFNHMJMIP().SetFloat("_BlurRadius4", Pencil_Correction);
-			MMOODGIODPC().SetFloat("player.redarc", Intensity);
-			HNICHJCGJOC().SetFloat("_MotionBlurTmpCam", Speed_Animation);
-			IONHGBPGCHK().SetFloat("bad", Corner_Lose);
-			OIMMPLPBLBK().SetFloat("CameraFilterPack/TV_Noise", Fade_Paper_to_BackColor);
-			HEHKGPKLAKK().SetFloat("Hidden/Fast Approximate Anti-aliasing", Fade_With_Original);
-			MMOODGIODPC().SetColor("[PlayerController] ", Back_Color);
-			HNICHJCGJOC().SetTexture("IconFileSelector", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			HEHKGPKLAKK().SetFloat("_SSAO", Pencil_Correction);
+			MMOODGIODPC().SetFloat("/icon", Intensity);
+			NBPKMLMCHFN.SetFloat("_SoftZDistance", Speed_Animation);
+			MFHPKGICPIO().SetFloat("#tryagain", Corner_Lose);
+			OIMMPLPBLBK().SetFloat("_Fade", Fade_Paper_to_BackColor);
+			MMOODGIODPC().SetFloat("_TargetScale", Fade_With_Original);
+			PDEAHJPOMEF().SetColor(" not exist", Back_Color);
+			OIMMPLPBLBK().SetTexture("NewMapHandsCountSlider", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MFHPKGICPIO());
 		}
 		else
 		{
@@ -808,18 +808,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1139f;
 			}
-			NBPKMLMCHFN.SetFloat("_FadeDistance", HBJJOCHGOPH);
-			GCDFNHMJMIP().SetColor("Parameter levelId can't be null!", Pencil_Color);
-			OIMMPLPBLBK().SetFloat("OperationResponse ignored while disconnecting. Code: ", Pencil_Size);
-			HNICHJCGJOC().SetFloat("UI Extensions/UIScreen", Pencil_Correction);
-			MMOODGIODPC().SetFloat("LoadMapCanvas", Intensity);
-			OIMMPLPBLBK().SetFloat("cancel", Speed_Animation);
-			PDEAHJPOMEF().SetFloat("[PlayerBase] Loaded custom model: ", Corner_Lose);
-			MFHPKGICPIO().SetFloat("0", Fade_Paper_to_BackColor);
-			IONHGBPGCHK().SetFloat("settings_bindings_", Fade_With_Original);
-			HNICHJCGJOC().SetColor("OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one. Calling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);", Back_Color);
-			GCDFNHMJMIP().SetTexture("Fill Area", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
+			PDEAHJPOMEF().SetFloat("_ReflectionBlur", HBJJOCHGOPH);
+			MFHPKGICPIO().SetColor("curScn", Pencil_Color);
+			OIMMPLPBLBK().SetFloat("HandleEventLeave for player ID: ", Pencil_Size);
+			MFHPKGICPIO().SetFloat("UI Extensions/UIMultiply", Pencil_Correction);
+			HNICHJCGJOC().SetFloat("Editor", Intensity);
+			MMOODGIODPC().SetFloat("cancel", Speed_Animation);
+			GCDFNHMJMIP().SetFloat("Gameplay/sun", Corner_Lose);
+			IONHGBPGCHK().SetFloat("0", Fade_Paper_to_BackColor);
+			PDEAHJPOMEF().SetFloat("settings_bindings_controller_type", Fade_With_Original);
+			CFEDGDGBCHE().SetColor(".", Back_Color);
+			MMOODGIODPC().SetTexture("Fill Area", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -836,18 +836,18 @@ public class CameraFilterPack_Drawing_Paper3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1020f;
 			}
-			MMOODGIODPC().SetFloat("[DiscordController] Error {0}: {1}", HBJJOCHGOPH);
-			IONHGBPGCHK().SetColor("shader.ghost", Pencil_Color);
-			CFEDGDGBCHE().SetFloat("CameraFilterPack/Blend2Camera_Color", Pencil_Size);
-			MMOODGIODPC().SetFloat("Tab2Content", Pencil_Correction);
-			GCDFNHMJMIP().SetFloat("stretchWidth", Intensity);
-			CFEDGDGBCHE().SetFloat("Myst", Speed_Animation);
-			HEHKGPKLAKK().SetFloat("float,0", Corner_Lose);
-			HNICHJCGJOC().SetFloat("note.2", Fade_Paper_to_BackColor);
-			IONHGBPGCHK().SetFloat("[PlayerController] ", Fade_With_Original);
-			OIMMPLPBLBK().SetColor("file://", Back_Color);
-			CFEDGDGBCHE().SetTexture("maps.", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			NBPKMLMCHFN.SetFloat("[DiscordController] Disconnect {0}: {1}", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetColor("shader.crispwinter", Pencil_Color);
+			HNICHJCGJOC().SetFloat("CameraFilterPack/Blend2Camera_Saturation", Pencil_Size);
+			PDEAHJPOMEF().SetFloat("EnvironmentSlider", Pencil_Correction);
+			HNICHJCGJOC().SetFloat("tintColor", Intensity);
+			CFEDGDGBCHE().SetFloat("Drop_With_Obj", Speed_Animation);
+			MMOODGIODPC().SetFloat("float,0", Corner_Lose);
+			GCDFNHMJMIP().SetFloat("note.1", Fade_Paper_to_BackColor);
+			HNICHJCGJOC().SetFloat("SpawnObj", Fade_With_Original);
+			PDEAHJPOMEF().SetColor("[FileSelector] Dialog ended, result: ", Back_Color);
+			NBPKMLMCHFN.SetTexture("maps.", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
 		}
 		else
 		{

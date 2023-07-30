@@ -58,11 +58,11 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				MCOFJFMKGDD(LutTexture);
+				LGKLMCMLKIC(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			ADBKPGFMNKO().SetTexture("OnMastedChangeScene", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 0);
+			FLOHGDECHHH().SetTexture("OnMastedChangeScene", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 0);
 		}
 		else
 		{
@@ -164,7 +164,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!CFJHJHKDAGJ(MKEKCIPLJNC))
+			if (!NPKKFJIHHJM(MKEKCIPLJNC))
 			{
 				Debug.LogWarning("_Value" + MKEKCIPLJNC.name + "CameraFilterPack/AAA_Blood_Hit");
 				return;
@@ -193,7 +193,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		}
 		else
 		{
-			CHCIEBMINOA();
+			BEAEKDIPGKL();
 		}
 	}
 
@@ -249,7 +249,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("Unable to get a reward! Try again?");
+		SCShader = Shader.Find("No");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -295,7 +295,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		SCShader = Shader.Find("Joystick1Button7");
+		SCShader = Shader.Find("Joystick1Button6");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -386,8 +386,8 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 				MCOFJFMKGDD(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			IGIAPKPKGPK().SetTexture("SpawnObj", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 0);
+			IGIAPKPKGPK().SetTexture("event", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 0);
 		}
 		else
 		{
@@ -437,7 +437,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 
 	private void MMMDPANNAIO()
 	{
-		SCShader = Shader.Find("_Value2");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -446,7 +446,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		SCShader = Shader.Find("english");
+		SCShader = Shader.Find(" = ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -467,7 +467,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!MENGEGPBOEG(MKEKCIPLJNC))
+			if (!NPKKFJIHHJM(MKEKCIPLJNC))
 			{
 				Debug.LogWarning("_Offsets" + MKEKCIPLJNC.name + "SpectateButton");
 				return;
@@ -496,7 +496,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		}
 		else
 		{
-			BEAEKDIPGKL();
+			FJJEFOCHFHD();
 		}
 	}
 
@@ -506,9 +506,9 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!MENGEGPBOEG(MKEKCIPLJNC))
+			if (!OFNPEGAEJKD(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_TimeX" + MKEKCIPLJNC.name + "note.4");
+				Debug.LogWarning("_TimeX" + MKEKCIPLJNC.name + "CheckCombo");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -640,9 +640,9 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!NPKKFJIHHJM(MKEKCIPLJNC))
+			if (!MNDLHIJLBNJ(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_VelocityScale" + MKEKCIPLJNC.name + "Parameter levelId must be int or string!");
+				Debug.LogWarning("_DisplayVelocityScale" + MKEKCIPLJNC.name + "curScn");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -669,7 +669,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		}
 		else
 		{
-			GFAOEIEOKMA();
+			FJJEFOCHFHD();
 		}
 	}
 
@@ -684,11 +684,11 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				MCOFJFMKGDD(LutTexture);
+				GLJKHBFPOLA(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			HHIFMIPPMPF().SetTexture("HandleEventLeave for player ID: ", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 1);
+			ADBKPGFMNKO().SetTexture("Join failed on GameServer. Changing back to MasterServer. Msg: ", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 1);
 		}
 		else
 		{
@@ -723,7 +723,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 
 	private void FHGKIOOMMOH()
 	{
-		SCShader = Shader.Find("[PlayerBase] Loaded custom model: ");
+		SCShader = Shader.Find("Gameplay/sun");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -780,11 +780,11 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				Convert(LutTexture);
+				MGKJEDIGHGN(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			HHIFMIPPMPF().SetTexture("GhostSize", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 1);
+			IGIAPKPKGPK().SetTexture("GhostSize", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 1);
 		}
 		else
 		{
@@ -806,9 +806,9 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!NPKKFJIHHJM(MKEKCIPLJNC))
+			if (!ValidDimensions(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("Version 1.0" + MKEKCIPLJNC.name + "color");
+				Debug.LogWarning("Description goes here" + MKEKCIPLJNC.name + "color");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -835,7 +835,7 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 		}
 		else
 		{
-			GFAOEIEOKMA();
+			FJJEFOCHFHD();
 		}
 	}
 
@@ -850,11 +850,11 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				Convert(LutTexture);
+				GLJKHBFPOLA(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
 			EPCGJFCCAFH().SetTexture("settings.volume.menu", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF(), (QualitySettings.activeColorSpace != 0) ? 0 : 0);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC(), (QualitySettings.activeColorSpace != 0) ? 0 : 0);
 		}
 		else
 		{
@@ -898,11 +898,11 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				GLJKHBFPOLA(LutTexture);
+				LGKLMCMLKIC(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			NBPKMLMCHFN.SetTexture("Editor", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
+			NBPKMLMCHFN.SetTexture("\nCreated by Oxy949", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace != 0) ? 1 : 0);
 		}
 		else
 		{
@@ -949,11 +949,11 @@ public class CameraFilterPack_Lut_Simple : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				MCOFJFMKGDD(LutTexture);
+				FFILBFJMAHC(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			HHIFMIPPMPF().SetTexture("id", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH(), (QualitySettings.activeColorSpace != 0) ? 0 : 0);
+			ADBKPGFMNKO().SetTexture("Set Particles Input", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace != 0) ? 0 : 0);
 		}
 		else
 		{

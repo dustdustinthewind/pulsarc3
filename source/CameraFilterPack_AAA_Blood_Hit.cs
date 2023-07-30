@@ -75,22 +75,22 @@ public class CameraFilterPack_AAA_Blood_Hit : MonoBehaviour
 			{
 				HBJJOCHGOPH = 907f;
 			}
-			ADBKPGFMNKO().SetFloat("request", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("float,1.5", LightReflect);
-			NBPKMLMCHFN.SetFloat(" x ", Mathf.Clamp(Hit_Left, 1403f, 1910f));
-			ACHNOHCLGOO().SetFloat("_TimeX", Mathf.Clamp(Hit_Up, 1337f, 1740f));
-			NBPKMLMCHFN.SetFloat("Objects in List: ", Mathf.Clamp(Hit_Right, 683f, 1702f));
-			ADBKPGFMNKO().SetFloat(".sav", Mathf.Clamp(Hit_Down, 546f, 1156f));
-			ADBKPGFMNKO().SetFloat("intensity", Mathf.Clamp(Blood_Hit_Left, 1668f, 397f));
-			ACHNOHCLGOO().SetFloat("Checkpoint", Mathf.Clamp(Blood_Hit_Up, 110f, 945f));
-			NBPKMLMCHFN.SetFloat("Set Crosshair Color", Mathf.Clamp(Blood_Hit_Right, 1549f, 1272f));
-			ADBKPGFMNKO().SetFloat("settings.volume.sfx", Mathf.Clamp(Blood_Hit_Down, 986f, 390f));
-			ADBKPGFMNKO().SetFloat("Square", Mathf.Clamp(Hit_Full, 971f, 558f));
-			NBPKMLMCHFN.SetFloat("inventory.selected.", Mathf.Clamp(Blood_Hit_Full_1, 1594f, 693f));
-			ADBKPGFMNKO().SetFloat("SelectorMusicToggle", Mathf.Clamp(Blood_Hit_Full_2, 1137f, 375f));
-			ADBKPGFMNKO().SetFloat("#tryagain", Mathf.Clamp(Blood_Hit_Full_3, 35f, 800f));
+			NBPKMLMCHFN.SetFloat("IntraSig", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat("Zoom speed. Base 1.5", LightReflect);
+			NBPKMLMCHFN.SetFloat("Value", Mathf.Clamp(Hit_Left, 1403f, 1910f));
+			ACHNOHCLGOO().SetFloat("CameraFilterPack/FX_superDot", Mathf.Clamp(Hit_Up, 1337f, 1740f));
+			ADBKPGFMNKO().SetFloat("ping: {6}[+/-{7}]ms resent:{8} \n\nmax ms between\nsend: {0,4} \ndispatch: {1,4} \n\nlongest dispatch for: \nev({3}):{2,3}ms \nop({5}):{4,3}ms", Mathf.Clamp(Hit_Right, 683f, 1702f));
+			ACHNOHCLGOO().SetFloat("New SaveGame", Mathf.Clamp(Hit_Down, 546f, 1156f));
+			ACHNOHCLGOO().SetFloat("offsets", Mathf.Clamp(Blood_Hit_Left, 1668f, 397f));
+			NBPKMLMCHFN.SetFloat("ShowSprite", Mathf.Clamp(Blood_Hit_Up, 110f, 945f));
+			ACHNOHCLGOO().SetFloat("SetCrosshairColor", Mathf.Clamp(Blood_Hit_Right, 1549f, 1272f));
+			NBPKMLMCHFN.SetFloat("ItemNameText", Mathf.Clamp(Blood_Hit_Down, 986f, 390f));
+			NBPKMLMCHFN.SetFloat("Joystick1Button0", Mathf.Clamp(Hit_Full, 971f, 558f));
+			ACHNOHCLGOO().SetFloat("inventory.selected.", Mathf.Clamp(Blood_Hit_Full_1, 1594f, 693f));
+			ACHNOHCLGOO().SetFloat("settings.disablestoryboard", Mathf.Clamp(Blood_Hit_Full_2, 1137f, 375f));
+			ADBKPGFMNKO().SetFloat("Connection error: ", Mathf.Clamp(Blood_Hit_Full_3, 35f, 800f));
 			ADBKPGFMNKO().SetTexture("CameraFilterPack/Drawing_Curve", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -126,22 +126,22 @@ public class CameraFilterPack_AAA_Blood_Hit : MonoBehaviour
 			{
 				HBJJOCHGOPH = 682f;
 			}
-			ADBKPGFMNKO().SetFloat("FPSToggle", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("_History3Weight", LightReflect);
-			ACHNOHCLGOO().SetFloat("CameraFilterPack/Edge_Sigmoid", Mathf.Clamp(Hit_Left, 1976f, 85f));
-			ADBKPGFMNKO().SetFloat("CameraFilterPack/Glasses_OnX", Mathf.Clamp(Hit_Up, 1857f, 559f));
-			NBPKMLMCHFN.SetFloat("_BlurTex", Mathf.Clamp(Hit_Right, 227f, 1204f));
-			ACHNOHCLGOO().SetFloat("_Distortion2", Mathf.Clamp(Hit_Down, 1874f, 1836f));
+			NBPKMLMCHFN.SetFloat("Scene", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("_History1Weight", LightReflect);
+			ACHNOHCLGOO().SetFloat("_ScreenResolution", Mathf.Clamp(Hit_Left, 1976f, 85f));
+			ACHNOHCLGOO().SetFloat("CameraFilterPack_Glasses_On3", Mathf.Clamp(Hit_Up, 1857f, 559f));
+			NBPKMLMCHFN.SetFloat("_BlurPass", Mathf.Clamp(Hit_Right, 227f, 1204f));
+			ACHNOHCLGOO().SetFloat("_Distortion", Mathf.Clamp(Hit_Down, 1874f, 1836f));
 			ADBKPGFMNKO().SetFloat("_Value2", Mathf.Clamp(Blood_Hit_Left, 1811f, 817f));
-			ADBKPGFMNKO().SetFloat("CameraFilterPack_3D_Myst1", Mathf.Clamp(Blood_Hit_Up, 785f, 1489f));
-			NBPKMLMCHFN.SetFloat("CameraFilterPack_3D_Myst1", Mathf.Clamp(Blood_Hit_Right, 873f, 1431f));
-			ACHNOHCLGOO().SetFloat("editorVolume", Mathf.Clamp(Blood_Hit_Down, 752f, 972f));
+			NBPKMLMCHFN.SetFloat("CameraFilterPack_3D_Myst1", Mathf.Clamp(Blood_Hit_Up, 785f, 1489f));
+			ADBKPGFMNKO().SetFloat("CameraFilterPack_3D_Myst1", Mathf.Clamp(Blood_Hit_Right, 873f, 1431f));
+			ACHNOHCLGOO().SetFloat("sfxVolume", Mathf.Clamp(Blood_Hit_Down, 752f, 972f));
 			NBPKMLMCHFN.SetFloat("_TimeX", Mathf.Clamp(Hit_Full, 1029f, 1264f));
-			NBPKMLMCHFN.SetFloat("GlassAberration", Mathf.Clamp(Blood_Hit_Full_1, 817f, 1427f));
+			ACHNOHCLGOO().SetFloat("GlassDistortion", Mathf.Clamp(Blood_Hit_Full_1, 817f, 1427f));
 			ADBKPGFMNKO().SetFloat("_BlurVector", Mathf.Clamp(Blood_Hit_Full_2, 1839f, 1711f));
-			ACHNOHCLGOO().SetFloat("_ScreenResolution", Mathf.Clamp(Blood_Hit_Full_3, 1786f, 1482f));
-			ACHNOHCLGOO().SetTexture("CameraFilterPack/Atmosphere_Rain", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			NBPKMLMCHFN.SetFloat("_Value4", Mathf.Clamp(Blood_Hit_Full_3, 1786f, 1482f));
+			NBPKMLMCHFN.SetTexture("CameraFilterPack/Atmosphere_Rain", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -198,22 +198,22 @@ public class CameraFilterPack_AAA_Blood_Hit : MonoBehaviour
 			{
 				HBJJOCHGOPH = 770f;
 			}
-			NBPKMLMCHFN.SetFloat("</color>", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("_FadeShield", LightReflect);
-			ADBKPGFMNKO().SetFloat("\r", Mathf.Clamp(Hit_Left, 149f, 1229f));
-			ADBKPGFMNKO().SetFloat("_XCrop", Mathf.Clamp(Hit_Up, 995f, 523f));
-			ACHNOHCLGOO().SetFloat("_ScreenResolution", Mathf.Clamp(Hit_Right, 1971f, 1618f));
-			ACHNOHCLGOO().SetFloat("Couldn't color correct with 3D LUT texture. Image Effect will be disabled.", Mathf.Clamp(Hit_Down, 1864f, 507f));
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/Blend2Camera_Darken", Mathf.Clamp(Blood_Hit_Left, 477f, 264f));
+			NBPKMLMCHFN.SetFloat("#", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("_FadeShield", LightReflect);
+			ADBKPGFMNKO().SetFloat("\t", Mathf.Clamp(Hit_Left, 149f, 1229f));
+			NBPKMLMCHFN.SetFloat("UI Extensions/UIAdditive", Mathf.Clamp(Hit_Up, 995f, 523f));
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", Mathf.Clamp(Hit_Right, 1971f, 1618f));
+			NBPKMLMCHFN.SetFloat(" cannot be used as a 3D LUT.", Mathf.Clamp(Hit_Down, 1864f, 507f));
+			ADBKPGFMNKO().SetFloat("CameraFilterPack/Blend2Camera_Darken", Mathf.Clamp(Blood_Hit_Left, 477f, 264f));
 			NBPKMLMCHFN.SetFloat("\n", Mathf.Clamp(Blood_Hit_Up, 589f, 374f));
-			NBPKMLMCHFN.SetFloat("_Far", Mathf.Clamp(Blood_Hit_Right, 1854f, 932f));
-			ACHNOHCLGOO().SetFloat("_Blue_B", Mathf.Clamp(Blood_Hit_Down, 962f, 1821f));
-			ADBKPGFMNKO().SetFloat("_BorderColor", Mathf.Clamp(Hit_Full, 179f, 582f));
-			NBPKMLMCHFN.SetFloat("settings.volume.menu", Mathf.Clamp(Blood_Hit_Full_1, 1030f, 262f));
-			ADBKPGFMNKO().SetFloat("RemoveEnvironmentObject", Mathf.Clamp(Blood_Hit_Full_2, 54f, 1254f));
-			NBPKMLMCHFN.SetFloat("[ImageLoader] Loaded image from ", Mathf.Clamp(Blood_Hit_Full_3, 1703f, 244f));
-			ADBKPGFMNKO().SetTexture("MainButton", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			ACHNOHCLGOO().SetFloat("_Near", Mathf.Clamp(Blood_Hit_Right, 1854f, 932f));
+			NBPKMLMCHFN.SetFloat("_Blue_G", Mathf.Clamp(Blood_Hit_Down, 962f, 1821f));
+			ACHNOHCLGOO().SetFloat("_BorderColor", Mathf.Clamp(Hit_Full, 179f, 582f));
+			NBPKMLMCHFN.SetFloat("settings.showHP", Mathf.Clamp(Blood_Hit_Full_1, 1030f, 262f));
+			ACHNOHCLGOO().SetFloat("RemoveEnvironmentObject", Mathf.Clamp(Blood_Hit_Full_2, 54f, 1254f));
+			ADBKPGFMNKO().SetFloat("[FileSelector] Dialog canceled", Mathf.Clamp(Blood_Hit_Full_3, 1703f, 244f));
+			NBPKMLMCHFN.SetTexture(" ", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
 		}
 		else
 		{
@@ -231,7 +231,7 @@ public class CameraFilterPack_AAA_Blood_Hit : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		FPHEBLMINDA = Resources.Load("NameInfoText") as Texture2D;
+		FPHEBLMINDA = Resources.Load("InfoText") as Texture2D;
 		SCShader = Shader.Find("PenaltyScoreText");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -274,22 +274,22 @@ public class CameraFilterPack_AAA_Blood_Hit : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1572f;
 			}
-			NBPKMLMCHFN.SetFloat("_Value4", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat(" beatThreshold: ", LightReflect);
-			ADBKPGFMNKO().SetFloat("_BlueAmplifier", Mathf.Clamp(Hit_Left, 1417f, 1620f));
+			NBPKMLMCHFN.SetFloat("_Value3", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat(" beatThreshold: ", LightReflect);
+			ADBKPGFMNKO().SetFloat("_GreenAmplifier", Mathf.Clamp(Hit_Left, 1417f, 1620f));
 			ADBKPGFMNKO().SetFloat("hand", Mathf.Clamp(Hit_Up, 471f, 1245f));
-			NBPKMLMCHFN.SetFloat("setfloat", Mathf.Clamp(Hit_Right, 281f, 1810f));
-			ACHNOHCLGOO().SetFloat("Can't set open when not in that room.", Mathf.Clamp(Hit_Down, 1756f, 574f));
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", Mathf.Clamp(Blood_Hit_Left, 688f, 1789f));
-			ADBKPGFMNKO().SetFloat("_Distortion", Mathf.Clamp(Blood_Hit_Up, 1005f, 1349f));
-			ADBKPGFMNKO().SetFloat("offsets", Mathf.Clamp(Blood_Hit_Right, 674f, 1987f));
-			ADBKPGFMNKO().SetFloat("LevelNameText", Mathf.Clamp(Blood_Hit_Down, 66f, 916f));
-			NBPKMLMCHFN.SetFloat("_Value4", Mathf.Clamp(Hit_Full, 1661f, 1318f));
-			ACHNOHCLGOO().SetFloat("_TimeX", Mathf.Clamp(Blood_Hit_Full_1, 764f, 112f));
-			ACHNOHCLGOO().SetFloat("_SunColor", Mathf.Clamp(Blood_Hit_Full_2, 68f, 1542f));
-			ADBKPGFMNKO().SetFloat("Solo", Mathf.Clamp(Blood_Hit_Full_3, 1022f, 660f));
-			ACHNOHCLGOO().SetTexture("_LutTex", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			ADBKPGFMNKO().SetFloat(" : ", Mathf.Clamp(Hit_Right, 281f, 1810f));
+			ACHNOHCLGOO().SetFloat("wss://", Mathf.Clamp(Hit_Down, 1756f, 574f));
+			NBPKMLMCHFN.SetFloat("_Distortion", Mathf.Clamp(Blood_Hit_Left, 688f, 1789f));
+			ACHNOHCLGOO().SetFloat("CameraFilterPack/TV_Old_Movie", Mathf.Clamp(Blood_Hit_Up, 1005f, 1349f));
+			ACHNOHCLGOO().SetFloat("offsets", Mathf.Clamp(Blood_Hit_Right, 674f, 1987f));
+			ACHNOHCLGOO().SetFloat("NameInfoText", Mathf.Clamp(Blood_Hit_Down, 66f, 916f));
+			ACHNOHCLGOO().SetFloat("_Value3", Mathf.Clamp(Hit_Full, 1661f, 1318f));
+			ACHNOHCLGOO().SetFloat("CameraFilterPack/Light_Rainbow2", Mathf.Clamp(Blood_Hit_Full_1, 764f, 112f));
+			ADBKPGFMNKO().SetFloat("_BlurRadius4", Mathf.Clamp(Blood_Hit_Full_2, 68f, 1542f));
+			ACHNOHCLGOO().SetFloat("Playing ", Mathf.Clamp(Blood_Hit_Full_3, 1022f, 660f));
+			ACHNOHCLGOO().SetTexture(" cannot be used as a 3D LUT.", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -310,7 +310,7 @@ public class CameraFilterPack_AAA_Blood_Hit : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		FPHEBLMINDA = Resources.Load("Registered PhotonView: ") as Texture2D;
+		FPHEBLMINDA = Resources.Load("PhotonView register is ignored, because viewID is 0. No id assigned yet to: ") as Texture2D;
 		SCShader = Shader.Find("HighScaleShot");
 		if (!SystemInfo.supportsImageEffects)
 		{

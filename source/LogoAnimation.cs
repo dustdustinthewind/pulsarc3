@@ -8,67 +8,55 @@ public class LogoAnimation : MonoBehaviour
 {
 	public List<AnimationEvent> events;
 
+	private IEnumerator DDBAFEBNNIA(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	private void LEAHIBJDMBI()
+	{
+	}
+
+	private IEnumerator PCHAOICGKOH(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	private void MAOCOEGAFND()
+	{
+	}
+
+	private IEnumerator FHILMBAHEPL(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	public void FFBDGOBNNCO()
+	{
+		foreach (AnimationEvent @event in events)
+		{
+			StartCoroutine(FGKGOOMKPFL(@event.OnEvent, @event.timeout));
+		}
+	}
+
 	private void AGMJDGHLBMN()
 	{
 	}
 
-	public void LKEPIEEIMAE()
+	private IEnumerator FPHDFLPCCFB(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
 	{
-		foreach (AnimationEvent @event in events)
-		{
-			StartCoroutine(JFEJLMNIHEJ(@event.OnEvent, @event.timeout));
-		}
-	}
-
-	private void Update()
-	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
 	}
 
 	private void JAAJECBCCFM()
 	{
 	}
 
-	private void BGFJOEPFOPM()
-	{
-	}
-
-	private void MMBPLGGLPDB()
-	{
-	}
-
-	private IEnumerator AOMAIEBBEEJ(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
-	{
-		yield return new WaitForSeconds(IJLGKJGFCNA);
-		LHCIHJOHGEJ.Invoke();
-	}
-
-	public void EPDCHKECMBL()
-	{
-		foreach (AnimationEvent @event in events)
-		{
-			StartCoroutine(LOGNLLBOKLE(@event.OnEvent, @event.timeout));
-		}
-	}
-
-	private IEnumerator DJBPFCKHFAK(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
-	{
-		yield return new WaitForSeconds(IJLGKJGFCNA);
-		LHCIHJOHGEJ.Invoke();
-	}
-
-	private IEnumerator LOGNLLBOKLE(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
-	{
-		yield return new WaitForSeconds(IJLGKJGFCNA);
-		LHCIHJOHGEJ.Invoke();
-	}
-
-	private IEnumerator FGKGOOMKPFL(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
-	{
-		yield return new WaitForSeconds(IJLGKJGFCNA);
-		LHCIHJOHGEJ.Invoke();
-	}
-
-	private IEnumerator IIEAHNFNAGH(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	private IEnumerator HOBMPNGGJOE(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
 	{
 		yield return new WaitForSeconds(IJLGKJGFCNA);
 		LHCIHJOHGEJ.Invoke();
@@ -82,12 +70,34 @@ public class LogoAnimation : MonoBehaviour
 		}
 	}
 
-	public void LBICLFNOLAK()
+	private IEnumerator ODMKECMBNFL(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	private void AEIJFLJEABG()
+	{
+	}
+
+	public void FEJAAGGMBOE()
 	{
 		foreach (AnimationEvent @event in events)
 		{
-			StartCoroutine(IIEAHNFNAGH(@event.OnEvent, @event.timeout));
+			StartCoroutine(DDBAFEBNNIA(@event.OnEvent, @event.timeout));
 		}
+	}
+
+	public void OCHADIJNDJK()
+	{
+		foreach (AnimationEvent @event in events)
+		{
+			StartCoroutine(JFEJLMNIHEJ(@event.OnEvent, @event.timeout));
+		}
+	}
+
+	private void LCJHDLKJEOM()
+	{
 	}
 
 	private IEnumerator JFEJLMNIHEJ(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
@@ -96,11 +106,93 @@ public class LogoAnimation : MonoBehaviour
 		LHCIHJOHGEJ.Invoke();
 	}
 
-	public void HBKEHHCMMBN()
+	private void KCDOMIJBFLL()
+	{
+	}
+
+	private IEnumerator PHGIMLFFJKL(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	public void EPDCHKECMBL()
 	{
 		foreach (AnimationEvent @event in events)
 		{
-			StartCoroutine(JFEJLMNIHEJ(@event.OnEvent, @event.timeout));
+			StartCoroutine(PGFMGBKJGMO(@event.OnEvent, @event.timeout));
 		}
+	}
+
+	public void LNMKDFDKFPF()
+	{
+		foreach (AnimationEvent @event in events)
+		{
+			StartCoroutine(LOGNLLBOKLE(@event.OnEvent, @event.timeout));
+		}
+	}
+
+	private IEnumerator PGFMGBKJGMO(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	public void GGHCMPKGNGE()
+	{
+		foreach (AnimationEvent @event in events)
+		{
+			StartCoroutine(FPHDFLPCCFB(@event.OnEvent, @event.timeout));
+		}
+	}
+
+	private void FBMDHDBELEK()
+	{
+	}
+
+	private IEnumerator FGKGOOMKPFL(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	public void CMFBCPNHGOF()
+	{
+		foreach (AnimationEvent @event in events)
+		{
+			StartCoroutine(PHGIMLFFJKL(@event.OnEvent, @event.timeout));
+		}
+	}
+
+	public void EKOAKKNGGGI()
+	{
+		foreach (AnimationEvent @event in events)
+		{
+			StartCoroutine(FGKGOOMKPFL(@event.OnEvent, @event.timeout));
+		}
+	}
+
+	private void KMKLDAJLCNM()
+	{
+	}
+
+	private IEnumerator LJFPOBHFJEF(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	private void NKLIHNJCHOG()
+	{
+	}
+
+	private IEnumerator LOGNLLBOKLE(UnityEvent LHCIHJOHGEJ, float IJLGKJGFCNA)
+	{
+		yield return new WaitForSeconds(IJLGKJGFCNA);
+		LHCIHJOHGEJ.Invoke();
+	}
+
+	private void Update()
+	{
 	}
 }

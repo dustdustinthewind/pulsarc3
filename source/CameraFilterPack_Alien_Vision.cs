@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Alien/Vision")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Alien_Vision : MonoBehaviour
 {
 	public Shader SCShader;
@@ -67,7 +67,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void FHPFJBFCOOF()
 	{
-		SCShader = Shader.Find("X");
+		SCShader = Shader.Find("Xbox Home");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -99,7 +99,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("Operation ");
+		SCShader = Shader.Find(". Stopping handling if inactive.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -115,13 +115,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 869f;
 			}
-			HKGAONMOBMH().SetFloat("float,1", HBJJOCHGOPH);
-			IIBLJCKLGFG().SetFloat("/", Therma_Variation);
-			IIBLJCKLGFG().SetFloat("#ok", Speed);
-			EPCGJFCCAFH().SetFloat("_TimeX", ALELLLFCDBF);
-			HKGAONMOBMH().SetFloat("nogamesfound", NFDIFLHGJKB);
-			IIBLJCKLGFG().SetVector("_NoisePerChannel", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 970f, 925f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			EJDPNJAEAKJ().SetFloat("float,1", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("/icon", Therma_Variation);
+			DEFBJOCJJKF().SetFloat("}", Speed);
+			ADGHJOHKEHG().SetFloat("CameraFilterPack/VHS_Tracking", ALELLLFCDBF);
+			EJDPNJAEAKJ().SetFloat("MessageText", NFDIFLHGJKB);
+			HHIFMIPPMPF().SetVector("_NoiseTex", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 970f, 925f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{
@@ -154,7 +154,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		SCShader = Shader.Find("_Value4");
+		SCShader = Shader.Find("_Value3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -170,13 +170,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 899f;
 			}
-			MCDGIILBNIF().SetFloat("EventData0DropDownList", HBJJOCHGOPH);
-			HKGAONMOBMH().SetFloat("_Screen", Therma_Variation);
-			KBOPGONOCNP().SetFloat("Instance\nWorking commands:\ninit or init <savepath>\npath\nsetint <key> <value>\ngetint <key> <value>\nsetfloat <key> <value>\ngetfloat <key> <value>\nsetstring <key> <value>\ngetstring <key> <value>\nsetbool <key> <value>\ngetbool <key> <value>\ndelete <key>\ndeleteall", Speed);
-			EJDPNJAEAKJ().SetFloat("_Value3", ALELLLFCDBF);
-			EJDPNJAEAKJ().SetFloat("_EmissionColor", NFDIFLHGJKB);
-			NBPKMLMCHFN.SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1368f, 1642f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EJDPNJAEAKJ());
+			HKGAONMOBMH().SetFloat("BitsData", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("pointBuffer", Therma_Variation);
+			IIBLJCKLGFG().SetFloat("Instance\nWorking commands:\ninit or init <savepath>\npath\nsetint <key> <value>\ngetint <key> <value>\nsetfloat <key> <value>\ngetfloat <key> <value>\nsetstring <key> <value>\ngetstring <key> <value>\nsetbool <key> <value>\ngetbool <key> <value>\ndelete <key>\ndeleteall", Speed);
+			NBPKMLMCHFN.SetFloat("_Value2", ALELLLFCDBF);
+			IIBLJCKLGFG().SetFloat("LevelEditor/icons", NFDIFLHGJKB);
+			ADGHJOHKEHG().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1368f, 1642f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -205,7 +205,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void MJEFMIPLFAB()
 	{
-		SCShader = Shader.Find("1234332714");
+		SCShader = Shader.Find("907198288");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -244,13 +244,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1541f;
 			}
-			EJDPNJAEAKJ().SetFloat("Connecting to server", HBJJOCHGOPH);
-			HKGAONMOBMH().SetFloat("PunRespawn with Position.", Therma_Variation);
-			IIBLJCKLGFG().SetFloat("<b>(╯°□°）╯︵ ┻━┻</b>", Speed);
-			DEFBJOCJJKF().SetFloat("st", ALELLLFCDBF);
-			NBPKMLMCHFN.SetFloat("_Threshhold", NFDIFLHGJKB);
-			GCDFNHMJMIP().SetVector("Editor/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1388f, 969f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKGAONMOBMH());
+			EJDPNJAEAKJ().SetFloat("LoadingStatusText", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("OnPickedUp", Therma_Variation);
+			HKGAONMOBMH().SetFloat("<b>(╯°□°）╯︵ ┻━┻</b>", Speed);
+			IIBLJCKLGFG().SetFloat("StartTime already set: ", ALELLLFCDBF);
+			IIBLJCKLGFG().SetFloat("colorD", NFDIFLHGJKB);
+			MCDGIILBNIF().SetVector("#alreadyexist", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1388f, 969f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -292,7 +292,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void FNCDAPDOBBI()
 	{
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -335,13 +335,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1790f;
 			}
-			HKGAONMOBMH().SetFloat("ReJoinRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.", HBJJOCHGOPH);
-			EPCGJFCCAFH().SetFloat("_TimeX", Therma_Variation);
-			ADGHJOHKEHG().SetFloat("EventConfigButton", Speed);
-			KBOPGONOCNP().SetFloat("_BlurVector", ALELLLFCDBF);
-			ADGHJOHKEHG().SetFloat("The shader ", NFDIFLHGJKB);
-			IIBLJCKLGFG().SetVector("GameScene", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 249f, 483f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			EPCGJFCCAFH().SetFloat("JoinRandomRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("CameraFilterPack/TV_BrokenGlass", Therma_Variation);
+			IIBLJCKLGFG().SetFloat("EventConfigButton", Speed);
+			GCDFNHMJMIP().SetFloat("_BlurVector", ALELLLFCDBF);
+			DEFBJOCJJKF().SetFloat("The image effect ", NFDIFLHGJKB);
+			ADGHJOHKEHG().SetVector("GameScene", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 249f, 483f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
 		{
@@ -355,7 +355,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void HMPGIFBJFIK()
 	{
-		SCShader = Shader.Find("[PlayerBase] ShowImage \"");
+		SCShader = Shader.Find("[PlayerBase] Got checkpoint at ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -375,13 +375,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1968f;
 			}
-			EJDPNJAEAKJ().SetFloat("0. SubBase 20-60 Hz\n1. Bass, 60-250 Hz\n2. LowMidrange 250-500 Hz\n3. Midrange 500-2,000 Hz\n4. UpperMidrange 2,000-4,000 Hz\n5. High 4,000-6000 Hz\n6. VeryHigh 6,000-20,000 Hz\n7. Decibal - use output data instead of frequency data", HBJJOCHGOPH);
-			GCDFNHMJMIP().SetFloat("SpawnObj", Therma_Variation);
-			KBOPGONOCNP().SetFloat("ItemNameText", Speed);
-			HKGAONMOBMH().SetFloat("value", ALELLLFCDBF);
-			NBPKMLMCHFN.SetFloat("4,28,true,0", NFDIFLHGJKB);
-			IIBLJCKLGFG().SetVector("_Bullet_1", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 346f, 1284f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			ADGHJOHKEHG().SetFloat("input", HBJJOCHGOPH);
+			EPCGJFCCAFH().SetFloat("[Up]", Therma_Variation);
+			ADGHJOHKEHG().SetFloat("ItemsCountText", Speed);
+			ADGHJOHKEHG().SetFloat("value", ALELLLFCDBF);
+			ADGHJOHKEHG().SetFloat("distance", NFDIFLHGJKB);
+			HHIFMIPPMPF().SetVector("CameraFilterPack/TV_BrokenGlass2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 346f, 1284f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -403,7 +403,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void BMIOFJFMCBG()
 	{
-		SCShader = Shader.Find("CameraFilterPack/TV_Chromatical2");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -431,7 +431,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void JHANGPCOCIG()
 	{
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -467,12 +467,12 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 151f;
 			}
-			NBPKMLMCHFN.SetFloat("blue", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("float,0", Therma_Variation);
-			HKGAONMOBMH().SetFloat("_Saturation", Speed);
-			EPCGJFCCAFH().SetFloat("_ScreenResolution", ALELLLFCDBF);
-			HKGAONMOBMH().SetFloat("skin.hit_perfect", NFDIFLHGJKB);
-			GCDFNHMJMIP().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1078f, 942f));
+			IIBLJCKLGFG().SetFloat("0,1,false", HBJJOCHGOPH);
+			EJDPNJAEAKJ().SetFloat("z", Therma_Variation);
+			ADGHJOHKEHG().SetFloat("_Saturation", Speed);
+			IIBLJCKLGFG().SetFloat("_Value3", ALELLLFCDBF);
+			HHIFMIPPMPF().SetFloat("sounds/hit_wrong", NFDIFLHGJKB);
+			GCDFNHMJMIP().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1078f, 942f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
@@ -490,13 +490,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 891f;
 			}
-			KBOPGONOCNP().SetFloat("PLEASE WAIT", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("]", Therma_Variation);
-			DEFBJOCJJKF().SetFloat("ControllerLeftY", Speed);
-			DEFBJOCJJKF().SetFloat("_Fade", ALELLLFCDBF);
-			MCDGIILBNIF().SetFloat("CameraFilterPack/Gradients_Desert", NFDIFLHGJKB);
-			HKGAONMOBMH().SetVector("StartButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 668f, 489f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			NBPKMLMCHFN.SetFloat("PLEASE WAIT", HBJJOCHGOPH);
+			KBOPGONOCNP().SetFloat("Toggle {0} is not part of ToggleGroup {1}", Therma_Variation);
+			HKGAONMOBMH().SetFloat("Backward", Speed);
+			GCDFNHMJMIP().SetFloat("_Wavy", ALELLLFCDBF);
+			EJDPNJAEAKJ().SetFloat("_ScreenResolution", NFDIFLHGJKB);
+			EJDPNJAEAKJ().SetVector("StartButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 668f, 489f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{
@@ -517,13 +517,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 51f;
 			}
-			EJDPNJAEAKJ().SetFloat("BlockSize", HBJJOCHGOPH);
-			EJDPNJAEAKJ().SetFloat("CameraFilterPack/Blend2Camera_Saturation", Therma_Variation);
-			KBOPGONOCNP().SetFloat("Please attach component to a Graphical UI component", Speed);
-			EJDPNJAEAKJ().SetFloat(")", ALELLLFCDBF);
-			HKGAONMOBMH().SetFloat("_Value5", NFDIFLHGJKB);
-			HKGAONMOBMH().SetVector("LevelNameInputField", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 746f, 1409f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("SupportLogger OnLeftRoom().", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/Blend2Camera_Saturation", Therma_Variation);
+			IIBLJCKLGFG().SetFloat("Please attach component to a Graphical UI component", Speed);
+			IIBLJCKLGFG().SetFloat(" timeUntilRespawn: ", ALELLLFCDBF);
+			DEFBJOCJJKF().SetFloat("_Value5", NFDIFLHGJKB);
+			ADGHJOHKEHG().SetVector("Tab1Content", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 746f, 1409f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -540,13 +540,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 761f;
 			}
-			HHIFMIPPMPF().SetFloat("CameraFilterPack/Vision_Tunnel", HBJJOCHGOPH);
-			EJDPNJAEAKJ().SetFloat("settings.enablehitsoundsinnormal", Therma_Variation);
-			KBOPGONOCNP().SetFloat("Noise & Grain effect failing as noise texture is not assigned. please assign.", Speed);
-			GCDFNHMJMIP().SetFloat("_ReprojectionMatrix", ALELLLFCDBF);
-			MCDGIILBNIF().SetFloat("_MatrixSize", NFDIFLHGJKB);
-			EJDPNJAEAKJ().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1178f, 968f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			EPCGJFCCAFH().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			DEFBJOCJJKF().SetFloat("settings.disablestoryboard", Therma_Variation);
+			HHIFMIPPMPF().SetFloat("_MainTex", Speed);
+			GCDFNHMJMIP().SetFloat("_Params1", ALELLLFCDBF);
+			KBOPGONOCNP().SetFloat("_MatrixSize", NFDIFLHGJKB);
+			HHIFMIPPMPF().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1178f, 968f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH());
 		}
 		else
 		{
@@ -563,13 +563,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 303f;
 			}
-			EJDPNJAEAKJ().SetFloat("Write me to get one for testing :)", HBJJOCHGOPH);
+			ADGHJOHKEHG().SetFloat("?", HBJJOCHGOPH);
 			DEFBJOCJJKF().SetFloat("StartButton", Therma_Variation);
-			NBPKMLMCHFN.SetFloat("GameScene", Speed);
-			MCDGIILBNIF().SetFloat("CameraFilterPack/EyesVision_2", ALELLLFCDBF);
-			MCDGIILBNIF().SetFloat("_ScreenResolution", NFDIFLHGJKB);
-			DEFBJOCJJKF().SetVector(",", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 572f, 279f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			DEFBJOCJJKF().SetFloat("http://steamcommunity.com/sharedfiles/filedetails/?id=", Speed);
+			EPCGJFCCAFH().SetFloat("CameraFilterPack_eyes_vision_2", ALELLLFCDBF);
+			ADGHJOHKEHG().SetFloat("_Value4", NFDIFLHGJKB);
+			IIBLJCKLGFG().SetVector("/512px-512px.png", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 572f, 279f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -586,13 +586,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 523f;
 			}
-			NBPKMLMCHFN.SetFloat("_TimeX", HBJJOCHGOPH);
-			HKGAONMOBMH().SetFloat("maps.", Therma_Variation);
-			EJDPNJAEAKJ().SetFloat("_BlurDirectionPacked", Speed);
-			GCDFNHMJMIP().SetFloat("Please attach component to a Graphical UI component", ALELLLFCDBF);
-			HKGAONMOBMH().SetFloat("Noise shaders are not set up! Disabling noise effect.", NFDIFLHGJKB);
-			NBPKMLMCHFN.SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 273f, 1461f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MCDGIILBNIF());
+			MCDGIILBNIF().SetFloat("CameraFilterPack/Glasses_OnX", HBJJOCHGOPH);
+			KBOPGONOCNP().SetFloat("Crosshair2", Therma_Variation);
+			GCDFNHMJMIP().SetFloat("_PrevViewProj", Speed);
+			NBPKMLMCHFN.SetFloat("Default UI Material", ALELLLFCDBF);
+			DEFBJOCJJKF().SetFloat("_NoiseTex", NFDIFLHGJKB);
+			KBOPGONOCNP().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 273f, 1461f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EJDPNJAEAKJ());
 		}
 		else
 		{
@@ -657,13 +657,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 711f;
 			}
-			EPCGJFCCAFH().SetFloat("TwoHands", HBJJOCHGOPH);
-			ADGHJOHKEHG().SetFloat("inventory.selected.", Therma_Variation);
-			EPCGJFCCAFH().SetFloat("_Far", Speed);
-			MCDGIILBNIF().SetFloat("_TimeX", ALELLLFCDBF);
-			KBOPGONOCNP().SetFloat("Joystick1Button2", NFDIFLHGJKB);
-			IIBLJCKLGFG().SetVector("UseScanLine", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1561f, 244f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			EPCGJFCCAFH().SetFloat("event", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("inventory.selected.", Therma_Variation);
+			EPCGJFCCAFH().SetFloat("_Near", Speed);
+			ADGHJOHKEHG().SetFloat("_ScreenResolution", ALELLLFCDBF);
+			ADGHJOHKEHG().SetFloat("A", NFDIFLHGJKB);
+			KBOPGONOCNP().SetVector("UseScanLineSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1561f, 244f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -718,7 +718,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		SCShader = Shader.Find("Parameter levelId can't be null!");
+		SCShader = Shader.Find("curScn");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -734,13 +734,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 123f;
 			}
-			EJDPNJAEAKJ().SetFloat("_MainTex2", HBJJOCHGOPH);
-			GCDFNHMJMIP().SetFloat("Texture2", Therma_Variation);
-			HKGAONMOBMH().SetFloat("achievements.21.progress", Speed);
-			MCDGIILBNIF().SetFloat("_Value3", ALELLLFCDBF);
-			IIBLJCKLGFG().SetFloat("_Val3", NFDIFLHGJKB);
-			GCDFNHMJMIP().SetVector("VHS", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1776f, 1797f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MCDGIILBNIF());
+			EPCGJFCCAFH().SetFloat("_MainTex2", HBJJOCHGOPH);
+			KBOPGONOCNP().SetFloat("_ScreenResolution", Therma_Variation);
+			EPCGJFCCAFH().SetFloat("NEW_ACHIEVEMENT_1_21", Speed);
+			KBOPGONOCNP().SetFloat("_Value2", ALELLLFCDBF);
+			MCDGIILBNIF().SetFloat("_Val2", NFDIFLHGJKB);
+			GCDFNHMJMIP().SetVector("CameraFilterPack_VHS2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1776f, 1797f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -761,13 +761,13 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 230f;
 			}
-			EJDPNJAEAKJ().SetFloat("YES", HBJJOCHGOPH);
-			GCDFNHMJMIP().SetFloat(" = ", Therma_Variation);
-			HHIFMIPPMPF().SetFloat("L1", Speed);
-			DEFBJOCJJKF().SetFloat(": ", ALELLLFCDBF);
-			ADGHJOHKEHG().SetFloat("_TimeX", NFDIFLHGJKB);
-			NBPKMLMCHFN.SetVector("Jit ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 311f, 851f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MCDGIILBNIF());
+			ADGHJOHKEHG().SetFloat("Save the map before exiting?", HBJJOCHGOPH);
+			EPCGJFCCAFH().SetFloat("The number of objects sent via a PhotonStreamQueue has to be the same each frame", Therma_Variation);
+			HKGAONMOBMH().SetFloat("Joystick1Button4", Speed);
+			DEFBJOCJJKF().SetFloat("[PlayerController] ", ALELLLFCDBF);
+			HHIFMIPPMPF().SetFloat("_ScreenResolution", NFDIFLHGJKB);
+			KBOPGONOCNP().SetVector("Rtt:{0,4} +/-{1,3}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 311f, 851f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKGAONMOBMH());
 		}
 		else
 		{
@@ -788,7 +788,7 @@ public class CameraFilterPack_Alien_Vision : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find(" Remote called.");
+		SCShader = Shader.Find(" but this PhotonView does not exist! View was/is ours.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

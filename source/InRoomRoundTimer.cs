@@ -14,15 +14,168 @@ public class InRoomRoundTimer : MonoBehaviour
 
 	private const string JJDHAIONGKL = "st";
 
-	public void PELNCDEODGD()
+	private void KCDOMIJBFLL()
+	{
+		if (DBHJOONLNJE)
+		{
+			LEPICHKBBLE();
+		}
+	}
+
+	public void KJMHKHDMKIE()
+	{
+		double num = PhotonNetwork.time - StartTime;
+		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
+		int num3 = (int)(num / (double)SecondsPerTurn);
+		GUILayout.BeginArea(TextPos);
+		GUILayout.Label(string.Format("_Distance", num), new GUILayoutOption[1]);
+		GUILayout.Label(string.Format("CameraFilterPack/FX_Hypno", num2), new GUILayoutOption[1]);
+		GUILayout.Label(string.Format("Particles/Additive", num3), new GUILayoutOption[1]);
+		if (GUILayout.Button("Particles/Additive", new GUILayoutOption[1]))
+		{
+			HAHDPBKLFAF();
+		}
+		GUILayout.EndArea();
+	}
+
+	public void EAABKPJPPHL()
 	{
 		if (PhotonNetwork.isMasterClient)
 		{
-			JDKOEAMABCK();
+			HAHDPBKLFAF();
 		}
 		else
 		{
-			Debug.Log("<b>Time</b>:" + PhotonNetwork.room.EHLPGMBBDLG().ContainsKey("[DiscordController] Error {0}: {1}"));
+			Debug.Log("original.tutorial" + PhotonNetwork.room.DMANNHAPJCP().ContainsKey("_FadeDistance"));
+		}
+	}
+
+	private void HPNNCNNFMGK()
+	{
+		if (DBHJOONLNJE)
+		{
+			OEHKIMJHFEB();
+		}
+	}
+
+	public void FNEAEFLHLDL(Hashtable DGIHEPAHAJK)
+	{
+		if (DGIHEPAHAJK.ContainsKey("yyyy-MM-dd HH:mm:ss"))
+		{
+			StartTime = (double)DGIHEPAHAJK["SetSpeed"];
+		}
+	}
+
+	public void JAFHOIGANHK(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.DMANNHAPJCP().ContainsKey("steamid"))
+		{
+			Debug.Log("#ok");
+			NMAAAONHNOI();
+		}
+	}
+
+	public void JDPOCODDFCH(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.DMANNHAPJCP().ContainsKey("B"))
+		{
+			Debug.Log("menutheme");
+			CPIKLIPIDIA();
+		}
+	}
+
+	private void EGEGNHLODAA()
+	{
+		if (DBHJOONLNJE)
+		{
+			BGBKEKDPEIJ();
+		}
+	}
+
+	public void MAJDGGGEDLH()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			NMAAAONHNOI();
+		}
+		else
+		{
+			Debug.Log("Add Environment Object" + PhotonNetwork.room.DMANNHAPJCP().ContainsKey("_Value"));
+		}
+	}
+
+	private void HKGEBAMCPBK()
+	{
+		if (PhotonNetwork.time < 678.0)
+		{
+			DBHJOONLNJE = false;
+			return;
+		}
+		DBHJOONLNJE = false;
+		Hashtable hashtable = new Hashtable();
+		hashtable["ItemTemplate"] = PhotonNetwork.time;
+		PhotonNetwork.room.AFADNAIGHIG(hashtable);
+	}
+
+	public void BICCGLOBIOD(Hashtable DGIHEPAHAJK)
+	{
+		if (DGIHEPAHAJK.ContainsKey("MusicFileSelector"))
+		{
+			StartTime = (double)DGIHEPAHAJK["ConfigVersionSlider"];
+		}
+	}
+
+	private void PBMPKIJEKAF()
+	{
+		if (PhotonNetwork.time < 230.0)
+		{
+			DBHJOONLNJE = false;
+			return;
+		}
+		DBHJOONLNJE = true;
+		Hashtable hashtable = new Hashtable();
+		hashtable["DPADHOR"] = PhotonNetwork.time;
+		PhotonNetwork.room.AFADNAIGHIG(hashtable, null, true);
+	}
+
+	public void CKJNCMIAFGD()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			AFPDIDAHHGA();
+		}
+		else
+		{
+			Debug.Log("id" + PhotonNetwork.room.customProperties.ContainsKey("ResetButton"));
+		}
+	}
+
+	private void JAJADPJGDHC()
+	{
+		if (PhotonNetwork.time < 564.0)
+		{
+			DBHJOONLNJE = false;
+			return;
+		}
+		DBHJOONLNJE = true;
+		Hashtable hashtable = new Hashtable();
+		hashtable["_Visualize"] = PhotonNetwork.time;
+		PhotonNetwork.room.SetCustomProperties(hashtable, null, true);
+	}
+
+	private void LCJHDLKJEOM()
+	{
+		if (DBHJOONLNJE)
+		{
+			PJNINBIDHDD();
+		}
+	}
+
+	private void IDIIELPAMCJ()
+	{
+		if (DBHJOONLNJE)
+		{
+			ICCOKJOBGBM();
 		}
 	}
 
@@ -35,12 +188,221 @@ public class InRoomRoundTimer : MonoBehaviour
 		}
 	}
 
-	private void LLJLDLLNFBH()
+	public void INOHOKLPACD(Hashtable DGIHEPAHAJK)
+	{
+		if (DGIHEPAHAJK.ContainsKey("g"))
+		{
+			StartTime = (double)DGIHEPAHAJK["_Value3"];
+		}
+	}
+
+	private void LEPICHKBBLE()
+	{
+		if (PhotonNetwork.time < 666.0)
+		{
+			DBHJOONLNJE = true;
+			return;
+		}
+		DBHJOONLNJE = true;
+		Hashtable hashtable = new Hashtable();
+		hashtable["_Intensity"] = PhotonNetwork.time;
+		PhotonNetwork.room.SetCustomProperties(hashtable, null, true);
+	}
+
+	public void PIJBLFBJMBG()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			CJHIGGANJIL();
+		}
+		else
+		{
+			Debug.Log("map.data" + PhotonNetwork.room.DMANNHAPJCP().ContainsKey("_BlurFilterDistance"));
+		}
+	}
+
+	public void AAPOKGKIGEE(Hashtable DGIHEPAHAJK)
+	{
+		if (DGIHEPAHAJK.ContainsKey("File not found: {0}"))
+		{
+			StartTime = (double)DGIHEPAHAJK["_Value2"];
+		}
+	}
+
+	private void LEAHIBJDMBI()
 	{
 		if (DBHJOONLNJE)
 		{
-			JDKOEAMABCK();
+			PJNINBIDHDD();
 		}
+	}
+
+	private void CJHIGGANJIL()
+	{
+		if (PhotonNetwork.time < 1.0)
+		{
+			DBHJOONLNJE = false;
+			return;
+		}
+		DBHJOONLNJE = false;
+		Hashtable hashtable = new Hashtable();
+		hashtable["#rt"] = PhotonNetwork.time;
+		PhotonNetwork.room.SetCustomProperties(hashtable, null, true);
+	}
+
+	public void APCENGAAHMC()
+	{
+		double num = PhotonNetwork.time - StartTime;
+		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
+		int num3 = (int)(num / (double)SecondsPerTurn);
+		GUILayout.BeginArea(TextPos);
+		GUILayout.Label(string.Format("RecordButton", num), new GUILayoutOption[1]);
+		GUILayout.Label(string.Format(".lastCheckpoint.powerupsScore", num2));
+		GUILayout.Label(string.Format("mapselector.filter.subscribedonly", num3));
+		if (GUILayout.Button("maps.", new GUILayoutOption[1]))
+		{
+			LEPICHKBBLE();
+		}
+		GUILayout.EndArea();
+	}
+
+	public void OnJoinedRoom()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			AEMCMOBKOJK();
+		}
+		else
+		{
+			Debug.Log("StartTime already set: " + PhotonNetwork.room.customProperties.ContainsKey("st"));
+		}
+	}
+
+	public void KACLODMCOMP(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.customProperties.ContainsKey("_Value2"))
+		{
+			Debug.Log("colorB");
+			LEPICHKBBLE();
+		}
+	}
+
+	private void NMAAAONHNOI()
+	{
+		if (PhotonNetwork.time < 601.0)
+		{
+			DBHJOONLNJE = false;
+			return;
+		}
+		DBHJOONLNJE = false;
+		Hashtable hashtable = new Hashtable();
+		hashtable[".completedCount"] = PhotonNetwork.time;
+		PhotonNetwork.room.SetCustomProperties(hashtable);
+	}
+
+	private void AEIJFLJEABG()
+	{
+		if (DBHJOONLNJE)
+		{
+			OEHKIMJHFEB();
+		}
+	}
+
+	private void KIEJKBNBHMD()
+	{
+		if (DBHJOONLNJE)
+		{
+			PJNINBIDHDD();
+		}
+	}
+
+	public void FGPJENGMGLD(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.customProperties.ContainsKey("_V"))
+		{
+			Debug.Log("Run a command for data system");
+			CPIKLIPIDIA();
+		}
+	}
+
+	public void FFCJHIBEBEL(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.DMANNHAPJCP().ContainsKey("_Params"))
+		{
+			Debug.Log("_ScreenResolution");
+			LEPICHKBBLE();
+		}
+	}
+
+	public void DGGKEBEFPBH(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.customProperties.ContainsKey("BitsData"))
+		{
+			Debug.Log("(master)");
+			HKGEBAMCPBK();
+		}
+	}
+
+	public void NEMLLIAHOBM(Hashtable DGIHEPAHAJK)
+	{
+		if (DGIHEPAHAJK.ContainsKey("ticket"))
+		{
+			StartTime = (double)DGIHEPAHAJK["Keypad"];
+		}
+	}
+
+	public void MCLEHHPHHLB(Hashtable DGIHEPAHAJK)
+	{
+		if (DGIHEPAHAJK.ContainsKey("_StretchWidth"))
+		{
+			StartTime = (double)DGIHEPAHAJK["_Value4"];
+		}
+	}
+
+	private void BMODOIJGIOO()
+	{
+		if (DBHJOONLNJE)
+		{
+			PBMPKIJEKAF();
+		}
+	}
+
+	private void MAOCOEGAFND()
+	{
+		if (DBHJOONLNJE)
+		{
+			NMAAAONHNOI();
+		}
+	}
+
+	public void JEFLJIPAOKG(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.DMANNHAPJCP().ContainsKey("_ScreenResolution"))
+		{
+			Debug.Log("_EmissionGain");
+			CJHIGGANJIL();
+		}
+	}
+
+	private void Update()
+	{
+		if (DBHJOONLNJE)
+		{
+			AEMCMOBKOJK();
+		}
+	}
+
+	private void CPIKLIPIDIA()
+	{
+		if (PhotonNetwork.time < 1888.0)
+		{
+			DBHJOONLNJE = false;
+			return;
+		}
+		DBHJOONLNJE = true;
+		Hashtable hashtable = new Hashtable();
+		hashtable["#kicked"] = PhotonNetwork.time;
+		PhotonNetwork.room.AFADNAIGHIG(hashtable);
 	}
 
 	private void AEMCMOBKOJK()
@@ -56,42 +418,69 @@ public class InRoomRoundTimer : MonoBehaviour
 		PhotonNetwork.room.SetCustomProperties(hashtable);
 	}
 
-	public void LKLDBEBLMBI(PhotonPlayer DELECHPDOCO)
+	public void MPOCGBCPFJC(PhotonPlayer DELECHPDOCO)
 	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("_Size"))
+		if (!PhotonNetwork.room.customProperties.ContainsKey("CameraMovementSlider"))
 		{
-			Debug.Log(" in-game items");
-			JLOCLBNNAAN();
+			Debug.Log("_ScreenResolution");
+			JAJADPJGDHC();
 		}
 	}
 
-	public void LEEHMNACMEI(Hashtable DGIHEPAHAJK)
+	public void OnPhotonCustomRoomPropertiesChanged(Hashtable DGIHEPAHAJK)
 	{
-		if (DGIHEPAHAJK.ContainsKey("ticket.ticket1"))
+		if (DGIHEPAHAJK.ContainsKey("st"))
 		{
-			StartTime = (double)DGIHEPAHAJK["_Far"];
+			StartTime = (double)DGIHEPAHAJK["st"];
 		}
 	}
 
-	public void MNNLMGKAPFG(PhotonPlayer DELECHPDOCO)
+	private void OEHKIMJHFEB()
 	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("Can't set Room.MaxPlayers to: "))
+		if (PhotonNetwork.time < 1519.0)
 		{
-			Debug.Log("0.000");
-			NAPOAHBNGCK();
+			DBHJOONLNJE = true;
+			return;
+		}
+		DBHJOONLNJE = true;
+		Hashtable hashtable = new Hashtable();
+		hashtable["MainThreadExecuter"] = PhotonNetwork.time;
+		PhotonNetwork.room.SetCustomProperties(hashtable);
+	}
+
+	public void LPLDDGOEEIJ(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.customProperties.ContainsKey("UpdateNewsTileStart"))
+		{
+			Debug.Log("Result for ");
+			HKGEBAMCPBK();
 		}
 	}
 
-	public void OANDGCIFNAN()
+	private void ICCOKJOBGBM()
 	{
-		if (PhotonNetwork.isMasterClient)
+		if (PhotonNetwork.time < 907.0)
 		{
-			NAPOAHBNGCK();
+			DBHJOONLNJE = true;
+			return;
 		}
-		else
+		DBHJOONLNJE = false;
+		Hashtable hashtable = new Hashtable();
+		hashtable["ConnectToMaster() enabled isMessageQueueRunning. Needs to be able to dispatch incoming messages."] = PhotonNetwork.time;
+		PhotonNetwork.room.SetCustomProperties(hashtable);
+	}
+
+	private void JAMOBLNGOAJ()
+	{
+		if (PhotonNetwork.time < 58.0)
 		{
-			Debug.Log("settings.hideui" + PhotonNetwork.room.customProperties.ContainsKey("_Green_G"));
+			DBHJOONLNJE = false;
+			return;
 		}
+		DBHJOONLNJE = true;
+		Hashtable hashtable = new Hashtable();
+		hashtable["kick"] = PhotonNetwork.time;
+		PhotonNetwork.room.AFADNAIGHIG(hashtable, null, true);
 	}
 
 	public void PCABPJAANFH()
@@ -100,265 +489,17 @@ public class InRoomRoundTimer : MonoBehaviour
 		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
 		int num3 = (int)(num / (double)SecondsPerTurn);
 		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("11", num));
-		GUILayout.Label(string.Format("_TimeX", num2));
-		GUILayout.Label(string.Format("NetworkPeer broke!", num3), new GUILayoutOption[1]);
-		if (GUILayout.Button(" ["))
+		GUILayout.Label(string.Format("UNDISTORT", num), new GUILayoutOption[1]);
+		GUILayout.Label(string.Format("w", num2), new GUILayoutOption[1]);
+		GUILayout.Label(string.Format("quantity", num3), new GUILayoutOption[1]);
+		if (GUILayout.Button("Data/Skins/", new GUILayoutOption[1]))
 		{
-			NAPOAHBNGCK();
+			PBMPKIJEKAF();
 		}
 		GUILayout.EndArea();
 	}
 
-	public void LLLOCCNLCNL()
-	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("_Fade", num));
-		GUILayout.Label(string.Format(". Using max value: 255.", num2));
-		GUILayout.Label(string.Format("_TimeX", num3));
-		if (GUILayout.Button("MapEnd", new GUILayoutOption[1]))
-		{
-			JDKOEAMABCK();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void JCJENMGGCLB(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.EHLPGMBBDLG().ContainsKey("cancel"))
-		{
-			Debug.Log("music.ogg");
-			AEMCMOBKOJK();
-		}
-	}
-
-	public void LHACGKFCAMG(Hashtable DGIHEPAHAJK)
-	{
-		if (DGIHEPAHAJK.ContainsKey("PLEASE WAIT"))
-		{
-			StartTime = (double)DGIHEPAHAJK["workshop."];
-		}
-	}
-
-	private void Update()
-	{
-		if (DBHJOONLNJE)
-		{
-			AEMCMOBKOJK();
-		}
-	}
-
-	public void HOEJPDLECMG(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("<b>#"))
-		{
-			Debug.Log("_Amount");
-			DNBPCAEIMHN();
-		}
-	}
-
-	public void HMKPEEAJODO()
-	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("ping: {6}[+/-{7}]ms resent:{8} \n\nmax ms between\nsend: {0,4} \ndispatch: {1,4} \n\nlongest dispatch for: \nev({3}):{2,3}ms \nop({5}):{4,3}ms", num));
-		GUILayout.Label(string.Format("EventSystem", num2));
-		GUILayout.Label(string.Format("_Value", num3), new GUILayoutOption[1]);
-		if (GUILayout.Button("YES"))
-		{
-			DDMJBHAHJED();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void AHNBAOIENOO()
-	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("#accuracy", num), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("_Intensity", num2), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("SetRotation", num3));
-		if (GUILayout.Button("_VignetteDesat"))
-		{
-			DDMJBHAHJED();
-		}
-		GUILayout.EndArea();
-	}
-
-	private void JDKOEAMABCK()
-	{
-		if (PhotonNetwork.time < 1276.0)
-		{
-			DBHJOONLNJE = false;
-			return;
-		}
-		DBHJOONLNJE = true;
-		Hashtable hashtable = new Hashtable();
-		hashtable[" PhotonView: "] = PhotonNetwork.time;
-		PhotonNetwork.room.SetCustomProperties(hashtable, null, true);
-	}
-
-	private void NKLIHNJCHOG()
-	{
-		if (DBHJOONLNJE)
-		{
-			LPEOOKEOBEL();
-		}
-	}
-
-	public void GKCLHCNEGJM(Hashtable DGIHEPAHAJK)
-	{
-		if (DGIHEPAHAJK.ContainsKey("Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results"))
-		{
-			StartTime = (double)DGIHEPAHAJK[".played"];
-		}
-	}
-
-	public void JLJHPNKKJPJ()
-	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("settings.fps", num), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("OnAwakeRPC", num2), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("Object ID. Case-Sensitive", num3), new GUILayoutOption[1]);
-		if (GUILayout.Button("_Line", new GUILayoutOption[1]))
-		{
-			JAIBANMMMFF();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void LPKLOFJJJEI()
-	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("_Value", num), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("VoteDownToggle", num2));
-		GUILayout.Label(string.Format("menutheme.coldheat", num3), new GUILayoutOption[1]);
-		if (GUILayout.Button("_Speed", new GUILayoutOption[1]))
-		{
-			JLOCLBNNAAN();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void HBBHCICNOMA(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.PFFHNNODEMM().ContainsKey("BloodAlternative3"))
-		{
-			Debug.Log("Set camera (or player) distance. Base player distance - 14");
-			JAIBANMMMFF();
-		}
-	}
-
-	private void JLOCLBNNAAN()
-	{
-		if (PhotonNetwork.time < 683.0)
-		{
-			DBHJOONLNJE = true;
-			return;
-		}
-		DBHJOONLNJE = true;
-		Hashtable hashtable = new Hashtable();
-		hashtable["Joystick1Button9"] = PhotonNetwork.time;
-		PhotonNetwork.room.SetCustomProperties(hashtable, null, true);
-	}
-
-	private void NAPOAHBNGCK()
-	{
-		if (PhotonNetwork.time < 1239.0)
-		{
-			DBHJOONLNJE = true;
-			return;
-		}
-		DBHJOONLNJE = true;
-		Hashtable hashtable = new Hashtable();
-		hashtable["plainText"] = PhotonNetwork.time;
-		PhotonNetwork.room.SetCustomProperties(hashtable);
-	}
-
-	public void NOHIOLKMJNH(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.KMBLODHBAFO().ContainsKey("_PositionY"))
-		{
-			Debug.Log(".png");
-			DDMJBHAHJED();
-		}
-	}
-
-	public void CCPEJINHAGP(Hashtable DGIHEPAHAJK)
-	{
-		if (DGIHEPAHAJK.ContainsKey("_ScreenResolution"))
-		{
-			StartTime = (double)DGIHEPAHAJK[" - PUBLISHED #"];
-		}
-	}
-
-	private void CFIAKIJAILI()
-	{
-		if (DBHJOONLNJE)
-		{
-			JLOCLBNNAAN();
-		}
-	}
-
-	public void GLNBFKKAAOP(Hashtable DGIHEPAHAJK)
-	{
-		if (DGIHEPAHAJK.ContainsKey("GameMessagesDurationSlider"))
-		{
-			StartTime = (double)DGIHEPAHAJK["_ScreenResolution"];
-		}
-	}
-
-	public void MOJGCADBPBI(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.EHLPGMBBDLG().ContainsKey("_TimeX"))
-		{
-			Debug.Log("_Contrast");
-			AEMCMOBKOJK();
-		}
-	}
-
-	private void HPNNCNNFMGK()
-	{
-		if (DBHJOONLNJE)
-		{
-			JAIBANMMMFF();
-		}
-	}
-
-	private void BGDONBMDPGM()
-	{
-		if (DBHJOONLNJE)
-		{
-			JAIBANMMMFF();
-		}
-	}
-
-	public void PBJIMOILOLE()
-	{
-		if (PhotonNetwork.isMasterClient)
-		{
-			LPEOOKEOBEL();
-		}
-		else
-		{
-			Debug.Log("_Value4" + PhotonNetwork.room.KMBLODHBAFO().ContainsKey("settings_bindings_controller_type"));
-		}
-	}
-
-	public void OnJoinedRoom()
+	public void PELNCDEODGD()
 	{
 		if (PhotonNetwork.isMasterClient)
 		{
@@ -366,202 +507,112 @@ public class InRoomRoundTimer : MonoBehaviour
 		}
 		else
 		{
-			Debug.Log("StartTime already set: " + PhotonNetwork.room.customProperties.ContainsKey("st"));
+			Debug.Log("[PlayerController] " + PhotonNetwork.room.customProperties.ContainsKey("[Down]"));
 		}
 	}
 
-	public void NEMLLIAHOBM(Hashtable DGIHEPAHAJK)
+	public void BJGFLOHDJJJ(Hashtable DGIHEPAHAJK)
 	{
-		if (DGIHEPAHAJK.ContainsKey("[SoundManager] Loaded skin audio"))
+		if (DGIHEPAHAJK.ContainsKey("_ForceYSwap"))
 		{
-			StartTime = (double)DGIHEPAHAJK["_Value3"];
+			StartTime = (double)DGIHEPAHAJK["SetSpeed"];
 		}
 	}
 
-	private void LPMINJJPDCH()
+	private void HDDECCMEJKA()
 	{
 		if (DBHJOONLNJE)
 		{
-			NAPOAHBNGCK();
+			BGBKEKDPEIJ();
 		}
 	}
 
-	public void EOJGCJABGNC()
+	private void MMBPLGGLPDB()
 	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("ok", num));
-		GUILayout.Label(string.Format("<b>#banended</b>", num2), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("Malformed RPC; this should never occur. Content: ", num3));
-		if (GUILayout.Button("^"))
+		if (DBHJOONLNJE)
 		{
-			JDKOEAMABCK();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void IDDPLCAHDPO()
-	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("_TimeX", num), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("_BlurRadius4", num2), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("Gameplay/satellite", num3), new GUILayoutOption[1]);
-		if (GUILayout.Button("_Value"))
-		{
-			JLOCLBNNAAN();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void ICOIEGANENL(Hashtable DGIHEPAHAJK)
-	{
-		if (DGIHEPAHAJK.ContainsKey("help"))
-		{
-			StartTime = (double)DGIHEPAHAJK["s"];
+			AFPDIDAHHGA();
 		}
 	}
 
-	public void KOCIIOKHKME()
-	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("isBunned", num), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("]", num2));
-		GUILayout.Label(string.Format("GO==null", num3), new GUILayoutOption[1]);
-		if (GUILayout.Button("_Value", new GUILayoutOption[1]))
-		{
-			NAPOAHBNGCK();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void PNHBOKMFFNN()
+	public void PLEDKHBAIAA()
 	{
 		if (PhotonNetwork.isMasterClient)
 		{
-			JLOCLBNNAAN();
+			AFPDIDAHHGA();
 		}
 		else
 		{
-			Debug.Log("_Offsets" + PhotonNetwork.room.PFFHNNODEMM().ContainsKey("white"));
+			Debug.Log("Scene" + PhotonNetwork.room.customProperties.ContainsKey("_FixDistance"));
 		}
 	}
 
-	public void GMKMLFAIIAJ()
+	public void LKLDBEBLMBI(PhotonPlayer DELECHPDOCO)
 	{
-		if (PhotonNetwork.isMasterClient)
+		if (!PhotonNetwork.room.customProperties.ContainsKey("achievements.21.completed."))
 		{
-			NAPOAHBNGCK();
-		}
-		else
-		{
-			Debug.Log("_Value2" + PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("Set Satellite Sensitivity"));
+			Debug.Log("Parameter levelId must be int or string!");
+			CPIKLIPIDIA();
 		}
 	}
 
-	private void JHPOIOELNCG()
+	private void HAHDPBKLFAF()
 	{
-		if (DBHJOONLNJE)
-		{
-			JAIBANMMMFF();
-		}
-	}
-
-	private void LPEOOKEOBEL()
-	{
-		if (PhotonNetwork.time < 1812.0)
-		{
-			DBHJOONLNJE = false;
-			return;
-		}
-		DBHJOONLNJE = true;
-		Hashtable hashtable = new Hashtable();
-		hashtable[". Going to ignore! Check PhotonServerSettings.RpcList"] = PhotonNetwork.time;
-		PhotonNetwork.room.SetCustomProperties(hashtable);
-	}
-
-	private void JAIBANMMMFF()
-	{
-		if (PhotonNetwork.time < 274.0)
-		{
-			DBHJOONLNJE = true;
-			return;
-		}
-		DBHJOONLNJE = true;
-		Hashtable hashtable = new Hashtable();
-		hashtable["GridDataArcs"] = PhotonNetwork.time;
-		PhotonNetwork.room.SetCustomProperties(hashtable);
-	}
-
-	public void BNHKNBILGBK(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("[PlayerController] "))
-		{
-			Debug.Log("_Value2");
-			JAIBANMMMFF();
-		}
-	}
-
-	public void PHCOGMJPGNN(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("_TimeX"))
-		{
-			Debug.Log("Init");
-			DDMJBHAHJED();
-		}
-	}
-
-	private void EGEGNHLODAA()
-	{
-		if (DBHJOONLNJE)
-		{
-			JAIBANMMMFF();
-		}
-	}
-
-	private void DDMJBHAHJED()
-	{
-		if (PhotonNetwork.time < 576.0)
+		if (PhotonNetwork.time < 714.0)
 		{
 			DBHJOONLNJE = false;
 			return;
 		}
 		DBHJOONLNJE = false;
 		Hashtable hashtable = new Hashtable();
-		hashtable["offsets"] = PhotonNetwork.time;
+		hashtable["_MainTex2"] = PhotonNetwork.time;
 		PhotonNetwork.room.SetCustomProperties(hashtable, null, true);
 	}
 
-	private void DNBPCAEIMHN()
+	public void IICHFOLDKGG(Hashtable DGIHEPAHAJK)
 	{
-		if (PhotonNetwork.time < 508.0)
+		if (DGIHEPAHAJK.ContainsKey("_DX11NoiseTime"))
+		{
+			StartTime = (double)DGIHEPAHAJK["_SizeY"];
+		}
+	}
+
+	public void FADMAHGLBKD(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.customProperties.ContainsKey("menuVolume"))
+		{
+			Debug.Log("unsubscribemap");
+			PJNINBIDHDD();
+		}
+	}
+
+	public void HBNHHPJNNIP()
+	{
+		double num = PhotonNetwork.time - StartTime;
+		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
+		int num3 = (int)(num / (double)SecondsPerTurn);
+		GUILayout.BeginArea(TextPos);
+		GUILayout.Label(string.Format("#ok", num), new GUILayoutOption[1]);
+		GUILayout.Label(string.Format(" not exist", num2));
+		GUILayout.Label(string.Format("LeaderboardsButton", num3));
+		if (GUILayout.Button("EnvironmentSlider"))
+		{
+			PBMPKIJEKAF();
+		}
+		GUILayout.EndArea();
+	}
+
+	private void BGBKEKDPEIJ()
+	{
+		if (PhotonNetwork.time < 491.0)
 		{
 			DBHJOONLNJE = true;
 			return;
 		}
 		DBHJOONLNJE = true;
 		Hashtable hashtable = new Hashtable();
-		hashtable["float,1.5"] = PhotonNetwork.time;
-		PhotonNetwork.room.SetCustomProperties(hashtable, null, true);
-	}
-
-	public void LEHMPPOHPEI()
-	{
-		if (PhotonNetwork.isMasterClient)
-		{
-			DDMJBHAHJED();
-		}
-		else
-		{
-			Debug.Log("," + PhotonNetwork.room.KMBLODHBAFO().ContainsKey("[DiscordController] Sectate ({0})"));
-		}
+		hashtable["[PlayerBase] Loaded environment: "] = PhotonNetwork.time;
+		PhotonNetwork.room.SetCustomProperties(hashtable);
 	}
 
 	public void OnGUI()
@@ -580,145 +631,106 @@ public class InRoomRoundTimer : MonoBehaviour
 		GUILayout.EndArea();
 	}
 
-	public void LKFBADCLLML()
+	private void PJNINBIDHDD()
+	{
+		if (PhotonNetwork.time < 1950.0)
+		{
+			DBHJOONLNJE = false;
+			return;
+		}
+		DBHJOONLNJE = false;
+		Hashtable hashtable = new Hashtable();
+		hashtable["GroupNameText"] = PhotonNetwork.time;
+		PhotonNetwork.room.AFADNAIGHIG(hashtable, null, true);
+	}
+
+	public void PHCOGMJPGNN(PhotonPlayer DELECHPDOCO)
+	{
+		if (!PhotonNetwork.room.DMANNHAPJCP().ContainsKey("_Fade"))
+		{
+			Debug.Log("stats on");
+			ICCOKJOBGBM();
+		}
+	}
+
+	public void EAELMLKKFOL()
 	{
 		double num = PhotonNetwork.time - StartTime;
 		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
 		int num3 = (int)(num / (double)SecondsPerTurn);
 		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format(": ", num));
-		GUILayout.Label(string.Format("_Value", num2), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("_threshold", num3));
-		if (GUILayout.Button("Subscribed cells:\n"))
+		GUILayout.Label(string.Format("maps.", num));
+		GUILayout.Label(string.Format("ItemNameText", num2), new GUILayoutOption[1]);
+		GUILayout.Label(string.Format("Drop_Far", num3), new GUILayoutOption[1]);
+		if (GUILayout.Button("DataText", new GUILayoutOption[1]))
 		{
-			DDMJBHAHJED();
+			BGBKEKDPEIJ();
 		}
 		GUILayout.EndArea();
 	}
 
-	public void MPOCGBCPFJC(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("_VelocityScale"))
-		{
-			Debug.Log("GridDataStoryboard");
-			NAPOAHBNGCK();
-		}
-	}
-
-	public void OnPhotonCustomRoomPropertiesChanged(Hashtable DGIHEPAHAJK)
-	{
-		if (DGIHEPAHAJK.ContainsKey("st"))
-		{
-			StartTime = (double)DGIHEPAHAJK["st"];
-		}
-	}
-
-	public void BCODHAOJLJL()
-	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("_Red_G", num), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("_ScreenResolution", num2), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("OnAwakeRPC", num3), new GUILayoutOption[1]);
-		if (GUILayout.Button("_TimeX", new GUILayoutOption[1]))
-		{
-			NAPOAHBNGCK();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void EDODBNGGNDF(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.KMBLODHBAFO().ContainsKey("_Distortion"))
-		{
-			Debug.Log("00");
-			LPEOOKEOBEL();
-		}
-	}
-
-	public void HNOGLCMFLPA(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.KMBLODHBAFO().ContainsKey("_Value"))
-		{
-			Debug.Log("_Offsets");
-			JDKOEAMABCK();
-		}
-	}
-
-	private void NDAJBJFJGCF()
+	private void GHILDCBCDJI()
 	{
 		if (DBHJOONLNJE)
 		{
-			DDMJBHAHJED();
+			NMAAAONHNOI();
 		}
 	}
 
-	public void NMHIDAOMOGO()
+	private void AFPDIDAHHGA()
+	{
+		if (PhotonNetwork.time < 1287.0)
+		{
+			DBHJOONLNJE = false;
+			return;
+		}
+		DBHJOONLNJE = true;
+		Hashtable hashtable = new Hashtable();
+		hashtable["\\\""] = PhotonNetwork.time;
+		PhotonNetwork.room.AFADNAIGHIG(hashtable);
+	}
+
+	public void DENKOAKNPNB()
 	{
 		double num = PhotonNetwork.time - StartTime;
 		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
 		int num3 = (int)(num / (double)SecondsPerTurn);
 		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("shader.sunny", num));
-		GUILayout.Label(string.Format("Event Received", num2), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("#ok", num3), new GUILayoutOption[1]);
-		if (GUILayout.Button("settings_bindings_", new GUILayoutOption[1]))
+		GUILayout.Label(string.Format("Ignored PU RPC, cause item is inactive. ", num));
+		GUILayout.Label(string.Format("MenuVolumeSlider", num2));
+		GUILayout.Label(string.Format(" ", num3), new GUILayoutOption[1]);
+		if (GUILayout.Button("ChatInput", new GUILayoutOption[1]))
 		{
-			NAPOAHBNGCK();
+			HAHDPBKLFAF();
 		}
 		GUILayout.EndArea();
 	}
 
-	private void HMNLHMLILKD()
+	private void EHCGBJDFMHG()
 	{
 		if (DBHJOONLNJE)
 		{
-			LPEOOKEOBEL();
+			JAMOBLNGOAJ();
 		}
 	}
 
-	public void EAHKLHCEDLB()
+	public void LHACGKFCAMG(Hashtable DGIHEPAHAJK)
 	{
-		double num = PhotonNetwork.time - StartTime;
-		double num2 = (double)SecondsPerTurn - num % (double)SecondsPerTurn;
-		int num3 = (int)(num / (double)SecondsPerTurn);
-		GUILayout.BeginArea(TextPos);
-		GUILayout.Label(string.Format("_Value", num));
-		GUILayout.Label(string.Format("EventTimeInputField", num2), new GUILayoutOption[1]);
-		GUILayout.Label(string.Format("_Value2", num3));
-		if (GUILayout.Button("/music"))
+		if (DGIHEPAHAJK.ContainsKey("_TimeX"))
 		{
-			JAIBANMMMFF();
-		}
-		GUILayout.EndArea();
-	}
-
-	public void LPLDDGOEEIJ(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("[NetworkManager] Exited"))
-		{
-			Debug.Log("color");
-			JLOCLBNNAAN();
+			StartTime = (double)DGIHEPAHAJK["_Axis"];
 		}
 	}
 
-	public void PFPGCHHHEHM(PhotonPlayer DELECHPDOCO)
+	public void BDKAKHFLAKD()
 	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("CameraFilterPack/Blend2Camera_ColorBurn"))
+		if (PhotonNetwork.isMasterClient)
 		{
-			Debug.Log("ShowTitle");
-			JLOCLBNNAAN();
+			CPIKLIPIDIA();
 		}
-	}
-
-	public void GAAMDOMCJLK(PhotonPlayer DELECHPDOCO)
-	{
-		if (!PhotonNetwork.room.OJKFLHKNPKO().ContainsKey("UnityEngine.MonoBehaviour"))
+		else
 		{
-			Debug.Log("_CenterX");
-			JLOCLBNNAAN();
+			Debug.Log("Added checkpoint" + PhotonNetwork.room.DMANNHAPJCP().ContainsKey("LevelURLInputField"));
 		}
 	}
 }

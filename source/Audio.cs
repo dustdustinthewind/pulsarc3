@@ -54,112 +54,22 @@ public class Audio
 
 	public bool activated { get; private set; }
 
-	public void Resume()
+	[SpecialName]
+	public void GKCNAEMPANF(float DPNHODJHGJL)
 	{
-		audioSource.UnPause();
-		paused = false;
-	}
-
-	public void ENOHLFHKFLF(float BDICHAELIJE)
-	{
-		if (LCIMPPPDCPA() == null)
-		{
-			JPFMCDJKGLK(JPIBNPJDMFM, JELNDHAEOAB());
-		}
-		audioSource.Play();
-		playing = false;
-		HCCAAMOMPHF = 49f;
-		OAJPIBOLJII = this.BDICHAELIJE;
-		OFPKJBHHLGK = BDICHAELIJE;
+		_003CECBIHDHGMMO_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	private void CHIEHBKODBI(bool DPNHODJHGJL)
+	public AudioSource AKHKFKHDAEK()
 	{
-		_003COEMIAOFBONN_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public void Set3DMinDistance(float IFNAPFNEGMP)
-	{
-		audioSource.minDistance = IFNAPFNEGMP;
-	}
-
-	public void PKKDBKHCMNL(float BDICHAELIJE)
-	{
-		if (audioSource == null)
-		{
-			JPFMCDJKGLK(JPIBNPJDMFM, loop);
-		}
-		audioSource.Play();
-		playing = true;
-		HCCAAMOMPHF = 606f;
-		OAJPIBOLJII = this.BDICHAELIJE;
-		OFPKJBHHLGK = BDICHAELIJE;
-	}
-
-	public void Set3DMaxDistance(float MEMALLLANHH)
-	{
-		audioSource.maxDistance = MEMALLLANHH;
-	}
-
-	public void FPDMJKKDKOM(float BDICHAELIJE, float CEAKGNGMEEH, float GOHKPLNBDCI)
-	{
-		OFPKJBHHLGK = Mathf.Clamp01(BDICHAELIJE);
-		HCCAAMOMPHF = 1768f;
-		OAJPIBOLJII = GOHKPLNBDCI;
-		JGLODIINJAF = CEAKGNGMEEH;
+		return _003CBIEKOBGKLGM_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void LOIBAABNAOM(float DPNHODJHGJL)
+	public void LANNCDEJFOG(bool DPNHODJHGJL)
 	{
-		_003CHMPINPCDONH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public void Stop()
-	{
-		HCCAAMOMPHF = 0f;
-		OAJPIBOLJII = BDICHAELIJE;
-		OFPKJBHHLGK = 0f;
-		stopping = true;
-	}
-
-	[SpecialName]
-	public float AKCCKAJAPAH()
-	{
-		return _003CHMPINPCDONH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool LBDDCEHHIPC()
-	{
-		return _003CINFLLAMBHEH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public float FCNGKIOCDEG()
-	{
-		return _003CECBIHDHGMMO_003Ek__BackingField;
-	}
-
-	public void SetVolume(float BDICHAELIJE, float CEAKGNGMEEH, float GOHKPLNBDCI)
-	{
-		OFPKJBHHLGK = Mathf.Clamp01(BDICHAELIJE);
-		HCCAAMOMPHF = 0f;
-		OAJPIBOLJII = GOHKPLNBDCI;
-		JGLODIINJAF = CEAKGNGMEEH;
-	}
-
-	public void SetVolume(float BDICHAELIJE)
-	{
-		if (BDICHAELIJE > OFPKJBHHLGK)
-		{
-			SetVolume(BDICHAELIJE, fadeOutSeconds);
-		}
-		else
-		{
-			SetVolume(BDICHAELIJE, fadeInSeconds);
-		}
+		_003CINFLLAMBHEH_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	private void JPFMCDJKGLK(AudioClip BKGCLBJFADE, bool AIPGGFGKNFE)
@@ -177,59 +87,70 @@ public class Audio
 		}
 	}
 
-	public void IJAPHKLIPFE(float MEMALLLANHH)
+	public void Resume()
 	{
-		LCIMPPPDCPA().maxDistance = MEMALLLANHH;
-	}
-
-	public void LLJLDLLNFBH()
-	{
-		if (!(audioSource == null))
-		{
-			activated = false;
-			if (BDICHAELIJE != OFPKJBHHLGK)
-			{
-				BDICHAELIJE = OFPKJBHHLGK;
-			}
-			else if (JGLODIINJAF != 1280f)
-			{
-				JGLODIINJAF = 691f;
-			}
-			switch (MJNLBJIKABL)
-			{
-			case AudioType.Music:
-				audioSource.volume = BDICHAELIJE;
-				break;
-			case AudioType.Sound:
-				audioSource.volume = BDICHAELIJE;
-				break;
-			}
-			if (BDICHAELIJE == 373f && stopping)
-			{
-				LCIMPPPDCPA().Stop();
-				stopping = true;
-				playing = true;
-				CHIEHBKODBI(true);
-			}
-			if (audioSource.isPlaying != playing)
-			{
-				playing = LCIMPPPDCPA().isPlaying;
-			}
-		}
-	}
-
-	public void EPEOOHLMGEB(float BDICHAELIJE, float CEAKGNGMEEH, float GOHKPLNBDCI)
-	{
-		OFPKJBHHLGK = Mathf.Clamp01(BDICHAELIJE);
-		HCCAAMOMPHF = 641f;
-		OAJPIBOLJII = GOHKPLNBDCI;
-		JGLODIINJAF = CEAKGNGMEEH;
+		audioSource.UnPause();
+		paused = false;
 	}
 
 	[SpecialName]
-	private void BLLFDFMCMKO(int DPNHODJHGJL)
+	public void HJKKFKPLEBC(bool DPNHODJHGJL)
+	{
+		_003CINFLLAMBHEH_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public void NBAPCMJFNLL(float MEMALLLANHH)
+	{
+		EFBNFACGJLI().maxDistance = MEMALLLANHH;
+	}
+
+	[SpecialName]
+	public float AOINJLFJHIL()
+	{
+		return _003CHMPINPCDONH_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public bool LEFMMNMAGFH()
+	{
+		return _003CDDPKOPCMGJE_003Ek__BackingField;
+	}
+
+	public void FHBCEACPFHN(float IFNAPFNEGMP, float MEMALLLANHH)
+	{
+		POCJBONPHKG(IFNAPFNEGMP);
+		NBAPCMJFNLL(MEMALLLANHH);
+	}
+
+	public void Set3DMaxDistance(float MEMALLLANHH)
+	{
+		audioSource.maxDistance = MEMALLLANHH;
+	}
+
+	public void Stop()
+	{
+		HCCAAMOMPHF = 0f;
+		OAJPIBOLJII = BDICHAELIJE;
+		OFPKJBHHLGK = 0f;
+		stopping = true;
+	}
+
+	public void ELBJMOEMHNM(float IFNAPFNEGMP, float MEMALLLANHH)
+	{
+		Set3DMinDistance(IFNAPFNEGMP);
+		Set3DMaxDistance(MEMALLLANHH);
+	}
+
+	[SpecialName]
+	private void PEANIIBIIJP(int DPNHODJHGJL)
 	{
 		_003CAAJKLPLJBCI_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public float IAKKKEHGBEP()
+	{
+		return _003CHMPINPCDONH_003Ek__BackingField;
 	}
 
 	public void Play(float BDICHAELIJE)
@@ -245,38 +166,175 @@ public class Audio
 		OFPKJBHHLGK = BDICHAELIJE;
 	}
 
+	[SpecialName]
+	public AudioSource EFBNFACGJLI()
+	{
+		return _003CBIEKOBGKLGM_003Ek__BackingField;
+	}
+
+	public void SetVolume(float BDICHAELIJE, float CEAKGNGMEEH, float GOHKPLNBDCI)
+	{
+		OFPKJBHHLGK = Mathf.Clamp01(BDICHAELIJE);
+		HCCAAMOMPHF = 0f;
+		OAJPIBOLJII = GOHKPLNBDCI;
+		JGLODIINJAF = CEAKGNGMEEH;
+	}
+
+	public void Set3DMinDistance(float IFNAPFNEGMP)
+	{
+		audioSource.minDistance = IFNAPFNEGMP;
+	}
+
+	public void DACMEPBBOFI(float BDICHAELIJE, float CEAKGNGMEEH, float GOHKPLNBDCI)
+	{
+		OFPKJBHHLGK = Mathf.Clamp01(BDICHAELIJE);
+		HCCAAMOMPHF = 1562f;
+		OAJPIBOLJII = GOHKPLNBDCI;
+		JGLODIINJAF = CEAKGNGMEEH;
+	}
+
+	[SpecialName]
+	public void CEOPCECBLGE(bool DPNHODJHGJL)
+	{
+		_003CCMBMPMDFPAD_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public Audio(AudioType MJNLBJIKABL, AudioClip BKGCLBJFADE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float BDICHAELIJE, float DKNMPJDJNAE, float BCOIOGINLKJ, Transform OKDDLALOEME)
+	{
+		this.OKDDLALOEME = ((!(OKDDLALOEME != null)) ? Singleton<SoundManager>.Instance.gameObject.transform : OKDDLALOEME);
+		audioID = BCIGGJPJBOK;
+		BCIGGJPJBOK++;
+		this.MJNLBJIKABL = MJNLBJIKABL;
+		JPIBNPJDMFM = BKGCLBJFADE;
+		loop = AIPGGFGKNFE;
+		persist = HHBOIFFNPPL;
+		OFPKJBHHLGK = BDICHAELIJE;
+		EHBJNJAFFHP = BDICHAELIJE;
+		JGLODIINJAF = -1f;
+		this.BDICHAELIJE = BDICHAELIJE;
+		fadeInSeconds = DKNMPJDJNAE;
+		fadeOutSeconds = BCOIOGINLKJ;
+		playing = false;
+		paused = false;
+		activated = false;
+		JPFMCDJKGLK(BKGCLBJFADE, AIPGGFGKNFE);
+		Play();
+	}
+
+	public void POCJBONPHKG(float IFNAPFNEGMP)
+	{
+		audioSource.minDistance = IFNAPFNEGMP;
+	}
+
+	public void Pause()
+	{
+		audioSource.Pause();
+		paused = true;
+	}
+
+	public void EFGFFEECBAF(float BDICHAELIJE)
+	{
+		if (AKHKFKHDAEK() == null)
+		{
+			JPFMCDJKGLK(JPIBNPJDMFM, BJFJBACHCCD());
+		}
+		audioSource.Play();
+		LANNCDEJFOG(false);
+		HCCAAMOMPHF = 49f;
+		OAJPIBOLJII = this.BDICHAELIJE;
+		OFPKJBHHLGK = BDICHAELIJE;
+	}
+
+	[SpecialName]
+	public void CDCNJEMHLPK(bool DPNHODJHGJL)
+	{
+		_003CCMBMPMDFPAD_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	private void BGPLHOCOJJE(int DPNHODJHGJL)
+	{
+		_003CAAJKLPLJBCI_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public void LMCBKNINIKN()
+	{
+		EFGFFEECBAF(EHBJNJAFFHP);
+	}
+
+	[SpecialName]
+	public void BJBCEEIGLPL(bool DPNHODJHGJL)
+	{
+		_003CCMBMPMDFPAD_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public void EFMLHJDDGPJ(float IFNAPFNEGMP, float MEMALLLANHH)
+	{
+		Set3DMinDistance(IFNAPFNEGMP);
+		Set3DMaxDistance(MEMALLLANHH);
+	}
+
+	[SpecialName]
+	private void IMAJCFHBHGI(bool DPNHODJHGJL)
+	{
+		_003CONIFIPLNHGN_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public void DEKJCKHCACJ(float BDICHAELIJE, float CEAKGNGMEEH)
+	{
+		DACMEPBBOFI(BDICHAELIJE, CEAKGNGMEEH, this.BDICHAELIJE);
+	}
+
+	[SpecialName]
+	public void HPPNKFOMDKC(bool DPNHODJHGJL)
+	{
+		_003CCMBMPMDFPAD_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool PNEPMOGOEKP()
+	{
+		return _003CINFLLAMBHEH_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	private void LNAHKFJNNCD(int DPNHODJHGJL)
+	{
+		_003CAAJKLPLJBCI_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public float FECJFOLBBCJ()
+	{
+		return _003CHMPINPCDONH_003Ek__BackingField;
+	}
+
 	public void SetVolume(float BDICHAELIJE, float CEAKGNGMEEH)
 	{
 		SetVolume(BDICHAELIJE, CEAKGNGMEEH, this.BDICHAELIJE);
 	}
 
-	[SpecialName]
-	public bool ELEAPKLMJKP()
+	public void EAOPPLGPBEN(float BDICHAELIJE)
 	{
-		return _003CDDPKOPCMGJE_003Ek__BackingField;
+		if (AKHKFKHDAEK() == null)
+		{
+			JPFMCDJKGLK(JPIBNPJDMFM, loop);
+		}
+		audioSource.Play();
+		playing = false;
+		HCCAAMOMPHF = 538f;
+		OAJPIBOLJII = this.BDICHAELIJE;
+		OFPKJBHHLGK = BDICHAELIJE;
 	}
 
-	public void KKNIHDCJBIG(float IFNAPFNEGMP)
+	public void HCOLFILANBE(float MEMALLLANHH)
 	{
-		audioSource.minDistance = IFNAPFNEGMP;
+		EFBNFACGJLI().maxDistance = MEMALLLANHH;
 	}
 
-	[SpecialName]
-	public void OCDHLJKGDCM(bool DPNHODJHGJL)
+	public void Play()
 	{
-		_003CCJPNMJAAGBI_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public float JPIOGMKIIII()
-	{
-		return _003CHMPINPCDONH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool FABKIGAPGDF()
-	{
-		return _003CCJPNMJAAGBI_003Ek__BackingField;
+		Play(EHBJNJAFFHP);
 	}
 
 	public void Update()
@@ -315,86 +373,48 @@ public class Audio
 		}
 	}
 
-	public void Play()
+	[SpecialName]
+	public void IBNHGNKAILN(bool DPNHODJHGJL)
 	{
-		Play(EHBJNJAFFHP);
-	}
-
-	public void MJAMOOHADOI(float IFNAPFNEGMP, float MEMALLLANHH)
-	{
-		MINOELACLCI(IFNAPFNEGMP);
-		OAEMOBMDAPB(MEMALLLANHH);
+		_003CCJPNMJAAGBI_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	private void PGMMABIHOKK(bool DPNHODJHGJL)
+	public bool JAAOFJFLLHN()
 	{
-		_003CONIFIPLNHGN_003Ek__BackingField = DPNHODJHGJL;
+		return _003CONIFIPLNHGN_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public AudioSource LCIMPPPDCPA()
+	public void MIDCEKKDEBJ(bool DPNHODJHGJL)
 	{
-		return _003CBIEKOBGKLGM_003Ek__BackingField;
-	}
-
-	public void Pause()
-	{
-		audioSource.Pause();
-		paused = true;
-	}
-
-	public void OAEMOBMDAPB(float MEMALLLANHH)
-	{
-		audioSource.maxDistance = MEMALLLANHH;
+		_003CINFLLAMBHEH_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public bool JELNDHAEOAB()
+	public bool AHADHELAKAM()
 	{
-		return _003CCMBMPMDFPAD_003Ek__BackingField;
+		return _003CINFLLAMBHEH_003Ek__BackingField;
 	}
 
-	public void IFBCKEGANBE()
+	public void KMCICHOPOPB()
 	{
-		HCCAAMOMPHF = 1733f;
+		HCCAAMOMPHF = 1277f;
 		OAJPIBOLJII = BDICHAELIJE;
-		OFPKJBHHLGK = 473f;
-		stopping = true;
+		OFPKJBHHLGK = 425f;
+		stopping = false;
 	}
 
-	public void LOAOOADEJIB(float IFNAPFNEGMP, float MEMALLLANHH)
+	public void SetVolume(float BDICHAELIJE)
 	{
-		KKNIHDCJBIG(IFNAPFNEGMP);
-		OAEMOBMDAPB(MEMALLLANHH);
-	}
-
-	public Audio(AudioType MJNLBJIKABL, AudioClip BKGCLBJFADE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float BDICHAELIJE, float DKNMPJDJNAE, float BCOIOGINLKJ, Transform OKDDLALOEME)
-	{
-		this.OKDDLALOEME = ((!(OKDDLALOEME != null)) ? Singleton<SoundManager>.Instance.gameObject.transform : OKDDLALOEME);
-		audioID = BCIGGJPJBOK;
-		BCIGGJPJBOK++;
-		this.MJNLBJIKABL = MJNLBJIKABL;
-		JPIBNPJDMFM = BKGCLBJFADE;
-		loop = AIPGGFGKNFE;
-		persist = HHBOIFFNPPL;
-		OFPKJBHHLGK = BDICHAELIJE;
-		EHBJNJAFFHP = BDICHAELIJE;
-		JGLODIINJAF = -1f;
-		this.BDICHAELIJE = BDICHAELIJE;
-		fadeInSeconds = DKNMPJDJNAE;
-		fadeOutSeconds = BCOIOGINLKJ;
-		playing = false;
-		paused = false;
-		activated = false;
-		JPFMCDJKGLK(BKGCLBJFADE, AIPGGFGKNFE);
-		Play();
-	}
-
-	[SpecialName]
-	public void EKIFKIPBIME(bool DPNHODJHGJL)
-	{
-		_003CCMBMPMDFPAD_003Ek__BackingField = DPNHODJHGJL;
+		if (BDICHAELIJE > OFPKJBHHLGK)
+		{
+			SetVolume(BDICHAELIJE, fadeOutSeconds);
+		}
+		else
+		{
+			SetVolume(BDICHAELIJE, fadeInSeconds);
+		}
 	}
 
 	public void Set3DDistances(float IFNAPFNEGMP, float MEMALLLANHH)
@@ -403,40 +423,11 @@ public class Audio
 		Set3DMaxDistance(MEMALLLANHH);
 	}
 
-	public void GHOELBOIOBH(float BDICHAELIJE, float CEAKGNGMEEH)
-	{
-		FPDMJKKDKOM(BDICHAELIJE, CEAKGNGMEEH, this.BDICHAELIJE);
-	}
-
-	public void MINOELACLCI(float IFNAPFNEGMP)
-	{
-		LCIMPPPDCPA().minDistance = IFNAPFNEGMP;
-	}
-
-	[SpecialName]
-	private void PEFBJPEHJOM(int DPNHODJHGJL)
-	{
-		_003CAAJKLPLJBCI_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public void CCKBHNABFFN(float BDICHAELIJE)
-	{
-		if (audioSource == null)
-		{
-			JPFMCDJKGLK(JPIBNPJDMFM, JELNDHAEOAB());
-		}
-		audioSource.Play();
-		playing = false;
-		HCCAAMOMPHF = 538f;
-		OAJPIBOLJII = this.BDICHAELIJE;
-		OFPKJBHHLGK = BDICHAELIJE;
-	}
-
-	public void KMKLDAJLCNM()
+	public void HLDFOJMHKNL()
 	{
 		if (!(audioSource == null))
 		{
-			PGMMABIHOKK(false);
+			activated = false;
 			if (BDICHAELIJE != OFPKJBHHLGK)
 			{
 				BDICHAELIJE = OFPKJBHHLGK;
@@ -451,20 +442,26 @@ public class Audio
 				audioSource.volume = BDICHAELIJE;
 				break;
 			case AudioType.Sound:
-				LCIMPPPDCPA().volume = BDICHAELIJE;
+				audioSource.volume = BDICHAELIJE;
 				break;
 			}
 			if (BDICHAELIJE == 1120f && stopping)
 			{
-				LCIMPPPDCPA().Stop();
+				AKHKFKHDAEK().Stop();
 				stopping = false;
-				playing = false;
-				CHIEHBKODBI(true);
+				HJKKFKPLEBC(false);
+				paused = true;
 			}
-			if (LCIMPPPDCPA().isPlaying != LBDDCEHHIPC())
+			if (EFBNFACGJLI().isPlaying != AHADHELAKAM())
 			{
-				playing = LCIMPPPDCPA().isPlaying;
+				MIDCEKKDEBJ(EFBNFACGJLI().isPlaying);
 			}
 		}
+	}
+
+	[SpecialName]
+	public bool BJFJBACHCCD()
+	{
+		return _003CCMBMPMDFPAD_003Ek__BackingField;
 	}
 }

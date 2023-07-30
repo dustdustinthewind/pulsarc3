@@ -103,12 +103,12 @@ public class CameraFilterPack_Blend2Camera_Darken : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("[Left]", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("[Up]", JDMCFBKJHDD);
 			}
-			LDNADDJMIPK().SetFloat("_Value5", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("L1", BlendFX);
+			LDNADDJMIPK().SetFloat("_Value3", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Triangle", BlendFX);
 			LDNADDJMIPK().SetFloat("<b>#", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("downloading", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1889f, 1350f));
+			LDNADDJMIPK().SetVector("downloading", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1889f, 1350f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
@@ -128,12 +128,12 @@ public class CameraFilterPack_Blend2Camera_Darken : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("event", JDMCFBKJHDD);
+				LDNADDJMIPK().SetTexture("checkpoint", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat("player.yellowarc", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_HeightParams", BlendFX);
-			LDNADDJMIPK().SetFloat("_BlurTexture", SwitchCameraToCamera2);
-			LDNADDJMIPK().SetVector("/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1350f, 329f));
+			LDNADDJMIPK().SetFloat("player.orangearc", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_FrustumCornersWS", BlendFX);
+			LDNADDJMIPK().SetFloat("_ReflectionTexture3", SwitchCameraToCamera2);
+			LDNADDJMIPK().SetVector("/../", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1350f, 329f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -164,11 +164,11 @@ public class CameraFilterPack_Blend2Camera_Darken : MonoBehaviour
 			{
 				NBPKMLMCHFN.SetTexture("_ScreenResolution", JDMCFBKJHDD);
 			}
-			LDNADDJMIPK().SetFloat("Added unlock condition", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Paste events", HBJJOCHGOPH);
 			LDNADDJMIPK().SetFloat("id", BlendFX);
-			LDNADDJMIPK().SetFloat("[Up-Right-Down-Left]", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("/icon", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 63f, 416f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
+			NBPKMLMCHFN.SetFloat("[Up-Down-Left]", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("/music", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 63f, 416f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -277,13 +277,13 @@ public class CameraFilterPack_Blend2Camera_Darken : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("_ColorBuffer", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("offsets", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat("HiddenToggle", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("GLITCH", BlendFX);
-			LDNADDJMIPK().SetFloat("warning: Audio Source: ", SwitchCameraToCamera2);
-			LDNADDJMIPK().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1213f, 1125f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
+			NBPKMLMCHFN.SetFloat("tagElement", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("JITTER", BlendFX);
+			NBPKMLMCHFN.SetFloat("warning: Audio Source: ", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1213f, 1125f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{

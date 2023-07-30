@@ -53,7 +53,7 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		SCShader = Shader.Find(": ");
+		SCShader = Shader.Find("%");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -62,7 +62,7 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Colors_RgbClamp");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -94,12 +94,12 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 			{
 				HBJJOCHGOPH = 894f;
 			}
-			DBOLLHHMKKN().SetFloat(" not exist", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_CenterX", Amount);
-			ACHNOHCLGOO().SetFloat("Intensity", Smooth);
-			NBPKMLMCHFN.SetFloat("0.00", Size);
-			ACHNOHCLGOO().SetFloat("It seems some instantiation is not completed, as instantiation data is used. You should make sure instantiations are paused when calling this method. Cleaning now, despite this.", Position);
-			DBOLLHHMKKN().SetVector("restrictions", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
+			ACHNOHCLGOO().SetFloat(": ", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat("_TimeX", Amount);
+			LDNADDJMIPK().SetFloat("Fade", Smooth);
+			ACHNOHCLGOO().SetFloat("LevelEditor/patterns", Size);
+			ACHNOHCLGOO().SetFloat("Not sending leave operation. State is not 'Joined': ", Position);
+			ACHNOHCLGOO().SetVector("\n\n#", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
 			int width = AAACLELCPML.width / fastFilter;
 			int height = AAACLELCPML.height / fastFilter;
 			if (FastFilter > 1)
@@ -107,15 +107,15 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 				RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 				RenderTexture temporary2 = RenderTexture.GetTemporary(width, height, 1);
 				temporary.filterMode = (FilterMode)4;
-				Graphics.Blit(AAACLELCPML, temporary, DBOLLHHMKKN(), 3);
-				Graphics.Blit(temporary, temporary2, ACHNOHCLGOO(), 1);
-				LDNADDJMIPK().SetFloat("Save", Amount * 1888f);
-				Graphics.Blit(temporary2, temporary, NBPKMLMCHFN, 5);
-				Graphics.Blit(temporary, temporary2, NBPKMLMCHFN, 0);
-				ACHNOHCLGOO().SetTexture("menu.playedpage", temporary2);
+				Graphics.Blit(AAACLELCPML, temporary, ACHNOHCLGOO(), 3);
+				Graphics.Blit(temporary, temporary2, DBOLLHHMKKN(), 1);
+				DBOLLHHMKKN().SetFloat("Save", Amount * 1888f);
+				Graphics.Blit(temporary2, temporary, ACHNOHCLGOO(), 5);
+				Graphics.Blit(temporary, temporary2, LDNADDJMIPK(), 0);
+				NBPKMLMCHFN.SetTexture("menu.tabid", temporary2);
 				RenderTexture.ReleaseTemporary(temporary);
 				RenderTexture.ReleaseTemporary(temporary2);
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN(), 1);
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK(), 1);
 			}
 			else
 			{
@@ -138,12 +138,12 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 			{
 				HBJJOCHGOPH = 409f;
 			}
-			LDNADDJMIPK().SetFloat("Tab2Content", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("FinalScoreSmallText", Amount);
-			NBPKMLMCHFN.SetFloat("inventory.selected.", Smooth);
-			ACHNOHCLGOO().SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", Size);
-			NBPKMLMCHFN.SetFloat("input", Position);
-			LDNADDJMIPK().SetVector("#scoresubmitionfailed: ", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
+			LDNADDJMIPK().SetFloat("EnvironmentSlider", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("FinalScoreSmallText", Amount);
+			DBOLLHHMKKN().SetFloat("inventory.selected.", Smooth);
+			DBOLLHHMKKN().SetFloat("EventSystem", Size);
+			ACHNOHCLGOO().SetFloat("input", Position);
+			LDNADDJMIPK().SetVector("bad", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
 			int width = AAACLELCPML.width / fastFilter;
 			int height = AAACLELCPML.height / fastFilter;
 			if (FastFilter > 1)
@@ -153,13 +153,13 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 				temporary.filterMode = FilterMode.Trilinear;
 				Graphics.Blit(AAACLELCPML, temporary, DBOLLHHMKKN(), 8);
 				Graphics.Blit(temporary, temporary2, DBOLLHHMKKN(), 0);
-				ACHNOHCLGOO().SetFloat("[MapEditor] Loading music...", Amount * 1597f);
-				Graphics.Blit(temporary2, temporary, NBPKMLMCHFN, 6);
-				Graphics.Blit(temporary, temporary2, ACHNOHCLGOO(), 0);
-				LDNADDJMIPK().SetTexture("CameraFilterPack/TV_Vintage", temporary2);
+				ACHNOHCLGOO().SetFloat("[MapEditor] Prepairing map editor...", Amount * 1597f);
+				Graphics.Blit(temporary2, temporary, ACHNOHCLGOO(), 6);
+				Graphics.Blit(temporary, temporary2, NBPKMLMCHFN, 0);
+				LDNADDJMIPK().SetTexture("_VignettingColor", temporary2);
 				RenderTexture.ReleaseTemporary(temporary);
 				RenderTexture.ReleaseTemporary(temporary2);
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, 1);
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK(), 1);
 			}
 			else
 			{
@@ -193,7 +193,7 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		SCShader = Shader.Find("SetSunSensitivity");
+		SCShader = Shader.Find("SetSunInput");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -214,12 +214,12 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1879f;
 			}
-			ACHNOHCLGOO().SetFloat("shader.none", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_Value9", Amount);
-			DBOLLHHMKKN().SetFloat("Ignored PU RPC, cause item is inactive. ", Smooth);
-			DBOLLHHMKKN().SetFloat("Can not SetMasterClient(). Not in room or in offlineMode.", Size);
-			NBPKMLMCHFN.SetFloat("SetParticlesGravity", Position);
-			ACHNOHCLGOO().SetVector("_Source", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
+			LDNADDJMIPK().SetFloat("shader.pixel", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("_Value8", Amount);
+			ACHNOHCLGOO().SetFloat("PunRespawn with Position.", Smooth);
+			ACHNOHCLGOO().SetFloat(". No ViewIDs are free to use. Max is: ", Size);
+			ACHNOHCLGOO().SetFloat("Set particles size", Position);
+			NBPKMLMCHFN.SetVector("offsets", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
 			int width = AAACLELCPML.width / fastFilter;
 			int height = AAACLELCPML.height / fastFilter;
 			if (FastFilter > 1)
@@ -227,19 +227,19 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 				RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 				RenderTexture temporary2 = RenderTexture.GetTemporary(width, height, 1);
 				temporary.filterMode = (FilterMode)7;
-				Graphics.Blit(AAACLELCPML, temporary, LDNADDJMIPK(), 2);
-				Graphics.Blit(temporary, temporary2, ACHNOHCLGOO(), 1);
-				NBPKMLMCHFN.SetFloat("<color=#", Amount * 1037f);
-				Graphics.Blit(temporary2, temporary, ACHNOHCLGOO(), 8);
-				Graphics.Blit(temporary, temporary2, ACHNOHCLGOO(), 1);
-				NBPKMLMCHFN.SetTexture("_Value", temporary2);
+				Graphics.Blit(AAACLELCPML, temporary, ACHNOHCLGOO(), 2);
+				Graphics.Blit(temporary, temporary2, LDNADDJMIPK(), 1);
+				ACHNOHCLGOO().SetFloat("#onrankchangeuptext", Amount * 1037f);
+				Graphics.Blit(temporary2, temporary, LDNADDJMIPK(), 8);
+				Graphics.Blit(temporary, temporary2, NBPKMLMCHFN, 1);
+				DBOLLHHMKKN().SetTexture("_TimeX", temporary2);
 				RenderTexture.ReleaseTemporary(temporary);
 				RenderTexture.ReleaseTemporary(temporary2);
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO(), 0);
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, 0);
 			}
 			else
 			{
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK(), 1);
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO(), 1);
 			}
 		}
 		else
@@ -269,12 +269,12 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 			{
 				HBJJOCHGOPH = 5f;
 			}
-			ACHNOHCLGOO().SetFloat("new round", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("_Value5", Amount);
-			DBOLLHHMKKN().SetFloat("maps.", Smooth);
-			NBPKMLMCHFN.SetFloat("_Value", Size);
-			ACHNOHCLGOO().SetFloat("_UV_Transform", Position);
-			LDNADDJMIPK().SetVector("/", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
+			DBOLLHHMKKN().SetFloat("remaining: {0:0.000}", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_Value5", Amount);
+			ACHNOHCLGOO().SetFloat("maps.", Smooth);
+			LDNADDJMIPK().SetFloat("_Value", Size);
+			LDNADDJMIPK().SetFloat("_MainTex", Position);
+			DBOLLHHMKKN().SetVector("[MapsData] Unsubscribe ", new Vector2(Screen.width / fastFilter, Screen.height / fastFilter));
 			int width = AAACLELCPML.width / fastFilter;
 			int height = AAACLELCPML.height / fastFilter;
 			if (FastFilter > 0)
@@ -282,19 +282,19 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 				RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 				RenderTexture temporary2 = RenderTexture.GetTemporary(width, height, 0);
 				temporary.filterMode = (FilterMode)8;
-				Graphics.Blit(AAACLELCPML, temporary, ACHNOHCLGOO(), 4);
-				Graphics.Blit(temporary, temporary2, NBPKMLMCHFN, 1);
-				DBOLLHHMKKN().SetFloat("_Alpha", Amount * 973f);
-				Graphics.Blit(temporary2, temporary, ACHNOHCLGOO(), 5);
-				Graphics.Blit(temporary, temporary2, LDNADDJMIPK(), 0);
-				NBPKMLMCHFN.SetTexture("skin.no_hit", temporary2);
+				Graphics.Blit(AAACLELCPML, temporary, NBPKMLMCHFN, 4);
+				Graphics.Blit(temporary, temporary2, ACHNOHCLGOO(), 1);
+				LDNADDJMIPK().SetFloat("_Alpha", Amount * 973f);
+				Graphics.Blit(temporary2, temporary, NBPKMLMCHFN, 5);
+				Graphics.Blit(temporary, temporary2, NBPKMLMCHFN, 0);
+				ACHNOHCLGOO().SetTexture("skin.no_hit", temporary2);
 				RenderTexture.ReleaseTemporary(temporary);
 				RenderTexture.ReleaseTemporary(temporary2);
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, 1);
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN(), 1);
 			}
 			else
 			{
-				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, 0);
+				Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO(), 0);
 			}
 		}
 		else
@@ -358,7 +358,7 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find("_GrainTex");
+		SCShader = Shader.Find("_MainTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -367,7 +367,7 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find(" ");
+		SCShader = Shader.Find("%");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -376,7 +376,7 @@ public class CameraFilterPack_Blur_Tilt_Shift : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

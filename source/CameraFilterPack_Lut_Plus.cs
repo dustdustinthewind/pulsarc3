@@ -44,7 +44,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			num = MKEKCIPLJNC.height;
 			if (!MPGGIBFHGHP(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("SupportLogger OnFailedToConnectToPhoton(" + MKEKCIPLJNC.name + "_Value6");
+				Debug.LogWarning("HostType: {0} " + MKEKCIPLJNC.name + "_Value6");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -71,7 +71,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			FHLMGECFEOJ();
+			MGBOJGMOEGA();
 		}
 	}
 
@@ -89,9 +89,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!HMPBGKKJLLP(MKEKCIPLJNC))
+			if (!CMJFPJJPBDC(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("VisionBlur" + MKEKCIPLJNC.name + "Tab2Content");
+				Debug.LogWarning("Fade" + MKEKCIPLJNC.name + "LivesSlider");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -133,12 +133,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				MCOFJFMKGDD(LutTexture);
+				EMOOBOAJGOB(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			HNFFHCLNBDN().SetFloat("SetParticlesEmission", Blend);
-			CECJJMKLEAK().SetTexture("_Value", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG(), (QualitySettings.activeColorSpace != 0) ? 0 : 0);
+			EFDEIFCDAFG().SetFloat("Set particles color", Blend);
+			BBIMPFGLDCP().SetTexture("CameraFilterPack/TV_Tiles", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG(), (QualitySettings.activeColorSpace != 0) ? 0 : 0);
 		}
 		else
 		{
@@ -189,9 +189,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!JLLFEBOHAIA(MKEKCIPLJNC))
+			if (!HMPBGKKJLLP(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("CameraFilterPack/TV_ARCADE" + MKEKCIPLJNC.name + "Day_");
+				Debug.LogWarning("_ScreenResolution" + MKEKCIPLJNC.name + "Dec");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -218,7 +218,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			AJECIBHAOAG();
+			CDJFAFNLEDP();
 		}
 	}
 
@@ -236,7 +236,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!JNJHPIJJLCP(MKEKCIPLJNC))
+			if (!CMJFPJJPBDC(MKEKCIPLJNC))
 			{
 				Debug.LogWarning("_TimeX" + MKEKCIPLJNC.name + "_TimeX");
 				return;
@@ -369,12 +369,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				KMEEJNBNAOK(LutTexture);
+				IAEKMLJLONA(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			HNFFHCLNBDN().SetFloat("ItemNameText", Blend);
-			NBPKMLMCHFN.SetTexture("checkpoint", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG(), (QualitySettings.activeColorSpace != 0) ? 0 : 0);
+			EFDEIFCDAFG().SetFloat("ItemsCountText", Blend);
+			HNFFHCLNBDN().SetTexture("checkpoint", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace != 0) ? 0 : 0);
 		}
 		else
 		{
@@ -396,9 +396,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 				LGJBGIDDGKK(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			HNFFHCLNBDN().SetFloat("_Intensity", Blend);
-			HNFFHCLNBDN().SetTexture("BitsData", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
+			HNFFHCLNBDN().SetFloat("_Blend", Blend);
+			FKEOGPDLBDD().SetTexture("BitsData", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BBIMPFGLDCP(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
 		}
 		else
 		{
@@ -521,7 +521,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!MPGGIBFHGHP(MKEKCIPLJNC))
+			if (!CMJFPJJPBDC(MKEKCIPLJNC))
 			{
 				Debug.LogWarning(".progress" + MKEKCIPLJNC.name + "RoomPlayersCountText");
 				return;
@@ -550,7 +550,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			AJECIBHAOAG();
+			IGBAMFGIBBI();
 		}
 	}
 
@@ -560,9 +560,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!JLLFEBOHAIA(MKEKCIPLJNC))
+			if (!EKNHDHDGEDM(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_Visualize" + MKEKCIPLJNC.name + "_TimeX");
+				Debug.LogWarning("_Visualize" + MKEKCIPLJNC.name + "CameraFilterPack/Blur_Steam");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -589,7 +589,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			AJECIBHAOAG();
+			IGBAMFGIBBI();
 		}
 	}
 
@@ -608,12 +608,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				NHPDNLKGOHL(LutTexture);
+				ILDGGEBDIDF(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			BBIMPFGLDCP().SetFloat("ReconnectAndRejoin() failed. Can only connect while in state 'Disconnected'. Current state: ", Blend);
-			EFDEIFCDAFG().SetTexture("_Value", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BBIMPFGLDCP(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
+			BBIMPFGLDCP().SetFloat("Reconnect() failed. Can only connect while in state 'Disconnected'. Current state: ", Blend);
+			GKILCDHJFEG().SetTexture("_Value", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
 		}
 		else
 		{
@@ -701,12 +701,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				EOCEOCBOFOO(LutTexture);
+				NEGEBFMDKLA(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			GKILCDHJFEG().SetFloat("_Distortion", Blend);
-			EFDEIFCDAFG().SetTexture("_TileTexDebug", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN(), (QualitySettings.activeColorSpace == ColorSpace.Gamma) ? 1 : 0);
+			HNFFHCLNBDN().SetFloat("_TimeX", Blend);
+			CECJJMKLEAK().SetTexture("_VelTex", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK(), (QualitySettings.activeColorSpace == ColorSpace.Gamma) ? 1 : 0);
 		}
 		else
 		{
@@ -757,9 +757,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!JNJHPIJJLCP(MKEKCIPLJNC))
+			if (!MGEILBOBBDO(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("Waiting to start" + MKEKCIPLJNC.name + "Joystick1Button");
+				Debug.LogWarning("In Network lobby" + MKEKCIPLJNC.name + "^");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -786,7 +786,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			CDJFAFNLEDP();
+			IGBAMFGIBBI();
 		}
 	}
 
@@ -801,12 +801,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				ILDGGEBDIDF(LutTexture);
+				DPFIBMMGOHN(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			CECJJMKLEAK().SetFloat("ComboText", Blend);
-			NBPKMLMCHFN.SetTexture("y", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN(), (QualitySettings.activeColorSpace != 0) ? 1 : 1);
+			CECJJMKLEAK().SetFloat("HPText", Blend);
+			FKEOGPDLBDD().SetTexture("b", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD(), (QualitySettings.activeColorSpace != 0) ? 1 : 1);
 		}
 		else
 		{
@@ -824,9 +824,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!EKNHDHDGEDM(MKEKCIPLJNC))
+			if (!EPLEBIIKBAG(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("EventSystem" + MKEKCIPLJNC.name + "blue");
+				Debug.LogWarning("PopulateMapsList" + MKEKCIPLJNC.name + "0,1,false");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -853,7 +853,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			SetIdentityLut();
+			FHLMGECFEOJ();
 		}
 	}
 
@@ -876,10 +876,10 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				EECJDBKEOII(LutTexture);
+				MCOFJFMKGDD(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			FKEOGPDLBDD().SetFloat("TwoHands", Blend);
+			GKILCDHJFEG().SetFloat("OneHand", Blend);
 			HNFFHCLNBDN().SetTexture("Tab1Content", PKINFPNDDAJ);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
 		}
@@ -933,12 +933,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				KMEEJNBNAOK(LutTexture);
+				ILDGGEBDIDF(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			HNFFHCLNBDN().SetFloat("_PosY", Blend);
-			HNFFHCLNBDN().SetTexture("_Value4", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
+			HNFFHCLNBDN().SetFloat("_PosX", Blend);
+			FKEOGPDLBDD().SetTexture("_Value4", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
 		}
 		else
 		{
@@ -986,12 +986,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				FOANBFFFFLE(LutTexture);
+				DPFIBMMGOHN(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			FKEOGPDLBDD().SetFloat("_ScreenResolution", Blend);
-			HNFFHCLNBDN().SetTexture("Editor", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BBIMPFGLDCP(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 1);
+			GKILCDHJFEG().SetFloat("_Value3", Blend);
+			FKEOGPDLBDD().SetTexture("Editor", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 1);
 		}
 		else
 		{
@@ -1010,12 +1010,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				LGJBGIDDGKK(LutTexture);
+				IAEKMLJLONA(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			HNFFHCLNBDN().SetFloat("st", Blend);
+			HNFFHCLNBDN().SetFloat("1", Blend);
 			HNFFHCLNBDN().SetTexture("_Value5", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG(), (QualitySettings.activeColorSpace != 0) ? 1 : 1);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD(), (QualitySettings.activeColorSpace != 0) ? 1 : 1);
 		}
 		else
 		{
@@ -1084,9 +1084,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!MGEILBOBBDO(MKEKCIPLJNC))
+			if (!JLLFEBOHAIA(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("IconImage" + MKEKCIPLJNC.name + "#exitmapeditor");
+				Debug.LogWarning("inventory.selected." + MKEKCIPLJNC.name + "MenuScene");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1113,7 +1113,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			IPFNHOJMIOD();
+			CDJFAFNLEDP();
 		}
 	}
 
@@ -1175,12 +1175,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				NEGEBFMDKLA(LutTexture);
+				NHPDNLKGOHL(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			FKEOGPDLBDD().SetFloat("_Value", Blend);
-			HNFFHCLNBDN().SetTexture("CameraFilterPack/Blend2Camera_ColorBurn", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
+			CECJJMKLEAK().SetFloat("_Value", Blend);
+			EFDEIFCDAFG().SetTexture("CameraFilterPack/Blend2Camera_Multiply", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
 		}
 		else
 		{
@@ -1202,9 +1202,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!JLLFEBOHAIA(MKEKCIPLJNC))
+			if (!JNJHPIJJLCP(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("RoomDescriptionText" + MKEKCIPLJNC.name + "_TimeX");
+				Debug.LogWarning("RoomDescriptionText" + MKEKCIPLJNC.name + "CameraFilterPack/TV_CompressionFX");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1231,7 +1231,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			IPFNHOJMIOD();
+			MGBOJGMOEGA();
 		}
 	}
 
@@ -1302,12 +1302,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				EECJDBKEOII(LutTexture);
+				NEGEBFMDKLA(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			NBPKMLMCHFN.SetFloat("isVisible", Blend);
-			HNFFHCLNBDN().SetTexture("Joystick1Button8", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace == ColorSpace.Linear) ? 1 : 0);
+			FKEOGPDLBDD().SetFloat("isVisible", Blend);
+			GKILCDHJFEG().SetTexture("Joystick1Button7", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG(), (QualitySettings.activeColorSpace == ColorSpace.Linear) ? 1 : 0);
 		}
 		else
 		{
@@ -1339,7 +1339,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			num = MKEKCIPLJNC.height;
 			if (!ValidDimensions(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("true" + MKEKCIPLJNC.name + "CameraFilterPack/TV_ARCADE");
+				Debug.LogWarning(".GoalProgress" + MKEKCIPLJNC.name + "_Fade");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1366,7 +1366,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			IGBAMFGIBBI();
+			BNLOEMBBDEJ();
 		}
 	}
 
@@ -1390,9 +1390,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!EPLEBIIKBAG(MKEKCIPLJNC))
+			if (!ValidDimensions(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_Value2" + MKEKCIPLJNC.name + "Joystick1Button12");
+				Debug.LogWarning("_Value2" + MKEKCIPLJNC.name + "Right Stick Click");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1419,7 +1419,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			MGBOJGMOEGA();
+			BNLOEMBBDEJ();
 		}
 	}
 
@@ -1458,9 +1458,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!MPGGIBFHGHP(MKEKCIPLJNC))
+			if (!EPLEBIIKBAG(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_LightIntensity" + MKEKCIPLJNC.name + "mapselector.filter.subscribedonly");
+				Debug.LogWarning("_LightIntensity" + MKEKCIPLJNC.name + "mapselector.filter.favoriteonly");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1487,7 +1487,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			BNLOEMBBDEJ();
+			MGBOJGMOEGA();
 		}
 	}
 
@@ -1565,9 +1565,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!JLLFEBOHAIA(MKEKCIPLJNC))
+			if (!CMJFPJJPBDC(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_Speed" + MKEKCIPLJNC.name + "\" for viewID ");
+				Debug.LogWarning("_Speed" + MKEKCIPLJNC.name + " By: ");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1594,7 +1594,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			IGBAMFGIBBI();
+			BEAEKDIPGKL();
 		}
 	}
 
@@ -1627,9 +1627,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!EKNHDHDGEDM(MKEKCIPLJNC))
+			if (!MGEILBOBBDO(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("_TimeX" + MKEKCIPLJNC.name + "_TimeX");
+				Debug.LogWarning("_TimeX" + MKEKCIPLJNC.name + "CameraFilterPack/Drawing_Manga_Color");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1656,7 +1656,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			MGBOJGMOEGA();
+			CDJFAFNLEDP();
 		}
 	}
 
@@ -1670,9 +1670,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!NGGDEJKBDEA(MKEKCIPLJNC))
+			if (!LMCNGPGKOPM(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("<b>" + MKEKCIPLJNC.name + "_ScreenResolution");
+				Debug.LogWarning("<b>" + MKEKCIPLJNC.name + "Color");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1699,7 +1699,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			IPFNHOJMIOD();
+			BNLOEMBBDEJ();
 		}
 	}
 
@@ -1722,12 +1722,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				NGAAKPPPOCG(LutTexture);
+				FLLGMAPEKGA(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Clamp;
-			HNFFHCLNBDN().SetFloat("action", Blend);
-			HNFFHCLNBDN().SetTexture("Saved as: ", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK(), (QualitySettings.activeColorSpace != 0) ? 1 : 1);
+			FKEOGPDLBDD().SetFloat("settings.volume.menu", Blend);
+			FKEOGPDLBDD().SetTexture("Saved as: ", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN(), (QualitySettings.activeColorSpace != 0) ? 1 : 1);
 		}
 		else
 		{
@@ -1749,9 +1749,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 				OGPMOJMLBLL(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			NBPKMLMCHFN.SetFloat("DontDestroy", Blend);
-			BBIMPFGLDCP().SetTexture("1", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 1);
+			EFDEIFCDAFG().SetFloat("couldn't be found!", Blend);
+			BBIMPFGLDCP().SetTexture("/", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 1 : 1);
 		}
 		else
 		{
@@ -1770,12 +1770,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				MEHFAHKIKAB(LutTexture);
+				OGPMOJMLBLL(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			FKEOGPDLBDD().SetFloat("_Value", Blend);
-			CECJJMKLEAK().SetTexture("turn: {0:0}", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
+			NBPKMLMCHFN.SetFloat("_TimeX", Blend);
+			FKEOGPDLBDD().SetTexture("elapsed: {0:0.000}", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BBIMPFGLDCP(), (QualitySettings.activeColorSpace != 0) ? 1 : 0);
 		}
 		else
 		{
@@ -1818,7 +1818,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!EKNHDHDGEDM(MKEKCIPLJNC))
+			if (!MPGGIBFHGHP(MKEKCIPLJNC))
 			{
 				Debug.LogWarning("_Red_G" + MKEKCIPLJNC.name + "PublishButton");
 				return;
@@ -1847,7 +1847,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			JFDPEFDIHAM();
+			CDJFAFNLEDP();
 		}
 	}
 
@@ -1899,12 +1899,12 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 			}
 			if (PKINFPNDDAJ == null)
 			{
-				EECJDBKEOII(LutTexture);
+				KMEEJNBNAOK(LutTexture);
 			}
 			PKINFPNDDAJ.wrapMode = TextureWrapMode.Repeat;
-			BBIMPFGLDCP().SetFloat("SlidingArea", Blend);
-			BBIMPFGLDCP().SetTexture("Joystick1Button1", PKINFPNDDAJ);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD(), (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 0 : 0);
+			CECJJMKLEAK().SetFloat("ScrollPanel", Blend);
+			BBIMPFGLDCP().SetTexture("Joystick1Button0", PKINFPNDDAJ);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN, (QualitySettings.activeColorSpace != ColorSpace.Linear) ? 0 : 0);
 		}
 		else
 		{
@@ -1918,9 +1918,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!MPGGIBFHGHP(MKEKCIPLJNC))
+			if (!HMPBGKKJLLP(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("CameraFilterPack/Distortion_BlackHole" + MKEKCIPLJNC.name + "LoadMapCanvas");
+				Debug.LogWarning("_ScreenResolution" + MKEKCIPLJNC.name + "Data/Editor/leveltemplate");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1947,7 +1947,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			SetIdentityLut();
+			BNLOEMBBDEJ();
 		}
 	}
 
@@ -1957,9 +1957,9 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		{
 			int num = MKEKCIPLJNC.width * MKEKCIPLJNC.height;
 			num = MKEKCIPLJNC.height;
-			if (!HMPBGKKJLLP(MKEKCIPLJNC))
+			if (!JNJHPIJJLCP(MKEKCIPLJNC))
 			{
-				Debug.LogWarning("UI" + MKEKCIPLJNC.name + "NO");
+				Debug.LogWarning("Right" + MKEKCIPLJNC.name + "YES");
 				return;
 			}
 			Color[] pixels = MKEKCIPLJNC.GetPixels();
@@ -1986,7 +1986,7 @@ public class CameraFilterPack_Lut_Plus : MonoBehaviour
 		}
 		else
 		{
-			AJECIBHAOAG();
+			IPFNHOJMIOD();
 		}
 	}
 

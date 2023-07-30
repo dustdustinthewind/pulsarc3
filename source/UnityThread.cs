@@ -12,32 +12,7 @@ public class UnityThread : MonoBehaviour
 	{
 		internal IEnumerator LHCIHJOHGEJ;
 
-		internal void FFEGPHJKMFK()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void LOEAMHGMMPK()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void MGENGAEDACG()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void FCAGEDLBBHD()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void DNIMHEKGJHB()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void PIJAOCFAPKC()
+		internal void EGKGJJGAPMN()
 		{
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
@@ -47,22 +22,7 @@ public class UnityThread : MonoBehaviour
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
 
-		internal void JDELIMPGFDJ()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void KGKMOLCPDIH()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void FHFECFLBHMA()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void BDGDIDPDBHG()
+		internal void OLIGLEMPFOP()
 		{
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
@@ -72,7 +32,7 @@ public class UnityThread : MonoBehaviour
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
 
-		internal void BMAOCLKPNNC()
+		internal void AEINPAGJFME()
 		{
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
@@ -82,87 +42,12 @@ public class UnityThread : MonoBehaviour
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
 
-		internal void BJMAIJDIKCN()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void JKEDCEOCPJO()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void OFHCGKJFGDI()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
 		internal void LNDGINDKPFA()
 		{
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
 
-		internal void EGKGJJGAPMN()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void DBFPGFHEGKA()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void GBKBDKHPLKG()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void FJDBPPKABJE()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void FDAIFOAGDLA()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void DKGPCPBNDPK()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void HBJFIOJFBHC()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void IGFOBPKFCDJ()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void AEINPAGJFME()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void BKNHHGBPLGH()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void AGJKEBOPIOC()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void BFEABMIFIEE()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void FHIJCPPECHA()
+		internal void KFNBKFELFLH()
 		{
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
@@ -172,12 +57,7 @@ public class UnityThread : MonoBehaviour
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
 
-		internal void OFLDIMDDLHM()
-		{
-			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-		}
-
-		internal void OLIGLEMPFOP()
+		internal void LOEAMHGMMPK()
 		{
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
@@ -187,12 +67,57 @@ public class UnityThread : MonoBehaviour
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
 
+		internal void DKGPCPBNDPK()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
 		internal void EKHOOPGPPGE()
 		{
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
 
-		internal void KFNBKFELFLH()
+		internal void JDELIMPGFDJ()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
+		internal void GBKBDKHPLKG()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
+		internal void BKNHHGBPLGH()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
+		internal void JKEDCEOCPJO()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
+		internal void BDGDIDPDBHG()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
+		internal void BFEABMIFIEE()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
+		internal void OFHCGKJFGDI()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
+		internal void FFEGPHJKMFK()
+		{
+			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+		}
+
+		internal void DBFPGFHEGKA()
 		{
 			BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 		}
@@ -218,38 +143,21 @@ public class UnityThread : MonoBehaviour
 
 	private static volatile bool LOFNLIACCDM = true;
 
-	public void POIMNOBDBBN()
+	public static void NDLCCIKGADG(bool IDNLBGOCOEK = false)
 	{
-		if (!OIKBOMKFDGM)
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
 		{
-			DIFHBHMJHFJ.Clear();
-			lock (LCDDNCEKPPA)
+			GameObject gameObject = new GameObject("_Size");
+			if (!IDNLBGOCOEK)
 			{
-				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
-				LCDDNCEKPPA.Clear();
-				OIKBOMKFDGM = false;
+				gameObject.hideFlags = (HideFlags)88;
 			}
-			for (int i = 1; i < DIFHBHMJHFJ.Count; i += 0)
-			{
-				DIFHBHMJHFJ[i]();
-			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
 		}
 	}
 
-	public static void executeInUpdate(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("action");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = false;
-		}
-	}
-
-	public void ODAIMOJLJOF()
+	public void IMGGCJICLHK()
 	{
 		if (BFPIJFMDBGF == this)
 		{
@@ -257,86 +165,53 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public void HEHOKHLEDAL()
+	public void GGHEPDCEHCK()
 	{
-		if (!LOFNLIACCDM)
+		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
+	}
+
+	public static void PPDPNMAKBHN(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
 		{
-			DLFAHDLMGAI.Clear();
-			lock (FJJFDDKDEBB)
-			{
-				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
-				FJJFDDKDEBB.Clear();
-				LOFNLIACCDM = true;
-			}
-			for (int i = 1; i < DLFAHDLMGAI.Count; i += 0)
-			{
-				DLFAHDLMGAI[i]();
-			}
+			throw new ArgumentNullException("CameraFilterPack/3D_Shield");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = true;
 		}
 	}
 
-	public void FixedUpdate()
-	{
-		if (!LOFNLIACCDM)
-		{
-			DLFAHDLMGAI.Clear();
-			lock (FJJFDDKDEBB)
-			{
-				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
-				FJJFDDKDEBB.Clear();
-				LOFNLIACCDM = true;
-			}
-			for (int i = 0; i < DLFAHDLMGAI.Count; i++)
-			{
-				DLFAHDLMGAI[i]();
-			}
-		}
-	}
-
-	public static void BIKMBJAKNMC(IEnumerator LHCIHJOHGEJ)
+	public static void OCEICKIKBPH(IEnumerator LHCIHJOHGEJ)
 	{
 		if (BFPIJFMDBGF != null)
 		{
-			GIGIMBEMFLA(delegate
+			JBAAJIMECNO(delegate
 			{
 				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
 			});
 		}
 	}
 
-	public static void IMGOAPIKJON(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("PLEASE WAIT");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.DontSaveInEditor | HideFlags.DontUnloadUnusedAsset);
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public static void DEEMJDDNCHP(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("Failed to InstantiateSceneObject prefab: ");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.HideInInspector | HideFlags.DontSaveInEditor | HideFlags.NotEditable | HideFlags.DontSaveInBuild);
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public static void KEBMIJANMJO(Action LHCIHJOHGEJ)
+	public static void executeInLateUpdate(Action LHCIHJOHGEJ)
 	{
 		if (LHCIHJOHGEJ == null)
 		{
-			throw new ArgumentNullException("_ScreenResolution");
+			throw new ArgumentNullException("action");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = false;
+		}
+	}
+
+	public static void ALPHPJFGDKC(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("The shader ");
 		}
 		lock (LCDDNCEKPPA)
 		{
@@ -345,7 +220,12 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public void FABMDEHEDNO()
+	public void Awake()
+	{
+		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
+	}
+
+	public void AEEGKLABFLN()
 	{
 		if (!OIKBOMKFDGM)
 		{
@@ -356,42 +236,112 @@ public class UnityThread : MonoBehaviour
 				LCDDNCEKPPA.Clear();
 				OIKBOMKFDGM = true;
 			}
-			for (int i = 0; i < DIFHBHMJHFJ.Count; i++)
+			for (int i = 0; i < DIFHBHMJHFJ.Count; i += 0)
 			{
 				DIFHBHMJHFJ[i]();
 			}
 		}
 	}
 
-	public static void EKONJNOCDLM(bool IDNLBGOCOEK = false)
+	public static void initUnityThread(bool IDNLBGOCOEK = false)
 	{
 		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
 		{
-			GameObject gameObject = new GameObject("_Speed");
+			GameObject gameObject = new GameObject("MainThreadExecuter");
 			if (!IDNLBGOCOEK)
 			{
-				gameObject.hideFlags = HideFlags.HideInInspector | HideFlags.DontSaveInBuild;
+				gameObject.hideFlags = HideFlags.HideAndDontSave;
 			}
 			UnityEngine.Object.DontDestroyOnLoad(gameObject);
 			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
 		}
 	}
 
-	public void FGLFIBLBGOM()
+	public void FBMDHDBELEK()
 	{
-		if (!BECMAFFONOK)
+		if (!OIKBOMKFDGM)
 		{
-			IPAENCDKHNN.Clear();
-			lock (ICPKFKHEJMD)
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
 			{
-				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
-				ICPKFKHEJMD.Clear();
-				BECMAFFONOK = true;
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = false;
 			}
-			for (int i = 1; i < IPAENCDKHNN.Count; i++)
+			for (int i = 1; i < DIFHBHMJHFJ.Count; i++)
 			{
-				IPAENCDKHNN[i]();
+				DIFHBHMJHFJ[i]();
 			}
+		}
+	}
+
+	public void NCPAFCKGJEA()
+	{
+		if (!OIKBOMKFDGM)
+		{
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
+			{
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = true;
+			}
+			for (int i = 1; i < DIFHBHMJHFJ.Count; i++)
+			{
+				DIFHBHMJHFJ[i]();
+			}
+		}
+	}
+
+	public static void ALAGMPLDDKK(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("DISTORT");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = false;
+		}
+	}
+
+	public static void EBFBNHFEAAI(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("SetScale");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = true;
+		}
+	}
+
+	public void FEONBLOKEBF()
+	{
+		if (!LOFNLIACCDM)
+		{
+			DLFAHDLMGAI.Clear();
+			lock (FJJFDDKDEBB)
+			{
+				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
+				FJJFDDKDEBB.Clear();
+				LOFNLIACCDM = false;
+			}
+			for (int i = 1; i < DLFAHDLMGAI.Count; i += 0)
+			{
+				DLFAHDLMGAI[i]();
+			}
+		}
+	}
+
+	public void HLLHJIDOOGA()
+	{
+		if (BFPIJFMDBGF == this)
+		{
+			BFPIJFMDBGF = null;
 		}
 	}
 
@@ -413,99 +363,11 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public static void BMIFHOOCDPL(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			MANOGNAIFFP(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public static void EODPGFNJDJH(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("_BorderColor");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = (HideFlags)(-118);
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public void APMCMFKPPNE()
-	{
-		if (!LOFNLIACCDM)
-		{
-			DLFAHDLMGAI.Clear();
-			lock (FJJFDDKDEBB)
-			{
-				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
-				FJJFDDKDEBB.Clear();
-				LOFNLIACCDM = false;
-			}
-			for (int i = 0; i < DLFAHDLMGAI.Count; i += 0)
-			{
-				DLFAHDLMGAI[i]();
-			}
-		}
-	}
-
-	public static void GGBPLBDLHGK(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("_Value3");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = ~HideFlags.DontSaveInBuild;
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public void DONMAICHHFK()
-	{
-		if (!BECMAFFONOK)
-		{
-			IPAENCDKHNN.Clear();
-			lock (ICPKFKHEJMD)
-			{
-				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
-				ICPKFKHEJMD.Clear();
-				BECMAFFONOK = false;
-			}
-			for (int i = 1; i < IPAENCDKHNN.Count; i++)
-			{
-				IPAENCDKHNN[i]();
-			}
-		}
-	}
-
-	public static void BPJOCHBNOFI(Action LHCIHJOHGEJ)
+	public static void executeInFixedUpdate(Action LHCIHJOHGEJ)
 	{
 		if (LHCIHJOHGEJ == null)
 		{
-			throw new ArgumentNullException(" Loaded: ");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = true;
-		}
-	}
-
-	public static void IEMFGLPHHGG(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("skin.");
+			throw new ArgumentNullException("action");
 		}
 		lock (FJJFDDKDEBB)
 		{
@@ -514,96 +376,47 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public static void EJCFMPEGKGO(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("#close");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = false;
-		}
-	}
-
-	public static void BMJKLKEMIGJ(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("#,0.00");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public void DHNANELONED()
-	{
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-	}
-
-	public static void LGHEJJFGGAN(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("_LightIntensity");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = false;
-		}
-	}
-
-	public static void initUnityThread(bool IDNLBGOCOEK = false)
+	public static void BGALFIIJPBI(bool IDNLBGOCOEK = false)
 	{
 		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
 		{
-			GameObject gameObject = new GameObject("MainThreadExecuter");
+			GameObject gameObject = new GameObject("_TimeX");
 			if (!IDNLBGOCOEK)
 			{
-				gameObject.hideFlags = HideFlags.HideAndDontSave;
+				gameObject.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.DontSaveInBuild);
 			}
 			UnityEngine.Object.DontDestroyOnLoad(gameObject);
 			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
 		}
 	}
 
-	public static void LDMNKCJCFGA(Action LHCIHJOHGEJ)
+	public void IBPAMDEAGJL()
 	{
-		if (LHCIHJOHGEJ == null)
+		if (BFPIJFMDBGF == this)
 		{
-			throw new ArgumentNullException("y");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = false;
+			BFPIJFMDBGF = null;
 		}
 	}
 
-	public void LCDJFJIBADI()
+	public void PIOIOLNNFDC()
 	{
-		if (!OIKBOMKFDGM)
+		if (!BECMAFFONOK)
 		{
-			DIFHBHMJHFJ.Clear();
-			lock (LCDDNCEKPPA)
+			IPAENCDKHNN.Clear();
+			lock (ICPKFKHEJMD)
 			{
-				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
-				LCDDNCEKPPA.Clear();
-				OIKBOMKFDGM = false;
+				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
+				ICPKFKHEJMD.Clear();
+				BECMAFFONOK = true;
 			}
-			for (int i = 0; i < DIFHBHMJHFJ.Count; i++)
+			for (int i = 0; i < IPAENCDKHNN.Count; i++)
 			{
-				DIFHBHMJHFJ[i]();
+				IPAENCDKHNN[i]();
 			}
 		}
 	}
 
-	public static void KJGMIENLHCO(IEnumerator LHCIHJOHGEJ)
+	public static void HLMLIOBDLLI(IEnumerator LHCIHJOHGEJ)
 	{
 		if (BFPIJFMDBGF != null)
 		{
@@ -614,7 +427,7 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public void KNMHJOPHALM()
+	public void LGOHDOFFKIB()
 	{
 		if (!LOFNLIACCDM)
 		{
@@ -623,29 +436,82 @@ public class UnityThread : MonoBehaviour
 			{
 				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
 				FJJFDDKDEBB.Clear();
-				LOFNLIACCDM = true;
+				LOFNLIACCDM = false;
 			}
-			for (int i = 1; i < DLFAHDLMGAI.Count; i++)
+			for (int i = 1; i < DLFAHDLMGAI.Count; i += 0)
 			{
 				DLFAHDLMGAI[i]();
 			}
 		}
 	}
 
-	public static void PAANFNKJMGP(Action LHCIHJOHGEJ)
+	public static void OJGBGHJPNKE(bool IDNLBGOCOEK = false)
 	{
-		if (LHCIHJOHGEJ == null)
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
 		{
-			throw new ArgumentNullException("https://vk.com/khb.soft");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = false;
+			GameObject gameObject = new GameObject("#yes");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.HideInInspector | HideFlags.NotEditable | HideFlags.DontSaveInBuild | HideFlags.DontUnloadUnusedAsset);
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
 		}
 	}
 
-	public void FOLDLDLFFLM()
+	public static void PFNPMICBAFN(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("false");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = true;
+		}
+	}
+
+	public static void ILBEOEODBJH(bool IDNLBGOCOEK = false)
+	{
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
+		{
+			GameObject gameObject = new GameObject("SupportLogger OnFailedToConnectToPhoton(");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.HideInInspector | HideFlags.DontSaveInEditor | HideFlags.NotEditable);
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
+		}
+	}
+
+	public static void executeCoroutine(IEnumerator LHCIHJOHGEJ)
+	{
+		if (BFPIJFMDBGF != null)
+		{
+			executeInUpdate(delegate
+			{
+				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+			});
+		}
+	}
+
+	public static void BOKMBMJPAOA(bool IDNLBGOCOEK = false)
+	{
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
+		{
+			GameObject gameObject = new GameObject("[LevelEditorScene] Print Audio Wave: Done");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = ~HideFlags.NotEditable;
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
+		}
+	}
+
+	public void MJNPIDGNJMK()
 	{
 		if (!OIKBOMKFDGM)
 		{
@@ -663,79 +529,11 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public static void OJGBGHJPNKE(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("_NumberOfWaves");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = ~(HideFlags.HideInInspector | HideFlags.NotEditable | HideFlags.DontSaveInBuild | HideFlags.DontUnloadUnusedAsset);
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public void MBKLLICJBDM()
-	{
-		if (!BECMAFFONOK)
-		{
-			IPAENCDKHNN.Clear();
-			lock (ICPKFKHEJMD)
-			{
-				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
-				ICPKFKHEJMD.Clear();
-				BECMAFFONOK = false;
-			}
-			for (int i = 0; i < IPAENCDKHNN.Count; i += 0)
-			{
-				IPAENCDKHNN[i]();
-			}
-		}
-	}
-
-	public static void BJDOBCAOKBO(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			HMGGGFHGEBJ(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public static void LOONCHEGHLP(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			NKAJGELBEML(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public static void HADIBLEDGEA(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("CameraFilterPack/Glasses_On");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = (HideFlags)(-111);
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public static void CEJKFJDKFMO(Action LHCIHJOHGEJ)
+	public static void JCKOHBFEHCO(Action LHCIHJOHGEJ)
 	{
 		if (LHCIHJOHGEJ == null)
 		{
-			throw new ArgumentNullException("Joystick1Button4");
+			throw new ArgumentNullException("Vertical");
 		}
 		lock (ICPKFKHEJMD)
 		{
@@ -744,225 +542,7 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public void FODKODGPPDA()
-	{
-		if (BFPIJFMDBGF == this)
-		{
-			BFPIJFMDBGF = null;
-		}
-	}
-
-	public void PLBOFEPBPKC()
-	{
-		if (BFPIJFMDBGF == this)
-		{
-			BFPIJFMDBGF = null;
-		}
-	}
-
-	public void MIGFKFBOBDK()
-	{
-		if (!LOFNLIACCDM)
-		{
-			DLFAHDLMGAI.Clear();
-			lock (FJJFDDKDEBB)
-			{
-				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
-				FJJFDDKDEBB.Clear();
-				LOFNLIACCDM = true;
-			}
-			for (int i = 0; i < DLFAHDLMGAI.Count; i++)
-			{
-				DLFAHDLMGAI[i]();
-			}
-		}
-	}
-
-	public static void HKONJMJNPFL(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject(".played");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = ~HideFlags.DontSaveInBuild;
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public static void LMNHPENKGHO(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException(".lastCheckpoint.incorrectScore");
-		}
-		lock (FJJFDDKDEBB)
-		{
-			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
-			LOFNLIACCDM = true;
-		}
-	}
-
-	public static void executeInLateUpdate(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("action");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = false;
-		}
-	}
-
-	public static void OENILFLFJJI(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("_ScreenResolution");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public static void GIGIMBEMFLA(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("(http|https)://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?\\.(jpg|jpeg|gif|png)");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public static void PHEHBJECONL(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("Player Connected");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public void AJPHCPCLOJD()
-	{
-		if (!BECMAFFONOK)
-		{
-			IPAENCDKHNN.Clear();
-			lock (ICPKFKHEJMD)
-			{
-				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
-				ICPKFKHEJMD.Clear();
-				BECMAFFONOK = true;
-			}
-			for (int i = 1; i < IPAENCDKHNN.Count; i++)
-			{
-				IPAENCDKHNN[i]();
-			}
-		}
-	}
-
-	public static void OGGKKLMEBMN(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			LGHEJJFGGAN(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public static void BKHHLIBLFHB(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("player.ice");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = HideFlags.HideInInspector | HideFlags.DontSaveInEditor;
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public static void OKGFBCCAHBH(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("Item ");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = true;
-		}
-	}
-
-	public static void EINFPFNFKHA(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("maps.");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = false;
-		}
-	}
-
-	public void IKIDIJLIGOH()
-	{
-		if (!OIKBOMKFDGM)
-		{
-			DIFHBHMJHFJ.Clear();
-			lock (LCDDNCEKPPA)
-			{
-				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
-				LCDDNCEKPPA.Clear();
-				OIKBOMKFDGM = true;
-			}
-			for (int i = 0; i < DIFHBHMJHFJ.Count; i++)
-			{
-				DIFHBHMJHFJ[i]();
-			}
-		}
-	}
-
-	public void GOBHPAJFFDB()
-	{
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-	}
-
-	public static void AJDGCOLEAEM(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("maps.");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = false;
-		}
-	}
-
-	public void GEHMIFICFCF()
+	public void NOCJKDCPAIJ()
 	{
 		if (!BECMAFFONOK)
 		{
@@ -980,457 +560,7 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public static void CLFIOEEGCBJ(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("PublishMapButton");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = (HideFlags)76;
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public void FKDEEJFNNJC()
-	{
-		if (BFPIJFMDBGF == this)
-		{
-			BFPIJFMDBGF = null;
-		}
-	}
-
-	public static void HNPHJMABGDP(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("StopMusic");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = false;
-		}
-	}
-
-	public void EGEGNHLODAA()
-	{
-		if (!OIKBOMKFDGM)
-		{
-			DIFHBHMJHFJ.Clear();
-			lock (LCDDNCEKPPA)
-			{
-				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
-				LCDDNCEKPPA.Clear();
-				OIKBOMKFDGM = false;
-			}
-			for (int i = 0; i < DIFHBHMJHFJ.Count; i++)
-			{
-				DIFHBHMJHFJ[i]();
-			}
-		}
-	}
-
-	public static void executeInFixedUpdate(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("action");
-		}
-		lock (FJJFDDKDEBB)
-		{
-			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
-			LOFNLIACCDM = false;
-		}
-	}
-
-	public static void EBNDBKCGKJA(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("TStart");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = ~HideFlags.DontUnloadUnusedAsset;
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public static void NKAJGELBEML(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("_Speed");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public void MBHKDCGKDFF()
-	{
-		if (!LOFNLIACCDM)
-		{
-			DLFAHDLMGAI.Clear();
-			lock (FJJFDDKDEBB)
-			{
-				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
-				FJJFDDKDEBB.Clear();
-				LOFNLIACCDM = true;
-			}
-			for (int i = 1; i < DLFAHDLMGAI.Count; i += 0)
-			{
-				DLFAHDLMGAI[i]();
-			}
-		}
-	}
-
-	public void AJIKPEIGACI()
-	{
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-	}
-
-	public void FNALDLBGCJA()
-	{
-		if (!LOFNLIACCDM)
-		{
-			DLFAHDLMGAI.Clear();
-			lock (FJJFDDKDEBB)
-			{
-				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
-				FJJFDDKDEBB.Clear();
-				LOFNLIACCDM = true;
-			}
-			for (int i = 1; i < DLFAHDLMGAI.Count; i++)
-			{
-				DLFAHDLMGAI[i]();
-			}
-		}
-	}
-
-	public void PEMPABLNJHL()
-	{
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-	}
-
-	public static void FKCFFJOPHFF(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			EJCFMPEGKGO(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public void PIOIOLNNFDC()
-	{
-		if (!BECMAFFONOK)
-		{
-			IPAENCDKHNN.Clear();
-			lock (ICPKFKHEJMD)
-			{
-				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
-				ICPKFKHEJMD.Clear();
-				BECMAFFONOK = false;
-			}
-			for (int i = 0; i < IPAENCDKHNN.Count; i++)
-			{
-				IPAENCDKHNN[i]();
-			}
-		}
-	}
-
-	public void DLMPALHKMON()
-	{
-		if (BFPIJFMDBGF == this)
-		{
-			BFPIJFMDBGF = null;
-		}
-	}
-
-	public void Awake()
-	{
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-	}
-
-	public static void MANOGNAIFFP(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("_Size");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public static void GJKPHIOEGAM(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("[PlayerController] ");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = false;
-		}
-	}
-
-	public void HNILMGEKDEC()
-	{
-		if (BFPIJFMDBGF == this)
-		{
-			BFPIJFMDBGF = null;
-		}
-	}
-
-	public static void HMGGGFHGEBJ(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("_Value7");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public static void CCPLHGJIJNK(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("CameraFilterPack_Atmosphere_Rain_FX");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = false;
-		}
-	}
-
-	public static void NMLBHLGADBI(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			HMPACBMHFKB(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public void CBIBDOIBJAI()
-	{
-		if (BFPIJFMDBGF == this)
-		{
-			BFPIJFMDBGF = null;
-		}
-	}
-
-	public static void MPIJDKONKFA(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("_ScreenResolution");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public void OnDisable()
-	{
-		if (BFPIJFMDBGF == this)
-		{
-			BFPIJFMDBGF = null;
-		}
-	}
-
-	public static void KBFFMCLFCPC(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("_Value5");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = true;
-		}
-	}
-
-	public static void EFOPFEFDKJK(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			GIGIMBEMFLA(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public void DAHIMKKFNPH()
-	{
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-	}
-
-	public void KMGANMFEEJJ()
-	{
-		if (!BECMAFFONOK)
-		{
-			IPAENCDKHNN.Clear();
-			lock (ICPKFKHEJMD)
-			{
-				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
-				ICPKFKHEJMD.Clear();
-				BECMAFFONOK = true;
-			}
-			for (int i = 1; i < IPAENCDKHNN.Count; i++)
-			{
-				IPAENCDKHNN[i]();
-			}
-		}
-	}
-
-	public static void GGCHBHLFAPL(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("Items/");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = (HideFlags)79;
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public static void LKMMFLFKCMJ(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			LGHEJJFGGAN(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public static void NFOBBLIIBFC(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("Bad parameters for setbool! Use <key> <value>");
-		}
-		lock (ICPKFKHEJMD)
-		{
-			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
-			BECMAFFONOK = true;
-		}
-	}
-
-	public void LLJLDLLNFBH()
-	{
-		if (!OIKBOMKFDGM)
-		{
-			DIFHBHMJHFJ.Clear();
-			lock (LCDDNCEKPPA)
-			{
-				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
-				LCDDNCEKPPA.Clear();
-				OIKBOMKFDGM = true;
-			}
-			for (int i = 1; i < DIFHBHMJHFJ.Count; i++)
-			{
-				DIFHBHMJHFJ[i]();
-			}
-		}
-	}
-
-	public static void PJODGCNONEB(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("CONTRAST");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public void JJHDNCHBIFB()
-	{
-		if (!BECMAFFONOK)
-		{
-			IPAENCDKHNN.Clear();
-			lock (ICPKFKHEJMD)
-			{
-				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
-				ICPKFKHEJMD.Clear();
-				BECMAFFONOK = false;
-			}
-			for (int i = 1; i < IPAENCDKHNN.Count; i++)
-			{
-				IPAENCDKHNN[i]();
-			}
-		}
-	}
-
-	public static void HMPACBMHFKB(Action LHCIHJOHGEJ)
-	{
-		if (LHCIHJOHGEJ == null)
-		{
-			throw new ArgumentNullException("[PlayerController] ");
-		}
-		lock (LCDDNCEKPPA)
-		{
-			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
-			OIKBOMKFDGM = true;
-		}
-	}
-
-	public static void MCGHECJEIPE(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject(".mp3");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public void OOGIHDLBBLM()
-	{
-		if (BFPIJFMDBGF == this)
-		{
-			BFPIJFMDBGF = null;
-		}
-	}
-
-	public void KNBFLJKOPHB()
+	public void BDGLFDNFLAF()
 	{
 		if (!LOFNLIACCDM)
 		{
@@ -1448,7 +578,33 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public void ODGMCJILIHF()
+	public static void HIBHJLHMAPE(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("red");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = true;
+		}
+	}
+
+	public static void ELLCPNELFII(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException(").png");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = true;
+		}
+	}
+
+	public void DFENCIHAADO()
 	{
 		if (BFPIJFMDBGF == this)
 		{
@@ -1456,14 +612,570 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public static void LDNDMKKMKPP(bool IDNLBGOCOEK = false)
+	public static void PLFBCNDGNKJ(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("_Value3");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = true;
+		}
+	}
+
+	public static void PCILLPBGMKE(bool IDNLBGOCOEK = false)
 	{
 		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
 		{
-			GameObject gameObject = new GameObject("maps.");
+			GameObject gameObject = new GameObject("The directory was created successfully at ");
 			if (!IDNLBGOCOEK)
 			{
-				gameObject.hideFlags = (HideFlags)78;
+				gameObject.hideFlags = (HideFlags)97;
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
+		}
+	}
+
+	public static void FGPDCNBAHMH(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("st");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = true;
+		}
+	}
+
+	public static void CEJKFJDKFMO(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException(".lastCheckpoint.comboScore");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = true;
+		}
+	}
+
+	public static void ILKKIFNNNNN(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("_Value3");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = true;
+		}
+	}
+
+	public static void NAADBLIKPEF(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("mapselector.filter.favoriteonly");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = true;
+		}
+	}
+
+	public void IHHNCCOGLPN()
+	{
+		if (BFPIJFMDBGF == this)
+		{
+			BFPIJFMDBGF = null;
+		}
+	}
+
+	public static void executeInUpdate(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("action");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = false;
+		}
+	}
+
+	public static void NNAGBBNHHLD(bool IDNLBGOCOEK = false)
+	{
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
+		{
+			GameObject gameObject = new GameObject("LastHighScoreText");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.NotEditable | HideFlags.DontUnloadUnusedAsset;
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
+		}
+	}
+
+	public static void CEKCHICMNHG(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("Set satellite lerp speed");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = false;
+		}
+	}
+
+	public static void MFJFGEMPNLD(bool IDNLBGOCOEK = false)
+	{
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
+		{
+			GameObject gameObject = new GameObject("_Visualize");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = (HideFlags)77;
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
+		}
+	}
+
+	public void DMGFMNMCBHK()
+	{
+		if (!BECMAFFONOK)
+		{
+			IPAENCDKHNN.Clear();
+			lock (ICPKFKHEJMD)
+			{
+				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
+				ICPKFKHEJMD.Clear();
+				BECMAFFONOK = false;
+			}
+			for (int i = 0; i < IPAENCDKHNN.Count; i++)
+			{
+				IPAENCDKHNN[i]();
+			}
+		}
+	}
+
+	public void KMEONPMCNJG()
+	{
+		if (!OIKBOMKFDGM)
+		{
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
+			{
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = true;
+			}
+			for (int i = 0; i < DIFHBHMJHFJ.Count; i++)
+			{
+				DIFHBHMJHFJ[i]();
+			}
+		}
+	}
+
+	public void EBPAOCJEJGE()
+	{
+		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
+	}
+
+	public static void NONEGCGIHJI(bool IDNLBGOCOEK = false)
+	{
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
+		{
+			GameObject gameObject = new GameObject(" ");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = (HideFlags)(-67);
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
+		}
+	}
+
+	public static void FLODOHAIPCO(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("Edited unlock conditions");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = true;
+		}
+	}
+
+	public void FixedUpdate()
+	{
+		if (!LOFNLIACCDM)
+		{
+			DLFAHDLMGAI.Clear();
+			lock (FJJFDDKDEBB)
+			{
+				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
+				FJJFDDKDEBB.Clear();
+				LOFNLIACCDM = true;
+			}
+			for (int i = 0; i < DLFAHDLMGAI.Count; i++)
+			{
+				DLFAHDLMGAI[i]();
+			}
+		}
+	}
+
+	public static void DHHIAAALJNI(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("Skipping region because it's not in PhotonServerSettings.EnabledRegions: ");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = false;
+		}
+	}
+
+	public void KMOCDAOKGLI()
+	{
+		if (BFPIJFMDBGF == this)
+		{
+			BFPIJFMDBGF = null;
+		}
+	}
+
+	public static void DENDHDNOKHA(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("[PlayerController] ");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = true;
+		}
+	}
+
+	public static void AEGOKCJBHHB(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("ExitButton");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = false;
+		}
+	}
+
+	public void AJCCLFDOLDE()
+	{
+		if (!BECMAFFONOK)
+		{
+			IPAENCDKHNN.Clear();
+			lock (ICPKFKHEJMD)
+			{
+				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
+				ICPKFKHEJMD.Clear();
+				BECMAFFONOK = false;
+			}
+			for (int i = 1; i < IPAENCDKHNN.Count; i += 0)
+			{
+				IPAENCDKHNN[i]();
+			}
+		}
+	}
+
+	public void FHNKCJGMJAE()
+	{
+		if (!LOFNLIACCDM)
+		{
+			DLFAHDLMGAI.Clear();
+			lock (FJJFDDKDEBB)
+			{
+				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
+				FJJFDDKDEBB.Clear();
+				LOFNLIACCDM = false;
+			}
+			for (int i = 1; i < DLFAHDLMGAI.Count; i++)
+			{
+				DLFAHDLMGAI[i]();
+			}
+		}
+	}
+
+	public static void FINHJIEEBPL(IEnumerator LHCIHJOHGEJ)
+	{
+		if (BFPIJFMDBGF != null)
+		{
+			KEBMIJANMJO(delegate
+			{
+				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+			});
+		}
+	}
+
+	public static void ALMEGOAIMIM(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("received</b>\n#reason: ");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = false;
+		}
+	}
+
+	public void GHILDCBCDJI()
+	{
+		if (!OIKBOMKFDGM)
+		{
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
+			{
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = false;
+			}
+			for (int i = 0; i < DIFHBHMJHFJ.Count; i += 0)
+			{
+				DIFHBHMJHFJ[i]();
+			}
+		}
+	}
+
+	public static void LHFOCPNJFJI(bool IDNLBGOCOEK = false)
+	{
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
+		{
+			GameObject gameObject = new GameObject("inventory.selected.");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = ~(HideFlags.NotEditable | HideFlags.DontUnloadUnusedAsset);
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
+		}
+	}
+
+	public static void KEBMIJANMJO(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException(".wav");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = false;
+		}
+	}
+
+	public static void HEJLGKANKJP(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("player.quantum");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = true;
+		}
+	}
+
+	public void AHLPPGHAAOG()
+	{
+		if (!BECMAFFONOK)
+		{
+			IPAENCDKHNN.Clear();
+			lock (ICPKFKHEJMD)
+			{
+				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
+				ICPKFKHEJMD.Clear();
+				BECMAFFONOK = true;
+			}
+			for (int i = 0; i < IPAENCDKHNN.Count; i++)
+			{
+				IPAENCDKHNN[i]();
+			}
+		}
+	}
+
+	public void DPIPGGDNGHN()
+	{
+		if (!OIKBOMKFDGM)
+		{
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
+			{
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = true;
+			}
+			for (int i = 1; i < DIFHBHMJHFJ.Count; i += 0)
+			{
+				DIFHBHMJHFJ[i]();
+			}
+		}
+	}
+
+	public static void OENILFLFJJI(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("\\n");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = true;
+		}
+	}
+
+	public static void PBBFHJKPAHF(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("0");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = true;
+		}
+	}
+
+	public void KKLMPKLKAEM()
+	{
+		if (!OIKBOMKFDGM)
+		{
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
+			{
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = true;
+			}
+			for (int i = 0; i < DIFHBHMJHFJ.Count; i++)
+			{
+				DIFHBHMJHFJ[i]();
+			}
+		}
+	}
+
+	public void FKEJGBFDCAH()
+	{
+		if (BFPIJFMDBGF == this)
+		{
+			BFPIJFMDBGF = null;
+		}
+	}
+
+	public static void CMMBBDJIBEP(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("_BorderSize");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = false;
+		}
+	}
+
+	public void CIAHIJIOFIE()
+	{
+		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
+	}
+
+	public static void JBAAJIMECNO(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("_SecondTex");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = true;
+		}
+	}
+
+	public static void INEPKHCFFCJ(bool IDNLBGOCOEK = false)
+	{
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
+		{
+			GameObject gameObject = new GameObject("_Value");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = ~(HideFlags.NotEditable | HideFlags.DontSaveInBuild);
+			}
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
+		}
+	}
+
+	public void IKDADELOEID()
+	{
+		if (!LOFNLIACCDM)
+		{
+			DLFAHDLMGAI.Clear();
+			lock (FJJFDDKDEBB)
+			{
+				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
+				FJJFDDKDEBB.Clear();
+				LOFNLIACCDM = false;
+			}
+			for (int i = 0; i < DLFAHDLMGAI.Count; i += 0)
+			{
+				DLFAHDLMGAI[i]();
+			}
+		}
+	}
+
+	public static void BFLBPOIIKAP(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("_FixDistance");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = false;
+		}
+	}
+
+	public static void MFBLDNPPEHF(bool IDNLBGOCOEK = false)
+	{
+		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
+		{
+			GameObject gameObject = new GameObject("_Bullet_8");
+			if (!IDNLBGOCOEK)
+			{
+				gameObject.hideFlags = HideFlags.NotEditable | HideFlags.DontSaveInBuild | HideFlags.DontUnloadUnusedAsset;
 			}
 			UnityEngine.Object.DontDestroyOnLoad(gameObject);
 			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
@@ -1488,68 +1200,20 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public void CCDNJPNLGBN()
-	{
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-	}
-
-	public static void GFNBKALLMGD(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("_TimeX");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = ~(HideFlags.HideInHierarchy | HideFlags.HideInInspector);
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public static void executeCoroutine(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			executeInUpdate(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public static void AACCANJOMGN(Action LHCIHJOHGEJ)
+	public static void OMGOJOIFDJA(Action LHCIHJOHGEJ)
 	{
 		if (LHCIHJOHGEJ == null)
 		{
-			throw new ArgumentNullException("_Bloom3");
+			throw new ArgumentNullException("player.circle");
 		}
-		lock (FJJFDDKDEBB)
+		lock (ICPKFKHEJMD)
 		{
-			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
-			LOFNLIACCDM = false;
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = true;
 		}
 	}
 
-	public void EKECFMONIPL()
-	{
-		if (!LOFNLIACCDM)
-		{
-			DLFAHDLMGAI.Clear();
-			lock (FJJFDDKDEBB)
-			{
-				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
-				FJJFDDKDEBB.Clear();
-				LOFNLIACCDM = true;
-			}
-			for (int i = 1; i < DLFAHDLMGAI.Count; i += 0)
-			{
-				DLFAHDLMGAI[i]();
-			}
-		}
-	}
-
-	public void JMPPILHKLPO()
+	public void MDPLBDFCEAG()
 	{
 		if (!BECMAFFONOK)
 		{
@@ -1567,52 +1231,286 @@ public class UnityThread : MonoBehaviour
 		}
 	}
 
-	public static void AKIENJGEMCK(bool IDNLBGOCOEK = false)
-	{
-		if (!(BFPIJFMDBGF != null) && Application.isPlaying)
-		{
-			GameObject gameObject = new GameObject("ArcsHitsoundTimeDelaySlider");
-			if (!IDNLBGOCOEK)
-			{
-				gameObject.hideFlags = HideFlags.NotEditable | HideFlags.DontSaveInBuild;
-			}
-			UnityEngine.Object.DontDestroyOnLoad(gameObject);
-			BFPIJFMDBGF = gameObject.AddComponent<UnityThread>();
-		}
-	}
-
-	public void HCCMANDFEPL()
-	{
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-	}
-
-	public static void FINHJIEEBPL(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			PHEHBJECONL(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public static void MBPMNANABIO(IEnumerator LHCIHJOHGEJ)
-	{
-		if (BFPIJFMDBGF != null)
-		{
-			GIGIMBEMFLA(delegate
-			{
-				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
-			});
-		}
-	}
-
-	public void GJLKJAOBPJD()
+	public void JHJGJJKELJM()
 	{
 		if (BFPIJFMDBGF == this)
 		{
 			BFPIJFMDBGF = null;
+		}
+	}
+
+	public void NFLIMOKJHDE()
+	{
+		if (!LOFNLIACCDM)
+		{
+			DLFAHDLMGAI.Clear();
+			lock (FJJFDDKDEBB)
+			{
+				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
+				FJJFDDKDEBB.Clear();
+				LOFNLIACCDM = false;
+			}
+			for (int i = 0; i < DLFAHDLMGAI.Count; i += 0)
+			{
+				DLFAHDLMGAI[i]();
+			}
+		}
+	}
+
+	public void OnDisable()
+	{
+		if (BFPIJFMDBGF == this)
+		{
+			BFPIJFMDBGF = null;
+		}
+	}
+
+	public static void GGODFPCDHAD(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException(" Also make sure to disable sprite packing for this sprite.");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = true;
+		}
+	}
+
+	public static void LOONCHEGHLP(IEnumerator LHCIHJOHGEJ)
+	{
+		if (BFPIJFMDBGF != null)
+		{
+			DENDHDNOKHA(delegate
+			{
+				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+			});
+		}
+	}
+
+	public void MMBPLGGLPDB()
+	{
+		if (!OIKBOMKFDGM)
+		{
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
+			{
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = true;
+			}
+			for (int i = 1; i < DIFHBHMJHFJ.Count; i++)
+			{
+				DIFHBHMJHFJ[i]();
+			}
+		}
+	}
+
+	public void PJCONJNLCGK()
+	{
+		if (!LOFNLIACCDM)
+		{
+			DLFAHDLMGAI.Clear();
+			lock (FJJFDDKDEBB)
+			{
+				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
+				FJJFDDKDEBB.Clear();
+				LOFNLIACCDM = true;
+			}
+			for (int i = 0; i < DLFAHDLMGAI.Count; i++)
+			{
+				DLFAHDLMGAI[i]();
+			}
+		}
+	}
+
+	public void CCDAMMPPNBE()
+	{
+		if (!BECMAFFONOK)
+		{
+			IPAENCDKHNN.Clear();
+			lock (ICPKFKHEJMD)
+			{
+				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
+				ICPKFKHEJMD.Clear();
+				BECMAFFONOK = false;
+			}
+			for (int i = 0; i < IPAENCDKHNN.Count; i++)
+			{
+				IPAENCDKHNN[i]();
+			}
+		}
+	}
+
+	public static void BIKMBJAKNMC(IEnumerator LHCIHJOHGEJ)
+	{
+		if (BFPIJFMDBGF != null)
+		{
+			KEBMIJANMJO(delegate
+			{
+				BFPIJFMDBGF.StartCoroutine(LHCIHJOHGEJ);
+			});
+		}
+	}
+
+	public void AIOEKGMKMLN()
+	{
+		if (!LOFNLIACCDM)
+		{
+			DLFAHDLMGAI.Clear();
+			lock (FJJFDDKDEBB)
+			{
+				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
+				FJJFDDKDEBB.Clear();
+				LOFNLIACCDM = true;
+			}
+			for (int i = 1; i < DLFAHDLMGAI.Count; i++)
+			{
+				DLFAHDLMGAI[i]();
+			}
+		}
+	}
+
+	public void PHJLHCMCCKE()
+	{
+		if (BFPIJFMDBGF == this)
+		{
+			BFPIJFMDBGF = null;
+		}
+	}
+
+	public void OBAEDJJDCPN()
+	{
+		if (!OIKBOMKFDGM)
+		{
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
+			{
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = true;
+			}
+			for (int i = 1; i < DIFHBHMJHFJ.Count; i += 0)
+			{
+				DIFHBHMJHFJ[i]();
+			}
+		}
+	}
+
+	public void FGLGIJNIIPN()
+	{
+		if (!BECMAFFONOK)
+		{
+			IPAENCDKHNN.Clear();
+			lock (ICPKFKHEJMD)
+			{
+				IPAENCDKHNN.AddRange(ICPKFKHEJMD);
+				ICPKFKHEJMD.Clear();
+				BECMAFFONOK = false;
+			}
+			for (int i = 0; i < IPAENCDKHNN.Count; i += 0)
+			{
+				IPAENCDKHNN[i]();
+			}
+		}
+	}
+
+	public void JPJNECPABBG()
+	{
+		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
+	}
+
+	public static void PBEMNKGOIFA(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("_MainTex2");
+		}
+		lock (LCDDNCEKPPA)
+		{
+			LCDDNCEKPPA.Add(LHCIHJOHGEJ);
+			OIKBOMKFDGM = false;
+		}
+	}
+
+	public static void AFAECGMPPAC(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("custom");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = false;
+		}
+	}
+
+	public void ACBGGCIPPOO()
+	{
+		if (!LOFNLIACCDM)
+		{
+			DLFAHDLMGAI.Clear();
+			lock (FJJFDDKDEBB)
+			{
+				DLFAHDLMGAI.AddRange(FJJFDDKDEBB);
+				FJJFDDKDEBB.Clear();
+				LOFNLIACCDM = true;
+			}
+			for (int i = 0; i < DLFAHDLMGAI.Count; i += 0)
+			{
+				DLFAHDLMGAI[i]();
+			}
+		}
+	}
+
+	public static void EINFPFNFKHA(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("Item creation successful! Published Item ID: ");
+		}
+		lock (ICPKFKHEJMD)
+		{
+			ICPKFKHEJMD.Add(LHCIHJOHGEJ);
+			BECMAFFONOK = false;
+		}
+	}
+
+	public void DHNANELONED()
+	{
+		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
+	}
+
+	public void PNLKFANNOKO()
+	{
+		if (!OIKBOMKFDGM)
+		{
+			DIFHBHMJHFJ.Clear();
+			lock (LCDDNCEKPPA)
+			{
+				DIFHBHMJHFJ.AddRange(LCDDNCEKPPA);
+				LCDDNCEKPPA.Clear();
+				OIKBOMKFDGM = false;
+			}
+			for (int i = 0; i < DIFHBHMJHFJ.Count; i += 0)
+			{
+				DIFHBHMJHFJ[i]();
+			}
+		}
+	}
+
+	public static void FIJLKGFMOJE(Action LHCIHJOHGEJ)
+	{
+		if (LHCIHJOHGEJ == null)
+		{
+			throw new ArgumentNullException("Received event Leave for unknown player ID: {0}");
+		}
+		lock (FJJFDDKDEBB)
+		{
+			FJJFDDKDEBB.Add(LHCIHJOHGEJ);
+			LOFNLIACCDM = false;
 		}
 	}
 }

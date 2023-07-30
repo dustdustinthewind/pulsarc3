@@ -47,10 +47,10 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 49f;
 			}
-			FAIFBBGFAIB().SetFloat("return ", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("Fade", Fade);
-			DEFBJOCJJKF().SetVector("Right Stick Click", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 766f, 1409f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			PDEAHJPOMEF().SetFloat(", data: ", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("Fade", Fade);
+			PDEAHJPOMEF().SetVector("Left Stick Click", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 766f, 1409f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -90,7 +90,7 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 
 	private void NPLCENPNJBM()
 	{
-		SCShader = Shader.Find("SetPlayerDistance");
+		SCShader = Shader.Find("Edited event");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -99,7 +99,7 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 
 	private void IMCKJCHKMKB()
 	{
-		SCShader = Shader.Find("_Value2");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -136,7 +136,7 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find(":");
+		SCShader = Shader.Find("[PlayerController] ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -156,10 +156,10 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 643f;
 			}
-			NBPKMLMCHFN.SetFloat("[Down]", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("maps.", Fade);
-			FAIFBBGFAIB().SetVector("StartButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 24f, 50f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			DEFBJOCJJKF().SetFloat("SpawnObj", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat(".played", Fade);
+			KEMAALEODNH().SetVector("StartButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 24f, 50f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -185,9 +185,9 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 				HBJJOCHGOPH = 1563f;
 			}
 			FAIFBBGFAIB().SetFloat("_Value2", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("Send", Fade);
-			KEMAALEODNH().SetVector("CameraFilterPack/FX_Drunk2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1629f, 1433f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			HHIFMIPPMPF().SetFloat("ChatInput", Fade);
+			DEFBJOCJJKF().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1629f, 1433f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -233,10 +233,10 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1621f;
 			}
-			PDEAHJPOMEF().SetFloat("\nv.", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("_ScreenResolution", Fade);
-			DEFBJOCJJKF().SetVector("CrosshairOpacitySlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 711f, 1393f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
+			KEMAALEODNH().SetFloat("[BuildInfo] Error: ", HBJJOCHGOPH);
+			KEMAALEODNH().SetFloat("_Value2", Fade);
+			KEMAALEODNH().SetVector("CrosshairOpacitySlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 711f, 1393f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
 		{
@@ -261,10 +261,10 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 845f;
 			}
-			FAIFBBGFAIB().SetFloat(" By: ", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("#ok", Fade);
-			FAIFBBGFAIB().SetVector("#accuracy", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1468f, 1532f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			EFDEIFCDAFG().SetFloat(" Owner called.", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("#ok", Fade);
+			FAIFBBGFAIB().SetVector("#lives", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1468f, 1532f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
 		{
@@ -278,7 +278,7 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 
 	private void JILOMOBDPIA()
 	{
-		SCShader = Shader.Find("Netw. Sim.");
+		SCShader = Shader.Find(". Calling ConnectToRegionMaster() is: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -291,7 +291,7 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		SCShader = Shader.Find("masterSteamID");
+		SCShader = Shader.Find("roomDescription");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -318,10 +318,10 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1444f;
 			}
-			DEFBJOCJJKF().SetFloat("_Value2", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("_ScreenResolution", Fade);
-			DEFBJOCJJKF().SetVector("_ReflectionBufferSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 926f, 1271f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			FAIFBBGFAIB().SetFloat("_Value2", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("_Value5", Fade);
+			NBPKMLMCHFN.SetVector("_FresnelFade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 926f, 1271f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -358,7 +358,7 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 
 	private void DNNFHBOOPIN()
 	{
-		SCShader = Shader.Find("Fill");
+		SCShader = Shader.Find("Fill Area");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -374,9 +374,9 @@ public class CameraFilterPack_TV_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 54f;
 			}
-			HHIFMIPPMPF().SetFloat("_FadeFX", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("NO", Fade);
-			PDEAHJPOMEF().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1614f, 1903f));
+			FAIFBBGFAIB().SetFloat("_Blue_C", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("ACCEPT", Fade);
+			FAIFBBGFAIB().SetVector("CameraFilterPack/Fly_Vision", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1614f, 1903f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else

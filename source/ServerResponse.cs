@@ -10,133 +10,313 @@ public class ServerResponse
 	public string statusMessage { get; set; }
 
 	[SpecialName]
-	public int JAHJBBOPJKK()
+	public int MOCCGHJANPI()
 	{
 		return _003CMOABJDOHMEB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void IOJHAMDPNMD(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void KGJFDFANHIO(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int BKOAFBLBOCB()
+	public int KADGJKDMJAL()
 	{
 		return _003CMOABJDOHMEB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void DKKDPBODKNM(string DPNHODJHGJL)
+	public void PEPJHHEEJDF(string DPNHODJHGJL)
 	{
 		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void EHDEOOBLFDM(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int KIDDFHDCMEP()
+	public int GPIDEMFDICD()
 	{
 		return _003CMOABJDOHMEB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void CDMAENGDLLK(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string GOKHOCDOKDL()
+	public string DCLMILOJLNE()
 	{
 		return _003COFDAGNEJAOB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void EMHFPADPOPI(string DPNHODJHGJL)
+	public void JAKOCGCHPGG(string DPNHODJHGJL)
 	{
 		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void IKFGGKNBAEM(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void AAFCFGAMPOG(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int EJCFLFHFBDB()
-	{
-		return _003CMOABJDOHMEB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void LBEKPCOPNIM(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void PKDOKAGILKB(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void CBCEBNFMDBD(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void LDHPAOPLHHB(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void NNPKAOGELHN(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string OACBDKJFCCC()
+	public string HIJDDOOGBPO()
 	{
 		return _003CEEALIAMNHKK_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public string GHLBNLGPCPE()
+	public void MKGCIEPBKOO(int DPNHODJHGJL)
 	{
-		return _003CEEALIAMNHKK_003Ek__BackingField;
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public int DBJCEJCEOKL()
+	public void KFAKDFNNLOB(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void IHKAKFEBDNE(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int JLDPFBAIKAD()
 	{
 		return _003CMOABJDOHMEB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public string DOCAIKMGFOB()
+	public string OLIDFGNMALE()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void LNNOMHGJHKM(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void GBFHKMFNBKC(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void LMDDJKFMCAC(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void PGFBEABHGLK(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void FNDOKCEMLIF(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string LPPLGBEDDAI()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string NACONCBKJIE()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void HCFPHDCLKML(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void IADGOCALNAH(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string EOIGFGLFLLF()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int MIKKIMCPHOO()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void IJMDMLDCHEG(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int KEPPMCEFFJP()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string HBFNEMGICKN()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void BBDIFKIJCME(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void MCIIGIOAMEJ(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string LJLMEMBOKJL()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int JOHMIKGOIKL()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int PENJNMBENJG()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void KKGBBKGAJIP(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void LNLDOMPOFED(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int PKGHDKCNDOA()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int BBPNGAMBNIA()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string KGBIDDAKBLN()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void CIOGHADFOIO(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string PAOIGKKPEHF()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void OHAAKIHKNEC(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void KMCECGDMPDL(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string LBNFIAHCPNK()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void IPECPDAEEGK(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void NIBAENNBJMM(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void GJJCHJNNBMM(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int GPAPIPDNGMC()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void EEELFJELGKA(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string JJJCIOLDCFJ()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string FKCKEBJMLIG()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string LNJENEHJOPH()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int PKJDCFLAIIJ()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string GFLHGLCGOHG()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string MLCELHPGCFC()
 	{
 		return _003CEEALIAMNHKK_003Ek__BackingField;
 	}
@@ -148,165 +328,213 @@ public class ServerResponse
 	}
 
 	[SpecialName]
-	public int KNIPMNPJCHH()
+	public int EAOMACLCPBG()
 	{
 		return _003CMOABJDOHMEB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public string ELCGFCHBLFB()
+	public string FKDDHNMJDGP()
 	{
 		return _003COFDAGNEJAOB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void MPBPLJALJOP(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void OOIIFFPFHMN(string DPNHODJHGJL)
-	{
-		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string DFAIFNEKHAC()
-	{
-		return _003COFDAGNEJAOB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void GHIMFHDBAHF(string DPNHODJHGJL)
-	{
-		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string IOAJGOFPDGM()
+	public string CLPNNKANKJD()
 	{
 		return _003CEEALIAMNHKK_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void FBPCKHJALAM(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string AJOHOBCCLJJ()
+	public string BPAJFNPEDFG()
 	{
 		return _003COFDAGNEJAOB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void CCEKOIHCPNB(string DPNHODJHGJL)
+	public void CNDOCCOAJHH(string DPNHODJHGJL)
 	{
 		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public int IENMNGLJJMH()
-	{
-		return _003CMOABJDOHMEB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void KCCFJPBFBKO(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void EDKMOJFKABD(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void HCMOCLIHCIA(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int MIKKIMCPHOO()
-	{
-		return _003CMOABJDOHMEB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string ODBMINDKPOF()
-	{
-		return _003COFDAGNEJAOB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string KHKAMEANKDD()
-	{
-		return _003COFDAGNEJAOB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void EDABHEGJAMF(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int AOALKNMDKMD()
-	{
-		return _003CMOABJDOHMEB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void FNDOKCEMLIF(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string FMDGCHJPLAM()
-	{
-		return _003COFDAGNEJAOB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void NGBHOBEGCAO(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void JLMLIBNFJNE(string DPNHODJHGJL)
+	public void PLILPDDEPME(string DPNHODJHGJL)
 	{
 		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public string NGFIEJPLJHA()
+	public void LNDJFJPOAND(int DPNHODJHGJL)
 	{
-		return _003COFDAGNEJAOB_003Ek__BackingField;
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public string HNKGNGHHFIF()
+	public void AGNNJHCCKJP(int DPNHODJHGJL)
 	{
-		return _003COFDAGNEJAOB_003Ek__BackingField;
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void OPAKMAOANKD(string DPNHODJHGJL)
+	public void PJHHFIAENKP(string DPNHODJHGJL)
 	{
 		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public int BEKFCHHFJFH()
+	public string MLJAKIJDIFO()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int DNGAGBNNCDG()
 	{
 		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void ODKDCPJOLKC(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void HFNFKPACHLD(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string HOHKELLBOIO()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string OHHDOCBKOLK()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string HONMIOLEDGP()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void NDDJMDGBJMH(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string MIGFCGHGFGE()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int EFABCFPMKHA()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void LGKANPDCJAF(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void NJBBEMGMENO(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void IFKEABOLJIM(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void BGMJLCNHLFP(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void EJKJKIOLNED(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int ENLADMBIIGE()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void LEIGPDACEOB(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void CCBOPJGBNFD(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void MKILFDNECBO(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string LBJKDEOKNEO()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string GJPNKEDHNIJ()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void NILJCJDPBLA(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int KFGMJHJDBGE()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int JKILCAPILNH()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void OKLEHHFIIHH(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void PAKLHCIAFNJ(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
@@ -316,45 +544,81 @@ public class ServerResponse
 	}
 
 	[SpecialName]
-	public void MFGCGGJODFO(string DPNHODJHGJL)
+	public void PIEBADEEKAO(int DPNHODJHGJL)
 	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public string LNJENEHJOPH()
+	public string MHGNGMPCPMJ()
 	{
 		return _003COFDAGNEJAOB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void FODDDOBEJNH(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void LPDKDHIGAMF(int DPNHODJHGJL)
-	{
-		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void CPAHOBNEGEE(string DPNHODJHGJL)
-	{
-		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string KEJHOMBDJBC()
+	public string PLEHLIJLMJG()
 	{
 		return _003CEEALIAMNHKK_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void MIPBCGPGGKC(int DPNHODJHGJL)
+	public int BOLBLIGLPLN()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void GBGMMBPODAM(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void CEPPFMMOAHL(int DPNHODJHGJL)
 	{
 		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void LIPOLBAPODA(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int ALGLCPMJLFJ()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void DPFKPHIEINK(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void HEGKINGMLOK(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void EJBGFBHHBOP(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int CIBADKHDIDE()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string IFOEIFLKFHC()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
 	}
 
 	[SpecialName]
@@ -364,20 +628,128 @@ public class ServerResponse
 	}
 
 	[SpecialName]
-	public void KEEBFKELDFE(string DPNHODJHGJL)
+	public int KIDDFHDCMEP()
 	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+		return _003CMOABJDOHMEB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void CBPHDENNKCE(string DPNHODJHGJL)
-	{
-		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string GPLPCHIMMBJ()
+	public string MKIABAPGBHP()
 	{
 		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string FJAEECKABAF()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void GNLEIOOIMML(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int MFCDNNBCKEA()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public int KAALOIFIOJC()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void GBNAMEMBFAM(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void JEOMDKDLLPO(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string NKLCOPGLPMB()
+	{
+		return _003COFDAGNEJAOB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void EDJALMHNBOE(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void EPIGKAACPLI(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void MLOHNCEEMAI(string DPNHODJHGJL)
+	{
+		_003COFDAGNEJAOB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string GHLBNLGPCPE()
+	{
+		return _003CEEALIAMNHKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void BMJOCIFDKJH(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void KOJGCPKELHC(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void NMCBLMGEFAJ(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int EKGGKAOMGIP()
+	{
+		return _003CMOABJDOHMEB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void MEGBGJMCGEF(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void LABKIGLBFGJ(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void IBLDFPBCONN(string DPNHODJHGJL)
+	{
+		_003CEEALIAMNHKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void HELDJKFDEIL(int DPNHODJHGJL)
+	{
+		_003CMOABJDOHMEB_003Ek__BackingField = DPNHODJHGJL;
 	}
 }

@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blur/Regular")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blur/Regular")]
 public class CameraFilterPack_Blur_Regular : MonoBehaviour
 {
 	public Shader SCShader;
@@ -41,11 +41,11 @@ public class CameraFilterPack_Blur_Regular : MonoBehaviour
 			{
 				HBJJOCHGOPH = 294f;
 			}
-			HNICHJCGJOC().SetFloat("GroupNameText", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("Joystick1Button9", Level);
-			NBPKMLMCHFN.SetVector("[DiscordController] Responding yes to Ask to Join request", Distance);
-			NBPKMLMCHFN.SetVector("PLEASE WAIT", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 300f, 627f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			HNICHJCGJOC().SetFloat("Image", HBJJOCHGOPH);
+			HNICHJCGJOC().SetFloat("Share", Level);
+			NBPKMLMCHFN.SetVector("red", Distance);
+			LDNADDJMIPK().SetVector("PLEASE WAIT", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 300f, 627f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -101,11 +101,11 @@ public class CameraFilterPack_Blur_Regular : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1330f;
 			}
-			HNICHJCGJOC().SetFloat("Error: I/O Failure! :(", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_TimeX", Level);
-			GCDFNHMJMIP().SetVector("anonymous", Distance);
-			LDNADDJMIPK().SetVector("VisionBlur", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 371f, 145f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			LDNADDJMIPK().SetFloat("Committing changes...", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("CameraFilterPack/Distortion_Flush", Level);
+			DEFBJOCJJKF().SetVector("ChatInput", Distance);
+			GCDFNHMJMIP().SetVector("Fade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 371f, 145f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -133,10 +133,10 @@ public class CameraFilterPack_Blur_Regular : MonoBehaviour
 			{
 				HBJJOCHGOPH = 800f;
 			}
-			NBPKMLMCHFN.SetFloat("NEW_ACHIEVEMENT_1_", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("maps.", Level);
-			HNICHJCGJOC().SetVector("AddEnvironmentSprite", Distance);
-			GCDFNHMJMIP().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 288f, 1010f));
+			LDNADDJMIPK().SetFloat("NEW_ACHIEVEMENT_1_", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("maps.", Level);
+			NBPKMLMCHFN.SetVector("SetParticlesGravity", Distance);
+			GCDFNHMJMIP().SetVector("CameraFilterPack/TV_VHS", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 288f, 1010f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
@@ -182,7 +182,7 @@ public class CameraFilterPack_Blur_Regular : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Value2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -220,7 +220,7 @@ public class CameraFilterPack_Blur_Regular : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		SCShader = Shader.Find("_BaseTex");
+		SCShader = Shader.Find("_Intensity");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -229,7 +229,7 @@ public class CameraFilterPack_Blur_Regular : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		SCShader = Shader.Find("_DotSize");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -254,11 +254,11 @@ public class CameraFilterPack_Blur_Regular : MonoBehaviour
 			{
 				HBJJOCHGOPH = 751f;
 			}
-			HNICHJCGJOC().SetFloat("[Right]", HBJJOCHGOPH);
-			HNICHJCGJOC().SetFloat("_NeighbourMaxTex", Level);
-			GCDFNHMJMIP().SetVector("_ScreenResolution", Distance);
-			GCDFNHMJMIP().SetVector("_Parasite", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1263f, 1244f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			LDNADDJMIPK().SetFloat("[Left]", HBJJOCHGOPH);
+			DEFBJOCJJKF().SetFloat("_NoiseTex", Level);
+			HNICHJCGJOC().SetVector("_TimeX", Distance);
+			GCDFNHMJMIP().SetVector("_Colorisation", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1263f, 1244f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -276,7 +276,7 @@ public class CameraFilterPack_Blur_Regular : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("&");
+		SCShader = Shader.Find("lobby '{0}'[{1}]");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

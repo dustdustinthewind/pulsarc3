@@ -6,54 +6,197 @@ public class ManualPhotonViewAllocator : MonoBehaviour
 {
 	public GameObject Prefab;
 
-	public void FELIMAHNPME()
+	public void AHINONNHLKK(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(444f, 1984f, 609f), Quaternion.identity);
+		gameObject.GetPhotonView().MFAHOENKMGJ(NADLIACHBNO);
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = false;
+	}
+
+	public void BEECAKMHDBH(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1174f, 1838f, 1387f), Quaternion.identity);
+		gameObject.GetPhotonView().MFAHOENKMGJ(NADLIACHBNO);
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = false;
+	}
+
+	public void DNPDKDOCCMN(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(788f, 1355f, 1165f), Quaternion.identity);
+		gameObject.GetPhotonView().MFAHOENKMGJ(NADLIACHBNO);
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = false;
+	}
+
+	public void GNIELEFPHHB(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(35f, 939f, 358f), Quaternion.identity);
+		gameObject.GetPhotonView().GDDHHBELCDH(NADLIACHBNO);
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = true;
+	}
+
+	public void FKNNOELEIAP(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(653f, 164f, 1732f), Quaternion.identity);
+		gameObject.GetPhotonView().viewID = NADLIACHBNO;
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = false;
+	}
+
+	public void CDFEHEHHJGP()
 	{
 		PhotonView photonView = base.gameObject.GetPhotonView();
 		if (photonView == null)
 		{
-			Debug.LogError("_TimeX");
+			Debug.LogError("Can't start OFFLINE mode while connected!");
 			return;
 		}
 		int num = PhotonNetwork.AllocateViewID();
 		object[] array = new object[0];
 		array[0] = num;
-		photonView.MIAHMDGOOPJ("OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one. Calling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);", (PhotonTargets)7, array);
+		photonView.RPC("_Bullet_3", (PhotonTargets)7, array);
 	}
 
-	public void KIEKDKCDOOI(int NADLIACHBNO)
+	[PunRPC]
+	public void InstantiateRpc(int NADLIACHBNO)
 	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(829f, 1863f, 951f), Quaternion.identity);
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(0f, 5f, 0f), Quaternion.identity);
 		gameObject.GetPhotonView().viewID = NADLIACHBNO;
 		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
 		component.DestroyByRpc = true;
 	}
 
-	public void BALABNBJNAM()
+	public void HCGEFLJKFEB()
 	{
 		PhotonView photonView = base.gameObject.GetPhotonView();
 		if (photonView == null)
 		{
-			Debug.LogError("_Value");
+			Debug.LogError("[ItemsHandler] Found ");
 			return;
 		}
 		int num = PhotonNetwork.AllocateViewID();
 		object[] array = new object[0];
 		array[0] = num;
-		photonView.GNFNHDCJOFC("{0:0} second{1}", PhotonTargets.AllViaServer, array);
+		photonView.RPC("???", (PhotonTargets)7, array);
 	}
 
-	public void ENPINIGKJCA()
+	public void OJADEOOANDA(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(611f, 660f, 430f), Quaternion.identity);
+		gameObject.GetPhotonView().GDDHHBELCDH(NADLIACHBNO);
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = false;
+	}
+
+	public void ALADKDEIEBE()
 	{
 		PhotonView photonView = base.gameObject.GetPhotonView();
 		if (photonView == null)
 		{
-			Debug.LogError("DPADHOR");
+			Debug.LogError(" not exist");
+			return;
+		}
+		int num = PhotonNetwork.AllocateViewID();
+		photonView.RPC("Joystick1Button12", PhotonTargets.MasterClient, num);
+	}
+
+	public void EFDEFLCEOBA(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(4f, 1611f, 1378f), Quaternion.identity);
+		gameObject.GetPhotonView().MFAHOENKMGJ(NADLIACHBNO);
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = false;
+	}
+
+	public void OECHDJJKJPJ()
+	{
+		PhotonView photonView = base.gameObject.GetPhotonView();
+		if (photonView == null)
+		{
+			Debug.LogError("checkpoint");
 			return;
 		}
 		int num = PhotonNetwork.AllocateViewID();
 		object[] array = new object[0];
 		array[0] = num;
-		photonView.PBMFBOOALKA("{0:x2}", PhotonTargets.AllBuffered, array);
+		photonView.RPC("maps.", PhotonTargets.MasterClient, array);
+	}
+
+	public void PJNNJMKGNCC(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(586f, 923f, 27f), Quaternion.identity);
+		gameObject.GetPhotonView().viewID = NADLIACHBNO;
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = true;
+	}
+
+	public void OPMMMFJMEJM(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1092f, 1208f, 235f), Quaternion.identity);
+		gameObject.GetPhotonView().viewID = NADLIACHBNO;
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = true;
+	}
+
+	public void HOGDNALKMDN()
+	{
+		PhotonView photonView = base.gameObject.GetPhotonView();
+		if (photonView == null)
+		{
+			Debug.LogError("There is already a virtual button named ");
+			return;
+		}
+		int num = PhotonNetwork.AllocateViewID();
+		object[] array = new object[0];
+		array[1] = num;
+		photonView.RPC("Image", (PhotonTargets)8, array);
+	}
+
+	public void JBIEHBLKALE(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(24f, 1541f, 38f), Quaternion.identity);
+		gameObject.GetPhotonView().viewID = NADLIACHBNO;
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = true;
+	}
+
+	public void OEPJDLNAGBK(int NADLIACHBNO)
+	{
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(167f, 342f, 925f), Quaternion.identity);
+		gameObject.GetPhotonView().viewID = NADLIACHBNO;
+		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
+		component.DestroyByRpc = true;
+	}
+
+	public void PIHJPHOGAHM()
+	{
+		PhotonView photonView = base.gameObject.GetPhotonView();
+		if (photonView == null)
+		{
+			Debug.LogError("AddEnvironmentObject");
+			return;
+		}
+		int num = PhotonNetwork.AllocateViewID();
+		object[] array = new object[0];
+		array[0] = num;
+		photonView.RPC("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.", PhotonTargets.MasterClient, array);
+	}
+
+	public void LEOMJGLFAIJ()
+	{
+		PhotonView photonView = base.gameObject.GetPhotonView();
+		if (photonView == null)
+		{
+			Debug.LogError("checkpoint");
+			return;
+		}
+		int num = PhotonNetwork.AllocateViewID();
+		object[] array = new object[0];
+		array[1] = num;
+		photonView.RPC("mapselector.filter.rateduponly", PhotonTargets.MasterClient, array);
 	}
 
 	public void AllocateManualPhotonView()
@@ -68,156 +211,18 @@ public class ManualPhotonViewAllocator : MonoBehaviour
 		photonView.RPC("InstantiateRpc", PhotonTargets.AllBuffered, num);
 	}
 
-	public void OEOBFBIKNNB(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(726f, 190f, 1085f), Quaternion.identity);
-		gameObject.GetPhotonView().CHLIDEOBECE(NADLIACHBNO);
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = true;
-	}
-
-	public void OJADEOOANDA(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(903f, 496f, 124f), Quaternion.identity);
-		gameObject.GetPhotonView().HANOCKILFNJ(NADLIACHBNO);
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = true;
-	}
-
-	public void ODLLHGPEIEN()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("/theme");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
-		array[0] = num;
-		photonView.KEKKFNNMLMG(" not exist", PhotonTargets.AllBuffered, array);
-	}
-
-	public void CCFIGBIAOKJ(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(518f, 656f, 762f), Quaternion.identity);
-		gameObject.GetPhotonView().CHLIDEOBECE(NADLIACHBNO);
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = true;
-	}
-
-	public void LEOMJGLFAIJ()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("AllocateViewID() failed. Room (user {0}) is out of 'scene' viewIDs. It seems all available are in use.");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[1];
-		array[1] = num;
-		photonView.GNFNHDCJOFC("SpawnObj", PhotonTargets.AllBufferedViaServer, array);
-	}
-
-	public void GAOCIFNKIMN()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("LevelEditor/icons");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[1];
-		array[1] = num;
-		photonView.KEKKFNNMLMG("music", PhotonTargets.OthersBuffered, array);
-	}
-
-	public void MFDEGAAIMOD()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("LoadPlayerSkin");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
-		array[1] = num;
-		photonView.IKIJDNPJKPM("_Value3", (PhotonTargets)8, array);
-	}
-
-	public void PPBNIGECGIF()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("Start");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
-		array[1] = num;
-		photonView.KEKKFNNMLMG("_TimeX", PhotonTargets.Others, array);
-	}
-
 	public void FIKAPCKGFBF()
 	{
 		PhotonView photonView = base.gameObject.GetPhotonView();
 		if (photonView == null)
 		{
-			Debug.LogError("[Right]");
+			Debug.LogError("DPADVER");
 			return;
 		}
 		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
+		object[] array = new object[1];
 		array[1] = num;
-		photonView.RPC(" scene view IDs from last level.", (PhotonTargets)8, array);
-	}
-
-	public void JOAJGAFKGJB(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1404f, 610f, 1025f), Quaternion.identity);
-		gameObject.GetPhotonView().viewID = NADLIACHBNO;
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = false;
-	}
-
-	public void EFDEFLCEOBA(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(571f, 1288f, 282f), Quaternion.identity);
-		gameObject.GetPhotonView().HANOCKILFNJ(NADLIACHBNO);
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = false;
-	}
-
-	public void PANCEPGLHOK()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("ItemNameBGImage");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
-		array[0] = num;
-		photonView.IKIJDNPJKPM(".lastCheckpoint.playerdistance", PhotonTargets.All, array);
-	}
-
-	public void HCGEFLJKFEB()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
-		array[0] = num;
-		photonView.RPC("settings.arcsnohitsoundtimedelay", (PhotonTargets)8, array);
+		photonView.RPC("OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one. Calling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);", (PhotonTargets)7, array);
 	}
 
 	public void PBOJOOJBBAG()
@@ -225,229 +230,46 @@ public class ManualPhotonViewAllocator : MonoBehaviour
 		PhotonView photonView = base.gameObject.GetPhotonView();
 		if (photonView == null)
 		{
-			Debug.LogError("[LocalizationService] Localization: ");
+			Debug.LogError("Reload Steam Inventory");
 			return;
 		}
 		int num = PhotonNetwork.AllocateViewID();
 		object[] array = new object[0];
 		array[0] = num;
-		photonView.RPC("_Value4", PhotonTargets.MasterClient, array);
+		photonView.RPC("_Amount", PhotonTargets.AllBufferedViaServer, array);
 	}
 
-	public void OECHDJJKJPJ()
+	public void MGACFHNMAPC(int NADLIACHBNO)
 	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("NO");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		photonView.KEKKFNNMLMG("{", PhotonTargets.MasterClient, new object[1] { num });
-	}
-
-	public void DNPDKDOCCMN(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1888f, 1346f, 1499f), Quaternion.identity);
+		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(765f, 1860f, 1954f), Quaternion.identity);
 		gameObject.GetPhotonView().viewID = NADLIACHBNO;
 		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
 		component.DestroyByRpc = false;
 	}
 
-	public void CGIHDPNNDKJ()
+	public void KJKIEKIDNAN()
 	{
 		PhotonView photonView = base.gameObject.GetPhotonView();
 		if (photonView == null)
 		{
-			Debug.LogError("_MainTex2");
+			Debug.LogError("[Down]");
 			return;
 		}
 		int num = PhotonNetwork.AllocateViewID();
 		object[] array = new object[0];
 		array[0] = num;
-		photonView.IKIJDNPJKPM("Set particles start speed", PhotonTargets.Others, array);
+		photonView.RPC("_ScreenResolution", (PhotonTargets)7, array);
 	}
 
-	public void GAGFNPBLOID(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(247f, 109f, 1024f), Quaternion.identity);
-		gameObject.GetPhotonView().HANOCKILFNJ(NADLIACHBNO);
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = false;
-	}
-
-	public void NENBEPHNIGJ()
+	public void FELIMAHNPME()
 	{
 		PhotonView photonView = base.gameObject.GetPhotonView();
 		if (photonView == null)
 		{
-			Debug.LogError("_Distortion");
+			Debug.LogError("_TimeX");
 			return;
 		}
 		int num = PhotonNetwork.AllocateViewID();
-		photonView.KEKKFNNMLMG(".lastCheckpoint.isMapCompleted", (PhotonTargets)8, new object[1] { num });
-	}
-
-	public void DKGIABDLAPF()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("\nv.");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		photonView.RPC("Failed to Instantiate prefab: ", PhotonTargets.Others, num);
-	}
-
-	public void AHINONNHLKK(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(448f, 0f, 1911f), Quaternion.identity);
-		gameObject.GetPhotonView().viewID = NADLIACHBNO;
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = true;
-	}
-
-	public void PIHJPHOGAHM()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("</i>");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
-		array[1] = num;
-		photonView.MIAHMDGOOPJ(" - GameWebCallback] - ", PhotonTargets.AllViaServer, array);
-	}
-
-	public void FKNNOELEIAP(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1393f, 1079f, 61f), Quaternion.identity);
-		gameObject.GetPhotonView().viewID = NADLIACHBNO;
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = true;
-	}
-
-	public void MLCCJFMOJOC()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("HiddenToggle");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
-		array[1] = num;
-		photonView.IKIJDNPJKPM("_Value2", (PhotonTargets)7, array);
-	}
-
-	public void NJEPKEAEPBC(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1006f, 285f, 1464f), Quaternion.identity);
-		gameObject.GetPhotonView().viewID = NADLIACHBNO;
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = false;
-	}
-
-	public void MIMECNMKDNF()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("SetSunEmission");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		photonView.KEKKFNNMLMG(" from: ", PhotonTargets.All, new object[1] { num });
-	}
-
-	public void NNLKLBLKOHC(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1219f, 989f, 1329f), Quaternion.identity);
-		gameObject.GetPhotonView().viewID = NADLIACHBNO;
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = false;
-	}
-
-	public void OEFDPMAOHHP()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("GlassAberration");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		object[] array = new object[0];
-		array[0] = num;
-		photonView.MIAHMDGOOPJ("CameraFilterPack/TV_WideScreenHorizontal", (PhotonTargets)8, array);
-	}
-
-	public void JBIEHBLKALE(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1090f, 1687f, 1565f), Quaternion.identity);
-		gameObject.GetPhotonView().HANOCKILFNJ(NADLIACHBNO);
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = false;
-	}
-
-	public void OEPJDLNAGBK(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(909f, 232f, 1938f), Quaternion.identity);
-		gameObject.GetPhotonView().viewID = NADLIACHBNO;
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = true;
-	}
-
-	public void CCFKAEGHEJO()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("Error: Can not set the OnSerialize rate higher than the overall SendRate.");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		photonView.PBMFBOOALKA("UseScanLine", PhotonTargets.OthersBuffered, new object[1] { num });
-	}
-
-	public void OFEEDOGFNLA(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(701f, 1515f, 751f), Quaternion.identity);
-		gameObject.GetPhotonView().viewID = NADLIACHBNO;
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = true;
-	}
-
-	[PunRPC]
-	public void InstantiateRpc(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(0f, 5f, 0f), Quaternion.identity);
-		gameObject.GetPhotonView().viewID = NADLIACHBNO;
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = true;
-	}
-
-	public void KFGEMGKGBDA()
-	{
-		PhotonView photonView = base.gameObject.GetPhotonView();
-		if (photonView == null)
-		{
-			Debug.LogError("CheckResources () for ");
-			return;
-		}
-		int num = PhotonNetwork.AllocateViewID();
-		photonView.IKIJDNPJKPM("LevelConfigButton", PhotonTargets.AllBufferedViaServer, new object[1] { num });
-	}
-
-	public void PLKIEFBPPDJ(int NADLIACHBNO)
-	{
-		GameObject gameObject = Object.Instantiate(Prefab, InputToEvent.inputHitPos + new Vector3(1078f, 513f, 961f), Quaternion.identity);
-		gameObject.GetPhotonView().CHLIDEOBECE(NADLIACHBNO);
-		OnClickDestroy component = gameObject.GetComponent<OnClickDestroy>();
-		component.DestroyByRpc = false;
+		photonView.RPC("Parent object ID. Case-Sensitive", PhotonTargets.AllViaServer, num);
 	}
 }

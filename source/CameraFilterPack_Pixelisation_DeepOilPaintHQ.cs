@@ -76,7 +76,7 @@ public class CameraFilterPack_Pixelisation_DeepOilPaintHQ : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1332f;
 			}
-			NBPKMLMCHFN.SetFloat("HightScoreMaxPointsText", HBJJOCHGOPH);
+			DEFBJOCJJKF().SetFloat("HightScoreMaxPointsText", HBJJOCHGOPH);
 			if (AutoAnimatedNear)
 			{
 				_Distance += Time.deltaTime * AutoAnimatedNearSpeed;
@@ -88,21 +88,21 @@ public class CameraFilterPack_Pixelisation_DeepOilPaintHQ : MonoBehaviour
 				{
 					_Distance = 1797f;
 				}
-				KGOLDDBHIFN().SetFloat("speed", _Distance);
+				NBPKMLMCHFN.SetFloat("Case-Sensitive", _Distance);
 			}
 			else
 			{
-				DEFBJOCJJKF().SetFloat("WARNING: rotation axis set to 0 on ", _Distance);
+				NBPKMLMCHFN.SetFloat("WARNING: rotation axis set to 0 on ", _Distance);
 			}
-			DEFBJOCJJKF().SetFloat("float,1", _Size);
-			KGOLDDBHIFN().SetFloat("maps.", _FixDistance);
-			DEFBJOCJJKF().SetFloat("CameraFilterPack/AAA_WaterDrop", Intensity);
-			NBPKMLMCHFN.SetFloat("_TimeX", (!_Visualize) ? 0 : 0);
+			KGOLDDBHIFN().SetFloat("x", _Size);
+			KGOLDDBHIFN().SetFloat("BadgeText", _FixDistance);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/AAA_WaterDrop", Intensity);
+			DEFBJOCJJKF().SetFloat("_TimeX", (!_Visualize) ? 0 : 0);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			KGOLDDBHIFN().SetFloat("NOISE", 1489f / farClipPlane);
-			KGOLDDBHIFN().SetVector("settings.selectormapsperpage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1062f, 1300f));
+			NBPKMLMCHFN.SetFloat("GLITCH", 1489f / farClipPlane);
+			KGOLDDBHIFN().SetVector("settings.arcshitsoundtimedelay", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1062f, 1300f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -144,7 +144,7 @@ public class CameraFilterPack_Pixelisation_DeepOilPaintHQ : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find(" not found");
+		SCShader = Shader.Find("workshop.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -212,7 +212,7 @@ public class CameraFilterPack_Pixelisation_DeepOilPaintHQ : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		SCShader = Shader.Find("_NeighborMaxTex");
+		SCShader = Shader.Find("_LoopCount");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

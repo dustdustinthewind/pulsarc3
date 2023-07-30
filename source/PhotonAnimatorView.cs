@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+[AddComponentMenu("Photon Networking/Photon Animator View")]
 [RequireComponent(typeof(PhotonView))]
 [RequireComponent(typeof(Animator))]
-[AddComponentMenu("Photon Networking/Photon Animator View")]
 public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 {
 	public enum ParameterType
@@ -47,27 +47,22 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 	{
 		internal int PKFOGBFGICJ;
 
-		internal bool DBFPGFHEGKA(SynchronizedLayer DBIMJHMKHNK)
+		internal bool JBAJEMGOPDL(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool JDELIMPGFDJ(SynchronizedLayer DBIMJHMKHNK)
+		internal bool LJDLIIIPIIJ(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool MEMPOPNAEDN(SynchronizedLayer DBIMJHMKHNK)
+		internal bool FCAGEDLBBHD(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool GBKBDKHPLKG(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool AGJKEBOPIOC(SynchronizedLayer DBIMJHMKHNK)
+		internal bool AEIFJLBBKBP(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -77,22 +72,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool LNDGINDKPFA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FJDBPPKABJE(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool EGKGJJGAPMN(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool LOEAMHGMMPK(SynchronizedLayer DBIMJHMKHNK)
+		internal bool FHIJCPPECHA(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -102,32 +82,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool FFEGPHJKMFK(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool DKGPCPBNDPK(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool BFEABMIFIEE(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool BDGDIDPDBHG(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool LLNDDFGPOPL(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool AEINPAGJFME(SynchronizedLayer DBIMJHMKHNK)
+		internal bool FJDBPPKABJE(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -142,7 +97,147 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
+		internal bool BMAOCLKPNNC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LLNDDFGPOPL(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool GBKBDKHPLKG(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool DBFPGFHEGKA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FFEGPHJKMFK(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool AEINPAGJFME(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BDGDIDPDBHG(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BJMAIJDIKCN(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool KGKMOLCPDIH(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LOEAMHGMMPK(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool EFAPFFFGOOA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool MGENGAEDACG(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
 		internal bool BKNHHGBPLGH(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool DKGPCPBNDPK(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool IGFOBPKFCDJ(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool PIJAOCFAPKC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool DNIMHEKGJHB(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool OFHCGKJFGDI(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool AGJKEBOPIOC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LNDGINDKPFA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool HBJFIOJFBHC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BFEABMIFIEE(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool EGKGJJGAPMN(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool EKHOOPGPPGE(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool OFLDIMDDLHM(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FDAIFOAGDLA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool JDELIMPGFDJ(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool MEMPOPNAEDN(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool INHOEMCLAAP(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -157,17 +252,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool OFHCGKJFGDI(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool KGKMOLCPDIH(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool EKHOOPGPPGE(SynchronizedLayer DBIMJHMKHNK)
+		internal bool FHFECFLBHMA(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -178,122 +263,12 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 	{
 		internal string EBEHBBDKDFJ;
 
-		internal bool FDAIFOAGDLA(SynchronizedParameter DBIMJHMKHNK)
+		internal bool AEINPAGJFME(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool KFNBKFELFLH(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool INHOEMCLAAP(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool BFEABMIFIEE(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool BEBAENEJFLD(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool JBAJEMGOPDL(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool BKNHHGBPLGH(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool FMIHBNPKEEO(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool FJDBPPKABJE(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool LNDGINDKPFA(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool EFAPFFFGOOA(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool EGKGJJGAPMN(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool LOEAMHGMMPK(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool PIJAOCFAPKC(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool FIPCLHEKKCA(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool PBCAHKDLFPE(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool AEIFJLBBKBP(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool BDGDIDPDBHG(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool PKAPLCFHDOC(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool JDELIMPGFDJ(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool FHFECFLBHMA(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool FHIJCPPECHA(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool BJMAIJDIKCN(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool OMBHIBNMFNB(SynchronizedParameter DBIMJHMKHNK)
+		internal bool AGJKEBOPIOC(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -303,12 +278,17 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool EKHOOPGPPGE(SynchronizedParameter DBIMJHMKHNK)
+		internal bool FFEGPHJKMFK(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool DKGPCPBNDPK(SynchronizedParameter DBIMJHMKHNK)
+		internal bool BFEABMIFIEE(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool EKHOOPGPPGE(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -323,87 +303,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool JKEDCEOCPJO(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool OFLDIMDDLHM(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool LLNDDFGPOPL(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool AGJKEBOPIOC(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool DBFPGFHEGKA(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool BMAOCLKPNNC(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool OFHCGKJFGDI(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool LJDLIIIPIIJ(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool EDGAPOPEIJF(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool AEINPAGJFME(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool FFEGPHJKMFK(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool JBCHBMKPDAJ(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool OLIGLEMPFOP(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool MGENGAEDACG(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool DNIMHEKGJHB(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool HBJFIOJFBHC(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool LHHFJBIAHCN(SynchronizedParameter DBIMJHMKHNK)
+		internal bool PIJAOCFAPKC(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -413,7 +313,102 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool FCAGEDLBBHD(SynchronizedParameter DBIMJHMKHNK)
+		internal bool KFNBKFELFLH(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool HBJFIOJFBHC(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool JDELIMPGFDJ(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool OLIGLEMPFOP(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool BDGDIDPDBHG(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool FJDBPPKABJE(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool LNDGINDKPFA(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool LLNDDFGPOPL(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool OFHCGKJFGDI(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool EGKGJJGAPMN(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool DNIMHEKGJHB(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool BKNHHGBPLGH(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool DBFPGFHEGKA(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool JKEDCEOCPJO(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool BMAOCLKPNNC(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool DKGPCPBNDPK(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool FIPCLHEKKCA(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool LOEAMHGMMPK(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool LHHFJBIAHCN(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool PBCAHKDLFPE(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -423,46 +418,6 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 	private sealed class EJEGDAFJHIM
 	{
 		internal int PKFOGBFGICJ;
-
-		internal bool PIJAOCFAPKC(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool DKGPCPBNDPK(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool HBJFIOJFBHC(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool IGFOBPKFCDJ(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool LOEAMHGMMPK(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool EKHOOPGPPGE(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FHIJCPPECHA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool KFNBKFELFLH(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
 
 		internal bool AGJKEBOPIOC(SynchronizedLayer DBIMJHMKHNK)
 		{
@@ -474,87 +429,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool FDAIFOAGDLA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool BDGDIDPDBHG(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool GBKBDKHPLKG(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool MEMPOPNAEDN(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FIPCLHEKKCA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool JKEDCEOCPJO(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool KGKMOLCPDIH(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool OFLDIMDDLHM(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool EGKGJJGAPMN(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool BKNHHGBPLGH(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool JDELIMPGFDJ(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FCAGEDLBBHD(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool OLIGLEMPFOP(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool DNIMHEKGJHB(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool LHHFJBIAHCN(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FFEGPHJKMFK(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool LLNDDFGPOPL(SynchronizedLayer DBIMJHMKHNK)
+		internal bool JBAJEMGOPDL(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -564,22 +439,37 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool AEINPAGJFME(SynchronizedLayer DBIMJHMKHNK)
+		internal bool IGFOBPKFCDJ(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool LNDGINDKPFA(SynchronizedLayer DBIMJHMKHNK)
+		internal bool AEIFJLBBKBP(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool FJDBPPKABJE(SynchronizedLayer DBIMJHMKHNK)
+		internal bool FDAIFOAGDLA(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool DBFPGFHEGKA(SynchronizedLayer DBIMJHMKHNK)
+		internal bool LJDLIIIPIIJ(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool JDELIMPGFDJ(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool DNIMHEKGJHB(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool PBCAHKDLFPE(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -589,7 +479,167 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool PBCAHKDLFPE(SynchronizedLayer DBIMJHMKHNK)
+		internal bool LLNDDFGPOPL(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LHHFJBIAHCN(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool OFLDIMDDLHM(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FCAGEDLBBHD(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool MGENGAEDACG(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BKNHHGBPLGH(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool PIJAOCFAPKC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool HBJFIOJFBHC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FHFECFLBHMA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool EKHOOPGPPGE(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool KGKMOLCPDIH(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool EFAPFFFGOOA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LNDGINDKPFA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool JKEDCEOCPJO(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool MEMPOPNAEDN(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool KFNBKFELFLH(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BDGDIDPDBHG(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool DBFPGFHEGKA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FMIHBNPKEEO(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool INHOEMCLAAP(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool AEINPAGJFME(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool OLIGLEMPFOP(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FFEGPHJKMFK(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FHIJCPPECHA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool EGKGJJGAPMN(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool DKGPCPBNDPK(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BEBAENEJFLD(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FIPCLHEKKCA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool PKAPLCFHDOC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool GBKBDKHPLKG(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LOEAMHGMMPK(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FJDBPPKABJE(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BJMAIJDIKCN(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -600,32 +650,22 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 	{
 		internal string EBEHBBDKDFJ;
 
-		internal bool LLNDDFGPOPL(SynchronizedParameter DBIMJHMKHNK)
+		internal bool BFEABMIFIEE(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool KFNBKFELFLH(SynchronizedParameter DBIMJHMKHNK)
+		internal bool EGKGJJGAPMN(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool FFEGPHJKMFK(SynchronizedParameter DBIMJHMKHNK)
+		internal bool KGKMOLCPDIH(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool OFHCGKJFGDI(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool PBCAHKDLFPE(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool BDGDIDPDBHG(SynchronizedParameter DBIMJHMKHNK)
+		internal bool FJDBPPKABJE(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -635,32 +675,22 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool MEMPOPNAEDN(SynchronizedParameter DBIMJHMKHNK)
+		internal bool DKGPCPBNDPK(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool EKHOOPGPPGE(SynchronizedParameter DBIMJHMKHNK)
+		internal bool FHIJCPPECHA(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool LNDGINDKPFA(SynchronizedParameter DBIMJHMKHNK)
+		internal bool BMAOCLKPNNC(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool DBFPGFHEGKA(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool GBKBDKHPLKG(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool JKEDCEOCPJO(SynchronizedParameter DBIMJHMKHNK)
+		internal bool IGFOBPKFCDJ(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -670,7 +700,57 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool BFEABMIFIEE(SynchronizedParameter DBIMJHMKHNK)
+		internal bool LNDGINDKPFA(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool BDGDIDPDBHG(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool MEMPOPNAEDN(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool FFEGPHJKMFK(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool GBKBDKHPLKG(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool LLNDDFGPOPL(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool JDELIMPGFDJ(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool PBCAHKDLFPE(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool KFNBKFELFLH(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool AGJKEBOPIOC(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool FCAGEDLBBHD(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -680,7 +760,52 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
+		internal bool DBFPGFHEGKA(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool LHHFJBIAHCN(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool FIPCLHEKKCA(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool PIJAOCFAPKC(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
 		internal bool OLIGLEMPFOP(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool OFHCGKJFGDI(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool HBJFIOJFBHC(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool DNIMHEKGJHB(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool EKHOOPGPPGE(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool JKEDCEOCPJO(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -691,52 +816,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 	{
 		internal int PKFOGBFGICJ;
 
-		internal bool JDELIMPGFDJ(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool DBFPGFHEGKA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool LJDLIIIPIIJ(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool OFLDIMDDLHM(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool PBCAHKDLFPE(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool BMAOCLKPNNC(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FHIJCPPECHA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool BKNHHGBPLGH(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool LHHFJBIAHCN(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool EGKGJJGAPMN(SynchronizedLayer DBIMJHMKHNK)
+		internal bool AEIFJLBBKBP(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -746,17 +826,32 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
+		internal bool FHIJCPPECHA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool HBJFIOJFBHC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool JKEDCEOCPJO(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool GBKBDKHPLKG(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LLNDDFGPOPL(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
 		internal bool OFHCGKJFGDI(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool OLIGLEMPFOP(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool IGFOBPKFCDJ(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -771,62 +866,17 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool GBKBDKHPLKG(SynchronizedLayer DBIMJHMKHNK)
+		internal bool BKNHHGBPLGH(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool BDGDIDPDBHG(SynchronizedLayer DBIMJHMKHNK)
+		internal bool LHHFJBIAHCN(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool LNDGINDKPFA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool DKGPCPBNDPK(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FFEGPHJKMFK(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool BFEABMIFIEE(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool KGKMOLCPDIH(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FHFECFLBHMA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool LLNDDFGPOPL(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool DNIMHEKGJHB(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool FDAIFOAGDLA(SynchronizedLayer DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
-		}
-
-		internal bool KFNBKFELFLH(SynchronizedLayer DBIMJHMKHNK)
+		internal bool DBFPGFHEGKA(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -836,22 +886,27 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool AEINPAGJFME(SynchronizedLayer DBIMJHMKHNK)
+		internal bool JBAJEMGOPDL(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool MEMPOPNAEDN(SynchronizedLayer DBIMJHMKHNK)
+		internal bool KGKMOLCPDIH(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool HBJFIOJFBHC(SynchronizedLayer DBIMJHMKHNK)
+		internal bool EFAPFFFGOOA(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool JKEDCEOCPJO(SynchronizedLayer DBIMJHMKHNK)
+		internal bool AGJKEBOPIOC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool EGKGJJGAPMN(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -866,17 +921,107 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool LOEAMHGMMPK(SynchronizedLayer DBIMJHMKHNK)
+		internal bool LNDGINDKPFA(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
-		internal bool AGJKEBOPIOC(SynchronizedLayer DBIMJHMKHNK)
+		internal bool FDAIFOAGDLA(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool DNIMHEKGJHB(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BFEABMIFIEE(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool PBCAHKDLFPE(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool JDELIMPGFDJ(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FHFECFLBHMA(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
 
 		internal bool EKHOOPGPPGE(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool INHOEMCLAAP(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool AEINPAGJFME(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BMAOCLKPNNC(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool MEMPOPNAEDN(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool OFLDIMDDLHM(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool FFEGPHJKMFK(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool OLIGLEMPFOP(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool BDGDIDPDBHG(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool DKGPCPBNDPK(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool KFNBKFELFLH(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool IGFOBPKFCDJ(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LJDLIIIPIIJ(SynchronizedLayer DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
+		}
+
+		internal bool LOEAMHGMMPK(SynchronizedLayer DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ;
 		}
@@ -887,47 +1032,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 	{
 		internal string EBEHBBDKDFJ;
 
-		internal bool LNDGINDKPFA(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool BKNHHGBPLGH(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool PBCAHKDLFPE(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool FFEGPHJKMFK(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool MEMPOPNAEDN(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool LLNDDFGPOPL(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool AEINPAGJFME(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool GBKBDKHPLKG(SynchronizedParameter DBIMJHMKHNK)
-		{
-			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
-		}
-
-		internal bool EKHOOPGPPGE(SynchronizedParameter DBIMJHMKHNK)
+		internal bool LHHFJBIAHCN(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -937,7 +1042,17 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool BDGDIDPDBHG(SynchronizedParameter DBIMJHMKHNK)
+		internal bool FIPCLHEKKCA(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool DKGPCPBNDPK(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool JKEDCEOCPJO(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -952,12 +1067,52 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool JKEDCEOCPJO(SynchronizedParameter DBIMJHMKHNK)
+		internal bool MEMPOPNAEDN(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool OFHCGKJFGDI(SynchronizedParameter DBIMJHMKHNK)
+		internal bool PBCAHKDLFPE(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool EKHOOPGPPGE(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool GBKBDKHPLKG(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool BDGDIDPDBHG(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool FFEGPHJKMFK(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool BFEABMIFIEE(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool BKNHHGBPLGH(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool LNDGINDKPFA(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool AEINPAGJFME(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -967,7 +1122,12 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
 
-		internal bool BFEABMIFIEE(SynchronizedParameter DBIMJHMKHNK)
+		internal bool OFHCGKJFGDI(SynchronizedParameter DBIMJHMKHNK)
+		{
+			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
+		}
+
+		internal bool LLNDDFGPOPL(SynchronizedParameter DBIMJHMKHNK)
 		{
 			return DBIMJHMKHNK.Name == EBEHBBDKDFJ;
 		}
@@ -981,8 +1141,8 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 	[HideInInspector]
 	private bool ShowLayerWeightsInspector = true;
 
-	[SerializeField]
 	[HideInInspector]
+	[SerializeField]
 	private bool ShowParameterInspector = true;
 
 	[HideInInspector]
@@ -1003,117 +1163,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 
 	private List<string> JNMGDECFIMB = new List<string>();
 
-	private void NKLIHNJCHOG()
-	{
-		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.DOLKFPIABDD() && PhotonNetwork.connected)
-		{
-			PGKLKGGALMP.applyRootMotion = true;
-		}
-		if (!PhotonNetwork.inRoom || PhotonNetwork.room.EGPGEMJNPFD() <= 1)
-		{
-			GAMOKOLALHP.KNNOEGLLDAN();
-		}
-		else if (GDIAJCAHCEC.isMine)
-		{
-			CDPNDOMBEFA();
-			CacheDiscreteTriggers();
-		}
-		else
-		{
-			JDIONMKAPGA();
-		}
-	}
-
-	private void CDPNDOMBEFA()
-	{
-		if (PGKLKGGALMP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < m_SynchronizeLayers.Count; i++)
-		{
-			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)3)
-			{
-				GAMOKOLALHP.DDHLHOGOGNP(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
-			}
-		}
-		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
-		{
-			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
-			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled)
-			{
-				switch (synchronizedParameter.Type)
-				{
-				case ParameterType.Bool:
-					GAMOKOLALHP.DGJOBJMAJNJ(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
-					break;
-				case ParameterType.Float:
-					GAMOKOLALHP.FIDPDKNOIFH(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
-					break;
-				case ParameterType.Int:
-					GAMOKOLALHP.SendNext(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
-					break;
-				case (ParameterType)(-33):
-					GAMOKOLALHP.ILHKKFBHAIC(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
-					break;
-				}
-			}
-		}
-	}
-
-	public void MHAAMGJIMDB(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
-	{
-		if (Application.isPlaying)
-		{
-			MENGIFKONIP = false;
-		}
-		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
-		if (num == -1)
-		{
-			m_SynchronizeLayers.Add(new SynchronizedLayer
-			{
-				LayerIndex = PKFOGBFGICJ,
-				SynchronizeType = JBLLFKFMPNO
-			});
-		}
-		else
-		{
-			m_SynchronizeLayers[num].SynchronizeType = JBLLFKFMPNO;
-		}
-	}
-
-	public bool MFNDNGCIAFF(int PKFOGBFGICJ)
-	{
-		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) == -1;
-	}
-
-	private void IIFCIDDJHPM()
-	{
-		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.DOLKFPIABDD() && PhotonNetwork.connected)
-		{
-			PGKLKGGALMP.applyRootMotion = true;
-		}
-		if (!PhotonNetwork.inRoom || PhotonNetwork.room.EGPGEMJNPFD() <= 0)
-		{
-			GAMOKOLALHP.Reset();
-		}
-		else if (GDIAJCAHCEC.BGJKMGJBPFA())
-		{
-			DEOGPJBPEPP();
-			OHHBFDOOOFH();
-		}
-		else
-		{
-			NOHDKANLKGD();
-		}
-	}
-
-	public bool DODEDMFEKGM(string EBEHBBDKDFJ)
-	{
-		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
-	}
-
-	public SynchronizeType DGDDJHGKCCN(int PKFOGBFGICJ)
+	public SynchronizeType JHBNMPGMPHO(int PKFOGBFGICJ)
 	{
 		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
 		if (num == -1)
@@ -1123,10 +1173,28 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		return m_SynchronizeLayers[num].SynchronizeType;
 	}
 
-	private void ICLOBEBBKHD(PhotonStream HCIJEDFCNOP)
+	public void BFJKMCADPFP()
 	{
-		byte[] array = (byte[])HCIJEDFCNOP.ReceiveNext();
-		for (int i = 0; i < m_SynchronizeLayers.Count; i++)
+		for (int i = 0; i < m_SynchronizeParameters.Count; i += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[i];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete && synchronizedParameter.Type == (ParameterType)(-25) && PGKLKGGALMP.GetBool(synchronizedParameter.Name) && synchronizedParameter.Type == (ParameterType)38)
+			{
+				JNMGDECFIMB.Add(synchronizedParameter.Name);
+				break;
+			}
+		}
+	}
+
+	public bool AAPBGPFJPMM(int PKFOGBFGICJ)
+	{
+		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) != -1;
+	}
+
+	private void ANDLMFGBPJB(PhotonStream HCIJEDFCNOP)
+	{
+		byte[] array = (byte[])HCIJEDFCNOP.NLPFEFOCGBC();
+		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
 		{
 			m_SynchronizeLayers[i].SynchronizeType = (SynchronizeType)array[i];
 		}
@@ -1136,7 +1204,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	public void BNKBEEPOHMG(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
+	public void IDBJJLDKOCH(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
 	{
 		if (Application.isPlaying)
 		{
@@ -1158,20 +1226,236 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	private void NOHDKANLKGD()
+	private void ENILNGHFMPH()
 	{
-		if (!GAMOKOLALHP.POPNINEGMHF())
+		if (!GAMOKOLALHP.KPGEHIHAFPB())
 		{
 			return;
 		}
 		for (int i = 1; i < m_SynchronizeLayers.Count; i++)
 		{
-			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)7)
+			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Disabled)
 			{
-				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)GAMOKOLALHP.IKEKLFCNONN());
+				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)GAMOKOLALHP.GHKNEDAGFJH());
+			}
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == (SynchronizeType)8)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.NNKHCIOPHKO());
+					break;
+				case ParameterType.Float:
+					PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)GAMOKOLALHP.BFEKAOHHEGP());
+					break;
+				case ParameterType.Int:
+					PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)GAMOKOLALHP.MOIJMGCGGJA());
+					break;
+				case (ParameterType)103:
+					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.JOJDLHCIGOJ());
+					break;
+				}
+			}
+		}
+	}
+
+	public List<SynchronizedParameter> GetSynchronizedParameters()
+	{
+		return m_SynchronizeParameters;
+	}
+
+	public SynchronizeType CDLKBCFMALF(int PKFOGBFGICJ)
+	{
+		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Discrete;
+		}
+		return m_SynchronizeLayers[num].SynchronizeType;
+	}
+
+	private void FGDJMHEMDMM()
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Continuous)
+			{
+				GAMOKOLALHP.MOBKENKFHBH(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
 			}
 		}
 		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == (SynchronizeType)5)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					GAMOKOLALHP.FPNAGFEAGPA(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				case ParameterType.Float:
+					GAMOKOLALHP.DGJOBJMAJNJ(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
+					break;
+				case ParameterType.Int:
+					GAMOKOLALHP.CECDMBBNNKF(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					break;
+				case (ParameterType)(-90):
+					GAMOKOLALHP.GNKDMNIMKGK(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				}
+			}
+		}
+	}
+
+	private void Update()
+	{
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
+		{
+			PGKLKGGALMP.applyRootMotion = false;
+		}
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 1)
+		{
+			GAMOKOLALHP.Reset();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			NENDODGHIDJ();
+			CacheDiscreteTriggers();
+		}
+		else
+		{
+			FAODPBIIFDF();
+		}
+	}
+
+	private void PFDDEODEHBD(PhotonStream HCIJEDFCNOP)
+	{
+		byte[] array = new byte[m_SynchronizeLayers.Count + m_SynchronizeParameters.Count];
+		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			array[i] = (byte)m_SynchronizeLayers[i].SynchronizeType;
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
+		{
+			array[m_SynchronizeLayers.Count + j] = (byte)m_SynchronizeParameters[j].SynchronizeType;
+		}
+		HCIJEDFCNOP.GJDCOKMGHOG(array);
+	}
+
+	public bool JEDLHIBJIHD(string EBEHBBDKDFJ)
+	{
+		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
+	}
+
+	public void PILFLCLKJNH(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
+	{
+		if (Application.isPlaying)
+		{
+			MENGIFKONIP = false;
+		}
+		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
+		if (num == -1)
+		{
+			m_SynchronizeLayers.Add(new SynchronizedLayer
+			{
+				LayerIndex = PKFOGBFGICJ,
+				SynchronizeType = JBLLFKFMPNO
+			});
+		}
+		else
+		{
+			m_SynchronizeLayers[num].SynchronizeType = JBLLFKFMPNO;
+		}
+	}
+
+	public bool FBILAIFGFLH(string EBEHBBDKDFJ)
+	{
+		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
+	}
+
+	public bool DoesLayerSynchronizeTypeExist(int PKFOGBFGICJ)
+	{
+		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) != -1;
+	}
+
+	public void ONLPHJBMNJF(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
+	{
+		if (Application.isPlaying)
+		{
+			MENGIFKONIP = false;
+		}
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			m_SynchronizeParameters.Add(new SynchronizedParameter
+			{
+				Name = EBEHBBDKDFJ,
+				Type = HMGBJCGOLMI,
+				SynchronizeType = JBLLFKFMPNO
+			});
+		}
+		else
+		{
+			m_SynchronizeParameters[num].SynchronizeType = JBLLFKFMPNO;
+		}
+	}
+
+	public List<SynchronizedParameter> CAKLCLLNOBD()
+	{
+		return m_SynchronizeParameters;
+	}
+
+	public void AHHBDAPBMEJ(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
+	{
+		if (Application.isPlaying)
+		{
+			MENGIFKONIP = false;
+		}
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			m_SynchronizeParameters.Add(new SynchronizedParameter
+			{
+				Name = EBEHBBDKDFJ,
+				Type = HMGBJCGOLMI,
+				SynchronizeType = JBLLFKFMPNO
+			});
+		}
+		else
+		{
+			m_SynchronizeParameters[num].SynchronizeType = JBLLFKFMPNO;
+		}
+	}
+
+	private void Awake()
+	{
+		GDIAJCAHCEC = GetComponent<PhotonView>();
+		GAMOKOLALHP = new PhotonStreamQueue(120);
+		PGKLKGGALMP = GetComponent<Animator>();
+	}
+
+	private void IKPIBGIGHPH()
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)4)
+			{
+				GAMOKOLALHP.DCOAKHENFCD(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
+			}
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
 		{
 			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
 			if (synchronizedParameter.SynchronizeType == (SynchronizeType)3)
@@ -1179,64 +1463,207 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 				switch (synchronizedParameter.Type)
 				{
 				case ParameterType.Bool:
-					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.IKEKLFCNONN());
+					GAMOKOLALHP.JOJFHILEPIK(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
 					break;
 				case ParameterType.Float:
-					PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)GAMOKOLALHP.ReceiveNext());
+					GAMOKOLALHP.DGJOBJMAJNJ(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
 					break;
 				case ParameterType.Int:
-					PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)GAMOKOLALHP.LHDLFDPJLEA());
+					GAMOKOLALHP.LAFCNDDOLPL(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
 					break;
-				case (ParameterType)88:
-					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.IKEKLFCNONN());
+				case (ParameterType)126:
+					GAMOKOLALHP.ENCBBMBIHMK(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
 					break;
 				}
 			}
 		}
 	}
 
-	private void CPALFOIHHAE(PhotonStream HCIJEDFCNOP)
+	public List<SynchronizedParameter> FALKNECPJCL()
 	{
-		byte[] array = new byte[m_SynchronizeLayers.Count + m_SynchronizeParameters.Count];
-		for (int i = 0; i < m_SynchronizeLayers.Count; i++)
-		{
-			array[i] = (byte)m_SynchronizeLayers[i].SynchronizeType;
-		}
-		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
-		{
-			array[m_SynchronizeLayers.Count + j] = (byte)m_SynchronizeParameters[j].SynchronizeType;
-		}
-		HCIJEDFCNOP.SendNext(array);
+		return m_SynchronizeParameters;
 	}
 
-	public SynchronizeType GetLayerSynchronizeType(int PKFOGBFGICJ)
+	private void AFHBAKMMALF(PhotonStream HCIJEDFCNOP)
 	{
+		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Discrete)
+			{
+				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)HCIJEDFCNOP.ReceiveNext());
+			}
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType != 0)
+			{
+				continue;
+			}
+			switch (synchronizedParameter.Type)
+			{
+			case ParameterType.Bool:
+				if (!(HCIJEDFCNOP.AHDBELMMFCN() is bool))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)HCIJEDFCNOP.MABPFPFGCNL());
+				break;
+			case ParameterType.Float:
+				if (!(HCIJEDFCNOP.PeekNext() is float))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)HCIJEDFCNOP.MABPFPFGCNL());
+				break;
+			case ParameterType.Int:
+				if (!(HCIJEDFCNOP.AHDBELMMFCN() is int))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)HCIJEDFCNOP.EDCDHDJNDPF());
+				break;
+			case (ParameterType)(-114):
+				if (!(HCIJEDFCNOP.PeekNext() is bool))
+				{
+					return;
+				}
+				if ((bool)HCIJEDFCNOP.ReceiveNext())
+				{
+					PGKLKGGALMP.SetTrigger(synchronizedParameter.Name);
+				}
+				break;
+			}
+		}
+	}
+
+	public void CEJJMBGHADN(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
+	{
+		if (Application.isPlaying)
+		{
+			MENGIFKONIP = true;
+		}
 		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
 		if (num == -1)
 		{
-			return SynchronizeType.Disabled;
+			m_SynchronizeLayers.Add(new SynchronizedLayer
+			{
+				LayerIndex = PKFOGBFGICJ,
+				SynchronizeType = JBLLFKFMPNO
+			});
 		}
-		return m_SynchronizeLayers[num].SynchronizeType;
-	}
-
-	public bool CELPIAIHAIO(int PKFOGBFGICJ)
-	{
-		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) != -1;
-	}
-
-	public bool JGHBPPLDJPP(string EBEHBBDKDFJ)
-	{
-		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
-	}
-
-	public SynchronizeType PFEAKIPNMLO(string EBEHBBDKDFJ)
-	{
-		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
-		if (num == -1)
+		else
 		{
-			return SynchronizeType.Disabled;
+			m_SynchronizeLayers[num].SynchronizeType = JBLLFKFMPNO;
 		}
-		return m_SynchronizeParameters[num].SynchronizeType;
+	}
+
+	private void FJHFOBHJEHL()
+	{
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
+		{
+			PGKLKGGALMP.applyRootMotion = false;
+		}
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 1)
+		{
+			GAMOKOLALHP.Reset();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			GKHDICFCBIE();
+			ODFOJDEJENL();
+		}
+		else
+		{
+			FAODPBIIFDF();
+		}
+	}
+
+	private void MBOJONCLAJK(PhotonStream HCIJEDFCNOP)
+	{
+		byte[] array = (byte[])HCIJEDFCNOP.MABPFPFGCNL();
+		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			m_SynchronizeLayers[i].SynchronizeType = (SynchronizeType)array[i];
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
+		{
+			m_SynchronizeParameters[j].SynchronizeType = (SynchronizeType)array[m_SynchronizeLayers.Count + j];
+		}
+	}
+
+	private void EDMCLKKDKIC()
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < m_SynchronizeLayers.Count; i++)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)7)
+			{
+				GAMOKOLALHP.FPNAGFEAGPA(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
+			}
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == (SynchronizeType)6)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					GAMOKOLALHP.MOBKENKFHBH(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				case ParameterType.Float:
+					GAMOKOLALHP.JOJFHILEPIK(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
+					break;
+				case ParameterType.Int:
+					GAMOKOLALHP.BEJMEHHBLJN(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					break;
+				case (ParameterType)60:
+					GAMOKOLALHP.ENCBBMBIHMK(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				}
+			}
+		}
+	}
+
+	private void GLLOMDBMIJM()
+	{
+		if (!GAMOKOLALHP.BKGEFIHNDOI())
+		{
+			return;
+		}
+		for (int i = 1; i < m_SynchronizeLayers.Count; i++)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)7)
+			{
+				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)GAMOKOLALHP.PKCMMBAGPBH());
+			}
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Continuous)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.ReceiveNext());
+					break;
+				case ParameterType.Float:
+					PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)GAMOKOLALHP.DJAJOANLHFP());
+					break;
+				case ParameterType.Int:
+					PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)GAMOKOLALHP.KIMDMBDNICC());
+					break;
+				case (ParameterType)56:
+					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.BFEKAOHHEGP());
+					break;
+				}
+			}
+		}
 	}
 
 	private void NINPKPDJAME(PhotonStream HCIJEDFCNOP)
@@ -1273,72 +1700,164 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		JNMGDECFIMB.Clear();
 	}
 
-	public bool DNFINIMAEJA(int PKFOGBFGICJ)
+	public bool ALACEKDFEEJ(int PKFOGBFGICJ)
 	{
-		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) == -1;
+		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) != -1;
 	}
 
-	private void MODNODMLGBK(PhotonStream HCIJEDFCNOP)
+	private void NDAJBJFJGCF()
 	{
-		for (int i = 1; i < m_SynchronizeLayers.Count; i += 0)
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
 		{
-			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Discrete)
+			PGKLKGGALMP.applyRootMotion = true;
+		}
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 0)
+		{
+			GAMOKOLALHP.OGAMGLEAOAF();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			FJLDIAOFDDD();
+			BOJDGGEONKJ();
+		}
+		else
+		{
+			LMACPAIKGJK();
+		}
+	}
+
+	public SynchronizeType BKLGGEOJKHE(string EBEHBBDKDFJ)
+	{
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Disabled;
+		}
+		return m_SynchronizeParameters[num].SynchronizeType;
+	}
+
+	private void KIEJKBNBHMD()
+	{
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
+		{
+			PGKLKGGALMP.applyRootMotion = true;
+		}
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 1)
+		{
+			GAMOKOLALHP.Reset();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			EDMCLKKDKIC();
+			ODFOJDEJENL();
+		}
+		else
+		{
+			ENILNGHFMPH();
+		}
+	}
+
+	private void IFKJLHDLGFK()
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < m_SynchronizeLayers.Count; i++)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)5)
 			{
-				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)HCIJEDFCNOP.ReceiveNext());
+				GAMOKOLALHP.CECDMBBNNKF(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
 			}
 		}
-		for (int j = 1; j < m_SynchronizeParameters.Count; j += 0)
+		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
 		{
 			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
-			if (synchronizedParameter.SynchronizeType != 0)
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled)
 			{
-				continue;
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					GAMOKOLALHP.SendNext(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				case ParameterType.Float:
+					GAMOKOLALHP.MOBKENKFHBH(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
+					break;
+				case ParameterType.Int:
+					GAMOKOLALHP.JFBKLHIPLMF(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					break;
+				case (ParameterType)37:
+					GAMOKOLALHP.JFBKLHIPLMF(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				}
 			}
-			switch (synchronizedParameter.Type)
+		}
+	}
+
+	public void SetParameterSynchronized(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
+	{
+		if (Application.isPlaying)
+		{
+			MENGIFKONIP = true;
+		}
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			m_SynchronizeParameters.Add(new SynchronizedParameter
 			{
-			case ParameterType.Bool:
-				if (!(HCIJEDFCNOP.AOKDKJCKNCI() is bool))
-				{
-					return;
-				}
-				PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)HCIJEDFCNOP.NLPFEFOCGBC());
-				break;
-			case ParameterType.Float:
-				if (!(HCIJEDFCNOP.IDCPJJPFEJJ() is float))
-				{
-					return;
-				}
-				PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)HCIJEDFCNOP.IDKHBJIHKEB());
-				break;
-			case ParameterType.Int:
-				if (!(HCIJEDFCNOP.AOKDKJCKNCI() is int))
-				{
-					return;
-				}
-				PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)HCIJEDFCNOP.FIBMOBNIALK());
-				break;
-			case (ParameterType)(-128):
-				if (!(HCIJEDFCNOP.KDNNJPIKFIC() is bool))
-				{
-					return;
-				}
-				if ((bool)HCIJEDFCNOP.NLPFEFOCGBC())
-				{
-					PGKLKGGALMP.SetTrigger(synchronizedParameter.Name);
-				}
+				Name = EBEHBBDKDFJ,
+				Type = HMGBJCGOLMI,
+				SynchronizeType = JBLLFKFMPNO
+			});
+		}
+		else
+		{
+			m_SynchronizeParameters[num].SynchronizeType = JBLLFKFMPNO;
+		}
+	}
+
+	public void BOJDGGEONKJ()
+	{
+		for (int i = 1; i < m_SynchronizeParameters.Count; i++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[i];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete && synchronizedParameter.Type == (ParameterType)43 && PGKLKGGALMP.GetBool(synchronizedParameter.Name) && synchronizedParameter.Type == (ParameterType)76)
+			{
+				JNMGDECFIMB.Add(synchronizedParameter.Name);
 				break;
 			}
 		}
 	}
 
-	private void Awake()
+	public void KPFDHEHMBIM()
 	{
-		GDIAJCAHCEC = GetComponent<PhotonView>();
-		GAMOKOLALHP = new PhotonStreamQueue(120);
-		PGKLKGGALMP = GetComponent<Animator>();
+		for (int i = 1; i < m_SynchronizeParameters.Count; i++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[i];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled && synchronizedParameter.Type == (ParameterType)(-108) && PGKLKGGALMP.GetBool(synchronizedParameter.Name) && synchronizedParameter.Type == (ParameterType)(-97))
+			{
+				JNMGDECFIMB.Add(synchronizedParameter.Name);
+				break;
+			}
+		}
 	}
 
-	public void MFJNOJKGGDK(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
+	public List<SynchronizedParameter> BNDEKLOKCEB()
+	{
+		return m_SynchronizeParameters;
+	}
+
+	public SynchronizeType OHLEBLLLEGE(string EBEHBBDKDFJ)
+	{
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Discrete;
+		}
+		return m_SynchronizeParameters[num].SynchronizeType;
+	}
+
+	public void MHAAMGJIMDB(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
 	{
 		if (Application.isPlaying)
 		{
@@ -1359,9 +1878,173 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	public List<SynchronizedParameter> GetSynchronizedParameters()
+	public List<SynchronizedLayer> LNGMOOIPNHC()
 	{
-		return m_SynchronizeParameters;
+		return m_SynchronizeLayers;
+	}
+
+	public List<SynchronizedLayer> ONAHHFFKFNE()
+	{
+		return m_SynchronizeLayers;
+	}
+
+	private void OEENOOGEEHD()
+	{
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
+		{
+			PGKLKGGALMP.applyRootMotion = true;
+		}
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 1)
+		{
+			GAMOKOLALHP.CKCPHFLOLAH();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			NENDODGHIDJ();
+			ODFOJDEJENL();
+		}
+		else
+		{
+			FAODPBIIFDF();
+		}
+	}
+
+	public SynchronizeType IHLPNOLINCB(string EBEHBBDKDFJ)
+	{
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Discrete;
+		}
+		return m_SynchronizeParameters[num].SynchronizeType;
+	}
+
+	public void ODFOJDEJENL()
+	{
+		for (int i = 0; i < m_SynchronizeParameters.Count; i += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[i];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled && synchronizedParameter.Type == (ParameterType)(-29) && PGKLKGGALMP.GetBool(synchronizedParameter.Name) && synchronizedParameter.Type == (ParameterType)(-64))
+			{
+				JNMGDECFIMB.Add(synchronizedParameter.Name);
+				break;
+			}
+		}
+	}
+
+	private void DOMBAFGKNAK(PhotonStream HCIJEDFCNOP)
+	{
+		for (int i = 1; i < m_SynchronizeLayers.Count; i++)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Disabled)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
+			}
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Int:
+					HCIJEDFCNOP.AIAIEPFCCDO(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				case (ParameterType)0:
+					HCIJEDFCNOP.SendNext(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
+					break;
+				case (ParameterType)2:
+					HCIJEDFCNOP.GJDCOKMGHOG(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					break;
+				case (ParameterType)(-114):
+					HCIJEDFCNOP.GJDCOKMGHOG(JNMGDECFIMB.Contains(synchronizedParameter.Name));
+					break;
+				}
+			}
+		}
+		JNMGDECFIMB.Clear();
+	}
+
+	public SynchronizeType GetLayerSynchronizeType(int PKFOGBFGICJ)
+	{
+		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Disabled;
+		}
+		return m_SynchronizeLayers[num].SynchronizeType;
+	}
+
+	private void FJLDIAOFDDD()
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		for (int i = 1; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)8)
+			{
+				GAMOKOLALHP.JFBKLHIPLMF(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
+			}
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					GAMOKOLALHP.ENCBBMBIHMK(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				case ParameterType.Float:
+					GAMOKOLALHP.JOJFHILEPIK(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
+					break;
+				case ParameterType.Int:
+					GAMOKOLALHP.JFBKLHIPLMF(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					break;
+				case (ParameterType)(-17):
+					GAMOKOLALHP.AIAIEPFCCDO(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				}
+			}
+		}
+	}
+
+	private void HDDECCMEJKA()
+	{
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
+		{
+			PGKLKGGALMP.applyRootMotion = false;
+		}
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 1)
+		{
+			GAMOKOLALHP.GGALLPMKOJI();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			FJLDIAOFDDD();
+			CacheDiscreteTriggers();
+		}
+		else
+		{
+			LMACPAIKGJK();
+		}
+	}
+
+	private void ICLOBEBBKHD(PhotonStream HCIJEDFCNOP)
+	{
+		byte[] array = (byte[])HCIJEDFCNOP.ReceiveNext();
+		for (int i = 0; i < m_SynchronizeLayers.Count; i++)
+		{
+			m_SynchronizeLayers[i].SynchronizeType = (SynchronizeType)array[i];
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
+		{
+			m_SynchronizeParameters[j].SynchronizeType = (SynchronizeType)array[m_SynchronizeLayers.Count + j];
+		}
 	}
 
 	private void NENDODGHIDJ()
@@ -1401,12 +2084,241 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	public void OHHBFDOOOFH()
+	public List<SynchronizedLayer> ONIIKNGDCJI()
+	{
+		return m_SynchronizeLayers;
+	}
+
+	private void FOMNCPKKCFN()
+	{
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
+		{
+			PGKLKGGALMP.applyRootMotion = false;
+		}
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 0)
+		{
+			GAMOKOLALHP.JOPOMLLAMKE();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			FJLDIAOFDDD();
+			IDEJGMIJINM();
+		}
+		else
+		{
+			FAODPBIIFDF();
+		}
+	}
+
+	public bool MCHPOELNPJI(string EBEHBBDKDFJ)
+	{
+		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
+	}
+
+	private void IDJMHDDGGAM(PhotonStream HCIJEDFCNOP)
+	{
+		byte[] array = new byte[m_SynchronizeLayers.Count + m_SynchronizeParameters.Count];
+		for (int i = 1; i < m_SynchronizeLayers.Count; i++)
+		{
+			array[i] = (byte)m_SynchronizeLayers[i].SynchronizeType;
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			array[m_SynchronizeLayers.Count + j] = (byte)m_SynchronizeParameters[j].SynchronizeType;
+		}
+		HCIJEDFCNOP.SendNext(array);
+	}
+
+	private void GKHDICFCBIE()
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		for (int i = 0; i < m_SynchronizeLayers.Count; i++)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)5)
+			{
+				GAMOKOLALHP.DGJOBJMAJNJ(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
+			}
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == (SynchronizeType)6)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					GAMOKOLALHP.DGJOBJMAJNJ(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				case ParameterType.Float:
+					GAMOKOLALHP.SendNext(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
+					break;
+				case ParameterType.Int:
+					GAMOKOLALHP.DGJOBJMAJNJ(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					break;
+				case (ParameterType)(-44):
+					GAMOKOLALHP.JOJFHILEPIK(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				}
+			}
+		}
+	}
+
+	private void LMACPAIKGJK()
+	{
+		if (!GAMOKOLALHP.FMJBMNEKCEH())
+		{
+			return;
+		}
+		for (int i = 0; i < m_SynchronizeLayers.Count; i++)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)5)
+			{
+				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)GAMOKOLALHP.BFEKAOHHEGP());
+			}
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == (SynchronizeType)4)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.ReceiveNext());
+					break;
+				case ParameterType.Float:
+					PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)GAMOKOLALHP.DFBDAGMPCJL());
+					break;
+				case ParameterType.Int:
+					PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)GAMOKOLALHP.DFBDAGMPCJL());
+					break;
+				case (ParameterType)(-85):
+					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.MOIJMGCGGJA());
+					break;
+				}
+			}
+		}
+	}
+
+	public SynchronizeType DJPGHOPBIKE(string EBEHBBDKDFJ)
+	{
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Discrete;
+		}
+		return m_SynchronizeParameters[num].SynchronizeType;
+	}
+
+	private void CPALFOIHHAE(PhotonStream HCIJEDFCNOP)
+	{
+		byte[] array = new byte[m_SynchronizeLayers.Count + m_SynchronizeParameters.Count];
+		for (int i = 0; i < m_SynchronizeLayers.Count; i++)
+		{
+			array[i] = (byte)m_SynchronizeLayers[i].SynchronizeType;
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
+		{
+			array[m_SynchronizeLayers.Count + j] = (byte)m_SynchronizeParameters[j].SynchronizeType;
+		}
+		HCIJEDFCNOP.SendNext(array);
+	}
+
+	public void OnPhotonSerializeView(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (MENGIFKONIP)
+			{
+				GAMOKOLALHP.Reset();
+				CPALFOIHHAE(HCIJEDFCNOP);
+				MENGIFKONIP = false;
+			}
+			GAMOKOLALHP.Serialize(HCIJEDFCNOP);
+			NINPKPDJAME(HCIJEDFCNOP);
+		}
+		else
+		{
+			if (HCIJEDFCNOP.PeekNext() is byte[])
+			{
+				ICLOBEBBKHD(HCIJEDFCNOP);
+			}
+			GAMOKOLALHP.Deserialize(HCIJEDFCNOP);
+			DOCHFABJBJG(HCIJEDFCNOP);
+		}
+	}
+
+	private void JHEKMMEBEEM(PhotonStream HCIJEDFCNOP)
+	{
+		for (int i = 0; i < m_SynchronizeLayers.Count; i++)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Disabled)
+			{
+				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)HCIJEDFCNOP.NLPFEFOCGBC());
+			}
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType != 0)
+			{
+				continue;
+			}
+			switch (synchronizedParameter.Type)
+			{
+			case ParameterType.Int:
+				if (!(HCIJEDFCNOP.AHDBELMMFCN() is bool))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)HCIJEDFCNOP.MABPFPFGCNL());
+				break;
+			case (ParameterType)0:
+				if (!(HCIJEDFCNOP.AHDBELMMFCN() is float))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)HCIJEDFCNOP.ReceiveNext());
+				break;
+			case (ParameterType)2:
+				if (!(HCIJEDFCNOP.PeekNext() is int))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)HCIJEDFCNOP.MABPFPFGCNL());
+				break;
+			case (ParameterType)7:
+				if (!(HCIJEDFCNOP.PeekNext() is bool))
+				{
+					return;
+				}
+				if ((bool)HCIJEDFCNOP.MABPFPFGCNL())
+				{
+					PGKLKGGALMP.SetTrigger(synchronizedParameter.Name);
+				}
+				break;
+			}
+		}
+	}
+
+	public bool FPPMIMICLCE(int PKFOGBFGICJ)
+	{
+		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) == -1;
+	}
+
+	public void IDEJGMIJINM()
 	{
 		for (int i = 1; i < m_SynchronizeParameters.Count; i++)
 		{
 			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[i];
-			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete && synchronizedParameter.Type == (ParameterType)(-73) && PGKLKGGALMP.GetBool(synchronizedParameter.Name) && synchronizedParameter.Type == (ParameterType)(-93))
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete && synchronizedParameter.Type == (ParameterType)(-81) && PGKLKGGALMP.GetBool(synchronizedParameter.Name) && synchronizedParameter.Type == (ParameterType)22)
 			{
 				JNMGDECFIMB.Add(synchronizedParameter.Name);
 				break;
@@ -1414,7 +2326,112 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	public void MCGGIDPEPAN(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
+	public SynchronizeType JKHLNHBCFMH(int PKFOGBFGICJ)
+	{
+		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Disabled;
+		}
+		return m_SynchronizeLayers[num].SynchronizeType;
+	}
+
+	private void KFBDOHNCHHC(PhotonStream HCIJEDFCNOP)
+	{
+		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Discrete)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
+			}
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Int:
+					HCIJEDFCNOP.NICKMDDINKP(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
+					break;
+				case (ParameterType)0:
+					HCIJEDFCNOP.SendNext(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
+					break;
+				case (ParameterType)2:
+					HCIJEDFCNOP.SendNext(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					break;
+				case (ParameterType)(-24):
+					HCIJEDFCNOP.GJDCOKMGHOG(JNMGDECFIMB.Contains(synchronizedParameter.Name));
+					break;
+				}
+			}
+		}
+		JNMGDECFIMB.Clear();
+	}
+
+	public void DEKGPEDBDJE(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (MENGIFKONIP)
+			{
+				GAMOKOLALHP.GGALLPMKOJI();
+				IDJMHDDGGAM(HCIJEDFCNOP);
+				MENGIFKONIP = false;
+			}
+			GAMOKOLALHP.IKIJABBBOKA(HCIJEDFCNOP);
+			DOMBAFGKNAK(HCIJEDFCNOP);
+		}
+		else
+		{
+			if (HCIJEDFCNOP.PeekNext() is byte[])
+			{
+				ICLOBEBBKHD(HCIJEDFCNOP);
+			}
+			GAMOKOLALHP.ECMLBANFIJF(HCIJEDFCNOP);
+			DOCHFABJBJG(HCIJEDFCNOP);
+		}
+	}
+
+	public void HIDJLJIEPHK(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (MENGIFKONIP)
+			{
+				GAMOKOLALHP.LECPHJOIGKN();
+				IDJMHDDGGAM(HCIJEDFCNOP);
+				MENGIFKONIP = false;
+			}
+			GAMOKOLALHP.NKMPCNJPFNE(HCIJEDFCNOP);
+			DOMBAFGKNAK(HCIJEDFCNOP);
+		}
+		else
+		{
+			if (HCIJEDFCNOP.AHDBELMMFCN() is byte[])
+			{
+				ICLOBEBBKHD(HCIJEDFCNOP);
+			}
+			GAMOKOLALHP.NHJAFICCEGA(HCIJEDFCNOP);
+			AFHBAKMMALF(HCIJEDFCNOP);
+		}
+	}
+
+	public List<SynchronizedLayer> GetSynchronizedLayers()
+	{
+		return m_SynchronizeLayers;
+	}
+
+	public void NBBIBGABOBD(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
 	{
 		if (Application.isPlaying)
 		{
@@ -1435,21 +2452,16 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	public bool DEGDKLFMCAP(string EBEHBBDKDFJ)
+	private void NOGBAEKPOMH(PhotonStream HCIJEDFCNOP)
 	{
-		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) == -1;
-	}
-
-	public void CacheDiscreteTriggers()
-	{
-		for (int i = 0; i < m_SynchronizeParameters.Count; i++)
+		byte[] array = (byte[])HCIJEDFCNOP.MABPFPFGCNL();
+		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
 		{
-			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[i];
-			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete && synchronizedParameter.Type == ParameterType.Trigger && PGKLKGGALMP.GetBool(synchronizedParameter.Name) && synchronizedParameter.Type == ParameterType.Trigger)
-			{
-				JNMGDECFIMB.Add(synchronizedParameter.Name);
-				break;
-			}
+			m_SynchronizeLayers[i].SynchronizeType = (SynchronizeType)array[i];
+		}
+		for (int j = 0; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			m_SynchronizeParameters[j].SynchronizeType = (SynchronizeType)array[m_SynchronizeLayers.Count + j];
 		}
 	}
 
@@ -1506,204 +2518,25 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	public List<SynchronizedParameter> GGDKJACBGGP()
+	private void KMEONPMCNJG()
 	{
-		return m_SynchronizeParameters;
-	}
-
-	public bool DoesLayerSynchronizeTypeExist(int PKFOGBFGICJ)
-	{
-		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) != -1;
-	}
-
-	public void SetLayerSynchronized(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
-	{
-		if (Application.isPlaying)
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
 		{
-			MENGIFKONIP = true;
+			PGKLKGGALMP.applyRootMotion = false;
 		}
-		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
-		if (num == -1)
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 1)
 		{
-			m_SynchronizeLayers.Add(new SynchronizedLayer
-			{
-				LayerIndex = PKFOGBFGICJ,
-				SynchronizeType = JBLLFKFMPNO
-			});
+			GAMOKOLALHP.JOPOMLLAMKE();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			IKPIBGIGHPH();
+			BOJDGGEONKJ();
 		}
 		else
 		{
-			m_SynchronizeLayers[num].SynchronizeType = JBLLFKFMPNO;
+			FAODPBIIFDF();
 		}
-	}
-
-	public SynchronizeType EBDKNHAEFEI(int PKFOGBFGICJ)
-	{
-		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
-		if (num == -1)
-		{
-			return SynchronizeType.Disabled;
-		}
-		return m_SynchronizeLayers[num].SynchronizeType;
-	}
-
-	private void JDIONMKAPGA()
-	{
-		if (!GAMOKOLALHP.FGIECEGOCGK())
-		{
-			return;
-		}
-		for (int i = 1; i < m_SynchronizeLayers.Count; i += 0)
-		{
-			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Discrete)
-			{
-				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)GAMOKOLALHP.IDKHBJIHKEB());
-			}
-		}
-		for (int j = 0; j < m_SynchronizeParameters.Count; j += 0)
-		{
-			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
-			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled)
-			{
-				switch (synchronizedParameter.Type)
-				{
-				case ParameterType.Int:
-					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.IDKHBJIHKEB());
-					break;
-				case (ParameterType)0:
-					PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)GAMOKOLALHP.IKEKLFCNONN());
-					break;
-				case (ParameterType)2:
-					PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)GAMOKOLALHP.IKEKLFCNONN());
-					break;
-				case (ParameterType)(-16):
-					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.LHDLFDPJLEA());
-					break;
-				}
-			}
-		}
-	}
-
-	public bool DoesParameterSynchronizeTypeExist(string EBEHBBDKDFJ)
-	{
-		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
-	}
-
-	public SynchronizeType BAKMDMLOMPA(int PKFOGBFGICJ)
-	{
-		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
-		if (num == -1)
-		{
-			return SynchronizeType.Discrete;
-		}
-		return m_SynchronizeLayers[num].SynchronizeType;
-	}
-
-	private void LCJHDLKJEOM()
-	{
-		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.BGJKMGJBPFA() && PhotonNetwork.connected)
-		{
-			PGKLKGGALMP.applyRootMotion = true;
-		}
-		if (!PhotonNetwork.inRoom || PhotonNetwork.room.DHOGHIOACME() <= 1)
-		{
-			GAMOKOLALHP.Reset();
-		}
-		else if (GDIAJCAHCEC.DOLKFPIABDD())
-		{
-			CDPNDOMBEFA();
-			OHHBFDOOOFH();
-		}
-		else
-		{
-			JDIONMKAPGA();
-		}
-	}
-
-	public bool JCLNMPFEIFK(int PKFOGBFGICJ)
-	{
-		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) != -1;
-	}
-
-	public SynchronizeType KODBNLBNMBB(string EBEHBBDKDFJ)
-	{
-		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
-		if (num == -1)
-		{
-			return SynchronizeType.Disabled;
-		}
-		return m_SynchronizeParameters[num].SynchronizeType;
-	}
-
-	private void FLFBBNEIAAB()
-	{
-		if (PGKLKGGALMP == null)
-		{
-			return;
-		}
-		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
-		{
-			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)7)
-			{
-				GAMOKOLALHP.HPCOFADNBPA(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
-			}
-		}
-		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
-		{
-			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
-			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled)
-			{
-				switch (synchronizedParameter.Type)
-				{
-				case ParameterType.Bool:
-					GAMOKOLALHP.SendNext(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
-					break;
-				case ParameterType.Float:
-					GAMOKOLALHP.FIDPDKNOIFH(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
-					break;
-				case ParameterType.Int:
-					GAMOKOLALHP.DGJOBJMAJNJ(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
-					break;
-				case (ParameterType)45:
-					GAMOKOLALHP.HPCOFADNBPA(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
-					break;
-				}
-			}
-		}
-	}
-
-	private void MHOKCLFCMDH(PhotonStream HCIJEDFCNOP)
-	{
-		for (int i = 1; i < m_SynchronizeLayers.Count; i += 0)
-		{
-			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Discrete)
-			{
-				HCIJEDFCNOP.SendNext(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
-			}
-		}
-		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
-		{
-			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
-			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled)
-			{
-				switch (synchronizedParameter.Type)
-				{
-				case ParameterType.Int:
-					HCIJEDFCNOP.CPIBABMPJLE(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
-					break;
-				case (ParameterType)0:
-					HCIJEDFCNOP.CPIBABMPJLE(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
-					break;
-				case (ParameterType)2:
-					HCIJEDFCNOP.PNAPNHJHBMN(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
-					break;
-				case (ParameterType)(-22):
-					HCIJEDFCNOP.OLACNHHHOEL(JNMGDECFIMB.Contains(synchronizedParameter.Name));
-					break;
-				}
-			}
-		}
-		JNMGDECFIMB.Clear();
 	}
 
 	private void FAODPBIIFDF()
@@ -1743,17 +2576,147 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	public List<SynchronizedLayer> LKFLOHIMJMJ()
+	private void KCDOMIJBFLL()
 	{
-		return m_SynchronizeLayers;
+		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
+		{
+			PGKLKGGALMP.applyRootMotion = true;
+		}
+		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 0)
+		{
+			GAMOKOLALHP.Reset();
+		}
+		else if (GDIAJCAHCEC.isMine)
+		{
+			FGDJMHEMDMM();
+			KPFDHEHMBIM();
+		}
+		else
+		{
+			GLLOMDBMIJM();
+		}
 	}
 
-	public List<SynchronizedParameter> NGDLFDKJEKH()
+	public SynchronizeType PFEAKIPNMLO(string EBEHBBDKDFJ)
 	{
-		return m_SynchronizeParameters;
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Disabled;
+		}
+		return m_SynchronizeParameters[num].SynchronizeType;
 	}
 
-	public void JEPABGBLOFE(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
+	public void CacheDiscreteTriggers()
+	{
+		for (int i = 0; i < m_SynchronizeParameters.Count; i++)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[i];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete && synchronizedParameter.Type == ParameterType.Trigger && PGKLKGGALMP.GetBool(synchronizedParameter.Name) && synchronizedParameter.Type == ParameterType.Trigger)
+			{
+				JNMGDECFIMB.Add(synchronizedParameter.Name);
+				break;
+			}
+		}
+	}
+
+	private void CEEPNIJALJI(PhotonStream HCIJEDFCNOP)
+	{
+		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Disabled)
+			{
+				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)HCIJEDFCNOP.NLPFEFOCGBC());
+			}
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType != 0)
+			{
+				continue;
+			}
+			switch (synchronizedParameter.Type)
+			{
+			case ParameterType.Bool:
+				if (!(HCIJEDFCNOP.PeekNext() is bool))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)HCIJEDFCNOP.ReceiveNext());
+				break;
+			case ParameterType.Float:
+				if (!(HCIJEDFCNOP.AHDBELMMFCN() is float))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)HCIJEDFCNOP.MABPFPFGCNL());
+				break;
+			case ParameterType.Int:
+				if (!(HCIJEDFCNOP.AHDBELMMFCN() is int))
+				{
+					return;
+				}
+				PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)HCIJEDFCNOP.EDCDHDJNDPF());
+				break;
+			case (ParameterType)(-3):
+				if (!(HCIJEDFCNOP.PeekNext() is bool))
+				{
+					return;
+				}
+				if ((bool)HCIJEDFCNOP.NLPFEFOCGBC())
+				{
+					PGKLKGGALMP.SetTrigger(synchronizedParameter.Name);
+				}
+				break;
+			}
+		}
+	}
+
+	public SynchronizeType GetParameterSynchronizeType(string EBEHBBDKDFJ)
+	{
+		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
+		if (num == -1)
+		{
+			return SynchronizeType.Disabled;
+		}
+		return m_SynchronizeParameters[num].SynchronizeType;
+	}
+
+	public bool FPKBAJODGHN(string EBEHBBDKDFJ)
+	{
+		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
+	}
+
+	public void MPGJDLCANPA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (PGKLKGGALMP == null)
+		{
+			return;
+		}
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (MENGIFKONIP)
+			{
+				GAMOKOLALHP.CKCPHFLOLAH();
+				CPALFOIHHAE(HCIJEDFCNOP);
+				MENGIFKONIP = true;
+			}
+			GAMOKOLALHP.NKMPCNJPFNE(HCIJEDFCNOP);
+			NINPKPDJAME(HCIJEDFCNOP);
+		}
+		else
+		{
+			if (HCIJEDFCNOP.AHDBELMMFCN() is byte[])
+			{
+				NOGBAEKPOMH(HCIJEDFCNOP);
+			}
+			GAMOKOLALHP.ECMLBANFIJF(HCIJEDFCNOP);
+			DOCHFABJBJG(HCIJEDFCNOP);
+		}
+	}
+
+	public void AKLFJKAINHF(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
 	{
 		if (Application.isPlaying)
 		{
@@ -1775,49 +2738,7 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	private void DEOGPJBPEPP()
-	{
-		if (PGKLKGGALMP == null)
-		{
-			return;
-		}
-		for (int i = 1; i < m_SynchronizeLayers.Count; i++)
-		{
-			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)3)
-			{
-				GAMOKOLALHP.MJLPEADKIMK(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
-			}
-		}
-		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
-		{
-			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
-			if (synchronizedParameter.SynchronizeType == SynchronizeType.Continuous)
-			{
-				switch (synchronizedParameter.Type)
-				{
-				case ParameterType.Bool:
-					GAMOKOLALHP.HPCOFADNBPA(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
-					break;
-				case ParameterType.Float:
-					GAMOKOLALHP.MJLPEADKIMK(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
-					break;
-				case ParameterType.Int:
-					GAMOKOLALHP.DGJOBJMAJNJ(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
-					break;
-				case (ParameterType)(-93):
-					GAMOKOLALHP.DDHLHOGOGNP(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
-					break;
-				}
-			}
-		}
-	}
-
-	public bool EGPEPEJDGCJ(string EBEHBBDKDFJ)
-	{
-		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
-	}
-
-	public void OnPhotonSerializeView(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void GBOFDLLNLLL(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (PGKLKGGALMP == null)
 		{
@@ -1827,80 +2748,51 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		{
 			if (MENGIFKONIP)
 			{
-				GAMOKOLALHP.Reset();
+				GAMOKOLALHP.NNNCKCELBCE();
 				CPALFOIHHAE(HCIJEDFCNOP);
 				MENGIFKONIP = false;
 			}
-			GAMOKOLALHP.Serialize(HCIJEDFCNOP);
+			GAMOKOLALHP.IKIJABBBOKA(HCIJEDFCNOP);
 			NINPKPDJAME(HCIJEDFCNOP);
 		}
 		else
 		{
-			if (HCIJEDFCNOP.PeekNext() is byte[])
+			if (HCIJEDFCNOP.AHDBELMMFCN() is byte[])
 			{
-				ICLOBEBBKHD(HCIJEDFCNOP);
+				ANDLMFGBPJB(HCIJEDFCNOP);
 			}
-			GAMOKOLALHP.Deserialize(HCIJEDFCNOP);
-			DOCHFABJBJG(HCIJEDFCNOP);
+			GAMOKOLALHP.ECMLBANFIJF(HCIJEDFCNOP);
+			CEEPNIJALJI(HCIJEDFCNOP);
 		}
 	}
 
-	private void AJIKPEIGACI()
-	{
-		GDIAJCAHCEC = GetComponent<PhotonView>();
-		GAMOKOLALHP = new PhotonStreamQueue(-5);
-		PGKLKGGALMP = GetComponent<Animator>();
-	}
-
-	public void SetParameterSynchronized(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
-	{
-		if (Application.isPlaying)
-		{
-			MENGIFKONIP = true;
-		}
-		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
-		if (num == -1)
-		{
-			m_SynchronizeParameters.Add(new SynchronizedParameter
-			{
-				Name = EBEHBBDKDFJ,
-				Type = HMGBJCGOLMI,
-				SynchronizeType = JBLLFKFMPNO
-			});
-		}
-		else
-		{
-			m_SynchronizeParameters[num].SynchronizeType = JBLLFKFMPNO;
-		}
-	}
-
-	private void DGANFOLNABB(PhotonStream HCIJEDFCNOP)
+	private void JKNCHEEJCML(PhotonStream HCIJEDFCNOP)
 	{
 		for (int i = 0; i < m_SynchronizeLayers.Count; i += 0)
 		{
 			if (m_SynchronizeLayers[i].SynchronizeType == SynchronizeType.Discrete)
 			{
-				HCIJEDFCNOP.FADAIFFMBEL(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
+				HCIJEDFCNOP.AIAIEPFCCDO(PGKLKGGALMP.GetLayerWeight(m_SynchronizeLayers[i].LayerIndex));
 			}
 		}
-		for (int j = 0; j < m_SynchronizeParameters.Count; j++)
+		for (int j = 1; j < m_SynchronizeParameters.Count; j++)
 		{
 			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
-			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete)
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Disabled)
 			{
 				switch (synchronizedParameter.Type)
 				{
-				case ParameterType.Bool:
-					HCIJEDFCNOP.IBCLJIACBKG(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
-					break;
-				case ParameterType.Float:
-					HCIJEDFCNOP.PBECMJMDHBI(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
-					break;
 				case ParameterType.Int:
-					HCIJEDFCNOP.OLACNHHHOEL(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					HCIJEDFCNOP.GJDCOKMGHOG(PGKLKGGALMP.GetBool(synchronizedParameter.Name));
 					break;
-				case (ParameterType)99:
-					HCIJEDFCNOP.IBCLJIACBKG(JNMGDECFIMB.Contains(synchronizedParameter.Name));
+				case (ParameterType)0:
+					HCIJEDFCNOP.NICKMDDINKP(PGKLKGGALMP.GetFloat(synchronizedParameter.Name));
+					break;
+				case (ParameterType)2:
+					HCIJEDFCNOP.GJDCOKMGHOG(PGKLKGGALMP.GetInteger(synchronizedParameter.Name));
+					break;
+				case (ParameterType)100:
+					HCIJEDFCNOP.NICKMDDINKP(JNMGDECFIMB.Contains(synchronizedParameter.Name));
 					break;
 				}
 			}
@@ -1908,16 +2800,70 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		JNMGDECFIMB.Clear();
 	}
 
-	public List<SynchronizedLayer> GetSynchronizedLayers()
+	public bool OKMNOFAKEHC(int PKFOGBFGICJ)
+	{
+		return m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ) != -1;
+	}
+
+	public bool DoesParameterSynchronizeTypeExist(string EBEHBBDKDFJ)
+	{
+		return m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ) != -1;
+	}
+
+	private void HDKOOFPGGAB()
+	{
+		if (!GAMOKOLALHP.LELHINBMPOP())
+		{
+			return;
+		}
+		for (int i = 1; i < m_SynchronizeLayers.Count; i += 0)
+		{
+			if (m_SynchronizeLayers[i].SynchronizeType == (SynchronizeType)8)
+			{
+				PGKLKGGALMP.SetLayerWeight(m_SynchronizeLayers[i].LayerIndex, (float)GAMOKOLALHP.BFEKAOHHEGP());
+			}
+		}
+		for (int j = 1; j < m_SynchronizeParameters.Count; j += 0)
+		{
+			SynchronizedParameter synchronizedParameter = m_SynchronizeParameters[j];
+			if (synchronizedParameter.SynchronizeType == SynchronizeType.Discrete)
+			{
+				switch (synchronizedParameter.Type)
+				{
+				case ParameterType.Bool:
+					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.MOIJMGCGGJA());
+					break;
+				case ParameterType.Float:
+					PGKLKGGALMP.SetFloat(synchronizedParameter.Name, (float)GAMOKOLALHP.DJAJOANLHFP());
+					break;
+				case ParameterType.Int:
+					PGKLKGGALMP.SetInteger(synchronizedParameter.Name, (int)GAMOKOLALHP.JOJDLHCIGOJ());
+					break;
+				case (ParameterType)59:
+					PGKLKGGALMP.SetBool(synchronizedParameter.Name, (bool)GAMOKOLALHP.JOJDLHCIGOJ());
+					break;
+				}
+			}
+		}
+	}
+
+	private void BFFHPJMMGHD()
+	{
+		GDIAJCAHCEC = GetComponent<PhotonView>();
+		GAMOKOLALHP = new PhotonStreamQueue(62);
+		PGKLKGGALMP = GetComponent<Animator>();
+	}
+
+	public List<SynchronizedLayer> CLMLNCGNADA()
 	{
 		return m_SynchronizeLayers;
 	}
 
-	public void ACPDDODDGLE(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
+	public void SetLayerSynchronized(int PKFOGBFGICJ, SynchronizeType JBLLFKFMPNO)
 	{
 		if (Application.isPlaying)
 		{
-			MENGIFKONIP = false;
+			MENGIFKONIP = true;
 		}
 		int num = m_SynchronizeLayers.FindIndex((SynchronizedLayer DBIMJHMKHNK) => DBIMJHMKHNK.LayerIndex == PKFOGBFGICJ);
 		if (num == -1)
@@ -1934,34 +2880,25 @@ public class PhotonAnimatorView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	private void Update()
+	public void BAOLNBEACMG(string EBEHBBDKDFJ, ParameterType HMGBJCGOLMI, SynchronizeType JBLLFKFMPNO)
 	{
-		if (PGKLKGGALMP.applyRootMotion && !GDIAJCAHCEC.isMine && PhotonNetwork.connected)
+		if (Application.isPlaying)
 		{
-			PGKLKGGALMP.applyRootMotion = false;
+			MENGIFKONIP = true;
 		}
-		if (!PhotonNetwork.inRoom || PhotonNetwork.room.PlayerCount <= 1)
-		{
-			GAMOKOLALHP.Reset();
-		}
-		else if (GDIAJCAHCEC.isMine)
-		{
-			NENDODGHIDJ();
-			CacheDiscreteTriggers();
-		}
-		else
-		{
-			FAODPBIIFDF();
-		}
-	}
-
-	public SynchronizeType GetParameterSynchronizeType(string EBEHBBDKDFJ)
-	{
 		int num = m_SynchronizeParameters.FindIndex((SynchronizedParameter DBIMJHMKHNK) => DBIMJHMKHNK.Name == EBEHBBDKDFJ);
 		if (num == -1)
 		{
-			return SynchronizeType.Disabled;
+			m_SynchronizeParameters.Add(new SynchronizedParameter
+			{
+				Name = EBEHBBDKDFJ,
+				Type = HMGBJCGOLMI,
+				SynchronizeType = JBLLFKFMPNO
+			});
 		}
-		return m_SynchronizeParameters[num].SynchronizeType;
+		else
+		{
+			m_SynchronizeParameters[num].SynchronizeType = JBLLFKFMPNO;
+		}
 	}
 }

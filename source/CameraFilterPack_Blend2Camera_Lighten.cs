@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/Lighten")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/Lighten")]
 public class CameraFilterPack_Blend2Camera_Lighten : MonoBehaviour
 {
 	private string ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_Lighten";
@@ -73,13 +73,13 @@ public class CameraFilterPack_Blend2Camera_Lighten : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				EPCGJFCCAFH().SetTexture("CameraFilterPack/TV_Old", JDMCFBKJHDD);
+				ADBKPGFMNKO().SetTexture("_ScreenResolution", JDMCFBKJHDD);
 			}
-			EPCGJFCCAFH().SetFloat("_Value4", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat(".lastCheckpoint.bgcolor", BlendFX);
-			ADBKPGFMNKO().SetFloat("SpawnObj", SwitchCameraToCamera2);
-			HFBJAOFLCJI().SetVector("USE_DIAG_SEARCH", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 968f, 251f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("_Value3", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat(".lastCheckpoint.currentCombo", BlendFX);
+			ADBKPGFMNKO().SetFloat("[Down]", SwitchCameraToCamera2);
+			EPCGJFCCAFH().SetVector("USE_CORNER_DETECTION", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 968f, 251f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{
@@ -202,13 +202,13 @@ public class CameraFilterPack_Blend2Camera_Lighten : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				LDNADDJMIPK().SetTexture("Parent ID", JDMCFBKJHDD);
+				ADBKPGFMNKO().SetTexture("Parent ID", JDMCFBKJHDD);
 			}
-			ADBKPGFMNKO().SetFloat("colorB", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("JoinRandom failed: No open game. Calling: OnPhotonRandomJoinFailed() and staying on master server.", BlendFX);
-			EPCGJFCCAFH().SetFloat("_TimeX", SwitchCameraToCamera2);
-			ADBKPGFMNKO().SetVector("tagElement", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1445f, 1152f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			LDNADDJMIPK().SetFloat("colorA", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat("CreateRoom failed, client stays on masterserver: {0}.", BlendFX);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/FX_Glitch3", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector(" ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1445f, 1152f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH());
 		}
 		else
 		{
@@ -343,12 +343,12 @@ public class CameraFilterPack_Blend2Camera_Lighten : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("Share", JDMCFBKJHDD);
+				EPCGJFCCAFH().SetTexture("R2", JDMCFBKJHDD);
 			}
-			EPCGJFCCAFH().SetFloat("Reset All", HBJJOCHGOPH);
-			EPCGJFCCAFH().SetFloat("[MapsData] Found ", BlendFX);
-			EPCGJFCCAFH().SetFloat("UNDISTORT", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("#", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1096f, 50f));
+			HFBJAOFLCJI().SetFloat("Reload Maps", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("[MapsData] Workshop maps was loaded", BlendFX);
+			NBPKMLMCHFN.SetFloat("_BlurPass", SwitchCameraToCamera2);
+			LDNADDJMIPK().SetVector(": ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1096f, 50f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
 		}
 		else

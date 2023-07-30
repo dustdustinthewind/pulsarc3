@@ -36,9 +36,9 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1162f;
 			}
-			IGKFMCPDNOI().SetFloat("achievements.id", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("IntraTime", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1238f, 1325f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			DEFBJOCJJKF().SetFloat("NEW_ACHIEVEMENT_1_", HBJJOCHGOPH);
+			KEMAALEODNH().SetVector("request", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1238f, 1325f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -114,7 +114,7 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		SCShader = Shader.Find("_Parameter");
+		SCShader = Shader.Find("_ColorBuffer");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -123,7 +123,7 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 
 	private void DLBODOFAJGM()
 	{
-		SCShader = Shader.Find("OPEN FILE");
+		SCShader = Shader.Find("[FileSelector] Starting file dialog");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -136,7 +136,7 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("907198288");
+		SCShader = Shader.Find("1087340967");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -152,9 +152,9 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 			{
 				HBJJOCHGOPH = 412f;
 			}
-			DEFBJOCJJKF().SetFloat("UseScanLineSize", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetVector(".lastCheckpoint.correctScore", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 556f, 708f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH());
+			DOHGBNPMBKG().SetFloat("GlassColor", HBJJOCHGOPH);
+			EPCGJFCCAFH().SetVector(".lastCheckpoint.lives", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 556f, 708f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -188,8 +188,8 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 				HBJJOCHGOPH = 586f;
 			}
 			IGKFMCPDNOI().SetFloat("NO", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetVector("Event Received", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 61f, 1172f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			DOHGBNPMBKG().SetVector("You need to have a Graphic control (such as an Image) for the list [", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 61f, 1172f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -249,7 +249,7 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 
 	private void IMCKJCHKMKB()
 	{
-		SCShader = Shader.Find("settings.customdataskin");
+		SCShader = Shader.Find("/");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -284,7 +284,7 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		SCShader = Shader.Find("intensity");
+		SCShader = Shader.Find("_Exponent");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -355,9 +355,9 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 			{
 				HBJJOCHGOPH = 978f;
 			}
-			FAIFBBGFAIB().SetFloat("settings_bindings_sec_", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetVector("_FgOverlap", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1126f, 108f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			FAIFBBGFAIB().SetFloat("settings_bindings_", HBJJOCHGOPH);
+			AELJLBOJAIL().SetVector("_Screen", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1126f, 108f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
 		}
 		else
 		{
@@ -371,7 +371,7 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find("MusicFileSelector");
+		SCShader = Shader.Find("IconFileSelector");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -380,7 +380,7 @@ public class CameraFilterPack_FX_Funk : MonoBehaviour
 
 	private void NBGIMIDICKE()
 	{
-		SCShader = Shader.Find("Image");
+		SCShader = Shader.Find("menuthemes");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

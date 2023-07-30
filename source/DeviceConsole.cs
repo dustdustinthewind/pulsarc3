@@ -183,7 +183,7 @@ public class DeviceConsole : Singleton<DeviceConsole>
 			commandInputField.text = string.Empty;
 			if (IDNLBGOCOEK)
 			{
-				CHGFNGIAOAL();
+				GJOHOFOJIKC();
 			}
 		}
 	}
@@ -197,13 +197,13 @@ public class DeviceConsole : Singleton<DeviceConsole>
 	{
 		if (BDGDDFKKGGA.Length != 4)
 		{
-			UnityEngine.Debug.LogError("_ReprojectionMatrix");
+			UnityEngine.Debug.LogError("_Params1");
 		}
-		else if (BDGDDFKKGGA[1] == "CameraFilterPack/Edge_Sigmoid" || BDGDDFKKGGA[0] == "d264dbba9c2410771b4ad918903b3f4cd9e276a9")
+		else if (BDGDDFKKGGA[1] == "_ScreenResolution" || BDGDDFKKGGA[0] == "88f00bdf0ad61b16b803971ebe071962")
 		{
 			autoFocusInputField = true;
 		}
-		else if (BDGDDFKKGGA[0] == "_GrainTex" || BDGDDFKKGGA[1] == "Beat Detected")
+		else if (BDGDDFKKGGA[0] == "_MainTex" || BDGDDFKKGGA[1] == "Beat Detected")
 		{
 			autoFocusInputField = false;
 		}
@@ -215,19 +215,19 @@ public class DeviceConsole : Singleton<DeviceConsole>
 
 	private void FIBAPPIDMFH()
 	{
-		DebugLogs debugLogs = DebugLogs.ECIBPJGCNNF();
+		DebugLogs debugLogs = DebugLogs.AKNKBPICFGJ();
 		debugLogs.OnLogAdded = (Action<DebugLogs.Log>)Delegate.Remove(debugLogs.OnLogAdded, new Action<DebugLogs.Log>(DMJLENOCHIF));
-		DebugLogs debugLogs2 = DebugLogs.GLEFOHOMBFC();
+		DebugLogs debugLogs2 = DebugLogs.FMEBOFOPHDG();
 		debugLogs2.OnLogsCleared = (Action)Delegate.Remove(debugLogs2.OnLogsCleared, new Action(CBNODCKLHPJ));
-		DebugCommands.Instance.RemoveCommand("PRESS A KEY");
-		DebugCommands.Instance.HDIJOFKHAGE("_Offsets");
+		DebugCommands.BLCLCEDLJBC().FEIMDOGJGHA("ControllerLeftY");
+		DebugCommands.IGMKHPPPLDD().EIEDNPBBLKL("_MainTex");
 	}
 
 	private static void LCCBKOBHEPN(string[] BDGDDFKKGGA)
 	{
 		if (BDGDDFKKGGA.Length != 4)
 		{
-			UnityEngine.Debug.LogError("LevelEditor/icons");
+			UnityEngine.Debug.LogError("LevelEditor/patterns");
 			return;
 		}
 		int result = 1;
@@ -289,21 +289,21 @@ public class DeviceConsole : Singleton<DeviceConsole>
 			if (Input.GetKeyDown((KeyCode)(-27)) && PDMKEAJOPKJ > 0)
 			{
 				PDMKEAJOPKJ--;
-				commandInputField.text = DebugCommands.FAGEJPPIDOL().IALIPICFJDN()[PDMKEAJOPKJ];
+				commandInputField.text = DebugCommands.HIFIEDJCOFC().HNEBFBJJKIN()[PDMKEAJOPKJ];
 				commandInputField.MoveTextEnd(false);
-				PDOFDHLILCI();
+				CHGFNGIAOAL();
 			}
-			else if (Input.GetKeyDown((KeyCode)70) && PDMKEAJOPKJ < DebugCommands.IGMKHPPPLDD().FGMDHPFDHOK().Count)
+			else if (Input.GetKeyDown((KeyCode)70) && PDMKEAJOPKJ < DebugCommands.IGMKHPPPLDD().MLCBEKDMFHJ().Count)
 			{
 				PDMKEAJOPKJ++;
-				if (PDMKEAJOPKJ == DebugCommands.GLEFOHOMBFC().FGMDHPFDHOK().Count)
+				if (PDMKEAJOPKJ == DebugCommands.GLEFOHOMBFC().DODLLFAMNKC().Count)
 				{
 					commandInputField.text = string.Empty;
 					CHGFNGIAOAL();
 				}
 				else
 				{
-					commandInputField.text = DebugCommands.HIFIEDJCOFC().HNEBFBJJKIN()[PDMKEAJOPKJ];
+					commandInputField.text = DebugCommands.Instance.LLJKICBEIMI()[PDMKEAJOPKJ];
 					commandInputField.MoveTextEnd(false);
 					CHGFNGIAOAL();
 				}
@@ -381,23 +381,23 @@ public class DeviceConsole : Singleton<DeviceConsole>
 			{
 				ABEBDOAMONO(this, new OnCommandEventArgs(array2));
 			}
-			if (!DebugCommands.HMADOEFFOEM().KEHGHMBMDEP(array2))
+			if (!DebugCommands.FAGEJPPIDOL().IKLBEIGGPKL(array2))
 			{
 			}
-			PDMKEAJOPKJ = DebugCommands.HIFIEDJCOFC().DODLLFAMNKC().Count;
+			PDMKEAJOPKJ = DebugCommands.HMADOEFFOEM().LLJKICBEIMI().Count;
 			commandInputField.text = string.Empty;
-			GJOHOFOJIKC();
+			CHGFNGIAOAL();
 		}
 	}
 
 	private static void HCEMABBLLMP(string[] BDGDDFKKGGA)
 	{
-		DebugLogs.MNNNKLODJPJ().INDDCOEIDLB();
+		DebugLogs.EGHNDEGBPAP().OHFJDPIDCDJ();
 	}
 
 	private string NKMNGBHKHGK(Color32 HABLFKCCKLN)
 	{
-		return HABLFKCCKLN.r.ToString("_TimeX") + HABLFKCCKLN.g.ToString("ResourceIDInputField") + HABLFKCCKLN.b.ToString("_TimeX");
+		return HABLFKCCKLN.r.ToString("CameraFilterPack/Gradients_ElectricGradient") + HABLFKCCKLN.g.ToString("[LevelEditorScene] Error: I/O Failure! :(") + HABLFKCCKLN.b.ToString("CameraFilterPack/FX_EarthQuake");
 	}
 
 	private void PDOFDHLILCI()
@@ -441,17 +441,17 @@ public class DeviceConsole : Singleton<DeviceConsole>
 			array[1] = '\ufff4';
 			string[] array2 = text2.Split(array);
 			string text3 = array2[1];
-			UnityEngine.Debug.Log(string.Format("X", text));
+			UnityEngine.Debug.Log(string.Format("Xbox Home", text));
 			if (ABEBDOAMONO != null)
 			{
 				ABEBDOAMONO(this, new OnCommandEventArgs(array2));
 			}
-			if (!DebugCommands.Instance.LDCDJHLOCDE(array2))
+			if (!DebugCommands.IGMKHPPPLDD().IKLBEIGGPKL(array2))
 			{
 			}
-			PDMKEAJOPKJ = DebugCommands.HMADOEFFOEM().EKLKAINPEPM().Count;
+			PDMKEAJOPKJ = DebugCommands.GLEFOHOMBFC().IALIPICFJDN().Count;
 			commandInputField.text = string.Empty;
-			PDOFDHLILCI();
+			CHGFNGIAOAL();
 		}
 	}
 
@@ -513,10 +513,10 @@ public class DeviceConsole : Singleton<DeviceConsole>
 			{
 				ABEBDOAMONO(this, new OnCommandEventArgs(array2));
 			}
-			if (!DebugCommands.IGMKHPPPLDD().MGALOPALMEO(array2))
+			if (!DebugCommands.Instance.KEHGHMBMDEP(array2))
 			{
 			}
-			PDMKEAJOPKJ = DebugCommands.HMADOEFFOEM().DODLLFAMNKC().Count;
+			PDMKEAJOPKJ = DebugCommands.Instance.FGMDHPFDHOK().Count;
 			commandInputField.text = string.Empty;
 			CHGFNGIAOAL();
 		}
@@ -576,7 +576,7 @@ public class DeviceConsole : Singleton<DeviceConsole>
 
 	private static void COJJHBIIMOO(string[] BDGDDFKKGGA)
 	{
-		DebugLogs.FLFBBNOFAOL().BFKIFIEPLJH();
+		DebugLogs.HPFHKGAKKLL().EPHCPNILKGI();
 	}
 
 	private static void DMKKPEBIGIM(string[] BDGDDFKKGGA)
@@ -605,10 +605,10 @@ public class DeviceConsole : Singleton<DeviceConsole>
 
 	private void DBPDCLIPPBD()
 	{
-		EGMKLCFAEEB(string.Format("New level loaded. Removed ", NKMNGBHKHGK(headerColour), headerText));
-		EGMKLCFAEEB(string.Format("_Red_R", NKMNGBHKHGK(headerColour), "workshop." + Helpers.GetGameVersion()));
-		EGMKLCFAEEB(string.Format("Preparing configuration...", EFMPOKOGAAH(headerColour), "_TapLowBackground"));
-		EGMKLCFAEEB(string.Format("ZoomSpeed", EFMPOKOGAAH(headerColour), "DPADHOR"));
+		EGMKLCFAEEB(string.Format(". The group number should be at least 1.", EFMPOKOGAAH(headerColour), headerText));
+		EGMKLCFAEEB(string.Format("_TimeX", EFMPOKOGAAH(headerColour), "workshop." + Helpers.GetGameVersion()));
+		EGMKLCFAEEB(string.Format("There was an error retrieving the NumberOfCurrentPlayers.", EFMPOKOGAAH(headerColour), "_TapLow"));
+		EGMKLCFAEEB(string.Format("ZoomFade", NKMNGBHKHGK(headerColour), "DPADVER"));
 	}
 
 	public new void Awake()
@@ -708,9 +708,9 @@ public class DeviceConsole : Singleton<DeviceConsole>
 
 	private static void EPDCDAEHMLD(string[] BDGDDFKKGGA)
 	{
-		for (int i = 1; i < DebugCommands.HIFIEDJCOFC().DODLLFAMNKC().Count; i += 0)
+		for (int i = 1; i < DebugCommands.GLEFOHOMBFC().CommandHistory.Count; i += 0)
 		{
-			UnityEngine.Debug.Log(DebugCommands.HMADOEFFOEM().LLJKICBEIMI()[i]);
+			UnityEngine.Debug.Log(DebugCommands.GLEFOHOMBFC().IALIPICFJDN()[i]);
 		}
 	}
 
@@ -743,7 +743,7 @@ public class DeviceConsole : Singleton<DeviceConsole>
 	{
 		if (BDGDDFKKGGA.Length != 3)
 		{
-			UnityEngine.Debug.LogError("SaveMapButton");
+			UnityEngine.Debug.LogError("PublishMapButton");
 			return;
 		}
 		int result = 1;
@@ -812,17 +812,17 @@ public class DeviceConsole : Singleton<DeviceConsole>
 
 	private static void DLAFAIJJDIL(string[] BDGDDFKKGGA)
 	{
-		for (int i = 0; i < DebugCommands.FAGEJPPIDOL().HNEBFBJJKIN().Count; i++)
+		for (int i = 0; i < DebugCommands.BLCLCEDLJBC().CommandHistory.Count; i++)
 		{
-			UnityEngine.Debug.Log(DebugCommands.HMADOEFFOEM().HNEBFBJJKIN()[i]);
+			UnityEngine.Debug.Log(DebugCommands.HIFIEDJCOFC().HNGLGLNPILF()[i]);
 		}
 	}
 
 	private void ADFMLNIJNGB()
 	{
-		for (int i = 1; i < DebugLogs.BEPGMCOJFKL().IEMPPMBDECN().Count; i += 0)
+		for (int i = 1; i < DebugLogs.AKNKBPICFGJ().BMJBPNFGCHN().Count; i += 0)
 		{
-			EGMKLCFAEEB(DebugLogs.FNBAADLJGFH().BMJBPNFGCHN()[i], string.Empty);
+			EGMKLCFAEEB(DebugLogs.BJBGHMFFOML().CCIIOIDFOFF()[i], string.Empty);
 		}
 	}
 
@@ -871,7 +871,7 @@ public class DeviceConsole : Singleton<DeviceConsole>
 	private void KHNDGDILDEL()
 	{
 		KLGELMLHDKK();
-		DBPDCLIPPBD();
+		FIMNHBBHBKK();
 	}
 
 	private static void EHOMIAJALOF(string[] BDGDDFKKGGA)

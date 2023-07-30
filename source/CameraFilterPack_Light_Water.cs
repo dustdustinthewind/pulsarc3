@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Light/Water")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Light_Water : MonoBehaviour
 {
 	public Shader SCShader;
@@ -41,7 +41,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void AGEJKLMJGDO()
 	{
-		SCShader = Shader.Find("_Value4");
+		SCShader = Shader.Find("_Value3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -61,7 +61,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void JMEOGJHCONJ()
 	{
-		SCShader = Shader.Find("icon");
+		SCShader = Shader.Find("/icon");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -94,7 +94,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void FANADGBGCPI()
 	{
-		SCShader = Shader.Find("selector");
+		SCShader = Shader.Find("cancel");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -200,7 +200,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		SCShader = Shader.Find("restart");
+		SCShader = Shader.Find("x");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -213,7 +213,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void BMIOFJFMCBG()
 	{
-		SCShader = Shader.Find("w");
+		SCShader = Shader.Find("y");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -247,12 +247,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1469f;
 			}
-			NFMGLIKNOOC().SetFloat("SetBGColor", HBJJOCHGOPH);
-			HKGAONMOBMH().SetFloat("Error: Someone else(", Alpha);
-			DONENAMLFLF().SetFloat("CameraFilterPack/Edge_Edge_filter", Distance);
-			HKGAONMOBMH().SetFloat("Object ID. Case-Sensitive", Size);
-			JLHLHKPHDFO().SetVector("Working.\nPlease wait..", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 211f, 1400f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			JLHLHKPHDFO().SetFloat("Show text at the center of the screen. Usefull for quick messages like 'Thanks for playing!'", HBJJOCHGOPH);
+			DONENAMLFLF().SetFloat("Ev OwnershipTransfer. ViewID ", Alpha);
+			IONHGBPGCHK().SetFloat("_ScreenResolution", Distance);
+			NFMGLIKNOOC().SetFloat("Object ID. Case-Sensitive", Size);
+			NBPKMLMCHFN.SetVector("14", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 211f, 1400f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
 		}
 		else
 		{
@@ -262,7 +262,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void ICILLMAKLMI()
 	{
-		SCShader = Shader.Find("gamemode");
+		SCShader = Shader.Find("mapid");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -278,12 +278,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1805f;
 			}
-			NFMGLIKNOOC().SetFloat("settings.volume.sfx", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("Object ID. Case-Sensitive", Alpha);
-			DONENAMLFLF().SetFloat("[Right]", Distance);
-			HKGAONMOBMH().SetFloat("[ResourcesManager] Load image error: ", Size);
-			NBPKMLMCHFN.SetVector(" SphereWaveform.cs", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1978f, 44f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKGAONMOBMH());
+			DONENAMLFLF().SetFloat("settings.volume.game", HBJJOCHGOPH);
+			LENEJAGLCNL().SetFloat("Object ID. Case-Sensitive", Alpha);
+			DONENAMLFLF().SetFloat("SpawnObj", Distance);
+			LENEJAGLCNL().SetFloat("inventory.selected.", Size);
+			JLHLHKPHDFO().SetVector(" SphereWaveform.cs", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1978f, 44f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -302,7 +302,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("/../");
+		SCShader = Shader.Find("[TextSaver] Text saved to ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -322,12 +322,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1587f;
 			}
-			JLHLHKPHDFO().SetFloat("#finished", HBJJOCHGOPH);
-			DONENAMLFLF().SetFloat("_Value", Alpha);
-			DONENAMLFLF().SetFloat(".highscore", Distance);
-			HKGAONMOBMH().SetFloat("Data/Skins/", Size);
-			NBPKMLMCHFN.SetVector("SpawnObj", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1314f, 764f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LENEJAGLCNL());
+			NBPKMLMCHFN.SetFloat("#reward: ", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetFloat("_TimeX", Alpha);
+			NBPKMLMCHFN.SetFloat(".", Distance);
+			NFMGLIKNOOC().SetFloat("default", Size);
+			FEAEGGCNIAA().SetVector("SpawnObj", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1314f, 764f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
 		}
 		else
 		{
@@ -352,11 +352,11 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1152f;
 			}
-			DONENAMLFLF().SetFloat("ReconnectAndRejoin() with AuthValues == null is not correct!", HBJJOCHGOPH);
+			HKGAONMOBMH().SetFloat("ns.exitgames.com", HBJJOCHGOPH);
 			HKGAONMOBMH().SetFloat("Set satellite emission (glow)", Alpha);
-			FEAEGGCNIAA().SetFloat(" Time: ", Distance);
-			FEAEGGCNIAA().SetFloat("RPC: 'OnAwakeRPC' Parameter: ", Size);
-			FEAEGGCNIAA().SetVector("offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1438f, 1296f));
+			FEAEGGCNIAA().SetFloat("RequestOwnership(): ", Distance);
+			PLBEJJIHFPB().SetFloat("OnAwakeRPC", Size);
+			HKGAONMOBMH().SetVector("offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1438f, 1296f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
 		}
 		else
@@ -378,12 +378,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1931f;
 			}
-			HEHKGPKLAKK().SetFloat("--------------------------------", HBJJOCHGOPH);
-			HKGAONMOBMH().SetFloat("RPCs can only be sent in rooms. Call of \"", Alpha);
-			JLHLHKPHDFO().SetFloat("Joystick1Button12", Distance);
-			LENEJAGLCNL().SetFloat("SelectionBox component must be placed on a canvas in Screen Space Overlay mode.", Size);
-			JLHLHKPHDFO().SetVector("Editor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 71f, 1589f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			HKGAONMOBMH().SetFloat("<b>Time</b>:", HBJJOCHGOPH);
+			DONENAMLFLF().SetFloat("DestroyPlayerObjects() failed, cause players can only destroy their own GameObjects. A Master Client can destroy anyone's. This is master: ", Alpha);
+			OCHJIMJNEMO().SetFloat("Right Stick Click", Distance);
+			PLBEJJIHFPB().SetFloat("From {0} at Index {1} \n", Size);
+			NFMGLIKNOOC().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 71f, 1589f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -400,12 +400,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 522f;
 			}
-			NFMGLIKNOOC().SetFloat("null", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("hardcoreinfo", Alpha);
-			PLBEJJIHFPB().SetFloat("_Value12", Distance);
-			OCHJIMJNEMO().SetFloat("Map: ", Size);
-			PLBEJJIHFPB().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1846f, 530f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DONENAMLFLF());
+			NFMGLIKNOOC().SetFloat("PointerEnter ", HBJJOCHGOPH);
+			OCHJIMJNEMO().SetFloat("menu.hardcoreinfo", Alpha);
+			OCHJIMJNEMO().SetFloat("_Value12", Distance);
+			LENEJAGLCNL().SetFloat("Map: ", Size);
+			HKGAONMOBMH().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1846f, 530f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -426,12 +426,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1159f;
 			}
-			NBPKMLMCHFN.SetFloat("settings.cameramovements", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("CameraFilterPack/Color_GrayScale", Alpha);
-			IONHGBPGCHK().SetFloat("inventory.selected.", Distance);
-			NBPKMLMCHFN.SetFloat("restrictions\n\n#until: ", Size);
-			NFMGLIKNOOC().SetVector("green", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 838f, 1122f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LENEJAGLCNL());
+			PLBEJJIHFPB().SetFloat("settings.cameramovements", HBJJOCHGOPH);
+			LENEJAGLCNL().SetFloat("CameraFilterPack/Color_GrayScale", Alpha);
+			LENEJAGLCNL().SetFloat("21x3", Distance);
+			HKGAONMOBMH().SetFloat("restrictions\n\n#until: ", Size);
+			OCHJIMJNEMO().SetVector("0,1,false", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 838f, 1122f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OCHJIMJNEMO());
 		}
 		else
 		{
@@ -467,12 +467,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1104f;
 			}
-			PLBEJJIHFPB().SetFloat("SetSunInput", HBJJOCHGOPH);
-			DONENAMLFLF().SetFloat("Sprite", Alpha);
-			PLBEJJIHFPB().SetFloat("[PlayerBase] Loaded environment: ", Distance);
-			JLHLHKPHDFO().SetFloat("UseFinalGlassColor", Size);
-			DONENAMLFLF().SetVector("CameraFilterPack/Blend2Camera_ColorBurn", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 193f, 1441f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			PLBEJJIHFPB().SetFloat("SetScale", HBJJOCHGOPH);
+			LENEJAGLCNL().SetFloat("newPath", Alpha);
+			DONENAMLFLF().SetFloat("custom", Distance);
+			NBPKMLMCHFN.SetFloat("_TimeX", Size);
+			HKGAONMOBMH().SetVector("CameraFilterPack/Blend2Camera_ColorBurn", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 193f, 1441f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OCHJIMJNEMO());
 		}
 		else
 		{
@@ -494,7 +494,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void ILCFPCIPENO()
 	{
-		SCShader = Shader.Find("Joystick1Button12");
+		SCShader = Shader.Find("Joystick1Button11");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -540,12 +540,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 120f;
 			}
-			NFMGLIKNOOC().SetFloat("_Near", HBJJOCHGOPH);
-			JLHLHKPHDFO().SetFloat("caret", Alpha);
-			OCHJIMJNEMO().SetFloat("_ScreenResolution", Distance);
-			JLHLHKPHDFO().SetFloat("SetSatelliteEmission", Size);
-			NBPKMLMCHFN.SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 704f, 1784f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			NBPKMLMCHFN.SetFloat("_Near", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetFloat("grid", Alpha);
+			IONHGBPGCHK().SetFloat("_Intensity", Distance);
+			NFMGLIKNOOC().SetFloat("SetSunLerpSpeed", Size);
+			PLBEJJIHFPB().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 704f, 1784f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LENEJAGLCNL());
 		}
 		else
 		{
@@ -570,11 +570,11 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 752f;
 			}
-			JLHLHKPHDFO().SetFloat("Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results", HBJJOCHGOPH);
-			LENEJAGLCNL().SetFloat("_Value7", Alpha);
-			IONHGBPGCHK().SetFloat("Error0", Distance);
-			HKGAONMOBMH().SetFloat("FinalScoreSmallText", Size);
-			NBPKMLMCHFN.SetVector("Hex value #RRGGBB", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 184f, 1889f));
+			HKGAONMOBMH().SetFloat(" ", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetFloat("_Value6", Alpha);
+			NFMGLIKNOOC().SetFloat("Error0", Distance);
+			FEAEGGCNIAA().SetFloat("FinalScoreSmallText", Size);
+			LENEJAGLCNL().SetVector("color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 184f, 1889f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OCHJIMJNEMO());
 		}
 		else
@@ -601,7 +601,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find("CameraFilterPack_Paper1");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -610,7 +610,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void IHLMNAGPKDA()
 	{
-		SCShader = Shader.Find("Hello World, is my item a clone? [");
+		SCShader = Shader.Find("] to be droppable");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -619,7 +619,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void FHPFJBFCOOF()
 	{
-		SCShader = Shader.Find(": ");
+		SCShader = Shader.Find("[PlayerController] ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -697,7 +697,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find("steamid");
+		SCShader = Shader.Find("ticket");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -706,7 +706,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void HMPGIFBJFIK()
 	{
-		SCShader = Shader.Find("There are too many cells created by your subdivision options. Maximum allowed number of cells is ");
+		SCShader = Shader.Find("Cause: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -722,12 +722,12 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1744f;
 			}
-			FEAEGGCNIAA().SetFloat("0,1,false", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_Value", Alpha);
-			PLBEJJIHFPB().SetFloat("_Offsets", Distance);
+			JLHLHKPHDFO().SetFloat("blue", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetFloat("_TimeX", Alpha);
+			NBPKMLMCHFN.SetFloat("_SecondTex", Distance);
 			HEHKGPKLAKK().SetFloat("CameraFilterPack/Fly_Vision", Size);
-			JLHLHKPHDFO().SetVector("Edited unlock conditions", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1891f, 187f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LENEJAGLCNL());
+			IONHGBPGCHK().SetVector("OK", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1891f, 187f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DONENAMLFLF());
 		}
 		else
 		{
@@ -748,7 +748,7 @@ public class CameraFilterPack_Light_Water : MonoBehaviour
 
 	private void FBPHNEJBDJN()
 	{
-		SCShader = Shader.Find("_Value4");
+		SCShader = Shader.Find("_Value3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

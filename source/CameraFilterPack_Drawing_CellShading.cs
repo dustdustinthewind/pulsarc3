@@ -54,7 +54,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void ECBILENEOOL()
 	{
-		SCShader = Shader.Find("masterSteamID");
+		SCShader = Shader.Find("roomDescription");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -67,7 +67,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void BKIGIIINEDH()
 	{
-		SCShader = Shader.Find(" respawn in future: ");
+		SCShader = Shader.Find(" SecondsBeforeRespawn: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -76,7 +76,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void MKIMDFLBFOM()
 	{
-		SCShader = Shader.Find("_EmissionColor");
+		SCShader = Shader.Find("_DiffuseColor");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -101,7 +101,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void CHOPDIGHJNH()
 	{
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -117,11 +117,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1076f;
 			}
-			AELJLBOJAIL().SetFloat("_VelocityScale", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("_ScreenResolution", EdgeSize);
-			IFMAPIDFNLI().SetFloat("SupportLogger Info: PUN {0}: ", ColorLevel);
-			NFMGLIKNOOC().SetVector("Working.\nPlease wait..", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
+			MICHFGAOPKM().SetFloat("_VignetteSettings", HBJJOCHGOPH);
+			KJMECMIGJJA().SetFloat("_Value2", EdgeSize);
+			EOCCJGIGEGJ().SetFloat("SupportLogger OnApplicationPause: ", ColorLevel);
+			ADGHJOHKEHG().SetVector("Working.\nPlease wait..", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHLFDHNEIAH());
 		}
 		else
 		{
@@ -165,11 +165,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1768f;
 			}
-			KJMECMIGJJA().SetFloat("SpawnObj", HBJJOCHGOPH);
-			HHLFDHNEIAH().SetFloat("#FFFFFFFF", EdgeSize);
-			OLHDPICFBOF().SetFloat(" canvas not found", ColorLevel);
-			KEMAALEODNH().SetVector("_Near", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			KEMAALEODNH().SetFloat("[PlayerBase] Starting game from: ", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("Start Color's hex value #RRGGBBAA", EdgeSize);
+			IFMAPIDFNLI().SetFloat(" canvas not found", ColorLevel);
+			EOCCJGIGEGJ().SetVector("_Near", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KJMECMIGJJA());
 		}
 		else
 		{
@@ -209,10 +209,10 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 597f;
 			}
-			MICHFGAOPKM().SetFloat("EnvironmentSlider", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat(". Should be just one?", EdgeSize);
-			ADGHJOHKEHG().SetFloat(": ", ColorLevel);
-			MICHFGAOPKM().SetVector("_Value2", new Vector2(Screen.width, Screen.height));
+			OLHDPICFBOF().SetFloat("HiddenToggle", HBJJOCHGOPH);
+			EFMCNLELMDO().SetFloat("\" that takes ", EdgeSize);
+			ADAFMBOGPLN().SetFloat("[PlayerController] ", ColorLevel);
+			GJHPODJOBHL().SetVector("_Value", new Vector2(Screen.width, Screen.height));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKIMAANBGMJ());
 		}
 		else
@@ -223,7 +223,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void AEMGPJDJGBJ()
 	{
-		SCShader = Shader.Find("[Right-Down]");
+		SCShader = Shader.Find("[Up-Left]");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -232,7 +232,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void KHIGHFJKPFG()
 	{
-		SCShader = Shader.Find(" Gb");
+		SCShader = Shader.Find(" Mb");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -241,7 +241,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void NBGIMIDICKE()
 	{
-		SCShader = Shader.Find("https://steamcommunity.com/sharedfiles/filedetails/?id=");
+		SCShader = Shader.Find("#done");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -250,7 +250,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find("[Up]");
+		SCShader = Shader.Find("_DiffuseColor");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -277,10 +277,10 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1655f;
 			}
-			DOHGBNPMBKG().SetFloat("EventSystem", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("CameraFilterPack/AAA_Blood_Hit", EdgeSize);
-			HHLFDHNEIAH().SetFloat("SetPlayerDistance", ColorLevel);
-			ADGHJOHKEHG().SetVector("player.goldwatermelon", new Vector2(Screen.width, Screen.height));
+			KJMECMIGJJA().SetFloat("PlayButton", HBJJOCHGOPH);
+			FLOHGDECHHH().SetFloat("CameraFilterPack/AAA_Blood_Hit", EdgeSize);
+			FLOHGDECHHH().SetFloat("SetPlayerDistance", ColorLevel);
+			HHLFDHNEIAH().SetVector("player.watermelon", new Vector2(Screen.width, Screen.height));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
 		}
 		else
@@ -306,11 +306,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 489f;
 			}
-			HKIMAANBGMJ().SetFloat("The observed monobehaviour (", HBJJOCHGOPH);
-			NMDBCDFPGOK().SetFloat("YES", EdgeSize);
-			OLHDPICFBOF().SetFloat("[NetworkManager] Updating rooms...", ColorLevel);
-			OLHDPICFBOF().SetVector("AudioClip", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			IFMAPIDFNLI().SetFloat("' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().", HBJJOCHGOPH);
+			IFMAPIDFNLI().SetFloat("YES", EdgeSize);
+			DOHGBNPMBKG().SetFloat("[NetworkManager] Updating rooms...", ColorLevel);
+			IFMAPIDFNLI().SetVector("[MapsData] Installed: ", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
 		}
 		else
 		{
@@ -369,7 +369,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void FEGJMDDIDIC()
 	{
-		SCShader = Shader.Find("Joystick1Button10");
+		SCShader = Shader.Find("Joystick1Button9");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -389,7 +389,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		SCShader = Shader.Find("Back");
+		SCShader = Shader.Find("RT");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -475,11 +475,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 255f;
 			}
-			KEMAALEODNH().SetFloat("_Level", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("VIGNETTE_FILMIC", EdgeSize);
-			DOHGBNPMBKG().SetFloat("ShowTitle", ColorLevel);
-			EFDEIFCDAFG().SetVector("_FadeFX", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLGPDBBKAIP());
+			ADAFMBOGPLN().SetFloat("_Level", HBJJOCHGOPH);
+			FLGPDBBKAIP().SetFloat("VIGNETTE_CLASSIC", EdgeSize);
+			EFDEIFCDAFG().SetFloat("[GameEvent] Exeption:", ColorLevel);
+			MICHFGAOPKM().SetVector("_Blue_C", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
 		}
 		else
 		{
@@ -505,11 +505,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1717f;
 			}
-			AELJLBOJAIL().SetFloat("Items/", HBJJOCHGOPH);
-			NMDBCDFPGOK().SetFloat("Editing: ", EdgeSize);
-			EOCCJGIGEGJ().SetFloat("/icon", ColorLevel);
-			NBPKMLMCHFN.SetVector("white", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLGPDBBKAIP());
+			IFMAPIDFNLI().SetFloat("_EmissionGain", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("EventTimeInputField", EdgeSize);
+			EFMCNLELMDO().SetFloat("/icon", ColorLevel);
+			NBPKMLMCHFN.SetVector("icon_border", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
 		{
@@ -534,11 +534,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 472f;
 			}
-			HHIFMIPPMPF().SetFloat("intensity", HBJJOCHGOPH);
-			KJMECMIGJJA().SetFloat("skin.", EdgeSize);
-			ADAFMBOGPLN().SetFloat("4,28,true,0", ColorLevel);
-			OLHDPICFBOF().SetVector("https://steamcommunity.com/sharedfiles/filedetails/?id=", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			IFMAPIDFNLI().SetFloat("_HrDepthTex", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("skin.", EdgeSize);
+			HHIFMIPPMPF().SetFloat("distance", ColorLevel);
+			ACHNOHCLGOO().SetVector("OK", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -548,7 +548,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void KOFAMEKHHGD()
 	{
-		SCShader = Shader.Find("settings_bindings_");
+		SCShader = Shader.Find("settings_bindings_controller_type");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -561,7 +561,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void GNJDKAECPKA()
 	{
-		SCShader = Shader.Find("GlassesColor");
+		SCShader = Shader.Find("GlassAberration");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -574,7 +574,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void NEFHGMNAPEP()
 	{
-		SCShader = Shader.Find("(master)");
+		SCShader = Shader.Find(" (inactive)");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -591,7 +591,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void OKLAJINHPAN()
 	{
-		SCShader = Shader.Find("_Value2");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -604,7 +604,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void CFFCLAHMBAA()
 	{
-		SCShader = Shader.Find("ns.exitgames.com");
+		SCShader = Shader.Find("ws://");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -620,11 +620,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1859f;
 			}
-			GJHPODJOBHL().SetFloat("_TimeX", HBJJOCHGOPH);
-			NMDBCDFPGOK().SetFloat("_TimeX", EdgeSize);
-			HKIMAANBGMJ().SetFloat("_VignettingDirt", ColorLevel);
-			AELJLBOJAIL().SetVector("caret", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			KEMAALEODNH().SetFloat("CameraFilterPack/AAA_WaterDropPro", HBJJOCHGOPH);
+			ADAFMBOGPLN().SetFloat("CameraFilterPack/Blizzard", EdgeSize);
+			MICHFGAOPKM().SetFloat("_Vignetting2", ColorLevel);
+			HHLFDHNEIAH().SetVector("caret", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -634,7 +634,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void HMPGIFBJFIK()
 	{
-		SCShader = Shader.Find("#tryagain");
+		SCShader = Shader.Find("#ok");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -705,7 +705,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void DPLLKHHLDBB()
 	{
-		SCShader = Shader.Find("_Bloom2");
+		SCShader = Shader.Find("_Bloom0");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -738,7 +738,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void JFJLGJEPEAA()
 	{
-		SCShader = Shader.Find("[MapEditor] Loading music...");
+		SCShader = Shader.Find("[MapEditor] Prepairing map editor...");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -747,7 +747,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		SCShader = Shader.Find(" takes from: ");
+		SCShader = Shader.Find("Ev OwnershipRequest ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -801,11 +801,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 738f;
 			}
-			KEMAALEODNH().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
-			GJHPODJOBHL().SetFloat("fetch", EdgeSize);
-			KEMAALEODNH().SetFloat("CameraFilterPack/FX_superDot", ColorLevel);
-			AELJLBOJAIL().SetVector("SteamManager", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NMDBCDFPGOK());
+			GJHPODJOBHL().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("TStart", EdgeSize);
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", ColorLevel);
+			FEAEGGCNIAA().SetVector("ENABLE_USER_LUT", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLOHGDECHHH());
 		}
 		else
 		{
@@ -822,11 +822,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1327f;
 			}
-			EFMCNLELMDO().SetFloat("Set particles gravity", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("ZoomSpeed", EdgeSize);
-			OLHDPICFBOF().SetFloat("PopulateMapsList", ColorLevel);
-			NMDBCDFPGOK().SetVector("Right Stick Click", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADAFMBOGPLN());
+			KEMAALEODNH().SetFloat("Set particles gravity", HBJJOCHGOPH);
+			NMDBCDFPGOK().SetFloat("ZoomFade", EdgeSize);
+			DOHGBNPMBKG().SetFloat("mapselector.filter.subscribedonly", ColorLevel);
+			MICHFGAOPKM().SetVector("Joystick1Button11", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GJHPODJOBHL());
 		}
 		else
 		{
@@ -843,11 +843,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1912f;
 			}
-			EFMCNLELMDO().SetFloat("Search: ", HBJJOCHGOPH);
-			GJHPODJOBHL().SetFloat("cancel", EdgeSize);
-			NMDBCDFPGOK().SetFloat("_Value2", ColorLevel);
-			DOHGBNPMBKG().SetVector("LoadingStatusText", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFMCNLELMDO());
+			KJMECMIGJJA().SetFloat("EventSystem", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("cancel", EdgeSize);
+			ACHNOHCLGOO().SetFloat("_Value1", ColorLevel);
+			IFMAPIDFNLI().SetVector("[MapsData] Caching ", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -868,11 +868,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1771f;
 			}
-			NFMGLIKNOOC().SetFloat("-1", HBJJOCHGOPH);
-			ADGHJOHKEHG().SetFloat("VisionBlur", EdgeSize);
-			NBPKMLMCHFN.SetFloat("Uploading preview image", ColorLevel);
-			EFDEIFCDAFG().SetVector("(scene)", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MICHFGAOPKM());
+			MICHFGAOPKM().SetFloat("Right", HBJJOCHGOPH);
+			GJHPODJOBHL().SetFloat("Fade", EdgeSize);
+			HHLFDHNEIAH().SetFloat("Uploading content", ColorLevel);
+			FEAEGGCNIAA().SetVector("View ({3}){0} on {1} {2}", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
 		}
 		else
 		{
@@ -882,7 +882,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void LFBGJIIECLD()
 	{
-		SCShader = Shader.Find(".lastCheckpoint.currentCombo");
+		SCShader = Shader.Find(".lastCheckpoint.penaltyScore");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -929,11 +929,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 830f;
 			}
-			KJMECMIGJJA().SetFloat("_Value3", HBJJOCHGOPH);
-			FEAEGGCNIAA().SetFloat("_MainTex2", EdgeSize);
-			ACHNOHCLGOO().SetFloat("value", ColorLevel);
-			ACHNOHCLGOO().SetVector("<command>", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			DOHGBNPMBKG().SetFloat("_Value2", HBJJOCHGOPH);
+			AELJLBOJAIL().SetFloat("CameraFilterPack/Blend2Camera_DarkerColor", EdgeSize);
+			IFMAPIDFNLI().SetFloat("value", ColorLevel);
+			ACHNOHCLGOO().SetVector("Run a command for data system", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MICHFGAOPKM());
 		}
 		else
 		{
@@ -943,7 +943,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void JKBMKPDGCHG()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/Light_Rainbow2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -959,11 +959,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1580f;
 			}
-			AELJLBOJAIL().SetFloat("_MainTex2", HBJJOCHGOPH);
-			EFDEIFCDAFG().SetFloat("DifficultyBG", EdgeSize);
-			IFMAPIDFNLI().SetFloat("Tab1Content", ColorLevel);
-			DOHGBNPMBKG().SetVector("<b>(╯°□°）╯︵ ┻━┻</b>", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKIMAANBGMJ());
+			EOCCJGIGEGJ().SetFloat("UseScanLine", HBJJOCHGOPH);
+			NMDBCDFPGOK().SetFloat("DifficultyBG", EdgeSize);
+			AELJLBOJAIL().SetFloat("LevelInfoInputField", ColorLevel);
+			NBPKMLMCHFN.SetVector("<b>(╯°□°）╯︵ ┻━┻</b>", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KJMECMIGJJA());
 		}
 		else
 		{
@@ -980,11 +980,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 202f;
 			}
-			NBPKMLMCHFN.SetFloat("{0:0} day{1}, ", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("Chat", EdgeSize);
-			KEMAALEODNH().SetFloat("UI Extensions/UIScreen", ColorLevel);
-			NBPKMLMCHFN.SetVector("CameraFilterPack/Blend2Camera_HardLight", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MICHFGAOPKM());
+			HHLFDHNEIAH().SetFloat("{0:0} day{1}, ", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("anonymous", EdgeSize);
+			FEAEGGCNIAA().SetFloat("Please attach component to a Graphical UI component", ColorLevel);
+			MICHFGAOPKM().SetVector("_Value7", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KJMECMIGJJA());
 		}
 		else
 		{
@@ -1014,11 +1014,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 847f;
 			}
-			HHIFMIPPMPF().SetFloat(": ", HBJJOCHGOPH);
-			GJHPODJOBHL().SetFloat("_Value", EdgeSize);
-			NBPKMLMCHFN.SetFloat("Line", ColorLevel);
-			FLGPDBBKAIP().SetVector("_MainTex", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
+			FEAEGGCNIAA().SetFloat("[PlayerController] ", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("_Value", EdgeSize);
+			OLHDPICFBOF().SetFloat("Line", ColorLevel);
+			NFMGLIKNOOC().SetVector(" is not part of the Unity 3.2+ effects suite anymore. For best performance and quality, please ensure you are using the latest Standard Assets Image Effects (Pro only) package.", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
 		}
 		else
 		{
@@ -1035,11 +1035,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1933f;
 			}
-			HHIFMIPPMPF().SetFloat("MainThreadExecuter", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_ForegroundBlurExtrude", EdgeSize);
-			KEMAALEODNH().SetFloat("Saved as: ", ColorLevel);
-			AELJLBOJAIL().SetVector("[MapsStats] Difficulty: ", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			DOHGBNPMBKG().SetFloat("action", HBJJOCHGOPH);
+			EFMCNLELMDO().SetFloat("_FgOverlap", EdgeSize);
+			MICHFGAOPKM().SetFloat("Saved as: ", ColorLevel);
+			HKIMAANBGMJ().SetVector("workshop.", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -1065,7 +1065,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void CCFEDENFNEF()
 	{
-		SCShader = Shader.Find("\\n");
+		SCShader = Shader.Find("[EMPTY]");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1085,11 +1085,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1542f;
 			}
-			EOCCJGIGEGJ().SetFloat("ns", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("LastNewsButton", EdgeSize);
-			HHIFMIPPMPF().SetFloat("workshop.txt", ColorLevel);
-			OLHDPICFBOF().SetVector("1", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			OLHDPICFBOF().SetFloat("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.", HBJJOCHGOPH);
+			HHLFDHNEIAH().SetFloat("LastNewsButton", EdgeSize);
+			GJHPODJOBHL().SetFloat("workshop.txt", ColorLevel);
+			FEAEGGCNIAA().SetVector("win", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
 		}
 		else
 		{
@@ -1110,7 +1110,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void FJNCHGLIEMA()
 	{
-		SCShader = Shader.Find("_Curve");
+		SCShader = Shader.Find("_Blurred");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1126,11 +1126,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 930f;
 			}
-			KJMECMIGJJA().SetFloat("roomDescription", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("\\", EdgeSize);
-			NMDBCDFPGOK().SetFloat(".completedCount", ColorLevel);
-			DOHGBNPMBKG().SetVector("_TimeX", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
+			EFDEIFCDAFG().SetFloat("RoomDescriptionText", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("\\", EdgeSize);
+			HHIFMIPPMPF().SetFloat(",", ColorLevel);
+			FLGPDBBKAIP().SetVector("CameraFilterPack/Distortion_Twist_Square", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
 		}
 		else
 		{
@@ -1156,7 +1156,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void BOPKKCAFODF()
 	{
-		SCShader = Shader.Find(" should be overwritten.");
+		SCShader = Shader.Find("Missing shader in ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1165,7 +1165,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void ODMPMJPALID()
 	{
-		SCShader = Shader.Find("_Colorisation");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1189,10 +1189,10 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 888f;
 			}
-			MICHFGAOPKM().SetFloat("[PowerUp]", HBJJOCHGOPH);
-			ADGHJOHKEHG().SetFloat("_Value4", EdgeSize);
-			HHIFMIPPMPF().SetFloat("workshop.", ColorLevel);
-			EOCCJGIGEGJ().SetVector("_Value2", new Vector2(Screen.width, Screen.height));
+			NBPKMLMCHFN.SetFloat("[Up-Right-Down-Left]", HBJJOCHGOPH);
+			ADGHJOHKEHG().SetFloat("_Value3", EdgeSize);
+			AELJLBOJAIL().SetFloat("workshop.", ColorLevel);
+			GJHPODJOBHL().SetVector("_ScreenResolution", new Vector2(Screen.width, Screen.height));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NMDBCDFPGOK());
 		}
 		else
@@ -1254,7 +1254,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void EFJDNLGNACH()
 	{
-		SCShader = Shader.Find("Bad parameters for delete! Use <key>");
+		SCShader = Shader.Find("delete");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1263,7 +1263,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void FHPFJBFCOOF()
 	{
-		SCShader = Shader.Find("player.licenceaccepted");
+		SCShader = Shader.Find("NO");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1313,11 +1313,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1393f;
 			}
-			HKIMAANBGMJ().SetFloat("sprite", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", EdgeSize);
-			ADAFMBOGPLN().SetFloat("st", ColorLevel);
-			NFMGLIKNOOC().SetVector(" is set to dontSave = true, continuing loop.", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			HHLFDHNEIAH().SetFloat("1", HBJJOCHGOPH);
+			EFMCNLELMDO().SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", EdgeSize);
+			AELJLBOJAIL().SetFloat(": ", ColorLevel);
+			ADGHJOHKEHG().SetVector("SaveGameName is null or empty!", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -1345,11 +1345,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 769f;
 			}
-			GJHPODJOBHL().SetFloat("_Value3", HBJJOCHGOPH);
-			ADAFMBOGPLN().SetFloat("Send", EdgeSize);
-			HHIFMIPPMPF().SetFloat("Left Stick Click", ColorLevel);
-			KJMECMIGJJA().SetVector("Fade", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MICHFGAOPKM());
+			ADAFMBOGPLN().SetFloat("_Value3", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("Chat", EdgeSize);
+			KEMAALEODNH().SetFloat("Start", ColorLevel);
+			ACHNOHCLGOO().SetVector("UseFinalGlassColor", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -1359,7 +1359,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void CEDFFAOOPOG()
 	{
-		SCShader = Shader.Find("The shader ");
+		SCShader = Shader.Find("_Intensity");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1375,11 +1375,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1243f;
 			}
-			OLHDPICFBOF().SetFloat("RestartButton", HBJJOCHGOPH);
-			DOHGBNPMBKG().SetFloat("_BlurPass", EdgeSize);
-			MICHFGAOPKM().SetFloat("The other scroll rect doesnt support scrolling vertically", ColorLevel);
-			HKIMAANBGMJ().SetVector("_FixDistance", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NMDBCDFPGOK());
+			HHLFDHNEIAH().SetFloat("SpectateButton", HBJJOCHGOPH);
+			FLOHGDECHHH().SetFloat("_ChromaticAberration", EdgeSize);
+			EFDEIFCDAFG().SetFloat("You have added the SecondScrollRect to a scroll view that already has both directions selected", ColorLevel);
+			HHIFMIPPMPF().SetVector("_FixDistance", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -1401,7 +1401,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void IMCKJCHKMKB()
 	{
-		SCShader = Shader.Find("_SoftZDistance");
+		SCShader = Shader.Find("_VelTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1436,11 +1436,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1821f;
 			}
-			MICHFGAOPKM().SetFloat("2", HBJJOCHGOPH);
-			AELJLBOJAIL().SetFloat("_TimeX", EdgeSize);
-			ADAFMBOGPLN().SetFloat("DPADHOR", ColorLevel);
-			DOHGBNPMBKG().SetVector("/", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
+			EFMCNLELMDO().SetFloat("CompletedLevel", HBJJOCHGOPH);
+			NMDBCDFPGOK().SetFloat("_TimeX", EdgeSize);
+			FLOHGDECHHH().SetFloat("DPADHOR", ColorLevel);
+			HKIMAANBGMJ().SetVector(".jpg", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLOHGDECHHH());
 		}
 		else
 		{
@@ -1485,11 +1485,11 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1456f;
 			}
-			KJMECMIGJJA().SetFloat("ReJoinRoom failed. A roomname is required. If you don't know one, how will you join?", HBJJOCHGOPH);
-			EFMCNLELMDO().SetFloat("_TapMedium", EdgeSize);
-			ADAFMBOGPLN().SetFloat("d264dbba9c2410771b4ad918903b3f4cd9e276a9", ColorLevel);
-			EOCCJGIGEGJ().SetVector("inventory.lastitemscount", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADAFMBOGPLN());
+			EFDEIFCDAFG().SetFloat("ReJoinRoom failed due to offline mode.", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("_Threshhold", EdgeSize);
+			FEAEGGCNIAA().SetFloat("Did not read byte array properly", ColorLevel);
+			IFMAPIDFNLI().SetVector("Image", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -1499,7 +1499,7 @@ public class CameraFilterPack_Drawing_CellShading : MonoBehaviour
 
 	private void IDJKNBDKHBD()
 	{
-		SCShader = Shader.Find("workshop.");
+		SCShader = Shader.Find("MapEnd");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Glasses/Vampire")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 {
 	public Shader SCShader;
@@ -89,19 +89,19 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 554f;
 			}
-			NBPKMLMCHFN.SetFloat("_SmallTex", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("NO", UseFinalGlassColor);
-			JIBOKBCPDLC().SetFloat("BitsData", Fade);
+			HHIFMIPPMPF().SetFloat("_AdaptionSpeed", HBJJOCHGOPH);
+			JIBOKBCPDLC().SetFloat("ACCEPT", UseFinalGlassColor);
+			NBPKMLMCHFN.SetFloat("BitsData", Fade);
 			NBPKMLMCHFN.SetFloat("menutheme.jamaicanorcdub", VisionBlur);
-			HHIFMIPPMPF().SetFloat("ComboScoreText", GlassDistortion);
-			PLBEJJIHFPB().SetFloat(". The group number should be at least 1.", GlassAberration);
-			HHIFMIPPMPF().SetColor("_TimeX", GlassesColor);
-			JIBOKBCPDLC().SetColor("Fade", GlassesColor2);
-			HHIFMIPPMPF().SetColor("RPCs can only be sent in rooms. Call of \"", GlassColor);
-			HHIFMIPPMPF().SetFloat("_TimeX", UseScanLineSize);
-			JIBOKBCPDLC().SetFloat("restrictions\n\n#until: ", UseScanLine);
-			PLBEJJIHFPB().SetTexture(" but this PhotonView does not exist! Was remote PV.", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			HHIFMIPPMPF().SetFloat("IncorrectHitsScoreText", GlassDistortion);
+			NBPKMLMCHFN.SetFloat(".", GlassAberration);
+			NBPKMLMCHFN.SetColor("_ScreenResolution", GlassesColor);
+			NBPKMLMCHFN.SetColor("_Value3", GlassesColor2);
+			NBPKMLMCHFN.SetColor("Couldn't call DestroyAll() as only the master client is allowed to call this.", GlassColor);
+			JIBOKBCPDLC().SetFloat("_Distortion", UseScanLineSize);
+			PLBEJJIHFPB().SetFloat("restrictions\n\n#until: ", UseScanLine);
+			NBPKMLMCHFN.SetTexture(" By: ", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -148,19 +148,19 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 82f;
 			}
-			JIBOKBCPDLC().SetFloat("X2", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("Texture2", UseFinalGlassColor);
-			PLBEJJIHFPB().SetFloat("menu.selectedlevelid", Fade);
-			NBPKMLMCHFN.SetFloat("settings_bindings_", VisionBlur);
-			HHIFMIPPMPF().SetFloat(".wav", GlassDistortion);
-			PLBEJJIHFPB().SetFloat("id", GlassAberration);
-			NBPKMLMCHFN.SetColor("FinalScoreSmallText", GlassesColor);
-			NBPKMLMCHFN.SetColor("CompletedLevel", GlassesColor2);
-			JIBOKBCPDLC().SetColor(") of this PhotonView does not implement OnPhotonSerializeView()!", GlassColor);
-			NBPKMLMCHFN.SetFloat("PerfectHitsScoreText", UseScanLineSize);
+			NBPKMLMCHFN.SetFloat("<color=#{0}>{1}</color>", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Texture2", UseFinalGlassColor);
+			HHIFMIPPMPF().SetFloat("menu.selectedlevelid", Fade);
+			PLBEJJIHFPB().SetFloat("settings_bindings_controller_type", VisionBlur);
+			PLBEJJIHFPB().SetFloat(".ogg", GlassDistortion);
+			JIBOKBCPDLC().SetFloat("id", GlassAberration);
+			HHIFMIPPMPF().SetColor("FinalScoreSmallText", GlassesColor);
+			NBPKMLMCHFN.SetColor("\" error: ", GlassesColor2);
+			JIBOKBCPDLC().SetColor("Type of observed is unknown when receiving.", GlassColor);
+			PLBEJJIHFPB().SetFloat("TotalHitsScoreText", UseScanLineSize);
 			HHIFMIPPMPF().SetFloat("#newhighscore", UseScanLine);
-			NBPKMLMCHFN.SetTexture("{0}", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			JIBOKBCPDLC().SetTexture("{0}", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -181,19 +181,19 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1419f;
 			}
-			HHIFMIPPMPF().SetFloat("_TimeX", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_ToPrevViewProjCombined", UseFinalGlassColor);
-			JIBOKBCPDLC().SetFloat("_DistortionLevel", Fade);
-			JIBOKBCPDLC().SetFloat("_ColoredChange", VisionBlur);
-			PLBEJJIHFPB().SetFloat("_Value4", GlassDistortion);
-			PLBEJJIHFPB().SetFloat("ClearEnvironment", GlassAberration);
-			PLBEJJIHFPB().SetColor("USE_DIAG_SEARCH", GlassesColor);
-			NBPKMLMCHFN.SetColor("ready", GlassesColor2);
-			PLBEJJIHFPB().SetColor("_MainTex2", GlassColor);
-			NBPKMLMCHFN.SetFloat("_VignettingColor", UseScanLineSize);
-			PLBEJJIHFPB().SetFloat("/", UseScanLine);
-			JIBOKBCPDLC().SetTexture("_Level", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			JIBOKBCPDLC().SetFloat("CameraFilterPack/Drawing_Lines", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_TileTexDebug", UseFinalGlassColor);
+			NBPKMLMCHFN.SetFloat("_FixDistance", Fade);
+			HHIFMIPPMPF().SetFloat("_Fade", VisionBlur);
+			PLBEJJIHFPB().SetFloat("_Value2", GlassDistortion);
+			NBPKMLMCHFN.SetFloat("SetPlayerDistance", GlassAberration);
+			HHIFMIPPMPF().SetColor("USE_PREDICATION", GlassesColor);
+			HHIFMIPPMPF().SetColor("ready", GlassesColor2);
+			JIBOKBCPDLC().SetColor("_MainTex2", GlassColor);
+			JIBOKBCPDLC().SetFloat("_Vignetting2", UseScanLineSize);
+			HHIFMIPPMPF().SetFloat("[Down]", UseScanLine);
+			NBPKMLMCHFN.SetTexture("_Level", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -210,19 +210,19 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 15f;
 			}
-			PLBEJJIHFPB().SetFloat("_Extra", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("_TimeX", UseFinalGlassColor);
-			NBPKMLMCHFN.SetFloat("EditMenu", Fade);
-			PLBEJJIHFPB().SetFloat("#ok", VisionBlur);
-			PLBEJJIHFPB().SetFloat("?", GlassDistortion);
-			NBPKMLMCHFN.SetFloat("vignetteIntensity", GlassAberration);
-			HHIFMIPPMPF().SetColor(".lastCheckpoint.powerupsScore", GlassesColor);
-			HHIFMIPPMPF().SetColor("bad", GlassesColor2);
-			HHIFMIPPMPF().SetColor(" ", GlassColor);
+			PLBEJJIHFPB().SetFloat("_Intensity", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("CameraFilterPack/Drawing_Paper2", UseFinalGlassColor);
+			PLBEJJIHFPB().SetFloat("ViewMenu", Fade);
+			HHIFMIPPMPF().SetFloat("#ok", VisionBlur);
+			HHIFMIPPMPF().SetFloat("?", GlassDistortion);
+			PLBEJJIHFPB().SetFloat("useSrcAlphaAsMask", GlassAberration);
+			NBPKMLMCHFN.SetColor(".lastCheckpoint.incorrectScore", GlassesColor);
+			HHIFMIPPMPF().SetColor("#close", GlassesColor2);
+			JIBOKBCPDLC().SetColor("'{0}'{1}{2}", GlassColor);
 			NBPKMLMCHFN.SetFloat("[MenuScene] Error: ", UseScanLineSize);
-			JIBOKBCPDLC().SetFloat("_Value4", UseScanLine);
-			PLBEJJIHFPB().SetTexture("Jun", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			HHIFMIPPMPF().SetFloat("_Value4", UseScanLine);
+			PLBEJJIHFPB().SetTexture("Mar", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -232,8 +232,8 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		FPHEBLMINDA = Resources.Load("achievements.21.completed.workshop.") as Texture2D;
-		SCShader = Shader.Find("/");
+		FPHEBLMINDA = Resources.Load("1159514800") as Texture2D;
+		SCShader = Shader.Find("#done");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -249,19 +249,19 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1472f;
 			}
-			HHIFMIPPMPF().SetFloat("_TimeX", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat(".lastCheckpoint.incorrectScore", UseFinalGlassColor);
-			PLBEJJIHFPB().SetFloat("error", Fade);
+			NBPKMLMCHFN.SetFloat("_TimeX", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat(".lastCheckpoint.powerupsScore", UseFinalGlassColor);
+			JIBOKBCPDLC().SetFloat("#tryagain", Fade);
 			HHIFMIPPMPF().SetFloat("[Up-Right-Down-Left]", VisionBlur);
-			PLBEJJIHFPB().SetFloat("menu.enableselectormusic", GlassDistortion);
-			JIBOKBCPDLC().SetFloat("Tab2Content", GlassAberration);
-			HHIFMIPPMPF().SetColor("Aimer Input Module is incompatible with the StandAloneInputSystem, please remove it from the Event System in this scene or disable it when this module is in use", GlassesColor);
-			PLBEJJIHFPB().SetColor("uploads/Intralism/mods_terms.pdf", GlassesColor2);
-			NBPKMLMCHFN.SetColor("_Dist", GlassColor);
+			HHIFMIPPMPF().SetFloat("menu.enableselectormusic", GlassDistortion);
+			HHIFMIPPMPF().SetFloat("Tab2Content", GlassAberration);
+			NBPKMLMCHFN.SetColor("}", GlassesColor);
+			HHIFMIPPMPF().SetColor("[Up]", GlassesColor2);
+			PLBEJJIHFPB().SetColor("_Size", GlassColor);
 			JIBOKBCPDLC().SetFloat("float,1.5", UseScanLineSize);
 			JIBOKBCPDLC().SetFloat("[SERVER] Player ", UseScanLine);
-			HHIFMIPPMPF().SetTexture("_Quality", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			JIBOKBCPDLC().SetTexture("_Radius", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -275,8 +275,8 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		FPHEBLMINDA = Resources.Load("_TimeX") as Texture2D;
-		SCShader = Shader.Find("received</b>\n#reason: ");
+		FPHEBLMINDA = Resources.Load("_Distortion") as Texture2D;
+		SCShader = Shader.Find("<b>#");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -354,7 +354,7 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		FPHEBLMINDA = Resources.Load("_ReflectionTexture1") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_HitPointTexture") as Texture2D;
 		SCShader = Shader.Find("Bad parameters for delete! Use <key>");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -371,19 +371,19 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1550f;
 			}
-			HHIFMIPPMPF().SetFloat("OpAuthenticate()", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("\" to target: ", UseFinalGlassColor);
-			JIBOKBCPDLC().SetFloat("_MainTex2", Fade);
-			HHIFMIPPMPF().SetFloat("_Value2", VisionBlur);
-			PLBEJJIHFPB().SetFloat("ConfigVersionSlider", GlassDistortion);
-			JIBOKBCPDLC().SetFloat("ShowSprite", GlassAberration);
-			HHIFMIPPMPF().SetColor("#", GlassesColor);
-			PLBEJJIHFPB().SetColor("menuVolume", GlassesColor2);
-			HHIFMIPPMPF().SetColor("_Near", GlassColor);
-			NBPKMLMCHFN.SetFloat("_CenterX", UseScanLineSize);
-			PLBEJJIHFPB().SetFloat("_BlurTexture", UseScanLine);
-			PLBEJJIHFPB().SetTexture("pointBuffer", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			HHIFMIPPMPF().SetFloat("OpSetPropertiesOfActor not sent. ActorNr must be > 0 and actorProperties != null.", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat(" GO:", UseFinalGlassColor);
+			NBPKMLMCHFN.SetFloat("_MainTex2", Fade);
+			PLBEJJIHFPB().SetFloat("_TimeX", VisionBlur);
+			JIBOKBCPDLC().SetFloat("ConfigVersionSlider", GlassDistortion);
+			NBPKMLMCHFN.SetFloat("_Color", GlassAberration);
+			JIBOKBCPDLC().SetColor("<b>", GlassesColor);
+			PLBEJJIHFPB().SetColor("sfxVolume", GlassesColor2);
+			JIBOKBCPDLC().SetColor("_Near", GlassColor);
+			JIBOKBCPDLC().SetFloat("_TimeX", UseScanLineSize);
+			NBPKMLMCHFN.SetFloat("_ReflectionTexture3", UseScanLine);
+			NBPKMLMCHFN.SetTexture("_Offsets", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -393,8 +393,8 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		FPHEBLMINDA = Resources.Load("_Value4") as Texture2D;
-		SCShader = Shader.Find("_MaxRayTraceDistance");
+		FPHEBLMINDA = Resources.Load("_Value3") as Texture2D;
+		SCShader = Shader.Find("_ScreenEdgeFading");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -410,19 +410,19 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 538f;
 			}
-			NBPKMLMCHFN.SetFloat("HiddenToggle", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("_TimeX", UseFinalGlassColor);
-			JIBOKBCPDLC().SetFloat("_Value4", Fade);
-			JIBOKBCPDLC().SetFloat("Error: you cannot write/send to this stream that you are reading!", VisionBlur);
-			NBPKMLMCHFN.SetFloat("Set Satellite Trail MinVertexDistance", GlassDistortion);
-			JIBOKBCPDLC().SetFloat("X2", GlassAberration);
-			HHIFMIPPMPF().SetColor("Done!", GlassesColor);
-			NBPKMLMCHFN.SetColor(". The RPC has been ignored.", GlassesColor2);
-			PLBEJJIHFPB().SetColor("Please specify either t or f.", GlassColor);
-			PLBEJJIHFPB().SetFloat("plogs", UseScanLineSize);
-			JIBOKBCPDLC().SetFloat("Right", UseScanLine);
-			NBPKMLMCHFN.SetTexture("SetSatelliteInput", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
+			NBPKMLMCHFN.SetFloat("Tab2Content", HBJJOCHGOPH);
+			JIBOKBCPDLC().SetFloat("CameraFilterPack/Distortion_Aspiration", UseFinalGlassColor);
+			JIBOKBCPDLC().SetFloat("_Value3", Fade);
+			HHIFMIPPMPF().SetFloat("[PhotonMessageInfo: Sender='{1}' Senttime={0}]", VisionBlur);
+			NBPKMLMCHFN.SetFloat("SetSatelliteTrailMinVertexDistance", GlassDistortion);
+			HHIFMIPPMPF().SetFloat("================================", GlassAberration);
+			NBPKMLMCHFN.SetColor("[LevelEditorScene] Exported to ", GlassesColor);
+			HHIFMIPPMPF().SetColor("\" on viewID ", GlassesColor2);
+			PLBEJJIHFPB().SetColor("f", GlassColor);
+			NBPKMLMCHFN.SetFloat("Achievement 21 progress reseted", UseScanLineSize);
+			PLBEJJIHFPB().SetFloat("Left", UseScanLine);
+			PLBEJJIHFPB().SetTexture("SetSatelliteColor", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
 		else
 		{
@@ -458,19 +458,19 @@ public class CameraFilterPack_Glasses_On_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 384f;
 			}
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("Missing shader for image effect {0}", UseFinalGlassColor);
-			PLBEJJIHFPB().SetFloat("_Color", Fade);
-			JIBOKBCPDLC().SetFloat("musicVolume", VisionBlur);
-			HHIFMIPPMPF().SetFloat("SetParent", GlassDistortion);
-			JIBOKBCPDLC().SetFloat("CameraFilterPack/FX_Glitch3", GlassAberration);
-			NBPKMLMCHFN.SetColor("QuickSave", GlassesColor);
-			PLBEJJIHFPB().SetColor("skin.hit_normal", GlassesColor2);
+			PLBEJJIHFPB().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_BaseTex", UseFinalGlassColor);
+			PLBEJJIHFPB().SetFloat("[EditorEvent] Exception: ", Fade);
+			JIBOKBCPDLC().SetFloat("sfxVolume", VisionBlur);
+			JIBOKBCPDLC().SetFloat("Scale environment object by the values", GlassDistortion);
+			HHIFMIPPMPF().SetFloat("_ScreenResolution", GlassAberration);
+			PLBEJJIHFPB().SetColor(" is set to dontSave = true, continuing loop.", GlassesColor);
+			JIBOKBCPDLC().SetColor("skin.hit_normal", GlassesColor2);
 			HHIFMIPPMPF().SetColor("shader.invert", GlassColor);
 			JIBOKBCPDLC().SetFloat("CameraFilterPack_3D_Myst1", UseScanLineSize);
-			PLBEJJIHFPB().SetFloat("The shader ", UseScanLine);
-			HHIFMIPPMPF().SetTexture("Object ID. Case-Sensitive", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
+			PLBEJJIHFPB().SetFloat("_Intensity", UseScanLine);
+			NBPKMLMCHFN.SetTexture("id", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{

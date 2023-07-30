@@ -11,276 +11,56 @@ public class TypedLobby
 
 	public bool IsDefault => Type == LobbyType.Default && string.IsNullOrEmpty(Name);
 
-	public override string CFALDCPGMCA()
-	{
-		return string.Format("_Sat", Name, Type);
-	}
-
 	[SpecialName]
-	public bool OAGDOLJKDLP()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool CAJJFJNHOAK()
+	public bool KIDDGEJLFNG()
 	{
 		return Type != 0 || string.IsNullOrEmpty(Name);
 	}
 
-	[SpecialName]
-	public bool DGMNCJLBNON()
+	public override string HNHNKFEAAKA()
 	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	public override string FLJBCAOHMMN()
-	{
-		return string.Format("GlassesColor2", Name, Type);
-	}
-
-	[SpecialName]
-	public bool AALKPPKHNOH()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	public override string AAGGLDPCFPF()
-	{
-		return string.Format("LeaderboardsButton", Name, Type);
-	}
-
-	[SpecialName]
-	public bool ODMDIOOHEMD()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool NAKOCKGALKH()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool KHCFDAJPAEI()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool HAOEBIBEADE()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
+		return string.Format("Expected protocol set to UDP, due to encryption mode DatagramEncryption. Changing protocol in PhotonServerSettings from: ", Name, Type);
 	}
 
 	public override string NJAPKBIOFIO()
 	{
-		return string.Format("UseScanLine", Name, Type);
+		return string.Format("_CameraWS", Name, Type);
+	}
+
+	public override string CFALDCPGMCA()
+	{
+		return string.Format("EventTimeInputField", Name, Type);
+	}
+
+	public override string FFJCMBCCMLP()
+	{
+		return string.Format("x", Name, Type);
 	}
 
 	[SpecialName]
-	public bool KHPAOCFGPGM()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	public override string NMANIPNDOKJ()
-	{
-		return string.Format("0.00", Name, Type);
-	}
-
-	[SpecialName]
-	public bool BEDADDBKMLN()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	public override string AAPCGENPDKE()
-	{
-		return string.Format("maps.", Name, Type);
-	}
-
-	public override string IPMCFHIBGAC()
-	{
-		return string.Format("GroupNameText", Name, Type);
-	}
-
-	public override string NOOLCGNJDMM()
-	{
-		return string.Format("player.currentrank", Name, Type);
-	}
-
-	public override string LPCBPFDGIEE()
-	{
-		return string.Format("_Value2", Name, Type);
-	}
-
-	public override string DFHENJBDNGM()
-	{
-		return string.Format("settings.hitvariation", Name, Type);
-	}
-
-	[SpecialName]
-	public bool JFEHOODNGCL()
+	public bool PCGDFEHDNJE()
 	{
 		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
+	}
+
+	[SpecialName]
+	public bool FOFDBDGMGHL()
+	{
+		return Type != 0 || string.IsNullOrEmpty(Name);
 	}
 
 	public override string AJLLINNGAHF()
 	{
-		return string.Format("EventData0DropDownList", Name, Type);
+		return string.Format("OnJoinedRoom() called by PUN. Now this client is in a room. From here on, your game would be running. For reference, all callbacks are listed in enum: PhotonNetworkingMessage", Name, Type);
 	}
 
-	public override string CJPIOOPNMKH()
+	public override string AAGGLDPCFPF()
 	{
-		return string.Format("shader.frost", Name, Type);
+		return string.Format("list", Name, Type);
 	}
 
 	[SpecialName]
-	public bool PHBLLKGELCI()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	public override string KHOEEKGDNOM()
-	{
-		return string.Format("CameraFilterPack/Distortion_Lens", Name, Type);
-	}
-
-	public override string DAFEJDODLIH()
-	{
-		return string.Format("Editor/", Name, Type);
-	}
-
-	public TypedLobby(string EBEHBBDKDFJ, LobbyType HMGBJCGOLMI)
-	{
-		Name = EBEHBBDKDFJ;
-		Type = HMGBJCGOLMI;
-	}
-
-	[SpecialName]
-	public bool CNBIHDDHEOE()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool NLPINAKJLPF()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool POAPKFJGNOL()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool DKNFIIBEDNK()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	public override string FLOGLPAPFLF()
-	{
-		return string.Format("_Metrics", Name, Type);
-	}
-
-	public override string INLHLHDMHNK()
-	{
-		return string.Format("R:", Name, Type);
-	}
-
-	public override string GIPLBIGCGOH()
-	{
-		return string.Format(".lastCheckpoint.lives", Name, Type);
-	}
-
-	[SpecialName]
-	public bool OLDHKOLHIGH()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool KNAJKNEAMBP()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	public override string EAPJCKOOLJA()
-	{
-		return string.Format("_TimeX", Name, Type);
-	}
-
-	[SpecialName]
-	public bool BCDEBHJJGBK()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	public override string EEECHDGJLCM()
-	{
-		return string.Format("intensity", Name, Type);
-	}
-
-	[SpecialName]
-	public bool AMEBNNBNENG()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	public override string BLKHPEMLGAD()
-	{
-		return string.Format("_Green_C", Name, Type);
-	}
-
-	public override string OGCLCOMELLF()
-	{
-		return string.Format("Received unknown status code: ", Name, Type);
-	}
-
-	public override string BNGOOJMFMDB()
-	{
-		return string.Format("#random #rare #item", Name, Type);
-	}
-
-	[SpecialName]
-	public bool OCJFGDMNIDF()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	public override string FJGCOIMIOBF()
-	{
-		return string.Format("mapselector.lastSearch", Name, Type);
-	}
-
-	[SpecialName]
-	public bool JCCLPGGGCNM()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	public override string NOJAIFGAMOO()
-	{
-		return string.Format("Dec", Name, Type);
-	}
-
-	public override string EJGAGAODACL()
-	{
-		return string.Format("_Contrast", Name, Type);
-	}
-
-	public override string FJLMNBMCBIP()
-	{
-		return string.Format("CameraFilterPack/Blend2Camera_HardLight", Name, Type);
-	}
-
-	[SpecialName]
-	public bool AGBMBKMONMJ()
+	public bool IEOBDICJAGO()
 	{
 		return Type != 0 || string.IsNullOrEmpty(Name);
 	}
@@ -288,17 +68,23 @@ public class TypedLobby
 	[SpecialName]
 	public bool NKPGPBPMNGE()
 	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
+		return Type != 0 || string.IsNullOrEmpty(Name);
 	}
 
-	public override string IEOFHPKMDJF()
+	[SpecialName]
+	public bool IBLLBNHDCNL()
 	{
-		return string.Format("???", Name, Type);
+		return Type != 0 || string.IsNullOrEmpty(Name);
 	}
 
-	public override string BHEJDDJKBBL()
+	public override string NJFCPBFAKNL()
 	{
-		return string.Format("LevelEditor/CustomEventEditor-Text", Name, Type);
+		return string.Format("_ScreenResolution", Name, Type);
+	}
+
+	public override string ToString()
+	{
+		return $"lobby '{Name}'[{Type}]";
 	}
 
 	public TypedLobby()
@@ -307,18 +93,89 @@ public class TypedLobby
 		Type = LobbyType.Default;
 	}
 
-	public override string GOPJOPJDBFN()
+	[SpecialName]
+	public bool FPBGHHANCKP()
 	{
-		return string.Format("EnableRankingToggle", Name, Type);
-	}
-
-	public override string FFJLDNEABNA()
-	{
-		return string.Format("*.workshop.json", Name, Type);
+		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
 	}
 
 	[SpecialName]
-	public bool GBKIHPGFABL()
+	public bool GANHEMLHEGF()
+	{
+		return Type != 0 || string.IsNullOrEmpty(Name);
+	}
+
+	public override string DPKHAAJNCBI()
+	{
+		return string.Format("_Bullet_6", Name, Type);
+	}
+
+	[SpecialName]
+	public bool NLADKMLEHOK()
+	{
+		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
+	}
+
+	public override string IHGAJKFIBPE()
+	{
+		return string.Format("received</b>\n#reason: ", Name, Type);
+	}
+
+	public TypedLobby(string EBEHBBDKDFJ, LobbyType HMGBJCGOLMI)
+	{
+		Name = EBEHBBDKDFJ;
+		Type = HMGBJCGOLMI;
+	}
+
+	public override string EDFALDILGCL()
+	{
+		return string.Format("inventory.selected.", Name, Type);
+	}
+
+	public override string FJKKMOLOGFP()
+	{
+		return string.Format("skin.", Name, Type);
+	}
+
+	public override string FLJBCAOHMMN()
+	{
+		return string.Format("Yes", Name, Type);
+	}
+
+	public override string FMCDFGECOHL()
+	{
+		return string.Format("SUBMIT '{0}' FILES", Name, Type);
+	}
+
+	[SpecialName]
+	public bool FMICKIMLJJM()
+	{
+		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
+	}
+
+	public override string COELLBGIPPO()
+	{
+		return string.Format("Edited unlock conditions", Name, Type);
+	}
+
+	[SpecialName]
+	public bool LFBIFHGJKIE()
+	{
+		return Type != 0 || string.IsNullOrEmpty(Name);
+	}
+
+	public override string GDPGACHMBOI()
+	{
+		return string.Format("shader.none", Name, Type);
+	}
+
+	public override string MLEDOMNIBFO()
+	{
+		return string.Format("Failed to InstantiateSceneObject prefab: ", Name, Type);
+	}
+
+	[SpecialName]
+	public bool GNNCOPOEBLP()
 	{
 		return Type != 0 || string.IsNullOrEmpty(Name);
 	}
@@ -329,115 +186,41 @@ public class TypedLobby
 		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
 	}
 
+	public override string FFJLDNEABNA()
+	{
+		return string.Format("_TimeX", Name, Type);
+	}
+
+	public override string INHOODEJALN()
+	{
+		return string.Format("http://steamcommunity.com/sharedfiles/filedetails/?id=", Name, Type);
+	}
+
 	[SpecialName]
-	public bool ICGFJFIMNIG()
+	public bool AGBMBKMONMJ()
 	{
 		return Type != 0 || string.IsNullOrEmpty(Name);
 	}
 
-	[SpecialName]
-	public bool EECEMJDEOIE()
+	public override string HNCNNGNLKGC()
 	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
+		return string.Format("Myst", Name, Type);
 	}
 
 	[SpecialName]
-	public bool BMJPMIHALHD()
+	public bool HAOEBIBEADE()
 	{
 		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
 	}
 
-	public override string FMCDFGECOHL()
+	public override string KHOEEKGDNOM()
 	{
-		return string.Format("shader.sunny", Name, Type);
+		return string.Format("maps.", Name, Type);
 	}
 
 	[SpecialName]
-	public bool PCGDFEHDNJE()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool LCICPIGMNPP()
+	public bool NLPINAKJLPF()
 	{
 		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	public override string KDBBBMCPKNE()
-	{
-		return string.Format("Alpha", Name, Type);
-	}
-
-	[SpecialName]
-	public bool FAEDFFBLANA()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	public override string LGDBJKIMNCE()
-	{
-		return string.Format("[LocalizationService] All languages: ", Name, Type);
-	}
-
-	public override string DHPDGMDACIO()
-	{
-		return string.Format("RequestForPickupItems", Name, Type);
-	}
-
-	public override string FJKKMOLOGFP()
-	{
-		return string.Format("CameraFilterPack/TV_Chromatical", Name, Type);
-	}
-
-	[SpecialName]
-	public bool LJHKKOEPODN()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool MBOHHOKCBKE()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	public override string PILLKLPMOOH()
-	{
-		return string.Format("settings.enablehitsoundsinnormal", Name, Type);
-	}
-
-	[SpecialName]
-	public bool LINGBOEIDFC()
-	{
-		return Type != 0 || string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool KCIOFPBNOJH()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool MAKPKDLNCDO()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	[SpecialName]
-	public bool BLHKMPLABMN()
-	{
-		return Type == LobbyType.Default && string.IsNullOrEmpty(Name);
-	}
-
-	public override string MJIJPCPAFPJ()
-	{
-		return string.Format("0 - background, 1 - foreground", Name, Type);
-	}
-
-	public override string ToString()
-	{
-		return $"lobby '{Name}'[{Type}]";
 	}
 }

@@ -48,469 +48,358 @@ public class FinishedMapInfo
 	public float time { get; set; }
 
 	[SpecialName]
-	public int OLHBOHICOLF()
-	{
-		return multiplayerplayers;
-	}
-
-	[SpecialName]
-	public void DFAEGIMMLJG(string DPNHODJHGJL)
-	{
-		maptags = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void HCDIHFPNKEN(bool DPNHODJHGJL)
-	{
-		isloved = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void PKMEGDEOBIH(int DPNHODJHGJL)
-	{
-		score = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int GMPLCDJGDKB()
-	{
-		return multiplayerplayers;
-	}
-
-	[SpecialName]
-	public void HIKNMAFMEGN(float DPNHODJHGJL)
-	{
-		time = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void NCIOHFAJOBI(string DPNHODJHGJL)
-	{
-		mapid = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int HEHHJEDIMAK()
-	{
-		return handsCount;
-	}
-
-	[SpecialName]
-	public bool PBKHDLKMBJB()
-	{
-		return isofficial;
-	}
-
-	[SpecialName]
-	public void OGGLFCDKJBE(bool DPNHODJHGJL)
-	{
-		isloved = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string CNDPCBFHCAG()
-	{
-		return maptags;
-	}
-
-	public void GKMPDFNEKJI(FinishedMapInfo CDJGIKGAFOD)
-	{
-		CDJGIKGAFOD.mapid = mapid;
-		CDJGIKGAFOD.mapdifficulty = mapdifficulty;
-		CDJGIKGAFOD.DFAEGIMMLJG(maptags);
-		CDJGIKGAFOD.handsCount = HEHHJEDIMAK();
-		CDJGIKGAFOD.mapper = MBODFMKMDBF();
-		CDJGIKGAFOD.IGCKBAONHGA(isofficial);
-		CDJGIKGAFOD.isloved = isloved;
-		CDJGIKGAFOD.isfunny = GCDCEHIODNO();
-		CDJGIKGAFOD.completed = completed;
-		CDJGIKGAFOD.PNDEPBDCKKO(isstoryboardactive);
-		CDJGIKGAFOD.ismultiplayer = FMADLJCGDMA();
-		CDJGIKGAFOD.multiplayerplayers = multiplayerplayers;
-		CDJGIKGAFOD.multiplayerplace = multiplayerplace;
-		CDJGIKGAFOD.multiplayerplayers = multiplayerplayers;
-		CDJGIKGAFOD.gamemode = gamemode;
-		CDJGIKGAFOD.loopscount = FCLAGGGFPMH();
-		CDJGIKGAFOD.accuracy = EIBKCHCPPKG();
-		CDJGIKGAFOD.PKMEGDEOBIH(LMGJOMCGAGL());
-		CDJGIKGAFOD.CPHGKPFLIDE(GAALNMAAGMA());
-		CDJGIKGAFOD.misses = MFBIIFFEBCG();
-		CDJGIKGAFOD.HIKNMAFMEGN(FMLMKCNAEKP());
-	}
-
-	[SpecialName]
-	public int NJAJMNFNKBB()
-	{
-		return handsCount;
-	}
-
-	[SpecialName]
-	public string OBKIKPLGGGH()
-	{
-		return mapper;
-	}
-
-	[SpecialName]
-	public void LAGKGACCGBI(int DPNHODJHGJL)
-	{
-		handsCount = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void IGCKBAONHGA(bool DPNHODJHGJL)
-	{
-		isofficial = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool JMKANIFLHEF()
-	{
-		return completed;
-	}
-
-	public void AEANKENFIDD(FinishedMapInfo CDJGIKGAFOD)
-	{
-		CDJGIKGAFOD.mapid = mapid;
-		CDJGIKGAFOD.ABNOACNJLJG(BFLKPJGCJAB());
-		CDJGIKGAFOD.maptags = CNDPCBFHCAG();
-		CDJGIKGAFOD.LAGKGACCGBI(NJAJMNFNKBB());
-		CDJGIKGAFOD.mapper = MBODFMKMDBF();
-		CDJGIKGAFOD.IGCKBAONHGA(isofficial);
-		CDJGIKGAFOD.HCDIHFPNKEN(isloved);
-		CDJGIKGAFOD.isfunny = KIECDBIPADM();
-		CDJGIKGAFOD.completed = CPHKMHKMFPE();
-		CDJGIKGAFOD.PNDEPBDCKKO(isstoryboardactive);
-		CDJGIKGAFOD.ismultiplayer = ismultiplayer;
-		CDJGIKGAFOD.multiplayerplayers = ODLDNPPDIKE();
-		CDJGIKGAFOD.multiplayerplace = multiplayerplace;
-		CDJGIKGAFOD.multiplayerplayers = LKIMMFDLCOA();
-		CDJGIKGAFOD.AIBKCDNFAAG(gamemode);
-		CDJGIKGAFOD.loopscount = NKIPBLLHHBN();
-		CDJGIKGAFOD.accuracy = EIBKCHCPPKG();
-		CDJGIKGAFOD.GFOAKJOLJDP(LMGJOMCGAGL());
-		CDJGIKGAFOD.CPHGKPFLIDE(GAALNMAAGMA());
-		CDJGIKGAFOD.OBKMGIPPBCJ(MFABIKMCLHC());
-		CDJGIKGAFOD.time = time;
-	}
-
-	[SpecialName]
-	public void NLMLEGJAEJC(bool DPNHODJHGJL)
-	{
-		isofficial = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int LMGJOMCGAGL()
+	public int EHJFDBMNBLF()
 	{
 		return score;
 	}
 
 	[SpecialName]
-	public void IBJAHDCDHKH(bool DPNHODJHGJL)
-	{
-		completed = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void INMHOFPBLAB(bool DPNHODJHGJL)
+	public void PEIIDGDGBMJ(bool DPNHODJHGJL)
 	{
 		isloved = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public int OOGDAKDPNDC()
-	{
-		return multiplayerplayers;
-	}
-
-	[SpecialName]
-	public void ALPBACEOLHK(int DPNHODJHGJL)
-	{
-		score = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string KJHLNENOIGI()
-	{
-		return mapper;
-	}
-
-	[SpecialName]
-	public bool FMADLJCGDMA()
-	{
-		return ismultiplayer;
-	}
-
-	[SpecialName]
-	public float BFLKPJGCJAB()
-	{
-		return mapdifficulty;
-	}
-
-	[SpecialName]
-	public int BJOGJJFKHHH()
-	{
-		return misses;
-	}
-
-	[SpecialName]
-	public bool NMGIIOPOMEK()
-	{
-		return isloved;
-	}
-
-	[SpecialName]
-	public void EICMGIEKGIH(int DPNHODJHGJL)
-	{
-		handsCount = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void OMOBMDJMNHN(int DPNHODJHGJL)
-	{
-		perfecthits = DPNHODJHGJL;
-	}
-
-	public void LCBKIGCLPBH(FinishedMapInfo CDJGIKGAFOD)
-	{
-		CDJGIKGAFOD.GDPIBNNMIGC(mapid);
-		CDJGIKGAFOD.mapdifficulty = MIHLDCLJOHM();
-		CDJGIKGAFOD.GLNIJNANKME(BDNJEOLDHCK());
-		CDJGIKGAFOD.handsCount = NJAJMNFNKBB();
-		CDJGIKGAFOD.mapper = MBODFMKMDBF();
-		CDJGIKGAFOD.NLMLEGJAEJC(isofficial);
-		CDJGIKGAFOD.BAHPLOIFKOF(GECNLGNPDFA());
-		CDJGIKGAFOD.isfunny = isfunny;
-		CDJGIKGAFOD.IBJAHDCDHKH(JMKANIFLHEF());
-		CDJGIKGAFOD.PNDEPBDCKKO(isstoryboardactive);
-		CDJGIKGAFOD.ismultiplayer = ismultiplayer;
-		CDJGIKGAFOD.multiplayerplayers = OLHBOHICOLF();
-		CDJGIKGAFOD.multiplayerplace = multiplayerplace;
-		CDJGIKGAFOD.multiplayerplayers = GMPLCDJGDKB();
-		CDJGIKGAFOD.gamemode = gamemode;
-		CDJGIKGAFOD.loopscount = IBJNCIGGCBI();
-		CDJGIKGAFOD.KNDDGKJBIDJ(EIBKCHCPPKG());
-		CDJGIKGAFOD.GFOAKJOLJDP(LMGJOMCGAGL());
-		CDJGIKGAFOD.OMOBMDJMNHN(perfecthits);
-		CDJGIKGAFOD.misses = BJOGJJFKHHH();
-		CDJGIKGAFOD.HIKNMAFMEGN(time);
-	}
-
-	[SpecialName]
-	public int FCLAGGGFPMH()
-	{
-		return loopscount;
-	}
-
-	[SpecialName]
-	public string FMOPHPFNGFD()
-	{
-		return mapper;
-	}
-
-	[SpecialName]
-	public string MBODFMKMDBF()
-	{
-		return mapper;
-	}
-
-	[SpecialName]
-	public void ABNOACNJLJG(float DPNHODJHGJL)
-	{
-		mapdifficulty = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void HNLJIEMDIOB(bool DPNHODJHGJL)
-	{
-		isloved = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int GAALNMAAGMA()
-	{
-		return perfecthits;
-	}
-
-	[SpecialName]
-	public float KBIGOBLILCL()
-	{
-		return accuracy;
-	}
-
-	[SpecialName]
-	public int BNJDHEACLEL()
-	{
-		return handsCount;
-	}
-
-	public void BFCMCBBNPOD(FinishedMapInfo CDJGIKGAFOD)
-	{
-		CDJGIKGAFOD.GDPIBNNMIGC(mapid);
-		CDJGIKGAFOD.ABNOACNJLJG(BFLKPJGCJAB());
-		CDJGIKGAFOD.maptags = CNDPCBFHCAG();
-		CDJGIKGAFOD.LAGKGACCGBI(NJAJMNFNKBB());
-		CDJGIKGAFOD.mapper = FMOPHPFNGFD();
-		CDJGIKGAFOD.NLMLEGJAEJC(isofficial);
-		CDJGIKGAFOD.isloved = NMGIIOPOMEK();
-		CDJGIKGAFOD.isfunny = GCDCEHIODNO();
-		CDJGIKGAFOD.completed = JMKANIFLHEF();
-		CDJGIKGAFOD.isstoryboardactive = isstoryboardactive;
-		CDJGIKGAFOD.FPEPFJBBANC(FMADLJCGDMA());
-		CDJGIKGAFOD.multiplayerplayers = GMPLCDJGDKB();
-		CDJGIKGAFOD.multiplayerplace = multiplayerplace;
-		CDJGIKGAFOD.multiplayerplayers = OOGDAKDPNDC();
-		CDJGIKGAFOD.gamemode = gamemode;
-		CDJGIKGAFOD.loopscount = IBJNCIGGCBI();
-		CDJGIKGAFOD.KNDDGKJBIDJ(EHKEJPJPOCG());
-		CDJGIKGAFOD.score = LMGJOMCGAGL();
-		CDJGIKGAFOD.perfecthits = perfecthits;
-		CDJGIKGAFOD.OBKMGIPPBCJ(MFBIIFFEBCG());
-		CDJGIKGAFOD.HIKNMAFMEGN(time);
-	}
-
-	[SpecialName]
-	public void EDOFADAPLLB(int DPNHODJHGJL)
-	{
-		gamemode = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void OBKMGIPPBCJ(int DPNHODJHGJL)
-	{
-		misses = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public float MIHLDCLJOHM()
-	{
-		return mapdifficulty;
-	}
-
-	[SpecialName]
-	public void NCFGPDBGCGC(int DPNHODJHGJL)
-	{
-		score = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool KIECDBIPADM()
-	{
-		return isfunny;
-	}
-
-	[SpecialName]
-	public void ODKLCAIJPNC(string DPNHODJHGJL)
-	{
-		mapid = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void FPEPFJBBANC(bool DPNHODJHGJL)
+	public void NBJNLNEKBKM(bool DPNHODJHGJL)
 	{
 		ismultiplayer = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public int MFBIIFFEBCG()
+	public void EFEAKIJBGJJ(int DPNHODJHGJL)
 	{
-		return misses;
+		handsCount = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void GDPIBNNMIGC(string DPNHODJHGJL)
-	{
-		mapid = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void OHOGEANBEKM(bool DPNHODJHGJL)
-	{
-		isloved = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void KNDDGKJBIDJ(float DPNHODJHGJL)
-	{
-		accuracy = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void GFOAKJOLJDP(int DPNHODJHGJL)
+	public void BHLFPEPFGLC(int DPNHODJHGJL)
 	{
 		score = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void PNDEPBDCKKO(bool DPNHODJHGJL)
+	public void BAHPHPGJKNH(bool DPNHODJHGJL)
 	{
-		isstoryboardactive = DPNHODJHGJL;
+		isofficial = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void BAHPLOIFKOF(bool DPNHODJHGJL)
+	public float MMKEHHGBODC()
 	{
-		isloved = DPNHODJHGJL;
+		return mapdifficulty;
 	}
 
 	[SpecialName]
-	public int IBJNCIGGCBI()
+	public void BGNOFFFJPOL(int DPNHODJHGJL)
 	{
-		return loopscount;
+		loopscount = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public bool LMNIKBHCCNJ()
+	public string HCDPOIKNDBD()
 	{
-		return ismultiplayer;
+		return maptags;
 	}
 
 	[SpecialName]
-	public void CPHGKPFLIDE(int DPNHODJHGJL)
+	public void ICMIGLKKMGB(int DPNHODJHGJL)
 	{
-		perfecthits = DPNHODJHGJL;
+		handsCount = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public int LKIMMFDLCOA()
+	public string FPKAOFBFCNG()
 	{
-		return multiplayerplayers;
+		return mapid;
+	}
+
+	public void NIDBAEKPFOD(FinishedMapInfo CDJGIKGAFOD)
+	{
+		CDJGIKGAFOD.LECMMNPDAEB(FPKAOFBFCNG());
+		CDJGIKGAFOD.mapdifficulty = FBNOEPGJOFE();
+		CDJGIKGAFOD.maptags = LGDJOHEANFH();
+		CDJGIKGAFOD.EFEAKIJBGJJ(HHGHGCPJPEO());
+		CDJGIKGAFOD.mapper = DMKMBMLMEGG();
+		CDJGIKGAFOD.KJKDMIFADMP(isofficial);
+		CDJGIKGAFOD.isloved = FIICJDMHAKO();
+		CDJGIKGAFOD.BEGHGKNFIIO(isfunny);
+		CDJGIKGAFOD.KJIANIGMAHL(completed);
+		CDJGIKGAFOD.IGAFDMLBICN(AOEIIDNEDNA());
+		CDJGIKGAFOD.ismultiplayer = ismultiplayer;
+		CDJGIKGAFOD.multiplayerplayers = multiplayerplayers;
+		CDJGIKGAFOD.HGKBIBBIOJO(LBEIFJOIECI());
+		CDJGIKGAFOD.multiplayerplayers = multiplayerplayers;
+		CDJGIKGAFOD.gamemode = APGBPAACDCP();
+		CDJGIKGAFOD.LOILCMFNNIK(ADLMHKJENNM());
+		CDJGIKGAFOD.accuracy = FCDCFEDGIMI();
+		CDJGIKGAFOD.MIFMFDDPDIA(EHJFDBMNBLF());
+		CDJGIKGAFOD.perfecthits = perfecthits;
+		CDJGIKGAFOD.NBGPOOIKAHC(EANEJLEINKA());
+		CDJGIKGAFOD.time = time;
 	}
 
 	[SpecialName]
-	public bool GOGHKDLGAID()
+	public void CFGNLNHDGDM(bool DPNHODJHGJL)
 	{
-		return isofficial;
+		isofficial = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void BCFCKNPHPID(bool DPNHODJHGJL)
+	public void BEGHGKNFIIO(bool DPNHODJHGJL)
+	{
+		isfunny = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string IKGKNONPHNM()
+	{
+		return mapper;
+	}
+
+	[SpecialName]
+	public int BNANJCOEKNP()
+	{
+		return gamemode;
+	}
+
+	[SpecialName]
+	public void OBENJJNMPCL(int DPNHODJHGJL)
+	{
+		gamemode = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void NEIFJEODIKJ(bool DPNHODJHGJL)
 	{
 		completed = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public int KMDLAPCGNMJ()
+	public void COJIPONIHHD(bool DPNHODJHGJL)
+	{
+		isofficial = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int NMKBDHDPONG()
 	{
 		return misses;
 	}
 
 	[SpecialName]
-	public int NKIPBLLHHBN()
+	public int IBKMHHOKFOB()
 	{
-		return loopscount;
+		return misses;
 	}
 
 	[SpecialName]
-	public int KEOCIFAOAIP()
+	public bool PGLBENNEPHB()
 	{
-		return perfecthits;
+		return isstoryboardactive;
 	}
 
 	[SpecialName]
-	public void AIBKCDNFAAG(int DPNHODJHGJL)
+	public bool AOEIIDNEDNA()
 	{
-		gamemode = DPNHODJHGJL;
+		return isstoryboardactive;
+	}
+
+	[SpecialName]
+	public void NDKIJAACHLH(int DPNHODJHGJL)
+	{
+		loopscount = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void HGKBIBBIOJO(int DPNHODJHGJL)
+	{
+		multiplayerplace = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int LOIPNPKBCMC()
+	{
+		return multiplayerplace;
+	}
+
+	[SpecialName]
+	public void GBMACLIJLBI(int DPNHODJHGJL)
+	{
+		loopscount = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool GDHAIFDLLOC()
+	{
+		return isloved;
+	}
+
+	[SpecialName]
+	public float IFNIGBNDJLH()
+	{
+		return accuracy;
+	}
+
+	[SpecialName]
+	public void CFAPNLGGNOM(string DPNHODJHGJL)
+	{
+		mapper = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string DCFMDKHGGKO()
+	{
+		return mapper;
+	}
+
+	[SpecialName]
+	public void KJKDMIFADMP(bool DPNHODJHGJL)
+	{
+		isofficial = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void MIFMFDDPDIA(int DPNHODJHGJL)
+	{
+		score = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void AAECLNDIEJO(bool DPNHODJHGJL)
+	{
+		isloved = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool HABBDOLBMAN()
+	{
+		return isstoryboardactive;
+	}
+
+	[SpecialName]
+	public int EANEJLEINKA()
+	{
+		return misses;
+	}
+
+	[SpecialName]
+	public void DCEBDGNIOMI(bool DPNHODJHGJL)
+	{
+		isfunny = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string BAGLMCDCJOE()
+	{
+		return maptags;
+	}
+
+	[SpecialName]
+	public void NNCAPEAILDJ(float DPNHODJHGJL)
+	{
+		accuracy = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void OAOPKANCNNN(int DPNHODJHGJL)
+	{
+		loopscount = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int PBFMOGJPMFG()
+	{
+		return misses;
+	}
+
+	[SpecialName]
+	public void KJIANIGMAHL(bool DPNHODJHGJL)
+	{
+		completed = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void IIPLLJCOOBC(bool DPNHODJHGJL)
+	{
+		isfunny = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string GCPHLINHEJN()
+	{
+		return mapper;
+	}
+
+	[SpecialName]
+	public void ICIHBFHNCEK(int DPNHODJHGJL)
+	{
+		multiplayerplace = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void FLNEADLCNLE(bool DPNHODJHGJL)
+	{
+		ismultiplayer = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void NBGPOOIKAHC(int DPNHODJHGJL)
+	{
+		misses = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public float FBNOEPGJOFE()
+	{
+		return mapdifficulty;
+	}
+
+	[SpecialName]
+	public void LOILCMFNNIK(int DPNHODJHGJL)
+	{
+		loopscount = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void EICIGNJFKBK(bool DPNHODJHGJL)
+	{
+		isloved = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int CPHIGCHONCM()
+	{
+		return multiplayerplayers;
+	}
+
+	[SpecialName]
+	public bool EBPIGPCOGLF()
+	{
+		return isstoryboardactive;
+	}
+
+	[SpecialName]
+	public int HHGHGCPJPEO()
+	{
+		return handsCount;
+	}
+
+	[SpecialName]
+	public int BDCHKNNHNGE()
+	{
+		return multiplayerplace;
+	}
+
+	[SpecialName]
+	public float PAGBDLNJAHP()
+	{
+		return accuracy;
+	}
+
+	[SpecialName]
+	public string DMKMBMLMEGG()
+	{
+		return mapper;
 	}
 
 	public void CopyValues(FinishedMapInfo CDJGIKGAFOD)
@@ -539,105 +428,352 @@ public class FinishedMapInfo
 	}
 
 	[SpecialName]
-	public bool CPHKMHKMFPE()
+	public void JKGMFMGEEDF(bool DPNHODJHGJL)
 	{
-		return completed;
+		isfunny = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void AIHIKELIIFJ(bool DPNHODJHGJL)
+	public void OMGMALOJDPB(bool DPNHODJHGJL)
 	{
-		isloved = DPNHODJHGJL;
+		isfunny = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public float FMLMKCNAEKP()
-	{
-		return time;
-	}
-
-	[SpecialName]
-	public float EHKEJPJPOCG()
+	public float FCDCFEDGIMI()
 	{
 		return accuracy;
 	}
 
 	[SpecialName]
-	public bool GCDCEHIODNO()
+	public int LBEIFJOIECI()
 	{
-		return isfunny;
+		return multiplayerplace;
 	}
 
 	[SpecialName]
-	public string GLPLOEEHNAP()
+	public int FIOBCCPJOAI()
 	{
-		return mapper;
+		return gamemode;
 	}
 
 	[SpecialName]
-	public int MFABIKMCLHC()
+	public void HPFOLIBCHIC(float DPNHODJHGJL)
 	{
-		return misses;
+		mapdifficulty = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public string BDNJEOLDHCK()
+	public void OBNONHLFLIK(string DPNHODJHGJL)
+	{
+		mapper = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void JPCLCMDINFD(float DPNHODJHGJL)
+	{
+		accuracy = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string LGDJOHEANFH()
 	{
 		return maptags;
 	}
 
-	public void HEBPNLNABDP(FinishedMapInfo CDJGIKGAFOD)
-	{
-		CDJGIKGAFOD.ODKLCAIJPNC(mapid);
-		CDJGIKGAFOD.ABNOACNJLJG(MIHLDCLJOHM());
-		CDJGIKGAFOD.GLNIJNANKME(CNDPCBFHCAG());
-		CDJGIKGAFOD.handsCount = handsCount;
-		CDJGIKGAFOD.mapper = GLPLOEEHNAP();
-		CDJGIKGAFOD.NLMLEGJAEJC(PBKHDLKMBJB());
-		CDJGIKGAFOD.AIHIKELIIFJ(GECNLGNPDFA());
-		CDJGIKGAFOD.isfunny = isfunny;
-		CDJGIKGAFOD.IBJAHDCDHKH(CPHKMHKMFPE());
-		CDJGIKGAFOD.PNDEPBDCKKO(isstoryboardactive);
-		CDJGIKGAFOD.ismultiplayer = LMNIKBHCCNJ();
-		CDJGIKGAFOD.multiplayerplayers = OLHBOHICOLF();
-		CDJGIKGAFOD.multiplayerplace = multiplayerplace;
-		CDJGIKGAFOD.multiplayerplayers = multiplayerplayers;
-		CDJGIKGAFOD.gamemode = gamemode;
-		CDJGIKGAFOD.loopscount = NKIPBLLHHBN();
-		CDJGIKGAFOD.KNDDGKJBIDJ(EIBKCHCPPKG());
-		CDJGIKGAFOD.ALPBACEOLHK(score);
-		CDJGIKGAFOD.OMOBMDJMNHN(perfecthits);
-		CDJGIKGAFOD.misses = BJOGJJFKHHH();
-		CDJGIKGAFOD.time = time;
-	}
-
 	[SpecialName]
-	public bool BAFHOBJKFLN()
+	public bool FIICJDMHAKO()
 	{
 		return isloved;
 	}
 
 	[SpecialName]
-	public float EIBKCHCPPKG()
+	public void ODKIIHKOMAC(int DPNHODJHGJL)
 	{
-		return accuracy;
+		perfecthits = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public int ODLDNPPDIKE()
+	public void GBKFIPJOBPE(int DPNHODJHGJL)
+	{
+		handsCount = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool EOJAGLOMCLA()
+	{
+		return ismultiplayer;
+	}
+
+	[SpecialName]
+	public void NLHONELLCNN(int DPNHODJHGJL)
+	{
+		loopscount = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void PGHDPDALLHG(bool DPNHODJHGJL)
+	{
+		ismultiplayer = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public float HHNFFDKGBFD()
+	{
+		return mapdifficulty;
+	}
+
+	[SpecialName]
+	public void HMHFKLLJOBF(bool DPNHODJHGJL)
+	{
+		isofficial = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void JEIJDKJOPIM(int DPNHODJHGJL)
+	{
+		multiplayerplace = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int APGBPAACDCP()
+	{
+		return gamemode;
+	}
+
+	[SpecialName]
+	public void LJDGONNDCJP(int DPNHODJHGJL)
+	{
+		perfecthits = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void MDKLDNNICAK(float DPNHODJHGJL)
+	{
+		time = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void DHHLJNCJLGN(int DPNHODJHGJL)
+	{
+		perfecthits = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void PJMOEHBAMFI(bool DPNHODJHGJL)
+	{
+		isfunny = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int AEAHNHNPLHP()
+	{
+		return misses;
+	}
+
+	[SpecialName]
+	public void LAAMICHIJBO(int DPNHODJHGJL)
+	{
+		score = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void PONDJCNLBPG(float DPNHODJHGJL)
+	{
+		accuracy = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void KMADNCIJJDN(string DPNHODJHGJL)
+	{
+		mapid = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void KIJFOAKBHBN(bool DPNHODJHGJL)
+	{
+		ismultiplayer = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int JLBCICHLHCA()
+	{
+		return loopscount;
+	}
+
+	[SpecialName]
+	public void LJFLELGFMLA(bool DPNHODJHGJL)
+	{
+		isofficial = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int MBLCJDILDJB()
+	{
+		return perfecthits;
+	}
+
+	[SpecialName]
+	public int KEGDFKNNHNC()
 	{
 		return multiplayerplayers;
 	}
 
 	[SpecialName]
-	public void GLNIJNANKME(string DPNHODJHGJL)
+	public void FPONFICAAGI(bool DPNHODJHGJL)
 	{
-		maptags = DPNHODJHGJL;
+		completed = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void ADCLIIPJOBI(bool DPNHODJHGJL)
+	{
+		isstoryboardactive = DPNHODJHGJL;
+	}
+
+	public void LCBKIGCLPBH(FinishedMapInfo CDJGIKGAFOD)
+	{
+		CDJGIKGAFOD.mapid = mapid;
+		CDJGIKGAFOD.mapdifficulty = FBNOEPGJOFE();
+		CDJGIKGAFOD.ODOJJJBOMFC(LGDJOHEANFH());
+		CDJGIKGAFOD.handsCount = DBIODIJDFML();
+		CDJGIKGAFOD.CFAPNLGGNOM(DCFMDKHGGKO());
+		CDJGIKGAFOD.KJKDMIFADMP(isofficial);
+		CDJGIKGAFOD.isloved = isloved;
+		CDJGIKGAFOD.OMGMALOJDPB(isfunny);
+		CDJGIKGAFOD.NEIFJEODIKJ(completed);
+		CDJGIKGAFOD.IGAFDMLBICN(isstoryboardactive);
+		CDJGIKGAFOD.KIJFOAKBHBN(EOJAGLOMCLA());
+		CDJGIKGAFOD.multiplayerplayers = multiplayerplayers;
+		CDJGIKGAFOD.multiplayerplace = LOIPNPKBCMC();
+		CDJGIKGAFOD.multiplayerplayers = multiplayerplayers;
+		CDJGIKGAFOD.gamemode = BNANJCOEKNP();
+		CDJGIKGAFOD.LOILCMFNNIK(JLBCICHLHCA());
+		CDJGIKGAFOD.JPCLCMDINFD(PAGBDLNJAHP());
+		CDJGIKGAFOD.LAAMICHIJBO(EHIOHJHBJBO());
+		CDJGIKGAFOD.DHHLJNCJLGN(MBLCJDILDJB());
+		CDJGIKGAFOD.NBGPOOIKAHC(PBFMOGJPMFG());
+		CDJGIKGAFOD.time = time;
+	}
+
+	public void GCJEPNMMPDK(FinishedMapInfo CDJGIKGAFOD)
+	{
+		CDJGIKGAFOD.LECMMNPDAEB(FPKAOFBFCNG());
+		CDJGIKGAFOD.mapdifficulty = HHNFFDKGBFD();
+		CDJGIKGAFOD.maptags = maptags;
+		CDJGIKGAFOD.GBKFIPJOBPE(HHGHGCPJPEO());
+		CDJGIKGAFOD.OBNONHLFLIK(DMKMBMLMEGG());
+		CDJGIKGAFOD.ACLFCAIINIF(isofficial);
+		CDJGIKGAFOD.isloved = CHNBKHKJKPA();
+		CDJGIKGAFOD.OMGMALOJDPB(isfunny);
+		CDJGIKGAFOD.completed = completed;
+		CDJGIKGAFOD.IGAFDMLBICN(AOEIIDNEDNA());
+		CDJGIKGAFOD.KIJFOAKBHBN(ismultiplayer);
+		CDJGIKGAFOD.multiplayerplayers = CPHIGCHONCM();
+		CDJGIKGAFOD.HGKBIBBIOJO(BDCHKNNHNGE());
+		CDJGIKGAFOD.multiplayerplayers = CPHIGCHONCM();
+		CDJGIKGAFOD.gamemode = FIOBCCPJOAI();
+		CDJGIKGAFOD.loopscount = loopscount;
+		CDJGIKGAFOD.PONDJCNLBPG(accuracy);
+		CDJGIKGAFOD.LAAMICHIJBO(score);
+		CDJGIKGAFOD.ODKIIHKOMAC(perfecthits);
+		CDJGIKGAFOD.NBGPOOIKAHC(NMKBDHDPONG());
+		CDJGIKGAFOD.time = time;
+	}
+
+	[SpecialName]
+	public bool CHNBKHKJKPA()
+	{
+		return isloved;
+	}
+
+	[SpecialName]
+	public int NCPDIDJOKLJ()
+	{
+		return misses;
+	}
+
+	[SpecialName]
+	public int ADLMHKJENNM()
+	{
+		return loopscount;
+	}
+
+	[SpecialName]
+	public void ACLFCAIINIF(bool DPNHODJHGJL)
+	{
+		isofficial = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int EHIOHJHBJBO()
+	{
+		return score;
 	}
 
 	[SpecialName]
 	public bool GECNLGNPDFA()
 	{
 		return isloved;
+	}
+
+	[SpecialName]
+	public void ODOJJJBOMFC(string DPNHODJHGJL)
+	{
+		maptags = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void LECMMNPDAEB(string DPNHODJHGJL)
+	{
+		mapid = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool NBMDOOENPLE()
+	{
+		return isofficial;
+	}
+
+	[SpecialName]
+	public string LMOMNPCPDJH()
+	{
+		return mapper;
+	}
+
+	[SpecialName]
+	public int DBIODIJDFML()
+	{
+		return handsCount;
+	}
+
+	[SpecialName]
+	public void IGAFDMLBICN(bool DPNHODJHGJL)
+	{
+		isstoryboardactive = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public float FOPLAHECBDN()
+	{
+		return accuracy;
+	}
+
+	[SpecialName]
+	public string FBOHCNABBGE()
+	{
+		return mapper;
+	}
+
+	[SpecialName]
+	public void FLJHBGENNLG(float DPNHODJHGJL)
+	{
+		time = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void ALLGEBFFHNM(bool DPNHODJHGJL)
+	{
+		isloved = DPNHODJHGJL;
 	}
 }

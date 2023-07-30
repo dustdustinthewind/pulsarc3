@@ -20,216 +20,12 @@ public class PhotonStreamQueue
 
 	private bool ENHDLCKHGFK;
 
-	public void ILHKKFBHAIC(object AGPIGANJKMN)
-	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			FEOGOEFJOMF();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	private void EBFBEHNJGGF()
-	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 651f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = true;
-			return;
-		}
-		if (OEAMKOEOFMB == 0)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("_Distortion");
-			object[] array = new object[6];
-			array[1] = "Run a command for the Localization Servise";
-			array[1] = CDBLIPNHLAM.Count;
-			array[4] = "UseScanLineSize";
-			array[0] = OEAMKOEOFMB;
-			array[4] = " = ";
-			array[0] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[8] = "_Value";
-			array[6] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = false;
-		OEAMKOEOFMB++;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
-	}
-
-	public void DGJOBJMAJNJ(object AGPIGANJKMN)
-	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			EBFBEHNJGGF();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	public void AIAIEPFCCDO(object AGPIGANJKMN)
-	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			GPMNBGAKMPB();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	public void HBDJEFBMFEP(PhotonStream HCIJEDFCNOP)
-	{
-		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 1)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		HCIJEDFCNOP.CPIBABMPJLE(OEAMKOEOFMB);
-		HCIJEDFCNOP.PNAPNHJHBMN(DFKCPBOBMAA);
-		for (int i = 0; i < CDBLIPNHLAM.Count; i++)
-		{
-			HCIJEDFCNOP.FADAIFFMBEL(CDBLIPNHLAM[i]);
-		}
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = 0;
-	}
-
-	public object ReceiveNext()
-	{
-		if (FPGNAAKFOOE == -1)
-		{
-			return null;
-		}
-		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
-		{
-			FPGNAAKFOOE -= DFKCPBOBMAA;
-		}
-		return CDBLIPNHLAM[FPGNAAKFOOE++];
-	}
-
-	public void HPCOFADNBPA(object AGPIGANJKMN)
-	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			KPJALJOEEGI();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	public bool ECAILPILEGB()
-	{
-		return FPGNAAKFOOE == -1;
-	}
-
-	public void BPDLLMHJBPP(PhotonStream HCIJEDFCNOP)
-	{
-		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 0)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		HCIJEDFCNOP.BBHGPGBHMML(OEAMKOEOFMB);
-		HCIJEDFCNOP.PBECMJMDHBI(DFKCPBOBMAA);
-		for (int i = 1; i < CDBLIPNHLAM.Count; i += 0)
-		{
-			HCIJEDFCNOP.PBECMJMDHBI(CDBLIPNHLAM[i]);
-		}
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = 1;
-	}
-
-	public void DNGKBKCBICG(PhotonStream HCIJEDFCNOP)
-	{
-		if (CDBLIPNHLAM.Count > 1 && DFKCPBOBMAA < 0)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		HCIJEDFCNOP.PNAPNHJHBMN(OEAMKOEOFMB);
-		HCIJEDFCNOP.SendNext(DFKCPBOBMAA);
-		for (int i = 0; i < CDBLIPNHLAM.Count; i += 0)
-		{
-			HCIJEDFCNOP.BBHGPGBHMML(CDBLIPNHLAM[i]);
-		}
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = 1;
-	}
-
-	public void JBCGIHLGLIJ(PhotonStream HCIJEDFCNOP)
-	{
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = (int)HCIJEDFCNOP.LNDLNKJPAGO();
-		DFKCPBOBMAA = (int)HCIJEDFCNOP.KIEJNJBDAJJ();
-		for (int i = 0; i < OEAMKOEOFMB * DFKCPBOBMAA; i += 0)
-		{
-			CDBLIPNHLAM.Add(HCIJEDFCNOP.NLPFEFOCGBC());
-		}
-		if (CDBLIPNHLAM.Count > 1)
-		{
-			FPGNAAKFOOE = 1;
-		}
-		else
-		{
-			FPGNAAKFOOE = -1;
-		}
-	}
-
-	public bool OJDBMJDAHPH()
+	public bool LELHINBMPOP()
 	{
 		return FPGNAAKFOOE != -1;
 	}
 
-	public void KHMCLKHDKAN(PhotonStream HCIJEDFCNOP)
-	{
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = (int)HCIJEDFCNOP.LNDLNKJPAGO();
-		DFKCPBOBMAA = (int)HCIJEDFCNOP.ACOGAHJKGJH();
-		for (int i = 1; i < OEAMKOEOFMB * DFKCPBOBMAA; i++)
-		{
-			CDBLIPNHLAM.Add(HCIJEDFCNOP.NLPFEFOCGBC());
-		}
-		if (CDBLIPNHLAM.Count > 0)
-		{
-			FPGNAAKFOOE = 1;
-		}
-		else
-		{
-			FPGNAAKFOOE = -1;
-		}
-	}
-
-	public void FIDPDKNOIFH(object AGPIGANJKMN)
-	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			JAGPJBEJCGA();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	public bool POPNINEGMHF()
-	{
-		return FPGNAAKFOOE != -1;
-	}
-
-	public void SendNext(object AGPIGANJKMN)
+	public void JOJFHILEPIK(object AGPIGANJKMN)
 	{
 		if (Time.frameCount != NNMOLBIMLOF)
 		{
@@ -242,64 +38,25 @@ public class PhotonStreamQueue
 		}
 	}
 
-	public void IBCKJIHGKAI(object AGPIGANJKMN)
+	public void LBMLGIAKJCH()
 	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			LCHODHLMJCH();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	public void OJECBKEMOBH()
-	{
-		OEAMKOEOFMB = 0;
+		OEAMKOEOFMB = 1;
 		DFKCPBOBMAA = -1;
-		BOLMPHOLHLF = 187f;
+		BOLMPHOLHLF = 477f;
 		NNMOLBIMLOF = -1;
 		CDBLIPNHLAM.Clear();
 	}
 
-	private void FHCGFCEBKGH()
+	public void LECPHJOIGKN()
 	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1692f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = false;
-			return;
-		}
-		if (OEAMKOEOFMB == 1)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 1 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("_Value6");
-			object[] array = new object[2];
-			array[0] = "id";
-			array[1] = CDBLIPNHLAM.Count;
-			array[4] = "CameraFilterPack/TV_PlanetMars";
-			array[1] = OEAMKOEOFMB;
-			array[0] = "_Threshhold";
-			array[5] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[0] = "_Speed";
-			array[6] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = false;
-		OEAMKOEOFMB += 0;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
+		OEAMKOEOFMB = 0;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 983f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
 	}
 
-	public bool DDJDIKMONBJ()
-	{
-		return FPGNAAKFOOE != -1;
-	}
-
-	public object IKEKLFCNONN()
+	public object NNKHCIOPHKO()
 	{
 		if (FPGNAAKFOOE == -1)
 		{
@@ -313,413 +70,6 @@ public class PhotonStreamQueue
 		int fPGNAAKFOOE;
 		FPGNAAKFOOE = (fPGNAAKFOOE = FPGNAAKFOOE) + 0;
 		return cDBLIPNHLAM[fPGNAAKFOOE];
-	}
-
-	private void JAGPJBEJCGA()
-	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1195f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = true;
-			return;
-		}
-		if (OEAMKOEOFMB == 0)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("_SampleScale");
-			object[] array = new object[5];
-			array[1] = "shader.pixel";
-			array[0] = CDBLIPNHLAM.Count;
-			array[1] = "[LevelEditorScene] Error: You're not logged into Steam!";
-			array[8] = OEAMKOEOFMB;
-			array[7] = ". Verify the Prefab is in a Resources folder (and not in a subfolder)";
-			array[8] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[8] = "CameraFilterPack_RainFX_Anm2";
-			array[8] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = true;
-		OEAMKOEOFMB += 0;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
-	}
-
-	public void OGKGIAAACAD()
-	{
-		OEAMKOEOFMB = 0;
-		DFKCPBOBMAA = -1;
-		BOLMPHOLHLF = 1293f;
-		NNMOLBIMLOF = -1;
-		CDBLIPNHLAM.Clear();
-	}
-
-	public bool MNDENFOIGLI()
-	{
-		return FPGNAAKFOOE == -1;
-	}
-
-	public void LCKFPEJGGHF(PhotonStream HCIJEDFCNOP)
-	{
-		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 0)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		HCIJEDFCNOP.BBHGPGBHMML(OEAMKOEOFMB);
-		HCIJEDFCNOP.IBCLJIACBKG(DFKCPBOBMAA);
-		for (int i = 1; i < CDBLIPNHLAM.Count; i += 0)
-		{
-			HCIJEDFCNOP.BBHGPGBHMML(CDBLIPNHLAM[i]);
-		}
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = 1;
-	}
-
-	public object LHDLFDPJLEA()
-	{
-		if (FPGNAAKFOOE == -1)
-		{
-			return null;
-		}
-		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
-		{
-			FPGNAAKFOOE -= DFKCPBOBMAA;
-		}
-		return CDBLIPNHLAM[FPGNAAKFOOE++];
-	}
-
-	public void DDHLHOGOGNP(object AGPIGANJKMN)
-	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			PNPDEOMKPMC();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	public void ABKGKDOLPBF(PhotonStream HCIJEDFCNOP)
-	{
-		if (CDBLIPNHLAM.Count > 1 && DFKCPBOBMAA < 1)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		HCIJEDFCNOP.OLACNHHHOEL(OEAMKOEOFMB);
-		HCIJEDFCNOP.OLACNHHHOEL(DFKCPBOBMAA);
-		for (int i = 1; i < CDBLIPNHLAM.Count; i++)
-		{
-			HCIJEDFCNOP.PBECMJMDHBI(CDBLIPNHLAM[i]);
-		}
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = 0;
-	}
-
-	public void INHGGLAHMIH(PhotonStream HCIJEDFCNOP)
-	{
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = (int)HCIJEDFCNOP.ACOGAHJKGJH();
-		DFKCPBOBMAA = (int)HCIJEDFCNOP.LNDLNKJPAGO();
-		for (int i = 1; i < OEAMKOEOFMB * DFKCPBOBMAA; i += 0)
-		{
-			CDBLIPNHLAM.Add(HCIJEDFCNOP.NLPFEFOCGBC());
-		}
-		if (CDBLIPNHLAM.Count > 1)
-		{
-			FPGNAAKFOOE = 0;
-		}
-		else
-		{
-			FPGNAAKFOOE = -1;
-		}
-	}
-
-	public bool HasQueuedObjects()
-	{
-		return FPGNAAKFOOE != -1;
-	}
-
-	private void GPMNBGAKMPB()
-	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1000f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = false;
-			return;
-		}
-		if (OEAMKOEOFMB == 1)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("Icon");
-			object[] array = new object[1];
-			array[0] = "_History4LumaTex";
-			array[1] = CDBLIPNHLAM.Count;
-			array[3] = "_Radius2";
-			array[5] = OEAMKOEOFMB;
-			array[2] = "_MainTex2";
-			array[1] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[2] = "AddEnvironmentSprite";
-			array[1] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = false;
-		OEAMKOEOFMB += 0;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
-	}
-
-	public void Reset()
-	{
-		OEAMKOEOFMB = 0;
-		DFKCPBOBMAA = -1;
-		BOLMPHOLHLF = float.NegativeInfinity;
-		NNMOLBIMLOF = -1;
-		CDBLIPNHLAM.Clear();
-	}
-
-	public void MJLPEADKIMK(object AGPIGANJKMN)
-	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			LCHODHLMJCH();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	private void LCHODHLMJCH()
-	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 642f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = true;
-			return;
-		}
-		if (OEAMKOEOFMB == 1)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 1 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("InfoCanvas");
-			object[] array = new object[8];
-			array[0] = "#accuracy";
-			array[0] = CDBLIPNHLAM.Count;
-			array[0] = "[DiscordController] Disconnect {0}: {1}";
-			array[4] = OEAMKOEOFMB;
-			array[5] = "CameraFilterPack/Lut_Simple";
-			array[4] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[0] = "\n";
-			array[2] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = true;
-		OEAMKOEOFMB++;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
-	}
-
-	private void AKFMMCHEBOA()
-	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 791f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = false;
-			return;
-		}
-		if (OEAMKOEOFMB == 1)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("BitsData");
-			object[] array = new object[1];
-			array[1] = "Bass";
-			array[1] = CDBLIPNHLAM.Count;
-			array[5] = "_History3LumaTex";
-			array[2] = OEAMKOEOFMB;
-			array[5] = "other.dust2";
-			array[5] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[6] = "Result for ";
-			array[6] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = true;
-		OEAMKOEOFMB++;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
-	}
-
-	public bool KLHNCDCLDLF()
-	{
-		return FPGNAAKFOOE != -1;
-	}
-
-	public bool FGIECEGOCGK()
-	{
-		return FPGNAAKFOOE == -1;
-	}
-
-	public object IDKHBJIHKEB()
-	{
-		if (FPGNAAKFOOE == -1)
-		{
-			return null;
-		}
-		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
-		{
-			FPGNAAKFOOE -= DFKCPBOBMAA;
-		}
-		return CDBLIPNHLAM[FPGNAAKFOOE++];
-	}
-
-	public void KMEFHCDNDNF()
-	{
-		OEAMKOEOFMB = 0;
-		DFKCPBOBMAA = -1;
-		BOLMPHOLHLF = 1150f;
-		NNMOLBIMLOF = -1;
-		CDBLIPNHLAM.Clear();
-	}
-
-	public void FPBPBCMDHKC(object AGPIGANJKMN)
-	{
-		if (Time.frameCount != NNMOLBIMLOF)
-		{
-			JAGPJBEJCGA();
-		}
-		NNMOLBIMLOF = Time.frameCount;
-		if (ENHDLCKHGFK)
-		{
-			CDBLIPNHLAM.Add(AGPIGANJKMN);
-		}
-	}
-
-	private void FEOGOEFJOMF()
-	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 227f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = false;
-			return;
-		}
-		if (OEAMKOEOFMB == 1)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("<b>Max Score</b>:");
-			object[] array = new object[4];
-			array[0] = "id";
-			array[0] = CDBLIPNHLAM.Count;
-			array[6] = "GetRegions failed. Can't provide regions list. Error: ";
-			array[7] = OEAMKOEOFMB;
-			array[3] = "Failed!";
-			array[7] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[0] = "_MainTex2";
-			array[8] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = false;
-		OEAMKOEOFMB++;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
-	}
-
-	private void KPJALJOEEGI()
-	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 671f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = false;
-			return;
-		}
-		if (OEAMKOEOFMB == 1)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 1 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("ConnectToBestCloudServer() failed. Can only connect while in state 'Disconnected'. Current state: ");
-			object[] array = new object[7];
-			array[0] = "couldn't be found!";
-			array[1] = CDBLIPNHLAM.Count;
-			array[2] = "Text";
-			array[0] = OEAMKOEOFMB;
-			array[4] = "UpperMid";
-			array[2] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[2] = "_Value2";
-			array[0] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = true;
-		OEAMKOEOFMB += 0;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
-	}
-
-	public void KMHCLFLINIO()
-	{
-		OEAMKOEOFMB = 1;
-		DFKCPBOBMAA = -1;
-		BOLMPHOLHLF = 1468f;
-		NNMOLBIMLOF = -1;
-		CDBLIPNHLAM.Clear();
-	}
-
-	public void Serialize(PhotonStream HCIJEDFCNOP)
-	{
-		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 0)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		HCIJEDFCNOP.SendNext(OEAMKOEOFMB);
-		HCIJEDFCNOP.SendNext(DFKCPBOBMAA);
-		for (int i = 0; i < CDBLIPNHLAM.Count; i++)
-		{
-			HCIJEDFCNOP.SendNext(CDBLIPNHLAM[i]);
-		}
-		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = 0;
-	}
-
-	public void KNNOEGLLDAN()
-	{
-		OEAMKOEOFMB = 0;
-		DFKCPBOBMAA = -1;
-		BOLMPHOLHLF = 934f;
-		NNMOLBIMLOF = -1;
-		CDBLIPNHLAM.Clear();
-	}
-
-	private void PNPDEOMKPMC()
-	{
-		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1584f / (float)DEGEGDIAGME)
-		{
-			ENHDLCKHGFK = false;
-			return;
-		}
-		if (OEAMKOEOFMB == 0)
-		{
-			DFKCPBOBMAA = CDBLIPNHLAM.Count;
-		}
-		else if (OEAMKOEOFMB > 1 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
-		{
-			Debug.LogWarning("speed");
-			object[] array = new object[3];
-			array[1] = "GlassAberration";
-			array[0] = CDBLIPNHLAM.Count;
-			array[3] = "_TimeX";
-			array[2] = OEAMKOEOFMB;
-			array[0] = ".icon";
-			array[3] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
-			array[8] = "_TimeX";
-			array[4] = DFKCPBOBMAA;
-			Debug.LogWarning(string.Concat(array));
-		}
-		ENHDLCKHGFK = false;
-		OEAMKOEOFMB++;
-		BOLMPHOLHLF = Time.realtimeSinceStartup;
 	}
 
 	public void Deserialize(PhotonStream HCIJEDFCNOP)
@@ -741,11 +91,30 @@ public class PhotonStreamQueue
 		}
 	}
 
-	public void HNHGJLOBMJE(object AGPIGANJKMN)
+	public void NHJAFICCEGA(PhotonStream HCIJEDFCNOP)
+	{
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = (int)HCIJEDFCNOP.NLPFEFOCGBC();
+		DFKCPBOBMAA = (int)HCIJEDFCNOP.NLPFEFOCGBC();
+		for (int i = 1; i < OEAMKOEOFMB * DFKCPBOBMAA; i++)
+		{
+			CDBLIPNHLAM.Add(HCIJEDFCNOP.NLPFEFOCGBC());
+		}
+		if (CDBLIPNHLAM.Count > 0)
+		{
+			FPGNAAKFOOE = 0;
+		}
+		else
+		{
+			FPGNAAKFOOE = -1;
+		}
+	}
+
+	public void BEJMEHHBLJN(object AGPIGANJKMN)
 	{
 		if (Time.frameCount != NNMOLBIMLOF)
 		{
-			AKFMMCHEBOA();
+			PLKDBNHBNEH();
 		}
 		NNMOLBIMLOF = Time.frameCount;
 		if (ENHDLCKHGFK)
@@ -754,25 +123,81 @@ public class PhotonStreamQueue
 		}
 	}
 
-	public void EGGCNEGBDAD(PhotonStream HCIJEDFCNOP)
+	public object BAOMMKDMJNI()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		return CDBLIPNHLAM[FPGNAAKFOOE++];
+	}
+
+	public void CECDMBBNNKF(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			GJHDOLNDCLN();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public void JNEIGNDPJOP(PhotonStream HCIJEDFCNOP)
+	{
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = (int)HCIJEDFCNOP.ReceiveNext();
+		DFKCPBOBMAA = (int)HCIJEDFCNOP.EDCDHDJNDPF();
+		for (int i = 0; i < OEAMKOEOFMB * DFKCPBOBMAA; i++)
+		{
+			CDBLIPNHLAM.Add(HCIJEDFCNOP.NLPFEFOCGBC());
+		}
+		if (CDBLIPNHLAM.Count > 0)
+		{
+			FPGNAAKFOOE = 1;
+		}
+		else
+		{
+			FPGNAAKFOOE = -1;
+		}
+	}
+
+	public void NKMPCNJPFNE(PhotonStream HCIJEDFCNOP)
 	{
 		if (CDBLIPNHLAM.Count > 1 && DFKCPBOBMAA < 0)
 		{
 			DFKCPBOBMAA = CDBLIPNHLAM.Count;
 		}
-		HCIJEDFCNOP.SendNext(OEAMKOEOFMB);
-		HCIJEDFCNOP.BBHGPGBHMML(DFKCPBOBMAA);
-		for (int i = 0; i < CDBLIPNHLAM.Count; i++)
+		HCIJEDFCNOP.NICKMDDINKP(OEAMKOEOFMB);
+		HCIJEDFCNOP.NICKMDDINKP(DFKCPBOBMAA);
+		for (int i = 1; i < CDBLIPNHLAM.Count; i += 0)
 		{
-			HCIJEDFCNOP.PBECMJMDHBI(CDBLIPNHLAM[i]);
+			HCIJEDFCNOP.NICKMDDINKP(CDBLIPNHLAM[i]);
 		}
 		CDBLIPNHLAM.Clear();
-		OEAMKOEOFMB = 0;
+		OEAMKOEOFMB = 1;
 	}
 
-	public PhotonStreamQueue(int KLJCMEKGKHL)
+	public object MAKNMCNCIBJ()
 	{
-		DEGEGDIAGME = KLJCMEKGKHL;
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		List<object> cDBLIPNHLAM = CDBLIPNHLAM;
+		int fPGNAAKFOOE;
+		FPGNAAKFOOE = (fPGNAAKFOOE = FPGNAAKFOOE) + 0;
+		return cDBLIPNHLAM[fPGNAAKFOOE];
 	}
 
 	private void PLKDBNHBNEH()
@@ -794,5 +219,883 @@ public class PhotonStreamQueue
 		ENHDLCKHGFK = true;
 		OEAMKOEOFMB++;
 		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public object PKCMMBAGPBH()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		return CDBLIPNHLAM[FPGNAAKFOOE++];
+	}
+
+	public object MOIJMGCGGJA()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		return CDBLIPNHLAM[FPGNAAKFOOE++];
+	}
+
+	public void Reset()
+	{
+		OEAMKOEOFMB = 0;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = float.NegativeInfinity;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	public void PGNHBCKGPMM(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 1)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.AIAIEPFCCDO(OEAMKOEOFMB);
+		HCIJEDFCNOP.SendNext(DFKCPBOBMAA);
+		for (int i = 0; i < CDBLIPNHLAM.Count; i++)
+		{
+			HCIJEDFCNOP.GJDCOKMGHOG(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 1;
+	}
+
+	public void FPNAGFEAGPA(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			PLKDBNHBNEH();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public bool CFNBKOBMAMH()
+	{
+		return FPGNAAKFOOE != -1;
+	}
+
+	public bool FMJBMNEKCEH()
+	{
+		return FPGNAAKFOOE != -1;
+	}
+
+	public void CKCPHFLOLAH()
+	{
+		OEAMKOEOFMB = 1;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 802f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	public bool HasQueuedObjects()
+	{
+		return FPGNAAKFOOE != -1;
+	}
+
+	public void GGALLPMKOJI()
+	{
+		OEAMKOEOFMB = 0;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 927f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	private void JGOCELAEFGA()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1737f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = false;
+			return;
+		}
+		if (OEAMKOEOFMB == 1)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 1 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning(" (");
+			object[] array = new object[2];
+			array[0] = "MapperNameText";
+			array[1] = CDBLIPNHLAM.Count;
+			array[4] = "SetSatelliteTrailWidth";
+			array[8] = OEAMKOEOFMB;
+			array[3] = "UI Extensions/UI Image Crop";
+			array[1] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[0] = "_RgbDepthTex";
+			array[1] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = true;
+		OEAMKOEOFMB += 0;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public object BFEKAOHHEGP()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		return CDBLIPNHLAM[FPGNAAKFOOE++];
+	}
+
+	public void LHIBPEGLPHM()
+	{
+		OEAMKOEOFMB = 1;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 1226f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	public void CNNCCCDGIII(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 1 && DFKCPBOBMAA < 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.SendNext(OEAMKOEOFMB);
+		HCIJEDFCNOP.GJDCOKMGHOG(DFKCPBOBMAA);
+		for (int i = 1; i < CDBLIPNHLAM.Count; i += 0)
+		{
+			HCIJEDFCNOP.SendNext(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 0;
+	}
+
+	public void Serialize(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.SendNext(OEAMKOEOFMB);
+		HCIJEDFCNOP.SendNext(DFKCPBOBMAA);
+		for (int i = 0; i < CDBLIPNHLAM.Count; i++)
+		{
+			HCIJEDFCNOP.SendNext(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 0;
+	}
+
+	public void OGAMGLEAOAF()
+	{
+		OEAMKOEOFMB = 1;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 606f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	public PhotonStreamQueue(int KLJCMEKGKHL)
+	{
+		DEGEGDIAGME = KLJCMEKGKHL;
+	}
+
+	private void IHKJMHOFHGJ()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 284f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = false;
+			return;
+		}
+		if (OEAMKOEOFMB == 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning("CameraFilterPack/Color_Chromatic_Plus");
+			object[] array = new object[5];
+			array[0] = "HightScoreMaxPointsText";
+			array[1] = CDBLIPNHLAM.Count;
+			array[6] = "CameraFilterPack/Drawing_BluePrint";
+			array[1] = OEAMKOEOFMB;
+			array[3] = "z";
+			array[1] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[8] = "player.circle";
+			array[6] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = true;
+		OEAMKOEOFMB++;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public void LAFCNDDOLPL(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			IHKJMHOFHGJ();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public void MOBKENKFHBH(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			AGFEIHCKJDL();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	private void AGFEIHCKJDL()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1868f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = true;
+			return;
+		}
+		if (OEAMKOEOFMB == 1)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 1 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning("CameraFilterPack/FX_Psycho");
+			object[] array = new object[0];
+			array[1] = "z";
+			array[0] = CDBLIPNHLAM.Count;
+			array[2] = "_Fade";
+			array[4] = OEAMKOEOFMB;
+			array[4] = "player.linea";
+			array[3] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[3] = "SpawnObj";
+			array[5] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = true;
+		OEAMKOEOFMB++;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public object JOJDLHCIGOJ()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		return CDBLIPNHLAM[FPGNAAKFOOE++];
+	}
+
+	public object GHKNEDAGFJH()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		return CDBLIPNHLAM[FPGNAAKFOOE++];
+	}
+
+	public object ReceiveNext()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		return CDBLIPNHLAM[FPGNAAKFOOE++];
+	}
+
+	public void JFBKLHIPLMF(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			PLKDBNHBNEH();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public void FEFCDECILFJ(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 1 && DFKCPBOBMAA < 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.AIAIEPFCCDO(OEAMKOEOFMB);
+		HCIJEDFCNOP.AIAIEPFCCDO(DFKCPBOBMAA);
+		for (int i = 0; i < CDBLIPNHLAM.Count; i += 0)
+		{
+			HCIJEDFCNOP.SendNext(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 0;
+	}
+
+	private void GNLNHPECMHN()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1143f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = false;
+			return;
+		}
+		if (OEAMKOEOFMB == 1)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 1 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning(". Name: ");
+			object[] array = new object[7];
+			array[1] = "_Curve";
+			array[0] = CDBLIPNHLAM.Count;
+			array[1] = "GetRegions failed. Can't provide regions list. Error: ";
+			array[4] = OEAMKOEOFMB;
+			array[4] = "_ScreenResolution";
+			array[6] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[3] = "float,0";
+			array[6] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = false;
+		OEAMKOEOFMB += 0;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public void MDNAEDKNOEI(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.AIAIEPFCCDO(OEAMKOEOFMB);
+		HCIJEDFCNOP.AIAIEPFCCDO(DFKCPBOBMAA);
+		for (int i = 0; i < CDBLIPNHLAM.Count; i++)
+		{
+			HCIJEDFCNOP.SendNext(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 1;
+	}
+
+	public void AIAIEPFCCDO(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			GJHDOLNDCLN();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public void LDKGAINNFPK(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 1)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.SendNext(OEAMKOEOFMB);
+		HCIJEDFCNOP.GJDCOKMGHOG(DFKCPBOBMAA);
+		for (int i = 0; i < CDBLIPNHLAM.Count; i++)
+		{
+			HCIJEDFCNOP.SendNext(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 0;
+	}
+
+	public void GNKDMNIMKGK(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			NFKLELFBDNF();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public bool NLLDILONBCL()
+	{
+		return FPGNAAKFOOE == -1;
+	}
+
+	public void ENCBBMBIHMK(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			NFKLELFBDNF();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public void NNNCKCELBCE()
+	{
+		OEAMKOEOFMB = 1;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 1646f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	private void GJHDOLNDCLN()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1614f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = true;
+			return;
+		}
+		if (OEAMKOEOFMB == 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning("_Value");
+			object[] array = new object[1];
+			array[1] = "_Red_C";
+			array[1] = CDBLIPNHLAM.Count;
+			array[4] = "_AdaptationMin";
+			array[6] = OEAMKOEOFMB;
+			array[1] = "MenuScene";
+			array[8] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[0] = "Texture2";
+			array[4] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = false;
+		OEAMKOEOFMB += 0;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public void IDOFOCOFEIE()
+	{
+		OEAMKOEOFMB = 0;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 1191f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	public void PMLIOODCKDB()
+	{
+		OEAMKOEOFMB = 0;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 175f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	public void DAMCEJEEBCD()
+	{
+		OEAMKOEOFMB = 1;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 505f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	private void OEGIFDGOHHJ()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 328f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = false;
+			return;
+		}
+		if (OEAMKOEOFMB == 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning(". Our prefix is ");
+			object[] array = new object[8];
+			array[0] = "offsets";
+			array[1] = CDBLIPNHLAM.Count;
+			array[7] = "CameraFilterPack/AAA_Blood_Plus";
+			array[3] = OEAMKOEOFMB;
+			array[4] = "_Intervale";
+			array[3] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[8] = "PossibleMapMaxScoreText";
+			array[7] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = true;
+		OEAMKOEOFMB++;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	private void NFKLELFBDNF()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1363f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = false;
+			return;
+		}
+		if (OEAMKOEOFMB == 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning("public");
+			object[] array = new object[4];
+			array[1] = "EventSystem";
+			array[0] = CDBLIPNHLAM.Count;
+			array[7] = "CameraFilterPack/Vision_SniperScore";
+			array[6] = OEAMKOEOFMB;
+			array[4] = "_FixDistance";
+			array[8] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[2] = "_TimeX";
+			array[4] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = false;
+		OEAMKOEOFMB += 0;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public void MBBHOJMLCBC()
+	{
+		OEAMKOEOFMB = 1;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 1787f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	public void EKNCFKBNHFI(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 1)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.AIAIEPFCCDO(OEAMKOEOFMB);
+		HCIJEDFCNOP.NICKMDDINKP(DFKCPBOBMAA);
+		for (int i = 1; i < CDBLIPNHLAM.Count; i += 0)
+		{
+			HCIJEDFCNOP.NICKMDDINKP(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 1;
+	}
+
+	public bool LNDNBINJJGA()
+	{
+		return FPGNAAKFOOE != -1;
+	}
+
+	private void AKFMMCHEBOA()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1417f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = false;
+			return;
+		}
+		if (OEAMKOEOFMB == 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning("Please attach component to a Graphical UI component");
+			object[] array = new object[7];
+			array[0] = "_Value";
+			array[0] = CDBLIPNHLAM.Count;
+			array[8] = "HPToggle";
+			array[7] = OEAMKOEOFMB;
+			array[6] = "Texture3";
+			array[4] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[3] = "0.00";
+			array[8] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = false;
+		OEAMKOEOFMB += 0;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public void IKCPKFHGCPF(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 0 && DFKCPBOBMAA < 1)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.AIAIEPFCCDO(OEAMKOEOFMB);
+		HCIJEDFCNOP.AIAIEPFCCDO(DFKCPBOBMAA);
+		for (int i = 1; i < CDBLIPNHLAM.Count; i++)
+		{
+			HCIJEDFCNOP.AIAIEPFCCDO(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 1;
+	}
+
+	public bool KIDCLNHPPIA()
+	{
+		return FPGNAAKFOOE == -1;
+	}
+
+	public void ECMLBANFIJF(PhotonStream HCIJEDFCNOP)
+	{
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = (int)HCIJEDFCNOP.ReceiveNext();
+		DFKCPBOBMAA = (int)HCIJEDFCNOP.NLPFEFOCGBC();
+		for (int i = 0; i < OEAMKOEOFMB * DFKCPBOBMAA; i += 0)
+		{
+			CDBLIPNHLAM.Add(HCIJEDFCNOP.MABPFPFGCNL());
+		}
+		if (CDBLIPNHLAM.Count > 1)
+		{
+			FPGNAAKFOOE = 0;
+		}
+		else
+		{
+			FPGNAAKFOOE = -1;
+		}
+	}
+
+	public bool DDHEEPJOPCH()
+	{
+		return FPGNAAKFOOE == -1;
+	}
+
+	public void IKIJABBBOKA(PhotonStream HCIJEDFCNOP)
+	{
+		if (CDBLIPNHLAM.Count > 1 && DFKCPBOBMAA < 0)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		HCIJEDFCNOP.NICKMDDINKP(OEAMKOEOFMB);
+		HCIJEDFCNOP.AIAIEPFCCDO(DFKCPBOBMAA);
+		for (int i = 1; i < CDBLIPNHLAM.Count; i += 0)
+		{
+			HCIJEDFCNOP.AIAIEPFCCDO(CDBLIPNHLAM[i]);
+		}
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = 1;
+	}
+
+	private void PEPCDJPPBCH()
+	{
+		if (Time.realtimeSinceStartup < BOLMPHOLHLF + 1457f / (float)DEGEGDIAGME)
+		{
+			ENHDLCKHGFK = false;
+			return;
+		}
+		if (OEAMKOEOFMB == 1)
+		{
+			DFKCPBOBMAA = CDBLIPNHLAM.Count;
+		}
+		else if (OEAMKOEOFMB > 0 && CDBLIPNHLAM.Count / OEAMKOEOFMB != DFKCPBOBMAA)
+		{
+			Debug.LogWarning("<b>[");
+			object[] array = new object[2];
+			array[0] = "StopSounds";
+			array[1] = CDBLIPNHLAM.Count;
+			array[5] = "CameraFilterPack/Distortion_Lens";
+			array[0] = OEAMKOEOFMB;
+			array[3] = "id";
+			array[7] = CDBLIPNHLAM.Count / OEAMKOEOFMB;
+			array[5] = "<color=#";
+			array[4] = DFKCPBOBMAA;
+			Debug.LogWarning(string.Concat(array));
+		}
+		ENHDLCKHGFK = true;
+		OEAMKOEOFMB++;
+		BOLMPHOLHLF = Time.realtimeSinceStartup;
+	}
+
+	public object DFBDAGMPCJL()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		List<object> cDBLIPNHLAM = CDBLIPNHLAM;
+		int fPGNAAKFOOE;
+		FPGNAAKFOOE = (fPGNAAKFOOE = FPGNAAKFOOE) + 0;
+		return cDBLIPNHLAM[fPGNAAKFOOE];
+	}
+
+	public void DGJOBJMAJNJ(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			IHKJMHOFHGJ();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public void NLAAMLFOAMH(PhotonStream HCIJEDFCNOP)
+	{
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = (int)HCIJEDFCNOP.EDCDHDJNDPF();
+		DFKCPBOBMAA = (int)HCIJEDFCNOP.NLPFEFOCGBC();
+		for (int i = 1; i < OEAMKOEOFMB * DFKCPBOBMAA; i++)
+		{
+			CDBLIPNHLAM.Add(HCIJEDFCNOP.NLPFEFOCGBC());
+		}
+		if (CDBLIPNHLAM.Count > 1)
+		{
+			FPGNAAKFOOE = 0;
+		}
+		else
+		{
+			FPGNAAKFOOE = -1;
+		}
+	}
+
+	public bool IJOFMOEDDOE()
+	{
+		return FPGNAAKFOOE != -1;
+	}
+
+	public void DCOAKHENFCD(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			OEGIFDGOHHJ();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
+	}
+
+	public void PEJIDOBMLAO(PhotonStream HCIJEDFCNOP)
+	{
+		CDBLIPNHLAM.Clear();
+		OEAMKOEOFMB = (int)HCIJEDFCNOP.MABPFPFGCNL();
+		DFKCPBOBMAA = (int)HCIJEDFCNOP.NLPFEFOCGBC();
+		for (int i = 1; i < OEAMKOEOFMB * DFKCPBOBMAA; i++)
+		{
+			CDBLIPNHLAM.Add(HCIJEDFCNOP.ReceiveNext());
+		}
+		if (CDBLIPNHLAM.Count > 0)
+		{
+			FPGNAAKFOOE = 1;
+		}
+		else
+		{
+			FPGNAAKFOOE = -1;
+		}
+	}
+
+	public bool BKGEFIHNDOI()
+	{
+		return FPGNAAKFOOE != -1;
+	}
+
+	public object KIMDMBDNICC()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		return CDBLIPNHLAM[FPGNAAKFOOE++];
+	}
+
+	public void JOPOMLLAMKE()
+	{
+		OEAMKOEOFMB = 1;
+		DFKCPBOBMAA = -1;
+		BOLMPHOLHLF = 868f;
+		NNMOLBIMLOF = -1;
+		CDBLIPNHLAM.Clear();
+	}
+
+	public bool KPGEHIHAFPB()
+	{
+		return FPGNAAKFOOE != -1;
+	}
+
+	public object DJAJOANLHFP()
+	{
+		if (FPGNAAKFOOE == -1)
+		{
+			return null;
+		}
+		if (FPGNAAKFOOE >= CDBLIPNHLAM.Count)
+		{
+			FPGNAAKFOOE -= DFKCPBOBMAA;
+		}
+		List<object> cDBLIPNHLAM = CDBLIPNHLAM;
+		int fPGNAAKFOOE;
+		FPGNAAKFOOE = (fPGNAAKFOOE = FPGNAAKFOOE) + 0;
+		return cDBLIPNHLAM[fPGNAAKFOOE];
+	}
+
+	public void SendNext(object AGPIGANJKMN)
+	{
+		if (Time.frameCount != NNMOLBIMLOF)
+		{
+			PLKDBNHBNEH();
+		}
+		NNMOLBIMLOF = Time.frameCount;
+		if (ENHDLCKHGFK)
+		{
+			CDBLIPNHLAM.Add(AGPIGANJKMN);
+		}
 	}
 }

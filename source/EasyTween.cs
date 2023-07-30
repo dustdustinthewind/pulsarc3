@@ -13,59 +13,14 @@ public class EasyTween : MonoBehaviour
 
 	private CurrentAnimation currentAnimationGoing;
 
-	public void GIMKLENAIIO(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	public float MIMAJIICPPI()
 	{
-		currentAnimationGoing.MFKLABJCGMG(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
+		return currentAnimationGoing.GetAnimationDuration();
 	}
 
-	public void SetFadeStartEndValues(float NGHFGPKHIPP, float HHABIDFFNCK)
+	public void DGNDMEFFIHJ(bool FOJONHLNAOM)
 	{
-		currentAnimationGoing.SetFadeValuesStartEnd(NGHFGPKHIPP, HHABIDFFNCK);
-	}
-
-	public void SetAnimatioDuration(float HNIFGMOMJMA)
-	{
-		if (HNIFGMOMJMA > 0f)
-		{
-			currentAnimationGoing.SetAniamtioDuration(HNIFGMOMJMA);
-		}
-		else
-		{
-			currentAnimationGoing.SetAniamtioDuration(0.01f);
-		}
-	}
-
-	public void MHDEFCKEGEO()
-	{
-		rectTransform.gameObject.SetActive(true);
-		currentAnimationGoing.PlayCloseAnimations();
-	}
-
-	private void IJHDFCAIPOP()
-	{
-		currentAnimationGoing.ECMBKPFMPEG(rectTransform);
-	}
-
-	public void PMGDBILDKGK(float HNIFGMOMJMA)
-	{
-		if (HNIFGMOMJMA > 459f)
-		{
-			currentAnimationGoing.SetAniamtioDuration(HNIFGMOMJMA);
-		}
-		else
-		{
-			currentAnimationGoing.SetAniamtioDuration(1364f);
-		}
-	}
-
-	private void AEIJFLJEABG()
-	{
-		currentAnimationGoing.BFKJPGNMEJM(rectTransform);
-	}
-
-	public void ADJMKGJKIHC(bool CIOKILFKPHF)
-	{
-		currentAnimationGoing.IEPOJAMAJAK(CIOKILFKPHF);
+		currentAnimationGoing.SetFade(FOJONHLNAOM);
 	}
 
 	public void SetAnimationProperties(AnimationParts KEMAFNIOEFC)
@@ -74,37 +29,14 @@ public class EasyTween : MonoBehaviour
 		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
 	}
 
-	public void ChangeSetState(bool CIOKILFKPHF)
+	private void LBFLFFGLMDB()
 	{
-		currentAnimationGoing.SetStatus(CIOKILFKPHF);
+		AnimationParts.IFMFPKCCPDI(AFEPHFKDPLJ);
 	}
 
-	public void CHOODMAKIKD()
+	public bool HEHPNAJNACK()
 	{
-		rectTransform.gameObject.SetActive(false);
-		currentAnimationGoing.PlayOpenAnimations();
-	}
-
-	public void SetAnimationScale(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
-	{
-		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
-	}
-
-	private void OnDestroy()
-	{
-		AnimationParts.OnDisableOrDestroy -= AJOEMNCKMKM;
-	}
-
-	private void AKJIJDFJIKB()
-	{
-		if (!currentAnimationGoing.FPOJNHMKIDD())
-		{
-			currentAnimationGoing.BPIMHILGOMG();
-		}
-		else
-		{
-			currentAnimationGoing.PlayCloseAnimations();
-		}
+		return currentAnimationGoing.IsObjectOpened();
 	}
 
 	private void Update()
@@ -112,24 +44,54 @@ public class EasyTween : MonoBehaviour
 		currentAnimationGoing.AnimationFrame(rectTransform);
 	}
 
-	public void MCLALIEOOLI(float HNIFGMOMJMA)
+	public bool JEEOPHJBDNO()
 	{
-		if (HNIFGMOMJMA > 940f)
-		{
-			currentAnimationGoing.SetAniamtioDuration(HNIFGMOMJMA);
-		}
-		else
-		{
-			currentAnimationGoing.SetAniamtioDuration(1621f);
-		}
+		return currentAnimationGoing.IsObjectOpened();
 	}
 
-	public void NCDHCJBEBNA(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	public void JNFEGDMEPBM(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
 	{
-		currentAnimationGoing.SetAnimationRotation(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
+		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
 	}
 
-	private void GPKPMAGKGFA(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
+	public void SetFade(bool FOJONHLNAOM)
+	{
+		currentAnimationGoing.SetFade(FOJONHLNAOM);
+	}
+
+	public float LBALNPDHDOA()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	public void ODJBGKGFCOE()
+	{
+		rectTransform.gameObject.SetActive(true);
+		HKEEFJNMELI();
+	}
+
+	public void OpenCloseObjectAnimation()
+	{
+		rectTransform.gameObject.SetActive(true);
+		PKEGMGDIOFC();
+	}
+
+	public bool BBHGMKJBJDD()
+	{
+		return currentAnimationGoing.IsObjectOpened();
+	}
+
+	public void PNNINMIAIMC(bool FOJONHLNAOM)
+	{
+		currentAnimationGoing.SetFade(FOJONHLNAOM);
+	}
+
+	public void BFMMOCAEPBO(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	private void MFGACFMPBLK(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
 	{
 		if (AGNIEKAJHNM != animationParts)
 		{
@@ -137,7 +99,7 @@ public class EasyTween : MonoBehaviour
 		}
 		if (AEIMJCDHKFI)
 		{
-			rectTransform.gameObject.SetActive(false);
+			rectTransform.gameObject.SetActive(true);
 			return;
 		}
 		if ((bool)base.gameObject && !rectTransform.gameObject == (bool)base.gameObject)
@@ -147,103 +109,46 @@ public class EasyTween : MonoBehaviour
 		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
 	}
 
-	public void SetUnscaledTimeAnimation(bool HCAIOLGHFNN)
+	public void SetAnimationRotation(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
 	{
-		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
+		currentAnimationGoing.SetAnimationRotation(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
 	}
 
-	private void PKEGMGDIOFC()
+	public void AJPCCBJIBAG()
 	{
-		if (!currentAnimationGoing.IsObjectOpened())
+		rectTransform.gameObject.SetActive(false);
+		currentAnimationGoing.PlayOpenAnimations();
+	}
+
+	private void ALHIAPNCNJO(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
+	{
+		if (AGNIEKAJHNM != animationParts)
 		{
-			currentAnimationGoing.PlayOpenAnimations();
+			return;
 		}
-		else
+		if (AEIMJCDHKFI)
 		{
-			currentAnimationGoing.PlayCloseAnimations();
+			rectTransform.gameObject.SetActive(true);
+			return;
 		}
+		if ((bool)base.gameObject && !rectTransform.gameObject == (bool)base.gameObject)
+		{
+			UnityEngine.Object.Destroy(base.gameObject);
+		}
+		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
 	}
 
-	private void FABKIGNFECE()
+	private void AKHCOBHHGJP()
 	{
-		currentAnimationGoing.AnimationFrame(rectTransform);
+		AnimationParts.OFKCCGIBMBL(ALHIAPNCNJO);
 	}
 
-	public void SetFade()
-	{
-		currentAnimationGoing.SetFade(false);
-	}
-
-	public void SetFade(bool FOJONHLNAOM)
+	public void CCDJIFDHEHC(bool FOJONHLNAOM)
 	{
 		currentAnimationGoing.SetFade(FOJONHLNAOM);
 	}
 
-	private void IFAFAMAHOFL()
-	{
-		if (currentAnimationGoing == null)
-		{
-			SetAnimationProperties(animationParts);
-		}
-	}
-
-	public void CloseObjectAnimation()
-	{
-		rectTransform.gameObject.SetActive(true);
-		currentAnimationGoing.PlayCloseAnimations();
-	}
-
-	public void CNDMEAFLOAF(bool CIOKILFKPHF)
-	{
-		currentAnimationGoing.KLMNEMDBOOI(CIOKILFKPHF);
-	}
-
-	public void ADFHHDAGGLD()
-	{
-		rectTransform.gameObject.SetActive(true);
-		currentAnimationGoing.PlayOpenAnimations();
-	}
-
-	public void OpenObjectAnimation()
-	{
-		rectTransform.gameObject.SetActive(true);
-		currentAnimationGoing.PlayOpenAnimations();
-	}
-
-	public void ACHFFKPPJCN(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
-	{
-		currentAnimationGoing.CPPPMFEHBHD(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
-	}
-
-	private void JLBGEMKBIDO()
-	{
-		if (currentAnimationGoing == null)
-		{
-			LPAMCEDNAGB(animationParts);
-		}
-	}
-
-	public float PDOLGNFAIGJ()
-	{
-		return currentAnimationGoing.EPDECNEHFKJ();
-	}
-
-	public void HAKBOKCEJON(bool HCAIOLGHFNN)
-	{
-		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
-	}
-
-	public void IGPONOLDFMK(float NGHFGPKHIPP, float HHABIDFFNCK)
-	{
-		currentAnimationGoing.OKHHGLDKFMI(NGHFGPKHIPP, HHABIDFFNCK);
-	}
-
-	private void MKIMDFLBFOM()
-	{
-		AnimationParts.JAECJHCOHNH(LDKBFMGDMIP);
-	}
-
-	private void LDKBFMGDMIP(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
+	private void AFEPHFKDPLJ(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
 	{
 		if (AGNIEKAJHNM != animationParts)
 		{
@@ -259,6 +164,382 @@ public class EasyTween : MonoBehaviour
 			UnityEngine.Object.Destroy(base.gameObject);
 		}
 		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
+	}
+
+	private void DIAGGJLLHNM()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	public void CloseObjectAnimation()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.PlayCloseAnimations();
+	}
+
+	public void EGKLOOOAABN(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	public void PJJFOMGJFEF(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationRotation(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	public void EBBFHFNMPGN()
+	{
+		rectTransform.gameObject.SetActive(false);
+		currentAnimationGoing.PlayOpenAnimations();
+	}
+
+	public void HEGLICFNJCM(Vector2 ELHCACPPCAG, Vector2 EKMHMLALGPF, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.IPAHMDHMJJA(ELHCACPPCAG, EKMHMLALGPF, CANHEAPDBPD, PMOODBJDOEL, rectTransform);
+	}
+
+	private void DEPPMIPBPAL()
+	{
+		AnimationParts.IFMFPKCCPDI(GKAMHPGDDDJ);
+	}
+
+	public void CDDCKIGAIPJ(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.BHBNCDBPJGC(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	public void SetUnscaledTimeAnimation(bool HCAIOLGHFNN)
+	{
+		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
+	}
+
+	public void BAGJNDODMCP()
+	{
+		rectTransform.gameObject.SetActive(true);
+		AKJIJDFJIKB();
+	}
+
+	public void GIAJEMNMCDA()
+	{
+		rectTransform.gameObject.SetActive(false);
+		PFAGIGECCPI();
+	}
+
+	public void NIFKHIHNCLF(bool HCAIOLGHFNN)
+	{
+		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
+	}
+
+	public void DJLKKODJHNP()
+	{
+		rectTransform.gameObject.SetActive(false);
+		AKJIJDFJIKB();
+	}
+
+	public void HLNJDJINAEB(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.BHBNCDBPJGC(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	private void GCDLIKEDMCF()
+	{
+		currentAnimationGoing.AnimationFrame(rectTransform);
+	}
+
+	public EasyTween()
+	{
+		IFAFAMAHOFL();
+	}
+
+	public void FGGLNMNKLDA(float NGHFGPKHIPP, float HHABIDFFNCK)
+	{
+		currentAnimationGoing.DHLIPMHGCPE(NGHFGPKHIPP, HHABIDFFNCK);
+	}
+
+	public float FHHJEHCKHLK()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	private void GHFAPNJOIFG()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	public void MJMFGEKNBMO()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.OANPGIEACCJ();
+	}
+
+	public void NFEKKNPOGJL(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationRotation(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	private void LDCNNJIDDCO()
+	{
+		if (!currentAnimationGoing.IsObjectOpened())
+		{
+			currentAnimationGoing.OANPGIEACCJ();
+		}
+		else
+		{
+			currentAnimationGoing.PlayCloseAnimations();
+		}
+	}
+
+	public void KDHFIKLGIKB(float HNIFGMOMJMA)
+	{
+		if (HNIFGMOMJMA > 256f)
+		{
+			currentAnimationGoing.HAPEMNJGBDM(HNIFGMOMJMA);
+		}
+		else
+		{
+			currentAnimationGoing.NIEPJFJALLE(846f);
+		}
+	}
+
+	public bool IsObjectOpened()
+	{
+		return currentAnimationGoing.IsObjectOpened();
+	}
+
+	public bool KMCEIMLEPHI()
+	{
+		return currentAnimationGoing.IsObjectOpened();
+	}
+
+	private void CCDAMMPPNBE()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	public void ABIPHKLOLPK(Vector2 ELHCACPPCAG, Vector2 EKMHMLALGPF, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationPos(ELHCACPPCAG, EKMHMLALGPF, CANHEAPDBPD, PMOODBJDOEL, rectTransform);
+	}
+
+	private void CCLNNLCOPBL()
+	{
+		AnimationParts.OFKCCGIBMBL(JKHKAJGEGPA);
+	}
+
+	public void JOABFAPOOEN(bool HCAIOLGHFNN)
+	{
+		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
+	}
+
+	public void OHDOCLGPIOE(Vector2 ELHCACPPCAG, Vector2 EKMHMLALGPF, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationPos(ELHCACPPCAG, EKMHMLALGPF, CANHEAPDBPD, PMOODBJDOEL, rectTransform);
+	}
+
+	public float HINPIKCEJBO()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	public void SetAnimationScale(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	private void MFCHIHFBPJM()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	public void ADDJMLHCDLP(AnimationParts KEMAFNIOEFC)
+	{
+		animationParts = KEMAFNIOEFC;
+		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
+	}
+
+	public void HEJIOJFNELP()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.OANPGIEACCJ();
+	}
+
+	private void BGDPIHMAACO()
+	{
+		AnimationParts.OFKCCGIBMBL(NPAPLLCBKBB);
+	}
+
+	private void HKEEFJNMELI()
+	{
+		if (!currentAnimationGoing.IsObjectOpened())
+		{
+			currentAnimationGoing.OANPGIEACCJ();
+		}
+		else
+		{
+			currentAnimationGoing.PlayCloseAnimations();
+		}
+	}
+
+	private void NPAPLLCBKBB(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
+	{
+		if (AGNIEKAJHNM != animationParts)
+		{
+			return;
+		}
+		if (AEIMJCDHKFI)
+		{
+			rectTransform.gameObject.SetActive(true);
+			return;
+		}
+		if ((bool)base.gameObject && (bool)rectTransform.gameObject == (bool)base.gameObject)
+		{
+			UnityEngine.Object.Destroy(base.gameObject);
+		}
+		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
+	}
+
+	private void BMODOIJGIOO()
+	{
+		currentAnimationGoing.AnimationFrame(rectTransform);
+	}
+
+	private void BBFPEIOPDBE()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	public float EPDECNEHFKJ()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	private void HCIPECAOGIA()
+	{
+		currentAnimationGoing.AnimationFrame(rectTransform);
+	}
+
+	private void EOIFKKMNKDF(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
+	{
+		if (AGNIEKAJHNM != animationParts)
+		{
+			return;
+		}
+		if (AEIMJCDHKFI)
+		{
+			rectTransform.gameObject.SetActive(false);
+			return;
+		}
+		if ((bool)base.gameObject && (bool)rectTransform.gameObject == (bool)base.gameObject)
+		{
+			UnityEngine.Object.Destroy(base.gameObject);
+		}
+		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
+	}
+
+	private void KHBLMEGPPLJ()
+	{
+		AnimationParts.OnDisableOrDestroy -= ALHIAPNCNJO;
+	}
+
+	private void HILFFNEFMDH()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	public void LFAOKGDLHOL(bool FOJONHLNAOM)
+	{
+		currentAnimationGoing.SetFade(FOJONHLNAOM);
+	}
+
+	public void AIJLDMCAFFK(float HNIFGMOMJMA)
+	{
+		if (HNIFGMOMJMA > 439f)
+		{
+			currentAnimationGoing.SetAniamtioDuration(HNIFGMOMJMA);
+		}
+		else
+		{
+			currentAnimationGoing.NIEPJFJALLE(365f);
+		}
+	}
+
+	public void BHKGDGPOHJB(bool FOJONHLNAOM)
+	{
+		currentAnimationGoing.SetFade(FOJONHLNAOM);
+	}
+
+	private void EPEGAEGDJAM()
+	{
+		AnimationParts.OFKCCGIBMBL(AJOEMNCKMKM);
+	}
+
+	public void AEGDJMJMDLI()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.PlayOpenAnimations();
+	}
+
+	private void PKEGMGDIOFC()
+	{
+		if (!currentAnimationGoing.IsObjectOpened())
+		{
+			currentAnimationGoing.PlayOpenAnimations();
+		}
+		else
+		{
+			currentAnimationGoing.PlayCloseAnimations();
+		}
+	}
+
+	public void AMGBJCBJFAO(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationRotation(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	public float IJEBHBDHGBP()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	public void HPCFHELOPIF(float NGHFGPKHIPP, float HHABIDFFNCK)
+	{
+		currentAnimationGoing.DHLIPMHGCPE(NGHFGPKHIPP, HHABIDFFNCK);
+	}
+
+	public void KMDNJBKLGJE(bool CIOKILFKPHF)
+	{
+		currentAnimationGoing.SetStatus(CIOKILFKPHF);
+	}
+
+	public void OPDGGPAMDKP(bool CIOKILFKPHF)
+	{
+		currentAnimationGoing.SetStatus(CIOKILFKPHF);
+	}
+
+	private void EGEGNHLODAA()
+	{
+		currentAnimationGoing.AnimationFrame(rectTransform);
+	}
+
+	private void Start()
+	{
+		AnimationParts.OnDisableOrDestroy += AJOEMNCKMKM;
+	}
+
+	private void LateUpdate()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	public void DBNBGCEDMOP(bool CIOKILFKPHF)
+	{
+		currentAnimationGoing.SetStatus(CIOKILFKPHF);
+	}
+
+	public void LDPPOOHLHCF()
+	{
+		rectTransform.gameObject.SetActive(false);
+		currentAnimationGoing.PlayCloseAnimations();
 	}
 
 	private void AJOEMNCKMKM(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
@@ -279,39 +560,36 @@ public class EasyTween : MonoBehaviour
 		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
 	}
 
-	private void LHLDDCILFAC()
+	private void ELENIBFBCIH()
 	{
-		if (currentAnimationGoing == null)
+		if (!currentAnimationGoing.IsObjectOpened())
 		{
-			SetAnimationProperties(animationParts);
+			currentAnimationGoing.OANPGIEACCJ();
+		}
+		else
+		{
+			currentAnimationGoing.PlayCloseAnimations();
 		}
 	}
 
-	public void NGAPEECMEJH(bool CIOKILFKPHF)
+	public void HMCGOFELEDH(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
 	{
-		currentAnimationGoing.EMHCAMAACII(CIOKILFKPHF);
+		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
 	}
 
-	public void FKAEJEPJIEP()
+	public void BBINADBINLO(Vector2 ELHCACPPCAG, Vector2 EKMHMLALGPF, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
 	{
-		rectTransform.gameObject.SetActive(false);
-		currentAnimationGoing.PlayOpenAnimations();
+		currentAnimationGoing.SetAnimationPos(ELHCACPPCAG, EKMHMLALGPF, CANHEAPDBPD, PMOODBJDOEL, rectTransform);
 	}
 
-	public void OpenCloseObjectAnimation()
+	public void KGBPGOALNEN(bool HCAIOLGHFNN)
 	{
-		rectTransform.gameObject.SetActive(true);
-		PKEGMGDIOFC();
+		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
 	}
 
-	public float GetAnimationDuration()
+	public void GNOICDLLBJI(bool CIOKILFKPHF)
 	{
-		return currentAnimationGoing.GetAnimationDuration();
-	}
-
-	public void SetAnimationRotation(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
-	{
-		currentAnimationGoing.SetAnimationRotation(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
+		currentAnimationGoing.SetStatus(CIOKILFKPHF);
 	}
 
 	public void SetAnimationPosition(Vector2 ELHCACPPCAG, Vector2 EKMHMLALGPF, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
@@ -319,7 +597,299 @@ public class EasyTween : MonoBehaviour
 		currentAnimationGoing.SetAnimationPos(ELHCACPPCAG, EKMHMLALGPF, CANHEAPDBPD, PMOODBJDOEL, rectTransform);
 	}
 
-	private void FKBPBJBNFPA(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
+	public float GetAnimationDuration()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	public float FPJLKOKKALO()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	public void SetFadeStartEndValues(float NGHFGPKHIPP, float HHABIDFFNCK)
+	{
+		currentAnimationGoing.SetFadeValuesStartEnd(NGHFGPKHIPP, HHABIDFFNCK);
+	}
+
+	private void PEJANHIKFAE()
+	{
+		AnimationParts.IFMFPKCCPDI(NPAPLLCBKBB);
+	}
+
+	public void FEECHDIIKIB(bool HCAIOLGHFNN)
+	{
+		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
+	}
+
+	public void OFDDJDDCKIJ(AnimationParts KEMAFNIOEFC)
+	{
+		animationParts = KEMAFNIOEFC;
+		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
+	}
+
+	public void IEJEOOEPMAC(AnimationParts KEMAFNIOEFC)
+	{
+		animationParts = KEMAFNIOEFC;
+		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
+	}
+
+	private void OnDestroy()
+	{
+		AnimationParts.OnDisableOrDestroy -= AJOEMNCKMKM;
+	}
+
+	public void JBEADLHMKMA()
+	{
+		currentAnimationGoing.SetFade(true);
+	}
+
+	public void PFIDMLHIKMF(float HNIFGMOMJMA)
+	{
+		if (HNIFGMOMJMA > 1286f)
+		{
+			currentAnimationGoing.HAPEMNJGBDM(HNIFGMOMJMA);
+		}
+		else
+		{
+			currentAnimationGoing.NIEPJFJALLE(123f);
+		}
+	}
+
+	public void PKICDNINIGD()
+	{
+		currentAnimationGoing.SetFade(false);
+	}
+
+	public void JFOLLDDMOMK(bool CIOKILFKPHF)
+	{
+		currentAnimationGoing.SetStatus(CIOKILFKPHF);
+	}
+
+	private void PINCEMDKGEO(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
+	{
+		if (AGNIEKAJHNM != animationParts)
+		{
+			return;
+		}
+		if (AEIMJCDHKFI)
+		{
+			rectTransform.gameObject.SetActive(true);
+			return;
+		}
+		if ((bool)base.gameObject && !rectTransform.gameObject == (bool)base.gameObject)
+		{
+			UnityEngine.Object.Destroy(base.gameObject);
+		}
+		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
+	}
+
+	private void JDKHBGDEONK()
+	{
+		AnimationParts.OFKCCGIBMBL(JKHKAJGEGPA);
+	}
+
+	private void AKJIJDFJIKB()
+	{
+		if (!currentAnimationGoing.IsObjectOpened())
+		{
+			currentAnimationGoing.PlayOpenAnimations();
+		}
+		else
+		{
+			currentAnimationGoing.LEKPODLMAPB();
+		}
+	}
+
+	public bool FDPFHFMNBEA()
+	{
+		return currentAnimationGoing.IsObjectOpened();
+	}
+
+	public void EOHJLPNDLMJ(float NGHFGPKHIPP, float HHABIDFFNCK)
+	{
+		currentAnimationGoing.DHLIPMHGCPE(NGHFGPKHIPP, HHABIDFFNCK);
+	}
+
+	public void GHJAOJFBALP(bool HCAIOLGHFNN)
+	{
+		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
+	}
+
+	public void CGCBCNLIING(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	public void OpenObjectAnimation()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.PlayOpenAnimations();
+	}
+
+	public float ICMIAICHKNE()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	public void PCGHIEANBMH()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.OANPGIEACCJ();
+	}
+
+	public void PONIOLPJPFI(AnimationParts KEMAFNIOEFC)
+	{
+		animationParts = KEMAFNIOEFC;
+		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
+	}
+
+	public void PGOIEGKLAKO(Vector2 ELHCACPPCAG, Vector2 EKMHMLALGPF, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.IPAHMDHMJJA(ELHCACPPCAG, EKMHMLALGPF, CANHEAPDBPD, PMOODBJDOEL, rectTransform);
+	}
+
+	private void GNBHNEIHANF()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	public void SetAnimatioDuration(float HNIFGMOMJMA)
+	{
+		if (HNIFGMOMJMA > 0f)
+		{
+			currentAnimationGoing.SetAniamtioDuration(HNIFGMOMJMA);
+		}
+		else
+		{
+			currentAnimationGoing.SetAniamtioDuration(0.01f);
+		}
+	}
+
+	public void MDKPMHHLKIE()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.LEKPODLMAPB();
+	}
+
+	public float PDOLGNFAIGJ()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	public float EHNKEKJEJMJ()
+	{
+		return currentAnimationGoing.GetAnimationDuration();
+	}
+
+	public void AILAMHCFDOB()
+	{
+		rectTransform.gameObject.SetActive(true);
+		AKJIJDFJIKB();
+	}
+
+	public void BPGIHPKCMNF(float HNIFGMOMJMA)
+	{
+		if (HNIFGMOMJMA > 1077f)
+		{
+			currentAnimationGoing.FPEACNPHNKD(HNIFGMOMJMA);
+		}
+		else
+		{
+			currentAnimationGoing.HAPEMNJGBDM(1903f);
+		}
+	}
+
+	public void IPAJDFPKHPD(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.BHBNCDBPJGC(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	private void PFAGIGECCPI()
+	{
+		if (!currentAnimationGoing.IsObjectOpened())
+		{
+			currentAnimationGoing.OANPGIEACCJ();
+		}
+		else
+		{
+			currentAnimationGoing.PlayCloseAnimations();
+		}
+	}
+
+	public void ENLKJIDCJDN()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.PlayCloseAnimations();
+	}
+
+	public void PHJPDEPMLEF()
+	{
+		rectTransform.gameObject.SetActive(false);
+		currentAnimationGoing.LEKPODLMAPB();
+	}
+
+	public void DOCILNBKKAA(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
+	{
+		currentAnimationGoing.SetAnimationRotation(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
+	}
+
+	public void DMMEHNCIKDG()
+	{
+		rectTransform.gameObject.SetActive(false);
+		AKJIJDFJIKB();
+	}
+
+	public void HMAPIGMDKPA(bool FOJONHLNAOM)
+	{
+		currentAnimationGoing.SetFade(FOJONHLNAOM);
+	}
+
+	public void HJEJDEPEDGD(bool HCAIOLGHFNN)
+	{
+		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
+	}
+
+	public void AIOOFAMNMOJ(AnimationParts KEMAFNIOEFC)
+	{
+		animationParts = KEMAFNIOEFC;
+		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
+	}
+
+	private void FNENCNMBNGC()
+	{
+		AnimationParts.IFMFPKCCPDI(NPAPLLCBKBB);
+	}
+
+	private void POIMNOBDBBN()
+	{
+		currentAnimationGoing.AnimationFrame(rectTransform);
+	}
+
+	private void KHIGHFJKPFG()
+	{
+		AnimationParts.OnDisableOrDestroy += MFGACFMPBLK;
+	}
+
+	public void EGDLPMFNPPC(float NGHFGPKHIPP, float HHABIDFFNCK)
+	{
+		currentAnimationGoing.DHLIPMHGCPE(NGHFGPKHIPP, HHABIDFFNCK);
+	}
+
+	private void IFAFAMAHOFL()
+	{
+		if (currentAnimationGoing == null)
+		{
+			SetAnimationProperties(animationParts);
+		}
+	}
+
+	public void BIIIKDKNLHH()
+	{
+		currentAnimationGoing.SetFade(false);
+	}
+
+	private void JKHKAJGEGPA(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
 	{
 		if (AGNIEKAJHNM != animationParts)
 		{
@@ -337,105 +907,82 @@ public class EasyTween : MonoBehaviour
 		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
 	}
 
-	private void JNANCJOCAPA()
+	public void SetFade()
+	{
+		currentAnimationGoing.SetFade(false);
+	}
+
+	public void EDDEOMIDBOL(AnimationParts KEMAFNIOEFC)
+	{
+		animationParts = KEMAFNIOEFC;
+		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
+	}
+
+	public void LMHFGDCFHOD()
+	{
+		rectTransform.gameObject.SetActive(false);
+		LDCNNJIDDCO();
+	}
+
+	private void NFKJGOPAGPJ()
+	{
+		currentAnimationGoing.LateAnimationFrame(rectTransform);
+	}
+
+	private void IGOJCALJJFM()
+	{
+		AnimationParts.IFMFPKCCPDI(NPAPLLCBKBB);
+	}
+
+	public void ChangeSetState(bool CIOKILFKPHF)
+	{
+		currentAnimationGoing.SetStatus(CIOKILFKPHF);
+	}
+
+	private void JCGMGLMADEN()
+	{
+		currentAnimationGoing.AnimationFrame(rectTransform);
+	}
+
+	private void GKAMHPGDDDJ(bool AEIMJCDHKFI, AnimationParts AGNIEKAJHNM)
+	{
+		if (AGNIEKAJHNM != animationParts)
+		{
+			return;
+		}
+		if (AEIMJCDHKFI)
+		{
+			rectTransform.gameObject.SetActive(true);
+			return;
+		}
+		if ((bool)base.gameObject && (bool)rectTransform.gameObject == (bool)base.gameObject)
+		{
+			UnityEngine.Object.Destroy(base.gameObject);
+		}
+		UnityEngine.Object.DestroyImmediate(rectTransform.gameObject);
+	}
+
+	public void BINMMEGPPOL(bool FOJONHLNAOM)
+	{
+		currentAnimationGoing.SetFade(FOJONHLNAOM);
+	}
+
+	public void LKOKMJPCDJO()
+	{
+		rectTransform.gameObject.SetActive(true);
+		currentAnimationGoing.PlayCloseAnimations();
+	}
+
+	private void GFBCLCDEFKF()
 	{
 		if (currentAnimationGoing == null)
 		{
-			SetAnimationProperties(animationParts);
+			PONIOLPJPFI(animationParts);
 		}
 	}
 
-	private void Start()
+	public float EBJLFLOGFBP()
 	{
-		AnimationParts.OnDisableOrDestroy += AJOEMNCKMKM;
-	}
-
-	public void HOPJFMGADFG(bool CIOKILFKPHF)
-	{
-		currentAnimationGoing.AACJABEIENG(CIOKILFKPHF);
-	}
-
-	public void GEOJCPFLDFA()
-	{
-		rectTransform.gameObject.SetActive(false);
-		currentAnimationGoing.BPIMHILGOMG();
-	}
-
-	public void PFBOGOCEFBA(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
-	{
-		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
-	}
-
-	public void LPAMCEDNAGB(AnimationParts KEMAFNIOEFC)
-	{
-		animationParts = KEMAFNIOEFC;
-		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
-	}
-
-	public EasyTween()
-	{
-		IFAFAMAHOFL();
-	}
-
-	public void NIOMFNEEMDF()
-	{
-		rectTransform.gameObject.SetActive(false);
-		PKEGMGDIOFC();
-	}
-
-	private void AGEJKLMJGDO()
-	{
-		AnimationParts.GNAHAFGFEIE(LDKBFMGDMIP);
-	}
-
-	public void KGHKFJMDLOL(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
-	{
-		currentAnimationGoing.MFKLABJCGMG(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
-	}
-
-	public bool IsObjectOpened()
-	{
-		return currentAnimationGoing.IsObjectOpened();
-	}
-
-	private void KMKLDAJLCNM()
-	{
-		currentAnimationGoing.BFKJPGNMEJM(rectTransform);
-	}
-
-	public void HAKGPLODMJL(Vector3 IJJDBKINBJG, Vector3 DBEPMPMLAFO, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
-	{
-		currentAnimationGoing.SetAnimationScale(IJJDBKINBJG, DBEPMPMLAFO, CANHEAPDBPD, PMOODBJDOEL);
-	}
-
-	private void APAHOINHLAJ()
-	{
-		currentAnimationGoing.LGBCEGGCJMK(rectTransform);
-	}
-
-	public bool FJFANHLGGHL()
-	{
-		return currentAnimationGoing.JFOHIAKFPIO();
-	}
-
-	public void LEFOMFFHJCA(AnimationParts KEMAFNIOEFC)
-	{
-		animationParts = KEMAFNIOEFC;
-		currentAnimationGoing = new CurrentAnimation(KEMAFNIOEFC);
-	}
-
-	public void NOKKKPAJFFC(Vector3 OPDFCFOCGPC, Vector3 KCLMKFKHMGC, AnimationCurve CANHEAPDBPD, AnimationCurve PMOODBJDOEL)
-	{
-		currentAnimationGoing.MFKLABJCGMG(OPDFCFOCGPC, KCLMKFKHMGC, CANHEAPDBPD, PMOODBJDOEL);
-	}
-
-	public void NGJMAODBHMC(bool HCAIOLGHFNN)
-	{
-		animationParts.UnscaledTimeAnimation = HCAIOLGHFNN;
-	}
-
-	private void LateUpdate()
-	{
-		currentAnimationGoing.LateAnimationFrame(rectTransform);
+		return currentAnimationGoing.GetAnimationDuration();
 	}
 }

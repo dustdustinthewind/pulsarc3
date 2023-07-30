@@ -20,331 +20,90 @@ public class SunController : EnvironmentController
 
 	private PlayerBase JFCPJAELJOE;
 
-	public void FPFMNEAEMFJ(float DPNHODJHGJL)
+	public void MLLKGJCGMOD(float DPNHODJHGJL)
 	{
 		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
 	}
 
-	public void AODCDDKFJHM(Vector3 JJIJODIEBFP)
+	public override void JEKEBJCHOHO()
 	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
-	}
-
-	public void LIMBPIFKKDK(int CDPLIMAJBGF)
-	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
-	}
-
-	public void ILOGAHJCLJE(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
-	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void KOODDHJPHOI(Vector3 LPIMAGMABLC)
-	{
-		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
-	}
-
-	public void HKPKMPPKPAI(Vector3 GNIJKBCHEPG)
-	{
-		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
-	}
-
-	public void CADMAAOOAGF(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
-	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void MNKFLALANBJ(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void KJNBBODKMCD(Vector3 GNIJKBCHEPG)
-	{
-		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
-	}
-
-	public override void APKNAPHOFHC()
-	{
-		base.CFIAKIJAILI();
-		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor("Myst", Color.Lerp(HKIDNEAKGNO.material.GetColor("CameraFilterPack_VHS2"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("IEnumerable", Color.Lerp(HKIDNEAKGNO.material.GetColor(":"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("Fade", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("CameraFilterPack/FX_Screens"), emission * 609f, Time.smoothDeltaTime * colorLerp));
-	}
-
-	public void PIDMIGPIMMC(float DPNHODJHGJL)
-	{
-		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
-	}
-
-	public void OAPMDGDCEGO(Vector3 JJIJODIEBFP)
-	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
-	}
-
-	public override void FGAPIOELJCG()
-	{
-		base.CEACMFGNDEB();
+		base.Reset();
 		CBNKJGPOLMG.LOKKIADJAFE();
-		progress = 1934f;
-		color1 = new Color(186f, 1233f, 342f);
-		color2 = new Color(1019f, 1155f, 1445f);
-		colorLerp = 317f;
-		emission = 421f;
+		progress = 1089f;
+		color1 = new Color(1160f, 1765f, 525f);
+		color2 = new Color(700f, 1233f, 695f);
+		colorLerp = 813f;
+		emission = 844f;
 	}
 
-	public void MFMPKLLLILB(int CDPLIMAJBGF)
+	public override void LLJLDLLNFBH()
 	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
-	}
-
-	public override void JDGFCEPDKAJ()
-	{
-		base.EHCGBJDFMHG();
+		base.LEAHIBJDMBI();
 		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor(".lastCheckpoint.playerdistance", Color.Lerp(HKIDNEAKGNO.material.GetColor("_Value4"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("_ScreenResolution", Color.Lerp(HKIDNEAKGNO.material.GetColor("_Green_R"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("threshold", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("icon.png"), emission * 1736f, Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("_EmissionColor", Color.Lerp(HKIDNEAKGNO.material.GetColor("player.goldbat"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("_ScreenResolution", Color.Lerp(HKIDNEAKGNO.material.GetColor("addNewButton"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("_ScreenResolution", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("\" that takes "), emission * 1888f, Time.smoothDeltaTime * colorLerp));
 	}
 
-	public void GBEAKNALDOE(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public override void Awake()
-	{
-		base.Awake();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
-	}
-
-	public override void LECPHJOIGKN()
-	{
-		base.GONKPNAAIEE();
-		CBNKJGPOLMG.IJHGPCAHDEH();
-		progress = 85f;
-		color1 = new Color(160f, 899f, 69f);
-		color2 = new Color(874f, 773f, 934f);
-		colorLerp = 1048f;
-		emission = 537f;
-	}
-
-	public void OBNOLJNCFFO(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
-	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void OGCEBFAEBGO(Vector3 JJIJODIEBFP)
-	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
-	}
-
-	public void SetSensitivity(float DPNHODJHGJL)
-	{
-		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
-	}
-
-	public void DJGAAJMNGND(Vector3 GNIJKBCHEPG)
+	public void PGIDHLPAOAJ(Vector3 GNIJKBCHEPG)
 	{
 		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
 	}
 
-	public override void IBFJAOINHMK()
-	{
-		base.Update();
-		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor("_TimeX", Color.Lerp(HKIDNEAKGNO.material.GetColor("/"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("ticket", Color.Lerp(HKIDNEAKGNO.material.GetColor("_FixDistance"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("_RampTex", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("ResetButton"), emission * 503f, Time.smoothDeltaTime * colorLerp));
-	}
-
-	public void KNINICADKDB(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
-	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public override void KGMCGGIEPDE()
-	{
-		base.EMANBHKAONB();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
-	}
-
-	public void JOICINMJKHE(Vector3 LPIMAGMABLC)
-	{
-		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
-	}
-
-	public override void FOLDLDLFFLM()
-	{
-		base.Update();
-		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor("_Value2", Color.Lerp(HKIDNEAKGNO.material.GetColor("/icon"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("DPADHOR", Color.Lerp(HKIDNEAKGNO.material.GetColor("settings.customdataskin"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("ConfigVersionSlider", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("OPEN"), emission * 53f, Time.smoothDeltaTime * colorLerp));
-	}
-
-	public void JMFHNBLFEIE(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void NJEKLECIGIJ(float KEDDLFDAIDE)
-	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
-	}
-
-	public void CNGNBAKGKGB(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
-	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void EFMAODCEBPD(float KEDDLFDAIDE)
-	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
-	}
-
-	public void PLGPEHKIAHA(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
-	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void GEKNJFEGELD(Vector3 GNIJKBCHEPG)
-	{
-		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
-	}
-
-	public void FJCHGDMEGLO(Vector3 JJIJODIEBFP)
+	public void CEOJCIBAPIF(Vector3 JJIJODIEBFP)
 	{
 		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
 	}
 
-	public void LDDBLLHGOCO(Vector3 LPIMAGMABLC)
+	public override void NNNCKCELBCE()
+	{
+		base.Reset();
+		CBNKJGPOLMG.LBMLGIAKJCH();
+		progress = 1700f;
+		color1 = new Color(1409f, 1559f, 640f);
+		color2 = new Color(301f, 1440f, 1451f);
+		colorLerp = 1648f;
+		emission = 888f;
+	}
+
+	public void BHCDCNCDOCE(Vector3 LPIMAGMABLC)
 	{
 		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
 	}
 
-	public override void KAMMKPFNJJF()
+	public override void KIEJKBNBHMD()
 	{
-		base.FAAJAMIGJNK();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
+		base.BGFJOEPFOPM();
+		progress = JFCPJAELJOE.PNBDCKLMJKA();
+		HKIDNEAKGNO.material.SetColor("_TimeX", Color.Lerp(HKIDNEAKGNO.material.GetColor("[EditorEvent] Exception: "), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor(" By: ", Color.Lerp(HKIDNEAKGNO.material.GetColor("[PlayerController] "), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("OnJoinedRoom() called by PUN. Now this client is in a room. From here on, your game would be running. For reference, all callbacks are listed in enum: PhotonNetworkingMessage", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("_ScratchOffsetScale"), emission * 116f, Time.smoothDeltaTime * colorLerp));
 	}
 
-	public override void PBEPCAPAKLG()
-	{
-		base.Update();
-		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor("RateButton", Color.Lerp(HKIDNEAKGNO.material.GetColor("_ScreenResolution"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("not available at the moment", Color.Lerp(HKIDNEAKGNO.material.GetColor("UsernameText"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("_Value3", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("================================"), emission * 1189f, Time.smoothDeltaTime * colorLerp));
-	}
-
-	public void JKFAGJIBKJF(float DPNHODJHGJL)
+	public void HNGCLAICCCG(float DPNHODJHGJL)
 	{
 		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
 	}
 
-	public void BIBILLGDIBG(Vector3 JJIJODIEBFP)
+	public void EEMONPABGNA(Vector3 JJIJODIEBFP)
 	{
 		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
 	}
 
-	public void SetColors(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	public override void OPCLBGHAPMG()
 	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void IHJGHNLJOGF(Vector3 LPIMAGMABLC)
-	{
-		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
-	}
-
-	public override void KCDOMIJBFLL()
-	{
-		base.FBMDHDBELEK();
+		base.BGFJOEPFOPM();
 		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor("0. SubBase 20-60 Hz\n1. Bass, 60-250 Hz\n2. LowMidrange 250-500 Hz\n3. Midrange 500-2,000 Hz\n4. UpperMidrange 2,000-4,000 Hz\n5. High 4,000-6000 Hz\n6. VeryHigh 6,000-20,000 Hz\n7. Decibal - use output data instead of frequency data", Color.Lerp(HKIDNEAKGNO.material.GetColor("Default UI Material"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("[Up]", Color.Lerp(HKIDNEAKGNO.material.GetColor(".completedMaps"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("LoadMapCanvas", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("No peer to communicate with. "), emission * 204f, Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("[PlayerBase] Saveing checkpoint data", Color.Lerp(HKIDNEAKGNO.material.GetColor("_Size"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("R2", Color.Lerp(HKIDNEAKGNO.material.GetColor("Submit"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("_Value3", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("Horizontal"), emission * 1946f, Time.smoothDeltaTime * colorLerp));
 	}
 
-	public void CNGIFFAFGOE(Vector3 GNIJKBCHEPG)
-	{
-		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
-	}
-
-	public void ECCFMFNCBIE(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void PCIPLDNAFCL(float DPNHODJHGJL)
-	{
-		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
-	}
-
-	public void KPALEBGNCCK(int CDPLIMAJBGF)
-	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
-	}
-
-	public void CHOKKIPDAPF(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	public void KKLHBMDCPDH(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
 	{
 		color1 = MGHJCGBNEPL;
 		color2 = NBPMHDANECK;
 		colorLerp = MNHBOECHFEG;
-	}
-
-	public void ICKKICJIHIP(Vector3 LPIMAGMABLC)
-	{
-		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
-	}
-
-	public void DGDLNGADPCP(Vector3 LPIMAGMABLC)
-	{
-		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
-	}
-
-	public void OLDNDBMGMEM(Vector3 LPIMAGMABLC)
-	{
-		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
-	}
-
-	public override void HFFAJNCOJNB()
-	{
-		base.EGFBPCMCNDJ();
-		CBNKJGPOLMG.LOKKIADJAFE();
-		progress = 1325f;
-		color1 = new Color(681f, 627f, 963f);
-		color2 = new Color(43f, 393f, 1251f);
-		colorLerp = 1519f;
-		emission = 1991f;
-	}
-
-	public void KHMMCADJNOE(float KEDDLFDAIDE)
-	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
 	}
 
 	public override void Reset()
@@ -358,72 +117,163 @@ public class SunController : EnvironmentController
 		emission = 1.5f;
 	}
 
-	public override void MNBMLBLLDGL()
+	public override void LEAHIBJDMBI()
 	{
-		base.LOKKIADJAFE();
-		CBNKJGPOLMG.FPKJJBAENGF();
-		progress = 1135f;
-		color1 = new Color(1594f, 726f, 581f);
-		color2 = new Color(1626f, 556f, 1541f);
-		colorLerp = 1253f;
-		emission = 823f;
+		base.LEAHIBJDMBI();
+		progress = JFCPJAELJOE.PKPBMPFIGBL();
+		HKIDNEAKGNO.material.SetColor("file://", Color.Lerp(HKIDNEAKGNO.material.GetColor("Joystick1Button5"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("_Value4", Color.Lerp(HKIDNEAKGNO.material.GetColor("HiddenToggle"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("_MainTex", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat(" "), emission * 1655f, Time.smoothDeltaTime * colorLerp));
 	}
 
-	public void BHMCBLOPIDP(Vector3 GNIJKBCHEPG)
+	public void CLGELDPAGAP(Vector3 GNIJKBCHEPG)
 	{
 		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
 	}
 
-	public override void PEMPABLNJHL()
+	public void GPJJDCMBPFJ(int CDPLIMAJBGF)
 	{
-		base.FMAFBLKAJDF();
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+	}
+
+	public void SetSensitivity(float DPNHODJHGJL)
+	{
+		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
+	}
+
+	public void BDCIJFPFACO(float KEDDLFDAIDE)
+	{
+		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
+	}
+
+	public void NFKMLLAKHBB(float DPNHODJHGJL)
+	{
+		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
+	}
+
+	public void BKAFHKNOODF(Vector3 JJIJODIEBFP)
+	{
+		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+	}
+
+	public void IPCKGANFILN(int CDPLIMAJBGF)
+	{
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+	}
+
+	public void JCJDHJDJBGO(int CDPLIMAJBGF)
+	{
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+	}
+
+	public void LBBOKJEFGIK(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void FKMAMJECKAP(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public void GLKGFPGHEAG(int CDPLIMAJBGF)
+	{
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+	}
+
+	public void JHNFNOOLMDB(int CDPLIMAJBGF)
+	{
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+	}
+
+	public void GAOENJHFCOJ(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public void BAAIMFPJANF(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void SetColors(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void DAHIMKKFNPH()
+	{
+		base.POHMFMNEPKK();
 		HKIDNEAKGNO = GetComponent<Renderer>();
 		CBNKJGPOLMG = GetComponent<DynamicScale>();
 		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
 	}
 
-	public void MCHHNIMHKMG(int CDPLIMAJBGF)
+	public override void IKIDIJLIGOH()
+	{
+		base.LEAHIBJDMBI();
+		progress = JFCPJAELJOE.PKPBMPFIGBL();
+		HKIDNEAKGNO.material.SetColor("runas", Color.Lerp(HKIDNEAKGNO.material.GetColor("\n"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("Failed to InstantiateSceneObject prefab: ", Color.Lerp(HKIDNEAKGNO.material.GetColor("ScoreText"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat(" scene: ", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("_Value"), emission * 171f, Time.smoothDeltaTime * colorLerp));
+	}
+
+	public void DOMMEBBONIL(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public void HNLFGIGAODP(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void SetInput(int CDPLIMAJBGF)
 	{
 		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
 	}
 
-	public void BABLMFPOAJN(Vector3 JJIJODIEBFP)
+	public override void KOBJAEPJJJM()
 	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+		base.OGAMGLEAOAF();
+		CBNKJGPOLMG.LECPHJOIGKN();
+		progress = 1513f;
+		color1 = new Color(143f, 1054f, 1992f);
+		color2 = new Color(318f, 1752f, 903f);
+		colorLerp = 759f;
+		emission = 1955f;
 	}
 
-	public void BELGEMHIJAG(float KEDDLFDAIDE)
+	public override void OCMKCBBCEFG()
 	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
+		base.Update();
+		progress = JFCPJAELJOE.PKPBMPFIGBL();
+		HKIDNEAKGNO.material.SetColor(".status", Color.Lerp(HKIDNEAKGNO.material.GetColor("Mask texture not readable, set your sprite to Texture Type 'Advanced' and check 'Read/Write Enabled'"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("music", Color.Lerp(HKIDNEAKGNO.material.GetColor("_Value2"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("_ScreenResolution", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("StartButton"), emission * 554f, Time.smoothDeltaTime * colorLerp));
 	}
 
-	public override void PDDIOCCBAIL()
-	{
-		base.BJIKAHNJNEB();
-		CBNKJGPOLMG.MANOCIJICLG();
-		progress = 395f;
-		color1 = new Color(179f, 1f, 1143f);
-		color2 = new Color(1275f, 1908f, 122f);
-		colorLerp = 1424f;
-		emission = 656f;
-	}
-
-	public void HMHOIIOKNBL(Vector3 GNIJKBCHEPG)
-	{
-		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
-	}
-
-	public void FGOHDAKFFHF(float DPNHODJHGJL)
-	{
-		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
-	}
-
-	public void FNKMABBHBPA(Vector3 GNIJKBCHEPG)
+	public void GMAMAPAADPE(Vector3 GNIJKBCHEPG)
 	{
 		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
 	}
 
-	public override void MGGNFEPGIJI()
+	public void GKFKHJJFIID(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void Awake()
 	{
 		base.Awake();
 		HKIDNEAKGNO = GetComponent<Renderer>();
@@ -431,34 +281,9 @@ public class SunController : EnvironmentController
 		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
 	}
 
-	public void MEEEPDEELKJ(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	public void PODPPHEJDBO(int CDPLIMAJBGF)
 	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void FJNPBDEIAEJ(Vector3 JJIJODIEBFP)
-	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
-	}
-
-	public override void PPGKBEJLBFJ()
-	{
-		base.NLNAJMCBNDC();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
-	}
-
-	public void NECMHCAPIIC(Vector3 JJIJODIEBFP)
-	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
-	}
-
-	public void GAMBCMHFONG(Vector3 GNIJKBCHEPG)
-	{
-		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
 	}
 
 	public void SetMinSize(Vector3 GNIJKBCHEPG)
@@ -466,141 +291,69 @@ public class SunController : EnvironmentController
 		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
 	}
 
-	public override void PMBIKIBOHOF()
+	public void KFHBKGHBNEB(int CDPLIMAJBGF)
 	{
-		base.OPFDGBDADMA();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
 	}
 
-	public void OGIBAKNNLGH(Vector3 JJIJODIEBFP)
+	public void KOENDMEKKNN(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public override void AIFAGDOHAGD()
+	{
+		base.OGAMGLEAOAF();
+		CBNKJGPOLMG.Reset();
+		progress = 1121f;
+		color1 = new Color(1698f, 744f, 128f);
+		color2 = new Color(744f, 1954f, 940f);
+		colorLerp = 1197f;
+		emission = 37f;
+	}
+
+	public void BABLMFPOAJN(Vector3 JJIJODIEBFP)
 	{
 		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
 	}
 
-	public void PMFPFNMCAPF(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	public void GFIHBDOJPKB(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
 	{
 		color1 = MGHJCGBNEPL;
 		color2 = NBPMHDANECK;
 		colorLerp = MNHBOECHFEG;
 	}
 
-	public void GBBPDPPAOKP(Vector3 JJIJODIEBFP)
+	public void GJGHAKPNOGJ(Vector3 GNIJKBCHEPG)
 	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
 	}
 
-	public override void LBPCODPOJAH()
+	public void NKCPOLPIMFI(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
 	{
-		base.EHCGBJDFMHG();
-		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor("Object ID. Case-Sensitive", Color.Lerp(HKIDNEAKGNO.material.GetColor("Reconnect() enabled isMessageQueueRunning. Needs to be able to dispatch incoming messages."), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("curScn", Color.Lerp(HKIDNEAKGNO.material.GetColor("Crosshair"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("Delete events", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("PLEASE WAIT"), emission * 479f, Time.smoothDeltaTime * colorLerp));
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
 	}
 
-	public override void IKIDIJLIGOH()
+	public void FNNHAAJNAHN(Vector3 GNIJKBCHEPG)
 	{
-		base.CFIAKIJAILI();
-		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor("_Amount", Color.Lerp(HKIDNEAKGNO.material.GetColor("Connection error: "), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("mapselector.filter.rateduponly", Color.Lerp(HKIDNEAKGNO.material.GetColor("%"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("NOISE", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("_TimeX"), emission * 74f, Time.smoothDeltaTime * colorLerp));
+		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
 	}
 
-	public override void JLEAKFENJDJ()
-	{
-		base.EGFBPCMCNDJ();
-		CBNKJGPOLMG.LDGJGONCEND();
-		progress = 1920f;
-		color1 = new Color(600f, 1135f, 1633f);
-		color2 = new Color(844f, 377f, 1226f);
-		colorLerp = 1779f;
-		emission = 1297f;
-	}
-
-	public override void GEGFJJBCHPE()
-	{
-		base.EMANBHKAONB();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
-	}
-
-	public void MLFMFOBDOED(float DPNHODJHGJL)
+	public void KHIACDAFEOJ(float DPNHODJHGJL)
 	{
 		emission = DPNHODJHGJL;
 	}
 
-	public override void PHHOMLJECOJ()
+	public void AKGBJFJLELA(float DPNHODJHGJL)
 	{
-		base.FAAJAMIGJNK();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
+		emission = DPNHODJHGJL;
 	}
 
-	public void HJONHHLOCJM(float KEDDLFDAIDE)
+	public void KOKIEABANDK(float DPNHODJHGJL)
 	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
-	}
-
-	public void KOHFHNBPBGG(int CDPLIMAJBGF)
-	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
-	}
-
-	public override void IJHGPCAHDEH()
-	{
-		base.EEBGCGFNELO();
-		CBNKJGPOLMG.Reset();
-		progress = 1343f;
-		color1 = new Color(221f, 1734f, 1941f);
-		color2 = new Color(857f, 1973f, 1116f);
-		colorLerp = 1728f;
-		emission = 1701f;
-	}
-
-	public override void NCBGPIKDFIA()
-	{
-		base.Awake();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
-	}
-
-	public override void GMIOCKFLJAK()
-	{
-		base.GMIOCKFLJAK();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
-	}
-
-	public void ECMFHKLEKKL(Vector3 LPIMAGMABLC)
-	{
-		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
-	}
-
-	public void SetDirectionVector(Vector3 LPIMAGMABLC)
-	{
-		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
-	}
-
-	public void FBBLHEJADMH(float KEDDLFDAIDE)
-	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
-	}
-
-	public void JCILLLLGEDB(float KEDDLFDAIDE)
-	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
-	}
-
-	public void BACLAELPOJJ(Vector3 JJIJODIEBFP)
-	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+		emission = DPNHODJHGJL;
 	}
 
 	public void HLHAFCDNMEJ(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
@@ -610,55 +363,133 @@ public class SunController : EnvironmentController
 		colorLerp = MNHBOECHFEG;
 	}
 
-	public override void MMPOJCFOGJJ()
-	{
-		base.EMANBHKAONB();
-		HKIDNEAKGNO = GetComponent<Renderer>();
-		CBNKJGPOLMG = GetComponent<DynamicScale>();
-		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
-	}
-
-	public void KBAEPPHJJME(Vector3 GNIJKBCHEPG)
-	{
-		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
-	}
-
-	public void ACMENOHGOKD(Vector3 LPIMAGMABLC)
+	public void SetDirectionVector(Vector3 LPIMAGMABLC)
 	{
 		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
 	}
 
-	public void BJJCBNPBKNK(float KEDDLFDAIDE)
+	public override void IKMELABKBHO()
+	{
+		base.AEIJFLJEABG();
+		progress = JFCPJAELJOE.GetLifesProgrees();
+		HKIDNEAKGNO.material.SetColor("GlassDistortion", Color.Lerp(HKIDNEAKGNO.material.GetColor("_TimeX"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("_Value3", Color.Lerp(HKIDNEAKGNO.material.GetColor("_Saturation"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("Offline", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("_TimeX"), emission * 1871f, Time.smoothDeltaTime * colorLerp));
+	}
+
+	public void IIIJKFBNNEI(Vector3 JJIJODIEBFP)
+	{
+		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+	}
+
+	public override void MBBHOJMLCBC()
+	{
+		base.OGAMGLEAOAF();
+		CBNKJGPOLMG.DEDANNMJNOC();
+		progress = 1824f;
+		color1 = new Color(32f, 893f, 134f);
+		color2 = new Color(135f, 684f, 1097f);
+		colorLerp = 1010f;
+		emission = 747f;
+	}
+
+	public void LPNMGHEPBKK(Vector3 JJIJODIEBFP)
+	{
+		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+	}
+
+	public void JBPGEJDFBEI(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public void GDBNLFPGFGH(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public override void HIKKPDACJGI()
+	{
+		base.AEIJFLJEABG();
+		progress = JFCPJAELJOE.GetLifesProgrees();
+		HKIDNEAKGNO.material.SetColor("BitsData", Color.Lerp(HKIDNEAKGNO.material.GetColor("_ScreenResolution"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("SetEnvSpriteColor", Color.Lerp(HKIDNEAKGNO.material.GetColor("TotalHitsScoreText"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("<color=#", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("Object ID. Case-Sensitive"), emission * 1514f, Time.smoothDeltaTime * colorLerp));
+	}
+
+	public void CKMKADBMLKG(float KEDDLFDAIDE)
 	{
 		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
 	}
 
-	public void GFGABKGDCOP(int CDPLIMAJBGF)
+	public void CNGIFFAFGOE(Vector3 GNIJKBCHEPG)
 	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
 	}
 
-	public override void MFIMFMCMADK()
+	public void DFMPKPLDLND(float DPNHODJHGJL)
 	{
-		base.IOMCHHBGJEC();
+		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
+	}
+
+	public void AGMFLHGKOLI(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void EMGODKHIOAO(float KEDDLFDAIDE)
+	{
+		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
+	}
+
+	public override void LOMHIIKFFEP()
+	{
+		base.Awake();
 		HKIDNEAKGNO = GetComponent<Renderer>();
 		CBNKJGPOLMG = GetComponent<DynamicScale>();
 		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
 	}
 
-	public void JFLOMHACLFJ(float DPNHODJHGJL)
+	public void FJILNOMKAAN(Vector3 JJIJODIEBFP)
 	{
-		emission = DPNHODJHGJL;
+		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
 	}
 
-	public void HDIDPJOPIIK(int CDPLIMAJBGF)
+	public void LAJAHJOMMGA(Vector3 JJIJODIEBFP)
 	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
 	}
 
-	public void MPFAHHOEMLL(float DPNHODJHGJL)
+	public void AHMDAMKFGML(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
 	{
-		emission = DPNHODJHGJL;
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void EHMMNELHAPJ()
+	{
+		base.Reset();
+		CBNKJGPOLMG.KOBJAEPJJJM();
+		progress = 788f;
+		color1 = new Color(709f, 743f, 758f);
+		color2 = new Color(1497f, 976f, 854f);
+		colorLerp = 1401f;
+		emission = 1336f;
+	}
+
+	public void KCLJACBKFFI(Vector3 JJIJODIEBFP)
+	{
+		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+	}
+
+	public void GFEDMFLPAHH(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
 	}
 
 	public void SetMaxSize(Vector3 JJIJODIEBFP)
@@ -666,25 +497,11 @@ public class SunController : EnvironmentController
 		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
 	}
 
-	public override void LHIBPEGLPHM()
+	public void HKBEDCMPMLO(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
 	{
-		base.EGFBPCMCNDJ();
-		CBNKJGPOLMG.MANOCIJICLG();
-		progress = 37f;
-		color1 = new Color(1552f, 1428f, 349f);
-		color2 = new Color(645f, 1267f, 1757f);
-		colorLerp = 497f;
-		emission = 1173f;
-	}
-
-	public void FKOAHEGNACN(float DPNHODJHGJL)
-	{
-		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
-	}
-
-	public void HKIHBIMMECG(int CDPLIMAJBGF)
-	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
 	}
 
 	public override void Update()
@@ -696,47 +513,19 @@ public class SunController : EnvironmentController
 		HKIDNEAKGNO.material.SetFloat("_EmissionGain", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("_EmissionGain"), emission * 0.2f, Time.smoothDeltaTime * colorLerp));
 	}
 
-	public void LCEFIHHFECN(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void PFKOEHEFPDC(float DPNHODJHGJL)
-	{
-		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
-	}
-
-	public override void GCHBGCGBMCK()
-	{
-		base.EHCGBJDFMHG();
-		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor("OxOD.lastPath", Color.Lerp(HKIDNEAKGNO.material.GetColor(","), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("GlassColor", Color.Lerp(HKIDNEAKGNO.material.GetColor("maps."), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("_Value2", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("id"), emission * 858f, Time.smoothDeltaTime * colorLerp));
-	}
-
-	public void KADFLOHLAHN(Vector3 LPIMAGMABLC)
+	public void CNBDMLPNFJC(Vector3 LPIMAGMABLC)
 	{
 		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
 	}
 
-	public override void ANKIJGCGCBF()
+	public void ANLOKKIFJGC(Vector3 LPIMAGMABLC)
 	{
-		base.NKLIHNJCHOG();
-		progress = JFCPJAELJOE.GetLifesProgrees();
-		HKIDNEAKGNO.material.SetColor(" not exist", Color.Lerp(HKIDNEAKGNO.material.GetColor("_Value"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetColor("_ZCurve", Color.Lerp(HKIDNEAKGNO.material.GetColor("Instance\nWorking commands:\ninit or init <savepath>\npath\nsetint <key> <value>\ngetint <key> <value>\nsetfloat <key> <value>\ngetfloat <key> <value>\nsetstring <key> <value>\ngetstring <key> <value>\nsetbool <key> <value>\ngetbool <key> <value>\ndelete <key>\ndeleteall"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
-		HKIDNEAKGNO.material.SetFloat("Drop_Near", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("settings.arcsdestroydelay"), emission * 1826f, Time.smoothDeltaTime * colorLerp));
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
 	}
 
-	public void PFDKFJNHEBG(float DPNHODJHGJL)
+	public void NABBOMFEGAF(int CDPLIMAJBGF)
 	{
-		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
-	}
-
-	public void OOODGNGKHFJ(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
 	}
 
 	public void SetLerpSpeed(float KEDDLFDAIDE)
@@ -744,63 +533,86 @@ public class SunController : EnvironmentController
 		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
 	}
 
-	public void HNGCLAICCCG(float DPNHODJHGJL)
+	public void NNOEKDEACNP(float DPNHODJHGJL)
 	{
 		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
 	}
 
-	public void MNOLJMNLCDM(float KEDDLFDAIDE)
+	public override void JBIFKBNPHJE()
 	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
-	}
-
-	public void IHCOABDFACH(Vector3 JJIJODIEBFP)
-	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
-	}
-
-	public override void OFKDKJGIDLH()
-	{
-		base.CAPPKCBFILL();
-		CBNKJGPOLMG.ABDHDGNIHHI();
-		progress = 185f;
-		color1 = new Color(1272f, 1773f, 445f);
-		color2 = new Color(906f, 1274f, 1767f);
-		colorLerp = 720f;
-		emission = 1310f;
-	}
-
-	public void DNDDCKDKKHI(float KEDDLFDAIDE)
-	{
-		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
-	}
-
-	public void DICHOHBLHAH(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
-	{
-		color1 = MGHJCGBNEPL;
-		color2 = NBPMHDANECK;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public override void MCIEAOAMOIG()
-	{
-		base.OLFNCABJBHA();
+		base.BODPLDJLFCF();
 		HKIDNEAKGNO = GetComponent<Renderer>();
 		CBNKJGPOLMG = GetComponent<DynamicScale>();
 		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
 	}
 
-	public override void MFAMHKBMBEI()
+	public void OGCEBFAEBGO(Vector3 JJIJODIEBFP)
 	{
-		base.OKADMJFLMGP();
+		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+	}
+
+	public override void OIBMHPIFAKK()
+	{
+		base.LEAHIBJDMBI();
+		progress = JFCPJAELJOE.PNBDCKLMJKA();
+		HKIDNEAKGNO.material.SetColor("Warning: No Shape Curve set for CurveWaveform.cs on ", Color.Lerp(HKIDNEAKGNO.material.GetColor("_AxialAberration"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("[Steamworks.NET] DllCheck Test returned false, One or more of the Steamworks binaries seems to be the wrong version.", Color.Lerp(HKIDNEAKGNO.material.GetColor("Set particles start speed"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("PointerEnter ", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("ResetButton"), emission * 435f, Time.smoothDeltaTime * colorLerp));
+	}
+
+	public void DBDKCIDEGLA(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void CJEDMGCKHBI()
+	{
+		base.FMAFBLKAJDF();
 		HKIDNEAKGNO = GetComponent<Renderer>();
 		CBNKJGPOLMG = GetComponent<DynamicScale>();
 		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
 	}
 
-	public void GFBAGLKILDG(Vector3 JJIJODIEBFP)
+	public override void GEPELODHBFN()
 	{
-		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
+		base.POHMFMNEPKK();
+		HKIDNEAKGNO = GetComponent<Renderer>();
+		CBNKJGPOLMG = GetComponent<DynamicScale>();
+		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
+	}
+
+	public void FLOJNPNNIPA(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public void OIBBHPEIBCN(float KEDDLFDAIDE)
+	{
+		CBNKJGPOLMG.lerpSpeed = KEDDLFDAIDE;
+	}
+
+	public void ACMENOHGOKD(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public override void EPJJDKJEDMM()
+	{
+		base.LEAHIBJDMBI();
+		progress = JFCPJAELJOE.PKPBMPFIGBL();
+		HKIDNEAKGNO.material.SetColor("Saved Game: ", Color.Lerp(HKIDNEAKGNO.material.GetColor("_TimeX"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetColor("Failed to InstantiateSceneObject prefab: ", Color.Lerp(HKIDNEAKGNO.material.GetColor(".mp3"), Helpers.ColorGradient(color1, color2, progress), Time.smoothDeltaTime * colorLerp));
+		HKIDNEAKGNO.material.SetFloat("_Value4", Mathf.Lerp(HKIDNEAKGNO.material.GetFloat("_Value2"), emission * 1864f, Time.smoothDeltaTime * colorLerp));
+	}
+
+	public void BCABFMAINCH(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public void OBELOEDCBFF(Vector3 GNIJKBCHEPG)
+	{
+		CBNKJGPOLMG.minSize = GNIJKBCHEPG;
 	}
 
 	public void SetEmission(float DPNHODJHGJL)
@@ -808,34 +620,104 @@ public class SunController : EnvironmentController
 		emission = DPNHODJHGJL;
 	}
 
-	public void LGDMAKOAICA(int CDPLIMAJBGF)
+	public void DAGEPMALDFC(int CDPLIMAJBGF)
 	{
 		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
 	}
 
-	public void LPNMGHEPBKK(Vector3 JJIJODIEBFP)
+	public void MHLOFLAEADE(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public void OICBJGJMJNB(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public void LBEIGHGIMKL(int CDPLIMAJBGF)
+	{
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+	}
+
+	public void AHANBDADILD(float DPNHODJHGJL)
+	{
+		CBNKJGPOLMG.sensitivity = DPNHODJHGJL;
+	}
+
+	public void IOOEGDEGFGN(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void BNCHCHKICDA(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public void HAEJHIPADOB(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public void BCFJDLOJCAM(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public override void MFCCNPEIOGP()
+	{
+		base.BODPLDJLFCF();
+		HKIDNEAKGNO = GetComponent<Renderer>();
+		CBNKJGPOLMG = GetComponent<DynamicScale>();
+		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
+	}
+
+	public override void GEGFJJBCHPE()
+	{
+		base.FMAFBLKAJDF();
+		HKIDNEAKGNO = GetComponent<Renderer>();
+		CBNKJGPOLMG = GetComponent<DynamicScale>();
+		JFCPJAELJOE = GetComponentInParent<PlayerBase>();
+	}
+
+	public void LNJOPHINMHB(int CDPLIMAJBGF)
+	{
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+	}
+
+	public override void MNBMLBLLDGL()
+	{
+		base.Reset();
+		CBNKJGPOLMG.KOBJAEPJJJM();
+		progress = 1675f;
+		color1 = new Color(1355f, 264f, 437f);
+		color2 = new Color(1922f, 967f, 1779f);
+		colorLerp = 1705f;
+		emission = 907f;
+	}
+
+	public void CHOKKIPDAPF(Color MGHJCGBNEPL, Color NBPMHDANECK, float MNHBOECHFEG)
+	{
+		color1 = MGHJCGBNEPL;
+		color2 = NBPMHDANECK;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void CDJIHKHOJIA(int CDPLIMAJBGF)
+	{
+		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
+	}
+
+	public void JDHPAAOGKOC(Vector3 LPIMAGMABLC)
+	{
+		CBNKJGPOLMG.baseScale = LPIMAGMABLC;
+	}
+
+	public void CNFKMAINEEB(Vector3 JJIJODIEBFP)
 	{
 		CBNKJGPOLMG.maxSize = JJIJODIEBFP;
-	}
-
-	public override void OMAEOBBHHCP()
-	{
-		base.LAACNNJDKBI();
-		CBNKJGPOLMG.MANOCIJICLG();
-		progress = 619f;
-		color1 = new Color(365f, 1274f, 916f);
-		color2 = new Color(1721f, 814f, 1397f);
-		colorLerp = 1192f;
-		emission = 1377f;
-	}
-
-	public void LGFILNGJAOH(int CDPLIMAJBGF)
-	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
-	}
-
-	public void SetInput(int CDPLIMAJBGF)
-	{
-		CBNKJGPOLMG.frequencyRange = (FrequencyRange)CDPLIMAJBGF;
 	}
 }

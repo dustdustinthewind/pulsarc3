@@ -32,7 +32,7 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 
 	private void JKFDDNMPOJH()
 	{
-		SCShader = Shader.Find("turn");
+		SCShader = Shader.Find("move");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -52,7 +52,7 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 
 	private void NBGIMIDICKE()
 	{
-		SCShader = Shader.Find(". Verify the Prefab is in a Resources folder (and not in a subfolder)");
+		SCShader = Shader.Find("Failed to InstantiateSceneObject prefab: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -99,10 +99,10 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 			{
 				HBJJOCHGOPH = 279f;
 			}
-			KGOLDDBHIFN().SetFloat("#{0:00} '{1}'{2} {3}", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("SlidingArea", Width);
-			DEFBJOCJJKF().SetVector("_Extra", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1857f, 1973f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
+			NBPKMLMCHFN.SetFloat(" ", HBJJOCHGOPH);
+			KBOPGONOCNP().SetFloat("ScrollPanel", Width);
+			EPCGJFCCAFH().SetVector("_Intensity", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1857f, 1973f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -124,7 +124,7 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 
 	private void DNNFHBOOPIN()
 	{
-		SCShader = Shader.Find("%");
+		SCShader = Shader.Find("#,0");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -203,10 +203,10 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1085f;
 			}
-			KGOLDDBHIFN().SetFloat("_Amount", HBJJOCHGOPH);
-			DOHGBNPMBKG().SetFloat(" Gb", Width);
-			NBPKMLMCHFN.SetVector("_Factor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 787f, 183f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			LONNIJMNKFB().SetFloat("_Amount", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat(" Kb", Width);
+			BFGNMFCNDBC().SetVector("_Factor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 787f, 183f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -255,7 +255,7 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 
 	private void JILOMOBDPIA()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Fly_Vision");
+		SCShader = Shader.Find("CameraFilterPack_Fly_VisionFX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -271,10 +271,10 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 			{
 				HBJJOCHGOPH = 768f;
 			}
-			BFGNMFCNDBC().SetFloat("PublishButton", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("0.00", Width);
-			LONNIJMNKFB().SetVector("_Speed", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1702f, 1039f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
+			KBOPGONOCNP().SetFloat("PublishButton", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("FileMenu", Width);
+			IIJMIPBMMBF().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1702f, 1039f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -339,7 +339,7 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("CameraFilterPack/FX_Hexagon");
+		SCShader = Shader.Find("_Distortion");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -371,10 +371,10 @@ public class CameraFilterPack_Drawing_Crosshatch : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1282f;
 			}
-			LONNIJMNKFB().SetFloat("Edited unlock conditions", HBJJOCHGOPH);
-			DOHGBNPMBKG().SetFloat("A", Width);
-			KGOLDDBHIFN().SetVector("color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 130f, 222f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
+			DNLMFEGJJDD().SetFloat("OK", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("X", Width);
+			BFGNMFCNDBC().SetVector("color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 130f, 222f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{

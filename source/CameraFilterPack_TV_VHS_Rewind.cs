@@ -50,7 +50,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void IHLMNAGPKDA()
 	{
-		SCShader = Shader.Find("_VelocityScale");
+		SCShader = Shader.Find("_MaxRadiusOrKInPaper");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -93,12 +93,12 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 366f;
 			}
-			KJMECMIGJJA().SetFloat("_Far", HBJJOCHGOPH);
-			OKJOKHGJHGF().SetFloat("_Red_R", Cryptage);
-			KBOPGONOCNP().SetFloat("cmd.exe", Parasite);
-			KAFBNOBOIAJ().SetFloat("SetSatelliteSensitivity", Parasite2);
-			OKJOKHGJHGF().SetFloat("Reload Steam Inventory", FIOHJEJCGAK);
-			HKHBBBFLGJH().SetVector(".lastCheckpoint.time", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 284f, 1295f));
+			CFEDGDGBCHE().SetFloat("_Near", HBJJOCHGOPH);
+			IGKFMCPDNOI().SetFloat("_Red_R", Cryptage);
+			JFDGLLEOPGB().SetFloat("cmd.exe", Parasite);
+			JIBOKBCPDLC().SetFloat("SetSatelliteSensitivity", Parasite2);
+			BFGNMFCNDBC().SetFloat("player.xp", FIOHJEJCGAK);
+			DKKBFFHBHJE().SetVector(".lastCheckpoint.bgcolor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 284f, 1295f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -149,7 +149,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void FDNONDCGGCG()
 	{
-		SCShader = Shader.Find("roomDescription");
+		SCShader = Shader.Find("RoomDescriptionText");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -190,7 +190,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void ECBILENEOOL()
 	{
-		SCShader = Shader.Find("gameVolume");
+		SCShader = Shader.Find("editorVolume");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -199,7 +199,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void IDJKNBDKHBD()
 	{
-		SCShader = Shader.Find("USE_UV_BASED_REPROJECTION");
+		SCShader = Shader.Find("USE_CORNER_DETECTION");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -223,7 +223,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void FNCDAPDOBBI()
 	{
-		SCShader = Shader.Find("violet");
+		SCShader = Shader.Find("white");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -247,13 +247,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 875f;
 			}
-			CFEDGDGBCHE().SetFloat("#,0", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetFloat("return ", Cryptage);
-			EHDJJANLINB().SetFloat("_Value2", Parasite);
-			LPCHMEKDCHI().SetFloat("SettingsCanvas", Parasite2);
-			BFGNMFCNDBC().SetFloat("CameraFilterPack/FX_Drunk2", FIOHJEJCGAK);
-			OLHDPICFBOF().SetVector("PLEASE WAIT", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1248f, 68f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
+			LPCHMEKDCHI().SetFloat("/?player=", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat(", data: ", Cryptage);
+			LPCHMEKDCHI().SetFloat("_Value", Parasite);
+			EOCCJGIGEGJ().SetFloat("settings.volume.editor", Parasite2);
+			KJMECMIGJJA().SetFloat("_ScreenResolution", FIOHJEJCGAK);
+			OLHDPICFBOF().SetVector("Uploading content", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1248f, 68f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
 		}
 		else
 		{
@@ -286,7 +286,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void JONGNKNLLND()
 	{
-		SCShader = Shader.Find("&page=");
+		SCShader = Shader.Find("&map=");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -295,7 +295,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		SCShader = Shader.Find("action");
+		SCShader = Shader.Find("settings.volume.menu");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -323,13 +323,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 750f;
 			}
-			EHDJJANLINB().SetFloat("CameraMovementSlider", HBJJOCHGOPH);
-			HKHBBBFLGJH().SetFloat("Texture2", Cryptage);
-			NBPKMLMCHFN.SetFloat("_SSAO", Parasite);
-			CFEDGDGBCHE().SetFloat("ScrollPanel", Parasite2);
-			CEKJODEAMGB().SetFloat("SpawnObj", FIOHJEJCGAK);
-			KAFBNOBOIAJ().SetVector("_Value5", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1270f, 1855f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			EOCCJGIGEGJ().SetFloat("CameraMovementSlider", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("_ScreenResolution", Cryptage);
+			JIBOKBCPDLC().SetFloat("_TexelOffsetScale", Parasite);
+			IGKFMCPDNOI().SetFloat("MainButton", Parasite2);
+			CFEDGDGBCHE().SetFloat("SetPlayerDistance", FIOHJEJCGAK);
+			JFDGLLEOPGB().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1270f, 1855f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKHBBBFLGJH());
 		}
 		else
 		{
@@ -369,13 +369,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 898f;
 			}
-			EOCCJGIGEGJ().SetFloat("#tryagain", HBJJOCHGOPH);
-			IIJMIPBMMBF().SetFloat("_History4ChromaTex", Cryptage);
-			OKJOKHGJHGF().SetFloat("settings.hitvariation", Parasite);
-			KJMECMIGJJA().SetFloat("Have you fully accept the terms?", Parasite2);
-			NBPKMLMCHFN.SetFloat("_SprTex", FIOHJEJCGAK);
-			CFEDGDGBCHE().SetVector("OnJoinedRoom() called by PUN. Now this client is in a room. From here on, your game would be running. For reference, all callbacks are listed in enum: PhotonNetworkingMessage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 35f, 1493f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KJMECMIGJJA());
+			KJMECMIGJJA().SetFloat("#tryagain", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetFloat("_History2ChromaTex", Cryptage);
+			BFGNMFCNDBC().SetFloat("settings.cameramovements", Parasite);
+			NBPKMLMCHFN.SetFloat("/files/mods_terms.pdf", Parasite2);
+			BFGNMFCNDBC().SetFloat("BlockSize", FIOHJEJCGAK);
+			OKJOKHGJHGF().SetVector("OnJoinedLobby(). This client is connected and does get a room-list, which gets stored as PhotonNetwork.GetRoomList(). This script now calls: PhotonNetwork.JoinRandomRoom();", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 35f, 1493f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
 		}
 		else
 		{
@@ -385,7 +385,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void MMMDPANNAIO()
 	{
-		SCShader = Shader.Find("_OcclusionTexture");
+		SCShader = Shader.Find("_BlurVector");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -464,13 +464,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1002f;
 			}
-			CFCPHFMKHII().SetFloat("_Value4", HBJJOCHGOPH);
-			OKJOKHGJHGF().SetFloat("Tab1Content", Cryptage);
-			IGKFMCPDNOI().SetFloat("RestartButton", Parasite);
-			EHDJJANLINB().SetFloat("#forever", Parasite2);
-			KBOPGONOCNP().SetFloat("RecieveChatMessage", FIOHJEJCGAK);
-			OKJOKHGJHGF().SetVector(": ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 813f, 117f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
+			OLHDPICFBOF().SetFloat("_Value3", HBJJOCHGOPH);
+			OKJOKHGJHGF().SetFloat("ConfigVersionSlider", Cryptage);
+			KAFBNOBOIAJ().SetFloat("RestartButton", Parasite);
+			OKJOKHGJHGF().SetFloat("-1", Parasite2);
+			EOCCJGIGEGJ().SetFloat("RecieveChatMessage", FIOHJEJCGAK);
+			BFGNMFCNDBC().SetVector("[PlayerController] ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 813f, 117f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
 		}
 		else
 		{
@@ -487,13 +487,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 241f;
 			}
-			KJMECMIGJJA().SetFloat("LeaderboardsButton", HBJJOCHGOPH);
-			KAFBNOBOIAJ().SetFloat("127.0.0.1", Cryptage);
-			EHDJJANLINB().SetFloat("_RangeScale", Parasite);
-			JFDGLLEOPGB().SetFloat("_MainTex2", Parasite2);
-			JIBOKBCPDLC().SetFloat("Error: Cannot change the name of a remote player!", FIOHJEJCGAK);
-			NBPKMLMCHFN.SetVector("_Offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 209f, 1027f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
+			IIJMIPBMMBF().SetFloat("RateButton", HBJJOCHGOPH);
+			OKJOKHGJHGF().SetFloat("Exception while connecting to: ", Cryptage);
+			JFDGLLEOPGB().SetFloat("_BlurArea", Parasite);
+			OKJOKHGJHGF().SetFloat("_MainTex2", Parasite2);
+			IGKFMCPDNOI().SetFloat("Could not execute RPC ", FIOHJEJCGAK);
+			JIBOKBCPDLC().SetVector("_MainTex", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 209f, 1027f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
 		}
 		else
 		{
@@ -503,7 +503,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("_Value4");
+		SCShader = Shader.Find("_Value3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -519,13 +519,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1485f;
 			}
-			HKHBBBFLGJH().SetFloat("_RgbTex", HBJJOCHGOPH);
-			KJMECMIGJJA().SetFloat(": ", Cryptage);
-			BFGNMFCNDBC().SetFloat("Checkpoint", Parasite);
-			IIJMIPBMMBF().SetFloat("settings_bindings_sec_", Parasite2);
-			CFCPHFMKHII().SetFloat("In Network lobby", FIOHJEJCGAK);
-			LPCHMEKDCHI().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 569f, 1166f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			HKHBBBFLGJH().SetFloat("_", HBJJOCHGOPH);
+			CEKJODEAMGB().SetFloat("[PlayerController] ", Cryptage);
+			JFDGLLEOPGB().SetFloat("SpawnObj", Parasite);
+			LPCHMEKDCHI().SetFloat("settings_bindings_sec_", Parasite2);
+			IIJMIPBMMBF().SetFloat("ChatHistoryInputField", FIOHJEJCGAK);
+			JFDGLLEOPGB().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 569f, 1166f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
 		}
 		else
 		{
@@ -585,13 +585,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 790f;
 			}
-			JIBOKBCPDLC().SetFloat("_Value", HBJJOCHGOPH);
-			BFGNMFCNDBC().SetFloat("#close", Cryptage);
-			KBOPGONOCNP().SetFloat(",", Parasite);
-			JIBOKBCPDLC().SetFloat("Joystick1Button4", Parasite2);
-			DKKBFFHBHJE().SetFloat("_Near", FIOHJEJCGAK);
-			KJMECMIGJJA().SetVector("RarityImage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 587f, 79f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			IIJMIPBMMBF().SetFloat("_TimeX", HBJJOCHGOPH);
+			IGKFMCPDNOI().SetFloat("#tryagain", Cryptage);
+			CEKJODEAMGB().SetFloat("#", Parasite);
+			DKKBFFHBHJE().SetFloat("Joystick1Button3", Parasite2);
+			KAFBNOBOIAJ().SetFloat("_Near", FIOHJEJCGAK);
+			NBPKMLMCHFN.SetVector("ItemNameText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 587f, 79f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KJMECMIGJJA());
 		}
 		else
 		{
@@ -601,7 +601,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		SCShader = Shader.Find("maps.");
+		SCShader = Shader.Find(".lastCheckpoint.lives");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -643,13 +643,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1833f;
 			}
-			BFGNMFCNDBC().SetFloat("\n\n• ", HBJJOCHGOPH);
-			IGKFMCPDNOI().SetFloat("HPToggle", Cryptage);
-			DKKBFFHBHJE().SetFloat("ConnectToRegion: ", Parasite);
-			OLHDPICFBOF().SetFloat("UseFinalGlassColor", Parasite2);
-			JFDGLLEOPGB().SetFloat("<command>", FIOHJEJCGAK);
-			JIBOKBCPDLC().SetVector("SetSatelliteTrailWidth", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 338f, 673f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
+			NBPKMLMCHFN.SetFloat(":\n", HBJJOCHGOPH);
+			DKKBFFHBHJE().SetFloat("HPToggle", Cryptage);
+			JFDGLLEOPGB().SetFloat("ConnectToRegion() failed. Can only connect while in state 'Disconnected'. Current state: ", Parasite);
+			LPCHMEKDCHI().SetFloat("_TimeX", Parasite2);
+			DKKBFFHBHJE().SetFloat("Run a command for data system", FIOHJEJCGAK);
+			OLHDPICFBOF().SetVector("SetSatelliteRadius", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 338f, 673f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
 		}
 		else
 		{
@@ -666,13 +666,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1204f;
 			}
-			LPCHMEKDCHI().SetFloat("\nCreated by Oxy949", HBJJOCHGOPH);
-			KBOPGONOCNP().SetFloat("Player", Cryptage);
-			IGKFMCPDNOI().SetFloat("mapselector.filter.rateduponly", Parasite);
-			OKJOKHGJHGF().SetFloat("_Value", Parasite2);
-			EHDJJANLINB().SetFloat("EventSystem", FIOHJEJCGAK);
-			OKJOKHGJHGF().SetVector("player.linea", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1704f, 1779f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KJMECMIGJJA());
+			JIBOKBCPDLC().SetFloat("/files/editor_manual.pdf", HBJJOCHGOPH);
+			BFGNMFCNDBC().SetFloat("settings.hideui", Cryptage);
+			OLHDPICFBOF().SetFloat("Return: ", Parasite);
+			IGKFMCPDNOI().SetFloat("_Value", Parasite2);
+			LPCHMEKDCHI().SetFloat("PopulateMapsList", FIOHJEJCGAK);
+			IIJMIPBMMBF().SetVector("player.linea", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1704f, 1779f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKKBFFHBHJE());
 		}
 		else
 		{
@@ -695,7 +695,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void DKGBFNCOAEO()
 	{
-		SCShader = Shader.Find("_Amount");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -704,7 +704,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void JOPCCCCHNLI()
 	{
-		SCShader = Shader.Find(". Current number of cells is ");
+		SCShader = Shader.Find("OnJoinedRoom() called by PUN. Now this client is in a room. From here on, your game would be running. For reference, all callbacks are listed in enum: PhotonNetworkingMessage");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -735,13 +735,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1953f;
 			}
-			CFEDGDGBCHE().SetFloat("UI Extensions/SoftMaskShaderText", HBJJOCHGOPH);
-			OLHDPICFBOF().SetFloat("FindFriends failed to apply the result, as a required value wasn't provided or the friend list length differed from result.", Cryptage);
-			KBOPGONOCNP().SetFloat("float,10", Parasite);
-			IIJMIPBMMBF().SetFloat("SetSatelliteInput", Parasite2);
-			JIBOKBCPDLC().SetFloat("[ItemsHandler] Item not found:", FIOHJEJCGAK);
-			BFGNMFCNDBC().SetVector(" Server: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1349f, 1693f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
+			HKHBBBFLGJH().SetFloat("ShineEffect", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("JoinRandom failed: {0}.", Cryptage);
+			OKJOKHGJHGF().SetFloat("float,10", Parasite);
+			DKKBFFHBHJE().SetFloat("SetSatelliteColor", Parasite2);
+			NBPKMLMCHFN.SetFloat("inventory.itemscash", FIOHJEJCGAK);
+			HKHBBBFLGJH().SetVector("Call ConnectToNameServer to ping available regions.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1349f, 1693f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPCHMEKDCHI());
 		}
 		else
 		{
@@ -758,13 +758,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 586f;
 			}
-			OLHDPICFBOF().SetFloat("mapselector.filter.rateduponly", HBJJOCHGOPH);
-			OKJOKHGJHGF().SetFloat("CameraFilterPack/RainFX", Cryptage);
-			CFCPHFMKHII().SetFloat("steamid", Parasite);
-			KAFBNOBOIAJ().SetFloat("[DiscordController] Join ({0})", Parasite2);
-			KBOPGONOCNP().SetFloat("config.txt", FIOHJEJCGAK);
-			IIJMIPBMMBF().SetVector("[PlayerBase] Loaded music", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1078f, 596f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
+			IGKFMCPDNOI().SetFloat("mapselector.filter.rateduponly", HBJJOCHGOPH);
+			BFGNMFCNDBC().SetFloat("CameraFilterPack_RainFX_Anm", Cryptage);
+			IIJMIPBMMBF().SetFloat("#pleasewait", Parasite);
+			IIJMIPBMMBF().SetFloat("[DiscordController] Disconnect {0}: {1}", Parasite2);
+			EHDJJANLINB().SetFloat("config.txt", FIOHJEJCGAK);
+			IIJMIPBMMBF().SetVector("0", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1078f, 596f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
 		{
@@ -781,13 +781,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1573f;
 			}
-			OKJOKHGJHGF().SetFloat("Failed to 'network-remove' GameObject because has no PhotonView components: ", HBJJOCHGOPH);
-			JIBOKBCPDLC().SetFloat("_Value4", Cryptage);
-			LPCHMEKDCHI().SetFloat("_Value3", Parasite);
-			KAFBNOBOIAJ().SetFloat("#lives", Parasite2);
-			BFGNMFCNDBC().SetFloat("OpSetPropertiesOfActor not sent. ActorNr must be > 0 and actorProperties != null.", FIOHJEJCGAK);
-			IIJMIPBMMBF().SetVector("_MainTex", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1865f, 645f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
+			NBPKMLMCHFN.SetFloat("Failed to Destroy objects of playerId: ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_Value2", Cryptage);
+			OKJOKHGJHGF().SetFloat("_Value", Parasite);
+			KJMECMIGJJA().SetFloat("#score", Parasite2);
+			LPCHMEKDCHI().SetFloat("OpGetGameList not sent. Lobby cannot be null.", FIOHJEJCGAK);
+			OKJOKHGJHGF().SetVector("_SceneFogParams", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1865f, 645f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKKBFFHBHJE());
 		}
 		else
 		{
@@ -797,7 +797,7 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 
 	private void MJEFMIPLFAB()
 	{
-		SCShader = Shader.Find("SetBGColor");
+		SCShader = Shader.Find("checkpoint");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -855,13 +855,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 383f;
 			}
-			KBOPGONOCNP().SetFloat("_Speed", HBJJOCHGOPH);
-			BFGNMFCNDBC().SetFloat(" beatThreshold: ", Cryptage);
-			BFGNMFCNDBC().SetFloat("_ScreenResolution", Parasite);
-			NBPKMLMCHFN.SetFloat("CheckpointsScoreText", Parasite2);
-			OLHDPICFBOF().SetFloat("Object ID. Case-Sensitive", FIOHJEJCGAK);
-			CFCPHFMKHII().SetVector("\n", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 621f, 1465f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
+			CEKJODEAMGB().SetFloat("_Value3", HBJJOCHGOPH);
+			LPCHMEKDCHI().SetFloat(" beatThreshold: ", Cryptage);
+			EHDJJANLINB().SetFloat("_ScreenResolution", Parasite);
+			JFDGLLEOPGB().SetFloat("CheckpointsScoreText", Parasite2);
+			DKKBFFHBHJE().SetFloat("id", FIOHJEJCGAK);
+			LPCHMEKDCHI().SetVector("]", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 621f, 1465f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
 		{
@@ -906,13 +906,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 68f;
 			}
-			DKKBFFHBHJE().SetFloat("Added checkpoint", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetFloat("No Dispatcher exists in the scene. Actions will not be invoked!", Cryptage);
-			NBPKMLMCHFN.SetFloat("ShadersToggle", Parasite);
-			KBOPGONOCNP().SetFloat("settings.fps", Parasite2);
-			OKJOKHGJHGF().SetFloat("23x3", FIOHJEJCGAK);
-			CFEDGDGBCHE().SetVector("Set particles count per one beat", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1867f, 1775f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
+			KBOPGONOCNP().SetFloat("Added checkpoint", HBJJOCHGOPH);
+			KAFBNOBOIAJ().SetFloat("d264dbba9c2410771b4ad918903b3f4cd9e276a9", Cryptage);
+			NBPKMLMCHFN.SetFloat("GraphicsQualitySlider", Parasite);
+			EOCCJGIGEGJ().SetFloat("settings.shaders.bloomintencity", Parasite2);
+			CFEDGDGBCHE().SetFloat("3;4;9;10;21x6", FIOHJEJCGAK);
+			OLHDPICFBOF().SetVector("Set particles count per one beat", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1867f, 1775f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -941,13 +941,13 @@ public class CameraFilterPack_TV_VHS_Rewind : MonoBehaviour
 			{
 				HBJJOCHGOPH = 8f;
 			}
-			KAFBNOBOIAJ().SetFloat("No Dispatcher exists in the scene. Actions will not be invoked!", HBJJOCHGOPH);
-			LPCHMEKDCHI().SetFloat(" Server: ", Cryptage);
-			LPCHMEKDCHI().SetFloat("_Value", Parasite);
-			CFEDGDGBCHE().SetFloat("CameraFilterPack/Blur_Steam", Parasite2);
-			KBOPGONOCNP().SetFloat("{0} seconds ago", FIOHJEJCGAK);
-			EHDJJANLINB().SetVector("_Intensity", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 919f, 180f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KJMECMIGJJA());
+			HKHBBBFLGJH().SetFloat("No Dispatcher exists in the scene. Actions will not be invoked!", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetFloat("PUNCloudBestRegion", Cryptage);
+			EHDJJANLINB().SetFloat("_TimeX", Parasite);
+			KAFBNOBOIAJ().SetFloat("_ScreenResolution", Parasite2);
+			DKKBFFHBHJE().SetFloat("{0} seconds ago", FIOHJEJCGAK);
+			IIJMIPBMMBF().SetVector("_Noise", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 919f, 180f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{

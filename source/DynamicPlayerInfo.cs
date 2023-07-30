@@ -14,200 +14,18 @@ public class DynamicPlayerInfo : MonoBehaviour
 
 	public int currentScore;
 
-	private void HAIDEBBEDCH()
+	private void DNEKOPAJFCG()
 	{
 		currentScore = player.GetScore();
 		scoreText.text = string.Empty + currentScore;
 	}
 
-	private void DDBOODLPCAM()
+	private void AIJGAJIOJDJ()
 	{
 		if (updateInfo)
 		{
-			DALFDBJBCGB();
+			ECFOLPLIIKO();
 		}
-	}
-
-	private void HFFKGIGGNHH()
-	{
-		IJLCFBIKHML();
-	}
-
-	private void KMKLDAJLCNM()
-	{
-		if (updateInfo)
-		{
-			JCLCAIGHJLK();
-		}
-	}
-
-	private void MFMIODIAKNI()
-	{
-		if (updateInfo)
-		{
-			IBEPPHHINHC();
-		}
-	}
-
-	private void DBHPFEKDPNN()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void FBDMJMGFBJD()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void JHPOIOELNCG()
-	{
-		if (updateInfo)
-		{
-			MOEPKJPGADC();
-		}
-	}
-
-	private void PJACLBONDGL()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void NKLIHNJCHOG()
-	{
-		if (updateInfo)
-		{
-			EBLIEFFIBPO();
-		}
-	}
-
-	private void BFMEBNFGCEA()
-	{
-		JCLCAIGHJLK();
-	}
-
-	private void MOGEECNLPOD()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void DJJDGOIOCPB()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void FEJAAGGMBOE()
-	{
-		IBEPPHHINHC();
-	}
-
-	private void OCCJCGEDNEH()
-	{
-		JGNHPMKDGGD();
-	}
-
-	private void EGEGNHLODAA()
-	{
-		if (updateInfo)
-		{
-			IJLCFBIKHML();
-		}
-	}
-
-	private void OCMKCBBCEFG()
-	{
-		if (updateInfo)
-		{
-			JFPICNCJNML();
-		}
-	}
-
-	private void GEJHFEBCHLA()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void KCDOMIJBFLL()
-	{
-		if (updateInfo)
-		{
-			EBLIEFFIBPO();
-		}
-	}
-
-	private void AEEGKLABFLN()
-	{
-		if (updateInfo)
-		{
-			IJLCFBIKHML();
-		}
-	}
-
-	private void CPJHNDOBFOD()
-	{
-		EACEFOIMKDJ();
-	}
-
-	private void POIMNOBDBBN()
-	{
-		if (updateInfo)
-		{
-			JFPICNCJNML();
-		}
-	}
-
-	private void JGNHPMKDGGD()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void EOPEMLDJAAO()
-	{
-		MOGEECNLPOD();
-	}
-
-	private void HNDNDPECBPL()
-	{
-		if (updateInfo)
-		{
-			JLFPFKALLLD();
-		}
-	}
-
-	private void NDCLLNKIKKL()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void AIMNGOLPBAJ()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void PFMJPIJONIP()
-	{
-		AIMNGOLPBAJ();
-	}
-
-	private void EJFJENFKLND()
-	{
-		if (updateInfo)
-		{
-			JCLCAIGHJLK();
-		}
-	}
-
-	private void NENOGJGOIKO()
-	{
-		JLFPFKALLLD();
 	}
 
 	private void BCBLOELBFGN()
@@ -216,7 +34,278 @@ public class DynamicPlayerInfo : MonoBehaviour
 		scoreText.text = string.Empty + currentScore;
 	}
 
-	private void BDGFOMBHKDJ()
+	private void NOBNCNJKOLA()
+	{
+		MOEPKJPGADC();
+	}
+
+	private void HAIDEBBEDCH()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void FBMDHDBELEK()
+	{
+		if (updateInfo)
+		{
+			EJMFEBDEOHD();
+		}
+	}
+
+	private void LEAHIBJDMBI()
+	{
+		if (updateInfo)
+		{
+			HAIDEBBEDCH();
+		}
+	}
+
+	private void NOFFGANDGDN()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void PFMJPIJONIP()
+	{
+		HAIDEBBEDCH();
+	}
+
+	private void OCMKCBBCEFG()
+	{
+		if (updateInfo)
+		{
+			PLKEMIIJHAD();
+		}
+	}
+
+	private void NPDLLKEMIJI()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void CFKJHLOEDFO()
+	{
+		BCBLOELBFGN();
+	}
+
+	private void IMDPNFKCIEB()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void EJMFEBDEOHD()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void OCHADIJNDJK()
+	{
+		NOFFGANDGDN();
+	}
+
+	private void EPDCHKECMBL()
+	{
+		NCBPKLLGAEL();
+	}
+
+	private void JJFLHFCBENC()
+	{
+		EJMFEBDEOHD();
+	}
+
+	private void FOMNCPKKCFN()
+	{
+		if (updateInfo)
+		{
+			HAIDEBBEDCH();
+		}
+	}
+
+	private void NBHGPDAKJGF()
+	{
+		NOFFGANDGDN();
+	}
+
+	private void KOFAHOJDJKP()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void LCJHDLKJEOM()
+	{
+		if (updateInfo)
+		{
+			IDLDMEDBLKO();
+		}
+	}
+
+	private void NKLIHNJCHOG()
+	{
+		if (updateInfo)
+		{
+			JCLCAIGHJLK();
+		}
+	}
+
+	private void KMKLDAJLCNM()
+	{
+		if (updateInfo)
+		{
+			IMDPNFKCIEB();
+		}
+	}
+
+	private void BDHAJADHODN()
+	{
+		NCBPKLLGAEL();
+	}
+
+	private void IDLDMEDBLKO()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void MFMIODIAKNI()
+	{
+		if (updateInfo)
+		{
+			JFPICNCJNML();
+		}
+	}
+
+	private void HDDECCMEJKA()
+	{
+		if (updateInfo)
+		{
+			IDLDMEDBLKO();
+		}
+	}
+
+	private void Update()
+	{
+		if (updateInfo)
+		{
+			NCBPKLLGAEL();
+		}
+	}
+
+	private void LCGMHCBNCDM()
+	{
+		IHBGFEIKPAH();
+	}
+
+	private void MOEPKJPGADC()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void JDGFCEPDKAJ()
+	{
+		if (updateInfo)
+		{
+			IHBGFEIKPAH();
+		}
+	}
+
+	private void DNENFLNCIJP()
+	{
+		if (updateInfo)
+		{
+			BCBLOELBFGN();
+		}
+	}
+
+	private void FABKIGNFECE()
+	{
+		if (updateInfo)
+		{
+			MOEPKJPGADC();
+		}
+	}
+
+	private void AEEGKLABFLN()
+	{
+		if (updateInfo)
+		{
+			JFPICNCJNML();
+		}
+	}
+
+	private void NPEKHOOHNHM()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void POAMHFCOPJE()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void GCNKIJDNPMD()
+	{
+		NPEKHOOHNHM();
+	}
+
+	private void EKOAKKNGGGI()
+	{
+		NCBPKLLGAEL();
+	}
+
+	private void FECMEIJGLJI()
+	{
+		NPEKHOOHNHM();
+	}
+
+	private void KDJHONILJGK()
+	{
+		NOFFGANDGDN();
+	}
+
+	private void JCLCAIGHJLK()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void JNBPKNNBMDI()
+	{
+		if (updateInfo)
+		{
+			ECFOLPLIIKO();
+		}
+	}
+
+	private void JFPICNCJNML()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void DPIPGGDNGHN()
+	{
+		if (updateInfo)
+		{
+			PLKEMIIJHAD();
+		}
+	}
+
+	private void PLKEMIIJHAD()
+	{
+		currentScore = player.GetScore();
+		scoreText.text = string.Empty + currentScore;
+	}
+
+	private void ECFOLPLIIKO()
 	{
 		currentScore = player.GetScore();
 		scoreText.text = string.Empty + currentScore;
@@ -228,320 +317,35 @@ public class DynamicPlayerInfo : MonoBehaviour
 		scoreText.text = string.Empty + currentScore;
 	}
 
-	private void HMNLHMLILKD()
-	{
-		if (updateInfo)
-		{
-			AIMNGOLPBAJ();
-		}
-	}
-
-	private void FECMEIJGLJI()
-	{
-		EBLIEFFIBPO();
-	}
-
-	private void JCLCAIGHJLK()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void FOMNCPKKCFN()
-	{
-		if (updateInfo)
-		{
-			DALFDBJBCGB();
-		}
-	}
-
-	private void NKLNGGOHLMO()
-	{
-		EACEFOIMKDJ();
-	}
-
-	private void IJLCFBIKHML()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void EPDCHKECMBL()
-	{
-		JGNHPMKDGGD();
-	}
-
-	private void JFPICNCJNML()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
 	private void IFGOHEOEGKH()
 	{
-		HDNHCNOLICI();
+		IMDPNFKCIEB();
 	}
 
-	private void KMLHFIHIAON()
-	{
-		MOGEECNLPOD();
-	}
-
-	private void CFNDDGFGKKG()
-	{
-		JGNHPMKDGGD();
-	}
-
-	private void OCHADIJNDJK()
-	{
-		GEJHFEBCHLA();
-	}
-
-	private void DPOELEBIAOE()
-	{
-		HDNHCNOLICI();
-	}
-
-	private void HDNHCNOLICI()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void GCHFGHOGLOC()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void LILOGPDPFDA()
-	{
-		ACDEMNKNOBK();
-	}
-
-	private void IBEPPHHINHC()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void EBMNMBNJDMK()
-	{
-		AIMNGOLPBAJ();
-	}
-
-	private void JLFPFKALLLD()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void LMBDNPLDGIJ()
-	{
-		if (updateInfo)
-		{
-			DALFDBJBCGB();
-		}
-	}
-
-	private void LIKIGIHIIDL()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void ACDEMNKNOBK()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void BDHAJADHODN()
+	private void IFINBHBFCBB()
 	{
 		NCBPKLLGAEL();
 	}
 
-	private void IDIIELPAMCJ()
+	private void EJFJENFKLND()
 	{
 		if (updateInfo)
 		{
-			FNIOAPLFBFN();
+			JFPICNCJNML();
 		}
 	}
 
-	private void BBICIPNPMLL()
-	{
-		KINGMCEEMMD();
-	}
-
-	private void NKJBOAFCFOM()
+	private void IHBGFEIKPAH()
 	{
 		currentScore = player.GetScore();
 		scoreText.text = string.Empty + currentScore;
 	}
 
-	private void Update()
+	private void ONMGIPAILOH()
 	{
 		if (updateInfo)
 		{
 			NCBPKLLGAEL();
 		}
-	}
-
-	private void FBMDHDBELEK()
-	{
-		if (updateInfo)
-		{
-			MOGEECNLPOD();
-		}
-	}
-
-	private void JBCNIPJDPJB()
-	{
-		if (updateInfo)
-		{
-			GEJHFEBCHLA();
-		}
-	}
-
-	private void INMABJEEFJK()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void OPKKBMCDOEM()
-	{
-		DBHPFEKDPNN();
-	}
-
-	private void LJIHHJOAJCN()
-	{
-		if (updateInfo)
-		{
-			KINGMCEEMMD();
-		}
-	}
-
-	private void OMCLOFCJMPG()
-	{
-		if (updateInfo)
-		{
-			DJJDGOIOCPB();
-		}
-	}
-
-	private void EACEFOIMKDJ()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void BGFJOEPFOPM()
-	{
-		if (updateInfo)
-		{
-			JGNHPMKDGGD();
-		}
-	}
-
-	private void EKOAKKNGGGI()
-	{
-		JFPICNCJNML();
-	}
-
-	private void NFEDLAOPHML()
-	{
-		if (updateInfo)
-		{
-			BDGFOMBHKDJ();
-		}
-	}
-
-	private void CGBHOELMAOC()
-	{
-		if (updateInfo)
-		{
-			NDCLLNKIKKL();
-		}
-	}
-
-	private void LCJHDLKJEOM()
-	{
-		if (updateInfo)
-		{
-			NCBPKLLGAEL();
-		}
-	}
-
-	private void FNIOAPLFBFN()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void EEKAJCCELHK()
-	{
-		JGNHPMKDGGD();
-	}
-
-	private void MOEPKJPGADC()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void FCKLLMEPONC()
-	{
-		KINGMCEEMMD();
-	}
-
-	private void FIMJABKECNG()
-	{
-		LIKIGIHIIDL();
-	}
-
-	private void EFEONCCCKNP()
-	{
-		NDCLLNKIKKL();
-	}
-
-	private void AEIJFLJEABG()
-	{
-		if (updateInfo)
-		{
-			GCHFGHOGLOC();
-		}
-	}
-
-	private void KINGMCEEMMD()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void EBLIEFFIBPO()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
-	}
-
-	private void KPHPJLODFDO()
-	{
-		INMABJEEFJK();
-	}
-
-	private void LMADKINICIN()
-	{
-		if (updateInfo)
-		{
-			INMABJEEFJK();
-		}
-	}
-
-	private void DALFDBJBCGB()
-	{
-		currentScore = player.GetScore();
-		scoreText.text = string.Empty + currentScore;
 	}
 }

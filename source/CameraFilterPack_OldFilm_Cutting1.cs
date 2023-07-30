@@ -50,7 +50,7 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 	private void NCNPAKFAFOE()
 	{
 		FPHEBLMINDA = Resources.Load("Beat Detected") as Texture2D;
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -59,7 +59,7 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 
 	private void DAHFFNNIGML()
 	{
-		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_Value") as Texture2D;
 		SCShader = Shader.Find("Object ID. Case-Sensitive");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -137,8 +137,8 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
-		SCShader = Shader.Find("_TimeX");
+		FPHEBLMINDA = Resources.Load("_Value1") as Texture2D;
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -154,13 +154,13 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1098f;
 			}
-			LDNADDJMIPK().SetFloat("#close", HBJJOCHGOPH);
-			DNLMFEGJJDD().SetFloat("_ScreenResolution", Luminosity);
-			HHIFMIPPMPF().SetFloat("[MapEditor] Updating map assets", 1393f - Vignette);
-			PLBEJJIHFPB().SetFloat("ERROR You have missing MonoBehaviours on your gameobjects!", Negative);
-			PLBEJJIHFPB().SetFloat("Emergency Help:", Speed);
-			NFMGLIKNOOC().SetTexture("colorA", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			NBPKMLMCHFN.SetFloat("#tryagain", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("_Distortion", Luminosity);
+			PDEAHJPOMEF().SetFloat("/", 1393f - Vignette);
+			NBPKMLMCHFN.SetFloat(". The RPC has been ignored.", Negative);
+			PLBEJJIHFPB().SetFloat("0", Speed);
+			NBPKMLMCHFN.SetTexture("_Intensity", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -177,13 +177,13 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 56f;
 			}
-			PLBEJJIHFPB().SetFloat("stretchWidth", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("_Value4", Luminosity);
-			PLBEJJIHFPB().SetFloat("\n\n• ", 1109f - Vignette);
-			HHIFMIPPMPF().SetFloat("[PlayerController] ", Negative);
-			HHIFMIPPMPF().SetFloat("_TimeX", Speed);
+			NFMGLIKNOOC().SetFloat("tintColor", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("_Value2", Luminosity);
+			PLBEJJIHFPB().SetFloat(":\n", 1109f - Vignette);
+			HHIFMIPPMPF().SetFloat(": ", Negative);
+			NFMGLIKNOOC().SetFloat("_Val3", Speed);
 			NBPKMLMCHFN.SetTexture("_Value9", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -205,8 +205,8 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 
 	private void IHLMNAGPKDA()
 	{
-		FPHEBLMINDA = Resources.Load("_Value3") as Texture2D;
-		SCShader = Shader.Find("_Value");
+		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -238,7 +238,7 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		FPHEBLMINDA = Resources.Load("_ScreenResolution") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_Value4") as Texture2D;
 		SCShader = Shader.Find("\\");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -260,8 +260,8 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		FPHEBLMINDA = Resources.Load("No Dispatcher exists in the scene. Actions will not be invoked!") as Texture2D;
-		SCShader = Shader.Find("DPADVER");
+		FPHEBLMINDA = Resources.Load("d264dbba9c2410771b4ad918903b3f4cd9e276a9") as Texture2D;
+		SCShader = Shader.Find("DPADHOR");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -288,13 +288,13 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1751f;
 			}
-			PDEAHJPOMEF().SetFloat("FullscreenToggle", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("player.violetarc", Luminosity);
-			HHIFMIPPMPF().SetFloat("GlassAberration", 1710f - Vignette);
-			NBPKMLMCHFN.SetFloat("To {0} at Index {1} \n", Negative);
-			LDNADDJMIPK().SetFloat("[MapsData] User's maps was loaded", Speed);
-			PLBEJJIHFPB().SetTexture("_DistortionSize", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			HHIFMIPPMPF().SetFloat("SettingsCanvas", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("player.yellowarc", Luminosity);
+			LDNADDJMIPK().SetFloat("GlassDistortion", 1710f - Vignette);
+			PLBEJJIHFPB().SetFloat("\n", Negative);
+			NBPKMLMCHFN.SetFloat("/", Speed);
+			LDNADDJMIPK().SetTexture("_DistortionSize", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -329,13 +329,13 @@ public class CameraFilterPack_OldFilm_Cutting1 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1014f;
 			}
-			NBPKMLMCHFN.SetFloat("{0}", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("CameraFilterPack/FX_EarthQuake", Luminosity);
-			HHIFMIPPMPF().SetFloat("_History2Weight", 592f - Vignette);
-			DNLMFEGJJDD().SetFloat("rarity", Negative);
-			HHIFMIPPMPF().SetFloat("SetSunInput", Speed);
+			NBPKMLMCHFN.SetFloat("#discord{0}joinrequest", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("_ScreenResolution", Luminosity);
+			NFMGLIKNOOC().SetFloat("_History4ChromaTex", 592f - Vignette);
+			LDNADDJMIPK().SetFloat("RarityImage", Negative);
+			NBPKMLMCHFN.SetFloat("SetScale", Speed);
 			LDNADDJMIPK().SetTexture("_Near", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{

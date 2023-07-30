@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Split Screen/SideBySide")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Split Screen/SideBySide")]
 public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 {
 	private string ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_SplitScreen";
@@ -64,17 +64,17 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				ACHNOHCLGOO().SetTexture("_Value4", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("_Value2", JDMCFBKJHDD);
 			}
 			NBPKMLMCHFN.SetFloat("CameraFilterPack/3D_BlackHole", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat(" timeUntilRespawn: ", BlendFX);
-			LDNADDJMIPK().SetFloat("GlassAberration", SwitchCameraToCamera2);
-			ACHNOHCLGOO().SetFloat("CameraFilterPack/FX_Glitch3", SplitX);
-			ACHNOHCLGOO().SetFloat("max. lives color", SplitY);
-			ACHNOHCLGOO().SetFloat("_MainTex2", Smooth);
-			NBPKMLMCHFN.SetFloat("0.00", Rotation);
-			LDNADDJMIPK().SetInt("_TimeX", (!CONEELGCALI) ? 1 : 1);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("Unknown player asked for PickupItems", BlendFX);
+			NBPKMLMCHFN.SetFloat("GlassDistortion", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", SplitX);
+			NBPKMLMCHFN.SetFloat("max. lives color", SplitY);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/Blend2Camera_GreenScreen", Smooth);
+			NBPKMLMCHFN.SetFloat("AccuracyScoreText", Rotation);
+			LDNADDJMIPK().SetInt("CameraFilterPack/Blizzard", (!CONEELGCALI) ? 1 : 1);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -84,7 +84,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 
 	private void EMAMCDFBGOA()
 	{
-		Start();
+		NNCCPEBIAKH();
 	}
 
 	private void Update()
@@ -177,16 +177,16 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				ACHNOHCLGOO().SetTexture("_ScreenResolution", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("_ScreenResolution", JDMCFBKJHDD);
 			}
-			ACHNOHCLGOO().SetFloat("shader.future", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("a minute ago", BlendFX);
-			ACHNOHCLGOO().SetFloat("_Value4", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetFloat("/", SplitX);
-			ACHNOHCLGOO().SetFloat("GhostFade2", SplitY);
-			LDNADDJMIPK().SetFloat("_TimeX", Smooth);
-			ACHNOHCLGOO().SetFloat("skin.", Rotation);
-			LDNADDJMIPK().SetInt("#activechallenges", CONEELGCALI ? 1 : 0);
+			NBPKMLMCHFN.SetFloat("shader.future", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("{0} minutes ago", BlendFX);
+			LDNADDJMIPK().SetFloat("_Value3", SwitchCameraToCamera2);
+			ACHNOHCLGOO().SetFloat("[MapsData] Bad map: ", SplitX);
+			LDNADDJMIPK().SetFloat("GhostFade2", SplitY);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/FX_Funk", Smooth);
+			NBPKMLMCHFN.SetFloat("challenges/", Rotation);
+			ACHNOHCLGOO().SetInt("<b>", CONEELGCALI ? 1 : 0);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -212,17 +212,17 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				ACHNOHCLGOO().SetTexture("RarityImage", JDMCFBKJHDD);
+				ACHNOHCLGOO().SetTexture("ItemNameText", JDMCFBKJHDD);
 			}
-			LDNADDJMIPK().SetFloat("colorA", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_ColorBuffer", HBJJOCHGOPH);
 			ACHNOHCLGOO().SetFloat("_TimeX", BlendFX);
 			ACHNOHCLGOO().SetFloat("config.txt", SwitchCameraToCamera2);
-			ACHNOHCLGOO().SetFloat("SelectorMapsCountSlider", SplitX);
-			LDNADDJMIPK().SetFloat("_EmissionGain", SplitY);
-			ACHNOHCLGOO().SetFloat("_U", Smooth);
+			NBPKMLMCHFN.SetFloat("settings.arcshitsoundtimedelay", SplitX);
+			NBPKMLMCHFN.SetFloat("_DiffuseColor", SplitY);
+			NBPKMLMCHFN.SetFloat("_U", Smooth);
 			LDNADDJMIPK().SetFloat("Case-Sensitive", Rotation);
-			NBPKMLMCHFN.SetInt("_TimeX", (!CONEELGCALI) ? 1 : 0);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetInt("CameraFilterPack/TV_Distorted", (!CONEELGCALI) ? 1 : 0);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -298,17 +298,17 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("UsernameText", JDMCFBKJHDD);
+				ACHNOHCLGOO().SetTexture("SpectatingUserInfo", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat("InfoCanvas", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("finished", BlendFX);
-			NBPKMLMCHFN.SetFloat("ok", SwitchCameraToCamera2);
-			LDNADDJMIPK().SetFloat("musicVolume", SplitX);
-			NBPKMLMCHFN.SetFloat("Error: Someone else(", SplitY);
-			NBPKMLMCHFN.SetFloat(" isOwnerActive: ", Smooth);
-			NBPKMLMCHFN.SetFloat("[MapsEditor] Creating new item...", Rotation);
-			LDNADDJMIPK().SetInt("Right", CONEELGCALI ? 1 : 0);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			ACHNOHCLGOO().SetFloat("InfoText", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat("ResetButton", BlendFX);
+			NBPKMLMCHFN.SetFloat("bad", SwitchCameraToCamera2);
+			ACHNOHCLGOO().SetFloat("sfxVolume", SplitX);
+			NBPKMLMCHFN.SetFloat(" to: ", SplitY);
+			NBPKMLMCHFN.SetFloat(". ActorNr: ", Smooth);
+			LDNADDJMIPK().SetFloat("#yes", Rotation);
+			ACHNOHCLGOO().SetInt("GameScene", CONEELGCALI ? 1 : 0);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -343,7 +343,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 
 	private void MBNMADBPDLL()
 	{
-		NNCCPEBIAKH();
+		PAKPHKPDKGE();
 	}
 
 	private void OnEnable()
@@ -395,7 +395,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 
 	private void MHGPANIBBCM()
 	{
-		BGDPIHMAACO();
+		NNCCPEBIAKH();
 	}
 
 	private void HFNLEOLNJLF(RenderTexture AAACLELCPML, RenderTexture BGIKADHFKNF)
@@ -411,15 +411,15 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 			{
 				NBPKMLMCHFN.SetTexture("SpectateButton", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat("_ToneCurve", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", BlendFX);
-			NBPKMLMCHFN.SetFloat("_Value5", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetFloat(" could not be executed (yet). Wait for state JoinedLobby or ConnectedToMaster and their callbacks before calling operations. WebRPCs need a server-side configuration. Enum OperationCode helps identify the operation.", SplitX);
-			ACHNOHCLGOO().SetFloat("CameraFilterPack/Blend2Camera_LinearDodge", SplitY);
-			LDNADDJMIPK().SetFloat("Paste events", Smooth);
-			LDNADDJMIPK().SetFloat("player.xp", Rotation);
-			LDNADDJMIPK().SetInt("\n", (!CONEELGCALI) ? 1 : 0);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
+			NBPKMLMCHFN.SetFloat("ENABLE_EYE_ADAPTATION", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("_Value4", BlendFX);
+			LDNADDJMIPK().SetFloat("_Value4", SwitchCameraToCamera2);
+			ACHNOHCLGOO().SetFloat(". Stopping handling if inactive.", SplitX);
+			LDNADDJMIPK().SetFloat("_ScreenResolution", SplitY);
+			LDNADDJMIPK().SetFloat("bpmgrid", Smooth);
+			NBPKMLMCHFN.SetFloat("player.xp", Rotation);
+			ACHNOHCLGOO().SetInt("Needs to be attached to the Event System component in the scene", (!CONEELGCALI) ? 1 : 0);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -435,12 +435,12 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 
 	private void INGOODALACO()
 	{
-		BGDPIHMAACO();
+		JKFDDNMPOJH();
 	}
 
 	private void GBFPAEDPOPP()
 	{
-		JKFDDNMPOJH();
+		BGDPIHMAACO();
 	}
 
 	private void JKFDDNMPOJH()
@@ -505,7 +505,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen : MonoBehaviour
 
 	private void OKHGJFFIIBA()
 	{
-		Start();
+		JKFDDNMPOJH();
 	}
 
 	private void PLIKADJCEPO()

@@ -53,11 +53,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1856f;
 			}
-			BAGICADFBAB().SetFloat(" not exist", HBJJOCHGOPH);
-			OGMEGHKECAH().SetFloat("IntraSig", Distortion);
-			HHIFMIPPMPF().SetFloat("[SaveSystem] Init from ", Fade);
-			CIAFLBFJLEJ().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 503f, 554f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFCPHFMKHII());
+			HHIFMIPPMPF().SetFloat(": ", HBJJOCHGOPH);
+			CFCPHFMKHII().SetFloat("steamid", Distortion);
+			BAGICADFBAB().SetFloat("[SaveSystem] Init from ", Fade);
+			HFBJAOFLCJI().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 503f, 554f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
 		}
 		else
 		{
@@ -67,7 +67,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void PMPKMGKAAJH()
 	{
-		SCShader = Shader.Find("ItemNameText");
+		SCShader = Shader.Find("RarityImage");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -83,11 +83,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1339f;
 			}
-			NFMGLIKNOOC().SetFloat("Sequence contains no elements", HBJJOCHGOPH);
-			OLHDPICFBOF().SetFloat("RedoButton", Distortion);
-			CIAFLBFJLEJ().SetFloat(".icon", Fade);
-			CECJJMKLEAK().SetVector("settings_bindings_controller_type", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1880f, 1404f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIIDAKBILMI());
+			LPDOGGFOBDH().SetFloat("[ResourcesManager] Unloading data resources", HBJJOCHGOPH);
+			LPDOGGFOBDH().SetFloat("RedoButton", Distortion);
+			BAGICADFBAB().SetFloat(".icon", Fade);
+			NFMGLIKNOOC().SetVector("settings_bindings_sec_", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1880f, 1404f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -160,11 +160,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1591f;
 			}
-			LPDOGGFOBDH().SetFloat("BitsData", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("_Value4", Distortion);
-			OIIDAKBILMI().SetFloat("MapConfig", Fade);
-			CECJJMKLEAK().SetVector("mapselector.filter.favoriteonly", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 437f, 64f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
+			OGMEGHKECAH().SetFloat("BitsData", HBJJOCHGOPH);
+			OGMEGHKECAH().SetFloat("_Value4", Distortion);
+			IONHGBPGCHK().SetFloat("Editor", Fade);
+			OIIDAKBILMI().SetVector("mapselector.filter.subscribedonly", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 437f, 64f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -174,7 +174,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void HMPGIFBJFIK()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Value2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -240,7 +240,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void AEDDNDHCLNN()
 	{
-		SCShader = Shader.Find("PhotonServerSettings");
+		SCShader = Shader.Find("Lag ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -256,11 +256,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1771f;
 			}
-			MJJIEHANFJA().SetFloat("skin.", HBJJOCHGOPH);
-			OGMEGHKECAH().SetFloat("_TimeX", Distortion);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", Fade);
-			HNICHJCGJOC().SetVector("Tab1Content", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1376f, 1580f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
+			BAGICADFBAB().SetFloat("#close", HBJJOCHGOPH);
+			BAGICADFBAB().SetFloat("_Value", Distortion);
+			OLHDPICFBOF().SetFloat("_Distance", Fade);
+			CIAFLBFJLEJ().SetVector("LevelURLInputField", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1376f, 1580f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GHHPOGODBHB());
 		}
 		else
 		{
@@ -300,11 +300,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1093f;
 			}
-			HNICHJCGJOC().SetFloat("_TimeX", HBJJOCHGOPH);
-			GHHPOGODBHB().SetFloat("UI Extensions/UISoftAdditive", Distortion);
-			IONHGBPGCHK().SetFloat("MenuScene", Fade);
-			MHBAIEKFBIJ().SetVector("event", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1017f, 545f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
+			NBPKMLMCHFN.SetFloat("_TimeX", HBJJOCHGOPH);
+			LPDOGGFOBDH().SetFloat("Please attach component to a Graphical UI component", Distortion);
+			LPDOGGFOBDH().SetFloat("MenuScene", Fade);
+			NFKFAAHHLLM().SetVector("return ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1017f, 545f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GHHPOGODBHB());
 		}
 		else
 		{
@@ -321,11 +321,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 654f;
 			}
-			MJJIEHANFJA().SetFloat("[ItemsHandler] Loading ", HBJJOCHGOPH);
-			OGMEGHKECAH().SetFloat("_ScreenResolution", Distortion);
-			MHBAIEKFBIJ().SetFloat("maps.", Fade);
-			LPDOGGFOBDH().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 607f, 344f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BAGICADFBAB());
+			OIIDAKBILMI().SetFloat("steamid", HBJJOCHGOPH);
+			GHHPOGODBHB().SetFloat("_ScreenResolution", Distortion);
+			LPDOGGFOBDH().SetFloat("_EmissionColor", Fade);
+			BAGICADFBAB().SetVector("CameraFilterPack/3D_Shield", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 607f, 344f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
 		}
 		else
 		{
@@ -335,7 +335,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void DAHFFNNIGML()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/Oculus_NightVision2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -344,7 +344,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void JECMJNFGBGC()
 	{
-		SCShader = Shader.Find(".");
+		SCShader = Shader.Find("GO==null");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -372,7 +372,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void JFJLGJEPEAA()
 	{
-		SCShader = Shader.Find("]");
+		SCShader = Shader.Find("#craftng");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -408,11 +408,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1903f;
 			}
-			HFBJAOFLCJI().SetFloat("Editor/", HBJJOCHGOPH);
-			OIIDAKBILMI().SetFloat("Fade", Distortion);
-			OIIDAKBILMI().SetFloat("/../", Fade);
-			CIAFLBFJLEJ().SetVector("Set Particles Gravity", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 605f, 1297f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			MHBAIEKFBIJ().SetFloat("Editor/", HBJJOCHGOPH);
+			OLHDPICFBOF().SetFloat("_Value4", Distortion);
+			HHIFMIPPMPF().SetFloat("OxOD.lastPath", Fade);
+			CIAFLBFJLEJ().SetVector("SetParticlesGravity", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 605f, 1297f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MJJIEHANFJA());
 		}
 		else
 		{
@@ -441,11 +441,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 416f;
 			}
-			NBPKMLMCHFN.SetFloat("menu.playedpage", HBJJOCHGOPH);
-			CECJJMKLEAK().SetFloat("OK", Distortion);
-			HNICHJCGJOC().SetFloat("#ok", Fade);
-			MHBAIEKFBIJ().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1597f, 1279f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MHBAIEKFBIJ());
+			CECJJMKLEAK().SetFloat("menu.playedpage", HBJJOCHGOPH);
+			NFKFAAHHLLM().SetFloat("Creating new item...", Distortion);
+			HEINDEMCGIK().SetFloat("#failed!", Fade);
+			HNICHJCGJOC().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1597f, 1279f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BAGICADFBAB());
 		}
 		else
 		{
@@ -455,7 +455,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void JONGNKNLLND()
 	{
-		SCShader = Shader.Find("RarityImage");
+		SCShader = Shader.Find("ItemNameText");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -471,11 +471,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 902f;
 			}
-			OIIDAKBILMI().SetFloat("A", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("_Offsets", Distortion);
-			GJHLADDCMFF().SetFloat("Preparing configuration", Fade);
-			LPDOGGFOBDH().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 768f, 304f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GHHPOGODBHB());
+			OIIDAKBILMI().SetFloat("X", HBJJOCHGOPH);
+			OKJOKHGJHGF().SetFloat("_Screen", Distortion);
+			CIAFLBFJLEJ().SetFloat("Preparing configuration", Fade);
+			IONHGBPGCHK().SetVector("_Threshold", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 768f, 304f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -566,11 +566,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1536f;
 			}
-			LPDOGGFOBDH().SetFloat("D-Pad Up", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("HiddenToggle", Distortion);
-			IONHGBPGCHK().SetFloat("_TimeX", Fade);
-			NBPKMLMCHFN.SetVector("#accuracy", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1916f, 117f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			MHBAIEKFBIJ().SetFloat("Xbox Home", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("TwoHands", Distortion);
+			HHIFMIPPMPF().SetFloat("_TimeX", Fade);
+			IONHGBPGCHK().SetVector("#lives", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1916f, 117f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OGMEGHKECAH());
 		}
 		else
 		{
@@ -599,11 +599,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 228f;
 			}
-			BAGICADFBAB().SetFloat("#no", HBJJOCHGOPH);
-			OGMEGHKECAH().SetFloat("_TimeX", Distortion);
-			OIIDAKBILMI().SetFloat("_ScreenResolution", Fade);
-			NFKFAAHHLLM().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 63f, 591f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIIDAKBILMI());
+			HHIFMIPPMPF().SetFloat(".completed", HBJJOCHGOPH);
+			NFKFAAHHLLM().SetFloat("CameraFilterPack/Deep_OilPaintHQ", Distortion);
+			IONHGBPGCHK().SetFloat("_ScreenResolution", Fade);
+			NFMGLIKNOOC().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 63f, 591f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -622,7 +622,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void EFJDNLGNACH()
 	{
-		SCShader = Shader.Find("_DotSize");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -638,11 +638,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 985f;
 			}
-			CECJJMKLEAK().SetFloat("/", HBJJOCHGOPH);
-			HNICHJCGJOC().SetFloat("GroupNameText", Distortion);
-			CECJJMKLEAK().SetFloat("UseFinalGlassColor", Fade);
-			GJHLADDCMFF().SetVector("In Main Menu", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 613f, 59f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			NFMGLIKNOOC().SetFloat("#done", HBJJOCHGOPH);
+			GHHPOGODBHB().SetFloat("Image", Distortion);
+			NFMGLIKNOOC().SetFloat("_TimeX", Fade);
+			MJJIEHANFJA().SetVector("In Main Menu", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 613f, 59f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
 		}
 		else
 		{
@@ -652,7 +652,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void AGEJKLMJGDO()
 	{
-		SCShader = Shader.Find("Joystick1Button9");
+		SCShader = Shader.Find("View");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -680,7 +680,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("challenges.");
+		SCShader = Shader.Find(" ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -696,11 +696,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1039f;
 			}
-			CIAFLBFJLEJ().SetFloat("{}", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("misses", Distortion);
-			OIIDAKBILMI().SetFloat("Joined room ", Fade);
-			LPDOGGFOBDH().SetVector("VisionBlur", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1902f, 337f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
+			BAGICADFBAB().SetFloat("/", HBJJOCHGOPH);
+			LPDOGGFOBDH().SetFloat("score", Distortion);
+			MHBAIEKFBIJ().SetFloat(" player(s)", Fade);
+			HNICHJCGJOC().SetVector("Fade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1902f, 337f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -717,11 +717,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 57f;
 			}
-			CIAFLBFJLEJ().SetFloat(", our prefix is ", HBJJOCHGOPH);
-			NFKFAAHHLLM().SetFloat("CameraFilterPack/Vision_Hell_Blood", Distortion);
-			GJHLADDCMFF().SetFloat(" ", Fade);
-			HHIFMIPPMPF().SetVector("OPEN FILE", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 426f, 567f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
+			MJJIEHANFJA().SetFloat("\" on viewID ", HBJJOCHGOPH);
+			MHBAIEKFBIJ().SetFloat("_ScreenResolution", Distortion);
+			HHIFMIPPMPF().SetFloat(" ", Fade);
+			OGMEGHKECAH().SetVector("_LensDirt", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 426f, 567f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -742,7 +742,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void FDNONDCGGCG()
 	{
-		SCShader = Shader.Find("SAVE");
+		SCShader = Shader.Find(" Gb");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -751,7 +751,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void OHFOLGANOLC()
 	{
-		SCShader = Shader.Find("Creating awesome maps");
+		SCShader = Shader.Find("PLEASE WAIT");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -760,7 +760,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void DLBODOFAJGM()
 	{
-		SCShader = Shader.Find("_SunColor");
+		SCShader = Shader.Find("_BlurRadius4");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -769,7 +769,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void KDMKDEKCELE()
 	{
-		SCShader = Shader.Find("_FrustumCornersWS");
+		SCShader = Shader.Find("_Threshold");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -796,11 +796,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1300f;
 			}
-			MHBAIEKFBIJ().SetFloat("Image", HBJJOCHGOPH);
-			GJHLADDCMFF().SetFloat("_ScreenResolution", Distortion);
-			OGMEGHKECAH().SetFloat("[PlayerBase] New highscore", Fade);
-			CFCPHFMKHII().SetVector("inventory.selected.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 637f, 1906f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			MHBAIEKFBIJ().SetFloat("other", HBJJOCHGOPH);
+			MHBAIEKFBIJ().SetFloat("_Glitch", Distortion);
+			HHIFMIPPMPF().SetFloat("[PlayerBase] New highscore", Fade);
+			IONHGBPGCHK().SetVector(".played", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 637f, 1906f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -821,7 +821,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void COOHIILCOCO()
 	{
-		SCShader = Shader.Find("_Value2");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -838,7 +838,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("SetSatelliteRadius");
+		SCShader = Shader.Find("SetSunDirectionVector");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -898,11 +898,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1109f;
 			}
-			GHHPOGODBHB().SetFloat("yyyy-MM-dd HH:mm:ss", HBJJOCHGOPH);
-			CIAFLBFJLEJ().SetFloat(".lastCheckpoint.powerupsScore", Distortion);
-			GHHPOGODBHB().SetFloat("PS Home", Fade);
-			NFKFAAHHLLM().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 66f, 1363f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
+			CFCPHFMKHII().SetFloat("|", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat(".lastCheckpoint.incorrectScore", Distortion);
+			IONHGBPGCHK().SetFloat("Joystick1Button12", Fade);
+			OGMEGHKECAH().SetVector("CameraFilterPack/Color_Invert", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 66f, 1363f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -929,7 +929,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void EPEGAEGDJAM()
 	{
-		SCShader = Shader.Find("_SecondTex");
+		SCShader = Shader.Find("_MainTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -946,7 +946,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void JHANGPCOCIG()
 	{
-		SCShader = Shader.Find("settings.shaders");
+		SCShader = Shader.Find("settings.hideui");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -966,11 +966,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1991f;
 			}
-			CECJJMKLEAK().SetFloat("[RanksSystem] Init", HBJJOCHGOPH);
-			HEINDEMCGIK().SetFloat("PlayMusic", Distortion);
-			HEINDEMCGIK().SetFloat("-help", Fade);
-			OIIDAKBILMI().SetVector("_SecondTex", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1696f, 1339f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
+			CFCPHFMKHII().SetFloat("/", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("event", Distortion);
+			HNICHJCGJOC().SetFloat("float", Fade);
+			NFMGLIKNOOC().SetVector("_BlurCoe", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1696f, 1339f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -980,7 +980,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void ILCFPCIPENO()
 	{
-		SCShader = Shader.Find("_Value3");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1031,7 +1031,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void NBGIMIDICKE()
 	{
-		SCShader = Shader.Find("x");
+		SCShader = Shader.Find("y");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1079,11 +1079,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 784f;
 			}
-			LPDOGGFOBDH().SetFloat("ConfigVersionSlider", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("ERROR: mod directory not found!", Distortion);
-			HNICHJCGJOC().SetFloat("88f00bdf0ad61b16b803971ebe071962", Fade);
-			GHHPOGODBHB().SetVector("ItemsUploader", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 972f, 1923f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			NBPKMLMCHFN.SetFloat("Tab1Content", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("No problem found, so far", Distortion);
+			CIAFLBFJLEJ().SetFloat("Did not read byte array properly", Fade);
+			OIIDAKBILMI().SetVector("MapEditorScene", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 972f, 1923f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -1101,7 +1101,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void BMIOFJFMCBG()
 	{
-		SCShader = Shader.Find("CameraFilterPack_Paper1");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1136,11 +1136,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1303f;
 			}
-			CIAFLBFJLEJ().SetFloat("_FgOverlap", HBJJOCHGOPH);
-			OLHDPICFBOF().SetFloat("#close", Distortion);
-			HFBJAOFLCJI().SetFloat("_MaxRadiusOrKInPaper", Fade);
-			LPDOGGFOBDH().SetVector("CameraFilterPack/Colors_DarkColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1928f, 260f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			CIAFLBFJLEJ().SetFloat("_Offsets", HBJJOCHGOPH);
+			MHBAIEKFBIJ().SetFloat("#tryagain", Distortion);
+			HFBJAOFLCJI().SetFloat("_NeighbourMaxTex", Fade);
+			NBPKMLMCHFN.SetVector("_Val", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1928f, 260f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GJHLADDCMFF());
 		}
 		else
 		{
@@ -1158,7 +1158,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void NDBPCNICGLC()
 	{
-		SCShader = Shader.Find("STICKLHOR");
+		SCShader = Shader.Find("Mouse Y");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1185,11 +1185,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 590f;
 			}
-			MJJIEHANFJA().SetFloat("CameraFilterPack/Blend2Camera_Multiply", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("ControllerRightY", Distortion);
-			NFMGLIKNOOC().SetFloat("ShadersToggle", Fade);
-			NFMGLIKNOOC().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 920f, 80f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			HNICHJCGJOC().SetFloat("CameraFilterPack/Blend2Camera_Darken", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("\0\0", Distortion);
+			OLHDPICFBOF().SetFloat("GraphicsQualitySlider", Fade);
+			MHBAIEKFBIJ().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 920f, 80f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIIDAKBILMI());
 		}
 		else
 		{
@@ -1208,7 +1208,7 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 
 	private void CHOPDIGHJNH()
 	{
-		SCShader = Shader.Find("inventory.selected.");
+		SCShader = Shader.Find("21x3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1224,11 +1224,11 @@ public class CameraFilterPack_TV_PlanetMars : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1050f;
 			}
-			GHHPOGODBHB().SetFloat("_EdgeWeight", HBJJOCHGOPH);
-			MJJIEHANFJA().SetFloat("[PlayerBase] SetPlayerDistance error: ", Distortion);
-			OGMEGHKECAH().SetFloat("CameraFilterPack/Atmosphere_Fog", Fade);
-			BAGICADFBAB().SetVector("(\\[ *h1 *\\])", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1387f, 217f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			OGMEGHKECAH().SetFloat("_TimeX", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("(", Distortion);
+			HNICHJCGJOC().SetFloat("CameraFilterPack_Atmosphere_Rain_FX", Fade);
+			GJHLADDCMFF().SetVector("(\\[ *h1 *\\])", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1387f, 217f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFCPHFMKHII());
 		}
 		else
 		{

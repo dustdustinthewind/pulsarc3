@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Gradients/Tech")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Gradients/Tech")]
 public class CameraFilterPack_Gradients_Tech : MonoBehaviour
 {
 	public Shader SCShader;
@@ -98,11 +98,11 @@ public class CameraFilterPack_Gradients_Tech : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1494f;
 			}
-			NBPKMLMCHFN.SetFloat("SetSunMaxSize", HBJJOCHGOPH);
-			IIBLJCKLGFG().SetFloat("#getrewardfailed: ", Switch);
-			HFBJAOFLCJI().SetFloat("_Distortion", Fade);
-			IIBLJCKLGFG().SetVector("Search: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1244f, 37f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			IIBLJCKLGFG().SetFloat("SetSunColors", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("bad", Switch);
+			PDEAHJPOMEF().SetFloat("_TimeX", Fade);
+			IIBLJCKLGFG().SetVector("/?page=ranks", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1244f, 37f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -167,11 +167,11 @@ public class CameraFilterPack_Gradients_Tech : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1005f;
 			}
-			PDEAHJPOMEF().SetFloat("#obtained", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("PlayerPrefs::Deserialize() parameterContent has ", Switch);
-			PDEAHJPOMEF().SetFloat("\"", Fade);
-			DBOLLHHMKKN().SetVector("value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1870f, 1024f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			HFBJAOFLCJI().SetFloat("#timeuntilchallenge: ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("PlayerPrefs::Deserialize() parameterContent has ", Switch);
+			DBOLLHHMKKN().SetFloat("time", Fade);
+			HFBJAOFLCJI().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1870f, 1024f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{
@@ -247,11 +247,11 @@ public class CameraFilterPack_Gradients_Tech : MonoBehaviour
 			{
 				HBJJOCHGOPH = 908f;
 			}
-			IIBLJCKLGFG().SetFloat(".", HBJJOCHGOPH);
-			IIBLJCKLGFG().SetFloat("_ScreenResolution", Switch);
-			IIBLJCKLGFG().SetFloat("ScreenResolutionPanel", Fade);
-			NBPKMLMCHFN.SetVector("Joystick1Button3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1300f, 1891f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			NBPKMLMCHFN.SetFloat("[PlayerBase] Loaded spawner data", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("_FarCamera", Switch);
+			DBOLLHHMKKN().SetFloat("settings.selectormapsperpage", Fade);
+			NBPKMLMCHFN.SetVector("Circle", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1300f, 1891f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{
@@ -306,11 +306,11 @@ public class CameraFilterPack_Gradients_Tech : MonoBehaviour
 			{
 				HBJJOCHGOPH = 60f;
 			}
-			PDEAHJPOMEF().SetFloat("Tab2Content", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("player.licenceaccepted", Switch);
-			NBPKMLMCHFN.SetFloat("[ItemsHandler] All in-game items loaded", Fade);
-			NBPKMLMCHFN.SetVector(".png", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1827f, 1271f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			IIBLJCKLGFG().SetFloat("Tab2Content", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("NO", Switch);
+			PDEAHJPOMEF().SetFloat("itemdefid[0]", Fade);
+			DBOLLHHMKKN().SetVector("/Assets/MyImage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1827f, 1271f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -335,11 +335,11 @@ public class CameraFilterPack_Gradients_Tech : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1938f;
 			}
-			PDEAHJPOMEF().SetFloat("_EmissionColor", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("Object ID. Case-Sensitive", Switch);
-			HFBJAOFLCJI().SetFloat("_ScreenResolution", Fade);
-			IIBLJCKLGFG().SetVector("_HueShift", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1057f, 1465f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			DBOLLHHMKKN().SetFloat("_Color", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("id", Switch);
+			IIBLJCKLGFG().SetFloat("_ScreenResolution", Fade);
+			HFBJAOFLCJI().SetVector("_HueShift", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1057f, 1465f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{

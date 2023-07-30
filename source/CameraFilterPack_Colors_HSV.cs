@@ -44,10 +44,10 @@ public class CameraFilterPack_Colors_HSV : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			HHIFMIPPMPF().SetFloat("[MapsData] Bad map: ", _HueShift);
-			HHIFMIPPMPF().SetFloat("CameraFilterPack/Drawing_Manga5", _Saturation);
-			ACHNOHCLGOO().SetFloat("tagElement", _ValueBrightness);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			NBPKMLMCHFN.SetFloat("[MapsData] Caching ", _HueShift);
+			HHIFMIPPMPF().SetFloat("_DotSize", _Saturation);
+			NBPKMLMCHFN.SetFloat("tagElement", _ValueBrightness);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -152,9 +152,9 @@ public class CameraFilterPack_Colors_HSV : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			ACHNOHCLGOO().SetFloat("CameraFilterPack/TV_WideScreenHV", _HueShift);
-			ACHNOHCLGOO().SetFloat("_AOTex", _Saturation);
-			HHIFMIPPMPF().SetFloat("resource", _ValueBrightness);
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", _HueShift);
+			NBPKMLMCHFN.SetFloat("_Axis", _Saturation);
+			ACHNOHCLGOO().SetFloat("LevelNameInputField", _ValueBrightness);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else

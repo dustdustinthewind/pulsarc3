@@ -59,13 +59,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 216f;
 			}
-			EJDPNJAEAKJ().SetFloat("_ColorRGB", HBJJOCHGOPH);
-			GKILCDHJFEG().SetFloat("CameraFilterPack_Glasses_On6", _EyeWave);
-			FEAEGGCNIAA().SetFloat("IconImage", _EyeSpeed);
-			FEAEGGCNIAA().SetFloat("PopulateMapsList", _EyeMove);
-			DOHGBNPMBKG().SetFloat("_ScreenResolution", _EyeBlink);
-			ABHDNGIHBKE().SetTexture("CameraFilterPack/Blend2Camera_Saturation", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			MMOODGIODPC().SetFloat("_ColorRGB", HBJJOCHGOPH);
+			IFMAPIDFNLI().SetFloat("_MainTex2", _EyeWave);
+			LONNIJMNKFB().SetFloat("IconImage", _EyeSpeed);
+			OCHJIMJNEMO().SetFloat("1", _EyeMove);
+			EJDPNJAEAKJ().SetFloat("_Fade", _EyeBlink);
+			NBPKMLMCHFN.SetTexture("CameraFilterPack/Blend2Camera_Saturation", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
 		}
 		else
 		{
@@ -114,7 +114,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void FHGKIOOMMOH()
 	{
-		FPHEBLMINDA = Resources.Load("_TimeX") as Texture2D;
+		FPHEBLMINDA = Resources.Load("CameraFilterPack/FX_Glitch3") as Texture2D;
 		SCShader = Shader.Find("CameraFilterPack/3D_Binary");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -142,13 +142,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1787f;
 			}
-			MMOODGIODPC().SetFloat("default", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", _EyeWave);
-			NBPKMLMCHFN.SetFloat("resource id", _EyeSpeed);
-			EJDPNJAEAKJ().SetFloat("_Value4", _EyeMove);
-			HKHBBBFLGJH().SetFloat("maps.", _EyeBlink);
-			LNLKMDPHDCC().SetTexture("Crosshair1", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKHBBBFLGJH());
+			LONNIJMNKFB().SetFloat(".wav", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("_ScreenResolution", _EyeWave);
+			EJDPNJAEAKJ().SetFloat("Add Environment Sprite", _EyeSpeed);
+			EJDPNJAEAKJ().SetFloat("_Value3", _EyeMove);
+			HNICHJCGJOC().SetFloat("maps.", _EyeBlink);
+			IGIAPKPKGPK().SetTexture("Crosshair", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -181,13 +181,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 971f;
 			}
-			JLHLHKPHDFO().SetFloat("HighScaleShot", HBJJOCHGOPH);
-			FEAEGGCNIAA().SetFloat("_Offsets", _EyeWave);
-			IFMAPIDFNLI().SetFloat(".ogg", _EyeSpeed);
-			FEAEGGCNIAA().SetFloat("offline", _EyeMove);
-			HNICHJCGJOC().SetFloat("InfoButton", _EyeBlink);
-			ABHDNGIHBKE().SetTexture("workshop.", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			ABHDNGIHBKE().SetFloat("Screenshots only supported in PlayMode", HBJJOCHGOPH);
+			MMOODGIODPC().SetFloat("intensity", _EyeWave);
+			JLHLHKPHDFO().SetFloat(".mp3", _EyeSpeed);
+			HNICHJCGJOC().SetFloat(": ", _EyeMove);
+			ABHDNGIHBKE().SetFloat("InfoButton", _EyeBlink);
+			ABHDNGIHBKE().SetTexture("maps.", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OCHJIMJNEMO());
 		}
 		else
 		{
@@ -197,7 +197,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void OKLAJINHPAN()
 	{
-		FPHEBLMINDA = Resources.Load("EnvironmentSlider") as Texture2D;
+		FPHEBLMINDA = Resources.Load("HiddenToggle") as Texture2D;
 		SCShader = Shader.Find("_Contrast");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -219,7 +219,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 	private void PDHKMDBNGGN()
 	{
 		FPHEBLMINDA = Resources.Load("_Offsets") as Texture2D;
-		SCShader = Shader.Find("Gameplay/satellite");
+		SCShader = Shader.Find("Items/");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -236,8 +236,8 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		FPHEBLMINDA = Resources.Load("_Blue_R") as Texture2D;
-		SCShader = Shader.Find("_Far");
+		FPHEBLMINDA = Resources.Load("_Green_B") as Texture2D;
+		SCShader = Shader.Find("_Near");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -254,7 +254,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void JKFDDNMPOJH()
 	{
-		FPHEBLMINDA = Resources.Load("IntraTime") as Texture2D;
+		FPHEBLMINDA = Resources.Load("request") as Texture2D;
 		SCShader = Shader.Find("CameraFilterPack/Blur_DitherOffset");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -279,13 +279,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1653f;
 			}
-			LONNIJMNKFB().SetFloat("It seems some instantiation is not completed, as instantiation data is used. You should make sure instantiations are paused when calling this method. Cleaning now, despite this.", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_Value3", _EyeWave);
-			FEAEGGCNIAA().SetFloat("z", _EyeSpeed);
-			DOHGBNPMBKG().SetFloat(" Kb", _EyeMove);
-			OKJOKHGJHGF().SetFloat(". Sent by actorNr: ", _EyeBlink);
-			OKJOKHGJHGF().SetTexture("Set Crosshair Color", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
+			HKHBBBFLGJH().SetFloat("Not sending leave operation. State is not 'Joined': ", HBJJOCHGOPH);
+			EJDPNJAEAKJ().SetFloat("_Value", _EyeWave);
+			IFMAPIDFNLI().SetFloat("z", _EyeSpeed);
+			EJDPNJAEAKJ().SetFloat("#.##", _EyeMove);
+			ABHDNGIHBKE().SetFloat("Ev DestroyAll! By PlayerId: ", _EyeBlink);
+			ABHDNGIHBKE().SetTexture("Set Crosshair Color", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKHBBBFLGJH());
 		}
 		else
 		{
@@ -306,13 +306,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 12f;
 			}
-			DOHGBNPMBKG().SetFloat("_MainTex", HBJJOCHGOPH);
-			JLHLHKPHDFO().SetFloat("_AxialAberration", _EyeWave);
-			EJDPNJAEAKJ().SetFloat("_Near", _EyeSpeed);
-			GKILCDHJFEG().SetFloat("maps.", _EyeMove);
-			HNICHJCGJOC().SetFloat("_Green_B", _EyeBlink);
-			GKILCDHJFEG().SetTexture(".completed", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
+			JLHLHKPHDFO().SetFloat("_AlphaUV", HBJJOCHGOPH);
+			IGIAPKPKGPK().SetFloat("_VignetteTex", _EyeWave);
+			JLHLHKPHDFO().SetFloat("_TimeX", _EyeSpeed);
+			JLHLHKPHDFO().SetFloat("maps.", _EyeMove);
+			LONNIJMNKFB().SetFloat("_Green_G", _EyeBlink);
+			HNICHJCGJOC().SetTexture("[MapsEditor] Creating new item...", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -360,13 +360,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 616f;
 			}
-			JLHLHKPHDFO().SetFloat("_Lift", HBJJOCHGOPH);
-			IIBLJCKLGFG().SetFloat("HiddenToggle", _EyeWave);
-			OKJOKHGJHGF().SetFloat("AllocateViewID() failed. User {0} is out of subIds, as all viewIDs are used.", _EyeSpeed);
-			NBPKMLMCHFN.SetFloat("Can't set MaxPlayers when not in that room.", _EyeMove);
-			OCHJIMJNEMO().SetFloat("SetScale", _EyeBlink);
-			IFMAPIDFNLI().SetTexture("_EmissionGain", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKHBBBFLGJH());
+			HNICHJCGJOC().SetFloat("_Exposure", HBJJOCHGOPH);
+			ABHDNGIHBKE().SetFloat("tagElement", _EyeWave);
+			LNLKMDPHDCC().SetFloat("RaiseEvent() failed. Your event is not being sent! Check if your are in a Room and the eventCode must be less than 200 (0..199).", _EyeSpeed);
+			IGIAPKPKGPK().SetFloat("Can't set open when not in that room.", _EyeMove);
+			HNICHJCGJOC().SetFloat("Rotate environment object to the rotation", _EyeBlink);
+			OKJOKHGJHGF().SetTexture("[Down]", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -391,13 +391,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1904f;
 			}
-			HKHBBBFLGJH().SetFloat("UI Extensions/UIMultiply", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("Right Click", _EyeWave);
-			FEAEGGCNIAA().SetFloat("[PlayerController] ", _EyeSpeed);
-			DOHGBNPMBKG().SetFloat("Up ", _EyeMove);
-			OKJOKHGJHGF().SetFloat("Playing ", _EyeBlink);
-			ABHDNGIHBKE().SetTexture("_Value3", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
+			HFBJAOFLCJI().SetFloat("Please attach component to a Graphical UI component", HBJJOCHGOPH);
+			ABHDNGIHBKE().SetFloat("Left Click", _EyeWave);
+			ACHNOHCLGOO().SetFloat(" not exist", _EyeSpeed);
+			HNICHJCGJOC().SetFloat("Up", _EyeMove);
+			JLHLHKPHDFO().SetFloat("Playing ", _EyeBlink);
+			DOHGBNPMBKG().SetTexture("_Value3", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
 		}
 		else
 		{
@@ -422,12 +422,12 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 975f;
 			}
-			FEAEGGCNIAA().SetFloat("ERROR: preview file name is empty in modName.workshop.json", HBJJOCHGOPH);
-			FEAEGGCNIAA().SetFloat("_BaseTex", _EyeWave);
-			DOHGBNPMBKG().SetFloat("[MapsStats] Max score: ", _EyeSpeed);
+			ACHNOHCLGOO().SetFloat("ERROR: Preview file must be <1MB!", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("_SampleScale", _EyeWave);
+			IGIAPKPKGPK().SetFloat("/", _EyeSpeed);
 			FEAEGGCNIAA().SetFloat("_Value4", _EyeMove);
-			GKILCDHJFEG().SetFloat("_ScreenResolution", _EyeBlink);
-			JLHLHKPHDFO().SetTexture("Joystick1Button4", FPHEBLMINDA);
+			IIBLJCKLGFG().SetFloat("_Value2", _EyeBlink);
+			IGIAPKPKGPK().SetTexture("Joystick1Button3", FPHEBLMINDA);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
 		}
 		else
@@ -438,8 +438,8 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void EPEGAEGDJAM()
 	{
-		FPHEBLMINDA = Resources.Load("list") as Texture2D;
-		SCShader = Shader.Find("Reset 21 achievement progress");
+		FPHEBLMINDA = Resources.Load("Bad parameters for set! Use <language>") as Texture2D;
+		SCShader = Shader.Find("resetach21");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -493,13 +493,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1364f;
 			}
-			ACHNOHCLGOO().SetFloat(": ", HBJJOCHGOPH);
-			ABHDNGIHBKE().SetFloat("_BlurParams", _EyeWave);
-			DOHGBNPMBKG().SetFloat("File not found: {0}", _EyeSpeed);
-			ACHNOHCLGOO().SetFloat("_SecondTex", _EyeMove);
-			LNLKMDPHDCC().SetFloat("[MapEditor] Loaded music file: ", _EyeBlink);
-			OKJOKHGJHGF().SetTexture("_TimeX", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
+			JLHLHKPHDFO().SetFloat("[PlayerController] ", HBJJOCHGOPH);
+			IFMAPIDFNLI().SetFloat("Hidden/DepthOfField/MedianFilter", _EyeWave);
+			FEAEGGCNIAA().SetFloat("Reading preview file failed! Make sure JSON file is filled properly and/or file exists: \"{0}\"", _EyeSpeed);
+			OCHJIMJNEMO().SetFloat("_Offsets", _EyeMove);
+			OCHJIMJNEMO().SetFloat("/", _EyeBlink);
+			MMOODGIODPC().SetTexture("_MainTex2", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -569,8 +569,8 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void ODBNMPGBCGO()
 	{
-		FPHEBLMINDA = Resources.Load("#random #epic #item") as Texture2D;
-		SCShader = Shader.Find("/");
+		FPHEBLMINDA = Resources.Load("randomdrop") as Texture2D;
+		SCShader = Shader.Find("#pleasewait");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -606,13 +606,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1291f;
 			}
-			ABHDNGIHBKE().SetFloat("\n", HBJJOCHGOPH);
-			IFMAPIDFNLI().SetFloat("StartTime already set: ", _EyeWave);
-			ABHDNGIHBKE().SetFloat("_TimeX", _EyeSpeed);
-			ABHDNGIHBKE().SetFloat(" Server: ", _EyeMove);
-			MMOODGIODPC().SetFloat("_Value2", _EyeBlink);
-			IFMAPIDFNLI().SetTexture("Right Stick Click", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
+			JLHLHKPHDFO().SetFloat(": ", HBJJOCHGOPH);
+			JLHLHKPHDFO().SetFloat(": ", _EyeWave);
+			IIBLJCKLGFG().SetFloat("CameraFilterPack/FX_Glitch3", _EyeSpeed);
+			HNICHJCGJOC().SetFloat("Operation failed: ", _EyeMove);
+			EJDPNJAEAKJ().SetFloat("_Value", _EyeBlink);
+			LNLKMDPHDCC().SetTexture("Joystick1Button11", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -633,7 +633,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void KDMKDEKCELE()
 	{
-		FPHEBLMINDA = Resources.Load("Loading inventory") as Texture2D;
+		FPHEBLMINDA = Resources.Load("LoadingStatusText") as Texture2D;
 		SCShader = Shader.Find("[NetworkManager] Updating rooms...");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -647,7 +647,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void BMIOFJFMCBG()
 	{
-		FPHEBLMINDA = Resources.Load("_TimeX") as Texture2D;
+		FPHEBLMINDA = Resources.Load("CameraFilterPack/Distortion_Noise") as Texture2D;
 		SCShader = Shader.Find("EndlessLoopsScoreText");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -695,8 +695,8 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		FPHEBLMINDA = Resources.Load("[PlayerController] ") as Texture2D;
-		SCShader = Shader.Find("open");
+		FPHEBLMINDA = Resources.Load(" not exist") as Texture2D;
+		SCShader = Shader.Find("Room: '{0}' {1},{2} {4}/{3} players.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -706,7 +706,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 	private void DBEMDAJDDDA()
 	{
 		FPHEBLMINDA = Resources.Load("green") as Texture2D;
-		SCShader = Shader.Find("player.blackcat");
+		SCShader = Shader.Find("???");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -738,7 +738,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void BMOFEBKGLFI()
 	{
-		FPHEBLMINDA = Resources.Load("_HrDepthTex") as Texture2D;
+		FPHEBLMINDA = Resources.Load("offsets") as Texture2D;
 		SCShader = Shader.Find("DPADVER");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -778,13 +778,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1093f;
 			}
-			HFBJAOFLCJI().SetFloat("player.rgb", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("Case-Sensitive", _EyeWave);
-			DOHGBNPMBKG().SetFloat("float,1", _EyeSpeed);
-			ACHNOHCLGOO().SetFloat("_ScreenResolution", _EyeMove);
-			MMOODGIODPC().SetFloat("_VignettingColor", _EyeBlink);
-			MMOODGIODPC().SetTexture("_TimeX", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			EJDPNJAEAKJ().SetFloat("player.quantum", HBJJOCHGOPH);
+			IFMAPIDFNLI().SetFloat("Case-Sensitive", _EyeWave);
+			IFMAPIDFNLI().SetFloat("float,1", _EyeSpeed);
+			IGIAPKPKGPK().SetFloat("_Value2", _EyeMove);
+			ABHDNGIHBKE().SetFloat("_Vignetting2", _EyeBlink);
+			DOHGBNPMBKG().SetTexture("CameraFilterPack/Distortion_Flush", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -799,7 +799,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 	private void JDKHBGDEONK()
 	{
 		FPHEBLMINDA = Resources.Load("<b>Kick player by NetID</b>\nuse: /kick {NetID}\nUse \"/players\" command to get all NetIDs\nRoom owner only can kick the players") as Texture2D;
-		SCShader = Shader.Find(". Sent by actorNr: ");
+		SCShader = Shader.Find(") then the masterserver requests a disconnect!");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -850,13 +850,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 404f;
 			}
-			HKHBBBFLGJH().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			IFMAPIDFNLI().SetFloat("Connection error: ", _EyeWave);
-			IIBLJCKLGFG().SetFloat("hand", _EyeSpeed);
-			JLHLHKPHDFO().SetFloat("UI Extensions/UILinearDodge", _EyeMove);
-			OCHJIMJNEMO().SetFloat("Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results", _EyeBlink);
-			NBPKMLMCHFN.SetTexture("_WaveIntensity", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
+			ABHDNGIHBKE().SetFloat("_Value", HBJJOCHGOPH);
+			JLHLHKPHDFO().SetFloat("&search=", _EyeWave);
+			IIBLJCKLGFG().SetFloat("arc", _EyeSpeed);
+			MMOODGIODPC().SetFloat("UI Extensions/UI Image Crop", _EyeMove);
+			OCHJIMJNEMO().SetFloat("th", _EyeBlink);
+			DOHGBNPMBKG().SetTexture("_CenterY", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
 		}
 		else
 		{
@@ -893,7 +893,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 	private void GPNAOAKCMHC()
 	{
 		FPHEBLMINDA = Resources.Load("skin.hit_perfect") as Texture2D;
-		SCShader = Shader.Find("SetPlayerDistance");
+		SCShader = Shader.Find(".lastCheckpoint.time");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -932,13 +932,13 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1890f;
 			}
-			HNICHJCGJOC().SetFloat("event", HBJJOCHGOPH);
-			HKHBBBFLGJH().SetFloat("[GameScene] Checkpoints count: ", _EyeWave);
-			EJDPNJAEAKJ().SetFloat("Cross", _EyeSpeed);
-			MMOODGIODPC().SetFloat("UseScanLineSize", _EyeMove);
-			GKILCDHJFEG().SetFloat("GridDataStoryboard", _EyeBlink);
-			FEAEGGCNIAA().SetTexture("note.6", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
+			HFBJAOFLCJI().SetFloat("checkpoint", HBJJOCHGOPH);
+			IGIAPKPKGPK().SetFloat("Map: ", _EyeWave);
+			GKILCDHJFEG().SetFloat("Square", _EyeSpeed);
+			EJDPNJAEAKJ().SetFloat("GlassColor", _EyeMove);
+			FEAEGGCNIAA().SetFloat("GridDataStoryboard", _EyeBlink);
+			HKHBBBFLGJH().SetTexture("note.5", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EJDPNJAEAKJ());
 		}
 		else
 		{
@@ -964,8 +964,8 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void JOPCCCCHNLI()
 	{
-		FPHEBLMINDA = Resources.Load("B") as Texture2D;
-		SCShader = Shader.Find("steamid");
+		FPHEBLMINDA = Resources.Load("Joystick1Button2") as Texture2D;
+		SCShader = Shader.Find("#useticket");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -974,7 +974,7 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void COOHIILCOCO()
 	{
-		FPHEBLMINDA = Resources.Load("menutheme.hunter") as Texture2D;
+		FPHEBLMINDA = Resources.Load("player.goldbat") as Texture2D;
 		SCShader = Shader.Find("mapselector.filter.subscribedonly");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -984,8 +984,8 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void HJPCJGOEKMF()
 	{
-		FPHEBLMINDA = Resources.Load("Scene") as Texture2D;
-		SCShader = Shader.Find("CompletedLevel");
+		FPHEBLMINDA = Resources.Load("MenuVolumeSlider") as Texture2D;
+		SCShader = Shader.Find("Finished");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -994,8 +994,8 @@ public class CameraFilterPack_EyesVision_2 : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		FPHEBLMINDA = Resources.Load("_MainTex2") as Texture2D;
-		SCShader = Shader.Find("_TimeX");
+		FPHEBLMINDA = Resources.Load("CameraFilterPack/Blend2Camera_LinearBurn") as Texture2D;
+		SCShader = Shader.Find("CameraFilterPack/Colors_HUE_Rotate");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

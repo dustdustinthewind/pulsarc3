@@ -48,13 +48,13 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 406f;
 			}
-			BFGNMFCNDBC().SetFloat(".lastCheckpoint.checkpointsUsed", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("MessageText", Aberration);
-			FAIFBBGFAIB().SetFloat("CameraFilterPack/FX_Glitch1", Fade);
-			BFGNMFCNDBC().SetFloat("'{0}' \t{1}ms \t{2}", ZoomFade);
-			BFGNMFCNDBC().SetFloat("_MatrixColor", ZoomSpeed);
-			HHIFMIPPMPF().SetVector("ViewMenu", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 153f, 379f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			DEFBJOCJJKF().SetFloat(".lastCheckpoint.lives", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat("IconImage", Aberration);
+			IIJMIPBMMBF().SetFloat("_ScreenResolution", Fade);
+			IIJMIPBMMBF().SetFloat("open", ZoomFade);
+			NFMGLIKNOOC().SetFloat("_MatrixColor", ZoomSpeed);
+			DEFBJOCJJKF().SetVector("EventMenu", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 153f, 379f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -80,12 +80,12 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 698f;
 			}
-			DEFBJOCJJKF().SetFloat("_Value4", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("SetSatelliteRadius", Aberration);
-			DEFBJOCJJKF().SetFloat("DPADVER", Fade);
-			AELJLBOJAIL().SetFloat("_Value", ZoomFade);
-			OIMMPLPBLBK().SetFloat("MusicFileSelector", ZoomSpeed);
-			HHIFMIPPMPF().SetVector(". The group number should be at least 1.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 68f, 585f));
+			BFGNMFCNDBC().SetFloat("_Value2", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("SetSunSensitivity", Aberration);
+			IIJMIPBMMBF().SetFloat("DPADVER", Fade);
+			AELJLBOJAIL().SetFloat("_TimeX", ZoomFade);
+			BFGNMFCNDBC().SetFloat("MusicFileSelector", ZoomSpeed);
+			BFGNMFCNDBC().SetVector("Error: PhotonNetwork.SetInterestGroups was called with an illegal group number: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 68f, 585f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
@@ -111,13 +111,13 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 282f;
 			}
-			OIMMPLPBLBK().SetFloat("FileMenu", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Dance", Aberration);
-			OIMMPLPBLBK().SetFloat("_Amount", Fade);
-			OIMMPLPBLBK().SetFloat("#tryagain", ZoomFade);
-			HHIFMIPPMPF().SetFloat(" is muted", ZoomSpeed);
-			FAIFBBGFAIB().SetVector("Mouse Wheel Down", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1034f, 547f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
+			BFGNMFCNDBC().SetFloat("FileMenu", HBJJOCHGOPH);
+			BFGNMFCNDBC().SetFloat("Dance", Aberration);
+			HHIFMIPPMPF().SetFloat("_Amount", Fade);
+			HHIFMIPPMPF().SetFloat("#md5submitionfailed: ", ZoomFade);
+			NBPKMLMCHFN.SetFloat(" is muted", ZoomSpeed);
+			NBPKMLMCHFN.SetVector("Mouse Wheel Up", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1034f, 547f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -134,13 +134,13 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 49f;
 			}
-			AELJLBOJAIL().SetFloat("_Value7", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("\\[ *im.*\\](\\n\\n\\n|\\n\\n|\\n|)", Aberration);
-			FAIFBBGFAIB().SetFloat("_TileMaxOffs", Fade);
-			BFGNMFCNDBC().SetFloat("_TimeX", ZoomFade);
-			AELJLBOJAIL().SetFloat("Editor/", ZoomSpeed);
-			IIJMIPBMMBF().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 611f, 1874f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			DEFBJOCJJKF().SetFloat("_Value6", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("\\[ *im.*\\](\\n\\n\\n|\\n\\n|\\n|)", Aberration);
+			FAIFBBGFAIB().SetFloat("_VelocityScale", Fade);
+			FAIFBBGFAIB().SetFloat("_ScreenResolution", ZoomFade);
+			DEFBJOCJJKF().SetFloat("#alreadyexist", ZoomSpeed);
+			HHIFMIPPMPF().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 611f, 1874f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -157,12 +157,12 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 378f;
 			}
-			NBPKMLMCHFN.SetFloat("UseFinalGlassColor", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("Hidden/Fast Approximate Anti-aliasing", Aberration);
-			HHIFMIPPMPF().SetFloat(". The group number should be at least 1.", Fade);
-			HHIFMIPPMPF().SetFloat("[NetworkScene] Exited", ZoomFade);
-			HHIFMIPPMPF().SetFloat("_Bullet_12", ZoomSpeed);
-			NBPKMLMCHFN.SetVector("masterSteamID", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1983f, 388f));
+			BFGNMFCNDBC().SetFloat("_TimeX", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("_SampleCount", Aberration);
+			AELJLBOJAIL().SetFloat("Unsupported target enum: ", Fade);
+			DEFBJOCJJKF().SetFloat("[NetworkScene] Exited", ZoomFade);
+			AELJLBOJAIL().SetFloat("_Bullet_10", ZoomSpeed);
+			FAIFBBGFAIB().SetVector("roomDescription", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1983f, 388f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
 		}
 		else
@@ -181,7 +181,7 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		SCShader = Shader.Find("#onfirstranktext");
+		SCShader = Shader.Find("#close");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -229,7 +229,7 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find(",");
+		SCShader = Shader.Find("#");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -253,13 +253,13 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 726f;
 			}
-			IIJMIPBMMBF().SetFloat("MouseX", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("inventory.selected.", Aberration);
+			FAIFBBGFAIB().SetFloat("MouseY", HBJJOCHGOPH);
+			IIJMIPBMMBF().SetFloat("inventory.selected.", Aberration);
 			FAIFBBGFAIB().SetFloat("achievements.21.completed.", Fade);
-			DEFBJOCJJKF().SetFloat("_Value3", ZoomFade);
-			BFGNMFCNDBC().SetFloat("maps.", ZoomSpeed);
-			FAIFBBGFAIB().SetVector("ResetSpeed", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1853f, 1373f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
+			HHIFMIPPMPF().SetFloat("_Value2", ZoomFade);
+			HHIFMIPPMPF().SetFloat("[PlayerBase] Delete checkpoint data", ZoomSpeed);
+			BFGNMFCNDBC().SetVector("ResetSpeed", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1853f, 1373f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -300,7 +300,7 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("y");
+		SCShader = Shader.Find("float,0");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -320,7 +320,7 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		SCShader = Shader.Find(":");
+		SCShader = Shader.Find("[PlayerController] ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -352,13 +352,13 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 527f;
 			}
-			HHIFMIPPMPF().SetFloat("#timeuntilchallenge: ", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("_TimeX", Aberration);
-			HHIFMIPPMPF().SetFloat(".completed", Fade);
-			AELJLBOJAIL().SetFloat("Error in Instantiation! The resource's PhotonView count is not the same as in incoming data.", ZoomFade);
-			FAIFBBGFAIB().SetFloat("Source Object: ", ZoomSpeed);
-			NFMGLIKNOOC().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 65f, 1312f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
+			DEFBJOCJJKF().SetFloat("#reward: ", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat("_MainTex2", Aberration);
+			IIJMIPBMMBF().SetFloat("maps.", Fade);
+			HHIFMIPPMPF().SetFloat("PhotonNetwork error: Could not Instantiate the prefab [", ZoomFade);
+			BFGNMFCNDBC().SetFloat("\n", ZoomSpeed);
+			BFGNMFCNDBC().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 65f, 1312f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -368,7 +368,7 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 
 	private void DAHFFNNIGML()
 	{
-		SCShader = Shader.Find("help");
+		SCShader = Shader.Find(" ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -389,7 +389,7 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -416,13 +416,13 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1152f;
 			}
-			FAIFBBGFAIB().SetFloat("_SecondTex", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("DPADHOR", Aberration);
-			DEFBJOCJJKF().SetFloat("CameraFilterPack/FX_Dot_Circle", Fade);
-			BFGNMFCNDBC().SetFloat("_ProjInfo", ZoomFade);
-			NBPKMLMCHFN.SetFloat("Left", ZoomSpeed);
-			FAIFBBGFAIB().SetVector("_Intervale", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1361f, 1727f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			OIMMPLPBLBK().SetFloat("_Offsets", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("DPADVER", Aberration);
+			NFMGLIKNOOC().SetFloat("_ScreenResolution", Fade);
+			FAIFBBGFAIB().SetFloat("_ScreenSize", ZoomFade);
+			FAIFBBGFAIB().SetFloat("SpawnObj", ZoomSpeed);
+			HHIFMIPPMPF().SetVector("_Intervale", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1361f, 1727f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
 		}
 		else
 		{
@@ -441,7 +441,7 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 
 	private void IHLMNAGPKDA()
 	{
-		SCShader = Shader.Find("InfoCanvas");
+		SCShader = Shader.Find("\n\n• ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -457,13 +457,13 @@ public class CameraFilterPack_TV_Chromatical2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1007f;
 			}
-			NBPKMLMCHFN.SetFloat("z", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("CameraFilterPack/FX_Hypno", Aberration);
-			AELJLBOJAIL().SetFloat("_UserLutTex", Fade);
-			HHIFMIPPMPF().SetFloat("CameraFilterPack/Antialiasing_FXAA", ZoomFade);
-			NBPKMLMCHFN.SetFloat("Called GetNumberOfCurrentPlayers()", ZoomSpeed);
-			AELJLBOJAIL().SetVector("Items/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1774f, 1456f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			AELJLBOJAIL().SetFloat("z", HBJJOCHGOPH);
+			IIJMIPBMMBF().SetFloat("_ScreenResolution", Aberration);
+			DEFBJOCJJKF().SetFloat("_InternalLutTex", Fade);
+			IIJMIPBMMBF().SetFloat("CameraFilterPack/Antialiasing_FXAA", ZoomFade);
+			AELJLBOJAIL().SetFloat("*.workshop.json", ZoomSpeed);
+			NFMGLIKNOOC().SetVector("_EmissionGain", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1774f, 1456f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{

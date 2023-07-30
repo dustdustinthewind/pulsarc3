@@ -199,33 +199,21 @@ public class RoomOptions
 	}
 
 	[SpecialName]
-	public bool LBOHGHHPFMI()
+	public bool CHAEHBEJNHN()
 	{
-		return GBPAECBAHPN;
+		return MLLIIOPFKAJ;
 	}
 
 	[SpecialName]
-	public bool HBHGNEHAPIA()
+	public bool EIOBGEJHOCM()
 	{
 		return EPFOOFJNPIM;
 	}
 
 	[SpecialName]
-	public bool ECJEBNELKFP()
+	public bool GLKMHANBKKC()
 	{
-		return DPMEKEIPMFM;
-	}
-
-	[SpecialName]
-	public void HEHPFBJGOLE(byte DPNHODJHGJL)
-	{
-		MaxPlayers = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void JFLCOJAAAHL(byte DPNHODJHGJL)
-	{
-		MaxPlayers = DPNHODJHGJL;
+		return EFFHOFFPCCH;
 	}
 
 	[SpecialName]
@@ -235,147 +223,63 @@ public class RoomOptions
 	}
 
 	[SpecialName]
-	public void MEFGHDHFHNL(bool DPNHODJHGJL)
-	{
-		EPFOOFJNPIM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void KEJMAKMEEIO(bool DPNHODJHGJL)
-	{
-		EPFOOFJNPIM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void DGOPIKDODOF(bool DPNHODJHGJL)
-	{
-		EPFOOFJNPIM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void OJMMIDBGELL(bool DPNHODJHGJL)
-	{
-		EPFOOFJNPIM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool MDGPAIMFCNL()
-	{
-		return EFFHOFFPCCH;
-	}
-
-	[SpecialName]
-	public void CDADBBICKCP(string[] DPNHODJHGJL)
-	{
-		CustomRoomPropertiesForLobby = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void GIAIJHMEDJO(byte DPNHODJHGJL)
-	{
-		MaxPlayers = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void HCGCMHKDOHJ(byte DPNHODJHGJL)
-	{
-		MaxPlayers = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void FMPBOHJMDKG(byte DPNHODJHGJL)
-	{
-		MaxPlayers = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool HHOPNIBFEHA()
+	public bool ALKCGCIEJDD()
 	{
 		return EPFOOFJNPIM;
 	}
 
 	[SpecialName]
-	public byte DGHMOOLHGPE()
+	public void IMKMECPGINL(string[] DPNHODJHGJL)
 	{
-		return MaxPlayers;
+		Plugins = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void CNGIONILAON(Hashtable DPNHODJHGJL)
-	{
-		CustomRoomProperties = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void MDMKAKEHPOO(bool DPNHODJHGJL)
-	{
-		DPMEKEIPMFM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void JLJLLBLEGNG(bool DPNHODJHGJL)
-	{
-		EPFOOFJNPIM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void MCKKDKOEMBH(byte DPNHODJHGJL)
-	{
-		MaxPlayers = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public Hashtable DECFFPEEJII()
+	public Hashtable KPEBOBIIGJH()
 	{
 		return CustomRoomProperties;
 	}
 
 	[SpecialName]
-	public bool EBEPEACPIEL()
-	{
-		return GBPAECBAHPN;
-	}
-
-	[SpecialName]
-	public bool PJHKMPJNIJM()
-	{
-		return GBPAECBAHPN;
-	}
-
-	[SpecialName]
-	public string[] IFDLOJGHCDN()
+	public string[] AAKNAAFEFHL()
 	{
 		return CustomRoomPropertiesForLobby;
 	}
 
 	[SpecialName]
-	public void FLNHEIJEBGC(bool DPNHODJHGJL)
-	{
-		DPMEKEIPMFM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool KKMHCPJLBAB()
+	public bool PFCCBNPBJPC()
 	{
 		return EFFHOFFPCCH;
 	}
 
 	[SpecialName]
-	public bool OJIGPFICGKB()
+	public Hashtable KNPJCHHHIOM()
+	{
+		return CustomRoomProperties;
+	}
+
+	[SpecialName]
+	public bool IAMGOANHKPI()
 	{
 		return EGGJGMLMOBM;
 	}
 
 	[SpecialName]
-	public void BLBMMGFHOJC(bool DPNHODJHGJL)
+	public void IJKNCOCPPJJ(byte DPNHODJHGJL)
 	{
-		EFFHOFFPCCH = DPNHODJHGJL;
+		MaxPlayers = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void AKIMNODINDC(bool DPNHODJHGJL)
+	public void CGMOCMNEBHD(byte DPNHODJHGJL)
 	{
-		EFFHOFFPCCH = DPNHODJHGJL;
+		MaxPlayers = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void HABCGDMENON(bool DPNHODJHGJL)
+	{
+		EPFOOFJNPIM = DPNHODJHGJL;
 	}
 
 	[SpecialName]
@@ -385,86 +289,158 @@ public class RoomOptions
 	}
 
 	[SpecialName]
-	public void BMFNNDMOIDH(bool DPNHODJHGJL)
-	{
-		EFFHOFFPCCH = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void AEOJCMFKNCL(bool DPNHODJHGJL)
-	{
-		DPMEKEIPMFM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void FFBIJMPHLMC(bool DPNHODJHGJL)
-	{
-		EFFHOFFPCCH = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void GPDEGDKLCCF(bool DPNHODJHGJL)
-	{
-		EFFHOFFPCCH = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string[] MECJNOOACNJ()
+	public string[] KHCAIIOAKNG()
 	{
 		return Plugins;
 	}
 
 	[SpecialName]
-	public void EBGAPLEDHBF(string[] DPNHODJHGJL)
-	{
-		CustomRoomPropertiesForLobby = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string[] ICFIPCLGDKH()
-	{
-		return CustomRoomPropertiesForLobby;
-	}
-
-	[SpecialName]
-	public void BNMBDOBMHAF(bool DPNHODJHGJL)
-	{
-		DPMEKEIPMFM = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void GBDCCJIOPBL(bool DPNHODJHGJL)
+	public void PFONCLEMAGF(bool DPNHODJHGJL)
 	{
 		EFFHOFFPCCH = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public bool IHEDEHKMHOK()
+	public void EEIFJEIDCOF(bool DPNHODJHGJL)
+	{
+		GBPAECBAHPN = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void GDHKFJADAJG(byte DPNHODJHGJL)
+	{
+		MaxPlayers = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void HKIJBAAEJMF(string[] DPNHODJHGJL)
+	{
+		Plugins = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool CDMHDOGKKPN()
+	{
+		return DPMEKEIPMFM;
+	}
+
+	[SpecialName]
+	public Hashtable OPDFLMCNKFF()
+	{
+		return CustomRoomProperties;
+	}
+
+	[SpecialName]
+	public void OGCOFDPCCEJ(bool DPNHODJHGJL)
+	{
+		EFFHOFFPCCH = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool OFEOHKEEHDL()
+	{
+		return DPMEKEIPMFM;
+	}
+
+	[SpecialName]
+	public void GLDDDFKEFOM(string[] DPNHODJHGJL)
+	{
+		Plugins = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool NEOEBEGJOFH()
+	{
+		return EPFOOFJNPIM;
+	}
+
+	[SpecialName]
+	public byte MPONGJMJJAN()
+	{
+		return MaxPlayers;
+	}
+
+	[SpecialName]
+	public void HCGCMHKDOHJ(byte DPNHODJHGJL)
+	{
+		MaxPlayers = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool IAFMAKNILOP()
+	{
+		return MLLIIOPFKAJ;
+	}
+
+	[SpecialName]
+	public void FCFPMFPJDOD(string[] DPNHODJHGJL)
+	{
+		Plugins = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool GEEECIMLLBB()
+	{
+		return MLLIIOPFKAJ;
+	}
+
+	[SpecialName]
+	public void AJJKNFMPGGE(bool DPNHODJHGJL)
+	{
+		EFFHOFFPCCH = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void HEAEPFIINOL(bool DPNHODJHGJL)
+	{
+		EFFHOFFPCCH = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool AMELHAGEIDM()
 	{
 		return EFFHOFFPCCH;
 	}
 
 	[SpecialName]
-	public void IMCFFLDEACJ(bool DPNHODJHGJL)
+	public bool APLKMFHHMOF()
 	{
-		EFFHOFFPCCH = DPNHODJHGJL;
+		return EPFOOFJNPIM;
 	}
 
 	[SpecialName]
-	public void FDKMGMKONKP(Hashtable DPNHODJHGJL)
+	public void KMKMGGKJJGN(string[] DPNHODJHGJL)
 	{
-		CustomRoomProperties = DPNHODJHGJL;
+		CustomRoomPropertiesForLobby = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void GAPGGMIHHNO(bool DPNHODJHGJL)
+	public void LKBHKNAGCNE(string[] DPNHODJHGJL)
 	{
-		EFFHOFFPCCH = DPNHODJHGJL;
+		Plugins = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public bool BDEFAIOFJDI()
+	public Hashtable HBJHCPJJAOK()
 	{
-		return MLLIIOPFKAJ;
+		return CustomRoomProperties;
+	}
+
+	[SpecialName]
+	public byte GCCCABEECPP()
+	{
+		return MaxPlayers;
+	}
+
+	[SpecialName]
+	public bool MDPFAPDEGHH()
+	{
+		return GBPAECBAHPN;
+	}
+
+	[SpecialName]
+	public bool ILIDDHBKMIG()
+	{
+		return GBPAECBAHPN;
 	}
 }

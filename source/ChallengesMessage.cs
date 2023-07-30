@@ -18,279 +18,6 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 
 	public float duration = 2f;
 
-	public IEnumerator MHIIDEFFOPG(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator DAFGMNEEOJN(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator AGJLCNDGODP(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator EOAALFEALFB(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator CHAPAEBAGBG(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator JELKMEDPKCL(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator PGEHEJMPDCD(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator DNHHKBDDBGD(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator HOCOLBHKCHL(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator JOCACBLCCMM(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator AHPMEFOCDIO(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator FPCHLDCNODE(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator CLBHJILJJJB(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
 	public IEnumerator GDAILIHICED(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
@@ -312,7 +39,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator JPGPLFFIGDA(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator MHIIDEFFOPG(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -333,7 +60,70 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator DPPEKLIFMIJ(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator OFIIHLGMHLA(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator LPMANIOHNCB(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator LLDNOFEBMNO(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator KOJGICNJMHK(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -375,7 +165,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator DPCGEHNCEAA(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator EOAALFEALFB(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -396,7 +186,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator DHPELKMAAFM(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator IKIFPMPCMHM(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -417,49 +207,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator FJBFLGEKJEH(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator JNEKADPOGON(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator LPMANIOHNCB(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator CGJLEMDDPFK(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -543,7 +291,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator ShowMessage(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator JPGPLFFIGDA(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -585,133 +333,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator MFOIDBAHKOJ(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator KOJGICNJMHK(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator DEHBMACMNIG(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator FPKCOIJLBLN(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator LMCOPICBHCI(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator PJMJPHECLLL(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
-	{
-		if (!BFLLKFPPAAB.icon.StartsWith("http"))
-		{
-			string text = "challenges/" + BFLLKFPPAAB.icon;
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
-		}
-		else
-		{
-			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
-			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
-		}
-		progress.value = BFLLKFPPAAB.GetProgress();
-		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
-		message.text = COGJAGOFOKK;
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
-		yield return new WaitForSeconds(duration);
-		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
-	}
-
-	public IEnumerator CGJLEMDDPFK(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator DPPEKLIFMIJ(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -753,7 +375,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator IKIFPMPCMHM(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator DNHHKBDDBGD(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -774,7 +396,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator HJKACAHALKD(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator FPKCOIJLBLN(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -795,7 +417,7 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator OFIIHLGMHLA(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator FJBFLGEKJEH(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{
@@ -816,7 +438,196 @@ public class ChallengesMessage : Singleton<ChallengesMessage>
 		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
 	}
 
-	public IEnumerator LLDNOFEBMNO(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	public IEnumerator AGJLCNDGODP(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator FPCHLDCNODE(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator DPCGEHNCEAA(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator CLBHJILJJJB(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator JOCACBLCCMM(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator CHAPAEBAGBG(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator JELKMEDPKCL(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator ShowMessage(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator DHPELKMAAFM(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
+	{
+		if (!BFLLKFPPAAB.icon.StartsWith("http"))
+		{
+			string text = "challenges/" + BFLLKFPPAAB.icon;
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSprite("skin." + text, text));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + text);
+		}
+		else
+		{
+			yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSpriteFromURL("skin." + BFLLKFPPAAB.id + ".icon", BFLLKFPPAAB.icon));
+			icon.sprite = (Sprite)ResourcesManager.GetLoadedResource("skin." + BFLLKFPPAAB.id + ".icon");
+		}
+		progress.value = BFLLKFPPAAB.GetProgress();
+		header.text = LocalizationService.Instance.GetLocalizatedText(KMPPMPMABKI);
+		message.text = COGJAGOFOKK;
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, true));
+		yield return new WaitForSeconds(duration);
+		yield return StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(canvas, false));
+	}
+
+	public IEnumerator DAFGMNEEOJN(Challenge BFLLKFPPAAB, string KMPPMPMABKI, string COGJAGOFOKK)
 	{
 		if (!BFLLKFPPAAB.icon.StartsWith("http"))
 		{

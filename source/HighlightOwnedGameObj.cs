@@ -11,282 +11,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 
 	private Transform HAMMOHLEMGE;
 
-	private void MAOCOEGAFND()
+	private void AGMJDGHLBMN()
 	{
-		if (ACPGHFHDCIP().KCAOJFPDEIP())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void BGFJOEPFOPM()
-	{
-		if (EOOCGIFFKBG().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void DPIPGGDNGHN()
-	{
-		if (BLMHOKPIMOD().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void KCDOMIJBFLL()
-	{
-		if (GBHNDHLAJLI().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void DNENFLNCIJP()
-	{
-		if (JAEJDHHCJJO().BGJKMGJBPFA())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void IDIIELPAMCJ()
-	{
-		if (FFIPLLNKGEN().BGJKMGJBPFA())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void JDGFCEPDKAJ()
-	{
-		if (GBHNDHLAJLI().BGJKMGJBPFA())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void AIJGAJIOJDJ()
-	{
-		if (GBMJAPGLMGB().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void JHPOIOELNCG()
-	{
-		if (IBKCMBIGOEJ().BGJKMGJBPFA())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void JNBPKNNBMDI()
-	{
-		if (GBHNDHLAJLI().BGJKMGJBPFA())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void HMNLHMLILKD()
-	{
-		if (base.photonView.BGJKMGJBPFA())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void IIFCIDDJHPM()
-	{
-		if (EOOCGIFFKBG().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void LJIHHJOAJCN()
-	{
-		if (AAMNKPHHHCI().KCAOJFPDEIP())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void LLJLDLLNFBH()
-	{
-		if (BLMHOKPIMOD().KCAOJFPDEIP())
+		if (CIACEFBNDDJ().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -307,7 +34,7 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 
 	private void NDAJBJFJGCF()
 	{
-		if (AAMNKPHHHCI().BGJKMGJBPFA())
+		if (BBGIDKNEGHD().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -326,9 +53,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void EHCGBJDFMHG()
+	private void IDIIELPAMCJ()
 	{
-		if (EOOCGIFFKBG().DOLKFPIABDD())
+		if (GMAHNPNHMFK().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -347,240 +74,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void GPFJMKCGHGB()
-	{
-		if (base.photonView.KCAOJFPDEIP())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void LPMINJJPDCH()
+	private void DPIPGGDNGHN()
 	{
 		if (OELHGNKAMEG().isMine)
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void JBNPEHMDCMI()
-	{
-		if (GMAHNPNHMFK().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void KMKLDAJLCNM()
-	{
-		if (OELHGNKAMEG().isMine)
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void OEENOOGEEHD()
-	{
-		if (IBKCMBIGOEJ().BGJKMGJBPFA())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void GHILDCBCDJI()
-	{
-		if (EOOCGIFFKBG().isMine)
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void JOACBIEHHCE()
-	{
-		if (IBKCMBIGOEJ().isMine)
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void AEEGKLABFLN()
-	{
-		if (IBKCMBIGOEJ().BGJKMGJBPFA())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void CFIAKIJAILI()
-	{
-		if (AAMNKPHHHCI().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void OMCLOFCJMPG()
-	{
-		if (AAMNKPHHHCI().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void MMBPLGGLPDB()
-	{
-		if (GMAHNPNHMFK().KCAOJFPDEIP())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void NKLIHNJCHOG()
-	{
-		if (OELHGNKAMEG().KCAOJFPDEIP())
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -601,7 +97,7 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 
 	private void FABMDEHEDNO()
 	{
-		if (IBKCMBIGOEJ().BGJKMGJBPFA())
+		if (OELHGNKAMEG().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -620,9 +116,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void LEAHIBJDMBI()
+	private void KCDOMIJBFLL()
 	{
-		if (CIACEFBNDDJ().BGJKMGJBPFA())
+		if (NABDKNPNEMM().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -641,9 +137,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void JAAJECBCCFM()
+	private void FABKIGNFECE()
 	{
-		if (GBMJAPGLMGB().BGJKMGJBPFA())
+		if (DJHCJIJAIJP().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -662,9 +158,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void AEIJFLJEABG()
+	private void JDGFCEPDKAJ()
 	{
-		if (JAEJDHHCJJO().DOLKFPIABDD())
+		if (OELHGNKAMEG().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -683,9 +179,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void OCMKCBBCEFG()
+	private void JNBPKNNBMDI()
 	{
-		if (base.photonView.DOLKFPIABDD())
+		if (FFIPLLNKGEN().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -704,9 +200,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void LCJHDLKJEOM()
+	private void AAPKBNDHBLI()
 	{
-		if (BLMHOKPIMOD().KCAOJFPDEIP())
+		if (PHCBHAFMDEJ().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -725,9 +221,93 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void BMODOIJGIOO()
+	private void LJIHHJOAJCN()
 	{
-		if (EOOCGIFFKBG().BGJKMGJBPFA())
+		if (IJBFILBDGDO().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void MMBPLGGLPDB()
+	{
+		if (BBGIDKNEGHD().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void GPFJMKCGHGB()
+	{
+		if (JAEJDHHCJJO().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void FBMDHDBELEK()
+	{
+		if (EDIJKHEMPAD().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void IIFCIDDJHPM()
+	{
+		if (EDIJKHEMPAD().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -748,7 +328,616 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 
 	private void OBAEDJJDCPN()
 	{
-		if (base.photonView.DOLKFPIABDD())
+		if (IBKCMBIGOEJ().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void CFIAKIJAILI()
+	{
+		if (JDBCGCJJIAF().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void MFMIODIAKNI()
+	{
+		if (JAEJDHHCJJO().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void KMKLDAJLCNM()
+	{
+		if (IBKCMBIGOEJ().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void JBNPEHMDCMI()
+	{
+		if (GBMJAPGLMGB().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void OCMKCBBCEFG()
+	{
+		if (DJHCJIJAIJP().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void OEENOOGEEHD()
+	{
+		if (PHCBHAFMDEJ().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void EJFJENFKLND()
+	{
+		if (ACPGHFHDCIP().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void LCJHDLKJEOM()
+	{
+		if (DJHCJIJAIJP().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void MAOCOEGAFND()
+	{
+		if (JAEJDHHCJJO().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void NKLIHNJCHOG()
+	{
+		if (OELHGNKAMEG().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void FOMNCPKKCFN()
+	{
+		if (EDIJKHEMPAD().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void AIJGAJIOJDJ()
+	{
+		if (base.photonView.isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void NEKCPLGFOFD()
+	{
+		if (JIOCGDBKGIL().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void HDDECCMEJKA()
+	{
+		if (AAMNKPHHHCI().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void AEIJFLJEABG()
+	{
+		if (OELHGNKAMEG().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void LEAHIBJDMBI()
+	{
+		if (AAMNKPHHHCI().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void JOACBIEHHCE()
+	{
+		if (NABDKNPNEMM().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void HMNLHMLILKD()
+	{
+		if (JDBCGCJJIAF().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void HLDFOJMHKNL()
+	{
+		if (IJBFILBDGDO().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void ONMGIPAILOH()
+	{
+		if (BBGIDKNEGHD().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void BGDONBMDPGM()
+	{
+		if (ACPGHFHDCIP().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void BMODOIJGIOO()
+	{
+		if (IJBFILBDGDO().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void JAAJECBCCFM()
+	{
+		if (base.photonView.isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void JHPOIOELNCG()
+	{
+		if (GMAHNPNHMFK().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void LLJLDLLNFBH()
+	{
+		if (GBMJAPGLMGB().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void AEEGKLABFLN()
+	{
+		if (PHCBHAFMDEJ().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void DNENFLNCIJP()
+	{
+		if (PHCBHAFMDEJ().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void GHILDCBCDJI()
+	{
+		if (JAEJDHHCJJO().isMine)
+		{
+			if (HAMMOHLEMGE == null)
+			{
+				GameObject gameObject = Object.Instantiate(PointerPrefab);
+				gameObject.transform.parent = base.gameObject.transform;
+				HAMMOHLEMGE = gameObject.transform;
+			}
+			Vector3 position = base.gameObject.transform.position;
+			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
+			HAMMOHLEMGE.rotation = Quaternion.identity;
+		}
+		else if (HAMMOHLEMGE != null)
+		{
+			Object.Destroy(HAMMOHLEMGE.gameObject);
+			HAMMOHLEMGE = null;
+		}
+	}
+
+	private void OMCLOFCJMPG()
+	{
+		if (EOOCGIFFKBG().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -788,9 +977,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void BGDONBMDPGM()
+	private void LPMINJJPDCH()
 	{
-		if (IBKCMBIGOEJ().BGJKMGJBPFA())
+		if (IBKCMBIGOEJ().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -809,9 +998,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void FABKIGNFECE()
+	private void EHCGBJDFMHG()
 	{
-		if (OELHGNKAMEG().BGJKMGJBPFA())
+		if (ACPGHFHDCIP().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{
@@ -830,198 +1019,9 @@ public class HighlightOwnedGameObj : Photon.MonoBehaviour
 		}
 	}
 
-	private void EJFJENFKLND()
+	private void BGFJOEPFOPM()
 	{
-		if (base.photonView.KCAOJFPDEIP())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void AAPKBNDHBLI()
-	{
-		if (BLMHOKPIMOD().KCAOJFPDEIP())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void HDDECCMEJKA()
-	{
-		if (GMAHNPNHMFK().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void FOMNCPKKCFN()
-	{
-		if (FFIPLLNKGEN().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void HLDFOJMHKNL()
-	{
-		if (AAMNKPHHHCI().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void AGMJDGHLBMN()
-	{
-		if (OELHGNKAMEG().isMine)
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void FBMDHDBELEK()
-	{
-		if (JAEJDHHCJJO().isMine)
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void NEKCPLGFOFD()
-	{
-		if (BLMHOKPIMOD().DOLKFPIABDD())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void MFMIODIAKNI()
-	{
-		if (BLMHOKPIMOD().KCAOJFPDEIP())
-		{
-			if (HAMMOHLEMGE == null)
-			{
-				GameObject gameObject = Object.Instantiate(PointerPrefab);
-				gameObject.transform.parent = base.gameObject.transform;
-				HAMMOHLEMGE = gameObject.transform;
-			}
-			Vector3 position = base.gameObject.transform.position;
-			HAMMOHLEMGE.position = new Vector3(position.x, position.y + Offset, position.z);
-			HAMMOHLEMGE.rotation = Quaternion.identity;
-		}
-		else if (HAMMOHLEMGE != null)
-		{
-			Object.Destroy(HAMMOHLEMGE.gameObject);
-			HAMMOHLEMGE = null;
-		}
-	}
-
-	private void ONMGIPAILOH()
-	{
-		if (GBMJAPGLMGB().KCAOJFPDEIP())
+		if (GBMJAPGLMGB().isMine)
 		{
 			if (HAMMOHLEMGE == null)
 			{

@@ -14,63 +14,30 @@ public class DynamicPosition : MonoBehaviour
 
 	public float radius = 2f;
 
-	private void EFJDNLGNACH()
+	private void HMNLHMLILKD()
+	{
+		float num = ANAFAMFOBED() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1293f * num, 938f, 117f), Time.deltaTime * lerpSpeed);
+	}
+
+	private void Start()
 	{
 	}
 
-	private void GCHBGCGBMCK()
-	{
-		float num = FAJNJACLINK() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 382f * num, 991f, 77f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void CCLNNLCOPBL()
+	private void KMCPMOGKDEH()
 	{
 	}
 
-	private void JHPOIOELNCG()
+	private float PBDIGPCJHEL()
 	{
-		float num = MDFDIMBOMLG() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 120f * num, 884f, 1296f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float AIBNBFNJIDP()
-	{
-		if (frequencyRange == FrequencyRange.High)
+		if (frequencyRange == FrequencyRange.Bass)
 		{
 			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
 		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
+		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private void FJHFOBHJEHL()
-	{
-		float num = JLOJMMBCPFE() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 586f * num, 989f, 1193f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void CGBHOELMAOC()
-	{
-		float num = FAJNJACLINK() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 959f * num, 940f, 920f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void HNDNDPECBPL()
-	{
-		float num = EBBBIIIALMI() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 840f * num, 771f, 1801f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float EMEAIBBFGIL()
-	{
-		if (frequencyRange == FrequencyRange.Midrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void BGDPIHMAACO()
+	private void BEBNOKFLJPH()
 	{
 	}
 
@@ -78,43 +45,73 @@ public class DynamicPosition : MonoBehaviour
 	{
 	}
 
-	private void FABMDEHEDNO()
+	private void FABKIGNFECE()
 	{
-		float num = MHBNJPNBFDP() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1288f * num, 116f, 714f), Time.deltaTime * lerpSpeed);
+		float num = OGGFMBADHJN() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 836f * num, 610f, 1829f), Time.deltaTime * lerpSpeed);
 	}
 
-	private void KKLMPKLKAEM()
-	{
-		float num = KIJJMDCPELF() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 190f * num, 523f, 967f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void IKDNLHLBHID()
+	private void CIPKEPDELJB()
 	{
 	}
 
-	private void NDBPCNICGLC()
+	private void CCLNNLCOPBL()
 	{
 	}
 
-	private void LMADKINICIN()
+	private void FBMDHDBELEK()
 	{
-		float num = EFLKAHDNIKA() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1921f * num, 526f, 1077f), Time.deltaTime * lerpSpeed);
+		float num = ANJLHEHDPBF() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1038f * num, 394f, 582f), Time.deltaTime * lerpSpeed);
 	}
 
-	private void DAHFFNNIGML()
+	private float CDMDCPCCEJI()
 	{
+		if (frequencyRange == FrequencyRange.High)
+		{
+			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
+		}
+		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private void IKMELABKBHO()
+	private void LPMINJJPDCH()
+	{
+		float num = MOLMNFDBFCP() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 567f * num, 763f, 1006f), Time.deltaTime * lerpSpeed);
+	}
+
+	private void Update()
 	{
 		float num = DDJDIGFKBHH() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 760f * num, 507f, 863f), Time.deltaTime * lerpSpeed);
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1f * num, 0f, 0f), Time.deltaTime * lerpSpeed);
 	}
 
-	private float HKIJLEGJOKA()
+	private void NBGIMIDICKE()
+	{
+	}
+
+	private void JMEOGJHCONJ()
+	{
+	}
+
+	private float OGGFMBADHJN()
+	{
+		if (frequencyRange == FrequencyRange.LowMidrange)
+		{
+			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
+		}
+		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
+	}
+
+	private void DNNFHBOOPIN()
+	{
+	}
+
+	private void FANADGBGCPI()
+	{
+	}
+
+	private float FIIHFDHCLEN()
 	{
 		if (frequencyRange == FrequencyRange.Decibal)
 		{
@@ -123,21 +120,11 @@ public class DynamicPosition : MonoBehaviour
 		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private void LCHBFNIPBHB()
-	{
-		float num = LJEELNJEAHO() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1144f * num, 919f, 1527f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void PAKPHKPDKGE()
+	private void CNGAJDBOCLJ()
 	{
 	}
 
-	private void EIMNPCMHJLJ()
-	{
-	}
-
-	private float HFFLBCACMGA()
+	private float ANJLHEHDPBF()
 	{
 		if (frequencyRange == FrequencyRange.SubBase)
 		{
@@ -146,189 +133,8 @@ public class DynamicPosition : MonoBehaviour
 		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private void LDDKCCMHMIC()
+	private void IMCKJCHKMKB()
 	{
-		float num = KPCPAJAMINO() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 134f * num, 487f, 1119f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void DPLLKHHLDBB()
-	{
-	}
-
-	private float PEMIIJICHAN()
-	{
-		if (frequencyRange == FrequencyRange.VeryHigh)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void DOKAKEMDALN()
-	{
-	}
-
-	private void OKLAJINHPAN()
-	{
-	}
-
-	private void MMMDPANNAIO()
-	{
-	}
-
-	private void POIMNOBDBBN()
-	{
-		float num = FAJNJACLINK() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 347f * num, 1019f, 1640f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void LMBDNPLDGIJ()
-	{
-		float num = BBICAMNKJPO() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 445f * num, 381f, 38f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float CIJAGCCJMMC()
-	{
-		if (frequencyRange == FrequencyRange.VeryHigh)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void LFBGJIIECLD()
-	{
-	}
-
-	private void PDHKMDBNGGN()
-	{
-	}
-
-	private float FPKNKPGFNEG()
-	{
-		if (frequencyRange == FrequencyRange.SubBase)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void FGNFILLNPJK()
-	{
-		float num = GLMAIAAILID() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1679f * num, 1640f, 1361f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void FMNPFCHBLJF()
-	{
-	}
-
-	private void KCCIEMBMOBA()
-	{
-	}
-
-	private float FBDEFILNDEH()
-	{
-		if (frequencyRange == FrequencyRange.Midrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void NNFMIAFHMJM()
-	{
-	}
-
-	private float HPJKPCNNILA()
-	{
-		if (frequencyRange == FrequencyRange.Midrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private float EJGNOGBFFHN()
-	{
-		if (frequencyRange == FrequencyRange.SubBase)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void HEBOIFKBLGD()
-	{
-		float num = JLOJMMBCPFE() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 942f * num, 408f, 1496f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void ODBNMPGBCGO()
-	{
-	}
-
-	private float EBBBIIIALMI()
-	{
-		if (frequencyRange == FrequencyRange.SubBase)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void KIEJKBNBHMD()
-	{
-		float num = DDJDIGFKBHH() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1052f * num, 152f, 1664f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void HJPCJGOEKMF()
-	{
-	}
-
-	private void FIKFJDFELIP()
-	{
-	}
-
-	private float LJEELNJEAHO()
-	{
-		if (frequencyRange == FrequencyRange.UpperMidrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void COIJKMKIEAK()
-	{
-	}
-
-	private void JONGNKNLLND()
-	{
-	}
-
-	private void KCDOMIJBFLL()
-	{
-		float num = DDJDIGFKBHH() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 617f * num, 1248f, 1871f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void EDDPLJGKLKJ()
-	{
-		float num = FPKNKPGFNEG() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1465f * num, 1473f, 746f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float FAJNJACLINK()
-	{
-		if (frequencyRange == FrequencyRange.Decibal)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
 	}
 
 	private float DDJDIGFKBHH()
@@ -340,452 +146,153 @@ public class DynamicPosition : MonoBehaviour
 		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private void FOLDLDLFFLM()
+	private void EJFJENFKLND()
 	{
-		float num = DDJDIGFKBHH() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1222f * num, 1940f, 1515f), Time.deltaTime * lerpSpeed);
+		float num = ANAFAMFOBED() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1192f * num, 1283f, 1589f), Time.deltaTime * lerpSpeed);
 	}
 
-	private void JECMJNFGBGC()
+	private void AGEJKLMJGDO()
 	{
 	}
 
-	private void AKCADICOFDD()
+	private void BGFJOEPFOPM()
 	{
-		float num = KCKPBGOOEBP() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 58f * num, 846f, 119f), Time.deltaTime * lerpSpeed);
+		float num = PBDIGPCJHEL() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 856f * num, 1475f, 1398f), Time.deltaTime * lerpSpeed);
 	}
 
-	private void JBNPEHMDCMI()
+	private void PAKPHKPDKGE()
 	{
-		float num = HFFLBCACMGA() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 55f * num, 625f, 1704f), Time.deltaTime * lerpSpeed);
 	}
 
-	private void JCGMGLMADEN()
+	private void MMOKKAPFGAK()
 	{
-		float num = ABJPLACFMPK() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 360f * num, 79f, 902f), Time.deltaTime * lerpSpeed);
 	}
 
-	private float OGGFMBADHJN()
+	private float BIAMHJCOIHE()
 	{
-		if (frequencyRange == FrequencyRange.Bass)
+		if (frequencyRange == FrequencyRange.Decibal)
 		{
 			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
 		}
 		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void HPNNCNNFMGK()
-	{
-		float num = OGGFMBADHJN() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 291f * num, 1972f, 1071f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void MANDOGNJJBD()
-	{
-		float num = HPJKPCNNILA() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1030f * num, 643f, 969f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void NEKCPLGFOFD()
-	{
-		float num = FPKNKPGFNEG() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 249f * num, 570f, 656f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void PMPKMGKAAJH()
-	{
-	}
-
-	private void GPNAOAKCMHC()
-	{
-	}
-
-	private float KPCPAJAMINO()
-	{
-		if (frequencyRange == (FrequencyRange)8)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private float MHBNJPNBFDP()
-	{
-		if (frequencyRange == (FrequencyRange)8)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
 	}
 
 	private void KDMKDEKCELE()
 	{
 	}
 
-	private void BOPKKCAFODF()
+	private void JHANGPCOCIG()
 	{
 	}
 
-	private float JHDFJBCHKEJ()
+	private void CFIAKIJAILI()
 	{
-		if (frequencyRange == FrequencyRange.Bass)
+		float num = ANJLHEHDPBF() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1582f * num, 1807f, 1629f), Time.deltaTime * lerpSpeed);
+	}
+
+	private float HFKLBPPPAEI()
+	{
+		if (frequencyRange == FrequencyRange.High)
 		{
 			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
 		}
 		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private float GLMAIAAILID()
+	private void BMOFEBKGLFI()
 	{
-		if (frequencyRange == FrequencyRange.Decibal)
+	}
+
+	private void GPFJMKCGHGB()
+	{
+		float num = MOLMNFDBFCP() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1931f * num, 1580f, 915f), Time.deltaTime * lerpSpeed);
+	}
+
+	private void NKLIHNJCHOG()
+	{
+		float num = CDMDCPCCEJI() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1813f * num, 435f, 1316f), Time.deltaTime * lerpSpeed);
+	}
+
+	private void FHGKIOOMMOH()
+	{
+	}
+
+	private void JOACBIEHHCE()
+	{
+		float num = OBOLJGENPFN() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1050f * num, 179f, 1007f), Time.deltaTime * lerpSpeed);
+	}
+
+	private void ONMGIPAILOH()
+	{
+		float num = BIAMHJCOIHE() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1292f * num, 450f, 40f), Time.deltaTime * lerpSpeed);
+	}
+
+	private void FABMDEHEDNO()
+	{
+		float num = FIIHFDHCLEN() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 843f * num, 228f, 29f), Time.deltaTime * lerpSpeed);
+	}
+
+	private float OBOLJGENPFN()
+	{
+		if (frequencyRange == FrequencyRange.VeryHigh)
 		{
 			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
 		}
 		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private void EPJJDKJEDMM()
-	{
-		float num = GLMAIAAILID() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1377f * num, 1749f, 1363f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float OPBEFBAFLID()
-	{
-		if (frequencyRange == FrequencyRange.VeryHigh)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void PFNFPINPCMH()
-	{
-		float num = OJGDHHAGFGJ() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 673f * num, 11f, 1567f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void FDNONDCGGCG()
+	private void FIKFJDFELIP()
 	{
 	}
 
-	private void IEMEHGCFAPD()
-	{
-		float num = OJGDHHAGFGJ() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 514f * num, 1214f, 324f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void FNCDAPDOBBI()
-	{
-	}
-
-	private float JLOJMMBCPFE()
+	private float ANAFAMFOBED()
 	{
 		if (frequencyRange == FrequencyRange.UpperMidrange)
 		{
 			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
 		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void Update()
-	{
-		float num = DDJDIGFKBHH() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1f * num, 0f, 0f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float ABJPLACFMPK()
-	{
-		if (frequencyRange == FrequencyRange.Bass)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void LBAJLLFMMMP()
-	{
-	}
-
-	private float MGGFOLJAIGO()
-	{
-		if (frequencyRange == FrequencyRange.LowMidrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void DKGBFNCOAEO()
-	{
-	}
-
-	private void DPIPGGDNGHN()
-	{
-		float num = MGGFOLJAIGO() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1133f * num, 23f, 922f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float KPIHHJIFCGG()
-	{
-		if (frequencyRange == FrequencyRange.Bass)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private float EFLKAHDNIKA()
-	{
-		if (frequencyRange == FrequencyRange.Decibal)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
 		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private void HLIAEEMGBHN()
+	private float IFBOJAHDACO()
 	{
-	}
-
-	private float KBKFHDCKJGD()
-	{
-		if (frequencyRange == FrequencyRange.Bass)
+		if (frequencyRange == FrequencyRange.High)
 		{
 			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
 		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
+		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
 	}
 
-	private void OMCLOFCJMPG()
+	private void OCMKCBBCEFG()
 	{
-		float num = BLJCNNPGIGH() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1531f * num, 740f, 622f), Time.deltaTime * lerpSpeed);
+		float num = OBOLJGENPFN() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1951f * num, 118f, 1144f), Time.deltaTime * lerpSpeed);
 	}
 
-	private void JBCNIPJDPJB()
+	private void FHPFJBFCOOF()
 	{
-		float num = KCKPBGOOEBP() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 838f * num, 413f, 447f), Time.deltaTime * lerpSpeed);
 	}
 
-	private void HIFLPHLGLFG()
+	private void NDAJBJFJGCF()
 	{
-		float num = DDJDIGFKBHH() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 540f * num, 1236f, 1157f), Time.deltaTime * lerpSpeed);
+		float num = OBOLJGENPFN() * sensitivity;
+		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1877f * num, 105f, 1134f), Time.deltaTime * lerpSpeed);
 	}
 
-	private float DDGMGNFJBIP()
+	private float MOLMNFDBFCP()
 	{
 		if (frequencyRange == FrequencyRange.VeryHigh)
 		{
 			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
 		}
 		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void JOPCCCCHNLI()
-	{
-	}
-
-	private float KCKPBGOOEBP()
-	{
-		if (frequencyRange == FrequencyRange.Midrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void LLJLDLLNFBH()
-	{
-		float num = BLJCNNPGIGH() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1490f * num, 355f, 257f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void KDMANOEMOCA()
-	{
-	}
-
-	private void HIPEHGNBJMN()
-	{
-	}
-
-	private float OJGDHHAGFGJ()
-	{
-		if (frequencyRange == FrequencyRange.SubBase)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.FBHJCLBAGJD(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private float BLJCNNPGIGH()
-	{
-		if (frequencyRange == FrequencyRange.VeryHigh)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void BGFJOEPFOPM()
-	{
-		float num = OJGDHHAGFGJ() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1035f * num, 1948f, 941f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void MECJHOJPODB()
-	{
-		float num = KCKPBGOOEBP() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 547f * num, 1989f, 1454f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float KIJJMDCPELF()
-	{
-		if (frequencyRange == FrequencyRange.VeryHigh)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private float LOEHBOKLGAK()
-	{
-		if (frequencyRange == (FrequencyRange)8)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void DLBODOFAJGM()
-	{
-	}
-
-	private void LLDHEJIEDHO()
-	{
-		float num = HKIJLEGJOKA() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1688f * num, 1592f, 1649f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void IIFCIDDJHPM()
-	{
-		float num = JHDFJBCHKEJ() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1275f * num, 1449f, 1741f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void LJIHHJOAJCN()
-	{
-		float num = HFFLBCACMGA() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 359f * num, 32f, 1934f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void APKNAPHOFHC()
-	{
-		float num = PLOOIDGBAFN() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1315f * num, 1135f, 850f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void NBGIMIDICKE()
-	{
-	}
-
-	private void KFACDBHDAOD()
-	{
-		float num = HKIJLEGJOKA() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1504f * num, 1812f, 728f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float BBICAMNKJPO()
-	{
-		if (frequencyRange == FrequencyRange.UpperMidrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void LPMINJJPDCH()
-	{
-		float num = JHDFJBCHKEJ() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1469f * num, 1123f, 521f), Time.deltaTime * lerpSpeed);
-	}
-
-	private float MDFDIMBOMLG()
-	{
-		if (frequencyRange == FrequencyRange.LowMidrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.ADDDJBDBFBJ(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private float BMBNPLGBPEL()
-	{
-		if (frequencyRange == FrequencyRange.SubBase)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private float PLOOIDGBAFN()
-	{
-		if (frequencyRange == FrequencyRange.Midrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void NFEDLAOPHML()
-	{
-		float num = MDFDIMBOMLG() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1262f * num, 244f, 449f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void LCJHDLKJEOM()
-	{
-		float num = HFFLBCACMGA() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1712f * num, 1018f, 1549f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void DFFKKLAPHCC()
-	{
-	}
-
-	private void FEHCNJLLJMP()
-	{
-	}
-
-	private float EFAHDNONPOL()
-	{
-		if (frequencyRange == FrequencyRange.Midrange)
-		{
-			return AudioSampler.instance.GetRMS(audioSource) * sensitivity;
-		}
-		return AudioSampler.instance.GetFrequencyVol(audioSource, frequencyRange) * sensitivity;
-	}
-
-	private void FJNCHGLIEMA()
-	{
-	}
-
-	private void LBPCODPOJAH()
-	{
-		float num = DDGMGNFJBIP() * sensitivity;
-		base.transform.localPosition = Vector3.Lerp(base.transform.localPosition, new Vector3(radius + 1493f * num, 93f, 74f), Time.deltaTime * lerpSpeed);
-	}
-
-	private void HAIAHJPCPAG()
-	{
-	}
-
-	private void Start()
-	{
 	}
 }

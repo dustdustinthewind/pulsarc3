@@ -18,14 +18,9 @@ public class ChallengesManager : Singleton<ChallengesManager>
 
 		internal string[] BDGDDFKKGGA;
 
-		internal bool GMLFBOMLINM(Challenge IACGDFHKCAE)
+		internal bool NLALPCHCOPE(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.ALBJAEBLABB() == ulong.Parse(BDGDDFKKGGA[1]);
-		}
-
-		internal bool PHFMMNELDEA(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.HJCBNLFCNAM() == ulong.Parse(BDGDDFKKGGA[3]);
+			return IACGDFHKCAE.id == ulong.Parse(BDGDDFKKGGA[4]);
 		}
 
 		internal bool GBKBDKHPLKG(Challenge IACGDFHKCAE)
@@ -33,34 +28,29 @@ public class ChallengesManager : Singleton<ChallengesManager>
 			return IACGDFHKCAE.id == DBBLOPNANJE;
 		}
 
-		internal bool NLALPCHCOPE(Challenge IACGDFHKCAE)
+		internal bool PBCAHKDLFPE(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.AKJKDMMKNFO() == ulong.Parse(BDGDDFKKGGA[3]);
+			return IACGDFHKCAE.id == DBBLOPNANJE;
 		}
 
-		internal bool AEINPAGJFME(Challenge IACGDFHKCAE)
+		internal bool BFEABMIFIEE(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.PHCHLPBPKHL() == DBBLOPNANJE;
+			return IACGDFHKCAE.BGIOHLIFHND() == DBBLOPNANJE;
 		}
 
-		internal bool LOEAMHGMMPK(Challenge IACGDFHKCAE)
+		internal bool MEMPOPNAEDN(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.IKACPLICNNB() == DBBLOPNANJE;
+			return IACGDFHKCAE.OFGNFACIGIL() == DBBLOPNANJE;
 		}
 
-		internal bool LLNDDFGPOPL(Challenge IACGDFHKCAE)
+		internal bool KFNPHCCAJFD(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.ALBJAEBLABB() == DBBLOPNANJE;
+			return IACGDFHKCAE.ENDOGIJIIMN() == ulong.Parse(BDGDDFKKGGA[4]);
 		}
 
-		internal bool JPGFOBNOBKN(Challenge IACGDFHKCAE)
+		internal bool BKNHHGBPLGH(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.KHCJFLGCAFL() == ulong.Parse(BDGDDFKKGGA[0]);
-		}
-
-		internal bool FBGMHPEEIFC(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.IKACPLICNNB() == ulong.Parse(BDGDDFKKGGA[8]);
+			return IACGDFHKCAE.id == DBBLOPNANJE;
 		}
 
 		internal bool HMMBBDJNGGL(Challenge IACGDFHKCAE)
@@ -68,14 +58,44 @@ public class ChallengesManager : Singleton<ChallengesManager>
 			return IACGDFHKCAE.id == ulong.Parse(BDGDDFKKGGA[2]);
 		}
 
-		internal bool IIMOMJLLFDB(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.HJCBNLFCNAM() == ulong.Parse(BDGDDFKKGGA[1]);
-		}
-
 		internal bool HJKJAANIFLL(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.NPIPMDFPLPH() == ulong.Parse(BDGDDFKKGGA[1]);
+			return IACGDFHKCAE.BGIOHLIFHND() == ulong.Parse(BDGDDFKKGGA[1]);
+		}
+
+		internal bool LGKMMLGKBEF(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.ENDOGIJIIMN() == ulong.Parse(BDGDDFKKGGA[2]);
+		}
+
+		internal bool KFNBKFELFLH(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.BGIOHLIFHND() == DBBLOPNANJE;
+		}
+
+		internal bool ONEPCCGOEKI(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.ENDOGIJIIMN() == ulong.Parse(BDGDDFKKGGA[6]);
+		}
+
+		internal bool BDGDIDPDBHG(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.ENDOGIJIIMN() == DBBLOPNANJE;
+		}
+
+		internal bool LLGBONGFMBH(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ulong.Parse(BDGDDFKKGGA[4]);
+		}
+
+		internal bool OLIGLEMPFOP(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.OFGNFACIGIL() == DBBLOPNANJE;
+		}
+
+		internal bool DBFPGFHEGKA(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.BGIOHLIFHND() == DBBLOPNANJE;
 		}
 	}
 
@@ -84,14 +104,29 @@ public class ChallengesManager : Singleton<ChallengesManager>
 	{
 		internal ulong JMMILEFMACB;
 
-		internal bool PBCAHKDLFPE(Challenge IACGDFHKCAE)
+		internal bool KFNBKFELFLH(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.AKJKDMMKNFO() == JMMILEFMACB;
+			return IACGDFHKCAE.OFGNFACIGIL() == JMMILEFMACB;
 		}
 
 		internal bool BFEABMIFIEE(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.NJNBOPKBLKK() == JMMILEFMACB;
+			return IACGDFHKCAE.id == JMMILEFMACB;
+		}
+
+		internal bool BDGDIDPDBHG(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.BGIOHLIFHND() == JMMILEFMACB;
+		}
+
+		internal bool EKHOOPGPPGE(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.OFGNFACIGIL() == JMMILEFMACB;
+		}
+
+		internal bool JKEDCEOCPJO(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.ENDOGIJIIMN() == JMMILEFMACB;
 		}
 
 		internal bool GBKBDKHPLKG(Challenge IACGDFHKCAE)
@@ -99,69 +134,49 @@ public class ChallengesManager : Singleton<ChallengesManager>
 			return IACGDFHKCAE.id == JMMILEFMACB;
 		}
 
-		internal bool KFNBKFELFLH(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.AKJKDMMKNFO() == JMMILEFMACB;
-		}
-
-		internal bool LNDGINDKPFA(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.ALBJAEBLABB() == JMMILEFMACB;
-		}
-
-		internal bool FFEGPHJKMFK(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.KHCJFLGCAFL() == JMMILEFMACB;
-		}
-
-		internal bool DBFPGFHEGKA(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.ALBJAEBLABB() == JMMILEFMACB;
-		}
-
 		internal bool LLNDDFGPOPL(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.IKACPLICNNB() == JMMILEFMACB;
+			return IACGDFHKCAE.BGIOHLIFHND() == JMMILEFMACB;
 		}
 
 		internal bool AEINPAGJFME(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == JMMILEFMACB;
-		}
-
-		internal bool EKHOOPGPPGE(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.BBPGJKOIAKM() == JMMILEFMACB;
-		}
-
-		internal bool OLIGLEMPFOP(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.HJCBNLFCNAM() == JMMILEFMACB;
+			return IACGDFHKCAE.OFGNFACIGIL() == JMMILEFMACB;
 		}
 
 		internal bool BKNHHGBPLGH(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == JMMILEFMACB;
-		}
-
-		internal bool BDGDIDPDBHG(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.NJNBOPKBLKK() == JMMILEFMACB;
-		}
-
-		internal bool JKEDCEOCPJO(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.HJCBNLFCNAM() == JMMILEFMACB;
-		}
-
-		internal bool MEMPOPNAEDN(Challenge IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.PHCHLPBPKHL() == JMMILEFMACB;
+			return IACGDFHKCAE.OFGNFACIGIL() == JMMILEFMACB;
 		}
 
 		internal bool LOEAMHGMMPK(Challenge IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.BBPGJKOIAKM() == JMMILEFMACB;
+			return IACGDFHKCAE.OFGNFACIGIL() == JMMILEFMACB;
+		}
+
+		internal bool OLIGLEMPFOP(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == JMMILEFMACB;
+		}
+
+		internal bool LNDGINDKPFA(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.BGIOHLIFHND() == JMMILEFMACB;
+		}
+
+		internal bool PBCAHKDLFPE(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.ENDOGIJIIMN() == JMMILEFMACB;
+		}
+
+		internal bool MEMPOPNAEDN(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == JMMILEFMACB;
+		}
+
+		internal bool DBFPGFHEGKA(Challenge IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == JMMILEFMACB;
 		}
 	}
 
@@ -171,263 +186,79 @@ public class ChallengesManager : Singleton<ChallengesManager>
 
 	private List<ulong> ODNDAPINPLB;
 
-	public void NOMLFPFGFBI(List<Challenge> KOHKPKPOBPD)
+	public void OFCPEKECFMC(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
 	{
-		DebugCommands.HMADOEFFOEM().AddCommand("getint", KCDICOKEJHJ, "settings.disablestoryboard", "team", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(1988.0);
-		foreach (Challenge item in KOHKPKPOBPD)
+		BFLLKFPPAAB.NNIMFGIDOKG(AAGGLAGLINL);
+		if (Singleton<Scene>.Instance.DINKBGAFKAH() == "BadgeText")
 		{
-			DateTime dateTime2 = DateTime.Parse(item.IEKOLCGDGNB(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.BADPAMEGNLK(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO("_EmissionColor" + item.IKACPLICNNB() + "_Distortion") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				NMAJHGEGJCG(item);
-			}
+			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
 		}
 	}
 
-	public IEnumerator PJMMIOMIBFN(ulong DDFGKDFMPNL)
+	public void LIOPPCKCLDE()
 	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
+		foreach (ulong item in ODNDAPINPLB)
 		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
+			StartCoroutine(Singleton<ChallengesMessage>.Instance.ShowMessage(GetChallengeByID(item), "CameraFilterPack/Blend2Camera_ColorKey", IKKPBLDLFKH(item).info));
 		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
+		ODNDAPINPLB.Clear();
+	}
+
+	public void NHMHNDIMKFE(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.OHIBODCDDKB("SettingsCanvas" + BFLLKFPPAAB.ENDOGIJIIMN() + "_Green_G"))
 		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
+			ODNDAPINPLB.Add(BFLLKFPPAAB.OFGNFACIGIL());
+			Singleton<SaveSystem>.Instance.SetBool("[UI] " + BFLLKFPPAAB.OFGNFACIGIL() + "UI Extensions/UISoftAdditive", true);
 		}
 	}
 
-	public bool PIHGMOLGBJF()
+	private void KDDOGHOJBFJ(string[] BDGDDFKKGGA)
+	{
+		if (BDGDDFKKGGA.Length < 3)
+		{
+			Debug.LogError("_MaxRadiusOrKInPaper");
+			return;
+		}
+		ulong DBBLOPNANJE = 1uL;
+		if (ulong.TryParse(BDGDDFKKGGA[0], out DBBLOPNANJE))
+		{
+			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.BGIOHLIFHND() == DBBLOPNANJE);
+		}
+		if (BDGDDFKKGGA.Length == 1)
+		{
+			Debug.Log("menu.selectedplaymode");
+		}
+		else if (BDGDDFKKGGA.Length == 8)
+		{
+			if (BDGDDFKKGGA[1] == "Loading inventory")
+			{
+				foreach (Challenge challenges in challengesList)
+				{
+					challenges.JAIMCPINONG();
+				}
+			}
+		}
+		else if (BDGDDFKKGGA[0] == "Working.\nPlease wait..")
+		{
+			if (BDGDDFKKGGA.Length != 3)
+			{
+				Debug.LogError("stretchWidth");
+			}
+			else
+			{
+				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == ulong.Parse(BDGDDFKKGGA[4])).JAIMCPINONG();
+			}
+		}
+		if (Singleton<Scene>.Instance.OOFJKHEJJNM() == "GroupNameText")
+		{
+			((MenuScene)Singleton<Scene>.Instance).CHCPLHFBNBI();
+		}
+	}
+
+	public bool AHPJBCMFFHA()
 	{
 		return ODNDAPINPLB.Count > 1;
-	}
-
-	public void BOBKIIPNBND(ulong CENMLCAACBF)
-	{
-		if (NOPECAKEGAN(CENMLCAACBF).DGAKBIEHAJC() == (Challenge.CurrentStatus)7)
-		{
-			StartCoroutine(CJPKLAMIIJP(CENMLCAACBF));
-		}
-	}
-
-	public long AHCHPPGMLEI(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(-65, 1, 1, 1, 1, 0)).TotalSeconds;
-	}
-
-	public bool LJOFFJJLPPG()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public void ODPMHIBGDFM(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.KPLBEJCGOMO("_Value1" + BFLLKFPPAAB.AKJKDMMKNFO() + "[PlayerController] "))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.PHCHLPBPKHL());
-			Singleton<SaveSystem>.Instance.GAACBNCIFLG("_History4Weight" + BFLLKFPPAAB.PHCHLPBPKHL() + "Init", false);
-		}
-	}
-
-	public void GHGGFGCMGGE()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.MFOIDBAHKOJ(GetChallengeByID(item), "_MainTex2", PIFHBONLJCA(item).info));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public void LMACOJIINNN(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.KPLBEJCGOMO("CameraFilterPack/TV_Old_Movie" + BFLLKFPPAAB.NJNBOPKBLKK() + "roomDescription"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.NJNBOPKBLKK());
-			Singleton<SaveSystem>.Instance.CONNMLDKBOF("CompletedLevel" + BFLLKFPPAAB.IHBDBALJGBO() + "_SweaterSize", true);
-		}
-	}
-
-	public void PMBBDPNMGHK(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.OAMNFGLGIPE(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.ALIGPAANMFA() == "Cross")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public IEnumerator BBJLGIFFBKC(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public IEnumerator HEDGEAHBBDH(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public void LMOPGJMILEL()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.GBEONFANEGF(PIFHBONLJCA(item), " Also make sure to disable sprite packing for this sprite.", LJEGAEKKDPP(item).EBENNNMBEAP()));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public void PBALPILMOKK(ulong CENMLCAACBF)
-	{
-		if (LJEGAEKKDPP(CENMLCAACBF).IFAJDLKJIDL() == (Challenge.CurrentStatus)5)
-		{
-			StartCoroutine(CJPKLAMIIJP(CENMLCAACBF));
-		}
-	}
-
-	public Challenge NLPMEFFEPIO(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == JMMILEFMACB);
-	}
-
-	public bool HasProgress()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public long LBCDIBEALKK(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(-80, 0, 1, 0, 0, 0)).TotalSeconds;
 	}
 
 	public Challenge GetChallengeByID(ulong JMMILEFMACB)
@@ -435,29 +266,386 @@ public class ChallengesManager : Singleton<ChallengesManager>
 		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == JMMILEFMACB);
 	}
 
-	public void ELFNAHPCJJL(Challenge BFLLKFPPAAB)
+	public void KKAHIHFGODN(Challenge BFLLKFPPAAB)
 	{
-		if (!Singleton<SaveSystem>.Instance.HasKey("CameraFilterPack/Distortion_Lens" + BFLLKFPPAAB.NPIPMDFPLPH() + "CameraFilterPack/Edge_Neon"))
+		if (!Singleton<SaveSystem>.Instance.HasKey("[NetworkManager] Connection failed: " + BFLLKFPPAAB.OFGNFACIGIL() + "CameraFilterPack/Blend2Camera_Screen"))
 		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.PHCHLPBPKHL());
-			Singleton<SaveSystem>.Instance.SetBool("CameraFilterPack/Distortion_Noise" + BFLLKFPPAAB.ALBJAEBLABB() + "/icon", false);
+			ODNDAPINPLB.Add(BFLLKFPPAAB.ENDOGIJIIMN());
+			Singleton<SaveSystem>.Instance.GIKPOGCBJFI("Obtain test Item" + BFLLKFPPAAB.OFGNFACIGIL() + "CameraFilterPack/Alien_Vision", true);
 		}
 	}
 
-	public void NFGBFFPGJDE()
+	public void IMPMODGKJPD(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.HasKey("\n" + BFLLKFPPAAB.BGIOHLIFHND() + "Changed config"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.OFGNFACIGIL());
+			Singleton<SaveSystem>.Instance.GIKPOGCBJFI("mapselector.filter.subscribedonly" + BFLLKFPPAAB.OFGNFACIGIL() + "Tab1Content", true);
+		}
+	}
+
+	public void NHCKOOHGIBN(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.OHIBODCDDKB("_Value6" + BFLLKFPPAAB.ENDOGIJIIMN() + "BadgeImage"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.OFGNFACIGIL());
+			Singleton<SaveSystem>.Instance.BHLOCFLKPPN("Can't set Room.MaxPlayers to: " + BFLLKFPPAAB.id + "SupportLogger ", true);
+		}
+	}
+
+	public bool JDOAHMPPCCB()
+	{
+		return ODNDAPINPLB.Count > 0;
+	}
+
+	public void FKMBPEGKILO(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
+	{
+		BFLLKFPPAAB.AcceptChallenge(AAGGLAGLINL);
+		if (Singleton<Scene>.Instance.DMICPEENLPH() == "curScn")
+		{
+			((MenuScene)Singleton<Scene>.Instance).CBKNCIMGLGK();
+		}
+	}
+
+	public void PIHPLADMPHI(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.HBBEJIBFLHO("] to be droppable" + BFLLKFPPAAB.BGIOHLIFHND() + "_Visualize"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.ENDOGIJIIMN());
+			Singleton<SaveSystem>.Instance.GIKPOGCBJFI("_DepthLevel" + BFLLKFPPAAB.OFGNFACIGIL() + "ResetButton", false);
+		}
+	}
+
+	public IEnumerator ENEONGMIMAJ(ulong DDFGKDFMPNL)
+	{
+		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
+		WWWForm wWWForm = new WWWForm();
+		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
+		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
+		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
+		byte[] data = wWWForm.data;
+		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
+		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
+		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
+		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
+		unityWebRequest.SetRequestHeader("IntraTime", text);
+		yield return unityWebRequest.SendWebRequest();
+		if (!string.IsNullOrEmpty(unityWebRequest.error))
+		{
+			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
+			{
+				StartCoroutine(GetReward(DDFGKDFMPNL));
+			}, "#close", delegate
+			{
+			}));
+		}
+		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
+		{
+			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
+			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
+			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
+			Singleton<MessageBoxPanel>.Instance.Close();
+			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
+			{
+				Singleton<ItemsHandler>.Instance.ShowNewItems();
+			}
+			if (Singleton<Scene>.Instance.id == "MenuScene")
+			{
+				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
+			}
+		}
+		else
+		{
+			Singleton<MessageBoxPanel>.Instance.Close();
+			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
+			{
+				StartCoroutine(GetReward(DDFGKDFMPNL));
+			}, "#close", delegate
+			{
+			}));
+		}
+	}
+
+	public bool HasProgress()
+	{
+		return ODNDAPINPLB.Count > 0;
+	}
+
+	public void EOGLBNCHOIO(ulong CENMLCAACBF)
+	{
+		if (IKKPBLDLFKH(CENMLCAACBF).OFPNJBGNLDH() == Challenge.CurrentStatus.NotStarted)
+		{
+			StartCoroutine(PLNGNEDBKJL(CENMLCAACBF));
+		}
+	}
+
+	public void BIKHHEKODCK(ulong CENMLCAACBF)
+	{
+		if (GetChallengeByID(CENMLCAACBF).EFOKGOMPFIO() == Challenge.CurrentStatus.InProgress)
+		{
+			StartCoroutine(PLNGNEDBKJL(CENMLCAACBF));
+		}
+	}
+
+	public long ToUnixTimeSeconds(DateTime LPGNCFKLMEH)
+	{
+		return (long)(LPGNCFKLMEH - new DateTime(1970, 1, 1, 0, 0, 0)).TotalSeconds;
+	}
+
+	public void KPFKCDIFHKG(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.HBBEJIBFLHO("masterSteamID" + BFLLKFPPAAB.id + "_TapLowForeground"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.id);
+			Singleton<SaveSystem>.Instance.GIKPOGCBJFI("mapselector.filter.rateduponly" + BFLLKFPPAAB.ENDOGIJIIMN() + "_Extra2", true);
+		}
+	}
+
+	public void PMBBDPNMGHK(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
+	{
+		BFLLKFPPAAB.EFKJBLMEPBA(AAGGLAGLINL);
+		if (Singleton<Scene>.Instance.IIPMMNJPGMA() == "PUNCloudBestRegion")
+		{
+			((MenuScene)Singleton<Scene>.Instance).CHCPLHFBNBI();
+		}
+	}
+
+	public void DKEIOCOHFFB(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.HBBEJIBFLHO("Joystick1Button11" + BFLLKFPPAAB.OFGNFACIGIL() + "UI/Particles/Hidden"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.OFGNFACIGIL());
+			Singleton<SaveSystem>.Instance.GIKPOGCBJFI("Operation " + BFLLKFPPAAB.OFGNFACIGIL() + "_ScreenResolution", false);
+		}
+	}
+
+	private void FINNJIMFAPB(string[] BDGDDFKKGGA)
+	{
+		if (BDGDDFKKGGA.Length < 2)
+		{
+			Debug.LogError("Please specify a map name or buildID");
+			return;
+		}
+		ulong DBBLOPNANJE = 0uL;
+		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
+		{
+			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == DBBLOPNANJE);
+		}
+		if (BDGDDFKKGGA.Length == 1)
+		{
+			Debug.Log("Working commands:\nreset <challengeid>\nresetall");
+		}
+		else if (BDGDDFKKGGA.Length == 2)
+		{
+			if (BDGDDFKKGGA[1] == "resetall")
+			{
+				foreach (Challenge challenges in challengesList)
+				{
+					challenges.Reset();
+				}
+			}
+		}
+		else if (BDGDDFKKGGA[1] == "reset")
+		{
+			if (BDGDDFKKGGA.Length != 3)
+			{
+				Debug.LogError("Bad parameters for reset! Use \"reset <challengeid>\"");
+			}
+			else
+			{
+				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == ulong.Parse(BDGDDFKKGGA[2])).Reset();
+			}
+		}
+		if (Singleton<Scene>.Instance.id == "MenuScene")
+		{
+			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
+		}
+	}
+
+	public Challenge IKKPBLDLFKH(ulong JMMILEFMACB)
+	{
+		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.OFGNFACIGIL() == JMMILEFMACB);
+	}
+
+	public void MACGEHPMGCA()
 	{
 		foreach (ulong item in ODNDAPINPLB)
 		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.IKIFPMPCMHM(NOPECAKEGAN(item), "_NoiseAmount", CDDFIMMJECM(item).IOCJJJCAFLK()));
+			StartCoroutine(Singleton<ChallengesMessage>.Instance.IJFDCPFAPBP(JIPIKLINJOF(item), "CameraFilterPack/Retro_Loading", IKKPBLDLFKH(item).GPBAIPHOIKN()));
 		}
 		ODNDAPINPLB.Clear();
 	}
 
-	public void MLIHOLEHFIM(ulong CENMLCAACBF)
+	public void Init(List<Challenge> KOHKPKPOBPD)
 	{
-		if (ICHOIEINCLP(CENMLCAACBF).IFAJDLKJIDL() == (Challenge.CurrentStatus)5)
+		DebugCommands.Instance.AddCommand("challenges", FINNJIMFAPB, "Commands for challenges", "<command>", true);
+		ODNDAPINPLB = new List<ulong>();
+		challengesList = new List<Challenge>();
+		DateTime dateTime = DateTime.UtcNow.AddHours(3.0);
+		foreach (Challenge item in KOHKPKPOBPD)
 		{
-			StartCoroutine(EBFKFEPCIFJ(CENMLCAACBF));
+			DateTime dateTime2 = DateTime.Parse(item.startDateTime, CultureInfo.InvariantCulture);
+			DateTime dateTime3 = DateTime.Parse(item.endDateTime, CultureInfo.InvariantCulture);
+			challengesList.Add(item);
+			if (Singleton<SaveSystem>.Instance.HasKey("challenges." + item.id + ".status") && dateTime >= dateTime2 && dateTime <= dateTime3)
+			{
+				AcceptChallenge(item);
+			}
+		}
+	}
+
+	private void NFKKELPADIB(string[] BDGDDFKKGGA)
+	{
+		if (BDGDDFKKGGA.Length < 3)
+		{
+			Debug.LogError("_Angle");
+			return;
+		}
+		ulong DBBLOPNANJE = 1uL;
+		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
+		{
+			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.BGIOHLIFHND() == DBBLOPNANJE);
+		}
+		if (BDGDDFKKGGA.Length == 0)
+		{
+			Debug.Log(": ");
+		}
+		else if (BDGDDFKKGGA.Length == 6)
+		{
+			if (BDGDDFKKGGA[1] == "CameraFilterPack/Blend2Camera_PinLight")
+			{
+				foreach (Challenge challenges in challengesList)
+				{
+					challenges.AIFAGDOHAGD();
+				}
+			}
+		}
+		else if (BDGDDFKKGGA[1] == ".")
+		{
+			if (BDGDDFKKGGA.Length != 7)
+			{
+				Debug.LogError("_Value2");
+			}
+			else
+			{
+				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.ENDOGIJIIMN() == ulong.Parse(BDGDDFKKGGA[4])).AIFAGDOHAGD();
+			}
+		}
+		if (Singleton<Scene>.Instance.KHDLEJLPGKP() == "907198288")
+		{
+			((MenuScene)Singleton<Scene>.Instance).CHCPLHFBNBI();
+		}
+	}
+
+	public void OCOJEBKMIEJ(ulong CENMLCAACBF)
+	{
+		if (JIPIKLINJOF(CENMLCAACBF).PlayerStatus == Challenge.CurrentStatus.InProgress)
+		{
+			StartCoroutine(GetReward(CENMLCAACBF));
+		}
+	}
+
+	public bool LFGEKLNBDAD()
+	{
+		return ODNDAPINPLB.Count > 1;
+	}
+
+	public void JEALJMLENKL(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.OHIBODCDDKB("_ScreenResolution" + BFLLKFPPAAB.id + "CameraFilterPack/BlurTiltShift"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.OFGNFACIGIL());
+			Singleton<SaveSystem>.Instance.JKOMMNBGPDK("CameraFilterPack/Blend2Camera_Lighten" + BFLLKFPPAAB.BGIOHLIFHND() + "_Value2", true);
+		}
+	}
+
+	public void IJNDNNGHOCM(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.OHIBODCDDKB("0.00" + BFLLKFPPAAB.ENDOGIJIIMN() + "/"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.id);
+			Singleton<SaveSystem>.Instance.JKOMMNBGPDK("_Amount" + BFLLKFPPAAB.ENDOGIJIIMN() + "_PosX", false);
+		}
+	}
+
+	public IEnumerator PLNGNEDBKJL(ulong DDFGKDFMPNL)
+	{
+		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
+		WWWForm wWWForm = new WWWForm();
+		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
+		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
+		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
+		byte[] data = wWWForm.data;
+		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
+		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
+		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
+		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
+		unityWebRequest.SetRequestHeader("IntraTime", text);
+		yield return unityWebRequest.SendWebRequest();
+		if (!string.IsNullOrEmpty(unityWebRequest.error))
+		{
+			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
+			{
+				StartCoroutine(GetReward(DDFGKDFMPNL));
+			}, "#close", delegate
+			{
+			}));
+		}
+		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
+		{
+			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
+			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
+			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
+			Singleton<MessageBoxPanel>.Instance.Close();
+			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
+			{
+				Singleton<ItemsHandler>.Instance.ShowNewItems();
+			}
+			if (Singleton<Scene>.Instance.id == "MenuScene")
+			{
+				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
+			}
+		}
+		else
+		{
+			Singleton<MessageBoxPanel>.Instance.Close();
+			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
+			{
+				StartCoroutine(GetReward(DDFGKDFMPNL));
+			}, "#close", delegate
+			{
+			}));
+		}
+	}
+
+	public void GBENDPNJDHK(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
+	{
+		BFLLKFPPAAB.OINNDMKBIAF(AAGGLAGLINL);
+		if (Singleton<Scene>.Instance.HPKHOICGMFC() == "SSAARenderTargetCamera")
+		{
+			((MenuScene)Singleton<Scene>.Instance).CBKNCIMGLGK();
+		}
+	}
+
+	public void TryGetReward(ulong CENMLCAACBF)
+	{
+		if (GetChallengeByID(CENMLCAACBF).PlayerStatus == Challenge.CurrentStatus.Complete)
+		{
+			StartCoroutine(GetReward(CENMLCAACBF));
+		}
+	}
+
+	public Challenge JIPIKLINJOF(ulong JMMILEFMACB)
+	{
+		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.OFGNFACIGIL() == JMMILEFMACB);
+	}
+
+	public void ONAAJPPJILB(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.HasKey("00" + BFLLKFPPAAB.id + "_Level"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.id);
+			Singleton<SaveSystem>.Instance.BHLOCFLKPPN("ItemNameText" + BFLLKFPPAAB.BGIOHLIFHND() + "&search=", true);
 		}
 	}
 
@@ -470,6 +658,161 @@ public class ChallengesManager : Singleton<ChallengesManager>
 		ODNDAPINPLB.Clear();
 	}
 
+	public void KCEHNEPHBPH(ulong CENMLCAACBF)
+	{
+		if (JIPIKLINJOF(CENMLCAACBF).HCPDNILLJEJ() == (Challenge.CurrentStatus)5)
+		{
+			StartCoroutine(PLNGNEDBKJL(CENMLCAACBF));
+		}
+	}
+
+	public void PGKKNFMKAEC()
+	{
+		foreach (ulong item in ODNDAPINPLB)
+		{
+			StartCoroutine(Singleton<ChallengesMessage>.Instance.BKLEAFCFGIF(PBOAKKCBNFB(item), "_MainTex2", IKKPBLDLFKH(item).HCEHDFKNGKB()));
+		}
+		ODNDAPINPLB.Clear();
+	}
+
+	public void KCKLDEBDNFB(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
+	{
+		BFLLKFPPAAB.EFKJBLMEPBA(AAGGLAGLINL);
+		if (Singleton<Scene>.Instance.IIPMMNJPGMA() == "SetPosition")
+		{
+			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
+		}
+	}
+
+	public void LNMNGPIDLCN(ulong CENMLCAACBF)
+	{
+		if (GetChallengeByID(CENMLCAACBF).JNEKHPIOHIK() == (Challenge.CurrentStatus)8)
+		{
+			StartCoroutine(ENEONGMIMAJ(CENMLCAACBF));
+		}
+	}
+
+	public void OBPBHCBIHCJ(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.HasKey("No Dispatcher exists in the scene. Actions will not be invoked!" + BFLLKFPPAAB.id + "_EdgeSize"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.BGIOHLIFHND());
+			Singleton<SaveSystem>.Instance.GIKPOGCBJFI("_Red_B" + BFLLKFPPAAB.BGIOHLIFHND() + "_DistortionSize", false);
+		}
+	}
+
+	public void FECMEIJGLJI(List<Challenge> KOHKPKPOBPD)
+	{
+		DebugCommands.FAGEJPPIDOL().JAFPBHCJCGE("_TimeX", NFKKELPADIB, "mapselector.filter.favoriteonly", "_ToneCurveRange", true);
+		ODNDAPINPLB = new List<ulong>();
+		challengesList = new List<Challenge>();
+		DateTime dateTime = DateTime.UtcNow.AddHours(1575.0);
+		foreach (Challenge item in KOHKPKPOBPD)
+		{
+			DateTime dateTime2 = DateTime.Parse(item.DNCDAFPLBIA(), CultureInfo.InvariantCulture);
+			DateTime dateTime3 = DateTime.Parse(item.endDateTime, CultureInfo.InvariantCulture);
+			challengesList.Add(item);
+			if (Singleton<SaveSystem>.Instance.OHIBODCDDKB("/C tasklist" + item.BGIOHLIFHND() + "Tried to Initialize the SteamAPI twice in one session!") && dateTime >= dateTime2 && dateTime <= dateTime3)
+			{
+				CDDLPAHMHHJ(item);
+			}
+		}
+	}
+
+	public Challenge PBOAKKCBNFB(ulong JMMILEFMACB)
+	{
+		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.BGIOHLIFHND() == JMMILEFMACB);
+	}
+
+	public void CHAJHAOEIKF(Challenge BFLLKFPPAAB)
+	{
+		if (!Singleton<SaveSystem>.Instance.HBBEJIBFLHO(" " + BFLLKFPPAAB.OFGNFACIGIL() + "grid"))
+		{
+			ODNDAPINPLB.Add(BFLLKFPPAAB.ENDOGIJIIMN());
+			Singleton<SaveSystem>.Instance.JKOMMNBGPDK("_TimeX" + BFLLKFPPAAB.id + "Left ", false);
+		}
+	}
+
+	public void CDDLPAHMHHJ(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
+	{
+		BFLLKFPPAAB.NNIMFGIDOKG(AAGGLAGLINL);
+		if (Singleton<Scene>.Instance.INGBCJIGOJK() == "\\\"")
+		{
+			((MenuScene)Singleton<Scene>.Instance).CBKNCIMGLGK();
+		}
+	}
+
+	public void GKFIEBJAILE()
+	{
+		foreach (ulong item in ODNDAPINPLB)
+		{
+			StartCoroutine(Singleton<ChallengesMessage>.Instance.FPKCOIJLBLN(IKKPBLDLFKH(item), "_Red_R", PBOAKKCBNFB(item).info));
+		}
+		ODNDAPINPLB.Clear();
+	}
+
+	public bool FEBLIDAIGAG()
+	{
+		return ODNDAPINPLB.Count > 1;
+	}
+
+	public void AcceptChallenge(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
+	{
+		BFLLKFPPAAB.AcceptChallenge(AAGGLAGLINL);
+		if (Singleton<Scene>.Instance.id == "MenuScene")
+		{
+			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
+		}
+	}
+
+	private void GBCPMNOJGDJ(string[] BDGDDFKKGGA)
+	{
+		if (BDGDDFKKGGA.Length < 4)
+		{
+			Debug.LogError("_ScreenResolution");
+			return;
+		}
+		ulong DBBLOPNANJE = 1uL;
+		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
+		{
+			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.ENDOGIJIIMN() == DBBLOPNANJE);
+		}
+		if (BDGDDFKKGGA.Length == 0)
+		{
+			Debug.Log("_Gain");
+		}
+		else if (BDGDDFKKGGA.Length == 3)
+		{
+			if (BDGDDFKKGGA[1] == "13")
+			{
+				foreach (Challenge challenges in challengesList)
+				{
+					challenges.AIFAGDOHAGD();
+				}
+			}
+		}
+		else if (BDGDDFKKGGA[1] == "Bad parameters for getint! Use <key> <value>")
+		{
+			if (BDGDDFKKGGA.Length != 4)
+			{
+				Debug.LogError("]. Please verify you have this gameobject in a Resources folder.");
+			}
+			else
+			{
+				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == ulong.Parse(BDGDDFKKGGA[4])).AIFAGDOHAGD();
+			}
+		}
+		if (Singleton<Scene>.Instance.PGNOPJPKDEA() == "ViewMenu")
+		{
+			((MenuScene)Singleton<Scene>.Instance).CHCPLHFBNBI();
+		}
+	}
+
+	public long AHCHPPGMLEI(DateTime LPGNCFKLMEH)
+	{
+		return (long)(LPGNCFKLMEH - new DateTime(-78, 1, 1, 0, 0, 0)).TotalSeconds;
+	}
+
 	public void CompleteChallenge(Challenge BFLLKFPPAAB)
 	{
 		if (!Singleton<SaveSystem>.Instance.HasKey("challenges." + BFLLKFPPAAB.id + ".message"))
@@ -479,740 +822,13 @@ public class ChallengesManager : Singleton<ChallengesManager>
 		}
 	}
 
-	public long NIIAFNLPKAP(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(166, 0, 1, 1, 0, 1)).TotalSeconds;
-	}
-
-	public void KAMJHHEDLKP(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.HasKey("\r\n" + BFLLKFPPAAB.HJCBNLFCNAM() + "#"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.ALBJAEBLABB());
-			Singleton<SaveSystem>.Instance.LBFFJLFBOAM("GetGameList failed: " + BFLLKFPPAAB.IKACPLICNNB() + "_History1Weight", false);
-		}
-	}
-
-	public bool NAPJNOLANOD()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public void MIAIEKCLEAO(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.HIFIEDJCOFC().JAFPBHCJCGE("achievements.21.progress", KDDOGHOJBFJ, "_SizeX", "_TimeX", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(244.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.MBBJMJBCKCE(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.MGEFANJIDHA(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO("_Value4" + item.KHCJFLGCAFL() + "_TimeX") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				PMBBDPNMGHK(item, true);
-			}
-		}
-	}
-
-	public void TryGetReward(ulong CENMLCAACBF)
-	{
-		if (GetChallengeByID(CENMLCAACBF).PlayerStatus == Challenge.CurrentStatus.Complete)
-		{
-			StartCoroutine(GetReward(CENMLCAACBF));
-		}
-	}
-
-	private void KJJBDNJLEBD(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 7)
-		{
-			Debug.LogError("_SecondTex");
-			return;
-		}
-		ulong DBBLOPNANJE = 1uL;
-		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.PHCHLPBPKHL() == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 0)
-		{
-			Debug.Log("USE_PREDICATION");
-		}
-		else if (BDGDDFKKGGA.Length == 2)
-		{
-			if (BDGDDFKKGGA[1] == "_Value3")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.GONKPNAAIEE();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[0] == "_DiffuseColor")
-		{
-			if (BDGDDFKKGGA.Length != 3)
-			{
-				Debug.LogError("int");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.IKACPLICNNB() == ulong.Parse(BDGDDFKKGGA[8])).GONKPNAAIEE();
-			}
-		}
-		if (Singleton<Scene>.Instance.HJCBNLFCNAM() == "_ColorLevel")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public bool DJAJOCAAKEC()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public void JHOJDHKEIPL()
+	public void PCBHFLCFPIO()
 	{
 		foreach (ulong item in ODNDAPINPLB)
 		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.BBGKHAOOLEA(JGGLPBFDJKF(item), "_Blue_G", NOPECAKEGAN(item).EBENNNMBEAP()));
+			StartCoroutine(Singleton<ChallengesMessage>.Instance.FPCHLDCNODE(JIPIKLINJOF(item), "maps.", IKKPBLDLFKH(item).GPBAIPHOIKN()));
 		}
 		ODNDAPINPLB.Clear();
-	}
-
-	private void IMGAAAPHGFE(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 4)
-		{
-			Debug.LogError(".lastCheckpoint.correctScore");
-			return;
-		}
-		ulong DBBLOPNANJE = 1uL;
-		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 1)
-		{
-			Debug.Log("#ok");
-		}
-		else if (BDGDDFKKGGA.Length == 0)
-		{
-			if (BDGDDFKKGGA[0] == "Testing, the group has toggled [")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.HFFAJNCOJNB();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[1] == "Data/Localization")
-		{
-			if (BDGDDFKKGGA.Length != 8)
-			{
-				Debug.LogError("<b>(╯°□°）╯︵ ┻━┻</b>");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.KHCJFLGCAFL() == ulong.Parse(BDGDDFKKGGA[0])).IHLJALNNBFP();
-			}
-		}
-		if (Singleton<Scene>.Instance.GEDAFOHFDIA() == "value")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public void KPFKCDIFHKG(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.HasKey("_TimeX" + BFLLKFPPAAB.IKACPLICNNB() + "_Value3"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.KHCJFLGCAFL());
-			Singleton<SaveSystem>.Instance.CONNMLDKBOF("float,1.5" + BFLLKFPPAAB.IHBDBALJGBO() + "_Value2", false);
-		}
-	}
-
-	public long MNGDCJBBFBO(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(-183, 1, 0, 1, 0, 1)).TotalSeconds;
-	}
-
-	public void GGHCMPKGNGE(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.Instance.AddCommand("SetParticlesColor", IMGAAAPHGFE, "Fade", "Aimer Input Module is incompatible with the StandAloneInputSystem, please remove it from the Event System in this scene or disable it when this module is in use");
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(1007.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.startDateTime, CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.DMDBHHMBFFG(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.PMDOJPLDDKP("MessageText" + item.id + "float,40") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				IMDLCKCMFMF(item);
-			}
-		}
-	}
-
-	public Challenge BOAMLFKCEDJ(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.PHCHLPBPKHL() == JMMILEFMACB);
-	}
-
-	public Challenge JGGLPBFDJKF(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == JMMILEFMACB);
-	}
-
-	public Challenge CIHAIJPFIFP(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.ALBJAEBLABB() == JMMILEFMACB);
-	}
-
-	public void NMAJHGEGJCG(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.ICGKNCAAFLN(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.EODGDBPONOL() == "_Red_C")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public bool ELBBJONPFJM()
-	{
-		return ODNDAPINPLB.Count > 1;
-	}
-
-	public bool MCEPCODDFGD()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public void FENIFPLLDAK(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.IGMKHPPPLDD().CEMAFHEDCMF("move", IMGAAAPHGFE, "hidden", "_Value", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(1087.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.PDPNJDOCEOE(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.endDateTime, CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.PMDOJPLDDKP("The given 2D texture " + item.IKACPLICNNB() + "VIGNETTE_FILMIC") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				KCKLDEBDNFB(item);
-			}
-		}
-	}
-
-	public Challenge PIFHBONLJCA(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.NJNBOPKBLKK() == JMMILEFMACB);
-	}
-
-	public void MIDCODCLJLE(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.FBPOLBCPJFG(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.KHDLEJLPGKP() == "mapselector.filter.favoriteonly")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public long FPKNHHINMNM(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(147, 1, 0, 0, 0, 1)).TotalSeconds;
-	}
-
-	public void LNMKDFDKFPF(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.HIFIEDJCOFC().CIHBPOBKGNP("_TimeX", HEFOBIBCNNP, "_CenterY", "DPADHOR", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(572.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.ONELLAMBEAG(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.BADPAMEGNLK(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.HasKey("_FadeFX" + item.HJCBNLFCNAM() + "_Value") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				LCJFAOGLEEM(item);
-			}
-		}
-	}
-
-	public void JGLNHCHILNJ(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.OAMNFGLGIPE(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.id == "]")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	private void KDDOGHOJBFJ(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 0)
-		{
-			Debug.LogError("CameraFilterPack/Blend2Camera_LinearBurn");
-			return;
-		}
-		ulong DBBLOPNANJE = 1uL;
-		if (ulong.TryParse(BDGDDFKKGGA[0], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 0)
-		{
-			Debug.Log("settings.volume.menu");
-		}
-		else if (BDGDDFKKGGA.Length == 2)
-		{
-			if (BDGDDFKKGGA[0] == "EventMenu")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.HFFAJNCOJNB();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[0] == "FullscreenToggle")
-		{
-			if (BDGDDFKKGGA.Length != 1)
-			{
-				Debug.LogError("' was created: ");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.NPIPMDFPLPH() == ulong.Parse(BDGDDFKKGGA[1])).IHLJALNNBFP();
-			}
-		}
-		if (Singleton<Scene>.Instance.PNOCNIBEHMF() == "open")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public void NFINEDMNOFP(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.HasKey("The server address is 127.0.0.1 (localhost): Make sure the server is running on this machine. Android and iOS emulators have their own localhost." + BFLLKFPPAAB.KHCJFLGCAFL() + "_Value4"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.id);
-			Singleton<SaveSystem>.Instance.CONNMLDKBOF(" " + BFLLKFPPAAB.HJCBNLFCNAM() + "LevelNameInputField", false);
-		}
-	}
-
-	public long HOLHEOMHCLM(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(50, 1, 0, 1, 1, 1)).TotalSeconds;
-	}
-
-	public bool LHCINEGDJCM()
-	{
-		return ODNDAPINPLB.Count > 1;
-	}
-
-	public long ToUnixTimeSeconds(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(1970, 1, 1, 0, 0, 0)).TotalSeconds;
-	}
-
-	public void LIFPBMDKPGI(ulong CENMLCAACBF)
-	{
-		if (IDKBNGMCFAL(CENMLCAACBF).CJNNAAGGAJI() == (Challenge.CurrentStatus)6)
-		{
-			StartCoroutine(CJPKLAMIIJP(CENMLCAACBF));
-		}
-	}
-
-	public long KDNGOKOLMHE(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(39, 0, 0, 0, 1, 1)).TotalSeconds;
-	}
-
-	public void FIMJABKECNG(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.HIFIEDJCOFC().CEMAFHEDCMF("???", KJJBDNJLEBD, "<b>#banended</b>", "_Distortion");
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(1744.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.IEKOLCGDGNB(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.FHBMIMOOLLN(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.HasKey("_MainTex2" + item.NPIPMDFPLPH() + ".lastCheckpoint.incorrectScore") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				IMDLCKCMFMF(item, true);
-			}
-		}
-	}
-
-	public Challenge ICHOIEINCLP(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == JMMILEFMACB);
-	}
-
-	public long CALKHGLKCBG(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(-184, 0, 0, 1, 0, 1)).TotalSeconds;
-	}
-
-	public void AJOOJLMPNMO()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.JOCACBLCCMM(GetChallengeByID(item), ".GoalProgress", NOPECAKEGAN(item).EBENNNMBEAP()));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public void IIJFAJMPAEF(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.ICGKNCAAFLN(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.PACECPHKLNE() == "settings.showHP")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public void LMHFEBCKPDI(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.GLEFOHOMBFC().JAFPBHCJCGE("_MainTex", IMGAAAPHGFE, "SpawnObj", "Particles/Additive");
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(1299.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.MBBJMJBCKCE(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.DMDBHHMBFFG(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO(".lastCheckpoint.bgcolor" + item.KHCJFLGCAFL() + "[MapEditor] Loaded music file: ") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				GDLKPBLABII(item);
-			}
-		}
-	}
-
-	public IEnumerator EBFKFEPCIFJ(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public void OPLCHDMBFJP(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.HasKey("Error: you cannot write/send to this stream that you are reading!" + BFLLKFPPAAB.PHCHLPBPKHL() + "No regions available. Are you sure your appid is valid and setup?"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.IKACPLICNNB());
-			Singleton<SaveSystem>.Instance.CONNMLDKBOF("CameraFilterPack/3D_Computer" + BFLLKFPPAAB.KHCJFLGCAFL() + "_MainTex2", true);
-		}
-	}
-
-	public IEnumerator CJPKLAMIIJP(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public void PAIOCIDCBJL(ulong CENMLCAACBF)
-	{
-		if (JGGLPBFDJKF(CENMLCAACBF).IFAJDLKJIDL() == Challenge.CurrentStatus.Complete)
-		{
-			StartCoroutine(MJGPMLDHKDE(CENMLCAACBF));
-		}
-	}
-
-	public void LHOLHHBALDN(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.HasKey("downloading" + BFLLKFPPAAB.PHCHLPBPKHL() + "_ChangeRed"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.BBPGJKOIAKM());
-			Singleton<SaveSystem>.Instance.SetBool("Save level before uploading?" + BFLLKFPPAAB.ALBJAEBLABB() + "Operation failed: ", false);
-		}
-	}
-
-	public bool BFLOBBEIBEM()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public bool JKNMMMCFDAP()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public bool HKBEDHGKHLG()
-	{
-		return ODNDAPINPLB.Count > 1;
-	}
-
-	public long GJCMAKKCCDJ(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(-23, 1, 1, 0, 0, 1)).TotalSeconds;
-	}
-
-	public long NDIEOCHAOGG(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(35, 0, 1, 1, 1, 1)).TotalSeconds;
-	}
-
-	public void EIPPDLDJJGO(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.Instance.KHBHACBOGLJ("_Value4", IMGAAAPHGFE, "Tab2Content", "_TimeX");
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(964.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.ONELLAMBEAG(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.DMDBHHMBFFG(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO(" Remote called." + item.PHCHLPBPKHL() + "Classical") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				GHBFNOEMKJB(item, true);
-			}
-		}
-	}
-
-	public void HCJMCPGGPKH()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.DHPELKMAAFM(JGGLPBFDJKF(item), "Submit", IFPIPMPFHCA(item).info));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public Challenge ONEPNINILOC(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == JMMILEFMACB);
-	}
-
-	public void CINMGCJPABI(ulong CENMLCAACBF)
-	{
-		if (NOPECAKEGAN(CENMLCAACBF).OCNOEDGAPNL() == (Challenge.CurrentStatus)4)
-		{
-			StartCoroutine(HEDGEAHBBDH(CENMLCAACBF));
-		}
-	}
-
-	public void NEAKMMNMCIH()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.JOCACBLCCMM(ICHOIEINCLP(item), "CameraFilterPack/Colors_Adjust_FullColors", IFPIPMPFHCA(item).IGAHKBHFBNE()));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public long HCPCNBCHCHP(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(-10, 1, 1, 0, 1, 0)).TotalSeconds;
-	}
-
-	public void EONFOJMJJNE(ulong CENMLCAACBF)
-	{
-		if (IDKBNGMCFAL(CENMLCAACBF).CJNNAAGGAJI() == Challenge.CurrentStatus.NotStarted)
-		{
-			StartCoroutine(CDCHOGACPON(CENMLCAACBF));
-		}
-	}
-
-	public void PEEFILGCABG(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.HIFIEDJCOFC().EHJBOAOCFNP("CameraFilterPack/Glasses_OnX", DAPKGMONPDI, "score", "#submit", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(784.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.startDateTime, CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.MGEFANJIDHA(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.HasKey(" joined" + item.ALBJAEBLABB() + "InventoryButton") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				GDLKPBLABII(item, true);
-			}
-		}
-	}
-
-	public void CCCLIKMDEEJ()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.LLDNOFEBMNO(GetChallengeByID(item), "_Params3", BOAMLFKCEDJ(item).IOCJJJCAFLK()));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public void FAFMBMPLOCI(ulong CENMLCAACBF)
-	{
-		if (LJEGAEKKDPP(CENMLCAACBF).CJNNAAGGAJI() == Challenge.CurrentStatus.NotStarted)
-		{
-			StartCoroutine(CDCHOGACPON(CENMLCAACBF));
-		}
-	}
-
-	public long AGBPNLGADNA(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(-136, 1, 0, 0, 1, 1)).TotalSeconds;
-	}
-
-	public IEnumerator CDCHOGACPON(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public void KCKLDEBDNFB(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.AcceptChallenge(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.HLGJHICPDMO() == "_Fade")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public bool KKIPAOGPMFI()
-	{
-		return ODNDAPINPLB.Count > 1;
 	}
 
 	public IEnumerator GetReward(ulong DDFGKDFMPNL)
@@ -1265,974 +881,17 @@ public class ChallengesManager : Singleton<ChallengesManager>
 		}
 	}
 
-	public void MIGFOIJJJNL(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.IGMKHPPPLDD().PLOIOFEGBIJ("_AOTex", DAPKGMONPDI, " method: ", "_Screen", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(149.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.PDPNJDOCEOE(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.endDateTime, CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO(".lastCheckpoint.checkpointsUsed" + item.HJCBNLFCNAM() + "Found best region: '") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				OLNGIOJOABI(item);
-			}
-		}
-	}
-
-	public void KKMBHEBOGAL()
+	public void ABJOHBOOJPG()
 	{
 		foreach (ulong item in ODNDAPINPLB)
 		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.PJMJPHECLLL(CIHAIJPFIFP(item), "_SmoothStart", ONEPNINILOC(item).DPKPLOJNEOG()));
+			StartCoroutine(Singleton<ChallengesMessage>.Instance.EOAALFEALFB(JIPIKLINJOF(item), "\" gets executed locally only, if at all.", GetChallengeByID(item).HCEHDFKNGKB()));
 		}
 		ODNDAPINPLB.Clear();
 	}
 
-	public void DHNMKMKCKFD()
+	public long NHBOHPPIALG(DateTime LPGNCFKLMEH)
 	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.HJKACAHALKD(ONEPNINILOC(item), "Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.", IFPIPMPFHCA(item).NJKHOALCJBI()));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public void IMDLCKCMFMF(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.AcceptChallenge(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.EKIBIEFGIJC() == "Reset XP")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public IEnumerator MJGPMLDHKDE(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public void GDLKPBLABII(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.NMAJHGEGJCG(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.CFNPEEMCLJP() == "Drop_Near")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public void LCCIGLLLFBG()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.HOCOLBHKCHL(JGGLPBFDJKF(item), "CameraFilterPack/TV_VHS", JGGLPBFDJKF(item).EBENNNMBEAP()));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public void JEALJMLENKL(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.KPLBEJCGOMO("_Value3" + BFLLKFPPAAB.ALBJAEBLABB() + "fade out duration"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.PHCHLPBPKHL());
-			Singleton<SaveSystem>.Instance.CMLFCHINKCH("EndlessLoopsScoreText" + BFLLKFPPAAB.IKACPLICNNB() + "true", true);
-		}
-	}
-
-	public void GHBFNOEMKJB(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.AAIDMDNBMCD(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.PACECPHKLNE() == "_Value")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public long ELAIHKBJPKP(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(137, 1, 1, 1, 1, 0)).TotalSeconds;
-	}
-
-	private void HEFOBIBCNNP(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 1)
-		{
-			Debug.LogError("[LevelEditorScene] Print Audio Wave: Start");
-			return;
-		}
-		ulong DBBLOPNANJE = 0uL;
-		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.ALBJAEBLABB() == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 1)
-		{
-			Debug.Log("/");
-		}
-		else if (BDGDDFKKGGA.Length == 2)
-		{
-			if (BDGDDFKKGGA[0] == " base map(s)")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.IHLJALNNBFP();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[0] == "player")
-		{
-			if (BDGDDFKKGGA.Length != 0)
-			{
-				Debug.LogError(",");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.KHCJFLGCAFL() == ulong.Parse(BDGDDFKKGGA[0])).FEAPMDENLBN();
-			}
-		}
-		if (Singleton<Scene>.Instance.LCBFAFEADIO() == "GlassesColor2")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	private void KCDICOKEJHJ(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 4)
-		{
-			Debug.LogError("Fade");
-			return;
-		}
-		ulong DBBLOPNANJE = 1uL;
-		if (ulong.TryParse(BDGDDFKKGGA[0], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 1)
-		{
-			Debug.Log("IncorrectHitsScoreText");
-		}
-		else if (BDGDDFKKGGA.Length == 5)
-		{
-			if (BDGDDFKKGGA[1] == "ItemNameBGImage")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.Reset();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[0] == " ")
-		{
-			if (BDGDDFKKGGA.Length != 1)
-			{
-				Debug.LogError("OpJoinLobby()");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.AKJKDMMKNFO() == ulong.Parse(BDGDDFKKGGA[3])).IHLJALNNBFP();
-			}
-		}
-		if (Singleton<Scene>.Instance.HPKHOICGMFC() == "OPEN")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public void CHAJHAOEIKF(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.HasKey("GameScene" + BFLLKFPPAAB.KHCJFLGCAFL() + "Cannot send messages when not connected. Either connect to Photon OR use offline mode!"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.NJNBOPKBLKK());
-			Singleton<SaveSystem>.Instance.CONNMLDKBOF("(master)" + BFLLKFPPAAB.BBPGJKOIAKM() + "SupportLogger OnApplicationPause: ", false);
-		}
-	}
-
-	public bool BHFILMECNEI()
-	{
-		return ODNDAPINPLB.Count > 1;
-	}
-
-	public void IIHGLLIKGKH(ulong CENMLCAACBF)
-	{
-		if (CIHAIJPFIFP(CENMLCAACBF).JMGIKADHIGM() == (Challenge.CurrentStatus)4)
-		{
-			StartCoroutine(PJMMIOMIBFN(CENMLCAACBF));
-		}
-	}
-
-	public void LCJFAOGLEEM(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.PFNIKKMCFDF(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.CFNPEEMCLJP() == "_HighlightSuppression")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public void IJIEFKLHMPF(ulong CENMLCAACBF)
-	{
-		if (GetChallengeByID(CENMLCAACBF).DGAKBIEHAJC() == Challenge.CurrentStatus.NotStarted)
-		{
-			StartCoroutine(HEDGEAHBBDH(CENMLCAACBF));
-		}
-	}
-
-	public void Init(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.Instance.AddCommand("challenges", FINNJIMFAPB, "Commands for challenges", "<command>", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(3.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.startDateTime, CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.endDateTime, CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.HasKey("challenges." + item.id + ".status") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				AcceptChallenge(item);
-			}
-		}
-	}
-
-	public Challenge IDKBNGMCFAL(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.HJCBNLFCNAM() == JMMILEFMACB);
-	}
-
-	public void NKLCNJEIAFB(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.HMADOEFFOEM().CEBBJICIFGO(",0", ILCHBIPHPHN, "_VignetteBlur", "_Value4", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(530.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.IEKOLCGDGNB(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.BADPAMEGNLK(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO("_Radius" + item.AKJKDMMKNFO() + "Set Particles Color") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				JGLNHCHILNJ(item);
-			}
-		}
-	}
-
-	public IEnumerator LCMOLPOBCBP(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public Challenge NOPECAKEGAN(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == JMMILEFMACB);
-	}
-
-	public IEnumerator PJKOLFHNGGB(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public void MBJHDNCOGIK(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.OAMNFGLGIPE(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.id == "_Level")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	private void CALDBKBCANF(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 3)
-		{
-			Debug.LogError("Up");
-			return;
-		}
-		ulong DBBLOPNANJE = 0uL;
-		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.ALBJAEBLABB() == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 1)
-		{
-			Debug.Log("/");
-		}
-		else if (BDGDDFKKGGA.Length == 6)
-		{
-			if (BDGDDFKKGGA[0] == "_Value")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.FEAPMDENLBN();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[0] == "_CameraWS")
-		{
-			if (BDGDDFKKGGA.Length != 0)
-			{
-				Debug.LogError("_Distortion");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.ALBJAEBLABB() == ulong.Parse(BDGDDFKKGGA[1])).GONKPNAAIEE();
-			}
-		}
-		if (Singleton<Scene>.Instance.id == "x")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public void CKFHEMPKPEM(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.PMDOJPLDDKP("CameraFilterPack/Drawing_NewCellShading" + BFLLKFPPAAB.BBPGJKOIAKM() + "settings_bindings_sec_"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.PHCHLPBPKHL());
-			Singleton<SaveSystem>.Instance.CMLFCHINKCH("PublishButton" + BFLLKFPPAAB.AKJKDMMKNFO() + "lobby '{0}'[{1}]", true);
-		}
-	}
-
-	public void PBBDHIFJHHC(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.Instance.CEMAFHEDCMF("x", FINNJIMFAPB, "SelectionBox component is on a gameObject with a Canvas Scaler component. As of now, Canvas Scalers without the default settings throw off the coordinates of the selection box. Canvas Scaler has been removed.", "\r");
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(363.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.IEKOLCGDGNB(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.endDateTime, CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.HasKey("_Glitch" + item.HJCBNLFCNAM() + "_MainTex2") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				PMBBDPNMGHK(item, true);
-			}
-		}
-	}
-
-	public void CMFBCPNHGOF(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.GLEFOHOMBFC().PNEHIPCCEKG("/", MBDOHDIHPMI, ". Going to authenticate anyways.", "VHS");
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(350.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.ONELLAMBEAG(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.FHBMIMOOLLN(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.HasKey("ls" + item.BBPGJKOIAKM() + "NetworkScene") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				GDLKPBLABII(item, true);
-			}
-		}
-	}
-
-	public void EBJDBGBGCJO(ulong CENMLCAACBF)
-	{
-		if (IDKBNGMCFAL(CENMLCAACBF).JMGIKADHIGM() == Challenge.CurrentStatus.Complete)
-		{
-			StartCoroutine(CJPKLAMIIJP(CENMLCAACBF));
-		}
-	}
-
-	public long PNNOHGCMANO(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(-60, 0, 0, 1, 0, 0)).TotalSeconds;
-	}
-
-	public void BADJNHDCDGC()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.LMCOPICBHCI(PIFHBONLJCA(item), "_ReflectionTexture2", NLPMEFFEPIO(item).IGAHKBHFBNE()));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public Challenge FJKMDIDOJMI(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.HJCBNLFCNAM() == JMMILEFMACB);
-	}
-
-	public void ALDHFENHIDP(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.FBPOLBCPJFG(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.CNEOMFHNLOD() == "music")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public void PGDHACEMEAE(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.PMDOJPLDDKP(" " + BFLLKFPPAAB.NPIPMDFPLPH() + "#rt"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.AKJKDMMKNFO());
-			Singleton<SaveSystem>.Instance.SetBool("_Value" + BFLLKFPPAAB.NJNBOPKBLKK() + "mapselector.filter.officialsortmode", true);
-		}
-	}
-
-	public Challenge IFPIPMPFHCA(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.NJNBOPKBLKK() == JMMILEFMACB);
-	}
-
-	public long MNDIGJOOFKB(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(53, 0, 0, 0, 1, 0)).TotalSeconds;
-	}
-
-	private void DAPKGMONPDI(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 0)
-		{
-			Debug.LogError("EventData0DropDownList");
-			return;
-		}
-		ulong DBBLOPNANJE = 1uL;
-		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.IKACPLICNNB() == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 1)
-		{
-			Debug.Log("[PlayerBase] SetBGColor error: ");
-		}
-		else if (BDGDDFKKGGA.Length == 6)
-		{
-			if (BDGDDFKKGGA[0] == "CameraFilterPack/Distortion_BigFace")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.GONKPNAAIEE();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[0] == "_Value")
-		{
-			if (BDGDDFKKGGA.Length != 4)
-			{
-				Debug.LogError("CameraFilterPack/RainFX");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.IKACPLICNNB() == ulong.Parse(BDGDDFKKGGA[8])).IHLJALNNBFP();
-			}
-		}
-		if (Singleton<Scene>.Instance.HLGJHICPDMO() == "_Red_R")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	public IEnumerator NGLHHGBFCBF(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	private void MBDOHDIHPMI(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 2)
-		{
-			Debug.LogError("#ok");
-			return;
-		}
-		ulong DBBLOPNANJE = 1uL;
-		if (ulong.TryParse(BDGDDFKKGGA[0], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.IKACPLICNNB() == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 0)
-		{
-			Debug.Log("_ScreenResolution");
-		}
-		else if (BDGDDFKKGGA.Length == 3)
-		{
-			if (BDGDDFKKGGA[0] == "Beat Detected")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.HFFAJNCOJNB();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[0] == "GenerationMenu")
-		{
-			if (BDGDDFKKGGA.Length != 4)
-			{
-				Debug.LogError(" on effect ");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == ulong.Parse(BDGDDFKKGGA[2])).IHLJALNNBFP();
-			}
-		}
-		if (Singleton<Scene>.Instance.PNOCNIBEHMF() == "tagElement")
-		{
-			((MenuScene)Singleton<Scene>.Instance).DDMILNCEHBH();
-		}
-	}
-
-	private void ILCHBIPHPHN(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 5)
-		{
-			Debug.LogError(".lastCheckpoint.time");
-			return;
-		}
-		ulong DBBLOPNANJE = 1uL;
-		if (ulong.TryParse(BDGDDFKKGGA[0], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 0)
-		{
-			Debug.Log("setint");
-		}
-		else if (BDGDDFKKGGA.Length == 6)
-		{
-			if (BDGDDFKKGGA[1] == "Parameter levelId must be int or string!")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.FEAPMDENLBN();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[0] == " connected: ")
-		{
-			if (BDGDDFKKGGA.Length != 0)
-			{
-				Debug.LogError("AllocateViewID() failed. User {0} is out of subIds, as all viewIDs are used.");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.AKJKDMMKNFO() == ulong.Parse(BDGDDFKKGGA[3])).KNNOEGLLDAN();
-			}
-		}
-		if (Singleton<Scene>.Instance.HPKHOICGMFC() == "FileLabel")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public void EEIMLBLFCCA(ulong CENMLCAACBF)
-	{
-		if (LJEGAEKKDPP(CENMLCAACBF).IFAJDLKJIDL() == (Challenge.CurrentStatus)8)
-		{
-			StartCoroutine(GetReward(CENMLCAACBF));
-		}
-	}
-
-	public void GJHDMBCLDGP(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.HasKey("SetSatelliteTrailWidth" + BFLLKFPPAAB.AKJKDMMKNFO() + "Set Player Distance"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.PHCHLPBPKHL());
-			Singleton<SaveSystem>.Instance.CMLFCHINKCH("winter2020_official" + BFLLKFPPAAB.PHCHLPBPKHL() + "CameraFilterPack_Blizzard1", true);
-		}
-	}
-
-	public void AcceptChallenge(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.AcceptChallenge(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.id == "MenuScene")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public void ONAAJPPJILB(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.PMDOJPLDDKP("_TimeX" + BFLLKFPPAAB.AKJKDMMKNFO() + "Solo"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.NJNBOPKBLKK());
-			Singleton<SaveSystem>.Instance.NCNNFONPMLD("Vertical" + BFLLKFPPAAB.HJCBNLFCNAM() + "value", true);
-		}
-	}
-
-	public void EBMNMBNJDMK(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.FAGEJPPIDOL().AddCommand("isVisible", KDDOGHOJBFJ, "Save Path: ", "ItemNameBGImage");
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(1708.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.FLMHLLPLPCP(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.FHBMIMOOLLN(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO("maxScore" + item.ALBJAEBLABB() + "_Visualize") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				IMDLCKCMFMF(item, true);
-			}
-		}
-	}
-
-	public void DHMIFLPJMBA(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.KPLBEJCGOMO("_FinalReflectionTexture" + BFLLKFPPAAB.AKJKDMMKNFO() + "================================"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.AKJKDMMKNFO());
-			Singleton<SaveSystem>.Instance.CMLFCHINKCH("Most likely the game became empty during the switch to GameServer." + BFLLKFPPAAB.NJNBOPKBLKK() + "CameraFilterPack/TV_WideScreenCircle", false);
-		}
-	}
-
-	public bool BMAEFPCJKHD()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public void AJHDHOGKBBO(Challenge BFLLKFPPAAB)
-	{
-		if (!Singleton<SaveSystem>.Instance.PMDOJPLDDKP("ShineEffect" + BFLLKFPPAAB.ALBJAEBLABB() + "_Value"))
-		{
-			ODNDAPINPLB.Add(BFLLKFPPAAB.KHCJFLGCAFL());
-			Singleton<SaveSystem>.Instance.SetBool("B" + BFLLKFPPAAB.NPIPMDFPLPH() + "arc", false);
-		}
-	}
-
-	public IEnumerator POAAHNJCIFA(ulong DDFGKDFMPNL)
-	{
-		Singleton<MessageBoxPanel>.Instance.DisplayMessage("#pleasewait", string.Empty, null, false);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", SteamManager.Instance.steamTempKey);
-		wWWForm.AddField("steamid", string.Empty + SteamUser.GetSteamID().m_SteamID);
-		wWWForm.AddField("challengeid", string.Empty + DDFGKDFMPNL);
-		byte[] data = wWWForm.data;
-		string uri = Singleton<GameManager>.Instance.CreateServerURL(getRewardUrl);
-		UnityWebRequest unityWebRequest = UnityWebRequest.Post(uri, wWWForm);
-		string text = ToUnixTimeSeconds(DateTime.UtcNow).ToString();
-		unityWebRequest.SetRequestHeader("IntraSig", Singleton<GameManager>.Instance.HashHMAC("request" + Singleton<RanksSystem>.Instance.GetS() + text, text + Encoding.UTF8.GetString(wWWForm.data)));
-		unityWebRequest.SetRequestHeader("IntraTime", text);
-		yield return unityWebRequest.SendWebRequest();
-		if (!string.IsNullOrEmpty(unityWebRequest.error))
-		{
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.error, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-		else if (!unityWebRequest.downloadHandler.text.ToLower().Contains("error") && !unityWebRequest.downloadHandler.text.ToLower().Contains("bad"))
-		{
-			GetChallengeByID(DDFGKDFMPNL).PlayerStatus = Challenge.CurrentStatus.ObtainedReward;
-			StartCoroutine(Singleton<ItemsHandler>.Instance.Init());
-			yield return new WaitUntil(() => Singleton<ItemsHandler>.Instance.isLoaded);
-			Singleton<MessageBoxPanel>.Instance.Close();
-			if (Singleton<ItemsHandler>.Instance.newItemsNotifications.Count > 0)
-			{
-				Singleton<ItemsHandler>.Instance.ShowNewItems();
-			}
-			if (Singleton<Scene>.Instance.id == "MenuScene")
-			{
-				((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-			}
-		}
-		else
-		{
-			Singleton<MessageBoxPanel>.Instance.Close();
-			StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog("#getrewardfailed: " + unityWebRequest.downloadHandler.text, "#tryagain", delegate
-			{
-				StartCoroutine(GetReward(DDFGKDFMPNL));
-			}, "#close", delegate
-			{
-			}));
-		}
-	}
-
-	public bool JCHPJOHFMKG()
-	{
-		return ODNDAPINPLB.Count > 0;
-	}
-
-	public long CGOIJEEKOHO(DateTime LPGNCFKLMEH)
-	{
-		return (long)(LPGNCFKLMEH - new DateTime(140, 0, 0, 1, 1, 1)).TotalSeconds;
-	}
-
-	private void FINNJIMFAPB(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length < 2)
-		{
-			Debug.LogError("Please specify a map name or buildID");
-			return;
-		}
-		ulong DBBLOPNANJE = 0uL;
-		if (ulong.TryParse(BDGDDFKKGGA[1], out DBBLOPNANJE))
-		{
-			challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == DBBLOPNANJE);
-		}
-		if (BDGDDFKKGGA.Length == 1)
-		{
-			Debug.Log("Working commands:\nreset <challengeid>\nresetall");
-		}
-		else if (BDGDDFKKGGA.Length == 2)
-		{
-			if (BDGDDFKKGGA[1] == "resetall")
-			{
-				foreach (Challenge challenges in challengesList)
-				{
-					challenges.Reset();
-				}
-			}
-		}
-		else if (BDGDDFKKGGA[1] == "reset")
-		{
-			if (BDGDDFKKGGA.Length != 3)
-			{
-				Debug.LogError("Bad parameters for reset! Use \"reset <challengeid>\"");
-			}
-			else
-			{
-				challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == ulong.Parse(BDGDDFKKGGA[2])).Reset();
-			}
-		}
-		if (Singleton<Scene>.Instance.id == "MenuScene")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public Challenge LJEGAEKKDPP(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.id == JMMILEFMACB);
-	}
-
-	public void OLNGIOJOABI(Challenge BFLLKFPPAAB, bool AAGGLAGLINL = false)
-	{
-		BFLLKFPPAAB.GDLKPBLABII(AAGGLAGLINL);
-		if (Singleton<Scene>.Instance.ALIGPAANMFA() == "_ScreenResolution")
-		{
-			((MenuScene)Singleton<Scene>.Instance).UpdateChallengesTile();
-		}
-	}
-
-	public void EKCNGLHGLOK()
-	{
-		foreach (ulong item in ODNDAPINPLB)
-		{
-			StartCoroutine(Singleton<ChallengesMessage>.Instance.DHPELKMAAFM(CIHAIJPFIFP(item), "note.1", BOAMLFKCEDJ(item).AMBFPMPCHFE()));
-		}
-		ODNDAPINPLB.Clear();
-	}
-
-	public void CGBGIGPIAHL(ulong CENMLCAACBF)
-	{
-		if (ICHOIEINCLP(CENMLCAACBF).DGAKBIEHAJC() == Challenge.CurrentStatus.Complete)
-		{
-			StartCoroutine(PJKOLFHNGGB(CENMLCAACBF));
-		}
-	}
-
-	public void NFKKPHKGIEI(List<Challenge> KOHKPKPOBPD)
-	{
-		DebugCommands.FAGEJPPIDOL().PLOIOFEGBIJ("_BlurRadius", MBDOHDIHPMI, "#alreadystarted", "#close", true);
-		ODNDAPINPLB = new List<ulong>();
-		challengesList = new List<Challenge>();
-		DateTime dateTime = DateTime.UtcNow.AddHours(1567.0);
-		foreach (Challenge item in KOHKPKPOBPD)
-		{
-			DateTime dateTime2 = DateTime.Parse(item.FLMHLLPLPCP(), CultureInfo.InvariantCulture);
-			DateTime dateTime3 = DateTime.Parse(item.MGEFANJIDHA(), CultureInfo.InvariantCulture);
-			challengesList.Add(item);
-			if (Singleton<SaveSystem>.Instance.HasKey("Objects in List: " + item.NPIPMDFPLPH() + "file://") && dateTime >= dateTime2 && dateTime <= dateTime3)
-			{
-				MBJHDNCOGIK(item, true);
-			}
-		}
-	}
-
-	public Challenge CDDFIMMJECM(ulong JMMILEFMACB)
-	{
-		return Singleton<ChallengesManager>.Instance.challengesList.Find((Challenge IACGDFHKCAE) => IACGDFHKCAE.BBPGJKOIAKM() == JMMILEFMACB);
+		return (long)(LPGNCFKLMEH - new DateTime(-43, 0, 0, 0, 1, 0)).TotalSeconds;
 	}
 }

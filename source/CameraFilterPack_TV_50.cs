@@ -40,7 +40,7 @@ public class CameraFilterPack_TV_50 : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Blend2Camera_Subtract");
+		SCShader = Shader.Find("CameraFilterPack/Blend2Camera_Exclusion");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -65,8 +65,8 @@ public class CameraFilterPack_TV_50 : MonoBehaviour
 				HBJJOCHGOPH = 1367f;
 			}
 			DNLMFEGJJDD().SetFloat("_LightIntensity", HBJJOCHGOPH);
-			DNLMFEGJJDD().SetFloat("SpawnObj", Fade);
-			DNLMFEGJJDD().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1669f, 1577f));
+			NBPKMLMCHFN.SetFloat("SetParticlesInput", Fade);
+			DNLMFEGJJDD().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1669f, 1577f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -81,7 +81,7 @@ public class CameraFilterPack_TV_50 : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find("]");
+		SCShader = Shader.Find("#craftng");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -97,10 +97,10 @@ public class CameraFilterPack_TV_50 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 337f;
 			}
-			NBPKMLMCHFN.SetFloat("Tab2Content", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("LivesSlider", HBJJOCHGOPH);
 			NBPKMLMCHFN.SetFloat("OK", Fade);
-			DNLMFEGJJDD().SetVector("LB", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1216f, 1584f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			DNLMFEGJJDD().SetVector("Joystick1Button4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1216f, 1584f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -150,8 +150,8 @@ public class CameraFilterPack_TV_50 : MonoBehaviour
 				HBJJOCHGOPH = 1416f;
 			}
 			NBPKMLMCHFN.SetFloat("CameraFilterPack/Blend2Camera_ColorBurn", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("[PlayerController] ", Fade);
-			NBPKMLMCHFN.SetVector("_ColorBuffer", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1537f, 1492f));
+			NBPKMLMCHFN.SetFloat(" not exist", Fade);
+			DNLMFEGJJDD().SetVector("_SunColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1537f, 1492f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else

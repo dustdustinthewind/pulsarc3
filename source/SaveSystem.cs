@@ -33,35 +33,13 @@ public class SaveSystem : Singleton<SaveSystem>
 	[HideInInspector]
 	public bool isSaveLoaded;
 
-	public string FBCCDONJALF()
+	public void NEEIFNDHDOG()
 	{
-		return new FileInfo(Helpers.GetDirectory(" GameServer:") + "Hidden/Image Effects/Cinematic/AmbientOcclusion" + GetCurrentSaveFileName() + ",").FullName;
+		base.Awake();
+		DebugCommands.HIFIEDJCOFC().KHBHACBOGLJ("BadgeText", LKINNAAENPO, "_Value2", "OK", true);
 	}
 
-	public string GetCurrentSaveFileFullPath()
-	{
-		return new FileInfo(Helpers.GetDirectory("Save") + "/" + GetCurrentSaveFileName() + ".save").FullName;
-	}
-
-	public void CIDNCCOIEJJ()
-	{
-		if (OONKHMECOCF)
-		{
-			GPJGHDBMDGN = LAAAPBGKNGH();
-			string contents = ((!HCHMCODLILK) ? GPJGHDBMDGN : GameManager.Encrypt(GPJGHDBMDGN));
-			Helpers.CheckDirectory("PLEASE WAIT");
-			File.Create(IGCGEJDMGAB()).Dispose();
-			File.WriteAllText(GetCurrentSaveFileFullPath(), contents);
-			GPJGHDBMDGN = string.Empty;
-		}
-	}
-
-	public void HEIIMOJGGEB(bool CKALCHJAFBE)
-	{
-		HCHMCODLILK = CKALCHJAFBE;
-	}
-
-	public string KKAJOOJKBDJ(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	public float OLHIEOKMOAK(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -69,176 +47,44 @@ public class SaveSystem : Singleton<SaveSystem>
 		}
 		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
 		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
+			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
 		}
-		return null;
+		return 644f;
 	}
 
-	public int JPEEFKKPFIL(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public bool LCHPECEJMPE(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void KOMAMFOPJID(string HFEFHOPOLIK, string DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public string AFJEOAONPJD()
-	{
-		return new FileInfo(Helpers.GetDirectory("challenges/") + "CameraFilterPack/Lut_TestMode" + CBOCAHLJCGP() + "_MainTex2").FullName;
-	}
-
-	private Hashtable EFCAPLBAPLL(string MKNDAKMBCLN)
-	{
-		Hashtable hashtable = new Hashtable();
-		string[] array = new string[1];
-		array[1] = "_MainTex2";
-		string[] array2 = MKNDAKMBCLN.Split(array, StringSplitOptions.None);
-		string[] array3 = array2;
-		for (int i = 1; i < array3.Length; i += 0)
-		{
-			string text = array3[i];
-			string[] array4 = new string[1];
-			array4[1] = "SpawnObj";
-			string[] array5 = text.Split(array4, StringSplitOptions.RemoveEmptyEntries);
-			hashtable.Add(OIIGCJPDLGC(array5[0], NHICDOHIKAL), EICOHFGICAK(array5[0], DeEscapeNonSeperators(array5[1], NHICDOHIKAL)));
-			if (array5.Length > 4)
-			{
-				Debug.LogWarning("settings.volume.sfx" + array5.Length + "AddEnvironmentObject");
-			}
-		}
-		return hashtable;
-	}
-
-	public void HIDBNDKJHAA(string HFEFHOPOLIK, int DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public string OOLELLHJHAC(string KEBIENAFLPN, string[] NHICDOHIKAL)
-	{
-		KEBIENAFLPN = KEBIENAFLPN.Replace("inventory.selected.", "EventMenu");
-		for (int i = 1; i < NHICDOHIKAL.Length; i += 0)
-		{
-			KEBIENAFLPN = KEBIENAFLPN.Replace(NHICDOHIKAL[i], ".lastCheckpoint.checkpointsUsed" + NHICDOHIKAL[i]);
-		}
-		return KEBIENAFLPN;
-	}
-
-	public void LJHCGFGJPCK()
-	{
-		if (OONKHMECOCF)
-		{
-			GPJGHDBMDGN = MFIGIBCOEKN();
-			string contents = ((!HCHMCODLILK) ? GPJGHDBMDGN : GameManager.HGIFJHHKABG(GPJGHDBMDGN));
-			Helpers.CheckDirectory("_MaxRadiusOrKInPaper");
-			File.Create(OBHPKLFMFOO()).Dispose();
-			File.WriteAllText(DMHMPFGBLFB(), contents);
-			GPJGHDBMDGN = string.Empty;
-		}
-	}
-
-	public int AFCPNFKIKKJ(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public int CEKEOJDAEOD(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public string CEDJCDAPIAH(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public string OJLJAANBMBH()
+	public string FGKDLFOIPIL()
 	{
 		return Singleton<SaveSystem>.Instance.currentSaveFileName;
 	}
 
-	public bool GetBool(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	public string CENCAKDIPMO()
+	{
+		return new FileInfo(Helpers.GetDirectory("Fade") + "StopMusic" + JDCDCHBMCKC() + "win").FullName;
+	}
+
+	public long ABKIODLOILH(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 1L;
+	}
+
+	public void JHCDGOMGOBE(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
+	}
+
+	public bool AKENGPAAKFF(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -251,1468 +97,7 @@ public class SaveSystem : Singleton<SaveSystem>
 		return false;
 	}
 
-	public void CONNMLDKBOF(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public void DeleteAll(Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		LPFHGFAOHDB.Clear();
-	}
-
-	public bool OLJGEIBGDHL(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void LIFMHPJPNEP(string HFEFHOPOLIK, string DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public string LKOCCMCDDKG(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void HIJFMGEOLOA(Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		LPFHGFAOHDB.Clear();
-	}
-
-	public void SetInt(string HFEFHOPOLIK, int DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public void DAGHAOBCIFL(string HFEFHOPOLIK, string DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public void DOIAJINPMOG(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public long OHILDJCAJDN(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 0L;
-	}
-
-	public long PADBLFLKGPC(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void EnableEncryption(bool CKALCHJAFBE)
-	{
-		HCHMCODLILK = CKALCHJAFBE;
-	}
-
-	public string IGCGEJDMGAB()
-	{
-		return new FileInfo(Helpers.GetDirectory("SetPlayerDistance") + "maps." + CBOCAHLJCGP() + "d264dbba9c2410771b4ad918903b3f4cd9e276a9").FullName;
-	}
-
-	private Hashtable BIGOMICKFNL(string MKNDAKMBCLN)
-	{
-		Hashtable hashtable = new Hashtable();
-		string[] array = MKNDAKMBCLN.Split(new string[1] { " ; " }, StringSplitOptions.RemoveEmptyEntries);
-		string[] array2 = array;
-		foreach (string text in array2)
-		{
-			string[] array3 = text.Split(new string[1] { " : " }, StringSplitOptions.None);
-			hashtable.Add(DeEscapeNonSeperators(array3[0], NHICDOHIKAL), KKIHHNFJFHJ(array3[2], DeEscapeNonSeperators(array3[1], NHICDOHIKAL)));
-			if (array3.Length > 3)
-			{
-				Debug.LogWarning("PlayerPrefs::Deserialize() parameterContent has " + array3.Length + " elements");
-			}
-		}
-		return hashtable;
-	}
-
-	public float OJHPDDLNAGH(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public float DHFOFEJPGPP(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public bool CLPNPGCOPIH(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return true;
-	}
-
-	public float KIKJOOJFIJK(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 880f;
-	}
-
-	public float GLDCKMNIIDE(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1327f;
-	}
-
-	public string FDPKMMIOGOE(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void JBHLCJOEOGL(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	private object LKOKIIMLHIP(string ICMAOHOIGFA, string DPNHODJHGJL)
-	{
-		switch (ICMAOHOIGFA)
-		{
-		case "Texture2":
-			return DPNHODJHGJL.ToString();
-		case "Object ID. Case-Sensitive":
-			return Convert.ToInt32(DPNHODJHGJL);
-		case "settings_bindings_":
-			return Convert.ToBoolean(DPNHODJHGJL);
-		case "Added GameObject to prefabDictionary: ":
-			return Convert.ToSingle(DPNHODJHGJL);
-		case "_Value6":
-			return Convert.ToInt64(DPNHODJHGJL);
-		default:
-			Debug.LogError("_Value6" + ICMAOHOIGFA);
-			return null;
-		}
-	}
-
-	public string JLBFLBAHGIP(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public float BKPEOCMBKBI(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1803f;
-	}
-
-	public string CBOCAHLJCGP()
-	{
-		return Singleton<SaveSystem>.Instance.currentSaveFileName;
-	}
-
-	public bool GIHOKCMHMCP(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public float OLHIEOKMOAK(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void NHONGIGFHJB(string HFEFHOPOLIK, int DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public void IKOAFMHIJLE(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public void NOEIPDOLJFA(string HFEFHOPOLIK, string DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public string KMMDJEPFGGL(string KEBIENAFLPN, string[] NHICDOHIKAL)
-	{
-		KEBIENAFLPN = KEBIENAFLPN.Replace("LevelNameInputField", "SetPlayerDistance");
-		for (int i = 1; i < NHICDOHIKAL.Length; i += 0)
-		{
-			KEBIENAFLPN = KEBIENAFLPN.Replace(NHICDOHIKAL[i], "_Value3" + NHICDOHIKAL[i]);
-		}
-		return KEBIENAFLPN;
-	}
-
-	public int ANECPPFPKAP(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public float DHAINALDNBG(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 35f;
-	}
-
-	public float GetFloat(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 0f;
-	}
-
-	public bool AANPGELPGPN(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public long LJBIIPPHGEJ(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void EIAJOEAPEJO(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	private object FALCJKHIFCO(string ICMAOHOIGFA, string DPNHODJHGJL)
-	{
-		switch (ICMAOHOIGFA)
-		{
-		case "_History1Weight":
-			return DPNHODJHGJL.ToString();
-		case "_CurveTex":
-			return Convert.ToInt32(DPNHODJHGJL);
-		case "(\\[ *quote *\\])":
-			return Convert.ToBoolean(DPNHODJHGJL);
-		case "/":
-			return Convert.ToSingle(DPNHODJHGJL);
-		case "SetSpeed":
-			return Convert.ToInt64(DPNHODJHGJL);
-		default:
-			Debug.LogError("In Main Menu" + ICMAOHOIGFA);
-			return null;
-		}
-	}
-
-	public void PGGNGAMLGAJ()
-	{
-		base.Awake();
-		DebugCommands.FAGEJPPIDOL().CIHBPOBKGNP("_LrDepthTex", IBNNPGBPBIL, "_ReflectionTexture3", "SetSunDirectionVector");
-	}
-
-	public string DeEscapeNonSeperators(string MIECKJBDFLA, string[] NHICDOHIKAL)
-	{
-		for (int i = 0; i < NHICDOHIKAL.Length; i++)
-		{
-			MIECKJBDFLA = MIECKJBDFLA.Replace("\\" + NHICDOHIKAL[i], NHICDOHIKAL[i]);
-		}
-		MIECKJBDFLA = MIECKJBDFLA.Replace("\\\\", "\\");
-		return MIECKJBDFLA;
-	}
-
-	public long OIJNFPAJNEB(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 0L;
-	}
-
-	public bool KPLBEJCGOMO(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		return LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK);
-	}
-
-	public long LNKGJIHLLGH(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public bool PMDOJPLDDKP(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		return LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK);
-	}
-
-	public void SetLong(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public void MMMIEPDLMNM()
-	{
-		if (OONKHMECOCF)
-		{
-			GPJGHDBMDGN = LAAAPBGKNGH();
-			string contents = ((!HCHMCODLILK) ? GPJGHDBMDGN : GameManager.OLLCLOPGHGI(GPJGHDBMDGN));
-			Helpers.CheckDirectory("SupportLogger ");
-			File.Create(FBCCDONJALF()).Dispose();
-			File.WriteAllText(OBHPKLFMFOO(), contents);
-			GPJGHDBMDGN = string.Empty;
-		}
-	}
-
-	public long AHGPHDDBFBE(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 0L;
-	}
-
-	public string OBHPKLFMFOO()
-	{
-		return new FileInfo(Helpers.GetDirectory("SetParticlesInput") + ". Verify the Prefab is in a Resources folder (and not in a subfolder)" + LHLGBIMNCCI() + "PLEASE WAIT").FullName;
-	}
-
-	private string HPKGPKEFBFH(Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		string empty = string.Empty;
-		IDictionaryEnumerator enumerator = LPFHGFAOHDB.GetEnumerator();
-		StringBuilder stringBuilder = new StringBuilder();
-		bool flag = true;
-		while (enumerator.MoveNext())
-		{
-			if (!flag)
-			{
-				stringBuilder.Append(" ");
-				stringBuilder.Append(";");
-				stringBuilder.Append(" ");
-			}
-			stringBuilder.Append(EscapeNonSeperators(enumerator.Key.ToString(), NHICDOHIKAL));
-			stringBuilder.Append(" ");
-			stringBuilder.Append(":");
-			stringBuilder.Append(" ");
-			stringBuilder.Append(EscapeNonSeperators(enumerator.Value.ToString(), NHICDOHIKAL));
-			stringBuilder.Append(" ");
-			stringBuilder.Append(":");
-			stringBuilder.Append(" ");
-			stringBuilder.Append(enumerator.Value.GetType());
-			flag = false;
-		}
-		return stringBuilder.ToString();
-	}
-
-	public string ELHODPGACDI(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		return null;
-	}
-
-	public long EHHEFEMJDIC(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1L;
-	}
-
-	public long GetLong(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void SetBool(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public void Flush()
-	{
-		if (OONKHMECOCF)
-		{
-			GPJGHDBMDGN = HPKGPKEFBFH();
-			string contents = ((!HCHMCODLILK) ? GPJGHDBMDGN : GameManager.Encrypt(GPJGHDBMDGN));
-			Helpers.CheckDirectory("Save");
-			File.Create(GetCurrentSaveFileFullPath()).Dispose();
-			File.WriteAllText(GetCurrentSaveFileFullPath(), contents);
-			GPJGHDBMDGN = string.Empty;
-		}
-	}
-
-	private Hashtable NGDPMOOODLJ(string MKNDAKMBCLN)
-	{
-		Hashtable hashtable = new Hashtable();
-		string[] array = new string[0];
-		array[0] = "\\n";
-		string[] array2 = MKNDAKMBCLN.Split(array, StringSplitOptions.None);
-		string[] array3 = array2;
-		for (int i = 1; i < array3.Length; i++)
-		{
-			string text = array3[i];
-			string[] array4 = new string[0];
-			array4[1] = "inventory.selected.";
-			string[] array5 = text.Split(array4, StringSplitOptions.None);
-			hashtable.Add(JGBGEJEBLOO(array5[1], NHICDOHIKAL), BPIEDCMEDFP(array5[2], OIIGCJPDLGC(array5[1], NHICDOHIKAL)));
-			if (array5.Length > 3)
-			{
-				Debug.LogWarning("Trackpad" + array5.Length + "gamemode");
-			}
-		}
-		return hashtable;
-	}
-
-	public void HHNNLOEGDEF()
-	{
-		base.Awake();
-		DebugCommands.IGMKHPPPLDD().EHJBOAOCFNP("maps.", FBHNGMCCLIH, "Joystick1Button11", "#failed: ", true);
-	}
-
-	public long AKLKJFPNEAC(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1L;
-	}
-
-	public void KOKDPAEJECC(string NKAFFBEECFN = null)
-	{
-		OONKHMECOCF = true;
-		GPJGHDBMDGN = string.Empty;
-		MKNDAKMBCLN = string.Empty;
-		if (!string.IsNullOrEmpty(NKAFFBEECFN))
-		{
-			currentSaveFileName = NKAFFBEECFN;
-		}
-		Debug.Log("settings.volume.editor" + currentSaveFileName);
-		StreamReader streamReader = null;
-		if (File.Exists(GetCurrentSaveFileFullPath()))
-		{
-			try
-			{
-				isSaveLoaded = true;
-				streamReader = new StreamReader(OBHPKLFMFOO());
-				DCAAJFIBFHO = false;
-				MKNDAKMBCLN = ((!HCHMCODLILK) ? streamReader.ReadToEnd() : GameManager.EHJKPAKGJNA(streamReader.ReadToEnd()));
-				streamReader.Dispose();
-			}
-			catch (Exception)
-			{
-				Debug.LogWarning("Init");
-				streamReader.Dispose();
-				File.Delete(OBHPKLFMFOO());
-			}
-		}
-		LPFHGFAOHDB.Clear();
-		if (string.IsNullOrEmpty(MKNDAKMBCLN))
-		{
-			return;
-		}
-		if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 0] == -21)
-		{
-			MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
-			if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 0] == '3')
-			{
-				MKNDAKMBCLN = MKNDAKMBCLN.Substring(0, MKNDAKMBCLN.Length - 0);
-			}
-		}
-		LPFHGFAOHDB = BIGOMICKFNL(MKNDAKMBCLN);
-	}
-
-	public bool IOLBIFOIHML(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public string FNOFGNOLHFM()
-	{
-		return new FileInfo(Helpers.GetDirectory("CameraFilterPack/Blur_Radial_Fast") + "CameraFilterPack/Glasses_On" + GetCurrentSaveFileName() + "FinalScoreText").FullName;
-	}
-
-	public bool LEAKKIIPIFL(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return true;
-	}
-
-	public string LHLGBIMNCCI()
-	{
-		return Singleton<SaveSystem>.Instance.currentSaveFileName;
-	}
-
-	public void SetFloat(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public float GetFloat(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	private object FMNNNAFKCHF(string ICMAOHOIGFA, string DPNHODJHGJL)
-	{
-		switch (ICMAOHOIGFA)
-		{
-		case "offsets":
-			return DPNHODJHGJL.ToString();
-		case "SpawnObj":
-			return Convert.ToInt32(DPNHODJHGJL);
-		case "_Near":
-			return Convert.ToBoolean(DPNHODJHGJL);
-		case " cannot be used as a 3D LUT.":
-			return Convert.ToSingle(DPNHODJHGJL);
-		case "CameraFilterPack/Blend2Camera_VividLight":
-			return Convert.ToInt64(DPNHODJHGJL);
-		default:
-			Debug.LogError("ENABLE_DITHERING" + ICMAOHOIGFA);
-			return null;
-		}
-	}
-
-	public long GetLong(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 0L;
-	}
-
-	public void GAACBNCIFLG(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public int PPBFNLHCKCP(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public string GetString(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public bool HasKey(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		return LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK);
-	}
-
-	public string IPEDKOMAKPP(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		return null;
-	}
-
-	public void DeleteKey(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
-	}
-
-	public string EscapeNonSeperators(string KEBIENAFLPN, string[] NHICDOHIKAL)
-	{
-		KEBIENAFLPN = KEBIENAFLPN.Replace("\\", "\\\\");
-		for (int i = 0; i < NHICDOHIKAL.Length; i++)
-		{
-			KEBIENAFLPN = KEBIENAFLPN.Replace(NHICDOHIKAL[i], "\\" + NHICDOHIKAL[i]);
-		}
-		return KEBIENAFLPN;
-	}
-
-	private string MFIGIBCOEKN(Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		string empty = string.Empty;
-		IDictionaryEnumerator enumerator = LPFHGFAOHDB.GetEnumerator();
-		StringBuilder stringBuilder = new StringBuilder();
-		bool flag = true;
-		while (enumerator.MoveNext())
-		{
-			if (!flag)
-			{
-				stringBuilder.Append("NetworkCanvas");
-				stringBuilder.Append("Tab2Content");
-				stringBuilder.Append(", ");
-			}
-			stringBuilder.Append(KMMDJEPFGGL(enumerator.Key.ToString(), NHICDOHIKAL));
-			stringBuilder.Append("_Blue_C");
-			stringBuilder.Append("_Value6");
-			stringBuilder.Append("{0:0} second{1}");
-			stringBuilder.Append(OHHMNLEFOOK(enumerator.Value.ToString(), NHICDOHIKAL));
-			stringBuilder.Append(" registered.");
-			stringBuilder.Append("_Fade");
-			stringBuilder.Append("ws://");
-			stringBuilder.Append(enumerator.Value.GetType());
-			flag = false;
-		}
-		return stringBuilder.ToString();
-	}
-
-	public float EJEGKIDILDJ(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1812f;
-	}
-
-	public string NBMEANCMGEH(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		return null;
-	}
-
-	public void ALGKENJGNLL(string NKAFFBEECFN = null)
-	{
-		OONKHMECOCF = true;
-		GPJGHDBMDGN = string.Empty;
-		MKNDAKMBCLN = string.Empty;
-		if (!string.IsNullOrEmpty(NKAFFBEECFN))
-		{
-			currentSaveFileName = NKAFFBEECFN;
-		}
-		Debug.Log("ReconnectAndRejoin() failed. It seems the client doesn't have any previous room to re-join." + currentSaveFileName);
-		StreamReader streamReader = null;
-		if (File.Exists(FNOFGNOLHFM()))
-		{
-			try
-			{
-				isSaveLoaded = false;
-				streamReader = new StreamReader(GetCurrentSaveFileFullPath());
-				DCAAJFIBFHO = false;
-				MKNDAKMBCLN = ((!HCHMCODLILK) ? streamReader.ReadToEnd() : GameManager.EHJKPAKGJNA(streamReader.ReadToEnd()));
-				streamReader.Dispose();
-			}
-			catch (Exception)
-			{
-				Debug.LogWarning("menu.selectedlevelid");
-				streamReader.Dispose();
-				File.Delete(OBHPKLFMFOO());
-			}
-		}
-		LPFHGFAOHDB.Clear();
-		if (string.IsNullOrEmpty(MKNDAKMBCLN))
-		{
-			return;
-		}
-		if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 0] == -72)
-		{
-			MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
-			if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 1] == -45)
-			{
-				MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 0);
-			}
-		}
-		LPFHGFAOHDB = BIGOMICKFNL(MKNDAKMBCLN);
-	}
-
-	public string PLIPJHNEGCH(string MIECKJBDFLA, string[] NHICDOHIKAL)
-	{
-		for (int i = 1; i < NHICDOHIKAL.Length; i++)
-		{
-			MIECKJBDFLA = MIECKJBDFLA.Replace("_Intensity" + NHICDOHIKAL[i], NHICDOHIKAL[i]);
-		}
-		MIECKJBDFLA = MIECKJBDFLA.Replace(" user's map(s)", "MessageText");
-		return MIECKJBDFLA;
-	}
-
-	public void KOKOJGKDLMP(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
-	}
-
-	private object KKIHHNFJFHJ(string ICMAOHOIGFA, string DPNHODJHGJL)
-	{
-		switch (ICMAOHOIGFA)
-		{
-		case "System.String":
-			return DPNHODJHGJL.ToString();
-		case "System.Int32":
-			return Convert.ToInt32(DPNHODJHGJL);
-		case "System.Boolean":
-			return Convert.ToBoolean(DPNHODJHGJL);
-		case "System.Single":
-			return Convert.ToSingle(DPNHODJHGJL);
-		case "System.Int64":
-			return Convert.ToInt64(DPNHODJHGJL);
-		default:
-			Debug.LogError("Unsupported type: " + ICMAOHOIGFA);
-			return null;
-		}
-	}
-
-	private void CNGKFIDOMNJ(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length == 1)
-		{
-			Debug.Log("EventConfigButton");
-			return;
-		}
-		if (BDGDDFKKGGA.Length == 3)
-		{
-			if (BDGDDFKKGGA[0] == "_ScreenResolution")
-			{
-				CAJFKNFJEKC();
-			}
-			return;
-		}
-		if (BDGDDFKKGGA[0] == "_SphereSize")
-		{
-			if (BDGDDFKKGGA.Length != 0)
-			{
-				Debug.LogError("_MainTex2");
-			}
-			else
-			{
-				BEMECPDKOCA(BDGDDFKKGGA[0]);
-			}
-		}
-		if (BDGDDFKKGGA[0] == "CameraFilterPack/Blend2Camera_LinearDodge")
-		{
-			if (BDGDDFKKGGA.Length != 4)
-			{
-				Debug.LogError("_ScreenResolution");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.HBIGPMNAPHA(BDGDDFKKGGA[0], int.Parse(BDGDDFKKGGA[2], NumberStyles.AllowTrailingWhite));
-				Singleton<SaveSystem>.Instance.LJHCGFGJPCK();
-			}
-		}
-		if (BDGDDFKKGGA[1] == "EventConfigButton")
-		{
-			if (BDGDDFKKGGA.Length != 5)
-			{
-				Debug.LogError("CameraFilterPack/Film_ColorPerfection");
-			}
-			else
-			{
-				object[] array = new object[0];
-				array[0] = "Destroy all spawned environment objects";
-				array[0] = BDGDDFKKGGA[3];
-				array[6] = "CameraFilterPack/Distortion_Wave_Horizontal";
-				array[3] = Singleton<SaveSystem>.Instance.JLPLKBDBIJC(BDGDDFKKGGA[4]);
-				Debug.Log(string.Concat(array));
-			}
-		}
-		if (BDGDDFKKGGA[1] == "settings.arcshitsoundtimedelay")
-		{
-			if (BDGDDFKKGGA.Length != 1)
-			{
-				Debug.LogError("Connecting");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.SetString(BDGDDFKKGGA[0], BDGDDFKKGGA[5]);
-				Singleton<SaveSystem>.Instance.CIDNCCOIEJJ();
-			}
-		}
-		if (BDGDDFKKGGA[1] == "_Value3")
-		{
-			if (BDGDDFKKGGA.Length != 7)
-			{
-				Debug.LogError("_EdgeSize");
-			}
-			else
-			{
-				Debug.Log("JoinOrCreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster." + BDGDDFKKGGA[1] + "[DiscordController] Connected to {0}#{1}: {2}" + Singleton<SaveSystem>.Instance.ELHODPGACDI(BDGDDFKKGGA[3]));
-			}
-		}
-		if (BDGDDFKKGGA[0] == "Bad parameters for set! Use <language>")
-		{
-			if (BDGDDFKKGGA.Length != 2)
-			{
-				Debug.LogError("GenerationMenu");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.SetBool(BDGDDFKKGGA[0], bool.Parse(BDGDDFKKGGA[5]));
-				Singleton<SaveSystem>.Instance.Flush();
-			}
-		}
-		if (BDGDDFKKGGA[1] == "value")
-		{
-			if (BDGDDFKKGGA.Length != 7)
-			{
-				Debug.LogError("catched: ");
-			}
-			else
-			{
-				object[] array2 = new object[2];
-				array2[1] = "arcs";
-				array2[1] = BDGDDFKKGGA[1];
-				array2[6] = "CameraFilterPack/FX_Plasma";
-				array2[8] = Singleton<SaveSystem>.Instance.IAABFJBOGGO(BDGDDFKKGGA[1]);
-				Debug.Log(string.Concat(array2));
-			}
-		}
-		if (BDGDDFKKGGA[0] == "maps.")
-		{
-			if (BDGDDFKKGGA.Length != 1)
-			{
-				Debug.LogError("shader.frost");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.JBHLCJOEOGL(BDGDDFKKGGA[1], float.Parse(BDGDDFKKGGA[8], NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands));
-				Singleton<SaveSystem>.Instance.Flush();
-			}
-		}
-		if (BDGDDFKKGGA[1] == "_Axis")
-		{
-			if (BDGDDFKKGGA.Length != 6)
-			{
-				Debug.LogError("CameraFilterPack/Vision_Hell_Blood");
-			}
-			else
-			{
-				object[] array3 = new object[0];
-				array3[0] = "_Speed";
-				array3[1] = BDGDDFKKGGA[3];
-				array3[8] = "error";
-				array3[7] = Singleton<SaveSystem>.Instance.KIKJOOJFIJK(BDGDDFKKGGA[8]);
-				Debug.Log(string.Concat(array3));
-			}
-		}
-		if (BDGDDFKKGGA[1] == "1234332714")
-		{
-			if (BDGDDFKKGGA.Length != 6)
-			{
-				Debug.LogError("rarity");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.KNFHMLMGKCJ(BDGDDFKKGGA[0]);
-			}
-		}
-		if (BDGDDFKKGGA[1] == "ComboText")
-		{
-			Singleton<SaveSystem>.Instance.HIJFMGEOLOA();
-		}
-		if (BDGDDFKKGGA[1] == "#updateoutdatedmap")
-		{
-			Debug.Log("_Bullet_1" + Singleton<SaveSystem>.Instance.GetCurrentSaveFileFullPath());
-		}
-	}
-
-	public long CFJNHGCJDBD(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public string OHHMNLEFOOK(string KEBIENAFLPN, string[] NHICDOHIKAL)
-	{
-		KEBIENAFLPN = KEBIENAFLPN.Replace("value", "The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.");
-		for (int i = 0; i < NHICDOHIKAL.Length; i += 0)
-		{
-			KEBIENAFLPN = KEBIENAFLPN.Replace(NHICDOHIKAL[i], "_SunThreshold" + NHICDOHIKAL[i]);
-		}
-		return KEBIENAFLPN;
-	}
-
-	public int PKIEJKHMECB(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public bool ONOENJPEFDD(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public void CBIEBMGENJH(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public int JLPLKBDBIJC(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public long KOEFDCEBMJL(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 0L;
-	}
-
-	private object EICOHFGICAK(string ICMAOHOIGFA, string DPNHODJHGJL)
-	{
-		switch (ICMAOHOIGFA)
-		{
-		case "x":
-			return DPNHODJHGJL.ToString();
-		case "CameraFilterPack/Blur_Movie":
-			return Convert.ToInt32(DPNHODJHGJL);
-		case "ComboScoreText":
-			return Convert.ToBoolean(DPNHODJHGJL);
-		case "_TimeX":
-			return Convert.ToSingle(DPNHODJHGJL);
-		case "maps.":
-			return Convert.ToInt64(DPNHODJHGJL);
-		default:
-			Debug.LogError("Ev DestroyAll! By PlayerId: " + ICMAOHOIGFA);
-			return null;
-		}
-	}
-
-	public void JBGEBCHJPCG(bool CKALCHJAFBE)
-	{
-		HCHMCODLILK = CKALCHJAFBE;
-	}
-
-	public void OIJPCPGCGEN(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public int GetInt(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	public int JNLHMOEFMML(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -1725,323 +110,39 @@ public class SaveSystem : Singleton<SaveSystem>
 		return 0;
 	}
 
-	public long DPHBBBHMGEH(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	private string AOFKNBPNHFK(Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
 			LPFHGFAOHDB = this.LPFHGFAOHDB;
 		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		string empty = string.Empty;
+		IDictionaryEnumerator enumerator = LPFHGFAOHDB.GetEnumerator();
+		StringBuilder stringBuilder = new StringBuilder();
+		bool flag = false;
+		while (enumerator.MoveNext())
 		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+			if (!flag)
+			{
+				stringBuilder.Append("CameraFilterPack/Blur_Blurry");
+				stringBuilder.Append("colorC");
+				stringBuilder.Append("CameraFilterPack/Lut_TestMode");
+			}
+			stringBuilder.Append(DGJIFCFKDKC(enumerator.Key.ToString(), NHICDOHIKAL));
+			stringBuilder.Append("...");
+			stringBuilder.Append(".lastCheckpoint.time");
+			stringBuilder.Append("mapid");
+			stringBuilder.Append(CJNEEDJIPIN(enumerator.Value.ToString(), NHICDOHIKAL));
+			stringBuilder.Append("Joystick1Button8");
+			stringBuilder.Append("Drop_Far");
+			stringBuilder.Append("/");
+			stringBuilder.Append(enumerator.Value.GetType());
+			flag = true;
 		}
-		return 1L;
+		return stringBuilder.ToString();
 	}
 
-	public int DNBCCNHDJDK(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public string EMLLHLAIAAA(string KEBIENAFLPN, string[] NHICDOHIKAL)
-	{
-		KEBIENAFLPN = KEBIENAFLPN.Replace("SaveButton", "name");
-		for (int i = 1; i < NHICDOHIKAL.Length; i++)
-		{
-			KEBIENAFLPN = KEBIENAFLPN.Replace(NHICDOHIKAL[i], "roomDescription" + NHICDOHIKAL[i]);
-		}
-		return KEBIENAFLPN;
-	}
-
-	public string LFFECBOPPHA(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	private object BBACCHJAFHK(string ICMAOHOIGFA, string DPNHODJHGJL)
-	{
-		switch (ICMAOHOIGFA)
-		{
-		case "_Value2":
-			return DPNHODJHGJL.ToString();
-		case "saveGameName ":
-			return Convert.ToInt32(DPNHODJHGJL);
-		case "_InvScreenSize":
-			return Convert.ToBoolean(DPNHODJHGJL);
-		case "Text":
-			return Convert.ToSingle(DPNHODJHGJL);
-		case "CONTRAST":
-			return Convert.ToInt64(DPNHODJHGJL);
-		default:
-			Debug.LogError("mapselector.filter.favoriteonly" + ICMAOHOIGFA);
-			return null;
-		}
-	}
-
-	public float AKHCHNPPNIB(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public float HLPKNPJIHKM(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 1070f;
-	}
-
-	public int CMAFBKOEPLP(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	private object BPIEDCMEDFP(string ICMAOHOIGFA, string DPNHODJHGJL)
-	{
-		switch (ICMAOHOIGFA)
-		{
-		case "settings.gamemessagesduration":
-			return DPNHODJHGJL.ToString();
-		case "OK":
-			return Convert.ToInt32(DPNHODJHGJL);
-		case "value":
-			return Convert.ToBoolean(DPNHODJHGJL);
-		case "Scrollbar":
-			return Convert.ToSingle(DPNHODJHGJL);
-		case "Tab2Content":
-			return Convert.ToInt64(DPNHODJHGJL);
-		default:
-			Debug.LogError("maps." + ICMAOHOIGFA);
-			return null;
-		}
-	}
-
-	private void IBNNPGBPBIL(string[] BDGDDFKKGGA)
-	{
-		if (BDGDDFKKGGA.Length == 1)
-		{
-			Debug.Log("_BlurRadius4");
-			return;
-		}
-		if (BDGDDFKKGGA.Length == 2)
-		{
-			if (BDGDDFKKGGA[0] == "https://store.steampowered.com/recommended/recommendgame/")
-			{
-				Init();
-			}
-			return;
-		}
-		if (BDGDDFKKGGA[0] == " is muted")
-		{
-			if (BDGDDFKKGGA.Length != 1)
-			{
-				Debug.LogError("LevelConfigButton");
-			}
-			else
-			{
-				BEMECPDKOCA(BDGDDFKKGGA[0]);
-			}
-		}
-		if (BDGDDFKKGGA[0] == "player.xp")
-		{
-			if (BDGDDFKKGGA.Length != 1)
-			{
-				Debug.LogError("shader.sunny");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.SetInt(BDGDDFKKGGA[1], int.Parse(BDGDDFKKGGA[1], NumberStyles.AllowLeadingSign));
-				Singleton<SaveSystem>.Instance.LJHCGFGJPCK();
-			}
-		}
-		if (BDGDDFKKGGA[1] == "#md5submitionfailed: ")
-		{
-			if (BDGDDFKKGGA.Length != 7)
-			{
-				Debug.LogError("menu.hardcoreinfo");
-			}
-			else
-			{
-				object[] array = new object[0];
-				array[1] = "_Value";
-				array[1] = BDGDDFKKGGA[1];
-				array[2] = "\"\"";
-				array[4] = Singleton<SaveSystem>.Instance.PPBFNLHCKCP(BDGDDFKKGGA[1]);
-				Debug.Log(string.Concat(array));
-			}
-		}
-		if (BDGDDFKKGGA[1] == "New SaveGame")
-		{
-			if (BDGDDFKKGGA.Length != 3)
-			{
-				Debug.LogError("BadgeImage");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.SetString(BDGDDFKKGGA[4], BDGDDFKKGGA[4]);
-				Singleton<SaveSystem>.Instance.LJHCGFGJPCK();
-			}
-		}
-		if (BDGDDFKKGGA[0] == "sounds/no_hit")
-		{
-			if (BDGDDFKKGGA.Length != 0)
-			{
-				Debug.LogError("_TimeX");
-			}
-			else
-			{
-				Debug.Log("Joystick1Button4" + BDGDDFKKGGA[2] + "b" + Singleton<SaveSystem>.Instance.KKAJOOJKBDJ(BDGDDFKKGGA[6]));
-			}
-		}
-		if (BDGDDFKKGGA[0] == "_RampTex")
-		{
-			if (BDGDDFKKGGA.Length != 7)
-			{
-				Debug.LogError("https://discord.gg/intralism");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.CMLFCHINKCH(BDGDDFKKGGA[0], bool.Parse(BDGDDFKKGGA[4]));
-				Singleton<SaveSystem>.Instance.LJHCGFGJPCK();
-			}
-		}
-		if (BDGDDFKKGGA[0] == "Image effects aren't supported on this device ({0})")
-		{
-			if (BDGDDFKKGGA.Length != 0)
-			{
-				Debug.LogError("1");
-			}
-			else
-			{
-				object[] array2 = new object[0];
-				array2[0] = "settings.enablerankingnotifications";
-				array2[1] = BDGDDFKKGGA[6];
-				array2[4] = "_MainTex2";
-				array2[1] = Singleton<SaveSystem>.Instance.CHBOJJOHCEB(BDGDDFKKGGA[0]);
-				Debug.Log(string.Concat(array2));
-			}
-		}
-		if (BDGDDFKKGGA[1] == "ItemNameBGImage")
-		{
-			if (BDGDDFKKGGA.Length != 7)
-			{
-				Debug.LogError("skin.");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.JBHLCJOEOGL(BDGDDFKKGGA[3], float.Parse(BDGDDFKKGGA[3], NumberStyles.AllowTrailingWhite | NumberStyles.AllowLeadingSign | NumberStyles.AllowParentheses | NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands));
-				Singleton<SaveSystem>.Instance.CIDNCCOIEJJ();
-			}
-		}
-		if (BDGDDFKKGGA[0] == " (inactive)")
-		{
-			if (BDGDDFKKGGA.Length != 8)
-			{
-				Debug.LogError("_ScreenResolution");
-			}
-			else
-			{
-				object[] array3 = new object[4];
-				array3[1] = "[LevelEditorScene] Item creation successful! Published Item ID: ";
-				array3[1] = BDGDDFKKGGA[8];
-				array3[4] = "CameraFilterPack/Film_ColorPerfection";
-				array3[6] = Singleton<SaveSystem>.Instance.BKPEOCMBKBI(BDGDDFKKGGA[5]);
-				Debug.Log(string.Concat(array3));
-			}
-		}
-		if (BDGDDFKKGGA[0] == "_MainTex2")
-		{
-			if (BDGDDFKKGGA.Length != 6)
-			{
-				Debug.LogError("Image effects aren't supported on this device ({0})");
-			}
-			else
-			{
-				Singleton<SaveSystem>.Instance.IPCGLFKIANM(BDGDDFKKGGA[6]);
-			}
-		}
-		if (BDGDDFKKGGA[0] == "<b>#")
-		{
-			Singleton<SaveSystem>.Instance.NIPDJGJCPLK();
-		}
-		if (BDGDDFKKGGA[1] == ";")
-		{
-			Debug.Log("_Skybox" + Singleton<SaveSystem>.Instance.FNOFGNOLHFM());
-		}
-	}
-
-	public bool IAABFJBOGGO(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return false;
-	}
-
-	public new void Awake()
-	{
-		base.Awake();
-		DebugCommands.Instance.AddCommand("data", FBHNGMCCLIH, "Run a command for data system", "<command>", true);
-	}
-
-	public void KNFHMLMGKCJ(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
-	}
-
-	public void NIPDJGJCPLK(Hashtable LPFHGFAOHDB = null)
+	public void JIJEAOEKBOM(Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -2050,52 +151,25 @@ public class SaveSystem : Singleton<SaveSystem>
 		LPFHGFAOHDB.Clear();
 	}
 
-	public float NPNOOLFEDKN(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	public string GetCurrentSaveFileName()
 	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
+		return Singleton<SaveSystem>.Instance.currentSaveFileName;
 	}
 
-	public void CBPMAEIODNN(Hashtable LPFHGFAOHDB = null)
+	public void MEMAGBEMICO()
 	{
-		if (LPFHGFAOHDB == null)
+		if (OONKHMECOCF)
 		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
+			GPJGHDBMDGN = AOFKNBPNHFK();
+			string contents = ((!HCHMCODLILK) ? GPJGHDBMDGN : GameManager.MEEAAMMCJED(GPJGHDBMDGN));
+			Helpers.CheckDirectory("_Value2");
+			File.Create(HBKFBOMGKFH()).Dispose();
+			File.WriteAllText(HBKFBOMGKFH(), contents);
+			GPJGHDBMDGN = string.Empty;
 		}
-		LPFHGFAOHDB.Clear();
 	}
 
-	public void IKGFIOIADLN()
-	{
-		base.Awake();
-		DebugCommands.Instance.CEBBJICIFGO("Joystick1Button8", IBNNPGBPBIL, "MapperNameText", "GlassesColor", true);
-	}
-
-	public bool EBEAKNGJCDC(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public bool CHBOJJOHCEB(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	public bool AOLMNGCGCBI(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -2108,24 +182,407 @@ public class SaveSystem : Singleton<SaveSystem>
 		return true;
 	}
 
-	private object GCGBMNFMIEP(string ICMAOHOIGFA, string DPNHODJHGJL)
+	public int POJCOIEGLEF(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 0;
+	}
+
+	public new void BODPLDJLFCF()
+	{
+		base.Awake();
+		DebugCommands.GLEFOHOMBFC().CEMAFHEDCMF("Could not execute RPC ", LKINNAAENPO, "sounds/hit_normal", "_TimeX");
+	}
+
+	public string DeEscapeNonSeperators(string MIECKJBDFLA, string[] NHICDOHIKAL)
+	{
+		for (int i = 0; i < NHICDOHIKAL.Length; i++)
+		{
+			MIECKJBDFLA = MIECKJBDFLA.Replace("\\" + NHICDOHIKAL[i], NHICDOHIKAL[i]);
+		}
+		MIECKJBDFLA = MIECKJBDFLA.Replace("\\\\", "\\");
+		return MIECKJBDFLA;
+	}
+
+	public int KFNFNKILGPH(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public string HNAFMBDPIMM()
+	{
+		return new FileInfo(Helpers.GetDirectory("settings.gamemessagesduration") + "_Near" + BGOIBCNMNKL() + "_ScreenResolution").FullName;
+	}
+
+	public void AGDCACJJAMG(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
+	}
+
+	public float DPAGLGGNECO(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = false;
+		return JPAMCIKJLED;
+	}
+
+	public string DGJIFCFKDKC(string KEBIENAFLPN, string[] NHICDOHIKAL)
+	{
+		KEBIENAFLPN = KEBIENAFLPN.Replace("RaiseEvent() failed. Your event is not being sent! Check if your are in a Room and the eventCode must be less than 200 (0..199).", "_SweaterSize");
+		for (int i = 0; i < NHICDOHIKAL.Length; i++)
+		{
+			KEBIENAFLPN = KEBIENAFLPN.Replace(NHICDOHIKAL[i], "/icon" + NHICDOHIKAL[i]);
+		}
+		return KEBIENAFLPN;
+	}
+
+	public void NOBNCNJKOLA(string NKAFFBEECFN = null)
+	{
+		OONKHMECOCF = true;
+		GPJGHDBMDGN = string.Empty;
+		MKNDAKMBCLN = string.Empty;
+		if (!string.IsNullOrEmpty(NKAFFBEECFN))
+		{
+			currentSaveFileName = NKAFFBEECFN;
+		}
+		Debug.Log("maps." + currentSaveFileName);
+		StreamReader streamReader = null;
+		if (File.Exists(EJEIDFOMPBB()))
+		{
+			try
+			{
+				isSaveLoaded = false;
+				streamReader = new StreamReader(EJEIDFOMPBB());
+				DCAAJFIBFHO = true;
+				MKNDAKMBCLN = ((!HCHMCODLILK) ? streamReader.ReadToEnd() : GameManager.Decrypt(streamReader.ReadToEnd()));
+				streamReader.Dispose();
+			}
+			catch (Exception)
+			{
+				Debug.LogWarning("closed");
+				streamReader.Dispose();
+				File.Delete(NNHFJOLJJBN());
+			}
+		}
+		LPFHGFAOHDB.Clear();
+		if (string.IsNullOrEmpty(MKNDAKMBCLN))
+		{
+			return;
+		}
+		if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 1] == 'k')
+		{
+			MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
+			if (MKNDAKMBCLN.Length > 0 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 1] == 'N')
+			{
+				MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
+			}
+		}
+		LPFHGFAOHDB = BIGOMICKFNL(MKNDAKMBCLN);
+	}
+
+	public void JKGPPAFPIBI(Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		LPFHGFAOHDB.Clear();
+	}
+
+	public void GIKPOGCBJFI(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
+	}
+
+	public bool HasKey(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		return LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK);
+	}
+
+	public void EHJIJDODNGG()
+	{
+		if (OONKHMECOCF)
+		{
+			GPJGHDBMDGN = ODBMJMABAMK();
+			string contents = ((!HCHMCODLILK) ? GPJGHDBMDGN : GameManager.MEEAAMMCJED(GPJGHDBMDGN));
+			Helpers.CheckDirectory("_ColorG");
+			File.Create(CENCAKDIPMO()).Dispose();
+			File.WriteAllText(HBKFBOMGKFH(), contents);
+			GPJGHDBMDGN = string.Empty;
+		}
+	}
+
+	private object CBHNCJFDFID(string ICMAOHOIGFA, string DPNHODJHGJL)
 	{
 		switch (ICMAOHOIGFA)
 		{
-		case "Horizontal":
+		case "SetPlayerDistance":
 			return DPNHODJHGJL.ToString();
 		case "_TimeX":
 			return Convert.ToInt32(DPNHODJHGJL);
-		case "offsets":
+		case "menu.tabid":
 			return Convert.ToBoolean(DPNHODJHGJL);
-		case "Did not read byte array properly":
+		case "Loading...":
 			return Convert.ToSingle(DPNHODJHGJL);
-		case " not exist":
+		case "GameModeText":
 			return Convert.ToInt64(DPNHODJHGJL);
 		default:
-			Debug.LogError("/" + ICMAOHOIGFA);
+			Debug.LogError("Deleted event" + ICMAOHOIGFA);
 			return null;
 		}
+	}
+
+	public void GBFBKFACPBI(string HFEFHOPOLIK, int DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
+	}
+
+	public string HBKFBOMGKFH()
+	{
+		return new FileInfo(Helpers.GetDirectory("_ChannelMixerBlue") + "BadgeImage" + FGKDLFOIPIL() + "_ScreenResolution").FullName;
+	}
+
+	private void LKINNAAENPO(string[] BDGDDFKKGGA)
+	{
+		if (BDGDDFKKGGA.Length == 1)
+		{
+			Debug.Log("_Value2");
+			return;
+		}
+		if (BDGDDFKKGGA.Length == 3)
+		{
+			if (BDGDDFKKGGA[1] == "#combo")
+			{
+				NOBNCNJKOLA();
+			}
+			return;
+		}
+		if (BDGDDFKKGGA[0] == "OperationResponse unhandled: {0}")
+		{
+			if (BDGDDFKKGGA.Length != 2)
+			{
+				Debug.LogError("CameraFilterPack/FX_8bits_gb");
+			}
+			else
+			{
+				NOBNCNJKOLA(BDGDDFKKGGA[5]);
+			}
+		}
+		if (BDGDDFKKGGA[0] == "a year ago")
+		{
+			if (BDGDDFKKGGA.Length != 8)
+			{
+				Debug.LogError("\n");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.SetInt(BDGDDFKKGGA[2], int.Parse(BDGDDFKKGGA[6], NumberStyles.AllowTrailingSign));
+				Singleton<SaveSystem>.Instance.EHJIJDODNGG();
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_Intensity")
+		{
+			if (BDGDDFKKGGA.Length != 5)
+			{
+				Debug.LogError("_EdgeWeight");
+			}
+			else
+			{
+				object[] array = new object[7];
+				array[1] = ".highscore";
+				array[1] = BDGDDFKKGGA[2];
+				array[5] = "_OcclusionTexture";
+				array[0] = Singleton<SaveSystem>.Instance.GetInt(BDGDDFKKGGA[5]);
+				Debug.Log(string.Concat(array));
+			}
+		}
+		if (BDGDDFKKGGA[1] == "settings.selectormapsperpage")
+		{
+			if (BDGDDFKKGGA.Length != 0)
+			{
+				Debug.LogError("Mouse0");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.BMHFKLHLOCG(BDGDDFKKGGA[7], BDGDDFKKGGA[2]);
+				Singleton<SaveSystem>.Instance.EHJIJDODNGG();
+			}
+		}
+		if (BDGDDFKKGGA[0] == "[PlayerBase] Highscore: ")
+		{
+			if (BDGDDFKKGGA.Length != 3)
+			{
+				Debug.LogError(" Server: ");
+			}
+			else
+			{
+				Debug.Log("Xbox Home" + BDGDDFKKGGA[3] + " " + Singleton<SaveSystem>.Instance.FDFHEKDDEID(BDGDDFKKGGA[5]));
+			}
+		}
+		if (BDGDDFKKGGA[0] == " or ")
+		{
+			if (BDGDDFKKGGA.Length != 5)
+			{
+				Debug.LogError("If you host Photon yourself, make sure to start the 'Instance LoadBalancing' ");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.SetBool(BDGDDFKKGGA[0], bool.Parse(BDGDDFKKGGA[8]));
+				Singleton<SaveSystem>.Instance.Flush();
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_BlurPass")
+		{
+			if (BDGDDFKKGGA.Length != 4)
+			{
+				Debug.LogError("_Blue_G");
+			}
+			else
+			{
+				object[] array2 = new object[0];
+				array2[1] = "CameraFilterPack/Glasses_On";
+				array2[0] = BDGDDFKKGGA[6];
+				array2[5] = "float,10";
+				array2[7] = Singleton<SaveSystem>.Instance.EBDOCPMCHPN(BDGDDFKKGGA[7]);
+				Debug.Log(string.Concat(array2));
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_Bullet_3")
+		{
+			if (BDGDDFKKGGA.Length != 8)
+			{
+				Debug.LogError("_Value3");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.FNBPKFMKJFO(BDGDDFKKGGA[3], float.Parse(BDGDDFKKGGA[0], NumberStyles.AllowTrailingWhite | NumberStyles.AllowThousands));
+				Singleton<SaveSystem>.Instance.EHJIJDODNGG();
+			}
+		}
+		if (BDGDDFKKGGA[0] == "The new master starts a new round, cause we didn't start yet.")
+		{
+			if (BDGDDFKKGGA.Length != 5)
+			{
+				Debug.LogError("_Value");
+			}
+			else
+			{
+				object[] array3 = new object[5];
+				array3[1] = "#{0:X2}{1:X2}{2:X2}";
+				array3[1] = BDGDDFKKGGA[4];
+				array3[1] = "CameraFilterPack/Blend2Camera_ColorKey";
+				array3[5] = Singleton<SaveSystem>.Instance.OLHIEOKMOAK(BDGDDFKKGGA[5]);
+				Debug.Log(string.Concat(array3));
+			}
+		}
+		if (BDGDDFKKGGA[0] == "updating")
+		{
+			if (BDGDDFKKGGA.Length != 0)
+			{
+				Debug.LogError("CameraFilterPack/Drawing_BluePrint");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.JHCDGOMGOBE(BDGDDFKKGGA[3]);
+			}
+		}
+		if (BDGDDFKKGGA[0] == "Editor")
+		{
+			Singleton<SaveSystem>.Instance.DeleteAll();
+		}
+		if (BDGDDFKKGGA[0] == "LevelNameInputField")
+		{
+			Debug.Log(". Client should be in a room. Current connectionStateDetailed: " + Singleton<SaveSystem>.Instance.JHGGKIJPIOP());
+		}
+	}
+
+	public long PPLMPPDLFFA(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = false;
+		return JPAMCIKJLED;
+	}
+
+	public void FIKHPJEMEGO(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
 	}
 
 	public void Init(string NKAFFBEECFN = null)
@@ -2172,7 +629,44 @@ public class SaveSystem : Singleton<SaveSystem>
 		LPFHGFAOHDB = BIGOMICKFNL(MKNDAKMBCLN);
 	}
 
-	public long OPJHKEDENOM(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	private object KKIHHNFJFHJ(string ICMAOHOIGFA, string DPNHODJHGJL)
+	{
+		switch (ICMAOHOIGFA)
+		{
+		case "System.String":
+			return DPNHODJHGJL.ToString();
+		case "System.Int32":
+			return Convert.ToInt32(DPNHODJHGJL);
+		case "System.Boolean":
+			return Convert.ToBoolean(DPNHODJHGJL);
+		case "System.Single":
+			return Convert.ToSingle(DPNHODJHGJL);
+		case "System.Int64":
+			return Convert.ToInt64(DPNHODJHGJL);
+		default:
+			Debug.LogError("Unsupported type: " + ICMAOHOIGFA);
+			return null;
+		}
+	}
+
+	public void ELJPKMDFBML(string HFEFHOPOLIK, string DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
+	}
+
+	public long LAJBPGFDJAH(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -2182,15 +676,291 @@ public class SaveSystem : Singleton<SaveSystem>
 		{
 			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
 		}
-		return 1L;
+		return 0L;
 	}
 
-	public bool FOOKGGNJIOO()
+	public bool WasReadPlayerPrefsFileEncrypted()
 	{
 		return DCAAJFIBFHO;
 	}
 
-	public string CFLCJCJHNKD(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	public new void Awake()
+	{
+		base.Awake();
+		DebugCommands.Instance.AddCommand("data", FBHNGMCCLIH, "Run a command for data system", "<command>", true);
+	}
+
+	public void JKOMMNBGPDK(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
+	}
+
+	public void SetInt(string HFEFHOPOLIK, int DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	private void COMPLCKNFAJ(string[] BDGDDFKKGGA)
+	{
+		if (BDGDDFKKGGA.Length == 0)
+		{
+			Debug.Log("settings.gamemessagesduration");
+			return;
+		}
+		if (BDGDDFKKGGA.Length == 4)
+		{
+			if (BDGDDFKKGGA[0] == "_Color")
+			{
+				Init();
+			}
+			return;
+		}
+		if (BDGDDFKKGGA[1] == "Status: ")
+		{
+			if (BDGDDFKKGGA.Length != 4)
+			{
+				Debug.LogError("_History3ChromaTex");
+			}
+			else
+			{
+				CDDHLFNJOGC(BDGDDFKKGGA[0]);
+			}
+		}
+		if (BDGDDFKKGGA[0] == "_TimeX")
+		{
+			if (BDGDDFKKGGA.Length != 8)
+			{
+				Debug.LogError("masterSteamID");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.DAAJKCCCICP(BDGDDFKKGGA[1], int.Parse(BDGDDFKKGGA[4], NumberStyles.AllowLeadingWhite | NumberStyles.AllowTrailingWhite));
+				Singleton<SaveSystem>.Instance.OCHLOHFNKIN();
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_TimeX")
+		{
+			if (BDGDDFKKGGA.Length != 2)
+			{
+				Debug.LogError("_Value2");
+			}
+			else
+			{
+				object[] array = new object[6];
+				array[1] = "_AdditiveReflection";
+				array[0] = BDGDDFKKGGA[0];
+				array[2] = " joined";
+				array[8] = Singleton<SaveSystem>.Instance.JNLHMOEFMML(BDGDDFKKGGA[3]);
+				Debug.Log(string.Concat(array));
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_Value")
+		{
+			if (BDGDDFKKGGA.Length != 7)
+			{
+				Debug.LogError("_Intervale");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.PGGCEKDPMLL(BDGDDFKKGGA[0], BDGDDFKKGGA[0]);
+				Singleton<SaveSystem>.Instance.EHJIJDODNGG();
+			}
+		}
+		if (BDGDDFKKGGA[0] == ",")
+		{
+			if (BDGDDFKKGGA.Length != 5)
+			{
+				Debug.LogError("Object ID. Case-Sensitive");
+			}
+			else
+			{
+				Debug.Log("_TimeX" + BDGDDFKKGGA[8] + "_Blue_G" + Singleton<SaveSystem>.Instance.KKAJOOJKBDJ(BDGDDFKKGGA[0]));
+			}
+		}
+		if (BDGDDFKKGGA[0] == "MenuScene")
+		{
+			if (BDGDDFKKGGA.Length != 0)
+			{
+				Debug.LogError("SupportLogger OnConnectedToPhoton().");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.JKOMMNBGPDK(BDGDDFKKGGA[7], bool.Parse(BDGDDFKKGGA[3]));
+				Singleton<SaveSystem>.Instance.MEMAGBEMICO();
+			}
+		}
+		if (BDGDDFKKGGA[0] == "_Offsets")
+		{
+			if (BDGDDFKKGGA.Length != 4)
+			{
+				Debug.LogError("SpawnObj");
+			}
+			else
+			{
+				object[] array2 = new object[3];
+				array2[0] = "CameraFilterPack/Blend2Camera_Multiply";
+				array2[0] = BDGDDFKKGGA[1];
+				array2[4] = "0. SubBase 20-60 Hz\n1. Bass, 60-250 Hz\n2. LowMidrange 250-500 Hz\n3. Midrange 500-2,000 Hz\n4. UpperMidrange 2,000-4,000 Hz\n5. High 4,000-6000 Hz\n6. VeryHigh 6,000-20,000 Hz\n7. Decibal - use output data instead of frequency data";
+				array2[7] = Singleton<SaveSystem>.Instance.GetBool(BDGDDFKKGGA[7]);
+				Debug.Log(string.Concat(array2));
+			}
+		}
+		if (BDGDDFKKGGA[1] == "PublishButton")
+		{
+			if (BDGDDFKKGGA.Length != 5)
+			{
+				Debug.LogError("_Value");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.FIKHPJEMEGO(BDGDDFKKGGA[8], float.Parse(BDGDDFKKGGA[6], ~(NumberStyles.AllowLeadingWhite | NumberStyles.AllowLeadingSign | NumberStyles.AllowParentheses | NumberStyles.AllowDecimalPoint)));
+				Singleton<SaveSystem>.Instance.MEMAGBEMICO();
+			}
+		}
+		if (BDGDDFKKGGA[0] == "Reading preview file failed!: \"{0}\"")
+		{
+			if (BDGDDFKKGGA.Length != 6)
+			{
+				Debug.LogError("MapCreationCanvas");
+			}
+			else
+			{
+				object[] array3 = new object[0];
+				array3[1] = "logc";
+				array3[0] = BDGDDFKKGGA[0];
+				array3[8] = "/files/mods_terms.pdf";
+				array3[7] = Singleton<SaveSystem>.Instance.OOHMHLJADED(BDGDDFKKGGA[6]);
+				Debug.Log(string.Concat(array3));
+			}
+		}
+		if (BDGDDFKKGGA[0] == "Object ID. Case-Sensitive")
+		{
+			if (BDGDDFKKGGA.Length != 6)
+			{
+				Debug.LogError("No Camera attached!");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.KGGLDBCMCCM(BDGDDFKKGGA[1]);
+			}
+		}
+		if (BDGDDFKKGGA[0] == "move")
+		{
+			Singleton<SaveSystem>.Instance.JIJEAOEKBOM();
+		}
+		if (BDGDDFKKGGA[0] == "CameraFilterPack/Color_YUV")
+		{
+			Debug.Log("Result for " + Singleton<SaveSystem>.Instance.JHGGKIJPIOP());
+		}
+	}
+
+	public int GetInt(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 0;
+	}
+
+	public void KGGLDBCMCCM(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
+	}
+
+	public string EJEIDFOMPBB()
+	{
+		return new FileInfo(Helpers.GetDirectory("_Value4") + "CameraFilterPack/Noise_TV" + GetCurrentSaveFileName() + "#scoresubmitionfailed: ").FullName;
+	}
+
+	public void OKOEGLJJHOK(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	public string NBMEANCMGEH(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = false;
+		return JPAMCIKJLED;
+	}
+
+	public long GetLong(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 0L;
+	}
+
+	public string EscapeNonSeperators(string KEBIENAFLPN, string[] NHICDOHIKAL)
+	{
+		KEBIENAFLPN = KEBIENAFLPN.Replace("\\", "\\\\");
+		for (int i = 0; i < NHICDOHIKAL.Length; i++)
+		{
+			KEBIENAFLPN = KEBIENAFLPN.Replace(NHICDOHIKAL[i], "\\" + NHICDOHIKAL[i]);
+		}
+		return KEBIENAFLPN;
+	}
+
+	public string GetString(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -2203,13 +973,796 @@ public class SaveSystem : Singleton<SaveSystem>
 		return null;
 	}
 
-	public void KACPCCMPAHA()
+	public void CFIHLJDBCGJ(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
 	{
-		base.Awake();
-		DebugCommands.FAGEJPPIDOL().PNEHIPCCEKG("settings.shaders.bloomintencity", FBHNGMCCLIH, "Call ConnectToNameServer to ping available regions.", "[ItemsHandler] Found ", true);
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
 	}
 
-	public string CKJPNOHLJJO(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	public string JHGGKIJPIOP()
+	{
+		return new FileInfo(Helpers.GetDirectory("_TimeX") + "GlassDistortion" + FGKDLFOIPIL() + "_ScreenResolution").FullName;
+	}
+
+	public string MIAIFDJLKDI(string MIECKJBDFLA, string[] NHICDOHIKAL)
+	{
+		for (int i = 1; i < NHICDOHIKAL.Length; i += 0)
+		{
+			MIECKJBDFLA = MIECKJBDFLA.Replace("_DisplayVelocityScale" + NHICDOHIKAL[i], NHICDOHIKAL[i]);
+		}
+		MIECKJBDFLA = MIECKJBDFLA.Replace("_ScreenResolution", "getfloat");
+		return MIECKJBDFLA;
+	}
+
+	public void BPJPCGCIFGK(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
+	}
+
+	public void BANHFNDEPPO()
+	{
+		base.Awake();
+		DebugCommands.Instance.PLOIOFEGBIJ("player.gamecompleted", GHPLHIFBEGD, "AddEnvironmentObject", "menu.playedsolo", true);
+	}
+
+	public bool HBBEJIBFLHO(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		return LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK);
+	}
+
+	public int HHBIEPMBICO(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public void OJFHDOMCPMH(bool CKALCHJAFBE)
+	{
+		HCHMCODLILK = CKALCHJAFBE;
+	}
+
+	public void Flush()
+	{
+		if (OONKHMECOCF)
+		{
+			GPJGHDBMDGN = HPKGPKEFBFH();
+			string contents = ((!HCHMCODLILK) ? GPJGHDBMDGN : GameManager.Encrypt(GPJGHDBMDGN));
+			Helpers.CheckDirectory("Save");
+			File.Create(GetCurrentSaveFileFullPath()).Dispose();
+			File.WriteAllText(GetCurrentSaveFileFullPath(), contents);
+			GPJGHDBMDGN = string.Empty;
+		}
+	}
+
+	public void BHLOCFLKPPN(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	public void FNBPKFMKJFO(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
+	}
+
+	public float HCNELAJLBPC(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = false;
+		return JPAMCIKJLED;
+	}
+
+	public float PGKJAIODCEF(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	private void GHPLHIFBEGD(string[] BDGDDFKKGGA)
+	{
+		if (BDGDDFKKGGA.Length == 0)
+		{
+			Debug.Log("_Value3");
+			return;
+		}
+		if (BDGDDFKKGGA.Length == 6)
+		{
+			if (BDGDDFKKGGA[1] == "GraphicsQualitySlider")
+			{
+				NOBNCNJKOLA();
+			}
+			return;
+		}
+		if (BDGDDFKKGGA[1] == "x")
+		{
+			if (BDGDDFKKGGA.Length != 7)
+			{
+				Debug.LogError("_Offsets");
+			}
+			else
+			{
+				Init(BDGDDFKKGGA[0]);
+			}
+		}
+		if (BDGDDFKKGGA[0] == "Testing, a toggle has toggled [")
+		{
+			if (BDGDDFKKGGA.Length != 1)
+			{
+				Debug.LogError("_DepthLevel");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.SetInt(BDGDDFKKGGA[3], int.Parse(BDGDDFKKGGA[4], NumberStyles.AllowLeadingSign));
+				Singleton<SaveSystem>.Instance.OCHLOHFNKIN();
+			}
+		}
+		if (BDGDDFKKGGA[0] == "player.xp")
+		{
+			if (BDGDDFKKGGA.Length != 6)
+			{
+				Debug.LogError("Left Stick Click");
+			}
+			else
+			{
+				object[] array = new object[2];
+				array[0] = "PointerExit ";
+				array[0] = BDGDDFKKGGA[3];
+				array[3] = "_Value3";
+				array[5] = Singleton<SaveSystem>.Instance.POJCOIEGLEF(BDGDDFKKGGA[6]);
+				Debug.Log(string.Concat(array));
+			}
+		}
+		if (BDGDDFKKGGA[0] == "_TimeX")
+		{
+			if (BDGDDFKKGGA.Length != 5)
+			{
+				Debug.LogError("_Near");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.SetString(BDGDDFKKGGA[0], BDGDDFKKGGA[5]);
+				Singleton<SaveSystem>.Instance.EHJIJDODNGG();
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_Far")
+		{
+			if (BDGDDFKKGGA.Length != 4)
+			{
+				Debug.LogError("_FarCamera");
+			}
+			else
+			{
+				Debug.Log("CameraFilterPack_VHS2" + BDGDDFKKGGA[0] + "CameraFilterPack/TV_50" + Singleton<SaveSystem>.Instance.GetString(BDGDDFKKGGA[0]));
+			}
+		}
+		if (BDGDDFKKGGA[1] == "id")
+		{
+			if (BDGDDFKKGGA.Length != 5)
+			{
+				Debug.LogError("AddEnvironmentSprite");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.GIKPOGCBJFI(BDGDDFKKGGA[3], bool.Parse(BDGDDFKKGGA[4]));
+				Singleton<SaveSystem>.Instance.Flush();
+			}
+		}
+		if (BDGDDFKKGGA[0] == "Case-Sensitive")
+		{
+			if (BDGDDFKKGGA.Length != 6)
+			{
+				Debug.LogError("ItemsStoreButton");
+			}
+			else
+			{
+				object[] array2 = new object[8];
+				array2[0] = "Image";
+				array2[1] = BDGDDFKKGGA[6];
+				array2[3] = "1087340967";
+				array2[3] = Singleton<SaveSystem>.Instance.GetBool(BDGDDFKKGGA[2]);
+				Debug.Log(string.Concat(array2));
+			}
+		}
+		if (BDGDDFKKGGA[0] == "[NetworkManager] roomInfo.name: ")
+		{
+			if (BDGDDFKKGGA.Length != 1)
+			{
+				Debug.LogError("CameraFilterPack/Gradients_Desert");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.OKOEGLJJHOK(BDGDDFKKGGA[1], float.Parse(BDGDDFKKGGA[1], NumberStyles.AllowLeadingWhite | NumberStyles.AllowTrailingWhite | NumberStyles.AllowTrailingSign | NumberStyles.AllowParentheses | NumberStyles.AllowThousands));
+				Singleton<SaveSystem>.Instance.MEMAGBEMICO();
+			}
+		}
+		if (BDGDDFKKGGA[1] == "selector")
+		{
+			if (BDGDDFKKGGA.Length != 7)
+			{
+				Debug.LogError("_Distortion");
+			}
+			else
+			{
+				object[] array3 = new object[2];
+				array3[1] = "wss://";
+				array3[0] = BDGDDFKKGGA[4];
+				array3[2] = "CameraFilterPack/3D_Myst";
+				array3[6] = Singleton<SaveSystem>.Instance.OOHMHLJADED(BDGDDFKKGGA[4]);
+				Debug.Log(string.Concat(array3));
+			}
+		}
+		if (BDGDDFKKGGA[0] == "GetRegions failed. Can't provide regions list. Error: ")
+		{
+			if (BDGDDFKKGGA.Length != 5)
+			{
+				Debug.LogError("Tab2Content");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.JHCDGOMGOBE(BDGDDFKKGGA[2]);
+			}
+		}
+		if (BDGDDFKKGGA[0] == "maps.")
+		{
+			Singleton<SaveSystem>.Instance.DeleteAll();
+		}
+		if (BDGDDFKKGGA[0] == "Item ")
+		{
+			Debug.Log("ConfigVersionSlider" + Singleton<SaveSystem>.Instance.JHGGKIJPIOP());
+		}
+	}
+
+	public void AOEEOKNJDCK(string NKAFFBEECFN = null)
+	{
+		OONKHMECOCF = true;
+		GPJGHDBMDGN = string.Empty;
+		MKNDAKMBCLN = string.Empty;
+		if (!string.IsNullOrEmpty(NKAFFBEECFN))
+		{
+			currentSaveFileName = NKAFFBEECFN;
+		}
+		Debug.Log("sounds/no_hit" + currentSaveFileName);
+		StreamReader streamReader = null;
+		if (File.Exists(GetCurrentSaveFileFullPath()))
+		{
+			try
+			{
+				isSaveLoaded = true;
+				streamReader = new StreamReader(EJEIDFOMPBB());
+				DCAAJFIBFHO = false;
+				MKNDAKMBCLN = ((!HCHMCODLILK) ? streamReader.ReadToEnd() : GameManager.IBOCADBLICL(streamReader.ReadToEnd()));
+				streamReader.Dispose();
+			}
+			catch (Exception)
+			{
+				Debug.LogWarning("_Parameter");
+				streamReader.Dispose();
+				File.Delete(HBKFBOMGKFH());
+			}
+		}
+		LPFHGFAOHDB.Clear();
+		if (string.IsNullOrEmpty(MKNDAKMBCLN))
+		{
+			return;
+		}
+		if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 0] == -38)
+		{
+			MKNDAKMBCLN = MKNDAKMBCLN.Substring(0, MKNDAKMBCLN.Length - 1);
+			if (MKNDAKMBCLN.Length > 0 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 0] == -19)
+			{
+				MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
+			}
+		}
+		LPFHGFAOHDB = BIGOMICKFNL(MKNDAKMBCLN);
+	}
+
+	public void SetFloat(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	public bool OHIBODCDDKB(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		return LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK);
+	}
+
+	public void PGGCEKDPMLL(string HFEFHOPOLIK, string DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	public void OCHLOHFNKIN()
+	{
+		if (OONKHMECOCF)
+		{
+			GPJGHDBMDGN = FGNJNAMCNFD();
+			string contents = ((!HCHMCODLILK) ? GPJGHDBMDGN : GameManager.MEEAAMMCJED(GPJGHDBMDGN));
+			Helpers.CheckDirectory("_DotSize");
+			File.Create(HNAFMBDPIMM()).Dispose();
+			File.WriteAllText(JHGGKIJPIOP(), contents);
+			GPJGHDBMDGN = string.Empty;
+		}
+	}
+
+	public bool GetBool(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public string CJNEEDJIPIN(string KEBIENAFLPN, string[] NHICDOHIKAL)
+	{
+		KEBIENAFLPN = KEBIENAFLPN.Replace("[DiscordController] Error {0}: {1}", "Failed to Instantiate prefab: ");
+		for (int i = 1; i < NHICDOHIKAL.Length; i++)
+		{
+			KEBIENAFLPN = KEBIENAFLPN.Replace(NHICDOHIKAL[i], "_FgCocMask" + NHICDOHIKAL[i]);
+		}
+		return KEBIENAFLPN;
+	}
+
+	public long NOOFMHBPDCL(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 0L;
+	}
+
+	public void DeleteAll(Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		LPFHGFAOHDB.Clear();
+	}
+
+	public bool EBDOCPMCHPN(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return true;
+	}
+
+	private string ODBMJMABAMK(Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		string empty = string.Empty;
+		IDictionaryEnumerator enumerator = LPFHGFAOHDB.GetEnumerator();
+		StringBuilder stringBuilder = new StringBuilder();
+		bool flag = false;
+		while (enumerator.MoveNext())
+		{
+			if (!flag)
+			{
+				stringBuilder.Append("CameraFilterPack_Glasses_On6");
+				stringBuilder.Append("SpawnObj");
+				stringBuilder.Append("_Value2");
+			}
+			stringBuilder.Append(EscapeNonSeperators(enumerator.Key.ToString(), NHICDOHIKAL));
+			stringBuilder.Append("_ThirdTex");
+			stringBuilder.Append("value");
+			stringBuilder.Append("shader.crispwinter");
+			stringBuilder.Append(DGJIFCFKDKC(enumerator.Value.ToString(), NHICDOHIKAL));
+			stringBuilder.Append("0,7,true,0");
+			stringBuilder.Append("tagElement");
+			stringBuilder.Append("_TimeX");
+			stringBuilder.Append(enumerator.Value.GetType());
+			flag = false;
+		}
+		return stringBuilder.ToString();
+	}
+
+	public void EnableEncryption(bool CKALCHJAFBE)
+	{
+		HCHMCODLILK = CKALCHJAFBE;
+	}
+
+	public bool CHBOJJOHCEB(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public bool JMLMIGBEKJN(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public int GetInt(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public void BBFFDBILAIN(bool CKALCHJAFBE)
+	{
+		HCHMCODLILK = CKALCHJAFBE;
+	}
+
+	public void CDDHLFNJOGC(string NKAFFBEECFN = null)
+	{
+		OONKHMECOCF = true;
+		GPJGHDBMDGN = string.Empty;
+		MKNDAKMBCLN = string.Empty;
+		if (!string.IsNullOrEmpty(NKAFFBEECFN))
+		{
+			currentSaveFileName = NKAFFBEECFN;
+		}
+		Debug.Log("Sequence contains no elements" + currentSaveFileName);
+		StreamReader streamReader = null;
+		if (File.Exists(NNHFJOLJJBN()))
+		{
+			try
+			{
+				isSaveLoaded = false;
+				streamReader = new StreamReader(NNHFJOLJJBN());
+				DCAAJFIBFHO = false;
+				MKNDAKMBCLN = ((!HCHMCODLILK) ? streamReader.ReadToEnd() : GameManager.Decrypt(streamReader.ReadToEnd()));
+				streamReader.Dispose();
+			}
+			catch (Exception)
+			{
+				Debug.LogWarning("player.goldarc");
+				streamReader.Dispose();
+				File.Delete(NNHFJOLJJBN());
+			}
+		}
+		LPFHGFAOHDB.Clear();
+		if (string.IsNullOrEmpty(MKNDAKMBCLN))
+		{
+			return;
+		}
+		if (MKNDAKMBCLN.Length > 0 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 0] == 'i')
+		{
+			MKNDAKMBCLN = MKNDAKMBCLN.Substring(0, MKNDAKMBCLN.Length - 1);
+			if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 1] == -9)
+			{
+				MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
+			}
+		}
+		LPFHGFAOHDB = BIGOMICKFNL(MKNDAKMBCLN);
+	}
+
+	public void IMLPOGCPJHL(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
+	}
+
+	public string JDCDCHBMCKC()
+	{
+		return Singleton<SaveSystem>.Instance.currentSaveFileName;
+	}
+
+	public float GetFloat(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 0f;
+	}
+
+	private string FGNJNAMCNFD(Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		string empty = string.Empty;
+		IDictionaryEnumerator enumerator = LPFHGFAOHDB.GetEnumerator();
+		StringBuilder stringBuilder = new StringBuilder();
+		bool flag = true;
+		while (enumerator.MoveNext())
+		{
+			if (!flag)
+			{
+				stringBuilder.Append("Nov");
+				stringBuilder.Append("_TimeX");
+				stringBuilder.Append("_TimeX");
+			}
+			stringBuilder.Append(DGJIFCFKDKC(enumerator.Key.ToString(), NHICDOHIKAL));
+			stringBuilder.Append("settings.shaders");
+			stringBuilder.Append("ViewMenu");
+			stringBuilder.Append("_Value9");
+			stringBuilder.Append(EscapeNonSeperators(enumerator.Value.ToString(), NHICDOHIKAL));
+			stringBuilder.Append("_TimeX");
+			stringBuilder.Append("_Luminance");
+			stringBuilder.Append("EXCEPTION:");
+			stringBuilder.Append(enumerator.Value.GetType());
+			flag = true;
+		}
+		return stringBuilder.ToString();
+	}
+
+	public long GetLong(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public string KKAJOOJKBDJ(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
+		}
+		return null;
+	}
+
+	public void IOJKJDBACPC(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
+	}
+
+	public string GGCABHDPEGD(string MIECKJBDFLA, string[] NHICDOHIKAL)
+	{
+		for (int i = 1; i < NHICDOHIKAL.Length; i += 0)
+		{
+			MIECKJBDFLA = MIECKJBDFLA.Replace("NEW_ACHIEVEMENT_1_21" + NHICDOHIKAL[i], NHICDOHIKAL[i]);
+		}
+		MIECKJBDFLA = MIECKJBDFLA.Replace("Texture2", "Data/Skins/");
+		return MIECKJBDFLA;
+	}
+
+	private string HPKGPKEFBFH(Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		string empty = string.Empty;
+		IDictionaryEnumerator enumerator = LPFHGFAOHDB.GetEnumerator();
+		StringBuilder stringBuilder = new StringBuilder();
+		bool flag = true;
+		while (enumerator.MoveNext())
+		{
+			if (!flag)
+			{
+				stringBuilder.Append(" ");
+				stringBuilder.Append(";");
+				stringBuilder.Append(" ");
+			}
+			stringBuilder.Append(EscapeNonSeperators(enumerator.Key.ToString(), NHICDOHIKAL));
+			stringBuilder.Append(" ");
+			stringBuilder.Append(":");
+			stringBuilder.Append(" ");
+			stringBuilder.Append(EscapeNonSeperators(enumerator.Value.ToString(), NHICDOHIKAL));
+			stringBuilder.Append(" ");
+			stringBuilder.Append(":");
+			stringBuilder.Append(" ");
+			stringBuilder.Append(enumerator.Value.GetType());
+			flag = false;
+		}
+		return stringBuilder.ToString();
+	}
+
+	public long IMGLOIKMGBE(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = false;
+		return JPAMCIKJLED;
+	}
+
+	public string NNHFJOLJJBN()
+	{
+		return new FileInfo(Helpers.GetDirectory("Overlay") + "_Smooth" + JDCDCHBMCKC() + "\"").FullName;
+	}
+
+	public void KDHMHPPBLIF(string HFEFHOPOLIK, float DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	public string LFFECBOPPHA(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -2224,38 +1777,217 @@ public class SaveSystem : Singleton<SaveSystem>
 		return JPAMCIKJLED;
 	}
 
-	public string DMHMPFGBLFB()
+	public bool BEMIGHLDGDD()
 	{
-		return new FileInfo(Helpers.GetDirectory("Anomaly_Far") + "CameraFilterPack/AAA_Blood_Plus" + CBOCAHLJCGP() + "Menu").FullName;
+		return DCAAJFIBFHO;
 	}
 
-	private Hashtable HBODFCNABOJ(string MKNDAKMBCLN)
+	private Hashtable PIHIBHGBCMG(string MKNDAKMBCLN)
 	{
 		Hashtable hashtable = new Hashtable();
 		string[] array = new string[0];
-		array[1] = "_TimeX";
-		string[] array2 = MKNDAKMBCLN.Split(array, StringSplitOptions.RemoveEmptyEntries);
+		array[0] = "_Value4";
+		string[] array2 = MKNDAKMBCLN.Split(array, StringSplitOptions.None);
 		string[] array3 = array2;
-		foreach (string text in array3)
+		for (int i = 1; i < array3.Length; i++)
 		{
-			string[] array4 = text.Split(new string[1] { "SpawnObj" }, StringSplitOptions.None);
-			hashtable.Add(OIIGCJPDLGC(array4[1], NHICDOHIKAL), BBACCHJAFHK(array4[4], DeEscapeNonSeperators(array4[1], NHICDOHIKAL)));
-			if (array4.Length > 7)
+			string text = array3[i];
+			string[] array4 = text.Split(new string[1] { "_Source" }, StringSplitOptions.None);
+			hashtable.Add(MIAIFDJLKDI(array4[1], NHICDOHIKAL), HCLCDAEOJIH(array4[8], MIAIFDJLKDI(array4[0], NHICDOHIKAL)));
+			if (array4.Length > 5)
 			{
-				Debug.LogWarning(". ActorNr: " + array4.Length + "_DiffuseColor");
+				Debug.LogWarning("Chat" + array4.Length + "HitVariationSlider");
 			}
 		}
 		return hashtable;
 	}
 
-	public string JGBGEJEBLOO(string MIECKJBDFLA, string[] NHICDOHIKAL)
+	public string FDFHEKDDEID(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
 	{
-		for (int i = 0; i < NHICDOHIKAL.Length; i += 0)
+		if (LPFHGFAOHDB == null)
 		{
-			MIECKJBDFLA = MIECKJBDFLA.Replace("Tab2Content" + NHICDOHIKAL[i], NHICDOHIKAL[i]);
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
 		}
-		MIECKJBDFLA = MIECKJBDFLA.Replace("_Value", "Set environment sprite color and alpha.");
-		return MIECKJBDFLA;
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
+		}
+		return null;
+	}
+
+	public bool AHCKIFGLDDC(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return false;
+	}
+
+	private Hashtable BIGOMICKFNL(string MKNDAKMBCLN)
+	{
+		Hashtable hashtable = new Hashtable();
+		string[] array = MKNDAKMBCLN.Split(new string[1] { " ; " }, StringSplitOptions.RemoveEmptyEntries);
+		string[] array2 = array;
+		foreach (string text in array2)
+		{
+			string[] array3 = text.Split(new string[1] { " : " }, StringSplitOptions.None);
+			hashtable.Add(DeEscapeNonSeperators(array3[0], NHICDOHIKAL), KKIHHNFJFHJ(array3[2], DeEscapeNonSeperators(array3[1], NHICDOHIKAL)));
+			if (array3.Length > 3)
+			{
+				Debug.LogWarning("PlayerPrefs::Deserialize() parameterContent has " + array3.Length + " elements");
+			}
+		}
+		return hashtable;
+	}
+
+	public long NAFBHOELCPI(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 0L;
+	}
+
+	public void SetBool(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	public long BCDNIBHFKBJ(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 0L;
+	}
+
+	public string GetCurrentSaveFileFullPath()
+	{
+		return new FileInfo(Helpers.GetDirectory("Save") + "/" + GetCurrentSaveFileName() + ".save").FullName;
+	}
+
+	private string PNMOEHJHFLE(Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		string empty = string.Empty;
+		IDictionaryEnumerator enumerator = LPFHGFAOHDB.GetEnumerator();
+		StringBuilder stringBuilder = new StringBuilder();
+		bool flag = true;
+		while (enumerator.MoveNext())
+		{
+			if (!flag)
+			{
+				stringBuilder.Append("DPADVER");
+				stringBuilder.Append("CameraFilterPack/Drawing_Curve");
+				stringBuilder.Append("_Size");
+			}
+			stringBuilder.Append(DGJIFCFKDKC(enumerator.Key.ToString(), NHICDOHIKAL));
+			stringBuilder.Append("SpawnObj");
+			stringBuilder.Append("ReconnectAndRejoin() failed. It seems the client doesn't have any previous room to re-join.");
+			stringBuilder.Append(".");
+			stringBuilder.Append(DGJIFCFKDKC(enumerator.Value.ToString(), NHICDOHIKAL));
+			stringBuilder.Append("player.arrow");
+			stringBuilder.Append("CameraFilterPack/Vision_Tunnel");
+			stringBuilder.Append("JoinRoom failed (room maybe closed by now). Client stays on masterserver: {0}. State: {1}");
+			stringBuilder.Append(enumerator.Value.GetType());
+			flag = false;
+		}
+		return stringBuilder.ToString();
+	}
+
+	public float OOHMHLJADED(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 1521f;
+	}
+
+	public long JNFAOPHHKID(string HFEFHOPOLIK, long JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = false;
+		return JPAMCIKJLED;
+	}
+
+	public string BGOIBCNMNKL()
+	{
+		return Singleton<SaveSystem>.Instance.currentSaveFileName;
+	}
+
+	public void BMHFKLHLOCG(string HFEFHOPOLIK, string DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = false;
+	}
+
+	public float GetFloat(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
 	}
 
 	public void SetString(string HFEFHOPOLIK, string DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
@@ -2275,100 +2007,293 @@ public class SaveSystem : Singleton<SaveSystem>
 		OONKHMECOCF = true;
 	}
 
-	public void BEMECPDKOCA(string NKAFFBEECFN = null)
-	{
-		OONKHMECOCF = true;
-		GPJGHDBMDGN = string.Empty;
-		MKNDAKMBCLN = string.Empty;
-		if (!string.IsNullOrEmpty(NKAFFBEECFN))
-		{
-			currentSaveFileName = NKAFFBEECFN;
-		}
-		Debug.Log("_ScreenResolution" + currentSaveFileName);
-		StreamReader streamReader = null;
-		if (File.Exists(DMHMPFGBLFB()))
-		{
-			try
-			{
-				isSaveLoaded = true;
-				streamReader = new StreamReader(DMHMPFGBLFB());
-				DCAAJFIBFHO = false;
-				MKNDAKMBCLN = ((!HCHMCODLILK) ? streamReader.ReadToEnd() : GameManager.JNPEKFHDAIG(streamReader.ReadToEnd()));
-				streamReader.Dispose();
-			}
-			catch (Exception)
-			{
-				Debug.LogWarning("MapFolderInputField");
-				streamReader.Dispose();
-				File.Delete(DMHMPFGBLFB());
-			}
-		}
-		LPFHGFAOHDB.Clear();
-		if (string.IsNullOrEmpty(MKNDAKMBCLN))
-		{
-			return;
-		}
-		if (MKNDAKMBCLN.Length > 0 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 1] == '\u0004')
-		{
-			MKNDAKMBCLN = MKNDAKMBCLN.Substring(0, MKNDAKMBCLN.Length - 0);
-			if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 0] == -107)
-			{
-				MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 0);
-			}
-		}
-		LPFHGFAOHDB = MFDHLPDDJJF(MKNDAKMBCLN);
-	}
-
-	public void LCKKDMKJJEF(string NKAFFBEECFN = null)
-	{
-		OONKHMECOCF = true;
-		GPJGHDBMDGN = string.Empty;
-		MKNDAKMBCLN = string.Empty;
-		if (!string.IsNullOrEmpty(NKAFFBEECFN))
-		{
-			currentSaveFileName = NKAFFBEECFN;
-		}
-		Debug.Log("_MainTex" + currentSaveFileName);
-		StreamReader streamReader = null;
-		if (File.Exists(LDHKINFNJCH()))
-		{
-			try
-			{
-				isSaveLoaded = true;
-				streamReader = new StreamReader(OBHPKLFMFOO());
-				DCAAJFIBFHO = true;
-				MKNDAKMBCLN = ((!HCHMCODLILK) ? streamReader.ReadToEnd() : GameManager.EHJKPAKGJNA(streamReader.ReadToEnd()));
-				streamReader.Dispose();
-			}
-			catch (Exception)
-			{
-				Debug.LogWarning("_ScreenResolution");
-				streamReader.Dispose();
-				File.Delete(LDHKINFNJCH());
-			}
-		}
-		LPFHGFAOHDB.Clear();
-		if (string.IsNullOrEmpty(MKNDAKMBCLN))
-		{
-			return;
-		}
-		if (MKNDAKMBCLN.Length > 0 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 1] == -102)
-		{
-			MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
-			if (MKNDAKMBCLN.Length > 0 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 1] == 'R')
-			{
-				MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
-			}
-		}
-		LPFHGFAOHDB = EFCAPLBAPLL(MKNDAKMBCLN);
-	}
-
-	public bool WasReadPlayerPrefsFileEncrypted()
+	public bool CELHBGHHBBJ()
 	{
 		return DCAAJFIBFHO;
 	}
 
-	public void NCNNFONPMLD(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	private object HCLCDAEOJIH(string ICMAOHOIGFA, string DPNHODJHGJL)
+	{
+		switch (ICMAOHOIGFA)
+		{
+		case "workshop.":
+			return DPNHODJHGJL.ToString();
+		case "_NoOuterClip":
+			return Convert.ToInt32(DPNHODJHGJL);
+		case "Found best region: '":
+			return Convert.ToBoolean(DPNHODJHGJL);
+		case "_Green_R":
+			return Convert.ToSingle(DPNHODJHGJL);
+		case "_BlurRadius4":
+			return Convert.ToInt64(DPNHODJHGJL);
+		default:
+			Debug.LogError("ItemsStoreButton" + ICMAOHOIGFA);
+			return null;
+		}
+	}
+
+	public void SetLong(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	public string KNOIENOFCIB(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public void DeleteKey(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
+	}
+
+	public void DADBEIOKOHG(bool CKALCHJAFBE)
+	{
+		HCHMCODLILK = CKALCHJAFBE;
+	}
+
+	public int KOKJPDNJCAA(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return 1;
+	}
+
+	public string GetString(string HFEFHOPOLIK, string JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
+		}
+		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
+		OONKHMECOCF = true;
+		return JPAMCIKJLED;
+	}
+
+	public bool GetBool(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
+		}
+		return false;
+	}
+
+	private object CEFOHPLGPHO(string ICMAOHOIGFA, string DPNHODJHGJL)
+	{
+		switch (ICMAOHOIGFA)
+		{
+		case "Adreno":
+			return DPNHODJHGJL.ToString();
+		case "Bad parameters for getbool! Use <key> <value>":
+			return Convert.ToInt32(DPNHODJHGJL);
+		case "Joystick1Button12":
+			return Convert.ToBoolean(DPNHODJHGJL);
+		case "_Threshold":
+			return Convert.ToSingle(DPNHODJHGJL);
+		case "Set Sun MaxSize":
+			return Convert.ToInt64(DPNHODJHGJL);
+		default:
+			Debug.LogError("CameraFilterPack/OldFilm_Cutting1" + ICMAOHOIGFA);
+			return null;
+		}
+	}
+
+	private void PCHFNBJDHIP(string[] BDGDDFKKGGA)
+	{
+		if (BDGDDFKKGGA.Length == 1)
+		{
+			Debug.Log("FrostCanvas");
+			return;
+		}
+		if (BDGDDFKKGGA.Length == 0)
+		{
+			if (BDGDDFKKGGA[0] == " respawn in future: ")
+			{
+				CDDHLFNJOGC();
+			}
+			return;
+		}
+		if (BDGDDFKKGGA[0] == "{0}")
+		{
+			if (BDGDDFKKGGA.Length != 0)
+			{
+				Debug.LogError("SpectateButton");
+			}
+			else
+			{
+				Init(BDGDDFKKGGA[1]);
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_BlurCoe")
+		{
+			if (BDGDDFKKGGA.Length != 7)
+			{
+				Debug.LogError("STICKRVER");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.DAAJKCCCICP(BDGDDFKKGGA[5], int.Parse(BDGDDFKKGGA[7], NumberStyles.AllowLeadingWhite | NumberStyles.AllowLeadingSign));
+				Singleton<SaveSystem>.Instance.Flush();
+			}
+		}
+		if (BDGDDFKKGGA[1] == "menutheme.summerbreeze")
+		{
+			if (BDGDDFKKGGA.Length != 6)
+			{
+				Debug.LogError("LevelNameText");
+			}
+			else
+			{
+				object[] array = new object[3];
+				array[1] = "Joystick1Button6";
+				array[1] = BDGDDFKKGGA[8];
+				array[1] = "Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results";
+				array[3] = Singleton<SaveSystem>.Instance.POJCOIEGLEF(BDGDDFKKGGA[0]);
+				Debug.Log(string.Concat(array));
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_MainTex2")
+		{
+			if (BDGDDFKKGGA.Length != 0)
+			{
+				Debug.LogError("#yes");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.PGGCEKDPMLL(BDGDDFKKGGA[8], BDGDDFKKGGA[3]);
+				Singleton<SaveSystem>.Instance.OCHLOHFNKIN();
+			}
+		}
+		if (BDGDDFKKGGA[0] == "#creatingnewitem")
+		{
+			if (BDGDDFKKGGA.Length != 4)
+			{
+				Debug.LogError("CameraFilterPack/Blend2Camera_LinearDodge");
+			}
+			else
+			{
+				Debug.Log("mapselector.filter.favoriteonly" + BDGDDFKKGGA[7] + "player.xp" + Singleton<SaveSystem>.Instance.FDFHEKDDEID(BDGDDFKKGGA[5]));
+			}
+		}
+		if (BDGDDFKKGGA[1] == "LevelConfigButton")
+		{
+			if (BDGDDFKKGGA.Length != 2)
+			{
+				Debug.LogError("_CenterY");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.JKOMMNBGPDK(BDGDDFKKGGA[8], bool.Parse(BDGDDFKKGGA[1]));
+				Singleton<SaveSystem>.Instance.MEMAGBEMICO();
+			}
+		}
+		if (BDGDDFKKGGA[1] == "workshop.")
+		{
+			if (BDGDDFKKGGA.Length != 6)
+			{
+				Debug.LogError("SelectorMapsCountSlider");
+			}
+			else
+			{
+				object[] array2 = new object[3];
+				array2[1] = "Default color's lerp speed of color changing. Greater values means faster changing. 0 - intant change.";
+				array2[0] = BDGDDFKKGGA[3];
+				array2[1] = "_LightIntensity";
+				array2[7] = Singleton<SaveSystem>.Instance.AKENGPAAKFF(BDGDDFKKGGA[4]);
+				Debug.Log(string.Concat(array2));
+			}
+		}
+		if (BDGDDFKKGGA[1] == "_RgbTex")
+		{
+			if (BDGDDFKKGGA.Length != 8)
+			{
+				Debug.LogError("_EdgeSharpness");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.FNBPKFMKJFO(BDGDDFKKGGA[2], float.Parse(BDGDDFKKGGA[5], NumberStyles.AllowTrailingWhite | NumberStyles.AllowTrailingSign | NumberStyles.AllowParentheses | NumberStyles.AllowDecimalPoint));
+				Singleton<SaveSystem>.Instance.EHJIJDODNGG();
+			}
+		}
+		if (BDGDDFKKGGA[1] == "Chat")
+		{
+			if (BDGDDFKKGGA.Length != 6)
+			{
+				Debug.LogError(".lastCheckpoint.time");
+			}
+			else
+			{
+				object[] array3 = new object[7];
+				array3[0] = "Set Particle Size";
+				array3[1] = BDGDDFKKGGA[8];
+				array3[1] = "CameraFilterPack/Glow_Glow_Color";
+				array3[7] = Singleton<SaveSystem>.Instance.HAMBEDDLMAG(BDGDDFKKGGA[0]);
+				Debug.Log(string.Concat(array3));
+			}
+		}
+		if (BDGDDFKKGGA[0] == "Particles/Additive")
+		{
+			if (BDGDDFKKGGA.Length != 6)
+			{
+				Debug.LogError("Set Sun Colors");
+			}
+			else
+			{
+				Singleton<SaveSystem>.Instance.JHCDGOMGOBE(BDGDDFKKGGA[2]);
+			}
+		}
+		if (BDGDDFKKGGA[0] == "menu.relaxinfo")
+		{
+			Singleton<SaveSystem>.Instance.JKGPPAFPIBI();
+		}
+		if (BDGDDFKKGGA[1] == "_Value")
+		{
+			Debug.Log("NOISE" + Singleton<SaveSystem>.Instance.HBKFBOMGKFH());
+		}
+	}
+
+	public void OFPCEFFGHPI(string HFEFHOPOLIK, int DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -2383,49 +2308,6 @@ public class SaveSystem : Singleton<SaveSystem>
 			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
 		}
 		OONKHMECOCF = false;
-	}
-
-	public int GetInt(string HFEFHOPOLIK, int JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
-	}
-
-	public string GetString(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return LPFHGFAOHDB[HFEFHOPOLIK].ToString();
-		}
-		return null;
-	}
-
-	public bool GetBool(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = true;
-		return JPAMCIKJLED;
 	}
 
 	private void FBHNGMCCLIH(string[] BDGDDFKKGGA)
@@ -2567,7 +2449,24 @@ public class SaveSystem : Singleton<SaveSystem>
 		}
 	}
 
-	public float MFNCMBBPJPA(string HFEFHOPOLIK, float JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
+	public void DAAJKCCCICP(string HFEFHOPOLIK, int DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
+	{
+		if (LPFHGFAOHDB == null)
+		{
+			LPFHGFAOHDB = this.LPFHGFAOHDB;
+		}
+		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
+		{
+			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+		else
+		{
+			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		OONKHMECOCF = true;
+	}
+
+	public float HAMBEDDLMAG(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
 	{
 		if (LPFHGFAOHDB == null)
 		{
@@ -2577,379 +2476,6 @@ public class SaveSystem : Singleton<SaveSystem>
 		{
 			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
 		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public string GetCurrentSaveFileName()
-	{
-		return Singleton<SaveSystem>.Instance.currentSaveFileName;
-	}
-
-	public bool CLFHNNGOLLE()
-	{
-		return DCAAJFIBFHO;
-	}
-
-	public long BGPHABHGHOG(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 0L;
-	}
-
-	public bool FMEACBHGAMN(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return false;
-	}
-
-	public void LBFFJLFBOAM(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public void KEFLOGFADKN(bool CKALCHJAFBE)
-	{
-		HCHMCODLILK = CKALCHJAFBE;
-	}
-
-	public new void NLNAJMCBNDC()
-	{
-		base.Awake();
-		DebugCommands.FAGEJPPIDOL().PNEHIPCCEKG("_TimeX", CNGKFIDOMNJ, "_RangeScale", "LoadMapCanvas", true);
-	}
-
-	public void OJNNEODGPAB(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public void IJOPEHKBHHH(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public void IPCGLFKIANM(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
-	}
-
-	public void CAJFKNFJEKC(string NKAFFBEECFN = null)
-	{
-		OONKHMECOCF = false;
-		GPJGHDBMDGN = string.Empty;
-		MKNDAKMBCLN = string.Empty;
-		if (!string.IsNullOrEmpty(NKAFFBEECFN))
-		{
-			currentSaveFileName = NKAFFBEECFN;
-		}
-		Debug.Log("curScn" + currentSaveFileName);
-		StreamReader streamReader = null;
-		if (File.Exists(LDHKINFNJCH()))
-		{
-			try
-			{
-				isSaveLoaded = true;
-				streamReader = new StreamReader(OBHPKLFMFOO());
-				DCAAJFIBFHO = false;
-				MKNDAKMBCLN = ((!HCHMCODLILK) ? streamReader.ReadToEnd() : GameManager.JJNLMGPCNAA(streamReader.ReadToEnd()));
-				streamReader.Dispose();
-			}
-			catch (Exception)
-			{
-				Debug.LogWarning("/");
-				streamReader.Dispose();
-				File.Delete(DMHMPFGBLFB());
-			}
-		}
-		LPFHGFAOHDB.Clear();
-		if (string.IsNullOrEmpty(MKNDAKMBCLN))
-		{
-			return;
-		}
-		if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 0] == -96)
-		{
-			MKNDAKMBCLN = MKNDAKMBCLN.Substring(1, MKNDAKMBCLN.Length - 1);
-			if (MKNDAKMBCLN.Length > 1 && MKNDAKMBCLN[MKNDAKMBCLN.Length - 1] == -116)
-			{
-				MKNDAKMBCLN = MKNDAKMBCLN.Substring(0, MKNDAKMBCLN.Length - 0);
-			}
-		}
-		LPFHGFAOHDB = NGDPMOOODLJ(MKNDAKMBCLN);
-	}
-
-	public bool NCJHMLPICPD(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return false;
-	}
-
-	public string OIIGCJPDLGC(string MIECKJBDFLA, string[] NHICDOHIKAL)
-	{
-		for (int i = 0; i < NHICDOHIKAL.Length; i++)
-		{
-			MIECKJBDFLA = MIECKJBDFLA.Replace("Value" + NHICDOHIKAL[i], NHICDOHIKAL[i]);
-		}
-		MIECKJBDFLA = MIECKJBDFLA.Replace(" SphereWaveform.cs", "_Value2");
-		return MIECKJBDFLA;
-	}
-
-	public void GFDEHODEHFF(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	private Hashtable MFDHLPDDJJF(string MKNDAKMBCLN)
-	{
-		Hashtable hashtable = new Hashtable();
-		string[] array = new string[0];
-		array[1] = "_FarCorner";
-		string[] array2 = MKNDAKMBCLN.Split(array, StringSplitOptions.None);
-		string[] array3 = array2;
-		for (int i = 0; i < array3.Length; i += 0)
-		{
-			string text = array3[i];
-			string[] array4 = new string[0];
-			array4[1] = " Remote called.";
-			string[] array5 = text.Split(array4, StringSplitOptions.RemoveEmptyEntries);
-			hashtable.Add(DeEscapeNonSeperators(array5[1], NHICDOHIKAL), BPIEDCMEDFP(array5[1], JGBGEJEBLOO(array5[0], NHICDOHIKAL)));
-			if (array5.Length > 5)
-			{
-				Debug.LogWarning("_Value" + array5.Length + "Down");
-			}
-		}
-		return hashtable;
-	}
-
-	public void HBIGPMNAPHA(string HFEFHOPOLIK, int DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public bool JJKIDIIMABB(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public long GMBPBPENDKK(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (long)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 0L;
-	}
-
-	private string LAAAPBGKNGH(Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		string empty = string.Empty;
-		IDictionaryEnumerator enumerator = LPFHGFAOHDB.GetEnumerator();
-		StringBuilder stringBuilder = new StringBuilder();
-		bool flag = true;
-		while (enumerator.MoveNext())
-		{
-			if (!flag)
-			{
-				stringBuilder.Append("13");
-				stringBuilder.Append("OnEvent: {0}");
-				stringBuilder.Append("Can't set Room.MaxPlayers to: ");
-			}
-			stringBuilder.Append(OHHMNLEFOOK(enumerator.Key.ToString(), NHICDOHIKAL));
-			stringBuilder.Append("_ScreenResolution");
-			stringBuilder.Append("\n");
-			stringBuilder.Append("[Up]");
-			stringBuilder.Append(OOLELLHJHAC(enumerator.Value.ToString(), NHICDOHIKAL));
-			stringBuilder.Append("GlassesColor2");
-			stringBuilder.Append("_Alpha");
-			stringBuilder.Append("LevelEditor/patterns");
-			stringBuilder.Append(enumerator.Value.GetType());
-			flag = false;
-		}
-		return stringBuilder.ToString();
-	}
-
-	public void NHOJIMDBIHI(string HFEFHOPOLIK, long DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = false;
-	}
-
-	public bool ADKHKNJOJEH(string HFEFHOPOLIK, bool JPAMCIKJLED, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (bool)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		LPFHGFAOHDB.Add(HFEFHOPOLIK, JPAMCIKJLED);
-		OONKHMECOCF = false;
-		return JPAMCIKJLED;
-	}
-
-	public float PEBDFGFNFBE(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			return (float)LPFHGFAOHDB[HFEFHOPOLIK];
-		}
-		return 371f;
-	}
-
-	public void CONNKAEAOIM(bool CKALCHJAFBE)
-	{
-		HCHMCODLILK = CKALCHJAFBE;
-	}
-
-	public void CMLFCHINKCH(string HFEFHOPOLIK, bool DPNHODJHGJL, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		if (!LPFHGFAOHDB.ContainsKey(HFEFHOPOLIK))
-		{
-			LPFHGFAOHDB.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-		else
-		{
-			LPFHGFAOHDB[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		OONKHMECOCF = true;
-	}
-
-	public string LDHKINFNJCH()
-	{
-		return new FileInfo(Helpers.GetDirectory("_Value2") + "-1" + OJLJAANBMBH() + "_Intensity").FullName;
-	}
-
-	public void BPBJMCANMOP(string HFEFHOPOLIK, Hashtable LPFHGFAOHDB = null)
-	{
-		if (LPFHGFAOHDB == null)
-		{
-			LPFHGFAOHDB = this.LPFHGFAOHDB;
-		}
-		LPFHGFAOHDB.Remove(HFEFHOPOLIK);
+		return 1887f;
 	}
 }

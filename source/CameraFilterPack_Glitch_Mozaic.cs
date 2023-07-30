@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Glitch/Mozaic")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Glitch_Mozaic : MonoBehaviour
 {
 	public Shader SCShader;
@@ -48,13 +48,13 @@ public class CameraFilterPack_Glitch_Mozaic : MonoBehaviour
 			{
 				HBJJOCHGOPH = 42f;
 			}
-			NBPKMLMCHFN.SetFloat("inventory.lastitemscount", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("Horizontal", Intensity);
-			PDEAHJPOMEF().SetFloat("Join failed on GameServer. Changing back to MasterServer. Msg: ", EOKMJCIDCDB);
-			NBPKMLMCHFN.SetFloat("Clears all text from the debug console", ILHJFHFPGBB);
-			NBPKMLMCHFN.SetFloat("\t", CCIENBFIKKH);
-			PDEAHJPOMEF().SetVector("[ResourcesManager] Load image error: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1554f, 1128f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
+			ADBKPGFMNKO().SetFloat("LoadingStatusText", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("InstantiateRpc", Intensity);
+			NFMGLIKNOOC().SetFloat("Join failed on GameServer. Changing back to MasterServer. Msg: ", EOKMJCIDCDB);
+			KAFBNOBOIAJ().SetFloat("clear", ILHJFHFPGBB);
+			PDEAHJPOMEF().SetFloat("\n", CCIENBFIKKH);
+			KBOPGONOCNP().SetVector("inventory.selected.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1554f, 1128f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -91,12 +91,12 @@ public class CameraFilterPack_Glitch_Mozaic : MonoBehaviour
 				HBJJOCHGOPH = 583f;
 			}
 			NFMGLIKNOOC().SetFloat("Set Object Scale", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("Set Player Distance", Intensity);
-			KBOPGONOCNP().SetFloat("[Up]", EOKMJCIDCDB);
-			KBOPGONOCNP().SetFloat("_TimeX", ILHJFHFPGBB);
-			NBPKMLMCHFN.SetFloat("[Right]", CCIENBFIKKH);
+			HHIFMIPPMPF().SetFloat("SetPlayerDistance", Intensity);
+			LDNADDJMIPK().SetFloat("[Down]", EOKMJCIDCDB);
+			KBOPGONOCNP().SetFloat("_ScreenResolution", ILHJFHFPGBB);
+			ADBKPGFMNKO().SetFloat("[Left]", CCIENBFIKKH);
 			LDNADDJMIPK().SetVector("downloading", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 850f, 103f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
 		{
@@ -127,7 +127,7 @@ public class CameraFilterPack_Glitch_Mozaic : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		SCShader = Shader.Find("Color's hex value #RRGGBBAA");
+		SCShader = Shader.Find("color");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -143,13 +143,13 @@ public class CameraFilterPack_Glitch_Mozaic : MonoBehaviour
 			{
 				HBJJOCHGOPH = 824f;
 			}
-			ADBKPGFMNKO().SetFloat("[#clicktoacceptchallenge]", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("LoadingStatusText", Intensity);
-			KAFBNOBOIAJ().SetFloat("Error: I/O Failure! :(", EOKMJCIDCDB);
-			PDEAHJPOMEF().SetFloat("[LevelEditorScene] Item creation successful! Published Item ID: ", ILHJFHFPGBB);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/Colors_Brightness", CCIENBFIKKH);
-			KBOPGONOCNP().SetVector("CameraFilterPack/Oculus_ThermaVision", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 657f, 1394f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			HHIFMIPPMPF().SetFloat("_SprTex", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat("inventory.selected.", Intensity);
+			LDNADDJMIPK().SetFloat("Error: Timeout :S", EOKMJCIDCDB);
+			KAFBNOBOIAJ().SetFloat("[LevelEditorScene] Error: You're not logged into Steam!", ILHJFHFPGBB);
+			KBOPGONOCNP().SetFloat("_ScreenResolution", CCIENBFIKKH);
+			LDNADDJMIPK().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 657f, 1394f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -258,12 +258,12 @@ public class CameraFilterPack_Glitch_Mozaic : MonoBehaviour
 			{
 				HBJJOCHGOPH = 506f;
 			}
-			ADBKPGFMNKO().SetFloat("0.00", HBJJOCHGOPH);
-			KBOPGONOCNP().SetFloat("_Value", Intensity);
-			ADBKPGFMNKO().SetFloat("Metal", EOKMJCIDCDB);
-			HHIFMIPPMPF().SetFloat(":\n", ILHJFHFPGBB);
-			HHIFMIPPMPF().SetFloat("<b>#", CCIENBFIKKH);
-			NBPKMLMCHFN.SetVector("_Noise", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 475f, 858f));
+			NBPKMLMCHFN.SetFloat("<b>Max Score</b>:", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat("CameraFilterPack/Vision_Drost", Intensity);
+			HHIFMIPPMPF().SetFloat("Metal", EOKMJCIDCDB);
+			PDEAHJPOMEF().SetFloat("ItemNameText", ILHJFHFPGBB);
+			ADBKPGFMNKO().SetFloat("bans.viewed.", CCIENBFIKKH);
+			LDNADDJMIPK().SetVector("_Glitch", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 475f, 858f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
@@ -294,7 +294,7 @@ public class CameraFilterPack_Glitch_Mozaic : MonoBehaviour
 
 	private void KDMKDEKCELE()
 	{
-		SCShader = Shader.Find("_Distortion");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -367,7 +367,7 @@ public class CameraFilterPack_Glitch_Mozaic : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		SCShader = Shader.Find(" not exist");
+		SCShader = Shader.Find(": ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

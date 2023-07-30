@@ -40,9 +40,9 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1970f;
 			}
-			KEMAALEODNH().SetFloat("CameraFilterPack/FX_Dot_Circle", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("colorD", Threshold);
-			PDEAHJPOMEF().SetFloat("HPToggle", DotSize);
+			LONNIJMNKFB().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("colorC", Threshold);
+			LONNIJMNKFB().SetFloat("menu.enableselectormusic", DotSize);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
@@ -60,10 +60,10 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 			{
 				HBJJOCHGOPH = 985f;
 			}
-			DBOLLHHMKKN().SetFloat("[LevelEditorScene] Item creation successful! Published Item ID: ", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Anomaly_With_Obj", Threshold);
-			NBPKMLMCHFN.SetFloat("maps.", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			DEFBJOCJJKF().SetFloat("[LevelEditorScene] Error: You're not logged into Steam!", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("Anomaly_With_Obj", Threshold);
+			KEMAALEODNH().SetFloat("BadgeText", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
 		}
 		else
 		{
@@ -107,10 +107,10 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 			{
 				HBJJOCHGOPH = 248f;
 			}
-			OIMMPLPBLBK().SetFloat("_ReflectionBlur", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("DPADVER", Threshold);
-			DEFBJOCJJKF().SetFloat("_TimeX", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			DBOLLHHMKKN().SetFloat("_PixelsPerMeterAtOneMeter", HBJJOCHGOPH);
+			KEMAALEODNH().SetFloat("DPADVER", Threshold);
+			DBOLLHHMKKN().SetFloat("CameraFilterPack/TV_50", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -135,10 +135,10 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 			{
 				HBJJOCHGOPH = 558f;
 			}
-			DBOLLHHMKKN().SetFloat("ConnectionTimeout", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("RaiseEvent() failed. Your event is not being sent! Check if your are in a Room and the eventCode must be less than 200 (0..199).", Threshold);
-			DEFBJOCJJKF().SetFloat("_Amount", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
+			LNLKMDPHDCC().SetFloat("error", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("ReJoinRoom failed. A roomname is required. If you don't know one, how will you join?", Threshold);
+			DEFBJOCJJKF().SetFloat("_TimeX", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -168,7 +168,7 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("other");
+		SCShader = Shader.Find("ItemNameText");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -177,7 +177,7 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("Object ID. Case-Sensitive");
+		SCShader = Shader.Find("id");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -250,10 +250,10 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 			{
 				HBJJOCHGOPH = 420f;
 			}
-			LNLKMDPHDCC().SetFloat("_Color", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("#ok", HBJJOCHGOPH);
 			DBOLLHHMKKN().SetFloat("tagElement", Threshold);
-			DBOLLHHMKKN().SetFloat("workshop.", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("workshop.", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
 		}
 		else
 		{
@@ -282,7 +282,7 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		SCShader = Shader.Find("value");
+		SCShader = Shader.Find("Object ID. Case-Sensitive");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -302,10 +302,10 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 			{
 				HBJJOCHGOPH = 353f;
 			}
-			DEFBJOCJJKF().SetFloat("_Value3", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("win", Threshold);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack_Glasses_On5", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			LNLKMDPHDCC().SetFloat("_Value3", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat("[PlayerBase] ShowImage \"", Threshold);
+			NBPKMLMCHFN.SetFloat("_MainTex2", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -315,7 +315,7 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Value2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -354,10 +354,10 @@ public class CameraFilterPack_Drawing_Halftone : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1071f;
 			}
-			PDEAHJPOMEF().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			LONNIJMNKFB().SetFloat("CameraFilterPack_Paper1", Threshold);
-			KEMAALEODNH().SetFloat("warning: Audio Source: ", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			DEFBJOCJJKF().SetFloat("_Value2", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("_ScreenResolution", Threshold);
+			LNLKMDPHDCC().SetFloat("warning: Audio Source: ", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{

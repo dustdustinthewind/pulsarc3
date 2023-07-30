@@ -29,7 +29,7 @@ public class CameraFilterPack_Drawing_Laplacian : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find(" not exist");
+		SCShader = Shader.Find(": ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -88,9 +88,9 @@ public class CameraFilterPack_Drawing_Laplacian : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1613f;
 			}
-			KAFBNOBOIAJ().SetFloat("Joystick1Button1", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetVector("Events Moved", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1168f, 1117f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			ADBKPGFMNKO().SetFloat("Square", HBJJOCHGOPH);
+			KAFBNOBOIAJ().SetVector("#currentbpm: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1168f, 1117f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -100,7 +100,7 @@ public class CameraFilterPack_Drawing_Laplacian : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -116,9 +116,9 @@ public class CameraFilterPack_Drawing_Laplacian : MonoBehaviour
 			{
 				HBJJOCHGOPH = 939f;
 			}
-			KAFBNOBOIAJ().SetFloat("_AdditiveReflection", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetVector("_Value7", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1186f, 1338f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			KAFBNOBOIAJ().SetFloat("_TempTexture", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetVector("_Value7", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1186f, 1338f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{
@@ -189,8 +189,8 @@ public class CameraFilterPack_Drawing_Laplacian : MonoBehaviour
 			{
 				HBJJOCHGOPH = 719f;
 			}
-			JIBOKBCPDLC().SetFloat("/", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetVector("Image", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 964f, 758f));
+			KAFBNOBOIAJ().SetFloat("#done", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetVector("other", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 964f, 758f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
@@ -241,9 +241,9 @@ public class CameraFilterPack_Drawing_Laplacian : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1408f;
 			}
-			JIBOKBCPDLC().SetFloat("_FullResolutionFiltering", HBJJOCHGOPH);
-			JIBOKBCPDLC().SetVector("StartButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1803f, 1433f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			KAFBNOBOIAJ().SetFloat("_TraceBehindObjects", HBJJOCHGOPH);
+			KAFBNOBOIAJ().SetVector("StartButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1803f, 1433f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{
@@ -267,9 +267,9 @@ public class CameraFilterPack_Drawing_Laplacian : MonoBehaviour
 			{
 				HBJJOCHGOPH = 879f;
 			}
-			JIBOKBCPDLC().SetFloat("_Color2", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_Color2", HBJJOCHGOPH);
 			KGOLDDBHIFN().SetVector("USE_UV_BASED_REPROJECTION", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 594f, 1377f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
 		else
 		{

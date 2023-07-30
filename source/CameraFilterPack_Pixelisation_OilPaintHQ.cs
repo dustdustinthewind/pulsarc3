@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Pixelisation/OilPaintHQ")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Pixelisation/OilPaintHQ")]
 public class CameraFilterPack_Pixelisation_OilPaintHQ : MonoBehaviour
 {
 	public Shader SCShader;
@@ -73,10 +73,10 @@ public class CameraFilterPack_Pixelisation_OilPaintHQ : MonoBehaviour
 			{
 				HBJJOCHGOPH = 822f;
 			}
-			KAFBNOBOIAJ().SetFloat("SetSatelliteSensitivity", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1070f, 841f));
-			KAFBNOBOIAJ().SetFloat("#random #rare #item", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			DNLMFEGJJDD().SetFloat("SetSatelliteInput", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1070f, 841f));
+			KAFBNOBOIAJ().SetFloat("recipes", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -94,7 +94,7 @@ public class CameraFilterPack_Pixelisation_OilPaintHQ : MonoBehaviour
 
 	private void IMCKJCHKMKB()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/RainFX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -112,7 +112,7 @@ public class CameraFilterPack_Pixelisation_OilPaintHQ : MonoBehaviour
 
 	private void NBGIMIDICKE()
 	{
-		SCShader = Shader.Find("SetEnvSpriteColor");
+		SCShader = Shader.Find("SetParticlesCountPerBeat");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -141,9 +141,9 @@ public class CameraFilterPack_Pixelisation_OilPaintHQ : MonoBehaviour
 				HBJJOCHGOPH = 686f;
 			}
 			KAFBNOBOIAJ().SetFloat("_Distortion", HBJJOCHGOPH);
-			KAFBNOBOIAJ().SetVector("menutheme.deleted", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1910f, 629f));
-			DNLMFEGJJDD().SetFloat("id", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			DNLMFEGJJDD().SetVector("menutheme.jamaicanorcdub", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1910f, 629f));
+			KAFBNOBOIAJ().SetFloat("Set EnvSprite Image", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -168,10 +168,10 @@ public class CameraFilterPack_Pixelisation_OilPaintHQ : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1572f;
 			}
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/EXTRA_Rotation", HBJJOCHGOPH);
-			KAFBNOBOIAJ().SetVector("Mouse", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 462f, 1287f));
-			NBPKMLMCHFN.SetFloat("icon.png", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			KAFBNOBOIAJ().SetVector("Middle Click", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 462f, 1287f));
+			NBPKMLMCHFN.SetFloat("No info", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -188,10 +188,10 @@ public class CameraFilterPack_Pixelisation_OilPaintHQ : MonoBehaviour
 			{
 				HBJJOCHGOPH = 442f;
 			}
-			KAFBNOBOIAJ().SetFloat("/", HBJJOCHGOPH);
-			KAFBNOBOIAJ().SetVector("checkpoint", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 406f, 68f));
-			DNLMFEGJJDD().SetFloat("_DistortionSize", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
+			KAFBNOBOIAJ().SetFloat("editor.", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetVector("EventTimeInputField", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 406f, 68f));
+			KAFBNOBOIAJ().SetFloat("_DistortionSize", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -201,7 +201,7 @@ public class CameraFilterPack_Pixelisation_OilPaintHQ : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("_HdrParams");
+		SCShader = Shader.Find("_ExposureAdjustment");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

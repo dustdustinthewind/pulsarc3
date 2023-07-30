@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/Overlay")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/Overlay")]
 public class CameraFilterPack_Blend2Camera_Overlay : MonoBehaviour
 {
 	private string ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_Overlay";
@@ -148,13 +148,13 @@ public class CameraFilterPack_Blend2Camera_Overlay : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IONHGBPGCHK().SetTexture("gameVolume", JDMCFBKJHDD);
+				IIBLJCKLGFG().SetTexture("editorVolume", JDMCFBKJHDD);
 			}
-			LNLKMDPHDCC().SetFloat("mapselector.filter.rateduponly", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("color", BlendFX);
-			IIBLJCKLGFG().SetFloat("editorVolume", SwitchCameraToCamera2);
-			NFMGLIKNOOC().SetVector("Editor/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1535f, 1003f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			OIMMPLPBLBK().SetFloat("PopulateMapsList", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat("float,10", BlendFX);
+			NFMGLIKNOOC().SetFloat("settings.volume.game", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("Editor/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1535f, 1003f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
 		}
 		else
 		{
@@ -187,12 +187,12 @@ public class CameraFilterPack_Blend2Camera_Overlay : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IIBLJCKLGFG().SetTexture("[MapsStats] Length: ", JDMCFBKJHDD);
+				OIMMPLPBLBK().SetTexture("[RanksSystem] Map hash: ", JDMCFBKJHDD);
 			}
-			LNLKMDPHDCC().SetFloat("Fill Area", HBJJOCHGOPH);
-			JFDGLLEOPGB().SetFloat("OK", BlendFX);
-			OIMMPLPBLBK().SetFloat("Rotate environment object to the rotation", SwitchCameraToCamera2);
-			OIMMPLPBLBK().SetVector("Curve texture", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 419f, 863f));
+			LNLKMDPHDCC().SetFloat("settings.gamemessagesduration", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("OK", BlendFX);
+			NBPKMLMCHFN.SetFloat("Rotate environment object to the rotation", SwitchCameraToCamera2);
+			IONHGBPGCHK().SetVector("_Axis", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 419f, 863f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
@@ -425,13 +425,13 @@ public class CameraFilterPack_Blend2Camera_Overlay : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				JFDGLLEOPGB().SetTexture("_TimeX", JDMCFBKJHDD);
+				IIBLJCKLGFG().SetTexture("CameraFilterPack/Blur_Dithering2x2", JDMCFBKJHDD);
 			}
-			NFMGLIKNOOC().SetFloat("&page=", HBJJOCHGOPH);
-			JFDGLLEOPGB().SetFloat("ACCEPT", BlendFX);
-			OIMMPLPBLBK().SetFloat("[LocalizationService] All languages: ", SwitchCameraToCamera2);
-			LNLKMDPHDCC().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 512f, 1804f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
+			JFDGLLEOPGB().SetFloat("&page=", HBJJOCHGOPH);
+			JFDGLLEOPGB().SetFloat("Have you fully accept the terms?", BlendFX);
+			IIBLJCKLGFG().SetFloat("Bad parameters for set! Use <language>", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 512f, 1804f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{

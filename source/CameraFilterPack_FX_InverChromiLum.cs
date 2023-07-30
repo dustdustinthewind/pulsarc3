@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/FX/InverChromiLum")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/FX/InverChromiLum")]
 public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 {
 	public Shader SCShader;
@@ -53,9 +53,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1454f;
 			}
-			OIMMPLPBLBK().SetFloat(". No ViewIDs are free to use. Max is: ", HBJJOCHGOPH);
-			ADGHJOHKEHG().SetVector("[MenuScene] Error: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1093f, 361f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			FHFLKLMFHOI().SetFloat("Failed to InstantiateSceneObject prefab:", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetVector("[MenuScene] Error: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1093f, 361f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
 		{
@@ -72,9 +72,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 200f;
 			}
-			JLHLHKPHDFO().SetFloat("_TimeX", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("_LoopCount", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 994f, 676f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			AELJLBOJAIL().SetFloat("CameraFilterPack/Glow_Glow", HBJJOCHGOPH);
+			IGKFMCPDNOI().SetVector("_TileMaxOffs", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 994f, 676f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -110,7 +110,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void GPNAOAKCMHC()
 	{
-		SCShader = Shader.Find(" has no method \"");
+		SCShader = Shader.Find(", ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -137,9 +137,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 427f;
 			}
-			ADGHJOHKEHG().SetFloat("Joystick", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("data", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 337f, 1375f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			NBPKMLMCHFN.SetFloat("^", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetVector(".save", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 337f, 1375f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -149,7 +149,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void EFJDNLGNACH()
 	{
-		SCShader = Shader.Find("_Value3");
+		SCShader = Shader.Find("_Value2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -158,7 +158,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void CGDMLHLJIDK()
 	{
-		SCShader = Shader.Find("Joystick1Button6");
+		SCShader = Shader.Find("Joystick1Button5");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -167,7 +167,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void FHPFJBFCOOF()
 	{
-		SCShader = Shader.Find(" Remote called.");
+		SCShader = Shader.Find(" but this PhotonView does not exist! View was/is ours.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -214,7 +214,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		SCShader = Shader.Find("#tryagain");
+		SCShader = Shader.Find("#md5submitionfailed: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -230,9 +230,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1263f;
 			}
-			JLHLHKPHDFO().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetVector("You did not select a Hosting Type in your PhotonServerSettings. Please set it up or don't use ConnectUsingSettings().", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 286f, 900f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			ADGHJOHKEHG().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetVector("ConnectUsingSettings() failed. Can only connect while in state 'Disconnected'. Current state: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 286f, 900f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -242,7 +242,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void JILOMOBDPIA()
 	{
-		SCShader = Shader.Find("AddEnvironmentSprite");
+		SCShader = Shader.Find("Set particles audio input");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -292,9 +292,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1074f;
 			}
-			OIMMPLPBLBK().SetFloat("[NetworkManager] Join failed", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetVector("MenuScene", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1270f, 1944f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			NBMPPNFKFLB().SetFloat("[NetworkManager] Join failed", HBJJOCHGOPH);
+			ADGHJOHKEHG().SetVector("MenuScene", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1270f, 1944f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -304,7 +304,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void MMOKKAPFGAK()
 	{
-		SCShader = Shader.Find("settings.enablehitsoundsinnormal");
+		SCShader = Shader.Find("powerup.0");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -362,8 +362,8 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 369f;
 			}
-			OIMMPLPBLBK().SetFloat("_Value2", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 594f, 1886f));
+			JLHLHKPHDFO().SetFloat("_Value", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 594f, 1886f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
@@ -374,7 +374,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void JHANGPCOCIG()
 	{
-		SCShader = Shader.Find(".lastCheckpoint.bgcolor");
+		SCShader = Shader.Find(".lastCheckpoint.playerdistance");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -383,7 +383,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void OHFOLGANOLC()
 	{
-		SCShader = Shader.Find("mapselector.filter.officialsortmode");
+		SCShader = Shader.Find("mapselector.filter.favoriteonly");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -399,9 +399,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 368f;
 			}
-			JLHLHKPHDFO().SetFloat("menu.playedsolo", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetVector("-", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1450f, 1902f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
+			OIMMPLPBLBK().SetFloat("menu.playedsolo", HBJJOCHGOPH);
+			JLHLHKPHDFO().SetVector("settings.enablehitsoundsinnormal", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1450f, 1902f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
 		}
 		else
 		{
@@ -411,7 +411,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		SCShader = Shader.Find("CameraFilterPack_RainFX_Anm");
+		SCShader = Shader.Find("CameraFilterPack_RainFX_Anm2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -427,9 +427,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 831f;
 			}
-			DBOLLHHMKKN().SetFloat("Item ", HBJJOCHGOPH);
-			IGKFMCPDNOI().SetVector("Set Sun MaxSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 592f, 1968f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
+			AELJLBOJAIL().SetFloat("Something is setup incorrectly with the dropdownlist component causing a Null Refernece Exception", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetVector("SetSunMaxSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 592f, 1968f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
 		}
 		else
 		{
@@ -469,8 +469,8 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 107f;
 			}
-			DEFBJOCJJKF().SetFloat("Editor/", HBJJOCHGOPH);
-			AELJLBOJAIL().SetVector("RECORD [R]", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 266f, 524f));
+			ADGHJOHKEHG().SetFloat("[MapEditor] Exported to ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetVector("MenuRecordButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 266f, 524f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
@@ -481,7 +481,7 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("File not found: {0}");
+		SCShader = Shader.Find("Reading preview file failed! Make sure JSON file is filled properly and/or file exists: \"{0}\"");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -497,9 +497,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 902f;
 			}
-			OIMMPLPBLBK().SetFloat("-", HBJJOCHGOPH);
-			ADGHJOHKEHG().SetVector("lobby '{0}'[{1}]", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1454f, 46f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			NBMPPNFKFLB().SetFloat("settings.enablehitsoundsinnormal", HBJJOCHGOPH);
+			JLHLHKPHDFO().SetVector("OpChangeGroups()", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1454f, 46f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
 		}
 		else
 		{
@@ -581,9 +581,9 @@ public class CameraFilterPack_FX_InverChromiLum : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1022f;
 			}
-			ADGHJOHKEHG().SetFloat(" (inactive)", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetVector("_FarCamera", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1844f, 765f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
+			NBPKMLMCHFN.SetFloat("ERROR You should never change PhotonPlayer IDs!", HBJJOCHGOPH);
+			NBMPPNFKFLB().SetVector("_FarCamera", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1844f, 765f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{

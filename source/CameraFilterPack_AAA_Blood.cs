@@ -59,14 +59,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1285f;
 			}
-			HCGJCMDJPGD().SetFloat("_Value6", HBJJOCHGOPH);
-			NDMPCDHADMJ().SetFloat("CameraFilterPack/Blend2Camera_Overlay", LightReflect);
-			LNLKMDPHDCC().SetFloat(".completedMaps", Blood1);
-			FHFLKLMFHOI().SetFloat("_MainTex2", Blood2);
-			IONHGBPGCHK().SetFloat("Failed to 'network-remove' GameObject. Client is neither owner nor masterClient taking over for owner who left: ", Blood3);
-			IONHGBPGCHK().SetFloat("ScrollPanel", Blood4);
-			HCGJCMDJPGD().SetTexture("Scale environment object by the values", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			IONHGBPGCHK().SetFloat("_Value6", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("CameraFilterPack/Blend2Camera_LighterColor", LightReflect);
+			NBPKMLMCHFN.SetFloat("true", Blood1);
+			HNICHJCGJOC().SetFloat("_Amount", Blood2);
+			FHFLKLMFHOI().SetFloat("Failed to Destroy objects of playerId: ", Blood3);
+			IONHGBPGCHK().SetFloat("InputField", Blood4);
+			FHFLKLMFHOI().SetTexture("float,0", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
 		}
 		else
 		{
@@ -83,14 +83,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 395f;
 			}
-			HNICHJCGJOC().SetFloat("CameraFilterPack/Oculus_NightVision2", HBJJOCHGOPH);
-			HCGJCMDJPGD().SetFloat("/files/editor_manual.pdf", LightReflect);
-			NDMPCDHADMJ().SetFloat(".highscore", Blood1);
-			NBPKMLMCHFN.SetFloat("FinishMap", Blood2);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", Blood3);
-			NDMPCDHADMJ().SetFloat("Set Object Scale", Blood4);
-			LNLKMDPHDCC().SetTexture("Mouse X", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			HCGJCMDJPGD().SetFloat("_Vignette", HBJJOCHGOPH);
+			NDMPCDHADMJ().SetFloat("<b>#", LightReflect);
+			JFDGLLEOPGB().SetFloat("maps.", Blood1);
+			NBPKMLMCHFN.SetFloat("_DiffuseColor", Blood2);
+			LNLKMDPHDCC().SetFloat("_Fade", Blood3);
+			JFDGLLEOPGB().SetFloat("SetScale", Blood4);
+			HCGJCMDJPGD().SetTexture("DPADHOR", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -100,7 +100,7 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 
 	private void DLBODOFAJGM()
 	{
-		FPHEBLMINDA = Resources.Load("RPCs can only be sent in rooms. Call of \"") as Texture2D;
+		FPHEBLMINDA = Resources.Load("\" gets executed locally only, if at all.") as Texture2D;
 		SCShader = Shader.Find("settings_bindings_controller_type");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -127,14 +127,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1487f;
 			}
-			JFDGLLEOPGB().SetFloat("Joystick1Button10", HBJJOCHGOPH);
-			HNICHJCGJOC().SetFloat("ScoreText", LightReflect);
-			LNLKMDPHDCC().SetFloat("Error: you cannot write/send to this stream that you are reading!", Blood1);
-			IONHGBPGCHK().SetFloat("in seconds. 0 - forever", Blood2);
-			NDMPCDHADMJ().SetFloat("1234332714", Blood3);
-			FHFLKLMFHOI().SetFloat("_BgFade", Blood4);
-			HCGJCMDJPGD().SetTexture("CameraFilterPack/Drawing_Curve", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
+			JFDGLLEOPGB().SetFloat("Joystick1Button9", HBJJOCHGOPH);
+			JFDGLLEOPGB().SetFloat("1", LightReflect);
+			FHFLKLMFHOI().SetFloat("[PhotonMessageInfo: Sender='{1}' Senttime={0}]", Blood1);
+			FHFLKLMFHOI().SetFloat("duration", Blood2);
+			JFDGLLEOPGB().SetFloat("1177138211", Blood3);
+			HNICHJCGJOC().SetFloat("_Intensity", Blood4);
+			HNICHJCGJOC().SetTexture("_ScreenResolution", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
 		}
 		else
 		{
@@ -174,14 +174,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1892f;
 			}
-			NDMPCDHADMJ().SetFloat("_Noise", HBJJOCHGOPH);
+			HNICHJCGJOC().SetFloat("_Glitch", HBJJOCHGOPH);
 			HCGJCMDJPGD().SetFloat("settings.fps", LightReflect);
 			NBPKMLMCHFN.SetFloat("AccuracyScoreText", Blood1);
-			NDMPCDHADMJ().SetFloat("Tab2Content", Blood2);
-			HNICHJCGJOC().SetFloat(".played", Blood3);
-			JFDGLLEOPGB().SetFloat("_ScreenResolution", Blood4);
-			JFDGLLEOPGB().SetTexture("_LightIntensity", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			FHFLKLMFHOI().SetFloat("HandsCountSlider", Blood2);
+			HCGJCMDJPGD().SetFloat("maps.", Blood3);
+			LNLKMDPHDCC().SetFloat("_Value4", Blood4);
+			NBPKMLMCHFN.SetTexture("_LightIntensity", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -223,13 +223,13 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 				HBJJOCHGOPH = 1857f;
 			}
 			NBPKMLMCHFN.SetFloat("_Value2", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Coroutine container not configured... did you forget to call Init?", LightReflect);
-			FHFLKLMFHOI().SetFloat("mapid", Blood1);
-			LNLKMDPHDCC().SetFloat(": ", Blood2);
-			HCGJCMDJPGD().SetFloat("_Intervale", Blood3);
-			FHFLKLMFHOI().SetFloat("Remove Environment Object", Blood4);
-			IONHGBPGCHK().SetTexture("CameraFilterPack/Gradients_Hue", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			NDMPCDHADMJ().SetFloat("SSAARenderTargetCamera", LightReflect);
+			IONHGBPGCHK().SetFloat("steamid", Blood1);
+			FHFLKLMFHOI().SetFloat("[PlayerController] ", Blood2);
+			NDMPCDHADMJ().SetFloat("_Heigh", Blood3);
+			NBPKMLMCHFN.SetFloat("Remove Environment Object", Blood4);
+			NDMPCDHADMJ().SetTexture("_ScreenResolution", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -267,7 +267,7 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 	private void FNCDAPDOBBI()
 	{
 		FPHEBLMINDA = Resources.Load("[GameScene] Checkpoints count: ") as Texture2D;
-		SCShader = Shader.Find("_Value4");
+		SCShader = Shader.Find("_Value3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -283,14 +283,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 562f;
 			}
-			LNLKMDPHDCC().SetFloat("settings.enablehitsoundsinrelax", HBJJOCHGOPH);
-			NDMPCDHADMJ().SetFloat("music", LightReflect);
-			LNLKMDPHDCC().SetFloat("_TimeX", Blood1);
-			NBPKMLMCHFN.SetFloat(" - {0}", Blood2);
-			LNLKMDPHDCC().SetFloat("x", Blood3);
-			LNLKMDPHDCC().SetFloat(" ", Blood4);
-			HCGJCMDJPGD().SetTexture("masterVolume", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			NDMPCDHADMJ().SetFloat("win", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("/music", LightReflect);
+			LNLKMDPHDCC().SetFloat("CameraFilterPack/Pixelisation_OilPaint", Blood1);
+			NDMPCDHADMJ().SetFloat("{0}", Blood2);
+			NBPKMLMCHFN.SetFloat(": ", Blood3);
+			FHFLKLMFHOI().SetFloat(" ", Blood4);
+			NBPKMLMCHFN.SetTexture("musicVolume", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
 		}
 		else
 		{
@@ -300,7 +300,7 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 
 	private void CHOPDIGHJNH()
 	{
-		FPHEBLMINDA = Resources.Load("0.00") as Texture2D;
+		FPHEBLMINDA = Resources.Load("CurrentTimeLabel") as Texture2D;
 		SCShader = Shader.Find("DPADHOR");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -327,7 +327,7 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 	private void ILCFPCIPENO()
 	{
 		FPHEBLMINDA = Resources.Load("/") as Texture2D;
-		SCShader = Shader.Find("R2");
+		SCShader = Shader.Find("L2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -390,8 +390,8 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 
 	private void MMOKKAPFGAK()
 	{
-		FPHEBLMINDA = Resources.Load("maps.") as Texture2D;
-		SCShader = Shader.Find("R1");
+		FPHEBLMINDA = Resources.Load(".lastCheckpoint.bgcolor") as Texture2D;
+		SCShader = Shader.Find("L1");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -404,8 +404,8 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 
 	private void BMIOFJFMCBG()
 	{
-		FPHEBLMINDA = Resources.Load(".icon") as Texture2D;
-		SCShader = Shader.Find("Joystick1Button12");
+		FPHEBLMINDA = Resources.Load("skin.") as Texture2D;
+		SCShader = Shader.Find("Joystick1Button11");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -455,14 +455,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 148f;
 			}
-			HNICHJCGJOC().SetFloat(": ", HBJJOCHGOPH);
-			HNICHJCGJOC().SetFloat("https://bitbucket.org/khb-soft/intralismarcsviewer/", LightReflect);
-			FHFLKLMFHOI().SetFloat("_DiffuseColor", Blood1);
-			HCGJCMDJPGD().SetFloat("SetParticlesInput", Blood2);
-			HNICHJCGJOC().SetFloat("_Value2", Blood3);
-			NDMPCDHADMJ().SetFloat("_Value", Blood4);
-			LNLKMDPHDCC().SetTexture("Set Sun MaxSize", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NDMPCDHADMJ());
+			IONHGBPGCHK().SetFloat("[PlayerController] ", HBJJOCHGOPH);
+			JFDGLLEOPGB().SetFloat("/", LightReflect);
+			HCGJCMDJPGD().SetFloat("ShowTitle", Blood1);
+			HNICHJCGJOC().SetFloat("Set particles count per one beat", Blood2);
+			NBPKMLMCHFN.SetFloat("_Value2", Blood3);
+			NDMPCDHADMJ().SetFloat("_ScreenResolution", Blood4);
+			HCGJCMDJPGD().SetTexture("Set Sun MaxSize", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -521,8 +521,8 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		FPHEBLMINDA = Resources.Load("settings.cameramovements") as Texture2D;
-		SCShader = Shader.Find("The other scroll rect doesnt support scrolling horizontally");
+		FPHEBLMINDA = Resources.Load("cameramovements:") as Texture2D;
+		SCShader = Shader.Find("RemoveHighlight");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -550,14 +550,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 209f;
 			}
-			NDMPCDHADMJ().SetFloat("]", HBJJOCHGOPH);
-			HCGJCMDJPGD().SetFloat("Failed to 'network-remove' GameObject because it is missing a valid InstantiationId on view: ", LightReflect);
-			HCGJCMDJPGD().SetFloat("CameraFilterPack_Glasses_On6", Blood1);
-			FHFLKLMFHOI().SetFloat("JoinRandom failed: No open game. Calling: OnPhotonRandomJoinFailed() and staying on master server.", Blood2);
-			NBPKMLMCHFN.SetFloat("_Val", Blood3);
-			HNICHJCGJOC().SetFloat("ShowSprite", Blood4);
-			LNLKMDPHDCC().SetTexture("Hidden/Image Effects/Cinematic/MotionBlur/FrameBlending", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			IONHGBPGCHK().SetFloat("settings.hitvariation", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("Failed to 'network-remove' GameObject because has no PhotonView components: ", LightReflect);
+			HNICHJCGJOC().SetFloat("_MainTex2", Blood1);
+			JFDGLLEOPGB().SetFloat("CreateRoom failed, client stays on masterserver: {0}.", Blood2);
+			HNICHJCGJOC().SetFloat("CameraFilterPack/Colors_Brightness", Blood3);
+			NDMPCDHADMJ().SetFloat("finished", Blood4);
+			LNLKMDPHDCC().SetTexture("_NeighborMaxTex", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -567,8 +567,8 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 
 	private void FANADGBGCPI()
 	{
-		FPHEBLMINDA = Resources.Load("There is already a virtual axis named ") as Texture2D;
-		SCShader = Shader.Find("[ResourcesManager] Unloading data resources");
+		FPHEBLMINDA = Resources.Load("Horizontal") as Texture2D;
+		SCShader = Shader.Find(",viewkeys");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -577,8 +577,8 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 
 	private void MKIMDFLBFOM()
 	{
-		FPHEBLMINDA = Resources.Load(" Kb") as Texture2D;
-		SCShader = Shader.Find("_StretchWidth");
+		FPHEBLMINDA = Resources.Load("1 Kb") as Texture2D;
+		SCShader = Shader.Find("_Saturation");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -594,14 +594,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1099f;
 			}
-			FHFLKLMFHOI().SetFloat("_TimeX", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("OpAuthenticate()", LightReflect);
-			JFDGLLEOPGB().SetFloat("Set Particles Emission", Blood1);
-			NBPKMLMCHFN.SetFloat("#ok", Blood2);
-			IONHGBPGCHK().SetFloat("PossibleMapMaxScoreText", Blood3);
-			NBPKMLMCHFN.SetFloat("LT", Blood4);
-			HNICHJCGJOC().SetTexture("[PlayerBase] Highscore: ", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			IONHGBPGCHK().SetFloat("CameraFilterPack/Vision_AuraDistortion", HBJJOCHGOPH);
+			HNICHJCGJOC().SetFloat("OpSetPropertiesOfActor()", LightReflect);
+			NBPKMLMCHFN.SetFloat("SetParticlesEmission", Blood1);
+			HNICHJCGJOC().SetFloat("https://www.youtube.com/watch?v=cDVXukrKo74", Blood2);
+			FHFLKLMFHOI().SetFloat("PossibleMapMaxScoreText", Blood3);
+			NDMPCDHADMJ().SetFloat("RB", Blood4);
+			LNLKMDPHDCC().SetTexture(".highscore", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
 		}
 		else
 		{
@@ -618,14 +618,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1604f;
 			}
-			HNICHJCGJOC().SetFloat("EventSystem", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat(".lastCheckpoint.playerdistance", LightReflect);
-			HCGJCMDJPGD().SetFloat("_Value3", Blood1);
-			HNICHJCGJOC().SetFloat("UseScanLine", Blood2);
-			NDMPCDHADMJ().SetFloat("_Visualize", Blood3);
-			JFDGLLEOPGB().SetFloat("_Value2", Blood4);
-			LNLKMDPHDCC().SetTexture("FavoriteButton", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
+			HNICHJCGJOC().SetFloat("OK", HBJJOCHGOPH);
+			HNICHJCGJOC().SetFloat(".lastCheckpoint.comboScore", LightReflect);
+			LNLKMDPHDCC().SetFloat("_Value3", Blood1);
+			HCGJCMDJPGD().SetFloat("UseScanLineSize", Blood2);
+			JFDGLLEOPGB().SetFloat("_Visualize", Blood3);
+			HCGJCMDJPGD().SetFloat("_Value", Blood4);
+			HNICHJCGJOC().SetTexture("LeaderboardsButton", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -656,7 +656,7 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 	private void ANCKKLFPGDI()
 	{
 		FPHEBLMINDA = Resources.Load("Drop_Far") as Texture2D;
-		SCShader = Shader.Find("shader.invert");
+		SCShader = Shader.Find("shader.future");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -672,14 +672,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 782f;
 			}
-			FHFLKLMFHOI().SetFloat("[MapEditor] Loading map: ", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("Mid", LightReflect);
+			IONHGBPGCHK().SetFloat("0.00", HBJJOCHGOPH);
+			JFDGLLEOPGB().SetFloat("Mid", LightReflect);
 			HCGJCMDJPGD().SetFloat("EventSystem", Blood1);
-			NDMPCDHADMJ().SetFloat("_TapMedium", Blood2);
-			JFDGLLEOPGB().SetFloat("ready", Blood3);
-			FHFLKLMFHOI().SetFloat("CameraFilterPack/Drawing_Lines", Blood4);
-			FHFLKLMFHOI().SetTexture("Horizontal", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			HCGJCMDJPGD().SetFloat("_TapMedium", Blood2);
+			IONHGBPGCHK().SetFloat("ready", Blood3);
+			JFDGLLEOPGB().SetFloat("CameraFilterPack/Drawing_Lines", Blood4);
+			JFDGLLEOPGB().SetTexture("#rt", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
 		}
 		else
 		{
@@ -724,14 +724,14 @@ public class CameraFilterPack_AAA_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 137f;
 			}
-			IONHGBPGCHK().SetFloat("Mouse", HBJJOCHGOPH);
-			FHFLKLMFHOI().SetFloat("/", LightReflect);
-			JFDGLLEOPGB().SetFloat("_TexelOffsetScale", Blood1);
-			HNICHJCGJOC().SetFloat("_TimeX", Blood2);
-			HCGJCMDJPGD().SetFloat("[ItemsHandler] All in-game items loaded", Blood3);
-			HNICHJCGJOC().SetFloat("CameraFilterPack/3D_Mirror", Blood4);
-			LNLKMDPHDCC().SetTexture("Event Received", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			LNLKMDPHDCC().SetFloat("Mouse", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("music", LightReflect);
+			HCGJCMDJPGD().SetFloat("_NoiseScale", Blood1);
+			HNICHJCGJOC().SetFloat("CameraFilterPack/FX_superDot", Blood2);
+			HNICHJCGJOC().SetFloat("itemdefid[0]", Blood3);
+			IONHGBPGCHK().SetFloat("CameraFilterPack/3D_Mirror", Blood4);
+			HCGJCMDJPGD().SetTexture("You need to have a Graphic control (such as an Image) for the list [", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
 		}
 		else
 		{

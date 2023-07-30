@@ -37,12 +37,12 @@ public class FileSelector : MonoBehaviour
 	[HideInInspector]
 	public string result;
 
-	public void GBCGFMJGEBI()
+	public void SelectFile()
 	{
-		StartCoroutine(MINHCHHPLAB(result));
+		StartCoroutine(Select(result));
 	}
 
-	public IEnumerator LLFLGFKAKBP(string BNJFKKGOACF)
+	public IEnumerator MEBEKMMKFOO(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -67,7 +67,12 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public IEnumerator NJPKLKNKAGG(string BNJFKKGOACF)
+	public void NCICCMIOIEA()
+	{
+		StartCoroutine(EABEPBGOBNE(result));
+	}
+
+	public IEnumerator OKLCBLGHKDE(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -92,19 +97,159 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void KHAECNKOKIB()
+	public void IJPIBDCPFGD()
 	{
-		StartCoroutine(MEBEKMMKFOO(result));
+		StartCoroutine(DOMGEILLMJH(result));
 	}
 
-	public void AEEABNAHHKJ()
+	public IEnumerator Select(string BNJFKKGOACF)
 	{
-		StartCoroutine(LEPEOHFJJDM(result));
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public void JFBMIIDCFLI()
+	{
+		StartCoroutine(PPFJBPAAEON(result));
 	}
 
 	public void PAFNGGDJCEJ()
 	{
-		StartCoroutine(PPFJBPAAEON(result));
+		StartCoroutine(EKJMJBJGINA(result));
+	}
+
+	public IEnumerator OFGHPPOPIFA(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public void BCJODKHKFGM()
+	{
+		StartCoroutine(IHNBDJMNNCN(result));
+	}
+
+	public void DDHCJDDCGJB()
+	{
+		StartCoroutine(NDHAPEKJGLE(result));
+	}
+
+	public void AFFKPKAALCF()
+	{
+		StartCoroutine(EABEPBGOBNE(result));
+	}
+
+	public IEnumerator MFILDNIGKGO(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public IEnumerator EABEPBGOBNE(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public IEnumerator FCPPLPPLKIP(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
 	}
 
 	public IEnumerator PPFJBPAAEON(string BNJFKKGOACF)
@@ -132,29 +277,224 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void DNHNFGJEINP()
+	public void FHKAEOIOMJE()
 	{
-		StartCoroutine(INDAPPMHOCJ(result));
+		StartCoroutine(DOMGEILLMJH(result));
 	}
 
-	public void IAIAJNEHGPJ()
+	public IEnumerator EKBFEHNKEDA(string BNJFKKGOACF)
 	{
-		StartCoroutine(GEJKLOJNDFD(result));
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
 	}
 
-	public void GFFICCJNHMA()
+	public IEnumerator OGKCIDHCHEC(string BNJFKKGOACF)
 	{
-		StartCoroutine(ECCJPEGIBNM(result));
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public IEnumerator BOBMDOJALEC(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public IEnumerator CFCAHPOENHO(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public IEnumerator NCCJLJFFDIN(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public IEnumerator PINIDCNJMIC(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public void INNAECEKKBH()
+	{
+		StartCoroutine(IHLPFFEFNDN(result));
+	}
+
+	public void OEAFNCEELAD()
+	{
+		StartCoroutine(PKPOMIAJKKD(result));
+	}
+
+	public void KHAECNKOKIB()
+	{
+		StartCoroutine(MCDNOKAMKDE(result));
+	}
+
+	public void AINHODMBCNE()
+	{
+		StartCoroutine(CFCAHPOENHO(result));
 	}
 
 	public void HEMNBIHCDAC()
 	{
-		StartCoroutine(DGPLLJKGIMP(result));
+		StartCoroutine(GNKLLIABLOP(result));
+	}
+
+	public void IPLAJIODIKM()
+	{
+		StartCoroutine(OGKCIDHCHEC(result));
+	}
+
+	public IEnumerator OFFOODDOPAG(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public void ALCPMHMCFBG()
+	{
+		StartCoroutine(PKPOMIAJKKD(result));
 	}
 
 	public void FKIAAOEIDKP()
 	{
-		StartCoroutine(MINHCHHPLAB(result));
+		StartCoroutine(CFCAHPOENHO(result));
 	}
 
 	public IEnumerator NDHAPEKJGLE(string BNJFKKGOACF)
@@ -207,67 +547,12 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void DOHPDBNDGEK()
-	{
-		StartCoroutine(DGPLLJKGIMP(result));
-	}
-
-	public IEnumerator EMKJEINLLJD(string BNJFKKGOACF)
-	{
-		Debug.Log("[FileSelector] Starting file dialog");
-		if (mode == FileDialog.FileDialogMode.Open)
-		{
-			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
-		}
-		else
-		{
-			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
-		}
-		if (dialog.result != null)
-		{
-			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
-			result = dialog.result;
-			selectedFile.text = new FileInfo(dialog.result).Name;
-			OnFileSelected.Invoke();
-			OnFileSelectedString.Invoke(dialog.result);
-		}
-		else
-		{
-			Debug.Log("[FileSelector] Dialog canceled");
-		}
-	}
-
-	public IEnumerator GEJKLOJNDFD(string BNJFKKGOACF)
-	{
-		Debug.Log("[FileSelector] Starting file dialog");
-		if (mode == FileDialog.FileDialogMode.Open)
-		{
-			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
-		}
-		else
-		{
-			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
-		}
-		if (dialog.result != null)
-		{
-			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
-			result = dialog.result;
-			selectedFile.text = new FileInfo(dialog.result).Name;
-			OnFileSelected.Invoke();
-			OnFileSelectedString.Invoke(dialog.result);
-		}
-		else
-		{
-			Debug.Log("[FileSelector] Dialog canceled");
-		}
-	}
-
-	public void KIPKADHBLLK()
+	public void PELDILPMGIG()
 	{
 		StartCoroutine(BOBMDOJALEC(result));
 	}
 
-	public IEnumerator BOBMDOJALEC(string BNJFKKGOACF)
+	public IEnumerator JLKDLOIBNMF(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -292,7 +577,17 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public IEnumerator JODDNKKOFKL(string BNJFKKGOACF)
+	public void LPAKMJIHOAL()
+	{
+		StartCoroutine(PPFJBPAAEON(result));
+	}
+
+	public void GBPFEDFFEKG()
+	{
+		StartCoroutine(JDBGFFFEONP(result));
+	}
+
+	public IEnumerator LJNLFIHEEHO(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -317,7 +612,17 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public IEnumerator HNJPPHHBPNI(string BNJFKKGOACF)
+	public void AEEABNAHHKJ()
+	{
+		StartCoroutine(IHNBDJMNNCN(result));
+	}
+
+	public void LFDBEBOPMEG()
+	{
+		StartCoroutine(CFCAHPOENHO(result));
+	}
+
+	public IEnumerator IBGDPKOHMNK(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -342,47 +647,12 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void HFEAFEANNBA()
+	public void CAFNPKJKNOA()
 	{
-		StartCoroutine(HMCBBLKONGK(result));
+		StartCoroutine(PINIDCNJMIC(result));
 	}
 
-	public void AFFKPKAALCF()
-	{
-		StartCoroutine(NCCJLJFFDIN(result));
-	}
-
-	public IEnumerator FCPPLPPLKIP(string BNJFKKGOACF)
-	{
-		Debug.Log("[FileSelector] Starting file dialog");
-		if (mode == FileDialog.FileDialogMode.Open)
-		{
-			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
-		}
-		else
-		{
-			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
-		}
-		if (dialog.result != null)
-		{
-			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
-			result = dialog.result;
-			selectedFile.text = new FileInfo(dialog.result).Name;
-			OnFileSelected.Invoke();
-			OnFileSelectedString.Invoke(dialog.result);
-		}
-		else
-		{
-			Debug.Log("[FileSelector] Dialog canceled");
-		}
-	}
-
-	public void KEIGJBNBALG()
-	{
-		StartCoroutine(NCCJLJFFDIN(result));
-	}
-
-	public IEnumerator HMCBBLKONGK(string BNJFKKGOACF)
+	public IEnumerator IHLPFFEFNDN(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -432,7 +702,22 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public IEnumerator MINHCHHPLAB(string BNJFKKGOACF)
+	public void KGJDMIMHBNA()
+	{
+		StartCoroutine(NJHHCCGEACF(result));
+	}
+
+	public void IAIAJNEHGPJ()
+	{
+		StartCoroutine(CNDHFHFNCOM(result));
+	}
+
+	public void CMIMCKDJHBH()
+	{
+		StartCoroutine(FCPPLPPLKIP(result));
+	}
+
+	public IEnumerator NCMDHCJOIOG(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -457,7 +742,17 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public IEnumerator LOFELHNPENM(string BNJFKKGOACF)
+	public void CDPBFOGJBDH()
+	{
+		StartCoroutine(JDBGFFFEONP(result));
+	}
+
+	public void JMCHDAJGEJD()
+	{
+		StartCoroutine(PINIDCNJMIC(result));
+	}
+
+	public IEnumerator PKPOMIAJKKD(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -480,6 +775,21 @@ public class FileSelector : MonoBehaviour
 		{
 			Debug.Log("[FileSelector] Dialog canceled");
 		}
+	}
+
+	public void PCNMDIPPKHC()
+	{
+		StartCoroutine(ADKBOAHDMLK(result));
+	}
+
+	public void HAPGGKFMFJK()
+	{
+		StartCoroutine(IHLPFFEFNDN(result));
+	}
+
+	public void AMKPMEBHDDH()
+	{
+		StartCoroutine(IHNBDJMNNCN(result));
 	}
 
 	public IEnumerator GNKLLIABLOP(string BNJFKKGOACF)
@@ -507,17 +817,7 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void NCICCMIOIEA()
-	{
-		StartCoroutine(NJPKLKNKAGG(result));
-	}
-
-	public void ADKHCIMAGDM()
-	{
-		StartCoroutine(JODDNKKOFKL(result));
-	}
-
-	public IEnumerator MEBEKMMKFOO(string BNJFKKGOACF)
+	public IEnumerator EKJMJBJGINA(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -542,7 +842,7 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public IEnumerator NCCJLJFFDIN(string BNJFKKGOACF)
+	public IEnumerator OANDHFKAHFM(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -567,14 +867,69 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void GINBADBDBHK()
+	public void HICDHIJLFJO()
 	{
-		StartCoroutine(INDAPPMHOCJ(result));
+		StartCoroutine(CFCAHPOENHO(result));
 	}
 
-	public void KFCOMPNAOFC()
+	public IEnumerator MLDHBIKGAOC(string BNJFKKGOACF)
 	{
-		StartCoroutine(MEBEKMMKFOO(result));
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public void FDEIKBEABML()
+	{
+		StartCoroutine(LJNLFIHEEHO(result));
+	}
+
+	public void FFGNKDFJIJI()
+	{
+		StartCoroutine(EABEPBGOBNE(result));
+	}
+
+	public IEnumerator DOMGEILLMJH(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
 	}
 
 	public IEnumerator FMGHJKGBCPD(string BNJFKKGOACF)
@@ -602,7 +957,7 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public IEnumerator INDAPPMHOCJ(string BNJFKKGOACF)
+	public IEnumerator JDBGFFFEONP(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -627,99 +982,59 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void EBGANBHIODB()
+	public IEnumerator AJBDONELEBJ(string BNJFKKGOACF)
 	{
-		StartCoroutine(Select(result));
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
 	}
 
-	public void FHNENEALHBB()
+	public IEnumerator ADKBOAHDMLK(string BNJFKKGOACF)
 	{
-		StartCoroutine(HNJPPHHBPNI(result));
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
 	}
 
-	public void FHJPHAHBALC()
+	public void GECLNECMKCP()
 	{
 		StartCoroutine(MCDNOKAMKDE(result));
-	}
-
-	public IEnumerator OFGHPPOPIFA(string BNJFKKGOACF)
-	{
-		Debug.Log("[FileSelector] Starting file dialog");
-		if (mode == FileDialog.FileDialogMode.Open)
-		{
-			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
-		}
-		else
-		{
-			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
-		}
-		if (dialog.result != null)
-		{
-			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
-			result = dialog.result;
-			selectedFile.text = new FileInfo(dialog.result).Name;
-			OnFileSelected.Invoke();
-			OnFileSelectedString.Invoke(dialog.result);
-		}
-		else
-		{
-			Debug.Log("[FileSelector] Dialog canceled");
-		}
-	}
-
-	public void KAFFNJNFAEC()
-	{
-		StartCoroutine(GNKLLIABLOP(result));
-	}
-
-	public IEnumerator HOFNMDNHFPM(string BNJFKKGOACF)
-	{
-		Debug.Log("[FileSelector] Starting file dialog");
-		if (mode == FileDialog.FileDialogMode.Open)
-		{
-			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
-		}
-		else
-		{
-			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
-		}
-		if (dialog.result != null)
-		{
-			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
-			result = dialog.result;
-			selectedFile.text = new FileInfo(dialog.result).Name;
-			OnFileSelected.Invoke();
-			OnFileSelectedString.Invoke(dialog.result);
-		}
-		else
-		{
-			Debug.Log("[FileSelector] Dialog canceled");
-		}
-	}
-
-	public IEnumerator LEPEOHFJJDM(string BNJFKKGOACF)
-	{
-		Debug.Log("[FileSelector] Starting file dialog");
-		if (mode == FileDialog.FileDialogMode.Open)
-		{
-			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
-		}
-		else
-		{
-			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
-		}
-		if (dialog.result != null)
-		{
-			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
-			result = dialog.result;
-			selectedFile.text = new FileInfo(dialog.result).Name;
-			OnFileSelected.Invoke();
-			OnFileSelectedString.Invoke(dialog.result);
-		}
-		else
-		{
-			Debug.Log("[FileSelector] Dialog canceled");
-		}
 	}
 
 	public IEnumerator MCDNOKAMKDE(string BNJFKKGOACF)
@@ -747,7 +1062,12 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public IEnumerator DGPLLJKGIMP(string BNJFKKGOACF)
+	public void DJBJOMBHJMO()
+	{
+		StartCoroutine(PPFJBPAAEON(result));
+	}
+
+	public IEnumerator NJHHCCGEACF(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -772,17 +1092,22 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void IPLAJIODIKM()
+	public void HFEAFEANNBA()
 	{
-		StartCoroutine(HMCBBLKONGK(result));
+		StartCoroutine(OGKCIDHCHEC(result));
 	}
 
-	public void SelectFile()
+	public void DCAMDBFIPLH()
 	{
-		StartCoroutine(Select(result));
+		StartCoroutine(DOMGEILLMJH(result));
 	}
 
-	public IEnumerator EABEPBGOBNE(string BNJFKKGOACF)
+	public void DEKFAFLCOIP()
+	{
+		StartCoroutine(OGKCIDHCHEC(result));
+	}
+
+	public IEnumerator CNDHFHFNCOM(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -807,12 +1132,7 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void JKOEJIELDOJ()
-	{
-		StartCoroutine(HNJPPHHBPNI(result));
-	}
-
-	public IEnumerator Select(string BNJFKKGOACF)
+	public IEnumerator IHNBDJMNNCN(string BNJFKKGOACF)
 	{
 		Debug.Log("[FileSelector] Starting file dialog");
 		if (mode == FileDialog.FileDialogMode.Open)
@@ -837,13 +1157,48 @@ public class FileSelector : MonoBehaviour
 		}
 	}
 
-	public void CMIMCKDJHBH()
+	public void BGGOGOINEED()
 	{
-		StartCoroutine(JODDNKKOFKL(result));
+		StartCoroutine(EKBFEHNKEDA(result));
 	}
 
-	public void CJCIJJOBIIK()
+	public void DNHNFGJEINP()
 	{
-		StartCoroutine(NCCJLJFFDIN(result));
+		StartCoroutine(JLKDLOIBNMF(result));
+	}
+
+	public IEnumerator MINHCHHPLAB(string BNJFKKGOACF)
+	{
+		Debug.Log("[FileSelector] Starting file dialog");
+		if (mode == FileDialog.FileDialogMode.Open)
+		{
+			yield return StartCoroutine(dialog.Open(BNJFKKGOACF, extensions, "OPEN FILE", null, maxSize, saveLastPath));
+		}
+		else
+		{
+			yield return StartCoroutine(dialog.Save(BNJFKKGOACF, extensions, "SAVE FILE", null, saveLastPath));
+		}
+		if (dialog.result != null)
+		{
+			Debug.Log("[FileSelector] Dialog ended, result: " + dialog.result);
+			result = dialog.result;
+			selectedFile.text = new FileInfo(dialog.result).Name;
+			OnFileSelected.Invoke();
+			OnFileSelectedString.Invoke(dialog.result);
+		}
+		else
+		{
+			Debug.Log("[FileSelector] Dialog canceled");
+		}
+	}
+
+	public void FHJPHAHBALC()
+	{
+		StartCoroutine(GNKLLIABLOP(result));
+	}
+
+	public void DOHPDBNDGEK()
+	{
+		StartCoroutine(FMGHJKGBCPD(result));
 	}
 }

@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Drawing/Manga3")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 {
 	public Shader SCShader;
@@ -61,7 +61,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void ALNNIDLFILB()
 	{
-		SCShader = Shader.Find("#updateoutdatedmap");
+		SCShader = Shader.Find("Tab1Content");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -77,9 +77,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1921f;
 			}
-			OJMHIMIPKME().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			ECCPAOBFDKP().SetFloat("_LightIntensity", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOMEEFLPEPJ());
+			LPDOGGFOBDH().SetFloat("_Value2", HBJJOCHGOPH);
+			DIOAAHJDMLK().SetFloat("_LightIntensity", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MHBAIEKFBIJ());
 		}
 		else
 		{
@@ -105,7 +105,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("_Blue_R");
+		SCShader = Shader.Find("_Green_B");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -160,7 +160,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		SCShader = Shader.Find("settings.cameramovements");
+		SCShader = Shader.Find("settings.hitvariation");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -177,7 +177,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void FJNCHGLIEMA()
 	{
-		SCShader = Shader.Find("inventory.lastitemscount");
+		SCShader = Shader.Find("LoadingStatusText");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -231,9 +231,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 429f;
 			}
-			EPBAAGMGPAP().SetFloat("#failed: ", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("Item ", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			KEMAALEODNH().SetFloat("#tryagain", HBJJOCHGOPH);
+			DIOAAHJDMLK().SetFloat("ItemTemplate", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
 		}
 		else
 		{
@@ -250,9 +250,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1921f;
 			}
-			DOMEEFLPEPJ().SetFloat(".", HBJJOCHGOPH);
-			EPCGJFCCAFH().SetFloat("Clears the console and prints the logs in the specified range", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			FNAFGEMJBDA().SetFloat(".workshop.json", HBJJOCHGOPH);
+			INOBFNCKFGK().SetFloat("plogs", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DIOAAHJDMLK());
 		}
 		else
 		{
@@ -280,9 +280,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 39f;
 			}
-			BLMPMOIDGMG().SetFloat(",", HBJJOCHGOPH);
-			EBJKJPAIAAM().SetFloat("Right", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			CFCPHFMKHII().SetFloat("settings.disablestoryboard", HBJJOCHGOPH);
+			FNAFGEMJBDA().SetFloat("ControllerRightX", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ILKALHDJBFE());
 		}
 		else
 		{
@@ -307,9 +307,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1636f;
 			}
-			ALABBJPHCNG().SetFloat("LevelNameText", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("_EmissionGain", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
+			ADBKPGFMNKO().SetFloat("InfoCanvas", HBJJOCHGOPH);
+			HNFFHCLNBDN().SetFloat("_EmissionGain", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
 		}
 		else
 		{
@@ -342,7 +342,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void HJPCJGOEKMF()
 	{
-		SCShader = Shader.Find(".message");
+		SCShader = Shader.Find("MenuScene");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -373,7 +373,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void JOHOFNKJDEB()
 	{
-		SCShader = Shader.Find("_Noise");
+		SCShader = Shader.Find("_Parasite");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -382,7 +382,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void JKFDDNMPOJH()
 	{
-		SCShader = Shader.Find("May");
+		SCShader = Shader.Find("Feb");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -391,7 +391,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/FX_Dot_Circle");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -427,9 +427,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 178f;
 			}
-			ALABBJPHCNG().SetFloat("/icon", HBJJOCHGOPH);
-			MHBAIEKFBIJ().SetFloat("[NetworkManager] Updating current room...", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ECCPAOBFDKP());
+			EPCGJFCCAFH().SetFloat("/icon", HBJJOCHGOPH);
+			OJMHIMIPKME().SetFloat("[NetworkManager] Updating current room...", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DIOAAHJDMLK());
 		}
 		else
 		{
@@ -458,7 +458,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void EDPDMBFLHLP()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/Special_Bubble");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -467,7 +467,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void ALJEJJCIMJN()
 	{
-		SCShader = Shader.Find("_LoopCount");
+		SCShader = Shader.Find("_TileMaxOffs");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -496,9 +496,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 505f;
 			}
-			HFBJAOFLCJI().SetFloat("Spawn new environment sprite (image) and sets its id", HBJJOCHGOPH);
-			EBJKJPAIAAM().SetFloat("open", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN());
+			EFMCNLELMDO().SetFloat("Spawn new environment sprite (image) and sets its id", HBJJOCHGOPH);
+			MALMMJNPILJ().SetFloat("visible", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, INOBFNCKFGK());
 		}
 		else
 		{
@@ -555,9 +555,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 138f;
 			}
-			EBJKJPAIAAM().SetFloat("[MapsStats] Length: ", HBJJOCHGOPH);
-			ALABBJPHCNG().SetFloat("original.tutorial", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
+			MHBAIEKFBIJ().SetFloat("[RanksSystem] Map hash: ", HBJJOCHGOPH);
+			LPDOGGFOBDH().SetFloat("OnMastedChangeScene", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
 		}
 		else
 		{
@@ -652,7 +652,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void BKIGIIINEDH()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Blur_Focus");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -661,7 +661,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void ADPLHDFJFID()
 	{
-		SCShader = Shader.Find("[DiscordController] Init");
+		SCShader = Shader.Find("[DiscordController] Join request {0}#{1}: {2}");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -674,7 +674,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("_Value3");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -690,9 +690,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 87f;
 			}
-			NLFJGMBCICG().SetFloat("CameraFilterPack_eyes_vision_2", HBJJOCHGOPH);
-			BLMPMOIDGMG().SetFloat("menu.enableselectormusic", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ECCPAOBFDKP());
+			FNAFGEMJBDA().SetFloat("_MainTex2", HBJJOCHGOPH);
+			IIJMIPBMMBF().SetFloat("menu.selectedplaymode", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFMCNLELMDO());
 		}
 		else
 		{
@@ -728,9 +728,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 861f;
 			}
-			OJMHIMIPKME().SetFloat("LevelNameInputField", HBJJOCHGOPH);
-			IIJMIPBMMBF().SetFloat("[Singleton] multiple instances of '", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MHBAIEKFBIJ());
+			DCCHGBHLAAF().SetFloat("Tab1Content", HBJJOCHGOPH);
+			ECCPAOBFDKP().SetFloat("(singleton) ", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
 		}
 		else
 		{
@@ -761,7 +761,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void CIPKEPDELJB()
 	{
-		SCShader = Shader.Find("player.ice");
+		SCShader = Shader.Find("???");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -895,7 +895,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void ODBNMPGBCGO()
 	{
-		SCShader = Shader.Find("Operation failed: ");
+		SCShader = Shader.Find(" could not be executed (yet). Wait for state JoinedLobby or ConnectedToMaster and their callbacks before calling operations. WebRPCs need a server-side configuration. Enum OperationCode helps identify the operation.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -911,9 +911,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 217f;
 			}
-			OJMHIMIPKME().SetFloat("itemdefid[0]", HBJJOCHGOPH);
-			BLMPMOIDGMG().SetFloat("HitVariationSlider", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFMCNLELMDO());
+			NBPKMLMCHFN.SetFloat("steamid", HBJJOCHGOPH);
+			EPBAAGMGPAP().SetFloat("Scene", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIAIGCAHDA());
 		}
 		else
 		{
@@ -923,7 +923,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void FANADGBGCPI()
 	{
-		SCShader = Shader.Find("1332644700");
+		SCShader = Shader.Find("1278033234");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -951,9 +951,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 300f;
 			}
-			MFHPKGICPIO().SetFloat("No Name", HBJJOCHGOPH);
-			EPBAAGMGPAP().SetFloat("STICKRVER", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MFHPKGICPIO());
+			LPDOGGFOBDH().SetFloat("No Description", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("STICKLVER", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
 		}
 		else
 		{
@@ -970,9 +970,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1379f;
 			}
-			LPDOGGFOBDH().SetFloat("EditMenu", HBJJOCHGOPH);
-			DOMEEFLPEPJ().SetFloat("menu.playedsolo", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ALABBJPHCNG());
+			DIOAAHJDMLK().SetFloat("EditMenu", HBJJOCHGOPH);
+			FNAFGEMJBDA().SetFloat("menu.playedsolo", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOMEEFLPEPJ());
 		}
 		else
 		{
@@ -1004,9 +1004,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1926f;
 			}
-			LPDOGGFOBDH().SetFloat("BitsData", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_AdaptationMax", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			CEKJODEAMGB().SetFloat("BitsData", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_MiddleGrey", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{
@@ -1016,7 +1016,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void MKIMDFLBFOM()
 	{
-		SCShader = Shader.Find("Fade");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1074,9 +1074,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1232f;
 			}
-			LPDOGGFOBDH().SetFloat("#", HBJJOCHGOPH);
-			HHIAIGCAHDA().SetFloat("You need to have a child LayoutGroup content set for the list: ", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			HEHKGPKLAKK().SetFloat(">", HBJJOCHGOPH);
+			CFCPHFMKHII().SetFloat("Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN());
 		}
 		else
 		{
@@ -1093,9 +1093,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 29f;
 			}
-			ILKALHDJBFE().SetFloat("Yes", HBJJOCHGOPH);
-			CFCPHFMKHII().SetFloat("_Value", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FGENHBKMPDA());
+			MALMMJNPILJ().SetFloat("skin.", HBJJOCHGOPH);
+			MALMMJNPILJ().SetFloat("_TimeX", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
 		}
 		else
 		{
@@ -1123,9 +1123,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 588f;
 			}
-			HHIAIGCAHDA().SetFloat("gameVolume", HBJJOCHGOPH);
-			DCCHGBHLAAF().SetFloat("_Value2", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MHBAIEKFBIJ());
+			EPCGJFCCAFH().SetFloat("editorVolume", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat("_Value", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN());
 		}
 		else
 		{
@@ -1151,9 +1151,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1231f;
 			}
-			OJMHIMIPKME().SetFloat("ViewMenu", HBJJOCHGOPH);
-			DCCHGBHLAAF().SetFloat("workshop.", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN());
+			NLFJGMBCICG().SetFloat("GenerationMenu", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("workshop.", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPBAAGMGPAP());
 		}
 		else
 		{
@@ -1171,7 +1171,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void AEDDNDHCLNN()
 	{
-		SCShader = Shader.Find("itemdefid[0]");
+		SCShader = Shader.Find("513510");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1180,7 +1180,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void PCHCFIOHIKK()
 	{
-		SCShader = Shader.Find("https://bitbucket.org/khb-soft/intralismarcsviewer/");
+		SCShader = Shader.Find("/");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1201,7 +1201,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void GIGMHPHPCHJ()
 	{
-		SCShader = Shader.Find("RecordButton");
+		SCShader = Shader.Find("#C8C8C8FF");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1210,7 +1210,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void JABNHMIHBHC()
 	{
-		SCShader = Shader.Find("_DiffuseColor");
+		SCShader = Shader.Find("ready");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1264,9 +1264,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1868f;
 			}
-			IIJMIPBMMBF().SetFloat("_Value", HBJJOCHGOPH);
-			ILKALHDJBFE().SetFloat("_ScreenResolution", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DIOAAHJDMLK());
+			ALABBJPHCNG().SetFloat("_Value", HBJJOCHGOPH);
+			DCCHGBHLAAF().SetFloat("_ColorLevel", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNFFHCLNBDN());
 		}
 		else
 		{
@@ -1276,7 +1276,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void HAIAHJPCPAG()
 	{
-		SCShader = Shader.Find("white");
+		SCShader = Shader.Find(" Loaded: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1292,9 +1292,9 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1316f;
 			}
-			FGENHBKMPDA().SetFloat("settings.enablehitsoundsinnormal", HBJJOCHGOPH);
-			ALABBJPHCNG().SetFloat("maps.", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			MALMMJNPILJ().SetFloat("settings.disablestoryboard", HBJJOCHGOPH);
+			EPBAAGMGPAP().SetFloat("maps.", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FNAFGEMJBDA());
 		}
 		else
 		{
@@ -1312,7 +1312,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("1177138211");
+		SCShader = Shader.Find("1087340967");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1325,7 +1325,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void NNFMIAFHMJM()
 	{
-		SCShader = Shader.Find("UnityEngine.MonoBehaviour");
+		SCShader = Shader.Find("DontDestroy");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1399,7 +1399,7 @@ public class CameraFilterPack_Drawing_Manga3 : MonoBehaviour
 
 	private void GPNAOAKCMHC()
 	{
-		SCShader = Shader.Find("\" error: ");
+		SCShader = Shader.Find("#checkpoint");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

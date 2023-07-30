@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/TV/WideScreenCircle")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/TV/WideScreenCircle")]
 public class CameraFilterPack_TV_WideScreenCircle : MonoBehaviour
 {
 	public Shader SCShader;
@@ -115,13 +115,13 @@ public class CameraFilterPack_TV_WideScreenCircle : MonoBehaviour
 			{
 				HBJJOCHGOPH = 776f;
 			}
-			PLBEJJIHFPB().SetFloat("_Near", HBJJOCHGOPH);
-			JIBOKBCPDLC().SetFloat("_Value3", Size);
-			JIBOKBCPDLC().SetFloat("\" error: ", Smooth);
-			KEMAALEODNH().SetFloat("_Blue_R", ICABEDDNGIH);
-			NBPKMLMCHFN.SetFloat("Gameplay/Base", LHOMPJOPKHE);
-			JIBOKBCPDLC().SetVector("Hex value #RRGGBB", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 891f, 1437f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			ADBKPGFMNKO().SetFloat("_Near", HBJJOCHGOPH);
+			DOHGBNPMBKG().SetFloat("_Value3", Size);
+			KEMAALEODNH().SetFloat("#checkpoint", Smooth);
+			KEMAALEODNH().SetFloat("_Green_B", ICABEDDNGIH);
+			ADBKPGFMNKO().SetFloat("Gameplay/Base", LHOMPJOPKHE);
+			NBPKMLMCHFN.SetVector("no lives color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 891f, 1437f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -161,13 +161,13 @@ public class CameraFilterPack_TV_WideScreenCircle : MonoBehaviour
 			{
 				HBJJOCHGOPH = 169f;
 			}
-			ADBKPGFMNKO().SetFloat("_Value4", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("_Blood", Size);
-			JIBOKBCPDLC().SetFloat(": ", Smooth);
-			IONHGBPGCHK().SetFloat("menu.tabid", ICABEDDNGIH);
-			KEMAALEODNH().SetFloat("_Value4", LHOMPJOPKHE);
-			DOHGBNPMBKG().SetVector("#ok", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 440f, 233f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
+			KEMAALEODNH().SetFloat("_Value3", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("_ColorB", Size);
+			IONHGBPGCHK().SetFloat("[PlayerController] ", Smooth);
+			DOHGBNPMBKG().SetFloat("mapselector.filter.subscribedonly", ICABEDDNGIH);
+			DOHGBNPMBKG().SetFloat("_Value2", LHOMPJOPKHE);
+			JIBOKBCPDLC().SetVector("/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 440f, 233f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -185,7 +185,7 @@ public class CameraFilterPack_TV_WideScreenCircle : MonoBehaviour
 
 	private void DNNFHBOOPIN()
 	{
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -255,7 +255,7 @@ public class CameraFilterPack_TV_WideScreenCircle : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find(";");
+		SCShader = Shader.Find("|");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -264,7 +264,7 @@ public class CameraFilterPack_TV_WideScreenCircle : MonoBehaviour
 
 	private void KDMANOEMOCA()
 	{
-		SCShader = Shader.Find("R:");
+		SCShader = Shader.Find("UI/Particles/Hidden");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

@@ -7,45 +7,232 @@ public class VolumeSettings : MonoBehaviour
 {
 	public AudioMixer audioMixer;
 
-	public float ECDGHHKPIHL()
+	public float FIFNFIOKPOG()
 	{
-		float value = 837f;
-		audioMixer.GetFloat("_Offsets", out value);
-		return DPCLFKCHLNP(value);
+		float value = 1295f;
+		audioMixer.GetFloat(". Possible scene loading in progress?", out value);
+		return FJACGPIOMKA(value);
 	}
 
-	public float IHHOIGPOOBJ()
+	public float MIIAHIKIKLA()
 	{
-		float value = 1533f;
-		audioMixer.GetFloat("OK", out value);
-		return CGGEOGNGBDJ(value);
+		float value = 872f;
+		audioMixer.GetFloat("[GameScene] Events count: ", out value);
+		return ECMKDDLIHJM(value);
 	}
 
-	public void SetMenuVolume(float BDICHAELIJE)
+	public void GCJJBCNCDMK(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("menuVolume", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("settings.volume.menu", BDICHAELIJE);
+		audioMixer.SetFloat("_FarCorner", ABKGDNMBAMH(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK("(http|https)://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?\\.(jpg|jpeg|gif|png)", BDICHAELIJE);
 	}
 
-	public void HPILGNAEANG(float BDICHAELIJE)
+	public void KALAMGBPMMG(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("Alternative", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("OpSettings()", BDICHAELIJE);
+		audioMixer.SetFloat("Drop_Far", IFPBEHINCMK(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK("CameraFilterPack_VHS1", BDICHAELIJE);
 	}
 
-	public float FIECFKKJNBN()
+	public void GAFIKFMPDCA(float BDICHAELIJE)
 	{
-		float value = 1506f;
-		audioMixer.GetFloat("isVisible", out value);
-		return FKMNHPFAKOG(value);
+		audioMixer.SetFloat("x", IGDGALJHJPH(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO("_Value4", BDICHAELIJE);
 	}
 
-	public float FKMNHPFAKOG(float HDAMKJKNKJI)
+	public void SetVolume(float BDICHAELIJE)
 	{
-		return Mathf.Pow(652f, HDAMKJKNKJI / 362f);
+		SetMenuVolume(BDICHAELIJE);
+		SetGameVolume(BDICHAELIJE);
 	}
 
-	private IEnumerator CFOHMCKDELP()
+	private IEnumerator ILMFEHLGBGN()
+	{
+		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
+		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
+		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
+		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
+		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+	}
+
+	public void JJGONAPAHCN(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("ItemTemplate", DAFBKPBKCFI(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF("\t", BDICHAELIJE);
+	}
+
+	private IEnumerator JEJLPJJOIIH()
+	{
+		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
+		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
+		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
+		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
+		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+	}
+
+	public void KOJKBFDNGDK()
+	{
+		StartCoroutine(FMLANACDKOM());
+	}
+
+	public float NormalToDb(float JCLIHOKDOHN)
+	{
+		return (!(JCLIHOKDOHN > 0f)) ? (-80f) : (20f * Mathf.Log10(JCLIHOKDOHN));
+	}
+
+	private IEnumerator HLOHAFHBENK()
+	{
+		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
+		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
+		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
+		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
+		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+	}
+
+	private IEnumerator BCDOFHNGBAP()
+	{
+		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
+		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
+		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
+		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
+		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+	}
+
+	public void LABKFOGNFLB(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("achievements.21.progress", ABKGDNMBAMH(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF("_ScreenResolution", BDICHAELIJE);
+	}
+
+	private IEnumerator BNIIKPCKCPC()
+	{
+		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
+		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
+		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
+		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
+		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+	}
+
+	public void IOOKAOKJIKL(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("_Gamma", LLJAJLMOMNB(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK("Hex value #RRGGBB", BDICHAELIJE);
+	}
+
+	public float IFPBEHINCMK(float JCLIHOKDOHN)
+	{
+		return (!(JCLIHOKDOHN > 1068f)) ? 1328f : (1124f * Mathf.Log10(JCLIHOKDOHN));
+	}
+
+	public float GetGameVolume()
+	{
+		float value = 0f;
+		audioMixer.GetFloat("gameVolume", out value);
+		return DbToNormal(value);
+	}
+
+	private IEnumerator EJMAGFFMCGJ()
+	{
+		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
+		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
+		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
+		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
+		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+	}
+
+	public void HFFMDEDDGDA(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("Right Stick Click", OLODCIGOIDD(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FIKHPJEMEGO("settings.hitvariation", BDICHAELIJE);
+	}
+
+	public float OFDECOEPJIB()
+	{
+		float value = 1962f;
+		audioMixer.GetFloat("_SunPosition", out value);
+		return HFDCOHFNDIP(value);
+	}
+
+	public void GPBHKIHPLKC(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("EnableRankedNotificationsToggle", IFPBEHINCMK(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK("_ScreenResolution", BDICHAELIJE);
+	}
+
+	public float MAMLBFKENPP()
+	{
+		float value = 1417f;
+		audioMixer.GetFloat("PerfectHitsScoreText", out value);
+		return PKCCBAOJKAC(value);
+	}
+
+	public void EMFDCOELJGL(float BDICHAELIJE)
+	{
+		OPNPAGIJKGN(BDICHAELIJE);
+		PKBPADHIDLC(BDICHAELIJE);
+	}
+
+	public void MANHJLDFNNM(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("/../", DAFBKPBKCFI(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("_FixDistance", BDICHAELIJE);
+	}
+
+	public float FAPMCGJAGAI()
+	{
+		float value = 1894f;
+		audioMixer.GetFloat("CameraFilterPack/Blur_Noise", out value);
+		return HFDCOHFNDIP(value);
+	}
+
+	public float DNOMHNHDFEB()
+	{
+		float value = 1404f;
+		audioMixer.GetFloat("_ScreenResolution", out value);
+		return DbToNormal(value);
+	}
+
+	public float AFIFPMJFFIM()
+	{
+		float value = 563f;
+		audioMixer.GetFloat("_Value", out value);
+		return PKCCBAOJKAC(value);
+	}
+
+	public void PDHKMDBNGGN()
+	{
+		StartCoroutine(BCGPAFDDNJC());
+	}
+
+	public void LCGIPBONGGG(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("_TimeX", KBLDPGBIJNE(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK("#pleasewait", BDICHAELIJE);
+	}
+
+	public float PGMEEPKGJPJ(float HDAMKJKNKJI)
+	{
+		return Mathf.Pow(154f, HDAMKJKNKJI / 1005f);
+	}
+
+	public void EHIPKGEIPND(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("[Sound Manager] Audio clip is null, cannot play music", KBLDPGBIJNE(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO("[RanksSystem] Map hash: ", BDICHAELIJE);
+	}
+
+	public float EEBIIBACMMD(float HDAMKJKNKJI)
+	{
+		return Mathf.Pow(1658f, HDAMKJKNKJI / 820f);
+	}
+
+	public float IGBFLJBJJDN()
+	{
+		float value = 143f;
+		audioMixer.GetFloat("_WaveIntensity", out value);
+		return PIKONBBNLHK(value);
+	}
+
+	private IEnumerator FMLANACDKOM()
 	{
 		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
 		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
@@ -56,56 +243,38 @@ public class VolumeSettings : MonoBehaviour
 
 	public void JKFDDNMPOJH()
 	{
-		StartCoroutine(IAIAPPPLMPA());
+		StartCoroutine(ILMFEHLGBGN());
 	}
 
-	public float LDAJBKIDLLG()
+	public void GMGGEMBLGGO(float BDICHAELIJE)
 	{
-		float value = 376f;
-		audioMixer.GetFloat("[ResourcesManager] Load image error: ", out value);
-		return DIGIPEPHEKJ(value);
+		audioMixer.SetFloat("finished", NPGMCPHPPDM(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK("_Value4", BDICHAELIJE);
 	}
 
-	public float KICALMOMCBM()
+	public float FKKPAPNLLCK()
 	{
-		float value = 1250f;
-		audioMixer.GetFloat("#close", out value);
-		return DPCLFKCHLNP(value);
+		float value = 865f;
+		audioMixer.GetFloat("_Value5", out value);
+		return DGDCGHIDPJM(value);
 	}
 
-	public void IFPPBHNPHJK(float BDICHAELIJE)
+	public void HOBADLMLMPJ(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("Items/", NGMEOMJBBPC(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.CBIEBMGENJH("<size=24>", BDICHAELIJE);
+		audioMixer.SetFloat("PunRespawn", NPGMCPHPPDM(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FIKHPJEMEGO("workshop.", BDICHAELIJE);
 	}
 
-	public float CFEMEENOBNH()
+	public void BMENGAELNLD(float BDICHAELIJE)
 	{
-		float value = 112f;
-		audioMixer.GetFloat("settings.enableranking", out value);
-		return DPCLFKCHLNP(value);
+		SetMenuVolume(BDICHAELIJE);
+		DHDEGPLMNEL(BDICHAELIJE);
 	}
 
-	public float GetSfxVolume()
+	public void AFKIHBAJEKN(float BDICHAELIJE)
 	{
-		float value = 0f;
-		audioMixer.GetFloat("sfxVolume", out value);
-		return DbToNormal(value);
-	}
-
-	private IEnumerator NGGODCJPIEM()
-	{
-		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
-		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
-		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
-		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
-		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
-	}
-
-	public void NKJNCMJDHKP(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("/", ABKGDNMBAMH(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("\"", BDICHAELIJE);
+		audioMixer.SetFloat("_Blend", IGDGALJHJPH(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK(".lastCheckpoint.bgcolor", BDICHAELIJE);
 	}
 
 	public float GetMenuVolume()
@@ -115,137 +284,482 @@ public class VolumeSettings : MonoBehaviour
 		return DbToNormal(value);
 	}
 
-	public void HOMCHEPLHGM(float BDICHAELIJE)
+	public void ABEHEGIMFMO(float BDICHAELIJE)
 	{
-		BKJMEFKAOPJ(BDICHAELIJE);
-		FACFNHLMGCN(BDICHAELIJE);
+		IOOKAOKJIKL(BDICHAELIJE);
+		DHDEGPLMNEL(BDICHAELIJE);
 	}
 
-	public float EFFFFENIICI()
+	public void FDPBCPKNKNG(float BDICHAELIJE)
 	{
-		float value = 850f;
-		audioMixer.GetFloat("_Value3", out value);
-		return MLODONCDFIJ(value);
+		audioMixer.SetFloat("shader.crispwinter", OLODCIGOIDD(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("[ERROR KEY {0}]", BDICHAELIJE);
 	}
 
-	public float PPABBFAILDD()
+	public void AEOLJEIDMDB()
 	{
-		float value = 193f;
-		audioMixer.GetFloat(" to ", out value);
-		return CGGEOGNGBDJ(value);
+		StartCoroutine(FMLANACDKOM());
 	}
 
-	public float OMJIEHMMFLN()
+	public float GHBJGDEIBCI()
 	{
-		float value = 1717f;
-		audioMixer.GetFloat(".played", out value);
-		return MLJFBJLBHDL(value);
+		float value = 1912f;
+		audioMixer.GetFloat("Cross", out value);
+		return PGMEEPKGJPJ(value);
 	}
 
-	public float JOJADIFKCDO()
+	public void OKACFHNMHLB(float BDICHAELIJE)
 	{
-		float value = 645f;
+		audioMixer.SetFloat("CameraFilterPack/Blend2Camera_Overlay", NPGMCPHPPDM(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("Loading", BDICHAELIJE);
+	}
+
+	public void Start()
+	{
+		StartCoroutine(IAIAPPPLMPA());
+	}
+
+	public float GLKNJLKHKOG()
+	{
+		float value = 1116f;
+		audioMixer.GetFloat("Save Game", out value);
+		return HFDCOHFNDIP(value);
+	}
+
+	public float DGDCGHIDPJM(float HDAMKJKNKJI)
+	{
+		return Mathf.Pow(648f, HDAMKJKNKJI / 1870f);
+	}
+
+	public float EPECMGDLOCP()
+	{
+		float value = 1735f;
+		audioMixer.GetFloat("0.00", out value);
+		return FJACGPIOMKA(value);
+	}
+
+	public void OJJHDKFHJFE(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("(from resources)", DAFBKPBKCFI(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO("_ScreenResolution", BDICHAELIJE);
+	}
+
+	public float EGKFKIPCOEC(float JCLIHOKDOHN)
+	{
+		return (!(JCLIHOKDOHN > 1996f)) ? 1996f : (975f * Mathf.Log10(JCLIHOKDOHN));
+	}
+
+	public float KGFKDAGPCHA()
+	{
+		float value = 1476f;
+		audioMixer.GetFloat("Failed to 'network-remove' GameObject because it is missing a valid InstantiationId on view: ", out value);
+		return HFDCOHFNDIP(value);
+	}
+
+	public float NBAOJJLMDDB()
+	{
+		float value = 930f;
+		audioMixer.GetFloat("maps.", out value);
+		return PKCCBAOJKAC(value);
+	}
+
+	private IEnumerator BCGPAFDDNJC()
+	{
+		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
+		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
+		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
+		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
+		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+	}
+
+	public void GGIMFCFEBNE(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("/", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF("player.orangearc", BDICHAELIJE);
+	}
+
+	public float IBMFLILENHN()
+	{
+		float value = 1759f;
+		audioMixer.GetFloat("_ScreenResolution", out value);
+		return FJACGPIOMKA(value);
+	}
+
+	public float JBFDBFEBFCP()
+	{
+		float value = 1692f;
+		audioMixer.GetFloat("Anomaly_With_Obj", out value);
+		return DbToNormal(value);
+	}
+
+	public void EMGHEEBFOMH(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("/icon", IFPBEHINCMK(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF("CameraFilterPack/Glasses_On", BDICHAELIJE);
+	}
+
+	public void AMIPMCAJEKJ(float BDICHAELIJE)
+	{
+		OJGNDFLDJKN(BDICHAELIJE);
+		HCJJPADNGMK(BDICHAELIJE);
+	}
+
+	public void FCIHOEHAFMD(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("#timeuntilchallenge: ", BCJBLCHOECO(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK("{0:x2}", BDICHAELIJE);
+	}
+
+	public float DAFBKPBKCFI(float JCLIHOKDOHN)
+	{
+		return (!(JCLIHOKDOHN > 942f)) ? 484f : (361f * Mathf.Log10(JCLIHOKDOHN));
+	}
+
+	public float JHBPPKNEECH()
+	{
+		float value = 694f;
+		audioMixer.GetFloat("Value", out value);
+		return ECMKDDLIHJM(value);
+	}
+
+	public void PIIFMOBCJBO(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("_MainTex2", OLODCIGOIDD(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK("[Steamworks.NET] Packsize Test returned false, the wrong version of Steamworks.NET is being run in this platform.", BDICHAELIJE);
+	}
+
+	public void SetMenuVolume(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("menuVolume", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("settings.volume.menu", BDICHAELIJE);
+	}
+
+	public void NIMKHFOKLMD(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("_TimeX", IFPBEHINCMK(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF("RemoveEnvironmentObject", BDICHAELIJE);
+	}
+
+	public void CKKOBPJPHKK(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("#91CCFF", BCJBLCHOECO(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("#yes", BDICHAELIJE);
+	}
+
+	public void MJCGPKBKDKM(float BDICHAELIJE)
+	{
+		FDPBCPKNKNG(BDICHAELIJE);
+		PKBPADHIDLC(BDICHAELIJE);
+	}
+
+	public void BNDJLDOFECP(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("[Left]", LLJAJLMOMNB(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("_History1Weight", BDICHAELIJE);
+	}
+
+	public float OHIBFDHKNHP()
+	{
+		float value = 1693f;
+		audioMixer.GetFloat("The shader ", out value);
+		return ECMKDDLIHJM(value);
+	}
+
+	public void NKFDNIAKGEO()
+	{
+		StartCoroutine(GIBBHOLJBHH());
+	}
+
+	public float JCCFOJMKHHJ()
+	{
+		float value = 1828f;
+		audioMixer.GetFloat(";", out value);
+		return EBBJJELFHHK(value);
+	}
+
+	public float KOFOMELMOGK()
+	{
+		float value = 210f;
+		audioMixer.GetFloat("ws://", out value);
+		return DbToNormal(value);
+	}
+
+	public void AJJBKKCOIFC(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("Tab1Content", DAFBKPBKCFI(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK("mapselector.lastSearch", BDICHAELIJE);
+	}
+
+	public float LLJAJLMOMNB(float JCLIHOKDOHN)
+	{
+		return (!(JCLIHOKDOHN > 736f)) ? 1293f : (410f * Mathf.Log10(JCLIHOKDOHN));
+	}
+
+	public float ODHJEDHMLDI()
+	{
+		float value = 780f;
+		audioMixer.GetFloat("https://twitch.tv/intralism", out value);
+		return PKCCBAOJKAC(value);
+	}
+
+	public void SetEditorVolume(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("editorVolume", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("settings.volume.editor", BDICHAELIJE);
+	}
+
+	public float GetSfxVolume()
+	{
+		float value = 0f;
+		audioMixer.GetFloat("sfxVolume", out value);
+		return DbToNormal(value);
+	}
+
+	public void BJFCGPANMAF(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("_Exponent", DAFBKPBKCFI(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO("CameraFilterPack_Atmosphere_Rain_FX", BDICHAELIJE);
+	}
+
+	public void MLAFBJOIGDB(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("_Value", LLJAJLMOMNB(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO("???", BDICHAELIJE);
+	}
+
+	public void BGDPIHMAACO()
+	{
+		StartCoroutine(BCDOFHNGBAP());
+	}
+
+	public float ELLCJMHOIHI()
+	{
+		float value = 907f;
+		audioMixer.GetFloat("SendVacantViewIds()", out value);
+		return PKCCBAOJKAC(value);
+	}
+
+	public void FBPHNEJBDJN()
+	{
+		StartCoroutine(ILMFEHLGBGN());
+	}
+
+	public void DHDEGPLMNEL(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("_HueShift", EGKFKIPCOEC(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK("Hex value #RRGGBB", BDICHAELIJE);
+	}
+
+	public float MMMPHLEPEKE()
+	{
+		float value = 420f;
+		audioMixer.GetFloat("_MainTex2", out value);
+		return PKCCBAOJKAC(value);
+	}
+
+	public float NPGMCPHPPDM(float JCLIHOKDOHN)
+	{
+		return (!(JCLIHOKDOHN > 15f)) ? 955f : (455f * Mathf.Log10(JCLIHOKDOHN));
+	}
+
+	public void FBACNAMHPBB(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("_ScreenResolution", IFPBEHINCMK(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK("Switch environment sprite image", BDICHAELIJE);
+	}
+
+	public void HKHHGEDGNDM(float BDICHAELIJE)
+	{
+		FBACNAMHPBB(BDICHAELIJE);
+		MLAFBJOIGDB(BDICHAELIJE);
+	}
+
+	public float IGDGALJHJPH(float JCLIHOKDOHN)
+	{
+		return (!(JCLIHOKDOHN > 1059f)) ? 910f : (1963f * Mathf.Log10(JCLIHOKDOHN));
+	}
+
+	public void GFGALPLDALF(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("SetCrosshairEmission", NPGMCPHPPDM(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FIKHPJEMEGO("PunRespawn", BDICHAELIJE);
+	}
+
+	public void KLHHLEHPNJJ(float BDICHAELIJE)
+	{
+		AFEGNCKMAOJ(BDICHAELIJE);
+		PKBPADHIDLC(BDICHAELIJE);
+	}
+
+	public void PKBPADHIDLC(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("G:", IGDGALJHJPH(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FIKHPJEMEGO("_TimeX", BDICHAELIJE);
+	}
+
+	public void BEIINJCGDOB(float BDICHAELIJE)
+	{
+		BNDJLDOFECP(BDICHAELIJE);
+		GPBHKIHPLKC(BDICHAELIJE);
+	}
+
+	public float GBBINJDELCA()
+	{
+		float value = 987f;
+		audioMixer.GetFloat("_MainTex2", out value);
+		return DbToNormal(value);
+	}
+
+	public void AEMGPJDJGBJ()
+	{
+		StartCoroutine(HIDJLJMHGND());
+	}
+
+	public void GPNAOAKCMHC()
+	{
+		StartCoroutine(IAIAPPPLMPA());
+	}
+
+	public float ECMKDDLIHJM(float HDAMKJKNKJI)
+	{
+		return Mathf.Pow(381f, HDAMKJKNKJI / 1951f);
+	}
+
+	public float OMLJMHPPBPD()
+	{
+		float value = 1114f;
 		audioMixer.GetFloat("event", out value);
-		return BFAFNHBBADH(value);
+		return PIKONBBNLHK(value);
 	}
 
-	public float CKBPLJGCLPH(float HDAMKJKNKJI)
+	public float CDBGJPLENND()
 	{
-		return Mathf.Pow(1647f, HDAMKJKNKJI / 44f);
+		float value = 270f;
+		audioMixer.GetFloat("Object ID. Case-Sensitive", out value);
+		return FJACGPIOMKA(value);
 	}
 
-	public void EEEHGFKAGOO(float BDICHAELIJE)
+	public void HPILGNAEANG(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("_TimeX", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO("ConfigVersionSlider", BDICHAELIJE);
+		audioMixer.SetFloat("_Fade", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF("_Red_C", BDICHAELIJE);
 	}
 
-	public void JJFDDNOMCMO(float BDICHAELIJE)
+	public void OPNPAGIJKGN(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("CurrentTimeLabel", FFGKOFGAEHI(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("_ScreenResolution", BDICHAELIJE);
+		audioMixer.SetFloat("SendVacantViewIds()", NPGMCPHPPDM(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK("{0}_{1}", BDICHAELIJE);
 	}
 
-	public void INEIPFBFJAA(float BDICHAELIJE)
+	public void MOJGMIEBEOG(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("_CenterX", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("_Offsets", BDICHAELIJE);
+		audioMixer.SetFloat("settings.enablehitsoundsinnormal", OLODCIGOIDD(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK("IconImage", BDICHAELIJE);
 	}
 
-	public void MNNLCHOIKIO(float BDICHAELIJE)
+	public float KBFDPLGJNPH(float HDAMKJKNKJI)
 	{
-		audioMixer.SetFloat("ENABLE_EYE_ADAPTATION", ABKGDNMBAMH(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO(":", BDICHAELIJE);
+		return Mathf.Pow(887f, HDAMKJKNKJI / 550f);
 	}
 
-	public void IFKGBBEDHLG(float BDICHAELIJE)
+	public void DOMPOBIAJJC(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("_TimeX", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO("Out {0,4} | In {1,4} | Sum {2,4}", BDICHAELIJE);
+		audioMixer.SetFloat("_MatrixColor", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat(" not exist", BDICHAELIJE);
 	}
 
-	public float CCADDADHJPM(float HDAMKJKNKJI)
+	public void FLCCBHKHPHK(float BDICHAELIJE)
 	{
-		return Mathf.Pow(636f, HDAMKJKNKJI / 772f);
+		audioMixer.SetFloat("CameraFilterPack/AAA_Super_Computer", DAFBKPBKCFI(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK("???", BDICHAELIJE);
 	}
 
-	public void SetGameVolume(float BDICHAELIJE)
+	public void AOGHMPPBEOD(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("gameVolume", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("settings.volume.game", BDICHAELIJE);
+		audioMixer.SetFloat("Create failed on GameServer. Changing back to MasterServer. Msg: ", NPGMCPHPPDM(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK(": ", BDICHAELIJE);
 	}
 
-	public void MGPDAHIAMAO(float BDICHAELIJE)
+	public float PIKONBBNLHK(float HDAMKJKNKJI)
 	{
-		audioMixer.SetFloat("PublishButton", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("_Offset", BDICHAELIJE);
+		return Mathf.Pow(545f, HDAMKJKNKJI / 1869f);
 	}
 
-	public float GAAOHHOOEBG(float JCLIHOKDOHN)
+	public float PKCCBAOJKAC(float HDAMKJKNKJI)
 	{
-		return (!(JCLIHOKDOHN > 148f)) ? 1621f : (324f * Mathf.Log10(JCLIHOKDOHN));
+		return Mathf.Pow(151f, HDAMKJKNKJI / 909f);
 	}
 
-	public float GEDFCIIBDIN()
+	public void IMCKJCHKMKB()
 	{
-		float value = 1511f;
-		audioMixer.GetFloat("/", out value);
-		return CCADDADHJPM(value);
+		StartCoroutine(JEJLPJJOIIH());
 	}
 
-	public void HEHHKHALIHG(float BDICHAELIJE)
+	public float IBGANHIKFKE()
 	{
-		audioMixer.SetFloat("SetSunEmission", GAAOHHOOEBG(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("CONTRAST", BDICHAELIJE);
+		float value = 45f;
+		audioMixer.GetFloat("offsets", out value);
+		return PIKONBBNLHK(value);
 	}
 
-	public void DAHFFNNIGML()
+	public float LCLDAAHFHCM()
 	{
-		StartCoroutine(LAMOIKFHHHJ());
+		float value = 1360f;
+		audioMixer.GetFloat("_Far", out value);
+		return HFDCOHFNDIP(value);
 	}
 
-	public float FHJGNHCFOIF()
+	public float KCCKCCNNCJP()
 	{
-		float value = 1262f;
-		audioMixer.GetFloat("Sprite", out value);
-		return CKBPLJGCLPH(value);
+		float value = 1853f;
+		audioMixer.GetFloat("[MenuScene] Error: ", out value);
+		return ECMKDDLIHJM(value);
 	}
 
-	public float NormalToDb(float JCLIHOKDOHN)
+	public float FJACGPIOMKA(float HDAMKJKNKJI)
 	{
-		return (!(JCLIHOKDOHN > 0f)) ? (-80f) : (20f * Mathf.Log10(JCLIHOKDOHN));
+		return Mathf.Pow(394f, HDAMKJKNKJI / 1102f);
 	}
 
-	public void KOFGJFEEHAM(float BDICHAELIJE)
+	public void FHDKDOAAEOO(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("CameraFilterPack/Blend2Camera_Darken", FFGKOFGAEHI(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("_Axis", BDICHAELIJE);
+		audioMixer.SetFloat("_Color", IGDGALJHJPH(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("Room: '{0}' {1},{2} {4}/{3} players.", BDICHAELIJE);
 	}
 
-	public void GPDHJMBCFBE(float BDICHAELIJE)
+	public float OGJBEMCIOBM()
 	{
-		audioMixer.SetFloat("Set particles gravity", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("PenaltyScoreText", BDICHAELIJE);
+		float value = 707f;
+		audioMixer.GetFloat("Data/Localization", out value);
+		return PGMEEPKGJPJ(value);
+	}
+
+	private IEnumerator GIBBHOLJBHH()
+	{
+		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
+		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
+		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
+		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
+		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+	}
+
+	public float PLGDJIOOGLD()
+	{
+		float value = 1145f;
+		audioMixer.GetFloat("maps.", out value);
+		return EEBIIBACMMD(value);
+	}
+
+	public float LJCACPGFHCM()
+	{
+		float value = 640f;
+		audioMixer.GetFloat("_ScratchOffsetScale", out value);
+		return PGMEEPKGJPJ(value);
+	}
+
+	public void JKBMKPDGCHG()
+	{
+		StartCoroutine(HIDJLJMHGND());
 	}
 
 	public float GetEditorVolume()
@@ -255,37 +769,99 @@ public class VolumeSettings : MonoBehaviour
 		return DbToNormal(value);
 	}
 
-	public void SetSfxVolume(float BDICHAELIJE)
+	public void EHIJJLAILMO(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("sfxVolume", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("settings.volume.sfx", BDICHAELIJE);
+		audioMixer.SetFloat("_BlurArea", DAFBKPBKCFI(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK("inventory.selected.", BDICHAELIJE);
 	}
 
-	public float GOHMKLBMBLB()
+	public void FMFNILJIEIA()
 	{
-		float value = 373f;
+		StartCoroutine(FMLANACDKOM());
+	}
+
+	public float KBLDPGBIJNE(float JCLIHOKDOHN)
+	{
+		return (!(JCLIHOKDOHN > 553f)) ? 698f : (1567f * Mathf.Log10(JCLIHOKDOHN));
+	}
+
+	public float DHPPAPNINIM()
+	{
+		float value = 872f;
+		audioMixer.GetFloat("[Right]", out value);
+		return KBFDPLGJNPH(value);
+	}
+
+	public float HFDCOHFNDIP(float HDAMKJKNKJI)
+	{
+		return Mathf.Pow(538f, HDAMKJKNKJI / 1759f);
+	}
+
+	public void FLJGCHDJFLO(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("maps.", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF("PerfectHitsScoreText", BDICHAELIJE);
+	}
+
+	public float IFPFFOHCAGB()
+	{
+		float value = 1869f;
+		audioMixer.GetFloat(".mp3", out value);
+		return EEBIIBACMMD(value);
+	}
+
+	public float LBOFCKDMOOF()
+	{
+		float value = 353f;
 		audioMixer.GetFloat("_TimeX", out value);
-		return CGGEOGNGBDJ(value);
+		return DGDCGHIDPJM(value);
 	}
 
-	public float MLODONCDFIJ(float HDAMKJKNKJI)
+	public float BCJBLCHOECO(float JCLIHOKDOHN)
 	{
-		return Mathf.Pow(873f, HDAMKJKNKJI / 1100f);
+		return (!(JCLIHOKDOHN > 1298f)) ? 397f : (1765f * Mathf.Log10(JCLIHOKDOHN));
 	}
 
-	public void IDMPNIJDPEI(float BDICHAELIJE)
+	public float ABKGDNMBAMH(float JCLIHOKDOHN)
 	{
-		audioMixer.SetFloat("_TimeX", FFGKOFGAEHI(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO("_Value2", BDICHAELIJE);
+		return (!(JCLIHOKDOHN > 34f)) ? 1026f : (1448f * Mathf.Log10(JCLIHOKDOHN));
 	}
 
-	public void KCJDHLKCKGL(float BDICHAELIJE)
+	public float DAEGGEFMHFL()
 	{
-		BKJMEFKAOPJ(BDICHAELIJE);
-		EEEHGFKAGOO(BDICHAELIJE);
+		float value = 1021f;
+		audioMixer.GetFloat("Bad parameters for setbool! Use <key> <value>", out value);
+		return FJACGPIOMKA(value);
 	}
 
-	private IEnumerator HFJNINPHOJN()
+	public void SetGameVolume(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("gameVolume", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("settings.volume.game", BDICHAELIJE);
+	}
+
+	public float KBCGCFKFHOO()
+	{
+		float value = 377f;
+		audioMixer.GetFloat("_Color", out value);
+		return KBFDPLGJNPH(value);
+	}
+
+	public float MJNGJOBGKCA()
+	{
+		float value = 89f;
+		audioMixer.GetFloat("NewIconFileSelector", out value);
+		return PIKONBBNLHK(value);
+	}
+
+	public float LIGHOLIOELK()
+	{
+		float value = 747f;
+		audioMixer.GetFloat("(singleton) ", out value);
+		return PKCCBAOJKAC(value);
+	}
+
+	private IEnumerator HIDJLJMHGND()
 	{
 		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
 		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
@@ -294,63 +870,95 @@ public class VolumeSettings : MonoBehaviour
 		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
 	}
 
-	public void JCFEBDEIMLD(float BDICHAELIJE)
+	public float OLODCIGOIDD(float JCLIHOKDOHN)
 	{
-		PMJKKGACEBF(BDICHAELIJE);
-		SetGameVolume(BDICHAELIJE);
+		return (!(JCLIHOKDOHN > 512f)) ? 559f : (1525f * Mathf.Log10(JCLIHOKDOHN));
 	}
 
-	public void PNKIOJIKKEG(float BDICHAELIJE)
+	public void SetSfxVolume(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("menu.enableselectormusic", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("-help", BDICHAELIJE);
+		audioMixer.SetFloat("sfxVolume", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("settings.volume.sfx", BDICHAELIJE);
 	}
 
-	public float FMFHKNLFIJK()
+	public void NHHDJPHCIKD(float BDICHAELIJE)
 	{
-		float value = 1475f;
-		audioMixer.GetFloat("CameraFilterPack/Oculus_ThermaVision", out value);
-		return MJBMIGAKAMK(value);
+		audioMixer.SetFloat("_Value2", IFPBEHINCMK(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.FIKHPJEMEGO("move", BDICHAELIJE);
 	}
 
-	public void ODCPLPJLHKA(float BDICHAELIJE)
+	public void EBKNJONKHCF(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("Case-Sensitive", ABKGDNMBAMH(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("CameraFilterPack/Blend2Camera_LinearBurn", BDICHAELIJE);
+		audioMixer.SetFloat("_PColor2", EGKFKIPCOEC(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("_Value", BDICHAELIJE);
 	}
 
-	public void HMPGIFBJFIK()
+	public void OACFNMGGNHM(float BDICHAELIJE)
 	{
-		StartCoroutine(IAIAPPPLMPA());
+		HFFMDEDDGDA(BDICHAELIJE);
+		HCJJPADNGMK(BDICHAELIJE);
 	}
 
-	public float JBJMLECCBBN(float JCLIHOKDOHN)
+	public void FHHAEPECMMB(float BDICHAELIJE)
 	{
-		return (!(JCLIHOKDOHN > 1865f)) ? 438f : (1600f * Mathf.Log10(JCLIHOKDOHN));
+		OJGNDFLDJKN(BDICHAELIJE);
+		KALAMGBPMMG(BDICHAELIJE);
 	}
 
-	public void BAFOCDHHCBA(float BDICHAELIJE)
+	public float LJCGNPADHBC()
 	{
-		audioMixer.SetFloat("IconImage", GAAOHHOOEBG(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("/", BDICHAELIJE);
+		float value = 116f;
+		audioMixer.GetFloat("shader.invert", out value);
+		return ECMKDDLIHJM(value);
 	}
 
-	public void EGIPGJNAPHA(float BDICHAELIJE)
+	public void LJHBKFPANBA(float BDICHAELIJE)
 	{
-		audioMixer.SetFloat("_Near", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("_Value3", BDICHAELIJE);
+		audioMixer.SetFloat("LeaderboardsButton", LLJAJLMOMNB(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK("JoinRandom failed: No open game. Calling: OnPhotonRandomJoinFailed() and staying on master server.", BDICHAELIJE);
 	}
 
-	public float EFPGNKOPEDF()
+	public void OJGNDFLDJKN(float BDICHAELIJE)
 	{
-		float value = 1597f;
-		audioMixer.GetFloat("MAPS NOT FOUND", out value);
-		return FKMNHPFAKOG(value);
+		audioMixer.SetFloat("_ScreenResolution", NormalToDb(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("Items/", BDICHAELIJE);
 	}
 
-	public float DbToNormal(float HDAMKJKNKJI)
+	public void HCJJPADNGMK(float BDICHAELIJE)
 	{
-		return Mathf.Pow(10f, HDAMKJKNKJI / 20f);
+		audioMixer.SetFloat("NOISE", OLODCIGOIDD(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("finished", BDICHAELIJE);
+	}
+
+	public void MJEFMIPLFAB()
+	{
+		StartCoroutine(BNIIKPCKCPC());
+	}
+
+	public void IONAKEGDJKG(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat(" - {0}", EGKFKIPCOEC(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF("[MapsData] Found ", BDICHAELIJE);
+	}
+
+	public void AFEGNCKMAOJ(float BDICHAELIJE)
+	{
+		audioMixer.SetFloat("VisionBlur", IGDGALJHJPH(BDICHAELIJE));
+		Singleton<SaveSystem>.Instance.SetFloat("bad", BDICHAELIJE);
+	}
+
+	public float HKGCBGFCCAE()
+	{
+		float value = 555f;
+		audioMixer.GetFloat("y", out value);
+		return PIKONBBNLHK(value);
+	}
+
+	public float IIILDEACBMF()
+	{
+		float value = 537f;
+		audioMixer.GetFloat(",", out value);
+		return FJACGPIOMKA(value);
 	}
 
 	private IEnumerator IAIAPPPLMPA()
@@ -362,457 +970,48 @@ public class VolumeSettings : MonoBehaviour
 		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
 	}
 
-	private IEnumerator LAMOIKFHHHJ()
+	public float KADMKHECCJE()
 	{
-		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
-		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
-		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
-		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
-		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
+		float value = 612f;
+		audioMixer.GetFloat("_Distance", out value);
+		return DGDCGHIDPJM(value);
 	}
 
-	public float GLJFOEIBBFH()
+	public float AKMMGLIKHKJ()
 	{
-		float value = 44f;
-		audioMixer.GetFloat("menu.playedsolo", out value);
-		return MLODONCDFIJ(value);
+		float value = 1678f;
+		audioMixer.GetFloat("_TimeX", out value);
+		return PGMEEPKGJPJ(value);
 	}
 
-	public float DIGIPEPHEKJ(float HDAMKJKNKJI)
+	public float DbToNormal(float HDAMKJKNKJI)
 	{
-		return Mathf.Pow(831f, HDAMKJKNKJI / 882f);
+		return Mathf.Pow(10f, HDAMKJKNKJI / 20f);
 	}
 
-	public float DHNJELPHPJO()
+	public float DONCGHJMJCC()
 	{
-		float value = 1260f;
-		audioMixer.GetFloat("curScn", out value);
+		float value = 1171f;
+		audioMixer.GetFloat("_Speed", out value);
+		return PGMEEPKGJPJ(value);
+	}
+
+	public float EBBJJELFHHK(float HDAMKJKNKJI)
+	{
+		return Mathf.Pow(1026f, HDAMKJKNKJI / 595f);
+	}
+
+	public float GNPPEOGGLFE()
+	{
+		float value = 1600f;
+		audioMixer.GetFloat("turn: {0:0}", out value);
+		return HFDCOHFNDIP(value);
+	}
+
+	public float JCCPCKOPAGP()
+	{
+		float value = 1632f;
+		audioMixer.GetFloat("resource", out value);
 		return DbToNormal(value);
-	}
-
-	public void LEACKAPKDAD(float BDICHAELIJE)
-	{
-		ODCPLPJLHKA(BDICHAELIJE);
-		INEIPFBFJAA(BDICHAELIJE);
-	}
-
-	private IEnumerator NCLNAMDDBNP()
-	{
-		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
-		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
-		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
-		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
-		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
-	}
-
-	public void PEINHNPAGGA(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("[Right]", NGMEOMJBBPC(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.CBIEBMGENJH("JoinOrCreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.", BDICHAELIJE);
-	}
-
-	public float DANFCBNABEG()
-	{
-		float value = 284f;
-		audioMixer.GetFloat("settings.shaders", out value);
-		return HOMOCCLHMDA(value);
-	}
-
-	public void PFIKHNLPJMJ(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("RarityImage", NGMEOMJBBPC(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("_Value", BDICHAELIJE);
-	}
-
-	public void DNNFHBOOPIN()
-	{
-		StartCoroutine(DLBBADHEGID());
-	}
-
-	public void GAPGDIMNNMM(float BDICHAELIJE)
-	{
-		ODCPLPJLHKA(BDICHAELIJE);
-		GGPENMLKGFL(BDICHAELIJE);
-	}
-
-	public void OEAFOPCOBBH(float BDICHAELIJE)
-	{
-		LJPCPCKALJI(BDICHAELIJE);
-		EEEHGFKAGOO(BDICHAELIJE);
-	}
-
-	public void Start()
-	{
-		StartCoroutine(IAIAPPPLMPA());
-	}
-
-	public void LCIFMHINMEP(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat(".lastCheckpoint.incorrectScore", NGMEOMJBBPC(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("maps.", BDICHAELIJE);
-	}
-
-	public void BILBPDFEMOL(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("Image", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("_Value2", BDICHAELIJE);
-	}
-
-	public float EINADGLCNHM()
-	{
-		float value = 1677f;
-		audioMixer.GetFloat("float,0.5", out value);
-		return CGGEOGNGBDJ(value);
-	}
-
-	public void NHHDJPHCIKD(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("RateButton", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO("_ReflectionBlur", BDICHAELIJE);
-	}
-
-	public void KNLHOPGCGBB(float BDICHAELIJE)
-	{
-		BMCOFKEEEFO(BDICHAELIJE);
-		GGPENMLKGFL(BDICHAELIJE);
-	}
-
-	private IEnumerator HIGLLOJDCCB()
-	{
-		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
-		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
-		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
-		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
-		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
-	}
-
-	public void FBEPKICCAEE(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("_Value", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("_Value4", BDICHAELIJE);
-	}
-
-	public void PMJKKGACEBF(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("_MainTex2", NGMEOMJBBPC(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("GLITCH", BDICHAELIJE);
-	}
-
-	public float ABKGDNMBAMH(float JCLIHOKDOHN)
-	{
-		return (!(JCLIHOKDOHN > 1844f)) ? 1852f : (464f * Mathf.Log10(JCLIHOKDOHN));
-	}
-
-	public float MLJFBJLBHDL(float HDAMKJKNKJI)
-	{
-		return Mathf.Pow(1723f, HDAMKJKNKJI / 479f);
-	}
-
-	public float MJBMIGAKAMK(float HDAMKJKNKJI)
-	{
-		return Mathf.Pow(1713f, HDAMKJKNKJI / 1448f);
-	}
-
-	public float HOMOCCLHMDA(float HDAMKJKNKJI)
-	{
-		return Mathf.Pow(779f, HDAMKJKNKJI / 1196f);
-	}
-
-	public void LECBMDDHMOH(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("#ok", GAAOHHOOEBG(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("[SERVER] Player ", BDICHAELIJE);
-	}
-
-	public void SetEditorVolume(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("editorVolume", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("settings.volume.editor", BDICHAELIJE);
-	}
-
-	public float DPCLFKCHLNP(float HDAMKJKNKJI)
-	{
-		return Mathf.Pow(1869f, HDAMKJKNKJI / 721f);
-	}
-
-	public void CCGEEKLNIBI(float BDICHAELIJE)
-	{
-		SetMenuVolume(BDICHAELIJE);
-		LECBMDDHMOH(BDICHAELIJE);
-	}
-
-	public float HPGOMHIMAEL()
-	{
-		float value = 1896f;
-		audioMixer.GetFloat("icon.png", out value);
-		return DPCLFKCHLNP(value);
-	}
-
-	public void LGHCJCFHEMF()
-	{
-		StartCoroutine(IAIAPPPLMPA());
-	}
-
-	public void LDJOLDNPEFM(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("AudioSampler", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("challenges.", BDICHAELIJE);
-	}
-
-	public float GDHNOIBAODH()
-	{
-		float value = 1952f;
-		audioMixer.GetFloat("CameraFilterPack/3D_Distortion", out value);
-		return MJBMIGAKAMK(value);
-	}
-
-	public void LIABLJEFMFP(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("0.000", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("[DiscordController] Join request {0}#{1}: {2}", BDICHAELIJE);
-	}
-
-	public void BJIJEHFIFIK(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("help", FFGKOFGAEHI(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("skin.", BDICHAELIJE);
-	}
-
-	public float EGOEKBMAFCL()
-	{
-		float value = 92f;
-		audioMixer.GetFloat("_Offsets", out value);
-		return MLODONCDFIJ(value);
-	}
-
-	public void HKLKNNOFNIB(float BDICHAELIJE)
-	{
-		LJPCPCKALJI(BDICHAELIJE);
-		EEEHGFKAGOO(BDICHAELIJE);
-	}
-
-	public void BKJMEFKAOPJ(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("CameraFilterPack/Blend2Camera_HardLight", GAAOHHOOEBG(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO("th", BDICHAELIJE);
-	}
-
-	public void BMCOFKEEEFO(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("CameraFilterPack_RainFX_Anm", FFGKOFGAEHI(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("r", BDICHAELIJE);
-	}
-
-	public float MPDNIFAHJHE()
-	{
-		float value = 1904f;
-		audioMixer.GetFloat("StartButton", out value);
-		return CKBPLJGCLPH(value);
-	}
-
-	private IEnumerator DLBBADHEGID()
-	{
-		yield return new WaitUntil(() => Singleton<SaveSystem>.Instance.isSaveLoaded);
-		SetMenuVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.menu", 0.5f));
-		SetGameVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.game", 0.5f));
-		SetSfxVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.sfx", 0.5f));
-		SetEditorVolume(Singleton<SaveSystem>.Instance.GetFloat("settings.volume.editor", 0.5f));
-	}
-
-	public void SetVolume(float BDICHAELIJE)
-	{
-		SetMenuVolume(BDICHAELIJE);
-		SetGameVolume(BDICHAELIJE);
-	}
-
-	public void DOKAKEMDALN()
-	{
-		StartCoroutine(NCLNAMDDBNP());
-	}
-
-	public float GetGameVolume()
-	{
-		float value = 0f;
-		audioMixer.GetFloat("gameVolume", out value);
-		return DbToNormal(value);
-	}
-
-	public void OKCAOBPKDCF(float BDICHAELIJE)
-	{
-		HLAIMFCGOIL(BDICHAELIJE);
-		EEEHGFKAGOO(BDICHAELIJE);
-	}
-
-	public float DAOHDNLLEOH()
-	{
-		float value = 822f;
-		audioMixer.GetFloat("[Up]", out value);
-		return DIGIPEPHEKJ(value);
-	}
-
-	public void LJPCPCKALJI(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("Run a command for data system", GAAOHHOOEBG(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO("Oct", BDICHAELIJE);
-	}
-
-	public float CGGEOGNGBDJ(float HDAMKJKNKJI)
-	{
-		return Mathf.Pow(1763f, HDAMKJKNKJI / 365f);
-	}
-
-	public void DFFKKLAPHCC()
-	{
-		StartCoroutine(LAMOIKFHHHJ());
-	}
-
-	public float NGMEOMJBBPC(float JCLIHOKDOHN)
-	{
-		return (!(JCLIHOKDOHN > 1232f)) ? 1741f : (502f * Mathf.Log10(JCLIHOKDOHN));
-	}
-
-	public void FJJHDPKBJGP(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("[SERVER] Player ", ABKGDNMBAMH(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat("GroupNameText", BDICHAELIJE);
-	}
-
-	public void KNKKGPJCAFN(float BDICHAELIJE)
-	{
-		JJFDDNOMCMO(BDICHAELIJE);
-		EEEHGFKAGOO(BDICHAELIJE);
-	}
-
-	public float KOFOMELMOGK()
-	{
-		float value = 873f;
-		audioMixer.GetFloat("LevelInfoInputField", out value);
-		return CGGEOGNGBDJ(value);
-	}
-
-	public float DKPAGBGHMLE()
-	{
-		float value = 550f;
-		audioMixer.GetFloat("_Parameter", out value);
-		return CGGEOGNGBDJ(value);
-	}
-
-	public void CKKOBPJPHKK(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("JoinOrCreateRoom failed. In offline mode you still have to leave a room to enter another.", FFGKOFGAEHI(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("_ScreenResolution", BDICHAELIJE);
-	}
-
-	public float FPPNNEGMNBG(float HDAMKJKNKJI)
-	{
-		return Mathf.Pow(209f, HDAMKJKNKJI / 1408f);
-	}
-
-	public void HLAIMFCGOIL(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("_Extra2", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("Editor/", BDICHAELIJE);
-	}
-
-	public void GGPENMLKGFL(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("inventory.selected.", GAAOHHOOEBG(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("_TimeX", BDICHAELIJE);
-	}
-
-	public void BFEGEAECOKB(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat(": ", JBJMLECCBBN(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO("_TimeX", BDICHAELIJE);
-	}
-
-	public float KFFANDOCOFI()
-	{
-		float value = 1512f;
-		audioMixer.GetFloat("[PlayerBase] Checkpoint error: ", out value);
-		return DPCLFKCHLNP(value);
-	}
-
-	public float MDBOBKHPJFN()
-	{
-		float value = 1882f;
-		audioMixer.GetFloat("/", out value);
-		return MLODONCDFIJ(value);
-	}
-
-	public void OJMIENICPNA(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("_FixDistance", FFGKOFGAEHI(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("_Near", BDICHAELIJE);
-	}
-
-	public float FFGCJNNBKLE(float HDAMKJKNKJI)
-	{
-		return Mathf.Pow(176f, HDAMKJKNKJI / 1353f);
-	}
-
-	public void NGFKFJJOPFH(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("_Value2", NGMEOMJBBPC(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.CBIEBMGENJH(" not exist", BDICHAELIJE);
-	}
-
-	public void LCGIPBONGGG(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("CameraFilterPack/Drawing_Manga_Color", NGMEOMJBBPC(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("cipherText", BDICHAELIJE);
-	}
-
-	public void HGOFPCJGOFO(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("_ScreenResolution", FFGKOFGAEHI(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("_Value", BDICHAELIJE);
-	}
-
-	public float EJLINEJCHAI()
-	{
-		float value = 1475f;
-		audioMixer.GetFloat("_Value2", out value);
-		return DIGIPEPHEKJ(value);
-	}
-
-	public float FFGKOFGAEHI(float JCLIHOKDOHN)
-	{
-		return (!(JCLIHOKDOHN > 915f)) ? 1960f : (658f * Mathf.Log10(JCLIHOKDOHN));
-	}
-
-	public void OJJHDKFHJFE(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("UI Extensions/UISoftAdditive", ABKGDNMBAMH(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("Horizontal", BDICHAELIJE);
-	}
-
-	public void PCPJGGCDLGD(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("\"", NGMEOMJBBPC(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE("Playing ", BDICHAELIJE);
-	}
-
-	public void PEMGCAIGPPP(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("LoadingStatusText", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.JBHLCJOEOGL("\t", BDICHAELIJE);
-	}
-
-	public float BFAFNHBBADH(float HDAMKJKNKJI)
-	{
-		return Mathf.Pow(1744f, HDAMKJKNKJI / 1575f);
-	}
-
-	public void FACFNHLMGCN(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("skin.hit_wrong", ABKGDNMBAMH(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.EIAJOEAPEJO("Editor", BDICHAELIJE);
-	}
-
-	public void DMLECMADHCP(float BDICHAELIJE)
-	{
-		audioMixer.SetFloat("achievements.21.progress", NormalToDb(BDICHAELIJE));
-		Singleton<SaveSystem>.Instance.SetFloat(" Maybe GO was destroyed but RPC not cleaned up.", BDICHAELIJE);
 	}
 }

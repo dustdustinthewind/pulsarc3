@@ -19,67 +19,37 @@ public class InventoryItemData
 
 	public InventoryItemRarity rarity;
 
-	private bool PMKJLJHMDNB(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int ENJDAADCONN()
-	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(DANGBPAFCJO);
-	}
-
-	public int JLIDIIBJFAM()
-	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(JCDEKKELKCE);
-	}
-
-	private bool ALDEODEENOF(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int GetItemInventoryID()
-	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex((string IACGDFHKCAE) => IACGDFHKCAE == id);
-	}
-
-	private bool JCDEKKELKCE(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool IJFOBHEPNAG(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool GJFPINDECBI(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool KDIHHPPDEGG(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool ONLOLKLLMLM(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool CHBOGIHGEAF(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
 	public int EHEPGMIBFKO()
 	{
-		return Singleton<ItemsHandler>.Instance.OFCDOHFMFAA().FindIndex(PGLJGGNPGAO);
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(DANGBPAFCJO);
 	}
 
-	private bool IMBDBCPHOIN(string IACGDFHKCAE)
+	private bool OHPKFOMAJHL(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool DMEKNNHLGAL(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	public int JIAPOILPHLA()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(NKBNLAGDCDA);
+	}
+
+	private bool CJNCIMHNNIL(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	public int GFIAJHFEEDL()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(GJFPINDECBI);
+	}
+
+	private bool OEMNPBEABDK(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
@@ -88,152 +58,62 @@ public class InventoryItemData
 	{
 	}
 
-	private bool NFJFIDFJEON(string IACGDFHKCAE)
+	public int JAMGADDBEPG()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(PMEDILNAIDE);
+	}
+
+	private bool DAOJNDBLHAO(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
-	}
-
-	private bool IFKHOLCMJMK(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int EJJKPPDLHIC()
-	{
-		return Singleton<ItemsHandler>.Instance.OFCDOHFMFAA().FindIndex(JBKNDMBDODK);
-	}
-
-	public int PHLNGGADEON()
-	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex((string IACGDFHKCAE) => IACGDFHKCAE == id);
-	}
-
-	private bool IHCEKKLPKPN(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int IAJKNHICFDA()
-	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(ALDEODEENOF);
-	}
-
-	public int KKNKMFFMPIO()
-	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(OGDNEIEECEJ);
 	}
 
 	public int JJAGPHJDANN()
 	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(NFJFIDFJEON);
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(PMEHJHIIHDK);
 	}
 
-	public int GFJEJMHAMFB()
+	public int OAKIKELAPIK()
 	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(OHPKFOMAJHL);
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(PMEHJHIIHDK);
 	}
 
-	public int PBLNJDFPHJK()
-	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(IJFOBHEPNAG);
-	}
-
-	private bool PMEHJHIIHDK(string IACGDFHKCAE)
+	private bool ODPDGBGBOAI(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
 
-	private bool MEAOECIIAOA(string IACGDFHKCAE)
+	public int MPGLFKMEBAF()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(JDLHKDGIECM);
+	}
+
+	private bool CHBOGIHGEAF(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
 
-	public int MPHJGFBKJBE()
+	public int DIJIPJOMFAK()
 	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(NPHFMLKFFKM);
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(IMBDBCPHOIN);
 	}
 
-	public int FJLPLLHNGOA()
-	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(BCHDPEKGHGA);
-	}
-
-	public int NCCKNMKJMND()
-	{
-		return Singleton<ItemsHandler>.Instance.OFCDOHFMFAA().FindIndex(OHPKFOMAJHL);
-	}
-
-	private bool OCDAOJILEPG(string IACGDFHKCAE)
+	private bool HFNAACDIGFD(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
 
-	private bool KECEHLPPLOH(string IACGDFHKCAE)
+	public int KHAKCOOFJIL()
 	{
-		return IACGDFHKCAE == id;
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(GJFPINDECBI);
 	}
 
-	private bool IPGNFJBCCGF(string IACGDFHKCAE)
+	public int KOGCJEHOCOA()
 	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool OHPKFOMAJHL(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool OCFAFACLAGC(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int KPNOHBLJHDJ()
-	{
-		return Singleton<ItemsHandler>.Instance.OFCDOHFMFAA().FindIndex(MEAOECIIAOA);
-	}
-
-	private bool ICOMJFJLABL(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool DKICHECPCJP(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool ODOCKKBHPPI(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool AIBPKOJOHOB(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool CNKLAPBPEID(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(IMBDBCPHOIN);
 	}
 
 	private bool MBDOMMIKHGI(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int NGAFDAAEBKC()
-	{
-		return Singleton<ItemsHandler>.Instance.OFCDOHFMFAA().FindIndex(IMBDBCPHOIN);
-	}
-
-	public int IIELGFOOAND()
-	{
-		return Singleton<ItemsHandler>.Instance.OFCDOHFMFAA().FindIndex(KECEHLPPLOH);
-	}
-
-	private bool HAIBGIKIIJJ(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
@@ -250,39 +130,9 @@ public class InventoryItemData
 		icon = Resources.Load<Sprite>("Items/" + JMMILEFMACB + "/icon");
 	}
 
-	private bool JDLHKDGIECM(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int IDNGNCHMCGH()
-	{
-		return Singleton<ItemsHandler>.Instance.OFCDOHFMFAA().FindIndex(KECEHLPPLOH);
-	}
-
-	private bool JBKNDMBDODK(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int IBOFKDGBKIH()
+	public int GKGIBPAHHMO()
 	{
 		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(IJFOBHEPNAG);
-	}
-
-	public int DMPNOAGIABF()
-	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(OCFAFACLAGC);
-	}
-
-	private bool DANGBPAFCJO(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int GEFIGLHEKGA()
-	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(NKBNLAGDCDA);
 	}
 
 	private bool OHHHKJAKAIF(string IACGDFHKCAE)
@@ -290,42 +140,177 @@ public class InventoryItemData
 		return IACGDFHKCAE == id;
 	}
 
-	public int CAFEIKLLFFG()
-	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(GJFPINDECBI);
-	}
-
-	private bool BCHDPEKGHGA(string IACGDFHKCAE)
+	private bool GJFPINDECBI(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
 
-	private bool NPHFMLKFFKM(string IACGDFHKCAE)
+	private bool HIDOIEBLBJP(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
 
-	private bool PGLJGGNPGAO(string IACGDFHKCAE)
+	public int MPHJGFBKJBE()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(JDLHKDGIECM);
+	}
+
+	private bool CKCHAGFGMDG(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
 
-	private bool NEPMDJJNOGP(string IACGDFHKCAE)
+	public int CCHGOBICNAD()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(ONLOLKLLMLM);
+	}
+
+	private bool DANGBPAFCJO(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
 
-	public int LDEFHDDBACF()
+	private bool FDOJPPODFPN(string IACGDFHKCAE)
 	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(PMEHJHIIHDK);
+		return IACGDFHKCAE == id;
 	}
 
-	public int GFIAJHFEEDL()
+	private bool DKICHECPCJP(string IACGDFHKCAE)
 	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(JDLHKDGIECM);
+		return IACGDFHKCAE == id;
 	}
 
-	private bool KIJKACBEGCG(string IACGDFHKCAE)
+	private bool PMEHJHIIHDK(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	public int CHOCPBEDKMP()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(NKBNLAGDCDA);
+	}
+
+	private bool OCFAFACLAGC(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool IPMPHEFDNDE(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	public int EANMGMCLNLD()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(OCFAFACLAGC);
+	}
+
+	private bool FPADFGHNHPI(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool CNKLAPBPEID(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool IFKHOLCMJMK(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool AAIDCDKHGHC(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	public int FCOOIFPMEAB()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(DAOJNDBLHAO);
+	}
+
+	public int GetItemInventoryID()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex((string IACGDFHKCAE) => IACGDFHKCAE == id);
+	}
+
+	public int EJJKPPDLHIC()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(DPJABKCGPOJ);
+	}
+
+	public int OKNEKGKLOJF()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(PMEHJHIIHDK);
+	}
+
+	private bool IJFOBHEPNAG(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool KDIHHPPDEGG(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	public int GELGKMKDHML()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(IFKHOLCMJMK);
+	}
+
+	public int HECDOKAIGEL()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(AAIDCDKHGHC);
+	}
+
+	public int BBALBMNJGMD()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(KDIHHPPDEGG);
+	}
+
+	private bool JDLHKDGIECM(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool IMBDBCPHOIN(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool DPJABKCGPOJ(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	private bool KGDDEBGPMNG(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	public int PBOLGNEHAAK()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(OEMNPBEABDK);
+	}
+
+	public int FJLPLLHNGOA()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(NKBNLAGDCDA);
+	}
+
+	private bool ODOCKKBHPPI(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE == id;
+	}
+
+	public int IIELGFOOAND()
+	{
+		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(ODOCKKBHPPI);
+	}
+
+	private bool ONLOLKLLMLM(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
@@ -336,53 +321,13 @@ public class InventoryItemData
 		return IACGDFHKCAE == id;
 	}
 
-	private bool FPADFGHNHPI(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool NIFIOLJHBEJ(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int KBFMEOKEDNB()
-	{
-		return Singleton<ItemsHandler>.Instance.EJFGHNNFIAF().FindIndex(IDJIEMIMHGC);
-	}
-
-	private bool OGDNEIEECEJ(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool GKPLPMBHDOG(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	private bool NAJENLNODKD(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
-	public int GKGIBPAHHMO()
-	{
-		return Singleton<ItemsHandler>.Instance.OFCDOHFMFAA().FindIndex(GKPLPMBHDOG);
-	}
-
-	private bool IDJIEMIMHGC(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE == id;
-	}
-
 	private bool NKBNLAGDCDA(string IACGDFHKCAE)
 	{
 		return IACGDFHKCAE == id;
 	}
 
-	public int OGPGACCIIJG()
+	private bool PMEDILNAIDE(string IACGDFHKCAE)
 	{
-		return Singleton<ItemsHandler>.Instance.GetItemsID().FindIndex(DKICHECPCJP);
+		return IACGDFHKCAE == id;
 	}
 }

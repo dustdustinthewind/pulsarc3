@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/3D/Computer")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/3D/Computer")]
 public class CameraFilterPack_3D_Computer : MonoBehaviour
 {
 	public Shader SCShader;
@@ -82,20 +82,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 662f;
 			}
-			DKKBFFHBHJE().SetFloat("CameraFilterPack/Lut_TestMode", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("y", Fade);
-			EFMCNLELMDO().SetFloat("OxOD.lastPath", _FixDistance);
-			HKHBBBFLGJH().SetFloat("[Left]", MatrixSize);
-			IGKFMCPDNOI().SetColor("UndoButton", _MatrixColor);
-			KGOLDDBHIFN().SetFloat("/", MatrixSpeed * 1627f);
-			HFBJAOFLCJI().SetFloat(",", (!_Visualize) ? 1 : 0);
-			IIJMIPBMMBF().SetFloat("IconImage", LightIntensity);
-			KGOLDDBHIFN().SetTexture("Down", FPHEBLMINDA);
+			HKHBBBFLGJH().SetFloat("_LutTex", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("z", Fade);
+			HHIAIGCAHDA().SetFloat("/../", _FixDistance);
+			ACHNOHCLGOO().SetFloat("[Left]", MatrixSize);
+			KGOLDDBHIFN().SetColor("checkpoint", _MatrixColor);
+			HHIAIGCAHDA().SetFloat("RoomPlayersCountText", MatrixSpeed * 1627f);
+			ADBKPGFMNKO().SetFloat("SpawnObj", (!_Visualize) ? 1 : 0);
+			NFKFAAHHLLM().SetFloat("inventory.selected.", LightIntensity);
+			DOHGBNPMBKG().SetTexture("GetLive", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			KEMAALEODNH().SetFloat("settings.volume.sfx", 1168f / farClipPlane);
-			DKKBFFHBHJE().SetVector("\"x", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 82f, 91f));
+			AELJLBOJAIL().SetFloat("settings.volume.editor", 1168f / farClipPlane);
+			IGKFMCPDNOI().SetVector("[CraftingPanel] Init", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 82f, 91f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
 		}
 		else
 		{
@@ -112,20 +112,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1874f;
 			}
-			HCGJCMDJPGD().SetFloat("\" error: ", HBJJOCHGOPH);
-			DOHGBNPMBKG().SetFloat("_Intensity", Fade);
-			HHIAIGCAHDA().SetFloat("public", _FixDistance);
-			FAIFBBGFAIB().SetFloat("SetEnvSpriteImage", MatrixSize);
-			DOHGBNPMBKG().SetColor(".completed", _MatrixColor);
-			IIJMIPBMMBF().SetFloat("_FadeShield", MatrixSpeed * 173f);
-			HHIAIGCAHDA().SetFloat("Setting autoCleanUpPlayerObjects while in a room is not supported.", (!_Visualize) ? 1 : 0);
-			KGOLDDBHIFN().SetFloat("SupportLogger OnCreatedRoom(", LightIntensity);
-			EFMCNLELMDO().SetTexture("#done", FPHEBLMINDA);
+			DBOLLHHMKKN().SetFloat("#checkpoint", HBJJOCHGOPH);
+			HHIAIGCAHDA().SetFloat("_BlurVector", Fade);
+			ACHNOHCLGOO().SetFloat("MenuScene", _FixDistance);
+			AELJLBOJAIL().SetFloat("SetParticlesParticleSpeed", MatrixSize);
+			IGKFMCPDNOI().SetColor(".played", _MatrixColor);
+			HFBJAOFLCJI().SetFloat("_FadeShield", MatrixSpeed * 173f);
+			DKKBFFHBHJE().SetFloat("Using Stopwatch as precision timer for PUN.", (!_Visualize) ? 1 : 0);
+			HFBJAOFLCJI().SetFloat("SupportLogger OnJoinedRoom(", LightIntensity);
+			ADBKPGFMNKO().SetTexture("#savemapbeforeuploading", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			OLHDPICFBOF().SetFloat("ItemNameText", 1694f / farClipPlane);
-			KGOLDDBHIFN().SetVector("float", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1535f, 1473f));
+			DKKBFFHBHJE().SetFloat("ItemsCountText", 1694f / farClipPlane);
+			NFKFAAHHLLM().SetVector("string", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1535f, 1473f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIAIGCAHDA());
 		}
 		else
 		{
@@ -135,8 +135,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void MKIMDFLBFOM()
 	{
-		FPHEBLMINDA = Resources.Load("file://") as Texture2D;
-		SCShader = Shader.Find("yyyy-MM-dd HH:mm:ss");
+		FPHEBLMINDA = Resources.Load(".mp3") as Texture2D;
+		SCShader = Shader.Find("#,0.00");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -153,7 +153,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void MJEFMIPLFAB()
 	{
-		FPHEBLMINDA = Resources.Load("_SunColor") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_BlurRadius4") as Texture2D;
 		SCShader = Shader.Find("CorrectHitsScoreText");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -163,8 +163,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		FPHEBLMINDA = Resources.Load("[MapEditor] Importing map: ") as Texture2D;
-		SCShader = Shader.Find("<b>Speed</b>:");
+		FPHEBLMINDA = Resources.Load("Editor") as Texture2D;
+		SCShader = Shader.Find("-");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -180,20 +180,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1999f;
 			}
-			HFBJAOFLCJI().SetFloat("Data/Editor/leveltemplate", HBJJOCHGOPH);
-			OLHDPICFBOF().SetFloat("[PlayerController] ", Fade);
-			IGKFMCPDNOI().SetFloat("LevelConfigButton", _FixDistance);
-			HFBJAOFLCJI().SetFloat("PerfectHitsScoreText", MatrixSize);
-			FAIFBBGFAIB().SetColor("_BlendTex", _MatrixColor);
-			ADBKPGFMNKO().SetFloat("DestroyRpc", MatrixSpeed * 1455f);
-			NBMPPNFKFLB().SetFloat("skin.no_hit", (!_Visualize) ? 0 : 0);
-			IGKFMCPDNOI().SetFloat("_Value4", LightIntensity);
-			DBOLLHHMKKN().SetTexture("SetCrosshairColor", FPHEBLMINDA);
+			DOHGBNPMBKG().SetFloat("Data/Editor/leveltemplate", HBJJOCHGOPH);
+			EFMCNLELMDO().SetFloat(" not exist", Fade);
+			KGOLDDBHIFN().SetFloat("LevelConfigButton", _FixDistance);
+			EFMCNLELMDO().SetFloat("PerfectHitsScoreText", MatrixSize);
+			KEMAALEODNH().SetColor("USE_UV_BASED_REPROJECTION", _MatrixColor);
+			FAIFBBGFAIB().SetFloat("RPC: 'OnAwakeRPC' PhotonView: ", MatrixSpeed * 1455f);
+			DOHGBNPMBKG().SetFloat("skin.no_hit", (!_Visualize) ? 0 : 0);
+			ACHNOHCLGOO().SetFloat("_Value3", LightIntensity);
+			FAIFBBGFAIB().SetTexture("Set satellite MinVertexDistance - how much distance should be between to points of the trail line", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			EFMCNLELMDO().SetFloat("Zoom speed. Base 1.5", 143f / farClipPlane);
-			HKHBBBFLGJH().SetVector("Left Stick Click", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1194f, 1399f));
+			KGOLDDBHIFN().SetFloat("Zoom speed. Base 1.5", 143f / farClipPlane);
+			NBMPPNFKFLB().SetVector("Joystick1Button10", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1194f, 1399f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFKFAAHHLLM());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
 		}
 		else
 		{
@@ -218,8 +218,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		FPHEBLMINDA = Resources.Load("bool") as Texture2D;
-		SCShader = Shader.Find("[CraftingPanel] Init");
+		FPHEBLMINDA = Resources.Load("true") as Texture2D;
+		SCShader = Shader.Find("time");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -286,20 +286,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1078f;
 			}
-			HHIAIGCAHDA().SetFloat("Set satellite beat detection sensitivity", HBJJOCHGOPH);
-			HHIAIGCAHDA().SetFloat("CameraFilterPack/Blend2Camera_Darken", Fade);
-			DBOLLHHMKKN().SetFloat("_ExposureAdjustment", _FixDistance);
-			DKKBFFHBHJE().SetFloat("ChallengesButton", MatrixSize);
-			HCGJCMDJPGD().SetColor("Error: Timeout :S", _MatrixColor);
-			HKHBBBFLGJH().SetFloat("#", MatrixSpeed * 1769f);
-			DOHGBNPMBKG().SetFloat("PopulateMapsList", (!_Visualize) ? 1 : 1);
-			KGOLDDBHIFN().SetFloat("_ScreenResolution", LightIntensity);
-			ACHNOHCLGOO().SetTexture("CameraFilterPack/Blend2Camera_LinearLight", FPHEBLMINDA);
+			DOHGBNPMBKG().SetFloat("float,50", HBJJOCHGOPH);
+			IIJMIPBMMBF().SetFloat("CameraFilterPack/Blend2Camera_Darken", Fade);
+			IIJMIPBMMBF().SetFloat("_ExposureAdjustment", _FixDistance);
+			HFBJAOFLCJI().SetFloat("ChallengesButton", MatrixSize);
+			OLHDPICFBOF().SetColor("Item creation successful! Published Item ID: ", _MatrixColor);
+			HHIAIGCAHDA().SetFloat("GameModeText", MatrixSpeed * 1769f);
+			NBMPPNFKFLB().SetFloat("/", (!_Visualize) ? 1 : 1);
+			IGKFMCPDNOI().SetFloat("_ScreenResolution", LightIntensity);
+			LNLKMDPHDCC().SetTexture("CameraFilterPack/Blend2Camera_LinearLight", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			IIJMIPBMMBF().SetFloat("EnableRankingToggle", 79f / farClipPlane);
-			JIBOKBCPDLC().SetVector("[GameScene] Submiting rank", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1256f, 1181f));
+			OLHDPICFBOF().SetFloat("EnableRankingToggle", 79f / farClipPlane);
+			DBOLLHHMKKN().SetVector("[GameScene] Submiting rank", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1256f, 1181f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKKBFFHBHJE());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{
@@ -331,20 +331,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1262f;
 			}
-			ADBKPGFMNKO().SetFloat("float,1.5", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("_ReflectionBlur", Fade);
-			DOHGBNPMBKG().SetFloat("ZoomSpeed", _FixDistance);
-			HKHBBBFLGJH().SetFloat("Triangle", MatrixSize);
-			FAIFBBGFAIB().SetColor("Data/Skins/", _MatrixColor);
-			EFMCNLELMDO().SetFloat("_Threshhold", MatrixSpeed * 198f);
-			KGOLDDBHIFN().SetFloat("RecieveChatActionMessage", _Visualize ? 1 : 0);
-			HHIAIGCAHDA().SetFloat("Can't set open when not in that room.", LightIntensity);
-			DBOLLHHMKKN().SetTexture("#score", FPHEBLMINDA);
+			LNLKMDPHDCC().SetFloat("x", HBJJOCHGOPH);
+			NFKFAAHHLLM().SetFloat("_PixelsPerMeterAtOneMeter", Fade);
+			AELJLBOJAIL().SetFloat("ZoomFade", _FixDistance);
+			NBMPPNFKFLB().SetFloat("Circle", MatrixSize);
+			AELJLBOJAIL().SetColor("default", _MatrixColor);
+			NBPKMLMCHFN.SetFloat("_CurveParams", MatrixSpeed * 198f);
+			AELJLBOJAIL().SetFloat("RecieveChatActionMessage", _Visualize ? 1 : 0);
+			LNLKMDPHDCC().SetFloat("wss://", LightIntensity);
+			HCGJCMDJPGD().SetTexture("menu.selectedplaymode", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			LNLKMDPHDCC().SetFloat("Keypad", 57f / farClipPlane);
-			HFBJAOFLCJI().SetVector("HightScoreMaxPointsText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 442f, 1890f));
+			KGOLDDBHIFN().SetFloat("Keypad", 57f / farClipPlane);
+			KEMAALEODNH().SetVector("FinalScoreText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 442f, 1890f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -355,7 +355,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 	private void PDHKMDBNGGN()
 	{
 		FPHEBLMINDA = Resources.Load("[SaveSystem] Outdated savefile found") as Texture2D;
-		SCShader = Shader.Find("CameraFilterPack/TV_PlanetMars");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -364,7 +364,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void LBAJLLFMMMP()
 	{
-		FPHEBLMINDA = Resources.Load("0.00") as Texture2D;
+		FPHEBLMINDA = Resources.Load("TotalTimeLabel") as Texture2D;
 		SCShader = Shader.Find("inventory.selected.");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -389,20 +389,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1310f;
 			}
-			AELJLBOJAIL().SetFloat("_TimeX", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("maps.", Fade);
-			ADBKPGFMNKO().SetFloat("_ScreenResolution", _FixDistance);
-			ADBKPGFMNKO().SetFloat("Set arcs speed. Base value - 15", MatrixSize);
-			KEMAALEODNH().SetColor("_ScreenResolution", _MatrixColor);
-			IIJMIPBMMBF().SetFloat("All bindings reset to default values. PlayerPrefs have been removed for each key.", MatrixSpeed * 1880f);
-			HKHBBBFLGJH().SetFloat("ChallengesButton", _Visualize ? 1 : 0);
-			HCGJCMDJPGD().SetFloat("ControllerLeftX", LightIntensity);
-			DBOLLHHMKKN().SetTexture("_Far", FPHEBLMINDA);
+			IIJMIPBMMBF().SetFloat("_TimeX", HBJJOCHGOPH);
+			DKKBFFHBHJE().SetFloat("BadgeText", Fade);
+			DKKBFFHBHJE().SetFloat("_Fade", _FixDistance);
+			ACHNOHCLGOO().SetFloat("1,30,true,0", MatrixSize);
+			HKHBBBFLGJH().SetColor("_ScreenResolution", _MatrixColor);
+			NFKFAAHHLLM().SetFloat("settings_bindings_controller_type", MatrixSpeed * 1880f);
+			NFKFAAHHLLM().SetFloat("ChallengesButton", _Visualize ? 1 : 0);
+			DKKBFFHBHJE().SetFloat("Right", LightIntensity);
+			NBMPPNFKFLB().SetTexture("_Far", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			DKKBFFHBHJE().SetFloat("_EdgeSize", 836f / farClipPlane);
-			NBMPPNFKFLB().SetVector("The directory was created successfully at ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 127f, 1018f));
+			NBMPPNFKFLB().SetFloat("_TimeX", 836f / farClipPlane);
+			EFMCNLELMDO().SetVector("Loaded Game: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 127f, 1018f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKKBFFHBHJE());
 		}
 		else
 		{
@@ -427,8 +427,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void HJPCJGOEKMF()
 	{
-		FPHEBLMINDA = Resources.Load("Hidden/DepthOfField/DepthOfField") as Texture2D;
-		SCShader = Shader.Find("View");
+		FPHEBLMINDA = Resources.Load("RenderTextureUtilityTempTexture") as Texture2D;
+		SCShader = Shader.Find("RT");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -437,7 +437,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void AEDDNDHCLNN()
 	{
-		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_TimeX") as Texture2D;
 		SCShader = Shader.Find("AddEnvironmentSprite");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -447,8 +447,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void IDJKNBDKHBD()
 	{
-		FPHEBLMINDA = Resources.Load("PLEASE WAIT") as Texture2D;
-		SCShader = Shader.Find("Oct");
+		FPHEBLMINDA = Resources.Load("Use ticket: ") as Texture2D;
+		SCShader = Shader.Find("Aug");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -483,18 +483,18 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 679f;
 			}
-			KEMAALEODNH().SetFloat("VIGNETTE_BLUR", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("error", Fade);
-			IGKFMCPDNOI().SetFloat("_BlurRadius4", _FixDistance);
-			ADBKPGFMNKO().SetFloat("Events Moved", MatrixSize);
-			DBOLLHHMKKN().SetColor("Created", _MatrixColor);
+			DKKBFFHBHJE().SetFloat("_BlurTex", HBJJOCHGOPH);
+			HCGJCMDJPGD().SetFloat("#close", Fade);
+			HFBJAOFLCJI().SetFloat("_BlurRadius4", _FixDistance);
+			IIJMIPBMMBF().SetFloat("#currentbpm: ", MatrixSize);
+			LNLKMDPHDCC().SetColor("Created", _MatrixColor);
 			IIJMIPBMMBF().SetFloat("shader.invert", MatrixSpeed * 736f);
-			DOHGBNPMBKG().SetFloat("Set sun colors", _Visualize ? 1 : 0);
-			HFBJAOFLCJI().SetFloat("No font defined. Found font: ", LightIntensity);
-			DKKBFFHBHJE().SetTexture("CameraFilterPack/Drawing_Paper3", FPHEBLMINDA);
+			IIJMIPBMMBF().SetFloat("Hex value #RRGGBB", _Visualize ? 1 : 0);
+			HKHBBBFLGJH().SetFloat("FToA", LightIntensity);
+			NBPKMLMCHFN.SetTexture("CameraFilterPack_Paper4", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			ADBKPGFMNKO().SetFloat("LevelEditor/patterns", 1714f / farClipPlane);
-			JIBOKBCPDLC().SetVector("mainmenu", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1734f, 1755f));
+			NBMPPNFKFLB().SetFloat("ShowSprite", 1714f / farClipPlane);
+			KEMAALEODNH().SetVector("mainmenu", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1734f, 1755f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
@@ -506,8 +506,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void OKLAJINHPAN()
 	{
-		FPHEBLMINDA = Resources.Load("CameraFilterPack/Pixel_Pixelisation") as Texture2D;
-		SCShader = Shader.Find("_Value");
+		FPHEBLMINDA = Resources.Load("_MainTex2") as Texture2D;
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -523,20 +523,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 866f;
 			}
-			IIJMIPBMMBF().SetFloat(". Set PhotonNetwork.OnEventCall.", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("Set particles start speed", Fade);
-			LNLKMDPHDCC().SetFloat("[Right]", _FixDistance);
-			HKHBBBFLGJH().SetFloat(".b", MatrixSize);
-			NBPKMLMCHFN.SetColor("]. Please verify you have this gameobject in a Resources folder.", _MatrixColor);
-			OLHDPICFBOF().SetFloat("_HeightParams", MatrixSpeed * 417f);
-			OLHDPICFBOF().SetFloat("float,10", _Visualize ? 1 : 0);
-			ADBKPGFMNKO().SetFloat("_Extra", LightIntensity);
-			DBOLLHHMKKN().SetTexture("Down", FPHEBLMINDA);
+			HFBJAOFLCJI().SetFloat(". Sent by actorNr: ", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("Set particles start speed", Fade);
+			EFMCNLELMDO().SetFloat("[Left]", _FixDistance);
+			JIBOKBCPDLC().SetFloat(".b", MatrixSize);
+			HFBJAOFLCJI().SetColor(". Should be just one?", _MatrixColor);
+			LNLKMDPHDCC().SetFloat("_FrustumCornersWS", MatrixSpeed * 417f);
+			ACHNOHCLGOO().SetFloat("float,10", _Visualize ? 1 : 0);
+			EFMCNLELMDO().SetFloat("_Intensity", LightIntensity);
+			HFBJAOFLCJI().SetTexture("Up", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			DBOLLHHMKKN().SetFloat(".b", 1388f / farClipPlane);
-			IGKFMCPDNOI().SetVector(">", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 398f, 786f));
+			HKHBBBFLGJH().SetFloat(".b", 1388f / farClipPlane);
+			EFMCNLELMDO().SetVector("<color=#", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 398f, 786f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
 		}
 		else
 		{
@@ -569,8 +569,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void FDNONDCGGCG()
 	{
-		FPHEBLMINDA = Resources.Load("settings_bindings_") as Texture2D;
-		SCShader = Shader.Find("_Value");
+		FPHEBLMINDA = Resources.Load("All bindings reset to default values. PlayerPrefs have been removed for each key.") as Texture2D;
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -579,8 +579,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void CGDMLHLJIDK()
 	{
-		FPHEBLMINDA = Resources.Load("RemoveHighlight") as Texture2D;
-		SCShader = Shader.Find("_TimeX");
+		FPHEBLMINDA = Resources.Load("]") as Texture2D;
+		SCShader = Shader.Find("CameraFilterPack/TV_Old");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -589,8 +589,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void HDMDKOKOOJC()
 	{
-		FPHEBLMINDA = Resources.Load("/icon") as Texture2D;
-		SCShader = Shader.Find("_ColorRGB");
+		FPHEBLMINDA = Resources.Load("/music") as Texture2D;
+		SCShader = Shader.Find("_Far");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -599,8 +599,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void MGMAOBPPOBJ()
 	{
-		FPHEBLMINDA = Resources.Load("_Tint") as Texture2D;
-		SCShader = Shader.Find("Object ID. Case-Sensitive");
+		FPHEBLMINDA = Resources.Load("_PosY") as Texture2D;
+		SCShader = Shader.Find("id");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -616,20 +616,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1883f;
 			}
-			HKHBBBFLGJH().SetFloat("Added unlock condition", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("st", Fade);
-			HFBJAOFLCJI().SetFloat("Health Stats", _FixDistance);
-			EFMCNLELMDO().SetFloat("VisionBlur", MatrixSize);
-			ADBKPGFMNKO().SetColor(" respawn: ", _MatrixColor);
-			HFBJAOFLCJI().SetFloat("settings.gamemessagesduration", MatrixSpeed * 897f);
-			NBPKMLMCHFN.SetFloat("OK", (!_Visualize) ? 1 : 1);
-			HKHBBBFLGJH().SetFloat("[MapEditor] Importing map: ", LightIntensity);
-			DBOLLHHMKKN().SetTexture(" should be overwritten.", FPHEBLMINDA);
+			NBMPPNFKFLB().SetFloat("Paste events", HBJJOCHGOPH);
+			IIJMIPBMMBF().SetFloat("1", Fade);
+			FAIFBBGFAIB().SetFloat("Incoming: \n", _FixDistance);
+			HHIAIGCAHDA().SetFloat("Fade", MatrixSize);
+			NFKFAAHHLLM().SetColor("Sent count: ", _MatrixColor);
+			NFKFAAHHLLM().SetFloat("settings.crosshairopacity", MatrixSpeed * 897f);
+			NFKFAAHHLLM().SetFloat("You must complete your map before submiting it to Workshop", (!_Visualize) ? 1 : 1);
+			HKHBBBFLGJH().SetFloat("Editor/", LightIntensity);
+			KEMAALEODNH().SetTexture("Missing shader in ", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			NBMPPNFKFLB().SetFloat("_TimeX", 1642f / farClipPlane);
-			JIBOKBCPDLC().SetVector("_Value6", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1597f, 1217f));
+			DBOLLHHMKKN().SetFloat("_TimeX", 1642f / farClipPlane);
+			DKKBFFHBHJE().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1597f, 1217f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
 		}
 		else
 		{
@@ -650,20 +650,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 6f;
 			}
-			EFMCNLELMDO().SetFloat("Right Stick Click", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("_Value5", Fade);
-			KGOLDDBHIFN().SetFloat("21x3", _FixDistance);
-			FAIFBBGFAIB().SetFloat("ResetSpeed", MatrixSize);
-			IIJMIPBMMBF().SetColor("_EmissionGain", _MatrixColor);
-			AELJLBOJAIL().SetFloat("MultiplayerButton", MatrixSpeed * 1780f);
-			NBPKMLMCHFN.SetFloat("Most likely the game became empty during the switch to GameServer.", (!_Visualize) ? 1 : 0);
-			DBOLLHHMKKN().SetFloat("CameraFilterPack_3D_Computer1", LightIntensity);
-			KEMAALEODNH().SetTexture("y", FPHEBLMINDA);
+			HKHBBBFLGJH().SetFloat("Left Stick Click", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("_Value4", Fade);
+			ACHNOHCLGOO().SetFloat("2;13;14;15;16", _FixDistance);
+			KGOLDDBHIFN().SetFloat("ResetSpeed", MatrixSize);
+			HCGJCMDJPGD().SetColor("_EmissionColor", _MatrixColor);
+			HFBJAOFLCJI().SetFloat("MultiplayerButton", MatrixSpeed * 1780f);
+			IGKFMCPDNOI().SetFloat("Most likely the game became empty during the switch to GameServer.", (!_Visualize) ? 1 : 0);
+			KEMAALEODNH().SetFloat("CameraFilterPack_3D_Computer1", LightIntensity);
+			LNLKMDPHDCC().SetTexture("y", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			AELJLBOJAIL().SetFloat("Coroutine container not configured... did you forget to call Init?", 643f / farClipPlane);
-			IIJMIPBMMBF().SetVector("CameraFilterPack/Vision_Blood", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1909f, 1799f));
+			HCGJCMDJPGD().SetFloat("HighScaleShot", 643f / farClipPlane);
+			EFMCNLELMDO().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1909f, 1799f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFMCNLELMDO());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKKBFFHBHJE());
 		}
 		else
 		{
@@ -686,7 +686,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 	private void CNGAJDBOCLJ()
 	{
 		FPHEBLMINDA = Resources.Load("_Offsets") as Texture2D;
-		SCShader = Shader.Find("/");
+		SCShader = Shader.Find("[Down]");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -724,20 +724,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1505f;
 			}
-			HCGJCMDJPGD().SetFloat("_Alpha2", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("settings.volume.game", Fade);
-			OLHDPICFBOF().SetFloat("ItemNameText", _FixDistance);
-			LNLKMDPHDCC().SetFloat("_PositionX", MatrixSize);
-			EFMCNLELMDO().SetColor("_Distortion", _MatrixColor);
-			KEMAALEODNH().SetFloat("<b>", MatrixSpeed * 0f);
-			IIJMIPBMMBF().SetFloat("#status", _Visualize ? 1 : 0);
-			NFKFAAHHLLM().SetFloat("GameScene", LightIntensity);
-			NBPKMLMCHFN.SetTexture("Currently, the limit of users is reached for this title. Try again later. Disconnecting", FPHEBLMINDA);
+			HHIAIGCAHDA().SetFloat("_Alpha2", HBJJOCHGOPH);
+			DOHGBNPMBKG().SetFloat("settings.volume.menu", Fade);
+			IIJMIPBMMBF().SetFloat("ItemsCountText", _FixDistance);
+			HKHBBBFLGJH().SetFloat("_PositionX", MatrixSize);
+			NBMPPNFKFLB().SetColor("_TimeX", _MatrixColor);
+			NFKFAAHHLLM().SetFloat("<b>", MatrixSpeed * 0f);
+			DKKBFFHBHJE().SetFloat("#task", _Visualize ? 1 : 0);
+			HFBJAOFLCJI().SetFloat("[", LightIntensity);
+			LNLKMDPHDCC().SetTexture("Custom Authentication failed (either due to user-input or configuration or AuthParameter string format). Calling: OnCustomAuthenticationFailed()", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			HKHBBBFLGJH().SetFloat("Edited unlock conditions", 1604f / farClipPlane);
-			AELJLBOJAIL().SetVector("{0}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1778f, 778f));
+			FAIFBBGFAIB().SetFloat("OK", 1604f / farClipPlane);
+			OLHDPICFBOF().SetVector("s", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1778f, 778f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
 		}
 		else
 		{
@@ -785,18 +785,18 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 892f;
 			}
-			IGKFMCPDNOI().SetFloat("_TimeX", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("#yes", Fade);
-			IGKFMCPDNOI().SetFloat("/", _FixDistance);
-			NFKFAAHHLLM().SetFloat("SetParticlesParticleSize", MatrixSize);
-			KEMAALEODNH().SetColor("Set object anchor to another object", _MatrixColor);
-			EFMCNLELMDO().SetFloat("Object ID. Case-Sensitive", MatrixSpeed * 335f);
-			HCGJCMDJPGD().SetFloat("_FixDistance", (!_Visualize) ? 1 : 1);
-			LNLKMDPHDCC().SetFloat(": ", LightIntensity);
-			DBOLLHHMKKN().SetTexture(" cannot be used as a 3D LUT.", FPHEBLMINDA);
+			HFBJAOFLCJI().SetFloat("CameraFilterPack/Drawing_Comics", HBJJOCHGOPH);
+			EFMCNLELMDO().SetFloat("maps.", Fade);
+			HKHBBBFLGJH().SetFloat("NewIconFileSelector", _FixDistance);
+			KGOLDDBHIFN().SetFloat("Set particless emission (glow)", MatrixSize);
+			HCGJCMDJPGD().SetColor("Set object anchor to another object", _MatrixColor);
+			ACHNOHCLGOO().SetFloat("Object ID. Case-Sensitive", MatrixSpeed * 335f);
+			EFMCNLELMDO().SetFloat("_FixDistance", (!_Visualize) ? 1 : 1);
+			NBMPPNFKFLB().SetFloat(": ", LightIntensity);
+			HCGJCMDJPGD().SetTexture("The given 2D texture ", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			EFMCNLELMDO().SetFloat("CameraFilterPack_Paper4", 921f / farClipPlane);
-			LNLKMDPHDCC().SetVector("#finished", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1853f, 1816f));
+			ACHNOHCLGOO().SetFloat("_MainTex2", 921f / farClipPlane);
+			HFBJAOFLCJI().SetVector("#reward: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1853f, 1816f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
@@ -892,7 +892,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 	private void COOHIILCOCO()
 	{
 		FPHEBLMINDA = Resources.Load("PointsScoreText") as Texture2D;
-		SCShader = Shader.Find("CameraFilterPack/Blend2Camera_Saturation");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -914,7 +914,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 	private void FNCDAPDOBBI()
 	{
 		FPHEBLMINDA = Resources.Load(". The group number should be at least 1.") as Texture2D;
-		SCShader = Shader.Find("Set Satellite Radius");
+		SCShader = Shader.Find("SetSatelliteRadius");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -923,8 +923,8 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void KDMANOEMOCA()
 	{
-		FPHEBLMINDA = Resources.Load(". No ViewIDs are free to use. Max is: ") as Texture2D;
-		SCShader = Shader.Find("ItemTemplate");
+		FPHEBLMINDA = Resources.Load(". Prefab must have a PhotonView component.") as Texture2D;
+		SCShader = Shader.Find("SlidingArea");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -933,7 +933,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 
 	private void LIBGAKMKHJJ()
 	{
-		FPHEBLMINDA = Resources.Load("#no") as Texture2D;
+		FPHEBLMINDA = Resources.Load("#submit") as Texture2D;
 		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -950,20 +950,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1644f;
 			}
-			HKHBBBFLGJH().SetFloat("&page=", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("history", Fade);
-			HKHBBBFLGJH().SetFloat("1427616858", _FixDistance);
-			AELJLBOJAIL().SetFloat("X2", MatrixSize);
-			DBOLLHHMKKN().SetColor(" url: ", _MatrixColor);
-			DOHGBNPMBKG().SetFloat("[NetworkMenu] Joining ", MatrixSpeed * 1037f);
-			NFKFAAHHLLM().SetFloat("mapselector.filter.favoriteonly", (!_Visualize) ? 1 : 1);
-			ACHNOHCLGOO().SetFloat("_ScreenResolution", LightIntensity);
-			KEMAALEODNH().SetTexture("GlassColor", FPHEBLMINDA);
+			DOHGBNPMBKG().SetFloat("&page=", HBJJOCHGOPH);
+			OLHDPICFBOF().SetFloat("Clears all text from the debug console", Fade);
+			DBOLLHHMKKN().SetFloat("1234332714", _FixDistance);
+			OLHDPICFBOF().SetFloat("================================", MatrixSize);
+			JIBOKBCPDLC().SetColor("settings.customdataskin", _MatrixColor);
+			DBOLLHHMKKN().SetFloat("[NetworkMenu] Joining ", MatrixSpeed * 1037f);
+			NBMPPNFKFLB().SetFloat("winter2020", (!_Visualize) ? 1 : 1);
+			KEMAALEODNH().SetFloat("_Value", LightIntensity);
+			LNLKMDPHDCC().SetTexture("GlassesColor2", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			HCGJCMDJPGD().SetFloat("_Value", 1957f / farClipPlane);
-			HFBJAOFLCJI().SetVector("Image", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1478f, 343f));
+			KGOLDDBHIFN().SetFloat("_Value", 1957f / farClipPlane);
+			NFKFAAHHLLM().SetVector("Image", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1478f, 343f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFMCNLELMDO());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
 		}
 		else
 		{
@@ -982,7 +982,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 	private void FHGKIOOMMOH()
 	{
 		FPHEBLMINDA = Resources.Load("CameraFilterPack/Blend2Camera_LighterColor") as Texture2D;
-		SCShader = Shader.Find("3d text");
+		SCShader = Shader.Find("fetch");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -998,20 +998,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1254f;
 			}
-			OLHDPICFBOF().SetFloat("#ok", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Mouse Y", Fade);
-			NBPKMLMCHFN.SetFloat("Tab2Content", _FixDistance);
-			ADBKPGFMNKO().SetFloat("CameraFilterPack/AAA_Super_Computer", MatrixSize);
-			DBOLLHHMKKN().SetColor("_SSAO", _MatrixColor);
-			DOHGBNPMBKG().SetFloat("ready", MatrixSpeed * 30f);
-			KGOLDDBHIFN().SetFloat("_Value5", (!_Visualize) ? 1 : 1);
-			IIJMIPBMMBF().SetFloat("Set sun beat detection sensitivity", LightIntensity);
-			DKKBFFHBHJE().SetTexture(": ", FPHEBLMINDA);
+			DKKBFFHBHJE().SetFloat("#forever", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("Mouse Wheel Down", Fade);
+			HCGJCMDJPGD().SetFloat("SpeedSlider", _FixDistance);
+			NFKFAAHHLLM().SetFloat("CameraFilterPack/AAA_Super_Computer", MatrixSize);
+			KGOLDDBHIFN().SetColor("_TexelOffsetScale", _MatrixColor);
+			KGOLDDBHIFN().SetFloat("[Right]", MatrixSpeed * 30f);
+			DBOLLHHMKKN().SetFloat("_Value4", (!_Visualize) ? 1 : 1);
+			NBMPPNFKFLB().SetFloat("float,50", LightIntensity);
+			IIJMIPBMMBF().SetTexture("[PlayerController] ", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			KGOLDDBHIFN().SetFloat("ScreenResolutionPanel", 1337f / farClipPlane);
-			IGKFMCPDNOI().SetVector("Chat", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1890f, 1970f));
+			EFMCNLELMDO().SetFloat("ScreenResolutionPanel", 1337f / farClipPlane);
+			NBPKMLMCHFN.SetVector("ChatInput", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1890f, 1970f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
 		}
 		else
 		{
@@ -1030,7 +1030,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 	private void GPNAOAKCMHC()
 	{
 		FPHEBLMINDA = Resources.Load("PublishButton") as Texture2D;
-		SCShader = Shader.Find("id");
+		SCShader = Shader.Find("Set Particle Size");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1072,20 +1072,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 176f;
 			}
-			NBMPPNFKFLB().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("InfoText", Fade);
-			ADBKPGFMNKO().SetFloat("Joystick", _FixDistance);
-			EFMCNLELMDO().SetFloat("_Value2", MatrixSize);
-			OLHDPICFBOF().SetColor("127.0.0.1", _MatrixColor);
-			DOHGBNPMBKG().SetFloat("settings.enablehitsoundsinnormal", MatrixSpeed * 481f);
-			OLHDPICFBOF().SetFloat("Lightning", (!_Visualize) ? 1 : 1);
-			HKHBBBFLGJH().SetFloat("_Red_G", LightIntensity);
-			HHIAIGCAHDA().SetTexture("_MainTex2", FPHEBLMINDA);
+			KGOLDDBHIFN().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("rarity", Fade);
+			FAIFBBGFAIB().SetFloat("DPADHOR", _FixDistance);
+			FAIFBBGFAIB().SetFloat("_TimeX", MatrixSize);
+			LNLKMDPHDCC().SetColor("Exception while connecting to: ", _MatrixColor);
+			IIJMIPBMMBF().SetFloat("settings.disablestoryboard", MatrixSpeed * 481f);
+			LNLKMDPHDCC().SetFloat("Lightning", (!_Visualize) ? 1 : 1);
+			HFBJAOFLCJI().SetFloat("_Red_G", LightIntensity);
+			JIBOKBCPDLC().SetTexture("UseScanLine", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			EFMCNLELMDO().SetFloat("EndlessLoopsScoreText", 1006f / farClipPlane);
-			NBMPPNFKFLB().SetVector("_SphereSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 854f, 1103f));
+			AELJLBOJAIL().SetFloat("EndlessLoopsScoreText", 1006f / farClipPlane);
+			EFMCNLELMDO().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 854f, 1103f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
 		}
 		else
 		{
@@ -1134,7 +1134,7 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 	private void FIKFJDFELIP()
 	{
 		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
-		SCShader = Shader.Find("CameraFilterPack_TV_Vignetting1");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1176,20 +1176,20 @@ public class CameraFilterPack_3D_Computer : MonoBehaviour
 			{
 				HBJJOCHGOPH = 502f;
 			}
-			DKKBFFHBHJE().SetFloat("addNewButton", HBJJOCHGOPH);
-			DOHGBNPMBKG().SetFloat("maps.", Fade);
-			LNLKMDPHDCC().SetFloat("[Up]", _FixDistance);
-			AELJLBOJAIL().SetFloat("Joystick1Button3", MatrixSize);
-			KGOLDDBHIFN().SetColor("ready", _MatrixColor);
-			KGOLDDBHIFN().SetFloat("InfoCanvas", MatrixSpeed * 509f);
-			OLHDPICFBOF().SetFloat("CameraFilterPack_Paper2", _Visualize ? 1 : 0);
-			NFKFAAHHLLM().SetFloat("Exit to Windows", LightIntensity);
-			KGOLDDBHIFN().SetTexture("4,28,true,0", FPHEBLMINDA);
+			OLHDPICFBOF().SetFloat("Events Moved", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("maps.", Fade);
+			ACHNOHCLGOO().SetFloat("Gameplay/satellite", _FixDistance);
+			KEMAALEODNH().SetFloat("Joystick1Button2", MatrixSize);
+			NBPKMLMCHFN.SetColor("SetLives", _MatrixColor);
+			FAIFBBGFAIB().SetFloat("InfoText", MatrixSpeed * 509f);
+			FAIFBBGFAIB().SetFloat("_ScreenResolution", _Visualize ? 1 : 0);
+			DBOLLHHMKKN().SetFloat("/Saved Games/", LightIntensity);
+			DOHGBNPMBKG().SetTexture("4,28,true,0", FPHEBLMINDA);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			ADBKPGFMNKO().SetFloat("HPToggle", 54f / farClipPlane);
-			NBPKMLMCHFN.SetVector("Reload Maps", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1294f, 1723f));
+			HHIAIGCAHDA().SetFloat("menu.enableselectormusic", 54f / farClipPlane);
+			ADBKPGFMNKO().SetVector("Reset XP", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1294f, 1723f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKHBBBFLGJH());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
 		else
 		{

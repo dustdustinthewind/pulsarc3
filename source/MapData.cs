@@ -51,24 +51,55 @@ public class MapData
 
 	public string e = string.Empty;
 
-	private void JDOHGHPOMNB(float DBIMJHMKHNK)
-	{
-		checkpoints.Add(DBIMJHMKHNK);
-	}
-
-	public static int GetLastConfigVersion()
-	{
-		return 3;
-	}
-
-	private void ONBJIBMMIBJ(MapEvent DBIMJHMKHNK)
+	private void BCHPLAPPGEF(MapEvent DBIMJHMKHNK)
 	{
 		events.Add(new MapEvent(DBIMJHMKHNK));
 	}
 
-	public static int LADNNJPOJFG()
+	private void MDDMHDPPJLN(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void FMHBPGHKDEJ(float DBIMJHMKHNK)
+	{
+		checkpoints.Add(DBIMJHMKHNK);
+	}
+
+	[CompilerGenerated]
+	private void EHJOEOCEKOA(float DBIMJHMKHNK)
+	{
+		checkpoints.Add(DBIMJHMKHNK);
+	}
+
+	[CompilerGenerated]
+	private void BOJHOBEALCC(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void GHGKNDDLJOO(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	public static int BLFEIDJPPGM()
 	{
 		return 5;
+	}
+
+	private void NOBBJBKCEND(float DBIMJHMKHNK)
+	{
+		checkpoints.Add(DBIMJHMKHNK);
 	}
 
 	public MapData(MapData CLCBMMEKBBC)
@@ -116,14 +147,131 @@ public class MapData
 		});
 	}
 
-	public static int GAEEAAPAIAI()
+	private void BFGJHCDMPMG(float DBIMJHMKHNK)
+	{
+		checkpoints.Add(DBIMJHMKHNK);
+	}
+
+	private void IEAMIAMDJHE(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	public static int FIBOGJMJBHA()
 	{
 		return 1;
 	}
 
-	private void LEGENHENDCN(float DBIMJHMKHNK)
+	private void KCANCEDLMEM(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void JIMGGAAAIEM(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void LLGKPLAFJFE(MapEvent DBIMJHMKHNK)
+	{
+		events.Add(new MapEvent(DBIMJHMKHNK));
+	}
+
+	private void OBFEOCFBLDN(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			tags.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void JIPKMPGPHIJ(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			tags.Add(DBIMJHMKHNK);
+		}
+	}
+
+	public static int CNJEOPPJOPP()
+	{
+		return 7;
+	}
+
+	private void LBAODJHBBAE(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void MEEAIIDFDBB(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			tags.Add(DBIMJHMKHNK);
+		}
+	}
+
+	public MapData()
+	{
+	}
+
+	private void PHPLDJNCNLL(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			tags.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void FBICCLGHENP(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void KDHJAEAIFPG(float DBIMJHMKHNK)
 	{
 		checkpoints.Add(DBIMJHMKHNK);
+	}
+
+	public static int GetLastConfigVersion()
+	{
+		return 3;
+	}
+
+	private void PNIDLKEPBKJ(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			unlockConditions.Add(DBIMJHMKHNK);
+		}
+	}
+
+	private void GNEHEMHLJLM(string DBIMJHMKHNK)
+	{
+		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
+		{
+			tags.Add(DBIMJHMKHNK);
+		}
+	}
+
+	public static int LEMMGDEHFGL()
+	{
+		return 1;
 	}
 
 	[CompilerGenerated]
@@ -135,50 +283,27 @@ public class MapData
 		}
 	}
 
-	private void AIJKGBMMPHK(float DBIMJHMKHNK)
-	{
-		checkpoints.Add(DBIMJHMKHNK);
-	}
-
-	private void PNGPIMCLCLF(string DBIMJHMKHNK)
+	private void JKJKPPGDEBH(string DBIMJHMKHNK)
 	{
 		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
 		{
-			tags.Add(DBIMJHMKHNK);
+			unlockConditions.Add(DBIMJHMKHNK);
 		}
 	}
 
-	private void PMCBNJJNCFM(string DBIMJHMKHNK)
+	public static int GFBPGJPGCEE()
 	{
-		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
-		{
-			tags.Add(DBIMJHMKHNK);
-		}
+		return 0;
 	}
 
-	private void AFGCPMFKJHO(MapEvent DBIMJHMKHNK)
+	private void ODHONPMDDLL(MapEvent DBIMJHMKHNK)
 	{
 		events.Add(new MapEvent(DBIMJHMKHNK));
 	}
 
-	[CompilerGenerated]
-	private void EHJOEOCEKOA(float DBIMJHMKHNK)
+	private void MFLBKELHHDK(float DBIMJHMKHNK)
 	{
 		checkpoints.Add(DBIMJHMKHNK);
-	}
-
-	public static int JDMEGDFFPFG()
-	{
-		return 2;
-	}
-
-	public MapData()
-	{
-	}
-
-	public static int GODJBCPCIME()
-	{
-		return 3;
 	}
 
 	[CompilerGenerated]
@@ -187,28 +312,18 @@ public class MapData
 		events.Add(new MapEvent(DBIMJHMKHNK));
 	}
 
-	private void OJDPPFLMKKN(string DBIMJHMKHNK)
+	private void ONBJIBMMIBJ(MapEvent DBIMJHMKHNK)
 	{
-		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
-		{
-			unlockConditions.Add(DBIMJHMKHNK);
-		}
+		events.Add(new MapEvent(DBIMJHMKHNK));
 	}
 
-	[CompilerGenerated]
-	private void BOJHOBEALCC(string DBIMJHMKHNK)
+	private void PDCKDGHMOEO(MapEvent DBIMJHMKHNK)
 	{
-		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
-		{
-			unlockConditions.Add(DBIMJHMKHNK);
-		}
+		events.Add(new MapEvent(DBIMJHMKHNK));
 	}
 
-	private void FPCLPFKFLJJ(string DBIMJHMKHNK)
+	private void NKNMCPBMHGG(MapEvent DBIMJHMKHNK)
 	{
-		if (!string.IsNullOrEmpty(DBIMJHMKHNK))
-		{
-			tags.Add(DBIMJHMKHNK);
-		}
+		events.Add(new MapEvent(DBIMJHMKHNK));
 	}
 }

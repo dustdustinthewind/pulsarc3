@@ -48,51 +48,245 @@ public class Challenge
 	}
 
 	[SpecialName]
-	public void NALKIACEMLE(string DPNHODJHGJL)
+	public CurrentStatus EFOKGOMPFIO()
 	{
-		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
+		return IEKFDAJHBCN;
 	}
 
 	[SpecialName]
-	public void POOIIPFCMAI(string DPNHODJHGJL)
+	public ulong ENDOGIJIIMN()
 	{
-		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
+		return _003CEACCOCFNPIG_003Ek__BackingField;
 	}
 
-	private void ECLLKPIAMFF()
+	[SpecialName]
+	public void CFJAADKGIBI(List<string> DPNHODJHGJL)
+	{
+		_003CLDFMMDOEKMN_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void JCGPDAHKPPI(string DPNHODJHGJL)
+	{
+		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public CurrentStatus BBLDABFGDFF()
+	{
+		return IEKFDAJHBCN;
+	}
+
+	[SpecialName]
+	public string GJONOJPJGAO()
+	{
+		return _003CALHGHAEJDNC_003Ek__BackingField;
+	}
+
+	public float KCMBMLFLEOK()
+	{
+		if (HCPDNILLJEJ() == CurrentStatus.NotStarted)
+		{
+			return 1145f;
+		}
+		if (JNEKHPIOHIK() > CurrentStatus.NotStarted)
+		{
+			return 1199f;
+		}
+		if (EGPOPHEAAAF.Count > 1)
+		{
+			float num = 139f;
+			foreach (ChallengeGoal item in EGPOPHEAAAF)
+			{
+				num += item.FBEFEPECHBM();
+			}
+			return num / (float)EGPOPHEAAAF.Count;
+		}
+		return 1490f;
+	}
+
+	[SpecialName]
+	public string CGDEMHHGAON()
+	{
+		return _003CALHGHAEJDNC_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string LACOFOPCNBG()
+	{
+		return _003CDIABBLCFCKJ_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public ulong OFGNFACIGIL()
+	{
+		return _003CEACCOCFNPIG_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string MHNLMDPIGLB()
+	{
+		return _003CIBJENJNAKBB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void ABNFDKBNAGF(ulong DPNHODJHGJL)
+	{
+		_003CEACCOCFNPIG_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public float GIMMCHBOAPA()
+	{
+		if (PlayerStatus == CurrentStatus.NotStarted)
+		{
+			return 364f;
+		}
+		if (BBLDABFGDFF() > CurrentStatus.NotStarted)
+		{
+			return 987f;
+		}
+		if (EGPOPHEAAAF.Count > 0)
+		{
+			float num = 1160f;
+			foreach (ChallengeGoal item in EGPOPHEAAAF)
+			{
+				num += item.GoalProgress;
+			}
+			return num / (float)EGPOPHEAAAF.Count;
+		}
+		return 1101f;
+	}
+
+	[SpecialName]
+	public void PIDFBEGCHAD(string DPNHODJHGJL)
+	{
+		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void JNMHFODNBLM(CurrentStatus DPNHODJHGJL)
+	{
+		IEKFDAJHBCN = DPNHODJHGJL;
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI("Menu" + OFGNFACIGIL() + "PublishButton", (int)IEKFDAJHBCN);
+	}
+
+	[SpecialName]
+	public void CPIGIHCADCF(string DPNHODJHGJL)
+	{
+		_003CDPBCOACKKHB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public void EFKJBLMEPBA(bool AAGGLAGLINL = false)
+	{
+		if (!AAGGLAGLINL)
+		{
+			IJOPEKABIKM((CurrentStatus)Singleton<SaveSystem>.Instance.HHBIEPMBICO("_TimeX" + id + " beatThreshold: ", 0));
+		}
+		else
+		{
+			JNMHFODNBLM(CurrentStatus.InProgress);
+		}
+		if (OFPNJBGNLDH() == CurrentStatus.NotStarted)
+		{
+			CPMIGJFKCOH();
+		}
+		if (EFOKGOMPFIO() > CurrentStatus.NotStarted && HCPDNILLJEJ() < (CurrentStatus)5)
+		{
+			Singleton<ChallengesManager>.Instance.CHAJHAOEIKF(this);
+		}
+	}
+
+	public void DCFPGOMGBFK()
+	{
+		if (ADKFDALFMAE() >= 1909f)
+		{
+			JNMHFODNBLM(CurrentStatus.InProgress);
+			Singleton<ChallengesManager>.Instance.CHAJHAOEIKF(this);
+		}
+	}
+
+	public float DCHBAIPFOMK()
+	{
+		if (OFPNJBGNLDH() == CurrentStatus.NotStarted)
+		{
+			return 987f;
+		}
+		if (EBJMABMHEEO() > CurrentStatus.InProgress)
+		{
+			return 471f;
+		}
+		if (EGPOPHEAAAF.Count > 1)
+		{
+			float num = 1996f;
+			foreach (ChallengeGoal item in EGPOPHEAAAF)
+			{
+				num += item.GHDFDFBCJNB();
+			}
+			return num / (float)EGPOPHEAAAF.Count;
+		}
+		return 359f;
+	}
+
+	[SpecialName]
+	public void JKHDAIKDKPF(string DPNHODJHGJL)
+	{
+		_003CEALCJLBAFGO_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public void AIFAGDOHAGD()
+	{
+		CPMIGJFKCOH();
+		foreach (ChallengeGoal item in EGPOPHEAAAF)
+		{
+			item.PIKFPFLKBCG();
+			item.NKHLPNAMBEH();
+		}
+		JNMHFODNBLM(CurrentStatus.InProgress);
+		Singleton<SaveSystem>.Instance.JHCDGOMGOBE(": " + BGIOHLIFHND() + "CameraFilterPack/TV_Noise");
+	}
+
+	[SpecialName]
+	public string GPBAIPHOIKN()
+	{
+		return _003CDPBCOACKKHB_003Ek__BackingField;
+	}
+
+	private void PJNGEJMJENJ()
 	{
 		EGPOPHEAAAF = new List<ChallengeGoal>();
 		int num = 0;
-		foreach (string item in NKKKINCGJBH())
+		foreach (string item in goalsText)
 		{
 			try
 			{
-				string[] array = item.Split('￢');
-				string text = array[0];
-				List<string> list = array.ToList();
+				char[] array = new char[0];
+				array[0] = '(';
+				string[] array2 = item.Split(array);
+				string text = array2[0];
+				List<string> list = array2.ToList();
 				list.RemoveAt(1);
-				string nOJGGCLPPAM = string.Join("settings.showHP", list.ToArray());
+				string nOJGGCLPPAM = string.Join("0", list.ToArray());
 				switch (text)
 				{
-				case "_TimeX":
+				case "Tried to Initialize the SteamAPI twice in one session!":
 				{
 					PlayMapGoal playMapGoal = new PlayMapGoal();
 					EGPOPHEAAAF.Add(playMapGoal);
-					playMapGoal.OnAccept(KHCJFLGCAFL(), num, nOJGGCLPPAM);
+					playMapGoal.HAPELGDNDFN(ENDOGIJIIMN(), num, nOJGGCLPPAM);
 					break;
 				}
-				case " ":
+				case "_ScreenResolution":
 				{
 					PlayMapsSeriesGoal playMapsSeriesGoal = new PlayMapsSeriesGoal();
 					EGPOPHEAAAF.Add(playMapsSeriesGoal);
-					playMapsSeriesGoal.HAPELGDNDFN(IKACPLICNNB(), num, nOJGGCLPPAM);
+					playMapsSeriesGoal.LPGHCNKDCKD(OFGNFACIGIL(), num, nOJGGCLPPAM);
 					break;
 				}
-				case ".icon":
+				case "_HrDepthTex":
 				{
 					CountEventsGoal countEventsGoal = new CountEventsGoal();
 					EGPOPHEAAAF.Add(countEventsGoal);
-					countEventsGoal.NMFKKOJOLAB(BBPGJKOIAKM(), num, nOJGGCLPPAM);
+					countEventsGoal.NOFLEDOPHMO(id, num, nOJGGCLPPAM);
 					break;
 				}
 				}
@@ -105,368 +299,152 @@ public class Challenge
 	}
 
 	[SpecialName]
-	public List<string> FOHJIBBJKFC()
+	public List<string> PNOFLPNCLEK()
 	{
 		return _003CLDFMMDOEKMN_003Ek__BackingField;
 	}
 
-	[SpecialName]
-	public string OLPHAJDLEDK()
+	public void CheckState()
 	{
-		return _003CJPABICKLLEP_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void PEKJNPGAJOH(ulong DPNHODJHGJL)
-	{
-		_003CEACCOCFNPIG_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void MEMEAGLLGNO(string DPNHODJHGJL)
-	{
-		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string ONELLAMBEAG()
-	{
-		return _003CIBJENJNAKBB_003Ek__BackingField;
-	}
-
-	private void PCHBOBALJKG()
-	{
-		EGPOPHEAAAF = new List<ChallengeGoal>();
-		int num = 1;
-		foreach (string item in OCMBDNGKHGD())
+		if (GetProgress() >= 1f)
 		{
-			try
-			{
-				char[] array = new char[0];
-				array[0] = ' ';
-				string[] array2 = item.Split(array);
-				string text = array2[0];
-				List<string> list = array2.ToList();
-				list.RemoveAt(0);
-				string nOJGGCLPPAM = string.Join("f", list.ToArray());
-				switch (text)
-				{
-				case "\\n":
-				{
-					PlayMapGoal playMapGoal = new PlayMapGoal();
-					EGPOPHEAAAF.Add(playMapGoal);
-					playMapGoal.AAOAGGDLFLI(AKJKDMMKNFO(), num, nOJGGCLPPAM);
-					break;
-				}
-				case "\n":
-				{
-					PlayMapsSeriesGoal playMapsSeriesGoal = new PlayMapsSeriesGoal();
-					EGPOPHEAAAF.Add(playMapsSeriesGoal);
-					playMapsSeriesGoal.DGIEACILHNJ(ALBJAEBLABB(), num, nOJGGCLPPAM);
-					break;
-				}
-				case "Bad parameters for getbool! Use <key> <value>":
-				{
-					CountEventsGoal countEventsGoal = new CountEventsGoal();
-					EGPOPHEAAAF.Add(countEventsGoal);
-					countEventsGoal.OnAccept(NPIPMDFPLPH(), num, nOJGGCLPPAM);
-					break;
-				}
-				}
-			}
-			catch (Exception)
-			{
-			}
-			num += 0;
+			PlayerStatus = CurrentStatus.Complete;
+			Singleton<ChallengesManager>.Instance.CompleteChallenge(this);
 		}
 	}
 
 	[SpecialName]
-	public List<string> GHCFMDBHMDE()
+	public CurrentStatus EBJMABMHEEO()
 	{
-		return _003CLDFMMDOEKMN_003Ek__BackingField;
+		return IEKFDAJHBCN;
 	}
 
-	[SpecialName]
-	public void MCIELNKKMNI(CurrentStatus DPNHODJHGJL)
+	public void AcceptChallenge(bool AAGGLAGLINL = false)
 	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.SetInt("maps." + AKJKDMMKNFO() + "_SpherePositionY", (int)IEKFDAJHBCN);
-	}
-
-	[SpecialName]
-	public void CJPIIKKENGA(List<string> DPNHODJHGJL)
-	{
-		_003CLDFMMDOEKMN_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string KIJCJELFFPO()
-	{
-		return _003CALHGHAEJDNC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public ulong ALBJAEBLABB()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	public void IHLJALNNBFP()
-	{
-		FDFPMDACKEP();
-		foreach (ChallengeGoal item in EGPOPHEAAAF)
+		if (!AAGGLAGLINL)
 		{
-			item.OnCompleted();
-			item.EEBGCGFNELO();
+			PlayerStatus = (CurrentStatus)Singleton<SaveSystem>.Instance.GetInt("challenges." + id + ".status", 1);
 		}
-		FCAAFIFGOAO(CurrentStatus.InProgress);
-		Singleton<SaveSystem>.Instance.IPCGLFKIANM("_TimeX" + IHBDBALJGBO() + "_Offsets");
-	}
-
-	[SpecialName]
-	public string LIPDMNIAGEL()
-	{
-		return _003CEALCJLBAFGO_003Ek__BackingField;
-	}
-
-	private void LHOPHOBMAMC()
-	{
-		EGPOPHEAAAF = new List<ChallengeGoal>();
-		int num = 0;
-		foreach (string item in GHCFMDBHMDE())
+		else
 		{
-			try
-			{
-				char[] array = new char[0];
-				array[0] = 'n';
-				string[] array2 = item.Split(array);
-				string text = array2[1];
-				List<string> list = array2.ToList();
-				list.RemoveAt(0);
-				string nOJGGCLPPAM = string.Join("[Left]", list.ToArray());
-				switch (text)
-				{
-				case "Avoid using this directly. Thanks.":
-				{
-					PlayMapGoal playMapGoal = new PlayMapGoal();
-					EGPOPHEAAAF.Add(playMapGoal);
-					playMapGoal.OnAccept(BBPGJKOIAKM(), num, nOJGGCLPPAM);
-					break;
-				}
-				case "CameraFilterPack/FX_Drunk":
-				{
-					PlayMapsSeriesGoal playMapsSeriesGoal = new PlayMapsSeriesGoal();
-					EGPOPHEAAAF.Add(playMapsSeriesGoal);
-					playMapsSeriesGoal.AAOAGGDLFLI(BBPGJKOIAKM(), num, nOJGGCLPPAM);
-					break;
-				}
-				case "SetPosition":
-				{
-					CountEventsGoal countEventsGoal = new CountEventsGoal();
-					EGPOPHEAAAF.Add(countEventsGoal);
-					countEventsGoal.OnAccept(AKJKDMMKNFO(), num, nOJGGCLPPAM);
-					break;
-				}
-				}
-			}
-			catch (Exception)
-			{
-			}
-			num += 0;
+			PlayerStatus = CurrentStatus.InProgress;
+		}
+		if (PlayerStatus == CurrentStatus.InProgress)
+		{
+			MPKMIAKILEH();
+		}
+		if (PlayerStatus > CurrentStatus.InProgress && PlayerStatus < CurrentStatus.ObtainedReward)
+		{
+			Singleton<ChallengesManager>.Instance.CompleteChallenge(this);
 		}
 	}
 
 	[SpecialName]
-	public string BBKGHFHMHDA()
+	public CurrentStatus HCPDNILLJEJ()
 	{
-		return _003CALHGHAEJDNC_003Ek__BackingField;
+		return IEKFDAJHBCN;
 	}
 
-	[SpecialName]
-	public string PKJLNIKOKCP()
+	public float GetProgress()
 	{
-		return _003CIBJENJNAKBB_003Ek__BackingField;
-	}
-
-	public void GONKPNAAIEE()
-	{
-		ECLLKPIAMFF();
-		foreach (ChallengeGoal item in EGPOPHEAAAF)
+		if (PlayerStatus == CurrentStatus.NotStarted)
 		{
-			item.LMCKEFAMAJG();
-			item.EEBGCGFNELO();
+			return 0f;
 		}
-		LJEGFOMMMLL(CurrentStatus.NotStarted);
-		Singleton<SaveSystem>.Instance.KNFHMLMGKCJ("_TimeX" + id + "LevelEditor/icons");
-	}
-
-	[SpecialName]
-	public void HHDDCLMLPFE(CurrentStatus DPNHODJHGJL)
-	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.SetInt("Set Arcs Speed" + id + "_Value2", (int)IEKFDAJHBCN);
-	}
-
-	public void HCJCKPDKOGL()
-	{
-		if (GetProgress() >= 1471f)
+		if (PlayerStatus > CurrentStatus.InProgress)
 		{
-			DDKAPJJKOLJ((CurrentStatus)4);
-			Singleton<ChallengesManager>.Instance.OPLCHDMBFJP(this);
+			return 1f;
 		}
-	}
-
-	public float DPKBMGBGEPJ()
-	{
-		if (JMGIKADHIGM() == CurrentStatus.NotStarted)
+		if (EGPOPHEAAAF.Count > 0)
 		{
-			return 653f;
-		}
-		if (OCNOEDGAPNL() > CurrentStatus.NotStarted)
-		{
-			return 738f;
-		}
-		if (EGPOPHEAAAF.Count > 1)
-		{
-			float num = 1228f;
+			float num = 0f;
 			foreach (ChallengeGoal item in EGPOPHEAAAF)
 			{
 				num += item.GoalProgress;
 			}
 			return num / (float)EGPOPHEAAAF.Count;
 		}
-		return 996f;
+		return 0f;
 	}
 
-	public void GNFEJFGEAHH(bool AAGGLAGLINL = false)
+	[SpecialName]
+	public void LOMAELCENDL(List<string> DPNHODJHGJL)
+	{
+		_003CLDFMMDOEKMN_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public void OINNDMKBIAF(bool AAGGLAGLINL = false)
 	{
 		if (!AAGGLAGLINL)
 		{
-			PAJHHLGGLMJ((CurrentStatus)Singleton<SaveSystem>.Instance.GetInt("_Value4" + PHCHLPBPKHL() + "_TimeX", 1));
+			JNMHFODNBLM((CurrentStatus)Singleton<SaveSystem>.Instance.GetInt("resetach21" + OFGNFACIGIL() + "_ForegroundBlurExtrude", 1));
 		}
 		else
 		{
-			PAJHHLGGLMJ(CurrentStatus.NotStarted);
+			IJOPEKABIKM(CurrentStatus.InProgress);
 		}
-		if (DGAKBIEHAJC() == CurrentStatus.NotStarted)
+		if (JNEKHPIOHIK() == CurrentStatus.InProgress)
 		{
-			FDFPMDACKEP();
+			PJNGEJMJENJ();
 		}
-		if (IFAJDLKJIDL() > CurrentStatus.NotStarted && OCNOEDGAPNL() < (CurrentStatus)6)
+		if (EBJMABMHEEO() > CurrentStatus.InProgress && BBLDABFGDFF() < (CurrentStatus)8)
 		{
 			Singleton<ChallengesManager>.Instance.JEALJMLENKL(this);
 		}
 	}
 
 	[SpecialName]
-	public void PNDGGOFPABF(string DPNHODJHGJL)
-	{
-		_003CDPBCOACKKHB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void HDDIIKNOJIK(string DPNHODJHGJL)
-	{
-		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void CDNIHGKDELP(ulong DPNHODJHGJL)
-	{
-		_003CEACCOCFNPIG_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void LBCJKKCBBLA(string DPNHODJHGJL)
-	{
-		_003CIBJENJNAKBB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string FHBMIMOOLLN()
-	{
-		return _003CDIABBLCFCKJ_003Ek__BackingField;
-	}
-
-	public void HFFAJNCOJNB()
-	{
-		PCHBOBALJKG();
-		foreach (ChallengeGoal item in EGPOPHEAAAF)
-		{
-			item.OnCompleted();
-			item.LIMBEFBJNPL();
-		}
-		LJEGFOMMMLL(CurrentStatus.InProgress);
-		Singleton<SaveSystem>.Instance.DeleteKey("ready" + KHCJFLGCAFL() + "0.00");
-	}
-
-	[SpecialName]
-	public ulong NJNBOPKBLKK()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string KEILPNNDNOI()
+	public string FCMFHKDBPJP()
 	{
 		return _003CEALCJLBAFGO_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void EOKDHCFDDLA(string DPNHODJHGJL)
+	public List<string> EIENOHKPFCM()
 	{
-		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
+		return _003CLDFMMDOEKMN_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void LHNDKHINCFI(string DPNHODJHGJL)
+	public void JDIFAKFPODF(List<string> DPNHODJHGJL)
 	{
-		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
+		_003CLDFMMDOEKMN_003Ek__BackingField = DPNHODJHGJL;
 	}
 
-	[SpecialName]
-	public string DPKPLOJNEOG()
-	{
-		return _003CDPBCOACKKHB_003Ek__BackingField;
-	}
-
-	private void AGCNGHDFPFN()
+	private void MCNJPECILKM()
 	{
 		EGPOPHEAAAF = new List<ChallengeGoal>();
 		int num = 0;
-		foreach (string item in NKKKINCGJBH())
+		foreach (string item in goalsText)
 		{
 			try
 			{
-				char[] array = new char[0];
-				array[0] = 'ﾆ';
-				string[] array2 = item.Split(array);
-				string text = array2[0];
-				List<string> list = array2.ToList();
+				string[] array = item.Split('Y');
+				string text = array[1];
+				List<string> list = array.ToList();
 				list.RemoveAt(0);
-				string nOJGGCLPPAM = string.Join("_Value5", list.ToArray());
+				string nOJGGCLPPAM = string.Join("DPADVER", list.ToArray());
 				switch (text)
 				{
-				case "points:":
+				case "player.greenlifering":
 				{
 					PlayMapGoal playMapGoal = new PlayMapGoal();
 					EGPOPHEAAAF.Add(playMapGoal);
-					playMapGoal.HAPELGDNDFN(ALBJAEBLABB(), num, nOJGGCLPPAM);
+					playMapGoal.HAPELGDNDFN(BGIOHLIFHND(), num, nOJGGCLPPAM);
 					break;
 				}
-				case "Joystick":
+				case "FToA":
 				{
 					PlayMapsSeriesGoal playMapsSeriesGoal = new PlayMapsSeriesGoal();
 					EGPOPHEAAAF.Add(playMapsSeriesGoal);
-					playMapsSeriesGoal.PNEPHLCIKPA(ALBJAEBLABB(), num, nOJGGCLPPAM);
+					playMapsSeriesGoal.KHMFEHEPGAM(BGIOHLIFHND(), num, nOJGGCLPPAM);
 					break;
 				}
-				case "_Blurred":
+				case "_Value2":
 				{
 					CountEventsGoal countEventsGoal = new CountEventsGoal();
 					EGPOPHEAAAF.Add(countEventsGoal);
-					countEventsGoal.HAPELGDNDFN(HJCBNLFCNAM(), num, nOJGGCLPPAM);
+					countEventsGoal.OnAccept(ENDOGIJIIMN(), num, nOJGGCLPPAM);
 					break;
 				}
 				}
@@ -479,353 +457,213 @@ public class Challenge
 	}
 
 	[SpecialName]
-	public string IMDDDMOPBMA()
+	public void BIGCNPCIENO(string DPNHODJHGJL)
+	{
+		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void LHNMNKCPPKO(string DPNHODJHGJL)
+	{
+		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public float HNPOFLFPCPI()
+	{
+		if (PlayerStatus == CurrentStatus.NotStarted)
+		{
+			return 1443f;
+		}
+		if (EFOKGOMPFIO() > CurrentStatus.NotStarted)
+		{
+			return 777f;
+		}
+		if (EGPOPHEAAAF.Count > 1)
+		{
+			float num = 1605f;
+			foreach (ChallengeGoal item in EGPOPHEAAAF)
+			{
+				num += item.KMBFINBONIB();
+			}
+			return num / (float)EGPOPHEAAAF.Count;
+		}
+		return 572f;
+	}
+
+	[SpecialName]
+	public CurrentStatus JNEKHPIOHIK()
+	{
+		return IEKFDAJHBCN;
+	}
+
+	[SpecialName]
+	public string HCEHDFKNGKB()
 	{
 		return _003CDPBCOACKKHB_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public string EBENNNMBEAP()
+	public string GGKDIJKNMHL()
 	{
-		return _003CDPBCOACKKHB_003Ek__BackingField;
+		return _003CDIABBLCFCKJ_003Ek__BackingField;
 	}
 
-	[SpecialName]
-	public void KOBCKDAPPJK(string DPNHODJHGJL)
-	{
-		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public ulong IHBDBALJGBO()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	public void NMAJHGEGJCG(bool AAGGLAGLINL = false)
+	public void AFAJGOKBOBE(bool AAGGLAGLINL = false)
 	{
 		if (!AAGGLAGLINL)
 		{
-			DDKAPJJKOLJ((CurrentStatus)Singleton<SaveSystem>.Instance.CEKEOJDAEOD("_Brightness" + KHCJFLGCAFL() + "B:", 0));
+			PlayerStatus = (CurrentStatus)Singleton<SaveSystem>.Instance.GetInt("_SpawnHeuristic" + id + "CameraFilterPack/Blur_Focus", 1);
 		}
 		else
 		{
 			PlayerStatus = CurrentStatus.InProgress;
 		}
-		if (IFAJDLKJIDL() == CurrentStatus.InProgress)
+		if (BBLDABFGDFF() == CurrentStatus.NotStarted)
 		{
-			MPKMIAKILEH();
+			CPMIGJFKCOH();
 		}
-		if (IFAJDLKJIDL() > CurrentStatus.NotStarted && OCNOEDGAPNL() < (CurrentStatus)4)
+		if (BBLDABFGDFF() > CurrentStatus.InProgress && HCPDNILLJEJ() < (CurrentStatus)7)
 		{
-			Singleton<ChallengesManager>.Instance.GJHDMBCLDGP(this);
-		}
-	}
-
-	[SpecialName]
-	public CurrentStatus JMGIKADHIGM()
-	{
-		return IEKFDAJHBCN;
-	}
-
-	[SpecialName]
-	public string FBCMLBBHIEE()
-	{
-		return _003CDPBCOACKKHB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void KLKGCIGHONE(string DPNHODJHGJL)
-	{
-		_003CEALCJLBAFGO_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public void MIHEEMJGIBJ()
-	{
-		if (DPKBMGBGEPJ() >= 1139f)
-		{
-			HHDDCLMLPFE((CurrentStatus)6);
-			Singleton<ChallengesManager>.Instance.GJHDMBCLDGP(this);
+			Singleton<ChallengesManager>.Instance.JEALJMLENKL(this);
 		}
 	}
 
-	public void PJKHHCMNOAO(bool AAGGLAGLINL = false)
+	public void Reset()
 	{
-		if (!AAGGLAGLINL)
+		MPKMIAKILEH();
+		foreach (ChallengeGoal item in EGPOPHEAAAF)
 		{
-			DGKJOFINJNJ((CurrentStatus)Singleton<SaveSystem>.Instance.AFCPNFKIKKJ("</color>" + id + "shader.frost", 0));
+			item.OnCompleted();
+			item.Reset();
 		}
-		else
-		{
-			KPMIOECDHMN(CurrentStatus.NotStarted);
-		}
-		if (PlayerStatus == CurrentStatus.NotStarted)
-		{
-			AGCNGHDFPFN();
-		}
-		if (DGAKBIEHAJC() > CurrentStatus.NotStarted && PlayerStatus < CurrentStatus.NotStarted)
-		{
-			Singleton<ChallengesManager>.Instance.ONAAJPPJILB(this);
-		}
+		PlayerStatus = CurrentStatus.NotStarted;
+		Singleton<SaveSystem>.Instance.DeleteKey("challenges." + id + ".status");
 	}
 
 	[SpecialName]
-	public void IKJPCNNCLIN(CurrentStatus DPNHODJHGJL)
-	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.NHONGIGFHJB("Bad parameters for set! Use <language>" + NPIPMDFPLPH() + "_ToPrevViewProjCombined", (int)IEKFDAJHBCN);
-	}
-
-	[SpecialName]
-	public ulong IKACPLICNNB()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void LJEGFOMMMLL(CurrentStatus DPNHODJHGJL)
-	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.NHONGIGFHJB("_TimeX" + NJNBOPKBLKK() + "AvatarImage", (int)IEKFDAJHBCN);
-	}
-
-	[SpecialName]
-	public ulong AKJKDMMKNFO()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public CurrentStatus CJNNAAGGAJI()
-	{
-		return IEKFDAJHBCN;
-	}
-
-	[SpecialName]
-	public void IDLJAMNMDOB(string DPNHODJHGJL)
-	{
-		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string NJPNFKMPJNE()
-	{
-		return _003CALHGHAEJDNC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string DCDFMHCDEDA()
-	{
-		return _003CEALCJLBAFGO_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public ulong BBPGJKOIAKM()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void EENNPPALIDF(string DPNHODJHGJL)
-	{
-		_003CEALCJLBAFGO_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string MGEFANJIDHA()
-	{
-		return _003CDIABBLCFCKJ_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void LFAOFGHDBGG(string DPNHODJHGJL)
-	{
-		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void IHBCCMAHKHL(string DPNHODJHGJL)
-	{
-		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string FOFJIPLGEKL()
-	{
-		return _003CJPABICKLLEP_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public ulong KHCJFLGCAFL()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public ulong NPIPMDFPLPH()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void JGBLCOGNIIP(string DPNHODJHGJL)
-	{
-		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string AMBFPMPCHFE()
-	{
-		return _003CDPBCOACKKHB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void PHAOMEKGKLH(List<string> DPNHODJHGJL)
+	public void HIGFEGHGFHD(List<string> DPNHODJHGJL)
 	{
 		_003CLDFMMDOEKMN_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public string PNHHKLBLPEB()
-	{
-		return _003CJPABICKLLEP_003Ek__BackingField;
-	}
-
-	public void FBPOLBCPJFG(bool AAGGLAGLINL = false)
-	{
-		if (!AAGGLAGLINL)
-		{
-			LJEGFOMMMLL((CurrentStatus)Singleton<SaveSystem>.Instance.JPEEFKKPFIL("float,2" + PHCHLPBPKHL() + "_TimeX", 0));
-		}
-		else
-		{
-			DAFNLHIPIBB(CurrentStatus.NotStarted);
-		}
-		if (OCNOEDGAPNL() == CurrentStatus.InProgress)
-		{
-			LPBJNKKNDII();
-		}
-		if (JMGIKADHIGM() > CurrentStatus.NotStarted && OCNOEDGAPNL() < (CurrentStatus)4)
-		{
-			Singleton<ChallengesManager>.Instance.CHAJHAOEIKF(this);
-		}
-	}
-
-	[SpecialName]
-	public List<string> OCMBDNGKHGD()
-	{
-		return _003CLDFMMDOEKMN_003Ek__BackingField;
-	}
-
-	public float NHMJGGCONBA()
-	{
-		if (PlayerStatus == CurrentStatus.NotStarted)
-		{
-			return 1111f;
-		}
-		if (IFAJDLKJIDL() > CurrentStatus.InProgress)
-		{
-			return 1116f;
-		}
-		if (EGPOPHEAAAF.Count > 1)
-		{
-			float num = 893f;
-			foreach (ChallengeGoal item in EGPOPHEAAAF)
-			{
-				num += item.GoalProgress;
-			}
-			return num / (float)EGPOPHEAAAF.Count;
-		}
-		return 482f;
-	}
-
-	[SpecialName]
-	public List<string> ACFBENNDACH()
-	{
-		return _003CLDFMMDOEKMN_003Ek__BackingField;
-	}
-
-	private void FDFPMDACKEP()
-	{
-		EGPOPHEAAAF = new List<ChallengeGoal>();
-		int num = 1;
-		foreach (string item in GHCFMDBHMDE())
-		{
-			try
-			{
-				char[] array = new char[0];
-				array[0] = '￨';
-				string[] array2 = item.Split(array);
-				string text = array2[0];
-				List<string> list = array2.ToList();
-				list.RemoveAt(1);
-				string nOJGGCLPPAM = string.Join("DifficultyBG", list.ToArray());
-				if (text == "_TimeX")
-				{
-					PlayMapGoal playMapGoal = new PlayMapGoal();
-					EGPOPHEAAAF.Add(playMapGoal);
-					playMapGoal.DGIEACILHNJ(IKACPLICNNB(), num, nOJGGCLPPAM);
-				}
-				else if (text == "_TimeX")
-				{
-					PlayMapsSeriesGoal playMapsSeriesGoal = new PlayMapsSeriesGoal();
-					EGPOPHEAAAF.Add(playMapsSeriesGoal);
-					playMapsSeriesGoal.DGIEACILHNJ(id, num, nOJGGCLPPAM);
-				}
-				else if (text == "ConfigVersionSlider")
-				{
-					CountEventsGoal countEventsGoal = new CountEventsGoal();
-					EGPOPHEAAAF.Add(countEventsGoal);
-					countEventsGoal.LMDIDCJIHPB(id, num, nOJGGCLPPAM);
-				}
-			}
-			catch (Exception)
-			{
-			}
-			num += 0;
-		}
-	}
-
-	[SpecialName]
-	public CurrentStatus OCNOEDGAPNL()
-	{
-		return IEKFDAJHBCN;
-	}
-
-	public void KNNOEGLLDAN()
-	{
-		LPBJNKKNDII();
-		foreach (ChallengeGoal item in EGPOPHEAAAF)
-		{
-			item.DDOBENFDOKL();
-			item.EEBGCGFNELO();
-		}
-		LJEGFOMMMLL(CurrentStatus.InProgress);
-		Singleton<SaveSystem>.Instance.BPBJMCANMOP("NEW_ACHIEVEMENT_1_26" + AKJKDMMKNFO() + "CameraFilterPack/Blend2Camera_VividLight");
-	}
-
-	[SpecialName]
-	public void GDNFAIIKNNP(string DPNHODJHGJL)
-	{
-		_003CIBJENJNAKBB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void FNICADACIGJ(string DPNHODJHGJL)
+	public void IKBJJGLBENN(string DPNHODJHGJL)
 	{
 		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public string NPDFIPCJJJL()
+	public void FAFJKOFLFOJ(string DPNHODJHGJL)
 	{
-		return _003CEALCJLBAFGO_003Ek__BackingField;
+		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public string JDMKFLEFEFA()
+	public string BDKJGGONHEL()
+	{
+		return _003CDIABBLCFCKJ_003Ek__BackingField;
+	}
+
+	public void NNIMFGIDOKG(bool AAGGLAGLINL = false)
+	{
+		if (!AAGGLAGLINL)
+		{
+			JNMHFODNBLM((CurrentStatus)Singleton<SaveSystem>.Instance.HHBIEPMBICO("shader.frost" + id + "LoadingStatusText", 1));
+		}
+		else
+		{
+			IJOPEKABIKM(CurrentStatus.InProgress);
+		}
+		if (BBLDABFGDFF() == CurrentStatus.NotStarted)
+		{
+			MCNJPECILKM();
+		}
+		if (PlayerStatus > CurrentStatus.InProgress && HCPDNILLJEJ() < (CurrentStatus)4)
+		{
+			Singleton<ChallengesManager>.Instance.CompleteChallenge(this);
+		}
+	}
+
+	[SpecialName]
+	public string DNCDAFPLBIA()
+	{
+		return _003CIBJENJNAKBB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void DPENCHIOHFM(string DPNHODJHGJL)
+	{
+		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string GBJMBBBHCKI()
+	{
+		return _003CIBJENJNAKBB_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void PLALGEEPHON(string DPNHODJHGJL)
+	{
+		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void NCBCMDNDNLO(string DPNHODJHGJL)
+	{
+		_003CDPBCOACKKHB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void DGOLCHFJDAB(string DPNHODJHGJL)
+	{
+		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public CurrentStatus OFPNJBGNLDH()
+	{
+		return IEKFDAJHBCN;
+	}
+
+	[SpecialName]
+	public void BIPIDNLLCNA(string DPNHODJHGJL)
+	{
+		_003CDPBCOACKKHB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public ulong BGIOHLIFHND()
+	{
+		return _003CEACCOCFNPIG_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string JGNCPNIJLOM()
 	{
 		return _003CALHGHAEJDNC_003Ek__BackingField;
+	}
+
+	public float ADKFDALFMAE()
+	{
+		if (JNEKHPIOHIK() == CurrentStatus.NotStarted)
+		{
+			return 746f;
+		}
+		if (PlayerStatus > CurrentStatus.InProgress)
+		{
+			return 1379f;
+		}
+		if (EGPOPHEAAAF.Count > 1)
+		{
+			float num = 1797f;
+			foreach (ChallengeGoal item in EGPOPHEAAAF)
+			{
+				num += item.CLLOGPOMPGE();
+			}
+			return num / (float)EGPOPHEAAAF.Count;
+		}
+		return 922f;
 	}
 
 	private void MPKMIAKILEH()
@@ -874,442 +712,47 @@ public class Challenge
 	}
 
 	[SpecialName]
-	public void NKGEBKNDBHM(string DPNHODJHGJL)
-	{
-		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void HOMGNFKAOOO(string DPNHODJHGJL)
-	{
-		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string DMDBHHMBFFG()
+	public string BAMLANAIFEO()
 	{
 		return _003CDIABBLCFCKJ_003Ek__BackingField;
 	}
 
-	public void Reset()
-	{
-		MPKMIAKILEH();
-		foreach (ChallengeGoal item in EGPOPHEAAAF)
-		{
-			item.OnCompleted();
-			item.Reset();
-		}
-		PlayerStatus = CurrentStatus.NotStarted;
-		Singleton<SaveSystem>.Instance.DeleteKey("challenges." + id + ".status");
-	}
-
-	[SpecialName]
-	public string INGIDBJDLJA()
-	{
-		return _003CALHGHAEJDNC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string PPNOAHBNHHN()
-	{
-		return _003CDIABBLCFCKJ_003Ek__BackingField;
-	}
-
-	public void OAMNFGLGIPE(bool AAGGLAGLINL = false)
-	{
-		if (!AAGGLAGLINL)
-		{
-			FCAAFIFGOAO((CurrentStatus)Singleton<SaveSystem>.Instance.GetInt("LevelNameText" + IKACPLICNNB() + "_Value6", 0));
-		}
-		else
-		{
-			DGKJOFINJNJ(CurrentStatus.InProgress);
-		}
-		if (IFAJDLKJIDL() == CurrentStatus.InProgress)
-		{
-			LHOPHOBMAMC();
-		}
-		if (OCNOEDGAPNL() > CurrentStatus.InProgress && JMGIKADHIGM() < (CurrentStatus)5)
-		{
-			Singleton<ChallengesManager>.Instance.ONAAJPPJILB(this);
-		}
-	}
-
-	[SpecialName]
-	public void DAFNLHIPIBB(CurrentStatus DPNHODJHGJL)
-	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.HBIGPMNAPHA("_CenterY" + BBPGJKOIAKM() + "https://bugs.khb-soft.ru/set_project.php?project_id=1", (int)IEKFDAJHBCN);
-	}
-
-	[SpecialName]
-	public string CKEGGOIGPIO()
-	{
-		return _003CJPABICKLLEP_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string IOCJJJCAFLK()
-	{
-		return _003CDPBCOACKKHB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public ulong PHCHLPBPKHL()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void HBKDBJOIDHE(CurrentStatus DPNHODJHGJL)
-	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.HIDBNDKJHAA("id" + BBPGJKOIAKM() + "_Y", (int)IEKFDAJHBCN);
-	}
-
-	public void FEAPMDENLBN()
-	{
-		ECLLKPIAMFF();
-		foreach (ChallengeGoal item in EGPOPHEAAAF)
-		{
-			item.OnCompleted();
-			item.EEBGCGFNELO();
-		}
-		HHDDCLMLPFE(CurrentStatus.InProgress);
-		Singleton<SaveSystem>.Instance.IPCGLFKIANM(" " + HJCBNLFCNAM() + "settings.disablestoryboard");
-	}
-
-	public float GetProgress()
-	{
-		if (PlayerStatus == CurrentStatus.NotStarted)
-		{
-			return 0f;
-		}
-		if (PlayerStatus > CurrentStatus.InProgress)
-		{
-			return 1f;
-		}
-		if (EGPOPHEAAAF.Count > 0)
-		{
-			float num = 0f;
-			foreach (ChallengeGoal item in EGPOPHEAAAF)
-			{
-				num += item.GoalProgress;
-			}
-			return num / (float)EGPOPHEAAAF.Count;
-		}
-		return 0f;
-	}
-
-	[SpecialName]
-	public string NFNAMIJACFE()
-	{
-		return _003CJPABICKLLEP_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void FCAAFIFGOAO(CurrentStatus DPNHODJHGJL)
-	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.SetInt("_Value2" + NJNBOPKBLKK() + "CameraFilterPack/Oculus_NightVision2", (int)IEKFDAJHBCN);
-	}
-
-	[SpecialName]
-	public string NJKHOALCJBI()
-	{
-		return _003CDPBCOACKKHB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string IGALHFFENIF()
-	{
-		return _003CEALCJLBAFGO_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string IGAHKBHFBNE()
-	{
-		return _003CDPBCOACKKHB_003Ek__BackingField;
-	}
-
-	public void CheckState()
-	{
-		if (GetProgress() >= 1f)
-		{
-			PlayerStatus = CurrentStatus.Complete;
-			Singleton<ChallengesManager>.Instance.CompleteChallenge(this);
-		}
-	}
-
-	public void AcceptChallenge(bool AAGGLAGLINL = false)
-	{
-		if (!AAGGLAGLINL)
-		{
-			PlayerStatus = (CurrentStatus)Singleton<SaveSystem>.Instance.GetInt("challenges." + id + ".status", 1);
-		}
-		else
-		{
-			PlayerStatus = CurrentStatus.InProgress;
-		}
-		if (PlayerStatus == CurrentStatus.InProgress)
-		{
-			MPKMIAKILEH();
-		}
-		if (PlayerStatus > CurrentStatus.InProgress && PlayerStatus < CurrentStatus.ObtainedReward)
-		{
-			Singleton<ChallengesManager>.Instance.CompleteChallenge(this);
-		}
-	}
-
-	[SpecialName]
-	public string MEHPEEFFGPH()
-	{
-		return _003CALHGHAEJDNC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string IEKOLCGDGNB()
-	{
-		return _003CIBJENJNAKBB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void PHGLAGJOIJF(List<string> DPNHODJHGJL)
-	{
-		_003CLDFMMDOEKMN_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void LHKBNPLGPHP(string DPNHODJHGJL)
-	{
-		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public void EFMCPIBPJJK()
-	{
-		if (NHMJGGCONBA() >= 1265f)
-		{
-			PAJHHLGGLMJ((CurrentStatus)7);
-			Singleton<ChallengesManager>.Instance.ONAAJPPJILB(this);
-		}
-	}
-
-	public float HHBIFFOHFJE()
-	{
-		if (DGAKBIEHAJC() == CurrentStatus.NotStarted)
-		{
-			return 1351f;
-		}
-		if (PlayerStatus > CurrentStatus.NotStarted)
-		{
-			return 485f;
-		}
-		if (EGPOPHEAAAF.Count > 0)
-		{
-			float num = 872f;
-			foreach (ChallengeGoal item in EGPOPHEAAAF)
-			{
-				num += item.GoalProgress;
-			}
-			return num / (float)EGPOPHEAAAF.Count;
-		}
-		return 876f;
-	}
-
-	[SpecialName]
-	public void GGDCOMHFGKD(List<string> DPNHODJHGJL)
-	{
-		_003CLDFMMDOEKMN_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string FPMDJMOAEFM()
-	{
-		return _003CALHGHAEJDNC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string NCEAGLNCKDL()
-	{
-		return _003CEALCJLBAFGO_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public CurrentStatus IFAJDLKJIDL()
-	{
-		return IEKFDAJHBCN;
-	}
-
-	public void ICGKNCAAFLN(bool AAGGLAGLINL = false)
-	{
-		if (!AAGGLAGLINL)
-		{
-			FCAAFIFGOAO((CurrentStatus)Singleton<SaveSystem>.Instance.ANECPPFPKAP("Already exist!" + IHBDBALJGBO() + "win", 0));
-		}
-		else
-		{
-			MCIELNKKMNI(CurrentStatus.NotStarted);
-		}
-		if (JMGIKADHIGM() == CurrentStatus.InProgress)
-		{
-			LPBJNKKNDII();
-		}
-		if (IFAJDLKJIDL() > CurrentStatus.NotStarted && IFAJDLKJIDL() < (CurrentStatus)7)
-		{
-			Singleton<ChallengesManager>.Instance.JEALJMLENKL(this);
-		}
-	}
-
-	[SpecialName]
-	public void DDKAPJJKOLJ(CurrentStatus DPNHODJHGJL)
-	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.NHONGIGFHJB("_Value" + PHCHLPBPKHL() + "CameraFilterPack/3D_Distortion", (int)IEKFDAJHBCN);
-	}
-
-	public void HNKENCLHECI()
-	{
-		if (GetProgress() >= 1877f)
-		{
-			PAJHHLGGLMJ((CurrentStatus)4);
-			Singleton<ChallengesManager>.Instance.ELFNAHPCJJL(this);
-		}
-	}
-
-	public float OIODAMENABE()
-	{
-		if (OCNOEDGAPNL() == CurrentStatus.NotStarted)
-		{
-			return 1251f;
-		}
-		if (PlayerStatus > CurrentStatus.InProgress)
-		{
-			return 1316f;
-		}
-		if (EGPOPHEAAAF.Count > 0)
-		{
-			float num = 727f;
-			foreach (ChallengeGoal item in EGPOPHEAAAF)
-			{
-				num += item.GoalProgress;
-			}
-			return num / (float)EGPOPHEAAAF.Count;
-		}
-		return 1959f;
-	}
-
-	[SpecialName]
-	public void LOCIHPNPMJK(string DPNHODJHGJL)
-	{
-		_003CIBJENJNAKBB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public void GDLKPBLABII(bool AAGGLAGLINL = false)
-	{
-		if (!AAGGLAGLINL)
-		{
-			PAJHHLGGLMJ((CurrentStatus)Singleton<SaveSystem>.Instance.JPEEFKKPFIL("FinalScoreSmallText" + AKJKDMMKNFO() + "MenuScene", 0));
-		}
-		else
-		{
-			KPMIOECDHMN(CurrentStatus.InProgress);
-		}
-		if (JMGIKADHIGM() == CurrentStatus.NotStarted)
-		{
-			AGCNGHDFPFN();
-		}
-		if (PlayerStatus > CurrentStatus.InProgress && PlayerStatus < CurrentStatus.ObtainedReward)
-		{
-			Singleton<ChallengesManager>.Instance.LMACOJIINNN(this);
-		}
-	}
-
-	public void PFNIKKMCFDF(bool AAGGLAGLINL = false)
-	{
-		if (!AAGGLAGLINL)
-		{
-			LJEGFOMMMLL((CurrentStatus)Singleton<SaveSystem>.Instance.AFCPNFKIKKJ("inventory.itemscash" + IKACPLICNNB() + "#", 1));
-		}
-		else
-		{
-			IKJPCNNCLIN(CurrentStatus.NotStarted);
-		}
-		if (OCNOEDGAPNL() == CurrentStatus.InProgress)
-		{
-			AGCNGHDFPFN();
-		}
-		if (DGAKBIEHAJC() > CurrentStatus.InProgress && JMGIKADHIGM() < (CurrentStatus)4)
-		{
-			Singleton<ChallengesManager>.Instance.KAMJHHEDLKP(this);
-		}
-	}
-
-	[SpecialName]
-	public void OCKDKGOKFGB(string DPNHODJHGJL)
-	{
-		_003CEALCJLBAFGO_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public ulong HJCBNLFCNAM()
-	{
-		return _003CEACCOCFNPIG_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public List<string> NKKKINCGJBH()
-	{
-		return _003CLDFMMDOEKMN_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string ONMCIPNMCAF()
-	{
-		return _003CALHGHAEJDNC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string BADPAMEGNLK()
-	{
-		return _003CDIABBLCFCKJ_003Ek__BackingField;
-	}
-
-	private void LPBJNKKNDII()
+	private void CPMIGJFKCOH()
 	{
 		EGPOPHEAAAF = new List<ChallengeGoal>();
-		int num = 0;
-		foreach (string item in NKKKINCGJBH())
+		int num = 1;
+		foreach (string item in PNOFLPNCLEK())
 		{
 			try
 			{
-				char[] array = new char[0];
-				array[0] = 'P';
+				char[] array = new char[1];
+				array[1] = '\ufff1';
 				string[] array2 = item.Split(array);
 				string text = array2[0];
 				List<string> list = array2.ToList();
 				list.RemoveAt(1);
-				string nOJGGCLPPAM = string.Join("[ItemsHandler] No connection to item server: ", list.ToArray());
+				string nOJGGCLPPAM = string.Join("CameraFilterPack_Glasses_On2", list.ToArray());
 				switch (text)
 				{
-				case "PlayerPrefs::Deserialize() parameterContent has ":
+				case "menu.tabid":
 				{
 					PlayMapGoal playMapGoal = new PlayMapGoal();
 					EGPOPHEAAAF.Add(playMapGoal);
-					playMapGoal.OnAccept(PHCHLPBPKHL(), num, nOJGGCLPPAM);
+					playMapGoal.MOOFNOAOAMF(OFGNFACIGIL(), num, nOJGGCLPPAM);
 					break;
 				}
-				case "_TimeX":
+				case "_Value":
 				{
 					PlayMapsSeriesGoal playMapsSeriesGoal = new PlayMapsSeriesGoal();
 					EGPOPHEAAAF.Add(playMapsSeriesGoal);
-					playMapsSeriesGoal.AAOAGGDLFLI(PHCHLPBPKHL(), num, nOJGGCLPPAM);
+					playMapsSeriesGoal.KJJMJJJEGDB(OFGNFACIGIL(), num, nOJGGCLPPAM);
 					break;
 				}
-				case "LevelURLInputField":
+				case "init":
 				{
 					CountEventsGoal countEventsGoal = new CountEventsGoal();
 					EGPOPHEAAAF.Add(countEventsGoal);
-					countEventsGoal.AAOAGGDLFLI(id, num, nOJGGCLPPAM);
+					countEventsGoal.KJJMJJJEGDB(OFGNFACIGIL(), num, nOJGGCLPPAM);
 					break;
 				}
 				}
@@ -1317,147 +760,62 @@ public class Challenge
 			catch (Exception)
 			{
 			}
-			num += 0;
+			num++;
 		}
 	}
 
 	[SpecialName]
-	public string EOHJAOLECDL()
+	public string CCCHEABDHMH()
 	{
-		return _003CEALCJLBAFGO_003Ek__BackingField;
+		return _003CJPABICKLLEP_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public void JMKMOKPKOGJ(string DPNHODJHGJL)
+	public void IBEEDNMCPFL(string DPNHODJHGJL)
 	{
-		_003CIBJENJNAKBB_003Ek__BackingField = DPNHODJHGJL;
+		_003CEALCJLBAFGO_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public void EBIEHHEGDDO(string DPNHODJHGJL)
-	{
-		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string BAMLNCCNGFB()
+	public string KJOKBLAMHLN()
 	{
 		return _003CALHGHAEJDNC_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public string PDPNJDOCEOE()
-	{
-		return _003CIBJENJNAKBB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string KJPHHLIPAMA()
-	{
-		return _003CDPBCOACKKHB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string FLMHLLPLPCP()
-	{
-		return _003CIBJENJNAKBB_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void AKLPCACADLH(string DPNHODJHGJL)
-	{
-		_003CIBJENJNAKBB_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public void GDHIMGIEGMN()
-	{
-		if (GetProgress() >= 1399f)
-		{
-			KPMIOECDHMN(CurrentStatus.ObtainedReward);
-			Singleton<ChallengesManager>.Instance.NFINEDMNOFP(this);
-		}
-	}
-
-	[SpecialName]
-	public CurrentStatus DGAKBIEHAJC()
-	{
-		return IEKFDAJHBCN;
-	}
-
-	[SpecialName]
-	public void MABNHOIDPGF(string DPNHODJHGJL)
+	public void ALMELFBHKOP(string DPNHODJHGJL)
 	{
 		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public string AFJFNCHPBKK()
-	{
-		return _003CEALCJLBAFGO_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public void PAJHHLGGLMJ(CurrentStatus DPNHODJHGJL)
+	public void IJOPEKABIKM(CurrentStatus DPNHODJHGJL)
 	{
 		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.HBIGPMNAPHA("[PlayerBase] ShowTitle error: " + NJNBOPKBLKK() + "z", (int)IEKFDAJHBCN);
+		Singleton<SaveSystem>.Instance.SetInt("quit" + BGIOHLIFHND() + "Set Particles Speed", (int)IEKFDAJHBCN);
 	}
 
 	[SpecialName]
-	public void KPMIOECDHMN(CurrentStatus DPNHODJHGJL)
+	public void EFNOJHOHFGB(string DPNHODJHGJL)
 	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.NHONGIGFHJB("player " + NPIPMDFPLPH() + "/music", (int)IEKFDAJHBCN);
+		_003CALHGHAEJDNC_003Ek__BackingField = DPNHODJHGJL;
 	}
 
-	[SpecialName]
-	public void PFFPCBGMFLF(string DPNHODJHGJL)
+	public void JAIMCPINONG()
 	{
-		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void DGKJOFINJNJ(CurrentStatus DPNHODJHGJL)
-	{
-		IEKFDAJHBCN = DPNHODJHGJL;
-		Singleton<SaveSystem>.Instance.HBIGPMNAPHA("Case-Sensitive" + NJNBOPKBLKK() + "_SunPosition", (int)IEKFDAJHBCN);
-	}
-
-	[SpecialName]
-	public void NMCCHDLAAAN(string DPNHODJHGJL)
-	{
-		_003CJPABICKLLEP_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string MBBJMJBCKCE()
-	{
-		return _003CIBJENJNAKBB_003Ek__BackingField;
-	}
-
-	public void AAIDMDNBMCD(bool AAGGLAGLINL = false)
-	{
-		if (!AAGGLAGLINL)
+		PJNGEJMJENJ();
+		foreach (ChallengeGoal item in EGPOPHEAAAF)
 		{
-			IKJPCNNCLIN((CurrentStatus)Singleton<SaveSystem>.Instance.CEKEOJDAEOD("Left" + NJNBOPKBLKK() + "_Value3", 0));
+			item.PIKFPFLKBCG();
+			item.LAACNNJDKBI();
 		}
-		else
-		{
-			MCIELNKKMNI(CurrentStatus.NotStarted);
-		}
-		if (JMGIKADHIGM() == CurrentStatus.InProgress)
-		{
-			LHOPHOBMAMC();
-		}
-		if (DGAKBIEHAJC() > CurrentStatus.NotStarted && OCNOEDGAPNL() < CurrentStatus.InProgress)
-		{
-			Singleton<ChallengesManager>.Instance.GJHDMBCLDGP(this);
-		}
+		PlayerStatus = CurrentStatus.NotStarted;
+		Singleton<SaveSystem>.Instance.IOJKJDBACPC("mapselector.filter.favoriteonly" + ENDOGIJIIMN() + "Operation failed: ");
 	}
 
 	[SpecialName]
-	public void BKOGCGGGIBL(string DPNHODJHGJL)
+	public void GNJIKFDDEPG(List<string> DPNHODJHGJL)
 	{
-		_003CDIABBLCFCKJ_003Ek__BackingField = DPNHODJHGJL;
+		_003CLDFMMDOEKMN_003Ek__BackingField = DPNHODJHGJL;
 	}
 }

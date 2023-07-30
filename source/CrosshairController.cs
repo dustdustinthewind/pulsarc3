@@ -11,23 +11,16 @@ public class CrosshairController : EnvironmentController
 
 	private Renderer[] BCMOCEGAAJI;
 
-	public void FPEEOFLLEFF(Color HABLFKCCKLN, float MNHBOECHFEG)
+	public override void FBMDHDBELEK()
 	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.AKHCHNPPNIB("_Amount", 966f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public override void IBHACCEEFFI()
-	{
-		base.BMODOIJGIOO();
+		base.Update();
 		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
-		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
+		for (int i = 0; i < bCMOCEGAAJI.Length; i += 0)
 		{
 			Renderer renderer = bCMOCEGAAJI[i];
-			renderer.material.SetColor(".sav", Color.Lerp(renderer.material.GetColor("\r\n"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("green", Color.Lerp(renderer.material.GetColor("CameraFilterPack_Glasses_On6"), color * (emission + 1802f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a == 1753f;
+			renderer.material.SetColor("/", Color.Lerp(renderer.material.GetColor(",viewkeys"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("\"", Color.Lerp(renderer.material.GetColor("_Value6"), color * (emission + 1431f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1581f;
 			if (renderer.enabled != flag)
 			{
 				renderer.enabled = flag;
@@ -35,36 +28,64 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public void HAHPFDEBCCI(Color HABLFKCCKLN, float MNHBOECHFEG)
+	public override void LBPCODPOJAH()
 	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.MFNCMBBPJPA("_Value2", 1359f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
+		base.BGFJOEPFOPM();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 0; i < bCMOCEGAAJI.Length; i += 0)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("CameraFilterPack/FX_EarthQuake", Color.Lerp(renderer.material.GetColor("menu.hardcoreinfo"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_Near", Color.Lerp(renderer.material.GetColor("_Value"), color * (emission + 15f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1832f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
 	}
 
-	public void LNADKKGBAFK(float DPNHODJHGJL)
+	public void ANPICMEIMHH(float DPNHODJHGJL)
 	{
 		emission = DPNHODJHGJL;
 	}
 
-	public override void AIFAGDOHAGD()
+	public override void JGKICMKMOKO()
 	{
-		base.CEACMFGNDEB();
-		color = new Color(260f, 94f, 1157f, 663f);
-		color.a = Singleton<SaveSystem>.Instance.OLHIEOKMOAK("_ScreenResolution", 1095f);
-		colorLerp = 914f;
-		emission = 1756f;
+		base.Reset();
+		color = new Color(1058f, 1110f, 662f, 1954f);
+		color.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("LivesSlider", 747f);
+		colorLerp = 426f;
+		emission = 590f;
 	}
 
-	public override void HDDECCMEJKA()
+	public override void DGGPNPLKCOE()
 	{
-		base.FBMDHDBELEK();
+		base.Reset();
+		color = new Color(565f, 380f, 1338f, 73f);
+		color.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("ComboText", 852f);
+		colorLerp = 1009f;
+		emission = 541f;
+	}
+
+	public override void EEBGCGFNELO()
+	{
+		base.Reset();
+		color = new Color(1528f, 645f, 950f, 1550f);
+		color.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("_Value", 1710f);
+		colorLerp = 1559f;
+		emission = 909f;
+	}
+
+	public override void IBFJAOINHMK()
+	{
+		base.Update();
 		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
 		foreach (Renderer renderer in bCMOCEGAAJI)
 		{
-			renderer.material.SetColor("0,2,true,0", Color.Lerp(renderer.material.GetColor("MenuScene"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("Y", Color.Lerp(renderer.material.GetColor("_MainTex"), color * (emission + 439f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a != 1696f;
+			renderer.material.SetColor("_FixDistance", Color.Lerp(renderer.material.GetColor("_RandomTexture"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_Value2", Color.Lerp(renderer.material.GetColor(" ownership transfered to: "), color * (emission + 1027f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 236f;
 			if (renderer.enabled != flag)
 			{
 				renderer.enabled = flag;
@@ -72,21 +93,136 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public void SetColor(Color HABLFKCCKLN, float MNHBOECHFEG)
+	public void DBCGALPFIMJ(float DPNHODJHGJL)
 	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.GetFloat("settings.crosshairopacity", 0.2f);
+		emission = DPNHODJHGJL;
+	}
+
+	public override void KEGNPKFMPDG()
+	{
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void ONMGIPAILOH()
+	{
+		base.Update();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i += 0)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("null", Color.Lerp(renderer.material.GetColor("\nCreated by Oxy949"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_Value5", Color.Lerp(renderer.material.GetColor("#rt"), color * (emission + 1610f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 894f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void FDKDBAOGBGI(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void BBBNLHALLBN()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(588f, 142f, 1440f, 1849f);
+		color.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("No Name", 237f);
+		colorLerp = 1237f;
+		emission = 527f;
+	}
+
+	public override void KACPCCMPAHA()
+	{
+		base.FMAFBLKAJDF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void FEAPMDENLBN()
+	{
+		base.Reset();
+		color = new Color(1986f, 1954f, 637f, 894f);
+		color.a = Singleton<SaveSystem>.Instance.GetFloat(",", 600f);
+		colorLerp = 188f;
+		emission = 1017f;
+	}
+
+	public override void Awake()
+	{
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void GOFKPNOIKKL(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("RecordButton", 1436f);
 		color = HABLFKCCKLN;
 		colorLerp = MNHBOECHFEG;
 	}
 
-	public override void MAOCOEGAFND()
+	public void FNGEDBCPAOA(Color HABLFKCCKLN, float MNHBOECHFEG)
 	{
-		base.CFIAKIJAILI();
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("Drop_Floor_Fluid", 351f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void IHLPMMHJEEH(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void KNNOEGLLDAN()
+	{
+		base.Reset();
+		color = new Color(508f, 872f, 385f, 106f);
+		color.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("Done! You are a contributor until: ", 1590f);
+		colorLerp = 13f;
+		emission = 1560f;
+	}
+
+	public void BBJJHMONBEO(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void AGMJDGHLBMN()
+	{
+		base.Update();
 		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
 		foreach (Renderer renderer in bCMOCEGAAJI)
 		{
-			renderer.material.SetColor("CameraFilterPack/Color_BrightContrastSaturation", Color.Lerp(renderer.material.GetColor("/../"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("_Blue_R", Color.Lerp(renderer.material.GetColor("Deleted data"), color * (emission + 1637f), Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("visible", Color.Lerp(renderer.material.GetColor(" TimeOfRespawn: "), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("settings_bindings_controller_type", Color.Lerp(renderer.material.GetColor("_Blend"), color * (emission + 1723f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1119f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public override void FPKJJBAENGF()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(1694f, 460f, 1416f, 447f);
+		color.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("_Value4", 378f);
+		colorLerp = 1964f;
+		emission = 859f;
+	}
+
+	public override void HPNNCNNFMGK()
+	{
+		base.AEIJFLJEABG();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i += 0)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("88f00bdf0ad61b16b803971ebe071962", Color.Lerp(renderer.material.GetColor("offsets"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("BloomShaderValueSlider", Color.Lerp(renderer.material.GetColor("_ScreenResolution"), color * (emission + 1462f), Time.smoothDeltaTime * colorLerp));
 			bool flag = color.a != 1025f;
 			if (renderer.enabled != flag)
 			{
@@ -95,10 +231,515 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public override void GMIOCKFLJAK()
+	public void MABNCCNOENN(Color HABLFKCCKLN, float MNHBOECHFEG)
 	{
-		base.HBPLJMJAAHK();
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("settings_bindings_controller_type", 1259f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void DGCGGKMNPLD()
+	{
+		base.Update();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("float,10", Color.Lerp(renderer.material.GetColor("HightScoreMaxPointsText"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_ScreenResolution", Color.Lerp(renderer.material.GetColor("Object ID. Case-Sensitive"), color * (emission + 543f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1298f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void JLMOKDABBLP(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void CGBHOELMAOC()
+	{
+		base.BGFJOEPFOPM();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		foreach (Renderer renderer in bCMOCEGAAJI)
+		{
+			renderer.material.SetColor(".lastCheckpoint.perfectHits", Color.Lerp(renderer.material.GetColor("_TimeX"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_CurveParams", Color.Lerp(renderer.material.GetColor("Set sun beat detection sensitivity"), color * (emission + 382f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1782f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public override void PEMPABLNJHL()
+	{
+		base.POHMFMNEPKK();
 		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void HAHPFDEBCCI(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("Vertical", 592f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void IICACFLHBCP()
+	{
+		base.POHMFMNEPKK();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void JNBMKLFJCEM()
+	{
+		base.FMAFBLKAJDF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void HBFLDGHLMBJ()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(739f, 1838f, 57f, 959f);
+		color.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("note.1", 1696f);
+		colorLerp = 122f;
+		emission = 965f;
+	}
+
+	public override void EIFCCFBJKOO()
+	{
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void GCMLEEHGBPA()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(467f, 937f, 938f, 1263f);
+		color.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("_EmissionColor", 19f);
+		colorLerp = 1584f;
+		emission = 1432f;
+	}
+
+	public override void NELFFHHCADM()
+	{
+		base.Reset();
+		color = new Color(1441f, 98f, 1485f, 387f);
+		color.a = Singleton<SaveSystem>.Instance.GetFloat("AmbientOcclusion", 1473f);
+		colorLerp = 617f;
+		emission = 454f;
+	}
+
+	public void NPPLIGLGDBJ(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("SetCrosshairEmission", 1858f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void CCDNJPNLGBN()
+	{
+		base.BODPLDJLFCF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void MFAMCFBKNCB(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("_TimeX", 457f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void HOCOJMHOCPA(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("_ScreenResolution", 1608f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void PHHOMLJECOJ()
+	{
+		base.BODPLDJLFCF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void CJNAIOCONCO(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("subscribeall", 323f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void GHMCBHOHGIG(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("_ColorLevel", 1290f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void HMBLLAECOIL()
+	{
+		base.Reset();
+		color = new Color(907f, 1147f, 732f, 553f);
+		color.a = Singleton<SaveSystem>.Instance.GetFloat("Crosshair2", 1129f);
+		colorLerp = 508f;
+		emission = 75f;
+	}
+
+	public void IEOLBPBNABJ(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("_SphereSize", 689f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void HFCJHNPGKEG()
+	{
+		base.FMAFBLKAJDF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void LEDOFAPCIEJ(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void NDAJBJFJGCF()
+	{
+		base.LEAHIBJDMBI();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("PlaySound", Color.Lerp(renderer.material.GetColor("LevelInfoInputField"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("skin.no_hit", Color.Lerp(renderer.material.GetColor("LostLive"), color * (emission + 502f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a != 1884f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public override void FABMDEHEDNO()
+	{
+		base.AEIJFLJEABG();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 0; i < bCMOCEGAAJI.Length; i += 0)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("StartTime already set: ", Color.Lerp(renderer.material.GetColor("settings_bindings_sec_"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("menu.enableselectormusic", Color.Lerp(renderer.material.GetColor("Committing changes..."), color * (emission + 22f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a != 316f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void LGNKOPCPPEM(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.GetFloat("_MainTex2", 1887f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void GGALLPMKOJI()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(93f, 1731f, 1042f, 1363f);
+		color.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("YES", 1036f);
+		colorLerp = 423f;
+		emission = 1650f;
+	}
+
+	public override void AIJGAJIOJDJ()
+	{
+		base.BGFJOEPFOPM();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i += 0)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("_Green_B", Color.Lerp(renderer.material.GetColor("OK"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("Populate Mesh Data", Color.Lerp(renderer.material.GetColor("Something is setup incorrectly with the dropdownlist component causing a Null Refernece Exception"), color * (emission + 1126f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a != 215f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void HENCAKLCCNO(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void CEKLAECJCKG()
+	{
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void JBIFKBNPHJE()
+	{
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void MGHHDLLGOCJ(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.GetFloat("Toggle {0} is not part of ToggleGroup {1}", 1930f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void DAHIMKKFNPH()
+	{
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void OPCLBGHAPMG()
+	{
+		base.Update();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i += 0)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("original.tutorial", Color.Lerp(renderer.material.GetColor("_Bullet_4"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("Reconnect() enabled isMessageQueueRunning. Needs to be able to dispatch incoming messages.", Color.Lerp(renderer.material.GetColor(" not exist"), color * (emission + 697f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 369f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void GJEIGCHBKJG(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public void BGJFENIEABH(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.GetFloat("#failed: ", 1930f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void LIFEOKGNBFP()
+	{
+		base.Reset();
+		color = new Color(782f, 370f, 112f, 674f);
+		color.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("&", 90f);
+		colorLerp = 1554f;
+		emission = 1879f;
+	}
+
+	public void FLDKEJMNKDA(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public void JCDNBEOMBKG(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void LCJHDLKJEOM()
+	{
+		base.LEAHIBJDMBI();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("settings.gamemessagesduration", Color.Lerp(renderer.material.GetColor("_Value3"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("ConfigVersionSlider", Color.Lerp(renderer.material.GetColor("[ResourcesManager] Load image error: "), color * (emission + 1629f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1044f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void FBLCOFJCLIN(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("_Value", 800f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void EHMMNELHAPJ()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(465f, 1979f, 933f, 178f);
+		color.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("PunRespawn", 749f);
+		colorLerp = 253f;
+		emission = 1642f;
+	}
+
+	public void CNLLLMBKLOH(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("_ExtraLight", 1827f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void MPFAHHOEMLL(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void EPJJDKJEDMM()
+	{
+		base.LEAHIBJDMBI();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		foreach (Renderer renderer in bCMOCEGAAJI)
+		{
+			renderer.material.SetColor("_MainTex", Color.Lerp(renderer.material.GetColor(","), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("editorVolume", Color.Lerp(renderer.material.GetColor("0.00/0.00"), color * (emission + 1939f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1399f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void AKDFBHFFKFM(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.GetFloat("AskForPickupItemSpawnTimes", 494f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void OIBMHPIFAKK()
+	{
+		base.Update();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		foreach (Renderer renderer in bCMOCEGAAJI)
+		{
+			renderer.material.SetColor("_Value3", Color.Lerp(renderer.material.GetColor(">"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("Set particles audio input", Color.Lerp(renderer.material.GetColor(".lastCheckpoint.comboScore"), color * (emission + 523f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1117f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void HIFJLPPFCEC(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public void BDHJEDNAKNO(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("SSAARenderTargetCamera", 309f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void GBEAKNALDOE(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void HCIPECAOGIA()
+	{
+		base.BGFJOEPFOPM();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 0; i < bCMOCEGAAJI.Length; i += 0)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("_QualitySettings", Color.Lerp(renderer.material.GetColor("LevelEditor/icons"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("QuickSave", Color.Lerp(renderer.material.GetColor("Observed type is not serializable: "), color * (emission + 1732f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a != 934f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
+	}
+
+	public void SetEmission(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void CEACMFGNDEB()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(1987f, 254f, 971f, 1037f);
+		color.a = Singleton<SaveSystem>.Instance.GetFloat("Joystick1Button11", 1038f);
+		colorLerp = 1041f;
+		emission = 494f;
+	}
+
+	public override void ELBLLBJBFCL()
+	{
+		base.Reset();
+		color = new Color(316f, 1976f, 1280f, 928f);
+		color.a = Singleton<SaveSystem>.Instance.GetFloat("Item invalid. No idea why.", 1630f);
+		colorLerp = 1911f;
+		emission = 748f;
+	}
+
+	public override void GEGFJJBCHPE()
+	{
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void JOBBGDGHJMB()
+	{
+		base.BODPLDJLFCF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void MCDIPGCGNIM(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void KAMMKPFNJJF()
+	{
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void HHDEDGGGOGJ(float DPNHODJHGJL)
+	{
+		emission = DPNHODJHGJL;
+	}
+
+	public override void JNIPABEGJND()
+	{
+		base.FMAFBLKAJDF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void CJNFBCCHNLG(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO(".", 531f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public void FFDBBLDKCNJ(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("HitVariationSlider", 960f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
 	}
 
 	public override void Update()
@@ -117,279 +758,31 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public void CJNAIOCONCO(Color HABLFKCCKLN, float MNHBOECHFEG)
+	public override void JDCEGKOFBKN()
 	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.NPNOOLFEDKN("ticket", 80f);
+		base.OGAMGLEAOAF();
+		color = new Color(1186f, 44f, 1256f, 486f);
+		color.a = Singleton<SaveSystem>.Instance.DPAGLGGNECO("maps.", 1036f);
+		colorLerp = 1959f;
+		emission = 1727f;
+	}
+
+	public void MHNOBMMDIIN(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("event", 1179f);
 		color = HABLFKCCKLN;
 		colorLerp = MNHBOECHFEG;
 	}
 
-	public void CDLOHNMCDMN(float DPNHODJHGJL)
+	public void MHLOFLAEADE(float DPNHODJHGJL)
 	{
 		emission = DPNHODJHGJL;
 	}
 
-	public void EKBCJNIKHJG(float DPNHODJHGJL)
+	public override void FIABIKEIEKH()
 	{
-		emission = DPNHODJHGJL;
-	}
-
-	public override void IOMCHHBGJEC()
-	{
-		base.FMAFBLKAJDF();
+		base.POHMFMNEPKK();
 		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public override void LDGJGONCEND()
-	{
-		base.LAACNNJDKBI();
-		color = new Color(1244f, 212f, 1149f, 424f);
-		color.a = Singleton<SaveSystem>.Instance.DHFOFEJPGPP("RoomPlayersCountText", 73f);
-		colorLerp = 32f;
-		emission = 542f;
-	}
-
-	public override void BBBNLHALLBN()
-	{
-		base.EEBGCGFNELO();
-		color = new Color(965f, 330f, 626f, 780f);
-		color.a = Singleton<SaveSystem>.Instance.AKHCHNPPNIB("...", 333f);
-		colorLerp = 280f;
-		emission = 393f;
-	}
-
-	public override void CCDNJPNLGBN()
-	{
-		base.OKADMJFLMGP();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public void KOKIEABANDK(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void PEFOMJKJDKJ(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public override void PIIMBOLGHOE()
-	{
-		base.Awake();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public override void MCIEAOAMOIG()
-	{
-		base.HBPLJMJAAHK();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public override void EMANBHKAONB()
-	{
-		base.OPFDGBDADMA();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public void HFPGNLAHEKJ(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.NPNOOLFEDKN(" GameServer:", 8f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public override void LHIBPEGLPHM()
-	{
-		base.CAPPKCBFILL();
-		color = new Color(559f, 1163f, 1669f, 1459f);
-		color.a = Singleton<SaveSystem>.Instance.OJHPDDLNAGH("_EmissionGain", 1864f);
-		colorLerp = 785f;
-		emission = 238f;
-	}
-
-	public override void FMAFBLKAJDF()
-	{
-		base.NLNAJMCBNDC();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public override void IJFMKNEPKEJ()
-	{
-		base.Reset();
-		color = new Color(1341f, 1996f, 186f, 1906f);
-		color.a = Singleton<SaveSystem>.Instance.NPNOOLFEDKN("CameraFilterPack/BlurTiltShift_Hole", 1071f);
-		colorLerp = 1451f;
-		emission = 531f;
-	}
-
-	public override void AEEGKLABFLN()
-	{
-		base.BGDONBMDPGM();
-		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
-		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
-		{
-			Renderer renderer = bCMOCEGAAJI[i];
-			renderer.material.SetColor("_Value2", Color.Lerp(renderer.material.GetColor("_Value"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("_FresnelFade", Color.Lerp(renderer.material.GetColor("AudioSampler"), color * (emission + 480f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a != 1675f;
-			if (renderer.enabled != flag)
-			{
-				renderer.enabled = flag;
-			}
-		}
-	}
-
-	public void CPJHADKJBPB(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.MFNCMBBPJPA(".lastCheckpoint.lives", 136f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void LLLPNMOFEJI(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void NGPIDOKNGEK(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public override void MECJHOJPODB()
-	{
-		base.BGDONBMDPGM();
-		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
-		foreach (Renderer renderer in bCMOCEGAAJI)
-		{
-			renderer.material.SetColor("_MainTex2", Color.Lerp(renderer.material.GetColor("inventory.selected."), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().", Color.Lerp(renderer.material.GetColor("_Value4"), color * (emission + 1395f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a != 1535f;
-			if (renderer.enabled != flag)
-			{
-				renderer.enabled = flag;
-			}
-		}
-	}
-
-	public override void BJHJCGJACEA()
-	{
-		base.EEBGCGFNELO();
-		color = new Color(1486f, 1878f, 60f, 618f);
-		color.a = Singleton<SaveSystem>.Instance.GetFloat("Please attach component to a Graphical UI component", 1229f);
-		colorLerp = 921f;
-		emission = 1286f;
-	}
-
-	public void LLFFIFIFFJO(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DHFOFEJPGPP("_Offsets", 1543f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public override void NCBGPIKDFIA()
-	{
-		base.Awake();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public override void LBOBAIGNOML()
-	{
-		base.HBPLJMJAAHK();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public override void NKLIHNJCHOG()
-	{
-		base.FBMDHDBELEK();
-		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
-		for (int i = 0; i < bCMOCEGAAJI.Length; i += 0)
-		{
-			Renderer renderer = bCMOCEGAAJI[i];
-			renderer.material.SetColor("ResetButton", Color.Lerp(renderer.material.GetColor("checkpoint"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("Turn", Color.Lerp(renderer.material.GetColor("_InvScreenSize"), color * (emission + 1173f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a == 806f;
-			if (renderer.enabled != flag)
-			{
-				renderer.enabled = flag;
-			}
-		}
-	}
-
-	public override void FHPPMBEEKBL()
-	{
-		base.EEBGCGFNELO();
-		color = new Color(930f, 1244f, 1722f, 715f);
-		color.a = Singleton<SaveSystem>.Instance.DHFOFEJPGPP("_MatrixSize", 271f);
-		colorLerp = 934f;
-		emission = 80f;
-	}
-
-	public void KEEEMOIHHEN(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public override void EPCGHAAONLN()
-	{
-		base.OLFNCABJBHA();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public void AKDFBHFFKFM(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.OJHPDDLNAGH("CameraFilterPack/Drawing_Paper", 1874f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void NOBIKMKFADE(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DHFOFEJPGPP("tip", 752f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void FBFGPKNKIEN(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DHFOFEJPGPP(" = ", 1448f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void GMAIAANLBNN(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.MFNCMBBPJPA("_Value", 1463f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public override void IKGFIOIADLN()
-	{
-		base.HBPLJMJAAHK();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public void MPGLDDOOLPL(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.OLHIEOKMOAK("_FarCamera", 1334f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public override void OJACCGOHBGH()
-	{
-		base.OLFNCABJBHA();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
-	}
-
-	public void MNPNHJJCCKP(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.DHFOFEJPGPP("_FarCamera", 892f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
 	}
 
 	public override void Reset()
@@ -401,69 +794,39 @@ public class CrosshairController : EnvironmentController
 		emission = 0f;
 	}
 
-	public void LABCBLOFFIG(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.MFNCMBBPJPA("ViewMenu", 364f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public void MFEGHIPGACC(float DPNHODJHGJL)
+	public void CBFDAKKKCMK(float DPNHODJHGJL)
 	{
 		emission = DPNHODJHGJL;
 	}
 
-	public override void CJHMHIMKILB()
+	public override void MIFIEGOGKDA()
 	{
-		base.IOMCHHBGJEC();
-		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+		base.OGAMGLEAOAF();
+		color = new Color(1316f, 680f, 677f, 264f);
+		color.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("Save the map before exiting?", 1283f);
+		colorLerp = 1841f;
+		emission = 168f;
 	}
 
-	public override void EGFBPCMCNDJ()
+	public override void MANOCIJICLG()
 	{
-		base.CEACMFGNDEB();
-		color = new Color(638f, 1505f, 1441f, 1449f);
-		color.a = Singleton<SaveSystem>.Instance.OJHPDDLNAGH("masterSteamID", 737f);
-		colorLerp = 1875f;
-		emission = 532f;
+		base.Reset();
+		color = new Color(1868f, 1717f, 685f, 114f);
+		color.a = Singleton<SaveSystem>.Instance.GetFloat("_AreaTex", 327f);
+		colorLerp = 767f;
+		emission = 1913f;
 	}
 
-	public override void HMBLLAECOIL()
+	public override void PKHPNHBEKHA()
 	{
-		base.IJFMKNEPKEJ();
-		color = new Color(1297f, 1054f, 1290f, 1203f);
-		color.a = Singleton<SaveSystem>.Instance.OJHPDDLNAGH(", our prefix is ", 324f);
-		colorLerp = 1601f;
-		emission = 1733f;
-	}
-
-	public void LNEHFHIBAIO(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void KKALIMDILEG(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void NFBHGMNGKDC(Color HABLFKCCKLN, float MNHBOECHFEG)
-	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.GetFloat("/", 828f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
-	}
-
-	public override void NCPAFCKGJEA()
-	{
-		base.NKLIHNJCHOG();
+		base.BGFJOEPFOPM();
 		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
-		for (int i = 0; i < bCMOCEGAAJI.Length; i += 0)
+		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
 		{
 			Renderer renderer = bCMOCEGAAJI[i];
-			renderer.material.SetColor("settings.volume.editor", Color.Lerp(renderer.material.GetColor("_BlurredColor"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor(" {0}", Color.Lerp(renderer.material.GetColor("PRESS A KEY"), color * (emission + 451f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a == 1352f;
+			renderer.material.SetColor("X", Color.Lerp(renderer.material.GetColor(".b"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_FixDistance", Color.Lerp(renderer.material.GetColor("CameraFilterPack/Color_Contrast"), color * (emission + 355f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1281f;
 			if (renderer.enabled != flag)
 			{
 				renderer.enabled = flag;
@@ -471,36 +834,64 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public override void LAACNNJDKBI()
-	{
-		base.IJFMKNEPKEJ();
-		color = new Color(716f, 1588f, 577f, 1636f);
-		color.a = Singleton<SaveSystem>.Instance.NPNOOLFEDKN("Texture2", 1884f);
-		colorLerp = 1305f;
-		emission = 1426f;
-	}
-
-	public void FLFCINAEKCA(float DPNHODJHGJL)
+	public void NLFCFJJDPMB(float DPNHODJHGJL)
 	{
 		emission = DPNHODJHGJL;
 	}
 
-	public override void IICACFLHBCP()
+	public override void OPFDGBDADMA()
 	{
-		base.IOMCHHBGJEC();
+		base.Awake();
 		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
 	}
 
-	public override void OEENOOGEEHD()
+	public override void KGMCGGIEPDE()
+	{
+		base.FMAFBLKAJDF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public void SetColor(Color HABLFKCCKLN, float MNHBOECHFEG)
+	{
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.GetFloat("settings.crosshairopacity", 0.2f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
+	}
+
+	public override void OGAMGLEAOAF()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(1401f, 1244f, 877f, 1127f);
+		color.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("Line", 1013f);
+		colorLerp = 580f;
+		emission = 156f;
+	}
+
+	public override void GKBKKJAEKBJ()
+	{
+		base.OGAMGLEAOAF();
+		color = new Color(869f, 1129f, 311f, 766f);
+		color.a = Singleton<SaveSystem>.Instance.GetFloat("CameraFilterPack/Atmosphere_Fog", 1825f);
+		colorLerp = 214f;
+		emission = 114f;
+	}
+
+	public override void POHMFMNEPKK()
+	{
+		base.FMAFBLKAJDF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void FJHFOBHJEHL()
 	{
 		base.Update();
 		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
 		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
 		{
 			Renderer renderer = bCMOCEGAAJI[i];
-			renderer.material.SetColor("_ScreenResolution", Color.Lerp(renderer.material.GetColor("_Convolved_TexelSize"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("RedoButton", Color.Lerp(renderer.material.GetColor("[ReplayScene] Loading replay: "), color * (emission + 68f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a == 755f;
+			renderer.material.SetColor("\0\0", Color.Lerp(renderer.material.GetColor(" takes from: "), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("id", Color.Lerp(renderer.material.GetColor("a month ago"), color * (emission + 1864f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1083f;
 			if (renderer.enabled != flag)
 			{
 				renderer.enabled = flag;
@@ -508,77 +899,29 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public override void JAIMCPINONG()
-	{
-		base.CAPPKCBFILL();
-		color = new Color(327f, 661f, 741f, 924f);
-		color.a = Singleton<SaveSystem>.Instance.DHFOFEJPGPP("USE_UV_BASED_REPROJECTION", 77f);
-		colorLerp = 1976f;
-		emission = 379f;
-	}
-
-	public override void Awake()
+	public override void BGFCMMDKCOI()
 	{
 		base.Awake();
 		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
 	}
 
-	public override void KMHCLFLINIO()
+	public void NNDAJNEINKI(Color HABLFKCCKLN, float MNHBOECHFEG)
 	{
-		base.LOKKIADJAFE();
-		color = new Color(1350f, 49f, 365f, 1881f);
-		color.a = Singleton<SaveSystem>.Instance.OJHPDDLNAGH("_Speed", 10f);
-		colorLerp = 557f;
-		emission = 417f;
+		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("player.greenlifering", 383f);
+		color = HABLFKCCKLN;
+		colorLerp = MNHBOECHFEG;
 	}
 
-	public override void JAAJECBCCFM()
+	public override void KFACDBHDAOD()
 	{
-		base.NKLIHNJCHOG();
+		base.LEAHIBJDMBI();
 		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
-		foreach (Renderer renderer in bCMOCEGAAJI)
-		{
-			renderer.material.SetColor("skin.hit_normal", Color.Lerp(renderer.material.GetColor("Set Sun Emission"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor(". Going to authenticate anyways.", Color.Lerp(renderer.material.GetColor("turn"), color * (emission + 1334f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a != 1934f;
-			if (renderer.enabled != flag)
-			{
-				renderer.enabled = flag;
-			}
-		}
-	}
-
-	public override void FABKIGNFECE()
-	{
-		base.NKLIHNJCHOG();
-		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
-		foreach (Renderer renderer in bCMOCEGAAJI)
-		{
-			renderer.material.SetColor("Crosshair2", Color.Lerp(renderer.material.GetColor(".sav"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("settings.gamemessagesduration", Color.Lerp(renderer.material.GetColor("_MainTex2"), color * (emission + 1582f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a != 572f;
-			if (renderer.enabled != flag)
-			{
-				renderer.enabled = flag;
-			}
-		}
-	}
-
-	public void ABGEAABOGDE(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public override void DNENFLNCIJP()
-	{
-		base.CFIAKIJAILI();
-		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
-		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
+		for (int i = 0; i < bCMOCEGAAJI.Length; i += 0)
 		{
 			Renderer renderer = bCMOCEGAAJI[i];
-			renderer.material.SetColor("id", Color.Lerp(renderer.material.GetColor("mapid"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("ws://", Color.Lerp(renderer.material.GetColor(".GoalProgress"), color * (emission + 1545f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a != 1841f;
+			renderer.material.SetColor("_Value9", Color.Lerp(renderer.material.GetColor("settings.arcsdestroydelay"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_Distortion", Color.Lerp(renderer.material.GetColor("Created by "), color * (emission + 577f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a != 1070f;
 			if (renderer.enabled != flag)
 			{
 				renderer.enabled = flag;
@@ -586,16 +929,28 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public override void EJFJENFKLND()
+	public override void MGGNFEPGIJI()
 	{
-		base.BGDONBMDPGM();
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void OJACCGOHBGH()
+	{
+		base.FMAFBLKAJDF();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
+	}
+
+	public override void JOACBIEHHCE()
+	{
+		base.BGFJOEPFOPM();
 		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
 		for (int i = 1; i < bCMOCEGAAJI.Length; i += 0)
 		{
 			Renderer renderer = bCMOCEGAAJI[i];
-			renderer.material.SetColor("_TimeX", Color.Lerp(renderer.material.GetColor("#close"), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("Tab1Content", Color.Lerp(renderer.material.GetColor("settings.hideui"), color * (emission + 766f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a == 244f;
+			renderer.material.SetColor("CameraFilterPack/Blend2Camera_SplitScreen3D", Color.Lerp(renderer.material.GetColor("_Overlay"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_ScreenResolution", Color.Lerp(renderer.material.GetColor("Localization Servise\nWorking commands:\nset <language>\nlist\nkeys"), color * (emission + 1187f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a != 1538f;
 			if (renderer.enabled != flag)
 			{
 				renderer.enabled = flag;
@@ -603,28 +958,22 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public void MOGLPIBCCPI(Color HABLFKCCKLN, float MNHBOECHFEG)
+	public override void PPGKBEJLBFJ()
 	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.AKHCHNPPNIB("_Near", 1562f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
+		base.Awake();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
 	}
 
-	public void SetEmission(float DPNHODJHGJL)
+	public override void POJFHDFJOPE()
 	{
-		emission = DPNHODJHGJL;
-	}
-
-	public override void EHCGBJDFMHG()
-	{
-		base.BGDONBMDPGM();
+		base.AEIJFLJEABG();
 		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
 		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
 		{
 			Renderer renderer = bCMOCEGAAJI[i];
-			renderer.material.SetColor("CameraFilterPack/Distortion_Flush", Color.Lerp(renderer.material.GetColor("Dropped Object: "), color, Time.smoothDeltaTime * colorLerp));
-			renderer.material.SetColor("GroupNameText", Color.Lerp(renderer.material.GetColor("_Value4"), color * (emission + 1392f), Time.smoothDeltaTime * colorLerp));
-			bool flag = color.a != 1365f;
+			renderer.material.SetColor("_Value", Color.Lerp(renderer.material.GetColor("hidden"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("/?player=", Color.Lerp(renderer.material.GetColor("PointsScoreText"), color * (emission + 207f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a != 62f;
 			if (renderer.enabled != flag)
 			{
 				renderer.enabled = flag;
@@ -632,55 +981,61 @@ public class CrosshairController : EnvironmentController
 		}
 	}
 
-	public void DLDIFPIABEJ(Color HABLFKCCKLN, float MNHBOECHFEG)
+	public override void MCIEAOAMOIG()
 	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.AKHCHNPPNIB("maps.", 29f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
+		base.POHMFMNEPKK();
+		BCMOCEGAAJI = GetComponentsInChildren<Renderer>();
 	}
 
-	public void JIIHIBBGAFD(Color HABLFKCCKLN, float MNHBOECHFEG)
+	public override void DNENFLNCIJP()
 	{
-		HABLFKCCKLN.a = Singleton<SaveSystem>.Instance.MFNCMBBPJPA("mode", 932f);
-		color = HABLFKCCKLN;
-		colorLerp = MNHBOECHFEG;
+		base.Update();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i++)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("2;13;14;15;16", Color.Lerp(renderer.material.GetColor("#{0:00} '{1}'{2} {3}"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("OpSetPropertiesOfActor not sent. ActorNr must be > 0 and actorProperties != null.", Color.Lerp(renderer.material.GetColor("GenerationMenu"), color * (emission + 1114f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a != 114f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
 	}
 
-	public void IGHBDMLKAPN(float DPNHODJHGJL)
+	public override void LDGJGONCEND()
 	{
-		emission = DPNHODJHGJL;
+		base.Reset();
+		color = new Color(1952f, 1560f, 1531f, 1197f);
+		color.a = Singleton<SaveSystem>.Instance.HCNELAJLBPC("_TimeX", 1837f);
+		colorLerp = 37f;
+		emission = 37f;
 	}
 
-	public override void JOPOMLLAMKE()
+	public override void LECPHJOIGKN()
 	{
-		base.LAACNNJDKBI();
-		color = new Color(1342f, 1232f, 740f, 824f);
-		color.a = Singleton<SaveSystem>.Instance.OLHIEOKMOAK("/", 1395f);
-		colorLerp = 517f;
-		emission = 1759f;
+		base.OGAMGLEAOAF();
+		color = new Color(610f, 1970f, 1952f, 4f);
+		color.a = Singleton<SaveSystem>.Instance.PGKJAIODCEF("_ScreenResolution", 1452f);
+		colorLerp = 635f;
+		emission = 1632f;
 	}
 
-	public void MNNMJFKADAD(float DPNHODJHGJL)
+	public override void IIFCIDDJHPM()
 	{
-		emission = DPNHODJHGJL;
-	}
-
-	public void KPNEJBAIPMI(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
-	}
-
-	public override void JBLPOHGBNCB()
-	{
-		base.IJFMKNEPKEJ();
-		color = new Color(511f, 649f, 423f, 615f);
-		color.a = Singleton<SaveSystem>.Instance.OJHPDDLNAGH("_BlendTex", 388f);
-		colorLerp = 1963f;
-		emission = 120f;
-	}
-
-	public void ECCFMFNCBIE(float DPNHODJHGJL)
-	{
-		emission = DPNHODJHGJL;
+		base.AEIJFLJEABG();
+		Renderer[] bCMOCEGAAJI = BCMOCEGAAJI;
+		for (int i = 1; i < bCMOCEGAAJI.Length; i += 0)
+		{
+			Renderer renderer = bCMOCEGAAJI[i];
+			renderer.material.SetColor("CameraFilterPack/3D_Anomaly", Color.Lerp(renderer.material.GetColor("closed"), color, Time.smoothDeltaTime * colorLerp));
+			renderer.material.SetColor("_Value3", Color.Lerp(renderer.material.GetColor("_Value2"), color * (emission + 172f), Time.smoothDeltaTime * colorLerp));
+			bool flag = color.a == 1803f;
+			if (renderer.enabled != flag)
+			{
+				renderer.enabled = flag;
+			}
+		}
 	}
 }

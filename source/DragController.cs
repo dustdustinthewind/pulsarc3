@@ -9,139 +9,62 @@ public class DragController : MonoBehaviour
 
 	private bool ODOEHCEMDKB;
 
-	public void AIMAEDIEEGI(Vector3 KMDIKEAGGHB)
+	public void LDGALMPOFJM()
 	{
-		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
-		ODOEHCEMDKB = false;
-	}
-
-	public void CCPFGCKHHCN(Vector3 KMDIKEAGGHB)
-	{
-		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
-		ODOEHCEMDKB = false;
-	}
-
-	public EditorEvent FIEKNFJBJKP()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public EditorEvent GetEditorEvent()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public void OnDragEnd()
-	{
-		ODOEHCEMDKB = false;
-		GetEditorEvent().mapEvent.time = Singleton<MapEditor>.Instance.GetSnappedBPM(base.transform.localPosition.x);
-		GetEditorEvent().UpdateEvent();
-	}
-
-	public void AIOJCNCPCEG(Vector3 KMDIKEAGGHB)
-	{
-		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
-		ODOEHCEMDKB = false;
-	}
-
-	public void ADPFOONOBBA(Vector3 KMDIKEAGGHB)
-	{
-		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
-		ODOEHCEMDKB = false;
-	}
-
-	private void GHILDCBCDJI()
-	{
-		if (ODOEHCEMDKB)
-		{
-			Vector3 vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			vector2.y = base.transform.localPosition.y;
-			base.transform.position = new Vector3(Singleton<MapEditor>.Instance.GetSnappedBPM(vector2.x), vector2.y, 1055f);
-		}
-	}
-
-	public void NCJNAIBOBJF()
-	{
-		ODOEHCEMDKB = false;
-		EFKICKGLPAA().mapEvent.time = Singleton<MapEditor>.Instance.GetSnappedBPM(base.transform.localPosition.x);
-		FIEKNFJBJKP().UpdateEvent();
-	}
-
-	public EditorEvent HCBHBLNKMGD()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public EditorEvent LDGJPECJDKD()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void MFMIODIAKNI()
-	{
-		if (ODOEHCEMDKB)
-		{
-			Vector3 vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			vector2.y = base.transform.localPosition.y;
-			base.transform.position = new Vector3(Singleton<MapEditor>.Instance.GetSnappedBPM(vector2.x), vector2.y, 984f);
-		}
-	}
-
-	private void NKLIHNJCHOG()
-	{
-		if (ODOEHCEMDKB)
-		{
-			Vector3 vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			vector2.y = base.transform.localPosition.y;
-			base.transform.position = new Vector3(Singleton<MapEditor>.Instance.GetSnappedBPM(vector2.x), vector2.y, 686f);
-		}
-	}
-
-	public void HDBMLLJFIAJ()
-	{
-		ODOEHCEMDKB = false;
-		FIEKNFJBJKP().mapEvent.time = Singleton<MapEditor>.Instance.GetSnappedBPM(base.transform.localPosition.x);
-		GetEditorEvent().NCMDCMHLIKD();
-	}
-
-	public EditorEvent EKLLANBFINH()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public void OnDragStart(Vector3 KMDIKEAGGHB)
-	{
-		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
 		ODOEHCEMDKB = true;
+		OEHKJJODCIO().mapEvent.time = Singleton<MapEditor>.Instance.JCNHFKOAHHH(base.transform.localPosition.x);
+		GBANAAEJEGI().UpdateEvent();
 	}
 
 	public void OFLMBGFOMIL(Vector3 KMDIKEAGGHB)
 	{
 		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
-		ODOEHCEMDKB = false;
+		ODOEHCEMDKB = true;
+	}
+
+	public EditorEvent AIDCBDGMNFB()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	public EditorEvent GOHGLJEOFCH()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	public EditorEvent PFMLOAKGAOB()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	public EditorEvent GBANAAEJEGI()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	public EditorEvent KFNBAKNJDKE()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
 	}
 
 	private void Update()
@@ -155,49 +78,101 @@ public class DragController : MonoBehaviour
 		}
 	}
 
-	public EditorEvent HMCKEOGAHJM()
+	public void IOMLIBBMGPJ(Vector3 KMDIKEAGGHB)
 	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
+		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
+		ODOEHCEMDKB = false;
 	}
 
-	public void CLCAABBGECG(Vector3 KMDIKEAGGHB)
+	public void AMHPLPIBMGA(Vector3 KMDIKEAGGHB)
 	{
 		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
 		ODOEHCEMDKB = true;
 	}
 
-	public EditorEvent JPCLJPBKBCD()
+	public void OnDragEnd()
+	{
+		ODOEHCEMDKB = false;
+		GetEditorEvent().mapEvent.time = Singleton<MapEditor>.Instance.GetSnappedBPM(base.transform.localPosition.x);
+		GetEditorEvent().UpdateEvent();
+	}
+
+	public void ADKAMCJKCHL(Vector3 KMDIKEAGGHB)
+	{
+		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
+		ODOEHCEMDKB = false;
+	}
+
+	public void CMCBIEGNLHC(Vector3 KMDIKEAGGHB)
+	{
+		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
+		ODOEHCEMDKB = false;
+	}
+
+	public void BBEFGGMIGML()
+	{
+		ODOEHCEMDKB = true;
+		KFNBAKNJDKE().mapEvent.time = Singleton<MapEditor>.Instance.GetSnappedBPM(base.transform.localPosition.x);
+		PFMLOAKGAOB().UpdateEvent();
+	}
+
+	private void JAAJECBCCFM()
+	{
+		if (ODOEHCEMDKB)
+		{
+			Vector3 vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			vector2.y = base.transform.localPosition.y;
+			base.transform.position = new Vector3(Singleton<MapEditor>.Instance.GetSnappedBPM(vector2.x), vector2.y, 154f);
+		}
+	}
+
+	public void NJFAOGAFJDM(Vector3 KMDIKEAGGHB)
+	{
+		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
+		ODOEHCEMDKB = true;
+	}
+
+	private void AEIJFLJEABG()
+	{
+		if (ODOEHCEMDKB)
+		{
+			Vector3 vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			vector2.y = base.transform.localPosition.y;
+			base.transform.position = new Vector3(Singleton<MapEditor>.Instance.GetSnappedBPM(vector2.x), vector2.y, 817f);
+		}
+	}
+
+	public EditorEvent OEHKJJODCIO()
 	{
 		if ((bool)base.gameObject.GetComponent<EditorEvent>())
 		{
 			return base.gameObject.GetComponent<EditorEvent>();
 		}
 		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	public void KBPKJADKLCM(Vector3 KMDIKEAGGHB)
+	{
+		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
+		ODOEHCEMDKB = true;
 	}
 
 	public void GDPOALKKBHE()
 	{
-		ODOEHCEMDKB = true;
-		FIEKNFJBJKP().mapEvent.time = Singleton<MapEditor>.Instance.GetSnappedBPM(base.transform.localPosition.x);
-		HCBHBLNKMGD().FMGBIHDGKBI();
+		ODOEHCEMDKB = false;
+		GFONGNJJMEH().mapEvent.time = Singleton<MapEditor>.Instance.JCNHFKOAHHH(base.transform.localPosition.x);
+		GFONGNJJMEH().CMNPEMEIJEJ();
 	}
 
-	private void ONMGIPAILOH()
+	public void OnDragStart(Vector3 KMDIKEAGGHB)
 	{
-		if (ODOEHCEMDKB)
-		{
-			Vector3 vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			vector2.y = base.transform.localPosition.y;
-			base.transform.position = new Vector3(Singleton<MapEditor>.Instance.GetSnappedBPM(vector2.x), vector2.y, 1317f);
-		}
+		INLGAOLENMD = base.transform.position - KMDIKEAGGHB;
+		ODOEHCEMDKB = true;
 	}
 
-	public EditorEvent EFKICKGLPAA()
+	public EditorEvent GetEditorEvent()
 	{
 		if ((bool)base.gameObject.GetComponent<EditorEvent>())
 		{
@@ -206,21 +181,12 @@ public class DragController : MonoBehaviour
 		return base.gameObject.GetComponentInParent<EditorEvent>();
 	}
 
-	private void AAPKBNDHBLI()
+	public EditorEvent GFONGNJJMEH()
 	{
-		if (ODOEHCEMDKB)
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
 		{
-			Vector3 vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			vector2.y = base.transform.localPosition.y;
-			base.transform.position = new Vector3(Singleton<MapEditor>.Instance.GetSnappedBPM(vector2.x), vector2.y, 156f);
+			return base.gameObject.GetComponent<EditorEvent>();
 		}
-	}
-
-	public void MGAJMKHJCOJ()
-	{
-		ODOEHCEMDKB = false;
-		HMCKEOGAHJM().mapEvent.time = Singleton<MapEditor>.Instance.GetSnappedBPM(base.transform.localPosition.x);
-		GetEditorEvent().NJDJHMPAIFE();
+		return base.gameObject.GetComponentInParent<EditorEvent>();
 	}
 }

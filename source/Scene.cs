@@ -10,93 +10,142 @@ public class Scene : Singleton<Scene>
 
 	public string id => GetType().ToString();
 
-	public virtual void MJEFMIPLFAB()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	[SpecialName]
-	public string KHDLEJLPGKP()
-	{
-		return GetType().ToString();
-	}
-
-	public void NJPIIAECJFO(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public virtual void MEBPBNLBECA()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	[SpecialName]
-	public string AMEGOBFCECJ()
-	{
-		return GetType().ToString();
-	}
-
-	public void GNHEECNBLOC(bool IDNLBGOCOEK)
+	public void LICGKFKFJOF(bool IDNLBGOCOEK)
 	{
 		hideCursor = IDNLBGOCOEK;
-		DKPCMCEGMME(false);
+		LBAIIJFOLCL(false);
 	}
 
-	public void GMGMPMIIMLP(bool IDNLBGOCOEK)
+	public virtual void MKOMIDCPCDC()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public void BDMABAGHOOF(bool IDNLBGOCOEK)
 	{
 		hideCursor = !IDNLBGOCOEK;
-		FACGFLHIDCL(true);
+		DAJMKIGCHEP(true);
 	}
 
-	[SpecialName]
-	public string IKPGAGMDCLP()
+	public virtual void ONMGIPAILOH()
 	{
-		return GetType().ToString();
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
 	}
 
-	public void LOIDEKAJHJM(bool NODADLMFEBA)
+	public void IKJMKFFFGOD(bool NODADLMFEBA)
 	{
 		lockCursor = NODADLMFEBA;
 	}
 
 	[SpecialName]
-	public string EODGDBPONOL()
+	public string DINKBGAFKAH()
 	{
 		return GetType().ToString();
 	}
 
-	public void ALAJMFBMENK(bool IDNLBGOCOEK)
+	[SpecialName]
+	public string PHCHLPBPKHL()
+	{
+		return GetType().ToString();
+	}
+
+	public virtual void KDMKDEKCELE()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public virtual void KOJKBFDNGDK()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public void GLBKNLOICDL(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		MLAFGCPPPLC(false);
+	}
+
+	public virtual void AEIJFLJEABG()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public void GDJMNGJBLHJ(bool IDNLBGOCOEK)
 	{
 		hideCursor = !IDNLBGOCOEK;
 		OKKKFINFMDJ(true);
@@ -114,255 +163,12 @@ public class Scene : Singleton<Scene>
 		}
 		if (lockCursor)
 		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	[SpecialName]
-	public string DPALDJIDPDN()
-	{
-		return GetType().ToString();
-	}
-
-	public void PMEEJELAKKL(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		MMHHMCKBJBL(false);
-	}
-
-	public virtual void NCPAFCKGJEA()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public virtual void BGDPIHMAACO()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public void LICGKFKFJOF(bool IDNLBGOCOEK)
-	{
-		hideCursor = IDNLBGOCOEK;
-		JHKNPBHCBEJ(false);
-	}
-
-	public void DPAJGNPKAHD(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	[SpecialName]
-	public string CHDCIFPPIFI()
-	{
-		return GetType().ToString();
-	}
-
-	public void ShowCursor(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		LockCursor(false);
-	}
-
-	public void FMNOONOIHDC(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public void OKKKFINFMDJ(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public void FIMAMPOCBFK(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public void MMHHMCKBJBL(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public void PEFMNHNECBK(bool IDNLBGOCOEK)
-	{
-		hideCursor = IDNLBGOCOEK;
-		OKKKFINFMDJ(true);
-	}
-
-	public void KAGHABABGCB(bool IDNLBGOCOEK)
-	{
-		hideCursor = IDNLBGOCOEK;
-		CKODJNPKHOI(false);
-	}
-
-	public void CIEGLBDAOOI(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		OKKKFINFMDJ(false);
-	}
-
-	public void JCEKIILMPHH(bool IDNLBGOCOEK)
-	{
-		hideCursor = IDNLBGOCOEK;
-		DKPCMCEGMME(false);
-	}
-
-	public virtual void FLKEJJEGCFA()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public void BDMABAGHOOF(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		MMHHMCKBJBL(false);
-	}
-
-	public virtual void NKLIHNJCHOG()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	[SpecialName]
-	public string CFNPEEMCLJP()
-	{
-		return GetType().ToString();
-	}
-
-	public void PMHAHKGFPLK(bool IDNLBGOCOEK)
-	{
-		hideCursor = IDNLBGOCOEK;
-		DKPCMCEGMME(true);
-	}
-
-	public virtual void KDMANOEMOCA()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public virtual void Start()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
 			Cursor.lockState = CursorLockMode.Locked;
 		}
 		else
 		{
 			Cursor.lockState = CursorLockMode.None;
 		}
-	}
-
-	public virtual void MFMIODIAKNI()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	[SpecialName]
-	public string ALIGPAANMFA()
-	{
-		return GetType().ToString();
 	}
 
 	public virtual void DLBODOFAJGM()
@@ -373,27 +179,32 @@ public class Scene : Singleton<Scene>
 		}
 		else
 		{
-			Cursor.visible = false;
+			Cursor.visible = true;
 		}
 		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
 		{
 			Cursor.lockState = CursorLockMode.Locked;
 		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
 	}
 
-	public virtual void JFJLGJEPEAA()
+	public void PBKGHFOHCHB(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void ALNNIDLFILB()
 	{
 		if (hideCursor)
 		{
-			Cursor.visible = false;
+			Cursor.visible = true;
 		}
 		else
 		{
-			Cursor.visible = true;
+			Cursor.visible = false;
 		}
 		if (lockCursor)
 		{
@@ -405,11 +216,17 @@ public class Scene : Singleton<Scene>
 		}
 	}
 
-	public virtual void HPNNCNNFMGK()
+	[SpecialName]
+	public string IKACPLICNNB()
+	{
+		return GetType().ToString();
+	}
+
+	public virtual void HDDECCMEJKA()
 	{
 		if (hideCursor)
 		{
-			Cursor.visible = true;
+			Cursor.visible = false;
 		}
 		else
 		{
@@ -426,18 +243,214 @@ public class Scene : Singleton<Scene>
 	}
 
 	[SpecialName]
-	public string PACECPHKLNE()
+	public string ALDEBCEKKPK()
 	{
 		return GetType().ToString();
 	}
 
-	public void OMGILEICCNJ(bool IDNLBGOCOEK)
+	public virtual void POEMOLBJDLG()
 	{
-		hideCursor = !IDNLBGOCOEK;
-		NJPIIAECJFO(false);
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
 	}
 
-	public virtual void BGFJOEPFOPM()
+	[SpecialName]
+	public string PHMKHCAPODJ()
+	{
+		return GetType().ToString();
+	}
+
+	[SpecialName]
+	public string INGBCJIGOJK()
+	{
+		return GetType().ToString();
+	}
+
+	public void DCPBMPHPOMO(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void AEEGKLABFLN()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public virtual void KCDBBPKIFNJ()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public void FDOGLBFMCCM(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void GKMMBPLIKDO(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		BOIDGFCCEPJ(false);
+	}
+
+	[SpecialName]
+	public string FDOJLFKCFDI()
+	{
+		return GetType().ToString();
+	}
+
+	[SpecialName]
+	public string HNGIHCKINDJ()
+	{
+		return GetType().ToString();
+	}
+
+	public void LBFBDFMMPEO(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void ANKIJGCGCBF()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public virtual void NKFDNIAKGEO()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	[SpecialName]
+	public string ABCDALKLGBH()
+	{
+		return GetType().ToString();
+	}
+
+	public void MIKAGIBOENB(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	[SpecialName]
+	public string HBKDCFIOAPJ()
+	{
+		return GetType().ToString();
+	}
+
+	public void HMDNPKBKIOI(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void LBAIIJFOLCL(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void FJHFOBHJEHL()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public void LockCursor(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void OGDCFEEPFNG(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void HAIAHJPCPAG()
 	{
 		if (hideCursor)
 		{
@@ -457,18 +470,170 @@ public class Scene : Singleton<Scene>
 		}
 	}
 
-	public void DKPCMCEGMME(bool NODADLMFEBA)
+	public void PMIKKDGOCOG(bool NODADLMFEBA)
 	{
 		lockCursor = NODADLMFEBA;
 	}
 
-	public void NFJBCNGPCAO(bool IDNLBGOCOEK)
+	public virtual void GLEJGFLCLPJ()
 	{
-		hideCursor = !IDNLBGOCOEK;
-		FACGFLHIDCL(true);
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
 	}
 
-	public virtual void LCJHDLKJEOM()
+	public void MNKKKMIIBFB(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		JPHODCAAGNN(false);
+	}
+
+	public virtual void BGDPIHMAACO()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	[SpecialName]
+	public string PDKEOLKBKAA()
+	{
+		return GetType().ToString();
+	}
+
+	public void EBJKFPDAHKK(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	[SpecialName]
+	public string DMICPEENLPH()
+	{
+		return GetType().ToString();
+	}
+
+	public void KAGHABABGCB(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		PBKGHFOHCHB(true);
+	}
+
+	public void MLAFGCPPPLC(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void GOFIPBIJBDM(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		BOIDGFCCEPJ(false);
+	}
+
+	public void MCNDPKOCEGP(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void CEAGPJBGBMH()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public void EIKPLOCGCIK(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		BOIDGFCCEPJ(false);
+	}
+
+	public void BOIDGFCCEPJ(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void DPAJGNPKAHD(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void NPMGOCPNJGP(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void AKCADICOFDD()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	[SpecialName]
+	public string EODGDBPONOL()
+	{
+		return GetType().ToString();
+	}
+
+	[SpecialName]
+	public string CNEOMFHNLOD()
+	{
+		return GetType().ToString();
+	}
+
+	public virtual void EDPDMBFLHLP()
 	{
 		if (hideCursor)
 		{
@@ -480,7 +645,64 @@ public class Scene : Singleton<Scene>
 		}
 		if (lockCursor)
 		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public virtual void KNBJBNDGCIJ()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
 			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	[SpecialName]
+	public string OOFJKHEJJNM()
+	{
+		return GetType().ToString();
+	}
+
+	public void MIECBIKCGFJ(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void OCDKCHGHMBG(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		LBFBDFMMPEO(true);
+	}
+
+	public virtual void NDAJBJFJGCF()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
 		}
 		else
 		{
@@ -496,27 +718,7 @@ public class Scene : Singleton<Scene>
 		}
 		else
 		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public virtual void FOMNCPKKCFN()
-	{
-		if (hideCursor)
-		{
 			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = false;
 		}
 		if (lockCursor)
 		{
@@ -524,192 +726,106 @@ public class Scene : Singleton<Scene>
 		}
 		else
 		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public virtual void EIDKCANPHJE()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
 			Cursor.lockState = CursorLockMode.None;
 		}
 	}
 
-	public void CKODJNPKHOI(bool NODADLMFEBA)
+	public void DAJMKIGCHEP(bool NODADLMFEBA)
 	{
 		lockCursor = NODADLMFEBA;
 	}
 
-	public void DEFOLPODPPI(bool NODADLMFEBA)
+	public void AJFKDKMNBML(bool NODADLMFEBA)
 	{
 		lockCursor = NODADLMFEBA;
 	}
 
-	public void KIJNHCEDOPE(bool IDNLBGOCOEK)
+	[SpecialName]
+	public string CIPNHACNPMA()
+	{
+		return GetType().ToString();
+	}
+
+	public virtual void OKLAJINHPAN()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	[SpecialName]
+	public string AHOCPHPACKE()
+	{
+		return GetType().ToString();
+	}
+
+	public void MCHOODHEIJP(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void LGCNGKPADGA(bool IDNLBGOCOEK)
 	{
 		hideCursor = !IDNLBGOCOEK;
-		DKPCMCEGMME(true);
+		GNNBGIBFGLF(false);
 	}
 
 	[SpecialName]
-	public string EMOAHNADEHK()
+	public string JKONKOPIOKD()
 	{
 		return GetType().ToString();
 	}
 
-	public virtual void NFEDLAOPHML()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
 	[SpecialName]
-	public string JOAAANFJKIC()
+	public string JABENKBHJGE()
 	{
 		return GetType().ToString();
 	}
 
-	public virtual void GCDLIKEDMCF()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public virtual void IDIIELPAMCJ()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public virtual void PHJJHFBLICM()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public virtual void ADPLHDFJFID()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	[SpecialName]
-	public string GEDAFOHFDIA()
-	{
-		return GetType().ToString();
-	}
-
-	public void OAKIFMFLMPI(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public void GFNINHCBMAN(bool IDNLBGOCOEK)
+	public void DPGCJACMEKB(bool IDNLBGOCOEK)
 	{
 		hideCursor = IDNLBGOCOEK;
-		DEFOLPODPPI(true);
+		HMDNPKBKIOI(true);
 	}
 
-	[SpecialName]
-	public string CNEOMFHNLOD()
-	{
-		return GetType().ToString();
-	}
-
-	public virtual void EHCGBJDFMHG()
+	public virtual void ODMPMJPALID()
 	{
 		if (hideCursor)
 		{
 			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	[SpecialName]
-	public string PNOCNIBEHMF()
-	{
-		return GetType().ToString();
-	}
-
-	public virtual void KCDBBPKIFNJ()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
 		}
 		else
 		{
@@ -726,539 +842,96 @@ public class Scene : Singleton<Scene>
 	}
 
 	[SpecialName]
-	public string FJNAJNBGCJD()
+	public string PAGFNJCJFGL()
 	{
 		return GetType().ToString();
-	}
-
-	public virtual void CFFCLAHMBAA()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public void PLCAPHCDHJK(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		DKPCMCEGMME(true);
 	}
 
 	[SpecialName]
-	public string GOMJAEIDHNM()
+	public string IDKLIJPHBBO()
 	{
 		return GetType().ToString();
 	}
 
-	public void ALBDINIHDNE(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		NJPIIAECJFO(true);
-	}
-
-	public virtual void FIKFJDFELIP()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public virtual void MDNHCLKNCLE()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public void OAIIEOHOKGJ(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		FMNOONOIHDC(false);
-	}
-
-	[SpecialName]
-	public string BDJMLNLIIMB()
-	{
-		return GetType().ToString();
-	}
-
-	public virtual void EPEGAEGDJAM()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public void PJHICJBICHE(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		DEFOLPODPPI(true);
-	}
-
-	public virtual void BGDONBMDPGM()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public virtual void IBHACCEEFFI()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public void JHKNPBHCBEJ(bool NODADLMFEBA)
+	public void GDDGKCJBAFH(bool NODADLMFEBA)
 	{
 		lockCursor = NODADLMFEBA;
 	}
 
-	public void HNCCOHFLKAN(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	[SpecialName]
-	public string KEGJGPOECHA()
-	{
-		return GetType().ToString();
-	}
-
-	public virtual void AIJGAJIOJDJ()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public void AEDABLEPKLG(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public virtual void MBLDJEFBLFL()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public void BOECOLNJNOC(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		FIMAMPOCBFK(true);
-	}
-
-	public void NCJKEKHBFHA(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		HNCCOHFLKAN(false);
-	}
-
-	[SpecialName]
-	public string LCBFAFEADIO()
-	{
-		return GetType().ToString();
-	}
-
-	public void OGDCFEEPFNG(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public virtual void KLILJHJNICK()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	[SpecialName]
-	public string HLGJHICPDMO()
-	{
-		return GetType().ToString();
-	}
-
-	public virtual void LJIHHJOAJCN()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public void JDONOMPKEED(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		OGDCFEEPFNG(false);
-	}
-
-	public virtual void KOJKBFDNGDK()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	[SpecialName]
-	public string CFADADIIOAM()
-	{
-		return GetType().ToString();
-	}
-
-	public void NCLFDGJCJGK(bool IDNLBGOCOEK)
+	public void PMEEJELAKKL(bool IDNLBGOCOEK)
 	{
 		hideCursor = IDNLBGOCOEK;
-		HNCCOHFLKAN(false);
+		DHLDFFLJBMN(true);
 	}
 
-	[SpecialName]
-	public string EKIBIEFGIJC()
-	{
-		return GetType().ToString();
-	}
-
-	public virtual void NEKCPLGFOFD()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public virtual void LBAJLLFMMMP()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public void AJOOLOFFFGF(bool IDNLBGOCOEK)
+	public void LGJLNDGBEOP(bool IDNLBGOCOEK)
 	{
 		hideCursor = IDNLBGOCOEK;
-		FMNOONOIHDC(true);
+		JPHODCAAGNN(false);
 	}
 
-	public virtual void BEBNOKFLJPH()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public virtual void OIBMHPIFAKK()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public void LockCursor(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	[SpecialName]
-	public string HJCBNLFCNAM()
-	{
-		return GetType().ToString();
-	}
-
-	public virtual void JILOMOBDPIA()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = false;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	public virtual void DFFKKLAPHCC()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-	}
-
-	public virtual void JECMJNFGBGC()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = false;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	[SpecialName]
-	public string HPKHOICGMFC()
-	{
-		return GetType().ToString();
-	}
-
-	public void EEOIHHPKPAC(bool NODADLMFEBA)
-	{
-		lockCursor = NODADLMFEBA;
-	}
-
-	public virtual void KIMMMCJFMAB()
-	{
-		if (hideCursor)
-		{
-			Cursor.visible = true;
-		}
-		else
-		{
-			Cursor.visible = true;
-		}
-		if (lockCursor)
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-		else
-		{
-			Cursor.lockState = CursorLockMode.None;
-		}
-	}
-
-	[SpecialName]
-	public string KCGOFGJNCME()
-	{
-		return GetType().ToString();
-	}
-
-	public void IDCJMKMMGJA(bool IDNLBGOCOEK)
+	public void DPMCFFEDPEH(bool IDNLBGOCOEK)
 	{
 		hideCursor = IDNLBGOCOEK;
-		OKKKFINFMDJ(false);
+		EBJKFPDAHKK(true);
+	}
+
+	public void JMAHCPIPDBP(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		OGDCFEEPFNG(true);
+	}
+
+	public virtual void NNFMIAFHMJM()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public virtual void AEOLJEIDMDB()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	[SpecialName]
+	public string PGNOPJPKDEA()
+	{
+		return GetType().ToString();
+	}
+
+	[SpecialName]
+	public string MHLFOMHLDAH()
+	{
+		return GetType().ToString();
 	}
 
 	public virtual void Update()
@@ -1281,7 +954,70 @@ public class Scene : Singleton<Scene>
 		}
 	}
 
-	public virtual void LCDJFJIBADI()
+	public void OKKKFINFMDJ(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void NCLFDGJCJGK(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		IKJMKFFFGOD(false);
+	}
+
+	public void MFDBIBIFAMF(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		OKKKFINFMDJ(false);
+	}
+
+	public void JDONOMPKEED(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		AJFKDKMNBML(true);
+	}
+
+	public void OLDLJACPPOF(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	[SpecialName]
+	public string KHDLEJLPGKP()
+	{
+		return GetType().ToString();
+	}
+
+	public void MMLKMEBMOFK(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		OKKKFINFMDJ(false);
+	}
+
+	public void JPHODCAAGNN(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void BAKILCLOCBF(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		MIKAGIBOENB(true);
+	}
+
+	public void CFBPIOCEFHL(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		INJFINOJPAA(false);
+	}
+
+	[SpecialName]
+	public string HPKHOICGMFC()
+	{
+		return GetType().ToString();
+	}
+
+	public virtual void LLDHEJIEDHO()
 	{
 		if (hideCursor)
 		{
@@ -1297,11 +1033,182 @@ public class Scene : Singleton<Scene>
 		}
 		else
 		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public virtual void COOHIILCOCO()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public void JMJMGFGJKEF(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		AJFKDKMNBML(true);
+	}
+
+	public virtual void FEHCNJLLJMP()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
 			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}
 
-	public virtual void DPIPGGDNGHN()
+	public void MCNPGLNCLDI(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		MLAFGCPPPLC(false);
+	}
+
+	public void ShowCursor(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		LockCursor(false);
+	}
+
+	public virtual void BGFJOEPFOPM()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public void HMEKDPIJJIJ(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void HLIAEEMGBHN()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public virtual void FIJHDKIPENG()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	[SpecialName]
+	public string IIPMMNJPGMA()
+	{
+		return GetType().ToString();
+	}
+
+	public void BHNKGIHGELM(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		GIOMGAJPLGE(false);
+	}
+
+	[SpecialName]
+	public string ALIBHGIINJN()
+	{
+		return GetType().ToString();
+	}
+
+	public void INJFINOJPAA(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void LBAJLLFMMMP()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = true;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public void GNNBGIBFGLF(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void IKDNLHLBHID()
 	{
 		if (hideCursor)
 		{
@@ -1317,21 +1224,41 @@ public class Scene : Singleton<Scene>
 		}
 		else
 		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	[SpecialName]
+	public string HJCBNLFCNAM()
+	{
+		return GetType().ToString();
+	}
+
+	public virtual void FDNONDCGGCG()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
 			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}
 
-	public void GIIBKOADAMF(bool IDNLBGOCOEK)
-	{
-		hideCursor = !IDNLBGOCOEK;
-		OKKKFINFMDJ(true);
-	}
-
-	public virtual void LFAFJKJAEEL()
+	public virtual void NFEDLAOPHML()
 	{
 		if (hideCursor)
 		{
-			Cursor.visible = true;
+			Cursor.visible = false;
 		}
 		else
 		{
@@ -1343,11 +1270,135 @@ public class Scene : Singleton<Scene>
 		}
 		else
 		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public void KEIDLLGHFCO(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		AJFKDKMNBML(false);
+	}
+
+	public virtual void FABMDEHEDNO()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public void DHLDFFLJBMN(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void EJBGCLOEOPN(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		MIECBIKCGFJ(true);
+	}
+
+	public virtual void LMADKINICIN()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
 			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}
 
-	public void FACGFLHIDCL(bool NODADLMFEBA)
+	public void GIOMGAJPLGE(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void GMGMPMIIMLP(bool IDNLBGOCOEK)
+	{
+		hideCursor = IDNLBGOCOEK;
+		JPHODCAAGNN(false);
+	}
+
+	public void PNNDIDCCMOL(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public void JANHLJKAGNM(bool NODADLMFEBA)
+	{
+		lockCursor = NODADLMFEBA;
+	}
+
+	public virtual void Start()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = true;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public virtual void FIKFJDFELIP()
+	{
+		if (hideCursor)
+		{
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.visible = false;
+		}
+		if (lockCursor)
+		{
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+	}
+
+	public void EPEBJKNNFAP(bool IDNLBGOCOEK)
+	{
+		hideCursor = !IDNLBGOCOEK;
+		LBFBDFMMPEO(true);
+	}
+
+	public void HAJNBNBINPM(bool NODADLMFEBA)
 	{
 		lockCursor = NODADLMFEBA;
 	}

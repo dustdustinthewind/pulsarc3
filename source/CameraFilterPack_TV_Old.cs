@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Old Film/Old")]
+[ExecuteInEditMode]
 public class CameraFilterPack_TV_Old : MonoBehaviour
 {
 	public Shader SCShader;
@@ -124,9 +124,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1549f;
 			}
-			LONNIJMNKFB().SetFloat("Is Clone ?: ", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("_ScreenResolution", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			IGIAPKPKGPK().SetFloat("Dropped Object: ", HBJJOCHGOPH);
+			IGIAPKPKGPK().SetFloat("_TimeX", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -136,7 +136,7 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 
 	private void BEBNOKFLJPH()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Vision_Warp");
+		SCShader = Shader.Find("_Value4");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -205,9 +205,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 220f;
 			}
-			KGOLDDBHIFN().SetFloat("_Vignette", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("value", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
+			MMOODGIODPC().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("value", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -217,7 +217,7 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find("ICollection");
+		SCShader = Shader.Find("w");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -253,9 +253,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1027f;
 			}
-			MMOODGIODPC().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			GKILCDHJFEG().SetFloat("id", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
+			JIBOKBCPDLC().SetFloat("_Distortion", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("Set Object Scale", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
 		}
 		else
 		{
@@ -313,9 +313,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 738f;
 			}
-			JIBOKBCPDLC().SetFloat("#lives", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("_EmissionGain", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
+			MMOODGIODPC().SetFloat("#score", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("_EmissionColor", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
 		else
 		{
@@ -351,9 +351,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1751f;
 			}
-			IIBLJCKLGFG().SetFloat("[PlayerBase] ShowImage \"", HBJJOCHGOPH);
-			IIBLJCKLGFG().SetFloat("InstantiateRpc", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			OIMMPLPBLBK().SetFloat("[PlayerBase] Got checkpoint at ", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("#rt", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{
@@ -388,7 +388,7 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find("Connecting to server");
+		SCShader = Shader.Find("LoadingStatusText");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -404,9 +404,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1684f;
 			}
-			GKILCDHJFEG().SetFloat(" Owner called.", HBJJOCHGOPH);
-			EOCCJGIGEGJ().SetFloat("HandleEventLeave for player ID: ", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			MMOODGIODPC().SetFloat("\" for viewID ", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("Join failed on GameServer. Changing back to MasterServer. Msg: ", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -427,9 +427,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 935f;
 			}
-			MMOODGIODPC().SetFloat("SetScale", HBJJOCHGOPH);
-			GKILCDHJFEG().SetFloat("CameraFilterPack/TV_VHS", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
+			IGIAPKPKGPK().SetFloat("RemoveEnvironmentObject", HBJJOCHGOPH);
+			IGIAPKPKGPK().SetFloat("_TimeX", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -450,7 +450,7 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -478,9 +478,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1650f;
 			}
-			OIMMPLPBLBK().SetFloat("L2", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("ItemsStoreButton", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
+			KGOLDDBHIFN().SetFloat("Joystick1Button6", HBJJOCHGOPH);
+			GKILCDHJFEG().SetFloat("ItemsStoreButton", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -512,9 +512,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 644f;
 			}
-			NBPKMLMCHFN.SetFloat(" ", HBJJOCHGOPH);
-			JIBOKBCPDLC().SetFloat("CameraFilterPack/Distortion_Dissipation", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
+			DBOLLHHMKKN().SetFloat("X", HBJJOCHGOPH);
+			IGIAPKPKGPK().SetFloat("CameraFilterPack/Distortion_Dissipation", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -531,9 +531,9 @@ public class CameraFilterPack_TV_Old : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1497f;
 			}
-			GKILCDHJFEG().SetFloat("_Near", HBJJOCHGOPH);
-			IGIAPKPKGPK().SetFloat("Object ID. Case-Sensitive", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
+			EOCCJGIGEGJ().SetFloat("_Near", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("id", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
 		else
 		{

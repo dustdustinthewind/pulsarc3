@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/FX/Grid")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/FX/Grid")]
 public class CameraFilterPack_FX_Grid : MonoBehaviour
 {
 	public Shader SCShader;
@@ -89,9 +89,9 @@ public class CameraFilterPack_FX_Grid : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1181f;
 			}
-			NBPKMLMCHFN.SetFloat("blue", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("SetParticlesParticleSize", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			NBPKMLMCHFN.SetFloat("0,1,false", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("Set particless emission (glow)", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -151,9 +151,9 @@ public class CameraFilterPack_FX_Grid : MonoBehaviour
 			{
 				HBJJOCHGOPH = 511f;
 			}
-			NBPKMLMCHFN.SetFloat("MenuScene", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("Error: Timeout :S", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			NBPKMLMCHFN.SetFloat("Creating new item...", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("Item creation successful! Published Item ID: ", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -194,9 +194,9 @@ public class CameraFilterPack_FX_Grid : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1719f;
 			}
-			HHIFMIPPMPF().SetFloat("_Offsets", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("JoystickButton13", Distortion);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			HHIFMIPPMPF().SetFloat("_Saturation", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("Joystick1Button12", Distortion);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{

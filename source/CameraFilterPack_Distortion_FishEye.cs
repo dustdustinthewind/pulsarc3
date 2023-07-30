@@ -140,10 +140,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 859f;
 			}
-			EPCGJFCCAFH().SetFloat("isVisible", HBJJOCHGOPH);
-			HCGJCMDJPGD().SetFloat("workshop.", Distortion);
-			NBPKMLMCHFN.SetVector("[PlayerBase] Game mode: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1926f, 573f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
+			PLBEJJIHFPB().SetFloat("isVisible", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("workshop.", Distortion);
+			CEKJODEAMGB().SetVector(".highscore", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1926f, 573f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
 		}
 		else
 		{
@@ -153,7 +153,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("[ERROR KEY {0}]");
+		SCShader = Shader.Find("\\n");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -253,10 +253,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1559f;
 			}
-			LPMLLJKMAMP().SetFloat("_Value3", HBJJOCHGOPH);
-			HEHKGPKLAKK().SetFloat("CameraFilterPack/Blend2Camera_Multiply", Distortion);
-			EPCGJFCCAFH().SetVector("menu.selectedplaymode", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1903f, 240f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
+			OCHJIMJNEMO().SetFloat("_Value2", HBJJOCHGOPH);
+			OCHJIMJNEMO().SetFloat("_ScreenResolution", Distortion);
+			EMDFHOKEGNG().SetVector("menu.selectedplaymode", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1903f, 240f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -278,7 +278,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void KCCIEMBMOBA()
 	{
-		SCShader = Shader.Find("_NeighbourMaxTex");
+		SCShader = Shader.Find("_NoiseTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -294,10 +294,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1398f;
 			}
-			LPMLLJKMAMP().SetFloat(": ", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("</color>", Distortion);
-			ACHNOHCLGOO().SetVector("settings.volume.game", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1507f, 1412f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH());
+			PGPEMMBJOOG().SetFloat("[PlayerController] ", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("#", Distortion);
+			LPMLLJKMAMP().SetVector("sfxVolume", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1507f, 1412f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
 		}
 		else
 		{
@@ -322,10 +322,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1185f;
 			}
-			MMOODGIODPC().SetFloat("_Speed", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("Ev DestroyAll! By PlayerId: ", Distortion);
-			KEMAALEODNH().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1922f, 489f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKNJGHFLAIF());
+			DONENAMLFLF().SetFloat("_TimeX", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetFloat("Error: Someone else(", Distortion);
+			NLFJGMBCICG().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1922f, 489f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -335,7 +335,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void OHFOLGANOLC()
 	{
-		SCShader = Shader.Find("_Value6");
+		SCShader = Shader.Find("_Value3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -359,7 +359,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void JOPCCCCHNLI()
 	{
-		SCShader = Shader.Find("]");
+		SCShader = Shader.Find("#craftng");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -402,10 +402,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 898f;
 			}
-			PGPEMMBJOOG().SetFloat("caret", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetFloat("Despawn environment object by id", Distortion);
-			PLBEJJIHFPB().SetVector("_Distortion", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 578f, 1047f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			LONNIJMNKFB().SetFloat("Tab1Content", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("Despawn environment object by id", Distortion);
+			LONNIJMNKFB().SetVector("_Distortion", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 578f, 1047f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FGENHBKMPDA());
 		}
 		else
 		{
@@ -445,10 +445,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1310f;
 			}
-			DONENAMLFLF().SetFloat(" By: ", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("_Threshhold", Distortion);
-			EPCGJFCCAFH().SetVector("Prints the number of logs currently held by DebugLogs", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1755f, 1850f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
+			KEMAALEODNH().SetFloat(" but this PhotonView does not exist! View was/is ours.", HBJJOCHGOPH);
+			CEKJODEAMGB().SetFloat("_TapLowBackground", Distortion);
+			DKNJGHFLAIF().SetVector("Prints list of all previous commands", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1755f, 1850f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -510,7 +510,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void FHPFJBFCOOF()
 	{
-		SCShader = Shader.Find("x");
+		SCShader = Shader.Find("b");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -545,10 +545,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 633f;
 			}
-			NLFJGMBCICG().SetFloat("Edited unlock conditions", HBJJOCHGOPH);
-			HEHKGPKLAKK().SetFloat("/icon", Distortion);
-			OKJOKHGJHGF().SetVector("RoomDescriptionText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 297f, 1536f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FGENHBKMPDA());
+			LPMLLJKMAMP().SetFloat("grid", HBJJOCHGOPH);
+			EPCGJFCCAFH().SetFloat("/icon", Distortion);
+			LONNIJMNKFB().SetVector("RoomDescriptionText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 297f, 1536f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
 		}
 		else
 		{
@@ -573,7 +573,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void NPLCENPNJBM()
 	{
-		SCShader = Shader.Find("true");
+		SCShader = Shader.Find("[MapsData] Key ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -582,7 +582,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void PDHKMDBNGGN()
 	{
-		SCShader = Shader.Find("challenges.");
+		SCShader = Shader.Find("skin.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -645,10 +645,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1389f;
 			}
-			PLBEJJIHFPB().SetFloat("Mouse1", HBJJOCHGOPH);
-			HEHKGPKLAKK().SetFloat("Rotate environment object to the rotation", Distortion);
-			LPMLLJKMAMP().SetVector("<b>#", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 268f, 1196f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			PLBEJJIHFPB().SetFloat("Mouse0", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("float,0", Distortion);
+			OKJOKHGJHGF().SetVector("#ok", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 268f, 1196f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
 		}
 		else
 		{
@@ -697,7 +697,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void MKIMDFLBFOM()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/Drawing_Paper");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -713,10 +713,10 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 			{
 				HBJJOCHGOPH = 169f;
 			}
-			PGPEMMBJOOG().SetFloat("CountEventsGoal", HBJJOCHGOPH);
-			DONENAMLFLF().SetFloat("Clear Environment", Distortion);
-			EPCGJFCCAFH().SetVector("#ok", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1935f, 916f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
+			PLBEJJIHFPB().SetFloat(",", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetFloat("ClearEnvironment", Distortion);
+			OKJOKHGJHGF().SetVector("Sprite", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1935f, 916f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DONENAMLFLF());
 		}
 		else
 		{
@@ -756,7 +756,7 @@ public class CameraFilterPack_Distortion_FishEye : MonoBehaviour
 
 	private void FANADGBGCPI()
 	{
-		SCShader = Shader.Find("RarityImage");
+		SCShader = Shader.Find("IconImage");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

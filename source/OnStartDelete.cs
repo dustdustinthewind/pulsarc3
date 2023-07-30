@@ -3,12 +3,7 @@ using UnityEngine;
 
 public class OnStartDelete : MonoBehaviour
 {
-	private void CNGAJDBOCLJ()
-	{
-		Object.Destroy(base.gameObject);
-	}
-
-	private void NBGIMIDICKE()
+	private void FEHCNJLLJMP()
 	{
 		Object.Destroy(base.gameObject);
 	}
@@ -18,32 +13,7 @@ public class OnStartDelete : MonoBehaviour
 		Object.Destroy(base.gameObject);
 	}
 
-	private void BEBNOKFLJPH()
-	{
-		Object.Destroy(base.gameObject);
-	}
-
-	private void IMCKJCHKMKB()
-	{
-		Object.Destroy(base.gameObject);
-	}
-
-	private void NPLCENPNJBM()
-	{
-		Object.Destroy(base.gameObject);
-	}
-
-	private void JKFDDNMPOJH()
-	{
-		Object.Destroy(base.gameObject);
-	}
-
-	private void KIMMMCJFMAB()
-	{
-		Object.Destroy(base.gameObject);
-	}
-
-	private void Start()
+	private void CIPKEPDELJB()
 	{
 		Object.Destroy(base.gameObject);
 	}
@@ -53,12 +23,7 @@ public class OnStartDelete : MonoBehaviour
 		Object.Destroy(base.gameObject);
 	}
 
-	private void DNNFHBOOPIN()
-	{
-		Object.Destroy(base.gameObject);
-	}
-
-	private void NNCCPEBIAKH()
+	private void BGDPIHMAACO()
 	{
 		Object.Destroy(base.gameObject);
 	}
@@ -68,7 +33,27 @@ public class OnStartDelete : MonoBehaviour
 		Object.Destroy(base.gameObject);
 	}
 
-	private void KLILJHJNICK()
+	private void DNNFHBOOPIN()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void CNGAJDBOCLJ()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void DAHFFNNIGML()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void NNCCPEBIAKH()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void IMCKJCHKMKB()
 	{
 		Object.Destroy(base.gameObject);
 	}
@@ -88,12 +73,42 @@ public class OnStartDelete : MonoBehaviour
 		Object.Destroy(base.gameObject);
 	}
 
-	private void FEHCNJLLJMP()
+	private void KIMMMCJFMAB()
 	{
 		Object.Destroy(base.gameObject);
 	}
 
-	private void CIPKEPDELJB()
+	private void BEBNOKFLJPH()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void PAKPHKPDKGE()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void KLILJHJNICK()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void JKFDDNMPOJH()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void NPLCENPNJBM()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void Start()
+	{
+		Object.Destroy(base.gameObject);
+	}
+
+	private void NBGIMIDICKE()
 	{
 		Object.Destroy(base.gameObject);
 	}

@@ -45,40 +45,127 @@ internal class SteamManager : MonoBehaviour
 
 	public static bool Initialized => Instance.FMLHGNJJDEA;
 
+	private void Update()
+	{
+		if (FMLHGNJJDEA)
+		{
+			SteamAPI.RunCallbacks();
+			if (!MEMEGFOKJBG)
+			{
+				SteamAPI.Shutdown();
+				base.enabled = false;
+			}
+		}
+	}
+
+	private void AGMJDGHLBMN()
+	{
+		if (FMLHGNJJDEA)
+		{
+			SteamAPI.RunCallbacks();
+			if (!MEMEGFOKJBG)
+			{
+				SteamAPI.Shutdown();
+				base.enabled = false;
+			}
+		}
+	}
+
+	[SpecialName]
+	public static bool EGEBMNMPMPA()
+	{
+		return Instance.FMLHGNJJDEA;
+	}
+
+	private static void DOIHGMABBMH(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
+	{
+		Debug.LogWarning(GDPBAFNJIJM);
+	}
+
+	private void AEEGKLABFLN()
+	{
+		if (FMLHGNJJDEA)
+		{
+			SteamAPI.RunCallbacks();
+			if (!MEMEGFOKJBG)
+			{
+				SteamAPI.Shutdown();
+				base.enabled = false;
+			}
+		}
+	}
+
 	public void ExitGame()
 	{
 		Application.Quit();
 	}
 
-	public void NCJHDGAABDE()
+	private static byte[] OFFCGDOJOJK(string LEFMNANHGDA)
 	{
-		Application.Quit();
+		byte[] array = new byte[LEFMNANHGDA.Length * 2];
+		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 0, array, 0, array.Length);
+		return array;
 	}
 
-	private static void KHJPJOCKGCA(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
+	public void EMANBHKAONB()
+	{
+		LIPLGELHGAD = Callback<GetAuthSessionTicketResponse_t>.Create(MEFIMOFDHCP);
+		if (IEHNBLNFHJI != null)
+		{
+			UnityEngine.Object.Destroy(base.gameObject);
+			return;
+		}
+		IEHNBLNFHJI = this;
+		if (KGJDHIHOCEI)
+		{
+			throw new Exception("Finished");
+		}
+		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
+		if (!Packsize.Test())
+		{
+			Debug.LogError(".lastCheckpoint.bgcolor", this);
+			return;
+		}
+		if (!DllCheck.Test())
+		{
+			Debug.LogError("/", this);
+			return;
+		}
+		try
+		{
+			if (SteamAPI.RestartAppIfNecessary((AppId_t)4294967112u))
+			{
+				Application.Quit();
+				return;
+			}
+		}
+		catch (DllNotFoundException ex)
+		{
+			Debug.LogError("/" + ex, this);
+			Application.Quit();
+			return;
+		}
+		connectingToServer = false;
+		FMLHGNJJDEA = SteamAPI.Init();
+		if (!FMLHGNJJDEA)
+		{
+			Singleton<GameManager>.Instance.OJFIOIHBEOE("_DotSize");
+			return;
+		}
+		GEIOLGGAMKL = new byte[108];
+		CHMKJCDEAEM = SteamUser.GetAuthSessionTicket(GEIOLGGAMKL, 19, out KMDGBKMCCAM);
+		Debug.Log("_Value7");
+		if (Application.internetReachability == NetworkReachability.NotReachable)
+		{
+			StartCoroutine(IOAHLAJHAEN(946f));
+		}
+		StartCoroutine(LDBKGFDHKFB(PJOEHKHICFH));
+		KGJDHIHOCEI = true;
+	}
+
+	private static void PAIHOALIMBH(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
 	{
 		Debug.LogWarning(GDPBAFNJIJM);
-	}
-
-	private IEnumerator IMLLNKFFNFE(float EHHBHEJBHNG)
-	{
-		yield return new WaitForSeconds(EHHBHEJBHNG);
-		connectingToServer = false;
-		if (!isKeyVerified)
-		{
-			isKeyVerified = true;
-			Singleton<GameManager>.Instance.StartOfflineMessage();
-		}
-	}
-
-	private void JOKPEOJNLJL(GetAuthSessionTicketResponse_t IAFAANLMOAG)
-	{
-		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
-		{
-			StopCoroutine("CameraFilterPack/Oculus_NightVision2");
-			Debug.Log("_Blue_C");
-			StartCoroutine(MNAMCHHEOFB());
-		}
 	}
 
 	private void MLLFDFFJDFA(GameOverlayActivated_t IAFAANLMOAG)
@@ -88,19 +175,123 @@ internal class SteamManager : MonoBehaviour
 		}
 	}
 
-	private static void CDFHAHKKCGA(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
+	private IEnumerator OCHGFOLMHJD()
+	{
+		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
+		WWWForm wWWForm = new WWWForm();
+		wWWForm.AddField("ticket", steamTempKey);
+		byte[] data = wWWForm.data;
+		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
+		WWW wWW = new WWW(url, data);
+		yield return wWW;
+		connectingToServer = true;
+		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
+		{
+			connectingToServer = false;
+			StopCoroutine("LDBKGFDHKFB");
+			isKeyVerified = true;
+			Singleton<GameManager>.Instance.OnUserVerified();
+		}
+	}
+
+	private void OCMKCBBCEFG()
+	{
+		if (FMLHGNJJDEA)
+		{
+			SteamAPI.RunCallbacks();
+			if (!MEMEGFOKJBG)
+			{
+				SteamAPI.Shutdown();
+				base.enabled = false;
+			}
+		}
+	}
+
+	private void HLDFOJMHKNL()
+	{
+		if (FMLHGNJJDEA)
+		{
+			SteamAPI.RunCallbacks();
+			if (!MEMEGFOKJBG)
+			{
+				SteamAPI.Shutdown();
+				base.enabled = false;
+			}
+		}
+	}
+
+	private IEnumerator EHMGELHHCHI()
+	{
+		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
+		WWWForm wWWForm = new WWWForm();
+		wWWForm.AddField("ticket", steamTempKey);
+		byte[] data = wWWForm.data;
+		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
+		WWW wWW = new WWW(url, data);
+		yield return wWW;
+		connectingToServer = true;
+		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
+		{
+			connectingToServer = false;
+			StopCoroutine("LDBKGFDHKFB");
+			isKeyVerified = true;
+			Singleton<GameManager>.Instance.OnUserVerified();
+		}
+	}
+
+	private void CCLDIMFBONJ()
+	{
+		try
+		{
+			if (!(IEHNBLNFHJI != this))
+			{
+				IEHNBLNFHJI = null;
+				if (FMLHGNJJDEA)
+				{
+					SteamAPI.Shutdown();
+				}
+			}
+		}
+		catch (Exception)
+		{
+		}
+	}
+
+	private void HDDECCMEJKA()
+	{
+		if (FMLHGNJJDEA)
+		{
+			SteamAPI.RunCallbacks();
+			if (!MEMEGFOKJBG)
+			{
+				SteamAPI.Shutdown();
+				base.enabled = true;
+			}
+		}
+	}
+
+	private static void KFCNAPFOPJO(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
 	{
 		Debug.LogWarning(GDPBAFNJIJM);
 	}
 
-	private IEnumerator LDBKGFDHKFB(float EHHBHEJBHNG)
+	private void HKMKKDFHPBP(GameWebCallback_t IAFAANLMOAG)
 	{
-		yield return new WaitForSeconds(EHHBHEJBHNG);
-		connectingToServer = false;
-		if (!isKeyVerified)
+		object[] array = new object[0];
+		array[1] = "steamid";
+		array[1] = 164;
+		array[4] = "SingleplayerButton";
+		array[1] = IAFAANLMOAG.m_szURL;
+		Debug.Log(string.Concat(array));
+	}
+
+	private void KDCCFBBAAEK(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == (EResult)0)
 		{
-			isKeyVerified = true;
-			Singleton<GameManager>.Instance.StartOfflineMessage();
+			StopCoroutine("colorA");
+			Debug.Log("PhotonView with ID {0} wasn't properly unregistered! Please report this case to developer@photonengine.com");
+			StartCoroutine(MNAMCHHEOFB());
 		}
 	}
 
@@ -124,18 +315,48 @@ internal class SteamManager : MonoBehaviour
 		}
 	}
 
-	private IEnumerator DKNKLPLIENK(float EHHBHEJBHNG)
+	private IEnumerator MNAMCHHEOFB()
 	{
-		yield return new WaitForSeconds(EHHBHEJBHNG);
-		connectingToServer = false;
-		if (!isKeyVerified)
+		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
+		WWWForm wWWForm = new WWWForm();
+		wWWForm.AddField("ticket", steamTempKey);
+		byte[] data = wWWForm.data;
+		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
+		WWW wWW = new WWW(url, data);
+		yield return wWW;
+		connectingToServer = true;
+		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
 		{
+			connectingToServer = false;
+			StopCoroutine("LDBKGFDHKFB");
 			isKeyVerified = true;
-			Singleton<GameManager>.Instance.StartOfflineMessage();
+			Singleton<GameManager>.Instance.OnUserVerified();
 		}
 	}
 
-	private void Update()
+	private void DLIFALIPODJ(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
+		{
+			StopCoroutine("ResourcesConfig");
+			Debug.Log("traffic");
+			StartCoroutine(MNAMCHHEOFB());
+		}
+	}
+
+	[SpecialName]
+	public static SteamManager AIJLCJGGINJ()
+	{
+		return IEHNBLNFHJI ?? new GameObject("0").AddComponent<SteamManager>();
+	}
+
+	[SpecialName]
+	public static bool LIFODIEEGMI()
+	{
+		return Instance.FMLHGNJJDEA;
+	}
+
+	private void IIFCIDDJHPM()
 	{
 		if (FMLHGNJJDEA)
 		{
@@ -143,12 +364,29 @@ internal class SteamManager : MonoBehaviour
 			if (!MEMEGFOKJBG)
 			{
 				SteamAPI.Shutdown();
-				base.enabled = false;
+				base.enabled = true;
 			}
 		}
 	}
 
-	private IEnumerator JGOOHEBBDBF(float EHHBHEJBHNG)
+	private static byte[] IBMECBIONDH(string LEFMNANHGDA)
+	{
+		byte[] array = new byte[LEFMNANHGDA.Length * 3];
+		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 0, array, 0, array.Length);
+		return array;
+	}
+
+	private void AFBOFAHPAPI(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
+		{
+			StopCoroutine("challenges.");
+			Debug.Log("MainCamera");
+			StartCoroutine(MNAMCHHEOFB());
+		}
+	}
+
+	private IEnumerator IOAHLAJHAEN(float EHHBHEJBHNG)
 	{
 		yield return new WaitForSeconds(EHHBHEJBHNG);
 		connectingToServer = false;
@@ -159,28 +397,241 @@ internal class SteamManager : MonoBehaviour
 		}
 	}
 
-	private static byte[] NNCJHPHAOOA(string LEFMNANHGDA)
+	private void OnDestroy()
 	{
-		byte[] array = new byte[LEFMNANHGDA.Length * 8];
+		try
+		{
+			if (!(IEHNBLNFHJI != this))
+			{
+				IEHNBLNFHJI = null;
+				if (FMLHGNJJDEA)
+				{
+					SteamAPI.Shutdown();
+				}
+			}
+		}
+		catch (Exception)
+		{
+		}
+	}
+
+	private static string DCMLPBNKJCP(byte[] JMOJMGEEGKD)
+	{
+		char[] array = new char[JMOJMGEEGKD.Length / 6];
+		Buffer.BlockCopy(JMOJMGEEGKD, 1, array, 1, JMOJMGEEGKD.Length);
+		return new string(array);
+	}
+
+	private static void JJOBAAOEGFL(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
+	{
+		Debug.LogWarning(GDPBAFNJIJM);
+	}
+
+	private void AJIJEIDKFOG(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
+		{
+			StopCoroutine("The shader ");
+			Debug.Log(",");
+			StartCoroutine(IGGDDOEPOGM());
+		}
+	}
+
+	private void BIIBADBPGAP(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
+		{
+			StopCoroutine("MNAMCHHEOFB");
+			Debug.Log("[SteamManager] Connection established, authorization");
+			StartCoroutine(MNAMCHHEOFB());
+		}
+	}
+
+	private void DDPCJGIFJCF()
+	{
+		try
+		{
+			if (!(IEHNBLNFHJI != this))
+			{
+				IEHNBLNFHJI = null;
+				if (FMLHGNJJDEA)
+				{
+					SteamAPI.Shutdown();
+				}
+			}
+		}
+		catch (Exception)
+		{
+		}
+	}
+
+	[SpecialName]
+	public static SteamManager JHHBLAJMCBF()
+	{
+		return IEHNBLNFHJI ?? new GameObject("0").AddComponent<SteamManager>();
+	}
+
+	[SpecialName]
+	public static bool LBLKDFIIKME()
+	{
+		return EPBBAMHFCAO().FMLHGNJJDEA;
+	}
+
+	private static byte[] DBKHFPKPMCB(string LEFMNANHGDA)
+	{
+		byte[] array = new byte[LEFMNANHGDA.Length * 7];
 		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 1, array, 0, array.Length);
 		return array;
 	}
 
-	private static byte[] IJDLJFPBCIE(string LEFMNANHGDA)
+	private void ENDDDMALLBK()
 	{
-		byte[] array = new byte[LEFMNANHGDA.Length * 5];
-		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 1, array, 1, array.Length);
+		if (IEHNBLNFHJI == null)
+		{
+			IEHNBLNFHJI = this;
+		}
+		if (FMLHGNJJDEA)
+		{
+			if (PGCMGFLDEFI == null)
+			{
+				PGCMGFLDEFI = OILKMBBHGIC;
+				SteamClient.SetWarningMessageHook(PGCMGFLDEFI);
+			}
+			if (LIFODIEEGMI())
+			{
+				PJDOHKKDBML = Callback<GameOverlayActivated_t>.Create(MLLFDFFJDFA);
+			}
+		}
+	}
+
+	private static void IGBDLPDJJOM(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
+	{
+		Debug.LogWarning(GDPBAFNJIJM);
+	}
+
+	[SpecialName]
+	public static bool FCFGAFIGCIJ()
+	{
+		return JHHBLAJMCBF().FMLHGNJJDEA;
+	}
+
+	private IEnumerator JAAKIBCNJCE()
+	{
+		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
+		WWWForm wWWForm = new WWWForm();
+		wWWForm.AddField("ticket", steamTempKey);
+		byte[] data = wWWForm.data;
+		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
+		WWW wWW = new WWW(url, data);
+		yield return wWW;
+		connectingToServer = true;
+		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
+		{
+			connectingToServer = false;
+			StopCoroutine("LDBKGFDHKFB");
+			isKeyVerified = true;
+			Singleton<GameManager>.Instance.OnUserVerified();
+		}
+	}
+
+	[SpecialName]
+	public static SteamManager EPBBAMHFCAO()
+	{
+		return IEHNBLNFHJI ?? new GameObject("_VelTex").AddComponent<SteamManager>();
+	}
+
+	private static byte[] PFNGCEBJGPH(string LEFMNANHGDA)
+	{
+		byte[] array = new byte[LEFMNANHGDA.Length * 2];
+		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 0, array, 1, array.Length);
 		return array;
 	}
 
-	private void AIKCLFJPGAC(GameWebCallback_t IAFAANLMOAG)
+	private void PEFBGKIOJCI(StoreAuthURLResponse_t IAFAANLMOAG, bool MIOCPAMDBCN)
 	{
-		object[] array = new object[1];
-		array[1] = " has no method \"";
-		array[0] = 145;
-		array[1] = "ViewMenu";
-		array[6] = IAFAANLMOAG.m_szURL;
+		object[] array = new object[5];
+		array[0] = "maps.";
+		array[0] = 43;
+		array[6] = "[ResourcesManager] Load image error: ";
+		array[0] = IAFAANLMOAG.m_szURL;
 		Debug.Log(string.Concat(array));
+	}
+
+	private void DJAGADKNLNE(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == (EResult)0)
+		{
+			StopCoroutine("SelectorMusicToggle");
+			Debug.Log("_ScreenResolution");
+			StartCoroutine(MNAMCHHEOFB());
+		}
+	}
+
+	private static string DCDCHPNBGPN(byte[] JMOJMGEEGKD)
+	{
+		char[] array = new char[JMOJMGEEGKD.Length / 2];
+		Buffer.BlockCopy(JMOJMGEEGKD, 0, array, 0, JMOJMGEEGKD.Length);
+		return new string(array);
+	}
+
+	private void MEFIMOFDHCP(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
+		{
+			StopCoroutine("LevelEditor/patterns");
+			Debug.Log("menuthemes");
+			StartCoroutine(JAAKIBCNJCE());
+		}
+	}
+
+	private string LKADFFCHODB(byte[] MJDFGEPAAPO, int NIEADDJOIEG)
+	{
+		byte[] array = MJDFGEPAAPO;
+		Array.Resize(ref array, NIEADDJOIEG);
+		StringBuilder stringBuilder = new StringBuilder();
+		byte[] array2 = array;
+		foreach (byte b in array2)
+		{
+			stringBuilder.AppendFormat("checkpoint", b);
+		}
+		return stringBuilder.ToString();
+	}
+
+	private static void LNELEBPOOPP(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
+	{
+		Debug.LogWarning(GDPBAFNJIJM);
+	}
+
+	private string KNFLKCLHDFC(byte[] MJDFGEPAAPO, int NIEADDJOIEG)
+	{
+		byte[] array = MJDFGEPAAPO;
+		Array.Resize(ref array, NIEADDJOIEG);
+		StringBuilder stringBuilder = new StringBuilder();
+		byte[] array2 = array;
+		foreach (byte b in array2)
+		{
+			stringBuilder.AppendFormat("{0:x2}", b);
+		}
+		return stringBuilder.ToString();
+	}
+
+	private IEnumerator PPEMEJHPOBA()
+	{
+		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
+		WWWForm wWWForm = new WWWForm();
+		wWWForm.AddField("ticket", steamTempKey);
+		byte[] data = wWWForm.data;
+		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
+		WWW wWW = new WWW(url, data);
+		yield return wWW;
+		connectingToServer = true;
+		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
+		{
+			connectingToServer = false;
+			StopCoroutine("LDBKGFDHKFB");
+			isKeyVerified = true;
+			Singleton<GameManager>.Instance.OnUserVerified();
+		}
 	}
 
 	private IEnumerator IGGDDOEPOGM()
@@ -202,7 +653,112 @@ internal class SteamManager : MonoBehaviour
 		}
 	}
 
-	private void JCDPMLPNOOC()
+	private void NDAGPMPBAPN(StoreAuthURLResponse_t IAFAANLMOAG, bool MIOCPAMDBCN)
+	{
+		Debug.Log("[" + 165 + " - StoreAuthURLResponse] - " + IAFAANLMOAG.m_szURL);
+	}
+
+	private IEnumerator LDBKGFDHKFB(float EHHBHEJBHNG)
+	{
+		yield return new WaitForSeconds(EHHBHEJBHNG);
+		connectingToServer = false;
+		if (!isKeyVerified)
+		{
+			isKeyVerified = true;
+			Singleton<GameManager>.Instance.StartOfflineMessage();
+		}
+	}
+
+	public void HCIPHKNOBOL()
+	{
+		Application.Quit();
+	}
+
+	private static void OILKMBBHGIC(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
+	{
+		Debug.LogWarning(GDPBAFNJIJM);
+	}
+
+	private void EKKLKOHNAFD(GameOverlayActivated_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_bActive == 0)
+		{
+		}
+	}
+
+	private void AGEJBGOGMIM(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
+		{
+			StopCoroutine("MessageText");
+			Debug.Log("settings.enablehitsoundsinnormal");
+			StartCoroutine(PPEMEJHPOBA());
+		}
+	}
+
+	public void CCDNJPNLGBN()
+	{
+		LIPLGELHGAD = Callback<GetAuthSessionTicketResponse_t>.Create(AFBOFAHPAPI);
+		if (IEHNBLNFHJI != null)
+		{
+			UnityEngine.Object.Destroy(base.gameObject);
+			return;
+		}
+		IEHNBLNFHJI = this;
+		if (KGJDHIHOCEI)
+		{
+			throw new Exception("NEW_ACHIEVEMENT_1_");
+		}
+		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
+		if (!Packsize.Test())
+		{
+			Debug.LogError("Set Particles Input", this);
+			return;
+		}
+		if (!DllCheck.Test())
+		{
+			Debug.LogError("_Near", this);
+			return;
+		}
+		try
+		{
+			if (SteamAPI.RestartAppIfNecessary((AppId_t)4294967112u))
+			{
+				Application.Quit();
+				return;
+			}
+		}
+		catch (DllNotFoundException ex)
+		{
+			Debug.LogError("mapselector.tags." + ex, this);
+			Application.Quit();
+			return;
+		}
+		connectingToServer = true;
+		FMLHGNJJDEA = SteamAPI.Init();
+		if (!FMLHGNJJDEA)
+		{
+			Singleton<GameManager>.Instance.KNCMACOFNLJ(".lastCheckpoint.time");
+			return;
+		}
+		GEIOLGGAMKL = new byte[-183];
+		CHMKJCDEAEM = SteamUser.GetAuthSessionTicket(GEIOLGGAMKL, -14, out KMDGBKMCCAM);
+		Debug.Log("You need to have a child LayoutGroup content set for the list: ");
+		if (Application.internetReachability == NetworkReachability.NotReachable)
+		{
+			StartCoroutine(IOAHLAJHAEN(919f));
+		}
+		StartCoroutine(LDBKGFDHKFB(PJOEHKHICFH));
+		KGJDHIHOCEI = true;
+	}
+
+	[SpecialName]
+	public static SteamManager OPLCKMJIFAH()
+	{
+		return IEHNBLNFHJI ?? new GameObject("_Visualize").AddComponent<SteamManager>();
+	}
+
+	private void HGIMCCHIPCP()
 	{
 		if (IEHNBLNFHJI == null)
 		{
@@ -215,21 +771,16 @@ internal class SteamManager : MonoBehaviour
 				PGCMGFLDEFI = KHJPJOCKGCA;
 				SteamClient.SetWarningMessageHook(PGCMGFLDEFI);
 			}
-			if (CEIGOIJPONC())
+			if (LBLKDFIIKME())
 			{
-				PJDOHKKDBML = Callback<GameOverlayActivated_t>.Create(MIFCCDEFKNN);
+				PJDOHKKDBML = Callback<GameOverlayActivated_t>.Create(EKKLKOHNAFD);
 			}
 		}
 	}
 
-	private void NDAGPMPBAPN(StoreAuthURLResponse_t IAFAANLMOAG, bool MIOCPAMDBCN)
+	public void FMAFBLKAJDF()
 	{
-		Debug.Log("[" + 165 + " - StoreAuthURLResponse] - " + IAFAANLMOAG.m_szURL);
-	}
-
-	public void IOMCHHBGJEC()
-	{
-		LIPLGELHGAD = Callback<GetAuthSessionTicketResponse_t>.Create(FBKDGBINBOO);
+		LIPLGELHGAD = Callback<GetAuthSessionTicketResponse_t>.Create(AJIJEIDKFOG);
 		if (IEHNBLNFHJI != null)
 		{
 			UnityEngine.Object.Destroy(base.gameObject);
@@ -238,22 +789,22 @@ internal class SteamManager : MonoBehaviour
 		IEHNBLNFHJI = this;
 		if (KGJDHIHOCEI)
 		{
-			throw new Exception("PS Home");
+			throw new Exception(" = ");
 		}
 		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
 		if (!Packsize.Test())
 		{
-			Debug.LogError("settings.disablestoryboard", this);
+			Debug.LogError(".status", this);
 			return;
 		}
 		if (!DllCheck.Test())
 		{
-			Debug.LogError("CameraFilterPack/Distortion_Flag", this);
+			Debug.LogError("SetSatelliteRadius", this);
 			return;
 		}
 		try
 		{
-			if (SteamAPI.RestartAppIfNecessary((AppId_t)4294967216u))
+			if (SteamAPI.RestartAppIfNecessary((AppId_t)96u))
 			{
 				Application.Quit();
 				return;
@@ -261,37 +812,63 @@ internal class SteamManager : MonoBehaviour
 		}
 		catch (DllNotFoundException ex)
 		{
-			Debug.LogError("_FixDistance" + ex, this);
+			Debug.LogError("workshop." + ex, this);
 			Application.Quit();
 			return;
 		}
-		connectingToServer = false;
+		connectingToServer = true;
 		FMLHGNJJDEA = SteamAPI.Init();
 		if (!FMLHGNJJDEA)
 		{
-			Singleton<GameManager>.Instance.IPNHHBFPDJK(": ");
+			Singleton<GameManager>.Instance.DieWithError("&");
 			return;
 		}
-		GEIOLGGAMKL = new byte[193];
-		CHMKJCDEAEM = SteamUser.GetAuthSessionTicket(GEIOLGGAMKL, 130, out KMDGBKMCCAM);
-		Debug.Log("_ScreenResolution");
+		GEIOLGGAMKL = new byte[-78];
+		CHMKJCDEAEM = SteamUser.GetAuthSessionTicket(GEIOLGGAMKL, -11, out KMDGBKMCCAM);
+		Debug.Log("_PositionX");
 		if (Application.internetReachability == NetworkReachability.NotReachable)
 		{
-			StartCoroutine(LDBKGFDHKFB(1216f));
+			StartCoroutine(LDBKGFDHKFB(1563f));
 		}
-		StartCoroutine(DKNKLPLIENK(PJOEHKHICFH));
+		StartCoroutine(LDBKGFDHKFB(PJOEHKHICFH));
 		KGJDHIHOCEI = false;
 	}
 
-	[SpecialName]
-	public static bool EKLAPOPMFBB()
+	private static string CBIHMEJHCAI(byte[] JMOJMGEEGKD)
 	{
-		return BIPJOHJMDJB().FMLHGNJJDEA;
+		char[] array = new char[JMOJMGEEGKD.Length / 7];
+		Buffer.BlockCopy(JMOJMGEEGKD, 1, array, 1, JMOJMGEEGKD.Length);
+		return new string(array);
 	}
 
-	private void EGNGCHJNLOJ(GameWebCallback_t IAFAANLMOAG)
+	private void DNENFLNCIJP()
 	{
-		Debug.Log("[" + 164 + " - GameWebCallback] - " + IAFAANLMOAG.m_szURL);
+		if (FMLHGNJJDEA)
+		{
+			SteamAPI.RunCallbacks();
+			if (!MEMEGFOKJBG)
+			{
+				SteamAPI.Shutdown();
+				base.enabled = true;
+			}
+		}
+	}
+
+	private static byte[] CENIIBFDBME(string LEFMNANHGDA)
+	{
+		byte[] array = new byte[LEFMNANHGDA.Length * 1];
+		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 1, array, 1, array.Length);
+		return array;
+	}
+
+	private void JOKPEOJNLJL(GetAuthSessionTicketResponse_t IAFAANLMOAG)
+	{
+		if (IAFAANLMOAG.m_eResult == (EResult)0)
+		{
+			StopCoroutine("Joystick1Button6");
+			Debug.Log("ResetButton");
+			StartCoroutine(MNAMCHHEOFB());
+		}
 	}
 
 	public void Awake()
@@ -350,666 +927,23 @@ internal class SteamManager : MonoBehaviour
 		KGJDHIHOCEI = true;
 	}
 
-	private IEnumerator FLAPMANCKPJ()
+	private void EGNGCHJNLOJ(GameWebCallback_t IAFAANLMOAG)
 	{
-		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", steamTempKey);
-		byte[] data = wWWForm.data;
-		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
-		WWW wWW = new WWW(url, data);
-		yield return wWW;
-		connectingToServer = true;
-		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
-		{
-			connectingToServer = false;
-			StopCoroutine("LDBKGFDHKFB");
-			isKeyVerified = true;
-			Singleton<GameManager>.Instance.OnUserVerified();
-		}
+		Debug.Log("[" + 164 + " - GameWebCallback] - " + IAFAANLMOAG.m_szURL);
 	}
 
-	[SpecialName]
-	public static bool FJJLGFEBBGC()
+	private void APNNCJLIKOP(GameWebCallback_t IAFAANLMOAG)
 	{
-		return BIPJOHJMDJB().FMLHGNJJDEA;
-	}
-
-	private static byte[] IBMECBIONDH(string LEFMNANHGDA)
-	{
-		byte[] array = new byte[LEFMNANHGDA.Length * 3];
-		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 1, array, 1, array.Length);
-		return array;
-	}
-
-	private void OMCLOFCJMPG()
-	{
-		if (FMLHGNJJDEA)
-		{
-			SteamAPI.RunCallbacks();
-			if (!MEMEGFOKJBG)
-			{
-				SteamAPI.Shutdown();
-				base.enabled = false;
-			}
-		}
-	}
-
-	[SpecialName]
-	public static SteamManager BCLHIBPDOPP()
-	{
-		return IEHNBLNFHJI ?? new GameObject("_ScreenResolution").AddComponent<SteamManager>();
-	}
-
-	private void LFDGLCDDHJE(StoreAuthURLResponse_t IAFAANLMOAG, bool MIOCPAMDBCN)
-	{
-		object[] array = new object[6];
-		array[1] = "_Value2";
-		array[1] = 112;
-		array[8] = "[SERVER] Player ";
-		array[1] = IAFAANLMOAG.m_szURL;
+		object[] array = new object[2];
+		array[0] = "_Bullet_5";
+		array[0] = -1;
+		array[3] = "_ScreenResolution";
+		array[7] = IAFAANLMOAG.m_szURL;
 		Debug.Log(string.Concat(array));
 	}
 
-	private void BLNLHBNBKOH()
-	{
-		if (IEHNBLNFHJI == null)
-		{
-			IEHNBLNFHJI = this;
-		}
-		if (FMLHGNJJDEA)
-		{
-			if (PGCMGFLDEFI == null)
-			{
-				PGCMGFLDEFI = IAADBHJGAIO;
-				SteamClient.SetWarningMessageHook(PGCMGFLDEFI);
-			}
-			if (BPKAOOLMLNM())
-			{
-				PJDOHKKDBML = Callback<GameOverlayActivated_t>.Create(MLLFDFFJDFA);
-			}
-		}
-	}
-
-	private string ELDBHCGADCP(byte[] MJDFGEPAAPO, int NIEADDJOIEG)
-	{
-		byte[] array = MJDFGEPAAPO;
-		Array.Resize(ref array, NIEADDJOIEG);
-		StringBuilder stringBuilder = new StringBuilder();
-		byte[] array2 = array;
-		for (int i = 1; i < array2.Length; i += 0)
-		{
-			byte b = array2[i];
-			stringBuilder.AppendFormat("_TimeX", b);
-		}
-		return stringBuilder.ToString();
-	}
-
-	private void MIFCCDEFKNN(GameOverlayActivated_t IAFAANLMOAG)
-	{
-		if (IAFAANLMOAG.m_bActive == 0)
-		{
-		}
-	}
-
-	private void NFADJOKFCDL()
-	{
-		try
-		{
-			if (!(IEHNBLNFHJI != this))
-			{
-				IEHNBLNFHJI = null;
-				if (FMLHGNJJDEA)
-				{
-					SteamAPI.Shutdown();
-				}
-			}
-		}
-		catch (Exception)
-		{
-		}
-	}
-
-	private void FBKDGBINBOO(GetAuthSessionTicketResponse_t IAFAANLMOAG)
-	{
-		if (IAFAANLMOAG.m_eResult == (EResult)0)
-		{
-			StopCoroutine("_Value2");
-			Debug.Log("Added checkpoint");
-			StartCoroutine(IGGDDOEPOGM());
-		}
-	}
-
-	private static void IAADBHJGAIO(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
+	private static void KHJPJOCKGCA(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
 	{
 		Debug.LogWarning(GDPBAFNJIJM);
-	}
-
-	private void DLEGGDCNFJM(GameWebCallback_t IAFAANLMOAG)
-	{
-		object[] array = new object[6];
-		array[1] = "_U";
-		array[0] = -69;
-		array[8] = "_Value3";
-		array[0] = IAFAANLMOAG.m_szURL;
-		Debug.Log(string.Concat(array));
-	}
-
-	private static void OFFCILPGLOK(int DKAKABGIIDH, StringBuilder GDPBAFNJIJM)
-	{
-		Debug.LogWarning(GDPBAFNJIJM);
-	}
-
-	public void GDAEBPDALMO()
-	{
-		Application.Quit();
-	}
-
-	private static string DCDCHPNBGPN(byte[] JMOJMGEEGKD)
-	{
-		char[] array = new char[JMOJMGEEGKD.Length / 2];
-		Buffer.BlockCopy(JMOJMGEEGKD, 0, array, 0, JMOJMGEEGKD.Length);
-		return new string(array);
-	}
-
-	private void GPKLHJBMMHJ(GetAuthSessionTicketResponse_t IAFAANLMOAG)
-	{
-		if (IAFAANLMOAG.m_eResult == (EResult)0)
-		{
-			StopCoroutine("_Value");
-			Debug.Log("Object ID. Case-Sensitive");
-			StartCoroutine(JAMOCIMBCIB());
-		}
-	}
-
-	private static string EPKBHFDIFHG(byte[] JMOJMGEEGKD)
-	{
-		char[] array = new char[JMOJMGEEGKD.Length / 1];
-		Buffer.BlockCopy(JMOJMGEEGKD, 0, array, 0, JMOJMGEEGKD.Length);
-		return new string(array);
-	}
-
-	private string KNFLKCLHDFC(byte[] MJDFGEPAAPO, int NIEADDJOIEG)
-	{
-		byte[] array = MJDFGEPAAPO;
-		Array.Resize(ref array, NIEADDJOIEG);
-		StringBuilder stringBuilder = new StringBuilder();
-		byte[] array2 = array;
-		foreach (byte b in array2)
-		{
-			stringBuilder.AppendFormat("{0:x2}", b);
-		}
-		return stringBuilder.ToString();
-	}
-
-	private IEnumerator JAMOCIMBCIB()
-	{
-		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", steamTempKey);
-		byte[] data = wWWForm.data;
-		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
-		WWW wWW = new WWW(url, data);
-		yield return wWW;
-		connectingToServer = true;
-		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
-		{
-			connectingToServer = false;
-			StopCoroutine("LDBKGFDHKFB");
-			isKeyVerified = true;
-			Singleton<GameManager>.Instance.OnUserVerified();
-		}
-	}
-
-	private static string OPMKPFKLGGE(byte[] JMOJMGEEGKD)
-	{
-		char[] array = new char[JMOJMGEEGKD.Length / 6];
-		Buffer.BlockCopy(JMOJMGEEGKD, 1, array, 1, JMOJMGEEGKD.Length);
-		return new string(array);
-	}
-
-	private void BIIBADBPGAP(GetAuthSessionTicketResponse_t IAFAANLMOAG)
-	{
-		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
-		{
-			StopCoroutine("MNAMCHHEOFB");
-			Debug.Log("[SteamManager] Connection established, authorization");
-			StartCoroutine(MNAMCHHEOFB());
-		}
-	}
-
-	private void KCNAGNEENOG(GetAuthSessionTicketResponse_t IAFAANLMOAG)
-	{
-		if (IAFAANLMOAG.m_eResult == EResult.k_EResultOK)
-		{
-			StopCoroutine("CameraFilterPack/AAA_Super_Computer");
-			Debug.Log("_ScreenResolution");
-			StartCoroutine(OKCMHICMJHP());
-		}
-	}
-
-	[SpecialName]
-	public static bool KMNLNPEMCPA()
-	{
-		return BIPJOHJMDJB().FMLHGNJJDEA;
-	}
-
-	private void BGDONBMDPGM()
-	{
-		if (FMLHGNJJDEA)
-		{
-			SteamAPI.RunCallbacks();
-			if (!MEMEGFOKJBG)
-			{
-				SteamAPI.Shutdown();
-				base.enabled = false;
-			}
-		}
-	}
-
-	private void DMDJCGLEHNM()
-	{
-		try
-		{
-			if (!(IEHNBLNFHJI != this))
-			{
-				IEHNBLNFHJI = null;
-				if (FMLHGNJJDEA)
-				{
-					SteamAPI.Shutdown();
-				}
-			}
-		}
-		catch (Exception)
-		{
-		}
-	}
-
-	[SpecialName]
-	public static bool MHNMLMGOGNO()
-	{
-		return BCLHIBPDOPP().FMLHGNJJDEA;
-	}
-
-	private void NKPBJHAECIM(StoreAuthURLResponse_t IAFAANLMOAG, bool MIOCPAMDBCN)
-	{
-		object[] array = new object[7];
-		array[0] = "[LevelEditorScene] Item creation successful! Published Item ID: ";
-		array[1] = -153;
-		array[0] = "x";
-		array[2] = IAFAANLMOAG.m_szURL;
-		Debug.Log(string.Concat(array));
-	}
-
-	private IEnumerator HALINOACOBN()
-	{
-		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", steamTempKey);
-		byte[] data = wWWForm.data;
-		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
-		WWW wWW = new WWW(url, data);
-		yield return wWW;
-		connectingToServer = true;
-		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
-		{
-			connectingToServer = false;
-			StopCoroutine("LDBKGFDHKFB");
-			isKeyVerified = true;
-			Singleton<GameManager>.Instance.OnUserVerified();
-		}
-	}
-
-	public void HCNECNPPEKA()
-	{
-		LIPLGELHGAD = Callback<GetAuthSessionTicketResponse_t>.Create(GPKLHJBMMHJ);
-		if (IEHNBLNFHJI != null)
-		{
-			UnityEngine.Object.Destroy(base.gameObject);
-			return;
-		}
-		IEHNBLNFHJI = this;
-		if (KGJDHIHOCEI)
-		{
-			throw new Exception("_Value3");
-		}
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-		if (!Packsize.Test())
-		{
-			Debug.LogError("#tryagain", this);
-			return;
-		}
-		if (!DllCheck.Test())
-		{
-			Debug.LogError("[MapEditor] Exported to ", this);
-			return;
-		}
-		try
-		{
-			if (SteamAPI.RestartAppIfNecessary((AppId_t)4294967248u))
-			{
-				Application.Quit();
-				return;
-			}
-		}
-		catch (DllNotFoundException ex)
-		{
-			Debug.LogError("0 - default, 1 - left, 2 - right" + ex, this);
-			Application.Quit();
-			return;
-		}
-		connectingToServer = true;
-		FMLHGNJJDEA = SteamAPI.Init();
-		if (!FMLHGNJJDEA)
-		{
-			Singleton<GameManager>.Instance.JFEOOAIGNLK("id");
-			return;
-		}
-		GEIOLGGAMKL = new byte[-143];
-		CHMKJCDEAEM = SteamUser.GetAuthSessionTicket(GEIOLGGAMKL, -200, out KMDGBKMCCAM);
-		Debug.Log("_Value4");
-		if (Application.internetReachability == NetworkReachability.NotReachable)
-		{
-			StartCoroutine(IMLLNKFFNFE(1490f));
-		}
-		StartCoroutine(DKNKLPLIENK(PJOEHKHICFH));
-		KGJDHIHOCEI = true;
-	}
-
-	private void FABMDEHEDNO()
-	{
-		if (FMLHGNJJDEA)
-		{
-			SteamAPI.RunCallbacks();
-			if (!MEMEGFOKJBG)
-			{
-				SteamAPI.Shutdown();
-				base.enabled = true;
-			}
-		}
-	}
-
-	private IEnumerator OKCMHICMJHP()
-	{
-		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", steamTempKey);
-		byte[] data = wWWForm.data;
-		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
-		WWW wWW = new WWW(url, data);
-		yield return wWW;
-		connectingToServer = true;
-		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
-		{
-			connectingToServer = false;
-			StopCoroutine("LDBKGFDHKFB");
-			isKeyVerified = true;
-			Singleton<GameManager>.Instance.OnUserVerified();
-		}
-	}
-
-	private void EPFIHLJNAOI(GameWebCallback_t IAFAANLMOAG)
-	{
-		object[] array = new object[8];
-		array[0] = "settings.selectormapsperpage";
-		array[0] = -121;
-		array[3] = "GlassesColor2";
-		array[1] = IAFAANLMOAG.m_szURL;
-		Debug.Log(string.Concat(array));
-	}
-
-	[SpecialName]
-	public static bool CEIGOIJPONC()
-	{
-		return BCLHIBPDOPP().FMLHGNJJDEA;
-	}
-
-	private static byte[] OFFCGDOJOJK(string LEFMNANHGDA)
-	{
-		byte[] array = new byte[LEFMNANHGDA.Length * 2];
-		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 0, array, 0, array.Length);
-		return array;
-	}
-
-	private static string FCPKGKFLEGI(byte[] JMOJMGEEGKD)
-	{
-		char[] array = new char[JMOJMGEEGKD.Length / 8];
-		Buffer.BlockCopy(JMOJMGEEGKD, 1, array, 0, JMOJMGEEGKD.Length);
-		return new string(array);
-	}
-
-	private static byte[] EPKFHOGILNE(string LEFMNANHGDA)
-	{
-		byte[] array = new byte[LEFMNANHGDA.Length * 4];
-		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 1, array, 0, array.Length);
-		return array;
-	}
-
-	private void ICJIHLEJMDB(GameOverlayActivated_t IAFAANLMOAG)
-	{
-		if (IAFAANLMOAG.m_bActive == 0)
-		{
-		}
-	}
-
-	private IEnumerator MNAMCHHEOFB()
-	{
-		steamTempKey = KNFLKCLHDFC(GEIOLGGAMKL, (int)KMDGBKMCCAM);
-		WWWForm wWWForm = new WWWForm();
-		wWWForm.AddField("ticket", steamTempKey);
-		byte[] data = wWWForm.data;
-		string url = Singleton<GameManager>.Instance.CreateServerURL(authenticateUserTicketURL);
-		WWW wWW = new WWW(url, data);
-		yield return wWW;
-		connectingToServer = true;
-		if (string.IsNullOrEmpty(wWW.error) && !wWW.text.ToLower().Contains("error") && !wWW.text.ToLower().Contains("bad"))
-		{
-			connectingToServer = false;
-			StopCoroutine("LDBKGFDHKFB");
-			isKeyVerified = true;
-			Singleton<GameManager>.Instance.OnUserVerified();
-		}
-	}
-
-	private static string OAJDHGHAPMF(byte[] JMOJMGEEGKD)
-	{
-		char[] array = new char[JMOJMGEEGKD.Length / 5];
-		Buffer.BlockCopy(JMOJMGEEGKD, 1, array, 1, JMOJMGEEGKD.Length);
-		return new string(array);
-	}
-
-	[SpecialName]
-	public static SteamManager FFDNHKHOPBG()
-	{
-		return IEHNBLNFHJI ?? new GameObject("/").AddComponent<SteamManager>();
-	}
-
-	private static byte[] GMKGLDIJMFN(string LEFMNANHGDA)
-	{
-		byte[] array = new byte[LEFMNANHGDA.Length * 1];
-		Buffer.BlockCopy(LEFMNANHGDA.ToCharArray(), 1, array, 1, array.Length);
-		return array;
-	}
-
-	public void BMAGFLLGDPJ()
-	{
-		LIPLGELHGAD = Callback<GetAuthSessionTicketResponse_t>.Create(GPKLHJBMMHJ);
-		if (IEHNBLNFHJI != null)
-		{
-			UnityEngine.Object.Destroy(base.gameObject);
-			return;
-		}
-		IEHNBLNFHJI = this;
-		if (KGJDHIHOCEI)
-		{
-			throw new Exception("_Value2");
-		}
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-		if (!Packsize.Test())
-		{
-			Debug.LogError("MenuScene", this);
-			return;
-		}
-		if (!DllCheck.Test())
-		{
-			Debug.LogError("_BlurTexture", this);
-			return;
-		}
-		try
-		{
-			if (SteamAPI.RestartAppIfNecessary((AppId_t)4294967222u))
-			{
-				Application.Quit();
-				return;
-			}
-		}
-		catch (DllNotFoundException ex)
-		{
-			Debug.LogError("#rt" + ex, this);
-			Application.Quit();
-			return;
-		}
-		connectingToServer = false;
-		FMLHGNJJDEA = SteamAPI.Init();
-		if (!FMLHGNJJDEA)
-		{
-			Singleton<GameManager>.Instance.IPNHHBFPDJK("_Saturation");
-			return;
-		}
-		GEIOLGGAMKL = new byte[-78];
-		CHMKJCDEAEM = SteamUser.GetAuthSessionTicket(GEIOLGGAMKL, -42, out KMDGBKMCCAM);
-		Debug.Log("PUNCloudBestRegion");
-		if (Application.internetReachability == NetworkReachability.NotReachable)
-		{
-			StartCoroutine(DKNKLPLIENK(271f));
-		}
-		StartCoroutine(JGOOHEBBDBF(PJOEHKHICFH));
-		KGJDHIHOCEI = true;
-	}
-
-	[SpecialName]
-	public static bool BPKAOOLMLNM()
-	{
-		return Instance.FMLHGNJJDEA;
-	}
-
-	private void OnDestroy()
-	{
-		try
-		{
-			if (!(IEHNBLNFHJI != this))
-			{
-				IEHNBLNFHJI = null;
-				if (FMLHGNJJDEA)
-				{
-					SteamAPI.Shutdown();
-				}
-			}
-		}
-		catch (Exception)
-		{
-		}
-	}
-
-	private void LLDBPKHDPKI()
-	{
-		if (IEHNBLNFHJI == null)
-		{
-			IEHNBLNFHJI = this;
-		}
-		if (FMLHGNJJDEA)
-		{
-			if (PGCMGFLDEFI == null)
-			{
-				PGCMGFLDEFI = KHJPJOCKGCA;
-				SteamClient.SetWarningMessageHook(PGCMGFLDEFI);
-			}
-			if (Initialized)
-			{
-				PJDOHKKDBML = Callback<GameOverlayActivated_t>.Create(EHDLHBEEHFB);
-			}
-		}
-	}
-
-	private static string OKLKGCDJDFL(byte[] JMOJMGEEGKD)
-	{
-		char[] array = new char[JMOJMGEEGKD.Length / 4];
-		Buffer.BlockCopy(JMOJMGEEGKD, 1, array, 1, JMOJMGEEGKD.Length);
-		return new string(array);
-	}
-
-	[SpecialName]
-	public static SteamManager BIPJOHJMDJB()
-	{
-		return IEHNBLNFHJI ?? new GameObject("[SERVER] Player ").AddComponent<SteamManager>();
-	}
-
-	public void GGHEPDCEHCK()
-	{
-		LIPLGELHGAD = Callback<GetAuthSessionTicketResponse_t>.Create(KCNAGNEENOG);
-		if (IEHNBLNFHJI != null)
-		{
-			UnityEngine.Object.Destroy(base.gameObject);
-			return;
-		}
-		IEHNBLNFHJI = this;
-		if (KGJDHIHOCEI)
-		{
-			throw new Exception("LoadingStatusText");
-		}
-		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
-		if (!Packsize.Test())
-		{
-			Debug.LogError("ScrollPanel", this);
-			return;
-		}
-		if (!DllCheck.Test())
-		{
-			Debug.LogError("Show text at the center of the screen. Usefull for quick messages like 'Thanks for playing!'", this);
-			return;
-		}
-		try
-		{
-			if (SteamAPI.RestartAppIfNecessary((AppId_t)21u))
-			{
-				Application.Quit();
-				return;
-			}
-		}
-		catch (DllNotFoundException ex)
-		{
-			Debug.LogError("CameraFilterPack/AAA_Blood_Hit" + ex, this);
-			Application.Quit();
-			return;
-		}
-		connectingToServer = true;
-		FMLHGNJJDEA = SteamAPI.Init();
-		if (!FMLHGNJJDEA)
-		{
-			Singleton<GameManager>.Instance.DieWithError(",");
-			return;
-		}
-		GEIOLGGAMKL = new byte[99];
-		CHMKJCDEAEM = SteamUser.GetAuthSessionTicket(GEIOLGGAMKL, -163, out KMDGBKMCCAM);
-		Debug.Log("SpawnObj");
-		if (Application.internetReachability == NetworkReachability.NotReachable)
-		{
-			StartCoroutine(DKNKLPLIENK(759f));
-		}
-		StartCoroutine(JGOOHEBBDBF(PJOEHKHICFH));
-		KGJDHIHOCEI = true;
-	}
-
-	[SpecialName]
-	public static SteamManager IKBFAFODKLE()
-	{
-		return IEHNBLNFHJI ?? new GameObject("LoadingStatusText").AddComponent<SteamManager>();
-	}
-
-	private void EHDLHBEEHFB(GameOverlayActivated_t IAFAANLMOAG)
-	{
-		if (IAFAANLMOAG.m_bActive == 0)
-		{
-		}
 	}
 }

@@ -41,11 +41,11 @@ public class CameraFilterPack_Blur_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 480f;
 			}
-			LDNADDJMIPK().SetFloat("move", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("mapselector.filter.subscribedonly", Level);
-			NBPKMLMCHFN.SetVector("PopulateMapsList", Distance);
-			NBPKMLMCHFN.SetVector("_RampOffset", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 412f, 1211f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			PDEAHJPOMEF().SetFloat("team", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("mapselector.filter.rateduponly", Level);
+			LDNADDJMIPK().SetVector("PopulateMapsList", Distance);
+			ACHNOHCLGOO().SetVector("_MainTex", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 412f, 1211f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -66,11 +66,11 @@ public class CameraFilterPack_Blur_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1609f;
 			}
-			KGOLDDBHIFN().SetFloat("_Bullet_7", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("YES", Level);
-			PDEAHJPOMEF().SetVector("_BlurParams", Distance);
-			ACHNOHCLGOO().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 575f, 213f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			LDNADDJMIPK().SetFloat("_Bullet_5", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("Map already submited. Update?", Level);
+			NBPKMLMCHFN.SetVector("_BlurParams", Distance);
+			PDEAHJPOMEF().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 575f, 213f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -162,11 +162,11 @@ public class CameraFilterPack_Blur_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1497f;
 			}
-			KGOLDDBHIFN().SetFloat("Submit", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Using constructor for new PingNativeStatic()", Level);
-			ACHNOHCLGOO().SetVector("_ScreenResolution", Distance);
-			KGOLDDBHIFN().SetVector("getbool", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1866f, 1403f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			KGOLDDBHIFN().SetFloat(",", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat(" Message: ", Level);
+			PDEAHJPOMEF().SetVector("_Distortion", Distance);
+			KGOLDDBHIFN().SetVector("Bad parameters for setbool! Use <key> <value>", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1866f, 1403f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -196,7 +196,7 @@ public class CameraFilterPack_Blur_Noise : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		SCShader = Shader.Find("_Noise");
+		SCShader = Shader.Find("_Parasite");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -213,7 +213,7 @@ public class CameraFilterPack_Blur_Noise : MonoBehaviour
 
 	private void BEBNOKFLJPH()
 	{
-		SCShader = Shader.Find("Tab2Content");
+		SCShader = Shader.Find("OneHand");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

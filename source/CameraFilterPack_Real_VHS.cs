@@ -49,19 +49,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			NBPKMLMCHFN.SetTexture("_Red_B", EIJFCDJLEPB);
-			AELJLBOJAIL().SetTexture(".message", JAFJKILGIKJ);
-			HNICHJCGJOC().SetFloat("--------------------------------", TRACKING);
-			DKNJGHFLAIF().SetFloat("%", JITTER);
-			ACHNOHCLGOO().SetFloat("LoadingStatusText", GLITCH);
-			MCDGIILBNIF().SetFloat("fade out duration", NOISE);
-			ACHNOHCLGOO().SetFloat("_Red_C", Brightness);
-			AELJLBOJAIL().SetFloat("_ScreenResolution", 654f - Constrast);
+			AELJLBOJAIL().SetTexture("_Red_G", EIJFCDJLEPB);
+			DKNJGHFLAIF().SetTexture(".message", JAFJKILGIKJ);
+			KOHGPKOFEJO().SetFloat("0.00", TRACKING);
+			HNICHJCGJOC().SetFloat(" ", JITTER);
+			KBOPGONOCNP().SetFloat("inventory.selected.", GLITCH);
+			EHDJJANLINB().SetFloat("fade out duration", NOISE);
+			MCDGIILBNIF().SetFloat("_Blue_B", Brightness);
+			ACHNOHCLGOO().SetFloat("_ScreenResolution", 654f - Constrast);
 			int width = 18;
 			int height = 96;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = (FilterMode)7;
-			Graphics.Blit(AAACLELCPML, temporary, LENEJAGLCNL());
+			Graphics.Blit(AAACLELCPML, temporary, ACHNOHCLGOO());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -118,19 +118,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			MCDGIILBNIF().SetTexture("turn", EIJFCDJLEPB);
-			KOHGPKOFEJO().SetTexture("_TimeX", JAFJKILGIKJ);
-			HNICHJCGJOC().SetFloat("NEW_ACHIEVEMENT_1_26", TRACKING);
-			KBOPGONOCNP().SetFloat("PS Home", JITTER);
-			AELJLBOJAIL().SetFloat("Reconnect() failed. Can only connect while in state 'Disconnected'. Current state: ", GLITCH);
-			MCDGIILBNIF().SetFloat("#yes", NOISE);
-			DKNJGHFLAIF().SetFloat("_Value", Brightness);
-			HEHKGPKLAKK().SetFloat("_MainTex2", 816f - Constrast);
+			HNICHJCGJOC().SetTexture("team", EIJFCDJLEPB);
+			DKNJGHFLAIF().SetTexture("_TimeX", JAFJKILGIKJ);
+			ACHNOHCLGOO().SetFloat("NEW_ACHIEVEMENT_1_26", TRACKING);
+			DKNJGHFLAIF().SetFloat("Right Stick Click", JITTER);
+			NBPKMLMCHFN.SetFloat(":", GLITCH);
+			KBOPGONOCNP().SetFloat("#discord{0}joinrequest", NOISE);
+			HNICHJCGJOC().SetFloat("_TimeX", Brightness);
+			LENEJAGLCNL().SetFloat("_Value5", 816f - Constrast);
 			int width = -96;
 			int height = -170;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = FilterMode.Trilinear;
-			Graphics.Blit(AAACLELCPML, temporary, KOHGPKOFEJO());
+			Graphics.Blit(AAACLELCPML, temporary, HEHKGPKLAKK());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -224,19 +224,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			LENEJAGLCNL().SetTexture("CameraFilterPack/Blend2Camera_Luminosity", EIJFCDJLEPB);
-			KBOPGONOCNP().SetTexture("_Value", JAFJKILGIKJ);
-			ACHNOHCLGOO().SetFloat(":</b> ", TRACKING);
-			MCDGIILBNIF().SetFloat("#pleasewait", JITTER);
-			HEHKGPKLAKK().SetFloat("_Screen", GLITCH);
-			EHDJJANLINB().SetFloat("Select", NOISE);
-			KBOPGONOCNP().SetFloat("AvatarImage", Brightness);
-			LENEJAGLCNL().SetFloat("_Offsets", 1333f - Constrast);
+			EHDJJANLINB().SetTexture("CameraFilterPack/Blend2Camera_Luminosity", EIJFCDJLEPB);
+			DKNJGHFLAIF().SetTexture("_Value", JAFJKILGIKJ);
+			AELJLBOJAIL().SetFloat("<b>", TRACKING);
+			AELJLBOJAIL().SetFloat("#pleasewait", JITTER);
+			DKNJGHFLAIF().SetFloat("pointBuffer", GLITCH);
+			ACHNOHCLGOO().SetFloat("R2", NOISE);
+			KBOPGONOCNP().SetFloat("SpectatingUserInfo", Brightness);
+			DKNJGHFLAIF().SetFloat("_Offsets", 1333f - Constrast);
 			int width = -86;
 			int height = 134;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = (FilterMode)8;
-			Graphics.Blit(AAACLELCPML, temporary, DKNJGHFLAIF());
+			Graphics.Blit(AAACLELCPML, temporary, HNICHJCGJOC());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -263,19 +263,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture("_TimeX", EIJFCDJLEPB);
-			AELJLBOJAIL().SetTexture("offsets", JAFJKILGIKJ);
-			NBPKMLMCHFN.SetFloat("Reload Maps", TRACKING);
-			MCDGIILBNIF().SetFloat("menu.playedsolo", JITTER);
-			KBOPGONOCNP().SetFloat("_Value", GLITCH);
-			KOHGPKOFEJO().SetFloat("menutheme.27thfloor", NOISE);
-			KBOPGONOCNP().SetFloat("Operation ", Brightness);
-			DKNJGHFLAIF().SetFloat("_Bullet_11", 114f - Constrast);
+			NBPKMLMCHFN.SetTexture("_TimeX", EIJFCDJLEPB);
+			MCDGIILBNIF().SetTexture("offsets", JAFJKILGIKJ);
+			AELJLBOJAIL().SetFloat("Reset XP", TRACKING);
+			HEHKGPKLAKK().SetFloat("original.tutorial", JITTER);
+			ACHNOHCLGOO().SetFloat("_TimeX", GLITCH);
+			HEHKGPKLAKK().SetFloat("menutheme.27thfloor", NOISE);
+			DKNJGHFLAIF().SetFloat("Operation ", Brightness);
+			DKNJGHFLAIF().SetFloat("_Bullet_10", 114f - Constrast);
 			int width = 121;
 			int height = -39;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)7;
-			Graphics.Blit(AAACLELCPML, temporary, LENEJAGLCNL());
+			Graphics.Blit(AAACLELCPML, temporary, AELJLBOJAIL());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -301,8 +301,8 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	private void KOJKBFDNGDK()
 	{
 		SCShader = Shader.Find("settings_bindings_controller_type");
-		EIJFCDJLEPB = Resources.Load("_Value4") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("[DiscordController] Join request {0}#{1}: {2}") as Texture2D;
+		EIJFCDJLEPB = Resources.Load("_Value3") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("[DiscordController] Join ({0})") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -322,8 +322,8 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void FBPHNEJBDJN()
 	{
-		SCShader = Shader.Find("move");
-		EIJFCDJLEPB = Resources.Load("offsets") as Texture2D;
+		SCShader = Shader.Find("turn");
+		EIJFCDJLEPB = Resources.Load("_threshold") as Texture2D;
 		JAFJKILGIKJ = Resources.Load("CameraFilterPack/3D_Myst") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -350,9 +350,9 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void LGHCJCFHEMF()
 	{
-		SCShader = Shader.Find("Chat");
+		SCShader = Shader.Find("ChatInput");
 		EIJFCDJLEPB = Resources.Load("cancel") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("}") as Texture2D;
+		JAFJKILGIKJ = Resources.Load(",") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -390,13 +390,13 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 		if (SCShader != null)
 		{
 			NBPKMLMCHFN.SetTexture("_TimeX", EIJFCDJLEPB);
-			HEHKGPKLAKK().SetTexture("settings_bindings_sec_", JAFJKILGIKJ);
-			KBOPGONOCNP().SetFloat("ComboScoreText", TRACKING);
-			HEHKGPKLAKK().SetFloat("USE_PREDICATION", JITTER);
-			AELJLBOJAIL().SetFloat(".lastCheckpoint.playerdistance", GLITCH);
-			ACHNOHCLGOO().SetFloat(" not exist", NOISE);
-			HNICHJCGJOC().SetFloat("inventory.selected.", Brightness);
-			EHDJJANLINB().SetFloat("maps.", 1273f - Constrast);
+			DKNJGHFLAIF().SetTexture("settings_bindings_", JAFJKILGIKJ);
+			KOHGPKOFEJO().SetFloat("ComboScoreText", TRACKING);
+			EHDJJANLINB().SetFloat("_SubsampleIndices", JITTER);
+			AELJLBOJAIL().SetFloat(".lastCheckpoint.penaltyScore", GLITCH);
+			EHDJJANLINB().SetFloat(": ", NOISE);
+			MCDGIILBNIF().SetFloat("inventory.selected.", Brightness);
+			ACHNOHCLGOO().SetFloat("maps.", 1273f - Constrast);
 			int width = 133;
 			int height = 170;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
@@ -413,9 +413,9 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void AEOLJEIDMDB()
 	{
-		SCShader = Shader.Find("Reconnect() failed. It seems the client wasn't connected before?! Current state: ");
+		SCShader = Shader.Find("ConnectToMaster() enabled isMessageQueueRunning. Needs to be able to dispatch incoming messages.");
 		EIJFCDJLEPB = Resources.Load("EnableRankingToggle") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("_Offsets") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("_Saturation") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -426,19 +426,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture("/files/mods_terms.pdf", EIJFCDJLEPB);
-			HEHKGPKLAKK().SetTexture(".lastCheckpoint.checkpointsUsed", JAFJKILGIKJ);
-			NBPKMLMCHFN.SetFloat("InventoryButton", TRACKING);
+			NBPKMLMCHFN.SetTexture("/files/mods_terms.pdf", EIJFCDJLEPB);
+			EHDJJANLINB().SetTexture(".lastCheckpoint.correctScore", JAFJKILGIKJ);
+			KOHGPKOFEJO().SetFloat("InventoryButton", TRACKING);
 			NBPKMLMCHFN.SetFloat("_Near", JITTER);
-			KBOPGONOCNP().SetFloat(" not exist", GLITCH);
-			AELJLBOJAIL().SetFloat("Options", NOISE);
-			AELJLBOJAIL().SetFloat("_BlurVector", Brightness);
-			HNICHJCGJOC().SetFloat("AudioSampler", 1336f - Constrast);
+			KOHGPKOFEJO().SetFloat("SetEnvSpriteColor", GLITCH);
+			NBPKMLMCHFN.SetFloat("Joystick1Button9", NOISE);
+			NBPKMLMCHFN.SetFloat("_BlurVector", Brightness);
+			NBPKMLMCHFN.SetFloat("AudioSampler", 1336f - Constrast);
 			int width = -70;
 			int height = 165;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)6;
-			Graphics.Blit(AAACLELCPML, temporary, KOHGPKOFEJO());
+			Graphics.Blit(AAACLELCPML, temporary, AELJLBOJAIL());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -459,7 +459,7 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	private void FHGKIOOMMOH()
 	{
 		SCShader = Shader.Find("_ScreenResolution");
-		EIJFCDJLEPB = Resources.Load("rarity") as Texture2D;
+		EIJFCDJLEPB = Resources.Load("RarityImage") as Texture2D;
 		JAFJKILGIKJ = Resources.Load("_Near") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -481,9 +481,9 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find(". Sent by actorNr: ");
+		SCShader = Shader.Find("Ev DestroyAll! By PlayerId: ");
 		EIJFCDJLEPB = Resources.Load("mapselector.orderby") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("float,0") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("value") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -494,19 +494,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture("_BlurParams", EIJFCDJLEPB);
-			HNICHJCGJOC().SetTexture("settings.gamemessagesduration", JAFJKILGIKJ);
-			HEHKGPKLAKK().SetFloat("[MapsSystem] Unloading maps resources...", TRACKING);
-			MCDGIILBNIF().SetFloat("/Saved Games/", JITTER);
-			KBOPGONOCNP().SetFloat(">", GLITCH);
-			LENEJAGLCNL().SetFloat("maps.", NOISE);
-			HEHKGPKLAKK().SetFloat("SpawnObj", Brightness);
-			ACHNOHCLGOO().SetFloat("A", 1122f - Constrast);
+			LENEJAGLCNL().SetTexture("Hidden/DepthOfField/BokehSplatting", EIJFCDJLEPB);
+			KOHGPKOFEJO().SetTexture("settings.crosshairopacity", JAFJKILGIKJ);
+			AELJLBOJAIL().SetFloat("workshop.", TRACKING);
+			LENEJAGLCNL().SetFloat("The process failed: ", JITTER);
+			KBOPGONOCNP().SetFloat("<color=#", GLITCH);
+			NBPKMLMCHFN.SetFloat("maps.", NOISE);
+			KOHGPKOFEJO().SetFloat("SpawnObj", Brightness);
+			HNICHJCGJOC().SetFloat("X", 1122f - Constrast);
 			int width = -114;
 			int height = 0;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = (FilterMode)4;
-			Graphics.Blit(AAACLELCPML, temporary, HNICHJCGJOC());
+			Graphics.Blit(AAACLELCPML, temporary, DKNJGHFLAIF());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -518,9 +518,9 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void LBAJLLFMMMP()
 	{
-		SCShader = Shader.Find("_CenterY");
-		EIJFCDJLEPB = Resources.Load("white") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("Uploading content") as Texture2D;
+		SCShader = Shader.Find("_CenterX");
+		EIJFCDJLEPB = Resources.Load("icon_border") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("PLEASE WAIT") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -547,19 +547,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			DKNJGHFLAIF().SetTexture("r", EIJFCDJLEPB);
-			AELJLBOJAIL().SetTexture("_MainTex", JAFJKILGIKJ);
+			AELJLBOJAIL().SetTexture("Can't find key ", EIJFCDJLEPB);
+			HNICHJCGJOC().SetTexture("_InvRenderTargetSize", JAFJKILGIKJ);
 			DKNJGHFLAIF().SetFloat("_BorderSize", TRACKING);
-			AELJLBOJAIL().SetFloat("DPADHOR", JITTER);
-			MCDGIILBNIF().SetFloat("ResourceIDInputField", GLITCH);
-			KOHGPKOFEJO().SetFloat("IncorrectHitsScoreText", NOISE);
-			EHDJJANLINB().SetFloat("_MainTex2", Brightness);
-			KBOPGONOCNP().SetFloat("CameraFilterPack_OldFilm2", 1816f - Constrast);
+			KBOPGONOCNP().SetFloat("DPADVER", JITTER);
+			NBPKMLMCHFN.SetFloat("ResourceIDInputField", GLITCH);
+			EHDJJANLINB().SetFloat("IncorrectHitsScoreText", NOISE);
+			ACHNOHCLGOO().SetFloat("_Amount", Brightness);
+			EHDJJANLINB().SetFloat("_MainTex2", 1816f - Constrast);
 			int width = -33;
 			int height = 105;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)3;
-			Graphics.Blit(AAACLELCPML, temporary, NBPKMLMCHFN);
+			Graphics.Blit(AAACLELCPML, temporary, ACHNOHCLGOO());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -601,19 +601,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture("_Exponent", EIJFCDJLEPB);
-			KOHGPKOFEJO().SetTexture("UpdateDownloadingProgress", JAFJKILGIKJ);
-			KBOPGONOCNP().SetFloat("_EmissionGain", TRACKING);
-			ACHNOHCLGOO().SetFloat("_ScreenResolution", JITTER);
-			HEHKGPKLAKK().SetFloat("_TimeX", GLITCH);
-			EHDJJANLINB().SetFloat("_Value3", NOISE);
-			HNICHJCGJOC().SetFloat("_ScreenResolution", Brightness);
-			DKNJGHFLAIF().SetFloat("[SoundManager] Loaded skin audio", 774f - Constrast);
+			NBPKMLMCHFN.SetTexture("_SampleDistance", EIJFCDJLEPB);
+			AELJLBOJAIL().SetTexture("MapperNameText", JAFJKILGIKJ);
+			NBPKMLMCHFN.SetFloat("_EmissionGain", TRACKING);
+			HNICHJCGJOC().SetFloat("_Value4", JITTER);
+			HEHKGPKLAKK().SetFloat("CameraFilterPack/TV_ARCADE_2", GLITCH);
+			HEHKGPKLAKK().SetFloat("_Value2", NOISE);
+			DKNJGHFLAIF().SetFloat("_ScreenResolution", Brightness);
+			ACHNOHCLGOO().SetFloat("action", 774f - Constrast);
 			int width = 1;
 			int height = 108;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = FilterMode.Trilinear;
-			Graphics.Blit(AAACLELCPML, temporary, LENEJAGLCNL());
+			Graphics.Blit(AAACLELCPML, temporary, AELJLBOJAIL());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -643,19 +643,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			DKNJGHFLAIF().SetTexture("_ScreenResolution", EIJFCDJLEPB);
-			EHDJJANLINB().SetTexture("scenes", JAFJKILGIKJ);
-			HNICHJCGJOC().SetFloat(" SphereWaveform.cs", TRACKING);
-			ACHNOHCLGOO().SetFloat("Fade", JITTER);
-			DKNJGHFLAIF().SetFloat("_Value3", GLITCH);
-			HNICHJCGJOC().SetFloat("OpCreateRoom()", NOISE);
+			HEHKGPKLAKK().SetTexture("_Distortion", EIJFCDJLEPB);
+			DKNJGHFLAIF().SetTexture("Sets the boolean value of the Auto Focus Input Field property.", JAFJKILGIKJ);
+			DKNJGHFLAIF().SetFloat(" SphereWaveform.cs", TRACKING);
+			NBPKMLMCHFN.SetFloat("_TimeX", JITTER);
+			LENEJAGLCNL().SetFloat("_Value2", GLITCH);
+			KBOPGONOCNP().SetFloat("OpJoinLobby()", NOISE);
 			EHDJJANLINB().SetFloat("HandsCountSlider", Brightness);
-			HEHKGPKLAKK().SetFloat("/", 1191f - Constrast);
+			LENEJAGLCNL().SetFloat("/", 1191f - Constrast);
 			int width = 155;
 			int height = -62;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = FilterMode.Trilinear;
-			Graphics.Blit(AAACLELCPML, temporary, EHDJJANLINB());
+			Graphics.Blit(AAACLELCPML, temporary, HNICHJCGJOC());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -669,19 +669,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			HNICHJCGJOC().SetTexture("_Value1", EIJFCDJLEPB);
-			LENEJAGLCNL().SetTexture("FinalScoreText", JAFJKILGIKJ);
-			NBPKMLMCHFN.SetFloat("PlayerBase_", TRACKING);
-			MCDGIILBNIF().SetFloat(": ", JITTER);
-			MCDGIILBNIF().SetFloat("menu.relaxinfo", GLITCH);
-			MCDGIILBNIF().SetFloat("_BlurFilterDistance", NOISE);
-			KOHGPKOFEJO().SetFloat("Search: ", Brightness);
-			ACHNOHCLGOO().SetFloat("_Blue_C", 970f - Constrast);
+			NBPKMLMCHFN.SetTexture("Joystick1Button", EIJFCDJLEPB);
+			EHDJJANLINB().SetTexture("FinalScoreText", JAFJKILGIKJ);
+			NBPKMLMCHFN.SetFloat("SpawnObj", TRACKING);
+			KOHGPKOFEJO().SetFloat("[PlayerController] ", JITTER);
+			AELJLBOJAIL().SetFloat("menu.selectedplaymode", GLITCH);
+			NBPKMLMCHFN.SetFloat("_Radius2", NOISE);
+			LENEJAGLCNL().SetFloat("/?page=ranks", Brightness);
+			KBOPGONOCNP().SetFloat("_Blue_C", 970f - Constrast);
 			int width = 139;
 			int height = 35;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = FilterMode.Bilinear;
-			Graphics.Blit(AAACLELCPML, temporary, HEHKGPKLAKK());
+			Graphics.Blit(AAACLELCPML, temporary, DKNJGHFLAIF());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -711,8 +711,8 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	private void KOFAMEKHHGD()
 	{
 		SCShader = Shader.Find("#ok");
-		EIJFCDJLEPB = Resources.Load("UI Extensions/UIAdditive") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("scenes") as Texture2D;
+		EIJFCDJLEPB = Resources.Load("Mask texture not readable, set your sprite to Texture Type 'Advanced' and check 'Read/Write Enabled'") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("< true | false >") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -731,19 +731,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture("player.quantum", EIJFCDJLEPB);
-			NBPKMLMCHFN.SetTexture("menuVolume", JAFJKILGIKJ);
-			DKNJGHFLAIF().SetFloat("InfoText", TRACKING);
-			ACHNOHCLGOO().SetFloat("_Value2", JITTER);
-			HEHKGPKLAKK().SetFloat("[MapEditor] Updating top menu", GLITCH);
-			AELJLBOJAIL().SetFloat("Game Version: ", NOISE);
-			HEHKGPKLAKK().SetFloat("Start index must in an integer.", Brightness);
-			AELJLBOJAIL().SetFloat("Please specify either t or f.", 1001f - Constrast);
+			MCDGIILBNIF().SetTexture("player.quantum", EIJFCDJLEPB);
+			LENEJAGLCNL().SetTexture("gameVolume", JAFJKILGIKJ);
+			KOHGPKOFEJO().SetFloat("DifficultyBG", TRACKING);
+			NBPKMLMCHFN.SetFloat("_Value2", JITTER);
+			KBOPGONOCNP().SetFloat("FileMenu", GLITCH);
+			HEHKGPKLAKK().SetFloat("<color=#{0}>{1}</color>", NOISE);
+			NBPKMLMCHFN.SetFloat("Need to specify a start index and end index.", Brightness);
+			KBOPGONOCNP().SetFloat("End index must in an integer.", 1001f - Constrast);
 			int width = 85;
 			int height = 181;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)7;
-			Graphics.Blit(AAACLELCPML, temporary, EHDJJANLINB());
+			Graphics.Blit(AAACLELCPML, temporary, HEHKGPKLAKK());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -774,7 +774,7 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	private void KCCIEMBMOBA()
 	{
 		SCShader = Shader.Find("Set Sun MinSize");
-		EIJFCDJLEPB = Resources.Load("_ScreenResolution") as Texture2D;
+		EIJFCDJLEPB = Resources.Load("_Value4") as Texture2D;
 		JAFJKILGIKJ = Resources.Load("CameraFilterPack/Blend2Camera_Divide") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -786,19 +786,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			HNICHJCGJOC().SetTexture("_TimeX", EIJFCDJLEPB);
-			LENEJAGLCNL().SetTexture("_Green_R", JAFJKILGIKJ);
-			HNICHJCGJOC().SetFloat("_VignetteTex", TRACKING);
-			KOHGPKOFEJO().SetFloat("GlassDistortion", JITTER);
-			KOHGPKOFEJO().SetFloat("BitsData", GLITCH);
-			HNICHJCGJOC().SetFloat("[MapEditor] Importing map: ", NOISE);
-			DKNJGHFLAIF().SetFloat("[PlayerBase] Starting new round", Brightness);
-			KOHGPKOFEJO().SetFloat("_Blend", 512f - Constrast);
+			DKNJGHFLAIF().SetTexture("_TimeX", EIJFCDJLEPB);
+			EHDJJANLINB().SetTexture("_Red_B", JAFJKILGIKJ);
+			DKNJGHFLAIF().SetFloat("_Intensity", TRACKING);
+			DKNJGHFLAIF().SetFloat("VisionBlur", JITTER);
+			AELJLBOJAIL().SetFloat("BitsData", GLITCH);
+			ACHNOHCLGOO().SetFloat("Editor", NOISE);
+			KOHGPKOFEJO().SetFloat("[Left]", Brightness);
+			NBPKMLMCHFN.SetFloat(" cannot be used as a 3D LUT.", 512f - Constrast);
 			int width = 185;
 			int height = 113;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = FilterMode.Bilinear;
-			Graphics.Blit(AAACLELCPML, temporary, KBOPGONOCNP());
+			Graphics.Blit(AAACLELCPML, temporary, EHDJJANLINB());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -812,19 +812,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture("Set satellite radius (offset)", EIJFCDJLEPB);
-			NBPKMLMCHFN.SetTexture(". Client is not the MasterClient in this room.", JAFJKILGIKJ);
-			AELJLBOJAIL().SetFloat("_Offsets", TRACKING);
-			KOHGPKOFEJO().SetFloat("In Main Menu", JITTER);
-			MCDGIILBNIF().SetFloat("ViewID {0} {1}{2}", GLITCH);
-			KOHGPKOFEJO().SetFloat("_SecondTex", NOISE);
-			LENEJAGLCNL().SetFloat("maps.", Brightness);
-			HEHKGPKLAKK().SetFloat("_TintColor", 825f - Constrast);
+			NBPKMLMCHFN.SetTexture("Set satellite radius (offset)", EIJFCDJLEPB);
+			KBOPGONOCNP().SetTexture("Failed to InstantiateSceneObject prefab: ", JAFJKILGIKJ);
+			KOHGPKOFEJO().SetFloat("_Offsets", TRACKING);
+			KBOPGONOCNP().SetFloat("In Main Menu", JITTER);
+			ACHNOHCLGOO().SetFloat(" respawn: ", GLITCH);
+			AELJLBOJAIL().SetFloat("_Offsets", NOISE);
+			KOHGPKOFEJO().SetFloat("maps.", Brightness);
+			EHDJJANLINB().SetFloat("_Offsets", 825f - Constrast);
 			int width = -192;
 			int height = -176;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)6;
-			Graphics.Blit(AAACLELCPML, temporary, DKNJGHFLAIF());
+			Graphics.Blit(AAACLELCPML, temporary, KOHGPKOFEJO());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -838,19 +838,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			ACHNOHCLGOO().SetTexture("CameraFilterPack_Paper2", EIJFCDJLEPB);
-			ACHNOHCLGOO().SetTexture("[", JAFJKILGIKJ);
-			MCDGIILBNIF().SetFloat("hidden", TRACKING);
-			KOHGPKOFEJO().SetFloat("SetCrosshairColor", JITTER);
-			KOHGPKOFEJO().SetFloat("Hidden/DepthOfField/BokehSplatting", GLITCH);
-			HNICHJCGJOC().SetFloat("?page=addtip", NOISE);
-			NBPKMLMCHFN.SetFloat("RecieveChatMessage", Brightness);
-			EHDJJANLINB().SetFloat("#failed: ", 657f - Constrast);
+			LENEJAGLCNL().SetTexture("_ScreenResolution", EIJFCDJLEPB);
+			LENEJAGLCNL().SetTexture("settings.arcsdestroydelay", JAFJKILGIKJ);
+			LENEJAGLCNL().SetFloat("closed", TRACKING);
+			EHDJJANLINB().SetFloat("SetSatelliteTrailLength", JITTER);
+			AELJLBOJAIL().SetFloat("Hidden/DepthOfField/MedianFilter", GLITCH);
+			AELJLBOJAIL().SetFloat("player.playedtutorial", NOISE);
+			EHDJJANLINB().SetFloat("RecieveChatMessage", Brightness);
+			DKNJGHFLAIF().SetFloat("MenuScene", 657f - Constrast);
 			int width = 21;
 			int height = -41;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = (FilterMode)4;
-			Graphics.Blit(AAACLELCPML, temporary, AELJLBOJAIL());
+			Graphics.Blit(AAACLELCPML, temporary, HNICHJCGJOC());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -866,9 +866,9 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void FANADGBGCPI()
 	{
-		SCShader = Shader.Find("CameraFilterPack/FX_Glitch1");
-		EIJFCDJLEPB = Resources.Load("_Value5") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("ViewID {0} {1}{2}") as Texture2D;
+		SCShader = Shader.Find("_ScreenResolution");
+		EIJFCDJLEPB = Resources.Load("_Value4") as Texture2D;
+		JAFJKILGIKJ = Resources.Load(" respawn: ") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -888,19 +888,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			MCDGIILBNIF().SetTexture("_Value", EIJFCDJLEPB);
-			KOHGPKOFEJO().SetTexture("note.6", JAFJKILGIKJ);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", TRACKING);
-			EHDJJANLINB().SetFloat(": ", JITTER);
-			KBOPGONOCNP().SetFloat("_Red_R", GLITCH);
-			KOHGPKOFEJO().SetFloat("offsets", NOISE);
-			KOHGPKOFEJO().SetFloat("0", Brightness);
+			KBOPGONOCNP().SetTexture("_Value", EIJFCDJLEPB);
+			KOHGPKOFEJO().SetTexture("note.5", JAFJKILGIKJ);
+			KOHGPKOFEJO().SetFloat("_ScreenResolution", TRACKING);
+			KBOPGONOCNP().SetFloat("[PlayerController] ", JITTER);
+			HNICHJCGJOC().SetFloat("_TimeX", GLITCH);
+			KOHGPKOFEJO().SetFloat("_TapHigh", NOISE);
+			HEHKGPKLAKK().SetFloat("0", Brightness);
 			KOHGPKOFEJO().SetFloat("OK", 1334f - Constrast);
 			int width = -192;
 			int height = -106;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = (FilterMode)7;
-			Graphics.Blit(AAACLELCPML, temporary, MCDGIILBNIF());
+			Graphics.Blit(AAACLELCPML, temporary, KBOPGONOCNP());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -914,19 +914,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture("PossibleMapPointsText", EIJFCDJLEPB);
-			KBOPGONOCNP().SetTexture("CameraFilterPack/Drawing_Toon", JAFJKILGIKJ);
-			LENEJAGLCNL().SetFloat("maps.", TRACKING);
-			HEHKGPKLAKK().SetFloat("Back", JITTER);
-			KBOPGONOCNP().SetFloat("GameMessagesDurationSlider", GLITCH);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", NOISE);
-			DKNJGHFLAIF().SetFloat("_TimeX", Brightness);
-			LENEJAGLCNL().SetFloat("Text", 1144f - Constrast);
+			MCDGIILBNIF().SetTexture("PossibleMapPointsText", EIJFCDJLEPB);
+			EHDJJANLINB().SetTexture("_MainTex2", JAFJKILGIKJ);
+			ACHNOHCLGOO().SetFloat("Crosshair2", TRACKING);
+			HNICHJCGJOC().SetFloat("RT", JITTER);
+			LENEJAGLCNL().SetFloat("GameMessagesDurationSlider", GLITCH);
+			HEHKGPKLAKK().SetFloat("_Value4", NOISE);
+			HEHKGPKLAKK().SetFloat("_TimeX", Brightness);
+			EHDJJANLINB().SetFloat("Something is setup incorrectly with the dropdownlist component causing a Null Refernece Exception", 1144f - Constrast);
 			int width = 7;
 			int height = 178;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = (FilterMode)8;
-			Graphics.Blit(AAACLELCPML, temporary, NBPKMLMCHFN);
+			Graphics.Blit(AAACLELCPML, temporary, HNICHJCGJOC());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -960,19 +960,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			ACHNOHCLGOO().SetTexture("SetupEncryption() got called. ", EIJFCDJLEPB);
-			HNICHJCGJOC().SetTexture("settings.enablerankingnotifications", JAFJKILGIKJ);
-			KBOPGONOCNP().SetFloat("SetRotation", TRACKING);
-			NBPKMLMCHFN.SetFloat("_TimeX", JITTER);
-			HNICHJCGJOC().SetFloat("_TimeX", GLITCH);
-			ACHNOHCLGOO().SetFloat("restrictions\n\n#until: ", NOISE);
-			KBOPGONOCNP().SetFloat("_ReprojectionMatrix", Brightness);
-			MCDGIILBNIF().SetFloat("_ScreenResolution", 652f - Constrast);
+			ACHNOHCLGOO().SetTexture(". Set PhotonNetwork.OnEventCall.", EIJFCDJLEPB);
+			AELJLBOJAIL().SetTexture("player.currentrank", JAFJKILGIKJ);
+			KOHGPKOFEJO().SetFloat("AddEnvironmentObject", TRACKING);
+			LENEJAGLCNL().SetFloat("_MainTex2", JITTER);
+			KOHGPKOFEJO().SetFloat("CameraFilterPack/Gradients_Rainbow", GLITCH);
+			EHDJJANLINB().SetFloat("#forever", NOISE);
+			EHDJJANLINB().SetFloat("_Params1", Brightness);
+			KOHGPKOFEJO().SetFloat("_Value2", 652f - Constrast);
 			int width = 145;
 			int height = 128;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)5;
-			Graphics.Blit(AAACLELCPML, temporary, LENEJAGLCNL());
+			Graphics.Blit(AAACLELCPML, temporary, NBPKMLMCHFN);
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -984,9 +984,9 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void BEBNOKFLJPH()
 	{
-		SCShader = Shader.Find("materialsquantity[");
+		SCShader = Shader.Find("steamid");
 		EIJFCDJLEPB = Resources.Load("finished") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("Turn") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("move") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1005,8 +1005,8 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	private void MMMDPANNAIO()
 	{
 		SCShader = Shader.Find("_Value10");
-		EIJFCDJLEPB = Resources.Load("_Green_B") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("InfoText") as Texture2D;
+		EIJFCDJLEPB = Resources.Load("_Green_G") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("DifficultyBG") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1051,8 +1051,8 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	private void OHFOLGANOLC()
 	{
 		SCShader = Shader.Find("PLEASE WAIT");
-		EIJFCDJLEPB = Resources.Load("_TimeX") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("Populate Mesh Data") as Texture2D;
+		EIJFCDJLEPB = Resources.Load("CameraFilterPack/Color_Sepia") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1067,19 +1067,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			MCDGIILBNIF().SetTexture("LetterSpacing: Missing Text component", EIJFCDJLEPB);
-			LENEJAGLCNL().SetTexture("[MenuScene] Error: ", JAFJKILGIKJ);
-			EHDJJANLINB().SetFloat("Down", TRACKING);
-			DKNJGHFLAIF().SetFloat("HPToggle", JITTER);
-			MCDGIILBNIF().SetFloat("Please attach component to a Graphical UI component", GLITCH);
-			HEHKGPKLAKK().SetFloat("Default UI Material", NOISE);
-			AELJLBOJAIL().SetFloat("InputField", Brightness);
-			KBOPGONOCNP().SetFloat("settings.gamemessagesduration", 1430f - Constrast);
+			NBPKMLMCHFN.SetTexture("Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ", EIJFCDJLEPB);
+			ACHNOHCLGOO().SetTexture("[MenuScene] Error: ", JAFJKILGIKJ);
+			KBOPGONOCNP().SetFloat("GetLive", TRACKING);
+			DKNJGHFLAIF().SetFloat("menu.enableselectormusic", JITTER);
+			ACHNOHCLGOO().SetFloat("Default UI Material", GLITCH);
+			KOHGPKOFEJO().SetFloat("UI Extensions/UIScreen", NOISE);
+			AELJLBOJAIL().SetFloat("End Value should be greater than the start value, values not changed", Brightness);
+			ACHNOHCLGOO().SetFloat("settings.crosshairopacity", 1430f - Constrast);
 			int width = 173;
 			int height = 0;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)4;
-			Graphics.Blit(AAACLELCPML, temporary, AELJLBOJAIL());
+			Graphics.Blit(AAACLELCPML, temporary, ACHNOHCLGOO());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -1093,19 +1093,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			KBOPGONOCNP().SetTexture("_CurveTex", EIJFCDJLEPB);
-			EHDJJANLINB().SetTexture("_Value4", JAFJKILGIKJ);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", TRACKING);
-			HEHKGPKLAKK().SetFloat("saveGameName ", JITTER);
-			DKNJGHFLAIF().SetFloat("_Value4", GLITCH);
-			NBPKMLMCHFN.SetFloat("_Value", NOISE);
-			EHDJJANLINB().SetFloat("_Distortion", Brightness);
-			KOHGPKOFEJO().SetFloat("LoadMapCanvas", 722f - Constrast);
+			MCDGIILBNIF().SetTexture("_ChannelMixerGreen", EIJFCDJLEPB);
+			HEHKGPKLAKK().SetTexture("_Value3", JAFJKILGIKJ);
+			KBOPGONOCNP().SetFloat("_ScreenResolution", TRACKING);
+			KOHGPKOFEJO().SetFloat(" is set to dontSave = true, continuing loop.", JITTER);
+			EHDJJANLINB().SetFloat("_Value3", GLITCH);
+			HNICHJCGJOC().SetFloat("CameraFilterPack/Noise_TV_3", NOISE);
+			MCDGIILBNIF().SetFloat("_ColorLevel", Brightness);
+			LENEJAGLCNL().SetFloat("DifficultyBG", 722f - Constrast);
 			int width = 142;
 			int height = -28;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)5;
-			Graphics.Blit(AAACLELCPML, temporary, EHDJJANLINB());
+			Graphics.Blit(AAACLELCPML, temporary, HEHKGPKLAKK());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -1119,19 +1119,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture("settings.shaders", EIJFCDJLEPB);
-			LENEJAGLCNL().SetTexture("+", JAFJKILGIKJ);
-			KOHGPKOFEJO().SetFloat("help", TRACKING);
-			KOHGPKOFEJO().SetFloat("challenges", JITTER);
-			NBPKMLMCHFN.SetFloat(" SecondsBeforeRespawn: ", GLITCH);
-			DKNJGHFLAIF().SetFloat("_Level", NOISE);
-			HEHKGPKLAKK().SetFloat("_Value6", Brightness);
-			LENEJAGLCNL().SetFloat("NO", 1873f - Constrast);
+			KBOPGONOCNP().SetTexture("settings.shaders.bloomintencity", EIJFCDJLEPB);
+			NBPKMLMCHFN.SetTexture(" #", JAFJKILGIKJ);
+			MCDGIILBNIF().SetFloat(" ", TRACKING);
+			KBOPGONOCNP().SetFloat(".status", JITTER);
+			LENEJAGLCNL().SetFloat("PunRespawn", GLITCH);
+			HNICHJCGJOC().SetFloat("_TimeX", NOISE);
+			HEHKGPKLAKK().SetFloat("_Value5", Brightness);
+			AELJLBOJAIL().SetFloat("ACCEPT", 1873f - Constrast);
 			int width = -145;
 			int height = 199;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = (FilterMode)5;
-			Graphics.Blit(AAACLELCPML, temporary, HNICHJCGJOC());
+			Graphics.Blit(AAACLELCPML, temporary, ACHNOHCLGOO());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -1194,9 +1194,9 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void FJNCHGLIEMA()
 	{
-		SCShader = Shader.Find("Save the map before exiting?");
-		EIJFCDJLEPB = Resources.Load("[PlayerBase] Loaded custom model: ") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("_Value4") as Texture2D;
+		SCShader = Shader.Find("YES");
+		EIJFCDJLEPB = Resources.Load("Gameplay/sun") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("_Value2") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1205,9 +1205,9 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 
 	private void DFFKKLAPHCC()
 	{
-		SCShader = Shader.Find("Vertical");
-		EIJFCDJLEPB = Resources.Load("_Value3") as Texture2D;
-		JAFJKILGIKJ = Resources.Load("Start Color's hex value #RRGGBBAA") as Texture2D;
+		SCShader = Shader.Find("Aimer Input Module is incompatible with the StandAloneInputSystem, please remove it from the Event System in this scene or disable it when this module is in use");
+		EIJFCDJLEPB = Resources.Load("_Value2") as Texture2D;
+		JAFJKILGIKJ = Resources.Load("color") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1240,19 +1240,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			AELJLBOJAIL().SetTexture(".completed", EIJFCDJLEPB);
-			ACHNOHCLGOO().SetTexture("_Value4", JAFJKILGIKJ);
-			HEHKGPKLAKK().SetFloat("CameraFilterPack/Blend2Camera_Multiply", TRACKING);
-			HNICHJCGJOC().SetFloat("FreqVolume: ", JITTER);
-			HEHKGPKLAKK().SetFloat("_TimeX", GLITCH);
-			KOHGPKOFEJO().SetFloat("challenges/", NOISE);
-			LENEJAGLCNL().SetFloat("NEW", Brightness);
-			KBOPGONOCNP().SetFloat("menu.tabid", 926f - Constrast);
+			NBPKMLMCHFN.SetTexture("COMPLETED", EIJFCDJLEPB);
+			DKNJGHFLAIF().SetTexture("_Value4", JAFJKILGIKJ);
+			ACHNOHCLGOO().SetFloat("CameraFilterPack/Blend2Camera_Darken", TRACKING);
+			LENEJAGLCNL().SetFloat("FreqVolume: ", JITTER);
+			KBOPGONOCNP().SetFloat("CameraFilterPack/Pixelisation_OilPaint", GLITCH);
+			AELJLBOJAIL().SetFloat("#obtained", NOISE);
+			ACHNOHCLGOO().SetFloat("BadgeText", Brightness);
+			ACHNOHCLGOO().SetFloat("menu.tabid", 926f - Constrast);
 			int width = -69;
 			int height = -150;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = (FilterMode)6;
-			Graphics.Blit(AAACLELCPML, temporary, HEHKGPKLAKK());
+			Graphics.Blit(AAACLELCPML, temporary, DKNJGHFLAIF());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -1266,19 +1266,19 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			HEHKGPKLAKK().SetTexture("IconImage", EIJFCDJLEPB);
-			DKNJGHFLAIF().SetTexture("< true | false >", JAFJKILGIKJ);
-			AELJLBOJAIL().SetFloat("LoadMapCanvas", TRACKING);
-			EHDJJANLINB().SetFloat("_MainTex2", JITTER);
-			HEHKGPKLAKK().SetFloat("EnvironmentSlider", GLITCH);
-			KBOPGONOCNP().SetFloat("_TimeX", NOISE);
-			HEHKGPKLAKK().SetFloat("MapEnd", Brightness);
-			MCDGIILBNIF().SetFloat("_TimeX", 1825f - Constrast);
+			KOHGPKOFEJO().SetTexture("_Value1", EIJFCDJLEPB);
+			LENEJAGLCNL().SetTexture("Sets the boolean value of the Auto Focus Input Field property.", JAFJKILGIKJ);
+			AELJLBOJAIL().SetFloat("Editor", TRACKING);
+			DKNJGHFLAIF().SetFloat("UseScanLine", JITTER);
+			ACHNOHCLGOO().SetFloat("HiddenToggle", GLITCH);
+			AELJLBOJAIL().SetFloat("CameraFilterPack/Gradients_Therma", NOISE);
+			LENEJAGLCNL().SetFloat("MapEnd", Brightness);
+			EHDJJANLINB().SetFloat("CameraFilterPack/Edge_Golden", 1825f - Constrast);
 			int width = -89;
 			int height = -69;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 0);
 			temporary.filterMode = FilterMode.Trilinear;
-			Graphics.Blit(AAACLELCPML, temporary, EHDJJANLINB());
+			Graphics.Blit(AAACLELCPML, temporary, HNICHJCGJOC());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}
@@ -1301,18 +1301,18 @@ public class CameraFilterPack_Real_VHS : MonoBehaviour
 		if (SCShader != null)
 		{
 			KOHGPKOFEJO().SetTexture("inventory.selected.", EIJFCDJLEPB);
-			AELJLBOJAIL().SetTexture("_Value2", JAFJKILGIKJ);
-			HEHKGPKLAKK().SetFloat("_Value3", TRACKING);
-			EHDJJANLINB().SetFloat("BloodAlternative2", JITTER);
-			ACHNOHCLGOO().SetFloat("Hex value #RRGGBB", GLITCH);
-			KBOPGONOCNP().SetFloat("22x1", NOISE);
-			KBOPGONOCNP().SetFloat("_DotSize", Brightness);
-			MCDGIILBNIF().SetFloat("maps.", 620f - Constrast);
+			NBPKMLMCHFN.SetTexture("_Value", JAFJKILGIKJ);
+			LENEJAGLCNL().SetFloat("_Value2", TRACKING);
+			NBPKMLMCHFN.SetFloat("_Value4", JITTER);
+			HNICHJCGJOC().SetFloat("Hex value #RRGGBB", GLITCH);
+			ACHNOHCLGOO().SetFloat("23x3", NOISE);
+			MCDGIILBNIF().SetFloat("_DotSize", Brightness);
+			HNICHJCGJOC().SetFloat(".highscore", 620f - Constrast);
 			int width = 100;
 			int height = -19;
 			RenderTexture temporary = RenderTexture.GetTemporary(width, height, 1);
 			temporary.filterMode = (FilterMode)4;
-			Graphics.Blit(AAACLELCPML, temporary, HNICHJCGJOC());
+			Graphics.Blit(AAACLELCPML, temporary, ACHNOHCLGOO());
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
 		}

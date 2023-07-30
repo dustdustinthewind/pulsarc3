@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Night Vision/Night Vision 3")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 {
 	public Shader SCShader;
@@ -40,7 +40,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void PMPKMGKAAJH()
 	{
-		SCShader = Shader.Find("Item ");
+		SCShader = Shader.Find("ItemTemplate");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -80,7 +80,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void AKHCOBHHGJP()
 	{
-		SCShader = Shader.Find("MaxLivesSlider");
+		SCShader = Shader.Find("HandsCountSlider");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -109,7 +109,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void IGPCNCJIEOJ()
 	{
-		SCShader = Shader.Find("Left");
+		SCShader = Shader.Find("SpawnObj");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -118,7 +118,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void FHPFJBFCOOF()
 	{
-		SCShader = Shader.Find("SetSunMinSize");
+		SCShader = Shader.Find("Set sun beat detection sensitivity");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -145,10 +145,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 457f;
 			}
-			BAGICADFBAB().SetFloat("ConfigVersionSlider", HBJJOCHGOPH);
-			LPMLLJKMAMP().SetFloat("_ProjectToPixelMatrix", Greenness);
-			NFKFAAHHLLM().SetVector(" not exist", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFKFAAHHLLM());
+			BLMPMOIDGMG().SetFloat(".sawoutdatedmessage", HBJJOCHGOPH);
+			LPMLLJKMAMP().SetFloat("_ProjInfo", Greenness);
+			OCHJIMJNEMO().SetVector(": ", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{
@@ -165,10 +165,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1436f;
 			}
-			BAGICADFBAB().SetFloat("skin.", HBJJOCHGOPH);
-			NLFJGMBCICG().SetFloat("_Value6", Greenness);
-			NLFJGMBCICG().SetVector("Alpha", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ABHDNGIHBKE());
+			PGPEMMBJOOG().SetFloat("http", HBJJOCHGOPH);
+			ABHDNGIHBKE().SetFloat("_Value5", Greenness);
+			DKNJGHFLAIF().SetVector("Alpha", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{
@@ -178,7 +178,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("Mouse Wheel Down");
+		SCShader = Shader.Find("Mouse");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -194,10 +194,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1182f;
 			}
-			PDEAHJPOMEF().SetFloat("Set sun min/max size", HBJJOCHGOPH);
-			MLMKCOINOOH().SetFloat("_Saturation", Greenness);
-			NJDIODJNGGA().SetVector("_Value", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			BLMPMOIDGMG().SetFloat("float,0", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("_ZCurve", Greenness);
+			MFHPKGICPIO().SetVector("_TimeX", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
 		}
 		else
 		{
@@ -245,10 +245,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1978f;
 			}
-			MICHFGAOPKM().SetFloat("<b>", HBJJOCHGOPH);
-			NLFJGMBCICG().SetFloat("0", Greenness);
-			CECJJMKLEAK().SetVector("ItemsCountText", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			CEKJODEAMGB().SetFloat("%]</b> ", HBJJOCHGOPH);
+			LPMLLJKMAMP().SetFloat("0", Greenness);
+			HFBJAOFLCJI().SetVector("ItemsCountText", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NLFJGMBCICG());
 		}
 		else
 		{
@@ -317,10 +317,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 741f;
 			}
-			ABHDNGIHBKE().SetFloat("_VelTex", HBJJOCHGOPH);
-			MICHFGAOPKM().SetFloat("original.tutorial", Greenness);
-			MLMKCOINOOH().SetVector("Forward", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK());
+			EOCCJGIGEGJ().SetFloat("_Jitter", HBJJOCHGOPH);
+			BAGICADFBAB().SetFloat("original.tutorial", Greenness);
+			BAGICADFBAB().SetVector("ControllerLeftX", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPPEPKGFOEM());
 		}
 		else
 		{
@@ -337,10 +337,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1012f;
 			}
-			LNLKMDPHDCC().SetFloat("/Saved Games/", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat(".a", Greenness);
-			BBIMPFGLDCP().SetVector("#close", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			OCHJIMJNEMO().SetFloat("The directory was created successfully at ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat(".a", Greenness);
+			NLFJGMBCICG().SetVector("#tryagain", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIIDAKBILMI());
 		}
 		else
 		{
@@ -428,7 +428,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find("_AlphaUV");
+		SCShader = Shader.Find("_AlphaMask");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -437,7 +437,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find("Save");
+		SCShader = Shader.Find("[SaveSystem] Outdated savefile found");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -462,10 +462,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1803f;
 			}
-			NFKFAAHHLLM().SetFloat("OnRelease", HBJJOCHGOPH);
-			EOCCJGIGEGJ().SetFloat("_ScreenResolution", Greenness);
-			MFHPKGICPIO().SetVector("_InternalLutTex", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BLMPMOIDGMG());
+			BAGICADFBAB().SetFloat("OnPressRight", HBJJOCHGOPH);
+			MLMKCOINOOH().SetFloat("_ScreenResolution", Greenness);
+			MLMKCOINOOH().SetVector("ENABLE_COLOR_GRADING", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -501,10 +501,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1057f;
 			}
-			LNLKMDPHDCC().SetFloat("_TimeX", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("JoinRandom failed: {0}.", Greenness);
-			GKILCDHJFEG().SetVector("_Bullet_6", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ABHDNGIHBKE());
+			NLFJGMBCICG().SetFloat("CameraFilterPack/Pixelisation_Sweater", HBJJOCHGOPH);
+			MICHFGAOPKM().SetFloat("CreateRoom failed, client stays on masterserver: {0}.", Greenness);
+			MLMKCOINOOH().SetVector("_Bullet_5", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PGPEMMBJOOG());
 		}
 		else
 		{
@@ -514,7 +514,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void FNCDAPDOBBI()
 	{
-		SCShader = Shader.Find("quit");
+		SCShader = Shader.Find("logc");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -545,10 +545,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1690f;
 			}
-			BLMPMOIDGMG().SetFloat("x", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("_DepthLevel", Greenness);
-			GKILCDHJFEG().SetVector("recipes", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NJDIODJNGGA());
+			BBIMPFGLDCP().SetFloat("w", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat("_DepthLevel", Greenness);
+			LNLKMDPHDCC().SetVector(" ", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BLMPMOIDGMG());
 		}
 		else
 		{
@@ -565,10 +565,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 507f;
 			}
-			BBIMPFGLDCP().SetFloat("_Bullet_11", HBJJOCHGOPH);
-			NJDIODJNGGA().SetFloat("_MainTexBlurred", Greenness);
-			KEMAALEODNH().SetVector("LoadingStatusText", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIIDAKBILMI());
+			LNLKMDPHDCC().SetFloat("_Bullet_9", HBJJOCHGOPH);
+			NFKFAAHHLLM().SetFloat("offsets", Greenness);
+			NJDIODJNGGA().SetVector("LoadingStatusText", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -585,10 +585,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 187f;
 			}
-			NJDIODJNGGA().SetFloat("ItemNameText", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("0 - background, 1 - foreground", Greenness);
-			EOCCJGIGEGJ().SetVector("z", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MICHFGAOPKM());
+			HFBJAOFLCJI().SetFloat("RarityImage", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("0 - background, 1 - foreground", Greenness);
+			CEKJODEAMGB().SetVector("x", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
 		}
 		else
 		{
@@ -598,7 +598,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void KCCIEMBMOBA()
 	{
-		SCShader = Shader.Find("Joystick1Button5");
+		SCShader = Shader.Find("Joystick1Button4");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -618,10 +618,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 436f;
 			}
-			KEMAALEODNH().SetFloat("DifficultyBG", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("[MenuScene] Error: ", Greenness);
-			NJDIODJNGGA().SetVector("data", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NLFJGMBCICG());
+			NFKFAAHHLLM().SetFloat("DifficultyBG", HBJJOCHGOPH);
+			BBIMPFGLDCP().SetFloat("/theme", Greenness);
+			BAGICADFBAB().SetVector("data", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GHHPOGODBHB());
 		}
 		else
 		{
@@ -638,10 +638,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1060f;
 			}
-			CEKJODEAMGB().SetFloat("_FarCamera", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("mapselector.filter.rateduponly", Greenness);
-			NJDIODJNGGA().SetVector(".sav", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BLMPMOIDGMG());
+			EOCCJGIGEGJ().SetFloat("_FarCamera", HBJJOCHGOPH);
+			MLMKCOINOOH().SetFloat("mapselector.filter.favoriteonly", Greenness);
+			NFKFAAHHLLM().SetVector("Saved Game: ", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{
@@ -673,10 +673,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1738f;
 			}
-			GHHPOGODBHB().SetFloat("_Value7", HBJJOCHGOPH);
-			GKILCDHJFEG().SetFloat("t", Greenness);
-			NFKFAAHHLLM().SetVector("CONTRAST", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BBIMPFGLDCP());
+			PDEAHJPOMEF().SetFloat("_Value7", HBJJOCHGOPH);
+			OCHJIMJNEMO().SetFloat("Please specify either t or f.", Greenness);
+			NJDIODJNGGA().SetVector("Brightness", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK());
 		}
 		else
 		{
@@ -716,10 +716,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1307f;
 			}
-			NFKFAAHHLLM().SetFloat("EventMenu", HBJJOCHGOPH);
-			LPMLLJKMAMP().SetFloat("MenuScene", Greenness);
-			MLMKCOINOOH().SetVector("[", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
+			BLMPMOIDGMG().SetFloat("EventMenu", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("/", Greenness);
+			OCHJIMJNEMO().SetVector("[SteamManager] Connection established, authorization", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MLMKCOINOOH());
 		}
 		else
 		{
@@ -777,10 +777,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1703f;
 			}
-			ABHDNGIHBKE().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			GKILCDHJFEG().SetFloat("ChatInput", Greenness);
-			NJDIODJNGGA().SetVector("restrictions", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OCHJIMJNEMO());
+			GHHPOGODBHB().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			NJDIODJNGGA().SetFloat("OnRelease", Greenness);
+			GHHPOGODBHB().SetVector("restrictions", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
 		}
 		else
 		{
@@ -797,10 +797,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1481f;
 			}
-			PGPEMMBJOOG().SetFloat("Alternative", HBJJOCHGOPH);
-			EOCCJGIGEGJ().SetFloat("_TimeX", Greenness);
-			PGPEMMBJOOG().SetVector("Fade", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			BLMPMOIDGMG().SetFloat("Winter2020", HBJJOCHGOPH);
+			MICHFGAOPKM().SetFloat("_TimeX", Greenness);
+			MICHFGAOPKM().SetVector("Fade", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ABHDNGIHBKE());
 		}
 		else
 		{
@@ -848,7 +848,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("HostType: {0} ");
+		SCShader = Shader.Find("1.87");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -877,7 +877,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void BMOFEBKGLFI()
 	{
-		SCShader = Shader.Find("player.xp");
+		SCShader = Shader.Find("achievements.21.progress");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -897,7 +897,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void LBAJLLFMMMP()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Lut_TestMode");
+		SCShader = Shader.Find(" cannot be used as a 3D LUT.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -979,10 +979,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1316f;
 			}
-			PDEAHJPOMEF().SetFloat("_TimeX", HBJJOCHGOPH);
-			EOCCJGIGEGJ().SetFloat("CameraFilterPack/Blend2Camera_LighterColor", Greenness);
-			MLMKCOINOOH().SetVector("_TapHigh", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NLFJGMBCICG());
+			MICHFGAOPKM().SetFloat("_Value", HBJJOCHGOPH);
+			OIIDAKBILMI().SetFloat("CameraFilterPack/Blend2Camera_LighterColor", Greenness);
+			LPMLLJKMAMP().SetVector("offsets", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BLMPMOIDGMG());
 		}
 		else
 		{
@@ -1016,10 +1016,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1653f;
 			}
-			OCHJIMJNEMO().SetFloat("_MainTex2", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("CameraFilterPack/Color_GrayScale", Greenness);
-			DBOLLHHMKKN().SetVector("settings.disablestoryboard", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GHHPOGODBHB());
+			MFHPKGICPIO().SetFloat("_MainTex2", HBJJOCHGOPH);
+			OCHJIMJNEMO().SetFloat("_ScreenResolution", Greenness);
+			MICHFGAOPKM().SetVector("settings.disablestoryboard", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -1040,10 +1040,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 220f;
 			}
-			PDEAHJPOMEF().SetFloat(">", HBJJOCHGOPH);
-			LPPEPKGFOEM().SetFloat("menu.selectedplaymode", Greenness);
-			CEKJODEAMGB().SetVector("CameraFilterPack/FX_Funk", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFKFAAHHLLM());
+			OCHJIMJNEMO().SetFloat("<color=#", HBJJOCHGOPH);
+			BBIMPFGLDCP().SetFloat("menu.relaxinfo", Greenness);
+			KEMAALEODNH().SetVector("CameraFilterPack/FX_Funk", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NLFJGMBCICG());
 		}
 		else
 		{
@@ -1061,7 +1061,7 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 
 	private void ICILLMAKLMI()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/Noise_TV_2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1077,10 +1077,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1003f;
 			}
-			NLFJGMBCICG().SetFloat("_Value4", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("Failed to InstantiateSceneObject prefab: ", Greenness);
-			EOCCJGIGEGJ().SetVector("w", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			NFKFAAHHLLM().SetFloat("_Value4", HBJJOCHGOPH);
+			GHHPOGODBHB().SetFloat("Failed to InstantiateSceneObject prefab:", Greenness);
+			PGPEMMBJOOG().SetVector("x", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ABHDNGIHBKE());
 		}
 		else
 		{
@@ -1114,10 +1114,10 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1867f;
 			}
-			LPPEPKGFOEM().SetFloat("StandAloneInputSystem should not be used with the GamePadInputModule, please remove it from the Event System in this scene or disable it when this module is in use", HBJJOCHGOPH);
-			ABHDNGIHBKE().SetFloat("_Value3", Greenness);
-			BBIMPFGLDCP().SetVector("return ", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NLFJGMBCICG());
+			DKNJGHFLAIF().SetFloat("Vertical", HBJJOCHGOPH);
+			OIIDAKBILMI().SetFloat("_Value2", Greenness);
+			EOCCJGIGEGJ().SetVector("time: ", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MFHPKGICPIO());
 		}
 		else
 		{
@@ -1187,9 +1187,9 @@ public class CameraFilterPack_Oculus_NightVision3 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 29f;
 			}
-			NFKFAAHHLLM().SetFloat("z", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat("w", HBJJOCHGOPH);
 			MFHPKGICPIO().SetFloat("AccuracyScoreText", Greenness);
-			PDEAHJPOMEF().SetVector(".lastCheckpoint.checkpointsUsed", new Vector2(Screen.width, Screen.height));
+			BLMPMOIDGMG().SetVector(".lastCheckpoint.lives", new Vector2(Screen.width, Screen.height));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFKFAAHHLLM());
 		}
 		else

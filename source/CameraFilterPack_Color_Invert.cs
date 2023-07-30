@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Colors/Invert")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Colors/Invert")]
 public class CameraFilterPack_Color_Invert : MonoBehaviour
 {
 	public Shader SCShader;
@@ -39,10 +39,10 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 			{
 				HBJJOCHGOPH = 648f;
 			}
-			DEFBJOCJJKF().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("X", _Fade);
-			PDEAHJPOMEF().SetVector("}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1439f, 1847f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
+			PLBEJJIHFPB().SetFloat("_Fade", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Xbox Home", _Fade);
+			PLBEJJIHFPB().SetVector("No", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1439f, 1847f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -52,7 +52,7 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("_Value");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -68,9 +68,9 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1001f;
 			}
-			PDEAHJPOMEF().SetFloat("Hidden/TonemappingColorGrading", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("Cancel", _Fade);
-			NBPKMLMCHFN.SetVector("Tab1Content", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 439f, 1858f));
+			PDEAHJPOMEF().SetFloat("Curve texture", HBJJOCHGOPH);
+			DEFBJOCJJKF().SetFloat("Vertical", _Fade);
+			PDEAHJPOMEF().SetVector("\"", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 439f, 1858f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -107,10 +107,10 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 			{
 				HBJJOCHGOPH = 477f;
 			}
-			PDEAHJPOMEF().SetFloat("Image", HBJJOCHGOPH);
-			PLBEJJIHFPB().SetFloat("PLEASE WAIT", _Fade);
-			DEFBJOCJJKF().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1777f, 222f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
+			NBPKMLMCHFN.SetFloat("Item ", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("Uploading preview image", _Fade);
+			NBPKMLMCHFN.SetVector("CameraFilterPack/Glasses_On", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1777f, 222f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -156,7 +156,7 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("Set Satellite Trail Length");
+		SCShader = Shader.Find("SetSatelliteTrailLength");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -172,10 +172,10 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 			{
 				HBJJOCHGOPH = 620f;
 			}
-			PLBEJJIHFPB().SetFloat("/icon", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("SpawnObj", _Fade);
-			PDEAHJPOMEF().SetVector("LoadingStatusText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1364f, 1879f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			PDEAHJPOMEF().SetFloat("/icon", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("SpawnObj", _Fade);
+			PDEAHJPOMEF().SetVector("[MapsData] Caching ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1364f, 1879f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -204,7 +204,7 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("a");
+		SCShader = Shader.Find("r");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -228,10 +228,10 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 			{
 				HBJJOCHGOPH = 820f;
 			}
-			PLBEJJIHFPB().SetFloat("_Value5", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("skin.", _Fade);
-			PLBEJJIHFPB().SetVector("[LocalizationService] Localization: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 17f, 799f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			PDEAHJPOMEF().SetFloat("_Value5", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("challenges/", _Fade);
+			DEFBJOCJJKF().SetVector("[LocalizationService] Error: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 17f, 799f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -241,7 +241,7 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		SCShader = Shader.Find("PUN-instantiated '");
+		SCShader = Shader.Find(" = ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -270,7 +270,7 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 
 	private void NPLCENPNJBM()
 	{
-		SCShader = Shader.Find("GameModeText");
+		SCShader = Shader.Find("PossibleMapMaxScoreText");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -291,7 +291,7 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 
 	private void BEBNOKFLJPH()
 	{
-		SCShader = Shader.Find("settings_bindings_sec_");
+		SCShader = Shader.Find("settings_bindings_");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -318,10 +318,10 @@ public class CameraFilterPack_Color_Invert : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1965f;
 			}
-			PDEAHJPOMEF().SetFloat("PublishButton", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("CameraFilterPack/Distortion_BigFace", _Fade);
-			PLBEJJIHFPB().SetVector("0", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 677f, 1578f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
+			PDEAHJPOMEF().SetFloat("LevelConfigButton", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("CameraFilterPack/Distortion_BigFace", _Fade);
+			PLBEJJIHFPB().SetVector("#ok", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 677f, 1578f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{

@@ -120,7 +120,7 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find("CameraFilterPack_Atmosphere_Rain_FX");
+		SCShader = Shader.Find("Texture2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -158,11 +158,11 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1645f;
 			}
-			DBOLLHHMKKN().SetFloat("_Value2", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat(" not exist", Level);
-			IIBLJCKLGFG().SetVector("maxScore", Distance);
-			DNLMFEGJJDD().SetVector(" GameServer:", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 753f, 1697f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			ACHNOHCLGOO().SetFloat("_Value", HBJJOCHGOPH);
+			JFDGLLEOPGB().SetFloat(": ", Level);
+			DNLMFEGJJDD().SetVector("maphash", Distance);
+			DBOLLHHMKKN().SetVector("SupportLogger OnJoinedRoom(", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 753f, 1697f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -183,11 +183,11 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1600f;
 			}
-			ACHNOHCLGOO().SetFloat("_ColorBuffer", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("[Up-Down-Left]", Level);
-			PDEAHJPOMEF().SetVector("_MainTex2", Distance);
-			IIJMIPBMMBF().SetVector("set id", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 957f, 578f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			AELJLBOJAIL().SetFloat("_Threshhold", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("[Right-Down-Left]", Level);
+			DBOLLHHMKKN().SetVector("_Speed", Distance);
+			IIBLJCKLGFG().SetVector("set id", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 957f, 578f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -197,7 +197,7 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find("_Shadow");
+		SCShader = Shader.Find("_Fade");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -217,11 +217,11 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1757f;
 			}
-			DBOLLHHMKKN().SetFloat("_Value2", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("menu.selectedplaymode", Level);
-			DBOLLHHMKKN().SetVector("#craftng", Distance);
-			IIJMIPBMMBF().SetVector("settings.fps", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1066f, 1558f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
+			JFDGLLEOPGB().SetFloat("_Value", HBJJOCHGOPH);
+			IIBLJCKLGFG().SetFloat("menu.hardcoreinfo", Level);
+			AELJLBOJAIL().SetVector("#random #common #item", Distance);
+			JFDGLLEOPGB().SetVector("settings.fps", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1066f, 1558f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -238,11 +238,11 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 730f;
 			}
-			IIBLJCKLGFG().SetFloat("bad", HBJJOCHGOPH);
-			DNLMFEGJJDD().SetFloat(".", Level);
-			DBOLLHHMKKN().SetVector("#savemapchanges?", Distance);
-			IIBLJCKLGFG().SetVector("_Fade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 625f, 337f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			PDEAHJPOMEF().SetFloat("error", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("[PlayerBase] Loaded spawner data", Level);
+			NBPKMLMCHFN.SetVector("#no", Distance);
+			JFDGLLEOPGB().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 625f, 337f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{
@@ -252,7 +252,7 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("_MaxRadiusOrKInPaper");
+		SCShader = Shader.Find("_ToPrevViewProjCombined");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -304,11 +304,11 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1343f;
 			}
-			JFDGLLEOPGB().SetFloat(".", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("<size=24>", Level);
-			ACHNOHCLGOO().SetVector(" : ", Distance);
-			IIJMIPBMMBF().SetVector("seconds", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1218f, 464f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			PDEAHJPOMEF().SetFloat("maps.", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("<size=24>", Level);
+			JFDGLLEOPGB().SetVector("Result for ", Distance);
+			HFBJAOFLCJI().SetVector("seconds", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1218f, 464f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -325,11 +325,11 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1314f;
 			}
-			KGOLDDBHIFN().SetFloat("Keypad", HBJJOCHGOPH);
-			AELJLBOJAIL().SetFloat("_MainTex", Level);
-			EFDEIFCDAFG().SetVector(".sav", Distance);
-			ACHNOHCLGOO().SetVector("NEW_ACHIEVEMENT_1_21", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 716f, 66f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			DBOLLHHMKKN().SetFloat("Alpha", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat(" is not part of the Unity 3.2+ effects suite anymore. For best performance and quality, please ensure you are using the latest Standard Assets Image Effects (Pro only) package.", Level);
+			IIJMIPBMMBF().SetVector(".sav", Distance);
+			JFDGLLEOPGB().SetVector("achievements.21.completed.workshop.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 716f, 66f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
 		}
 		else
 		{
@@ -346,11 +346,11 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1245f;
 			}
-			PDEAHJPOMEF().SetFloat("b", HBJJOCHGOPH);
-			AELJLBOJAIL().SetFloat("_ScreenResolution", Level);
-			JFDGLLEOPGB().SetVector("RULES", Distance);
-			KGOLDDBHIFN().SetVector("OpGetGameList not sent. LobbyType must be SqlLobby.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1018f, 1660f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			PDEAHJPOMEF().SetFloat("r", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("_ScreenResolution", Level);
+			ACHNOHCLGOO().SetVector("There are a few rules that you must accept before submitting your work. Please select \"RULES\" button, if you haven't read them yet.", Distance);
+			EFDEIFCDAFG().SetVector("OpGetGameList()", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1018f, 1660f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -393,11 +393,11 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 631f;
 			}
-			DBOLLHHMKKN().SetFloat("Submit", HBJJOCHGOPH);
-			AELJLBOJAIL().SetFloat("bad", Level);
-			DBOLLHHMKKN().SetVector("[RanksSystem] Ranks updated. Next update: ", Distance);
-			ACHNOHCLGOO().SetVector("JoinButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 97f, 1961f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			IIBLJCKLGFG().SetFloat("Horizontal", HBJJOCHGOPH);
+			AELJLBOJAIL().SetFloat("error", Level);
+			HFBJAOFLCJI().SetVector("Connection error: ", Distance);
+			IIJMIPBMMBF().SetVector("JoinButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 97f, 1961f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -407,7 +407,7 @@ public class CameraFilterPack_Blur_Dithering2x2 : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Film_Grain");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

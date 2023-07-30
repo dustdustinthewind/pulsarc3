@@ -5,553 +5,161 @@ using UnityEngine;
 [RequireComponent(typeof(PhotonView))]
 public class OnAwakeUsePhotonView : Photon.MonoBehaviour
 {
-	public void BFKJFDJMOPD()
-	{
-		Debug.Log("Closes the app" + IBKCMBIGOEJ());
-	}
-
-	public void MKFONKOJHJI(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[0];
-		array[1] = "Error0";
-		array[0] = JNBMEPMFOOB;
-		array[8] = "Checkpoint";
-		array[6] = GBHNDHLAJLI();
-		Debug.Log(string.Concat(array));
-	}
-
-	[PunRPC]
-	public void OnAwakeRPC(byte JNBMEPMFOOB)
-	{
-		Debug.Log("RPC: 'OnAwakeRPC' Parameter: " + JNBMEPMFOOB + " PhotonView: " + base.photonView);
-	}
-
-	private void IKGFIOIADLN()
-	{
-		if (AAMNKPHHHCI().KCAOJFPDEIP())
-		{
-			GMAHNPNHMFK().PBMFBOOALKA("OnPlayerGameMessage", PhotonTargets.All, new object[0]);
-		}
-	}
-
-	public void NPHJLBOKJBK()
-	{
-		Debug.Log("Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results" + JAEJDHHCJJO());
-	}
-
-	private void MFIMFMCMADK()
-	{
-		if (OELHGNKAMEG().BGJKMGJBPFA())
-		{
-			GBHNDHLAJLI().RPC("offsets", PhotonTargets.Others, new object[1]);
-		}
-	}
-
-	private void OBPCMAFGLON()
-	{
-		if (JAEJDHHCJJO().isMine)
-		{
-			GBHNDHLAJLI().IKIJDNPJKPM("Image", PhotonTargets.All, new object[1]);
-		}
-	}
-
-	public void HIPICMNNEFC()
-	{
-		Debug.Log("Error: Cannot change the name of a remote player!" + FFIPLLNKGEN());
-	}
-
-	[PunRPC]
-	public void OnAwakeRPC()
-	{
-		Debug.Log("RPC: 'OnAwakeRPC' PhotonView: " + base.photonView);
-	}
-
-	public void GPOFBBMIHAM()
-	{
-		Debug.Log("skin.no_hit" + AAMNKPHHHCI());
-	}
-
-	public void IIOJJBNHMPB(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[2];
-		array[1] = "float,1";
-		array[1] = JNBMEPMFOOB;
-		array[5] = "_TimeX";
-		array[0] = JAEJDHHCJJO();
-		Debug.Log(string.Concat(array));
-	}
-
-	private void IIPMEPPIFCK()
-	{
-		if (CIACEFBNDDJ().BGJKMGJBPFA())
-		{
-			EDIJKHEMPAD().IKIJDNPJKPM("_History2LumaTex", PhotonTargets.Others, new object[0]);
-		}
-	}
-
-	public void FJPHKFHHOLH()
-	{
-		Debug.Log("_Value" + GBMJAPGLMGB());
-	}
-
-	private void HBPLJMJAAHK()
-	{
-		if (FFIPLLNKGEN().BGJKMGJBPFA())
-		{
-			EOOCGIFFKBG().GNFNHDCJOFC("maps.", PhotonTargets.All, new object[0]);
-		}
-	}
-
-	public void EHLNCJPNFPE(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[3];
-		array[1] = "value";
-		array[0] = JNBMEPMFOOB;
-		array[3] = "Horizontal";
-		array[7] = GBMJAPGLMGB();
-		Debug.Log(string.Concat(array));
-	}
-
-	public void OBBENHPGDNC(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[6];
-		array[1] = "Scale environment object by the values";
-		array[1] = JNBMEPMFOOB;
-		array[0] = "GlassesColor";
-		array[0] = GBMJAPGLMGB();
-		Debug.Log(string.Concat(array));
-	}
-
-	private void BFIOIDMHPPL()
-	{
-		if (GMAHNPNHMFK().BGJKMGJBPFA())
-		{
-			CIACEFBNDDJ().GNFNHDCJOFC("Hidden/DepthOfField/BokehSplatting", PhotonTargets.Others, new object[1]);
-		}
-	}
-
-	public void ENHPBOFDJOI(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[4];
-		array[0] = "_ReflectionTexture0";
-		array[0] = JNBMEPMFOOB;
-		array[4] = "_LightIntensity";
-		array[2] = base.photonView;
-		Debug.Log(string.Concat(array));
-	}
-
-	public void PBOICCCBFGD()
-	{
-		Debug.Log("JITTER" + BLMHOKPIMOD());
-	}
-
-	public void FKJBMKEHDHF(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[1];
-		array[0] = "Send";
-		array[0] = JNBMEPMFOOB;
-		array[1] = "_Value6";
-		array[4] = base.photonView;
-		Debug.Log(string.Concat(array));
-	}
-
-	private void PEMPABLNJHL()
-	{
-		if (FFIPLLNKGEN().isMine)
-		{
-			ACPGHFHDCIP().KEKKFNNMLMG("R1", PhotonTargets.All, new object[1]);
-		}
-	}
-
-	private void HCNECNPPEKA()
-	{
-		if (OELHGNKAMEG().BGJKMGJBPFA())
-		{
-			GMAHNPNHMFK().RPC("Fade", PhotonTargets.Others);
-		}
-	}
-
-	public void CCAEAOFCNJP(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[0];
-		array[1] = "CameraFilterPack/Drawing_Lines";
-		array[1] = JNBMEPMFOOB;
-		array[8] = " methods \"";
-		array[7] = BLMHOKPIMOD();
-		Debug.Log(string.Concat(array));
-	}
-
-	private void MFAMHKBMBEI()
-	{
-		if (EDIJKHEMPAD().KCAOJFPDEIP())
-		{
-			ACPGHFHDCIP().GNFNHDCJOFC("_TimeX", PhotonTargets.All, new object[0]);
-		}
-	}
-
-	private void NBGIMIDICKE()
-	{
-		if (BLMHOKPIMOD().KCAOJFPDEIP())
-		{
-			PhotonView obj = base.photonView;
-			object[] array = new object[0];
-			array[0] = (byte)0;
-			obj.GNFNHDCJOFC("UsernameText", PhotonTargets.Others, array);
-		}
-	}
-
-	public void JBOAOFOEDFA(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[0];
-		array[0] = "_FresnelFadePower";
-		array[1] = JNBMEPMFOOB;
-		array[7] = "  |  ";
-		array[0] = GMAHNPNHMFK();
-		Debug.Log(string.Concat(array));
-	}
-
-	private void MJEFMIPLFAB()
-	{
-		if (GMAHNPNHMFK().KCAOJFPDEIP())
-		{
-			PhotonView obj = AAMNKPHHHCI();
-			object[] array = new object[0];
-			array[0] = (byte)0;
-			obj.MIAHMDGOOPJ("maphash", PhotonTargets.Others, array);
-		}
-	}
-
-	public void JAMIAHCMKBM()
-	{
-		Debug.Log("\0\0" + base.photonView);
-	}
-
-	public void OIHFGEKFICG(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[8];
-		array[0] = "player.goldarc";
-		array[1] = JNBMEPMFOOB;
-		array[2] = "_SprTex";
-		array[0] = FFIPLLNKGEN();
-		Debug.Log(string.Concat(array));
-	}
-
-	private void HJPCJGOEKMF()
-	{
-		if (OELHGNKAMEG().isMine)
-		{
-			PhotonView obj = GBMJAPGLMGB();
-			object[] array = new object[0];
-			array[0] = (byte)1;
-			obj.RPC("_TimeX", PhotonTargets.All, array);
-		}
-	}
-
-	public void IELGEACOPPN(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[7];
-		array[1] = "_Value7";
-		array[1] = JNBMEPMFOOB;
-		array[0] = "_NoiseTex";
-		array[4] = GBHNDHLAJLI();
-		Debug.Log(string.Concat(array));
-	}
-
-	public void OPBLIOMFEGK()
-	{
-		Debug.Log("#tryagain" + ACPGHFHDCIP());
-	}
-
-	private void CHOPDIGHJNH()
-	{
-		if (ACPGHFHDCIP().DOLKFPIABDD())
-		{
-			CIACEFBNDDJ().MIAHMDGOOPJ("_Near", PhotonTargets.Others, new object[1] { (byte)0 });
-		}
-	}
-
-	public void IDCJHBIKDAP()
-	{
-		Debug.Log("offsets" + IBKCMBIGOEJ());
-	}
-
-	public void JJDKDMAGNFD(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[0];
-		array[0] = ": ";
-		array[1] = JNBMEPMFOOB;
-		array[0] = "_Value7";
-		array[8] = AAMNKPHHHCI();
-		Debug.Log(string.Concat(array));
-	}
-
-	public void MHNBFGIMPOH(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[6];
-		array[1] = "_Value";
-		array[0] = JNBMEPMFOOB;
-		array[6] = "513510";
-		array[0] = GBMJAPGLMGB();
-		Debug.Log(string.Concat(array));
-	}
-
-	public void CPEGEIEFJHA()
-	{
-		Debug.Log("Failed to Instantiate prefab:" + ACPGHFHDCIP());
-	}
-
-	private void Start()
-	{
-		if (base.photonView.isMine)
-		{
-			base.photonView.RPC("OnAwakeRPC", PhotonTargets.All, (byte)1);
-		}
-	}
-
-	private void BANHFNDEPPO()
-	{
-		if (EDIJKHEMPAD().BGJKMGJBPFA())
-		{
-			GBMJAPGLMGB().KEKKFNNMLMG("1", PhotonTargets.All, new object[0]);
-		}
-	}
-
-	public void CGAHECNIBNO()
-	{
-		Debug.Log("_ScreenResolution" + AAMNKPHHHCI());
-	}
-
-	private void PMPKMGKAAJH()
-	{
-		if (BLMHOKPIMOD().KCAOJFPDEIP())
-		{
-			JAEJDHHCJJO().PBMFBOOALKA("GameVolumeSlider", PhotonTargets.Others, new object[1] { (byte)0 });
-		}
-	}
-
-	private void MADENBGHKDD()
-	{
-		if (base.photonView.isMine)
-		{
-			GMAHNPNHMFK().MIAHMDGOOPJ("player.bluelifering", PhotonTargets.All, new object[0]);
-		}
-	}
-
-	private void IOMCHHBGJEC()
-	{
-		if (GMAHNPNHMFK().isMine)
-		{
-			GMAHNPNHMFK().GNFNHDCJOFC("CameraFilterPack/Blend2Camera_ColorDodge", PhotonTargets.Others, new object[0]);
-		}
-	}
-
 	public void APCGLOADLNG()
 	{
-		Debug.Log("_Value4" + GBHNDHLAJLI());
-	}
-
-	private void JNBMKLFJCEM()
-	{
-		if (base.photonView.BGJKMGJBPFA())
-		{
-			GBHNDHLAJLI().GNFNHDCJOFC("_TimeX", PhotonTargets.Others, new object[0]);
-		}
-	}
-
-	public void MEKHEGCLGJO(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[0];
-		array[0] = "Warning: Unhandled Event ErrorInfo (251). Set PhotonNetwork.OnEventCall to the method PUN should call for this event.";
-		array[0] = JNBMEPMFOOB;
-		array[5] = "_Value2";
-		array[7] = IBKCMBIGOEJ();
-		Debug.Log(string.Concat(array));
+		Debug.Log("CameraFilterPack/3D_Myst" + OELHGNKAMEG());
 	}
 
 	public void JEMIPIAKEHF(byte JNBMEPMFOOB)
 	{
-		object[] array = new object[3];
-		array[0] = "SetParticlesParticleSize";
-		array[1] = JNBMEPMFOOB;
-		array[0] = "Message duration multiplier. Recomended 1";
-		array[7] = FFIPLLNKGEN();
+		object[] array = new object[7];
+		array[1] = "ResetSpeed";
+		array[0] = JNBMEPMFOOB;
+		array[2] = " Message: ";
+		array[5] = ACPGHFHDCIP();
 		Debug.Log(string.Concat(array));
 	}
 
-	public void HNIOBNLBJPO()
+	public void ANOGCJCCFFE(byte JNBMEPMFOOB)
 	{
-		Debug.Log("_ScreenResolution" + ACPGHFHDCIP());
+		object[] array = new object[0];
+		array[1] = "_BokehParams";
+		array[0] = JNBMEPMFOOB;
+		array[8] = "_TimeX";
+		array[5] = DJHCJIJAIJP();
+		Debug.Log(string.Concat(array));
 	}
 
-	private void LJEFMGOBKGE()
+	public void KCFIEBMFILL()
 	{
-		if (EOOCGIFFKBG().BGJKMGJBPFA())
+		Debug.Log("http://steamcommunity.com/sharedfiles/filedetails/?id=" + PHCBHAFMDEJ());
+	}
+
+	public void HJPJKCPGEGO()
+	{
+		Debug.Log("CameraFilterPack/EXTRA_Rotation" + EDIJKHEMPAD());
+	}
+
+	private void BFFHPJMMGHD()
+	{
+		if (EOOCGIFFKBG().isMine)
 		{
-			ACPGHFHDCIP().KEKKFNNMLMG("{0:0} minute{1}, ", PhotonTargets.Others, new object[0]);
+			FFIPLLNKGEN().RPC("_Value", PhotonTargets.Others);
 		}
 	}
 
-	private void MMOKKAPFGAK()
+	private void NNFMIAFHMJM()
 	{
-		if (GBHNDHLAJLI().DOLKFPIABDD())
+		if (BLMHOKPIMOD().isMine)
 		{
-			PhotonView obj = EOOCGIFFKBG();
-			object[] array = new object[0];
-			array[1] = (byte)0;
-			obj.KEKKFNNMLMG("File not found: {0}", PhotonTargets.All, array);
+			PhotonView obj = BBGIDKNEGHD();
+			object[] array = new object[1];
+			array[1] = (byte)1;
+			obj.RPC("_Value3", PhotonTargets.All, array);
 		}
 	}
 
-	private void NCNPAKFAFOE()
-	{
-		if (ACPGHFHDCIP().BGJKMGJBPFA())
-		{
-			PhotonView obj = EDIJKHEMPAD();
-			object[] array = new object[0];
-			array[0] = (byte)0;
-			obj.GNFNHDCJOFC("owner: ", PhotonTargets.Others, array);
-		}
-	}
-
-	private void LBAJLLFMMMP()
+	private void EFJDNLGNACH()
 	{
 		if (GMAHNPNHMFK().isMine)
 		{
-			GBHNDHLAJLI().IKIJDNPJKPM("_Value3", PhotonTargets.All, new object[1] { (byte)0 });
+			PhotonView obj = IFENGKHOKPC();
+			object[] array = new object[0];
+			array[0] = (byte)0;
+			obj.RPC("_EdgeWeight", PhotonTargets.Others, array);
 		}
 	}
 
-	public void GDCFMFILBAM(byte JNBMEPMFOOB)
+	public void JBOAOFOEDFA()
 	{
-		object[] array = new object[1];
-		array[1] = "Status: ";
-		array[1] = JNBMEPMFOOB;
-		array[8] = "sfxVolume";
-		array[6] = GMAHNPNHMFK();
-		Debug.Log(string.Concat(array));
+		Debug.Log(" [" + IFENGKHOKPC());
 	}
 
-	public void DMPLGFKLMLG(byte JNBMEPMFOOB)
+	public void OBNJMADIOCH()
 	{
-		object[] array = new object[3];
-		array[1] = "materialsitemid[";
-		array[1] = JNBMEPMFOOB;
-		array[2] = "LevelInfoInputField";
-		array[0] = AAMNKPHHHCI();
-		Debug.Log(string.Concat(array));
+		Debug.Log("[EMPTY]" + CIACEFBNDDJ());
 	}
 
-	private void ILCFPCIPENO()
+	public void GMALNHKFBAF()
 	{
-		if (EDIJKHEMPAD().DOLKFPIABDD())
-		{
-			GBHNDHLAJLI().IKIJDNPJKPM("_FadeDistance", PhotonTargets.Others, new object[1] { (byte)0 });
-		}
+		Debug.Log("OpAuthenticate()" + GMAHNPNHMFK());
 	}
 
-	private void DMIKIDGJEFC()
-	{
-		if (GBHNDHLAJLI().KCAOJFPDEIP())
-		{
-			FFIPLLNKGEN().KEKKFNNMLMG(" but this PhotonView does not exist! View was/is ours.", PhotonTargets.All, new object[0]);
-		}
-	}
-
-	public void ANOGCJCCFFE()
-	{
-		Debug.Log("Right" + base.photonView);
-	}
-
-	private void PHHOMLJECOJ()
-	{
-		if (OELHGNKAMEG().BGJKMGJBPFA())
-		{
-			OELHGNKAMEG().KEKKFNNMLMG("_Value2", PhotonTargets.All, new object[1]);
-		}
-	}
-
-	private void JEEINPBLBDI()
-	{
-		if (IBKCMBIGOEJ().DOLKFPIABDD())
-		{
-			ACPGHFHDCIP().IKIJDNPJKPM("z", PhotonTargets.Others, new object[1]);
-		}
-	}
-
-	private void GBNOIKAPBBO()
+	private void LFFAKAOAOCN()
 	{
 		if (EDIJKHEMPAD().isMine)
 		{
-			base.photonView.MIAHMDGOOPJ("OpAuthenticate()", PhotonTargets.All, new object[0]);
+			JAEJDHHCJJO().RPC("CameraFilterPack/FX_Spot", PhotonTargets.All);
 		}
 	}
 
-	public void ABMFEALMMCI()
+	public void CPEGEIEFJHA(byte JNBMEPMFOOB)
 	{
-		Debug.Log("_Value2" + BLMHOKPIMOD());
+		object[] array = new object[0];
+		array[1] = "_Value4";
+		array[0] = JNBMEPMFOOB;
+		array[7] = "EditMenu";
+		array[5] = GMAHNPNHMFK();
+		Debug.Log(string.Concat(array));
 	}
 
-	private void LFHKGIHNONL()
+	private void CIAHIJIOFIE()
 	{
-		if (FFIPLLNKGEN().DOLKFPIABDD())
+		if (GBMJAPGLMGB().isMine)
 		{
-			EOOCGIFFKBG().IKIJDNPJKPM("FinalScoreSmallText", PhotonTargets.All, new object[1]);
+			NABDKNPNEMM().RPC("LevelConfigButton", PhotonTargets.Others);
 		}
 	}
 
-	private void OJACCGOHBGH()
+	private void GDHMJGBAGHP()
 	{
-		if (GMAHNPNHMFK().DOLKFPIABDD())
+		if (BLMHOKPIMOD().isMine)
 		{
-			FFIPLLNKGEN().IKIJDNPJKPM("(\\[ *\\/ *url *])", PhotonTargets.Others, new object[0]);
+			GMAHNPNHMFK().RPC("{0:0.0} ms ({1:0.} fps)", PhotonTargets.Others);
 		}
 	}
 
-	public void PEGOOKMNOPH(byte JNBMEPMFOOB)
+	public void PKGGIEGEKIF()
+	{
+		Debug.Log("[SERVER] Player " + EOOCGIFFKBG());
+	}
+
+	public void EACHPFBJBNP(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[4];
+		array[0] = "_FarCorner";
+		array[1] = JNBMEPMFOOB;
+		array[5] = "[Down]";
+		array[2] = JAEJDHHCJJO();
+		Debug.Log(string.Concat(array));
+	}
+
+	public void HIPICMNNEFC(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[8];
+		array[0] = "_MainTex";
+		array[1] = JNBMEPMFOOB;
+		array[3] = "CameraFilterPack/FX_Dot_Circle";
+		array[1] = AAMNKPHHHCI();
+		Debug.Log(string.Concat(array));
+	}
+
+	private void JIJPHEDDIHC()
+	{
+		if (EDIJKHEMPAD().isMine)
+		{
+			IFENGKHOKPC().RPC("_TimeX", PhotonTargets.Others, new object[1]);
+		}
+	}
+
+	public void LHCMPGPFHFE(byte JNBMEPMFOOB)
 	{
 		object[] array = new object[7];
-		array[0] = "list";
-		array[1] = JNBMEPMFOOB;
-		array[8] = "_MainTex2";
-		array[3] = GMAHNPNHMFK();
-		Debug.Log(string.Concat(array));
-	}
-
-	public void LAMEBFJKMBF(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[3];
-		array[1] = "Skipping region because it's not in PhotonServerSettings.EnabledRegions: ";
+		array[1] = " not found";
 		array[0] = JNBMEPMFOOB;
-		array[3] = "OnStatusChanged: {0} current State: {1}";
-		array[0] = AAMNKPHHHCI();
+		array[5] = "_Value";
+		array[3] = PHCBHAFMDEJ();
 		Debug.Log(string.Concat(array));
-	}
-
-	private void JOBBGDGHJMB()
-	{
-		if (ACPGHFHDCIP().KCAOJFPDEIP())
-		{
-			GMAHNPNHMFK().KEKKFNNMLMG("/?player=", PhotonTargets.All, new object[0]);
-		}
-	}
-
-	private void FHGKIOOMMOH()
-	{
-		if (GBMJAPGLMGB().KCAOJFPDEIP())
-		{
-			PhotonView obj = ACPGHFHDCIP();
-			object[] array = new object[1];
-			array[1] = (byte)1;
-			obj.MIAHMDGOOPJ("float,1.5", PhotonTargets.Others, array);
-		}
-	}
-
-	private void JHPKLGGMCBL()
-	{
-		if (FFIPLLNKGEN().DOLKFPIABDD())
-		{
-			GBHNDHLAJLI().PBMFBOOALKA("[", PhotonTargets.All, new object[0]);
-		}
 	}
 
 	private void Awake()
@@ -562,227 +170,328 @@ public class OnAwakeUsePhotonView : Photon.MonoBehaviour
 		}
 	}
 
-	private void JILOMOBDPIA()
+	public void LGHODHJMAMC(byte JNBMEPMFOOB)
 	{
-		if (EOOCGIFFKBG().DOLKFPIABDD())
-		{
-			EOOCGIFFKBG().PBMFBOOALKA(".lastCheckpoint.time", PhotonTargets.Others, new object[1] { (byte)0 });
-		}
-	}
-
-	private void EMANBHKAONB()
-	{
-		if (EOOCGIFFKBG().DOLKFPIABDD())
-		{
-			AAMNKPHHHCI().IKIJDNPJKPM("_TimeX", PhotonTargets.All, new object[1]);
-		}
-	}
-
-	public void KFICJFBKECE(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[2];
-		array[1] = "_Value";
-		array[0] = JNBMEPMFOOB;
-		array[5] = "Parameter levelId must be int or string!";
-		array[0] = AAMNKPHHHCI();
-		Debug.Log(string.Concat(array));
-	}
-
-	public void INEJPACDDEL()
-	{
-		Debug.Log("SpawnObj" + AAMNKPHHHCI());
-	}
-
-	private void OBAIHNFOJGN()
-	{
-		if (EOOCGIFFKBG().DOLKFPIABDD())
-		{
-			GBMJAPGLMGB().PBMFBOOALKA("skin.", PhotonTargets.All, new object[0]);
-		}
-	}
-
-	private void EIFCCFBJKOO()
-	{
-		if (AAMNKPHHHCI().isMine)
-		{
-			EOOCGIFFKBG().PBMFBOOALKA("PLEASE WAIT", PhotonTargets.Others, new object[0]);
-		}
-	}
-
-	private void BMAGFLLGDPJ()
-	{
-		if (ACPGHFHDCIP().BGJKMGJBPFA())
-		{
-			AAMNKPHHHCI().RPC("_SunColor", PhotonTargets.All);
-		}
-	}
-
-	private void BHCCNFJKGPD()
-	{
-		if (CIACEFBNDDJ().KCAOJFPDEIP())
-		{
-			base.photonView.GNFNHDCJOFC("roomDescription", PhotonTargets.Others, new object[0]);
-		}
-	}
-
-	public void FCJPBNOFCNG()
-	{
-		Debug.Log("_Offsets" + JAEJDHHCJJO());
-	}
-
-	private void CFFCLAHMBAA()
-	{
-		if (GBMJAPGLMGB().BGJKMGJBPFA())
-		{
-			PhotonView obj = EOOCGIFFKBG();
-			object[] array = new object[0];
-			array[1] = (byte)0;
-			obj.MIAHMDGOOPJ("sfxVolume", PhotonTargets.All, array);
-		}
-	}
-
-	public void NIEEHCGBDIJ(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[2];
-		array[0] = "[Up]";
+		object[] array = new object[3];
+		array[1] = "0.00";
 		array[1] = JNBMEPMFOOB;
-		array[2] = "owner: ";
-		array[7] = OELHGNKAMEG();
+		array[8] = "OnPressRight";
+		array[5] = GMAHNPNHMFK();
 		Debug.Log(string.Concat(array));
 	}
 
-	public void JDCJIMPEPGB(byte JNBMEPMFOOB)
+	public void ENHPBOFDJOI()
 	{
-		object[] array = new object[2];
-		array[0] = "[Down]";
-		array[1] = JNBMEPMFOOB;
-		array[0] = "Can't set visible when not in that room.";
-		array[0] = FFIPLLNKGEN();
-		Debug.Log(string.Concat(array));
+		Debug.Log("downloading" + base.photonView);
 	}
 
-	private void PIIMBOLGHOE()
+	[PunRPC]
+	public void OnAwakeRPC()
 	{
-		if (ACPGHFHDCIP().isMine)
+		Debug.Log("RPC: 'OnAwakeRPC' PhotonView: " + base.photonView);
+	}
+
+	private void JMEOGJHCONJ()
+	{
+		if (IFENGKHOKPC().isMine)
 		{
-			EOOCGIFFKBG().RPC("player.currentrank", PhotonTargets.Others);
-		}
-	}
-
-	public void BICMLHBJAJN(byte JNBMEPMFOOB)
-	{
-		object[] array = new object[4];
-		array[0] = "22x1";
-		array[0] = JNBMEPMFOOB;
-		array[6] = "< true | false >";
-		array[6] = OELHGNKAMEG();
-		Debug.Log(string.Concat(array));
-	}
-
-	private void KLILJHJNICK()
-	{
-		if (base.photonView.isMine)
-		{
-			PhotonView obj = ACPGHFHDCIP();
+			PhotonView obj = AAMNKPHHHCI();
 			object[] array = new object[0];
-			array[1] = (byte)1;
-			obj.PBMFBOOALKA("scn", PhotonTargets.Others, array);
+			array[0] = (byte)1;
+			obj.RPC("Start", PhotonTargets.All, array);
 		}
 	}
 
-	private void KPOIJEKDFBE()
+	public void ALGPOJPOMNM()
 	{
-		if (GMAHNPNHMFK().BGJKMGJBPFA())
-		{
-			GMAHNPNHMFK().GNFNHDCJOFC("_FarCamera", PhotonTargets.Others, new object[1]);
-		}
+		Debug.Log("<command>" + OELHGNKAMEG());
 	}
 
-	public void LODNFMDBJFE()
+	private void PMPKMGKAAJH()
 	{
-		Debug.Log(": " + EOOCGIFFKBG());
-	}
-
-	private void NPLCENPNJBM()
-	{
-		if (JAEJDHHCJJO().BGJKMGJBPFA())
-		{
-			PhotonView obj = JAEJDHHCJJO();
-			object[] array = new object[0];
-			array[1] = (byte)0;
-			obj.MIAHMDGOOPJ("_Offsets", PhotonTargets.All, array);
-		}
-	}
-
-	private void DHNANELONED()
-	{
-		if (ACPGHFHDCIP().DOLKFPIABDD())
-		{
-			EDIJKHEMPAD().PBMFBOOALKA("[MapsStats] Length: ", PhotonTargets.All, new object[1]);
-		}
-	}
-
-	private void OLFNCABJBHA()
-	{
-		if (FFIPLLNKGEN().BGJKMGJBPFA())
-		{
-			EOOCGIFFKBG().MIAHMDGOOPJ(" Also make sure to disable sprite packing for this sprite.", PhotonTargets.Others, new object[1]);
-		}
-	}
-
-	private void AJIKPEIGACI()
-	{
-		if (FFIPLLNKGEN().KCAOJFPDEIP())
-		{
-			OELHGNKAMEG().GNFNHDCJOFC("player.crystal", PhotonTargets.All, new object[1]);
-		}
-	}
-
-	private void JDKHBGDEONK()
-	{
-		if (OELHGNKAMEG().BGJKMGJBPFA())
-		{
-			EDIJKHEMPAD().RPC("_Radius", PhotonTargets.All, (byte)1);
-		}
-	}
-
-	public void EACHPFBJBNP()
-	{
-		Debug.Log("EnableRankingToggle" + GBHNDHLAJLI());
-	}
-
-	private void MFCCNPEIOGP()
-	{
-		if (BLMHOKPIMOD().DOLKFPIABDD())
-		{
-			IBKCMBIGOEJ().GNFNHDCJOFC("Fade", PhotonTargets.Others, new object[0]);
-		}
-	}
-
-	public void FCGADANGLFK()
-	{
-		Debug.Log("color" + IBKCMBIGOEJ());
-	}
-
-	private void KDMKDEKCELE()
-	{
-		if (IBKCMBIGOEJ().BGJKMGJBPFA())
-		{
-			PhotonView obj = OELHGNKAMEG();
-			object[] array = new object[0];
-			array[0] = (byte)0;
-			obj.MIAHMDGOOPJ("You must complete your map before submiting it to Workshop", PhotonTargets.All, array);
-		}
-	}
-
-	private void MKIMDFLBFOM()
-	{
-		if (JAEJDHHCJJO().DOLKFPIABDD())
+		if (IJBFILBDGDO().isMine)
 		{
 			PhotonView obj = GBMJAPGLMGB();
 			object[] array = new object[0];
 			array[1] = (byte)1;
-			obj.KEKKFNNMLMG("maps.", PhotonTargets.All, array);
+			obj.RPC(".", PhotonTargets.Others, array);
+		}
+	}
+
+	private void LBOBAIGNOML()
+	{
+		if (JAEJDHHCJJO().isMine)
+		{
+			EDIJKHEMPAD().RPC("/", PhotonTargets.Others);
+		}
+	}
+
+	public void CBGGGBFBHMP(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[3];
+		array[0] = "\nCreated by Oxy949";
+		array[0] = JNBMEPMFOOB;
+		array[7] = "IconImage";
+		array[7] = CIACEFBNDDJ();
+		Debug.Log(string.Concat(array));
+	}
+
+	public void ECBBNFAPEDG()
+	{
+		Debug.Log("bad" + JAEJDHHCJJO());
+	}
+
+	public void IIOJJBNHMPB()
+	{
+		Debug.Log("SpawnObj" + ACPGHFHDCIP());
+	}
+
+	public void HEELKEJNADH(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[8];
+		array[1] = "CameraFilterPack/Drawing_Lines";
+		array[0] = JNBMEPMFOOB;
+		array[0] = "rarity";
+		array[5] = JIOCGDBKGIL();
+		Debug.Log(string.Concat(array));
+	}
+
+	public void FJPHKFHHOLH(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[6];
+		array[1] = "mapselector.lastSearch";
+		array[1] = JNBMEPMFOOB;
+		array[3] = "local CheckCondition = function()";
+		array[0] = BBGIDKNEGHD();
+		Debug.Log(string.Concat(array));
+	}
+
+	public void MKFONKOJHJI()
+	{
+		Debug.Log("Freq: " + JAEJDHHCJJO());
+	}
+
+	private void FLKEJJEGCFA()
+	{
+		if (EOOCGIFFKBG().isMine)
+		{
+			JDBCGCJJIAF().RPC(".lastCheckpoint.comboScore", PhotonTargets.Others, (byte)0);
+		}
+	}
+
+	public void LAMEBFJKMBF(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[6];
+		array[0] = "_DotSize";
+		array[0] = JNBMEPMFOOB;
+		array[5] = "menu.selectedlevelid";
+		array[7] = IFENGKHOKPC();
+		Debug.Log(string.Concat(array));
+	}
+
+	public void FCGADANGLFK(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[0];
+		array[0] = "_Value3";
+		array[1] = JNBMEPMFOOB;
+		array[4] = "player.goldabstract";
+		array[3] = CIACEFBNDDJ();
+		Debug.Log(string.Concat(array));
+	}
+
+	public void EHLNCJPNFPE()
+	{
+		Debug.Log("#restart" + JIOCGDBKGIL());
+	}
+
+	public void KEMKOPMAFMO()
+	{
+		Debug.Log(": " + AAMNKPHHHCI());
+	}
+
+	public void GHODIDCDNIB()
+	{
+		Debug.Log("[PlayerBase] Invoke event " + JIOCGDBKGIL());
+	}
+
+	public void FOOBBANJFLJ()
+	{
+		Debug.Log("CheckResources () for " + NABDKNPNEMM());
+	}
+
+	private void EPCGHAAONLN()
+	{
+		if (FFIPLLNKGEN().isMine)
+		{
+			AAMNKPHHHCI().RPC("BitsData", PhotonTargets.Others);
+		}
+	}
+
+	private void GPNAOAKCMHC()
+	{
+		if (NABDKNPNEMM().isMine)
+		{
+			EDIJKHEMPAD().RPC("AccuracyScoreText", PhotonTargets.All, (byte)0);
+		}
+	}
+
+	private void NNCCPEBIAKH()
+	{
+		if (EDIJKHEMPAD().isMine)
+		{
+			ACPGHFHDCIP().RPC("(singleton) ", PhotonTargets.Others, (byte)0);
+		}
+	}
+
+	private void FMAFBLKAJDF()
+	{
+		if (IFENGKHOKPC().isMine)
+		{
+			IBKCMBIGOEJ().RPC("settings.crosshairopacity", PhotonTargets.Others);
+		}
+	}
+
+	private void JOPCCCCHNLI()
+	{
+		if (GMAHNPNHMFK().isMine)
+		{
+			PhotonView obj = IFENGKHOKPC();
+			object[] array = new object[0];
+			array[1] = (byte)1;
+			obj.RPC("inventory.selected.", PhotonTargets.All, array);
+		}
+	}
+
+	private void MMPOJCFOGJJ()
+	{
+		if (CIACEFBNDDJ().isMine)
+		{
+			NABDKNPNEMM().RPC("_EmissionColor", PhotonTargets.All);
+		}
+	}
+
+	private void JHANGPCOCIG()
+	{
+		if (AAMNKPHHHCI().isMine)
+		{
+			PhotonView obj = CIACEFBNDDJ();
+			object[] array = new object[1];
+			array[1] = (byte)0;
+			obj.RPC("value", PhotonTargets.Others, array);
+		}
+	}
+
+	public void BOGHPMHEJJK(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[7];
+		array[1] = "{0}_{1}";
+		array[1] = JNBMEPMFOOB;
+		array[3] = "maps.";
+		array[4] = EDIJKHEMPAD();
+		Debug.Log(string.Concat(array));
+	}
+
+	public void OPBLIOMFEGK(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[3];
+		array[1] = "BitsData";
+		array[0] = JNBMEPMFOOB;
+		array[5] = "The number of players playing your game: ";
+		array[4] = EOOCGIFFKBG();
+		Debug.Log(string.Concat(array));
+	}
+
+	private void HHJBBHEBJCJ()
+	{
+		if (CIACEFBNDDJ().isMine)
+		{
+			FFIPLLNKGEN().RPC("Player", PhotonTargets.All, new object[1]);
+		}
+	}
+
+	public void MEKHEGCLGJO(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[3];
+		array[0] = "_Value6";
+		array[0] = JNBMEPMFOOB;
+		array[2] = "_Near";
+		array[1] = BLMHOKPIMOD();
+		Debug.Log(string.Concat(array));
+	}
+
+	[PunRPC]
+	public void OnAwakeRPC(byte JNBMEPMFOOB)
+	{
+		Debug.Log("RPC: 'OnAwakeRPC' Parameter: " + JNBMEPMFOOB + " PhotonView: " + base.photonView);
+	}
+
+	public void EKOCGBFINJG(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[1];
+		array[0] = "CameraFilterPack/Lut_TestMode";
+		array[1] = JNBMEPMFOOB;
+		array[7] = "challenges.";
+		array[1] = CIACEFBNDDJ();
+		Debug.Log(string.Concat(array));
+	}
+
+	private void DIPDEHOOBPG()
+	{
+		if (GBHNDHLAJLI().isMine)
+		{
+			PhotonView obj = base.photonView;
+			object[] array = new object[0];
+			array[0] = (byte)1;
+			obj.RPC("/icon", PhotonTargets.All, array);
+		}
+	}
+
+	public void ILKJEMAHDLH(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[0];
+		array[0] = "_ScreenResolution";
+		array[1] = JNBMEPMFOOB;
+		array[8] = "_OffsetScale";
+		array[4] = IJBFILBDGDO();
+		Debug.Log(string.Concat(array));
+	}
+
+	public void GLEGMCDOAKB()
+	{
+		Debug.Log("_DepthLevel" + IBKCMBIGOEJ());
+	}
+
+	private void CCDNJPNLGBN()
+	{
+		if (OELHGNKAMEG().isMine)
+		{
+			IFENGKHOKPC().RPC("string", PhotonTargets.Others);
+		}
+	}
+
+	private void BFIOIDMHPPL()
+	{
+		if (CIACEFBNDDJ().isMine)
+		{
+			JAEJDHHCJJO().RPC("_TimeX", PhotonTargets.Others, new object[1]);
+		}
+	}
+
+	public void NPHJLBOKJBK(byte JNBMEPMFOOB)
+	{
+		object[] array = new object[6];
+		array[1] = "_Value3";
+		array[1] = JNBMEPMFOOB;
+		array[8] = "maphash";
+		array[7] = IJBFILBDGDO();
+		Debug.Log(string.Concat(array));
+	}
+
+	private void Start()
+	{
+		if (base.photonView.isMine)
+		{
+			base.photonView.RPC("OnAwakeRPC", PhotonTargets.All, (byte)1);
 		}
 	}
 }

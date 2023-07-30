@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Weather/Fog")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Weather/Fog")]
 public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 {
 	public Shader SCShader;
@@ -51,15 +51,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1462f;
 			}
-			KEMAALEODNH().SetFloat("COMPLETED", HBJJOCHGOPH);
-			MICHFGAOPKM().SetFloat("\t", Fade);
-			IIJMIPBMMBF().SetFloat("_TimeX", _Near);
-			IIJMIPBMMBF().SetFloat("MenuScene", _Far);
-			NLFJGMBCICG().SetColor("skin.hit_wrong", FogColor);
-			CECJJMKLEAK().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1412f, 1330f));
+			EMDFHOKEGNG().SetFloat("NEW", HBJJOCHGOPH);
+			IIJMIPBMMBF().SetFloat("\t", Fade);
+			NFMGLIKNOOC().SetFloat("_TimeX", _Near);
+			FLOHGDECHHH().SetFloat("MenuScene", _Far);
+			JLHLHKPHDFO().SetColor("skin.hit_wrong", FogColor);
+			JLHLHKPHDFO().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1412f, 1330f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			HNICHJCGJOC().SetTexture("_Offsets", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLOHGDECHHH());
+			CECJJMKLEAK().SetTexture("_Offsets", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -76,15 +76,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 670f;
 			}
-			IONHGBPGCHK().SetFloat("<b>#", HBJJOCHGOPH);
-			NLFJGMBCICG().SetFloat("float,0", Fade);
-			OOMFJGPAOKL().SetFloat("float,10", _Near);
-			FLOHGDECHHH().SetFloat(",", _Far);
-			JLHLHKPHDFO().SetColor("mapselector.lastSearch", FogColor);
-			FLOHGDECHHH().SetVector("Something is setup incorrectly with the dropdownlist component causing a Null Refernece Exception", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1733f, 1385f));
+			DKNJGHFLAIF().SetFloat("<b>#", HBJJOCHGOPH);
+			MICHFGAOPKM().SetFloat("float,0", Fade);
+			FGENHBKMPDA().SetFloat("float,10", _Near);
+			OOMFJGPAOKL().SetFloat("EventData0DropDownList", _Far);
+			EMDFHOKEGNG().SetColor("EventSystem", FogColor);
+			OOMFJGPAOKL().SetVector("Items", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1733f, 1385f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			NBMPPNFKFLB().SetTexture("CameraFilterPack_Blizzard1", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			FLOHGDECHHH().SetTexture("_ScreenResolution", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
 		}
 		else
 		{
@@ -101,14 +101,14 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 289f;
 			}
-			OHKGGPFGLFD().SetFloat("Rock", HBJJOCHGOPH);
-			IIBLJCKLGFG().SetFloat("x", Fade);
-			IGKFMCPDNOI().SetFloat("SetSatelliteSensitivity", _Near);
-			FLOHGDECHHH().SetFloat("/", _Far);
-			FLOHGDECHHH().SetColor("_SweaterSize", FogColor);
-			ADGHJOHKEHG().SetVector("_Blue_C", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1111f, 1430f));
+			NFMGLIKNOOC().SetFloat("Rock", HBJJOCHGOPH);
+			DKNJGHFLAIF().SetFloat("x", Fade);
+			FLOHGDECHHH().SetFloat("SetSatelliteInput", _Near);
+			IIBLJCKLGFG().SetFloat("?", _Far);
+			FEAEGGCNIAA().SetColor("_Fade", FogColor);
+			NBPKMLMCHFN.SetVector("_Green_C", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1111f, 1430f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			IONHGBPGCHK().SetTexture("challenges.", FPHEBLMINDA);
+			FKEOGPDLBDD().SetTexture(".completedCount", FPHEBLMINDA);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
@@ -126,15 +126,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 741f;
 			}
-			ADGHJOHKEHG().SetFloat("SetSunDirectionVector", HBJJOCHGOPH);
-			NLFJGMBCICG().SetFloat("RecordButton", Fade);
-			MICHFGAOPKM().SetFloat("id", _Near);
-			FEAEGGCNIAA().SetFloat(" SphereWaveform.cs", _Far);
-			FLOHGDECHHH().SetColor("_ScreenResolution", FogColor);
-			NBMPPNFKFLB().SetVector("_ProjectToPixelMatrix", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 159f, 1703f));
+			DKNJGHFLAIF().SetFloat("SetSunMinSize", HBJJOCHGOPH);
+			JLHLHKPHDFO().SetFloat("RecordButton", Fade);
+			NBPKMLMCHFN.SetFloat("id", _Near);
+			KEMAALEODNH().SetFloat(" SphereWaveform.cs", _Far);
+			IGKFMCPDNOI().SetColor("_Value4", FogColor);
+			EMDFHOKEGNG().SetVector("_ProjInfo", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 159f, 1703f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			DKNJGHFLAIF().SetTexture("note.5", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			EMDFHOKEGNG().SetTexture("note.1", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{
@@ -162,15 +162,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 922f;
 			}
-			MICHFGAOPKM().SetFloat("_Far", HBJJOCHGOPH);
-			JLHLHKPHDFO().SetFloat("[PlayerController] ", Fade);
-			IGKFMCPDNOI().SetFloat(".lastCheckpoint.lives", _Near);
-			NLFJGMBCICG().SetFloat("NetworkPeer broke!", _Far);
-			OHKGGPFGLFD().SetColor("LoadingStatusText", FogColor);
-			NLFJGMBCICG().SetVector("(\\[ */ *i *\\])", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1756f, 1034f));
+			DKNJGHFLAIF().SetFloat("_Near", HBJJOCHGOPH);
+			FLOHGDECHHH().SetFloat("[PlayerController] ", Fade);
+			IGKFMCPDNOI().SetFloat(".", _Near);
+			FGENHBKMPDA().SetFloat("Error: you cannot write/send to this stream that you are reading!", _Far);
+			OOMFJGPAOKL().SetColor("[MapsData] Caching ", FogColor);
+			IIBLJCKLGFG().SetVector("(\\[ */ *i *\\])", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1756f, 1034f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			HNICHJCGJOC().SetTexture("[PlayerBase] Loaded custom model: ", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			IIBLJCKLGFG().SetTexture("Gameplay/sun", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
 		}
 		else
 		{
@@ -195,15 +195,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1994f;
 			}
-			FLOHGDECHHH().SetFloat("System.Single", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("CameraFilterPack/TV_Vintage", Fade);
-			JLHLHKPHDFO().SetFloat("</size>", _Near);
-			JLHLHKPHDFO().SetFloat("setAF", _Far);
-			MICHFGAOPKM().SetColor("clicked ", FogColor);
-			DKNJGHFLAIF().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 579f, 95f));
+			FGENHBKMPDA().SetFloat("System.Single", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetFloat("_VignettingDirt", Fade);
+			EHDJJANLINB().SetFloat("</size>", _Near);
+			NFMGLIKNOOC().SetFloat("Achievement 21 progress reseted", _Far);
+			FLOHGDECHHH().SetColor("IEnumerable", FogColor);
+			FLOHGDECHHH().SetVector("id", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 579f, 95f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			KEMAALEODNH().SetTexture("Checkpoint", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
+			FKEOGPDLBDD().SetTexture("SpawnObj", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -243,7 +243,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		FPHEBLMINDA = Resources.Load("CameraFilterPack/TV_VHS_Rewind") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_ScreenResolution") as Texture2D;
 		SCShader = Shader.Find("_MatrixColor");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -268,7 +268,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void LIBGAKMKHJJ()
 	{
-		FPHEBLMINDA = Resources.Load("_SSAO") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_TexelOffsetScale") as Texture2D;
 		SCShader = Shader.Find("_Color2");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -293,15 +293,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 302f;
 			}
-			KEMAALEODNH().SetFloat("blue", HBJJOCHGOPH);
-			DKNJGHFLAIF().SetFloat("targetColor", Fade);
-			DKNJGHFLAIF().SetFloat("_ScreenResolution", _Near);
-			EHDJJANLINB().SetFloat("ItemNameText", _Far);
-			IIBLJCKLGFG().SetColor("nd", FogColor);
-			OHKGGPFGLFD().SetVector("ComboText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 756f, 737f));
+			NBPKMLMCHFN.SetFloat("0,1,false", HBJJOCHGOPH);
+			DKNJGHFLAIF().SetFloat("_Saturation", Fade);
+			NBMPPNFKFLB().SetFloat("_ScreenResolution", _Near);
+			IIBLJCKLGFG().SetFloat("ItemsCountText", _Far);
+			IIJMIPBMMBF().SetColor("2", FogColor);
+			NLFJGMBCICG().SetVector("ComboText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 756f, 737f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			FLOHGDECHHH().SetTexture(" [", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
+			CECJJMKLEAK().SetTexture("NameText", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -334,15 +334,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1567f;
 			}
-			EHDJJANLINB().SetFloat("Mouse Y", HBJJOCHGOPH);
-			IIJMIPBMMBF().SetFloat("request", Fade);
-			IGKFMCPDNOI().SetFloat("AVG Misses:", _Near);
-			NBPKMLMCHFN.SetFloat("Object ID. Case-Sensitive", _Far);
+			JLHLHKPHDFO().SetFloat("Mouse X", HBJJOCHGOPH);
+			NBMPPNFKFLB().SetFloat("IntraSig", Fade);
+			DKNJGHFLAIF().SetFloat("AVG Misses:", _Near);
+			KEMAALEODNH().SetFloat("Object ID. Case-Sensitive", _Far);
 			OOMFJGPAOKL().SetColor("_Near", FogColor);
-			KEMAALEODNH().SetVector("steamid", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1830f, 43f));
+			FLOHGDECHHH().SetVector("\\\"", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1830f, 43f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			IONHGBPGCHK().SetTexture("bpmgrid", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			IGKFMCPDNOI().SetTexture("EventData0DropDownList", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OOMFJGPAOKL());
 		}
 		else
 		{
@@ -383,15 +383,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 458f;
 			}
-			IGKFMCPDNOI().SetFloat(" on effect ", HBJJOCHGOPH);
-			EHDJJANLINB().SetFloat("InventoryGrid", Fade);
-			NBMPPNFKFLB().SetFloat("[PlayerBase] SpawnObj error: ", _Near);
-			NFMGLIKNOOC().SetFloat("CameraFilterPack/Blend2Camera_ColorDodge", _Far);
-			FLOHGDECHHH().SetColor("<command>", FogColor);
-			KEMAALEODNH().SetVector("Hip-hop", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 866f, 399f));
+			IGKFMCPDNOI().SetFloat(" has been disabled as it's not supported on the current platform.", HBJJOCHGOPH);
+			OOMFJGPAOKL().SetFloat("ItemNameText", Fade);
+			NBPKMLMCHFN.SetFloat("[PlayerBase] Unknown event: ", _Near);
+			KEMAALEODNH().SetFloat("CameraFilterPack/Blend2Camera_ColorDodge", _Far);
+			FEAEGGCNIAA().SetColor("Run a command for data system", FogColor);
+			JLHLHKPHDFO().SetVector("Hip-hop", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 866f, 399f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			JLHLHKPHDFO().SetTexture("_TimeX", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKNJGHFLAIF());
+			FEAEGGCNIAA().SetTexture("CameraFilterPack/TV_MovieNoise", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
 		}
 		else
 		{
@@ -413,7 +413,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		FPHEBLMINDA = Resources.Load("_Radius") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_PositionY") as Texture2D;
 		SCShader = Shader.Find("USE_DIAG_SEARCH");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -463,15 +463,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1354f;
 			}
-			JLHLHKPHDFO().SetFloat("DPADVER", HBJJOCHGOPH);
-			IGKFMCPDNOI().SetFloat("SetParticlesInput", Fade);
-			FKEOGPDLBDD().SetFloat("The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.", _Near);
-			CECJJMKLEAK().SetFloat("CameraFilterPack/Blend2Camera_LinearLight", _Far);
-			IGKFMCPDNOI().SetColor(".", FogColor);
-			MICHFGAOPKM().SetVector("AudioSampler", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 938f, 1421f));
+			MICHFGAOPKM().SetFloat("PRESS A KEY", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("SetParticlesParticleSize", Fade);
+			JLHLHKPHDFO().SetFloat(" Server: ", _Near);
+			IIJMIPBMMBF().SetFloat("CameraFilterPack/Blend2Camera_LinearLight", _Far);
+			DKNJGHFLAIF().SetColor("[PlayerBase] Loaded spawner data", FogColor);
+			CECJJMKLEAK().SetVector("AudioSampler", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 938f, 1421f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			IONHGBPGCHK().SetTexture("The used master server address is not available with the subscription currently used. Got to Photon Cloud Dashboard or change URL. Disconnecting.", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
+			ADGHJOHKEHG().SetTexture("Authentication failed: '{0}' Code: {1}", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FGENHBKMPDA());
 		}
 		else
 		{
@@ -485,7 +485,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		FPHEBLMINDA = Resources.Load("CountEventsGoal") as Texture2D;
+		FPHEBLMINDA = Resources.Load(",") as Texture2D;
 		SCShader = Shader.Find("player.dragon");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -527,15 +527,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 31f;
 			}
-			MICHFGAOPKM().SetFloat("SetSatelliteColor", HBJJOCHGOPH);
-			NLFJGMBCICG().SetFloat("_TimeX", Fade);
-			FGENHBKMPDA().SetFloat("CameraFilterPack/Vision_Hell_Blood", _Near);
-			NBMPPNFKFLB().SetFloat("_Distortion", _Far);
-			HNICHJCGJOC().SetColor("settings.enableranking", FogColor);
-			IONHGBPGCHK().SetVector("mapselector.tags.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1367f, 900f));
+			CECJJMKLEAK().SetFloat("SetSunMaxSize", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat("CameraFilterPack/Glasses_On", Fade);
+			KEMAALEODNH().SetFloat("_Value4", _Near);
+			JLHLHKPHDFO().SetFloat("_ExtraColor", _Far);
+			FGENHBKMPDA().SetColor("HPToggle", FogColor);
+			EMDFHOKEGNG().SetVector("tagElement", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1367f, 900f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			NLFJGMBCICG().SetTexture("[ItemsHandler] Found ", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
+			IIBLJCKLGFG().SetTexture("|", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NLFJGMBCICG());
 		}
 		else
 		{
@@ -606,15 +606,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 943f;
 			}
-			FKEOGPDLBDD().SetFloat("Editor", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("BitsData", Fade);
-			KEMAALEODNH().SetFloat(" now: ", _Near);
-			IIJMIPBMMBF().SetFloat("_ScreenResolution", _Far);
-			NBPKMLMCHFN.SetColor(",", FogColor);
-			FGENHBKMPDA().SetVector("DPADVER", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 338f, 1359f));
+			IIBLJCKLGFG().SetFloat("\nCreated by Oxy949", HBJJOCHGOPH);
+			MICHFGAOPKM().SetFloat("BitsData", Fade);
+			IIBLJCKLGFG().SetFloat(" (now: ", _Near);
+			CECJJMKLEAK().SetFloat("_Fade", _Far);
+			FKEOGPDLBDD().SetColor(",", FogColor);
+			EMDFHOKEGNG().SetVector("DPADHOR", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 338f, 1359f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			IONHGBPGCHK().SetTexture("Received your UserID from server. Updating local value to: {0}", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FGENHBKMPDA());
+			FKEOGPDLBDD().SetTexture("The used master server address is not available with the subscription currently used. Got to Photon Cloud Dashboard or change URL. Disconnecting.", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
 		}
 		else
 		{
@@ -658,15 +658,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 803f;
 			}
-			IIJMIPBMMBF().SetFloat("_SmallTex", HBJJOCHGOPH);
-			DKNJGHFLAIF().SetFloat(": ", Fade);
-			NBMPPNFKFLB().SetFloat("gameVolume", _Near);
-			JLHLHKPHDFO().SetFloat(": ", _Far);
-			NLFJGMBCICG().SetColor("GlassesColor2", FogColor);
-			MICHFGAOPKM().SetVector("settings.selectormapsperpage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1654f, 1379f));
+			FKEOGPDLBDD().SetFloat("_AdaptionSpeed", HBJJOCHGOPH);
+			OOMFJGPAOKL().SetFloat("[PlayerController] ", Fade);
+			MICHFGAOPKM().SetFloat("editorVolume", _Near);
+			IIJMIPBMMBF().SetFloat(": ", _Far);
+			CECJJMKLEAK().SetColor("GlassesColor", FogColor);
+			FLOHGDECHHH().SetVector("settings.enablehitsoundsinnormal", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1654f, 1379f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			EHDJJANLINB().SetTexture(",", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
+			EHDJJANLINB().SetTexture(".GoalProgress", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NLFJGMBCICG());
 		}
 		else
 		{
@@ -688,7 +688,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 	private void NPLCENPNJBM()
 	{
 		FPHEBLMINDA = Resources.Load("CameraFilterPack/AAA_WaterDrop") as Texture2D;
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/Colors_Threshold");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -708,7 +708,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 	private void FMFNILJIEIA()
 	{
 		FPHEBLMINDA = Resources.Load("shader.future") as Texture2D;
-		SCShader = Shader.Find("y");
+		SCShader = Shader.Find("w");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -722,7 +722,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 	private void DKOPKPBLDHH()
 	{
 		FPHEBLMINDA = Resources.Load("player.currentrank") as Texture2D;
-		SCShader = Shader.Find("GlassDistortion");
+		SCShader = Shader.Find("VisionBlur");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -738,15 +738,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1783f;
 			}
-			NBPKMLMCHFN.SetFloat("SubmitUserVote:", HBJJOCHGOPH);
-			EHDJJANLINB().SetFloat("Instance\nWorking commands:\ninit or init <savepath>\npath\nsetint <key> <value>\ngetint <key> <value>\nsetfloat <key> <value>\ngetfloat <key> <value>\nsetstring <key> <value>\ngetstring <key> <value>\nsetbool <key> <value>\ngetbool <key> <value>\ndelete <key>\ndeleteall", Fade);
-			EMDFHOKEGNG().SetFloat("maps.", _Near);
-			NBMPPNFKFLB().SetFloat("ticket", _Far);
-			HNICHJCGJOC().SetColor("ConfigVersionSlider", FogColor);
-			FGENHBKMPDA().SetVector("CameraFilterPack/TV_VHS", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 175f, 249f));
+			FLOHGDECHHH().SetFloat("?", HBJJOCHGOPH);
+			NFMGLIKNOOC().SetFloat("Instance\nWorking commands:\ninit or init <savepath>\npath\nsetint <key> <value>\ngetint <key> <value>\nsetfloat <key> <value>\ngetfloat <key> <value>\nsetstring <key> <value>\ngetstring <key> <value>\nsetbool <key> <value>\ngetbool <key> <value>\ndelete <key>\ndeleteall", Fade);
+			NFMGLIKNOOC().SetFloat("maps.", _Near);
+			FGENHBKMPDA().SetFloat("#close", _Far);
+			EHDJJANLINB().SetColor("SpeedSlider", FogColor);
+			NBMPPNFKFLB().SetVector("_Distortion", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 175f, 249f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			NBPKMLMCHFN.SetTexture("Rap", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MICHFGAOPKM());
+			IIBLJCKLGFG().SetTexture("Pop", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -771,15 +771,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 410f;
 			}
-			FGENHBKMPDA().SetFloat("PUNCloudBestRegion", HBJJOCHGOPH);
-			IIJMIPBMMBF().SetFloat("EnableRankingToggle", Fade);
-			IONHGBPGCHK().SetFloat("offsets", _Near);
-			NFMGLIKNOOC().SetFloat("_TimeX", _Far);
-			IONHGBPGCHK().SetColor("SubmitUserVote:", FogColor);
-			IIJMIPBMMBF().SetVector("CameraFilterPack/Alien_Vision", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1419f, 1154f));
+			NBMPPNFKFLB().SetFloat("NetworkPeer broke!", HBJJOCHGOPH);
+			FKEOGPDLBDD().SetFloat("EnableRankingToggle", Fade);
+			OOMFJGPAOKL().SetFloat("offsets", _Near);
+			IIBLJCKLGFG().SetFloat("CameraFilterPack/Color_YUV", _Far);
+			EHDJJANLINB().SetColor("?", FogColor);
+			NBMPPNFKFLB().SetVector("CameraFilterPack/Alien_Vision", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1419f, 1154f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			JLHLHKPHDFO().SetTexture("_Value2", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NLFJGMBCICG());
+			ADGHJOHKEHG().SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
 		}
 		else
 		{
@@ -796,15 +796,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 631f;
 			}
-			FGENHBKMPDA().SetFloat("#FFDA44", HBJJOCHGOPH);
-			FLOHGDECHHH().SetFloat("_Value4", Fade);
-			DKNJGHFLAIF().SetFloat("Mouse1", _Near);
-			HNICHJCGJOC().SetFloat("settings.arcsdestroydelay", _Far);
-			CECJJMKLEAK().SetColor("_TimeX", FogColor);
-			FLOHGDECHHH().SetVector("SetPosition", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 683f, 1906f));
+			MICHFGAOPKM().SetFloat("#EA4137", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetFloat("_Value4", Fade);
+			NBPKMLMCHFN.SetFloat("Mouse0", _Near);
+			HNICHJCGJOC().SetFloat("ArcsDestroyDelaySlider", _Far);
+			JLHLHKPHDFO().SetColor("_TimeX", FogColor);
+			FGENHBKMPDA().SetVector("SetPosition", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 683f, 1906f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			OHKGGPFGLFD().SetTexture("SSAARenderTargetCamera", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
+			NBPKMLMCHFN.SetTexture("Screenshots only supported in PlayMode", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
 		}
 		else
 		{
@@ -814,8 +814,8 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void MMOKKAPFGAK()
 	{
-		FPHEBLMINDA = Resources.Load("Editor") as Texture2D;
-		SCShader = Shader.Find("-1");
+		FPHEBLMINDA = Resources.Load("LoadMapCanvas") as Texture2D;
+		SCShader = Shader.Find("#ok");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -842,15 +842,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1287f;
 			}
-			NBMPPNFKFLB().SetFloat("note.1", HBJJOCHGOPH);
-			HNICHJCGJOC().SetFloat("Fade", Fade);
-			IIJMIPBMMBF().SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", _Near);
-			KEMAALEODNH().SetFloat("_ScreenResolution", _Far);
-			FKEOGPDLBDD().SetColor("EditMenu", FogColor);
-			ADGHJOHKEHG().SetVector("CameraFilterPack/Film_Grain", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 670f, 905f));
+			JLHLHKPHDFO().SetFloat("#outdatedmap! Challenges will not work!", HBJJOCHGOPH);
+			DKNJGHFLAIF().SetFloat("UseFinalGlassColor", Fade);
+			NFMGLIKNOOC().SetFloat("Vertical", _Near);
+			EMDFHOKEGNG().SetFloat("_Value", _Far);
+			ADGHJOHKEHG().SetColor("EditMenu", FogColor);
+			OOMFJGPAOKL().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 670f, 905f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			EMDFHOKEGNG().SetTexture("_Value2", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OOMFJGPAOKL());
+			MICHFGAOPKM().SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
 		}
 		else
 		{
@@ -871,15 +871,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1174f;
 			}
-			IIJMIPBMMBF().SetFloat("Room: '{0}' {1},{2} {4}/{3} players.", HBJJOCHGOPH);
-			DKNJGHFLAIF().SetFloat("Other", Fade);
-			DKNJGHFLAIF().SetFloat("_Luminance", _Near);
-			OOMFJGPAOKL().SetFloat("Type of observed is unknown when receiving.", _Far);
-			DKNJGHFLAIF().SetColor("SfxVolumeSlider", FogColor);
-			IIJMIPBMMBF().SetVector("_Gamma", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1939f, 1428f));
+			IGKFMCPDNOI().SetFloat("open", HBJJOCHGOPH);
+			MICHFGAOPKM().SetFloat("Other", Fade);
+			IIBLJCKLGFG().SetFloat("_AxialAberration", _Near);
+			FLOHGDECHHH().SetFloat("PUN-instantiated '", _Far);
+			NBMPPNFKFLB().SetColor("menu.enableselectormusic", FogColor);
+			KEMAALEODNH().SetVector("_WhiteBalance", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1939f, 1428f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			NBPKMLMCHFN.SetTexture("/", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			FGENHBKMPDA().SetTexture("NewIconFileSelector", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD());
 		}
 		else
 		{
@@ -904,15 +904,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1884f;
 			}
-			OOMFJGPAOKL().SetFloat("menu.relaxinfo", HBJJOCHGOPH);
-			IIBLJCKLGFG().SetFloat("AreaTex", Fade);
-			KEMAALEODNH().SetFloat("addNewButton", _Near);
-			OHKGGPFGLFD().SetFloat("_Value", _Far);
-			IIBLJCKLGFG().SetColor("JoinRandomRoom failed. In offline mode you still have to leave a room to enter another.", FogColor);
-			NBPKMLMCHFN.SetVector("IconFileSelector", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1588f, 1533f));
+			IIJMIPBMMBF().SetFloat("menu.relaxinfo", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat("Hidden/Subpixel Morphological Anti-aliasing", Fade);
+			IIBLJCKLGFG().SetFloat("Events Moved", _Near);
+			NFMGLIKNOOC().SetFloat("_Value", _Far);
+			KEMAALEODNH().SetColor("JoinOrCreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.", FogColor);
+			IONHGBPGCHK().SetVector("IconFileSelector", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1588f, 1533f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			NLFJGMBCICG().SetTexture("_EmissionGain", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OHKGGPFGLFD());
+			JLHLHKPHDFO().SetTexture("[Down]", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -930,8 +930,8 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void KOJKBFDNGDK()
 	{
-		FPHEBLMINDA = Resources.Load("PhotonView with ID ") as Texture2D;
-		SCShader = Shader.Find("Vertical");
+		FPHEBLMINDA = Resources.Load(" has no method \"") as Texture2D;
+		SCShader = Shader.Find("name");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -981,8 +981,8 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void DFFKKLAPHCC()
 	{
-		FPHEBLMINDA = Resources.Load(".status") as Texture2D;
-		SCShader = Shader.Find("_MaxBlurRadius");
+		FPHEBLMINDA = Resources.Load("challenges.") as Texture2D;
+		SCShader = Shader.Find("Hidden/Image Effects/Cinematic/MotionBlur/Reconstruction");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1003,8 +1003,8 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void LFAFJKJAEEL()
 	{
-		FPHEBLMINDA = Resources.Load("/") as Texture2D;
-		SCShader = Shader.Find("_BlurVector");
+		FPHEBLMINDA = Resources.Load("#done") as Texture2D;
+		SCShader = Shader.Find("_OcclusionBlurTexture");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1026,7 +1026,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 	private void ILCFPCIPENO()
 	{
 		FPHEBLMINDA = Resources.Load("speed") as Texture2D;
-		SCShader = Shader.Find("ConnectToMaster() failed. Can only connect while in state 'Disconnected'. Current state: ");
+		SCShader = Shader.Find("ConnectUsingSettings() disabled the offline mode. No longer offline.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1035,8 +1035,8 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void LBAJLLFMMMP()
 	{
-		FPHEBLMINDA = Resources.Load("Winter2020") as Texture2D;
-		SCShader = Shader.Find("_PosX");
+		FPHEBLMINDA = Resources.Load("/GetNews/pinnednewsid") as Texture2D;
+		SCShader = Shader.Find("_ExtraColor");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1075,15 +1075,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 936f;
 			}
-			IIBLJCKLGFG().SetFloat("_EmissionColor", HBJJOCHGOPH);
-			FLOHGDECHHH().SetFloat("/../", Fade);
-			OHKGGPFGLFD().SetFloat("RecieveChatActionMessage", _Near);
-			NLFJGMBCICG().SetFloat("_Intensity", _Far);
-			DKNJGHFLAIF().SetColor("_TimeX", FogColor);
-			EMDFHOKEGNG().SetVector("Gameplay/Base", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 814f, 1613f));
+			OHKGGPFGLFD().SetFloat("/", HBJJOCHGOPH);
+			MICHFGAOPKM().SetFloat("OPEN", Fade);
+			IIBLJCKLGFG().SetFloat("RecieveChatActionMessage", _Near);
+			IIBLJCKLGFG().SetFloat("_Distortion", _Far);
+			HNICHJCGJOC().SetColor("CameraFilterPack_Sweater", FogColor);
+			IONHGBPGCHK().SetVector("Gameplay/Base", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 814f, 1613f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			NFMGLIKNOOC().SetTexture("ResourceFileSelector", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			EMDFHOKEGNG().SetTexture("ResourceIDInputField", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
 		}
 		else
 		{
@@ -1146,8 +1146,8 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void MGMAOBPPOBJ()
 	{
-		FPHEBLMINDA = Resources.Load("_ScreenResolution") as Texture2D;
-		SCShader = Shader.Find("SlidingArea");
+		FPHEBLMINDA = Resources.Load("_Size") as Texture2D;
+		SCShader = Shader.Find("ScrollPanel");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1156,7 +1156,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void AKHCOBHHGJP()
 	{
-		FPHEBLMINDA = Resources.Load("#") as Texture2D;
+		FPHEBLMINDA = Resources.Load(">") as Texture2D;
 		SCShader = Shader.Find("SpectateButton");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -1192,15 +1192,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1488f;
 			}
-			NLFJGMBCICG().SetFloat("settings.fps", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("Room: '{0}' {1},{2} {4}/{3} players.", Fade);
-			NBMPPNFKFLB().SetFloat("_TimeX", _Near);
-			FGENHBKMPDA().SetFloat("Gameplay/Base", _Far);
-			NLFJGMBCICG().SetColor("_Value4", FogColor);
-			EMDFHOKEGNG().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1071f, 1755f));
+			OHKGGPFGLFD().SetFloat("settings.shaders.bloomintencity", HBJJOCHGOPH);
+			IGKFMCPDNOI().SetFloat("Can't set MaxPlayers when not in that room.", Fade);
+			FGENHBKMPDA().SetFloat("_MainTex2", _Near);
+			EHDJJANLINB().SetFloat("Gameplay/Base", _Far);
+			FEAEGGCNIAA().SetColor("_Value3", FogColor);
+			NLFJGMBCICG().SetVector("Fade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1071f, 1755f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			FEAEGGCNIAA().SetTexture(" - ", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK());
+			NFMGLIKNOOC().SetTexture("?", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -1225,15 +1225,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1510f;
 			}
-			IONHGBPGCHK().SetFloat("sprite", HBJJOCHGOPH);
-			JLHLHKPHDFO().SetFloat("Connection error: ", Fade);
-			IGKFMCPDNOI().SetFloat("CameraFilterPack/FX_Scan", _Near);
-			MICHFGAOPKM().SetFloat("_Color2", _Far);
-			IIJMIPBMMBF().SetColor("plainText", FogColor);
-			FKEOGPDLBDD().SetVector("#{0:00} '{1}'{2} {3}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 819f, 1763f));
+			FKEOGPDLBDD().SetFloat("[PlayerBase] MapEnd error: ", HBJJOCHGOPH);
+			FGENHBKMPDA().SetFloat("</color>", Fade);
+			FGENHBKMPDA().SetFloat("_Distortion", _Near);
+			CECJJMKLEAK().SetFloat("_Color2", _Far);
+			OOMFJGPAOKL().SetColor(" BETA", FogColor);
+			FGENHBKMPDA().SetVector(" ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 819f, 1763f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			FKEOGPDLBDD().SetTexture("[LocalizationService] All keys for ", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			FKEOGPDLBDD().SetTexture(" key(s)", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{
@@ -1244,7 +1244,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 	private void CCFEDENFNEF()
 	{
 		FPHEBLMINDA = Resources.Load("_Value5") as Texture2D;
-		SCShader = Shader.Find("_BlurRadius4");
+		SCShader = Shader.Find("_SunThreshold");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1260,15 +1260,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 934f;
 			}
-			NFMGLIKNOOC().SetFloat("2;13;14;15;16", HBJJOCHGOPH);
-			NLFJGMBCICG().SetFloat("0.00", Fade);
-			NFMGLIKNOOC().SetFloat("CameraFilterPack/BlurTiltShift_Hole", _Near);
-			ADGHJOHKEHG().SetFloat("steamid", _Far);
-			MICHFGAOPKM().SetColor("CameraFilterPack/Glasses_On", FogColor);
-			IIJMIPBMMBF().SetVector("RECORD [R]", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1542f, 417f));
+			OOMFJGPAOKL().SetFloat("5;6;7;8;11;12;18;19;20;22x6;44x1", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat("resource", Fade);
+			OOMFJGPAOKL().SetFloat("_MainTex2", _Near);
+			OHKGGPFGLFD().SetFloat("appid", _Far);
+			FKEOGPDLBDD().SetColor("CameraFilterPack_Glasses_On6", FogColor);
+			ADGHJOHKEHG().SetVector("MenuRecordButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1542f, 417f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			OHKGGPFGLFD().SetTexture(": ", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
+			DKNJGHFLAIF().SetTexture(": ", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKNJGHFLAIF());
 		}
 		else
 		{
@@ -1296,15 +1296,15 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 			{
 				HBJJOCHGOPH = 121f;
 			}
-			OOMFJGPAOKL().SetFloat("_History2ChromaTex", HBJJOCHGOPH);
-			CECJJMKLEAK().SetFloat("CameraFilterPack/TV_Vcr", Fade);
-			FGENHBKMPDA().SetFloat("_Value5", _Near);
-			IGKFMCPDNOI().SetFloat("_RGB", _Far);
-			OHKGGPFGLFD().SetColor("_Value", FogColor);
-			JLHLHKPHDFO().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 526f, 123f));
+			IGKFMCPDNOI().SetFloat("_History4LumaTex", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetFloat("_ScreenResolution", Fade);
+			NBMPPNFKFLB().SetFloat("_Value5", _Near);
+			FKEOGPDLBDD().SetFloat("_TimeX", _Far);
+			JLHLHKPHDFO().SetColor("_TimeX", FogColor);
+			IIBLJCKLGFG().SetVector("CameraFilterPack/Color_Switching", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 526f, 123f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			NLFJGMBCICG().SetTexture("_FixDistance", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
+			FKEOGPDLBDD().SetTexture("_FixDistance", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -1314,8 +1314,8 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void MJEFMIPLFAB()
 	{
-		FPHEBLMINDA = Resources.Load("Hidden/ScreenSpaceReflection") as Texture2D;
-		SCShader = Shader.Find("[Up]");
+		FPHEBLMINDA = Resources.Load("_History3Weight") as Texture2D;
+		SCShader = Shader.Find("[Down]");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1365,7 +1365,7 @@ public class CameraFilterPack_Atmosphere_Fog : MonoBehaviour
 
 	private void FEKECCBFGMI()
 	{
-		FPHEBLMINDA = Resources.Load("CameraFilterPack_TV_BrokenGlass1") as Texture2D;
+		FPHEBLMINDA = Resources.Load("_ScreenResolution") as Texture2D;
 		SCShader = Shader.Find(":");
 		if (!SystemInfo.supportsImageEffects)
 		{

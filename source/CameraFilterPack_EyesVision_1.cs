@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Vision/Eyes 1")]
+[ExecuteInEditMode]
 public class CameraFilterPack_EyesVision_1 : MonoBehaviour
 {
 	public Shader SCShader;
@@ -60,7 +60,7 @@ public class CameraFilterPack_EyesVision_1 : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		FPHEBLMINDA = Resources.Load("Object ID. Case-Sensitive") as Texture2D;
+		FPHEBLMINDA = Resources.Load("id") as Texture2D;
 		SCShader = Shader.Find("file://");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -70,8 +70,8 @@ public class CameraFilterPack_EyesVision_1 : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		FPHEBLMINDA = Resources.Load("settings.crosshairopacity") as Texture2D;
-		SCShader = Shader.Find(",");
+		FPHEBLMINDA = Resources.Load("}") as Texture2D;
+		SCShader = Shader.Find(".completedMaps");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -80,8 +80,8 @@ public class CameraFilterPack_EyesVision_1 : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		FPHEBLMINDA = Resources.Load("Please specify a map name or buildID") as Texture2D;
-		SCShader = Shader.Find("BadgeText");
+		FPHEBLMINDA = Resources.Load("<command>") as Texture2D;
+		SCShader = Shader.Find("BadgeImage");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -91,7 +91,7 @@ public class CameraFilterPack_EyesVision_1 : MonoBehaviour
 	private void DNNFHBOOPIN()
 	{
 		FPHEBLMINDA = Resources.Load("AudioSampler") as Texture2D;
-		SCShader = Shader.Find("]");
+		SCShader = Shader.Find("-");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -100,7 +100,7 @@ public class CameraFilterPack_EyesVision_1 : MonoBehaviour
 
 	private void BEBNOKFLJPH()
 	{
-		FPHEBLMINDA = Resources.Load("SpawnObj") as Texture2D;
+		FPHEBLMINDA = Resources.Load("[Left]") as Texture2D;
 		SCShader = Shader.Find("checkpoint");
 		if (!SystemInfo.supportsImageEffects)
 		{

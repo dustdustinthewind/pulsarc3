@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Vision/Hell_Blood")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Vision/Hell_Blood")]
 public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 {
 	public Shader SCShader;
@@ -71,7 +71,7 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 
 	private void NPLCENPNJBM()
 	{
-		SCShader = Shader.Find("?");
+		SCShader = Shader.Find(".icon");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -80,7 +80,7 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/Vision_Hell_Blood");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -117,17 +117,17 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1594f;
 			}
-			HNICHJCGJOC().SetFloat("maps.", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_BlurRadius", Hole_Size);
-			IONHGBPGCHK().SetFloat(" ", Hole_Smooth);
-			EPCGJFCCAFH().SetFloat("colorB", Hole_Speed * 1146f);
-			DBOLLHHMKKN().SetColor("settings.cameramovements", ColorBlood);
-			HNICHJCGJOC().SetFloat("_TimeX", Intensity);
-			LNLKMDPHDCC().SetFloat("replayData", BloodAlternative1);
-			DBOLLHHMKKN().SetFloat("\n", BloodAlternative2);
-			HNICHJCGJOC().SetFloat("_ScreenResolution", BloodAlternative3);
-			HNICHJCGJOC().SetVector("LevelNameInputField", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 532f, 924f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
+			DBOLLHHMKKN().SetFloat("maps.", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("_OffsetScale", Hole_Size);
+			HNICHJCGJOC().SetFloat(" ", Hole_Smooth);
+			EPCGJFCCAFH().SetFloat("_Intensity", Hole_Speed * 1146f);
+			EFDEIFCDAFG().SetColor("cameramovements:", ColorBlood);
+			EFDEIFCDAFG().SetFloat("_TimeX", Intensity);
+			HNICHJCGJOC().SetFloat("misses", BloodAlternative1);
+			LNLKMDPHDCC().SetFloat("The region arrays from Name Server are not ok. Must be non-null and same length. ", BloodAlternative2);
+			ADBKPGFMNKO().SetFloat("_Value4", BloodAlternative3);
+			LNLKMDPHDCC().SetVector("LevelInfoInputField", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 532f, 924f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -156,17 +156,17 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 497f;
 			}
-			NBPKMLMCHFN.SetFloat("_Value2", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("_TimeX", Hole_Size);
-			ADBKPGFMNKO().SetFloat("FinalScoreText", Hole_Smooth);
-			NBPKMLMCHFN.SetFloat("Joystick1Button9", Hole_Speed * 1815f);
-			IONHGBPGCHK().SetColor("settings.enablehitsoundsinnormal", ColorBlood);
-			EPCGJFCCAFH().SetFloat("[Left]", Intensity);
-			EFDEIFCDAFG().SetFloat("SetBGColor", BloodAlternative1);
-			DBOLLHHMKKN().SetFloat("Data/Skins/", BloodAlternative2);
-			ADBKPGFMNKO().SetFloat("Lightning", BloodAlternative3);
-			HFBJAOFLCJI().SetVector("SaveButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 96f, 896f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			HNICHJCGJOC().SetFloat("_Value", HBJJOCHGOPH);
+			HNICHJCGJOC().SetFloat("CameraFilterPack/TV_Distorted", Hole_Size);
+			HNICHJCGJOC().SetFloat("FinalScoreText", Hole_Smooth);
+			LNLKMDPHDCC().SetFloat("Select", Hole_Speed * 1815f);
+			LNLKMDPHDCC().SetColor("settings.enablehitsoundsinnormal", ColorBlood);
+			EFDEIFCDAFG().SetFloat("[Left]", Intensity);
+			IONHGBPGCHK().SetFloat("MapEnd", BloodAlternative1);
+			DBOLLHHMKKN().SetFloat("default", BloodAlternative2);
+			DBOLLHHMKKN().SetFloat("Lightning", BloodAlternative3);
+			ADBKPGFMNKO().SetVector("SaveButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 96f, 896f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -180,7 +180,7 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 
 	private void AGEJKLMJGDO()
 	{
-		SCShader = Shader.Find("_RayStepSize");
+		SCShader = Shader.Find("_FinalReflectionTexture");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -196,17 +196,17 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1618f;
 			}
-			HNICHJCGJOC().SetFloat(" x ", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("resource id", Hole_Size);
-			EPCGJFCCAFH().SetFloat("VisionBlur", Hole_Smooth);
-			HFBJAOFLCJI().SetFloat("Select", Hole_Speed * 758f);
-			ADBKPGFMNKO().SetColor("Start Color's hex value #RRGGBBAA", ColorBlood);
-			ADBKPGFMNKO().SetFloat("Set Crosshair Color", Intensity);
-			HFBJAOFLCJI().SetFloat("BadgeText", BloodAlternative1);
-			NBPKMLMCHFN.SetFloat("_Value5", BloodAlternative2);
-			HFBJAOFLCJI().SetFloat("JoinRandomRoom failed. In offline mode you still have to leave a room to enter another.", BloodAlternative3);
-			NBPKMLMCHFN.SetVector("EVENT CONFIG [Ctrl+E]", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 675f, 1049f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
+			HFBJAOFLCJI().SetFloat("Value", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("resource id", Hole_Size);
+			LNLKMDPHDCC().SetFloat("Fade", Hole_Smooth);
+			DBOLLHHMKKN().SetFloat("R2", Hole_Speed * 758f);
+			DBOLLHHMKKN().SetColor("color", ColorBlood);
+			EPCGJFCCAFH().SetFloat("SetCrosshairColor", Intensity);
+			EPCGJFCCAFH().SetFloat("BadgeText", BloodAlternative1);
+			IONHGBPGCHK().SetFloat("_Value2", BloodAlternative2);
+			HNICHJCGJOC().SetFloat("JoinOrCreateRoom failed. In offline mode you still have to leave a room to enter another.", BloodAlternative3);
+			IONHGBPGCHK().SetVector("EVENT CONFIG [Ctrl+E]", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 675f, 1049f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -227,7 +227,7 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Light_Rainbow");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -271,7 +271,7 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 
 	private void EPEGAEGDJAM()
 	{
-		SCShader = Shader.Find("No Name");
+		SCShader = Shader.Find("music.ogg");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -291,7 +291,7 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find("/../");
+		SCShader = Shader.Find("/");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -320,7 +320,7 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("Search: ");
+		SCShader = Shader.Find("EventSystem");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -363,17 +363,17 @@ public class CameraFilterPack_Vision_Hell_Blood : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1144f;
 			}
-			HFBJAOFLCJI().SetFloat("/", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("Lerp speed. Recomended 10", Hole_Size);
-			LNLKMDPHDCC().SetFloat("_Saturation", Hole_Smooth);
-			ADBKPGFMNKO().SetFloat("' has been reset to the fault value", Hole_Speed * 117f);
-			NBPKMLMCHFN.SetColor("UpperMid", ColorBlood);
+			NBPKMLMCHFN.SetFloat("menutheme", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("Lerp speed. Recomended 10", Hole_Size);
+			ADBKPGFMNKO().SetFloat("_Brightness", Hole_Smooth);
+			LNLKMDPHDCC().SetFloat("The binding '", Hole_Speed * 117f);
+			LNLKMDPHDCC().SetColor("UpperMid", ColorBlood);
 			LNLKMDPHDCC().SetFloat("_TimeX", Intensity);
-			ADBKPGFMNKO().SetFloat(".lastCheckpoint.checkpointsUsed", BloodAlternative1);
-			HNICHJCGJOC().SetFloat("Ev OwnershipTransfer. ViewID ", BloodAlternative2);
-			ADBKPGFMNKO().SetFloat(" Also make sure to disable sprite packing for this sprite.", BloodAlternative3);
-			IONHGBPGCHK().SetVector("RB", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 826f, 1510f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH());
+			EFDEIFCDAFG().SetFloat(".lastCheckpoint.lives", BloodAlternative1);
+			HNICHJCGJOC().SetFloat("Ownership mode == fixed. Ignoring request.", BloodAlternative2);
+			NBPKMLMCHFN.SetFloat("Populate Mesh Data", BloodAlternative3);
+			HNICHJCGJOC().SetVector("LB", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 826f, 1510f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{

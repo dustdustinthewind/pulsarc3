@@ -164,12 +164,12 @@ public class CameraFilterPack_Blend2Camera_Color : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				MMOODGIODPC().SetTexture("x", JDMCFBKJHDD);
+				MFHPKGICPIO().SetTexture("InfoCanvas", JDMCFBKJHDD);
 			}
-			EMDFHOKEGNG().SetFloat("R1", HBJJOCHGOPH);
-			DNLMFEGJJDD().SetFloat("LB", BlendFX);
-			DNLMFEGJJDD().SetFloat("</color>", SwitchCameraToCamera2);
-			EMDFHOKEGNG().SetVector("_SmoothStart", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1632f, 492f));
+			EMDFHOKEGNG().SetFloat("L1", HBJJOCHGOPH);
+			MFHPKGICPIO().SetFloat("Y", BlendFX);
+			MFHPKGICPIO().SetFloat(" | ", SwitchCameraToCamera2);
+			MMOODGIODPC().SetVector("_SmoothStart", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1632f, 492f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
@@ -201,13 +201,13 @@ public class CameraFilterPack_Blend2Camera_Color : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				EMDFHOKEGNG().SetTexture("Connection failed: ", JDMCFBKJHDD);
+				HEHKGPKLAKK().SetTexture("Connection failed: ", JDMCFBKJHDD);
 			}
-			BFGNMFCNDBC().SetFloat("[MapsSystem] Unloading maps resources...", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("settings.enablerankingnotifications", BlendFX);
-			NBPKMLMCHFN.SetFloat("_Extra", SwitchCameraToCamera2);
-			AELJLBOJAIL().SetVector("#,0.00", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 4f, 705f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			MMOODGIODPC().SetFloat("LevelNameText", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("settings.enableranking", BlendFX);
+			MFHPKGICPIO().SetFloat("_Intensity", SwitchCameraToCamera2);
+			MFHPKGICPIO().SetVector("yyyy-MM-dd HH:mm:ss", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 4f, 705f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
 		}
 		else
 		{
@@ -258,13 +258,13 @@ public class CameraFilterPack_Blend2Camera_Color : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				DNLMFEGJJDD().SetTexture("Please attach component to a Graphical UI component", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("Default UI Material", JDMCFBKJHDD);
 			}
-			DNLMFEGJJDD().SetFloat("/", HBJJOCHGOPH);
-			MMOODGIODPC().SetFloat("Set satellite lerp speed", BlendFX);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", SwitchCameraToCamera2);
-			IONHGBPGCHK().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1568f, 754f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
+			IONHGBPGCHK().SetFloat("workshop.", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetFloat("float,1", BlendFX);
+			MMOODGIODPC().SetFloat("_Value2", SwitchCameraToCamera2);
+			EMDFHOKEGNG().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1568f, 754f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -482,13 +482,13 @@ public class CameraFilterPack_Blend2Camera_Color : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				AELJLBOJAIL().SetTexture("[LocalizationService] Localization: ", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("[LocalizationService] Error: ", JDMCFBKJHDD);
 			}
-			DNLMFEGJJDD().SetFloat(" not exist", HBJJOCHGOPH);
+			MFHPKGICPIO().SetFloat(": ", HBJJOCHGOPH);
 			EMDFHOKEGNG().SetFloat("mapselector.filter.favoriteonly", BlendFX);
-			DNLMFEGJJDD().SetFloat("Joystick1Button3", SwitchCameraToCamera2);
-			EMDFHOKEGNG().SetVector("_Value9", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1143f, 1600f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			MMOODGIODPC().SetFloat("Joystick1Button2", SwitchCameraToCamera2);
+			IONHGBPGCHK().SetVector("_Value9", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1143f, 1600f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
 		}
 		else
 		{

@@ -94,40 +94,40 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1249f;
 			}
-			AELJLBOJAIL().SetFloat("YES", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("_Value2", Fade);
-			JFDGLLEOPGB().SetFloat("ShadersToggle", Intensity);
+			IONHGBPGCHK().SetFloat("Save level before uploading?", HBJJOCHGOPH);
+			EPCGJFCCAFH().SetFloat("_Value", Fade);
+			HFBJAOFLCJI().SetFloat("SettingsCanvas", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 85f && z < 550f)
 				{
-					IONHGBPGCHK().SetFloat("DontDestroy", z);
+					HFBJAOFLCJI().SetFloat("couldn't be found!", z);
 				}
 				if (z < 1563f)
 				{
-					NBPKMLMCHFN.SetFloat("[PlayerController] ", z);
+					HKGAONMOBMH().SetFloat(" not exist", z);
 				}
 			}
 			else
 			{
-				AELJLBOJAIL().SetFloat("Reading preview file failed!: \"{0}\"", DirectionX);
+				AELJLBOJAIL().SetFloat("LevelEditor/patterns", DirectionX);
 			}
-			DNLMFEGJJDD().SetFloat("_TimeX", Speed);
-			BFGNMFCNDBC().SetFloat("<start_index> <end_index>", Size);
-			NBPKMLMCHFN.SetFloat("UseFinalGlassColor", Distortion);
-			HEHKGPKLAKK().SetFloat("_DotSize", StormFlashOnOff);
-			BFGNMFCNDBC().SetFloat("JoinRandomRoom failed. In offline mode you still have to leave a room to enter another.", DropOnOff);
-			HFBJAOFLCJI().SetFloat("_MainTex2", _FixDistance);
-			PGPEMMBJOOG().SetFloat("checkpoint", (!_Visualize) ? 0 : 0);
-			IONHGBPGCHK().SetFloat("Intensity", Drop_Near);
-			LDNADDJMIPK().SetFloat("/", Drop_Far);
-			HEHKGPKLAKK().SetFloat("Set crosshair color", 859f - Drop_With_Obj);
-			IONHGBPGCHK().SetFloat("[PlayerBase] Checkpoint error: ", Myst);
-			LDNADDJMIPK().SetColor("x", Myst_Color);
-			DNLMFEGJJDD().SetFloat("CameraFilterPack/Gradients_ElectricGradient", Drop_Floor_Fluid);
-			HEHKGPKLAKK().SetVector("t", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1642f, 969f));
-			ADGHJOHKEHG().SetTexture(" on effect ", FPHEBLMINDA);
+			HFBJAOFLCJI().SetFloat("CameraFilterPack/Edge_Sigmoid", Speed);
+			AELJLBOJAIL().SetFloat("Clears the console and prints the logs in the specified range", Size);
+			BFGNMFCNDBC().SetFloat("_TimeX", Distortion);
+			BFGNMFCNDBC().SetFloat("_TimeX", StormFlashOnOff);
+			EPCGJFCCAFH().SetFloat("JoinOrCreateRoom failed. In offline mode you still have to leave a room to enter another.", DropOnOff);
+			JFDGLLEOPGB().SetFloat("_MainTex2", _FixDistance);
+			HFBJAOFLCJI().SetFloat("Edited unlock conditions", (!_Visualize) ? 0 : 0);
+			ADGHJOHKEHG().SetFloat("_TimeX", Drop_Near);
+			BFGNMFCNDBC().SetFloat("settings.enableranking", Drop_Far);
+			IONHGBPGCHK().SetFloat("Set crosshair color", 859f - Drop_With_Obj);
+			IONHGBPGCHK().SetFloat("[PlayerBase] SetSpeed error: ", Myst);
+			JFDGLLEOPGB().SetColor("InfoCanvas", Myst_Color);
+			PGPEMMBJOOG().SetFloat("_ScreenResolution", Drop_Floor_Fluid);
+			HEHKGPKLAKK().SetVector("Please specify either t or f.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1642f, 969f));
+			DNLMFEGJJDD().SetTexture("Missing shader in ", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
 		}
@@ -139,8 +139,8 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 
 	private void PMPKMGKAAJH()
 	{
-		FPHEBLMINDA = Resources.Load("Items") as Texture2D;
-		SCShader = Shader.Find("/");
+		FPHEBLMINDA = Resources.Load("ScrollPanel") as Texture2D;
+		SCShader = Shader.Find("icon");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -189,7 +189,7 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 	private void BMIOFJFMCBG()
 	{
 		FPHEBLMINDA = Resources.Load("maps.") as Texture2D;
-		SCShader = Shader.Find("#,0");
+		SCShader = Shader.Find("#,0.00");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -209,42 +209,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1626f;
 			}
-			HFBJAOFLCJI().SetFloat("_XCrop", HBJJOCHGOPH);
-			EPCGJFCCAFH().SetFloat("_Value2", Fade);
-			HKGAONMOBMH().SetFloat("_TimeX", Intensity);
+			JFDGLLEOPGB().SetFloat("Default UI Material", HBJJOCHGOPH);
+			BFGNMFCNDBC().SetFloat("_Value", Fade);
+			LDNADDJMIPK().SetFloat("CameraFilterPack/FX_ZebraColor", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 648f && z < 1636f)
 				{
-					HFBJAOFLCJI().SetFloat("_SampleCount", z);
+					BFGNMFCNDBC().SetFloat("_Radius", z);
 				}
 				if (z < 313f)
 				{
-					EPCGJFCCAFH().SetFloat("ItemsCountText", z);
+					BFGNMFCNDBC().SetFloat("InfoCanvas", z);
 				}
 			}
 			else
 			{
-				ADGHJOHKEHG().SetFloat("OpGetGameList not sent. LobbyType must be SqlLobby.", DirectionX);
+				HEHKGPKLAKK().SetFloat("OpJoinRandomRoom()", DirectionX);
 			}
-			BFGNMFCNDBC().SetFloat("_BlurredColor", Speed);
-			ADGHJOHKEHG().SetFloat("CameraFilterPack/Pixelisation_OilPaint", Size);
-			HFBJAOFLCJI().SetFloat("_ScreenResolution", Distortion);
-			HFBJAOFLCJI().SetFloat("_Red_B", StormFlashOnOff);
-			PGPEMMBJOOG().SetFloat("_ScreenResolution", DropOnOff);
-			PGPEMMBJOOG().SetFloat("_TimeX", _FixDistance);
-			EPCGJFCCAFH().SetFloat("_Green_C", _Visualize ? 1 : 0);
-			LDNADDJMIPK().SetFloat("/", Drop_Near);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack_Broken_Screen1", Drop_Far);
-			PGPEMMBJOOG().SetFloat("_Smooth", 1534f - Drop_With_Obj);
-			HFBJAOFLCJI().SetFloat("_ScreenResolution", Myst);
-			BFGNMFCNDBC().SetColor(" (inactive)", Myst_Color);
-			EPCGJFCCAFH().SetFloat("GraphicsQualitySlider", Drop_Floor_Fluid);
-			ADGHJOHKEHG().SetVector("ScreenResolutionPanel", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 851f, 396f));
-			AELJLBOJAIL().SetTexture("_Value", FPHEBLMINDA);
+			EPCGJFCCAFH().SetFloat("_Offsets", Speed);
+			EPCGJFCCAFH().SetFloat("_Value4", Size);
+			BFGNMFCNDBC().SetFloat("_Glitch", Distortion);
+			NBPKMLMCHFN.SetFloat("_Red_G", StormFlashOnOff);
+			ADGHJOHKEHG().SetFloat("_ScreenResolution", DropOnOff);
+			HEHKGPKLAKK().SetFloat("CameraFilterPack/Gradients_Tech", _FixDistance);
+			PGPEMMBJOOG().SetFloat("_Green_C", _Visualize ? 1 : 0);
+			HKGAONMOBMH().SetFloat("#done", Drop_Near);
+			LDNADDJMIPK().SetFloat("CameraFilterPack_Broken_Screen1", Drop_Far);
+			BFGNMFCNDBC().SetFloat("_Dist", 1534f - Drop_With_Obj);
+			JFDGLLEOPGB().SetFloat("_Value4", Myst);
+			PGPEMMBJOOG().SetColor(" ", Myst_Color);
+			BFGNMFCNDBC().SetFloat("GraphicsQualitySlider", Drop_Floor_Fluid);
+			AELJLBOJAIL().SetVector("ScreenResolutionPanel", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 851f, 396f));
+			DNLMFEGJJDD().SetTexture("_TimeX", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKGAONMOBMH());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -261,42 +261,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 600f;
 			}
-			ADGHJOHKEHG().SetFloat("_MatrixColor", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("Set Particles Emission", Fade);
-			JFDGLLEOPGB().SetFloat("_BlurVector", Intensity);
+			IONHGBPGCHK().SetFloat("_MatrixColor", HBJJOCHGOPH);
+			EPCGJFCCAFH().SetFloat("Set Particles Emission", Fade);
+			BFGNMFCNDBC().SetFloat("_BlurVector", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1850f && z < 737f)
 				{
-					HFBJAOFLCJI().SetFloat("USE_UV_BASED_REPROJECTION", z);
+					AELJLBOJAIL().SetFloat("USE_CORNER_DETECTION", z);
 				}
 				if (z < 1491f)
 				{
-					IONHGBPGCHK().SetFloat("Received RPC: ", z);
+					JFDGLLEOPGB().SetFloat(". The RPC has been ignored.", z);
 				}
 			}
 			else
 			{
-				JFDGLLEOPGB().SetFloat("CameraFilterPack/Color_Noise", DirectionX);
+				IONHGBPGCHK().SetFloat("_ScreenResolution", DirectionX);
 			}
-			AELJLBOJAIL().SetFloat("[DiscordController] Shutdown", Speed);
-			HEHKGPKLAKK().SetFloat("_MaxRadiusOrKInPaper", Size);
-			HFBJAOFLCJI().SetFloat("Joystick1Button5", Distortion);
-			NBPKMLMCHFN.SetFloat("_ChromaticAberration", StormFlashOnOff);
-			LDNADDJMIPK().SetFloat("_ScreenResolution", DropOnOff);
-			AELJLBOJAIL().SetFloat("[PlayerController] ", _FixDistance);
-			PGPEMMBJOOG().SetFloat("SetRoomStartTimestamp", (!_Visualize) ? 1 : 1);
-			HKGAONMOBMH().SetFloat("CameraFilterPack/Glow_Glow_Color", Drop_Near);
-			PGPEMMBJOOG().SetFloat("isVisible", Drop_Far);
-			JFDGLLEOPGB().SetFloat("_ScreenResolution", 1774f - Drop_With_Obj);
-			PGPEMMBJOOG().SetFloat("The directory was created successfully at ", Myst);
-			BFGNMFCNDBC().SetColor("CheckCombo", Myst_Color);
-			BFGNMFCNDBC().SetFloat("EndlessLoopsScoreText", Drop_Floor_Fluid);
-			HEHKGPKLAKK().SetVector(". Not connectedAndReady.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1895f, 1425f));
-			HFBJAOFLCJI().SetTexture("_Distortion", FPHEBLMINDA);
+			HFBJAOFLCJI().SetFloat("[DiscordController] Init", Speed);
+			HEHKGPKLAKK().SetFloat("_MaxVelocity", Size);
+			NBPKMLMCHFN.SetFloat("Joystick1Button4", Distortion);
+			IONHGBPGCHK().SetFloat("_DistAmount", StormFlashOnOff);
+			LDNADDJMIPK().SetFloat("_Value4", DropOnOff);
+			IONHGBPGCHK().SetFloat("[PlayerController] ", _FixDistance);
+			HKGAONMOBMH().SetFloat("turn: {0:0}", (!_Visualize) ? 1 : 1);
+			HKGAONMOBMH().SetFloat("_MainTex2", Drop_Near);
+			DNLMFEGJJDD().SetFloat("isVisible", Drop_Far);
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", 1774f - Drop_With_Obj);
+			NBPKMLMCHFN.SetFloat(".sav", Myst);
+			NBPKMLMCHFN.SetColor("[PlayerBase] Loaded music", Myst_Color);
+			HKGAONMOBMH().SetFloat("CheckpointsScoreText", Drop_Floor_Fluid);
+			DNLMFEGJJDD().SetVector("score", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1895f, 1425f));
+			JFDGLLEOPGB().SetTexture("_Distortion", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{
@@ -317,42 +317,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1602f;
 			}
-			NBPKMLMCHFN.SetFloat("_DepthLevel", HBJJOCHGOPH);
-			DNLMFEGJJDD().SetFloat("_LutTex", Fade);
-			LDNADDJMIPK().SetFloat("EditMenu", Intensity);
+			JFDGLLEOPGB().SetFloat("_DepthLevel", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetFloat("_Blend", Fade);
+			BFGNMFCNDBC().SetFloat("ViewMenu", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1005f && z < 1962f)
 				{
-					IONHGBPGCHK().SetFloat("_ScreenResolution", z);
+					EPCGJFCCAFH().SetFloat("_ColorLevel", z);
 				}
 				if (z < 1572f)
 				{
-					DNLMFEGJJDD().SetFloat("Obtain test Item", z);
+					HEHKGPKLAKK().SetFloat("Reload Steam Inventory", z);
 				}
 			}
 			else
 			{
-				IONHGBPGCHK().SetFloat("_Fade", DirectionX);
+				HEHKGPKLAKK().SetFloat("_ScreenResolution", DirectionX);
 			}
-			ADGHJOHKEHG().SetFloat("curScn", Speed);
-			BFGNMFCNDBC().SetFloat("menu.enableselectormusic", Size);
-			EPCGJFCCAFH().SetFloat("[MapsEditor] Creating new item...", Distortion);
-			DNLMFEGJJDD().SetFloat("LobbyCanvas", StormFlashOnOff);
-			HKGAONMOBMH().SetFloat("_Distortion", DropOnOff);
-			PGPEMMBJOOG().SetFloat("SetSatelliteTrailLength", _FixDistance);
-			DNLMFEGJJDD().SetFloat("_Value", (!_Visualize) ? 1 : 0);
-			HKGAONMOBMH().SetFloat("event", Drop_Near);
-			EPCGJFCCAFH().SetFloat("MaxLivesSlider", Drop_Far);
-			IONHGBPGCHK().SetFloat(".completed", 581f - Drop_With_Obj);
-			PGPEMMBJOOG().SetFloat("CameraFilterPack_TV_HorrorFX", Myst);
-			HFBJAOFLCJI().SetColor(": ", Myst_Color);
-			EPCGJFCCAFH().SetFloat("ItemNameText", Drop_Floor_Fluid);
-			IONHGBPGCHK().SetVector("JoinButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1981f, 109f));
-			ADGHJOHKEHG().SetTexture("/", FPHEBLMINDA);
+			BFGNMFCNDBC().SetFloat("curScn", Speed);
+			HEHKGPKLAKK().SetFloat("menu.enableselectormusic", Size);
+			IONHGBPGCHK().SetFloat("#mapalreadyexistupdate", Distortion);
+			BFGNMFCNDBC().SetFloat("LobbyCanvas", StormFlashOnOff);
+			ADGHJOHKEHG().SetFloat("_TimeX", DropOnOff);
+			BFGNMFCNDBC().SetFloat("Set satellite radius (offset)", _FixDistance);
+			HKGAONMOBMH().SetFloat("_TimeX", (!_Visualize) ? 1 : 0);
+			NBPKMLMCHFN.SetFloat("event", Drop_Near);
+			BFGNMFCNDBC().SetFloat("HandsCountSlider", Drop_Far);
+			EPCGJFCCAFH().SetFloat("maps.", 581f - Drop_With_Obj);
+			IONHGBPGCHK().SetFloat("_RGB", Myst);
+			IONHGBPGCHK().SetColor("[PlayerController] ", Myst_Color);
+			HFBJAOFLCJI().SetFloat("RarityImage", Drop_Floor_Fluid);
+			BFGNMFCNDBC().SetVector("JoinButton", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1981f, 109f));
+			PGPEMMBJOOG().SetTexture("/", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKGAONMOBMH());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -369,42 +369,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1407f;
 			}
-			BFGNMFCNDBC().SetFloat("Tab2Content", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("Turn", Fade);
-			IONHGBPGCHK().SetFloat("EndlessLoopsScoreText", Intensity);
+			ADGHJOHKEHG().SetFloat("HandsCountSlider", HBJJOCHGOPH);
+			BFGNMFCNDBC().SetFloat("move", Fade);
+			DNLMFEGJJDD().SetFloat("CheckpointsScoreText", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1724f && z < 1024f)
 				{
-					EPCGJFCCAFH().SetFloat("The process failed: ", z);
+					HEHKGPKLAKK().SetFloat(" does not exist!", z);
 				}
 				if (z < 1040f)
 				{
-					HFBJAOFLCJI().SetFloat("_BlurDirectionPacked", z);
+					EPCGJFCCAFH().SetFloat("_ToPrevViewProjCombined", z);
 				}
 			}
 			else
 			{
-				ADGHJOHKEHG().SetFloat("_MainTex2", DirectionX);
+				HKGAONMOBMH().SetFloat("_MainTex2", DirectionX);
 			}
-			PGPEMMBJOOG().SetFloat("Tab2Content", Speed);
-			NBPKMLMCHFN.SetFloat("_Value2", Size);
-			DNLMFEGJJDD().SetFloat("[Up]", Distortion);
-			BFGNMFCNDBC().SetFloat("[MenuScene] Error: ", StormFlashOnOff);
-			NBPKMLMCHFN.SetFloat("id", DropOnOff);
-			JFDGLLEOPGB().SetFloat("_Value4", _FixDistance);
-			BFGNMFCNDBC().SetFloat("ColorBlood", (!_Visualize) ? 1 : 0);
-			BFGNMFCNDBC().SetFloat("_Y", Drop_Near);
-			JFDGLLEOPGB().SetFloat("Jit ", Drop_Far);
-			HEHKGPKLAKK().SetFloat("SfxVolumeSlider", 1653f - Drop_With_Obj);
-			IONHGBPGCHK().SetFloat("OperationResponse unhandled: {0}", Myst);
-			HEHKGPKLAKK().SetColor("Room: '{0}' {1},{2} {4}/{3} players.", Myst_Color);
-			LDNADDJMIPK().SetFloat("caret", Drop_Floor_Fluid);
-			HKGAONMOBMH().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 668f, 1363f));
-			DNLMFEGJJDD().SetTexture("ItemTemplate", FPHEBLMINDA);
+			HEHKGPKLAKK().SetFloat("ConfigVersionSlider", Speed);
+			BFGNMFCNDBC().SetFloat("_Value2", Size);
+			BFGNMFCNDBC().SetFloat(",0", Distortion);
+			HFBJAOFLCJI().SetFloat("/theme", StormFlashOnOff);
+			DNLMFEGJJDD().SetFloat("id", DropOnOff);
+			ADGHJOHKEHG().SetFloat("_Value3", _FixDistance);
+			EPCGJFCCAFH().SetFloat("_Value2", (!_Visualize) ? 1 : 0);
+			EPCGJFCCAFH().SetFloat("_Y", Drop_Near);
+			DNLMFEGJJDD().SetFloat("Rtt:{0,4} +/-{1,3}", Drop_Far);
+			JFDGLLEOPGB().SetFloat("menu.enableselectormusic", 1653f - Drop_With_Obj);
+			LDNADDJMIPK().SetFloat("GetGameList failed: ", Myst);
+			HKGAONMOBMH().SetColor("Can't set MaxPlayers when not in that room.", Myst_Color);
+			AELJLBOJAIL().SetFloat("Tab1Content", Drop_Floor_Fluid);
+			ADGHJOHKEHG().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 668f, 1363f));
+			HKGAONMOBMH().SetTexture("SlidingArea", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKGAONMOBMH());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADGHJOHKEHG());
 		}
 		else
 		{
@@ -440,8 +440,8 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		FPHEBLMINDA = Resources.Load(" to: ") as Texture2D;
-		SCShader = Shader.Find("note.7");
+		FPHEBLMINDA = Resources.Load(" Time: ") as Texture2D;
+		SCShader = Shader.Find("note.3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -457,40 +457,40 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1539f;
 			}
-			ADGHJOHKEHG().SetFloat(": ", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("_SpherePositionX", Fade);
-			AELJLBOJAIL().SetFloat("_ScreenResolution", Intensity);
+			HFBJAOFLCJI().SetFloat("[PlayerController] ", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("_SpherePositionX", Fade);
+			HKGAONMOBMH().SetFloat("Fade", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1970f && z < 35f)
 				{
-					EPCGJFCCAFH().SetFloat(".lastCheckpoint.comboScore", z);
+					IONHGBPGCHK().SetFloat(".lastCheckpoint.powerupsScore", z);
 				}
 				if (z < 1460f)
 				{
-					LDNADDJMIPK().SetFloat("[PhotonMessageInfo: Sender='{1}' Senttime={0}]", z);
+					AELJLBOJAIL().SetFloat("curScn", z);
 				}
 			}
 			else
 			{
-				PGPEMMBJOOG().SetFloat("_TimeX", DirectionX);
+				IONHGBPGCHK().SetFloat("CameraFilterPack/Distortion_Twist_Square", DirectionX);
 			}
-			NBPKMLMCHFN.SetFloat("PLEASE WAIT", Speed);
-			EPCGJFCCAFH().SetFloat("{0:0} day{1}, ", Size);
-			JFDGLLEOPGB().SetFloat("GlassDistortion", Distortion);
-			IONHGBPGCHK().SetFloat("_MainTex", StormFlashOnOff);
-			AELJLBOJAIL().SetFloat("player.currentrank", DropOnOff);
-			LDNADDJMIPK().SetFloat("AddEnvironmentSprite", _FixDistance);
-			JFDGLLEOPGB().SetFloat("BitsData", _Visualize ? 1 : 0);
-			PGPEMMBJOOG().SetFloat("\" call.", Drop_Near);
-			DNLMFEGJJDD().SetFloat("_Visualize", Drop_Far);
-			NBPKMLMCHFN.SetFloat("_Dist", 279f - Drop_With_Obj);
-			ADGHJOHKEHG().SetFloat("<color=white>", Myst);
-			HEHKGPKLAKK().SetColor("_Value2", Myst_Color);
-			HKGAONMOBMH().SetFloat("_DepthLevel", Drop_Floor_Fluid);
-			BFGNMFCNDBC().SetVector("Editor/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1f, 356f));
-			BFGNMFCNDBC().SetTexture("string", FPHEBLMINDA);
+			IONHGBPGCHK().SetFloat("Ok", Speed);
+			AELJLBOJAIL().SetFloat("{0:0} day{1}, ", Size);
+			IONHGBPGCHK().SetFloat("VisionBlur", Distortion);
+			BFGNMFCNDBC().SetFloat("_Offsets", StormFlashOnOff);
+			HFBJAOFLCJI().SetFloat("[RanksSystem] Init", DropOnOff);
+			IONHGBPGCHK().SetFloat("SetParticlesGravity", _FixDistance);
+			DNLMFEGJJDD().SetFloat(",", _Visualize ? 1 : 0);
+			DNLMFEGJJDD().SetFloat("RPCs can only be sent in rooms. Call of \"", Drop_Near);
+			NBPKMLMCHFN.SetFloat("_Visualize", Drop_Far);
+			AELJLBOJAIL().SetFloat("_Size", 279f - Drop_With_Obj);
+			HEHKGPKLAKK().SetFloat("<color=white>PhotonView Group: ", Myst);
+			DNLMFEGJJDD().SetColor("_Value2", Myst_Color);
+			JFDGLLEOPGB().SetFloat("_DepthLevel", Drop_Floor_Fluid);
+			JFDGLLEOPGB().SetVector("#alreadyexist", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1f, 356f));
+			AELJLBOJAIL().SetTexture("bool", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
 		}
@@ -502,7 +502,7 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		FPHEBLMINDA = Resources.Load(" SecondsBeforeRespawn: ") as Texture2D;
+		FPHEBLMINDA = Resources.Load("PunRespawn") as Texture2D;
 		SCShader = Shader.Find("Set Particles Speed");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -523,42 +523,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1665f;
 			}
-			NBPKMLMCHFN.SetFloat("Cant ask anyone else for PickupItem spawn times.", HBJJOCHGOPH);
-			HEHKGPKLAKK().SetFloat("_Value", Fade);
-			AELJLBOJAIL().SetFloat(": ", Intensity);
+			DNLMFEGJJDD().SetFloat(" id: ", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetFloat("_TimeX", Fade);
+			HEHKGPKLAKK().SetFloat("StartRound", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1798f && z < 295f)
 				{
-					DNLMFEGJJDD().SetFloat("team", z);
+					AELJLBOJAIL().SetFloat("score", z);
 				}
 				if (z < 793f)
 				{
-					HKGAONMOBMH().SetFloat("Joystick1Button7", z);
+					ADGHJOHKEHG().SetFloat("Joystick1Button6", z);
 				}
 			}
 			else
 			{
-				HKGAONMOBMH().SetFloat("Image", DirectionX);
+				HEHKGPKLAKK().SetFloat("skins", DirectionX);
 			}
-			AELJLBOJAIL().SetFloat("SetSunInput", Speed);
-			AELJLBOJAIL().SetFloat("_InternalLutParams", Size);
-			DNLMFEGJJDD().SetFloat("skin.", Distortion);
-			PGPEMMBJOOG().SetFloat("_MainTex2", StormFlashOnOff);
-			AELJLBOJAIL().SetFloat("https://bitbucket.org/khb-soft/intralismarcsviewer/", DropOnOff);
-			ADGHJOHKEHG().SetFloat("LevelEditor/CustomEventEditor-Text", _FixDistance);
-			EPCGJFCCAFH().SetFloat("Joystick1Button2", (!_Visualize) ? 1 : 0);
-			DNLMFEGJJDD().SetFloat("Instrumental", Drop_Near);
-			PGPEMMBJOOG().SetFloat("#", Drop_Far);
-			PGPEMMBJOOG().SetFloat("}", 321f - Drop_With_Obj);
-			IONHGBPGCHK().SetFloat("GroupNameText", Myst);
-			HEHKGPKLAKK().SetColor("maps.", Myst_Color);
-			EPCGJFCCAFH().SetFloat("_Value2", Drop_Floor_Fluid);
-			LDNADDJMIPK().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 58f, 787f));
-			AELJLBOJAIL().SetTexture("#timeuntilchallenge: ", FPHEBLMINDA);
+			JFDGLLEOPGB().SetFloat("SetScale", Speed);
+			EPCGJFCCAFH().SetFloat("ENABLE_DITHERING", Size);
+			DNLMFEGJJDD().SetFloat("local CheckCondition = function()", Distortion);
+			LDNADDJMIPK().SetFloat("CameraFilterPack/Blend2Camera_VividLight", StormFlashOnOff);
+			HEHKGPKLAKK().SetFloat("/", DropOnOff);
+			IONHGBPGCHK().SetFloat("LevelEditor/CustomEventEditor-Text", _FixDistance);
+			AELJLBOJAIL().SetFloat("A", (!_Visualize) ? 1 : 0);
+			HFBJAOFLCJI().SetFloat("Instrumental", Drop_Near);
+			HFBJAOFLCJI().SetFloat("GameModeText", Drop_Far);
+			HEHKGPKLAKK().SetFloat("\\\"", 321f - Drop_With_Obj);
+			ADGHJOHKEHG().SetFloat("InventoryContent", Myst);
+			HKGAONMOBMH().SetColor(".played", Myst_Color);
+			PGPEMMBJOOG().SetFloat("_Value", Drop_Floor_Fluid);
+			IONHGBPGCHK().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 58f, 787f));
+			PGPEMMBJOOG().SetTexture("#reward: ", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
 		}
 		else
 		{
@@ -575,42 +575,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1152f;
 			}
-			EPCGJFCCAFH().SetFloat("[MapEditor] Openning ", HBJJOCHGOPH);
+			AELJLBOJAIL().SetFloat("/", HBJJOCHGOPH);
 			BFGNMFCNDBC().SetFloat("MapEnd", Fade);
-			HKGAONMOBMH().SetFloat("SetSpeed", Intensity);
+			AELJLBOJAIL().SetFloat("/", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1558f && z < 981f)
 				{
-					HEHKGPKLAKK().SetFloat("_CenterY", z);
+					DNLMFEGJJDD().SetFloat("_CenterY", z);
 				}
 				if (z < 1067f)
 				{
-					JFDGLLEOPGB().SetFloat("_Value", z);
+					HEHKGPKLAKK().SetFloat("_Value", z);
 				}
 			}
 			else
 			{
-				AELJLBOJAIL().SetFloat("menutheme.melancholicose", DirectionX);
+				ADGHJOHKEHG().SetFloat("menutheme.idunno", DirectionX);
 			}
-			EPCGJFCCAFH().SetFloat("_Green_R", Speed);
-			DNLMFEGJJDD().SetFloat("GameScene", Size);
-			ADGHJOHKEHG().SetFloat("[PlayerController] ", Distortion);
-			HKGAONMOBMH().SetFloat("UpdateNewsTileStart", StormFlashOnOff);
-			JFDGLLEOPGB().SetFloat("_Value", DropOnOff);
-			HFBJAOFLCJI().SetFloat("_Value4", _FixDistance);
-			DNLMFEGJJDD().SetFloat("cancel", (!_Visualize) ? 0 : 0);
-			HEHKGPKLAKK().SetFloat("CameraFilterPack/Vision_Plasma", Drop_Near);
-			AELJLBOJAIL().SetFloat("_MainTex", Drop_Far);
-			JFDGLLEOPGB().SetFloat("Joined room ", 1497f - Drop_With_Obj);
-			JFDGLLEOPGB().SetFloat("achievements.21.completed.", Myst);
-			HKGAONMOBMH().SetColor("_TimeX", Myst_Color);
-			JFDGLLEOPGB().SetFloat("AreaTex", Drop_Floor_Fluid);
-			BFGNMFCNDBC().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1938f, 131f));
-			PGPEMMBJOOG().SetTexture("x", FPHEBLMINDA);
+			HEHKGPKLAKK().SetFloat("_Red_B", Speed);
+			EPCGJFCCAFH().SetFloat("GameScene", Size);
+			ADGHJOHKEHG().SetFloat(" not exist", Distortion);
+			JFDGLLEOPGB().SetFloat("achievements.21.progress", StormFlashOnOff);
+			AELJLBOJAIL().SetFloat("CameraFilterPack/TV_VHS", DropOnOff);
+			PGPEMMBJOOG().SetFloat("_Value4", _FixDistance);
+			HFBJAOFLCJI().SetFloat("[ResourcesManager] Load text error: not found", (!_Visualize) ? 0 : 0);
+			HEHKGPKLAKK().SetFloat("_ScreenResolution", Drop_Near);
+			NBPKMLMCHFN.SetFloat("_CenterRadius", Drop_Far);
+			HKGAONMOBMH().SetFloat("Joined room ", 1497f - Drop_With_Obj);
+			ADGHJOHKEHG().SetFloat("achievements.21.completed.", Myst);
+			IONHGBPGCHK().SetColor("_MainTex2", Myst_Color);
+			AELJLBOJAIL().SetFloat("_ConsoleSettings", Drop_Floor_Fluid);
+			NBPKMLMCHFN.SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1938f, 131f));
+			IONHGBPGCHK().SetTexture("InfoCanvas", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH());
 		}
 		else
 		{
@@ -664,42 +664,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 899f;
 			}
-			HFBJAOFLCJI().SetFloat("float,0", HBJJOCHGOPH);
-			AELJLBOJAIL().SetFloat("Vertical", Fade);
-			BFGNMFCNDBC().SetFloat("rarity", Intensity);
+			ADGHJOHKEHG().SetFloat("float,0", HBJJOCHGOPH);
+			AELJLBOJAIL().SetFloat("Aimer Input Module is incompatible with the StandAloneInputSystem, please remove it from the Event System in this scene or disable it when this module is in use", Fade);
+			IONHGBPGCHK().SetFloat("RarityImage", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1202f && z < 1086f)
 				{
-					HEHKGPKLAKK().SetFloat("RecordButton", z);
+					IONHGBPGCHK().SetFloat("RecordButton", z);
 				}
 				if (z < 585f)
 				{
-					HFBJAOFLCJI().SetFloat("z", z);
+					PGPEMMBJOOG().SetFloat("z", z);
 				}
 			}
 			else
 			{
-				HFBJAOFLCJI().SetFloat("_SunPosition", DirectionX);
+				LDNADDJMIPK().SetFloat("_Skybox", DirectionX);
 			}
-			HEHKGPKLAKK().SetFloat("Couldn't color correct with 3D LUT texture. Image Effect will be disabled.", Speed);
-			PGPEMMBJOOG().SetFloat("SpawnObj", Size);
-			ADGHJOHKEHG().SetFloat("There are {0} reported logs.", Distortion);
-			LDNADDJMIPK().SetFloat("_TimeX", StormFlashOnOff);
-			DNLMFEGJJDD().SetFloat("[Up]", DropOnOff);
-			HKGAONMOBMH().SetFloat("NO", _FixDistance);
-			PGPEMMBJOOG().SetFloat("id", (!_Visualize) ? 1 : 0);
-			HEHKGPKLAKK().SetFloat(",viewkeys", Drop_Near);
-			HEHKGPKLAKK().SetFloat("colorC", Drop_Far);
-			ADGHJOHKEHG().SetFloat(" ", 1355f - Drop_With_Obj);
-			EPCGJFCCAFH().SetFloat("_Green_R", Myst);
-			NBPKMLMCHFN.SetColor("_Bloom", Myst_Color);
-			BFGNMFCNDBC().SetFloat(".g", Drop_Floor_Fluid);
-			AELJLBOJAIL().SetVector("Set particles audio input", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 91f, 1715f));
-			PGPEMMBJOOG().SetTexture("[MapEditor] Prepairing map editor...", FPHEBLMINDA);
+			NBPKMLMCHFN.SetFloat("The given 2D texture ", Speed);
+			DNLMFEGJJDD().SetFloat("[PlayerBase] Starting game from: ", Size);
+			EPCGJFCCAFH().SetFloat(" - {0}", Distortion);
+			HFBJAOFLCJI().SetFloat("CameraFilterPack/Sharpen_Sharpen", StormFlashOnOff);
+			IONHGBPGCHK().SetFloat("SpawnObj", DropOnOff);
+			IONHGBPGCHK().SetFloat("YES", _FixDistance);
+			AELJLBOJAIL().SetFloat("id", (!_Visualize) ? 1 : 0);
+			HEHKGPKLAKK().SetFloat("[ResourcesManager] Load text error: not found", Drop_Near);
+			ADGHJOHKEHG().SetFloat("colorA", Drop_Far);
+			BFGNMFCNDBC().SetFloat("\"x", 1355f - Drop_With_Obj);
+			HEHKGPKLAKK().SetFloat("_Green_R", Myst);
+			AELJLBOJAIL().SetColor("_Parameter", Myst_Color);
+			EPCGJFCCAFH().SetFloat(".g", Drop_Floor_Fluid);
+			EPCGJFCCAFH().SetVector("0,7,true,0", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 91f, 1715f));
+			EPCGJFCCAFH().SetTexture("Init", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKGAONMOBMH());
 		}
 		else
 		{
@@ -731,42 +731,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 15f;
 			}
-			HFBJAOFLCJI().SetFloat(".lastCheckpoint.time", HBJJOCHGOPH);
-			AELJLBOJAIL().SetFloat("Tab1Content", Fade);
-			ADGHJOHKEHG().SetFloat("_Gain", Intensity);
+			PGPEMMBJOOG().SetFloat(".lastCheckpoint.bgcolor", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Tab1Content", Fade);
+			AELJLBOJAIL().SetFloat("_TimeX", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 629f && z < 537f)
 				{
-					HKGAONMOBMH().SetFloat("_Offsets", z);
+					IONHGBPGCHK().SetFloat("_FgOverlap", z);
 				}
 				if (z < 1790f)
 				{
-					BFGNMFCNDBC().SetFloat("Not sending leave operation. State is not 'Joined': ", z);
+					NBPKMLMCHFN.SetFloat(" to: ", z);
 				}
 			}
 			else
 			{
 				JFDGLLEOPGB().SetFloat("player.lollipop", DirectionX);
 			}
-			ADGHJOHKEHG().SetFloat("LoadPlayerSkin", Speed);
-			AELJLBOJAIL().SetFloat("DPADHOR", Size);
-			PGPEMMBJOOG().SetFloat("_Value2", Distortion);
-			NBPKMLMCHFN.SetFloat("Connected to gameserver.", StormFlashOnOff);
-			ADGHJOHKEHG().SetFloat("icon", DropOnOff);
-			NBPKMLMCHFN.SetFloat(": ", _FixDistance);
-			IONHGBPGCHK().SetFloat(".lastCheckpoint.isMapCompleted", _Visualize ? 1 : 0);
-			ADGHJOHKEHG().SetFloat("CameraFilterPack/Blend2Camera_Screen", Drop_Near);
-			DNLMFEGJJDD().SetFloat("CameraFilterPack/Blend2Camera_Subtract", Drop_Far);
-			NBPKMLMCHFN.SetFloat("settings.arcshitsoundtimedelay", 1986f - Drop_With_Obj);
-			JFDGLLEOPGB().SetFloat(":", Myst);
-			JFDGLLEOPGB().SetColor(". Should be just one?", Myst_Color);
-			ADGHJOHKEHG().SetFloat("offsets", Drop_Floor_Fluid);
-			HEHKGPKLAKK().SetVector("HightScoreMaxPointsText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1392f, 1891f));
-			IONHGBPGCHK().SetTexture("Dec", FPHEBLMINDA);
+			HKGAONMOBMH().SetFloat("[PlayerBase] Highscore: ", Speed);
+			PGPEMMBJOOG().SetFloat("DPADHOR", Size);
+			HKGAONMOBMH().SetFloat("_Value2", Distortion);
+			BFGNMFCNDBC().SetFloat("OnStatusChanged: {0} current State: {1}", StormFlashOnOff);
+			BFGNMFCNDBC().SetFloat("/icon", DropOnOff);
+			EPCGJFCCAFH().SetFloat(": ", _FixDistance);
+			NBPKMLMCHFN.SetFloat("[PlayerBase] Loading checkpoint data", _Visualize ? 1 : 0);
+			HFBJAOFLCJI().SetFloat("CameraFilterPack/Blend2Camera_Screen", Drop_Near);
+			HKGAONMOBMH().SetFloat("CameraFilterPack/Blend2Camera_Subtract", Drop_Far);
+			NBPKMLMCHFN.SetFloat("ArcsHitsoundTimeDelaySlider", 1986f - Drop_With_Obj);
+			HFBJAOFLCJI().SetFloat(".", Myst);
+			NBPKMLMCHFN.SetColor("\" that takes ", Myst_Color);
+			JFDGLLEOPGB().SetFloat("_TapHigh", Drop_Floor_Fluid);
+			ADGHJOHKEHG().SetVector("FinalScoreText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1392f, 1891f));
+			IONHGBPGCHK().SetTexture("Oct", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -776,8 +776,8 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 
 	private void NPLCENPNJBM()
 	{
-		FPHEBLMINDA = Resources.Load("DPADHOR") as Texture2D;
-		SCShader = Shader.Find("_Value5");
+		FPHEBLMINDA = Resources.Load("DPADVER") as Texture2D;
+		SCShader = Shader.Find("_Value4");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -823,42 +823,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 116f;
 			}
-			LDNADDJMIPK().SetFloat("LoadMapCanvas", HBJJOCHGOPH);
-			HKGAONMOBMH().SetFloat("_Value4", Fade);
-			DNLMFEGJJDD().SetFloat("_Value2", Intensity);
+			IONHGBPGCHK().SetFloat("Data/Editor/leveltemplate", HBJJOCHGOPH);
+			ADGHJOHKEHG().SetFloat("_Value3", Fade);
+			NBPKMLMCHFN.SetFloat("_Value", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1791f && z < 1985f)
 				{
-					ADGHJOHKEHG().SetFloat("_Value3", z);
+					PGPEMMBJOOG().SetFloat("_Value2", z);
 				}
 				if (z < 1838f)
 				{
-					PGPEMMBJOOG().SetFloat(". Possible scene loading in progress?", z);
+					JFDGLLEOPGB().SetFloat("RPC can't be sent to target PhotonPlayer being null! Did not send \"", z);
 				}
 			}
 			else
 			{
-				HKGAONMOBMH().SetFloat("Item ", DirectionX);
+				BFGNMFCNDBC().SetFloat("Items", DirectionX);
 			}
-			ADGHJOHKEHG().SetFloat("_Distortion", Speed);
-			LDNADDJMIPK().SetFloat("_TimeX", Size);
-			PGPEMMBJOOG().SetFloat("Couldn't color correct with 3D LUT texture. Image Effect will be disabled.", Distortion);
-			DNLMFEGJJDD().SetFloat("[EditorEvent] Exception: ", StormFlashOnOff);
-			ADGHJOHKEHG().SetFloat(" Loaded: ", DropOnOff);
-			BFGNMFCNDBC().SetFloat("_BlurredColor", _FixDistance);
-			HKGAONMOBMH().SetFloat("{0:0} minute{1}, ", (!_Visualize) ? 1 : 1);
-			HFBJAOFLCJI().SetFloat("nd", Drop_Near);
-			LDNADDJMIPK().SetFloat("[CraftingPanel] Init", Drop_Far);
-			PGPEMMBJOOG().SetFloat(". The group number should be at least 1.", 41f - Drop_With_Obj);
-			AELJLBOJAIL().SetFloat("mapselector.filter.subscribedonly", Myst);
-			ADGHJOHKEHG().SetColor(".played", Myst_Color);
-			BFGNMFCNDBC().SetFloat("#close", Drop_Floor_Fluid);
-			ADGHJOHKEHG().SetVector("<i>", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 41f, 23f));
-			BFGNMFCNDBC().SetTexture("0. SubBase 20-60 Hz\n1. Bass, 60-250 Hz\n2. LowMidrange 250-500 Hz\n3. Midrange 500-2,000 Hz\n4. UpperMidrange 2,000-4,000 Hz\n5. High 4,000-6000 Hz\n6. VeryHigh 6,000-20,000 Hz\n7. Decibal - use output data instead of frequency data", FPHEBLMINDA);
+			JFDGLLEOPGB().SetFloat("_TimeX", Speed);
+			ADGHJOHKEHG().SetFloat("CameraFilterPack/TV_Distorted", Size);
+			IONHGBPGCHK().SetFloat("The given 2D texture ", Distortion);
+			NBPKMLMCHFN.SetFloat("checkpoint", StormFlashOnOff);
+			IONHGBPGCHK().SetFloat(". Name: ", DropOnOff);
+			NBPKMLMCHFN.SetFloat("_Offsets", _FixDistance);
+			JFDGLLEOPGB().SetFloat("{0:0} minute{1}, ", (!_Visualize) ? 1 : 1);
+			BFGNMFCNDBC().SetFloat("2", Drop_Near);
+			HFBJAOFLCJI().SetFloat("time", Drop_Far);
+			DNLMFEGJJDD().SetFloat(". The group number should be at least 1.", 41f - Drop_With_Obj);
+			JFDGLLEOPGB().SetFloat("mapselector.filter.rateduponly", Myst);
+			IONHGBPGCHK().SetColor(".completed", Myst_Color);
+			LDNADDJMIPK().SetFloat("#tryagain", Drop_Floor_Fluid);
+			BFGNMFCNDBC().SetVector("<i>", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 41f, 23f));
+			HFBJAOFLCJI().SetTexture("input", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -897,40 +897,40 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 402f;
 			}
-			DNLMFEGJJDD().SetFloat("_Value3", HBJJOCHGOPH);
-			BFGNMFCNDBC().SetFloat("_EmissionColor", Fade);
-			HEHKGPKLAKK().SetFloat("GlassAberration", Intensity);
+			AELJLBOJAIL().SetFloat("_Value2", HBJJOCHGOPH);
+			PGPEMMBJOOG().SetFloat("_EmissionColor", Fade);
+			PGPEMMBJOOG().SetFloat("GlassDistortion", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1567f && z < 1586f)
 				{
-					IONHGBPGCHK().SetFloat("mapselector.filter.subscribedonly", z);
+					HFBJAOFLCJI().SetFloat("mapselector.filter.rateduponly", z);
 				}
 				if (z < 554f)
 				{
-					HKGAONMOBMH().SetFloat("_Value3", z);
+					JFDGLLEOPGB().SetFloat("_Value2", z);
 				}
 			}
 			else
 			{
-				EPCGJFCCAFH().SetFloat("other.dust1", DirectionX);
+				HKGAONMOBMH().SetFloat("other.dust0", DirectionX);
 			}
-			HFBJAOFLCJI().SetFloat("_Value3", Speed);
-			IONHGBPGCHK().SetFloat("Item created: Id: ", Size);
+			HEHKGPKLAKK().SetFloat("_Value", Speed);
+			LDNADDJMIPK().SetFloat("SUCCESS! Item submitted! :D :D :D", Size);
 			EPCGJFCCAFH().SetFloat("SubBass", Distortion);
-			DNLMFEGJJDD().SetFloat("CameraFilterPack/Colors_NewPosterize", StormFlashOnOff);
-			AELJLBOJAIL().SetFloat("_ScreenResolution", DropOnOff);
-			DNLMFEGJJDD().SetFloat("maps.", _FixDistance);
-			HFBJAOFLCJI().SetFloat("EXCEPTION:", (!_Visualize) ? 0 : 0);
-			LDNADDJMIPK().SetFloat("menu.selectedlevelid", Drop_Near);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/Distortion_Heat", Drop_Far);
-			IONHGBPGCHK().SetFloat("[GameScene] Events count: ", 1032f - Drop_With_Obj);
-			IONHGBPGCHK().SetFloat("_ScreenResolution", Myst);
-			NBPKMLMCHFN.SetColor("player.crystal", Myst_Color);
-			JFDGLLEOPGB().SetFloat("[LevelEditorScene] Error: You're not logged into Steam!", Drop_Floor_Fluid);
-			IONHGBPGCHK().SetVector("{0:0} day{1}, ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 163f, 1195f));
-			IONHGBPGCHK().SetTexture("CameraFilterPack/Color_BrightContrastSaturation", FPHEBLMINDA);
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", StormFlashOnOff);
+			HEHKGPKLAKK().SetFloat("_ScreenResolution", DropOnOff);
+			HKGAONMOBMH().SetFloat("maps.", _FixDistance);
+			HFBJAOFLCJI().SetFloat("/", (!_Visualize) ? 0 : 0);
+			HFBJAOFLCJI().SetFloat("menu.selectedlevelid", Drop_Near);
+			AELJLBOJAIL().SetFloat("_ScreenResolution", Drop_Far);
+			PGPEMMBJOOG().SetFloat("[GameScene] Checkpoints count: ", 1032f - Drop_With_Obj);
+			IONHGBPGCHK().SetFloat("_Value4", Myst);
+			HKGAONMOBMH().SetColor("player.circle", Myst_Color);
+			PGPEMMBJOOG().SetFloat("[LevelEditorScene] Error: Timeout :S", Drop_Floor_Fluid);
+			HFBJAOFLCJI().SetVector("{0}{1}{2}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 163f, 1195f));
+			LDNADDJMIPK().SetTexture("CameraFilterPack/Color_BrightContrastSaturation", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
@@ -1017,42 +1017,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1076f;
 			}
-			EPCGJFCCAFH().SetFloat("musicVolume", HBJJOCHGOPH);
-			EPCGJFCCAFH().SetFloat("1", Fade);
-			EPCGJFCCAFH().SetFloat("_MainTex2", Intensity);
+			PGPEMMBJOOG().SetFloat("sfxVolume", HBJJOCHGOPH);
+			HKGAONMOBMH().SetFloat("win", Fade);
+			DNLMFEGJJDD().SetFloat("UseScanLine", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 1964f && z < 1854f)
 				{
-					HEHKGPKLAKK().SetFloat("_ColorBuffer", z);
+					EPCGJFCCAFH().SetFloat("_Threshhold", z);
 				}
 				if (z < 311f)
 				{
-					BFGNMFCNDBC().SetFloat(" By: ", z);
+					ADGHJOHKEHG().SetFloat(" Owner called.", z);
 				}
 			}
 			else
 			{
-				HKGAONMOBMH().SetFloat("IconImage", DirectionX);
+				NBPKMLMCHFN.SetFloat("_Value1", DirectionX);
 			}
-			BFGNMFCNDBC().SetFloat(" TimeOfRespawn: ", Speed);
-			HEHKGPKLAKK().SetFloat("{0}", Size);
-			IONHGBPGCHK().SetFloat(".sawoutdatedmessage", Distortion);
-			BFGNMFCNDBC().SetFloat("FinalScoreText", StormFlashOnOff);
-			PGPEMMBJOOG().SetFloat("_ScreenResolution", DropOnOff);
-			JFDGLLEOPGB().SetFloat("/", _FixDistance);
-			IONHGBPGCHK().SetFloat("RoomNameText", (!_Visualize) ? 1 : 1);
-			AELJLBOJAIL().SetFloat("Left", Drop_Near);
-			EPCGJFCCAFH().SetFloat("HightScoreMaxPointsText", Drop_Far);
-			HKGAONMOBMH().SetFloat("_ScreenResolution", 1983f - Drop_With_Obj);
-			EPCGJFCCAFH().SetFloat("CameraFilterPack/BlurTiltShift", Myst);
-			AELJLBOJAIL().SetColor("_Value2", Myst_Color);
-			HFBJAOFLCJI().SetFloat("Bad parameters for getstring! Use <key> <value>", Drop_Floor_Fluid);
-			IONHGBPGCHK().SetVector("checkpoint", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 382f, 1302f));
+			LDNADDJMIPK().SetFloat("PunRespawn", Speed);
+			EPCGJFCCAFH().SetFloat("{0}", Size);
+			DNLMFEGJJDD().SetFloat("[MapEditor] Openning ", Distortion);
+			HEHKGPKLAKK().SetFloat("FinalScoreText", StormFlashOnOff);
+			HEHKGPKLAKK().SetFloat("_TimeX", DropOnOff);
+			HEHKGPKLAKK().SetFloat("NewIconFileSelector", _FixDistance);
+			EPCGJFCCAFH().SetFloat("RoomNameText", (!_Visualize) ? 1 : 1);
+			JFDGLLEOPGB().SetFloat("Right", Drop_Near);
+			DNLMFEGJJDD().SetFloat("HightScoreMaxPointsText", Drop_Far);
+			HEHKGPKLAKK().SetFloat("_FarCamera", 1983f - Drop_With_Obj);
+			ADGHJOHKEHG().SetFloat("CameraFilterPack/BlurTiltShift", Myst);
+			LDNADDJMIPK().SetColor("_Value2", Myst_Color);
+			PGPEMMBJOOG().SetFloat("Bad parameters for getstring! Use <key> <value>", Drop_Floor_Fluid);
+			ADGHJOHKEHG().SetVector("LevelEditor/icons", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 382f, 1302f));
 			DNLMFEGJJDD().SetTexture("float,10", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{
@@ -1066,8 +1066,8 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 
 	private void HMPGIFBJFIK()
 	{
-		FPHEBLMINDA = Resources.Load("Current xp: ") as Texture2D;
-		SCShader = Shader.Find("#close");
+		FPHEBLMINDA = Resources.Load("-help") as Texture2D;
+		SCShader = Shader.Find("#tryagain");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1083,42 +1083,42 @@ public class CameraFilterPack_Atmosphere_Rain_Pro_3D : MonoBehaviour
 			{
 				HBJJOCHGOPH = 750f;
 			}
-			PGPEMMBJOOG().SetFloat("skin.", HBJJOCHGOPH);
-			BFGNMFCNDBC().SetFloat("[LevelEditorScene] Error: You're not logged into Steam!", Fade);
-			HKGAONMOBMH().SetFloat("levelcompleted", Intensity);
+			ADGHJOHKEHG().SetFloat("local CheckCondition = function()", HBJJOCHGOPH);
+			HEHKGPKLAKK().SetFloat("[LevelEditorScene] Error: You're not logged into Steam!", Fade);
+			ADGHJOHKEHG().SetFloat("achievements.26.progress", Intensity);
 			if (DirectionFollowCameraZ)
 			{
 				float z = GetComponent<Camera>().transform.rotation.z;
 				if (z > 493f && z < 593f)
 				{
-					AELJLBOJAIL().SetFloat("mapid", z);
+					DNLMFEGJJDD().SetFloat("steamid", z);
 				}
 				if (z < 953f)
 				{
-					LDNADDJMIPK().SetFloat("_ToneCurve", z);
+					EPCGJFCCAFH().SetFloat("ENABLE_EYE_ADAPTATION", z);
 				}
 			}
 			else
 			{
-				HKGAONMOBMH().SetFloat(" at ", DirectionX);
+				JFDGLLEOPGB().SetFloat(" at ", DirectionX);
 			}
-			DNLMFEGJJDD().SetFloat("_TimeX", Speed);
-			DNLMFEGJJDD().SetFloat("float,10", Size);
-			PGPEMMBJOOG().SetFloat("Warning, using scrollbors with the Scroll Snap controls is not advised as it causes unpredictable results", Distortion);
-			IONHGBPGCHK().SetFloat("_TimeX", StormFlashOnOff);
-			PGPEMMBJOOG().SetFloat("_Speed", DropOnOff);
-			JFDGLLEOPGB().SetFloat(" not exist", _FixDistance);
-			ADGHJOHKEHG().SetFloat("_Value", _Visualize ? 1 : 0);
-			HEHKGPKLAKK().SetFloat("Exception caught! ", Drop_Near);
-			LDNADDJMIPK().SetFloat("Object ID. Case-Sensitive", Drop_Far);
+			PGPEMMBJOOG().SetFloat("_ScreenResolution", Speed);
+			BFGNMFCNDBC().SetFloat("Speed is a lerp speed of color changing. Greater values means faster changing. 0 - intant change", Size);
+			EPCGJFCCAFH().SetFloat("th", Distortion);
+			HKGAONMOBMH().SetFloat("CameraFilterPack/FX_Screens", StormFlashOnOff);
+			NBPKMLMCHFN.SetFloat("_TimeX", DropOnOff);
+			LDNADDJMIPK().SetFloat(": ", _FixDistance);
+			HKGAONMOBMH().SetFloat("_TimeX", _Visualize ? 1 : 0);
+			EPCGJFCCAFH().SetFloat("ReplyMatch is false! ", Drop_Near);
+			HKGAONMOBMH().SetFloat("id", Drop_Far);
 			ADGHJOHKEHG().SetFloat("_TimeX", 557f - Drop_With_Obj);
-			JFDGLLEOPGB().SetFloat("_Value3", Myst);
-			HFBJAOFLCJI().SetColor("_Value", Myst_Color);
-			EPCGJFCCAFH().SetFloat("Data/Skins/", Drop_Floor_Fluid);
-			PGPEMMBJOOG().SetVector("SelectionBox component must be placed on a canvas in Screen Space Overlay mode.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 506f, 1378f));
-			HFBJAOFLCJI().SetTexture("shader.crispwinter", FPHEBLMINDA);
+			NBPKMLMCHFN.SetFloat("_Value", Myst);
+			BFGNMFCNDBC().SetColor("_Value", Myst_Color);
+			HEHKGPKLAKK().SetFloat("default", Drop_Floor_Fluid);
+			HEHKGPKLAKK().SetVector("To {0} at Index {1} \n", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 506f, 1378f));
+			PGPEMMBJOOG().SetTexture("player.goldcrystal", FPHEBLMINDA);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEHKGPKLAKK());
 		}
 		else
 		{

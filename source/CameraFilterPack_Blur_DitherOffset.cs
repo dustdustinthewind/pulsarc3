@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blur/DitherOffset")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blur/DitherOffset")]
 public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 {
 	public Shader SCShader;
@@ -38,7 +38,7 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 
 	private void KCCIEMBMOBA()
 	{
-		SCShader = Shader.Find("restrictions\n\n#until: ");
+		SCShader = Shader.Find("#forever");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -68,7 +68,7 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 
 	private void AGEJKLMJGDO()
 	{
-		SCShader = Shader.Find("Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ");
+		SCShader = Shader.Find("Text");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -77,7 +77,7 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		SCShader = Shader.Find("_Distance");
+		SCShader = Shader.Find("_Level");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -86,7 +86,7 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 
 	private void MMMDPANNAIO()
 	{
-		SCShader = Shader.Find("[Steamworks.NET] SteamAPI_Init() failed. Refer to Valve's documentation or the comment above this line for more information.");
+		SCShader = Shader.Find("[Steamworks.NET] DllCheck Test returned false, One or more of the Steamworks binaries seems to be the wrong version.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -110,11 +110,11 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 737f;
 			}
-			DNLMFEGJJDD().SetFloat("/icon", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("_Value4", Level);
-			IONHGBPGCHK().SetVector("] Suggested ", Distance);
-			DNLMFEGJJDD().SetVector("CameraFilterPack/Glasses_On", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1563f, 1980f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			LNLKMDPHDCC().SetFloat("/icon", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("_Value3", Level);
+			LONNIJMNKFB().SetVector("] Suggested ", Distance);
+			HNICHJCGJOC().SetVector("CameraFilterPack_Glasses_On4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1563f, 1980f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -131,11 +131,11 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 363f;
 			}
-			HNICHJCGJOC().SetFloat("_HexaColor", HBJJOCHGOPH);
-			LONNIJMNKFB().SetFloat("Tab2Content", Level);
-			IONHGBPGCHK().SetVector("_ScreenResolution", Distance);
-			NBPKMLMCHFN.SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1543f, 1397f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			DNLMFEGJJDD().SetFloat("_BorderColor", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("Tab2Content", Level);
+			LNLKMDPHDCC().SetVector("_Value2", Distance);
+			NBPKMLMCHFN.SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1543f, 1397f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -152,11 +152,11 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1571f;
 			}
-			LONNIJMNKFB().SetFloat("settings.cameramovements", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_TimeX", Level);
-			LONNIJMNKFB().SetVector("Joystick1Button4", Distance);
-			HNICHJCGJOC().SetVector(",", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 83f, 1643f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
+			HNICHJCGJOC().SetFloat("CameraMovementSlider", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("CameraFilterPack/TV_VHS", Level);
+			IONHGBPGCHK().SetVector("Y", Distance);
+			LONNIJMNKFB().SetVector(",", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 83f, 1643f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -196,11 +196,11 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 426f;
 			}
-			LNLKMDPHDCC().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("Joystick1Button5", Level);
-			LONNIJMNKFB().SetVector("[Up]", Distance);
-			LNLKMDPHDCC().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 487f, 1804f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			NBPKMLMCHFN.SetFloat("id", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("Joystick1Button4", Level);
+			NBPKMLMCHFN.SetVector("[Down]", Distance);
+			IONHGBPGCHK().SetVector("_EmissionColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 487f, 1804f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -217,11 +217,11 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1359f;
 			}
-			LNLKMDPHDCC().SetFloat("shader.none", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("_MainTex2", Level);
-			DNLMFEGJJDD().SetVector("Created", Distance);
-			NBPKMLMCHFN.SetVector(",", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1410f, 1739f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			LONNIJMNKFB().SetFloat("shader.none", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("CameraFilterPack/Blend2Camera_SplitScreen3D", Level);
+			LONNIJMNKFB().SetVector("#ok", Distance);
+			LNLKMDPHDCC().SetVector(".status", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1410f, 1739f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
 		}
 		else
 		{
@@ -239,7 +239,7 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 
 	private void DLBODOFAJGM()
 	{
-		SCShader = Shader.Find("_Value4");
+		SCShader = Shader.Find("_Value3");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -265,7 +265,7 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		SCShader = Shader.Find("EnvironmentSlider");
+		SCShader = Shader.Find("Tab2Content");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -308,7 +308,7 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find("[PlayerBase] ShowImage \"");
+		SCShader = Shader.Find("[PlayerBase] Got checkpoint at ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -317,7 +317,7 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 
 	private void BMIOFJFMCBG()
 	{
-		SCShader = Shader.Find("_Value2");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -333,11 +333,11 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1999f;
 			}
-			IONHGBPGCHK().SetFloat("path", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("_Value3", Level);
-			DNLMFEGJJDD().SetVector(" This is not possible to be called for standalone input. Please check your platform and code where this is called", Distance);
-			LNLKMDPHDCC().SetVector("Hidden/Image Effects/Cinematic/AmbientOcclusion", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 727f, 228f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
+			NBPKMLMCHFN.SetFloat("path", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("_Value3", Level);
+			DNLMFEGJJDD().SetVector("EventSystem", Distance);
+			LONNIJMNKFB().SetVector("There is already a virtual button named ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 727f, 228f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -354,10 +354,10 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1781f;
 			}
-			NBPKMLMCHFN.SetFloat("menu.enableselectormusic", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("_Green_B", Level);
-			LONNIJMNKFB().SetVector("Dropped Object: ", Distance);
-			DNLMFEGJJDD().SetVector("???", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 150f, 1168f));
+			LONNIJMNKFB().SetFloat("SingleplayerButton", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("_Green_G", Level);
+			HNICHJCGJOC().SetVector("Hello World, is my item a clone? [", Distance);
+			LNLKMDPHDCC().SetVector("challenges.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 150f, 1168f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
@@ -426,11 +426,11 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 432f;
 			}
-			HNICHJCGJOC().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("_TimeX", Level);
-			DNLMFEGJJDD().SetVector("_TimeX", Distance);
-			LONNIJMNKFB().SetVector("CameraFilterPack/Blend2Camera_DarkerColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1667f, 1080f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			LNLKMDPHDCC().SetFloat("_Value4", HBJJOCHGOPH);
+			HNICHJCGJOC().SetFloat("_MainTex2", Level);
+			HNICHJCGJOC().SetVector("CameraFilterPack/Vision_Tunnel", Distance);
+			NBPKMLMCHFN.SetVector("CameraFilterPack/Blend2Camera_DarkerColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1667f, 1080f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -472,10 +472,10 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 				HBJJOCHGOPH = 2f;
 			}
 			DNLMFEGJJDD().SetFloat("maps.", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_Value", Level);
-			DNLMFEGJJDD().SetVector("_Value", Distance);
-			DNLMFEGJJDD().SetVector("SupportLogger Info: PUN {0}: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1369f, 1734f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			LONNIJMNKFB().SetFloat("_ScreenResolution", Level);
+			HNICHJCGJOC().SetVector("CameraFilterPack/Vision_Blood", Distance);
+			NBPKMLMCHFN.SetVector("SupportLogger OnApplicationPause: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1369f, 1734f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -500,9 +500,9 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1077f;
 			}
-			HNICHJCGJOC().SetFloat("Editor/", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("[SteamManager] Connecting to server", Level);
-			HNICHJCGJOC().SetVector("CameraFilterPack/RainFX", Distance);
+			LONNIJMNKFB().SetFloat("Editor/", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("[Steamworks.NET] Could not load [lib]steam_api.dll/so/dylib. It's likely not in the correct location. Refer to the README for more details.\n", Level);
+			HNICHJCGJOC().SetVector("CameraFilterPack_RainFX_Anm2", Distance);
 			IONHGBPGCHK().SetVector("_Offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 364f, 762f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
@@ -521,10 +521,10 @@ public class CameraFilterPack_Blur_DitherOffset : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1722f;
 			}
-			LNLKMDPHDCC().SetFloat("_Value", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat(". Check if the server is available.", Level);
-			HNICHJCGJOC().SetVector("_Blue_C", Distance);
-			LONNIJMNKFB().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 879f, 464f));
+			HNICHJCGJOC().SetFloat("_Value", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Encryption wasn't established: ", Level);
+			IONHGBPGCHK().SetVector("_Blue_C", Distance);
+			HNICHJCGJOC().SetVector("CameraFilterPack/FX_Hexagon_Black", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 879f, 464f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else

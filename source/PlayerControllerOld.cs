@@ -30,40 +30,154 @@ public class PlayerControllerOld : MonoBehaviour
 	[CompilerGenerated]
 	private static Predicate<Slot> KCAPKHIJOHL;
 
-	private void DMIGJHEHPOA()
+	private Slot BEOPBGCLGJB()
 	{
+		int index = UnityEngine.Random.Range(1, slots.Count);
+		while (!slots[index].isFree)
+		{
+			index = UnityEngine.Random.Range(0, slots.Count);
+		}
+		return slots[index];
 	}
 
-	[CompilerGenerated]
-	private static bool GOFEODHBDCD(Slot IACGDFHKCAE)
+	private static bool JKNPLKHOCBE(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == (QuieryObject.Position)5;
+	}
+
+	private static bool ALEPCBGFGGN(Slot IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.isFree;
 	}
 
-	private bool DLCFGGCOMHG()
+	private void HIPEMKNCMLP()
 	{
-		return slots.Find((Slot IACGDFHKCAE) => IACGDFHKCAE.isFree) != null;
 	}
 
-	private static bool FOBLALBEOGK(Slot IACGDFHKCAE)
+	private static bool KEOBMILMDNI(Slot IACGDFHKCAE)
 	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Right;
+		return !IACGDFHKCAE.isFree;
 	}
 
-	private static bool GGFKLIAFCGI(Slot IACGDFHKCAE)
+	private static bool HMGFAAFNLDK(Slot IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.position == QuieryObject.Position.Left;
 	}
 
-	[CompilerGenerated]
-	private static bool EJILMKDFGLJ(Slot IACGDFHKCAE)
+	private static bool LOEDJIAAHKE(Slot IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.position == QuieryObject.Position.Right;
 	}
 
-	private static bool NFCOEJDCKHM(Slot IACGDFHKCAE)
+	private void BOIJIGCEEKM(Slot HOOICOIPKCO)
+	{
+		HOOICOIPKCO.isFree = false;
+		HOOICOIPKCO.timeLeft = currentTime + showTime;
+	}
+
+	private Slot AKPLHEGPFAP()
+	{
+		int index = UnityEngine.Random.Range(1, slots.Count);
+		while (!slots[index].isFree)
+		{
+			index = UnityEngine.Random.Range(0, slots.Count);
+		}
+		return slots[index];
+	}
+
+	private void GLFLNGNKCDN()
+	{
+	}
+
+	private void OBBJCJAILHH(Slot HOOICOIPKCO)
+	{
+		HOOICOIPKCO.isFree = false;
+		HOOICOIPKCO.timeLeft = currentTime + showTime;
+	}
+
+	private static bool BOAOGAAAJLM(Slot IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.position == QuieryObject.Position.Right;
+	}
+
+	private static bool LOCBDBNANAO(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.isFree;
+	}
+
+	private static bool CEBLAEABPNL(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == (QuieryObject.Position)8;
+	}
+
+	private void AEIJFLJEABG()
+	{
+		currentTime += Time.deltaTime;
+		QuieryObject quieryObject = null;
+		foreach (QuieryObject item in IGGMAKNLAEN)
+		{
+			if (currentTime >= item.atTime)
+			{
+				quieryObject = item;
+			}
+		}
+		if (quieryObject != null && DDFHNPDIPDN())
+		{
+			Slot hOOICOIPKCO = HPJBGFABPIC();
+			IGGMAKNLAEN.Remove(quieryObject);
+			quieryObject = null;
+			OBBJCJAILHH(hOOICOIPKCO);
+		}
+		if (CrossPlatformInputManager.GetButtonDown("_TimeX"))
+		{
+			Slot slot = slots.Find(BOAOGAAAJLM);
+			if (!slot.isFree)
+			{
+				slot.isFree = true;
+			}
+		}
+		if (CrossPlatformInputManager.GetButtonDown("Loaded Game: "))
+		{
+			Slot slot2 = slots.Find((Slot IACGDFHKCAE) => IACGDFHKCAE.position == QuieryObject.Position.Left);
+			if (!slot2.isFree)
+			{
+				slot2.isFree = true;
+			}
+		}
+		if (CrossPlatformInputManager.GetButtonDown("Jun"))
+		{
+			Slot slot3 = slots.Find(JNHGHFJEIOM);
+			if (!slot3.isFree)
+			{
+				slot3.isFree = false;
+			}
+		}
+		if (CrossPlatformInputManager.GetButtonDown("Case-Sensitive"))
+		{
+			Slot slot4 = slots.Find(CGLKCKAHDAH);
+			if (!slot4.isFree)
+			{
+				slot4.isFree = false;
+			}
+		}
+		foreach (Slot slot5 in slots)
+		{
+			if (slot5.timeLeft <= currentTime && !slot5.isFree)
+			{
+				Debug.Log("HostType: {0} ");
+				slot5.isFree = false;
+			}
+		}
+		foreach (Slot slot6 in slots)
+		{
+			slot6.go.SetActive(slot6.isFree);
+		}
+	}
+
+	public void PNFHHIJEFKE()
+	{
+		QuieryObject item = new QuieryObject(currentTime);
+		IGGMAKNLAEN.Add(item);
 	}
 
 	[CompilerGenerated]
@@ -72,12 +186,57 @@ public class PlayerControllerOld : MonoBehaviour
 		return IACGDFHKCAE.position == QuieryObject.Position.Down;
 	}
 
-	private static bool MDKLFMNFMGB(Slot IACGDFHKCAE)
+	private static bool DHNIFGDOKFN(Slot IACGDFHKCAE)
 	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Down;
+		return IACGDFHKCAE.position == QuieryObject.Position.Left;
 	}
 
-	private void NBGIMIDICKE()
+	public void ADCJPOAKMDH()
+	{
+		QuieryObject item = new QuieryObject(currentTime);
+		IGGMAKNLAEN.Add(item);
+	}
+
+	private static bool BPPKEBFOMIK(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == (QuieryObject.Position)5;
+	}
+
+	private static bool MIDEMOEMPAA(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.isFree;
+	}
+
+	private static bool ALDOJKNILIE(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == QuieryObject.Position.Right;
+	}
+
+	private static bool CGLKCKAHDAH(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == (QuieryObject.Position)4;
+	}
+
+	private void Start()
+	{
+		IGGMAKNLAEN = new List<QuieryObject>();
+	}
+
+	private void EKENDPKLMFN()
+	{
+	}
+
+	private static bool JNHGHFJEIOM(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == QuieryObject.Position.Up;
+	}
+
+	private static bool JICLMAGLMPJ(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == (QuieryObject.Position)6;
+	}
+
+	private void KCCIEMBMOBA()
 	{
 		IGGMAKNLAEN = new List<QuieryObject>();
 	}
@@ -88,49 +247,28 @@ public class PlayerControllerOld : MonoBehaviour
 		return IACGDFHKCAE.position == QuieryObject.Position.Up;
 	}
 
-	private void EGEPLFGKGLI()
+	private void DIDEEDHGHKC()
 	{
-		IGGMAKNLAEN = new List<QuieryObject>();
 	}
 
-	private static bool ICDFKALGKEO(Slot IACGDFHKCAE)
+	[CompilerGenerated]
+	private static bool EJILMKDFGLJ(Slot IACGDFHKCAE)
 	{
-		return IACGDFHKCAE.isFree;
+		return IACGDFHKCAE.position == QuieryObject.Position.Right;
 	}
 
-	private void KEABOLAKABM(Slot HOOICOIPKCO)
-	{
-		HOOICOIPKCO.isFree = true;
-		HOOICOIPKCO.timeLeft = currentTime + showTime;
-	}
-
-	private static bool EHIKCPMPCBF(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == (QuieryObject.Position)8;
-	}
-
-	private static bool JMGNACDHHFN(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
-	}
-
-	public void FEJEKFDALAL()
+	public void AddRandom()
 	{
 		QuieryObject item = new QuieryObject(currentTime);
 		IGGMAKNLAEN.Add(item);
 	}
 
-	private Slot IFEBIMGKDMK()
+	private static bool LMNHBFHBHBO(Slot IACGDFHKCAE)
 	{
-		int index = UnityEngine.Random.Range(0, slots.Count);
-		while (!slots[index].isFree)
-		{
-			index = UnityEngine.Random.Range(1, slots.Count);
-		}
-		return slots[index];
+		return IACGDFHKCAE.position == (QuieryObject.Position)6;
 	}
 
-	private void CGBHOELMAOC()
+	private void KMKLDAJLCNM()
 	{
 		currentTime += Time.deltaTime;
 		QuieryObject quieryObject = null;
@@ -141,40 +279,40 @@ public class PlayerControllerOld : MonoBehaviour
 				quieryObject = item;
 			}
 		}
-		if (quieryObject != null && OGMBADIJAAF())
+		if (quieryObject != null && GHECDKHPJPC())
 		{
-			Slot hOOICOIPKCO = DFKOGPGLPLB();
+			Slot hOOICOIPKCO = LBGAOPLDMLA();
 			IGGMAKNLAEN.Remove(quieryObject);
 			quieryObject = null;
 			BOIJIGCEEKM(hOOICOIPKCO);
 		}
-		if (CrossPlatformInputManager.GetButtonDown("CameraFilterPack/Vision_Hell_Blood"))
+		if (CrossPlatformInputManager.GetButtonDown("_History1Weight"))
 		{
-			Slot slot = slots.Find(BIPGPDBIPED);
+			Slot slot = slots.Find(BOAOGAAAJLM);
 			if (!slot.isFree)
 			{
-				slot.isFree = true;
+				slot.isFree = false;
 			}
 		}
-		if (CrossPlatformInputManager.GetButtonDown("_Green_R"))
+		if (CrossPlatformInputManager.GetButtonDown("_Value4"))
 		{
-			Slot slot2 = slots.Find(BNGOIPAANHB);
+			Slot slot2 = slots.Find((Slot IACGDFHKCAE) => IACGDFHKCAE.position == QuieryObject.Position.Left);
 			if (!slot2.isFree)
 			{
-				slot2.isFree = true;
+				slot2.isFree = false;
 			}
 		}
-		if (CrossPlatformInputManager.GetButtonDown("Tab2Content"))
+		if (CrossPlatformInputManager.GetButtonDown("_Value"))
 		{
-			Slot slot3 = slots.Find(GMOIFLAIDOB);
+			Slot slot3 = slots.Find(JICLMAGLMPJ);
 			if (!slot3.isFree)
 			{
 				slot3.isFree = true;
 			}
 		}
-		if (CrossPlatformInputManager.GetButtonDown("Electronic"))
+		if (CrossPlatformInputManager.GetButtonDown("Exit to menu?"))
 		{
-			Slot slot4 = slots.Find(GKHILOHPCCO);
+			Slot slot4 = slots.Find(CEBLAEABPNL);
 			if (!slot4.isFree)
 			{
 				slot4.isFree = false;
@@ -184,8 +322,8 @@ public class PlayerControllerOld : MonoBehaviour
 		{
 			if (slot5.timeLeft <= currentTime && !slot5.isFree)
 			{
-				Debug.Log("player.bluebat");
-				slot5.isFree = false;
+				Debug.Log("GraphicsQualitySlider");
+				slot5.isFree = true;
 			}
 		}
 		foreach (Slot slot6 in slots)
@@ -194,95 +332,51 @@ public class PlayerControllerOld : MonoBehaviour
 		}
 	}
 
-	private static bool CHNGDHBINLM(Slot IACGDFHKCAE)
+	private static bool JNDOAKHHCNP(Slot IACGDFHKCAE)
 	{
-		return IACGDFHKCAE.position == (QuieryObject.Position)6;
+		return IACGDFHKCAE.position == QuieryObject.Position.Up;
 	}
 
-	private static bool KGJCMMJMKJO(Slot IACGDFHKCAE)
+	private Slot HPJBGFABPIC()
 	{
-		return !IACGDFHKCAE.isFree;
+		int index = UnityEngine.Random.Range(0, slots.Count);
+		while (!slots[index].isFree)
+		{
+			index = UnityEngine.Random.Range(0, slots.Count);
+		}
+		return slots[index];
 	}
 
-	private void NCPAFCKGJEA()
-	{
-		currentTime += Time.deltaTime;
-		QuieryObject quieryObject = null;
-		foreach (QuieryObject item in IGGMAKNLAEN)
-		{
-			if (currentTime >= item.atTime)
-			{
-				quieryObject = item;
-			}
-		}
-		if (quieryObject != null && ACGJJLHFCKK())
-		{
-			Slot hOOICOIPKCO = AKJJPIJCENJ();
-			IGGMAKNLAEN.Remove(quieryObject);
-			quieryObject = null;
-			BOCNLFGDMDB(hOOICOIPKCO);
-		}
-		if (CrossPlatformInputManager.GetButtonDown("]"))
-		{
-			Slot slot = slots.Find(JJMIGGMBHFE);
-			if (!slot.isFree)
-			{
-				slot.isFree = false;
-			}
-		}
-		if (CrossPlatformInputManager.GetButtonDown("The process failed: "))
-		{
-			Slot slot2 = slots.Find(BNGOIPAANHB);
-			if (!slot2.isFree)
-			{
-				slot2.isFree = true;
-			}
-		}
-		if (CrossPlatformInputManager.GetButtonDown("CameraFilterPack_TV_Noise"))
-		{
-			Slot slot3 = slots.Find(MDKLFMNFMGB);
-			if (!slot3.isFree)
-			{
-				slot3.isFree = true;
-			}
-		}
-		if (CrossPlatformInputManager.GetButtonDown("_TimeX"))
-		{
-			Slot slot4 = slots.Find(CHNGDHBINLM);
-			if (!slot4.isFree)
-			{
-				slot4.isFree = true;
-			}
-		}
-		foreach (Slot slot5 in slots)
-		{
-			if (slot5.timeLeft <= currentTime && !slot5.isFree)
-			{
-				Debug.Log("</color>");
-				slot5.isFree = true;
-			}
-		}
-		foreach (Slot slot6 in slots)
-		{
-			slot6.go.SetActive(!slot6.isFree);
-		}
-	}
-
-	private static bool BCBLGFDKHGC(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == (QuieryObject.Position)8;
-	}
-
-	private void KIMMMCJFMAB()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	private void FEONBLOKEBF()
+	private void FixedUpdate()
 	{
 	}
 
-	private Slot AKJJPIJCENJ()
+	private bool GHECDKHPJPC()
+	{
+		return slots.Find(KEOBMILMDNI) != null;
+	}
+
+	private void MFMILEABJBO()
+	{
+	}
+
+	private static bool NGBNNHAAILI(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == QuieryObject.Position.Right;
+	}
+
+	private static bool PIOOICJFPHK(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.position == QuieryObject.Position.Right;
+	}
+
+	[CompilerGenerated]
+	private static bool GOFEODHBDCD(Slot IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.isFree;
+	}
+
+	private Slot LBGAOPLDMLA()
 	{
 		int index = UnityEngine.Random.Range(0, slots.Count);
 		while (!slots[index].isFree)
@@ -290,16 +384,6 @@ public class PlayerControllerOld : MonoBehaviour
 			index = UnityEngine.Random.Range(1, slots.Count);
 		}
 		return slots[index];
-	}
-
-	private static bool GMOIFLAIDOB(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Up;
-	}
-
-	private void FBPHNEJBDJN()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
 	}
 
 	private Slot KBKCFMIDGFH()
@@ -312,122 +396,9 @@ public class PlayerControllerOld : MonoBehaviour
 		return slots[index];
 	}
 
-	private void Start()
+	private bool DLCFGGCOMHG()
 	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	public void EFCFACCBONB()
-	{
-		QuieryObject item = new QuieryObject(currentTime);
-		IGGMAKNLAEN.Add(item);
-	}
-
-	private Slot NCNLCENADIM()
-	{
-		int index = UnityEngine.Random.Range(1, slots.Count);
-		while (!slots[index].isFree)
-		{
-			index = UnityEngine.Random.Range(1, slots.Count);
-		}
-		return slots[index];
-	}
-
-	private void FFJCAIKIEAG()
-	{
-	}
-
-	public void NEKLPNJDAMM()
-	{
-		QuieryObject item = new QuieryObject(currentTime);
-		IGGMAKNLAEN.Add(item);
-	}
-
-	private Slot PDFPKANJPAH()
-	{
-		int index = UnityEngine.Random.Range(0, slots.Count);
-		while (!slots[index].isFree)
-		{
-			index = UnityEngine.Random.Range(0, slots.Count);
-		}
-		return slots[index];
-	}
-
-	private static bool OFKFGKKMGII(Slot IACGDFHKCAE)
-	{
-		return !IACGDFHKCAE.isFree;
-	}
-
-	private static bool JJMIGGMBHFE(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Right;
-	}
-
-	private bool KEBLDAOPFGC()
-	{
-		return slots.Find(OFKFGKKMGII) == null;
-	}
-
-	private bool PGOCIEBDFPE()
-	{
-		return slots.Find(OFKFGKKMGII) != null && false;
-	}
-
-	private static bool GBKEHAAPIMN(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
-	}
-
-	private static bool JGNJCFEFMBP(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Right;
-	}
-
-	private void JKBMKPDGCHG()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	private static bool LDJOOIDBNGE(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
-	}
-
-	public void IOOEABOGGCD()
-	{
-		QuieryObject item = new QuieryObject(currentTime);
-		IGGMAKNLAEN.Add(item);
-	}
-
-	private void NNFMIAFHMJM()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	private void NPLCENPNJBM()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	private void BOIJIGCEEKM(Slot HOOICOIPKCO)
-	{
-		HOOICOIPKCO.isFree = false;
-		HOOICOIPKCO.timeLeft = currentTime + showTime;
-	}
-
-	private static bool NCBNMKBJBCB(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
-	}
-
-	private void DLBODOFAJGM()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	private static bool BLJJIAOLKPL(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
+		return slots.Find((Slot IACGDFHKCAE) => IACGDFHKCAE.isFree) != null;
 	}
 
 	private void Update()
@@ -494,163 +465,9 @@ public class PlayerControllerOld : MonoBehaviour
 		}
 	}
 
-	private void AGEJKLMJGDO()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	private void NDAJBJFJGCF()
-	{
-		currentTime += Time.deltaTime;
-		QuieryObject quieryObject = null;
-		foreach (QuieryObject item in IGGMAKNLAEN)
-		{
-			if (currentTime >= item.atTime)
-			{
-				quieryObject = item;
-			}
-		}
-		if (quieryObject != null && IEAEDAEDCEA())
-		{
-			Slot hOOICOIPKCO = DFKOGPGLPLB();
-			IGGMAKNLAEN.Remove(quieryObject);
-			quieryObject = null;
-			FICNHKDOAND(hOOICOIPKCO);
-		}
-		if (CrossPlatformInputManager.GetButtonDown("CameraFilterPack/Blur_Steam"))
-		{
-			Slot slot = slots.Find(BIPGPDBIPED);
-			if (!slot.isFree)
-			{
-				slot.isFree = true;
-			}
-		}
-		if (CrossPlatformInputManager.GetButtonDown("settings.gamemessagesduration"))
-		{
-			Slot slot2 = slots.Find(NKEAFGDNPMG);
-			if (!slot2.isFree)
-			{
-				slot2.isFree = false;
-			}
-		}
-		if (CrossPlatformInputManager.GetButtonDown("[LevelEditorScene] Error: Timeout :S"))
-		{
-			Slot slot3 = slots.Find(EHIKCPMPCBF);
-			if (!slot3.isFree)
-			{
-				slot3.isFree = true;
-			}
-		}
-		if (CrossPlatformInputManager.GetButtonDown("settings_bindings_sec_"))
-		{
-			Slot slot4 = slots.Find(JLGKAMLDKLM);
-			if (!slot4.isFree)
-			{
-				slot4.isFree = false;
-			}
-		}
-		foreach (Slot slot5 in slots)
-		{
-			if (slot5.timeLeft <= currentTime && !slot5.isFree)
-			{
-				Debug.Log("MusicFileSelector");
-				slot5.isFree = true;
-			}
-		}
-		foreach (Slot slot6 in slots)
-		{
-			slot6.go.SetActive(!slot6.isFree);
-		}
-	}
-
-	private void COIJKMKIEAK()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	private static bool DCMINJHDBKO(Slot IACGDFHKCAE)
+	private static bool DKPJMJMCIDA(Slot IACGDFHKCAE)
 	{
 		return !IACGDFHKCAE.isFree;
-	}
-
-	private bool ACGJJLHFCKK()
-	{
-		return slots.Find((Slot IACGDFHKCAE) => IACGDFHKCAE.isFree) != null || true;
-	}
-
-	private bool ALOBEJDLBOA()
-	{
-		return slots.Find(FCBILEMIMKC) != null && false;
-	}
-
-	private static bool GKHILOHPCCO(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == (QuieryObject.Position)6;
-	}
-
-	private void MKIMDFLBFOM()
-	{
-		IGGMAKNLAEN = new List<QuieryObject>();
-	}
-
-	private static bool NKEAFGDNPMG(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
-	}
-
-	private void LPLLCEMCOMD()
-	{
-	}
-
-	private static bool KDIJHMMEMJB(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Right;
-	}
-
-	private bool OGMBADIJAAF()
-	{
-		return slots.Find(ICDFKALGKEO) != null && false;
-	}
-
-	private void OBPFNGKAOLD()
-	{
-	}
-
-	public void AddRandom()
-	{
-		QuieryObject item = new QuieryObject(currentTime);
-		IGGMAKNLAEN.Add(item);
-	}
-
-	private static bool BIPGPDBIPED(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
-	}
-
-	private bool IEAEDAEDCEA()
-	{
-		return slots.Find(OFKFGKKMGII) != null && false;
-	}
-
-	private void FICNHKDOAND(Slot HOOICOIPKCO)
-	{
-		HOOICOIPKCO.isFree = true;
-		HOOICOIPKCO.timeLeft = currentTime + showTime;
-	}
-
-	private void BOCNLFGDMDB(Slot HOOICOIPKCO)
-	{
-		HOOICOIPKCO.isFree = false;
-		HOOICOIPKCO.timeLeft = currentTime + showTime;
-	}
-
-	private void FixedUpdate()
-	{
-	}
-
-	private static bool NGHGHHPEEAG(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
 	}
 
 	[CompilerGenerated]
@@ -659,42 +476,13 @@ public class PlayerControllerOld : MonoBehaviour
 		return IACGDFHKCAE.position == QuieryObject.Position.Left;
 	}
 
-	private static bool JLGKAMLDKLM(Slot IACGDFHKCAE)
+	private void NBGIMIDICKE()
 	{
-		return IACGDFHKCAE.position == (QuieryObject.Position)8;
+		IGGMAKNLAEN = new List<QuieryObject>();
 	}
 
-	private void LGOHDOFFKIB()
+	private bool DDFHNPDIPDN()
 	{
-	}
-
-	private Slot DFKOGPGLPLB()
-	{
-		int index = UnityEngine.Random.Range(1, slots.Count);
-		while (!slots[index].isFree)
-		{
-			index = UnityEngine.Random.Range(1, slots.Count);
-		}
-		return slots[index];
-	}
-
-	private static bool BNGOIPAANHB(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.position == QuieryObject.Position.Left;
-	}
-
-	private static bool OCGCGLGOADP(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.isFree;
-	}
-
-	private static bool FCBILEMIMKC(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.isFree;
-	}
-
-	private static bool EGAIJMAECNN(Slot IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.isFree;
+		return slots.Find(LOCBDBNANAO) != null && false;
 	}
 }

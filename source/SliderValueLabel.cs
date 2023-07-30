@@ -21,22 +21,92 @@ public class SliderValueLabel : MonoBehaviour
 	{
 		internal string IHIAMPBEFEE;
 
+		internal bool AHBIANHNBBC(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool AEINPAGJFME(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool FBGMHPEEIFC(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool FIPCLHEKKCA(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
 		internal bool DGDCNDCGPCP(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool OFHCGKJFGDI(SliderKeyValue IACGDFHKCAE)
+		internal bool LLNDDFGPOPL(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool FFEGPHJKMFK(SliderKeyValue IACGDFHKCAE)
+		internal bool DIOBKCECBCH(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool LGKMMLGKBEF(SliderKeyValue IACGDFHKCAE)
+		internal bool CJDNDHBDMMO(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool EFAPFFFGOOA(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool HNMFCOHLALO(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool JGEDLMKBGGL(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool IPAAAAPBFEG(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool PAAEHHJGPCH(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool LADECCOJPPL(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool KFNBKFELFLH(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool FHIJCPPECHA(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool BDNFJBBKBOL(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool EEBODGOFEGB(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
@@ -46,17 +116,22 @@ public class SliderValueLabel : MonoBehaviour
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool DAICIOGOPNL(SliderKeyValue IACGDFHKCAE)
+		internal bool FCAGEDLBBHD(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool GMLFBOMLINM(SliderKeyValue IACGDFHKCAE)
+		internal bool PHFMMNELDEA(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool LLGBONGFMBH(SliderKeyValue IACGDFHKCAE)
+		internal bool DFHFAFAJGBA(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool DBFPGFHEGKA(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
@@ -71,12 +146,22 @@ public class SliderValueLabel : MonoBehaviour
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool JKEDCEOCPJO(SliderKeyValue IACGDFHKCAE)
+		internal bool JBCHBMKPDAJ(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool AGJKEBOPIOC(SliderKeyValue IACGDFHKCAE)
+		internal bool EKHOOPGPPGE(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool LOEAMHGMMPK(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool ECGDAHDOPBO(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
@@ -86,77 +171,17 @@ public class SliderValueLabel : MonoBehaviour
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool KFNPHCCAJFD(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool IGFOBPKFCDJ(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool KFNBKFELFLH(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
 		internal bool HMMBBDJNGGL(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool BFEABMIFIEE(SliderKeyValue IACGDFHKCAE)
+		internal bool NHPDJEKEOKI(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool DIOBKCECBCH(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool FIPCLHEKKCA(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool HNMFCOHLALO(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool ONEPCCGOEKI(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool EGKGJJGAPMN(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool BKNHHGBPLGH(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool MMJGKBNKFGM(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool BMAOCLKPNNC(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool HCFLGKJFKFE(SliderKeyValue IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.key == IHIAMPBEFEE;
-		}
-
-		internal bool MEMPOPNAEDN(SliderKeyValue IACGDFHKCAE)
+		internal bool JBAJEMGOPDL(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
@@ -166,7 +191,67 @@ public class SliderValueLabel : MonoBehaviour
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
 
-		internal bool KGKMOLCPDIH(SliderKeyValue IACGDFHKCAE)
+		internal bool MMJGKBNKFGM(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool INCKLCFEMJK(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool BMAOCLKPNNC(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool BEBAENEJFLD(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool GLLCFMBPDEG(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool FMIHBNPKEEO(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool GDFBBMNOGGD(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool PBCAHKDLFPE(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool FDAIFOAGDLA(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool MKLOGMNMFAF(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool DAICIOGOPNL(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool HJKJAANIFLL(SliderKeyValue IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.key == IHIAMPBEFEE;
+		}
+
+		internal bool EGKGJJGAPMN(SliderKeyValue IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.key == IHIAMPBEFEE;
 		}
@@ -184,444 +269,44 @@ public class SliderValueLabel : MonoBehaviour
 
 	public List<SliderKeyValue> customKeyValues = new List<SliderKeyValue>();
 
-	private void MKIMDFLBFOM()
+	private void LLJLDLLNFBH()
 	{
-		MPNBGMNPFNJ();
+		JLOGECMCEJC();
 	}
 
-	private void KKLMPKLKAEM()
+	private void JAAJECBCCFM()
 	{
-		ILBEEBHIDEG();
+		CAIOCMGNHDK();
 	}
 
-	private void AKHCOBHHGJP()
-	{
-		FAGCFADJMDI();
-	}
-
-	private void JMEOGJHCONJ()
-	{
-		OIBELCAKKHH();
-	}
-
-	private void CGDMLHLJIDK()
-	{
-		DHECOKJKOIG();
-	}
-
-	private void MJNPIDGNJMK()
-	{
-		JOLJFGLFNCK();
-	}
-
-	public void NGLIPNLHBFK()
+	public void EKDJFKAPIKH()
 	{
 		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
 		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
 		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
 		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.DKECBIHCKJL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
 		}
 	}
 
-	public void OIBELCAKKHH()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void FJMDFKMLIJC()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void PFNFPINPCMH()
-	{
-		ILBEEBHIDEG();
-	}
-
-	private void LCDJFJIBADI()
-	{
-		FAODNNBJEML();
-	}
-
-	private void EHCGBJDFMHG()
-	{
-		IOMCOLOEHFL();
-	}
-
-	private void AEEGKLABFLN()
-	{
-		POFHAJFLAPK();
-	}
-
-	private void GMELGGJOPBB()
-	{
-		NGLIPNLHBFK();
-	}
-
-	private void BGDPIHMAACO()
-	{
-		FAGCFADJMDI();
-	}
-
-	private void MDCFIHDPLIG()
-	{
-		NNFCMCBGICF();
-	}
-
-	private void JKFDDNMPOJH()
-	{
-		LMJPEEKJGPK();
-	}
-
-	public void HMFLACFDMAA()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void JOACBIEHHCE()
-	{
-		POFHAJFLAPK();
-	}
-
-	public void FAGCFADJMDI()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void HLDFOJMHKNL()
-	{
-		IODAIHCJOMN();
-	}
-
-	public void NKDIBKDAENF()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void HOHFDDNCGCC()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void DPLLKHHLDBB()
-	{
-		IOMCOLOEHFL();
-	}
-
-	private void AEMGPJDJGBJ()
-	{
-		IEAMEOBKGBP();
-	}
-
-	private void LBIOIEANMGI()
-	{
-		NNFCMCBGICF();
-	}
-
-	private void FOLDLDLFFLM()
-	{
-		MOAGIBHBDGJ();
-	}
-
-	private void MAOCOEGAFND()
-	{
-		DLHNBKDMPIO();
-	}
-
-	private void KDMKDEKCELE()
-	{
-		EKMAGCOPLPD();
-	}
-
-	private void IKMELABKBHO()
-	{
-		LMJPEEKJGPK();
-	}
-
-	private void IEMEHGCFAPD()
-	{
-		GCFNHPDPOOL();
-	}
-
-	public void DLHNBKDMPIO()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void DKOPKPBLDHH()
-	{
-		GFMKDMAKECF();
-	}
-
-	private void EIMNPCMHJLJ()
-	{
-		OIBELCAKKHH();
-	}
-
-	public void DFMLOIEKHLG()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void DLBODOFAJGM()
-	{
-		KCOBKOMDIKN();
-	}
-
-	private void PHJJHFBLICM()
-	{
-		FJMDFKMLIJC();
-	}
-
-	private void FJNCHGLIEMA()
-	{
-		NNFCMCBGICF();
-	}
-
-	private void KOFAMEKHHGD()
-	{
-		OIBELCAKKHH();
-	}
-
-	public void PBCNOANNNBP()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void LEAHIBJDMBI()
-	{
-		EKMAGCOPLPD();
-	}
-
-	public void IELBCJHEAFL()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void GCFNHPDPOOL()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void IBFJAOINHMK()
-	{
-		NGLIPNLHBFK();
-	}
-
-	private void GCHBGCGBMCK()
-	{
-		EKMAGCOPLPD();
-	}
-
-	public void GFMKDMAKECF()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void IEAMEOBKGBP()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void MOAGIBHBDGJ()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void KIEJKBNBHMD()
-	{
-		NKDIBKDAENF();
-	}
-
-	private void FIKFJDFELIP()
-	{
-		NFBCALMKMLN();
-	}
-
-	private void JOPCCCCHNLI()
-	{
-		FAGCFADJMDI();
-	}
-
-	private void KLILJHJNICK()
-	{
-		GCFNHPDPOOL();
-	}
-
-	private void KIMMMCJFMAB()
-	{
-		IODAIHCJOMN();
-	}
-
-	public void DHECOKJKOIG()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void MECJHOJPODB()
-	{
-		GMOHNBFKLPG();
-	}
-
-	public void NFBCALMKMLN()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void ICILLMAKLMI()
-	{
-		NGLIPNLHBFK();
-	}
-
-	private void GJCOELHNLJE()
-	{
-		DLHNBKDMPIO();
-	}
-
-	public void FCNEBPDNKGH()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void KCOBKOMDIKN()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void DFFKKLAPHCC()
-	{
-		NKDIBKDAENF();
-	}
-
-	public void FALFNOMDNAA()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void GHILDCBCDJI()
+	private void MMOKKAPFGAK()
 	{
 		UpdateText();
 	}
 
-	public void LMJPEEKJGPK()
+	public void AIDDLGCIHON()
 	{
 		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
 		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
 		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.KDBLEDDGCJK(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
 		}
 	}
 
-	private void IDJKNBDKHBD()
+	private void FHPFJBFCOOF()
 	{
-		EOMBIGCLDDO();
-	}
-
-	private void POIMNOBDBBN()
-	{
-		DFMLOIEKHLG();
-	}
-
-	private void FJHFOBHJEHL()
-	{
-		FCNEBPDNKGH();
+		CAIOCMGNHDK();
 	}
 
 	private void Start()
@@ -629,94 +314,19 @@ public class SliderValueLabel : MonoBehaviour
 		UpdateText();
 	}
 
-	public void MPNBGMNPFNJ()
+	public void JLOGECMCEJC()
 	{
 		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
 		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
 		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.FOOAGGCODAH(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
 		}
 	}
 
-	private void EHJJFJCKGAJ()
+	private void JHPOIOELNCG()
 	{
-		JANGLKBLHEF();
-	}
-
-	private void AGMJDGHLBMN()
-	{
-		GMOHNBFKLPG();
-	}
-
-	private void EDPDMBFLHLP()
-	{
-		IODAIHCJOMN();
-	}
-
-	private void ONMGIPAILOH()
-	{
-		POFHAJFLAPK();
-	}
-
-	public void DKDHEBFIHEP()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void IDIIELPAMCJ()
-	{
-		OIBELCAKKHH();
-	}
-
-	private void NNCCPEBIAKH()
-	{
-		PBCNOANNNBP();
-	}
-
-	public void GMOHNBFKLPG()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void NNFMIAFHMJM()
-	{
-		ILBEEBHIDEG();
-	}
-
-	private void MNBPNHNAEBK()
-	{
-		IODAIHCJOMN();
-	}
-
-	private void EPEGAEGDJAM()
-	{
-		GCFNHPDPOOL();
-	}
-
-	public void NNFCMCBGICF()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void OMCLOFCJMPG()
-	{
-		FCNEBPDNKGH();
+		GBFEHJOGOCJ();
 	}
 
 	public void POFHAJFLAPK()
@@ -725,248 +335,8 @@ public class SliderValueLabel : MonoBehaviour
 		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
 		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
 		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.KDBLEDDGCJK(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
 		}
-	}
-
-	private void BGFJOEPFOPM()
-	{
-		IEAMEOBKGBP();
-	}
-
-	public void FAODNNBJEML()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void JAGHOBNOKLN()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void JHANGPCOCIG()
-	{
-		JAGHOBNOKLN();
-	}
-
-	public void IOMCOLOEHFL()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void OAFDLPIGMEO()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void OBAEDJJDCPN()
-	{
-		UpdateText();
-	}
-
-	private void FHPFJBFCOOF()
-	{
-		AEHOKFIKFMB();
-	}
-
-	private void DDBOODLPCAM()
-	{
-		FJMDFKMLIJC();
-	}
-
-	private void PBEPCAPAKLG()
-	{
-		DKDHEBFIHEP();
-	}
-
-	private void PKGJJFIFLII()
-	{
-		FAGCFADJMDI();
-	}
-
-	public void EOMBIGCLDDO()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void ILBEEBHIDEG()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void EKMAGCOPLPD()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void LIBGAKMKHJJ()
-	{
-		LMJPEEKJGPK();
-	}
-
-	public void JANGLKBLHEF()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void IODAIHCJOMN()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void GFACKFCEIBC()
-	{
-		IELBCJHEAFL();
-	}
-
-	private void ONKDMMJPEMN()
-	{
-		OAFDLPIGMEO();
-	}
-
-	private void CCLNNLCOPBL()
-	{
-		IELBCJHEAFL();
-	}
-
-	private void ADPLHDFJFID()
-	{
-		IEAMEOBKGBP();
-	}
-
-	private void DBLILJGKGHJ()
-	{
-		KCOBKOMDIKN();
-	}
-
-	private void ANKIJGCGCBF()
-	{
-		FCNEBPDNKGH();
-	}
-
-	private void Update()
-	{
-		UpdateText();
-	}
-
-	private void JBCNIPJDPJB()
-	{
-		FALFNOMDNAA();
-	}
-
-	public void GLOHOBECDHL()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void JOLJFGLFNCK()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void LCJHDLKJEOM()
-	{
-		AEHOKFIKFMB();
-	}
-
-	public void DBJELEPPKEP()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	public void AEHOKFIKFMB()
-	{
-		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
-		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
-		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
-		{
-			GetComponent<Text>().text = textBefore + LocalizationService.Instance.HOPMEAJKPHL(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
-		}
-	}
-
-	private void MBLDJEFBLFL()
-	{
-		GMOHNBFKLPG();
-	}
-
-	private void KNBJBNDGCIJ()
-	{
-		GMOHNBFKLPG();
-	}
-
-	private void FMNPFCHBLJF()
-	{
-		NKDIBKDAENF();
-	}
-
-	private void MDNHCLKNCLE()
-	{
-		HMFLACFDMAA();
-	}
-
-	private void KCDOMIJBFLL()
-	{
-		FAGCFADJMDI();
 	}
 
 	public void UpdateText()
@@ -979,13 +349,253 @@ public class SliderValueLabel : MonoBehaviour
 		}
 	}
 
-	private void CIPKEPDELJB()
+	public void FCOAKCHELEH()
 	{
-		IELBCJHEAFL();
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GAAFIKGPNAO(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
 	}
 
-	private void HMNLHMLILKD()
+	private void EGEPLFGKGLI()
+	{
+		AIDDLGCIHON();
+	}
+
+	public void BOKIFDBMDFO()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.EHOJEKMEKCB(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	public void KKAOAJPLEHG()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.POMBHCDEONC(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	public void GBFEHJOGOCJ()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	public void CAIOCMGNHDK()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.EHOJEKMEKCB(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	public void OILNDNFNMMP()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.PLFJBNAEKML(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	private void OEENOOGEEHD()
+	{
+		BPBAMIHIBAG();
+	}
+
+	private void DNNFHBOOPIN()
+	{
+		EHILNHKOHBP();
+	}
+
+	private void IDIIELPAMCJ()
+	{
+		MJPFNFKEBAO();
+	}
+
+	private void PAKPHKPDKGE()
 	{
 		UpdateText();
+	}
+
+	private void AGMJDGHLBMN()
+	{
+		POFHAJFLAPK();
+	}
+
+	private void OBAEDJJDCPN()
+	{
+		EKDJFKAPIKH();
+	}
+
+	private void MMBPLGGLPDB()
+	{
+		CAIOCMGNHDK();
+	}
+
+	private void KMKLDAJLCNM()
+	{
+		FCOAKCHELEH();
+	}
+
+	public void EKMAGCOPLPD()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.KDBLEDDGCJK(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	private void Update()
+	{
+		UpdateText();
+	}
+
+	public void MOAGIBHBDGJ()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.EHOJEKMEKCB(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	private void MFMIODIAKNI()
+	{
+		EKMAGCOPLPD();
+	}
+
+	public void BPBAMIHIBAG()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.EHOJEKMEKCB(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	public void MJPFNFKEBAO()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.FOOAGGCODAH(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	private void BGDONBMDPGM()
+	{
+		AIDDLGCIHON();
+	}
+
+	private void FEHCNJLLJMP()
+	{
+		AIDDLGCIHON();
+	}
+
+	private void KMCPMOGKDEH()
+	{
+		KKAOAJPLEHG();
+	}
+
+	private void FOMNCPKKCFN()
+	{
+		UpdateText();
+	}
+
+	private void OMCLOFCJMPG()
+	{
+		POFHAJFLAPK();
+	}
+
+	private void MKIMDFLBFOM()
+	{
+		AIDDLGCIHON();
+	}
+
+	private void BGFJOEPFOPM()
+	{
+		POFHAJFLAPK();
+	}
+
+	private void CGDMLHLJIDK()
+	{
+		JLOGECMCEJC();
+	}
+
+	public void EHILNHKOHBP()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GAAFIKGPNAO(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	private void DNENFLNCIJP()
+	{
+		GBFEHJOGOCJ();
+	}
+
+	private void JOACBIEHHCE()
+	{
+		EKMAGCOPLPD();
+	}
+
+	private void MAOCOEGAFND()
+	{
+		CAIOCMGNHDK();
+	}
+
+	private void LJIHHJOAJCN()
+	{
+		UpdateText();
+	}
+
+	public void JKJCEFCPAOO()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 0 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.GetLocalizatedText(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	public void GAAOPJAEIPA()
+	{
+		string IHIAMPBEFEE = ((!cut) ? (GetComponentInParent<Slider>().value * multiply).ToString() : (GetComponentInParent<Slider>().value * multiply).ToString(cutFormat));
+		GetComponent<Text>().text = textBefore + IHIAMPBEFEE + textAfter;
+		if (customKeyValues.Count > 1 && customKeyValues.Exists((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE))
+		{
+			GetComponent<Text>().text = textBefore + LocalizationService.Instance.EHOJEKMEKCB(customKeyValues.Find((SliderKeyValue IACGDFHKCAE) => IACGDFHKCAE.key == IHIAMPBEFEE).value) + textAfter;
+		}
+	}
+
+	private void BMOFEBKGLFI()
+	{
+		GAAOPJAEIPA();
 	}
 }

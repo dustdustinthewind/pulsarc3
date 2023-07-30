@@ -55,7 +55,7 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		SCShader = Shader.Find("_TapLow");
+		SCShader = Shader.Find("_Threshhold");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -87,14 +87,14 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 			{
 				HBJJOCHGOPH = 99f;
 			}
-			PDEAHJPOMEF().SetFloat("finished", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("[PlayerBase] Reset", HBJJOCHGOPH);
 			if (Brightness == 666f)
 			{
 				Brightness = 657f;
 			}
-			LDNADDJMIPK().SetFloat("_Value4", Brightness);
+			NBPKMLMCHFN.SetFloat("_Value3", Brightness);
 			RenderTexture temporary = RenderTexture.GetTemporary(ResolutionX, ResolutionY, 0);
-			Graphics.Blit(AAACLELCPML, temporary, NBPKMLMCHFN);
+			Graphics.Blit(AAACLELCPML, temporary, PDEAHJPOMEF());
 			temporary.filterMode = FilterMode.Point;
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
@@ -119,7 +119,7 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("0");
+		SCShader = Shader.Find("#ok");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -144,14 +144,14 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1963f;
 			}
-			KAFBNOBOIAJ().SetFloat("_HighlightSuppression", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("_FullResolutionFiltering", HBJJOCHGOPH);
 			if (Brightness == 824f)
 			{
 				Brightness = 1725f;
 			}
-			PDEAHJPOMEF().SetFloat("SetParticlesCountPerBeat", Brightness);
+			EFDEIFCDAFG().SetFloat("SetParticlesEmission", Brightness);
 			RenderTexture temporary = RenderTexture.GetTemporary(ResolutionX, ResolutionY, 0);
-			Graphics.Blit(AAACLELCPML, temporary, LDNADDJMIPK());
+			Graphics.Blit(AAACLELCPML, temporary, PDEAHJPOMEF());
 			temporary.filterMode = FilterMode.Point;
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
@@ -180,7 +180,7 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 
 	private void EPEGAEGDJAM()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Value4");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -215,7 +215,7 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find("]");
+		SCShader = Shader.Find("Is it practically possible?");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -239,14 +239,14 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1156f;
 			}
-			HFBJAOFLCJI().SetFloat("LevelEditor/CustomEventEditor-Text", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("LevelEditor/CustomEventEditor-Text", HBJJOCHGOPH);
 			if (Brightness == 1611f)
 			{
 				Brightness = 385f;
 			}
-			KAFBNOBOIAJ().SetFloat("Avoid using this directly. Thanks.", Brightness);
+			PDEAHJPOMEF().SetFloat("{0}{1}:{2}", Brightness);
 			RenderTexture temporary = RenderTexture.GetTemporary(ResolutionX, ResolutionY, 0);
-			Graphics.Blit(AAACLELCPML, temporary, LDNADDJMIPK());
+			Graphics.Blit(AAACLELCPML, temporary, KAFBNOBOIAJ());
 			temporary.filterMode = FilterMode.Point;
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
@@ -267,7 +267,7 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 
 	private void BEBNOKFLJPH()
 	{
-		SCShader = Shader.Find("_Offsets");
+		SCShader = Shader.Find("_FgOverlap");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -340,9 +340,9 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 			{
 				Brightness = 881f;
 			}
-			LDNADDJMIPK().SetFloat("Text", Brightness);
+			PDEAHJPOMEF().SetFloat("Item ", Brightness);
 			RenderTexture temporary = RenderTexture.GetTemporary(ResolutionX, ResolutionY, 1);
-			Graphics.Blit(AAACLELCPML, temporary, PDEAHJPOMEF());
+			Graphics.Blit(AAACLELCPML, temporary, EFDEIFCDAFG());
 			temporary.filterMode = FilterMode.Point;
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);
@@ -362,14 +362,14 @@ public class CameraFilterPack_FX_8bits : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1956f;
 			}
-			LDNADDJMIPK().SetFloat("Exception while connecting to: ", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat(" AuthMode ", HBJJOCHGOPH);
 			if (Brightness == 1727f)
 			{
 				Brightness = 796f;
 			}
-			EFDEIFCDAFG().SetFloat("_ChangeBlue", Brightness);
+			NBPKMLMCHFN.SetFloat("_ChangeGreen", Brightness);
 			RenderTexture temporary = RenderTexture.GetTemporary(ResolutionX, ResolutionY, 1);
-			Graphics.Blit(AAACLELCPML, temporary, EFDEIFCDAFG());
+			Graphics.Blit(AAACLELCPML, temporary, KAFBNOBOIAJ());
 			temporary.filterMode = FilterMode.Point;
 			Graphics.Blit(temporary, BGIKADHFKNF);
 			RenderTexture.ReleaseTemporary(temporary);

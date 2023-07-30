@@ -53,7 +53,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void NBGIMIDICKE()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Vision_Hell_Blood");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -69,13 +69,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1776f;
 			}
-			BAGICADFBAB().SetFloat("#tryagain", HBJJOCHGOPH);
-			HHIFMIPPMPF().SetFloat("Set particles gravity", Therma_Variation);
-			INOBFNCKFGK().SetFloat("_PColor2", OGLODCDJJLB);
-			BLMPMOIDGMG().SetFloat("_DepthLevel", ALELLLFCDBF);
-			OOMFJGPAOKL().SetFloat("EventTimeInputField", NFDIFLHGJKB);
-			LPMLLJKMAMP().SetVector("Left Click", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1849f, 1972f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
+			CFEDGDGBCHE().SetFloat("Done! You are a contributor until: ", HBJJOCHGOPH);
+			BLMPMOIDGMG().SetFloat("float,0", Therma_Variation);
+			NBMPPNFKFLB().SetFloat("_PColor2", OGLODCDJJLB);
+			IKAIDLJKLFC().SetFloat("_DepthLevel", ALELLLFCDBF);
+			NBPKMLMCHFN.SetFloat("ResourceIDInputField", NFDIFLHGJKB);
+			IKAIDLJKLFC().SetVector("Down ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1849f, 1972f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -126,7 +126,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void LGHCJCFHEMF()
 	{
-		SCShader = Shader.Find("skin.");
+		SCShader = Shader.Find("end");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -151,13 +151,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1405f;
 			}
-			DIOAAHJDMLK().SetFloat("_DotSize", HBJJOCHGOPH);
-			BLMPMOIDGMG().SetFloat("x", Therma_Variation);
-			INOBFNCKFGK().SetFloat("SetParticlesInput", OGLODCDJJLB);
-			INOBFNCKFGK().SetFloat("RespawnAfter", ALELLLFCDBF);
-			NBMPPNFKFLB().SetFloat("offsets", NFDIFLHGJKB);
-			EHDJJANLINB().SetVector("ReJoinRoom failed. A roomname is required. If you don't know one, how will you join?", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 588f, 836f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PEIMCBBHLBJ());
+			BAGICADFBAB().SetFloat("_Distortion", HBJJOCHGOPH);
+			EHDJJANLINB().SetFloat("x", Therma_Variation);
+			HCGJCMDJPGD().SetFloat("Set particles count per one beat", OGLODCDJJLB);
+			OOMFJGPAOKL().SetFloat("PunPickupSimple", ALELLLFCDBF);
+			DIOAAHJDMLK().SetFloat("_SmallTex", NFDIFLHGJKB);
+			PEIMCBBHLBJ().SetVector("JoinRandomRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 588f, 836f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -190,13 +190,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1030f;
 			}
-			CIAFLBFJLEJ().SetFloat("settings.shaders.bloomintencity", HBJJOCHGOPH);
-			DIOAAHJDMLK().SetFloat("_TimeX", Therma_Variation);
-			OOMFJGPAOKL().SetFloat(".lastCheckpoint.perfectHits", OGLODCDJJLB);
-			FOOCJIDNGBB().SetFloat("settings.shaders", ALELLLFCDBF);
-			OJMHIMIPKME().SetFloat("CameraFilterPack_Blizzard1", NFDIFLHGJKB);
-			CIAFLBFJLEJ().SetVector("CameraFilterPack/Blend2Camera_SoftLight", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 768f, 1712f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			BAGICADFBAB().SetFloat("settings.shaders", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_TimeX", Therma_Variation);
+			JFDGLLEOPGB().SetFloat(".lastCheckpoint.powerupsScore", OGLODCDJJLB);
+			DONENAMLFLF().SetFloat("Player", ALELLLFCDBF);
+			DIOAAHJDMLK().SetFloat("CameraFilterPack_Blizzard1", NFDIFLHGJKB);
+			HCGJCMDJPGD().SetVector("CameraFilterPack/Blend2Camera_SoftLight", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 768f, 1712f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
 		}
 		else
 		{
@@ -291,13 +291,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 418f;
 			}
-			INOBFNCKFGK().SetFloat("_EmissionColor", HBJJOCHGOPH);
-			JFDGLLEOPGB().SetFloat("CheckResources () for ", Therma_Variation);
-			INOBFNCKFGK().SetFloat("_Green_G", OGLODCDJJLB);
-			JFDGLLEOPGB().SetFloat("_Value2", ALELLLFCDBF);
-			DIOAAHJDMLK().SetFloat(",", NFDIFLHGJKB);
-			LPMLLJKMAMP().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1988f, 1370f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FOOCJIDNGBB());
+			CECJJMKLEAK().SetFloat("settings.crosshairopacity", HBJJOCHGOPH);
+			PEIMCBBHLBJ().SetFloat(" is not supported on this platform!", Therma_Variation);
+			CECJJMKLEAK().SetFloat("_Green_R", OGLODCDJJLB);
+			JFDGLLEOPGB().SetFloat("_Value", ALELLLFCDBF);
+			CIAFLBFJLEJ().SetFloat("/512px-512px.png", NFDIFLHGJKB);
+			LDNADDJMIPK().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1988f, 1370f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
 		}
 		else
 		{
@@ -311,7 +311,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void AKHCOBHHGJP()
 	{
-		SCShader = Shader.Find("_Extra3");
+		SCShader = Shader.Find("_Extra2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -327,13 +327,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1272f;
 			}
-			EHDJJANLINB().SetFloat("Subscribed cells:\n", HBJJOCHGOPH);
-			EHDJJANLINB().SetFloat("Object ID. Case-Sensitive", Therma_Variation);
-			FOOCJIDNGBB().SetFloat("CameraFilterPack/Blur_Bloom", OGLODCDJJLB);
-			IKAIDLJKLFC().SetFloat(".completed", ALELLLFCDBF);
-			JFDGLLEOPGB().SetFloat("ticket", NFDIFLHGJKB);
-			FLGPDBBKAIP().SetVector("#useticket", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1941f, 1245f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DIOAAHJDMLK());
+			DIOAAHJDMLK().SetFloat("Vertical", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("id", Therma_Variation);
+			DEFBJOCJJKF().SetFloat("_MainTex2", OGLODCDJJLB);
+			OOMFJGPAOKL().SetFloat("maps.", ALELLLFCDBF);
+			LPMLLJKMAMP().SetFloat("[", NFDIFLHGJKB);
+			NBPKMLMCHFN.SetVector("#failed: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1941f, 1245f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
 		}
 		else
 		{
@@ -358,13 +358,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 910f;
 			}
-			IKAIDLJKLFC().SetFloat("Selection Box", HBJJOCHGOPH);
-			CECJJMKLEAK().SetFloat(" beatThreshold: ", Therma_Variation);
-			HCGJCMDJPGD().SetFloat("[LevelEditorScene] Error: You're not logged into Steam!", OGLODCDJJLB);
-			BLMPMOIDGMG().SetFloat("_Value2", ALELLLFCDBF);
-			HHIFMIPPMPF().SetFloat("_PrevViewProj", NFDIFLHGJKB);
-			HHIFMIPPMPF().SetVector("0.00:0.00", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 319f, 1597f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLGPDBBKAIP());
+			HCGJCMDJPGD().SetFloat("Fake", HBJJOCHGOPH);
+			FOOCJIDNGBB().SetFloat(" beatThreshold: ", Therma_Variation);
+			FOOCJIDNGBB().SetFloat("/", OGLODCDJJLB);
+			INOBFNCKFGK().SetFloat("_Value", ALELLLFCDBF);
+			NBPKMLMCHFN.SetFloat("_Parameter", NFDIFLHGJKB);
+			NBMPPNFKFLB().SetVector("Creating awesome maps", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 319f, 1597f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK());
 		}
 		else
 		{
@@ -404,7 +404,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void LFAFJKJAEEL()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Gradients_Tech");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -440,13 +440,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 855f;
 			}
-			DEFBJOCJJKF().SetFloat("GameScene", HBJJOCHGOPH);
-			OJMHIMIPKME().SetFloat("_ScreenResolution", Therma_Variation);
-			INOBFNCKFGK().SetFloat("_FarCamera", OGLODCDJJLB);
-			IKAIDLJKLFC().SetFloat("DifficultyBG", ALELLLFCDBF);
-			CIAFLBFJLEJ().SetFloat("powerup.1", NFDIFLHGJKB);
-			LPMLLJKMAMP().SetVector("Created by ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 327f, 1453f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BLMPMOIDGMG());
+			FAIFBBGFAIB().SetFloat("GameScene", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat("_Fade", Therma_Variation);
+			BLMPMOIDGMG().SetFloat("_FarCamera", OGLODCDJJLB);
+			BAGICADFBAB().SetFloat("UpdateDownloadingProgress", ALELLLFCDBF);
+			JCPDCGIJKJD().SetFloat("powerup.0", NFDIFLHGJKB);
+			BLMPMOIDGMG().SetVector("KickThePlayer", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 327f, 1453f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DONENAMLFLF());
 		}
 		else
 		{
@@ -482,13 +482,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1480f;
 			}
-			BAGICADFBAB().SetFloat("_ToPrevViewProjCombined", HBJJOCHGOPH);
-			BAGICADFBAB().SetFloat("CameraFilterPack/Distortion_BlackHole", Therma_Variation);
-			LPMLLJKMAMP().SetFloat("0.00:0.00", OGLODCDJJLB);
-			LDNADDJMIPK().SetFloat("Uploading preview image", ALELLLFCDBF);
-			CFEDGDGBCHE().SetFloat("SetSunColors", NFDIFLHGJKB);
-			KGOLDDBHIFN().SetVector("[LevelEditorScene] Print Audio Wave: Start", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 845f, 185f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OOMFJGPAOKL());
+			DIOAAHJDMLK().SetFloat("_InvViewProj", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("_ScreenResolution", Therma_Variation);
+			LPMLLJKMAMP().SetFloat("Creating awesome maps", OGLODCDJJLB);
+			FAIFBBGFAIB().SetFloat("OK", ALELLLFCDBF);
+			JCPDCGIJKJD().SetFloat("SetPosition", NFDIFLHGJKB);
+			DONENAMLFLF().SetVector("#exitmapeditor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 845f, 185f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -513,13 +513,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1071f;
 			}
-			CFEDGDGBCHE().SetFloat("_Value3", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("_ScreenResolution", Therma_Variation);
-			EHDJJANLINB().SetFloat("_CenterX", OGLODCDJJLB);
-			KGOLDDBHIFN().SetFloat(", data: ", ALELLLFCDBF);
-			NBMPPNFKFLB().SetFloat("x", NFDIFLHGJKB);
-			CECJJMKLEAK().SetVector("Network destroy Instantiated GO: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1818f, 417f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, INOBFNCKFGK());
+			HHIFMIPPMPF().SetFloat("_Value2", HBJJOCHGOPH);
+			GBFOAHKAJEK().SetFloat("_Radius", Therma_Variation);
+			DIOAAHJDMLK().SetFloat("_TimeX", OGLODCDJJLB);
+			NBPKMLMCHFN.SetFloat("No Name", ALELLLFCDBF);
+			DEFBJOCJJKF().SetFloat("z", NFDIFLHGJKB);
+			DIOAAHJDMLK().SetVector("Failed to 'network-remove' GameObject because it is missing a valid InstantiationId on view: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1818f, 417f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKHBBBFLGJH());
 		}
 		else
 		{
@@ -556,7 +556,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void CEAGPJBGBMH()
 	{
-		SCShader = Shader.Find("CameraFilterPack/EyesVision_1");
+		SCShader = Shader.Find("CameraFilterPack_eyes_vision_1");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -569,7 +569,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Fly_Vision");
+		SCShader = Shader.Find("CameraFilterPack_Fly_VisionFX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -615,13 +615,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 562f;
 			}
-			HKHBBBFLGJH().SetFloat("No Name", HBJJOCHGOPH);
-			NBMPPNFKFLB().SetFloat("true", Therma_Variation);
-			JFDGLLEOPGB().SetFloat("#no", OGLODCDJJLB);
-			CIAFLBFJLEJ().SetFloat("RPC: 'OnAwakeRPC' PhotonView: ", ALELLLFCDBF);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/TV_ARCADE_Fast", NFDIFLHGJKB);
-			KGOLDDBHIFN().SetVector("LevelNameText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 86f, 252f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
+			LDNADDJMIPK().SetFloat("file://", HBJJOCHGOPH);
+			DIOAAHJDMLK().SetFloat(".GoalProgress", Therma_Variation);
+			GBFOAHKAJEK().SetFloat(".completed", OGLODCDJJLB);
+			OOMFJGPAOKL().SetFloat("</color>", ALELLLFCDBF);
+			FLGPDBBKAIP().SetFloat("CameraFilterPack_TV_Arcade1", NFDIFLHGJKB);
+			CIAFLBFJLEJ().SetVector("InfoCanvas", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 86f, 252f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PEIMCBBHLBJ());
 		}
 		else
 		{
@@ -635,7 +635,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void AEOLJEIDMDB()
 	{
-		SCShader = Shader.Find("CameraFilterPack/VHS_Tracking");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -644,7 +644,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void DBEMDAJDDDA()
 	{
-		SCShader = Shader.Find(" from: ");
+		SCShader = Shader.Find("Destroying GO as global. ID: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -660,13 +660,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1461f;
 			}
-			DEFBJOCJJKF().SetFloat("Result for ", HBJJOCHGOPH);
-			LPMLLJKMAMP().SetFloat("start", Therma_Variation);
-			JFDGLLEOPGB().SetFloat("FinalScoreSmallText", OGLODCDJJLB);
-			FAIFBBGFAIB().SetFloat("[RanksSystem] Init", ALELLLFCDBF);
-			CFEDGDGBCHE().SetFloat("Lag ", NFDIFLHGJKB);
-			CIAFLBFJLEJ().SetVector("offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1835f, 94f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
+			OJMHIMIPKME().SetFloat("Result for ", HBJJOCHGOPH);
+			HKHBBBFLGJH().SetFloat("start", Therma_Variation);
+			LDNADDJMIPK().SetFloat("PointsScoreText", OGLODCDJJLB);
+			LPMLLJKMAMP().SetFloat("/", ALELLLFCDBF);
+			NBMPPNFKFLB().SetFloat("No peer to communicate with. ", NFDIFLHGJKB);
+			CFEDGDGBCHE().SetVector("offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1835f, 94f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{
@@ -695,13 +695,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1514f;
 			}
-			OOMFJGPAOKL().SetFloat("{0}", HBJJOCHGOPH);
-			JFDGLLEOPGB().SetFloat("The other scroll rect doesnt support scrolling vertically", Therma_Variation);
-			FAIFBBGFAIB().SetFloat("_EmissionGain", OGLODCDJJLB);
-			NBMPPNFKFLB().SetFloat("Gameplay/Base", ALELLLFCDBF);
-			DONENAMLFLF().SetFloat("HightScoreMaxPointsText", NFDIFLHGJKB);
-			FOOCJIDNGBB().SetVector("_Intensity", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 164f, 1899f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, INOBFNCKFGK());
+			FLGPDBBKAIP().SetFloat("[DiscordController] Shutdown", HBJJOCHGOPH);
+			EHDJJANLINB().SetFloat("You have added the SecondScrollRect to a scroll view that already has both directions selected", Therma_Variation);
+			NBMPPNFKFLB().SetFloat("_EmissionGain", OGLODCDJJLB);
+			HKHBBBFLGJH().SetFloat("Gameplay/Base", ALELLLFCDBF);
+			GBFOAHKAJEK().SetFloat("HightScoreMaxPointsText", NFDIFLHGJKB);
+			EHDJJANLINB().SetVector("_Radius", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 164f, 1899f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PEIMCBBHLBJ());
 		}
 		else
 		{
@@ -722,13 +722,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1451f;
 			}
-			JFDGLLEOPGB().SetFloat(": ", HBJJOCHGOPH);
-			JCPDCGIJKJD().SetFloat("maps.", Therma_Variation);
-			OOMFJGPAOKL().SetFloat("_Near", OGLODCDJJLB);
-			HHIFMIPPMPF().SetFloat("SpawnObj", ALELLLFCDBF);
-			FLGPDBBKAIP().SetFloat("_ScreenResolution", NFDIFLHGJKB);
-			DONENAMLFLF().SetVector("menu.enableselectormusic", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 392f, 1718f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PEIMCBBHLBJ());
+			DEFBJOCJJKF().SetFloat(": ", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("maps.", Therma_Variation);
+			GBFOAHKAJEK().SetFloat("_Near", OGLODCDJJLB);
+			OOMFJGPAOKL().SetFloat("ShowTitle", ALELLLFCDBF);
+			GBFOAHKAJEK().SetFloat("_Value", NFDIFLHGJKB);
+			OOMFJGPAOKL().SetVector("menu.enableselectormusic", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 392f, 1718f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GBFOAHKAJEK());
 		}
 		else
 		{
@@ -753,13 +753,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1234f;
 			}
-			CIAFLBFJLEJ().SetFloat("OpAuthenticate()", HBJJOCHGOPH);
-			FLGPDBBKAIP().SetFloat("YES", Therma_Variation);
-			FOOCJIDNGBB().SetFloat("_Value4", OGLODCDJJLB);
-			FOOCJIDNGBB().SetFloat("ArcsDestroyDelaySlider", ALELLLFCDBF);
-			CECJJMKLEAK().SetFloat("_Value", NFDIFLHGJKB);
-			DEFBJOCJJKF().SetVector("settings.volume.editor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 324f, 87f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BLMPMOIDGMG());
+			CECJJMKLEAK().SetFloat("OpAuthenticate() failed. When you want Custom Authentication encryption is mandatory.", HBJJOCHGOPH);
+			NBMPPNFKFLB().SetFloat("Map already submited. Update?", Therma_Variation);
+			BLMPMOIDGMG().SetFloat("_Value3", OGLODCDJJLB);
+			LDNADDJMIPK().SetFloat("settings.gamemessagesduration", ALELLLFCDBF);
+			FOOCJIDNGBB().SetFloat("_TimeX", NFDIFLHGJKB);
+			FAIFBBGFAIB().SetVector("settings.volume.game", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 324f, 87f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
 		}
 		else
 		{
@@ -769,7 +769,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void CEDFFAOOPOG()
 	{
-		SCShader = Shader.Find("MenuScene");
+		SCShader = Shader.Find("error");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -785,13 +785,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 866f;
 			}
-			GBFOAHKAJEK().SetFloat("Scene", HBJJOCHGOPH);
-			JFDGLLEOPGB().SetFloat("OpGetGameList not sent. Lobby cannot be null.", Therma_Variation);
-			HCGJCMDJPGD().SetFloat("_Value2", OGLODCDJJLB);
-			INOBFNCKFGK().SetFloat("y", ALELLLFCDBF);
-			LPMLLJKMAMP().SetFloat("maps.", NFDIFLHGJKB);
-			OOMFJGPAOKL().SetVector(" url: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1218f, 770f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DONENAMLFLF());
+			FAIFBBGFAIB().SetFloat("FPSToggle", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetFloat("OpJoinRandomRoom()", Therma_Variation);
+			NBMPPNFKFLB().SetFloat("_Value2", OGLODCDJJLB);
+			LDNADDJMIPK().SetFloat("float,0", ALELLLFCDBF);
+			NBMPPNFKFLB().SetFloat("BadgeText", NFDIFLHGJKB);
+			DEFBJOCJJKF().SetVector("settings.customdataskin", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1218f, 770f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -816,13 +816,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1306f;
 			}
-			FLGPDBBKAIP().SetFloat("Preparing configuration", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("_MainTex", Therma_Variation);
-			IKAIDLJKLFC().SetFloat("_Bloom3", OGLODCDJJLB);
-			BAGICADFBAB().SetFloat("_EmissionColor", ALELLLFCDBF);
-			OOMFJGPAOKL().SetFloat("NEW_ACHIEVEMENT_1_21", NFDIFLHGJKB);
-			HCGJCMDJPGD().SetVector("ns", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1759f, 1674f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK());
+			LDNADDJMIPK().SetFloat("PLEASE WAIT", HBJJOCHGOPH);
+			CIAFLBFJLEJ().SetFloat("_InvRenderTargetSize", Therma_Variation);
+			DEFBJOCJJKF().SetFloat("_Bloom2", OGLODCDJJLB);
+			JCPDCGIJKJD().SetFloat("[EditorEvent] Exception: ", ALELLLFCDBF);
+			DIOAAHJDMLK().SetFloat("achievements.21.completed.workshop.", NFDIFLHGJKB);
+			NBMPPNFKFLB().SetVector("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1759f, 1674f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -851,7 +851,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find("/icon");
+		SCShader = Shader.Find("/");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -906,13 +906,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1191f;
 			}
-			FAIFBBGFAIB().SetFloat("_Near", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("X2", Therma_Variation);
-			DEFBJOCJJKF().SetFloat("_TimeX", OGLODCDJJLB);
-			CIAFLBFJLEJ().SetFloat("float,10", ALELLLFCDBF);
-			NBPKMLMCHFN.SetFloat("_FixDistance", NFDIFLHGJKB);
-			DEFBJOCJJKF().SetVector("Tab2Content", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 857f, 578f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			CFEDGDGBCHE().SetFloat("_Near", HBJJOCHGOPH);
+			FOOCJIDNGBB().SetFloat("================================", Therma_Variation);
+			HCGJCMDJPGD().SetFloat("CameraFilterPack/Drawing_Lines", OGLODCDJJLB);
+			BAGICADFBAB().SetFloat("float,10", ALELLLFCDBF);
+			FLGPDBBKAIP().SetFloat("_FixDistance", NFDIFLHGJKB);
+			KGOLDDBHIFN().SetVector("SpeedSlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 857f, 578f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JCPDCGIJKJD());
 		}
 		else
 		{
@@ -945,13 +945,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1757f;
 			}
-			BLMPMOIDGMG().SetFloat("_Value3", HBJJOCHGOPH);
-			JFDGLLEOPGB().SetFloat("close", Therma_Variation);
-			OJMHIMIPKME().SetFloat("_Value", OGLODCDJJLB);
-			NBMPPNFKFLB().SetFloat("Set satellite color", ALELLLFCDBF);
-			GBFOAHKAJEK().SetFloat("_RayStepSize", NFDIFLHGJKB);
-			HKHBBBFLGJH().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1528f, 1276f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
+			FAIFBBGFAIB().SetFloat("_Value3", HBJJOCHGOPH);
+			DEFBJOCJJKF().SetFloat(" ", Therma_Variation);
+			NBPKMLMCHFN.SetFloat("_TimeX", OGLODCDJJLB);
+			OOMFJGPAOKL().SetFloat("Hex value #RRGGBB", ALELLLFCDBF);
+			HKHBBBFLGJH().SetFloat("_FinalReflectionTexture", NFDIFLHGJKB);
+			KGOLDDBHIFN().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1528f, 1276f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IKAIDLJKLFC());
 		}
 		else
 		{
@@ -968,13 +968,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1445f;
 			}
-			CIAFLBFJLEJ().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("Set Particles Color", Therma_Variation);
-			GBFOAHKAJEK().SetFloat("ScrollPanel", OGLODCDJJLB);
-			LDNADDJMIPK().SetFloat("Keypad", ALELLLFCDBF);
-			DONENAMLFLF().SetFloat("_MainTex2", NFDIFLHGJKB);
-			NBPKMLMCHFN.SetVector("OnAwakeRPC", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 898f, 1817f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DIOAAHJDMLK());
+			GBFOAHKAJEK().SetFloat("id", HBJJOCHGOPH);
+			OOMFJGPAOKL().SetFloat("Set Particles Color", Therma_Variation);
+			OOMFJGPAOKL().SetFloat("InputField", OGLODCDJJLB);
+			JFDGLLEOPGB().SetFloat("Alpha", ALELLLFCDBF);
+			JFDGLLEOPGB().SetFloat("_MainTex2", NFDIFLHGJKB);
+			JCPDCGIJKJD().SetVector("<color=white>", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 898f, 1817f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
 		}
 		else
 		{
@@ -1008,13 +1008,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1880f;
 			}
-			DIOAAHJDMLK().SetFloat("_CenterX", HBJJOCHGOPH);
-			HKHBBBFLGJH().SetFloat("ResetButton", Therma_Variation);
-			LDNADDJMIPK().SetFloat("#getrewardfailed: ", OGLODCDJJLB);
-			CECJJMKLEAK().SetFloat(".sav", ALELLLFCDBF);
-			CIAFLBFJLEJ().SetFloat("_MainTex2", NFDIFLHGJKB);
-			FAIFBBGFAIB().SetVector("Copy from ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 971f, 1521f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			LPMLLJKMAMP().SetFloat("_TimeX", HBJJOCHGOPH);
+			GBFOAHKAJEK().SetFloat("ResetButton", Therma_Variation);
+			NBPKMLMCHFN.SetFloat("IntraSig", OGLODCDJJLB);
+			JFDGLLEOPGB().SetFloat("Saved Game: ", ALELLLFCDBF);
+			OJMHIMIPKME().SetFloat("_MainTex2", NFDIFLHGJKB);
+			GBFOAHKAJEK().SetVector(".", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 971f, 1521f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLGPDBBKAIP());
 		}
 		else
 		{
@@ -1039,13 +1039,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1593f;
 			}
-			NBPKMLMCHFN.SetFloat("_ForceYSwap", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("_Value3", Therma_Variation);
-			LPMLLJKMAMP().SetFloat("float,1", OGLODCDJJLB);
-			CFEDGDGBCHE().SetFloat("_Value2", ALELLLFCDBF);
-			JCPDCGIJKJD().SetFloat("Cross", NFDIFLHGJKB);
-			FOOCJIDNGBB().SetVector("GlassColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1563f, 1534f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
+			OJMHIMIPKME().SetFloat("_Value5", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat("_Value3", Therma_Variation);
+			NBPKMLMCHFN.SetFloat("x", OGLODCDJJLB);
+			DIOAAHJDMLK().SetFloat("_Value", ALELLLFCDBF);
+			NBMPPNFKFLB().SetFloat("Square", NFDIFLHGJKB);
+			CIAFLBFJLEJ().SetVector("GlassesColor2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1563f, 1534f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OJMHIMIPKME());
 		}
 		else
 		{
@@ -1063,7 +1063,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void ALNNIDLFILB()
 	{
-		SCShader = Shader.Find("speed");
+		SCShader = Shader.Find("Set Arcs Speed");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1080,7 +1080,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void LFBGJIIECLD()
 	{
-		SCShader = Shader.Find("UI Extensions/UIMultiply");
+		SCShader = Shader.Find("Please attach component to a Graphical UI component");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1089,7 +1089,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void AIBNKIDADPI()
 	{
-		SCShader = Shader.Find("original.tutorial");
+		SCShader = Shader.Find("OnMastedChangeScene");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1115,7 +1115,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("_MainTex2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1146,13 +1146,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1984f;
 			}
-			FOOCJIDNGBB().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
-			BAGICADFBAB().SetFloat("#lives", Therma_Variation);
-			PEIMCBBHLBJ().SetFloat("http://steamcommunity.com/sharedfiles/filedetails/?id=", OGLODCDJJLB);
-			BAGICADFBAB().SetFloat("_Value", ALELLLFCDBF);
-			JCPDCGIJKJD().SetFloat("Moved event", NFDIFLHGJKB);
-			BLMPMOIDGMG().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 757f, 1322f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
+			DEFBJOCJJKF().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
+			IKAIDLJKLFC().SetFloat("#lives", Therma_Variation);
+			NBPKMLMCHFN.SetFloat("VoteUpToggle", OGLODCDJJLB);
+			DEFBJOCJJKF().SetFloat("_TimeX", ALELLLFCDBF);
+			NBPKMLMCHFN.SetFloat("[Right]", NFDIFLHGJKB);
+			PEIMCBBHLBJ().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 757f, 1322f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BAGICADFBAB());
 		}
 		else
 		{
@@ -1178,11 +1178,11 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 				HBJJOCHGOPH = 57f;
 			}
 			EHDJJANLINB().SetFloat("[Right-Down-Left]", HBJJOCHGOPH);
-			OOMFJGPAOKL().SetFloat("inventory.lastitemscount", Therma_Variation);
-			KGOLDDBHIFN().SetFloat("_SoftZDistance", OGLODCDJJLB);
-			HCGJCMDJPGD().SetFloat("#exitmapeditor", ALELLLFCDBF);
-			IKAIDLJKLFC().SetFloat("CameraFilterPack_TV_BrokenGlass1", NFDIFLHGJKB);
-			FLGPDBBKAIP().SetVector(" ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 923f, 1225f));
+			DEFBJOCJJKF().SetFloat("GroupNameText", Therma_Variation);
+			NBPKMLMCHFN.SetFloat("_MaxRadiusOrKInPaper", OGLODCDJJLB);
+			INOBFNCKFGK().SetFloat("#yes", ALELLLFCDBF);
+			LDNADDJMIPK().SetFloat("_ScreenResolution", NFDIFLHGJKB);
+			BLMPMOIDGMG().SetVector("MapperNameText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 923f, 1225f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
 		}
 		else
@@ -1215,7 +1215,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void IBLGHLNNAHN()
 	{
-		SCShader = Shader.Find(".GoalProgress");
+		SCShader = Shader.Find("challenges.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1242,13 +1242,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1905f;
 			}
-			FLGPDBBKAIP().SetFloat("_Offsets", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetFloat(" ", Therma_Variation);
-			OOMFJGPAOKL().SetFloat("_ThirdTex", OGLODCDJJLB);
-			LPMLLJKMAMP().SetFloat("[Down]", ALELLLFCDBF);
-			BLMPMOIDGMG().SetFloat("EditMenu", NFDIFLHGJKB);
-			LDNADDJMIPK().SetVector("_BlurRadius4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 281f, 1130f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
+			EHDJJANLINB().SetFloat("_LowRez", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat(" ", Therma_Variation);
+			LDNADDJMIPK().SetFloat("_Offsets", OGLODCDJJLB);
+			DEFBJOCJJKF().SetFloat("SpawnObj", ALELLLFCDBF);
+			FLGPDBBKAIP().SetFloat("Init", NFDIFLHGJKB);
+			OOMFJGPAOKL().SetVector("_SSAO", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 281f, 1130f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OJMHIMIPKME());
 		}
 		else
 		{
@@ -1258,7 +1258,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void COOHIILCOCO()
 	{
-		SCShader = Shader.Find("[Sound Manager] Audio clip is null, cannot play music");
+		SCShader = Shader.Find("skin.hit_normal");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1284,7 +1284,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void FHPFJBFCOOF()
 	{
-		SCShader = Shader.Find("ScrollPanel");
+		SCShader = Shader.Find("MainButton");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1320,13 +1320,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1673f;
 			}
-			PEIMCBBHLBJ().SetFloat("<command>", HBJJOCHGOPH);
-			OJMHIMIPKME().SetFloat("#,0.00", Therma_Variation);
-			CFEDGDGBCHE().SetFloat("SetPosition", OGLODCDJJLB);
-			FAIFBBGFAIB().SetFloat("_BlurCoe", ALELLLFCDBF);
-			FOOCJIDNGBB().SetFloat("_Value", NFDIFLHGJKB);
-			CFEDGDGBCHE().SetVector("Set the end of the map. Use this if you want to cut the long music.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 260f, 659f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			LDNADDJMIPK().SetFloat("Run a command for the Localization Servise", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("yyyy-MM-dd HH:mm:ss", Therma_Variation);
+			FAIFBBGFAIB().SetFloat("SetTrailZoomSpeed", OGLODCDJJLB);
+			NBPKMLMCHFN.SetFloat("_BokehParams", ALELLLFCDBF);
+			GBFOAHKAJEK().SetFloat("_TimeX", NFDIFLHGJKB);
+			HHIFMIPPMPF().SetVector("Music End", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 260f, 659f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GBFOAHKAJEK());
 		}
 		else
 		{
@@ -1347,7 +1347,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void JOPCCCCHNLI()
 	{
-		SCShader = Shader.Find(".lastCheckpoint.currentCombo");
+		SCShader = Shader.Find(".lastCheckpoint.checkpointsUsed");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -1363,13 +1363,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 465f;
 			}
-			CECJJMKLEAK().SetFloat("Health Stats", HBJJOCHGOPH);
-			CIAFLBFJLEJ().SetFloat("_Color", Therma_Variation);
-			KGOLDDBHIFN().SetFloat("_MainTex", OGLODCDJJLB);
-			PEIMCBBHLBJ().SetFloat("\n", ALELLLFCDBF);
-			OJMHIMIPKME().SetFloat("Reconnect() disabled the offline mode. No longer offline.", NFDIFLHGJKB);
-			LDNADDJMIPK().SetVector("_Red_R", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1956f, 1014f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JCPDCGIJKJD());
+			FOOCJIDNGBB().SetFloat("Incoming: \n", HBJJOCHGOPH);
+			PEIMCBBHLBJ().SetFloat("BlockCount", Therma_Variation);
+			NBPKMLMCHFN.SetFloat(" is not part of the Unity 3.2+ effects suite anymore. For best performance and quality, please ensure you are using the latest Standard Assets Image Effects (Pro only) package.", OGLODCDJJLB);
+			JCPDCGIJKJD().SetFloat("\n", ALELLLFCDBF);
+			FLGPDBBKAIP().SetFloat(":", NFDIFLHGJKB);
+			FAIFBBGFAIB().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1956f, 1014f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EHDJJANLINB());
 		}
 		else
 		{
@@ -1386,13 +1386,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1367f;
 			}
-			NBPKMLMCHFN.SetFloat("ERROR: Make sure your mod contains at leats one file!", HBJJOCHGOPH);
-			INOBFNCKFGK().SetFloat("CountEventsGoal", Therma_Variation);
-			JCPDCGIJKJD().SetFloat("StartButton", OGLODCDJJLB);
-			DEFBJOCJJKF().SetFloat("float,0", ALELLLFCDBF);
-			FAIFBBGFAIB().SetFloat("Data/Skins/", NFDIFLHGJKB);
-			CFEDGDGBCHE().SetVector("a year ago", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1756f, 494f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GBFOAHKAJEK());
+			INOBFNCKFGK().SetFloat("EXCEPTION:", HBJJOCHGOPH);
+			BLMPMOIDGMG().SetFloat(",", Therma_Variation);
+			KGOLDDBHIFN().SetFloat("StartButton", OGLODCDJJLB);
+			KGOLDDBHIFN().SetFloat("z", ALELLLFCDBF);
+			IKAIDLJKLFC().SetFloat("default", NFDIFLHGJKB);
+			DIOAAHJDMLK().SetVector("{0} years ago", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1756f, 494f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
 		}
 		else
 		{
@@ -1409,13 +1409,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1367f;
 			}
-			HCGJCMDJPGD().SetFloat("_Value", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("offsets", Therma_Variation);
-			INOBFNCKFGK().SetFloat("_ScreenResolution", OGLODCDJJLB);
-			FOOCJIDNGBB().SetFloat("_Value2", ALELLLFCDBF);
-			LPMLLJKMAMP().SetFloat("Hidden/TonemappingColorGrading", NFDIFLHGJKB);
-			IKAIDLJKLFC().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 936f, 901f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			GBFOAHKAJEK().SetFloat("_TimeX", HBJJOCHGOPH);
+			DEFBJOCJJKF().SetFloat("_threshold", Therma_Variation);
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", OGLODCDJJLB);
+			IKAIDLJKLFC().SetFloat("_TimeX", ALELLLFCDBF);
+			NBMPPNFKFLB().SetFloat("Curve texture", NFDIFLHGJKB);
+			EHDJJANLINB().SetVector("CameraFilterPack/Color_Switching", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 936f, 901f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
 		}
 		else
 		{
@@ -1433,7 +1433,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void FEKECCBFGMI()
 	{
-		SCShader = Shader.Find("stats on");
+		SCShader = Shader.Find("Out {0,4} | In {1,4} | Sum {2,4}");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -1449,13 +1449,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1486f;
 			}
-			BAGICADFBAB().SetFloat("EditMenu", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("SetSunMinSize", Therma_Variation);
-			PEIMCBBHLBJ().SetFloat(". The group number should be at least 1.", OGLODCDJJLB);
-			HHIFMIPPMPF().SetFloat("_BlurVector", ALELLLFCDBF);
-			CIAFLBFJLEJ().SetFloat("InputField", NFDIFLHGJKB);
-			FAIFBBGFAIB().SetVector("FPSToggle", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 974f, 1791f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLGPDBBKAIP());
+			INOBFNCKFGK().SetFloat("EditMenu", HBJJOCHGOPH);
+			BLMPMOIDGMG().SetFloat("SetSunMinSize", Therma_Variation);
+			HHIFMIPPMPF().SetFloat("Unsupported target enum: ", OGLODCDJJLB);
+			LPMLLJKMAMP().SetFloat("_BlurVector", ALELLLFCDBF);
+			EHDJJANLINB().SetFloat("HighScaleShot", NFDIFLHGJKB);
+			GBFOAHKAJEK().SetVector("FPSToggle", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 974f, 1791f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PEIMCBBHLBJ());
 		}
 		else
 		{
@@ -1472,13 +1472,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1385f;
 			}
-			FOOCJIDNGBB().SetFloat(" ", HBJJOCHGOPH);
-			JFDGLLEOPGB().SetFloat(":", Therma_Variation);
-			JFDGLLEOPGB().SetFloat("error", OGLODCDJJLB);
-			FLGPDBBKAIP().SetFloat("_Gain", ALELLLFCDBF);
-			OJMHIMIPKME().SetFloat("0,7,true,0", NFDIFLHGJKB);
-			OOMFJGPAOKL().SetVector("IntraTime", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 988f, 1213f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CECJJMKLEAK());
+			CIAFLBFJLEJ().SetFloat(" ", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat("[PlayerController] ", Therma_Variation);
+			CIAFLBFJLEJ().SetFloat("itemid", OGLODCDJJLB);
+			NBPKMLMCHFN.SetFloat("_TimeX", ALELLLFCDBF);
+			CIAFLBFJLEJ().SetFloat("0,7,true,0", NFDIFLHGJKB);
+			PEIMCBBHLBJ().SetVector("challengeid", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 988f, 1213f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
 		}
 		else
 		{
@@ -1495,13 +1495,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1005f;
 			}
-			IKAIDLJKLFC().SetFloat("_TimeX", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("OnJoinedLobby(). This client is connected and does get a room-list, which gets stored as PhotonNetwork.GetRoomList(). This script now calls: PhotonNetwork.JoinRandomRoom();", Therma_Variation);
-			HHIFMIPPMPF().SetFloat("player.xp", OGLODCDJJLB);
-			FAIFBBGFAIB().SetFloat("_Extra3", ALELLLFCDBF);
-			JFDGLLEOPGB().SetFloat(".workshop.json", NFDIFLHGJKB);
-			CECJJMKLEAK().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1501f, 82f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			LDNADDJMIPK().SetFloat("CameraFilterPack/Colors_NewPosterize", HBJJOCHGOPH);
+			GBFOAHKAJEK().SetFloat(".", Therma_Variation);
+			PEIMCBBHLBJ().SetFloat("isBunned", OGLODCDJJLB);
+			OJMHIMIPKME().SetFloat("_Extra2", ALELLLFCDBF);
+			BLMPMOIDGMG().SetFloat("https://bitbucket.org/khb-soft/intralismarcsviewer/", NFDIFLHGJKB);
+			NBMPPNFKFLB().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1501f, 82f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FOOCJIDNGBB());
 		}
 		else
 		{
@@ -1560,13 +1560,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 715f;
 			}
-			DEFBJOCJJKF().SetFloat("/Segment-[Down]", HBJJOCHGOPH);
-			JFDGLLEOPGB().SetFloat("Editor/", Therma_Variation);
-			OOMFJGPAOKL().SetFloat("pointBuffer", OGLODCDJJLB);
-			DIOAAHJDMLK().SetFloat("_ScreenResolution", ALELLLFCDBF);
-			NBPKMLMCHFN.SetFloat("_Visualize", NFDIFLHGJKB);
-			HCGJCMDJPGD().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 275f, 906f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
+			NBPKMLMCHFN.SetFloat("/Segment-[Up]", HBJJOCHGOPH);
+			CIAFLBFJLEJ().SetFloat(" user's map(s)", Therma_Variation);
+			HCGJCMDJPGD().SetFloat("_SecondTex", OGLODCDJJLB);
+			DIOAAHJDMLK().SetFloat("_Value3", ALELLLFCDBF);
+			CFEDGDGBCHE().SetFloat("_Visualize", NFDIFLHGJKB);
+			FLGPDBBKAIP().SetVector("CameraFilterPack/Glow_Glow_Color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 275f, 906f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
 		}
 		else
 		{
@@ -1629,13 +1629,13 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1366f;
 			}
-			DIOAAHJDMLK().SetFloat("ConfigVersionSlider", HBJJOCHGOPH);
-			LPMLLJKMAMP().SetFloat("_Visualize", Therma_Variation);
-			CECJJMKLEAK().SetFloat("open", OGLODCDJJLB);
-			DIOAAHJDMLK().SetFloat("RespawnAfter", ALELLLFCDBF);
-			FLGPDBBKAIP().SetFloat("Editor/", NFDIFLHGJKB);
-			CECJJMKLEAK().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1034f, 1632f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DIOAAHJDMLK());
+			HHIFMIPPMPF().SetFloat("ConfigVersionSlider", HBJJOCHGOPH);
+			CECJJMKLEAK().SetFloat("_Visualize", Therma_Variation);
+			CIAFLBFJLEJ().SetFloat("Room: '{0}' {1},{2} {4}/{3} players.", OGLODCDJJLB);
+			FLGPDBBKAIP().SetFloat("PunRespawn with Position.", ALELLLFCDBF);
+			CIAFLBFJLEJ().SetFloat("MapFolderInputField", NFDIFLHGJKB);
+			EHDJJANLINB().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1034f, 1632f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
 		}
 		else
 		{
@@ -1645,7 +1645,7 @@ public class CameraFilterPack_Oculus_ThermaVision : MonoBehaviour
 
 	private void LIBGAKMKHJJ()
 	{
-		SCShader = Shader.Find("_Intensity");
+		SCShader = Shader.Find("_Radius");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

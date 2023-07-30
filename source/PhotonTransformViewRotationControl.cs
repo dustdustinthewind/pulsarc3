@@ -7,7 +7,7 @@ public class PhotonTransformViewRotationControl
 
 	private Quaternion JNONKGEGLID;
 
-	public Quaternion MEBDCCHLBEH(Quaternion LJCFLDEONDG)
+	public Quaternion KGKEOICMONA(Quaternion LJCFLDEONDG)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
 		{
@@ -20,124 +20,33 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public void DEKGPEDBDJE(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public Quaternion PABIECBIOEG(Quaternion LJCFLDEONDG)
+	{
+		switch (HNCFAJJGIPN.InterpolateOption)
+		{
+		default:
+			return JNONKGEGLID;
+		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
+			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
+		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
+			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
+		}
+	}
+
+	public void OFFPGECPIMN(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HNCFAJJGIPN.SynchronizeEnabled)
 		{
 			if (HCIJEDFCNOP.isWriting)
 			{
-				HCIJEDFCNOP.CPIBABMPJLE(LJCFLDEONDG);
+				HCIJEDFCNOP.AIAIEPFCCDO(LJCFLDEONDG);
 				JNONKGEGLID = LJCFLDEONDG;
 			}
 			else
 			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.KIEJNJBDAJJ();
+				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
 			}
 		}
-	}
-
-	public Quaternion GKJEOLEBMMP(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public void FOHGOGIMPJJ(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.FAOJEFAMBFN())
-			{
-				HCIJEDFCNOP.PNAPNHJHBMN(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.FIBMOBNIALK();
-			}
-		}
-	}
-
-	public Quaternion JHEBHGPEKHK(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Quaternion GLDKMEANMAL(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Quaternion HCGAJCIDHPO(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Quaternion NCMHIMAKPCK()
-	{
-		return JNONKGEGLID;
-	}
-
-	public void PNLAIDLOIDE(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.IBCLJIACBKG(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.ReceiveNext();
-			}
-		}
-	}
-
-	public Quaternion EOGMILGMGLH()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion NOMHOGGPPBG()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion BFGDOFKCPGN()
-	{
-		return JNONKGEGLID;
 	}
 
 	public Quaternion BOEOKPPMJFP(Quaternion LJCFLDEONDG)
@@ -153,198 +62,23 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public void MOLNBJLBPOO(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public Quaternion MJAKBALLDGD()
 	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.GKJCHGIMOEJ())
-			{
-				HCIJEDFCNOP.PNAPNHJHBMN(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.IDKHBJIHKEB();
-			}
-		}
+		return JNONKGEGLID;
 	}
 
-	public void MCEKDLDCGAO(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public Quaternion NGBKFIJDLFH()
+	{
+		return JNONKGEGLID;
+	}
+
+	public void HMMHABFJHEC(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HNCFAJJGIPN.SynchronizeEnabled)
 		{
-			if (HCIJEDFCNOP.PGJIELMHMEJ())
+			if (HCIJEDFCNOP.MLCGKMDJIMA())
 			{
 				HCIJEDFCNOP.SendNext(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.ACOGAHJKGJH();
-			}
-		}
-	}
-
-	public Quaternion FMKLCNHHPGM()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion FAHKNKNOGPA()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion JPJLCPLIOCA()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion GetNetworkRotation()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion EJONOHDCBLA()
-	{
-		return JNONKGEGLID;
-	}
-
-	public void FBBMPGICGKC(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.FAOJEFAMBFN())
-			{
-				HCIJEDFCNOP.SendNext(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.IDKHBJIHKEB();
-			}
-		}
-	}
-
-	public void EJPKMLLGMGB(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.CPIBABMPJLE(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.LNDLNKJPAGO();
-			}
-		}
-	}
-
-	public Quaternion KGPEHOLHPDF()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion CKHDHEGPMHB()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion JJIODDBPLDP(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public void BJHJEDJDCEN(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.PGJIELMHMEJ())
-			{
-				HCIJEDFCNOP.FADAIFFMBEL(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.ACOGAHJKGJH();
-			}
-		}
-	}
-
-	public void JLPFFACDLJL(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.FAOJEFAMBFN())
-			{
-				HCIJEDFCNOP.IBCLJIACBKG(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.ACOGAHJKGJH();
-			}
-		}
-	}
-
-	public Quaternion JIDMMGNNJNB()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion GBGENCNGBJH()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion IGMHPDBMMMH(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Quaternion OAHAHAGJAPD()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion NNKFAAFFADP(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public void NMMEHKPNBCA(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.PGJIELMHMEJ())
-			{
-				HCIJEDFCNOP.FADAIFFMBEL(LJCFLDEONDG);
 				JNONKGEGLID = LJCFLDEONDG;
 			}
 			else
@@ -354,7 +88,159 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public Quaternion OCIAPBJGCOM(Quaternion LJCFLDEONDG)
+	public Quaternion OCEPLKNPOCD()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion GCEHLPKIMKH()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion GetNetworkRotation()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion GetRotation(Quaternion LJCFLDEONDG)
+	{
+		switch (HNCFAJJGIPN.InterpolateOption)
+		{
+		default:
+			return JNONKGEGLID;
+		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
+			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
+		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
+			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
+		}
+	}
+
+	public Quaternion OJIMODNLGBG()
+	{
+		return JNONKGEGLID;
+	}
+
+	public void KLFPENLPMJP(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HNCFAJJGIPN.SynchronizeEnabled)
+		{
+			if (HCIJEDFCNOP.MLCGKMDJIMA())
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LJCFLDEONDG);
+				JNONKGEGLID = LJCFLDEONDG;
+			}
+			else
+			{
+				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	public void AAAGGIHAKEH(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HNCFAJJGIPN.SynchronizeEnabled)
+		{
+			if (HCIJEDFCNOP.isWriting)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LJCFLDEONDG);
+				JNONKGEGLID = LJCFLDEONDG;
+			}
+			else
+			{
+				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	public Quaternion EBOCNAOMKPE(Quaternion LJCFLDEONDG)
+	{
+		switch (HNCFAJJGIPN.InterpolateOption)
+		{
+		default:
+			return JNONKGEGLID;
+		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
+			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
+		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
+			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
+		}
+	}
+
+	public void LBDNIDJNDJK(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HNCFAJJGIPN.SynchronizeEnabled)
+		{
+			if (HCIJEDFCNOP.isWriting)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LJCFLDEONDG);
+				JNONKGEGLID = LJCFLDEONDG;
+			}
+			else
+			{
+				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	public Quaternion AEDBNKAAGEH(Quaternion LJCFLDEONDG)
+	{
+		switch (HNCFAJJGIPN.InterpolateOption)
+		{
+		default:
+			return JNONKGEGLID;
+		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
+			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
+		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
+			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
+		}
+	}
+
+	public void GGEKDHHOOCH(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HNCFAJJGIPN.SynchronizeEnabled)
+		{
+			if (HCIJEDFCNOP.MLCGKMDJIMA())
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LJCFLDEONDG);
+				JNONKGEGLID = LJCFLDEONDG;
+			}
+			else
+			{
+				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	public Quaternion JIHNIHKFFBN(Quaternion LJCFLDEONDG)
+	{
+		switch (HNCFAJJGIPN.InterpolateOption)
+		{
+		default:
+			return JNONKGEGLID;
+		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
+			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
+		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
+			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
+		}
+	}
+
+	public void OnPhotonSerializeView(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HNCFAJJGIPN.SynchronizeEnabled)
+		{
+			if (HCIJEDFCNOP.isWriting)
+			{
+				HCIJEDFCNOP.SendNext(LJCFLDEONDG);
+				JNONKGEGLID = LJCFLDEONDG;
+			}
+			else
+			{
+				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	public Quaternion GKJEOLEBMMP(Quaternion LJCFLDEONDG)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
 		{
@@ -380,118 +266,6 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public Quaternion DMPPHLOHFKA(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public void DAFGPDBLAMA(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.FAOJEFAMBFN())
-			{
-				HCIJEDFCNOP.CPIBABMPJLE(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
-			}
-		}
-	}
-
-	public Quaternion HAGGDALINJC()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion BKIPKPDHDEL()
-	{
-		return JNONKGEGLID;
-	}
-
-	public void OnPhotonSerializeView(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.SendNext(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.ReceiveNext();
-			}
-		}
-	}
-
-	public Quaternion PMEKGEFAEON(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Quaternion OJIMODNLGBG()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion KLHIJOJANBB()
-	{
-		return JNONKGEGLID;
-	}
-
-	public void HPGOHBHACKF(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.BBHGPGBHMML(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.FIBMOBNIALK();
-			}
-		}
-	}
-
-	public Quaternion NBHOLMCPBAE(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Quaternion CEPDDADCDCG()
-	{
-		return JNONKGEGLID;
-	}
-
 	public Quaternion JEGCEPGNLFF(Quaternion LJCFLDEONDG)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
@@ -505,43 +279,12 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public Quaternion AGKPEIKIPJI()
+	public PhotonTransformViewRotationControl(PhotonTransformViewRotationModel PMLNAMDEBFI)
 	{
-		return JNONKGEGLID;
+		HNCFAJJGIPN = PMLNAMDEBFI;
 	}
 
-	public Quaternion KHNGEMPHIAP()
-	{
-		return JNONKGEGLID;
-	}
-
-	public void DHCCMDLAJIO(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.PGJIELMHMEJ())
-			{
-				HCIJEDFCNOP.CPIBABMPJLE(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.LNDLNKJPAGO();
-			}
-		}
-	}
-
-	public Quaternion CEABHPLMEPO()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion AOLDNFKNMAP()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion GetRotation(Quaternion LJCFLDEONDG)
+	public Quaternion EOCHBNJBOII(Quaternion LJCFLDEONDG)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
 		{
@@ -554,9 +297,45 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public Quaternion MJAKBALLDGD()
+	public Quaternion CCNJIHHJCKA()
 	{
 		return JNONKGEGLID;
+	}
+
+	public Quaternion AIBFAOHLPKA()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion MENCBKEOJLN(Quaternion LJCFLDEONDG)
+	{
+		switch (HNCFAJJGIPN.InterpolateOption)
+		{
+		default:
+			return JNONKGEGLID;
+		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
+			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
+		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
+			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
+		}
+	}
+
+	public Quaternion EFGEHCMCCLE()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion CDIMMMCAFDG(Quaternion LJCFLDEONDG)
+	{
+		switch (HNCFAJJGIPN.InterpolateOption)
+		{
+		default:
+			return JNONKGEGLID;
+		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
+			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
+		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
+			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
+		}
 	}
 
 	public Quaternion AIKONMOBJOF(Quaternion LJCFLDEONDG)
@@ -572,12 +351,7 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public Quaternion POGBNHOFEGA()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion GKKBHDPOBFN(Quaternion LJCFLDEONDG)
+	public Quaternion PEPILCKHHNG(Quaternion LJCFLDEONDG)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
 		{
@@ -590,60 +364,46 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public void CNMIIGDELGE(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public Quaternion LCGBAAIDOHE()
 	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
+		return JNONKGEGLID;
+	}
+
+	public Quaternion PKPOJPAJGFB()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion NMAGOKCJCGF(Quaternion LJCFLDEONDG)
+	{
+		switch (HNCFAJJGIPN.InterpolateOption)
 		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.CPIBABMPJLE(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.IDKHBJIHKEB();
-			}
+		default:
+			return JNONKGEGLID;
+		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
+			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
+		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
+			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
 		}
 	}
 
-	public void JNENAPDBOKE(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void CLNCFAJJONH(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HNCFAJJGIPN.SynchronizeEnabled)
 		{
-			if (HCIJEDFCNOP.FAOJEFAMBFN())
+			if (HCIJEDFCNOP.MLCGKMDJIMA())
 			{
 				HCIJEDFCNOP.SendNext(LJCFLDEONDG);
 				JNONKGEGLID = LJCFLDEONDG;
 			}
 			else
 			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.KIMDMBDNICC();
+				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
 			}
 		}
 	}
 
-	public Quaternion HODEBPDPNLN()
-	{
-		return JNONKGEGLID;
-	}
-
-	public void GBNDJBNLKLI(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.PBECMJMDHBI(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.LNDLNKJPAGO();
-			}
-		}
-	}
-
-	public Quaternion BMKBHDKEOHO(Quaternion LJCFLDEONDG)
+	public Quaternion OOHHCGOMOFM(Quaternion LJCFLDEONDG)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
 		{
@@ -656,7 +416,22 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public Quaternion JIHNIHKFFBN(Quaternion LJCFLDEONDG)
+	public Quaternion EOGMILGMGLH()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion DAFCPIJGBEK()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion KHNGEMPHIAP()
+	{
+		return JNONKGEGLID;
+	}
+
+	public Quaternion NKAMJHFKFFE(Quaternion LJCFLDEONDG)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
 		{
@@ -669,103 +444,18 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public void HOGEJPIBJAL(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.FAOJEFAMBFN())
-			{
-				HCIJEDFCNOP.PBECMJMDHBI(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.KIEJNJBDAJJ();
-			}
-		}
-	}
-
-	public Quaternion JAOFDDCABEG()
+	public Quaternion ELLHGIGIPDE()
 	{
 		return JNONKGEGLID;
 	}
 
-	public void JJGHNKLDANI(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void MPGJDLCANPA(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HNCFAJJGIPN.SynchronizeEnabled)
 		{
-			if (HCIJEDFCNOP.PGJIELMHMEJ())
+			if (HCIJEDFCNOP.MLCGKMDJIMA())
 			{
-				HCIJEDFCNOP.CPIBABMPJLE(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.LNDLNKJPAGO();
-			}
-		}
-	}
-
-	public void HHODOGMIJGI(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.PNAPNHJHBMN(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.KIMDMBDNICC();
-			}
-		}
-	}
-
-	public PhotonTransformViewRotationControl(PhotonTransformViewRotationModel PMLNAMDEBFI)
-	{
-		HNCFAJJGIPN = PMLNAMDEBFI;
-	}
-
-	public void DCKLCCMEGAA(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.FAOJEFAMBFN())
-			{
-				HCIJEDFCNOP.CPIBABMPJLE(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.HPPOACOIMOJ();
-			}
-		}
-	}
-
-	public void LBLAKDBHADA(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.GKJCHGIMOEJ())
-			{
-				HCIJEDFCNOP.PBECMJMDHBI(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.LNDLNKJPAGO();
-			}
-		}
-	}
-
-	public void HODGFKONIFC(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.PGJIELMHMEJ())
-			{
-				HCIJEDFCNOP.IBCLJIACBKG(LJCFLDEONDG);
+				HCIJEDFCNOP.AIAIEPFCCDO(LJCFLDEONDG);
 				JNONKGEGLID = LJCFLDEONDG;
 			}
 			else
@@ -775,57 +465,7 @@ public class PhotonTransformViewRotationControl
 		}
 	}
 
-	public Quaternion PGGPFBOADOB()
-	{
-		return JNONKGEGLID;
-	}
-
-	public Quaternion OAKCMDFCILC(Quaternion LJCFLDEONDG)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return JNONKGEGLID;
-		case PhotonTransformViewRotationModel.InterpolateOptions.RotateTowards:
-			return Quaternion.RotateTowards(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateRotateTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewRotationModel.InterpolateOptions.Lerp:
-			return Quaternion.Lerp(LJCFLDEONDG, JNONKGEGLID, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public void HDPOECGCALE(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.FAOJEFAMBFN())
-			{
-				HCIJEDFCNOP.PBECMJMDHBI(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.KIEJNJBDAJJ();
-			}
-		}
-	}
-
-	public void MKPBBAPGGND(Quaternion LJCFLDEONDG, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.PGJIELMHMEJ())
-			{
-				HCIJEDFCNOP.OLACNHHHOEL(LJCFLDEONDG);
-				JNONKGEGLID = LJCFLDEONDG;
-			}
-			else
-			{
-				JNONKGEGLID = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
-			}
-		}
-	}
-
-	public Quaternion GFLGLDGIGLK()
+	public Quaternion EJONOHDCBLA()
 	{
 		return JNONKGEGLID;
 	}

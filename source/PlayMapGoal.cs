@@ -1,89 +1,49 @@
 // PlayMapGoal
 public class PlayMapGoal : ChallengeGoal
 {
-	public override void JBDLFJKOFPG()
+	public override void KBKFJCIEPLO()
 	{
-		Singleton<GameManager>.Instance.OnFinishedMap -= NCEHIAIAMLA;
-		base.DDOBENFDOKL();
+		base.AGCKLPAKDAK();
+		Singleton<SaveSystem>.Instance.SetFloat(FJFFJLBABDI() + "CameraFilterPack/Vision_Rainbow", base.GoalProgress);
 	}
 
-	private void MLIIFJEFIIK(FinishedMapInfo DAGALCAILLN)
+	public override void PLLIKCPBLKK()
 	{
-		DAGALCAILLN.AEANKENFIDD(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(BPNMOLIBPNI()))
+		Singleton<GameManager>.Instance.OnFinishedMap -= ODKKJODPBMI;
+		base.ONLIHAEAHOJ();
+	}
+
+	public override void LOFENJCNEEJ()
+	{
+		base.FBLBEAJKCPH();
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK(FJFFJLBABDI() + "mapselector.lastSearch", FBEFEPECHBM());
+	}
+
+	public override void JJPHFPDNDEC()
+	{
+		base.PPPFKGOCMLO();
+		AHMNICEJLMF(Singleton<SaveSystem>.Instance.GetFloat(BGOBKCLKJMD() + "_Green_G", 351f));
+	}
+
+	public override void KFFKJDAFLNJ()
+	{
+		base.HEPLJACPKFO();
+		BNPNMCFLDNI(Singleton<SaveSystem>.Instance.PGKJAIODCEF(IKLKPAJBHGB() + "_Value3", 915f));
+	}
+
+	public override void PNEDPOKJNFH()
+	{
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(LIIGHENCIFC);
+		base.PIKFPFLKBCG();
+	}
+
+	private void OGIIODFJAHD(FinishedMapInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.LCBKIGCLPBH(Singleton<LuaEnvironment>.Instance.BHJCFDLIGFJ());
+		if (Singleton<LuaEnvironment>.Instance.AMPMFFNDBMB(MKLMBNEGNKK()))
 		{
-			MMFPGBOEKHL(false);
+			MBIMEPCPGOF(false);
 		}
-	}
-
-	public override void EBHMFAMPLHD()
-	{
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(NCEHIAIAMLA);
-		base.OnCompleted();
-	}
-
-	public override void ILNLFGCBIGO()
-	{
-		base.IJLBKALOBNO();
-		PNACFCEIEHH(Singleton<SaveSystem>.Instance.DHFOFEJPGPP(CKOFDGAJCFF() + "_TimeX", 261f));
-	}
-
-	private void KJEFEBFKILK(FinishedMapInfo DAGALCAILLN)
-	{
-		DAGALCAILLN.GKMPDFNEKJI(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.CheckFinishedMapCondition(BPNMOLIBPNI()))
-		{
-			FENBIOJOANF(true);
-		}
-	}
-
-	public override void ILOBNHKDGPG(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
-	{
-		base.NMFKKOJOLAB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(NCEHIAIAMLA);
-		Singleton<GameManager>.Instance.OnFinishedMap += MLIIFJEFIIK;
-		NAHLBHOLNCG();
-	}
-
-	public override void SaveProgress()
-	{
-		base.SaveProgress();
-		Singleton<SaveSystem>.Instance.SetFloat(PHPLKBPIMIH() + ".GoalProgress", base.GoalProgress);
-	}
-
-	private void FPIPAAEFJAD(FinishedMapInfo DAGALCAILLN)
-	{
-		DAGALCAILLN.HEBPNLNABDP(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(HHFDPIMFHBB()))
-		{
-			NJKJDOJBHAB(false);
-		}
-	}
-
-	public override void BLGHPBBJABH(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
-	{
-		base.LMDIDCJIHPB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.OnFinishedMap -= BCOBPALFKMA;
-		Singleton<GameManager>.Instance.DCGKDPPLKBP(LIIGHENCIFC);
-		DKHLEEPCLEL();
-	}
-
-	public override void DOPPMCDLPBE()
-	{
-		base.SaveProgress();
-		Singleton<SaveSystem>.Instance.SetFloat(PFIOEOGECFG() + "{0:0} day{1}, ", base.GoalProgress);
-	}
-
-	public override void NHDCGONGILN()
-	{
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(HOGJGGGDPDD);
-		base.OnCompleted();
-	}
-
-	public override void GMPAPODODHM()
-	{
-		base.NAHLBHOLNCG();
-		JMMJKHLAIMI(Singleton<SaveSystem>.Instance.AKHCHNPPNIB(CKOFDGAJCFF() + " | Level: ", 1123f));
 	}
 
 	public override void OnAccept(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
@@ -94,136 +54,65 @@ public class PlayMapGoal : ChallengeGoal
 		LoadProgress();
 	}
 
-	public override void HOPMBFHOAII()
+	public override void GDBPHCFAMLK()
 	{
-		Singleton<GameManager>.Instance.OnFinishedMap -= KJDFGNMKMCP;
-		base.LMCKEFAMAJG();
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(LIIGHENCIFC);
+		base.KBJAAOIAPCC();
+	}
+
+	private void ODKKJODPBMI(FinishedMapInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.NIDBAEKPFOD(Singleton<LuaEnvironment>.Instance.FMI);
+		if (Singleton<LuaEnvironment>.Instance.MBPHDIDGGDJ(MKLMBNEGNKK()))
+		{
+			LEIJPFEABBJ(false);
+		}
+	}
+
+	public override void NKDABNOFGLP(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.HAPELGDNDFN(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(ODKKJODPBMI);
+		Singleton<GameManager>.Instance.OnFinishedMap += OGIIODFJAHD;
+		EMDHDEGLPPF();
+	}
+
+	public override void CFKBBLCNEOA()
+	{
+		base.OMENGFPFDLL();
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO(JLGGLIMFAFJ() + "_Blue_G", LIDCEAOBMAF());
 	}
 
 	public override void JKPEHIMHKDI()
 	{
-		base.DKHLEEPCLEL();
-		EHAMFOBIPEO(Singleton<SaveSystem>.Instance.NPNOOLFEDKN(FDHGPNBJKMP() + "achievements.21.progress", 1220f));
+		base.HEPLJACPKFO();
+		base.GoalProgress = Singleton<SaveSystem>.Instance.HCNELAJLBPC(KHILCMNLMOJ() + "The given 2D texture ", 456f);
 	}
 
-	private void OGCLNFHJAHE(FinishedMapInfo DAGALCAILLN)
+	public override void LDAOALCLIHN(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		DAGALCAILLN.LCBKIGCLPBH(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(HKJHJHOEPOI()))
-		{
-			MKFDADCGLNN(true);
-		}
+		base.GKCOBIILKMA(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(ODKKJODPBMI);
+		Singleton<GameManager>.Instance.IALDPMHMMAJ(JFJHHCGFBOO);
+		LoadProgress();
 	}
 
-	public override void DMLDCKLBHIB()
+	public override void MLNCEPLFEKJ()
 	{
-		Singleton<GameManager>.Instance.OnFinishedMap -= MLIIFJEFIIK;
-		base.LMCKEFAMAJG();
+		base.SaveProgress();
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK(PHPLKBPIMIH() + "maps.", base.GoalProgress);
 	}
 
-	private void HKIMIGKDJML(FinishedMapInfo DAGALCAILLN)
+	public override void BHENLODHFAB()
 	{
-		DAGALCAILLN.LCBKIGCLPBH(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.CheckFinishedMapCondition(base.NOJGGCLPPAM))
-		{
-			base.IsComplete = false;
-		}
+		base.SaveProgress();
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF(PHPLKBPIMIH() + "OnMastedChangeScene", FBEFEPECHBM());
 	}
 
-	public override void AFFLBJKDKMD()
+	public override void GHILLBKBCBO()
 	{
-		base.IIBGJNGDCGB();
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE(DIDHNLABPNG() + "Scene", base.GoalProgress);
-	}
-
-	public override void CHIOGDOBEDO()
-	{
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(KJDFGNMKMCP);
-		base.LMCKEFAMAJG();
-	}
-
-	public override void LoadProgress()
-	{
-		base.LoadProgress();
-		base.GoalProgress = Singleton<SaveSystem>.Instance.GetFloat(PHPLKBPIMIH() + ".GoalProgress", 0f);
-	}
-
-	public override void KBKFJCIEPLO()
-	{
-		base.DADLEPMJMJL();
-		Singleton<SaveSystem>.Instance.CBIEBMGENJH(FDHGPNBJKMP() + "inventory.selected.", base.GoalProgress);
-	}
-
-	public override void BKAEKANBIPH()
-	{
-		base.DOPPMCDLPBE();
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE(DIDHNLABPNG() + "Bad parameters for set! Use <language>", base.GoalProgress);
-	}
-
-	public override void HGHHJFLDOEK()
-	{
-		base.DADLEPMJMJL();
-		Singleton<SaveSystem>.Instance.SetFloat(PFIOEOGECFG() + "checkpoint", base.GoalProgress);
-	}
-
-	public override void OnCompleted()
-	{
-		Singleton<GameManager>.Instance.OnFinishedMap -= HOGJGGGDPDD;
-		base.OnCompleted();
-	}
-
-	public override void FJMBAIAJIOC(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
-	{
-		base.DGIEACILHNJ(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(NCEHIAIAMLA);
-		Singleton<GameManager>.Instance.PGNNMANJJAC(MGPGFAHEDGM);
-		NAHLBHOLNCG();
-	}
-
-	public override void FHMNNKODFEP()
-	{
-		base.DKHLEEPCLEL();
-		JMMJKHLAIMI(Singleton<SaveSystem>.Instance.GetFloat(PHPLKBPIMIH() + "player.licenceaccepted", 663f));
-	}
-
-	private void OGIIODFJAHD(FinishedMapInfo DAGALCAILLN)
-	{
-		DAGALCAILLN.HEBPNLNABDP(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(HHFDPIMFHBB()))
-		{
-			MKFDADCGLNN(true);
-		}
-	}
-
-	public override void CHCDBHJILJB()
-	{
-		base.NAHLBHOLNCG();
-		JMMJKHLAIMI(Singleton<SaveSystem>.Instance.MFNCMBBPJPA(PFIOEOGECFG() + "[PowerUp]", 516f));
-	}
-
-	private void KGGEMDGNLGK(FinishedMapInfo DAGALCAILLN)
-	{
-		DAGALCAILLN.AEANKENFIDD(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(POMDFLMKAJF()))
-		{
-			EADKFNLBJLO(true);
-		}
-	}
-
-	public override void LGKFHOAKNEL(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
-	{
-		base.PNEPHLCIKPA(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.OnFinishedMap -= LFMJIMKMBHP;
-		Singleton<GameManager>.Instance.PCHIFGNAHCH(LFMJIMKMBHP);
-		IJLBKALOBNO();
-	}
-
-	public override void MBLDJHOBIMG(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
-	{
-		base.LMDIDCJIHPB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.AEIIHIGCCOF(KJEFEBFKILK);
-		Singleton<GameManager>.Instance.PGNNMANJJAC(KJDFGNMKMCP);
-		CCGAPNPGAOL();
+		base.FBLBEAJKCPH();
+		Singleton<SaveSystem>.Instance.FIKHPJEMEGO(PHPLKBPIMIH() + "[PlayerController] ", GHDFDFBCJNB());
 	}
 
 	private void HOGJGGGDPDD(FinishedMapInfo DAGALCAILLN)
@@ -235,248 +124,321 @@ public class PlayMapGoal : ChallengeGoal
 		}
 	}
 
-	public override void NGCGIHIKOLA(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	public override void OnCompleted()
 	{
-		base.DGIEACILHNJ(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.BAMDHECMAHG(KGGEMDGNLGK);
-		Singleton<GameManager>.Instance.DCGKDPPLKBP(BCOBPALFKMA);
-		DKHLEEPCLEL();
+		Singleton<GameManager>.Instance.OnFinishedMap -= HOGJGGGDPDD;
+		base.OnCompleted();
 	}
 
-	public override void ICAAJACIAPH()
+	public override void AAOAGGDLFLI(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		base.CCGAPNPGAOL();
-		OFPKLCAICJA(Singleton<SaveSystem>.Instance.NPNOOLFEDKN(FDHGPNBJKMP() + "_Colored", 231f));
+		base.NGLEHMAEEKL(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.IJANEODJFIG(HOGJGGGDPDD);
+		Singleton<GameManager>.Instance.IALDPMHMMAJ(JFJHHCGFBOO);
+		DFBDPJGHEEK();
 	}
 
-	private void OANNPFHDFJE(FinishedMapInfo DAGALCAILLN)
+	public override void EBHMFAMPLHD()
 	{
-		DAGALCAILLN.GKMPDFNEKJI(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.CheckFinishedMapCondition(base.NOJGGCLPPAM))
-		{
-			NDONNLMLNHH(false);
-		}
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(HKIMIGKDJML);
+		base.IOIAOIMIIMA();
 	}
 
-	public override void LPLDOKNALPE()
+	public override void HDOHBDAGMEO()
 	{
-		base.AFFLBJKDKMD();
-		Singleton<SaveSystem>.Instance.SetFloat(FDHGPNBJKMP() + "_ScreenResolution", base.GoalProgress);
-	}
-
-	private void MGPGFAHEDGM(FinishedMapInfo DAGALCAILLN)
-	{
-		DAGALCAILLN.BFCMCBBNPOD(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(base.NOJGGCLPPAM))
-		{
-			MKFDADCGLNN(true);
-		}
-	}
-
-	public override void FJJFCKBBJIL()
-	{
-		base.AOPNBBENAKB();
-		Singleton<SaveSystem>.Instance.CBIEBMGENJH(FDHGPNBJKMP() + ". Client is not the MasterClient in this room.", base.GoalProgress);
-	}
-
-	public override void OOBKIGDLJLO(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
-	{
-		base.LMDIDCJIHPB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(BCOBPALFKMA);
-		Singleton<GameManager>.Instance.DCGKDPPLKBP(OANNPFHDFJE);
-		LoadProgress();
+		base.PPPFKGOCMLO();
+		NHENNCOILPG(Singleton<SaveSystem>.Instance.PGKJAIODCEF(JLGGLIMFAFJ() + "challenges.", 49f));
 	}
 
 	public override void FHPDJMHPLJA(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		base.PNEPHLCIKPA(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(LIIGHENCIFC);
-		Singleton<GameManager>.Instance.PCHIFGNAHCH(OGCLNFHJAHE);
-		CCGAPNPGAOL();
+		base.OnAccept(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(JFJHHCGFBOO);
+		Singleton<GameManager>.Instance.BKDFHECPBCM(OGIIODFJAHD);
+		PPPFKGOCMLO();
 	}
 
-	public override void KEJGDALCJHP()
+	public override void DPPBKDMBLHN()
 	{
-		base.CCGAPNPGAOL();
-		PNACFCEIEHH(Singleton<SaveSystem>.Instance.DHFOFEJPGPP(PNLACKIPGLD() + "closed", 969f));
+		base.LoadProgress();
+		base.GoalProgress = Singleton<SaveSystem>.Instance.DPAGLGGNECO(KHILCMNLMOJ() + " ", 730f);
 	}
 
-	public override void IJLBKALOBNO()
+	public override void LoadProgress()
 	{
-		base.DKHLEEPCLEL();
-		PNACFCEIEHH(Singleton<SaveSystem>.Instance.OLHIEOKMOAK(CKOFDGAJCFF() + "_Far", 893f));
+		base.LoadProgress();
+		base.GoalProgress = Singleton<SaveSystem>.Instance.GetFloat(PHPLKBPIMIH() + ".GoalProgress", 0f);
 	}
 
-	public override void PLCBPLLCNIC(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	public override void FGGPLKCGIGO()
 	{
-		base.LMDIDCJIHPB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(LIIGHENCIFC);
-		Singleton<GameManager>.Instance.PCHIFGNAHCH(HOGJGGGDPDD);
-		NAHLBHOLNCG();
+		base.FLEONCKOLNB();
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF(KOHBJKHPDGK() + "Messages (shift+tab)", GHDFDFBCJNB());
 	}
 
-	private void NCEHIAIAMLA(FinishedMapInfo DAGALCAILLN)
+	public override void MGBFJJJIJPM()
 	{
-		DAGALCAILLN.GKMPDFNEKJI(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.CheckFinishedMapCondition(base.NOJGGCLPPAM))
+		base.FLEONCKOLNB();
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK(FJFFJLBABDI() + "[ResourcesManager] Load image error: ", GHDFDFBCJNB());
+	}
+
+	public override void KGGEDALAKDA(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.KJJMJJJEGDB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.IJANEODJFIG(ODKKJODPBMI);
+		Singleton<GameManager>.Instance.BKDFHECPBCM(ODKKJODPBMI);
+		PPPFKGOCMLO();
+	}
+
+	private void FBGDKGGKFMJ(FinishedMapInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.LCBKIGCLPBH(Singleton<LuaEnvironment>.Instance.BHJCFDLIGFJ());
+		if (Singleton<LuaEnvironment>.Instance.GEEDHEPEHCJ(base.NOJGGCLPPAM))
 		{
-			NJKJDOJBHAB(true);
+			DPIJMEGONOJ(false);
 		}
 	}
 
-	private void LFMJIMKMBHP(FinishedMapInfo DAGALCAILLN)
+	public override void GJPOCDKINFD()
 	{
-		DAGALCAILLN.LCBKIGCLPBH(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(HKJHJHOEPOI()))
-		{
-			MKFDADCGLNN(false);
-		}
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(OGIIODFJAHD);
+		base.KBJAAOIAPCC();
 	}
 
-	public override void GLKDDIIOHDF()
+	public override void HJHMCJPPINB()
 	{
-		base.AFFLBJKDKMD();
-		Singleton<SaveSystem>.Instance.CBIEBMGENJH(PFIOEOGECFG() + "_SmoothEnd", base.GoalProgress);
+		base.SaveProgress();
+		Singleton<SaveSystem>.Instance.BPJPCGCIFGK(KHILCMNLMOJ() + "settings.volume.game", FBEFEPECHBM());
 	}
 
-	public override void KAHKKLGKLLF()
+	public override void BBFFELGLDHE()
 	{
-		base.DOPPMCDLPBE();
-		Singleton<SaveSystem>.Instance.CBIEBMGENJH(CKOFDGAJCFF() + "Screenshots only supported in PlayMode", base.GoalProgress);
+		base.LoadProgress();
+		base.GoalProgress = Singleton<SaveSystem>.Instance.DPAGLGGNECO(ADHHBPHLCJO() + "_SampleScale", 121f);
 	}
 
-	private void GDGBPNPJOCK(FinishedMapInfo DAGALCAILLN)
+	public override void AFMPCOFDHJI()
 	{
-		DAGALCAILLN.AEANKENFIDD(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.CheckFinishedMapCondition(MFLLPADMCIN()))
-		{
-			NJKJDOJBHAB(true);
-		}
+		Singleton<GameManager>.Instance.OnFinishedMap -= LIIGHENCIFC;
+		base.ONLIHAEAHOJ();
 	}
 
-	public override void FNJFHBBAJNO(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	public override void JKILPDLMHMN(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		base.PNEPHLCIKPA(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(LIIGHENCIFC);
-		Singleton<GameManager>.Instance.PCHIFGNAHCH(MLIIFJEFIIK);
-		AFGLHMCLJJN();
+		base.KHMFEHEPGAM(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.IJANEODJFIG(LIIGHENCIFC);
+		Singleton<GameManager>.Instance.OnFinishedMap += HKIMIGKDJML;
+		DFBDPJGHEEK();
 	}
 
 	private void LIIGHENCIFC(FinishedMapInfo DAGALCAILLN)
 	{
-		DAGALCAILLN.BFCMCBBNPOD(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(OIBFKLBKDIB()))
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.BHJCFDLIGFJ());
+		if (Singleton<LuaEnvironment>.Instance.AMPMFFNDBMB(IGCNBLBAAAK()))
 		{
-			EADKFNLBJLO(false);
+			DPIJMEGONOJ(false);
 		}
 	}
 
-	public override void NNMICPOJGPD()
-	{
-		base.AOPNBBENAKB();
-		Singleton<SaveSystem>.Instance.SetFloat(DIDHNLABPNG() + "Value", base.GoalProgress);
-	}
-
-	public override void MMKBPJFMFFH()
-	{
-		base.DADLEPMJMJL();
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE(PNLACKIPGLD() + "Up", base.GoalProgress);
-	}
-
-	public override void OOKHGEKNHHI()
-	{
-		Singleton<GameManager>.Instance.BAMDHECMAHG(MGPGFAHEDGM);
-		base.DDOBENFDOKL();
-	}
-
-	public override void GFNFINKABFD()
+	public override void SaveProgress()
 	{
 		base.SaveProgress();
-		Singleton<SaveSystem>.Instance.SetFloat(PFIOEOGECFG() + "/", base.GoalProgress);
+		Singleton<SaveSystem>.Instance.SetFloat(PHPLKBPIMIH() + ".GoalProgress", base.GoalProgress);
 	}
 
-	public override void KHMFEHEPGAM(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	public override void BOGGKCBDLJH()
 	{
-		base.LMDIDCJIHPB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.EAIPOEBPJOP(OANNPFHDFJE);
-		Singleton<GameManager>.Instance.OnFinishedMap += KGGEMDGNLGK;
-		NAHLBHOLNCG();
+		base.DFBDPJGHEEK();
+		JKINKBKCGFP(Singleton<SaveSystem>.Instance.PGKJAIODCEF(FJFFJLBABDI() + "_Value", 449f));
+	}
+
+	public override void ILPNDHPCELH()
+	{
+		base.OMENGFPFDLL();
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO(FJFFJLBABDI() + "CameraFilterPack/NightVision_4", GHDFDFBCJNB());
+	}
+
+	public override void HHACHIOIAEK(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.KHMFEHEPGAM(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.OnFinishedMap -= JFJHHCGFBOO;
+		Singleton<GameManager>.Instance.IALDPMHMMAJ(OGIIODFJAHD);
+		PPPFKGOCMLO();
+	}
+
+	public override void JOABPMBAHCA()
+	{
+		base.LoadProgress();
+		base.GoalProgress = Singleton<SaveSystem>.Instance.GetFloat(BGOBKCLKJMD() + "float,10", 307f);
 	}
 
 	public override void NHFICNGICBA()
 	{
-		base.DOPPMCDLPBE();
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE(PHPLKBPIMIH() + "Object ID. Case-Sensitive", base.GoalProgress);
+		base.OPDGBIPHKGC();
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK(PHPLKBPIMIH() + "Set Sun Input", LIDCEAOBMAF());
 	}
 
-	private void KJDFGNMKMCP(FinishedMapInfo DAGALCAILLN)
+	public override void OPDGBIPHKGC()
 	{
-		DAGALCAILLN.LCBKIGCLPBH(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.AHKNANJJBJM(HKJHJHOEPOI()))
-		{
-			MMFPGBOEKHL(true);
-		}
+		base.FLEONCKOLNB();
+		Singleton<SaveSystem>.Instance.KDHMHPPBLIF(KHILCMNLMOJ() + "powerup.1", FBEFEPECHBM());
 	}
 
-	public override void BCLMEEAMAEB(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	public override void DOKEOBBOHEL()
 	{
-		base.DGIEACILHNJ(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		Singleton<GameManager>.Instance.BAMDHECMAHG(LIIGHENCIFC);
-		Singleton<GameManager>.Instance.PGNNMANJJAC(OGCLNFHJAHE);
-		AFGLHMCLJJN();
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(OGIIODFJAHD);
+		base.IPAILGLGGKK();
 	}
 
-	public override void NEPIKEBNOHI()
+	public override void NNMICPOJGPD()
 	{
-		base.DOPPMCDLPBE();
-		Singleton<SaveSystem>.Instance.IKOAFMHIJLE(PHPLKBPIMIH() + "/", base.GoalProgress);
+		base.SaveProgress();
+		Singleton<SaveSystem>.Instance.OKOEGLJJHOK(KHILCMNLMOJ() + "Value", LIDCEAOBMAF());
+	}
+
+	public override void AKAIIFMFEOH()
+	{
+		base.LoadProgress();
+		NHENNCOILPG(Singleton<SaveSystem>.Instance.HCNELAJLBPC(BGOBKCLKJMD() + "_ScreenResolution", 433f));
 	}
 
 	private void JFJHHCGFBOO(FinishedMapInfo DAGALCAILLN)
 	{
-		DAGALCAILLN.GKMPDFNEKJI(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.CheckFinishedMapCondition(OIBFKLBKDIB()))
+		DAGALCAILLN.GCJEPNMMPDK(Singleton<LuaEnvironment>.Instance.MBBENLGCION());
+		if (Singleton<LuaEnvironment>.Instance.IAKGIOHHEKN(MFLLPADMCIN()))
 		{
-			MMFPGBOEKHL(false);
+			NBIPNNIDDLC(true);
 		}
 	}
 
-	public override void PGPMPNANPLM()
+	public override void PLCBPLLCNIC(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		base.SaveProgress();
-		Singleton<SaveSystem>.Instance.SetFloat(FDHGPNBJKMP() + ").", base.GoalProgress);
+		base.HAPELGDNDFN(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.OnFinishedMap -= FBGDKGGKFMJ;
+		Singleton<GameManager>.Instance.IALDPMHMMAJ(LIIGHENCIFC);
+		EMDHDEGLPPF();
 	}
 
-	public override void GHGHILGEOJE()
+	public override void OKDKEJEJJAN()
 	{
-		base.SaveProgress();
-		Singleton<SaveSystem>.Instance.CBIEBMGENJH(FDHGPNBJKMP() + "EventSystem", base.GoalProgress);
+		Singleton<GameManager>.Instance.OnFinishedMap -= FBGDKGGKFMJ;
+		base.IPAILGLGGKK();
 	}
 
-	private void BCOBPALFKMA(FinishedMapInfo DAGALCAILLN)
+	public override void EAJBKDEOBLE(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		DAGALCAILLN.HEBPNLNABDP(Singleton<LuaEnvironment>.Instance.FMI);
-		if (Singleton<LuaEnvironment>.Instance.CheckFinishedMapCondition(POMDFLMKAJF()))
+		base.DPIDHAFMFGG(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.IJANEODJFIG(ODKKJODPBMI);
+		Singleton<GameManager>.Instance.OnFinishedMap += HOGJGGGDPDD;
+		EMDHDEGLPPF();
+	}
+
+	public override void OHBHMNMCEGL()
+	{
+		base.SaveProgress();
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO(BGOBKCLKJMD() + "/", LIDCEAOBMAF());
+	}
+
+	public override void NHDLPBMMEDK(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.NOFLEDOPHMO(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.IJANEODJFIG(JFJHHCGFBOO);
+		Singleton<GameManager>.Instance.OnFinishedMap += JFJHHCGFBOO;
+		PPPFKGOCMLO();
+	}
+
+	public override void LOMENLJBNLK()
+	{
+		Singleton<GameManager>.Instance.IJANEODJFIG(LIIGHENCIFC);
+		base.JNLJADDKPAI();
+	}
+
+	public override void KAHKKLGKLLF()
+	{
+		base.OPDGBIPHKGC();
+		Singleton<SaveSystem>.Instance.FNBPKFMKJFO(KHILCMNLMOJ() + "DPADHOR", FBEFEPECHBM());
+	}
+
+	public override void HOPMBFHOAII()
+	{
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(HKIMIGKDJML);
+		base.IPAILGLGGKK();
+	}
+
+	public override void OJGLANCHIPN()
+	{
+		base.PPPFKGOCMLO();
+		NHENNCOILPG(Singleton<SaveSystem>.Instance.GetFloat(IKLKPAJBHGB() + "_TimeX", 3f));
+	}
+
+	public override void MBLDJHOBIMG(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.DPIDHAFMFGG(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.OnFinishedMap -= LIIGHENCIFC;
+		Singleton<GameManager>.Instance.BKDFHECPBCM(LIIGHENCIFC);
+		DFBDPJGHEEK();
+	}
+
+	public override void LJOEJPOJPGH(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.NOFLEDOPHMO(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.IJANEODJFIG(HOGJGGGDPDD);
+		Singleton<GameManager>.Instance.BKDFHECPBCM(HOGJGGGDPDD);
+		DFBDPJGHEEK();
+	}
+
+	public override void BCLMEEAMAEB(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.GKCOBIILKMA(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.OnFinishedMap -= JFJHHCGFBOO;
+		Singleton<GameManager>.Instance.IALDPMHMMAJ(LIIGHENCIFC);
+		PPPFKGOCMLO();
+	}
+
+	public override void ELCONNKPDJG()
+	{
+		Singleton<GameManager>.Instance.OnFinishedMap -= HKIMIGKDJML;
+		base.KHECALMHGKE();
+	}
+
+	public override void NHKOCDNCIJB()
+	{
+		Singleton<GameManager>.Instance.IJANEODJFIG(FBGDKGGKFMJ);
+		base.ONLIHAEAHOJ();
+	}
+
+	private void HKIMIGKDJML(FinishedMapInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.LCBKIGCLPBH(Singleton<LuaEnvironment>.Instance.FMI);
+		if (Singleton<LuaEnvironment>.Instance.CheckFinishedMapCondition(LINMBCLGDJC()))
 		{
-			NJKJDOJBHAB(true);
+			base.IsComplete = true;
 		}
 	}
 
-	public override void FCCOFGIGGJK()
+	public override void KEJGDALCJHP()
 	{
-		base.CCGAPNPGAOL();
-		OFPKLCAICJA(Singleton<SaveSystem>.Instance.MFNCMBBPJPA(PFIOEOGECFG() + "#rt", 67f));
+		base.PPPFKGOCMLO();
+		JKINKBKCGFP(Singleton<SaveSystem>.Instance.GetFloat(IKLKPAJBHGB() + "_Value", 1836f));
 	}
 
-	public override void OCFEDHEGHAK()
+	public override void NMFBGKMIHFA()
+	{
+		Singleton<GameManager>.Instance.IJANEODJFIG(JFJHHCGFBOO);
+		base.NHKOCDNCIJB();
+	}
+
+	public override void OKBEBBKCBOA()
 	{
 		base.LoadProgress();
-		PNACFCEIEHH(Singleton<SaveSystem>.Instance.AKHCHNPPNIB(PHPLKBPIMIH() + "Reading preview file failed!: \"{0}\"", 776f));
+		base.GoalProgress = Singleton<SaveSystem>.Instance.GetFloat(IKLKPAJBHGB() + "menu.enableselectormusic", 1408f);
 	}
 
-	public override void AKDBKOIHBND()
+	public override void EEMAOPDAGLE(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		Singleton<GameManager>.Instance.OnFinishedMap -= GDGBPNPJOCK;
-		base.DDOBENFDOKL();
+		base.NGLEHMAEEKL(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		Singleton<GameManager>.Instance.GPEKLFBAAGI(HKIMIGKDJML);
+		Singleton<GameManager>.Instance.BKDFHECPBCM(HOGJGGGDPDD);
+		EMDHDEGLPPF();
 	}
 }

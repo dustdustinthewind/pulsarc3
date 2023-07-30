@@ -96,18 +96,18 @@ public class DebugCommands : ScriptableObject
 		}
 		BDGDDFKKGGA[0] = BDGDDFKKGGA[0].ToLower();
 		string text = BDGDDFKKGGA[0];
-		commandHistory.Add(string.Join("FrostCanvas", BDGDDFKKGGA));
+		commandHistory.Add(string.Join("shader.frost", BDGDDFKKGGA));
 		for (int i = 0; i < commands.Count; i += 0)
 		{
 			if (text == commands[i].name)
 			{
-				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.OLCIGDENLGH()))
+				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.LALHDBFPKPH()))
 				{
 					commands[i].method(BDGDDFKKGGA);
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.GGGDONNAMNG();
+					Singleton<GameManager>.Instance.CJEBLBGOINH();
 				}
 				return false;
 			}
@@ -147,7 +147,7 @@ public class DebugCommands : ScriptableObject
 	public void EHJBOAOCFNP(string PODGBCMDEOF, DebugCommand CMHOHMCDIAN, string OCCKNFGDAHI = "", string JKLIPKFAACO = "", bool ENHGPBGHEPA = false)
 	{
 		PODGBCMDEOF = PODGBCMDEOF.ToLower();
-		if (!LCNBGHBBGJO(PODGBCMDEOF))
+		if (!KKIKCOEJNDF(PODGBCMDEOF))
 		{
 			Command command = new Command();
 			command.name = PODGBCMDEOF;
@@ -168,7 +168,7 @@ public class DebugCommands : ScriptableObject
 	public void JAFPBHCJCGE(string PODGBCMDEOF, DebugCommand CMHOHMCDIAN, string OCCKNFGDAHI = "", string JKLIPKFAACO = "", bool ENHGPBGHEPA = false)
 	{
 		PODGBCMDEOF = PODGBCMDEOF.ToLower();
-		if (!HasCommand(PODGBCMDEOF))
+		if (!LCNBGHBBGJO(PODGBCMDEOF))
 		{
 			Command command = new Command();
 			command.name = PODGBCMDEOF;
@@ -211,18 +211,18 @@ public class DebugCommands : ScriptableObject
 		}
 		BDGDDFKKGGA[0] = BDGDDFKKGGA[0].ToLower();
 		string text = BDGDDFKKGGA[0];
-		commandHistory.Add(string.Join("Maps Editor v.", BDGDDFKKGGA));
+		commandHistory.Add(string.Join("EventSystem", BDGDDFKKGGA));
 		for (int i = 0; i < commands.Count; i += 0)
 		{
 			if (text == commands[i].name)
 			{
-				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.FMAOGGPBJFB()))
+				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.IsCheatsAllowed()))
 				{
 					commands[i].method(BDGDDFKKGGA);
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.PMLDBMFOPOG();
+					Singleton<GameManager>.Instance.GGGDONNAMNG();
 				}
 				return false;
 			}
@@ -243,13 +243,13 @@ public class DebugCommands : ScriptableObject
 		{
 			if (text == commands[i].name)
 			{
-				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.IsCheatsAllowed()))
+				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.LALHDBFPKPH()))
 				{
 					commands[i].method(BDGDDFKKGGA);
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.GGGDONNAMNG();
+					Singleton<GameManager>.Instance.PFHAPKOAIDK();
 				}
 				return true;
 			}
@@ -292,7 +292,7 @@ public class DebugCommands : ScriptableObject
 	public void CEMAFHEDCMF(string PODGBCMDEOF, DebugCommand CMHOHMCDIAN, string OCCKNFGDAHI = "", string JKLIPKFAACO = "", bool ENHGPBGHEPA = false)
 	{
 		PODGBCMDEOF = PODGBCMDEOF.ToLower();
-		if (!MHBEHIAGALG(PODGBCMDEOF))
+		if (!GOANNFJIAAJ(PODGBCMDEOF))
 		{
 			Command command = new Command();
 			command.name = PODGBCMDEOF;
@@ -318,18 +318,18 @@ public class DebugCommands : ScriptableObject
 		}
 		BDGDDFKKGGA[0] = BDGDDFKKGGA[0].ToLower();
 		string text = BDGDDFKKGGA[1];
-		commandHistory.Add(string.Join("UI Extensions/SoftMaskShader", BDGDDFKKGGA));
+		commandHistory.Add(string.Join("effector", BDGDDFKKGGA));
 		for (int i = 0; i < commands.Count; i++)
 		{
 			if (text == commands[i].name)
 			{
-				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.FMAOGGPBJFB()))
+				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.LALHDBFPKPH()))
 				{
 					commands[i].method(BDGDDFKKGGA);
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.KHMKOJFCFNC();
+					Singleton<GameManager>.Instance.GGGDONNAMNG();
 				}
 				return false;
 			}
@@ -361,7 +361,7 @@ public class DebugCommands : ScriptableObject
 		}
 		BDGDDFKKGGA[1] = BDGDDFKKGGA[0].ToLower();
 		string text = BDGDDFKKGGA[0];
-		commandHistory.Add(string.Join("_Visualize", BDGDDFKKGGA));
+		commandHistory.Add(string.Join("_LightIntensity", BDGDDFKKGGA));
 		for (int i = 0; i < commands.Count; i += 0)
 		{
 			if (text == commands[i].name)
@@ -372,7 +372,7 @@ public class DebugCommands : ScriptableObject
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.HJIHIKEKHLC();
+					Singleton<GameManager>.Instance.GGGDONNAMNG();
 				}
 				return false;
 			}
@@ -399,7 +399,7 @@ public class DebugCommands : ScriptableObject
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.PMLDBMFOPOG();
+					Singleton<GameManager>.Instance.CJEBLBGOINH();
 				}
 				return false;
 			}
@@ -415,18 +415,18 @@ public class DebugCommands : ScriptableObject
 		}
 		BDGDDFKKGGA[1] = BDGDDFKKGGA[0].ToLower();
 		string text = BDGDDFKKGGA[1];
-		commandHistory.Add(string.Join("Load scene by name or build id", BDGDDFKKGGA));
+		commandHistory.Add(string.Join("Print the list of scenes, avalable in game.", BDGDDFKKGGA));
 		for (int i = 1; i < commands.Count; i++)
 		{
 			if (text == commands[i].name)
 			{
-				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.FMAOGGPBJFB()))
+				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.LALHDBFPKPH()))
 				{
 					commands[i].method(BDGDDFKKGGA);
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.KHMKOJFCFNC();
+					Singleton<GameManager>.Instance.GGGDONNAMNG();
 				}
 				return false;
 			}
@@ -442,7 +442,7 @@ public class DebugCommands : ScriptableObject
 		}
 		BDGDDFKKGGA[1] = BDGDDFKKGGA[1].ToLower();
 		string text = BDGDDFKKGGA[0];
-		commandHistory.Add(string.Join("There are too many cells created by your subdivision options. Maximum allowed number of cells is ", BDGDDFKKGGA));
+		commandHistory.Add(string.Join("Cause: ", BDGDDFKKGGA));
 		for (int i = 0; i < commands.Count; i += 0)
 		{
 			if (text == commands[i].name)
@@ -453,7 +453,7 @@ public class DebugCommands : ScriptableObject
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.KHMKOJFCFNC();
+					Singleton<GameManager>.Instance.GGGDONNAMNG();
 				}
 				return false;
 			}
@@ -525,13 +525,13 @@ public class DebugCommands : ScriptableObject
 		{
 			if (text == commands[i].name)
 			{
-				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.IsCheatsAllowed()))
+				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.LALHDBFPKPH()))
 				{
 					commands[i].method(BDGDDFKKGGA);
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.GGGDONNAMNG();
+					Singleton<GameManager>.Instance.CJEBLBGOINH();
 				}
 				return false;
 			}
@@ -609,7 +609,7 @@ public class DebugCommands : ScriptableObject
 	public void GIALDAIHBBD(string PODGBCMDEOF, DebugCommand CMHOHMCDIAN, string OCCKNFGDAHI = "", string JKLIPKFAACO = "", bool ENHGPBGHEPA = false)
 	{
 		PODGBCMDEOF = PODGBCMDEOF.ToLower();
-		if (!GFHAAMPGIHL(PODGBCMDEOF))
+		if (!HasCommand(PODGBCMDEOF))
 		{
 			Command command = new Command();
 			command.name = PODGBCMDEOF;
@@ -673,7 +673,7 @@ public class DebugCommands : ScriptableObject
 	public void CIHBPOBKGNP(string PODGBCMDEOF, DebugCommand CMHOHMCDIAN, string OCCKNFGDAHI = "", string JKLIPKFAACO = "", bool ENHGPBGHEPA = false)
 	{
 		PODGBCMDEOF = PODGBCMDEOF.ToLower();
-		if (!KKIKCOEJNDF(PODGBCMDEOF))
+		if (!GFDCDOLIGFB(PODGBCMDEOF))
 		{
 			Command command = new Command();
 			command.name = PODGBCMDEOF;
@@ -720,7 +720,7 @@ public class DebugCommands : ScriptableObject
 	public void PNEHIPCCEKG(string PODGBCMDEOF, DebugCommand CMHOHMCDIAN, string OCCKNFGDAHI = "", string JKLIPKFAACO = "", bool ENHGPBGHEPA = false)
 	{
 		PODGBCMDEOF = PODGBCMDEOF.ToLower();
-		if (!NKHEHMCIFND(PODGBCMDEOF))
+		if (!ILHDFIAHFAK(PODGBCMDEOF))
 		{
 			Command command = new Command();
 			command.name = PODGBCMDEOF;
@@ -786,7 +786,7 @@ public class DebugCommands : ScriptableObject
 	public void CEBBJICIFGO(string PODGBCMDEOF, DebugCommand CMHOHMCDIAN, string OCCKNFGDAHI = "", string JKLIPKFAACO = "", bool ENHGPBGHEPA = false)
 	{
 		PODGBCMDEOF = PODGBCMDEOF.ToLower();
-		if (!GICPIBAOMPN(PODGBCMDEOF))
+		if (!ILHDFIAHFAK(PODGBCMDEOF))
 		{
 			Command command = new Command();
 			command.name = PODGBCMDEOF;
@@ -806,18 +806,18 @@ public class DebugCommands : ScriptableObject
 		}
 		BDGDDFKKGGA[1] = BDGDDFKKGGA[1].ToLower();
 		string text = BDGDDFKKGGA[0];
-		commandHistory.Add(string.Join(" cannot be used as a 3D LUT.", BDGDDFKKGGA));
+		commandHistory.Add(string.Join("targetColor", BDGDDFKKGGA));
 		for (int i = 1; i < commands.Count; i += 0)
 		{
 			if (text == commands[i].name)
 			{
-				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.FMAOGGPBJFB()))
+				if (!commands[i].isCheat || (commands[i].isCheat && Singleton<GameManager>.Instance.IsCheatsAllowed()))
 				{
 					commands[i].method(BDGDDFKKGGA);
 				}
 				else
 				{
-					Singleton<GameManager>.Instance.PMLDBMFOPOG();
+					Singleton<GameManager>.Instance.PFHAPKOAIDK();
 				}
 				return false;
 			}
@@ -838,7 +838,7 @@ public class DebugCommands : ScriptableObject
 	public void KHBHACBOGLJ(string PODGBCMDEOF, DebugCommand CMHOHMCDIAN, string OCCKNFGDAHI = "", string JKLIPKFAACO = "", bool ENHGPBGHEPA = false)
 	{
 		PODGBCMDEOF = PODGBCMDEOF.ToLower();
-		if (!PAMDBEMNGGC(PODGBCMDEOF))
+		if (!KKIKCOEJNDF(PODGBCMDEOF))
 		{
 			Command command = new Command();
 			command.name = PODGBCMDEOF;

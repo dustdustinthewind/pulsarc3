@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Split Screen/Split 3D")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Split Screen/Split 3D")]
 public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 {
 	private string ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_SplitScreen3D";
@@ -126,21 +126,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("player.xp", JDMCFBKJHDD);
+				ACHNOHCLGOO().SetTexture("player.xp", JDMCFBKJHDD);
 			}
-			ABHDNGIHBKE().SetFloat("_Visualize", _Distance);
-			NMDBCDFPGOK().SetFloat("maps.", _Size);
-			ADBKPGFMNKO().SetFloat("OK", _FixDistance);
-			LNLKMDPHDCC().SetFloat("BitsData", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("_GrainOffsetScale", BlendFX);
-			LPMLLJKMAMP().SetFloat("settings.enablehitsoundsinnormal", SwitchCameraToCamera2);
-			NMDBCDFPGOK().SetFloat("rarity", SplitX);
-			KDMBOKLMADJ().SetFloat("CameraFilterPack/Color_Convert_Normal", SplitY);
-			FLGPDBBKAIP().SetFloat("DisableStoryboardToggle", Smooth);
-			ADBKPGFMNKO().SetFloat("#pleasewait", Rotation);
-			HKHBBBFLGJH().SetInt("MaxLivesSlider", (!CONEELGCALI) ? 0 : 0);
+			KGOLDDBHIFN().SetFloat("_Visualize", _Distance);
+			AELJLBOJAIL().SetFloat("maps.", _Size);
+			LPDOGGFOBDH().SetFloat("Done!", _FixDistance);
+			OOMFJGPAOKL().SetFloat("BitsData", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_GrainTex", BlendFX);
+			NBPKMLMCHFN.SetFloat("powerup.0", SwitchCameraToCamera2);
+			MCDGIILBNIF().SetFloat("#91CCFF", SplitX);
+			OOMFJGPAOKL().SetFloat("CameraFilterPack/Color_Convert_Normal", SplitY);
+			HJGEHJDMCGI().SetFloat("settings.enablehitsoundsinrelax", Smooth);
+			DOMEEFLPEPJ().SetFloat("MAPS NOT FOUND", Rotation);
+			HJGEHJDMCGI().SetInt("HandsCountSlider", (!CONEELGCALI) ? 0 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HJGEHJDMCGI());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLGPDBBKAIP());
 		}
 		else
 		{
@@ -204,12 +204,12 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void AENIGCONKBD()
 	{
-		Start();
+		AEOLJEIDMDB();
 	}
 
 	private void FLHBCHLMOFK()
 	{
-		KOFAMEKHHGD();
+		EGEPLFGKGLI();
 	}
 
 	private void DBGBCCBHBBC()
@@ -220,7 +220,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void PMAADPNNHKK()
 	{
-		Start();
+		KDMANOEMOCA();
 	}
 
 	[SpecialName]
@@ -248,7 +248,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void MEJPBKFMAIG()
 	{
-		EGEPLFGKGLI();
+		JKBMKPDGCHG();
 	}
 
 	private void ICDBMJKMIKC()
@@ -286,21 +286,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				HFBJAOFLCJI().SetTexture("_Threshhold", JDMCFBKJHDD);
+				LPMLLJKMAMP().SetTexture("colorD", JDMCFBKJHDD);
 			}
-			GCDFNHMJMIP().SetFloat("_Intervale", _Distance);
-			NKBIEMJBCBM().SetFloat("CameraFilterPack/Drawing_Manga3", _Size);
-			MCDGIILBNIF().SetFloat("Connection error: ", _FixDistance);
-			OOMFJGPAOKL().SetFloat("b", HBJJOCHGOPH);
-			LPMLLJKMAMP().SetFloat("<color=#", BlendFX);
-			KAFBNOBOIAJ().SetFloat("clear", SwitchCameraToCamera2);
-			NMDBCDFPGOK().SetFloat("GameMessagesDurationSlider", SplitX);
-			ECCPAOBFDKP().SetFloat("SetEnvSpriteImage", SplitY);
-			NMDBCDFPGOK().SetFloat("LevelNameInputField", Smooth);
-			HKHBBBFLGJH().SetFloat("note.1", Rotation);
-			HJGEHJDMCGI().SetInt("BitsData", (!CONEELGCALI) ? 1 : 0);
+			DOMEEFLPEPJ().SetFloat("_Heigh", _Distance);
+			ECCPAOBFDKP().SetFloat("_DotSize", _Size);
+			LNLKMDPHDCC().SetFloat("Connection error: ", _FixDistance);
+			CBCNOEIALHB().SetFloat("r", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("#onrankchangedowntext", BlendFX);
+			EFDEIFCDAFG().SetFloat("clear", SwitchCameraToCamera2);
+			OOMFJGPAOKL().SetFloat("GameMessagesDurationSlider", SplitX);
+			DOMEEFLPEPJ().SetFloat("SetParticlesParticleSpeed", SplitY);
+			LPDOGGFOBDH().SetFloat("Tab1Content", Smooth);
+			LNLKMDPHDCC().SetFloat("#ok", Rotation);
+			NBPKMLMCHFN.SetInt("SpawnObj", (!CONEELGCALI) ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
 		}
 		else
 		{
@@ -322,7 +322,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void IBEAPBDAOCC()
 	{
-		NEFHGMNAPEP();
+		AGEJKLMJGDO();
 	}
 
 	private void CAKNMILHHNE()
@@ -360,21 +360,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				LPDOGGFOBDH().SetTexture("Stream did not contain properly formatted byte array", JDMCFBKJHDD);
+				KGOLDDBHIFN().SetTexture("plainText", JDMCFBKJHDD);
 			}
-			FLGPDBBKAIP().SetFloat("High", _Distance);
-			EFDEIFCDAFG().SetFloat("_DepthLevel", _Size);
-			OOMFJGPAOKL().SetFloat("GridDataArcs", _FixDistance);
-			LNLKMDPHDCC().SetFloat("Edited hands count", HBJJOCHGOPH);
-			LPDOGGFOBDH().SetFloat("_FixDistance", BlendFX);
-			KDMBOKLMADJ().SetFloat("roomDescription", SwitchCameraToCamera2);
-			MCDGIILBNIF().SetFloat("Cant send PickupItem spawn times to unknown targetPlayer.", SplitX);
-			KAFBNOBOIAJ().SetFloat("_VignettingDirt", SplitY);
-			HJGEHJDMCGI().SetFloat("default", Smooth);
-			HJGEHJDMCGI().SetFloat("Tab2Content", Rotation);
-			ABHDNGIHBKE().SetInt("SetSunSensitivity", (!CONEELGCALI) ? 1 : 0);
+			ADBKPGFMNKO().SetFloat("High", _Distance);
+			HKHBBBFLGJH().SetFloat("_DepthLevel", _Size);
+			HFBJAOFLCJI().SetFloat("caret", _FixDistance);
+			KAFBNOBOIAJ().SetFloat("Added event", HBJJOCHGOPH);
+			NMDBCDFPGOK().SetFloat("_Visualize", BlendFX);
+			KAFBNOBOIAJ().SetFloat("roomDescription", SwitchCameraToCamera2);
+			KDMBOKLMADJ().SetFloat("RequestForPickupItems", SplitX);
+			ECCPAOBFDKP().SetFloat("_Vignetting2", SplitY);
+			HKHBBBFLGJH().SetFloat(".wav", Smooth);
+			EFDEIFCDAFG().SetFloat("HandsCountSlider", Rotation);
+			HKHBBBFLGJH().SetInt("SetSunInput", (!CONEELGCALI) ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -418,7 +418,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void OOBIMFILNED()
 	{
-		AGEJKLMJGDO();
+		EGEPLFGKGLI();
 	}
 
 	private void OCNIANNJIPP(RenderTexture AAACLELCPML, RenderTexture BGIKADHFKNF)
@@ -432,21 +432,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("SupportLogger OnDisconnectedFromPhoton().", JDMCFBKJHDD);
+				HKHBBBFLGJH().SetTexture("). ", JDMCFBKJHDD);
 			}
-			KGOLDDBHIFN().SetFloat("_CenterY", _Distance);
-			GCDFNHMJMIP().SetFloat("_Value2", _Size);
-			KGOLDDBHIFN().SetFloat("CameraFilterPack/Distortion_Heat", _FixDistance);
-			FLGPDBBKAIP().SetFloat("id", HBJJOCHGOPH);
-			FLGPDBBKAIP().SetFloat("accuracy", BlendFX);
-			ADBKPGFMNKO().SetFloat("<b>", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetFloat("_InvRenderTargetSize", SplitX);
-			NBPKMLMCHFN.SetFloat("_Value2", SplitY);
-			NKBIEMJBCBM().SetFloat("#exit", Smooth);
-			CBCNOEIALHB().SetFloat("GameMessagesDurationSlider", Rotation);
-			ADBKPGFMNKO().SetInt(" canvas not found", CONEELGCALI ? 1 : 0);
+			HFBJAOFLCJI().SetFloat("_CenterY", _Distance);
+			ABHDNGIHBKE().SetFloat("_Value", _Size);
+			GCDFNHMJMIP().SetFloat("CameraFilterPack/Distortion_Heat", _FixDistance);
+			NBPKMLMCHFN.SetFloat("Set Sun DirectionVector", HBJJOCHGOPH);
+			MCDGIILBNIF().SetFloat("score", BlendFX);
+			CBCNOEIALHB().SetFloat("<b>", SwitchCameraToCamera2);
+			PDEAHJPOMEF().SetFloat("_ForegroundBlurExtrude", SplitX);
+			LPDOGGFOBDH().SetFloat("_Value", SplitY);
+			NMDBCDFPGOK().SetFloat("#tryagain", Smooth);
+			NKBIEMJBCBM().SetFloat("GameMessagesDurationSlider", Rotation);
+			KDMBOKLMADJ().SetInt(" canvas not found", CONEELGCALI ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NMDBCDFPGOK());
 		}
 		else
 		{
@@ -471,21 +471,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				OOMFJGPAOKL().SetTexture("_FarCamera", JDMCFBKJHDD);
+				ADBKPGFMNKO().SetTexture("_FarCamera", JDMCFBKJHDD);
 			}
-			HKHBBBFLGJH().SetFloat("Can't find key ", _Distance);
-			AELJLBOJAIL().SetFloat("CameraFilterPack/TV_BrokenGlass2", _Size);
-			PDEAHJPOMEF().SetFloat("maps.", _FixDistance);
-			ECCPAOBFDKP().SetFloat("_TimeX", HBJJOCHGOPH);
-			OOMFJGPAOKL().SetFloat("_Value2", BlendFX);
-			ACHNOHCLGOO().SetFloat("Horizontal", SwitchCameraToCamera2);
-			ACHNOHCLGOO().SetFloat("SetSunColors", SplitX);
-			AELJLBOJAIL().SetFloat("0", SplitY);
-			LPDOGGFOBDH().SetFloat("_ScreenResolution", Smooth);
-			NMDBCDFPGOK().SetFloat("Jan", Rotation);
-			KAFBNOBOIAJ().SetInt("_Distortion", (!CONEELGCALI) ? 1 : 1);
+			HJGEHJDMCGI().SetFloat("Keeping GameObject in the scene: ", _Distance);
+			EFDEIFCDAFG().SetFloat("CameraFilterPack_TV_BrokenGlass_2", _Size);
+			AELJLBOJAIL().SetFloat("maps.", _FixDistance);
+			HJGEHJDMCGI().SetFloat("_TimeX", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("_Value2", BlendFX);
+			HFBJAOFLCJI().SetFloat("Submit", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetFloat("SetSunColors", SplitX);
+			ECCPAOBFDKP().SetFloat("#ok", SplitY);
+			AELJLBOJAIL().SetFloat("_TimeX", Smooth);
+			HFBJAOFLCJI().SetFloat("yyyy", Rotation);
+			EFDEIFCDAFG().SetInt("_TimeX", (!CONEELGCALI) ? 1 : 1);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
 		}
 		else
 		{
@@ -541,7 +541,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void AENGMPAMCFL()
 	{
-		NEFHGMNAPEP();
+		KDMANOEMOCA();
 	}
 
 	private void JOONHGHGKKF()
@@ -610,7 +610,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void KGHFKHBPHEH()
 	{
-		JFJLGJEPEAA();
+		Start();
 	}
 
 	private void LGJAHGCLMLE()
@@ -689,21 +689,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				LPDOGGFOBDH().SetTexture("_LightIntensity", JDMCFBKJHDD);
+				ABHDNGIHBKE().SetTexture("_LightIntensity", JDMCFBKJHDD);
 			}
-			MCDGIILBNIF().SetFloat("_ColorLevel", _Distance);
-			LNLKMDPHDCC().SetFloat("USE_DIAG_SEARCH", _Size);
-			NMDBCDFPGOK().SetFloat("Image", _FixDistance);
-			OOMFJGPAOKL().SetFloat("_Value7", HBJJOCHGOPH);
-			LPMLLJKMAMP().SetFloat("speed", BlendFX);
-			NMDBCDFPGOK().SetFloat("_TimeX", SwitchCameraToCamera2);
-			ECCPAOBFDKP().SetFloat("float", SplitX);
-			CBCNOEIALHB().SetFloat("CameraFilterPack/Blend2Camera_VividLight", SplitY);
-			DOMEEFLPEPJ().SetFloat("Item invalid. Make sure your mod contains at leats one file.", Smooth);
-			ACHNOHCLGOO().SetFloat("_Offsets", Rotation);
-			KDMBOKLMADJ().SetInt(".a", (!CONEELGCALI) ? 1 : 0);
+			NKBIEMJBCBM().SetFloat("_EdgeSize", _Distance);
+			NMDBCDFPGOK().SetFloat("USE_PREDICATION", _Size);
+			HFBJAOFLCJI().SetFloat("Item ", _FixDistance);
+			KDMBOKLMADJ().SetFloat("_Value6", HBJJOCHGOPH);
+			HJGEHJDMCGI().SetFloat("speed", BlendFX);
+			NKBIEMJBCBM().SetFloat("CameraFilterPack/Blur_DitherOffset", SwitchCameraToCamera2);
+			DOMEEFLPEPJ().SetFloat("element", SplitX);
+			DOMEEFLPEPJ().SetFloat("_ScreenResolution", SplitY);
+			HJGEHJDMCGI().SetFloat("Uploading preview image...", Smooth);
+			KAFBNOBOIAJ().SetFloat("_FgCocMask", Rotation);
+			LPDOGGFOBDH().SetInt(".a", (!CONEELGCALI) ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ECCPAOBFDKP());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -713,7 +713,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void EBBOJPEPDCN()
 	{
-		KOFAMEKHHGD();
+		AKHCOBHHGJP();
 	}
 
 	[SpecialName]
@@ -729,7 +729,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void DPGHJILBPCE()
 	{
-		NEFHGMNAPEP();
+		AGEJKLMJGDO();
 	}
 
 	private void DBLILJGKGHJ()
@@ -748,12 +748,12 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void OAKONCDEPPI()
 	{
-		JFJLGJEPEAA();
+		AKHCOBHHGJP();
 	}
 
 	private void CPMAAHPLGOP()
 	{
-		BMIOFJFMCBG();
+		EGEPLFGKGLI();
 	}
 
 	private void OEAMLMGNFFC()
@@ -787,21 +787,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("_FarCamera", JDMCFBKJHDD);
+				ACHNOHCLGOO().SetTexture("_FarCamera", JDMCFBKJHDD);
 			}
-			EFDEIFCDAFG().SetFloat("menu.tabid", _Distance);
-			HKHBBBFLGJH().SetFloat("You need to have a Graphic control (such as an Image) for the list [", _Size);
-			ADBKPGFMNKO().SetFloat("BlockCount", _FixDistance);
-			NMDBCDFPGOK().SetFloat("_Value", HBJJOCHGOPH);
-			NMDBCDFPGOK().SetFloat("achievements.21.completed.workshop.", BlendFX);
-			NMDBCDFPGOK().SetFloat("settings.customdataskin", SwitchCameraToCamera2);
-			LPMLLJKMAMP().SetFloat("float,50", SplitX);
-			EFDEIFCDAFG().SetFloat("bans.viewed.", SplitY);
-			ADBKPGFMNKO().SetFloat("Object ID. Case-Sensitive", Smooth);
-			DOMEEFLPEPJ().SetFloat("_ExposureAdjustment", Rotation);
-			ECCPAOBFDKP().SetInt("UseFinalGlassColor", (!CONEELGCALI) ? 0 : 0);
+			FLGPDBBKAIP().SetFloat("menu.tabid", _Distance);
+			HJGEHJDMCGI().SetFloat("You need to have a child LayoutGroup content set for the list: ", _Size);
+			MCDGIILBNIF().SetFloat(" GameServer:", _FixDistance);
+			FLGPDBBKAIP().SetFloat("_Value", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("1159514800", BlendFX);
+			KAFBNOBOIAJ().SetFloat("/", SwitchCameraToCamera2);
+			FLGPDBBKAIP().SetFloat("value", SplitX);
+			GCDFNHMJMIP().SetFloat("bans.viewed.", SplitY);
+			AELJLBOJAIL().SetFloat("Object ID. Case-Sensitive", Smooth);
+			KGOLDDBHIFN().SetFloat("_RangeScale", Rotation);
+			OOMFJGPAOKL().SetInt("_TimeX", (!CONEELGCALI) ? 0 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MCDGIILBNIF());
 		}
 		else
 		{
@@ -840,7 +840,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void PPGEGFMNIKO()
 	{
-		JKBMKPDGCHG();
+		JFJLGJEPEAA();
 	}
 
 	[SpecialName]
@@ -856,7 +856,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void EAOKCECGKAK()
 	{
-		AEOLJEIDMDB();
+		KOFAMEKHHGD();
 	}
 
 	private void IPGKJCJBHDD(RenderTexture AAACLELCPML, RenderTexture BGIKADHFKNF)
@@ -870,21 +870,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				MCDGIILBNIF().SetTexture("float,2", JDMCFBKJHDD);
+				NKBIEMJBCBM().SetTexture("value", JDMCFBKJHDD);
 			}
-			KGOLDDBHIFN().SetFloat("_Visualize", _Distance);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", _Size);
-			LNLKMDPHDCC().SetFloat("/", _FixDistance);
-			CBCNOEIALHB().SetFloat("[PlayerController] ", HBJJOCHGOPH);
-			LPDOGGFOBDH().SetFloat("_Value6", BlendFX);
-			CBCNOEIALHB().SetFloat("EnableRankedNotificationsToggle", SwitchCameraToCamera2);
-			OOMFJGPAOKL().SetFloat("Time Offset: {0}", SplitX);
-			KDMBOKLMADJ().SetFloat("Rock", SplitY);
-			LPMLLJKMAMP().SetFloat("SlidingArea", Smooth);
-			NBPKMLMCHFN.SetFloat("_FgOverlap", Rotation);
-			PDEAHJPOMEF().SetInt("DPADHOR", (!CONEELGCALI) ? 1 : 1);
+			LNLKMDPHDCC().SetFloat("_Visualize", _Distance);
+			HFBJAOFLCJI().SetFloat("_Intensity", _Size);
+			KAFBNOBOIAJ().SetFloat("/../", _FixDistance);
+			NBPKMLMCHFN.SetFloat(": ", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("_Value5", BlendFX);
+			NMDBCDFPGOK().SetFloat("EnableRankedNotificationsToggle", SwitchCameraToCamera2);
+			PDEAHJPOMEF().SetFloat("Turn", SplitX);
+			ECCPAOBFDKP().SetFloat("Rap", SplitY);
+			NMDBCDFPGOK().SetFloat("ScrollPanel", Smooth);
+			HKHBBBFLGJH().SetFloat("_LrDepthTex", Rotation);
+			GCDFNHMJMIP().SetInt("DPADVER", (!CONEELGCALI) ? 1 : 1);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLGPDBBKAIP());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OOMFJGPAOKL());
 		}
 		else
 		{
@@ -903,21 +903,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				PDEAHJPOMEF().SetTexture("_BlurParams", JDMCFBKJHDD);
+				NMDBCDFPGOK().SetTexture("Hidden/DepthOfField/MedianFilter", JDMCFBKJHDD);
 			}
-			EFDEIFCDAFG().SetFloat("LoadingStatusText", _Distance);
-			KDMBOKLMADJ().SetFloat("VisionBlur", _Size);
-			EFDEIFCDAFG().SetFloat("LivesSlider", _FixDistance);
-			CBCNOEIALHB().SetFloat("OnReadyClick", HBJJOCHGOPH);
-			OOMFJGPAOKL().SetFloat("closed", BlendFX);
-			DOMEEFLPEPJ().SetFloat("_FarCorner", SwitchCameraToCamera2);
-			AELJLBOJAIL().SetFloat("settings.hitvariation", SplitX);
-			HKHBBBFLGJH().SetFloat("_Visualize", SplitY);
-			OOMFJGPAOKL().SetFloat("icon", Smooth);
-			NBPKMLMCHFN.SetFloat("_SceneFogParams", Rotation);
-			HJGEHJDMCGI().SetInt("CameraFilterPack/FX_superDot", (!CONEELGCALI) ? 0 : 0);
+			CBCNOEIALHB().SetFloat("Loading inventory", _Distance);
+			FLGPDBBKAIP().SetFloat("Fade", _Size);
+			FLGPDBBKAIP().SetFloat("Tab2Content", _FixDistance);
+			NMDBCDFPGOK().SetFloat("OnReadyClick", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("hidden", BlendFX);
+			GCDFNHMJMIP().SetFloat("_AOTex", SwitchCameraToCamera2);
+			NKBIEMJBCBM().SetFloat("settings.selectormapsperpage", SplitX);
+			PDEAHJPOMEF().SetFloat("_Visualize", SplitY);
+			HFBJAOFLCJI().SetFloat("/icon", Smooth);
+			OOMFJGPAOKL().SetFloat("_HeightParams", Rotation);
+			LPDOGGFOBDH().SetInt("_ScreenResolution", (!CONEELGCALI) ? 0 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NMDBCDFPGOK());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NKBIEMJBCBM());
 		}
 		else
 		{
@@ -1005,21 +1005,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				KDMBOKLMADJ().SetTexture("_MainTexBlurred", JDMCFBKJHDD);
+				NKBIEMJBCBM().SetTexture("offsets", JDMCFBKJHDD);
 			}
-			FLGPDBBKAIP().SetFloat(". local RequestedView.ownerId: ", _Distance);
-			NBPKMLMCHFN.SetFloat("Hidden/ScreenSpaceReflection", _Size);
-			KDMBOKLMADJ().SetFloat("LevelEditor/patterns", _FixDistance);
-			HKHBBBFLGJH().SetFloat("#md5submitionfailed: ", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("#no", BlendFX);
-			ACHNOHCLGOO().SetFloat("_Visualize", SwitchCameraToCamera2);
-			HFBJAOFLCJI().SetFloat("Tab2Content", SplitX);
-			CBCNOEIALHB().SetFloat("_Rand", SplitY);
-			KDMBOKLMADJ().SetFloat("GlassAberration", Smooth);
-			NKBIEMJBCBM().SetFloat("_BokehParams", Rotation);
-			ABHDNGIHBKE().SetInt("Texture3", CONEELGCALI ? 1 : 0);
+			KDMBOKLMADJ().SetFloat("Ev OwnershipRequest ", _Distance);
+			HKHBBBFLGJH().SetFloat("_History3Weight", _Size);
+			ABHDNGIHBKE().SetFloat("ShowSprite", _FixDistance);
+			NBPKMLMCHFN.SetFloat("bad", HBJJOCHGOPH);
+			HKHBBBFLGJH().SetFloat("#updateoutdatedmap", BlendFX);
+			ADBKPGFMNKO().SetFloat("_Visualize", SwitchCameraToCamera2);
+			FLGPDBBKAIP().SetFloat("MaxLivesSlider", SplitX);
+			HJGEHJDMCGI().SetFloat("_ProjInfo", SplitY);
+			LPDOGGFOBDH().SetFloat("GlassDistortion", Smooth);
+			KDMBOKLMADJ().SetFloat("_SpawnHeuristic", Rotation);
+			NKBIEMJBCBM().SetInt("Texture2", CONEELGCALI ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KDMBOKLMADJ());
 		}
 		else
 		{
@@ -1060,7 +1060,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void LLAJPKFNDIG()
 	{
-		JKBMKPDGCHG();
+		AGEJKLMJGDO();
 	}
 
 	private void GGELPAHPFAJ()
@@ -1113,21 +1113,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				ACHNOHCLGOO().SetTexture("Objects in List: ", JDMCFBKJHDD);
+				HKHBBBFLGJH().SetTexture("{0}\n{1}\n{2}\n{3}\n{4}\n{5}", JDMCFBKJHDD);
 			}
-			LPDOGGFOBDH().SetFloat("/", _Distance);
-			EFDEIFCDAFG().SetFloat("settings.fps", _Size);
-			NBPKMLMCHFN.SetFloat("PublishButton", _FixDistance);
-			KAFBNOBOIAJ().SetFloat(": ", HBJJOCHGOPH);
-			LPMLLJKMAMP().SetFloat("_TimeX", BlendFX);
-			HFBJAOFLCJI().SetFloat("_SpawnHeuristic", SwitchCameraToCamera2);
-			KGOLDDBHIFN().SetFloat("CameraFilterPack_VHS1", SplitX);
-			ACHNOHCLGOO().SetFloat("time", SplitY);
-			MCDGIILBNIF().SetFloat("_TimeX", Smooth);
-			ECCPAOBFDKP().SetFloat("_Value", Rotation);
-			HJGEHJDMCGI().SetInt(" from: ", (!CONEELGCALI) ? 1 : 0);
+			GCDFNHMJMIP().SetFloat("[Down]", _Distance);
+			CBCNOEIALHB().SetFloat("{0:0.0} ms ({1:0.} fps)", _Size);
+			LNLKMDPHDCC().SetFloat("LevelConfigButton", _FixDistance);
+			LPMLLJKMAMP().SetFloat("[PlayerController] ", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat("_TimeX", BlendFX);
+			HJGEHJDMCGI().SetFloat("_Offsets", SwitchCameraToCamera2);
+			ECCPAOBFDKP().SetFloat("CameraFilterPack/Real_VHS", SplitX);
+			MCDGIILBNIF().SetFloat("itemdefid[0]", SplitY);
+			LPDOGGFOBDH().SetFloat("_TimeX", Smooth);
+			FLGPDBBKAIP().SetFloat("_TimeX", Rotation);
+			ABHDNGIHBKE().SetInt("Network destroy Instantiated GO: ", (!CONEELGCALI) ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KDMBOKLMADJ());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NMDBCDFPGOK());
 		}
 		else
 		{
@@ -1189,21 +1189,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				KAFBNOBOIAJ().SetTexture("_PixelsPerMeterAtOneMeter", JDMCFBKJHDD);
+				LPDOGGFOBDH().SetTexture("_HalfResolution", JDMCFBKJHDD);
 			}
-			CBCNOEIALHB().SetFloat("_SizeX", _Distance);
-			KGOLDDBHIFN().SetFloat("_Value2", _Size);
-			LPMLLJKMAMP().SetFloat("note.2", _FixDistance);
-			ACHNOHCLGOO().SetFloat("selector", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("Set particles count per one beat", BlendFX);
-			LPMLLJKMAMP().SetFloat("_TimeX", SwitchCameraToCamera2);
-			KGOLDDBHIFN().SetFloat("_EmissionGain", SplitX);
-			OOMFJGPAOKL().SetFloat("\\n", SplitY);
-			PDEAHJPOMEF().SetFloat("[PlayerBase] Loaded environment: ", Smooth);
-			ACHNOHCLGOO().SetFloat("#000000CC", Rotation);
-			KAFBNOBOIAJ().SetInt("IconImage", (!CONEELGCALI) ? 1 : 1);
+			NKBIEMJBCBM().SetFloat("_SizeX", _Distance);
+			NBPKMLMCHFN.SetFloat("_Value", _Size);
+			HKHBBBFLGJH().SetFloat("note.1", _FixDistance);
+			LNLKMDPHDCC().SetFloat("cancel", HBJJOCHGOPH);
+			NKBIEMJBCBM().SetFloat("Set particles count per one beat", BlendFX);
+			ADBKPGFMNKO().SetFloat("CameraFilterPack/TV_MovieNoise", SwitchCameraToCamera2);
+			CBCNOEIALHB().SetFloat("_EmissionColor", SplitX);
+			GCDFNHMJMIP().SetFloat("[EMPTY]", SplitY);
+			NKBIEMJBCBM().SetFloat("custom", Smooth);
+			HJGEHJDMCGI().SetFloat("#FFDA44", Rotation);
+			HJGEHJDMCGI().SetInt("_Value1", (!CONEELGCALI) ? 1 : 1);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
 		}
 		else
 		{
@@ -1252,21 +1252,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				HKHBBBFLGJH().SetTexture("_Green_B", JDMCFBKJHDD);
+				GCDFNHMJMIP().SetTexture("_Green_G", JDMCFBKJHDD);
 			}
-			KAFBNOBOIAJ().SetFloat("CameraFilterPack/Drawing_NewCellShading", _Distance);
-			EFDEIFCDAFG().SetFloat("maps.", _Size);
-			DOMEEFLPEPJ().SetFloat("================================", _FixDistance);
-			KGOLDDBHIFN().SetFloat("_TimeX", HBJJOCHGOPH);
-			MCDGIILBNIF().SetFloat("No regions available. Are you sure your appid is valid and setup?", BlendFX);
-			HFBJAOFLCJI().SetFloat("_History4LumaTex", SwitchCameraToCamera2);
-			HFBJAOFLCJI().SetFloat("ResetButton", SplitX);
-			NMDBCDFPGOK().SetFloat(" {0}", SplitY);
-			ECCPAOBFDKP().SetFloat("offsets", Smooth);
-			DOMEEFLPEPJ().SetFloat(".completedMaps", Rotation);
-			LPDOGGFOBDH().SetInt("_PositionX", (!CONEELGCALI) ? 1 : 0);
+			EFDEIFCDAFG().SetFloat("_DotSize", _Distance);
+			LNLKMDPHDCC().SetFloat("settings.disablestoryboard", _Size);
+			NMDBCDFPGOK().SetFloat("Type \"help\" for list of commands", _FixDistance);
+			NMDBCDFPGOK().SetFloat("CameraFilterPack/TV_ARCADE", HBJJOCHGOPH);
+			ECCPAOBFDKP().SetFloat("Waiting for AvailableRegions. State: ", BlendFX);
+			GCDFNHMJMIP().SetFloat("_History2LumaTex", SwitchCameraToCamera2);
+			GCDFNHMJMIP().SetFloat("ResetButton", SplitX);
+			LNLKMDPHDCC().SetFloat("{0}", SplitY);
+			FLGPDBBKAIP().SetFloat("offsets", Smooth);
+			ACHNOHCLGOO().SetFloat(".completedMaps", Rotation);
+			EFDEIFCDAFG().SetInt("_PositionX", (!CONEELGCALI) ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -1291,21 +1291,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				DOMEEFLPEPJ().SetTexture("InventoryButton", JDMCFBKJHDD);
+				NKBIEMJBCBM().SetTexture("InventoryButton", JDMCFBKJHDD);
 			}
-			PDEAHJPOMEF().SetFloat("/../", _Distance);
-			LPMLLJKMAMP().SetFloat("speed", _Size);
-			NBPKMLMCHFN.SetFloat("[Left]", _FixDistance);
-			DOMEEFLPEPJ().SetFloat(".lastCheckpoint.bgcolor", HBJJOCHGOPH);
-			CBCNOEIALHB().SetFloat("MaxLivesSlider", BlendFX);
-			HFBJAOFLCJI().SetFloat("Case-Sensitive", SwitchCameraToCamera2);
-			PDEAHJPOMEF().SetFloat("(\\[ */ *quote *\\])", SplitX);
-			LPMLLJKMAMP().SetFloat("Coord", SplitY);
-			LPDOGGFOBDH().SetFloat("Failed to InstantiateSceneObject prefab: ", Smooth);
-			KGOLDDBHIFN().SetFloat("PunRespawn", Rotation);
-			FLGPDBBKAIP().SetInt(":", (!CONEELGCALI) ? 1 : 1);
+			GCDFNHMJMIP().SetFloat("-", _Distance);
+			GCDFNHMJMIP().SetFloat("#FFFFFFFF", _Size);
+			PDEAHJPOMEF().SetFloat("[PlayerBase] Loaded custom model: ", _FixDistance);
+			ACHNOHCLGOO().SetFloat(".lastCheckpoint.currentCombo", HBJJOCHGOPH);
+			KDMBOKLMADJ().SetFloat("Tab2Content", BlendFX);
+			LNLKMDPHDCC().SetFloat("set id", SwitchCameraToCamera2);
+			NMDBCDFPGOK().SetFloat("(\\[ */ *quote *\\])", SplitX);
+			LPMLLJKMAMP().SetFloat("_ScreenResolution", SplitY);
+			OOMFJGPAOKL().SetFloat(". Verify the Prefab is in a Resources folder (and not in a subfolder)", Smooth);
+			KGOLDDBHIFN().SetFloat("Instantiating: ", Rotation);
+			HFBJAOFLCJI().SetInt(";", (!CONEELGCALI) ? 1 : 1);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -1389,7 +1389,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void BKCJHBJCAKO()
 	{
-		KOFAMEKHHGD();
+		DBLILJGKGHJ();
 	}
 
 	[SpecialName]
@@ -1498,7 +1498,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void FPFJGEHEOPF()
 	{
-		DBLILJGKGHJ();
+		AEOLJEIDMDB();
 	}
 
 	[SpecialName]
@@ -1543,7 +1543,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void OCHCKGMIDND()
 	{
-		JFJLGJEPEAA();
+		Start();
 	}
 
 	private void FKDKJKCAHJC()
@@ -1626,21 +1626,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				KDMBOKLMADJ().SetTexture("intensity", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("_Exponent", JDMCFBKJHDD);
 			}
-			ECCPAOBFDKP().SetFloat("mapselector.tags.", _Distance);
-			ADBKPGFMNKO().SetFloat("Bad parameters for setbool! Use <key> <value>", _Size);
-			HFBJAOFLCJI().SetFloat(" not exist", _FixDistance);
-			KGOLDDBHIFN().SetFloat("_BlurRadius", HBJJOCHGOPH);
-			AELJLBOJAIL().SetFloat("FileMenu", BlendFX);
-			HFBJAOFLCJI().SetFloat("PlayButton", SwitchCameraToCamera2);
-			HFBJAOFLCJI().SetFloat("menu.selectedlevelid", SplitX);
-			FLGPDBBKAIP().SetFloat("settings.customdataskin", SplitY);
-			LPMLLJKMAMP().SetFloat("_Value3", Smooth);
-			PDEAHJPOMEF().SetFloat("UNDISTORT", Rotation);
-			ABHDNGIHBKE().SetInt("Exception while connecting to: ", CONEELGCALI ? 1 : 0);
+			AELJLBOJAIL().SetFloat("mapselector.tags.", _Distance);
+			OOMFJGPAOKL().SetFloat("setfloat", _Size);
+			AELJLBOJAIL().SetFloat(": ", _FixDistance);
+			FLGPDBBKAIP().SetFloat("_EdgeSharpness", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("EditMenu", BlendFX);
+			KDMBOKLMADJ().SetFloat("RecordButton", SwitchCameraToCamera2);
+			KGOLDDBHIFN().SetFloat("menu.selectedlevelid", SplitX);
+			ABHDNGIHBKE().SetFloat("/", SplitY);
+			OOMFJGPAOKL().SetFloat("_Value2", Smooth);
+			LPDOGGFOBDH().SetFloat("VIGNETTE_BLUR", Rotation);
+			KGOLDDBHIFN().SetInt("Encryption wasn't established: ", CONEELGCALI ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OOMFJGPAOKL());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HJGEHJDMCGI());
 		}
 		else
 		{
@@ -1659,21 +1659,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				MCDGIILBNIF().SetTexture("CameraFilterPack/AAA_WaterDrop", JDMCFBKJHDD);
+				LNLKMDPHDCC().SetTexture("CameraFilterPack_WaterDrop", JDMCFBKJHDD);
 			}
-			LPDOGGFOBDH().SetFloat("AvatarImage", _Distance);
-			PDEAHJPOMEF().SetFloat("ShowTitle", _Size);
-			DOMEEFLPEPJ().SetFloat("_CenterY", _FixDistance);
-			NKBIEMJBCBM().SetFloat("colorD", HBJJOCHGOPH);
-			FLGPDBBKAIP().SetFloat("_Value", BlendFX);
-			HJGEHJDMCGI().SetFloat(" - Contains ", SwitchCameraToCamera2);
-			KGOLDDBHIFN().SetFloat("_Value3", SplitX);
-			MCDGIILBNIF().SetFloat("_TimeX", SplitY);
-			NBPKMLMCHFN.SetFloat("\t", Smooth);
-			KGOLDDBHIFN().SetFloat("_Green_G", Rotation);
-			LPMLLJKMAMP().SetInt("offsets", (!CONEELGCALI) ? 0 : 0);
+			CBCNOEIALHB().SetFloat("SpectatingUserInfo", _Distance);
+			MCDGIILBNIF().SetFloat("ShowTitle", _Size);
+			EFDEIFCDAFG().SetFloat("_CenterX", _FixDistance);
+			ADBKPGFMNKO().SetFloat("colorB", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("_TimeX", BlendFX);
+			LPDOGGFOBDH().SetFloat("list", SwitchCameraToCamera2);
+			EFDEIFCDAFG().SetFloat("_Value2", SplitX);
+			PDEAHJPOMEF().SetFloat("_ScreenResolution", SplitY);
+			KDMBOKLMADJ().SetFloat("\t", Smooth);
+			NKBIEMJBCBM().SetFloat("_Green_G", Rotation);
+			HKHBBBFLGJH().SetInt("_ColorBuffer", (!CONEELGCALI) ? 0 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
 		}
 		else
 		{
@@ -1692,21 +1692,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NKBIEMJBCBM().SetTexture("HandleEventLeave for player ID: ", JDMCFBKJHDD);
+				KDMBOKLMADJ().SetTexture("HandleEventLeave for player ID: ", JDMCFBKJHDD);
 			}
-			PDEAHJPOMEF().SetFloat("_LutTex", _Distance);
-			NKBIEMJBCBM().SetFloat("There was an error retrieving the NumberOfCurrentPlayers.", _Size);
-			LNLKMDPHDCC().SetFloat("CameraFilterPack_WaterDrop", _FixDistance);
-			HJGEHJDMCGI().SetFloat("Horizontal", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("_ScreenResolution", BlendFX);
-			KGOLDDBHIFN().SetFloat("_Size", SwitchCameraToCamera2);
-			MCDGIILBNIF().SetFloat("arcs", SplitX);
-			ABHDNGIHBKE().SetFloat("_ProjectToPixelMatrix", SplitY);
-			KDMBOKLMADJ().SetFloat("Error0", Smooth);
-			PDEAHJPOMEF().SetFloat("#yes", Rotation);
-			LNLKMDPHDCC().SetInt("_LensDirtIntensity", CONEELGCALI ? 1 : 0);
+			KDMBOKLMADJ().SetFloat(" cannot be used as a 3D LUT.", _Distance);
+			KDMBOKLMADJ().SetFloat("Version 1.0", _Size);
+			NMDBCDFPGOK().SetFloat("CameraFilterPack_WaterDrop", _FixDistance);
+			EFDEIFCDAFG().SetFloat(") but there is no recycle bin setup for it", HBJJOCHGOPH);
+			KDMBOKLMADJ().SetFloat("_Greenness", BlendFX);
+			HJGEHJDMCGI().SetFloat("_Size", SwitchCameraToCamera2);
+			PDEAHJPOMEF().SetFloat("MascotChallenge2019", SplitX);
+			GCDFNHMJMIP().SetFloat("_ProjInfo", SplitY);
+			EFDEIFCDAFG().SetFloat("runas", Smooth);
+			KDMBOKLMADJ().SetFloat("{0}", Rotation);
+			HKHBBBFLGJH().SetInt("_TintColor", CONEELGCALI ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FLGPDBBKAIP());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
 		}
 		else
 		{
@@ -1716,7 +1716,7 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void HMKJFPBFOFI()
 	{
-		NEFHGMNAPEP();
+		BMIOFJFMCBG();
 	}
 
 	private void JDGFCEPDKAJ()
@@ -1758,21 +1758,21 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NMDBCDFPGOK().SetTexture("Working.\nPlease wait..", JDMCFBKJHDD);
+				NKBIEMJBCBM().SetTexture("14", JDMCFBKJHDD);
 			}
-			ABHDNGIHBKE().SetFloat("Please specify either t or f.", _Distance);
-			HKHBBBFLGJH().SetFloat("_ReflectionTexture0", _Size);
-			HKHBBBFLGJH().SetFloat("Received event Leave for unknown player ID: {0}", _FixDistance);
-			LPMLLJKMAMP().SetFloat("_Value2", HBJJOCHGOPH);
-			FLGPDBBKAIP().SetFloat("_Intensity", BlendFX);
-			KAFBNOBOIAJ().SetFloat("_TimeX", SwitchCameraToCamera2);
-			NMDBCDFPGOK().SetFloat("LobbyCanvas", SplitX);
-			ECCPAOBFDKP().SetFloat("_Far", SplitY);
-			MCDGIILBNIF().SetFloat("CameraFilterPack_3D_Myst1", Smooth);
-			HJGEHJDMCGI().SetFloat("_Value2", Rotation);
-			ECCPAOBFDKP().SetInt("skin.", CONEELGCALI ? 1 : 0);
+			NKBIEMJBCBM().SetFloat("End index must in an integer.", _Distance);
+			KGOLDDBHIFN().SetFloat("_NormalAndRoughnessTexture", _Size);
+			KDMBOKLMADJ().SetFloat("Adding player twice: ", _FixDistance);
+			KGOLDDBHIFN().SetFloat("_Value", HBJJOCHGOPH);
+			HJGEHJDMCGI().SetFloat("_Noise", BlendFX);
+			AELJLBOJAIL().SetFloat("_TimeX", SwitchCameraToCamera2);
+			ABHDNGIHBKE().SetFloat("LobbyCanvas", SplitX);
+			PDEAHJPOMEF().SetFloat("_Far", SplitY);
+			EFDEIFCDAFG().SetFloat("CameraFilterPack_3D_Myst1", Smooth);
+			ADBKPGFMNKO().SetFloat("_Value2", Rotation);
+			HFBJAOFLCJI().SetInt("local CheckCondition = function()", CONEELGCALI ? 1 : 0);
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
 		}
 		else
 		{
@@ -1834,11 +1834,11 @@ public class CameraFilterPack_Blend2Camera_SplitScreen3D : MonoBehaviour
 
 	private void HIFPDKKBDHJ()
 	{
-		EGEPLFGKGLI();
+		AGEJKLMJGDO();
 	}
 
 	private void KFCCKOBOLAH()
 	{
-		DBLILJGKGHJ();
+		Start();
 	}
 }

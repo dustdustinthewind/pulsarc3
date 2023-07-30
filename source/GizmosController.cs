@@ -11,156 +11,289 @@ public class GizmosController : MonoBehaviour
 
 	private Vector3 INLGAOLENMD;
 
-	private void FGNFILLNPJK()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(PHFOIIGIBFN());
-		}
-	}
-
-	private void MMOMODMCGAG()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 588f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1199f)
-			{
-				vector2.x = 1662f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 429f);
-			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
-		}
-	}
-
-	private void JIENIAGLCJO()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1145f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void BLEMAGIAGJA()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1665f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void PLBADDFPCPO()
-	{
-		PHFOIIGIBFN().EOEDBFHBPEI();
-		Object.FindObjectOfType<LevelEditorScene>().JHGKNFJBKJD(true);
-		Singleton<EditorHistoryHandler>.Instance.SaveState("{0,-18} {1,18}", true);
-	}
-
-	private void DNENFLNCIJP()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(NMLINPHFOJJ());
-		}
-	}
-
-	private void GCHBGCGBMCK()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(DAJEEPICDLD());
-		}
-	}
-
-	private void OnMouseUp()
-	{
-		GetEditorEvent().UpdateEvent();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
-		Singleton<EditorHistoryHandler>.Instance.SaveState("Moved event");
-	}
-
-	private void BCFMIBKENIH()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 587f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1470f)
-			{
-				vector2.x = 1738f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 464f);
-			((LevelEditorScene)Singleton<Scene>.Instance).JHGKNFJBKJD(true);
-		}
-	}
-
-	private void FDBPLMOCJFH()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 386f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void HBKFNDMDLBP()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1475f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void GPFJMKCGHGB()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(NMLINPHFOJJ());
-		}
-	}
-
-	private void PGHOOCPIEAJ()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1791f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
 	private void JHPOIOELNCG()
 	{
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hitInfo;
 		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
 		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(NMEPOAEPNFM());
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(KGEOGKIKFOJ());
 		}
 	}
 
-	public EditorEvent BDAFJCNJNMC()
+	private void JDBKGBIBNAA()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 57f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1942f)
+			{
+				vector2.x = 743f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1560f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void KKDGGDJEILB()
+	{
+		KGEOGKIKFOJ().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
+		Singleton<EditorHistoryHandler>.Instance.AAIMDGLFENM("https://steamcommunity.com/sharedfiles/filedetails/?id=");
+	}
+
+	private void DPCCOLAPEAP()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1203f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 139f)
+			{
+				vector2.x = 1675f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 822f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void JEGENOEENLG()
+	{
+		JPCLJPBKBCD().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
+		Singleton<EditorHistoryHandler>.Instance.EPMOMGMDLMN("CameraFilterPack/Blend2Camera_LinearDodge", true);
+	}
+
+	private void ILMECDGLGJO()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 902f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 214f)
+			{
+				vector2.x = 800f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 216f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void NGDDGBLKKKK()
+	{
+		MMGODILPCBG().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
+		Singleton<EditorHistoryHandler>.Instance.EPMOMGMDLMN("curScn");
+	}
+
+	private void BGDONBMDPGM()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(PFPMBKOLBMI());
+		}
+	}
+
+	private void AKCECJHPDDL()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 149f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1860f)
+			{
+				vector2.x = 1085f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 952f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	private void IHLBONEMDDP()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1711f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void JFMIDILENDO()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(OOKPCMHAODD());
+		}
+	}
+
+	private void COGBDFKOHKK()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(NJNDOJDJDDH());
+		}
+	}
+
+	private void EPJJDKJEDMM()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(KIMHOPLGIMN());
+		}
+	}
+
+	private void KDEHHJBMJEM()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 364f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	public EditorEvent EKLLANBFINH()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	public EditorEvent AGDMBMBBMMJ()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void LMPNKBJCECI()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 640f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 295f)
+			{
+				vector2.x = 1848f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1670f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void AOPCEPBBGNG()
+	{
+		BAMMKNDLGOL().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.HKNIGKOOPJH("_Value3");
+	}
+
+	private void BFLNJAKMMJK()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 243f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void MBLDJEFBLFL()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(MLDIIFGGNCB());
+		}
+	}
+
+	private void JFNMNFNEAAA()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 988f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 544f)
+			{
+				vector2.x = 717f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 85f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void NMCKKBBILBB()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 835f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1782f)
+			{
+				vector2.x = 1955f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 642f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	public EditorEvent LLMDNEJFGOG()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	public EditorEvent ICBHLAKNLLJ()
 	{
 		if ((bool)base.gameObject.GetComponent<EditorEvent>())
 		{
@@ -175,242 +308,50 @@ public class GizmosController : MonoBehaviour
 		RaycastHit hitInfo;
 		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
 		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(NGJPHBAPIKJ());
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(JPCLJPBKBCD());
 		}
 	}
 
-	private void KKLMPKLKAEM()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(LJABCHJFAAA());
-		}
-	}
-
-	private void BMOPLCBCIOM()
+	private void NDKFAFMPBCB()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 818f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1050f)
-			{
-				vector2.x = 179f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1176f);
-			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
-		}
-	}
-
-	private void NNOEAHIHOFC()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1100f);
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 466f);
 			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
 		}
 	}
 
-	private void NCPAFCKGJEA()
+	private void AAPKBNDHBLI()
 	{
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hitInfo;
 		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
 		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(FMHIJJNLJIE());
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(HLFMBFEDKMI());
 		}
 	}
 
-	public EditorEvent GKEAKHFGHHH()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void FJGPHHNCFBM()
+	private void CONCGJIEDAK()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 226f);
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1508f);
 			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
 			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 513f)
+			if (vector2.x < 66f)
 			{
-				vector2.x = 1681f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1623f);
-			((LevelEditorScene)Singleton<Scene>.Instance).JHGKNFJBKJD(true);
-		}
-	}
-
-	private void GHEFAJABADL()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1897f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 704f)
-			{
-				vector2.x = 540f;
+				vector2.x = 1244f;
 			}
 			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
 			{
 				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
 			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 81f);
-			((LevelEditorScene)Singleton<Scene>.Instance).NGDDLPLEHHA();
-		}
-	}
-
-	public EditorEvent NMLINPHFOJJ()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void EPJJDKJEDMM()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).PNIOEINKMOF(PIANIMBGNEG());
-		}
-	}
-
-	public EditorEvent BPMBNNJMINL()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public EditorEvent EFJFMOANNMJ()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public EditorEvent DAJEEPICDLD()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void MANDOGNJJBD()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(LJABCHJFAAA());
-		}
-	}
-
-	private void IBGONHDCDIH()
-	{
-		HBNKOCHGKBI().NCMDCMHLIKD();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
-		Singleton<EditorHistoryHandler>.Instance.GKKNMKOGJNB("_SSAO", true);
-	}
-
-	private void HOFEFJDDKDJ()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1304f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 422f)
-			{
-				vector2.x = 659f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 971f);
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 743f);
 			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
 		}
 	}
 
-	private void POJFHDFJOPE()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).PNIOEINKMOF(GetEditorEvent());
-		}
-	}
-
-	private void FABMDEHEDNO()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).PNIOEINKMOF(HFAMJIHOJCH());
-		}
-	}
-
-	private void CGBHOELMAOC()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(LJABCHJFAAA());
-		}
-	}
-
-	private void PIFLFGFMIID()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 354f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1419f)
-			{
-				vector2.x = 1967f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1392f);
-			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
-		}
-	}
-
-	public EditorEvent POPOCHKFGIM()
+	public EditorEvent KIMHOPLGIMN()
 	{
 		if ((bool)base.gameObject.GetComponent<EditorEvent>())
 		{
@@ -419,700 +360,11 @@ public class GizmosController : MonoBehaviour
 		return base.gameObject.GetComponentInParent<EditorEvent>();
 	}
 
-	private void KNKCANBEHMH()
+	private void HDDOBKMHIME()
 	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1877f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	public EditorEvent NHGKAAPBNAO()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void AHKMGGICKOH()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1546f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1719f)
-			{
-				vector2.x = 482f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1801f);
-			((LevelEditorScene)Singleton<Scene>.Instance).JHGKNFJBKJD(true);
-		}
-	}
-
-	public EditorEvent MLALBGFHDCB()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void INLDEHPAMJC()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(PHFOIIGIBFN());
-		}
-	}
-
-	public EditorEvent HIGBPDDOABN()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void ELMKPIHFNEB()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 435f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1316f)
-			{
-				vector2.x = 1484f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1697f);
-			((LevelEditorScene)Singleton<Scene>.Instance).NGDDLPLEHHA(true);
-		}
-	}
-
-	private void ECCNFNBOOEJ()
-	{
-		NGJPHBAPIKJ().EOEDBFHBPEI();
+		HHFEMBJLCDP().UpdateEvent();
 		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
-		Singleton<EditorHistoryHandler>.Instance.JEKLFNAAIBP("Show Image", true);
-	}
-
-	private void HPNNCNNFMGK()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(NMLINPHFOJJ());
-		}
-	}
-
-	private void NIEGGPFAFJF()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1355f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1278f)
-			{
-				vector2.x = 1850f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1120f);
-			((LevelEditorScene)Singleton<Scene>.Instance).JHGKNFJBKJD();
-		}
-	}
-
-	private void PACCEJJBCFH()
-	{
-		HFAMJIHOJCH().FMGBIHDGKBI();
-		Object.FindObjectOfType<LevelEditorScene>().NGDDLPLEHHA();
-		Singleton<EditorHistoryHandler>.Instance.GNPAAHJKPAE("_TimeX");
-	}
-
-	public EditorEvent PIANIMBGNEG()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void LOJFCLFDCED()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 725f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void FBCHBMPPEKA()
-	{
-		BPMBNNJMINL().UpdateEvent();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
-		Singleton<EditorHistoryHandler>.Instance.JEKLFNAAIBP("_Value3", true);
-	}
-
-	public EditorEvent ECGGFGJJOEL()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void PBKHGNKHICG()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 141f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void GCBPIGJDIIC()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 271f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void NDAJBJFJGCF()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).PNIOEINKMOF(DAJEEPICDLD());
-		}
-	}
-
-	private void BOAIEKJJDOK()
-	{
-		HIGBPDDOABN().FMGBIHDGKBI();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
-		Singleton<EditorHistoryHandler>.Instance.HAGGEHMHDFK(" not exist", true);
-	}
-
-	private void BGDONBMDPGM()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(JCKAGIDMKFN());
-		}
-	}
-
-	private void Update()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(GetEditorEvent());
-		}
-	}
-
-	private void KCDBBPKIFNJ()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(PHFOIIGIBFN());
-		}
-	}
-
-	private void JLPHDJKLDDJ()
-	{
-		JCKAGIDMKFN().UpdateEvent();
-		Object.FindObjectOfType<LevelEditorScene>().JHGKNFJBKJD();
-		Singleton<EditorHistoryHandler>.Instance.SaveState("[NetworkManager] roomInfo.name: ", true);
-	}
-
-	public EditorEvent HMCKEOGAHJM()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void ALDINMIABAM()
-	{
-		JJPCJPPPOLF().KJJODHJJEOH();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
-		Singleton<EditorHistoryHandler>.Instance.HAGGEHMHDFK("(scene)");
-	}
-
-	private void NDCCJONMODD()
-	{
-		FMHIJJNLJIE().NJDJHMPAIFE();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
-		Singleton<EditorHistoryHandler>.Instance.SaveState("z");
-	}
-
-	public EditorEvent NGJPHBAPIKJ()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void NLFMHCLMACL()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1068f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	public EditorEvent HBNKOCHGKBI()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void OnMouseDown()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void EHCGBJDFMHG()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(BDAFJCNJNMC());
-		}
-	}
-
-	private void GLGLAIFGACN()
-	{
-		JCKAGIDMKFN().FMGBIHDGKBI();
-		Object.FindObjectOfType<LevelEditorScene>().NGDDLPLEHHA(true);
-		Singleton<EditorHistoryHandler>.Instance.GKKNMKOGJNB(".sawoutdatedmessage", true);
-	}
-
-	private void LDNHGEEIOPA()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 671f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 199f)
-			{
-				vector2.x = 649f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1275f);
-			((LevelEditorScene)Singleton<Scene>.Instance).NGDDLPLEHHA(true);
-		}
-	}
-
-	private void OBDEJFCNOBF()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(DBJLJKDGOOF());
-		}
-	}
-
-	private void FEJJKFDDBOM()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 143f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 353f)
-			{
-				vector2.x = 830f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 591f);
-			((LevelEditorScene)Singleton<Scene>.Instance).JHGKNFJBKJD(true);
-		}
-	}
-
-	private void AGMJDGHLBMN()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(PHFOIIGIBFN());
-		}
-	}
-
-	private void JLNDHGEEKON()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 150f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void HAOOJEDEHAL()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 299f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1148f)
-			{
-				vector2.x = 14f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 528f);
-			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
-		}
-	}
-
-	public EditorEvent GetEditorEvent()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public EditorEvent IJIJEKKMFEO()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public EditorEvent ECAMHMKKJPF()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void KJMIFKCFBDO()
-	{
-		BPMBNNJMINL().EOEDBFHBPEI();
-		Object.FindObjectOfType<LevelEditorScene>().NGDDLPLEHHA(true);
-		Singleton<EditorHistoryHandler>.Instance.SaveState("id");
-	}
-
-	public EditorEvent GJKNIBHFAMK()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void MOMICHIKBAL()
-	{
-		PCCANFLFPJD().NCMDCMHLIKD();
-		Object.FindObjectOfType<LevelEditorScene>().JHGKNFJBKJD();
-		Singleton<EditorHistoryHandler>.Instance.GNPAAHJKPAE("_ForceYSwap", true);
-	}
-
-	private void ABLAIDHNFFP()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1463f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1688f)
-			{
-				vector2.x = 211f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1519f);
-			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
-		}
-	}
-
-	private void ENDIOFDAKGM()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1441f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void LNNCJBHJPPI()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 320f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	public EditorEvent FMHIJJNLJIE()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void ABFNJCEBIKA()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(GJKNIBHFAMK());
-		}
-	}
-
-	private void DHDAMOMCAMK()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1007f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1885f)
-			{
-				vector2.x = 245f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 414f);
-			((LevelEditorScene)Singleton<Scene>.Instance).JHGKNFJBKJD();
-		}
-	}
-
-	private void PNEMHGPAMDP()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1600f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void MHEEHIHPHNH()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1727f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void MOACKDCEJBC()
-	{
-		PCCANFLFPJD().NCMDCMHLIKD();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
-		Singleton<EditorHistoryHandler>.Instance.JJDHOAFDHHN("SelectorMapsCountSlider");
-	}
-
-	public EditorEvent NMEPOAEPNFM()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	public EditorEvent LJABCHJFAAA()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void AMEJDNKEBJN()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1598f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void BPOMMPCBFMG()
-	{
-		DBJLJKDGOOF().EOEDBFHBPEI();
-		Object.FindObjectOfType<LevelEditorScene>().JHGKNFJBKJD(true);
-		Singleton<EditorHistoryHandler>.Instance.EACMGHMNGIE("Bad modpack name: {0}", true);
-	}
-
-	private void IGDLDJHJJHM()
-	{
-		HMCKEOGAHJM().NJDJHMPAIFE();
-		Object.FindObjectOfType<LevelEditorScene>().NGDDLPLEHHA();
-		Singleton<EditorHistoryHandler>.Instance.EACMGHMNGIE("_ColorKey");
-	}
-
-	private void HCIPECAOGIA()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(NGJPHBAPIKJ());
-		}
-	}
-
-	private void JAAJECBCCFM()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(GJKNIBHFAMK());
-		}
-	}
-
-	private void FFIBICKCENJ()
-	{
-		BPMBNNJMINL().FMGBIHDGKBI();
-		Object.FindObjectOfType<LevelEditorScene>().JHGKNFJBKJD();
-		Singleton<EditorHistoryHandler>.Instance.GNPAAHJKPAE("SaveButton", true);
-	}
-
-	private void PAHNLCPOGCH()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1234f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1018f)
-			{
-				vector2.x = 1347f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1223f);
-			((LevelEditorScene)Singleton<Scene>.Instance).NGDDLPLEHHA();
-		}
-	}
-
-	private void JBCNIPJDPJB()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).PNIOEINKMOF(PIANIMBGNEG());
-		}
-	}
-
-	private void KGPJACPLNEK()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1292f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	public EditorEvent PCCANFLFPJD()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void LEAHIBJDMBI()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).PNIOEINKMOF(POPOCHKFGIM());
-		}
-	}
-
-	private void CPDIDLOJGIN()
-	{
-		GKEAKHFGHHH().UpdateEvent();
-		Object.FindObjectOfType<LevelEditorScene>().JHGKNFJBKJD();
-		Singleton<EditorHistoryHandler>.Instance.SaveState("Tab2Content", true);
-	}
-
-	private void BMNOHLNANIP()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(ECGGFGJJOEL());
-		}
+		Singleton<EditorHistoryHandler>.Instance.SaveState("selector", true);
 	}
 
 	private void OnMouseDrag()
@@ -1135,226 +387,110 @@ public class GizmosController : MonoBehaviour
 		}
 	}
 
-	public EditorEvent JJPCJPPPOLF()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void BGFJOEPFOPM()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(LJABCHJFAAA());
-		}
-	}
-
-	public EditorEvent JCKAGIDMKFN()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void BFGIMALGMAJ()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(HBNKOCHGKBI());
-		}
-	}
-
-	private void PCHCOGMLIJN()
-	{
-		FMHIJJNLJIE().NJDJHMPAIFE();
-		Object.FindObjectOfType<LevelEditorScene>().JHGKNFJBKJD(true);
-		Singleton<EditorHistoryHandler>.Instance.EACMGHMNGIE("Tab2Content");
-	}
-
-	private void MECJHOJPODB()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(HFAMJIHOJCH());
-		}
-	}
-
-	private void HLDFOJMHKNL()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).PNIOEINKMOF(NMEPOAEPNFM());
-		}
-	}
-
-	private void EIIDKPHBOLM()
+	private void AEEDJOEAGOF()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1238f);
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 611f);
 			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
 			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 810f)
+			if (vector2.x < 894f)
 			{
-				vector2.x = 1192f;
+				vector2.x = 1754f;
 			}
 			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
 			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
 			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 670f);
-			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1824f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
 		}
 	}
 
-	private void LCHBFNIPBHB()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(PHFOIIGIBFN());
-		}
-	}
-
-	private void OKEHGHNHJFJ()
+	private void JMKMLGMAIGN()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1415f);
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 691f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 922f)
+			{
+				vector2.x = 308f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1818f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	public EditorEvent NJNDOJDJDDH()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void OnMouseDown()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10f);
 			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
 		}
 	}
 
-	private void HNOGGFCINIJ()
-	{
-		PHFOIIGIBFN().KJJODHJJEOH();
-		Object.FindObjectOfType<LevelEditorScene>().JHGKNFJBKJD(true);
-		Singleton<EditorHistoryHandler>.Instance.HAGGEHMHDFK("#FFDA44CC");
-	}
-
-	private void ABOJLAKEHOI()
-	{
-		PCCANFLFPJD().UpdateEvent();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
-		Singleton<EditorHistoryHandler>.Instance.SaveState("Scrollbar");
-	}
-
-	private void MJNPIDGNJMK()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).PNIOEINKMOF(ECAMHMKKJPF());
-		}
-	}
-
-	private void PINALAPAPDD()
+	private void GILBKKANIMH()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 345f);
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1327f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void IJNDNJBIDHN()
+	{
+		OOKPCMHAODD().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.HAJOKMCPBMO("_NoiseTex", true);
+	}
+
+	public EditorEvent JPCLJPBKBCD()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void GPIFGNFNOBM()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 816f);
 			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
 			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 978f)
+			if (vector2.x < 1577f)
 			{
-				vector2.x = 1670f;
+				vector2.x = 619f;
 			}
 			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
 			{
 				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
 			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1945f);
-			((LevelEditorScene)Singleton<Scene>.Instance).NGDDLPLEHHA(true);
-		}
-	}
-
-	private void EJNPAAMMMIL()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1825f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void MOKPIANAFEJ()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1876f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 519f)
-			{
-				vector2.x = 518f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 745f);
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1658f);
 			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
 		}
 	}
 
-	private void JDOCNDBKJLB()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1467f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void HEHPKMABGAJ()
-	{
-		JCKAGIDMKFN().FMGBIHDGKBI();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
-		Singleton<EditorHistoryHandler>.Instance.NAABMDLJEFC("Drop_Far");
-	}
-
-	private void DNACNEMCJFA()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 525f);
-			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
-		}
-	}
-
-	private void KICGCKKEGPF()
-	{
-		HFAMJIHOJCH().KJJODHJJEOH();
-		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
-		Singleton<EditorHistoryHandler>.Instance.GKKNMKOGJNB("_Value", true);
-	}
-
-	private void OCMKCBBCEFG()
-	{
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
-		{
-			((LevelEditorScene)Singleton<Scene>.Instance).MLIMHHINNPE(IJIJEKKMFEO());
-		}
-	}
-
-	public EditorEvent DBJLJKDGOOF()
+	public EditorEvent PGDPIFACFEH()
 	{
 		if ((bool)base.gameObject.GetComponent<EditorEvent>())
 		{
@@ -1363,23 +499,99 @@ public class GizmosController : MonoBehaviour
 		return base.gameObject.GetComponentInParent<EditorEvent>();
 	}
 
-	private void HFAEOGMPGIG()
+	private void GAGEKMHMFCH()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 414f);
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1871f);
 			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
 			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 526f)
+			if (vector2.x < 733f)
 			{
-				vector2.x = 1142f;
+				vector2.x = 671f;
 			}
 			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
 			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1819f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void Update()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(GetEditorEvent());
+		}
+	}
+
+	private void LMILPLOBFCO()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 858f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void KECKHMNEFJN()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1651f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1297f)
+			{
+				vector2.x = 313f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
 				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
 			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 500f);
-			((LevelEditorScene)Singleton<Scene>.Instance).JHGKNFJBKJD();
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1432f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	private void GPKEBKMAJEG()
+	{
+		NJNDOJDJDDH().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.EPMOMGMDLMN("Joystick1Button11", true);
+	}
+
+	private void PKGJJFIFLII()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(KIMHOPLGIMN());
+		}
+	}
+
+	private void OMCLOFCJMPG()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(MLDIIFGGNCB());
+		}
+	}
+
+	private void JBMBNKOOENB()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(MFNOCLFKAIA());
 		}
 	}
 
@@ -1387,89 +599,69 @@ public class GizmosController : MonoBehaviour
 	{
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hitInfo;
-		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
 		{
-			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(PCCANFLFPJD());
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(PFPMBKOLBMI());
 		}
 	}
 
-	private void HLIOOCEPPLH()
+	private void POIMNOBDBBN()
 	{
-		HBNKOCHGKBI().UpdateEvent();
-		Object.FindObjectOfType<LevelEditorScene>().NGDDLPLEHHA(true);
-		Singleton<EditorHistoryHandler>.Instance.EACMGHMNGIE("isVisible");
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(KIMHOPLGIMN());
+		}
 	}
 
-	private void AIEILPCFHHN()
+	private void JGNGHFOBEFB()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 63f);
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 246f);
 			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
 			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1832f)
+			if (vector2.x < 332f)
 			{
-				vector2.x = 596f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1150f);
-			((LevelEditorScene)Singleton<Scene>.Instance).NGDDLPLEHHA();
-		}
-	}
-
-	public EditorEvent PHFOIIGIBFN()
-	{
-		if ((bool)base.gameObject.GetComponent<EditorEvent>())
-		{
-			return base.gameObject.GetComponent<EditorEvent>();
-		}
-		return base.gameObject.GetComponentInParent<EditorEvent>();
-	}
-
-	private void APEBKMGJMKI()
-	{
-		if (dragEnabled)
-		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1129f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 488f)
-			{
-				vector2.x = 554f;
+				vector2.x = 294f;
 			}
 			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
 			{
 				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
 			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 312f);
-			((LevelEditorScene)Singleton<Scene>.Instance).JHGKNFJBKJD(true);
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 286f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
 		}
 	}
 
-	private void KECFHJMDLLK()
+	private void LNFLDPHHHAP()
+	{
+		NJNDOJDJDDH().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.DOGOJGAKDNF("masterSteamID", true);
+	}
+
+	private void LOIGNPEBHFD()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1664f);
-			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
-			Vector3 vector2 = vector + INLGAOLENMD;
-			if (vector2.x < 1114f)
-			{
-				vector2.x = 1931f;
-			}
-			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
-			{
-				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
-			}
-			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 898f);
-			((LevelEditorScene)Singleton<Scene>.Instance).NGDDLPLEHHA();
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 930f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
 		}
 	}
 
-	public EditorEvent HFAMJIHOJCH()
+	private void LCHBFNIPBHB()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(PGDPIFACFEH());
+		}
+	}
+
+	public EditorEvent BJKLMFNJBNP()
 	{
 		if ((bool)base.gameObject.GetComponent<EditorEvent>())
 		{
@@ -1478,12 +670,814 @@ public class GizmosController : MonoBehaviour
 		return base.gameObject.GetComponentInParent<EditorEvent>();
 	}
 
-	private void CJMPDPOPCNH()
+	private void NLPFNKGCKMA()
 	{
 		if (dragEnabled)
 		{
-			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 610f);
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1524f);
 			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
 		}
+	}
+
+	private void NOEGBCCDMPL()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1739f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1929f)
+			{
+				vector2.x = 1621f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1834f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void NFAALOKGPHP()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 460f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void MNCOADBMPPF()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1058f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	public EditorEvent ABJHPCFIDDJ()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void HLDOKPCCDAP()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1963f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void ACNEOFFJHPF()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1714f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	public EditorEvent MLDIIFGGNCB()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void JDGEPNDKDBL()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1484f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void JFKBGAAOPOK()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1740f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void OnMouseUp()
+	{
+		GetEditorEvent().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
+		Singleton<EditorHistoryHandler>.Instance.SaveState("Moved event");
+	}
+
+	private void FOMNCPKKCFN()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(FEOCBJLMJKE());
+		}
+	}
+
+	private void IFBGEFFPCCF()
+	{
+		KIMHOPLGIMN().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.IOCLDCLCNNB("_Value");
+	}
+
+	private void CMOFDCGAIGB()
+	{
+		MMGODILPCBG().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
+		Singleton<EditorHistoryHandler>.Instance.ICNMFKDPDBM(" ");
+	}
+
+	private void PNEMHGPAMDP()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 139f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	public EditorEvent HLFMBFEDKMI()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void GHIAMLDEOEO()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1682f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 993f)
+			{
+				vector2.x = 822f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 573f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void AKCADICOFDD()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(LLMDNEJFGOG());
+		}
+	}
+
+	private void IKMELABKBHO()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(JPCLJPBKBCD());
+		}
+	}
+
+	private void EDDPLJGKLKJ()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(GetEditorEvent());
+		}
+	}
+
+	private void NEPAGMPBFCH()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 218f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	public EditorEvent FEOCBJLMJKE()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void KKNJEHKGCNH()
+	{
+		KIMHOPLGIMN().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.HKNIGKOOPJH("D-Pad Left");
+	}
+
+	public EditorEvent HHFEMBJLCDP()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void EOIMAMMHCOP()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 204f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 760f)
+			{
+				vector2.x = 1808f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1975f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	private void FABHLBDFBHC()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1520f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 403f)
+			{
+				vector2.x = 220f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1156f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	public EditorEvent KGEOGKIKFOJ()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void KIEJKBNBHMD()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(EKLLANBFINH());
+		}
+	}
+
+	public EditorEvent MFJPMHHADNA()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void ABLAIDHNFFP()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1887f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 932f)
+			{
+				vector2.x = 1090f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1216f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	private void DLDIICLADJB()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 233f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void BFOIPCAHIIF()
+	{
+		ICBHLAKNLLJ().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
+		Singleton<EditorHistoryHandler>.Instance.HKNIGKOOPJH("3d text");
+	}
+
+	private void JPNJKBDEPLL()
+	{
+		MFJPMHHADNA().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.EBOBKIOLMLD("BitsData", true);
+	}
+
+	public EditorEvent GetEditorEvent()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void HNOGGFCINIJ()
+	{
+		MFNOCLFKAIA().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.HAJOKMCPBMO("_ScreenResolution");
+	}
+
+	public EditorEvent PFPMBKOLBMI()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void HCDIBFBBAMO()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 286f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void IOOMLNACNIF()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1553f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void LMGNLMEJIOG()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 217f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 798f)
+			{
+				vector2.x = 193f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1332f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	public EditorEvent BAMMKNDLGOL()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void EICFCDIBFLJ()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 488f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1237f)
+			{
+				vector2.x = 477f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 980f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void KMEONPMCNJG()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(KIMHOPLGIMN());
+		}
+	}
+
+	private void NBNADDFBPDO()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1935f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1412f)
+			{
+				vector2.x = 911f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1385f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	public EditorEvent MFNOCLFKAIA()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void FABMDEHEDNO()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(ABJHPCFIDDJ());
+		}
+	}
+
+	private void DPIPGGDNGHN()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(DNJPMINNJIJ());
+		}
+	}
+
+	private void OBFIIHOOGIJ()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1765f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 227f)
+			{
+				vector2.x = 706f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1171f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	private void BLEMAGIAGJA()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 416f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void HBLJJIOKLFH()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1715f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void FJECHEECPIL()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 678f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1665f)
+			{
+				vector2.x = 559f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 189f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void ICLPHHOJHHM()
+	{
+		ABJHPCFIDDJ().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.HAJOKMCPBMO("_ProjectToPixelMatrix");
+	}
+
+	private void HDDECCMEJKA()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(EKLLANBFINH());
+		}
+	}
+
+	public EditorEvent KMJHHEHKKMC()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void KKLMPKLKAEM()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(JPCLJPBKBCD());
+		}
+	}
+
+	private void PKOHPCEMMGJ()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 57f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void FBKKCJEPBND()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1637f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 975f)
+			{
+				vector2.x = 696f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 24f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void FBCHBMPPEKA()
+	{
+		MFNOCLFKAIA().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.EPMOMGMDLMN("0", true);
+	}
+
+	private void MNKNLNNNKAF()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 408f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1941f)
+			{
+				vector2.x = 674f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1904f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void PKOAOKLGHOL()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 240f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 1123f)
+			{
+				vector2.x = 1111f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 316f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent();
+		}
+	}
+
+	private void NEKCPLGFOFD()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(0) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(HLFMBFEDKMI());
+		}
+	}
+
+	private void JFGLCPLHJAE()
+	{
+		ICBHLAKNLLJ().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.BGGABKAGPAN("[FileSelector] Starting file dialog");
+	}
+
+	public EditorEvent OOKPCMHAODD()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void MDCFIHDPLIG()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hitInfo;
+		if (Physics.Raycast(ray, out hitInfo) && Input.GetMouseButton(1) && hitInfo.collider.gameObject == base.gameObject)
+		{
+			((LevelEditorScene)Singleton<Scene>.Instance).RemoveEvent(BAMMKNDLGOL());
+		}
+	}
+
+	private void DOANCIBPEEO()
+	{
+		PGDPIFACFEH().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.DOGOJGAKDNF("HelpMenu", true);
+	}
+
+	private void IHEFHMFMKOL()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1827f);
+			INLGAOLENMD = dragObj.transform.position - Camera.main.ScreenToWorldPoint(position);
+		}
+	}
+
+	private void JANLBMLAGAK()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 197f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 684f)
+			{
+				vector2.x = 791f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 738f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	private void OCDCCACJKPM()
+	{
+		if (dragEnabled)
+		{
+			Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1174f);
+			Vector3 vector = Camera.main.ScreenToWorldPoint(position);
+			Vector3 vector2 = vector + INLGAOLENMD;
+			if (vector2.x < 362f)
+			{
+				vector2.x = 14f;
+			}
+			if (vector2.x > ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[1].clip.length)
+			{
+				vector2.x = ((LevelEditorScene)Singleton<Scene>.Instance).asampler.audioSources[0].clip.length;
+			}
+			dragObj.transform.position = new Vector3(vector2.x, vector2.y, 1752f);
+			((LevelEditorScene)Singleton<Scene>.Instance).FindNearestEvent(true);
+		}
+	}
+
+	public EditorEvent MMGODILPCBG()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	public EditorEvent DNJPMINNJIJ()
+	{
+		if ((bool)base.gameObject.GetComponent<EditorEvent>())
+		{
+			return base.gameObject.GetComponent<EditorEvent>();
+		}
+		return base.gameObject.GetComponentInParent<EditorEvent>();
+	}
+
+	private void PJKHMHBPLAG()
+	{
+		KMJHHEHKKMC().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.EBOBKIOLMLD("_Threshold", true);
+	}
+
+	private void KJMIFKCFBDO()
+	{
+		MLDIIFGGNCB().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.SaveState("visible", true);
+	}
+
+	private void EPIDIDCAICG()
+	{
+		NJNDOJDJDDH().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent(true);
+		Singleton<EditorHistoryHandler>.Instance.BGGABKAGPAN("_Bloom3", true);
+	}
+
+	private void HEHPKMABGAJ()
+	{
+		KMJHHEHKKMC().CMNPEMEIJEJ();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.LCDEMMDAANK("ENABLE_EYE_ADAPTATION", true);
+	}
+
+	private void JLPHDJKLDDJ()
+	{
+		EKLLANBFINH().UpdateEvent();
+		Object.FindObjectOfType<LevelEditorScene>().FindNearestEvent();
+		Singleton<EditorHistoryHandler>.Instance.LCDEMMDAANK("Connection error: ", true);
 	}
 }

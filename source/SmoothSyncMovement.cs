@@ -11,86 +11,10 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 
 	private Quaternion ANHDBFEBADJ = Quaternion.identity;
 
-	public void IEMEHGCFAPD()
-	{
-		if (!ACPGHFHDCIP().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void LEAHIBJDMBI()
-	{
-		if (!GBHNDHLAJLI().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void APKNAPHOFHC()
-	{
-		if (!EOOCGIFFKBG().BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void NDAJBJFJGCF()
-	{
-		if (!AAMNKPHHHCI().BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void AFIHOEBJPCG(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
-		{
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.position);
-			HCIJEDFCNOP.IBCLJIACBKG(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.FIBMOBNIALK();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.ACOGAHJKGJH();
-		}
-	}
-
-	public void GLGOLEOAFOD()
+	public void EMANBHKAONB()
 	{
 		bool flag = true;
-		foreach (Component observedComponent in ACPGHFHDCIP().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "CameraFilterPack/Blend2Camera_Saturation"));
-		}
-	}
-
-	public void NEKCPLGFOFD()
-	{
-		if (!GBMJAPGLMGB().BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void PEMPABLNJHL()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in IBKCMBIGOEJ().ObservedComponents)
+		foreach (Component observedComponent in BLMHOKPIMOD().ObservedComponents)
 		{
 			if (observedComponent == this)
 			{
@@ -100,174 +24,80 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, " Also make sure to disable sprite packing for this sprite."));
+			Debug.LogWarning(string.Concat(this, "21x3"));
 		}
 	}
 
-	public void IIFCIDDJHPM()
-	{
-		if (!AAMNKPHHHCI().isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void NPFDCLNGGKC(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void DLFLONFGGGG(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HCIJEDFCNOP.isWriting)
 		{
-			HCIJEDFCNOP.CPIBABMPJLE(base.transform.position);
-			HCIJEDFCNOP.CPIBABMPJLE(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.FIBMOBNIALK();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.KIMDMBDNICC();
-		}
-	}
-
-	public void EJFJENFKLND()
-	{
-		if (!JAEJDHHCJJO().isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void HMMHABFJHEC(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
-		{
-			HCIJEDFCNOP.SendNext(base.transform.position);
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.FIBMOBNIALK();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.KIEJNJBDAJJ();
-		}
-	}
-
-	public void CCDNJPNLGBN()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in BLMHOKPIMOD().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "_Distortion"));
-		}
-	}
-
-	public void OCMKCBBCEFG()
-	{
-		if (!base.photonView.DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void JDGFCEPDKAJ()
-	{
-		if (!GBMJAPGLMGB().isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void MAOCOEGAFND()
-	{
-		if (!IBKCMBIGOEJ().BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void Update()
-	{
-		if (!base.photonView.isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void JOBBGDGHJMB()
-	{
-		bool flag = false;
-		foreach (Component observedComponent in GBHNDHLAJLI().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "RB"));
-		}
-	}
-
-	public void JJGHNKLDANI(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
-		{
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.position);
-			HCIJEDFCNOP.PNAPNHJHBMN(base.transform.rotation);
+			HCIJEDFCNOP.NICKMDDINKP(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.rotation);
 		}
 		else
 		{
 			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.LNDLNKJPAGO();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
 		}
 	}
 
-	public void HDPOECGCALE(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void MFAMHKBMBEI()
 	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
+		bool flag = false;
+		foreach (Component observedComponent in IBKCMBIGOEJ().ObservedComponents)
 		{
-			HCIJEDFCNOP.FADAIFFMBEL(base.transform.position);
-			HCIJEDFCNOP.CPIBABMPJLE(base.transform.rotation);
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
 		}
-		else
+		if (!flag)
 		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.LNDLNKJPAGO();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.HPPOACOIMOJ();
+			Debug.LogWarning(string.Concat(this, "FinishMap"));
 		}
 	}
 
-	public void OnPhotonSerializeView(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void HPGOHBHACKF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HCIJEDFCNOP.isWriting)
 		{
-			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.position);
 			HCIJEDFCNOP.SendNext(base.transform.rotation);
 		}
 		else
 		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.ReceiveNext();
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
 		}
 	}
 
-	public void JAAJECBCCFM()
+	public void PKDPLHBMKPM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		if (!GBMJAPGLMGB().BGJKMGJBPFA())
+		if (HCIJEDFCNOP.isWriting)
 		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+			HCIJEDFCNOP.GJDCOKMGHOG(base.transform.position);
+			HCIJEDFCNOP.GJDCOKMGHOG(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.MABPFPFGCNL();
+		}
+	}
+
+	public void KLFPENLPMJP(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.position);
+			HCIJEDFCNOP.NICKMDDINKP(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
 		}
 	}
 
@@ -288,34 +118,278 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 	}
 
-	public void CNDGDDLEFJF()
+	public void MDCFIHDPLIG()
 	{
-		bool flag = true;
-		foreach (Component observedComponent in GBHNDHLAJLI().ObservedComponents)
+		if (!BBGIDKNEGHD().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void CEKLAECJCKG()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in NABDKNPNEMM().ObservedComponents)
 		{
 			if (observedComponent == this)
 			{
-				flag = false;
+				flag = true;
 				break;
 			}
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "settings.fps"));
+			Debug.LogWarning(string.Concat(this, "_TimeX"));
 		}
 	}
 
-	public void PGMEOJJFIEN(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void CCDNJPNLGBN()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in OELHGNKAMEG().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "{0}"));
+		}
+	}
+
+	public void OEENOOGEEHD()
+	{
+		if (!AAMNKPHHHCI().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void GBNDJBNLKLI(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HCIJEDFCNOP.isWriting)
 		{
-			HCIJEDFCNOP.BBHGPGBHMML(base.transform.position);
-			HCIJEDFCNOP.PBECMJMDHBI(base.transform.rotation);
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.rotation);
 		}
 		else
 		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.HPPOACOIMOJ();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.ACOGAHJKGJH();
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
+		}
+	}
+
+	public void IFHKKPEFEOM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
+		}
+	}
+
+	public void JPJNECPABBG()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in GBMJAPGLMGB().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "_ScreenResolution"));
+		}
+	}
+
+	public void AEEGKLABFLN()
+	{
+		if (!NABDKNPNEMM().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void NFEDLAOPHML()
+	{
+		if (!EDIJKHEMPAD().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void IBHACCEEFFI()
+	{
+		if (!NABDKNPNEMM().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void DCKLCCMEGAA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
+		}
+	}
+
+	public void CJKDMGMPMJM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
+		}
+	}
+
+	public void FAAJAMIGJNK()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in GMAHNPNHMFK().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "Committing changes..."));
+		}
+	}
+
+	public void OBPCMAFGLON()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in AAMNKPHHHCI().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "Backward"));
+		}
+	}
+
+	public void GMIOCKFLJAK()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in GMAHNPNHMFK().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "_Value11"));
+		}
+	}
+
+	public void GCHBGCGBMCK()
+	{
+		if (!JDBCGCJJIAF().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void BFIOIDMHPPL()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in base.photonView.ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "UI"));
+		}
+	}
+
+	public void DAFGPDBLAMA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.GJDCOKMGHOG(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.MABPFPFGCNL();
+		}
+	}
+
+	public void HOBJDAHLBDM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.GJDCOKMGHOG(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.NLPFEFOCGBC();
+		}
+	}
+
+	public void FABMDEHEDNO()
+	{
+		if (!IFENGKHOKPC().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void IKIDIJLIGOH()
+	{
+		if (!IJBFILBDGDO().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
 		}
 	}
 
@@ -328,28 +402,42 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 	}
 
-	public void HMNLHMLILKD()
+	public void MDGEJFNOJCF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		if (!IBKCMBIGOEJ().KCAOJFPDEIP())
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.position);
+			HCIJEDFCNOP.SendNext(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
+		}
+	}
+
+	public void JOACBIEHHCE()
+	{
+		if (!JIOCGDBKGIL().isMine)
 		{
 			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
 			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
 		}
 	}
 
-	public void FJHFOBHJEHL()
+	public void Update()
 	{
-		if (!OELHGNKAMEG().BGJKMGJBPFA())
+		if (!base.photonView.isMine)
 		{
 			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
 			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
 		}
 	}
 
-	public void PIIMBOLGHOE()
+	public void JIJPHEDDIHC()
 	{
 		bool flag = false;
-		foreach (Component observedComponent in OELHGNKAMEG().ObservedComponents)
+		foreach (Component observedComponent in AAMNKPHHHCI().ObservedComponents)
 		{
 			if (observedComponent == this)
 			{
@@ -359,74 +447,162 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "IconImage"));
+			Debug.LogWarning(string.Concat(this, "LevelInfoInputField"));
+		}
+	}
+
+	public void IDIIELPAMCJ()
+	{
+		if (!BBGIDKNEGHD().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void DMIKIDGJEFC()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in BBGIDKNEGHD().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "[Right]"));
+		}
+	}
+
+	public void HOGEJPIBJAL(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			HCIJEDFCNOP.NICKMDDINKP(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.MABPFPFGCNL();
+		}
+	}
+
+	public void JAAJECBCCFM()
+	{
+		if (!base.photonView.isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void HHODOGMIJGI(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.SendNext(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
+		}
+	}
+
+	public void KEKNHAAEPCJ()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in PHCBHAFMDEJ().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "_FarCamera"));
+		}
+	}
+
+	public void OJACCGOHBGH()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in JAEJDHHCJJO().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "_Visualize"));
+		}
+	}
+
+	public void MBIPCKMIBFG(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			HCIJEDFCNOP.GJDCOKMGHOG(base.transform.position);
+			HCIJEDFCNOP.NICKMDDINKP(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.MABPFPFGCNL();
 		}
 	}
 
 	public void EGEGNHLODAA()
 	{
-		if (!AAMNKPHHHCI().KCAOJFPDEIP())
+		if (!JIOCGDBKGIL().isMine)
 		{
 			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
 			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
 		}
 	}
 
-	public void CFIAKIJAILI()
+	public void PPCGJBIIFAO()
 	{
-		if (!BLMHOKPIMOD().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void JIBGLHBMGPP(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.isWriting)
-		{
-			HCIJEDFCNOP.BBHGPGBHMML(base.transform.position);
-			HCIJEDFCNOP.SendNext(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.HPPOACOIMOJ();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.HPPOACOIMOJ();
-		}
-	}
-
-	public void PMBIKIBOHOF()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in CIACEFBNDDJ().ObservedComponents)
+		bool flag = false;
+		foreach (Component observedComponent in GBHNDHLAJLI().ObservedComponents)
 		{
 			if (observedComponent == this)
 			{
-				flag = false;
+				flag = true;
 				break;
 			}
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "_Value2"));
+			Debug.LogWarning(string.Concat(this, "_ScreenResolution"));
 		}
 	}
 
-	public void PNLAIDLOIDE(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void PGMEOJJFIEN(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		if (HCIJEDFCNOP.GKJCHGIMOEJ())
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
-			HCIJEDFCNOP.CPIBABMPJLE(base.transform.position);
-			HCIJEDFCNOP.CPIBABMPJLE(base.transform.rotation);
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.rotation);
 		}
 		else
 		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.FIBMOBNIALK();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.IDKHBJIHKEB();
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.MABPFPFGCNL();
 		}
 	}
 
-	public void FIABIKEIEKH()
+	public void FMAFBLKAJDF()
 	{
 		bool flag = false;
 		foreach (Component observedComponent in BLMHOKPIMOD().ObservedComponents)
@@ -439,13 +615,290 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "EventMenu"));
+			Debug.LogWarning(string.Concat(this, "/icon"));
 		}
 	}
 
-	public void HCCMANDFEPL()
+	public void LLJLDLLNFBH()
+	{
+		if (!PHCBHAFMDEJ().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void DEJEBOGKMJO()
 	{
 		bool flag = true;
+		foreach (Component observedComponent in IJBFILBDGDO().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "Bad parameters for setint! Use <key> <value>"));
+		}
+	}
+
+	public void EJFJENFKLND()
+	{
+		if (!DJHCJIJAIJP().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void ONMGIPAILOH()
+	{
+		if (!JIOCGDBKGIL().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void LMADKINICIN()
+	{
+		if (!BBGIDKNEGHD().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void BGFCMMDKCOI()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in EOOCGIFFKBG().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "_DotSize"));
+		}
+	}
+
+	public void EHCGBJDFMHG()
+	{
+		if (!BLMHOKPIMOD().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void NLNAJMCBNDC()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in IFENGKHOKPC().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "LoadPlayerSkin"));
+		}
+	}
+
+	public void GMELGGJOPBB()
+	{
+		if (!OELHGNKAMEG().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void BODPLDJLFCF()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in NABDKNPNEMM().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "_Value3"));
+		}
+	}
+
+	public void GDHMJGBAGHP()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in IBKCMBIGOEJ().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "_VelocityScale"));
+		}
+	}
+
+	public void EPCAPPLPFED()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in DJHCJIJAIJP().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, ".lastCheckpoint.comboScore"));
+		}
+	}
+
+	public void KFACDBHDAOD()
+	{
+		if (!IFENGKHOKPC().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void BFFHPJMMGHD()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in NABDKNPNEMM().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "#,0"));
+		}
+	}
+
+	public void GHILDCBCDJI()
+	{
+		if (!EOOCGIFFKBG().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void CNDGDDLEFJF()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in IJBFILBDGDO().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "CameraFilterPack/Blizzard"));
+		}
+	}
+
+	public void CFIAKIJAILI()
+	{
+		if (!IBKCMBIGOEJ().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void HODGFKONIFC(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.SendNext(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
+		}
+	}
+
+	public void LMOILMNEOFE(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			HCIJEDFCNOP.GJDCOKMGHOG(base.transform.position);
+			HCIJEDFCNOP.GJDCOKMGHOG(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
+		}
+	}
+
+	public void LMBDNPLDGIJ()
+	{
+		if (!JDBCGCJJIAF().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void MJNPIDGNJMK()
+	{
+		if (!FFIPLLNKGEN().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void IOIECPHCEHD(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.GJDCOKMGHOG(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.EDCDHDJNDPF();
+		}
+	}
+
+	public void KGMCGGIEPDE()
+	{
+		bool flag = false;
 		foreach (Component observedComponent in GMAHNPNHMFK().ObservedComponents)
 		{
 			if (observedComponent == this)
@@ -456,43 +909,143 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "#yes"));
+			Debug.LogWarning(string.Concat(this, "SetSunSensitivity"));
 		}
 	}
 
-	public void OHJHFPNGLEF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void JDGFCEPDKAJ()
 	{
-		if (HCIJEDFCNOP.GKJCHGIMOEJ())
+		if (!FFIPLLNKGEN().isMine)
 		{
-			HCIJEDFCNOP.PBECMJMDHBI(base.transform.position);
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.rotation);
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void OPFDGBDADMA()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in NABDKNPNEMM().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "/"));
+		}
+	}
+
+	public void IIFCIDDJHPM()
+	{
+		if (!PHCBHAFMDEJ().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void DDBOODLPCAM()
+	{
+		if (!GBMJAPGLMGB().isMine)
+		{
+			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
+			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+		}
+	}
+
+	public void OnPhotonSerializeView(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			HCIJEDFCNOP.SendNext(base.transform.position);
+			HCIJEDFCNOP.SendNext(base.transform.rotation);
 		}
 		else
 		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.LNDLNKJPAGO();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.KIMDMBDNICC();
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.ReceiveNext();
 		}
 	}
 
-	public void AIJGAJIOJDJ()
+	public void LCHBFNIPBHB()
 	{
-		if (!OELHGNKAMEG().KCAOJFPDEIP())
+		if (!EDIJKHEMPAD().isMine)
 		{
 			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
 			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
 		}
 	}
 
-	public void CGBHOELMAOC()
+	public void MPGJDLCANPA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		if (!GMAHNPNHMFK().KCAOJFPDEIP())
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.position);
+			HCIJEDFCNOP.AIAIEPFCCDO(base.transform.rotation);
+		}
+		else
+		{
+			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.MABPFPFGCNL();
 		}
 	}
 
-	public void DAHIMKKFNPH()
+	public void GLGOLEOAFOD()
+	{
+		bool flag = false;
+		foreach (Component observedComponent in NABDKNPNEMM().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "ItemNameText"));
+		}
+	}
+
+	public void BMAGFLLGDPJ()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in BLMHOKPIMOD().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "Drop_Near"));
+		}
+	}
+
+	public void IICACFLHBCP()
+	{
+		bool flag = true;
+		foreach (Component observedComponent in EDIJKHEMPAD().ObservedComponents)
+		{
+			if (observedComponent == this)
+			{
+				flag = false;
+				break;
+			}
+		}
+		if (!flag)
+		{
+			Debug.LogWarning(string.Concat(this, "CameraFilterPack/Colors_Adjust_FullColors"));
+		}
+	}
+
+	public void IKKPINNOOLG()
 	{
 		bool flag = true;
 		foreach (Component observedComponent in JAEJDHHCJJO().ObservedComponents)
@@ -505,81 +1058,14 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "settings_bindings_sec_"));
+			Debug.LogWarning(string.Concat(this, "Submit"));
 		}
 	}
 
-	public void HODGFKONIFC(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
-		{
-			HCIJEDFCNOP.PNAPNHJHBMN(base.transform.position);
-			HCIJEDFCNOP.PNAPNHJHBMN(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.IDKHBJIHKEB();
-		}
-	}
-
-	public void GOBHPAJFFDB()
-	{
-		bool flag = false;
-		foreach (Component observedComponent in ACPGHFHDCIP().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "Triangle"));
-		}
-	}
-
-	public void AEEGKLABFLN()
-	{
-		if (!base.photonView.BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void KMEONPMCNJG()
-	{
-		if (!GBMJAPGLMGB().BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void JOACBIEHHCE()
-	{
-		if (!JAEJDHHCJJO().isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void GCHBGCGBMCK()
-	{
-		if (!FFIPLLNKGEN().BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void GEGFJJBCHPE()
+	public void LJEFMGOBKGE()
 	{
 		bool flag = true;
-		foreach (Component observedComponent in BLMHOKPIMOD().ObservedComponents)
+		foreach (Component observedComponent in PHCBHAFMDEJ().ObservedComponents)
 		{
 			if (observedComponent == this)
 			{
@@ -589,359 +1075,23 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "14"));
-		}
-	}
-
-	public void FBMDHDBELEK()
-	{
-		if (!AAMNKPHHHCI().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void KGMCGGIEPDE()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in OELHGNKAMEG().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = false;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "offsets"));
-		}
-	}
-
-	public void DPIPGGDNGHN()
-	{
-		if (!GBHNDHLAJLI().BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void PNLKFANNOKO()
-	{
-		if (!FFIPLLNKGEN().isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void DEJEBOGKMJO()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in ACPGHFHDCIP().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "buttons"));
-		}
-	}
-
-	public void COGBDFKOHKK()
-	{
-		if (!GMAHNPNHMFK().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void MDOBONJMBKF()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in BLMHOKPIMOD().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "_Value3"));
-		}
-	}
-
-	public void HOBJDAHLBDM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.GKJCHGIMOEJ())
-		{
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.position);
-			HCIJEDFCNOP.BBHGPGBHMML(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.KIMDMBDNICC();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.IDKHBJIHKEB();
-		}
-	}
-
-	public void FABKIGNFECE()
-	{
-		if (!ACPGHFHDCIP().KCAOJFPDEIP())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void MFMIODIAKNI()
-	{
-		if (!IBKCMBIGOEJ().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void HBPLJMJAAHK()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in OELHGNKAMEG().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "[LevelEditorScene] Error: Timeout :S"));
-		}
-	}
-
-	public void JNIPABEGJND()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in base.photonView.ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "CameraFilterPack/Distortion_Twist"));
-		}
-	}
-
-	public void CJHMHIMKILB()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in AAMNKPHHHCI().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "Please specify either t or f."));
-		}
-	}
-
-	public void GBOFDLLNLLL(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.isWriting)
-		{
-			HCIJEDFCNOP.BBHGPGBHMML(base.transform.position);
-			HCIJEDFCNOP.BBHGPGBHMML(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.HPPOACOIMOJ();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.ReceiveNext();
-		}
-	}
-
-	public void HGKFNJAKJMH(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.GKJCHGIMOEJ())
-		{
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.position);
-			HCIJEDFCNOP.IBCLJIACBKG(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.KIMDMBDNICC();
-		}
-	}
-
-	public void CNMIIGDELGE(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.GKJCHGIMOEJ())
-		{
-			HCIJEDFCNOP.IBCLJIACBKG(base.transform.position);
-			HCIJEDFCNOP.PBECMJMDHBI(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.LNDLNKJPAGO();
-		}
-	}
-
-	public void GPFJMKCGHGB()
-	{
-		if (!GMAHNPNHMFK().isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void PJBBBAOPOCC(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.isWriting)
-		{
-			HCIJEDFCNOP.CPIBABMPJLE(base.transform.position);
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.KIMDMBDNICC();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.HPPOACOIMOJ();
-		}
-	}
-
-	public void JHPOIOELNCG()
-	{
-		if (!ACPGHFHDCIP().BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void KPOIJEKDFBE()
-	{
-		bool flag = false;
-		foreach (Component observedComponent in IBKCMBIGOEJ().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "PlayMusic"));
-		}
-	}
-
-	public void GMELGGJOPBB()
-	{
-		if (!GMAHNPNHMFK().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void EJPAMJBIAGM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.FAOJEFAMBFN())
-		{
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.position);
-			HCIJEDFCNOP.FADAIFFMBEL(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.ACOGAHJKGJH();
-		}
-	}
-
-	public void OJACCGOHBGH()
-	{
-		bool flag = false;
-		foreach (Component observedComponent in FFIPLLNKGEN().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "float,0"));
-		}
-	}
-
-	public void NEEIFNDHDOG()
-	{
-		bool flag = false;
-		foreach (Component observedComponent in CIACEFBNDDJ().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = false;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "colorD"));
+			Debug.LogWarning(string.Concat(this, "_ScreenResolution"));
 		}
 	}
 
 	public void POJFHDFJOPE()
 	{
-		if (!ACPGHFHDCIP().KCAOJFPDEIP())
+		if (!CIACEFBNDDJ().isMine)
 		{
 			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
 			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
 		}
 	}
 
-	public void JBCNIPJDPJB()
+	public void GEPELODHBFN()
 	{
-		if (!base.photonView.BGJKMGJBPFA())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void FABMDEHEDNO()
-	{
-		if (!BLMHOKPIMOD().isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void NCBGPIKDFIA()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in IBKCMBIGOEJ().ObservedComponents)
+		bool flag = false;
+		foreach (Component observedComponent in JIOCGDBKGIL().ObservedComponents)
 		{
 			if (observedComponent == this)
 			{
@@ -951,266 +1101,24 @@ public class SmoothSyncMovement : Photon.MonoBehaviour, IPunObservable
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "_Value3"));
+			Debug.LogWarning(string.Concat(this, "CameraFilterPack/FX_Hexagon_Black"));
 		}
 	}
 
-	public void PCFHKFCIFHF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.FAOJEFAMBFN())
-		{
-			HCIJEDFCNOP.CPIBABMPJLE(base.transform.position);
-			HCIJEDFCNOP.PBECMJMDHBI(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.IDKHBJIHKEB();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.KIEJNJBDAJJ();
-		}
-	}
-
-	public void EIFCCFBJKOO()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in base.photonView.ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = false;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "_Params"));
-		}
-	}
-
-	public void LPMINJJPDCH()
-	{
-		if (!EOOCGIFFKBG().KCAOJFPDEIP())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void FODIJCCIION(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
-		{
-			HCIJEDFCNOP.PNAPNHJHBMN(base.transform.position);
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ReceiveNext();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.ReceiveNext();
-		}
-	}
-
-	public void AGMJDGHLBMN()
-	{
-		if (!BLMHOKPIMOD().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void KEGNPKFMPDG()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in BLMHOKPIMOD().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "{0} hours ago"));
-		}
-	}
-
-	public void GKDNDDEAAED(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.isWriting)
-		{
-			HCIJEDFCNOP.OLACNHHHOEL(base.transform.position);
-			HCIJEDFCNOP.IBCLJIACBKG(base.transform.rotation);
-		}
-		else
-		{
-			OKGJMEKOLIM = (Vector3)HCIJEDFCNOP.ACOGAHJKGJH();
-			ANHDBFEBADJ = (Quaternion)HCIJEDFCNOP.HPPOACOIMOJ();
-		}
-	}
-
-	public void LBIOIEANMGI()
-	{
-		if (!IBKCMBIGOEJ().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void FMAFBLKAJDF()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in GBHNDHLAJLI().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = false;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "#no"));
-		}
-	}
-
-	public void POIMNOBDBBN()
-	{
-		if (!EOOCGIFFKBG().KCAOJFPDEIP())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void MBCDCBCLMCI()
+	public void MADENBGHKDD()
 	{
 		bool flag = true;
 		foreach (Component observedComponent in FFIPLLNKGEN().ObservedComponents)
 		{
 			if (observedComponent == this)
 			{
-				flag = false;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "Error: Timeout :S"));
-		}
-	}
-
-	public void OEENOOGEEHD()
-	{
-		if (!ACPGHFHDCIP().KCAOJFPDEIP())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void MJNPIDGNJMK()
-	{
-		if (!OELHGNKAMEG().DOLKFPIABDD())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void LBOBAIGNOML()
-	{
-		bool flag = false;
-		foreach (Component observedComponent in ACPGHFHDCIP().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
 				flag = true;
 				break;
 			}
 		}
 		if (!flag)
 		{
-			Debug.LogWarning(string.Concat(this, "Set particles gravity"));
-		}
-	}
-
-	public void DGCGGKMNPLD()
-	{
-		if (!ACPGHFHDCIP().KCAOJFPDEIP())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void LLJLDLLNFBH()
-	{
-		if (!JAEJDHHCJJO().isMine)
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void BGFCMMDKCOI()
-	{
-		bool flag = false;
-		foreach (Component observedComponent in ACPGHFHDCIP().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = false;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "RenderTextureUtilityTempTexture"));
-		}
-	}
-
-	public void OIBMHPIFAKK()
-	{
-		if (!AAMNKPHHHCI().KCAOJFPDEIP())
-		{
-			base.transform.position = Vector3.Lerp(base.transform.position, OKGJMEKOLIM, Time.deltaTime * SmoothingDelay);
-			base.transform.rotation = Quaternion.Lerp(base.transform.rotation, ANHDBFEBADJ, Time.deltaTime * SmoothingDelay);
-		}
-	}
-
-	public void POEEMFJIMIP()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in IBKCMBIGOEJ().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = false;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, ": "));
-		}
-	}
-
-	public void GCDNONIKKLI()
-	{
-		bool flag = true;
-		foreach (Component observedComponent in EOOCGIFFKBG().ObservedComponents)
-		{
-			if (observedComponent == this)
-			{
-				flag = true;
-				break;
-			}
-		}
-		if (!flag)
-		{
-			Debug.LogWarning(string.Concat(this, "IconImage"));
+			Debug.LogWarning(string.Concat(this, "_PColor"));
 		}
 	}
 }

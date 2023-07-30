@@ -3,37 +3,27 @@ using UnityEngine;
 
 public class CraftingItem : MonoBehaviour
 {
-	private void MMBPLGGLPDB()
+	private void Start()
 	{
 	}
 
-	private void PAKPHKPDKGE()
+	private void COOHIILCOCO()
 	{
 	}
 
-	public void ECPMLDBJIPH()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-	}
-
-	private void Update()
+	private void CHOPDIGHJNH()
 	{
 	}
 
-	private void KMKLDAJLCNM()
+	private void ODBNMPGBCGO()
 	{
 	}
 
-	private void IDIIELPAMCJ()
+	private void EHCGBJDFMHG()
+	{
+	}
+
+	private void NFEDLAOPHML()
 	{
 	}
 
@@ -42,262 +32,16 @@ public class CraftingItem : MonoBehaviour
 		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
 		}
 		else
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
+			Object.FindObjectOfType<CraftingPanel>().JOEPHOFGNNN();
 		}
-	}
-
-	public void KHLOKBDJLAO()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
-		}
-	}
-
-	private void LMBDNPLDGIJ()
-	{
-	}
-
-	private void LDDKCCMHMIC()
-	{
-	}
-
-	private void IIFCIDDJHPM()
-	{
-	}
-
-	public void MILJCGDAPKA()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-	}
-
-	private void NFEDLAOPHML()
-	{
-	}
-
-	private void DPIPGGDNGHN()
-	{
-	}
-
-	private void FLKEJJEGCFA()
-	{
-	}
-
-	private void AGMJDGHLBMN()
-	{
-	}
-
-	private void FJNCHGLIEMA()
-	{
-	}
-
-	private void ONMGIPAILOH()
-	{
-	}
-
-	private void KFACDBHDAOD()
-	{
-	}
-
-	public void AKBAPOMKFPE()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-	}
-
-	public void JPNOHODALMI()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-	}
-
-	private void KNBJBNDGCIJ()
-	{
-	}
-
-	public void ONNJFFAFGGN()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
-		}
-	}
-
-	private void OPCLBGHAPMG()
-	{
-	}
-
-	private void JECMJNFGBGC()
-	{
-	}
-
-	private void NKLIHNJCHOG()
-	{
-	}
-
-	private void AEIJFLJEABG()
-	{
-	}
-
-	private void MECJHOJPODB()
-	{
-	}
-
-	private void NCNPAKFAFOE()
-	{
-	}
-
-	private void HPNNCNNFMGK()
-	{
-	}
-
-	private void CHOPDIGHJNH()
-	{
-	}
-
-	private void EJFJENFKLND()
-	{
-	}
-
-	public void HABHCAAKDPL()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-	}
-
-	public void AKEIPNLIHNL()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
-		}
-	}
-
-	private void JBNPEHMDCMI()
-	{
-	}
-
-	private void KDMKDEKCELE()
-	{
-	}
-
-	public void KDABDGBBAAN()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-	}
-
-	public void MJBPMLAHEPK()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-	}
-
-	private void CNGAJDBOCLJ()
-	{
-	}
-
-	private void CFIAKIJAILI()
-	{
-	}
-
-	private void PMPKMGKAAJH()
-	{
 	}
 
 	private void DLBODOFAJGM()
-	{
-	}
-
-	private void MMOKKAPFGAK()
-	{
-	}
-
-	private void DNNFHBOOPIN()
-	{
-	}
-
-	private void FBPHNEJBDJN()
-	{
-	}
-
-	private void NNCCPEBIAKH()
-	{
-	}
-
-	private void MMMDPANNAIO()
 	{
 	}
 
@@ -305,111 +49,81 @@ public class CraftingItem : MonoBehaviour
 	{
 	}
 
-	public void CJFHNNICLEN()
+	public void FPHMHFFPLHM()
 	{
 		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().HIBHDFPICFI();
 		}
 		else
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
 		}
 	}
 
-	public void DJAABMENCCB()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-	}
-
-	private void HAIAHJPCPAG()
+	private void CGDMLHLJIDK()
 	{
 	}
 
-	public void NLGGGEBBFAH()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-	}
-
-	private void PDHKMDBNGGN()
+	private void FNCDAPDOBBI()
 	{
 	}
 
-	private void JOACBIEHHCE()
+	private void MAOCOEGAFND()
 	{
 	}
 
-	private void NNFMIAFHMJM()
+	private void DKGBFNCOAEO()
 	{
-	}
-
-	public void CLPNGMEGNOC()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-	}
-
-	public void DAPLLJDMJCK()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
-	}
-
-	private void LCHBFNIPBHB()
-	{
-	}
-
-	public void HPKNKMOCCHJ()
-	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
-		}
 	}
 
 	private void GMELGGJOPBB()
+	{
+	}
+
+	private void LBAJLLFMMMP()
+	{
+	}
+
+	private void Update()
+	{
+	}
+
+	public void NHKMALPBBAP()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().JOEPHOFGNNN();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+	}
+
+	public void IMNOHPHOEMN()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().HIBHDFPICFI();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().KCDGDPMNFEG();
+		}
+	}
+
+	private void DPIPGGDNGHN()
+	{
+	}
+
+	private void PMPKMGKAAJH()
 	{
 	}
 
@@ -418,62 +132,192 @@ public class CraftingItem : MonoBehaviour
 		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().KCDGDPMNFEG();
+		}
+	}
+
+	public void MOGKDGPDPFL()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().HIBHDFPICFI();
+		}
+	}
+
+	private void EGEGNHLODAA()
+	{
+	}
+
+	private void LEAHIBJDMBI()
+	{
+	}
+
+	public void GMKOLBCOLMD()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().HIBHDFPICFI();
+		}
+	}
+
+	private void HIKKPDACJGI()
+	{
+	}
+
+	public void GHDFEDMLPCB()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
+		}
+	}
+
+	private void IHLMNAGPKDA()
+	{
+	}
+
+	private void CFIAKIJAILI()
+	{
+	}
+
+	private void EPEGAEGDJAM()
+	{
+	}
+
+	private void JAAJECBCCFM()
+	{
+	}
+
+	private void AGMJDGHLBMN()
+	{
+	}
+
+	private void DNENFLNCIJP()
+	{
+	}
+
+	public void JABGIOLEKPG()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
+		}
+	}
+
+	private void JHPOIOELNCG()
+	{
+	}
+
+	private void PHJJHFBLICM()
+	{
+	}
+
+	private void KOJKBFDNGDK()
+	{
+	}
+
+	public void CMOBHGHIBKL()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+	}
+
+	public void JDNMFCFIDEM()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+	}
+
+	private void CIPKEPDELJB()
+	{
+	}
+
+	private void ONKDMMJPEMN()
+	{
+	}
+
+	public void MILJCGDAPKA()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
 			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
 		}
 		else
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().KCDGDPMNFEG();
 		}
 	}
 
-	private void LJIHHJOAJCN()
-	{
-	}
-
-	private void Start()
-	{
-	}
-
-	private void JOPCCCCHNLI()
-	{
-	}
-
-	private void KMCPMOGKDEH()
-	{
-	}
-
-	private void DIPDEHOOBPG()
-	{
-	}
-
-	private void FABKIGNFECE()
-	{
-	}
-
-	public void KNJHPPILPKH()
+	public void NECOKPEMDKP()
 	{
 		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().HIBHDFPICFI();
 		}
 		else
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
 		}
 	}
 
-	private void FMNPFCHBLJF()
+	private void EPJJDKJEDMM()
 	{
 	}
 
-	private void PFNFPINPCMH()
+	private void FOLDLDLFFLM()
 	{
 	}
 
-	private void BMIOFJFMCBG()
+	private void LMADKINICIN()
 	{
 	}
 
@@ -491,15 +335,11 @@ public class CraftingItem : MonoBehaviour
 		}
 	}
 
-	private void JHANGPCOCIG()
+	private void OIBMHPIFAKK()
 	{
 	}
 
-	private void MJNPIDGNJMK()
-	{
-	}
-
-	public void JDNMFCFIDEM()
+	public void OADJCAIEKNN()
 	{
 		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
 		{
@@ -509,16 +349,74 @@ public class CraftingItem : MonoBehaviour
 		else
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
 		}
 	}
 
-	public void IKKCBILMLMC()
+	private void IIFCIDDJHPM()
+	{
+	}
+
+	private void KIEJKBNBHMD()
+	{
+	}
+
+	private void DAHFFNNIGML()
+	{
+	}
+
+	private void MKIMDFLBFOM()
+	{
+	}
+
+	private void LJIHHJOAJCN()
+	{
+	}
+
+	private void JDKHBGDEONK()
+	{
+	}
+
+	private void LDDKCCMHMIC()
+	{
+	}
+
+	private void MMBPLGGLPDB()
+	{
+	}
+
+	public void HFGANPKDCJI()
 	{
 		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
+			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().HIBHDFPICFI();
+		}
+	}
+
+	private void BMODOIJGIOO()
+	{
+	}
+
+	private void LGHCJCFHEMF()
+	{
+	}
+
+	private void FJHFOBHJEHL()
+	{
+	}
+
+	public void AKEIPNLIHNL()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
 		}
 		else
 		{
@@ -527,53 +425,245 @@ public class CraftingItem : MonoBehaviour
 		}
 	}
 
-	private void MFMIODIAKNI()
-	{
-	}
-
-	public void GDNMIEHNGBL()
+	public void PFILMFOHFPB()
 	{
 		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
 		}
 		else
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
 		}
 	}
 
-	private void AGEJKLMJGDO()
+	private void MECJHOJPODB()
 	{
 	}
 
-	public void JJDLADBCEMO()
+	private void KNBJBNDGCIJ()
 	{
-		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
-		}
-		else
-		{
-			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().NAAINJDKIAC();
-		}
 	}
 
-	public void OBNBENFFJAC()
+	private void NNCCPEBIAKH()
+	{
+	}
+
+	private void BEBNOKFLJPH()
+	{
+	}
+
+	public void HMGMILPKLFK()
 	{
 		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
 		}
 		else
 		{
 			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
-			Object.FindObjectOfType<CraftingPanel>().PPOCCAEOONC();
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
 		}
+	}
+
+	private void GCHBGCGBMCK()
+	{
+	}
+
+	public void IIPAHIBFIHH()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
+		}
+	}
+
+	public void NNPGOODLNEO()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
+		}
+	}
+
+	private void COIJKMKIEAK()
+	{
+	}
+
+	private void FOMNCPKKCFN()
+	{
+	}
+
+	private void AIJGAJIOJDJ()
+	{
+	}
+
+	public void OEGDGBIKNGG()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().KCDGDPMNFEG();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().KCDGDPMNFEG();
+		}
+	}
+
+	public void CJFHNNICLEN()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().JOEPHOFGNNN();
+		}
+	}
+
+	private void FBPHNEJBDJN()
+	{
+	}
+
+	private void CNGAJDBOCLJ()
+	{
+	}
+
+	private void BGDPIHMAACO()
+	{
+	}
+
+	private void DKOPKPBLDHH()
+	{
+	}
+
+	public void OLHMGFBCENO()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().KCDGDPMNFEG();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().JOEPHOFGNNN();
+		}
+	}
+
+	private void IDIIELPAMCJ()
+	{
+	}
+
+	private void OBAEDJJDCPN()
+	{
+	}
+
+	private void DDBOODLPCAM()
+	{
+	}
+
+	public void GFBDFGACCLH()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().KCDGDPMNFEG();
+		}
+	}
+
+	private void HPNNCNNFMGK()
+	{
+	}
+
+	private void FMNPFCHBLJF()
+	{
+	}
+
+	private void FBMDHDBELEK()
+	{
+	}
+
+	private void COGBDFKOHKK()
+	{
+	}
+
+	public void HJICAJKELGI()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
+		}
+	}
+
+	public void DAPLLJDMJCK()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().OFDKNCILJDE();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().JOEPHOFGNNN();
+		}
+	}
+
+	public void MCFNPLNJKBP()
+	{
+		if (base.transform.parent != Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform)
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().inCraftingItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().FGHCHJJBONK();
+		}
+		else
+		{
+			base.transform.SetParent(Object.FindObjectOfType<CraftingPanel>().craftableItemsContent.transform);
+			Object.FindObjectOfType<CraftingPanel>().ResolveRecipe();
+		}
+	}
+
+	private void MJEFMIPLFAB()
+	{
+	}
+
+	private void NDAJBJFJGCF()
+	{
+	}
+
+	private void NCPAFCKGJEA()
+	{
 	}
 }

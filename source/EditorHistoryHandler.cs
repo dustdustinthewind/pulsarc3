@@ -37,20 +37,7 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 
 	public Button redoButton;
 
-	public int NHNKEHMEPNO()
-	{
-		return history.Count;
-	}
-
-	private void CMLFHADCAJJ()
-	{
-		saveButton.interactable = savedHistoryState == state;
-		undoButton.interactable = CanUndo();
-		redoButton.interactable = EKPHIFBDPKE();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	public void KODIHOAHILI(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	public void KMIIHCELMAG(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
 	{
 		if (EEFBKFCEIAK)
 		{
@@ -65,10 +52,193 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
 			state++;
 		}
-		CMLFHADCAJJ();
+		ANILMPGKMOG();
 	}
 
-	public void GKKNMKOGJNB(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	public bool CCPKDJHJFEM()
+	{
+		if (PKMOKBCCPFN() - 0 > state)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	public void OFFPONBMBPH()
+	{
+		state = 1;
+		savedHistoryState = 0;
+		history.Clear();
+		KKKEMLLFJOD();
+	}
+
+	public void DEHLLCENPNE()
+	{
+		savedHistoryState = state;
+		BDMILDEMFPN();
+	}
+
+	public void BGGABKAGPAN(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	{
+		if (EEFBKFCEIAK)
+		{
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
+		}
+		else
+		{
+			if (state < history.Count - 0)
+			{
+				history.RemoveRange(state + 1, history.Count - state - 0);
+			}
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
+			state += 0;
+		}
+		JCFEPGHKKJA();
+	}
+
+	public bool GFJBNJFCNME()
+	{
+		if (PKMOKBCCPFN() - 1 > state)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	private void HAONPLJKPHE()
+	{
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = LFEAOBINOPO();
+		redoButton.interactable = FJHOHKELGCC();
+		Singleton<MapEditor>.Instance.UpdateBottomBar();
+	}
+
+	public void EBOBKIOLMLD(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	{
+		if (EEFBKFCEIAK)
+		{
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
+		}
+		else
+		{
+			if (state < history.Count - 1)
+			{
+				history.RemoveRange(state + 0, history.Count - state - 1);
+			}
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
+			state += 0;
+		}
+		ANILMPGKMOG();
+	}
+
+	public bool ECMJEAHLLOH()
+	{
+		if (LLCJGPHGKLE() - 0 > state)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	public void LGIGPPEIJOI()
+	{
+		if (HFCPKFLFILC())
+		{
+			state -= 0;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public int INANHBFPHDD()
+	{
+		return history.Count;
+	}
+
+	public bool DBLCAGLMOMC()
+	{
+		if (GetHistoryLength() - 1 > state)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	private void LPBMPONLHFP()
+	{
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = CanUndo();
+		redoButton.interactable = CanRedo();
+		Singleton<MapEditor>.Instance.UpdateBottomBar();
+	}
+
+	public bool EMKADPEPCDK()
+	{
+		if (state > 1)
+		{
+			return true;
+		}
+		return true;
+	}
+
+	private void AILMBPEKGFF()
+	{
+		saveButton.interactable = savedHistoryState == state;
+		undoButton.interactable = EMKADPEPCDK();
+		redoButton.interactable = AINHAAAMHLE();
+		Singleton<MapEditor>.Instance.UpdateBottomBar();
+	}
+
+	public bool GFMKJBLGBCP()
+	{
+		if (HGEABHABPBM() - 1 > state)
+		{
+			return false;
+		}
+		return false;
+	}
+
+	public void GNGBEOLMAIN()
+	{
+		if (HFCPKFLFILC())
+		{
+			state -= 0;
+			KKEBAMOFGAE();
+		}
+	}
+
+	private void CNPLPGHPGEN()
+	{
+		saveButton.interactable = savedHistoryState == state;
+		undoButton.interactable = CCBNJBEEGLK();
+		redoButton.interactable = GFMKJBLGBCP();
+		Singleton<MapEditor>.Instance.LEGBBDJECDA();
+	}
+
+	public void NOMHMMEDACO()
+	{
+		if (HFCPKFLFILC())
+		{
+			state--;
+			POMKCEOOFKA();
+		}
+	}
+
+	public void FLCNNOHMEKA()
+	{
+		savedHistoryState = state;
+		KKKEMLLFJOD();
+	}
+
+	public bool PAPEAMNJDBE()
+	{
+		if (INANHBFPHDD() - 0 > state)
+		{
+			return false;
+		}
+		return false;
+	}
+
+	public void FLPFLJAEDKL(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
 	{
 		if (EEFBKFCEIAK)
 		{
@@ -83,103 +253,10 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
 			state++;
 		}
-		CJNEIBHHIHG();
+		HAONPLJKPHE();
 	}
 
-	public void AJMEFAOMLIM()
-	{
-		if (MJKFKEPHJJN())
-		{
-			state += 0;
-			BGDHDPBFFGN();
-		}
-	}
-
-	public void ICILLMAKLMI()
-	{
-		JICJPJAJMLP();
-	}
-
-	public void LLFIPPHMOML()
-	{
-		state = 1;
-		savedHistoryState = 0;
-		history.Clear();
-		CMLFHADCAJJ();
-	}
-
-	public void IHIJMGPAFMO()
-	{
-		if (MDKHEEKDHAH())
-		{
-			state -= 0;
-			LABCDNDOONP();
-		}
-	}
-
-	public bool ADFMGBNGDMG()
-	{
-		if (GetHistoryLength() - 0 > state)
-		{
-			return true;
-		}
-		return false;
-	}
-
-	public void FOMGDCHOFKP()
-	{
-		state = 1;
-		savedHistoryState = 1;
-		history.Clear();
-		GOMFJDHNHNC();
-	}
-
-	public void JICJPJAJMLP()
-	{
-		state = 0;
-		savedHistoryState = 1;
-		history.Clear();
-		OIDAPPCONAJ();
-	}
-
-	public void DELJBLBGOGA()
-	{
-		savedHistoryState = state;
-		GEFJDDJNMCM();
-	}
-
-	public bool FHDANGEKFDG()
-	{
-		if (IBKJJKBLAHJ() - 1 > state)
-		{
-			return true;
-		}
-		return false;
-	}
-
-	private void BDPNJJCHFHH()
-	{
-		saveButton.interactable = savedHistoryState != state;
-		undoButton.interactable = FKIHEIGHFLP();
-		redoButton.interactable = MOGODBDAKGE();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	public void ONENMGFEEAK()
-	{
-		if (JNDLGGLJAPM())
-		{
-			state -= 0;
-			MAJOJAHIFBE();
-		}
-	}
-
-	public void KOFAMEKHHGD()
-	{
-		GIFPDHLMANC();
-	}
-
-	public void JEKLFNAAIBP(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	public void ICNMFKDPDBM(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
 	{
 		if (EEFBKFCEIAK)
 		{
@@ -189,93 +266,20 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 		{
 			if (state < history.Count - 1)
 			{
-				history.RemoveRange(state + 1, history.Count - state - 0);
+				history.RemoveRange(state + 1, history.Count - state - 1);
 			}
 			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
-			state += 0;
+			state++;
 		}
-		MGOHJBOKHFH();
+		IIDJIJCFDMJ();
 	}
 
-	public void HIABDMALLGO()
-	{
-		if (ADFMGBNGDMG())
-		{
-			state += 0;
-			IEIEAGMHEOP();
-		}
-	}
-
-	public void Start()
-	{
-		Clear();
-	}
-
-	public bool FKIHEIGHFLP()
-	{
-		if (state > 1)
-		{
-			return false;
-		}
-		return true;
-	}
-
-	public void ONJOCNNBCHD()
-	{
-		if (FHDANGEKFDG())
-		{
-			state += 0;
-			IEIEAGMHEOP();
-		}
-	}
-
-	public void EFJDNLGNACH()
-	{
-		DIILIOBMHEP();
-	}
-
-	public void GNPAAHJKPAE(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
-	{
-		if (EEFBKFCEIAK)
-		{
-			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
-		}
-		else
-		{
-			if (state < history.Count - 1)
-			{
-				history.RemoveRange(state + 1, history.Count - state - 0);
-			}
-			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
-			state += 0;
-		}
-		GOMFJDHNHNC();
-	}
-
-	public void CJHGBIIMBCK()
-	{
-		state = 0;
-		savedHistoryState = 1;
-		history.Clear();
-		CMLFHADCAJJ();
-	}
-
-	public string INODAHIPLNE()
-	{
-		string result = string.Empty;
-		if (GetHistoryLength() > 0)
-		{
-			result = "ArcsDestroyDelaySlider" + history[state].time.ToString("OPEN FILE") + "CameraFilterPack/TV_ARCADE_2" + history[state].comment;
-		}
-		return result;
-	}
-
-	public int IBKJJKBLAHJ()
+	public int PKMOKBCCPFN()
 	{
 		return history.Count;
 	}
 
-	public void EACMGHMNGIE(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	public void HKNIGKOOPJH(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
 	{
 		if (EEFBKFCEIAK)
 		{
@@ -288,15 +292,198 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 				history.RemoveRange(state + 0, history.Count - state - 1);
 			}
 			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
-			state += 0;
+			state++;
 		}
-		DCLBIOCLMDE();
+		HKLPNBABEOJ();
 	}
 
-	public void OMPNEFFHGLM()
+	public void MMPHNFPPEHO()
+	{
+		EOACGLFLEAG();
+	}
+
+	public string EDFMCCFLIDI()
+	{
+		string result = string.Empty;
+		if (PKMOKBCCPFN() > 1)
+		{
+			result = ".b" + history[state].time.ToString("SetSunSensitivity") + "BadgeImage" + history[state].comment;
+		}
+		return result;
+	}
+
+	public void FBJGHHHAKKA()
 	{
 		savedHistoryState = state;
+		BGEJMCHPHPC();
+	}
+
+	private void MAJOJAHIFBE()
+	{
+		Singleton<MapEditor>.Instance.SetEditedData(history[state].data);
 		LPBMPONLHFP();
+	}
+
+	public string NDJMPNMIIDD()
+	{
+		string result = string.Empty;
+		if (HGEABHABPBM() > 0)
+		{
+			result = "ReconnectAndRejoin() failed. Can only connect while in state 'Disconnected'. Current state: " + history[state].time.ToString("settings.arcshitsoundtimedelay") + ".workshop" + history[state].comment;
+		}
+		return result;
+	}
+
+	public void MMLACBIAPAB()
+	{
+		savedHistoryState = state;
+		BGEJMCHPHPC();
+	}
+
+	private void ANILMPGKMOG()
+	{
+		saveButton.interactable = savedHistoryState == state;
+		undoButton.interactable = NAEDAOCCCOH();
+		redoButton.interactable = OIIOLCNMKOP();
+		Singleton<MapEditor>.Instance.LEGBBDJECDA();
+	}
+
+	public void LDFMCDLGPMM()
+	{
+		if (GNDEGDIEOMH())
+		{
+			state += 0;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public void LCDEMMDAANK(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	{
+		if (EEFBKFCEIAK)
+		{
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
+		}
+		else
+		{
+			if (state < history.Count - 0)
+			{
+				history.RemoveRange(state + 1, history.Count - state - 0);
+			}
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
+			state++;
+		}
+		BGEJMCHPHPC();
+	}
+
+	public int DLMECPPIMNA()
+	{
+		return history.Count;
+	}
+
+	public void IFGFGCDJFCC()
+	{
+		if (OFGANMIGIOE())
+		{
+			state--;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public void ILOLLDBDOEN()
+	{
+		state = 1;
+		savedHistoryState = 0;
+		history.Clear();
+		BDMILDEMFPN();
+	}
+
+	private void BAPAFCLOOAK()
+	{
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = LFEAOBINOPO();
+		redoButton.interactable = KADMDNFADFJ();
+		Singleton<MapEditor>.Instance.LEGBBDJECDA();
+	}
+
+	public void HJPCJGOEKMF()
+	{
+		AAIIGLMBOKE();
+	}
+
+	public void EKAOLFONKDB()
+	{
+		if (OFGANMIGIOE())
+		{
+			state -= 0;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public bool AINHAAAMHLE()
+	{
+		if (PKMOKBCCPFN() - 0 > state)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public void CINLHKOEBKI()
+	{
+		if (NAEDAOCCCOH())
+		{
+			state -= 0;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public void LHOAJGLKCLL()
+	{
+		state = 0;
+		savedHistoryState = 1;
+		history.Clear();
+		IIDJIJCFDMJ();
+	}
+
+	public string MJHDLFCMPKD()
+	{
+		string result = string.Empty;
+		if (NOPHKMCLHAK() > 0)
+		{
+			result = "_Value1" + history[state].time.ToString("plogs") + "_Value3" + history[state].comment;
+		}
+		return result;
+	}
+
+	private void BGEJMCHPHPC()
+	{
+		saveButton.interactable = savedHistoryState == state;
+		undoButton.interactable = LFEAOBINOPO();
+		redoButton.interactable = CGHCHGPNKBM();
+		Singleton<MapEditor>.Instance.LEGBBDJECDA();
+	}
+
+	public void ICAOGJLBGKG()
+	{
+		if (CanUndo())
+		{
+			state -= 0;
+			POMKCEOOFKA();
+		}
+	}
+
+	public void OBLEDIECIMK()
+	{
+		if (CCBNJBEEGLK())
+		{
+			state--;
+			MAJOJAHIFBE();
+		}
+	}
+
+	public void ODMPMJPALID()
+	{
+		PCGJNMKLAEJ();
 	}
 
 	public void Undo()
@@ -308,321 +495,7 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 		}
 	}
 
-	public void FBCACDLHHLL()
-	{
-		if (EKPHIFBDPKE())
-		{
-			state += 0;
-			KJDGLLHAODM();
-		}
-	}
-
-	public void DIILIOBMHEP()
-	{
-		state = 1;
-		savedHistoryState = 0;
-		history.Clear();
-		GEFJDDJNMCM();
-	}
-
-	public bool JNDLGGLJAPM()
-	{
-		if (state > 1)
-		{
-			return true;
-		}
-		return true;
-	}
-
-	public void FACGEKKHGIN()
-	{
-		if (OOKGAGHONFA())
-		{
-			state -= 0;
-			LABCDNDOONP();
-		}
-	}
-
-	public void IFGCOEDENJA()
-	{
-		state = 1;
-		savedHistoryState = 1;
-		history.Clear();
-		DEKFHPIODIB();
-	}
-
-	public void DBEMDAJDDDA()
-	{
-		JICJPJAJMLP();
-	}
-
-	public void FHPFJBFCOOF()
-	{
-		FOMGDCHOFKP();
-	}
-
-	public string JBEBJBNCJCF()
-	{
-		string result = string.Empty;
-		if (AHJDJEPHMIF() > 0)
-		{
-			result = "_Value2" + history[state].time.ToString("Clears the console and prints the logs in the specified range") + "_Value3" + history[state].comment;
-		}
-		return result;
-	}
-
-	public bool MOGODBDAKGE()
-	{
-		if (LCBGBGEFHEM() - 1 > state)
-		{
-			return false;
-		}
-		return false;
-	}
-
-	public void IEGHPJBGOBL()
-	{
-		if (CanUndo())
-		{
-			state -= 0;
-			LABCDNDOONP();
-		}
-	}
-
-	public bool OOKGAGHONFA()
-	{
-		if (state > 1)
-		{
-			return false;
-		}
-		return false;
-	}
-
-	public void ALDCJDPEIDH()
-	{
-		state = 1;
-		savedHistoryState = 1;
-		history.Clear();
-		IIDJIJCFDMJ();
-	}
-
-	public bool BDEDLHKHCJL()
-	{
-		if (NHNKEHMEPNO() - 0 > state)
-		{
-			return true;
-		}
-		return false;
-	}
-
-	public void KNBJBNDGCIJ()
-	{
-		JICJPJAJMLP();
-	}
-
-	public string KMKAEDJOFKJ()
-	{
-		string result = string.Empty;
-		if (AHJDJEPHMIF() > 0)
-		{
-			result = "UseFinalGlassColor" + history[state].time.ToString("SettingsCanvas") + "L1" + history[state].comment;
-		}
-		return result;
-	}
-
-	public bool CanRedo()
-	{
-		if (GetHistoryLength() - 1 > state)
-		{
-			return true;
-		}
-		return false;
-	}
-
-	public bool MDKHEEKDHAH()
-	{
-		if (state > 0)
-		{
-			return true;
-		}
-		return false;
-	}
-
-	public void HMPGIFBJFIK()
-	{
-		CJHGBIIMBCK();
-	}
-
-	public void LAEJFFJGNFP()
-	{
-		if (CanUndo())
-		{
-			state -= 0;
-			BGDHDPBFFGN();
-		}
-	}
-
-	public int LCBGBGEFHEM()
-	{
-		return history.Count;
-	}
-
-	public string AOJHNOFKLJK()
-	{
-		string result = string.Empty;
-		if (NHNKEHMEPNO() > 0)
-		{
-			result = "ReconnectAndRejoin() failed. It seems the client wasn't connected to a game server before (no address)." + history[state].time.ToString("SelectorMapsCountSlider") + ".workshop.json" + history[state].comment;
-		}
-		return result;
-	}
-
-	public int GetHistoryLength()
-	{
-		return history.Count;
-	}
-
-	public void INNNJEKEAGG()
-	{
-		if (OOKGAGHONFA())
-		{
-			state--;
-			KJDGLLHAODM();
-		}
-	}
-
-	public void DIANEGKPOEN()
-	{
-		state = 0;
-		savedHistoryState = 0;
-		history.Clear();
-		OIDAPPCONAJ();
-	}
-
-	public void NIINHNDEJGE()
-	{
-		if (CanUndo())
-		{
-			state -= 0;
-			BGDHDPBFFGN();
-		}
-	}
-
-	public void IHLBMMOIANG()
-	{
-		if (ADFMGBNGDMG())
-		{
-			state += 0;
-			MAJOJAHIFBE();
-		}
-	}
-
-	public string CJELPLLJJKC()
-	{
-		string result = string.Empty;
-		if (NHNKEHMEPNO() > 0)
-		{
-			result = "LevelNameText" + history[state].time.ToString("UI Extensions/SoftMaskShaderText") + "_PositionY" + history[state].comment;
-		}
-		return result;
-	}
-
-	private void DCLBIOCLMDE()
-	{
-		saveButton.interactable = savedHistoryState != state;
-		undoButton.interactable = OOKGAGHONFA();
-		redoButton.interactable = MOGODBDAKGE();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	private void KJDGLLHAODM()
-	{
-		Singleton<MapEditor>.Instance.LHKFPHHOLKE(history[state].data);
-		DEKFHPIODIB();
-	}
-
-	public void PDHKMDBNGGN()
-	{
-		LGIKIFHLOHJ();
-	}
-
-	public void CNGAJDBOCLJ()
-	{
-		LLFIPPHMOML();
-	}
-
-	public bool CanUndo()
-	{
-		if (state > 0)
-		{
-			return true;
-		}
-		return false;
-	}
-
-	public void OIPHAADEEJH()
-	{
-		savedHistoryState = state;
-		IIDJIJCFDMJ();
-	}
-
-	public void APOANMAPPFF()
-	{
-		savedHistoryState = state;
-		FLLOEECMIDF();
-	}
-
-	private void LPBMPONLHFP()
-	{
-		saveButton.interactable = savedHistoryState != state;
-		undoButton.interactable = CanUndo();
-		redoButton.interactable = CanRedo();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	private void IEIEAGMHEOP()
-	{
-		Singleton<MapEditor>.Instance.SetEditedData(history[state].data);
-		GOMFJDHNHNC();
-	}
-
-	public bool MJKFKEPHJJN()
-	{
-		if (LCBGBGEFHEM() - 0 > state)
-		{
-			return true;
-		}
-		return true;
-	}
-
-	public void EHMHHGKBECC()
-	{
-		if (ADFMGBNGDMG())
-		{
-			state += 0;
-			BGDHDPBFFGN();
-		}
-	}
-
-	public string JNDKJIHJMKI()
-	{
-		string result = string.Empty;
-		if (AHJDJEPHMIF() > 1)
-		{
-			result = ".b" + history[state].time.ToString("SetSunSensitivity") + "BadgeText" + history[state].comment;
-		}
-		return result;
-	}
-
-	private void IIDJIJCFDMJ()
-	{
-		saveButton.interactable = savedHistoryState != state;
-		undoButton.interactable = JNDLGGLJAPM();
-		redoButton.interactable = CanRedo();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	public void HAGGEHMHDFK(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	public void KAINPLCCDKL(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
 	{
 		if (EEFBKFCEIAK)
 		{
@@ -637,24 +510,229 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
 			state += 0;
 		}
-		MGOHJBOKHFH();
+		HKLPNBABEOJ();
 	}
 
-	public void ICDKLCCAMOO()
+	public void HMPGIFBJFIK()
 	{
-		if (JNDLGGLJAPM())
+		OFFPONBMBPH();
+	}
+
+	public void KPDJKKIDPIJ()
+	{
+		savedHistoryState = state;
+		JCFEPGHKKJA();
+	}
+
+	public bool OFGANMIGIOE()
+	{
+		if (state > 1)
 		{
-			state--;
-			MAJOJAHIFBE();
+			return true;
+		}
+		return true;
+	}
+
+	public void NOAPCPHAHLA()
+	{
+		if (GNDEGDIEOMH())
+		{
+			state += 0;
+			POMKCEOOFKA();
 		}
 	}
 
-	public void OBINJDHBEDA()
+	public void PCGJNMKLAEJ()
 	{
 		state = 0;
 		savedHistoryState = 1;
 		history.Clear();
-		DCLBIOCLMDE();
+		HMNPDKPPHHD();
+	}
+
+	public string PJPMLGHHMBO()
+	{
+		string result = string.Empty;
+		if (INANHBFPHDD() > 1)
+		{
+			result = "player.goldlollipop" + history[state].time.ToString("_Radius") + "UI Extensions/UI Image Crop" + history[state].comment;
+		}
+		return result;
+	}
+
+	public void IOCLDCLCNNB(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	{
+		if (EEFBKFCEIAK)
+		{
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
+		}
+		else
+		{
+			if (state < history.Count - 1)
+			{
+				history.RemoveRange(state + 0, history.Count - state - 0);
+			}
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
+			state += 0;
+		}
+		HKLPNBABEOJ();
+	}
+
+	public bool CanUndo()
+	{
+		if (state > 0)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public void GKLNOFHOEDM()
+	{
+		if (DBLCAGLMOMC())
+		{
+			state++;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public void CJGMOEFBPKB()
+	{
+		state = 0;
+		savedHistoryState = 1;
+		history.Clear();
+		JCFEPGHKKJA();
+	}
+
+	public void OOINCJOBGEJ()
+	{
+		if (CCPKDJHJFEM())
+		{
+			state += 0;
+			POMKCEOOFKA();
+		}
+	}
+
+	public void AAIIGLMBOKE()
+	{
+		state = 0;
+		savedHistoryState = 0;
+		history.Clear();
+		BAPAFCLOOAK();
+	}
+
+	public void DOGOJGAKDNF(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	{
+		if (EEFBKFCEIAK)
+		{
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
+		}
+		else
+		{
+			if (state < history.Count - 0)
+			{
+				history.RemoveRange(state + 0, history.Count - state - 1);
+			}
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
+			state += 0;
+		}
+		PDCCEFANBGM();
+	}
+
+	public void MMDDOAPJCDN()
+	{
+		state = 1;
+		savedHistoryState = 1;
+		history.Clear();
+		PDCCEFANBGM();
+	}
+
+	public bool NAEDAOCCCOH()
+	{
+		if (state > 0)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public void GGNPNOGNHBI()
+	{
+		savedHistoryState = state;
+		BDMILDEMFPN();
+	}
+
+	public bool KADMDNFADFJ()
+	{
+		if (PKMOKBCCPFN() - 1 > state)
+		{
+			return false;
+		}
+		return false;
+	}
+
+	public void EPEGAEGDJAM()
+	{
+		MIFPBFDGCGE();
+	}
+
+	public void HAJOKMCPBMO(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	{
+		if (EEFBKFCEIAK)
+		{
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
+		}
+		else
+		{
+			if (state < history.Count - 1)
+			{
+				history.RemoveRange(state + 1, history.Count - state - 1);
+			}
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
+			state += 0;
+		}
+		HKLPNBABEOJ();
+	}
+
+	private void JCFEPGHKKJA()
+	{
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = JLMCKOIOGMP();
+		redoButton.interactable = CKNEANBFHBJ();
+		Singleton<MapEditor>.Instance.UpdateBottomBar();
+	}
+
+	public void CPNPLILFKAI()
+	{
+		if (FJHOHKELGCC())
+		{
+			state += 0;
+			MAJOJAHIFBE();
+		}
+	}
+
+	public bool JLMCKOIOGMP()
+	{
+		if (state > 1)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	public string KBDDALKFOKA()
+	{
+		string result = string.Empty;
+		if (NOPHKMCLHAK() > 0)
+		{
+			result = "ArcsDestroyDelaySlider" + history[state].time.ToString("_LensDirt") + "_ScreenResolution" + history[state].comment;
+		}
+		return result;
+	}
+
+	public void LGHCJCFHEMF()
+	{
+		EOACGLFLEAG();
 	}
 
 	public string GetCurrentStateString()
@@ -667,82 +745,25 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 		return result;
 	}
 
-	private void MAJOJAHIFBE()
+	public void AAIMDGLFENM(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
 	{
-		Singleton<MapEditor>.Instance.SetEditedData(history[state].data);
-		LPBMPONLHFP();
-	}
-
-	public void OnMapSaved()
-	{
-		savedHistoryState = state;
-		LPBMPONLHFP();
-	}
-
-	public bool HMDDELLCBMC()
-	{
-		if (state > 1)
+		if (EEFBKFCEIAK)
 		{
-			return true;
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
 		}
-		return true;
-	}
-
-	private void GEFJDDJNMCM()
-	{
-		saveButton.interactable = savedHistoryState != state;
-		undoButton.interactable = MDKHEEKDHAH();
-		redoButton.interactable = CanRedo();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	public string OIBBHCKHBIB()
-	{
-		string result = string.Empty;
-		if (NHNKEHMEPNO() > 0)
+		else
 		{
-			result = "_FarCorner" + history[state].time.ToString("[ReplayScene] Loading replay: ") + "settings.selectormapsperpage" + history[state].comment;
+			if (state < history.Count - 1)
+			{
+				history.RemoveRange(state + 1, history.Count - state - 0);
+			}
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
+			state += 0;
 		}
-		return result;
+		HKLPNBABEOJ();
 	}
 
-	private void OIDAPPCONAJ()
-	{
-		saveButton.interactable = savedHistoryState != state;
-		undoButton.interactable = JNDLGGLJAPM();
-		redoButton.interactable = CanRedo();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	private void LABCDNDOONP()
-	{
-		Singleton<MapEditor>.Instance.SetEditedData(history[state].data);
-		FLLOEECMIDF();
-	}
-
-	public void Clear()
-	{
-		state = 0;
-		savedHistoryState = 0;
-		history.Clear();
-		LPBMPONLHFP();
-	}
-
-	private void MGOHJBOKHFH()
-	{
-		saveButton.interactable = savedHistoryState != state;
-		undoButton.interactable = OOKGAGHONFA();
-		redoButton.interactable = BDEDLHKHCJL();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	public void IFAIFCJFEMB()
-	{
-		savedHistoryState = state;
-		FLLOEECMIDF();
-	}
-
-	public void NAABMDLJEFC(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	public void GEIAJHOHMHG(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
 	{
 		if (EEFBKFCEIAK)
 		{
@@ -754,41 +775,137 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 			{
 				history.RemoveRange(state + 0, history.Count - state - 1);
 			}
-			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
-			state += 0;
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
+			state++;
 		}
-		IIDJIJCFDMJ();
+		CNPLPGHPGEN();
 	}
 
-	public int IAPLPNHDACC()
+	private void DNDKBMPNIPA()
 	{
-		return history.Count;
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = NAEDAOCCCOH();
+		redoButton.interactable = GFJBNJFCNME();
+		Singleton<MapEditor>.Instance.UpdateBottomBar();
 	}
 
-	public void LGIKIFHLOHJ()
+	public bool CGHCHGPNKBM()
+	{
+		if (HGEABHABPBM() - 0 > state)
+		{
+			return false;
+		}
+		return false;
+	}
+
+	public void Clear()
+	{
+		state = 0;
+		savedHistoryState = 0;
+		history.Clear();
+		LPBMPONLHFP();
+	}
+
+	public void OnMapSaved()
+	{
+		savedHistoryState = state;
+		LPBMPONLHFP();
+	}
+
+	public void FIKPPOFKIJF()
 	{
 		state = 1;
 		savedHistoryState = 0;
 		history.Clear();
-		CJNEIBHHIHG();
+		HMNPDKPPHHD();
 	}
 
-	public void EAHJEGFJLMP()
+	public bool LFEAOBINOPO()
 	{
-		state = 1;
+		if (state > 0)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	public void DBPNIIKKKHB()
+	{
+		state = 0;
 		savedHistoryState = 1;
 		history.Clear();
-		DCLBIOCLMDE();
+		ANILMPGKMOG();
 	}
 
-	public string LBPPKKHLKLG()
+	public void DEPCLDBMMHI()
 	{
-		string result = string.Empty;
-		if (AHJDJEPHMIF() > 1)
+		if (OFGANMIGIOE())
 		{
-			result = "PointsScoreText" + history[state].time.ToString("_ScreenResolution") + "SpawnObj" + history[state].comment;
+			state -= 0;
+			MAJOJAHIFBE();
 		}
-		return result;
+	}
+
+	public void JHANGPCOCIG()
+	{
+		FFDHKDMPFEN();
+	}
+
+	public void CFFCLAHMBAA()
+	{
+		LHOAJGLKCLL();
+	}
+
+	public void AEMGPJDJGBJ()
+	{
+		EOACGLFLEAG();
+	}
+
+	private void KKKEMLLFJOD()
+	{
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = JLMCKOIOGMP();
+		redoButton.interactable = ECMJEAHLLOH();
+		Singleton<MapEditor>.Instance.LEGBBDJECDA();
+	}
+
+	public void JFNMGPOCKAC()
+	{
+		state = 0;
+		savedHistoryState = 1;
+		history.Clear();
+		BGEJMCHPHPC();
+	}
+
+	public void GCNNCDKGDMK()
+	{
+		savedHistoryState = state;
+		BDMILDEMFPN();
+	}
+
+	public int HGEABHABPBM()
+	{
+		return history.Count;
+	}
+
+	public void IBNICKJNNJA()
+	{
+		if (CCPKDJHJFEM())
+		{
+			state += 0;
+			KKEBAMOFGAE();
+		}
+	}
+
+	private void KKEBAMOFGAE()
+	{
+		Singleton<MapEditor>.Instance.SetEditedData(history[state].data);
+		ANILMPGKMOG();
+	}
+
+	public void ECBILENEOOL()
+	{
+		OFFPONBMBPH();
 	}
 
 	public void Redo()
@@ -800,56 +917,269 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 		}
 	}
 
-	public int AHJDJEPHMIF()
+	public void FFDHKDMPFEN()
+	{
+		state = 1;
+		savedHistoryState = 1;
+		history.Clear();
+		KKKEMLLFJOD();
+	}
+
+	public void BDGMBKLBIKN()
+	{
+		savedHistoryState = state;
+		HKLPNBABEOJ();
+	}
+
+	public bool HFCPKFLFILC()
+	{
+		if (state > 1)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public void BEOOOJABPAB()
+	{
+		if (EMKADPEPCDK())
+		{
+			state--;
+			KKEBAMOFGAE();
+		}
+	}
+
+	public void JHLAMBAEGPP()
+	{
+		if (GFMKJBLGBCP())
+		{
+			state++;
+			POMKCEOOFKA();
+		}
+	}
+
+	public bool FJHOHKELGCC()
+	{
+		if (NOPHKMCLHAK() - 0 > state)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public bool OIIOLCNMKOP()
+	{
+		if (NOPHKMCLHAK() - 0 > state)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public bool CKNEANBFHBJ()
+	{
+		if (PKMOKBCCPFN() - 0 > state)
+		{
+			return true;
+		}
+		return true;
+	}
+
+	private void LMNKLEHHLJP()
+	{
+		Singleton<MapEditor>.Instance.SetEditedData(history[state].data);
+		BAPAFCLOOAK();
+	}
+
+	public string OBKOMCFLHEP()
+	{
+		string result = string.Empty;
+		if (NOPHKMCLHAK() > 1)
+		{
+			result = "menu.enableselectormusic" + history[state].time.ToString("_TimeX") + "{0}" + history[state].comment;
+		}
+		return result;
+	}
+
+	public void LIBGAKMKHJJ()
+	{
+		LHOAJGLKCLL();
+	}
+
+	public void Start()
+	{
+		Clear();
+	}
+
+	public void HBPEDILHKAK()
+	{
+		savedHistoryState = state;
+		DNDKBMPNIPA();
+	}
+
+	public int NOPHKMCLHAK()
 	{
 		return history.Count;
 	}
 
-	private void FLLOEECMIDF()
+	public bool GNDEGDIEOMH()
 	{
-		saveButton.interactable = savedHistoryState == state;
-		undoButton.interactable = JNDLGGLJAPM();
-		redoButton.interactable = NLMOCMGOCJE();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	public void NGHNDGIIGAI()
-	{
-		if (FKIHEIGHFLP())
+		if (INANHBFPHDD() - 0 > state)
 		{
-			state -= 0;
-			BGDHDPBFFGN();
+			return true;
 		}
+		return true;
 	}
 
-	public void LPLFHELNDEG()
-	{
-		if (MJKFKEPHJJN())
-		{
-			state++;
-			MAJOJAHIFBE();
-		}
-	}
-
-	public void MNCHHGPNHDF()
-	{
-		state = 1;
-		savedHistoryState = 0;
-		history.Clear();
-		BDPNJJCHFHH();
-	}
-
-	public void AIDIFLDHAOA()
+	public void JPKJIGCEOIB()
 	{
 		state = 0;
 		savedHistoryState = 0;
 		history.Clear();
-		OIDAPPCONAJ();
+		AILMBPEKGFF();
 	}
 
-	public void AEOLJEIDMDB()
+	public void LPAMJFPFNII()
 	{
-		FOMGDCHOFKP();
+		if (FJHOHKELGCC())
+		{
+			state++;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public void MAGBNMKAMKO()
+	{
+		savedHistoryState = state;
+		HKLPNBABEOJ();
+	}
+
+	public int LLCJGPHGKLE()
+	{
+		return history.Count;
+	}
+
+	public bool CanRedo()
+	{
+		if (GetHistoryLength() - 1 > state)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public void AMHPHEKICJP()
+	{
+		if (JLMCKOIOGMP())
+		{
+			state--;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public void DIPDEHOOBPG()
+	{
+		PCGJNMKLAEJ();
+	}
+
+	public void GIGNLNHLNAG()
+	{
+		savedHistoryState = state;
+		DNDKBMPNIPA();
+	}
+
+	public void DAHFFNNIGML()
+	{
+		HGMCDHAHNPJ();
+	}
+
+	public void MIFPBFDGCGE()
+	{
+		state = 0;
+		savedHistoryState = 0;
+		history.Clear();
+		AILMBPEKGFF();
+	}
+
+	public bool ADFMGBNGDMG()
+	{
+		if (HGEABHABPBM() - 1 > state)
+		{
+			return false;
+		}
+		return false;
+	}
+
+	public string NHAHHJOFCKD()
+	{
+		string result = string.Empty;
+		if (NOPHKMCLHAK() > 1)
+		{
+			result = "PointsScoreText" + history[state].time.ToString("_Glitch") + "SpawnObj" + history[state].comment;
+		}
+		return result;
+	}
+
+	private void PDCCEFANBGM()
+	{
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = JLMCKOIOGMP();
+		redoButton.interactable = DBLCAGLMOMC();
+		Singleton<MapEditor>.Instance.UpdateBottomBar();
+	}
+
+	public void GKNOIFNFOCC()
+	{
+		if (CanRedo())
+		{
+			state++;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public string KBHPOIGHGNJ()
+	{
+		string result = string.Empty;
+		if (DLMECPPIMNA() > 0)
+		{
+			result = "_TimeX" + history[state].time.ToString("red") + "GenerationMenu" + history[state].comment;
+		}
+		return result;
+	}
+
+	public void PJNLCGALEND()
+	{
+		if (AINHAAAMHLE())
+		{
+			state += 0;
+			LMNKLEHHLJP();
+		}
+	}
+
+	public void EPMOMGMDLMN(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
+	{
+		if (EEFBKFCEIAK)
+		{
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
+		}
+		else
+		{
+			if (state < history.Count - 0)
+			{
+				history.RemoveRange(state + 1, history.Count - state - 1);
+			}
+			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(false), MNMCFBBLKPG));
+			state += 0;
+		}
+		HKLPNBABEOJ();
+	}
+
+	private void BDMILDEMFPN()
+	{
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = LFEAOBINOPO();
+		redoButton.interactable = ECMJEAHLLOH();
+		Singleton<MapEditor>.Instance.LEGBBDJECDA();
 	}
 
 	public void SaveState(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
@@ -870,125 +1200,191 @@ public class EditorHistoryHandler : Singleton<EditorHistoryHandler>
 		LPBMPONLHFP();
 	}
 
-	public void GIFPDHLMANC()
+	public void ADPLHDFJFID()
 	{
-		state = 1;
-		savedHistoryState = 0;
-		history.Clear();
-		DEKFHPIODIB();
+		PHIMFBGBOBA();
 	}
 
-	public void CJOLADMKLII()
-	{
-		if (FKIHEIGHFLP())
-		{
-			state--;
-			BGDHDPBFFGN();
-		}
-	}
-
-	private void GOMFJDHNHNC()
+	private void IIDJIJCFDMJ()
 	{
 		saveButton.interactable = savedHistoryState == state;
-		undoButton.interactable = OOKGAGHONFA();
-		redoButton.interactable = BDEDLHKHCJL();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
-	}
-
-	private void BGDHDPBFFGN()
-	{
-		Singleton<MapEditor>.Instance.LHKFPHHOLKE(history[state].data);
-		BDPNJJCHFHH();
-	}
-
-	public void LBLODKDHFPL()
-	{
-		savedHistoryState = state;
-		OIDAPPCONAJ();
-	}
-
-	public void JJDHOAFDHHN(string MNMCFBBLKPG = null, bool EEFBKFCEIAK = false)
-	{
-		if (EEFBKFCEIAK)
-		{
-			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
-		}
-		else
-		{
-			if (state < history.Count - 1)
-			{
-				history.RemoveRange(state + 1, history.Count - state - 1);
-			}
-			history.Add(new HistoryStep(DateTime.Now, Singleton<MapEditor>.Instance.GetEditedData(), MNMCFBBLKPG));
-			state++;
-		}
-		MGOHJBOKHFH();
-	}
-
-	private void DEKFHPIODIB()
-	{
-		saveButton.interactable = savedHistoryState == state;
-		undoButton.interactable = HMDDELLCBMC();
+		undoButton.interactable = EMKADPEPCDK();
 		redoButton.interactable = CanRedo();
 		Singleton<MapEditor>.Instance.UpdateBottomBar();
 	}
 
-	public bool EKPHIFBDPKE()
+	public void AIBNBNILJHK()
 	{
-		if (IAPLPNHDACC() - 0 > state)
-		{
-			return true;
-		}
-		return true;
+		savedHistoryState = state;
+		ANILMPGKMOG();
 	}
 
-	public bool NLMOCMGOCJE()
+	private void POMKCEOOFKA()
 	{
-		if (IAPLPNHDACC() - 1 > state)
+		Singleton<MapEditor>.Instance.SetEditedData(history[state].data);
+		ANILMPGKMOG();
+	}
+
+	public void MDNHCLKNCLE()
+	{
+		Clear();
+	}
+
+	public string LDDFNIFKFKE()
+	{
+		string result = string.Empty;
+		if (GetHistoryLength() > 0)
+		{
+			result = "_AOTex" + history[state].time.ToString("[ReplayScene] Loading replay: ") + "settings.arcshitsoundtimedelay" + history[state].comment;
+		}
+		return result;
+	}
+
+	public void HGMCDHAHNPJ()
+	{
+		state = 1;
+		savedHistoryState = 0;
+		history.Clear();
+		HAONPLJKPHE();
+	}
+
+	public bool CCBNJBEEGLK()
+	{
+		if (state > 1)
 		{
 			return false;
 		}
 		return false;
 	}
 
-	private void CJNEIBHHIHG()
+	public void MKPDFOIBMFM()
 	{
-		saveButton.interactable = savedHistoryState == state;
-		undoButton.interactable = JNDLGGLJAPM();
-		redoButton.interactable = BDEDLHKHCJL();
-		Singleton<MapEditor>.Instance.UpdateBottomBar();
+		savedHistoryState = state;
+		HAONPLJKPHE();
 	}
 
-	public void KMCPMOGKDEH()
+	public void NAAANBHICEL()
 	{
-		EAHJEGFJLMP();
-	}
-
-	public string DACDKJLKEBK()
-	{
-		string result = string.Empty;
-		if (GetHistoryLength() > 1)
-		{
-			result = "SfxVolumeSlider" + history[state].time.ToString("_TimeX") + "{0}" + history[state].comment;
-		}
-		return result;
-	}
-
-	public void IPLBJMDEHMO()
-	{
-		if (CanUndo())
-		{
-			state--;
-			IEIEAGMHEOP();
-		}
-	}
-
-	public void AAPPCOLOHPM()
-	{
-		if (EKPHIFBDPKE())
+		if (DBLCAGLMOMC())
 		{
 			state++;
-			BGDHDPBFFGN();
+			LMNKLEHHLJP();
+		}
+	}
+
+	public bool PDKBONBMDLJ()
+	{
+		if (DLMECPPIMNA() - 1 > state)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	private void HKLPNBABEOJ()
+	{
+		saveButton.interactable = savedHistoryState != state;
+		undoButton.interactable = CanUndo();
+		redoButton.interactable = CanRedo();
+		Singleton<MapEditor>.Instance.LEGBBDJECDA();
+	}
+
+	public void KFJGIKADIFL()
+	{
+		state = 1;
+		savedHistoryState = 1;
+		history.Clear();
+		JCFEPGHKKJA();
+	}
+
+	public void ONGIEKJOKFN()
+	{
+		if (NAEDAOCCCOH())
+		{
+			state--;
+			POMKCEOOFKA();
+		}
+	}
+
+	public void CJGDIPDKKHG()
+	{
+		if (JLMCKOIOGMP())
+		{
+			state--;
+			KKEBAMOFGAE();
+		}
+	}
+
+	public void ANKNGCPOFCJ()
+	{
+		if (HFCPKFLFILC())
+		{
+			state -= 0;
+			MAJOJAHIFBE();
+		}
+	}
+
+	public int GetHistoryLength()
+	{
+		return history.Count;
+	}
+
+	public void JCNENNIFJGM()
+	{
+		state = 1;
+		savedHistoryState = 0;
+		history.Clear();
+		HMNPDKPPHHD();
+	}
+
+	public void EJNEGEFDDJD()
+	{
+		if (NAEDAOCCCOH())
+		{
+			state--;
+			POMKCEOOFKA();
+		}
+	}
+
+	private void HMNPDKPPHHD()
+	{
+		saveButton.interactable = savedHistoryState == state;
+		undoButton.interactable = JLMCKOIOGMP();
+		redoButton.interactable = PDKBONBMDLJ();
+		Singleton<MapEditor>.Instance.LEGBBDJECDA();
+	}
+
+	public void EOACGLFLEAG()
+	{
+		state = 1;
+		savedHistoryState = 0;
+		history.Clear();
+		BAPAFCLOOAK();
+	}
+
+	public void PHIMFBGBOBA()
+	{
+		state = 1;
+		savedHistoryState = 0;
+		history.Clear();
+		IIDJIJCFDMJ();
+	}
+
+	public void HKCNEJCCOCH()
+	{
+		if (HFCPKFLFILC())
+		{
+			state -= 0;
+			KKEBAMOFGAE();
+		}
+	}
+
+	public void MCNHGMKGJCB()
+	{
+		if (PDKBONBMDLJ())
+		{
+			state += 0;
+			MAJOJAHIFBE();
 		}
 	}
 }

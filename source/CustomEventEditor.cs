@@ -16,29 +16,229 @@ public class CustomEventEditor : MonoBehaviour
 
 		internal DropDownList AOCNHGMIDGE;
 
+		internal bool PHFMMNELDEA(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IPLELJFEJDL().NMAHNOIIIMN();
+		}
+
+		internal bool EGKGJJGAPMN(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool FBECAHEMHOO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IGFLIPDMANP().IKKEHEEOLLN();
+		}
+
+		internal bool ONEPCCGOEKI(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IPLELJFEJDL().MMBHKENLACB();
+		}
+
+		internal bool PAAEHHJGPCH(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.IKKEHEEOLLN();
+		}
+
+		internal bool CPAOFGMAFAA(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IGFLIPDMANP().ID;
+		}
+
+		internal bool HMMBBDJNGGL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.ID;
+		}
+
+		internal bool NFHJNMELIEI(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().LFPJCIBKJIP();
+		}
+
+		internal bool DBOEBFFAOFJ(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IPLELJFEJDL().KHMOGPBHIKI();
+		}
+
+		internal bool LKLABDAJAEH(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.LFPJCIBKJIP();
+		}
+
+		internal bool FHIJCPPECHA(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool EDGAPOPEIJF(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool EEBODGOFEGB(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.MMBHKENLACB();
+		}
+
+		internal bool NJGBIMFOOKP(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool AHBIANHNBBC(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.JNOKCMBFIMI();
+		}
+
+		internal bool CBHLHPPBCIG(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.ID;
+		}
+
+		internal bool HNMFCOHLALO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.OMPPMJJHBLI();
+		}
+
 		internal bool JKEDCEOCPJO(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool FBGMHPEEIFC(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool FMCCGLHBGOL(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.KBFCLFHCEDA();
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IPLELJFEJDL().IKKEHEEOLLN();
 		}
 
-		internal bool GMLFBOMLINM(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool MMJGKBNKFGM(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.GJHIINGAEJG().LHBHELFAOGF();
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IPLELJFEJDL().KHMOGPBHIKI();
 		}
 
-		internal bool FMIHBNPKEEO(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool AHHNAGGBKOO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.BAOIGDPGNIN();
+		}
+
+		internal bool BJMAIJDIKCN(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool NLALPCHCOPE(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool FHFECFLBHMA(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.ELMAEGKCFAC().DJCDFAEOGGJ();
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool LADECCOJPPL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().BOFIIPJMFLP();
+		}
+
+		internal bool AEIFJLBBKBP(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool JBLJIFJHDLO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IACCKBGEMEL().BOFIIPJMFLP();
+		}
+
+		internal bool LGKMMLGKBEF(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.OMPPMJJHBLI();
+		}
+
+		internal bool FKCDLJELMNN(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.JNOKCMBFIMI();
+		}
+
+		internal bool FCAGEDLBBHD(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool HKCAPINMNFF(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IACCKBGEMEL().ID;
+		}
+
+		internal bool OBCPLPGDHAD(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool IPAAAAPBFEG(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().BAOIGDPGNIN();
+		}
+
+		internal bool MKLOGMNMFAF(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().JNOKCMBFIMI();
+		}
+
+		internal bool BKNHHGBPLGH(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool EFAPFFFGOOA(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool FKHKOGEPNIO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.KHMOGPBHIKI();
+		}
+
+		internal bool OFHCGKJFGDI(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool LJDLIIIPIIJ(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool LGKFHOBDANE(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool KFNPHCCAJFD(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().BAOIGDPGNIN();
+		}
+
+		internal bool CHBEFOHEEGK(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IPLELJFEJDL().OMPPMJJHBLI();
+		}
+
+		internal bool HJNKOEGPEMO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().BOFIIPJMFLP();
+		}
+
+		internal bool DMKALNCPIAJ(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IACCKBGEMEL().OMPKGFDEJLI();
+		}
+
+		internal bool IKMOFMJNEPH(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool PIJAOCFAPKC(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
 		internal bool DKGPCPBNDPK(EditorEventFunctionInfo IACGDFHKCAE)
@@ -46,22 +246,7 @@ public class CustomEventEditor : MonoBehaviour
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool NHPDJEKEOKI(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.NLPNJOCNGHA().LHBHELFAOGF();
-		}
-
-		internal bool AHBIANHNBBC(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.MJIHJHEEOHP().LHBHELFAOGF();
-		}
-
-		internal bool GBKBDKHPLKG(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool EKHOOPGPPGE(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool INHOEMCLAAP(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
@@ -71,22 +256,22 @@ public class CustomEventEditor : MonoBehaviour
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool JBAJEMGOPDL(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool IIMOMJLLFDB(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IGFLIPDMANP().ID;
+		}
+
+		internal bool PBCAHKDLFPE(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool FIPCLHEKKCA(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool OMJJLDBPEHI(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+			return IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().IKKEHEEOLLN();
 		}
 
-		internal bool IPAAAAPBFEG(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.MJIHJHEEOHP().ID;
-		}
-
-		internal bool EFAPFFFGOOA(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool DFPLMEODJAM(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
@@ -96,149 +281,84 @@ public class CustomEventEditor : MonoBehaviour
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool JPICHJKIMDH(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool GEPBCIIDMBC(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.AHPGIGENBAO().LHBHELFAOGF();
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IACCKBGEMEL().JNOKCMBFIMI();
 		}
 
-		internal bool FDAIFOAGDLA(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool OFLDIMDDLHM(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool PCDFLCEIHFF(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool EEBODGOFEGB(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.HGGOCKHJLPC().OJIDDODDDAD();
-		}
-
-		internal bool HMMBBDJNGGL(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.ID;
-		}
-
-		internal bool BJMAIJDIKCN(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool GBKBDKHPLKG(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool CJDNDHBDMMO(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool PLINPGHDODA(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.NLPNJOCNGHA().KBFCLFHCEDA();
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.BOFIIPJMFLP();
 		}
 
-		internal bool INHOEMCLAAP(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool PHFMMNELDEA(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.MJIHJHEEOHP().KBFCLFHCEDA();
-		}
-
-		internal bool KFNBKFELFLH(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool IGFOBPKFCDJ(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool PHDFIAGENEE(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.LNKJOJKJBKL().ID;
-		}
-
-		internal bool LLNDDFGPOPL(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool MMJGKBNKFGM(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.ID;
-		}
-
-		internal bool OFHCGKJFGDI(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool HENGGJNGDCI(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
 		internal bool DGDCNDCGPCP(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.AHPGIGENBAO().ID;
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.IKKEHEEOLLN();
 		}
 
-		internal bool GDFBBMNOGGD(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool NGFGLJGABCM(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.LNKJOJKJBKL().KBFCLFHCEDA();
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.JNOKCMBFIMI();
 		}
 
-		internal bool PBCAHKDLFPE(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool BPJGFELFEDC(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.AHPGIGENBAO().LHBHELFAOGF();
-		}
-
-		internal bool PHGILLBNBME(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.GJHIINGAEJG().ID;
-		}
-
-		internal bool BOPKCHEPEEB(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.EMILPCNCJMP().KBFCLFHCEDA();
-		}
-
-		internal bool FJDBPPKABJE(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool BEBAENEJFLD(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool ECGDAHDOPBO(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool FPBODMOMNPG(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.NLPNJOCNGHA().LHBHELFAOGF();
+			return IACGDFHKCAE.id == AOCNHGMIDGE.IACCKBGEMEL().BOFIIPJMFLP();
 		}
 
-		internal bool AGJKEBOPIOC(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool DBFPGFHEGKA(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool BDGDIDPDBHG(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool HBJFIOJFBHC(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool AEINPAGJFME(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool HBJOAAJMDDE(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool LOEAMHGMMPK(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool JPGFOBNOBKN(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.FHEAKIMCKJC();
+		}
+
+		internal bool EKHOOPGPPGE(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool HNMFCOHLALO(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.MJIHJHEEOHP().KBFCLFHCEDA();
-		}
-
-		internal bool PIJAOCFAPKC(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool LNDGINDKPFA(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool HKCAPINMNFF(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == AOCNHGMIDGE.LNKJOJKJBKL().OJIDDODDDAD();
 		}
 	}
 
@@ -249,7 +369,47 @@ public class CustomEventEditor : MonoBehaviour
 
 		internal CustomEventEditor ADPIKBBAKHP;
 
-		internal bool DBFPGFHEGKA(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool LLNDDFGPOPL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool HJNKOEGPEMO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool PLINPGHDODA(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool OMJJLDBPEHI(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool GMLFBOMLINM(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool LHHFJBIAHCN(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool DFHFAFAJGBA(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool HJKJAANIFLL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool EFAPFFFGOOA(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
@@ -259,22 +419,127 @@ public class CustomEventEditor : MonoBehaviour
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool FIPCLHEKKCA(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool LNDGINDKPFA(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool BFEABMIFIEE(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool FBGMHPEEIFC(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool DMKALNCPIAJ(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
 		}
 
-		internal bool IPAAAAPBFEG(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool OHJKLBLOECG(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool BPJGFELFEDC(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool FMCCGLHBGOL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool NJGBIMFOOKP(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool AKDOOLPMPMG(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool FBECAHEMHOO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool NGFGLJGABCM(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool KFNPHCCAJFD(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool KDDPLGEFPEJ(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool BFNOHOLLLHB(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool DKGPCPBNDPK(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool FKHKOGEPNIO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool JPGFOBNOBKN(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool NHPDJEKEOKI(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool MMJGKBNKFGM(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool AHHNAGGBKOO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool MJHMNKHNMHF(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool BEBAENEJFLD(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool GDFBBMNOGGD(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool ABGMHCAMGEG(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool FCAGEDLBBHD(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool EKHOOPGPPGE(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool PHFMMNELDEA(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
 		}
@@ -284,49 +549,34 @@ public class CustomEventEditor : MonoBehaviour
 			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
 		}
 
-		internal bool FJDBPPKABJE(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool GLLCFMBPDEG(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool EGKGJJGAPMN(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool FFEGPHJKMFK(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool LGKMMLGKBEF(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool HIKCHCCKLJG(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
 		}
 
-		internal bool LNDGINDKPFA(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool MGENGAEDACG(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool JPGFOBNOBKN(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
-		}
-
-		internal bool KFNBKFELFLH(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool GDFBBMNOGGD(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
-		}
-
-		internal bool JPICHJKIMDH(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
-		}
-
-		internal bool HNMFCOHLALO(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool ONEPCCGOEKI(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool JBCHBMKPDAJ(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
 		internal bool GBKBDKHPLKG(EditorEventFunctionInfo IACGDFHKCAE)
@@ -336,45 +586,80 @@ public class CustomEventEditor : MonoBehaviour
 
 		internal bool HCFLGKJFKFE(EditorEventFunctionInfo IACGDFHKCAE)
 		{
-			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
 		}
 
-		internal bool AGJKEBOPIOC(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool AEINPAGJFME(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool PHGILLBNBME(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
-		}
-
-		internal bool JDELIMPGFDJ(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
-		}
-
-		internal bool PHFMMNELDEA(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool FKCDLJELMNN(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
 		}
 
-		internal bool LLGBONGFMBH(EditorEventFunctionInfo IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
-		}
-
-		internal bool BMAOCLKPNNC(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool OMBHIBNMFNB(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool DKGPCPBNDPK(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool HIHNMOEFONO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool CJDNDHBDMMO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool LADECCOJPPL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool OFLDIMDDLHM(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool BKNHHGBPLGH(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool BCDAGGDDADL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool CBHLHPPBCIG(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool GLHKGBNIHFH(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool KGKMOLCPDIH(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool HKCAPINMNFF(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool INHOEMCLAAP(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool ECGDAHDOPBO(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool FFEGPHJKMFK(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
@@ -384,19 +669,64 @@ public class CustomEventEditor : MonoBehaviour
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool JKEDCEOCPJO(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool AGJKEBOPIOC(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool LOEAMHGMMPK(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool BJMAIJDIKCN(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
 		}
 
-		internal bool PIJAOCFAPKC(EditorEventFunctionInfo IACGDFHKCAE)
+		internal bool IIMOMJLLFDB(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool JPICHJKIMDH(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool DBOEBFFAOFJ(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool GHBIKOKGLHE(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool OHMLDGGHGIL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
+		}
+
+		internal bool FJDBPPKABJE(EditorEventFunctionInfo IACGDFHKCAE)
 		{
 			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool DAICIOGOPNL(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[0];
+		}
+
+		internal bool HBJOAAJMDDE(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool IHKIFALHGHN(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN;
+		}
+
+		internal bool FPBODMOMNPG(EditorEventFunctionInfo IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.id == ADPIKBBAKHP.AKDDCMDKLED.mapEvent.data[1];
 		}
 	}
 
@@ -410,60 +740,88 @@ public class CustomEventEditor : MonoBehaviour
 
 	public bool isEditing;
 
-	public virtual void OAGNIIAKADE()
+	public virtual void JONGNKNLLND()
+	{
+	}
+
+	public virtual void KMCEPEIAEJP()
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			Debug.Log("(\\[ */ *i *\\])" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			KKEAABPOBAL();
+		}
+	}
+
+	public void StopEditing()
+	{
+		isEditing = false;
+	}
+
+	public void FOCCKCKNEDC()
+	{
+		isEditing = false;
+	}
+
+	private bool JGCAPEAJPLO(EditorEventFunctionInfo IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.id == DOOGPJDDJDJ;
+	}
+
+	public virtual void CNABALBLCJK(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			KKEAABPOBAL();
+		}
+	}
+
+	public virtual void ECAIKGCAFLA()
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			Debug.Log("Fill" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			GLNKACIACGI();
+		}
+	}
+
+	public virtual void CONJFOJFMAK(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			NEKEJGEDOAH();
+		}
+	}
+
+	public virtual void EGPHOKFEEME()
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			Debug.Log("Offline or in OfflineMode. No VitalStats available." + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			IKDKHFGPNLB();
+		}
+	}
+
+	public virtual void KCOCJIIEMIP()
 	{
 		List<string> list = new List<string>();
 		list.Add(DOOGPJDDJDJ);
 		string text = string.Empty;
 		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 1; i < componentsInChildren.Length; i++)
+		for (int i = 0; i < componentsInChildren.Length; i += 0)
 		{
 			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.OPAOBFHDFEF() + "CameraFilterPack/Distortion_FishEye";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		PNIJCGEOHIM = list;
-	}
-
-	public void CCCBAKHEAPK()
-	{
-		isEditing = true;
-	}
-
-	public virtual void JMKNDFJMMBJ()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.KDDBDAAEALD() + "SetParticlesInput";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 0);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.ELOBPADDKGE();
-	}
-
-	public virtual void CMIMDMBHNGK()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 1; i < componentsInChildren.Length; i += 0)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.NIFGEHJGJDO() + "_TimeX";
+			text = text + customEventEditorHandler.OLDDPMNNCLG() + "LevelInfoInputField";
 		}
 		if (text.Length > 0)
 		{
@@ -472,88 +830,115 @@ public class CustomEventEditor : MonoBehaviour
 		list.Add(text);
 		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
 		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.DDPPHDJFKOF();
+		Singleton<UI>.Instance.IOOEOHAHDAG();
 	}
 
-	public void JDFHNDIIJNA()
+	public virtual void Update()
+	{
+	}
+
+	public void ACAKGGIFJKG()
+	{
+		isEditing = false;
+	}
+
+	public void HPHEILENOKJ(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
+	{
+		if (DOOGPJDDJDJ != JJNLCJMGJEG)
+		{
+			DOOGPJDDJDJ = JJNLCJMGJEG;
+			DNKGDINIIJM();
+		}
+	}
+
+	public void CHGFLAGDEKC()
 	{
 		isEditing = true;
 	}
 
-	public virtual void BDEMGBNCCCP()
+	public virtual void OLAMIGKFKBH()
 	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
+		if ((bool)AKDDCMDKLED)
 		{
-			text = text + customEventEditorHandler.PBICFJPONKP() + "_History2ChromaTex";
+			Debug.Log("_Smooth" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			DNKGDINIIJM(false);
 		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 0);
-		}
-		list.Add(text);
-		PNIJCGEOHIM = list;
 	}
 
-	public void FMFPLOKHPNI(bool JNMEAJGELBA = true)
+	public virtual void PKLEFIELAKP(EditorEvent AKDDCMDKLED)
 	{
-		Singleton<UI>.Instance.ClearSelection();
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			IINOCFMKAHH(false);
+		}
+	}
+
+	public void MNDNMHDCEIE()
+	{
+		if (Singleton<MapEditor>.Instance.MAONHJDBGAH())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_TimeX").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			ONKGOJHINPP(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.IKKEHEEOLLN()).id);
+		}
+	}
+
+	public void DADIKHAEBIL(bool JNMEAJGELBA = true)
+	{
+		Singleton<UI>.Instance.BOILOHFAADM();
 		GameObject gameObject = content;
 		for (int i = 1; i < gameObject.transform.childCount; i += 0)
 		{
 			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
 		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(NELLMKOMNDF);
+		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(BAGJCOLIIGE);
 		GameObject gameObject2 = null;
 		if (editorEventFunctionInfo != null)
 		{
 			if (editorEventFunctionInfo.functionDescription != null)
 			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_TimeX"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(1327f, 511f, 884f);
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Search: "), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, false);
+				gameObject2.transform.localScale = new Vector3(116f, 1708f, 1594f);
 				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 2;
+				gameObject2.GetComponent<Text>().fontSize++;
 			}
 			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
 			{
 				if (!string.IsNullOrEmpty(parameter.name))
 				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_Distance"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(964f, 1642f, 733f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "outputitemdefid";
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("[LevelEditorScene] Error: You're not logged into Steam!"), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, true);
+					gameObject2.transform.localScale = new Vector3(589f, 1187f, 1030f);
+					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "menu.selectedplaymode";
 				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_EmissionColor" + parameter.editor), Vector3.zero, Quaternion.identity);
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>(".completedCount" + parameter.editor), Vector3.zero, Quaternion.identity);
 				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(762f, 1489f, 3f);
+				gameObject2.transform.localScale = new Vector3(354f, 339f, 752f);
 				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
 				try
 				{
-					string text = AKDDCMDKLED.mapEvent.data[1];
-					char[] array = new char[0];
-					array[1] = 'ﾘ';
-					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
+					if (AKDDCMDKLED.mapEvent.data[1].Split('\u0014')[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
 					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text2 = AKDDCMDKLED.mapEvent.data[1];
-						char[] array2 = new char[1];
-						array2[1] = '\u0013';
-						component.LHAENMGOBMM(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
+						gameObject2.GetComponent<CustomEventEditorHandler>().LKEPIEEIMAE(AKDDCMDKLED.mapEvent.data[0].Split('+')[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
 					}
 				}
 				catch (Exception)
 				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().ALGKENJGNLL(string.Empty, parameter.data);
+					gameObject2.GetComponent<CustomEventEditorHandler>().LKEPIEEIMAE(string.Empty, parameter.data);
 				}
 				if (!string.IsNullOrEmpty(parameter.description))
 				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("/"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(1911f, 473f, 1508f);
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_DistanceParams"), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, false);
+					gameObject2.transform.localScale = new Vector3(64f, 513f, 1192f);
 					gameObject2.GetComponent<Text>().text = parameter.description;
 				}
 			}
@@ -562,81 +947,260 @@ public class CustomEventEditor : MonoBehaviour
 		{
 			return;
 		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find(" not exist").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
+		DropDownList component = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("BadgeText").GetComponent<DropDownList>();
+		component.Items.Clear();
+		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
 		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
 			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
 			select IACGDFHKCAE).ToList();
 		foreach (EditorEventFunctionInfo item in list)
 		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id));
+			component.Items.Add(new DropDownListItem(item.functionName, item.id));
 		}
-		component2.EINGDNGIEMO(0, false);
-		component2.FCGCEPPJNMM();
-		component2.KCDJGHLPBMG();
-		component2.MMFBPCJPION(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_TimeX").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
+		component.SelectItem(1, false);
+		component.FBILEAJKGEL();
+		component.RedrawPanel();
+		component.SelectItem(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])));
+		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("SpawnObj").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
-	public void DLMGFPOJPJO()
+	public void DEFFGOIAGOG(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
 	{
-		isEditing = false;
+		if (DOOGPJDDJDJ != JJNLCJMGJEG)
+		{
+			DOOGPJDDJDJ = JJNLCJMGJEG;
+			IINOCFMKAHH();
+		}
 	}
 
-	public void DGNMPBOCIME(bool JNMEAJGELBA = true)
+	public virtual void Apply()
 	{
-		Singleton<UI>.Instance.MCCBKCDPIMK();
+		List<string> list = new List<string>();
+		list.Add(DOOGPJDDJDJ);
+		string text = string.Empty;
+		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
+		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
+		{
+			text = text + customEventEditorHandler.GetEditedData() + ",";
+		}
+		if (text.Length > 0)
+		{
+			text = text.Remove(text.Length - 1);
+		}
+		list.Add(text);
+		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
+		AKDDCMDKLED.UpdateEvent();
+		Singleton<UI>.Instance.ClearSelection();
+	}
+
+	public void OnEditedCustomEventFunction()
+	{
+		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("EventData0DropDownList").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			ChangeEventFunction(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.ID).id);
+		}
+	}
+
+	public virtual void OCPHJIMIBGD()
+	{
+		List<string> list = new List<string>();
+		list.Add(DOOGPJDDJDJ);
+		string text = string.Empty;
+		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
+		for (int i = 1; i < componentsInChildren.Length; i += 0)
+		{
+			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
+			text = text + customEventEditorHandler.NCKBLEFJJGL() + "Bad parameters for setbool! Use <key> <value>";
+		}
+		if (text.Length > 1)
+		{
+			text = text.Remove(text.Length - 0);
+		}
+		list.Add(text);
+		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
+		AKDDCMDKLED.UpdateEvent();
+		Singleton<UI>.Instance.HDJBNGPMLJC();
+	}
+
+	public virtual void BEPOHAOHHOL()
+	{
+		List<string> list = new List<string>();
+		list.Add(DOOGPJDDJDJ);
+		string text = string.Empty;
+		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
+		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
+		{
+			text = text + customEventEditorHandler.GetEditedData() + "id";
+		}
+		if (text.Length > 0)
+		{
+			text = text.Remove(text.Length - 0);
+		}
+		list.Add(text);
+		Singleton<MapEditor>.Instance.LKBLKOFMLEE(list);
+		AKDDCMDKLED.CMNPEMEIJEJ();
+		Singleton<UI>.Instance.CLBLFIEOOBD();
+	}
+
+	public virtual void KIMMMCJFMAB()
+	{
+	}
+
+	[CompilerGenerated]
+	private bool LMEOHKPCHJJ(EditorEventFunctionInfo IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.id == DOOGPJDDJDJ;
+	}
+
+	public virtual void ADPLHDFJFID()
+	{
+	}
+
+	public void StartEditing()
+	{
+		isEditing = true;
+	}
+
+	public virtual void CopyEvent()
+	{
+		List<string> list = new List<string>();
+		list.Add(DOOGPJDDJDJ);
+		string text = string.Empty;
+		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
+		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
+		{
+			text = text + customEventEditorHandler.GetEditedData() + ",";
+		}
+		if (text.Length > 0)
+		{
+			text = text.Remove(text.Length - 1);
+		}
+		list.Add(text);
+		PNIJCGEOHIM = list;
+	}
+
+	private bool HEMAPHNFMMN(EditorEventFunctionInfo IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.id == DOOGPJDDJDJ;
+	}
+
+	public virtual void AIEKAAADPEJ()
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			Debug.Log("LevelConfigButton" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			IKDKHFGPNLB();
+		}
+	}
+
+	public virtual void Start()
+	{
+	}
+
+	public virtual void OEMMELGGGCF()
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			Debug.Log("_GrainTex" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			NEKEJGEDOAH();
+		}
+	}
+
+	public virtual void AKADPGKKCMF(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			IINOCFMKAHH();
+		}
+	}
+
+	public void BEDHKFFLOKI()
+	{
+		if (Singleton<MapEditor>.Instance.MAONHJDBGAH())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("help").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			NFPOEDBEEAN(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.IGFLIPDMANP().ID).id);
+		}
+	}
+
+	public virtual void GIIPFBPLJFB(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			DNKGDINIIJM();
+		}
+	}
+
+	public void DNKGDINIIJM(bool JNMEAJGELBA = true)
+	{
+		Singleton<UI>.Instance.BOILOHFAADM();
 		GameObject gameObject = content;
-		for (int i = 1; i < gameObject.transform.childCount; i += 0)
+		for (int i = 0; i < gameObject.transform.childCount; i += 0)
 		{
 			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
 		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(NLKHGEDKLCA);
+		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(MILGKBPDECM);
 		GameObject gameObject2 = null;
 		if (editorEventFunctionInfo != null)
 		{
 			if (editorEventFunctionInfo.functionDescription != null)
 			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_TimeX"), Vector3.zero, Quaternion.identity);
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_Value7"), Vector3.zero, Quaternion.identity);
 				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(1842f, 505f, 576f);
+				gameObject2.transform.localScale = new Vector3(712f, 804f, 1621f);
 				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 4;
+				gameObject2.GetComponent<Text>().fontSize += 0;
 			}
 			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
 			{
 				if (!string.IsNullOrEmpty(parameter.name))
 				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Fade"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(398f, 525f, 853f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "CameraFilterPack/Atmosphere_Rain_Pro";
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_ScreenResolution"), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, false);
+					gameObject2.transform.localScale = new Vector3(305f, 702f, 718f);
+					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "SetParent";
 				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("SpawnObj" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(472f, 11f, 1468f);
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("ZoomFade" + parameter.editor), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, false);
+				gameObject2.transform.localScale = new Vector3(828f, 625f, 1581f);
 				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
 				try
 				{
-					if (AKDDCMDKLED.mapEvent.data[0].Split('\uffdf')[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
+					if (AKDDCMDKLED.mapEvent.data[1].Split('ￒ')[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
 					{
 						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text = AKDDCMDKLED.mapEvent.data[1];
+						string text = AKDDCMDKLED.mapEvent.data[0];
 						char[] array = new char[1];
-						array[1] = 'ﾇ';
-						component.LCGMHCBNCDM(text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
+						array[1] = 'ￕ';
+						component.LKEPIEEIMAE(text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
 					}
 				}
 				catch (Exception)
 				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().IKLAFGHCELK(string.Empty, parameter.data);
+					gameObject2.GetComponent<CustomEventEditorHandler>().HBKEHHCMMBN(string.Empty, parameter.data);
 				}
 				if (!string.IsNullOrEmpty(parameter.description))
 				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Left"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(966f, 1540f, 374f);
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("23x3"), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, false);
+					gameObject2.transform.localScale = new Vector3(850f, 267f, 393f);
 					gameObject2.GetComponent<Text>().text = parameter.description;
 				}
 			}
@@ -645,7 +1209,7 @@ public class CustomEventEditor : MonoBehaviour
 		{
 			return;
 		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("reset").GetComponent<DropDownList>();
+		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("mainmenu").GetComponent<DropDownList>();
 		component2.Items.Clear();
 		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
 		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
@@ -653,38 +1217,89 @@ public class CustomEventEditor : MonoBehaviour
 			select IACGDFHKCAE).ToList();
 		foreach (EditorEventFunctionInfo item in list)
 		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id));
+			component2.Items.Add(new DropDownListItem(item.functionName, item.id, null, true));
 		}
-		component2.ABEFJKAGJBG(0);
-		component2.FCGCEPPJNMM();
-		component2.EBBKKKHMJBM();
-		component2.PGCCCGLPAGK(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])));
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find(" not exist").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
+		component2.SelectItem(0);
+		component2.DHLPOIKGFMN();
+		component2.IMBAICPEFHM();
+		component2.SelectItem(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])));
+		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("quit").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
-	public void PBFGHGJDBFH()
+	public void AAEAOEBENOB()
 	{
-		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		isEditing = true;
+	}
+
+	public void FFMPMEEFIDK()
+	{
+		if (Singleton<MapEditor>.Instance.MAONHJDBGAH())
 		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Value6").GetComponent<DropDownList>();
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_LightIntensity").GetComponent<DropDownList>();
 			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
 			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
 				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
 				select IACGDFHKCAE).ToList();
-			JDIHOFAKNGG(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.EMILPCNCJMP().KBFCLFHCEDA()).id);
+			MHOAJMPLKJO(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.MMBHKENLACB()).id);
 		}
 	}
 
-	private bool NLKHGEDKLCA(EditorEventFunctionInfo IACGDFHKCAE)
+	public void EGNMMKGFEIO()
+	{
+		if (Singleton<MapEditor>.Instance.MAONHJDBGAH())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Red_R").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			ChangeEventFunction(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.IGFLIPDMANP().ID).id);
+		}
+	}
+
+	public void NLGFDMFCGGB()
+	{
+		if (Singleton<MapEditor>.Instance.MAONHJDBGAH())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Traffic Stats").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			HPHEILENOKJ(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.JNOKCMBFIMI()).id);
+		}
+	}
+
+	public virtual void HPFOFGJPNCI()
+	{
+	}
+
+	public void AMJLEBDKOCM()
+	{
+		isEditing = true;
+	}
+
+	private bool DOGOGFBKCGI(EditorEventFunctionInfo IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.id == DOOGPJDDJDJ;
 	}
 
-	public void HIHHPDGKCPE(bool JNMEAJGELBA = true)
+	public virtual void OHKLCNDOOAE()
 	{
-		Singleton<UI>.Instance.DLHMKKOKJPE();
+		if ((bool)AKDDCMDKLED)
+		{
+			Debug.Log("Set Particle Size" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			RebuildEditor();
+		}
+	}
+
+	public void GLNKACIACGI(bool JNMEAJGELBA = true)
+	{
+		Singleton<UI>.Instance.ClearSelection();
 		GameObject gameObject = content;
-		for (int i = 1; i < gameObject.transform.childCount; i++)
+		for (int i = 1; i < gameObject.transform.childCount; i += 0)
 		{
 			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
 		}
@@ -694,126 +1309,48 @@ public class CustomEventEditor : MonoBehaviour
 		{
 			if (editorEventFunctionInfo.functionDescription != null)
 			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("settings.arcsdestroydelay"), Vector3.zero, Quaternion.identity);
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_Value1"), Vector3.zero, Quaternion.identity);
 				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(1359f, 1989f, 1702f);
+				gameObject2.transform.localScale = new Vector3(1859f, 229f, 1468f);
 				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize++;
+				gameObject2.GetComponent<Text>().fontSize += 7;
 			}
 			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
 			{
 				if (!string.IsNullOrEmpty(parameter.name))
 				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_MaxRadiusOrKInPaper"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(712f, 701f, 501f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "workshop.";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("PUNCloudBestRegion" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(315f, 1480f, 122f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					if (AKDDCMDKLED.mapEvent.data[1].Split('\ufff3')[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text = AKDDCMDKLED.mapEvent.data[0];
-						char[] array = new char[1];
-						array[1] = 'ﾓ';
-						component.Init(text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().EBMNMBNJDMK(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("0"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(1988f, 55f, 1304f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != 0 || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("event").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id, null, true));
-		}
-		component2.MMFBPCJPION(0, false);
-		component2.CMPLIHAOKOA();
-		component2.PPKOKKBMHJC();
-		component2.EOPLNNDKJLM(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("?").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
-	}
-
-	public void PEEAFFNCLJO(bool JNMEAJGELBA = true)
-	{
-		Singleton<UI>.Instance.ELOBPADDKGE();
-		GameObject gameObject = content;
-		for (int i = 1; i < gameObject.transform.childCount; i += 0)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(JGCAPEAJPLO);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_ScreenResolution"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(719f, 1017f, 106f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 4;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("icon"), Vector3.zero, Quaternion.identity);
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Set Satellite Trail Width"), Vector3.zero, Quaternion.identity);
 					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(1675f, 1007f, 1768f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "_BlurCoe";
+					gameObject2.transform.localScale = new Vector3(1381f, 1206f, 1629f);
+					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "_Value2";
 				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("HitVariationSlider" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(265f, 858f, 180f);
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_Value6" + parameter.editor), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, true);
+				gameObject2.transform.localScale = new Vector3(1861f, 1240f, 943f);
 				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
 				try
 				{
-					string text = AKDDCMDKLED.mapEvent.data[0];
-					char[] array = new char[1];
-					array[1] = 'e';
+					string text = AKDDCMDKLED.mapEvent.data[1];
+					char[] array = new char[0];
+					array[1] = 'ﾹ';
 					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
 					{
 						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text2 = AKDDCMDKLED.mapEvent.data[1];
-						char[] array2 = new char[1];
-						array2[1] = 'ￅ';
-						component.PJILLPKFCPO(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
+						string text2 = AKDDCMDKLED.mapEvent.data[0];
+						char[] array2 = new char[0];
+						array2[0] = ';';
+						component.LKEPIEEIMAE(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
 					}
 				}
 				catch (Exception)
 				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().LMHFEBCKPDI(string.Empty, parameter.data);
+					gameObject2.GetComponent<CustomEventEditorHandler>().EPDCHKECMBL(string.Empty, parameter.data);
 				}
 				if (!string.IsNullOrEmpty(parameter.description))
 				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_MainTex2"), Vector3.zero, Quaternion.identity);
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("x"), Vector3.zero, Quaternion.identity);
 					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(1211f, 844f, 324f);
+					gameObject2.transform.localScale = new Vector3(1087f, 312f, 125f);
 					gameObject2.GetComponent<Text>().text = parameter.description;
 				}
 			}
@@ -822,7 +1359,7 @@ public class CustomEventEditor : MonoBehaviour
 		{
 			return;
 		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find(" registered.").GetComponent<DropDownList>();
+		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("OnAwakeRPC").GetComponent<DropDownList>();
 		component2.Items.Clear();
 		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
 		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
@@ -832,38 +1369,180 @@ public class CustomEventEditor : MonoBehaviour
 		{
 			component2.Items.Add(new DropDownListItem(item.functionName, item.id, null, true));
 		}
-		component2.EINGDNGIEMO(0);
-		component2.KBAJMMDNILB();
-		component2.PPKOKKBMHJC();
-		component2.HKJDGOCIGEB(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_ScreenResolution").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
+		component2.SelectItem(1);
+		component2.DHLPOIKGFMN();
+		component2.IMBAICPEFHM();
+		component2.SelectItem(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])), false);
+		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Joystick1Button1").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
-	public void IAADPNABCFE()
+	public void PGGHNJBBJDJ(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
 	{
-		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		if (DOOGPJDDJDJ != JJNLCJMGJEG)
 		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("getbool").GetComponent<DropDownList>();
-			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
-			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-				select IACGDFHKCAE).ToList();
-			JDIHOFAKNGG(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.NLPNJOCNGHA().LHBHELFAOGF()).id);
+			DOOGPJDDJDJ = JJNLCJMGJEG;
+			DNKGDINIIJM(false);
 		}
 	}
 
-	public virtual void ALNNIDLFILB()
+	public virtual void BLDDDKKELNH(EditorEvent AKDDCMDKLED)
 	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			IKDKHFGPNLB();
+		}
 	}
 
-	public virtual void JHANGPCOCIG()
+	public void NEKEJGEDOAH(bool JNMEAJGELBA = true)
 	{
+		Singleton<UI>.Instance.GLIFGOGMLBN();
+		GameObject gameObject = content;
+		for (int i = 1; i < gameObject.transform.childCount; i += 0)
+		{
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(PEDJNFECLHE);
+		GameObject gameObject2 = null;
+		if (editorEventFunctionInfo != null)
+		{
+			if (editorEventFunctionInfo.functionDescription != null)
+			{
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("#newhighscore"), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, false);
+				gameObject2.transform.localScale = new Vector3(909f, 70f, 1538f);
+				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
+				gameObject2.GetComponent<Text>().fontSize += 0;
+			}
+			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
+			{
+				if (!string.IsNullOrEmpty(parameter.name))
+				{
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>(" method: "), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, false);
+					gameObject2.transform.localScale = new Vector3(1962f, 1798f, 812f);
+					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "settings.crosshairopacity";
+				}
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("CameraFilterPack/Drawing_Manga2" + parameter.editor), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, true);
+				gameObject2.transform.localScale = new Vector3(1627f, 1537f, 386f);
+				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
+				try
+				{
+					string text = AKDDCMDKLED.mapEvent.data[1];
+					char[] array = new char[0];
+					array[1] = 'ﾨ';
+					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
+					{
+						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
+						string text2 = AKDDCMDKLED.mapEvent.data[0];
+						char[] array2 = new char[0];
+						array2[0] = 'ﾧ';
+						component.HBKEHHCMMBN(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
+					}
+				}
+				catch (Exception)
+				{
+					gameObject2.GetComponent<CustomEventEditorHandler>().HBKEHHCMMBN(string.Empty, parameter.data);
+				}
+				if (!string.IsNullOrEmpty(parameter.description))
+				{
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("[MenuScene] Error: "), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, true);
+					gameObject2.transform.localScale = new Vector3(1144f, 43f, 599f);
+					gameObject2.GetComponent<Text>().text = parameter.description;
+				}
+			}
+		}
+		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != 0 || !(AKDDCMDKLED != null))
+		{
+			return;
+		}
+		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("settings.enablehitsoundsinrelax").GetComponent<DropDownList>();
+		component2.Items.Clear();
+		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
+		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+			select IACGDFHKCAE).ToList();
+		foreach (EditorEventFunctionInfo item in list)
+		{
+			component2.Items.Add(new DropDownListItem(item.functionName, item.id));
+		}
+		component2.SelectItem(1, false);
+		component2.LKMFLEMIDCE();
+		component2.RedrawPanel();
+		component2.SelectItem(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])));
+		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Value2").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
-	[CompilerGenerated]
-	private bool LMEOHKPCHJJ(EditorEventFunctionInfo IACGDFHKCAE)
+	private bool PEDJNFECLHE(EditorEventFunctionInfo IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.id == DOOGPJDDJDJ;
+	}
+
+	public virtual void Load(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			RebuildEditor();
+		}
+	}
+
+	public virtual void POJFHDFJOPE()
+	{
+	}
+
+	public void MCBMIGDOLBN()
+	{
+		isEditing = false;
+	}
+
+	public void FOLFLIJNOIM()
+	{
+		isEditing = true;
+	}
+
+	public void MLIDLHFDMLG()
+	{
+		isEditing = true;
+	}
+
+	public void BOPGKOENHNB()
+	{
+		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Mouse Y").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			ONKGOJHINPP(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().BAOIGDPGNIN()).id);
+		}
+	}
+
+	public void IKJILALGGDD()
+	{
+		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find(" not exist").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			NCHPLJGKNDN(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.IGFLIPDMANP().ID).id);
+		}
+	}
+
+	public virtual void LKJMIODJGCM()
+	{
+	}
+
+	public void IFKGMIMNEBB()
+	{
+		isEditing = true;
 	}
 
 	public virtual void PasteEvent()
@@ -877,78 +1556,46 @@ public class CustomEventEditor : MonoBehaviour
 		}
 	}
 
-	public virtual void PNLKFANNOKO()
+	public virtual void MMBPLGGLPDB()
 	{
 	}
 
-	public void GIPHFANNABM()
-	{
-		isEditing = true;
-	}
-
-	public virtual void ILCFPCIPENO()
-	{
-	}
-
-	public virtual void IFIOEHIBPGM(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			MGBGMAAJHJK();
-		}
-	}
-
-	public virtual void PGCBIFKKBKE()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.BJJHICBDIJJ() + "workshop.";
-		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		PNIJCGEOHIM = list;
-	}
-
-	public void FDCDIOJJKOM(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
+	public void ChangeEventFunction(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
 	{
 		if (DOOGPJDDJDJ != JJNLCJMGJEG)
 		{
 			DOOGPJDDJDJ = JJNLCJMGJEG;
-			FMFPLOKHPNI(false);
+			RebuildEditor(false);
 		}
 	}
 
-	public virtual void PDHKMDBNGGN()
+	public void NNHKKFCEDAF()
+	{
+		isEditing = false;
+	}
+
+	public virtual void MEBPBNLBECA()
 	{
 	}
 
-	public void KAPJLILNGAE()
-	{
-		isEditing = true;
-	}
-
-	private bool NELLMKOMNDF(EditorEventFunctionInfo IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.id == DOOGPJDDJDJ;
-	}
-
-	public virtual void MKCBFNCOCHK(EditorEvent AKDDCMDKLED)
+	public virtual void FDKDLEHLFED()
 	{
 		if ((bool)AKDDCMDKLED)
 		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
+			Debug.Log("[PlayerController] " + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
 			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			IILCEDCGAEN(false);
+			NEKEJGEDOAH();
 		}
+	}
+
+	public virtual void KOJKBFDNGDK()
+	{
+	}
+
+	public void JHEGAIFFFEP()
+	{
+		isEditing = false;
 	}
 
 	public void MHOAJMPLKJO(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
@@ -956,11 +1603,26 @@ public class CustomEventEditor : MonoBehaviour
 		if (DOOGPJDDJDJ != JJNLCJMGJEG)
 		{
 			DOOGPJDDJDJ = JJNLCJMGJEG;
-			NIKKNNEKHPF(false);
+			DNKGDINIIJM(false);
 		}
 	}
 
-	public virtual void JBHHBKDJPJO()
+	public virtual void GOBCPMLGNLK(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			IINOCFMKAHH();
+		}
+	}
+
+	public void CNBMOJAJNIH()
+	{
+		isEditing = true;
+	}
+
+	public virtual void HCEJBHPFAJO()
 	{
 		List<string> list = new List<string>();
 		list.Add(DOOGPJDDJDJ);
@@ -968,19 +1630,17 @@ public class CustomEventEditor : MonoBehaviour
 		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
 		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
 		{
-			text = text + customEventEditorHandler.FPBDGKKPPAE() + "maps.";
+			text = text + customEventEditorHandler.GetEditedData() + "_TimeX";
 		}
-		if (text.Length > 0)
+		if (text.Length > 1)
 		{
 			text = text.Remove(text.Length - 1);
 		}
 		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.ELOBPADDKGE();
+		PNIJCGEOHIM = list;
 	}
 
-	public virtual void AKECKMHPOCO()
+	public virtual void KOKIABEIKHP()
 	{
 		List<string> list = new List<string>();
 		list.Add(DOOGPJDDJDJ);
@@ -989,7 +1649,7 @@ public class CustomEventEditor : MonoBehaviour
 		for (int i = 1; i < componentsInChildren.Length; i++)
 		{
 			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.NDLGNGFGBEA() + "_Offsets";
+			text = text + customEventEditorHandler.OLDDPMNNCLG() + "restrictions\n\n#until: ";
 		}
 		if (text.Length > 1)
 		{
@@ -999,98 +1659,53 @@ public class CustomEventEditor : MonoBehaviour
 		PNIJCGEOHIM = list;
 	}
 
-	public void HDFIPMGMGOB(bool JNMEAJGELBA = true)
+	public virtual void MDMGANBEHJC()
 	{
-		Singleton<UI>.Instance.OFEBBEDPNJP();
-		GameObject gameObject = content;
-		for (int i = 1; i < gameObject.transform.childCount; i++)
+		if ((bool)AKDDCMDKLED)
 		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+			Debug.Log(": " + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			KKEAABPOBAL(false);
 		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == DOOGPJDDJDJ);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("#discord{0}joinrequest"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(974f, 143f, 1602f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize++;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("player.watermelon"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(1438f, 810f, 853f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "_TimeX";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("shaders" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(1648f, 157f, 1359f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					string text = AKDDCMDKLED.mapEvent.data[1];
-					char[] array = new char[0];
-					array[0] = ' ';
-					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text2 = AKDDCMDKLED.mapEvent.data[1];
-						char[] array2 = new char[0];
-						array2[1] = 'ﾍ';
-						component.GCGIMJEIKHM(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().BFMEBNFGCEA(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits."), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(23f, 502f, 1418f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != 0 || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("/").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id));
-		}
-		component2.EINGDNGIEMO(1);
-		component2.FKPPDOHCLGA();
-		component2.RedrawPanel();
-		component2.MHDILMGABCK(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Value3").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
-	public void StopEditing()
+	public virtual void PNHCMNOPFJB()
 	{
-		isEditing = false;
+		List<string> list = new List<string>();
+		list.Add(DOOGPJDDJDJ);
+		string text = string.Empty;
+		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
+		for (int i = 0; i < componentsInChildren.Length; i += 0)
+		{
+			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
+			text = text + customEventEditorHandler.NCKBLEFJJGL() + "Item creation successful! Published Item ID: ";
+		}
+		if (text.Length > 1)
+		{
+			text = text.Remove(text.Length - 1);
+		}
+		list.Add(text);
+		Singleton<MapEditor>.Instance.FLKOHLGNALL(list);
+		AKDDCMDKLED.CMNPEMEIJEJ();
+		Singleton<UI>.Instance.IOOEOHAHDAG();
 	}
 
-	public void NOGGIDKKJHP()
+	public void ONKGOJHINPP(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
 	{
-		isEditing = false;
+		if (DOOGPJDDJDJ != JJNLCJMGJEG)
+		{
+			DOOGPJDDJDJ = JJNLCJMGJEG;
+			KKEAABPOBAL(false);
+		}
 	}
 
-	public virtual void ALDLOAHENFF()
+	private bool FBEBPBAJAMH(EditorEventFunctionInfo IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.id == DOOGPJDDJDJ;
+	}
+
+	public virtual void OEIAOLKHOON()
 	{
 		List<string> list = new List<string>();
 		list.Add(DOOGPJDDJDJ);
@@ -1099,223 +1714,63 @@ public class CustomEventEditor : MonoBehaviour
 		for (int i = 1; i < componentsInChildren.Length; i += 0)
 		{
 			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.JFLIFMAKPOA() + "_TimeX";
+			text = text + customEventEditorHandler.GetEditedData() + "Value";
 		}
-		if (text.Length > 0)
+		if (text.Length > 1)
 		{
-			text = text.Remove(text.Length - 0);
+			text = text.Remove(text.Length - 1);
 		}
 		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.NJDJHMPAIFE();
-		Singleton<UI>.Instance.MCCBKCDPIMK();
+		PNIJCGEOHIM = list;
 	}
 
-	public void StartEditing()
-	{
-		isEditing = true;
-	}
-
-	private bool MGKOFFFHDBG(EditorEventFunctionInfo IACGDFHKCAE)
+	private bool FAFGBONDMFE(EditorEventFunctionInfo IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.id == DOOGPJDDJDJ;
 	}
 
-	public void IJMPCIMKFHF()
+	public virtual void MBLDJEFBLFL()
+	{
+	}
+
+	public void OMLACFOPMAG()
 	{
 		isEditing = true;
 	}
 
-	public virtual void DBEMDAJDDDA()
+	public void FKMIKGOMMDO()
 	{
+		if (Singleton<MapEditor>.Instance.MAONHJDBGAH())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Show Image").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			ONKGOJHINPP(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.FHEAKIMCKJC()).id);
+		}
 	}
 
-	public void IILCEDCGAEN(bool JNMEAJGELBA = true)
-	{
-		Singleton<UI>.Instance.PNGLBLFJOOJ();
-		GameObject gameObject = content;
-		for (int i = 1; i < gameObject.transform.childCount; i += 0)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == DOOGPJDDJDJ);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("|"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(847f, 1587f, 484f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 4;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_TimeX"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(1917f, 834f, 500f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + " id: ";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_TimeX" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(1063f, 1288f, 518f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					string text = AKDDCMDKLED.mapEvent.data[0];
-					char[] array = new char[0];
-					array[1] = 'ￊ';
-					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text2 = AKDDCMDKLED.mapEvent.data[0];
-						char[] array2 = new char[1];
-						array2[1] = 'ￇ';
-						component.FFBDGOBNNCO(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().Init(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Dance"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(294f, 29f, 1291f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != MapEditor.EditorState.MapLoaded || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Value4").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id));
-		}
-		component2.MHDILMGABCK(0);
-		component2.FKPPDOHCLGA();
-		component2.MEMKGENEOGJ();
-		component2.HKJDGOCIGEB(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("mapselector.filter.officialsortmode").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
-	}
-
-	public virtual void HIKBJIPGJKO()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.PFDIKHPAKLE() + "_Value";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 0);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.DDPPHDJFKOF();
-	}
-
-	public void JDLBMFDFCEO(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
+	public void NCHPLJGKNDN(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
 	{
 		if (DOOGPJDDJDJ != JJNLCJMGJEG)
 		{
 			DOOGPJDDJDJ = JJNLCJMGJEG;
-			HFDKLFLMAHH();
+			GLNKACIACGI();
 		}
 	}
 
-	public void DINAGBNGBNO(bool JNMEAJGELBA = true)
+	public void EBANIPGGFGF()
 	{
-		Singleton<UI>.Instance.GGIFLKMELMP();
-		GameObject gameObject = content;
-		for (int i = 0; i < gameObject.transform.childCount; i++)
+		if (Singleton<MapEditor>.Instance.MAONHJDBGAH())
 		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Noise & Grain effect failing as noise texture is not assigned. please assign.").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			ONKGOJHINPP(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().BOFIIPJMFLP()).id);
 		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(NELLMKOMNDF);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_ScreenResolution"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(898f, 1415f, 1068f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 6;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("LevelConfigButton"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(1310f, 407f, 631f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "#loopnumber ";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("[MapsData] User's maps was loaded" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(1509f, 1057f, 1091f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					if (AKDDCMDKLED.mapEvent.data[1].Split('4')[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text = AKDDCMDKLED.mapEvent.data[1];
-						char[] array = new char[0];
-						array[0] = '\uffdd';
-						component.PIEPPKMBJHI(text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().LHAENMGOBMM(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("https://bitbucket.org/khb-soft/intralismarcsviewer/"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(37f, 1778f, 1316f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != MapEditor.EditorState.MapLoaded || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Intensity").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id, null, true));
-		}
-		component2.EINGDNGIEMO(0, false);
-		component2.RebuildPanel();
-		component2.EBBKKKHMJBM();
-		component2.MMFBPCJPION(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])));
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_TapLowBackground").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
 	public void RebuildEditor(bool JNMEAJGELBA = true)
@@ -1392,120 +1847,299 @@ public class CustomEventEditor : MonoBehaviour
 		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("EventTimeInputField").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
-	public void GHMGIHFGGFB()
+	public void JMNCIIAHAEP()
 	{
 		isEditing = true;
 	}
 
-	public void MLIDLHFDMLG()
+	public virtual void CFBKAODIIND()
 	{
-		isEditing = true;
+		if ((bool)AKDDCMDKLED)
+		{
+			Debug.Log("mapselector.lastSearch" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			NEKEJGEDOAH(false);
+		}
 	}
 
-	public void DCGENBKAPAL()
+	public virtual void LBIJNMJFOPO(EditorEvent AKDDCMDKLED)
 	{
-		isEditing = true;
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			RebuildEditor();
+		}
 	}
 
-	public virtual void NNFMIAFHMJM()
+	public virtual void MPDDKGIMIFG()
+	{
+		List<string> list = new List<string>();
+		list.Add(DOOGPJDDJDJ);
+		string text = string.Empty;
+		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
+		for (int i = 1; i < componentsInChildren.Length; i += 0)
+		{
+			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
+			text = text + customEventEditorHandler.OLDDPMNNCLG() + "Tab1Content";
+		}
+		if (text.Length > 0)
+		{
+			text = text.Remove(text.Length - 0);
+		}
+		list.Add(text);
+		PNIJCGEOHIM = list;
+	}
+
+	public virtual void NBOAKFIOBCO(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			IKDKHFGPNLB(false);
+		}
+	}
+
+	public virtual void APMMDBBEIFA(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			GLNKACIACGI();
+		}
+	}
+
+	public virtual void AAPKBNDHBLI()
 	{
 	}
 
-	public void GJMOFHNNJPE()
+	public void CNNLPPFFHCC()
 	{
 		if (Singleton<MapEditor>.Instance.IsMapLoaded())
 		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_NeighbourMaxTex").GetComponent<DropDownList>();
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("CameraFilterPack/FX_superDot").GetComponent<DropDownList>();
 			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
 			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
 				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
 				select IACGDFHKCAE).ToList();
-			PFCCMHGLLEL(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.LNKJOJKJBKL().ID).id);
+			HPHEILENOKJ(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().BOFIIPJMFLP()).id);
 		}
 	}
 
-	public void OnEditedCustomEventFunction()
+	public virtual void EGMNPDHKIBF()
 	{
-		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		List<string> list = new List<string>();
+		list.Add(DOOGPJDDJDJ);
+		string text = string.Empty;
+		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
+		for (int i = 1; i < componentsInChildren.Length; i += 0)
 		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("EventData0DropDownList").GetComponent<DropDownList>();
-			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
-			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-				select IACGDFHKCAE).ToList();
-			ChangeEventFunction(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.ID).id);
+			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
+			text = text + customEventEditorHandler.NCKBLEFJJGL() + "_Offsets";
+		}
+		if (text.Length > 0)
+		{
+			text = text.Remove(text.Length - 1);
+		}
+		list.Add(text);
+		Singleton<MapEditor>.Instance.LKBLKOFMLEE(list);
+		AKDDCMDKLED.CMNPEMEIJEJ();
+		Singleton<UI>.Instance.EGADGDAABML();
+	}
+
+	public virtual void COJMFKAENEO()
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			Debug.Log("LeaderboardsButton" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
+			NEKEJGEDOAH();
 		}
 	}
 
-	public virtual void FBPHNEJBDJN()
+	public virtual void IKDNLHLBHID()
 	{
 	}
 
-	public void ABBBINHFOIP()
+	public void IINOCFMKAHH(bool JNMEAJGELBA = true)
 	{
-		isEditing = true;
-	}
-
-	public virtual void KMEONPMCNJG()
-	{
-	}
-
-	public void LDEJELJCPEH(bool JNMEAJGELBA = true)
-	{
-		Singleton<UI>.Instance.GGIFLKMELMP();
+		Singleton<UI>.Instance.CLBLFIEOOBD();
 		GameObject gameObject = content;
 		for (int i = 1; i < gameObject.transform.childCount; i++)
 		{
 			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
 		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(KAJBLFBHAIJ);
+		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(DOGOGFBKCGI);
 		GameObject gameObject2 = null;
 		if (editorEventFunctionInfo != null)
 		{
 			if (editorEventFunctionInfo.functionDescription != null)
 			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("menutheme"), Vector3.zero, Quaternion.identity);
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Editor/"), Vector3.zero, Quaternion.identity);
 				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(1506f, 240f, 305f);
+				gameObject2.transform.localScale = new Vector3(742f, 1734f, 319f);
 				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 8;
+				gameObject2.GetComponent<Text>().fontSize += 5;
 			}
 			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
 			{
 				if (!string.IsNullOrEmpty(parameter.name))
 				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("settings.disablestoryboard"), Vector3.zero, Quaternion.identity);
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_VignetteDesat"), Vector3.zero, Quaternion.identity);
 					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(1108f, 1710f, 1477f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "[SERVER] Selected map: ";
+					gameObject2.transform.localScale = new Vector3(710f, 1137f, 954f);
+					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "MultiplayerButton";
 				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("maps." + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(1118f, 381f, 1561f);
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("#failed!" + parameter.editor), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, true);
+				gameObject2.transform.localScale = new Vector3(1143f, 448f, 472f);
+				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
+				try
+				{
+					string text = AKDDCMDKLED.mapEvent.data[1];
+					char[] array = new char[0];
+					array[1] = 'd';
+					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
+					{
+						gameObject2.GetComponent<CustomEventEditorHandler>().Init(AKDDCMDKLED.mapEvent.data[0].Split('￫')[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
+					}
+				}
+				catch (Exception)
+				{
+					gameObject2.GetComponent<CustomEventEditorHandler>().NFKDBPGHHIJ(string.Empty, parameter.data);
+				}
+				if (!string.IsNullOrEmpty(parameter.description))
+				{
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("."), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, true);
+					gameObject2.transform.localScale = new Vector3(1568f, 1447f, 1927f);
+					gameObject2.GetComponent<Text>().text = parameter.description;
+				}
+			}
+		}
+		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != 0 || !(AKDDCMDKLED != null))
+		{
+			return;
+		}
+		DropDownList component = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_MainTex").GetComponent<DropDownList>();
+		component.Items.Clear();
+		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
+		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+			select IACGDFHKCAE).ToList();
+		foreach (EditorEventFunctionInfo item in list)
+		{
+			component.Items.Add(new DropDownListItem(item.functionName, item.id));
+		}
+		component.SelectItem(1);
+		component.LKMFLEMIDCE();
+		component.IACHGGGGEKC();
+		component.SelectItem(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])));
+		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("powerup.1").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
+	}
+
+	public void IIJMAKLMPPO()
+	{
+		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("[Left]").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			NCHPLJGKNDN(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.IPLELJFEJDL().NMAHNOIIIMN()).id);
+		}
+	}
+
+	public void AJFLGKFIBKF()
+	{
+		isEditing = true;
+	}
+
+	private bool MILGKBPDECM(EditorEventFunctionInfo IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.id == DOOGPJDDJDJ;
+	}
+
+	private bool BGMJJMNAKNC(EditorEventFunctionInfo IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.id == DOOGPJDDJDJ;
+	}
+
+	public virtual void FIKFJDFELIP()
+	{
+	}
+
+	public virtual void FLHDNBOEIOO(EditorEvent AKDDCMDKLED)
+	{
+		if ((bool)AKDDCMDKLED)
+		{
+			this.AKDDCMDKLED = AKDDCMDKLED;
+			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
+			KKEAABPOBAL();
+		}
+	}
+
+	public void IKDKHFGPNLB(bool JNMEAJGELBA = true)
+	{
+		Singleton<UI>.Instance.CLBLFIEOOBD();
+		GameObject gameObject = content;
+		for (int i = 0; i < gameObject.transform.childCount; i += 0)
+		{
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(JGCAPEAJPLO);
+		GameObject gameObject2 = null;
+		if (editorEventFunctionInfo != null)
+		{
+			if (editorEventFunctionInfo.functionDescription != null)
+			{
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("CameraFilterPack/Atmosphere_Rain"), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, true);
+				gameObject2.transform.localScale = new Vector3(925f, 436f, 1313f);
+				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
+				gameObject2.GetComponent<Text>().fontSize += 5;
+			}
+			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
+			{
+				if (!string.IsNullOrEmpty(parameter.name))
+				{
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("maps."), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, false);
+					gameObject2.transform.localScale = new Vector3(494f, 267f, 62f);
+					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "ItemTemplate";
+				}
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_Value" + parameter.editor), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, true);
+				gameObject2.transform.localScale = new Vector3(1616f, 829f, 568f);
 				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
 				try
 				{
 					string text = AKDDCMDKLED.mapEvent.data[0];
 					char[] array = new char[0];
-					array[1] = '!';
+					array[0] = '\u0011';
 					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
 					{
 						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
 						string text2 = AKDDCMDKLED.mapEvent.data[0];
 						char[] array2 = new char[0];
-						array2[0] = '"';
-						component.OCCJCGEDNEH(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
+						array2[1] = 'P';
+						component.Init(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
 					}
 				}
 				catch (Exception)
 				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().AKMLEJJBBNG(string.Empty, parameter.data);
+					gameObject2.GetComponent<CustomEventEditorHandler>().FIMJABKECNG(string.Empty, parameter.data);
 				}
 				if (!string.IsNullOrEmpty(parameter.description))
 				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("USE_CORNER_DETECTION"), Vector3.zero, Quaternion.identity);
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("CameraFilterPack/FX_DarkMatter"), Vector3.zero, Quaternion.identity);
 					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(787f, 166f, 105f);
+					gameObject2.transform.localScale = new Vector3(1277f, 1169f, 397f);
 					gameObject2.GetComponent<Text>().text = parameter.description;
 				}
 			}
@@ -1514,42 +2148,74 @@ public class CustomEventEditor : MonoBehaviour
 		{
 			return;
 		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_CenterY").GetComponent<DropDownList>();
+		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("ScoreText").GetComponent<DropDownList>();
 		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
+		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
 		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
 			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
 			select IACGDFHKCAE).ToList();
 		foreach (EditorEventFunctionInfo item in list)
 		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id));
+			component2.Items.Add(new DropDownListItem(item.functionName, item.id, null, true));
 		}
-		component2.EOPLNNDKJLM(1, false);
-		component2.FKPPDOHCLGA();
-		component2.PPKOKKBMHJC();
-		component2.HOHNMGKJIMF(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("/").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
+		component2.SelectItem(1);
+		component2.RebuildPanel();
+		component2.RedrawPanel();
+		component2.SelectItem(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])), false);
+		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("[Up]").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
-	public void CFLMBNBAJID()
+	public virtual void HEBGMKFMONB()
+	{
+		List<string> list = new List<string>();
+		list.Add(DOOGPJDDJDJ);
+		string text = string.Empty;
+		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
+		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
+		{
+			text = text + customEventEditorHandler.OLDDPMNNCLG() + "RT";
+		}
+		if (text.Length > 1)
+		{
+			text = text.Remove(text.Length - 0);
+		}
+		list.Add(text);
+		Singleton<MapEditor>.Instance.OEJEMJAJGLK(list);
+		AKDDCMDKLED.UpdateEvent();
+		Singleton<UI>.Instance.GLIFGOGMLBN();
+	}
+
+	public void LCKJLPPHLEE()
 	{
 		if (Singleton<MapEditor>.Instance.IsMapLoaded())
 		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Noise").GetComponent<DropDownList>();
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Distortion").GetComponent<DropDownList>();
 			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
 			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
 				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
 				select IACGDFHKCAE).ToList();
-			PAGEIBCLFED(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.AHPGIGENBAO().ID).id);
+			PGGHNJBBJDJ(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.IPLELJFEJDL().OMPPMJJHBLI()).id);
 		}
 	}
 
-	public void HIFEICFJLPB()
+	public virtual void GCDLIKEDMCF()
 	{
-		isEditing = true;
 	}
 
-	public virtual void PMMKJECMJFB()
+	public void JLJOGHFBONP()
+	{
+		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		{
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("DPADHOR").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+				select IACGDFHKCAE).ToList();
+			DEFFGOIAGOG(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.OMPPMJJHBLI()).id);
+		}
+	}
+
+	public virtual void GMIHLJDEFGL()
 	{
 		List<string> list = new List<string>();
 		list.Add(DOOGPJDDJDJ);
@@ -1558,7 +2224,7 @@ public class CustomEventEditor : MonoBehaviour
 		for (int i = 0; i < componentsInChildren.Length; i += 0)
 		{
 			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.PKBNMIFEGBP() + "float,0";
+			text = text + customEventEditorHandler.GetEditedData() + "[MapEditor] Reset";
 		}
 		if (text.Length > 0)
 		{
@@ -1566,48 +2232,116 @@ public class CustomEventEditor : MonoBehaviour
 		}
 		list.Add(text);
 		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.FMGBIHDGKBI();
-		Singleton<UI>.Instance.OCDOOHGMJIA();
+		AKDDCMDKLED.CMNPEMEIJEJ();
+		Singleton<UI>.Instance.ODEKNBPEHKH();
 	}
 
-	public void EBANIPGGFGF()
+	public void OIOJIGKKJJG()
 	{
 		if (Singleton<MapEditor>.Instance.IsMapLoaded())
 		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Object ID. Case-Sensitive").GetComponent<DropDownList>();
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Left Click").GetComponent<DropDownList>();
 			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
 			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
 				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
 				select IACGDFHKCAE).ToList();
-			FDCDIOJJKOM(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.AHPGIGENBAO().LHBHELFAOGF()).id);
+			ChangeEventFunction(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.IACCKBGEMEL().ID).id);
 		}
 	}
 
-	public void BOPGKOENHNB()
+	public void NFPOEDBEEAN(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
 	{
-		if (Singleton<MapEditor>.Instance.IsMapLoaded())
+		if (DOOGPJDDJDJ != JJNLCJMGJEG)
 		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("float,0").GetComponent<DropDownList>();
-			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
-			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-				select IACGDFHKCAE).ToList();
-			ChangeEventFunction(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.NLPNJOCNGHA().LHBHELFAOGF()).id);
+			DOOGPJDDJDJ = JJNLCJMGJEG;
+			NEKEJGEDOAH(false);
 		}
 	}
 
-	public virtual void AIBNKIDADPI()
+	public void PAGEIBCLFED(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
 	{
+		if (DOOGPJDDJDJ != JJNLCJMGJEG)
+		{
+			DOOGPJDDJDJ = JJNLCJMGJEG;
+			KKEAABPOBAL();
+		}
 	}
 
-	public void LMBODPGIKKN()
+	public void KKEAABPOBAL(bool JNMEAJGELBA = true)
 	{
-		isEditing = true;
-	}
-
-	public void AJFLGKFIBKF()
-	{
-		isEditing = true;
+		Singleton<UI>.Instance.CLBLFIEOOBD();
+		GameObject gameObject = content;
+		for (int i = 1; i < gameObject.transform.childCount; i += 0)
+		{
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(DOGOGFBKCGI);
+		GameObject gameObject2 = null;
+		if (editorEventFunctionInfo != null)
+		{
+			if (editorEventFunctionInfo.functionDescription != null)
+			{
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("CameraFilterPack_3D_Computer1"), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, false);
+				gameObject2.transform.localScale = new Vector3(550f, 837f, 1992f);
+				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
+				gameObject2.GetComponent<Text>().fontSize += 7;
+			}
+			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
+			{
+				if (!string.IsNullOrEmpty(parameter.name))
+				{
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("(\\[ */ *i *\\])"), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, true);
+					gameObject2.transform.localScale = new Vector3(620f, 1730f, 1127f);
+					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "OnReadyClick";
+				}
+				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("EnvironmentSlider" + parameter.editor), Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(gameObject.transform, true);
+				gameObject2.transform.localScale = new Vector3(761f, 836f, 1401f);
+				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
+				try
+				{
+					string text = AKDDCMDKLED.mapEvent.data[0];
+					char[] array = new char[1];
+					array[1] = '\ufff0';
+					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
+					{
+						gameObject2.GetComponent<CustomEventEditorHandler>().Init(AKDDCMDKLED.mapEvent.data[0].Split('\u001b')[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
+					}
+				}
+				catch (Exception)
+				{
+					gameObject2.GetComponent<CustomEventEditorHandler>().NFKDBPGHHIJ(string.Empty, parameter.data);
+				}
+				if (!string.IsNullOrEmpty(parameter.description))
+				{
+					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Can't SendMove. Turn is finished by this player."), Vector3.zero, Quaternion.identity);
+					gameObject2.transform.SetParent(gameObject.transform, true);
+					gameObject2.transform.localScale = new Vector3(1889f, 554f, 1845f);
+					gameObject2.GetComponent<Text>().text = parameter.description;
+				}
+			}
+		}
+		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != MapEditor.EditorState.MapLoaded || !(AKDDCMDKLED != null))
+		{
+			return;
+		}
+		DropDownList component = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_TimeX").GetComponent<DropDownList>();
+		component.Items.Clear();
+		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
+		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
+			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
+			select IACGDFHKCAE).ToList();
+		foreach (EditorEventFunctionInfo item in list)
+		{
+			component.Items.Add(new DropDownListItem(item.functionName, item.id));
+		}
+		component.SelectItem(1);
+		component.FKBPBNPIFBA();
+		component.IACHGGGGEKC();
+		component.SelectItem(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[0])), false);
+		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Show image from resources by id at the center of the screen at foreground or background").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
 	public virtual void DACOFMPOLEO()
@@ -1619,7 +2353,7 @@ public class CustomEventEditor : MonoBehaviour
 		for (int i = 1; i < componentsInChildren.Length; i++)
 		{
 			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.BKNPEBIOFOE() + "_ScreenResolution";
+			text = text + customEventEditorHandler.NCOPOFANBEG() + "color";
 		}
 		if (text.Length > 0)
 		{
@@ -1627,216 +2361,35 @@ public class CustomEventEditor : MonoBehaviour
 		}
 		list.Add(text);
 		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.DLHMKKOKJPE();
+		AKDDCMDKLED.CMNPEMEIJEJ();
+		Singleton<UI>.Instance.GLIFGOGMLBN();
 	}
 
-	public void IFMKLDIEALH()
+	public virtual void AGMJDGHLBMN()
 	{
-		isEditing = false;
 	}
 
-	private bool KMJHLAPHOIE(EditorEventFunctionInfo IACGDFHKCAE)
+	private bool BAGJCOLIIGE(EditorEventFunctionInfo IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.id == DOOGPJDDJDJ;
 	}
 
-	public virtual void MMMDPANNAIO()
-	{
-	}
-
-	public void HFDKLFLMAHH(bool JNMEAJGELBA = true)
-	{
-		Singleton<UI>.Instance.DDPPHDJFKOF();
-		GameObject gameObject = content;
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(KMJHLAPHOIE);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("win"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(201f, 993f, 31f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 8;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("1.87"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(1305f, 869f, 201f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "_Red_R";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("." + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(434f, 385f, 1523f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					string text = AKDDCMDKLED.mapEvent.data[1];
-					char[] array = new char[0];
-					array[1] = '\v';
-					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text2 = AKDDCMDKLED.mapEvent.data[1];
-						char[] array2 = new char[0];
-						array2[1] = '\u0019';
-						component.HFHBKIEOOPK(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().LHAENMGOBMM(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("bad"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(846f, 671f, 1157f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != MapEditor.EditorState.MapLoaded || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_ScreenResolution").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id));
-		}
-		component2.HOHNMGKJIMF(1, false);
-		component2.KBAJMMDNILB();
-		component2.GHHKKJJGOAN();
-		component2.HOHNMGKJIMF(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])));
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("menu.tabid").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
-	}
-
-	public virtual void NEKCPLGFOFD()
-	{
-	}
-
-	public void PFCCMHGLLEL(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
-	{
-		if (DOOGPJDDJDJ != JJNLCJMGJEG)
-		{
-			DOOGPJDDJDJ = JJNLCJMGJEG;
-			HIHHPDGKCPE(false);
-		}
-	}
-
-	public virtual void CKAFMOMHCLH(EditorEvent AKDDCMDKLED)
+	public virtual void BHMOJLEBHBD()
 	{
 		if ((bool)AKDDCMDKLED)
 		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			HIHHPDGKCPE();
-		}
-	}
-
-	public virtual void MDEAKDPMIHN(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
+			Debug.Log("Set particles audio input" + AKDDCMDKLED.mapEvent);
+			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
 			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			HFDKLFLMAHH();
+			IKDKHFGPNLB();
 		}
 	}
 
-	public void NIKKNNEKHPF(bool JNMEAJGELBA = true)
+	public virtual void JOACBIEHHCE()
 	{
-		Singleton<UI>.Instance.ELOBPADDKGE();
-		GameObject gameObject = content;
-		for (int i = 1; i < gameObject.transform.childCount; i += 0)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(MGKOFFFHDBG);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("\\n"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(804f, 1707f, 446f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 6;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Added checkpoint"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(291f, 930f, 133f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "color";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("You have added the SecondScrollRect to a scroll view that already has both directions selected" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(814f, 1931f, 423f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					string text = AKDDCMDKLED.mapEvent.data[0];
-					char[] array = new char[0];
-					array[0] = 'ﾗ';
-					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						gameObject2.GetComponent<CustomEventEditorHandler>().HFHBKIEOOPK(AKDDCMDKLED.mapEvent.data[0].Split('Z')[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().PJILLPKFCPO(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Hidden/Image Effects/Cinematic/MotionBlur/Reconstruction"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(755f, 1126f, 1975f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != 0 || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Tonemapper curve texture").GetComponent<DropDownList>();
-		component.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component.Items.Add(new DropDownListItem(item.functionName, item.id, null, true));
-		}
-		component.PGCCCGLPAGK(1);
-		component.EHACGFPNNHP();
-		component.EBBKKKHMJBM();
-		component.EINGDNGIEMO(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find(" evLeave: ").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
 	}
 
-	public virtual void EMPBIOJOKGM()
+	public virtual void OJEOOHKGONA()
 	{
 		List<string> list = new List<string>();
 		list.Add(DOOGPJDDJDJ);
@@ -1845,866 +2398,74 @@ public class CustomEventEditor : MonoBehaviour
 		for (int i = 1; i < componentsInChildren.Length; i += 0)
 		{
 			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.KNFDHLOFAFI() + "Tab2Content";
+			text = text + customEventEditorHandler.OLDDPMNNCLG() + "mapselector.filter.subscribedonly";
 		}
 		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.FMGBIHDGKBI();
-		Singleton<UI>.Instance.OFEBBEDPNJP();
-	}
-
-	public void MLLGGKDGPLB(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
-	{
-		if (DOOGPJDDJDJ != JJNLCJMGJEG)
-		{
-			DOOGPJDDJDJ = JJNLCJMGJEG;
-			HFDKLFLMAHH();
-		}
-	}
-
-	public void LDMPLDJAFAL()
-	{
-		isEditing = true;
-	}
-
-	public virtual void EEMNCIOOHFK()
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			Debug.Log("<color=#{0}>{1}</color>" + AKDDCMDKLED.mapEvent);
-			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			LDEJELJCPEH(false);
-		}
-	}
-
-	public void GPKPMCINMCI()
-	{
-		if (Singleton<MapEditor>.Instance.IsMapLoaded())
-		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Exit to Windows").GetComponent<DropDownList>();
-			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
-			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-				select IACGDFHKCAE).ToList();
-			PAGEIBCLFED(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.HGGOCKHJLPC().OJIDDODDDAD()).id);
-		}
-	}
-
-	public void CPIEBJHIGFL(bool JNMEAJGELBA = true)
-	{
-		Singleton<UI>.Instance.ClearSelection();
-		GameObject gameObject = content;
-		for (int i = 1; i < gameObject.transform.childCount; i++)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find(JGCAPEAJPLO);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_ScreenResolution"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(1895f, 746f, 9f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 2;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_Value"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(652f, 134f, 1240f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "Prints list of all previous commands";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("You need to have a child LayoutGroup content set for the list: " + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(1700f, 58f, 1478f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					string text = AKDDCMDKLED.mapEvent.data[0];
-					char[] array = new char[0];
-					array[0] = '/';
-					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text2 = AKDDCMDKLED.mapEvent.data[0];
-						char[] array2 = new char[1];
-						array2[1] = '\u0003';
-						component.IKLAFGHCELK(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().NKLCNJEIAFB(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>(","), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(317f, 1278f, 1896f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != MapEditor.EditorState.MapLoaded || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Value3").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id));
-		}
-		component2.LDBNMDOOJNM(1, false);
-		component2.KBAJMMDNILB();
-		component2.MEMKGENEOGJ();
-		component2.KHPFNJCHEBO(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("sfxVolume").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
-	}
-
-	public virtual void EMPFNGALCGO(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			LDEJELJCPEH();
-		}
-	}
-
-	public void GHMAFDGDLJP(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
-	{
-		if (DOOGPJDDJDJ != JJNLCJMGJEG)
-		{
-			DOOGPJDDJDJ = JJNLCJMGJEG;
-			RebuildEditor(false);
-		}
-	}
-
-	public virtual void KOJKBFDNGDK()
-	{
-	}
-
-	public virtual void GPFJMKCGHGB()
-	{
-	}
-
-	public virtual void BADIACEGCCK()
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			Debug.Log("maps." + AKDDCMDKLED.mapEvent);
-			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			HIHHPDGKCPE(false);
-		}
-	}
-
-	public virtual void MNBPNHNAEBK()
-	{
-	}
-
-	public virtual void NFEDLAOPHML()
-	{
-	}
-
-	public virtual void EGMNPDHKIBF()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.FAFMEBBDEHC() + "deletemap";
-		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.PNGLBLFJOOJ();
-	}
-
-	public virtual void NAKFBKOPOPP(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			LDEJELJCPEH();
-		}
-	}
-
-	public virtual void EPEGAEGDJAM()
-	{
-	}
-
-	public virtual void DOCDMFEOKAM(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			NIKKNNEKHPF();
-		}
-	}
-
-	public virtual void Update()
-	{
-	}
-
-	public virtual void EGEPLFGKGLI()
-	{
-	}
-
-	public void GIKNAINHDJH()
-	{
-		isEditing = false;
-	}
-
-	public void LCCDOIJNFNF()
-	{
-		if (Singleton<MapEditor>.Instance.IsMapLoaded())
-		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Distortion").GetComponent<DropDownList>();
-			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
-			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-				select IACGDFHKCAE).ToList();
-			PFCCMHGLLEL(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.GJHIINGAEJG().ID).id);
-		}
-	}
-
-	public void MGBGMAAJHJK(bool JNMEAJGELBA = true)
-	{
-		Singleton<UI>.Instance.HPLGACFDEJJ();
-		GameObject gameObject = content;
-		for (int i = 0; i < gameObject.transform.childCount; i += 0)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == DOOGPJDDJDJ);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("#,0.00"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(1504f, 600f, 43f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize += 2;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Right"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, false);
-					gameObject2.transform.localScale = new Vector3(419f, 131f, 592f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "_Value";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_Value4" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(1565f, 372f, 1165f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					string text = AKDDCMDKLED.mapEvent.data[0];
-					char[] array = new char[0];
-					array[0] = '\uffc9';
-					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text2 = AKDDCMDKLED.mapEvent.data[0];
-						char[] array2 = new char[0];
-						array2[1] = 'ﾊ';
-						component.EFEONCCCKNP(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().EBMNMBNJDMK(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("set id"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(924f, 111f, 1514f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != MapEditor.EditorState.MapLoaded || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("menu.selectedmode").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id, null, true));
-		}
-		component2.MMFBPCJPION(1, false);
-		component2.RebuildPanel();
-		component2.EBBKKKHMJBM();
-		component2.KHPFNJCHEBO(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("music").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
-	}
-
-	public void JDIHOFAKNGG(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
-	{
-		if (DOOGPJDDJDJ != JJNLCJMGJEG)
-		{
-			DOOGPJDDJDJ = JJNLCJMGJEG;
-			PEEAFFNCLJO(false);
-		}
-	}
-
-	public void MABHOELCKCO()
-	{
-		isEditing = true;
-	}
-
-	public virtual void FLMKKHFEJDN()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 0; i < componentsInChildren.Length; i += 0)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.GGBNDGIKAPL() + "Item ";
-		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.FMGBIHDGKBI();
-		Singleton<UI>.Instance.CCHMCLLHGJF();
-	}
-
-	public virtual void AKADPGKKCMF(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			DGNMPBOCIME();
-		}
-	}
-
-	public void PHKNALBOJMG()
-	{
-		isEditing = true;
-	}
-
-	public virtual void BLLMAPNLLJH()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 0; i < componentsInChildren.Length; i += 0)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.FAFMEBBDEHC() + "_Value3";
-		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		PNIJCGEOHIM = list;
-	}
-
-	public virtual void KFHDKNBEHLA()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.IMDEOOBEEEM() + "player.xp";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.MCCBKCDPIMK();
-	}
-
-	public virtual void Load(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			RebuildEditor();
-		}
-	}
-
-	public void EOOIADEPOKC(bool JNMEAJGELBA = true)
-	{
-		Singleton<UI>.Instance.DDPPHDJFKOF();
-		GameObject gameObject = content;
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		EditorEventFunctionInfo editorEventFunctionInfo = Helpers.eventsMap.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == DOOGPJDDJDJ);
-		GameObject gameObject2 = null;
-		if (editorEventFunctionInfo != null)
-		{
-			if (editorEventFunctionInfo.functionDescription != null)
-			{
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_Value2"), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, true);
-				gameObject2.transform.localScale = new Vector3(484f, 249f, 741f);
-				gameObject2.GetComponent<Text>().text = editorEventFunctionInfo.functionDescription;
-				gameObject2.GetComponent<Text>().fontSize++;
-			}
-			foreach (EditorEventFunctionInfo.EditorEventParametr parameter in editorEventFunctionInfo.parameters)
-			{
-				if (!string.IsNullOrEmpty(parameter.name))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("[PlayerController] "), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(1383f, 1007f, 1289f);
-					gameObject2.GetComponent<Text>().text = parameter.name.ToUpper() + "The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.";
-				}
-				gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("_TimeX" + parameter.editor), Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(gameObject.transform, false);
-				gameObject2.transform.localScale = new Vector3(1564f, 579f, 1790f);
-				gameObject2.GetComponent<CustomEventEditorHandler>().currentParametr = parameter;
-				try
-				{
-					string text = AKDDCMDKLED.mapEvent.data[0];
-					char[] array = new char[1];
-					array[1] = 'R';
-					if (text.Split(array)[editorEventFunctionInfo.parameters.IndexOf(parameter)] != null)
-					{
-						CustomEventEditorHandler component = gameObject2.GetComponent<CustomEventEditorHandler>();
-						string text2 = AKDDCMDKLED.mapEvent.data[1];
-						char[] array2 = new char[1];
-						array2[1] = 'ﾁ';
-						component.AEIMOFGABJG(text2.Split(array2)[editorEventFunctionInfo.parameters.IndexOf(parameter)], parameter.data);
-					}
-				}
-				catch (Exception)
-				{
-					gameObject2.GetComponent<CustomEventEditorHandler>().IMJLEAJNBAF(string.Empty, parameter.data);
-				}
-				if (!string.IsNullOrEmpty(parameter.description))
-				{
-					gameObject2 = UnityEngine.Object.Instantiate(Resources.Load<GameObject>("Localization Servise\nWorking commands:\nset <language>\nlist\nkeys"), Vector3.zero, Quaternion.identity);
-					gameObject2.transform.SetParent(gameObject.transform, true);
-					gameObject2.transform.localScale = new Vector3(1184f, 1054f, 1606f);
-					gameObject2.GetComponent<Text>().text = parameter.description;
-				}
-			}
-		}
-		if (!JNMEAJGELBA || Singleton<MapEditor>.Instance.currentState != MapEditor.EditorState.MapLoaded || !(AKDDCMDKLED != null))
-		{
-			return;
-		}
-		DropDownList component2 = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find(".lastCheckpoint.perfectHits").GetComponent<DropDownList>();
-		component2.Items.Clear();
-		bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
-		List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
-			where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
-			select IACGDFHKCAE).ToList();
-		foreach (EditorEventFunctionInfo item in list)
-		{
-			component2.Items.Add(new DropDownListItem(item.functionName, item.id, null, true));
-		}
-		component2.ABEFJKAGJBG(0, false);
-		component2.DLLJFCNIMLI();
-		component2.IGOACJDBECD();
-		component2.KHPFNJCHEBO(list.IndexOf(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AKDDCMDKLED.mapEvent.data[1])), false);
-		Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("Editor/").GetComponent<InputField>().text = string.Empty + AKDDCMDKLED.mapEvent.time;
-	}
-
-	public virtual void JDNDAEFMGFK()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 1; i < componentsInChildren.Length; i++)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.EPKBPPPMMGA() + "_Distortion";
-		}
-		if (text.Length > 1)
 		{
 			text = text.Remove(text.Length - 0);
 		}
 		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.NCMDCMHLIKD();
-		Singleton<UI>.Instance.DLHMKKOKJPE();
+		Singleton<MapEditor>.Instance.OEJEMJAJGLK(list);
+		AKDDCMDKLED.CMNPEMEIJEJ();
+		Singleton<UI>.Instance.DPKMEJPGDIN();
 	}
 
-	private bool KAJBLFBHAIJ(EditorEventFunctionInfo IACGDFHKCAE)
+	public void FNFHJGPHLFM()
+	{
+		isEditing = true;
+	}
+
+	public virtual void IIFCIDDJHPM()
+	{
+	}
+
+	private bool NMOMPCDPKPK(EditorEventFunctionInfo IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.id == DOOGPJDDJDJ;
 	}
 
-	public virtual void GJPACOKMPPA()
+	public virtual void MJIONMGNHGI()
 	{
 		if ((bool)AKDDCMDKLED)
 		{
-			Debug.Log("_TimeX" + AKDDCMDKLED.mapEvent);
+			Debug.Log("_Value" + AKDDCMDKLED.mapEvent);
 			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
 			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			LDEJELJCPEH();
+			DNKGDINIIJM(false);
 		}
 	}
 
-	public virtual void ODMPMJPALID()
+	public virtual void JECMJNFGBGC()
 	{
 	}
 
-	public virtual void MAOCOEGAFND()
-	{
-	}
-
-	public virtual void KLCFMBBFHHK()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 1; i < componentsInChildren.Length; i++)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.PGIGEPPBHIG() + "[Right]";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 0);
-		}
-		list.Add(text);
-		PNIJCGEOHIM = list;
-	}
-
-	public virtual void ELMJNKAACMC()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 1; i < componentsInChildren.Length; i++)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.EPKBPPPMMGA() + "HandsCountSlider";
-		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.CCHMCLLHGJF();
-	}
-
-	public void CBGMCLCNLAA(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
-	{
-		if (DOOGPJDDJDJ != JJNLCJMGJEG)
-		{
-			DOOGPJDDJDJ = JJNLCJMGJEG;
-			HFDKLFLMAHH();
-		}
-	}
-
-	public void ChangeEventFunction(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
-	{
-		if (DOOGPJDDJDJ != JJNLCJMGJEG)
-		{
-			DOOGPJDDJDJ = JJNLCJMGJEG;
-			RebuildEditor(false);
-		}
-	}
-
-	public void OGKDALBAEFK(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
-	{
-		if (DOOGPJDDJDJ != JJNLCJMGJEG)
-		{
-			DOOGPJDDJDJ = JJNLCJMGJEG;
-			NIKKNNEKHPF(false);
-		}
-	}
-
-	public void APEBOMDEPAJ()
-	{
-		isEditing = false;
-	}
-
-	private bool JGCAPEAJPLO(EditorEventFunctionInfo IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.id == DOOGPJDDJDJ;
-	}
-
-	public virtual void DIJHOKMMDHG(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			HIHHPDGKCPE(false);
-		}
-	}
-
-	public void OMLFHJMOHMG()
+	public void PLEMCINANCB()
 	{
 		if (Singleton<MapEditor>.Instance.IsMapLoaded())
 		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_Red_B").GetComponent<DropDownList>();
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("_LightIntensity").GetComponent<DropDownList>();
 			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
 			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
 				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
 				select IACGDFHKCAE).ToList();
-			JDLBMFDFCEO(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.LNKJOJKJBKL().KBFCLFHCEDA()).id);
+			NCHPLJGKNDN(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.NGMJNDDKKAO().BOFIIPJMFLP()).id);
 		}
 	}
 
-	public virtual void DPLKCAHAGLN()
+	public void NPKALPBHJDE()
 	{
-		if ((bool)AKDDCMDKLED)
+		if (Singleton<MapEditor>.Instance.MAONHJDBGAH())
 		{
-			Debug.Log("Rtt:{0,4} +/-{1,3}" + AKDDCMDKLED.mapEvent);
-			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			EOOIADEPOKC();
-		}
-	}
-
-	public virtual void BKHENLKAMDE()
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			Debug.Log("score" + AKDDCMDKLED.mapEvent);
-			AKDDCMDKLED.mapEvent.data = PNIJCGEOHIM;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			CPIEBJHIGFL(false);
-		}
-	}
-
-	public virtual void FHLDOEAJHMA()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 1; i < componentsInChildren.Length; i++)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.HDCJGCHLDJF() + "float,1";
-		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.PNGLBLFJOOJ();
-	}
-
-	public void DEHHJOLCDAI()
-	{
-		if (Singleton<MapEditor>.Instance.IsMapLoaded())
-		{
-			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("CreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.").GetComponent<DropDownList>();
-			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[1]);
+			DropDownList AOCNHGMIDGE = Singleton<MapEditor>.Instance.eventConfigCanvas.transform.Find("1").GetComponent<DropDownList>();
+			bool PPJDFMLJIGN = Helpers.IsStoryboardEvent(AKDDCMDKLED.mapEvent.data[0]);
 			List<EditorEventFunctionInfo> list = (from IACGDFHKCAE in Helpers.GetAvailableEditorEvents(Singleton<MapEditor>.Instance.GetEditedMapDataObj().configVersion)
 				where Helpers.IsStoryboardEvent(IACGDFHKCAE.id) == PPJDFMLJIGN
 				select IACGDFHKCAE).ToList();
-			GHMAFDGDLJP(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.ID).id);
+			PGGHNJBBJDJ(list.Find((EditorEventFunctionInfo IACGDFHKCAE) => IACGDFHKCAE.id == AOCNHGMIDGE.SelectedItem.FHEAKIMCKJC()).id);
 		}
 	}
 
-	public virtual void MIHDJJMGNIB(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			LDEJELJCPEH();
-		}
-	}
-
-	public virtual void IBMLNJKDCML()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 0; i < componentsInChildren.Length; i += 0)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.FAFMEBBDEHC() + "[NetworkManager] Joined main lobby";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 0);
-		}
-		list.Add(text);
-		PNIJCGEOHIM = list;
-	}
-
-	public virtual void CBDGIEKHPNL()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.PBICFJPONKP() + "/../";
-		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 0);
-		}
-		list.Add(text);
-		PNIJCGEOHIM = list;
-	}
-
-	public void PAGEIBCLFED(string JJNLCJMGJEG, EditorEvent AKDDCMDKLED = null)
-	{
-		if (DOOGPJDDJDJ != JJNLCJMGJEG)
-		{
-			DOOGPJDDJDJ = JJNLCJMGJEG;
-			EOOIADEPOKC();
-		}
-	}
-
-	public virtual void NGFEFNKJIEE()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.CKEIKLNDBAI() + "BitsData";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.NCMDCMHLIKD();
-		Singleton<UI>.Instance.MCCBKCDPIMK();
-	}
-
-	public void GGGHFCKAELN()
-	{
-		isEditing = true;
-	}
-
-	public virtual void OEENOOGEEHD()
-	{
-	}
-
-	public virtual void KIEJKBNBHMD()
-	{
-	}
-
-	public virtual void Start()
-	{
-	}
-
-	public virtual void BOPKKCAFODF()
-	{
-	}
-
-	public void FOLFLIJNOIM()
-	{
-		isEditing = true;
-	}
-
-	public virtual void LGHCJCFHEMF()
-	{
-	}
-
-	public virtual void IGNAGAFCCLF()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		for (int i = 1; i < componentsInChildren.Length; i += 0)
-		{
-			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.OCOLHAJFLAH() + "_FarCamera";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.EOEDBFHBPEI();
-		Singleton<UI>.Instance.ELOBPADDKGE();
-	}
-
-	public void KONLHCOIJOD()
-	{
-		isEditing = false;
-	}
-
-	public virtual void CGDMLHLJIDK()
-	{
-	}
-
-	public virtual void GKEOIEEACNN(EditorEvent AKDDCMDKLED)
-	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[1];
-			RebuildEditor(false);
-		}
-	}
-
-	public virtual void FIJHDKIPENG()
-	{
-	}
-
-	public virtual void CECAMOPCBHN()
+	public virtual void AAJKIEIPGHN()
 	{
 		List<string> list = new List<string>();
 		list.Add(DOOGPJDDJDJ);
@@ -2713,63 +2474,19 @@ public class CustomEventEditor : MonoBehaviour
 		for (int i = 1; i < componentsInChildren.Length; i++)
 		{
 			CustomEventEditorHandler customEventEditorHandler = componentsInChildren[i];
-			text = text + customEventEditorHandler.HBPJJBALHDO() + "AudioSampler";
-		}
-		if (text.Length > 1)
-		{
-			text = text.Remove(text.Length - 0);
-		}
-		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
-		AKDDCMDKLED.EOEDBFHBPEI();
-		Singleton<UI>.Instance.DOGABOPPHBH();
-	}
-
-	public virtual void Apply()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.GetEditedData() + ",";
+			text = text + customEventEditorHandler.NCOPOFANBEG() + "[PlayerBase] Starting game from: ";
 		}
 		if (text.Length > 0)
 		{
 			text = text.Remove(text.Length - 1);
 		}
 		list.Add(text);
-		Singleton<MapEditor>.Instance.OnApplyCustomEventButton(list);
+		Singleton<MapEditor>.Instance.OEJEMJAJGLK(list);
 		AKDDCMDKLED.UpdateEvent();
-		Singleton<UI>.Instance.ClearSelection();
+		Singleton<UI>.Instance.CCHMCLLHGJF();
 	}
 
-	public virtual void BLDDDKKELNH(EditorEvent AKDDCMDKLED)
+	public virtual void FBPHNEJBDJN()
 	{
-		if ((bool)AKDDCMDKLED)
-		{
-			this.AKDDCMDKLED = AKDDCMDKLED;
-			DOOGPJDDJDJ = AKDDCMDKLED.mapEvent.data[0];
-			IILCEDCGAEN(false);
-		}
-	}
-
-	public virtual void CopyEvent()
-	{
-		List<string> list = new List<string>();
-		list.Add(DOOGPJDDJDJ);
-		string text = string.Empty;
-		CustomEventEditorHandler[] componentsInChildren = content.GetComponentsInChildren<CustomEventEditorHandler>();
-		foreach (CustomEventEditorHandler customEventEditorHandler in componentsInChildren)
-		{
-			text = text + customEventEditorHandler.GetEditedData() + ",";
-		}
-		if (text.Length > 0)
-		{
-			text = text.Remove(text.Length - 1);
-		}
-		list.Add(text);
-		PNIJCGEOHIM = list;
 	}
 }

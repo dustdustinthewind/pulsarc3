@@ -11,42 +11,7 @@ public class EditorEvent : MonoBehaviour
 	{
 		internal string EHGADNHGPNC;
 
-		internal bool PBCAHKDLFPE(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool FFEGPHJKMFK(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool LOEAMHGMMPK(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool KFNBKFELFLH(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool DKGPCPBNDPK(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
 		internal bool BKNHHGBPLGH(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool DBFPGFHEGKA(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool BDGDIDPDBHG(MapResource IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.name == EHGADNHGPNC;
 		}
@@ -56,37 +21,7 @@ public class EditorEvent : MonoBehaviour
 			return IACGDFHKCAE.name == EHGADNHGPNC;
 		}
 
-		internal bool JKEDCEOCPJO(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool EKHOOPGPPGE(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool FIPCLHEKKCA(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool OFHCGKJFGDI(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool OLIGLEMPFOP(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool AEINPAGJFME(MapResource IACGDFHKCAE)
-		{
-			return IACGDFHKCAE.name == EHGADNHGPNC;
-		}
-
-		internal bool LNDGINDKPFA(MapResource IACGDFHKCAE)
+		internal bool GBKBDKHPLKG(MapResource IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.name == EHGADNHGPNC;
 		}
@@ -96,12 +31,42 @@ public class EditorEvent : MonoBehaviour
 			return IACGDFHKCAE.name == EHGADNHGPNC;
 		}
 
-		internal bool BFEABMIFIEE(MapResource IACGDFHKCAE)
+		internal bool DBFPGFHEGKA(MapResource IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.name == EHGADNHGPNC;
 		}
 
-		internal bool GBKBDKHPLKG(MapResource IACGDFHKCAE)
+		internal bool LOEAMHGMMPK(MapResource IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.name == EHGADNHGPNC;
+		}
+
+		internal bool BDGDIDPDBHG(MapResource IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.name == EHGADNHGPNC;
+		}
+
+		internal bool AEINPAGJFME(MapResource IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.name == EHGADNHGPNC;
+		}
+
+		internal bool KFNBKFELFLH(MapResource IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.name == EHGADNHGPNC;
+		}
+
+		internal bool LNDGINDKPFA(MapResource IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.name == EHGADNHGPNC;
+		}
+
+		internal bool PBCAHKDLFPE(MapResource IACGDFHKCAE)
+		{
+			return IACGDFHKCAE.name == EHGADNHGPNC;
+		}
+
+		internal bool JKEDCEOCPJO(MapResource IACGDFHKCAE)
 		{
 			return IACGDFHKCAE.name == EHGADNHGPNC;
 		}
@@ -155,507 +120,37 @@ public class EditorEvent : MonoBehaviour
 		}
 	}
 
-	private static bool FKLAAPLBCOH(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private static bool LDOPDBNCNHE(MapEditor.EventsCanvas IACGDFHKCAE)
+	private static bool MICOIKOLKFC(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
 	}
 
-	private void BNIFJJAMLBE()
+	private static bool NCALDGPEJCK(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
-		LOJGIJBDOON(false);
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
 	}
 
-	public void FOLDDNELMIO()
+	private static bool EAGEEGBCNFD(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[1]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("_Convolved_TexelSize", new Color(1779f, 1849f, 1653f));
-			GetComponentInChildren<Renderer>().material.SetColor("_ScreenResolution", new Color(1754f, 486f, 362f));
-			if (mapEvent.data[0] == "0.00")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>(" ")[1];
-					imageRight.color = color;
-					iconSprite.SetActive(false);
-					imageRight.gameObject.SetActive(false);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log(": " + ex.Message);
-				}
-			}
-			if (mapEvent.data[0] == "_ScreenResolution")
-			{
-				scaleMult.y = 1929f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("#yes", new Color(578f, 1923f, 1953f));
-					GetComponentInChildren<Renderer>().material.SetColor("_FarCamera", new Color(577f, 1793f, 1139f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("VIGNETTE_BLUR" + ex2.Message);
-				}
-			}
-			if (mapEvent.data[1] == "CameraFilterPack/Color_Switching")
-			{
-				try
-				{
-					string text = mapEvent.data[0];
-					char[] array = new char[1];
-					array[1] = 'ﾇ';
-					string[] array2 = text.Split(array);
-					if (array2.Length > 1)
-					{
-						string EHGADNHGPNC = array2[0];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(1754f, 1241f, 219f);
-							imageRight.color = new Color(856f, 1763f, 1413f);
-						}
-						iconSprite.SetActive(true);
-						imageRight.gameObject.SetActive(true);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("_EmissionColor" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[1] == "_Value2")
-			{
-				try
-				{
-					int num = 0;
-					string text2 = mapEvent.data[1];
-					char[] array3 = new char[0];
-					array3[1] = '\u0001';
-					num = ((text2.Split(array3).Length != 0) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(KCMFAIDMPHH)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(LBAKJBNGMNA)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>(" ")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("BitsData" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[1] == "Offline")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("Uploading preview image")[8];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(true);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("SfxVolumeSlider" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("_LightIntensity", new Color(438f, 362f, 531f));
-			GetComponentInChildren<Renderer>().material.SetColor("CorrectHitsScoreText", new Color(463f, 1134f, 1382f));
-		}
-		lastDataCount = mapEvent.data.Count;
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
 	}
 
-	public void BMJFKHIKEAJ()
+	private static bool GALCPMGJDGC(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[0]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("_FgCocMask", new Color(920f, 393f, 1228f));
-			GetComponentInChildren<Renderer>().material.SetColor("file://", new Color(154f, 367f, 1040f));
-			if (mapEvent.data[0] == "_TimeX")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[0]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("_AccumulationTex")[1];
-					imageRight.color = color;
-					iconSprite.SetActive(true);
-					imageRight.gameObject.SetActive(false);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("Can not SetMasterClient(). Not in room or in offlineMode." + ex.Message);
-				}
-			}
-			if (mapEvent.data[0] == "LevelConfigButton")
-			{
-				scaleMult.y = 1817f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("_Red_G", new Color(238f, 582f, 1441f));
-					GetComponentInChildren<Renderer>().material.SetColor("yes", new Color(1428f, 573f, 594f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("maxScore" + ex2.Message);
-				}
-			}
-			if (mapEvent.data[0] == "2hands")
-			{
-				try
-				{
-					string text = mapEvent.data[1];
-					char[] array = new char[1];
-					array[1] = 'ﾭ';
-					string[] array2 = text.Split(array);
-					if (array2.Length > 0)
-					{
-						string EHGADNHGPNC = array2[1];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(1385f, 1400f, 302f);
-							imageRight.color = new Color(86f, 1582f, 574f);
-						}
-						iconSprite.SetActive(false);
-						imageRight.gameObject.SetActive(false);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("_TimeX" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[0] == "inventory.itemscash")
-			{
-				try
-				{
-					int num = 1;
-					string text2 = mapEvent.data[1];
-					char[] array3 = new char[0];
-					array3[0] = 'ﾉ';
-					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find((string IACGDFHKCAE) => IACGDFHKCAE.Contains(mapEvent.data[1].Split(',')[0]))) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(CPPLPBFAIBO)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("_TimeX")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("\"" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[0] == "CameraFilterPack_Glasses_On6")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("CameraFilterPack/Blur_GaussianBlur")[3];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("_Cible" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("_TimeX", new Color(1838f, 555f, 1311f));
-			GetComponentInChildren<Renderer>().material.SetColor(".", new Color(1801f, 1536f, 389f));
-		}
-		lastDataCount = mapEvent.data.Count;
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
 	}
 
-	[SpecialName]
-	public bool GFMIFIOKKGJ()
-	{
-		return LJBEFJHAOFL;
-	}
-
-	private bool AOBLNJDMLLK(string IACGDFHKCAE)
+	private bool BBDFHOKCDPG(string IACGDFHKCAE)
 	{
 		string text = mapEvent.data[0];
-		char[] array = new char[0];
-		array[1] = '\ufff4';
-		return IACGDFHKCAE.Contains(text.Split(array)[0]);
+		char[] array = new char[1];
+		array[1] = 'ﾓ';
+		return IACGDFHKCAE.Contains(text.Split(array)[1]);
 	}
 
-	[SpecialName]
-	public bool FBCONJMBJMH()
+	private bool EEIGDBBFLEM(string IACGDFHKCAE)
 	{
-		return LJBEFJHAOFL;
-	}
-
-	public void PCDCKOJLIJC()
-	{
-		Vector3 localPosition = base.transform.localPosition;
-		if (mapEvent.time < 814f)
-		{
-			mapEvent.time = 1867f;
-		}
-		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
-		{
-			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
-		}
-		localPosition.x = mapEvent.time;
-		localPosition.y = HFNPJDMIFCL();
-		base.transform.localPosition = localPosition;
-	}
-
-	private static bool BDABIDDODJC(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	private float HFNPJDMIFCL()
-	{
-		if (mapEvent != null && mapEvent.data != null && mapEvent.data[1] != null)
-		{
-			if (mapEvent.data[1] == "_Offsets")
-			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find(KIPPBGFAFLD).grid.position.y;
-			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[1])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(NECGDADKKFM).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(HINDGEPGJOF).grid.position.y;
-		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(LJOOLGKAAHB).grid.position.y;
-	}
-
-	private static bool HECJFKFFMGB(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private static bool CIBIJBBLJNH(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private float OOEPFAOEBHB()
-	{
-		if (mapEvent != null && mapEvent.data != null && mapEvent.data[1] != null)
-		{
-			if (mapEvent.data[1] == "/icon")
-			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find(KGDBIEJPJNK).grid.position.y;
-			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[1])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find((MapEditor.EventsCanvas IACGDFHKCAE) => IACGDFHKCAE.forType == MapEditor.EventType.Gameplay).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(KCNPDDGNAEK).grid.position.y;
-		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(CIBIJBBLJNH).grid.position.y;
-	}
-
-	public void CKLFGILMMDL()
-	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[1]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("_ProjInfo", new Color(1544f, 1083f, 1948f));
-			GetComponentInChildren<Renderer>().material.SetColor("[Down]", new Color(1094f, 1934f, 215f));
-			if (mapEvent.data[1] == "_Color")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("CameraFilterPack/3D_Myst")[1];
-					imageRight.color = color;
-					iconSprite.SetActive(false);
-					imageRight.gameObject.SetActive(true);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("Set particles audio input" + ex.Message);
-				}
-			}
-			if (mapEvent.data[1] == "StartButton")
-			{
-				scaleMult.y = 381f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("_Intensity", new Color(1701f, 1397f, 1588f));
-					GetComponentInChildren<Renderer>().material.SetColor("_Value2", new Color(1263f, 1157f, 11f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("_ColorB" + ex2.Message);
-				}
-			}
-			if (mapEvent.data[0] == "SaveButton")
-			{
-				try
-				{
-					string text = mapEvent.data[0];
-					char[] array = new char[0];
-					array[0] = 'ﾵ';
-					string[] array2 = text.Split(array);
-					if (array2.Length > 1)
-					{
-						string EHGADNHGPNC = array2[1];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(211f, 1107f, 777f);
-							imageRight.color = new Color(1805f, 387f, 221f);
-						}
-						iconSprite.SetActive(true);
-						imageRight.gameObject.SetActive(false);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("settings_bindings_" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[1] == "CameraFilterPack/Color_Sepia")
-			{
-				try
-				{
-					int num = 0;
-					string text2 = mapEvent.data[1];
-					char[] array3 = new char[0];
-					array3[1] = '5';
-					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(OKMGILHPEHB)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(LBAKJBNGMNA)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("/icon")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(true);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("_Value4" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[0] == "_Value4")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("_Value1")[3];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("table" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("EventSystem", new Color(1769f, 379f, 1356f));
-			GetComponentInChildren<Renderer>().material.SetColor("EditMenu", new Color(88f, 1225f, 1399f));
-		}
-		lastDataCount = mapEvent.data.Count;
-	}
-
-	private static bool ADHOMACBAMM(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private static bool OAEOHOFMJEJ(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	private static bool ACFEOHCIDLJ(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	private void ELJPNLNELIE()
-	{
-		PIPHIBLIIKK(true);
-	}
-
-	private static bool NLKEBCFDNHP(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	[SpecialName]
-	public void FDJEEBJHHKK(bool DPNHODJHGJL)
-	{
-		LJBEFJHAOFL = DPNHODJHGJL;
-		selectedMarker.SetActive(LJBEFJHAOFL);
-	}
-
-	private void IOMCHHBGJEC()
-	{
-		isSelected = true;
-	}
-
-	private static bool KCNPDDGNAEK(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private void Awake()
-	{
-		isSelected = false;
-	}
-
-	private void CHJFFPOBNLO()
-	{
-		LOJGIJBDOON(true);
-	}
-
-	private static bool HBMEMAGJILM(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	public void KFACDBHDAOD()
-	{
-		if (bitObj != null && bitObj.activeSelf)
-		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 1102f, scaleMult.y, scaleMult.z);
-		}
-		if (iconSprite != null && iconSprite.activeSelf)
-		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 179f, Camera.main.orthographicSize / 409f, 1819f);
-		}
+		return IACGDFHKCAE.Contains(mapEvent.data[0].Split('ﾒ')[0]);
 	}
 
 	public void UpdatePositionFromData()
@@ -674,60 +169,272 @@ public class EditorEvent : MonoBehaviour
 		base.transform.localPosition = localPosition;
 	}
 
-	public void EABEPBGOBNE()
+	private void Awake()
 	{
-		LOJGIJBDOON(true);
-		BNMJMGDKKJB();
+		isSelected = false;
 	}
 
-	public void EKAHIBEHDLJ()
+	public void IOCMKABIBOC()
+	{
+		BKEDJGGEIGB(true);
+		GKKAJOHEJCG();
+	}
+
+	private void NLNAJMCBNDC()
+	{
+		MFEPCILLECI(true);
+	}
+
+	public void CNDHFHFNCOM()
+	{
+		BCLLPELLKKP(true);
+		KDHAMIJPEIO();
+	}
+
+	public void Deselect()
+	{
+		isSelected = false;
+		UpdateIcon();
+	}
+
+	public void PFONHMPKABG()
+	{
+		AJHMKMAHDFK(false);
+		MLNPNMLBKHI();
+	}
+
+	public void PBEPCAPAKLG()
+	{
+		if (bitObj != null && bitObj.activeSelf)
+		{
+			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 887f, scaleMult.y, scaleMult.z);
+		}
+		if (iconSprite != null && iconSprite.activeSelf)
+		{
+			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 245f, Camera.main.orthographicSize / 1058f, 1765f);
+		}
+	}
+
+	private static bool CAJOHGJJBDL(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	private static bool EBNNEAENKPE(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	private static bool KPCNFNPFPJB(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	public void EKAGILPDBCN()
+	{
+		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
+		{
+			return;
+		}
+		iconSprite.SetActive(false);
+		imageRight.gameObject.SetActive(false);
+		imageCenter.gameObject.SetActive(true);
+		if (!string.IsNullOrEmpty(mapEvent.data[1]))
+		{
+			GetComponentInChildren<Renderer>().material.SetColor("_Bullet_4", new Color(1927f, 1360f, 999f));
+			GetComponentInChildren<Renderer>().material.SetColor("_Brightness", new Color(1395f, 320f, 796f));
+			if (mapEvent.data[0] == "/")
+			{
+				try
+				{
+					Color color = Helpers.StringToColor(mapEvent.data[0]);
+					imageRight.sprite = Resources.LoadAll<Sprite>("InfoText")[0];
+					imageRight.color = color;
+					iconSprite.SetActive(false);
+					imageRight.gameObject.SetActive(false);
+				}
+				catch (Exception ex)
+				{
+					Debug.Log("[MapsData] Workshop maps was loaded" + ex.Message);
+				}
+			}
+			if (mapEvent.data[1] == "settings.cameramovements")
+			{
+				scaleMult.y = 190f;
+				try
+				{
+					GetComponentInChildren<Renderer>().material.SetColor("_TileMaxLoop", new Color(483f, 705f, 1457f));
+					GetComponentInChildren<Renderer>().material.SetColor("[Left]", new Color(657f, 462f, 773f));
+				}
+				catch (Exception ex2)
+				{
+					Debug.Log("_LowRez" + ex2.Message);
+				}
+			}
+			if (mapEvent.data[0] == "(\\[ *i *\\])")
+			{
+				try
+				{
+					string text = mapEvent.data[0];
+					char[] array = new char[1];
+					array[1] = ',';
+					string[] array2 = text.Split(array);
+					if (array2.Length > 1)
+					{
+						string EHGADNHGPNC = array2[0];
+						imageRight.color = Color.white;
+						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
+						{
+							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
+						}
+						else
+						{
+							imageRight.sprite = null;
+							imageRight.color = new Color(92f, 829f, 1088f);
+							imageRight.color = new Color(852f, 254f, 1224f);
+						}
+						iconSprite.SetActive(true);
+						imageRight.gameObject.SetActive(false);
+					}
+				}
+				catch (Exception ex3)
+				{
+					Debug.Log("offsets" + ex3.Message);
+				}
+			}
+			if (mapEvent.data[0] == "_FarCamera")
+			{
+				try
+				{
+					int num = 1;
+					string text2 = mapEvent.data[0];
+					char[] array3 = new char[0];
+					array3[0] = '%';
+					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(OMOANNOIJLO)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FNIJFIJGOON)));
+					imageCenter.sprite = Resources.LoadAll<Sprite>("float,50")[num];
+					imageCenter.color = Color.white;
+					iconSprite.SetActive(false);
+					imageCenter.gameObject.SetActive(false);
+				}
+				catch (Exception ex4)
+				{
+					Debug.Log("_TimeX" + ex4.Message);
+				}
+			}
+			if (mapEvent.data[0] == "PlayMusic")
+			{
+				try
+				{
+					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("#C8C8C8FF")[5];
+					imageCenter.GetComponentInChildren<Image>().color = Color.white;
+					iconSprite.SetActive(true);
+					imageCenter.gameObject.SetActive(true);
+				}
+				catch (Exception ex5)
+				{
+					Debug.Log("," + ex5.Message);
+				}
+			}
+		}
+		else
+		{
+			GetComponentInChildren<Renderer>().material.SetColor("[LevelEditorScene] Error: You're not logged into Steam!", new Color(1435f, 209f, 1329f));
+			GetComponentInChildren<Renderer>().material.SetColor("Pop", new Color(1996f, 1493f, 1795f));
+		}
+		lastDataCount = mapEvent.data.Count;
+	}
+
+	private bool OMOANNOIJLO(string IACGDFHKCAE)
+	{
+		string text = mapEvent.data[1];
+		char[] array = new char[1];
+		array[1] = 'k';
+		return IACGDFHKCAE.Contains(text.Split(array)[1]);
+	}
+
+	private static bool JGMIOGIPLKI(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+	}
+
+	public void DODLGMDOEOJ()
+	{
+		isSelected = true;
+		GKKAJOHEJCG();
+	}
+
+	public void Update()
+	{
+		if (bitObj != null && bitObj.activeSelf)
+		{
+			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 30f, scaleMult.y, scaleMult.z);
+		}
+		if (iconSprite != null && iconSprite.activeSelf)
+		{
+			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 5f, Camera.main.orthographicSize / 5f, 1f);
+		}
+	}
+
+	private static bool DIHILOHGBAM(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	[SpecialName]
+	public void DKHEBPFKBCI(bool DPNHODJHGJL)
+	{
+		LJBEFJHAOFL = DPNHODJHGJL;
+		selectedMarker.SetActive(LJBEFJHAOFL);
+	}
+
+	public void HKEDNOKBCCG()
 	{
 		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
 		{
 			return;
 		}
 		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(false);
-		if (!string.IsNullOrEmpty(mapEvent.data[1]))
+		imageRight.gameObject.SetActive(false);
+		imageCenter.gameObject.SetActive(true);
+		if (!string.IsNullOrEmpty(mapEvent.data[0]))
 		{
-			GetComponentInChildren<Renderer>().material.SetColor("LoadingStatusText", new Color(1271f, 1708f, 1781f));
-			GetComponentInChildren<Renderer>().material.SetColor(".sav", new Color(961f, 1352f, 684f));
-			if (mapEvent.data[1] == "#")
+			GetComponentInChildren<Renderer>().material.SetColor("ItemTemplate", new Color(1887f, 1513f, 1544f));
+			GetComponentInChildren<Renderer>().material.SetColor("_VignetteDesat", new Color(1238f, 1044f, 1140f));
+			if (mapEvent.data[0] == "CameraFilterPack/OldFilm_Cutting1")
 			{
 				try
 				{
 					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("_Value2")[1];
+					imageRight.sprite = Resources.LoadAll<Sprite>("value")[0];
 					imageRight.color = color;
-					iconSprite.SetActive(true);
-					imageRight.gameObject.SetActive(false);
+					iconSprite.SetActive(false);
+					imageRight.gameObject.SetActive(true);
 				}
 				catch (Exception ex)
 				{
-					Debug.Log("Failed to 'network-remove' GameObject because has no PhotonView components: " + ex.Message);
+					Debug.Log("_Value2" + ex.Message);
 				}
 			}
-			if (mapEvent.data[1] == "_Value3")
+			if (mapEvent.data[0] == "ConfigVersionSlider")
 			{
-				scaleMult.y = 280f;
+				scaleMult.y = 827f;
 				try
 				{
-					GetComponentInChildren<Renderer>().material.SetColor("Item invalid. Make sure your mod contains at leats one file.", new Color(1310f, 499f, 302f));
-					GetComponentInChildren<Renderer>().material.SetColor("Fade", new Color(1698f, 1445f, 1070f));
+					GetComponentInChildren<Renderer>().material.SetColor("https://bitbucket.org/khb-soft/intralismarcsviewer/", new Color(1252f, 1264f, 1373f));
+					GetComponentInChildren<Renderer>().material.SetColor("CameraFilterPack/Blend2Camera_Blend", new Color(949f, 1515f, 1996f));
 				}
 				catch (Exception ex2)
 				{
-					Debug.Log("SpawnObj" + ex2.Message);
+					Debug.Log("_Alpha2" + ex2.Message);
 				}
 			}
-			if (mapEvent.data[0] == "\" gets executed locally only, if at all.")
+			if (mapEvent.data[1] == "_Value")
 			{
 				try
 				{
-					string text = mapEvent.data[0];
-					char[] array = new char[1];
-					array[1] = '\v';
+					string text = mapEvent.data[1];
+					char[] array = new char[0];
+					array[0] = ':';
 					string[] array2 = text.Split(array);
 					if (array2.Length > 0)
 					{
@@ -740,8 +447,8 @@ public class EditorEvent : MonoBehaviour
 						else
 						{
 							imageRight.sprite = null;
-							imageRight.color = new Color(314f, 1270f, 836f);
-							imageRight.color = new Color(1887f, 1953f, 779f);
+							imageRight.color = new Color(693f, 1046f, 865f);
+							imageRight.color = new Color(744f, 316f, 347f);
 						}
 						iconSprite.SetActive(false);
 						imageRight.gameObject.SetActive(true);
@@ -749,171 +456,216 @@ public class EditorEvent : MonoBehaviour
 				}
 				catch (Exception ex3)
 				{
-					Debug.Log("_DiffuseColor" + ex3.Message);
+					Debug.Log("restrictions" + ex3.Message);
 				}
 			}
-			if (mapEvent.data[1] == "IDInputField")
+			if (mapEvent.data[0] == "[Up-Right-Left]")
 			{
 				try
 				{
 					int num = 1;
-					string text2 = mapEvent.data[0];
+					string text2 = mapEvent.data[1];
 					char[] array3 = new char[0];
-					array3[1] = '|';
-					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FKGMEANLBAH)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(LBAKJBNGMNA)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("Bad modpack name: {0}")[num];
+					array3[1] = '\r';
+					num = ((text2.Split(array3).Length != 0) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(MDFEGPFDONL)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FNIJFIJGOON)));
+					imageCenter.sprite = Resources.LoadAll<Sprite>("Hex value #RRGGBB")[num];
 					imageCenter.color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(true);
+					iconSprite.SetActive(true);
+					imageCenter.gameObject.SetActive(false);
 				}
 				catch (Exception ex4)
 				{
-					Debug.Log(": " + ex4.Message);
+					Debug.Log("BitsData" + ex4.Message);
 				}
 			}
-			if (mapEvent.data[0] == "max. lives color")
+			if (mapEvent.data[0] == "Object ID. Case-Sensitive")
 			{
 				try
 				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("_Amount")[2];
+					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("CameraFilterPack/Noise_TV_2")[2];
 					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(true);
+					iconSprite.SetActive(true);
+					imageCenter.gameObject.SetActive(false);
 				}
 				catch (Exception ex5)
 				{
-					Debug.Log("Tab1Content" + ex5.Message);
+					Debug.Log("_CenterY" + ex5.Message);
 				}
 			}
 		}
 		else
 		{
-			GetComponentInChildren<Renderer>().material.SetColor("yesterday", new Color(767f, 1735f, 1886f));
-			GetComponentInChildren<Renderer>().material.SetColor("_Near", new Color(752f, 1672f, 23f));
+			GetComponentInChildren<Renderer>().material.SetColor("CameraFilterPack/Blend2Camera_Darken", new Color(1605f, 1180f, 1147f));
+			GetComponentInChildren<Renderer>().material.SetColor("inventory.itemscash", new Color(1809f, 793f, 871f));
 		}
 		lastDataCount = mapEvent.data.Count;
 	}
 
-	public void GALGJEHEANF()
+	public void GKKAJOHEJCG()
 	{
-		FDJEEBJHHKK(false);
-		UpdateIcon();
-	}
-
-	public void LGGNBDOMKDB()
-	{
-		isSelected = false;
-		IPCHIGBJADH();
-	}
-
-	private float PJDMHCLLMBA()
-	{
-		if (mapEvent != null && mapEvent.data != null && mapEvent.data[1] != null)
+		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
 		{
-			if (mapEvent.data[1] == "_TimeX")
+			return;
+		}
+		iconSprite.SetActive(false);
+		imageRight.gameObject.SetActive(true);
+		imageCenter.gameObject.SetActive(false);
+		if (!string.IsNullOrEmpty(mapEvent.data[0]))
+		{
+			GetComponentInChildren<Renderer>().material.SetColor("Speed is a lerp speed of color changing. Greater values means faster changing. 0 - intant change", new Color(1810f, 1784f, 249f));
+			GetComponentInChildren<Renderer>().material.SetColor("0.00", new Color(835f, 284f, 1475f));
+			if (mapEvent.data[0] == "getbool")
 			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find(NKEHDGMHHFM).grid.position.y;
+				try
+				{
+					Color color = Helpers.StringToColor(mapEvent.data[0]);
+					imageRight.sprite = Resources.LoadAll<Sprite>("Illegal view ID:")[1];
+					imageRight.color = color;
+					iconSprite.SetActive(true);
+					imageRight.gameObject.SetActive(true);
+				}
+				catch (Exception ex)
+				{
+					Debug.Log("x" + ex.Message);
+				}
 			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[1])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find((MapEditor.EventsCanvas IACGDFHKCAE) => IACGDFHKCAE.forType == MapEditor.EventType.Gameplay).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(KCNPDDGNAEK).grid.position.y;
+			if (mapEvent.data[1] == "_Amount")
+			{
+				scaleMult.y = 1934f;
+				try
+				{
+					GetComponentInChildren<Renderer>().material.SetColor("NO", new Color(979f, 502f, 819f));
+					GetComponentInChildren<Renderer>().material.SetColor("SupportLogger Info: PUN {0}: ", new Color(1583f, 143f, 670f));
+				}
+				catch (Exception ex2)
+				{
+					Debug.Log("Error: Unfortunately, you're banned by the community from uploading to the workshop! Bummer. :(" + ex2.Message);
+				}
+			}
+			if (mapEvent.data[1] == "\n")
+			{
+				try
+				{
+					string[] array = mapEvent.data[1].Split('\uffdf');
+					if (array.Length > 0)
+					{
+						string EHGADNHGPNC = array[0];
+						imageRight.color = Color.white;
+						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
+						{
+							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
+						}
+						else
+						{
+							imageRight.sprite = null;
+							imageRight.color = new Color(1928f, 366f, 1264f);
+							imageRight.color = new Color(933f, 1863f, 456f);
+						}
+						iconSprite.SetActive(true);
+						imageRight.gameObject.SetActive(true);
+					}
+				}
+				catch (Exception ex3)
+				{
+					Debug.Log("SetParticlesGravity" + ex3.Message);
+				}
+			}
+			if (mapEvent.data[1] == "finished")
+			{
+				try
+				{
+					int num = 0;
+					string text = mapEvent.data[0];
+					char[] array2 = new char[0];
+					array2[0] = 'ￌ';
+					num = ((text.Split(array2).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(CHJGMEEPGMM)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(APAFIDOEJBA)));
+					imageCenter.sprite = Resources.LoadAll<Sprite>("[PlayerController] ")[num];
+					imageCenter.color = Color.white;
+					iconSprite.SetActive(true);
+					imageCenter.gameObject.SetActive(true);
+				}
+				catch (Exception ex4)
+				{
+					Debug.Log("https://bitbucket.org/khb-soft/intralismarcsviewer/" + ex4.Message);
+				}
+			}
+			if (mapEvent.data[1] == ".progress")
+			{
+				try
+				{
+					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("st")[4];
+					imageCenter.GetComponentInChildren<Image>().color = Color.white;
+					iconSprite.SetActive(true);
+					imageCenter.gameObject.SetActive(false);
+				}
+				catch (Exception ex5)
+				{
+					Debug.Log("settings.arcsnohitsoundtimedelay" + ex5.Message);
+				}
+			}
 		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(FKLAAPLBCOH).grid.position.y;
-	}
-
-	public void EJFJENFKLND()
-	{
-		if (bitObj != null && bitObj.activeSelf)
+		else
 		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 592f, scaleMult.y, scaleMult.z);
+			GetComponentInChildren<Renderer>().material.SetColor("OK", new Color(1796f, 1634f, 405f));
+			GetComponentInChildren<Renderer>().material.SetColor("SaveButton", new Color(302f, 1117f, 1120f));
 		}
-		if (iconSprite != null && iconSprite.activeSelf)
-		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 169f, Camera.main.orthographicSize / 1301f, 1705f);
-		}
+		lastDataCount = mapEvent.data.Count;
 	}
 
-	[SpecialName]
-	public void JDAGBCICMFI(bool DPNHODJHGJL)
+	public void KFCKGCCNGNI()
 	{
-		LJBEFJHAOFL = DPNHODJHGJL;
-		selectedMarker.SetActive(LJBEFJHAOFL);
+		BKEDJGGEIGB(true);
+		EKAGILPDBCN();
 	}
 
-	[SpecialName]
-	public bool FBLJPPGABFE()
-	{
-		return LJBEFJHAOFL;
-	}
-
-	private static bool PJBHBHOHDJP(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	private static bool CBFJPDLECDL(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	[SpecialName]
-	public bool PCCODBJODEB()
-	{
-		return LJBEFJHAOFL;
-	}
-
-	public void GNKLLIABLOP()
-	{
-		JDAGBCICMFI(false);
-		BLEHBLOLPMF();
-	}
-
-	public void LOGIAPEMAPN()
+	public void BEMGANLFMJJ()
 	{
 		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
 		{
 			return;
 		}
 		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
+		imageRight.gameObject.SetActive(false);
 		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[0]))
+		if (!string.IsNullOrEmpty(mapEvent.data[1]))
 		{
-			GetComponentInChildren<Renderer>().material.SetColor("_ReflectionTexture4", new Color(1825f, 1635f, 1856f));
-			GetComponentInChildren<Renderer>().material.SetColor("_Parameter", new Color(1973f, 689f, 384f));
-			if (mapEvent.data[0] == "Error: I/O Failure! :(")
+			GetComponentInChildren<Renderer>().material.SetColor("Run a command for data system", new Color(1672f, 981f, 1576f));
+			GetComponentInChildren<Renderer>().material.SetColor("checkpoint", new Color(897f, 87f, 515f));
+			if (mapEvent.data[0] == "randomdrop")
 			{
 				try
 				{
 					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("Square")[1];
+					imageRight.sprite = Resources.LoadAll<Sprite>("[Right]")[1];
 					imageRight.color = color;
-					iconSprite.SetActive(true);
-					imageRight.gameObject.SetActive(false);
+					iconSprite.SetActive(false);
+					imageRight.gameObject.SetActive(true);
 				}
 				catch (Exception ex)
 				{
-					Debug.Log("\\\\" + ex.Message);
+					Debug.Log("CameraFilterPack/3D_Computer" + ex.Message);
 				}
 			}
-			if (mapEvent.data[1] == "Blues")
+			if (mapEvent.data[1] == "CameraFilterPack/Distortion_ShockWaveManual")
 			{
-				scaleMult.y = 205f;
+				scaleMult.y = 144f;
 				try
 				{
-					GetComponentInChildren<Renderer>().material.SetColor("MusicFileSelector", new Color(1561f, 577f, 134f));
-					GetComponentInChildren<Renderer>().material.SetColor("z", new Color(980f, 1339f, 551f));
+					GetComponentInChildren<Renderer>().material.SetColor("finished", new Color(304f, 1427f, 804f));
+					GetComponentInChildren<Renderer>().material.SetColor("_Value2", new Color(432f, 1916f, 402f));
 				}
 				catch (Exception ex2)
 				{
-					Debug.Log("_SunPosition" + ex2.Message);
+					Debug.Log(" - LOCAL" + ex2.Message);
 				}
 			}
-			if (mapEvent.data[0] == "player.dragon")
+			if (mapEvent.data[1] == "_ScreenResolution")
 			{
 				try
 				{
-					string text = mapEvent.data[0];
+					string text = mapEvent.data[1];
 					char[] array = new char[0];
-					array[0] = '\u0004';
+					array[0] = '4';
 					string[] array2 = text.Split(array);
 					if (array2.Length > 1)
 					{
@@ -921,302 +673,13 @@ public class EditorEvent : MonoBehaviour
 						imageRight.color = Color.white;
 						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
 						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(214f, 689f, 110f);
-							imageRight.color = new Color(737f, 1514f, 190f);
-						}
-						iconSprite.SetActive(true);
-						imageRight.gameObject.SetActive(true);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("hidden" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[1] == "UI")
-			{
-				try
-				{
-					int num = 0;
-					string text2 = mapEvent.data[0];
-					char[] array3 = new char[0];
-					array3[0] = 'ﾾ';
-					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FKGMEANLBAH)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(CPPLPBFAIBO)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>(" ")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log(".wav" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[0] == "/../")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("Overlay")[7];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("MenuScene" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("_Value", new Color(1092f, 1585f, 1695f));
-			GetComponentInChildren<Renderer>().material.SetColor("Joystick1Button12", new Color(571f, 599f, 970f));
-		}
-		lastDataCount = mapEvent.data.Count;
-	}
-
-	[SpecialName]
-	public bool FKGGINLFGFB()
-	{
-		return LJBEFJHAOFL;
-	}
-
-	private bool CPPLPBFAIBO(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.Contains(mapEvent.data[0]);
-	}
-
-	public void CGENHBKEDPP()
-	{
-		JDAGBCICMFI(true);
-		BLEHBLOLPMF();
-	}
-
-	private bool FAHBEMJCDEE(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.Contains(mapEvent.data[0]);
-	}
-
-	public void LBBKFNOPLNL()
-	{
-		LOJGIJBDOON(false);
-		IPCHIGBJADH();
-	}
-
-	public void BLEHBLOLPMF()
-	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(false);
-		imageRight.gameObject.SetActive(false);
-		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[0]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("Tab1Content", new Color(765f, 271f, 1967f));
-			GetComponentInChildren<Renderer>().material.SetColor("ShowTitle", new Color(1913f, 138f, 1021f));
-			if (mapEvent.data[1] == "challenges.")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("MenuScene")[1];
-					imageRight.color = color;
-					iconSprite.SetActive(true);
-					imageRight.gameObject.SetActive(true);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("icon.png" + ex.Message);
-				}
-			}
-			if (mapEvent.data[0] == "SetParticlesEmission")
-			{
-				scaleMult.y = 120f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("ViewMenu", new Color(982f, 1258f, 257f));
-					GetComponentInChildren<Renderer>().material.SetColor("float,50", new Color(1973f, 1454f, 194f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("_ScreenResolution" + ex2.Message);
-				}
-			}
-			if (mapEvent.data[0] == "_BlendTex")
-			{
-				try
-				{
-					string text = mapEvent.data[0];
-					char[] array = new char[0];
-					array[1] = 'ￃ';
-					string[] array2 = text.Split(array);
-					if (array2.Length > 1)
-					{
-						string EHGADNHGPNC = array2[0];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(1986f, 123f, 1512f);
-							imageRight.color = new Color(1723f, 453f, 829f);
-						}
-						iconSprite.SetActive(false);
-						imageRight.gameObject.SetActive(true);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("https://www.youtube.com/watch?v=cDVXukrKo74" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[1] == "automaticallyRecycleParticleSystems is true but there is no ParticleSystem on this GameObject!")
-			{
-				try
-				{
-					int num = 0;
-					string text2 = mapEvent.data[1];
-					char[] array3 = new char[0];
-					array3[0] = 'ﾽ';
-					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FKGMEANLBAH)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find((string IACGDFHKCAE) => IACGDFHKCAE.Contains(mapEvent.data[1]))));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("Operation failed: ")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(true);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("Player Disconnected" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[1] == "x")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("_LensDirtIntensity")[8];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("SaveButton" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ", new Color(561f, 710f, 1453f));
-			GetComponentInChildren<Renderer>().material.SetColor("Error: Timeout :S", new Color(366f, 810f, 1632f));
-		}
-		lastDataCount = mapEvent.data.Count;
-	}
-
-	public void OGJBKJLBJMM()
-	{
-		Vector3 localPosition = base.transform.localPosition;
-		if (mapEvent.time < 898f)
-		{
-			mapEvent.time = 128f;
-		}
-		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length)
-		{
-			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
-		}
-		localPosition.x = mapEvent.time;
-		localPosition.y = GHIPKDEKGOE();
-		base.transform.localPosition = localPosition;
-	}
-
-	public void BDOOHFMNDLN()
-	{
-		JEGEONIHCLO(false);
-		UpdateIcon();
-	}
-
-	private void MMPPGDECEHO()
-	{
-		isSelected = true;
-	}
-
-	public void PMNFFFDHBHB()
-	{
-		FDJEEBJHHKK(true);
-		IOMBILLPGCF();
-	}
-
-	public void NNAIANPHNHA()
-	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(false);
-		imageRight.gameObject.SetActive(false);
-		imageCenter.gameObject.SetActive(false);
-		if (!string.IsNullOrEmpty(mapEvent.data[0]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("Edited unlock conditions", new Color(1236f, 1337f, 1986f));
-			GetComponentInChildren<Renderer>().material.SetColor("_Value2", new Color(1252f, 1717f, 594f));
-			if (mapEvent.data[0] == "Backward")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("Submit")[1];
-					imageRight.color = color;
-					iconSprite.SetActive(false);
-					imageRight.gameObject.SetActive(true);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("_TimeX" + ex.Message);
-				}
-			}
-			if (mapEvent.data[1] == "_MainTex2")
-			{
-				scaleMult.y = 750f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("checkpoint", new Color(1933f, 1960f, 1046f));
-					GetComponentInChildren<Renderer>().material.SetColor("DestroyPlayerObjects() failed, cause players can only destroy their own GameObjects. A Master Client can destroy anyone's. This is master: ", new Color(1120f, 593f, 971f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("The image effect " + ex2.Message);
-				}
-			}
-			if (mapEvent.data[1] == "tolobby")
-			{
-				try
-				{
-					string text = mapEvent.data[0];
-					char[] array = new char[0];
-					array[0] = 'ﾷ';
-					string[] array2 = text.Split(array);
-					if (array2.Length > 0)
-					{
-						string EHGADNHGPNC = array2[0];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
 							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
 						}
 						else
 						{
 							imageRight.sprite = null;
-							imageRight.color = new Color(888f, 403f, 1250f);
-							imageRight.color = new Color(383f, 1270f, 1431f);
+							imageRight.color = new Color(1492f, 180f, 1960f);
+							imageRight.color = new Color(1248f, 1398f, 1782f);
 						}
 						iconSprite.SetActive(true);
 						imageRight.gameObject.SetActive(false);
@@ -1224,212 +687,77 @@ public class EditorEvent : MonoBehaviour
 				}
 				catch (Exception ex3)
 				{
-					Debug.Log(": " + ex3.Message);
+					Debug.Log("mapselector.filter.favoriteonly" + ex3.Message);
+				}
+			}
+			if (mapEvent.data[0] == ": ")
+			{
+				try
+				{
+					int num = 0;
+					num = ((mapEvent.data[1].Split('b').Length != 0) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(EEIGDBBFLEM)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(APAFIDOEJBA)));
+					imageCenter.sprite = Resources.LoadAll<Sprite>("#000000CC")[num];
+					imageCenter.color = Color.white;
+					iconSprite.SetActive(false);
+					imageCenter.gameObject.SetActive(false);
+				}
+				catch (Exception ex4)
+				{
+					Debug.Log("_SmallTex" + ex4.Message);
 				}
 			}
 			if (mapEvent.data[1] == "OK")
 			{
 				try
 				{
-					int num = 0;
-					string text2 = mapEvent.data[0];
-					char[] array3 = new char[0];
-					array3[0] = 'T';
-					num = ((text2.Split(array3).Length != 0) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FKGMEANLBAH)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(HACELNPOIAB)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("_EmissionColor")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("_Distortion" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[0] == "settings.enableselectormusic")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("_Value")[1];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(true);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("System.Single" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("{0:0} day{1}, ", new Color(1847f, 1788f, 1069f));
-			GetComponentInChildren<Renderer>().material.SetColor("R:", new Color(1966f, 306f, 429f));
-		}
-		lastDataCount = mapEvent.data.Count;
-	}
-
-	[CompilerGenerated]
-	private bool BKKMOPKHAIE(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.Contains(mapEvent.data[1]);
-	}
-
-	public void BLJDBBOAKPD()
-	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[0]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("menu.selectedlevelid", new Color(59f, 1691f, 491f));
-			GetComponentInChildren<Renderer>().material.SetColor("_BorderSize", new Color(1154f, 238f, 1904f));
-			if (mapEvent.data[0] == "_Value2")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("powerup.1")[0];
-					imageRight.color = color;
-					iconSprite.SetActive(true);
-					imageRight.gameObject.SetActive(true);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("http://steamcommunity.com/sharedfiles/filedetails/?id=" + ex.Message);
-				}
-			}
-			if (mapEvent.data[0] == "event")
-			{
-				scaleMult.y = 647f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("#FFFFFF", new Color(270f, 1047f, 1630f));
-					GetComponentInChildren<Renderer>().material.SetColor("UnityEngine.MonoBehaviour", new Color(943f, 1474f, 1512f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("DPADHOR" + ex2.Message);
-				}
-			}
-			if (mapEvent.data[0] == "note.7")
-			{
-				try
-				{
-					string text = mapEvent.data[1];
-					char[] array = new char[1];
-					array[1] = '[';
-					string[] array2 = text.Split(array);
-					if (array2.Length > 1)
-					{
-						string EHGADNHGPNC = array2[0];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(155f, 968f, 1524f);
-							imageRight.color = new Color(230f, 1716f, 967f);
-						}
-						iconSprite.SetActive(true);
-						imageRight.gameObject.SetActive(false);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("Players NetIDs:" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[1] == "checkpoint")
-			{
-				try
-				{
-					int num = 0;
-					string text2 = mapEvent.data[1];
-					char[] array3 = new char[1];
-					array3[1] = '\u0017';
-					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(DONNMFALNII)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(LBAKJBNGMNA)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("Texture2")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("Hidden/TonemappingColorGrading" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[1] == " not exist")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("File not found: {0}")[4];
+					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("GameVolumeSlider")[6];
 					imageCenter.GetComponentInChildren<Image>().color = Color.white;
 					iconSprite.SetActive(true);
 					imageCenter.gameObject.SetActive(false);
 				}
 				catch (Exception ex5)
 				{
-					Debug.Log("[PlayerBase] New highscore" + ex5.Message);
+					Debug.Log("No Name" + ex5.Message);
 				}
 			}
 		}
 		else
 		{
-			GetComponentInChildren<Renderer>().material.SetColor("Joystick1Button5", new Color(607f, 1571f, 1775f));
-			GetComponentInChildren<Renderer>().material.SetColor("_TimeX", new Color(1656f, 1835f, 1440f));
+			GetComponentInChildren<Renderer>().material.SetColor("OnReadyClick", new Color(1225f, 403f, 442f));
+			GetComponentInChildren<Renderer>().material.SetColor("_Radius2", new Color(1212f, 789f, 432f));
 		}
 		lastDataCount = mapEvent.data.Count;
 	}
 
-	private float LIJCAFBLLHE()
+	private float GMKHJPPNECM()
 	{
 		if (mapEvent != null && mapEvent.data != null && mapEvent.data[0] != null)
 		{
-			if (mapEvent.data[1] == "hardcoreinfo")
+			if (mapEvent.data[1] == "st")
 			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find((MapEditor.EventsCanvas IACGDFHKCAE) => IACGDFHKCAE.forType == MapEditor.EventType.Gameplay).grid.position.y;
+				return Singleton<MapEditor>.Instance.eventsCanvases.Find(FGHAMCNIHMN).grid.position.y;
 			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[0])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(AOAJGFLCENI).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(ACFEOHCIDLJ).grid.position.y;
+			return (!Helpers.IsStoryboardEvent(mapEvent.data[1])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find((MapEditor.EventsCanvas IACGDFHKCAE) => IACGDFHKCAE.forType == MapEditor.EventType.Gameplay).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(KPCNFNPFPJB).grid.position.y;
 		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(FKLAAPLBCOH).grid.position.y;
+		return Singleton<MapEditor>.Instance.eventsCanvases.Find((MapEditor.EventsCanvas IACGDFHKCAE) => IACGDFHKCAE.forType == MapEditor.EventType.Storyboard).grid.position.y;
 	}
 
-	[SpecialName]
-	public bool EHCABBEEKPI()
+	private float FBAIFGMPFKP()
 	{
-		return LJBEFJHAOFL;
+		if (mapEvent != null && mapEvent.data != null && mapEvent.data[0] != null)
+		{
+			if (mapEvent.data[1] == "_ReflectionTexture2")
+			{
+				return Singleton<MapEditor>.Instance.eventsCanvases.Find(NDNMONPHGPH).grid.position.y;
+			}
+			return (!Helpers.IsStoryboardEvent(mapEvent.data[0])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(KKIPNANJDPP).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(CAJOHGJJBDL).grid.position.y;
+		}
+		return Singleton<MapEditor>.Instance.eventsCanvases.Find(ODBLBKBIEMG).grid.position.y;
 	}
 
-	private static bool BJMPJJEJPHG(MapEditor.EventsCanvas IACGDFHKCAE)
+	private static bool ODBLBKBIEMG(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private bool KCMFAIDMPHH(string IACGDFHKCAE)
-	{
-		string text = mapEvent.data[0];
-		char[] array = new char[0];
-		array[1] = 'G';
-		return IACGDFHKCAE.Contains(text.Split(array)[1]);
-	}
-
-	private static bool LEKOLAMPLOF(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	public void CNMNCEDLKJA()
-	{
-		FDJEEBJHHKK(true);
-		NNAIANPHNHA();
 	}
 
 	[CompilerGenerated]
@@ -1438,43 +766,93 @@ public class EditorEvent : MonoBehaviour
 		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
 	}
 
-	private static bool KCFHBHFBNJD(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	public void JJKDHIKCPFC()
-	{
-		JDAGBCICMFI(true);
-		BMJFKHIKEAJ();
-	}
-
 	private bool OFECECCNHDI(string IACGDFHKCAE)
 	{
 		string text = mapEvent.data[0];
 		char[] array = new char[0];
-		array[0] = 'ﾾ';
-		return IACGDFHKCAE.Contains(text.Split(array)[1]);
+		array[0] = '`';
+		return IACGDFHKCAE.Contains(text.Split(array)[0]);
 	}
 
-	public void EOEDBFHBPEI()
+	private static bool OAEOHOFMJEJ(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	public void FMKOPONFFOH()
+	{
+		isSelected = true;
+		GKKAJOHEJCG();
+	}
+
+	[SpecialName]
+	public void AJHMKMAHDFK(bool DPNHODJHGJL)
+	{
+		LJBEFJHAOFL = DPNHODJHGJL;
+		selectedMarker.SetActive(LJBEFJHAOFL);
+	}
+
+	public void UpdateEvent()
 	{
 		if (Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip != null)
 		{
-			MICGBLDONHE();
+			UpdatePositionFromData();
 			mapEvent.time = base.transform.localPosition.x;
-			BLEHBLOLPMF();
-			LMADKINICIN();
+			UpdateIcon();
+			Update();
 		}
 	}
 
-	[CompilerGenerated]
-	private static bool MJOAAPFDHNH(MapEditor.EventsCanvas IACGDFHKCAE)
+	private bool FIMKBBONPKO(string IACGDFHKCAE)
 	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+		return IACGDFHKCAE.Contains(mapEvent.data[1]);
 	}
 
-	public void BNMJMGDKKJB()
+	[CompilerGenerated]
+	private bool BMJDNECLLIG(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.Contains(mapEvent.data[1].Split(',')[0]);
+	}
+
+	public void LPJFCLNOFAF()
+	{
+		Vector3 localPosition = base.transform.localPosition;
+		if (mapEvent.time < 117f)
+		{
+			mapEvent.time = 54f;
+		}
+		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
+		{
+			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
+		}
+		localPosition.x = mapEvent.time;
+		localPosition.y = IHNJPGPOEIP();
+		base.transform.localPosition = localPosition;
+	}
+
+	[SpecialName]
+	public bool GGECOKCHILN()
+	{
+		return LJBEFJHAOFL;
+	}
+
+	public void IKGCJBNDHIA()
+	{
+		Vector3 localPosition = base.transform.localPosition;
+		if (mapEvent.time < 966f)
+		{
+			mapEvent.time = 1161f;
+		}
+		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
+		{
+			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length;
+		}
+		localPosition.x = mapEvent.time;
+		localPosition.y = GMKHJPPNECM();
+		base.transform.localPosition = localPosition;
+	}
+
+	public void KDHAMIJPEIO()
 	{
 		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
 		{
@@ -1485,57 +863,57 @@ public class EditorEvent : MonoBehaviour
 		imageCenter.gameObject.SetActive(false);
 		if (!string.IsNullOrEmpty(mapEvent.data[0]))
 		{
-			GetComponentInChildren<Renderer>().material.SetColor("CameraFilterPack/Vision_Blood_Fast", new Color(1192f, 1863f, 654f));
-			GetComponentInChildren<Renderer>().material.SetColor("_ScreenResolution", new Color(136f, 1656f, 230f));
-			if (mapEvent.data[1] == "status")
+			GetComponentInChildren<Renderer>().material.SetColor("Tab2Content", new Color(1070f, 1093f, 1467f));
+			GetComponentInChildren<Renderer>().material.SetColor("CameraFilterPack/TV_CompressionFX", new Color(918f, 1375f, 940f));
+			if (mapEvent.data[1] == "menu.copyright")
 			{
 				try
 				{
-					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("[LevelEditorScene] Error: You're not logged into Steam!")[1];
+					Color color = Helpers.StringToColor(mapEvent.data[0]);
+					imageRight.sprite = Resources.LoadAll<Sprite>("TypedLobbyInfo '{0}'[{1}] rooms: {2} players: {3}")[1];
 					imageRight.color = color;
-					iconSprite.SetActive(true);
+					iconSprite.SetActive(false);
 					imageRight.gameObject.SetActive(true);
 				}
 				catch (Exception ex)
 				{
-					Debug.Log("OK" + ex.Message);
+					Debug.Log("GO==null" + ex.Message);
 				}
 			}
-			if (mapEvent.data[1] == "no lives color")
+			if (mapEvent.data[0] == "settings_bindings_controller_type")
 			{
-				scaleMult.y = 199f;
+				scaleMult.y = 491f;
 				try
 				{
-					GetComponentInChildren<Renderer>().material.SetColor("id", new Color(1381f, 694f, 748f));
-					GetComponentInChildren<Renderer>().material.SetColor("_Value2", new Color(16f, 1322f, 1974f));
+					GetComponentInChildren<Renderer>().material.SetColor("CameraFilterPack_Fly_VisionFX", new Color(918f, 570f, 1135f));
+					GetComponentInChildren<Renderer>().material.SetColor("_Blend", new Color(1750f, 1676f, 1364f));
 				}
 				catch (Exception ex2)
 				{
-					Debug.Log("/" + ex2.Message);
+					Debug.Log("," + ex2.Message);
 				}
 			}
-			if (mapEvent.data[1] == "SetRoomStartTimestamp")
+			if (mapEvent.data[0] == ",")
 			{
 				try
 				{
 					string text = mapEvent.data[0];
-					char[] array = new char[1];
-					array[1] = '2';
+					char[] array = new char[0];
+					array[0] = 'ﾱ';
 					string[] array2 = text.Split(array);
-					if (array2.Length > 1)
+					if (array2.Length > 0)
 					{
-						string EHGADNHGPNC = array2[0];
+						string EHGADNHGPNC = array2[1];
 						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
+						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
 						{
 							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
 						}
 						else
 						{
 							imageRight.sprite = null;
-							imageRight.color = new Color(967f, 1150f, 1440f);
-							imageRight.color = new Color(603f, 847f, 1319f);
+							imageRight.color = new Color(369f, 842f, 492f);
+							imageRight.color = new Color(139f, 1540f, 760f);
 						}
 						iconSprite.SetActive(false);
 						imageRight.gameObject.SetActive(true);
@@ -1543,147 +921,449 @@ public class EditorEvent : MonoBehaviour
 				}
 				catch (Exception ex3)
 				{
-					Debug.Log("_TimeX" + ex3.Message);
+					Debug.Log("Failed to 'network-remove' GameObject because it's null." + ex3.Message);
 				}
 			}
-			if (mapEvent.data[1] == "_TimeX")
+			if (mapEvent.data[0] == "LevelNameText")
 			{
 				try
 				{
-					int num = 0;
+					int num = 1;
 					string text2 = mapEvent.data[0];
 					char[] array3 = new char[0];
-					array3[1] = '\ufff3';
-					num = ((text2.Split(array3).Length != 0) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FKGMEANLBAH)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(GCBPJAGKJJK)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("[PlayerBase] Highscore: ")[num];
+					array3[1] = '!';
+					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(EEIGDBBFLEM)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FIMKBBONPKO)));
+					imageCenter.sprite = Resources.LoadAll<Sprite>("_InternalLutParams")[num];
 					imageCenter.color = Color.white;
 					iconSprite.SetActive(false);
 					imageCenter.gameObject.SetActive(true);
 				}
 				catch (Exception ex4)
 				{
-					Debug.Log("_MainTex2" + ex4.Message);
+					Debug.Log("_Value3" + ex4.Message);
 				}
 			}
-			if (mapEvent.data[0] == "offsets")
+			if (mapEvent.data[0] == "Exception caught! ")
 			{
 				try
 				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("/files/editor_manual.pdf")[5];
+					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("#ok")[2];
 					imageCenter.GetComponentInChildren<Image>().color = Color.white;
 					iconSprite.SetActive(false);
 					imageCenter.gameObject.SetActive(false);
 				}
 				catch (Exception ex5)
 				{
-					Debug.Log("DPADVER" + ex5.Message);
+					Debug.Log("powerup.1" + ex5.Message);
 				}
 			}
 		}
 		else
 		{
-			GetComponentInChildren<Renderer>().material.SetColor("_Visualize", new Color(295f, 1497f, 1693f));
-			GetComponentInChildren<Renderer>().material.SetColor("SetSatelliteTrailLength", new Color(96f, 1773f, 796f));
+			GetComponentInChildren<Renderer>().material.SetColor("\\", new Color(1763f, 807f, 585f));
+			GetComponentInChildren<Renderer>().material.SetColor("RanksButton", new Color(590f, 1517f, 755f));
 		}
 		lastDataCount = mapEvent.data.Count;
 	}
 
-	public void LMADKINICIN()
+	private static bool IFHMHIECIHL(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	private static bool AHDLNGNKIFL(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+	}
+
+	[CompilerGenerated]
+	private static bool MJOAAPFDHNH(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+	}
+
+	public void DMNDGIIEAKI()
+	{
+		MFEPCILLECI(true);
+		BEMGANLFMJJ();
+	}
+
+	[SpecialName]
+	public bool HGEPOPKNKID()
+	{
+		return LJBEFJHAOFL;
+	}
+
+	private bool LNJAMEAPMDG(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.Contains(mapEvent.data[1]);
+	}
+
+	public void BOBMDOJALEC()
+	{
+		MFEPCILLECI(false);
+		EKAGILPDBCN();
+	}
+
+	[CompilerGenerated]
+	private bool BKKMOPKHAIE(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.Contains(mapEvent.data[1]);
+	}
+
+	[SpecialName]
+	public bool JPJEINKPMKA()
+	{
+		return LJBEFJHAOFL;
+	}
+
+	private static bool KKIPNANJDPP(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	[SpecialName]
+	public bool FGNCJCMNDIN()
+	{
+		return LJBEFJHAOFL;
+	}
+
+	[SpecialName]
+	public bool FIJPHPCKEKH()
+	{
+		return LJBEFJHAOFL;
+	}
+
+	public void MMBPLGGLPDB()
 	{
 		if (bitObj != null && bitObj.activeSelf)
 		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 354f, scaleMult.y, scaleMult.z);
+			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 227f, scaleMult.y, scaleMult.z);
 		}
 		if (iconSprite != null && iconSprite.activeSelf)
 		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 368f, Camera.main.orthographicSize / 237f, 1597f);
+			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 1416f, Camera.main.orthographicSize / 605f, 1429f);
 		}
 	}
 
 	[SpecialName]
-	public void PIPHIBLIIKK(bool DPNHODJHGJL)
+	public void BKEDJGGEIGB(bool DPNHODJHGJL)
 	{
 		LJBEFJHAOFL = DPNHODJHGJL;
 		selectedMarker.SetActive(LJBEFJHAOFL);
 	}
 
-	private static bool PNCGCLEFJLG(MapEditor.EventsCanvas IACGDFHKCAE)
+	public void MLNPNMLBKHI()
+	{
+		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
+		{
+			return;
+		}
+		iconSprite.SetActive(true);
+		imageRight.gameObject.SetActive(true);
+		imageCenter.gameObject.SetActive(false);
+		if (!string.IsNullOrEmpty(mapEvent.data[0]))
+		{
+			GetComponentInChildren<Renderer>().material.SetColor("SetBGColor", new Color(1161f, 1480f, 1376f));
+			GetComponentInChildren<Renderer>().material.SetColor(" ", new Color(1000f, 1087f, 1079f));
+			if (mapEvent.data[0] == "inventory.selected.")
+			{
+				try
+				{
+					Color color = Helpers.StringToColor(mapEvent.data[1]);
+					imageRight.sprite = Resources.LoadAll<Sprite>("CameraFilterPack/Blur_GaussianBlur")[0];
+					imageRight.color = color;
+					iconSprite.SetActive(false);
+					imageRight.gameObject.SetActive(false);
+				}
+				catch (Exception ex)
+				{
+					Debug.Log("ns" + ex.Message);
+				}
+			}
+			if (mapEvent.data[1] == "JoinRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.")
+			{
+				scaleMult.y = 423f;
+				try
+				{
+					GetComponentInChildren<Renderer>().material.SetColor("SetParticlesCountPerBeat", new Color(226f, 703f, 1342f));
+					GetComponentInChildren<Renderer>().material.SetColor("Scene", new Color(1938f, 311f, 328f));
+				}
+				catch (Exception ex2)
+				{
+					Debug.Log("value" + ex2.Message);
+				}
+			}
+			if (mapEvent.data[1] == "#timeuntilchallenge: ")
+			{
+				try
+				{
+					string text = mapEvent.data[0];
+					char[] array = new char[1];
+					array[1] = '\n';
+					string[] array2 = text.Split(array);
+					if (array2.Length > 0)
+					{
+						string EHGADNHGPNC = array2[0];
+						imageRight.color = Color.white;
+						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
+						{
+							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
+						}
+						else
+						{
+							imageRight.sprite = null;
+							imageRight.color = new Color(433f, 1643f, 1200f);
+							imageRight.color = new Color(1818f, 1952f, 779f);
+						}
+						iconSprite.SetActive(false);
+						imageRight.gameObject.SetActive(false);
+					}
+				}
+				catch (Exception ex3)
+				{
+					Debug.Log("[Left]" + ex3.Message);
+				}
+			}
+			if (mapEvent.data[0] == ",")
+			{
+				try
+				{
+					int num = 0;
+					num = ((mapEvent.data[1].Split('ￄ').Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(EEIGDBBFLEM)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FIMKBBONPKO)));
+					imageCenter.sprite = Resources.LoadAll<Sprite>("Gameplay/particles")[num];
+					imageCenter.color = Color.white;
+					iconSprite.SetActive(true);
+					imageCenter.gameObject.SetActive(true);
+				}
+				catch (Exception ex4)
+				{
+					Debug.Log("0,2,true,0" + ex4.Message);
+				}
+			}
+			if (mapEvent.data[0] == "open")
+			{
+				try
+				{
+					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("CameraFilterPack/NightVision_4")[2];
+					imageCenter.GetComponentInChildren<Image>().color = Color.white;
+					iconSprite.SetActive(true);
+					imageCenter.gameObject.SetActive(true);
+				}
+				catch (Exception ex5)
+				{
+					Debug.Log("_ScreenResolution" + ex5.Message);
+				}
+			}
+		}
+		else
+		{
+			GetComponentInChildren<Renderer>().material.SetColor("[MapsData] Found ", new Color(846f, 1323f, 1159f));
+			GetComponentInChildren<Renderer>().material.SetColor("GlassAberration", new Color(133f, 1763f, 1126f));
+		}
+		lastDataCount = mapEvent.data.Count;
+	}
+
+	public void ONALEHODPJO()
+	{
+		EINLEAFPPOL(true);
+		MLNPNMLBKHI();
+	}
+
+	public void MFILDNIGKGO()
+	{
+		BKEDJGGEIGB(true);
+		EKAGILPDBCN();
+	}
+
+	private static bool EJLKFCEBFEN(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
 	}
 
-	private static bool AOAJGFLCENI(MapEditor.EventsCanvas IACGDFHKCAE)
+	public void Select()
 	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+		isSelected = true;
+		UpdateIcon();
 	}
 
-	public void MICGBLDONHE()
+	public void CMHOENHNEEL()
 	{
 		Vector3 localPosition = base.transform.localPosition;
-		if (mapEvent.time < 129f)
+		if (mapEvent.time < 1557f)
 		{
-			mapEvent.time = 102f;
+			mapEvent.time = 517f;
 		}
-		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
+		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length)
 		{
 			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length;
 		}
 		localPosition.x = mapEvent.time;
-		localPosition.y = NLCBCEGGCCJ();
+		localPosition.y = IHNJPGPOEIP();
 		base.transform.localPosition = localPosition;
 	}
 
-	private static bool NHJBOJNOBKI(MapEditor.EventsCanvas IACGDFHKCAE)
+	public void GAAICNOFMNJ()
 	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+		DKHEBPFKBCI(true);
+		UpdateIcon();
 	}
 
-	private float GHIPKDEKGOE()
+	private static bool OJIIBAOHENA(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
-		if (mapEvent != null && mapEvent.data != null && mapEvent.data[0] != null)
-		{
-			if (mapEvent.data[0] == "https://vk.com/khb.soft")
-			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find(FIHAFJBCDHL).grid.position.y;
-			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[1])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(AOAJGFLCENI).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(HINDGEPGJOF).grid.position.y;
-		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(LJOOLGKAAHB).grid.position.y;
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
 	}
 
-	private static bool IBDNAGJKBGM(MapEditor.EventsCanvas IACGDFHKCAE)
+	private void JNBMKLFJCEM()
 	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+		BCLLPELLKKP(true);
 	}
 
-	private bool OKMGILHPEHB(string IACGDFHKCAE)
-	{
-		string text = mapEvent.data[0];
-		char[] array = new char[0];
-		array[0] = 'ￗ';
-		return IACGDFHKCAE.Contains(text.Split(array)[0]);
-	}
-
-	private static bool NKEHDGMHHFM(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private void JPJNECPABBG()
-	{
-		FDJEEBJHHKK(false);
-	}
-
-	public void KMEONPMCNJG()
+	public void IDIIELPAMCJ()
 	{
 		if (bitObj != null && bitObj.activeSelf)
 		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 1912f, scaleMult.y, scaleMult.z);
+			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 532f, scaleMult.y, scaleMult.z);
 		}
 		if (iconSprite != null && iconSprite.activeSelf)
 		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 85f, Camera.main.orthographicSize / 116f, 328f);
+			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 596f, Camera.main.orthographicSize / 1534f, 1939f);
 		}
+	}
+
+	private bool APAFIDOEJBA(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.Contains(mapEvent.data[0]);
+	}
+
+	[SpecialName]
+	public bool HHNOHJJLMHN()
+	{
+		return LJBEFJHAOFL;
+	}
+
+	private bool BCKBIPBLMDE(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.Contains(mapEvent.data[1].Split('ￖ')[0]);
+	}
+
+	[SpecialName]
+	public void MFEPCILLECI(bool DPNHODJHGJL)
+	{
+		LJBEFJHAOFL = DPNHODJHGJL;
+		selectedMarker.SetActive(LJBEFJHAOFL);
+	}
+
+	[SpecialName]
+	public void BCLLPELLKKP(bool DPNHODJHGJL)
+	{
+		LJBEFJHAOFL = DPNHODJHGJL;
+		selectedMarker.SetActive(LJBEFJHAOFL);
+	}
+
+	private static bool DOHJKGPFNEA(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+	}
+
+	public void DGGCBKJBFCM()
+	{
+		AJHMKMAHDFK(true);
+		HKEDNOKBCCG();
+	}
+
+	private static bool NGKFJOMEJFD(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	[CompilerGenerated]
+	private static bool CLOOIEFPKIA(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	public void JNPLGFCCPHA()
+	{
+		Vector3 localPosition = base.transform.localPosition;
+		if (mapEvent.time < 592f)
+		{
+			mapEvent.time = 1590f;
+		}
+		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length)
+		{
+			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
+		}
+		localPosition.x = mapEvent.time;
+		localPosition.y = MJNJJOHPKPN();
+		base.transform.localPosition = localPosition;
+	}
+
+	private static bool LEPFFADBPOF(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	private static bool CKMIJAHMFDL(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+	}
+
+	[SpecialName]
+	public bool HFEGEHHPPFG()
+	{
+		return LJBEFJHAOFL;
+	}
+
+	private void LFFAKAOAOCN()
+	{
+		EINLEAFPPOL(false);
+	}
+
+	public void OMCLOFCJMPG()
+	{
+		if (bitObj != null && bitObj.activeSelf)
+		{
+			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 1291f, scaleMult.y, scaleMult.z);
+		}
+		if (iconSprite != null && iconSprite.activeSelf)
+		{
+			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 1522f, Camera.main.orthographicSize / 445f, 962f);
+		}
+	}
+
+	[CompilerGenerated]
+	private static bool DJKGOFFKGMF(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+	}
+
+	private static bool KGEEKIBHCJM(MapEditor.EventsCanvas IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+	}
+
+	public void CGPHOALLNKG()
+	{
+		BKEDJGGEIGB(false);
+		HKEDNOKBCCG();
+	}
+
+	private bool INOEBLIDKCH(string IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.Contains(mapEvent.data[0]);
+	}
+
+	public void HGMOKFLGAKG()
+	{
+		MFEPCILLECI(false);
+		HKEDNOKBCCG();
+	}
+
+	public void HOBPIHKCKOA()
+	{
+		EINLEAFPPOL(true);
+		KDHAMIJPEIO();
 	}
 
 	public void UpdateIcon()
@@ -1794,704 +1474,168 @@ public class EditorEvent : MonoBehaviour
 		lastDataCount = mapEvent.data.Count;
 	}
 
-	public void BLDIAHCMHLB()
+	public void NKLIHNJCHOG()
 	{
-		FDJEEBJHHKK(true);
-		CKLFGILMMDL();
-	}
-
-	public void NCMDCMHLIKD()
-	{
-		if (Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip != null)
+		if (bitObj != null && bitObj.activeSelf)
 		{
-			JDJGKBGFDIG();
-			mapEvent.time = base.transform.localPosition.x;
-			BNMJMGDKKJB();
-			HIKKPDACJGI();
+			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 142f, scaleMult.y, scaleMult.z);
+		}
+		if (iconSprite != null && iconSprite.activeSelf)
+		{
+			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 1695f, Camera.main.orthographicSize / 964f, 113f);
 		}
 	}
 
-	private void DEJEBOGKMJO()
-	{
-		LOJGIJBDOON(false);
-	}
-
-	[CompilerGenerated]
-	private static bool DJKGOFFKGMF(MapEditor.EventsCanvas IACGDFHKCAE)
+	private static bool DFBEBLPCKAB(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
+	}
+
+	public void KELLAMNDMKJ()
+	{
+		AJHMKMAHDFK(true);
+		HKEDNOKBCCG();
 	}
 
 	private bool DONNMFALNII(string IACGDFHKCAE)
 	{
 		string text = mapEvent.data[1];
-		char[] array = new char[0];
-		array[0] = '|';
-		return IACGDFHKCAE.Contains(text.Split(array)[1]);
-	}
-
-	private bool HACELNPOIAB(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.Contains(mapEvent.data[0]);
-	}
-
-	public void KGMMJGDGEMA()
-	{
-		Vector3 localPosition = base.transform.localPosition;
-		if (mapEvent.time < 657f)
-		{
-			mapEvent.time = 847f;
-		}
-		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
-		{
-			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length;
-		}
-		localPosition.x = mapEvent.time;
-		localPosition.y = LIJCAFBLLHE();
-		base.transform.localPosition = localPosition;
-	}
-
-	public void IPCHIGBJADH()
-	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[0]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("_Value", new Color(1009f, 343f, 1793f));
-			GetComponentInChildren<Renderer>().material.SetColor("CrosshairOpacitySlider", new Color(111f, 1319f, 1695f));
-			if (mapEvent.data[0] == "NO")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[0]);
-					imageRight.sprite = Resources.LoadAll<Sprite>(" Owner called.")[0];
-					imageRight.color = color;
-					iconSprite.SetActive(false);
-					imageRight.gameObject.SetActive(false);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("_ScreenResolution" + ex.Message);
-				}
-			}
-			if (mapEvent.data[1] == "_TimeX")
-			{
-				scaleMult.y = 543f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("yyyy-MM-dd HH:mm:ss", new Color(1699f, 312f, 1958f));
-					GetComponentInChildren<Renderer>().material.SetColor("_ColorBuffer", new Color(795f, 1297f, 1958f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("Server: {0}. Region: {1} " + ex2.Message);
-				}
-			}
-			if (mapEvent.data[0] == "GlassesColor")
-			{
-				try
-				{
-					string text = mapEvent.data[0];
-					char[] array = new char[0];
-					array[0] = '\uffdd';
-					string[] array2 = text.Split(array);
-					if (array2.Length > 0)
-					{
-						string EHGADNHGPNC = array2[1];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(605f, 546f, 1239f);
-							imageRight.color = new Color(1963f, 734f, 1530f);
-						}
-						iconSprite.SetActive(true);
-						imageRight.gameObject.SetActive(true);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("Tab2Content" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[1] == " This is not possible to be called for standalone input. Please check your platform and code where this is called")
-			{
-				try
-				{
-					int num = 1;
-					string text2 = mapEvent.data[1];
-					char[] array3 = new char[1];
-					array3[1] = 'ﾡ';
-					num = ((text2.Split(array3).Length != 0) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(OKMGILHPEHB)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FAHBEMJCDEE)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>(" This is not possible to be called for standalone input. Please check your platform and code where this is called")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("End Value should be greater than the start value, values not changed" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[1] == "Item ")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("CameraFilterPack_Paper1")[6];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("_Value3" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("/Segment-[Up]", new Color(1079f, 1426f, 138f));
-			GetComponentInChildren<Renderer>().material.SetColor("_Value2", new Color(1136f, 1342f, 1701f));
-		}
-		lastDataCount = mapEvent.data.Count;
+		char[] array = new char[1];
+		array[1] = '\uffd8';
+		return IACGDFHKCAE.Contains(text.Split(array)[0]);
 	}
 
 	[SpecialName]
-	public bool NMINPJFAKLI()
-	{
-		return LJBEFJHAOFL;
-	}
-
-	public void HIKKPDACJGI()
-	{
-		if (bitObj != null && bitObj.activeSelf)
-		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 812f, scaleMult.y, scaleMult.z);
-		}
-		if (iconSprite != null && iconSprite.activeSelf)
-		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 32f, Camera.main.orthographicSize / 1223f, 303f);
-		}
-	}
-
-	public void DKECJIFHOLC()
-	{
-		JDAGBCICMFI(false);
-		DBDONHCIOKN();
-	}
-
-	public void EDDMJJKACKK()
-	{
-		Vector3 localPosition = base.transform.localPosition;
-		if (mapEvent.time < 449f)
-		{
-			mapEvent.time = 343f;
-		}
-		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
-		{
-			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
-		}
-		localPosition.x = mapEvent.time;
-		localPosition.y = NLCBCEGGCCJ();
-		base.transform.localPosition = localPosition;
-	}
-
-	private static bool KIPPBGFAFLD(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private static bool KGDBIEJPJNK(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	public void ENJFIKOILDG()
-	{
-		JDAGBCICMFI(false);
-		FOLDDNELMIO();
-	}
-
-	[SpecialName]
-	public void LOJGIJBDOON(bool DPNHODJHGJL)
+	public void EINLEAFPPOL(bool DPNHODJHGJL)
 	{
 		LJBEFJHAOFL = DPNHODJHGJL;
 		selectedMarker.SetActive(LJBEFJHAOFL);
 	}
 
-	public void DBDONHCIOKN()
+	public void DFJJIEJGFEF()
 	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(false);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(false);
-		if (!string.IsNullOrEmpty(mapEvent.data[1]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("_TimeX", new Color(162f, 1778f, 930f));
-			GetComponentInChildren<Renderer>().material.SetColor("FinalScoreText", new Color(344f, 1607f, 1961f));
-			if (mapEvent.data[1] == "ItemsCountText")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("FrostCanvas")[1];
-					imageRight.color = color;
-					iconSprite.SetActive(false);
-					imageRight.gameObject.SetActive(true);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("DPADVER" + ex.Message);
-				}
-			}
-			if (mapEvent.data[0] == "an hour ago")
-			{
-				scaleMult.y = 1218f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("ChallengesButton", new Color(6f, 720f, 1353f));
-					GetComponentInChildren<Renderer>().material.SetColor("CameraFilterPack/FX_Hypno", new Color(375f, 1293f, 1375f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("LevelNameInputField" + ex2.Message);
-				}
-			}
-			if (mapEvent.data[0] == "Oct")
-			{
-				try
-				{
-					string[] array = mapEvent.data[0].Split('ￚ');
-					if (array.Length > 0)
-					{
-						string EHGADNHGPNC = array[1];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(60f, 1062f, 1320f);
-							imageRight.color = new Color(1748f, 1644f, 908f);
-						}
-						iconSprite.SetActive(false);
-						imageRight.gameObject.SetActive(false);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("player.xp" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[1] == "ReJoinRoom failed. A roomname is required. If you don't know one, how will you join?")
-			{
-				try
-				{
-					int num = 1;
-					string text = mapEvent.data[0];
-					char[] array2 = new char[0];
-					array2[1] = '\a';
-					num = ((text.Split(array2).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(DONNMFALNII)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(HACELNPOIAB)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("[ItemsHandler] Inventory has changed")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(true);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("\n" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[1] == "Left Stick Click")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("_ScreenResolution")[1];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("RarityImage" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("EVENT CONFIG [Ctrl+E]", new Color(560f, 1174f, 1027f));
-			GetComponentInChildren<Renderer>().material.SetColor("Keeping GameObject in the scene: ", new Color(1949f, 1604f, 894f));
-		}
-		lastDataCount = mapEvent.data.Count;
+		AJHMKMAHDFK(true);
+		BEMGANLFMJJ();
 	}
 
-	public void LIJCLLBPBIP()
-	{
-		PIPHIBLIIKK(true);
-		BNAOMEIEBMK();
-	}
-
-	private float GMKHJPPNECM()
-	{
-		if (mapEvent != null && mapEvent.data != null && mapEvent.data[0] != null)
-		{
-			if (mapEvent.data[0] == "_TimeX")
-			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find(ADHOMACBAMM).grid.position.y;
-			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[1])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(BDABIDDODJC).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(ACFEOHCIDLJ).grid.position.y;
-		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(LEKOLAMPLOF).grid.position.y;
-	}
-
-	private static bool NECGDADKKFM(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	public void UpdateEvent()
+	public void CMNPEMEIJEJ()
 	{
 		if (Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip != null)
 		{
-			UpdatePositionFromData();
+			LPJFCLNOFAF();
 			mapEvent.time = base.transform.localPosition.x;
 			UpdateIcon();
 			Update();
 		}
 	}
 
-	public void FMGBIHDGKBI()
+	public void PKCGDOHEGCA()
 	{
-		if (Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip != null)
+		Vector3 localPosition = base.transform.localPosition;
+		if (mapEvent.time < 1694f)
 		{
-			PCDCKOJLIJC();
-			mapEvent.time = base.transform.localPosition.x;
-			BLEHBLOLPMF();
-			EJFJENFKLND();
+			mapEvent.time = 1247f;
 		}
-	}
-
-	public void BNAOMEIEBMK()
-	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
+		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
 		{
-			return;
+			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length;
 		}
-		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[1]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("ready", new Color(84f, 1388f, 855f));
-			GetComponentInChildren<Renderer>().material.SetColor("score", new Color(688f, 579f, 987f));
-			if (mapEvent.data[0] == "23x3")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[0]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("Fade")[0];
-					imageRight.color = color;
-					iconSprite.SetActive(false);
-					imageRight.gameObject.SetActive(true);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("_TimeX" + ex.Message);
-				}
-			}
-			if (mapEvent.data[1] == "\\")
-			{
-				scaleMult.y = 1229f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("_Visualize", new Color(621f, 416f, 442f));
-					GetComponentInChildren<Renderer>().material.SetColor("note.4", new Color(945f, 10f, 189f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("_Far" + ex2.Message);
-				}
-			}
-			if (mapEvent.data[1] == "Couldn't color correct with 3D LUT texture. Image Effect will be disabled.")
-			{
-				try
-				{
-					string text = mapEvent.data[1];
-					char[] array = new char[1];
-					array[1] = '\ufff1';
-					string[] array2 = text.Split(array);
-					if (array2.Length > 0)
-					{
-						string EHGADNHGPNC = array2[1];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(1277f, 945f, 1428f);
-							imageRight.color = new Color(1326f, 542f, 1418f);
-						}
-						iconSprite.SetActive(true);
-						imageRight.gameObject.SetActive(false);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("\n\n#" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[1] == "z")
-			{
-				try
-				{
-					int num = 1;
-					string text2 = mapEvent.data[0];
-					char[] array3 = new char[0];
-					array3[0] = '\0';
-					num = ((text2.Split(array3).Length != 1) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(KCMFAIDMPHH)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FAHBEMJCDEE)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("_Threshhold")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("1 Kb" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[0] == "_Smooth")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("workshop.")[6];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(true);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("turn: {0:0}" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("Ev OwnershipRequest ", new Color(1543f, 1322f, 516f));
-			GetComponentInChildren<Renderer>().material.SetColor("Failed to 'network-remove' GameObject because has no PhotonView components: ", new Color(2f, 1618f, 258f));
-		}
-		lastDataCount = mapEvent.data.Count;
+		localPosition.x = mapEvent.time;
+		localPosition.y = GMKHJPPNECM();
+		base.transform.localPosition = localPosition;
 	}
 
-	public void BMDLFFBAGML()
+	private bool MFJKFJBMBAJ(string IACGDFHKCAE)
 	{
-		PIPHIBLIIKK(true);
-		BLEHBLOLPMF();
+		string text = mapEvent.data[0];
+		char[] array = new char[0];
+		array[0] = 'D';
+		return IACGDFHKCAE.Contains(text.Split(array)[0]);
 	}
 
-	public void Update()
-	{
-		if (bitObj != null && bitObj.activeSelf)
-		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 30f, scaleMult.y, scaleMult.z);
-		}
-		if (iconSprite != null && iconSprite.activeSelf)
-		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 5f, Camera.main.orthographicSize / 5f, 1f);
-		}
-	}
-
-	private static bool AHDLNGNKIFL(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private static bool EIPJAJIIMBF(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	public void KJJODHJJEOH()
-	{
-		if (Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip != null)
-		{
-			MICGBLDONHE();
-			mapEvent.time = base.transform.localPosition.x;
-			EKAHIBEHDLJ();
-			NFEDLAOPHML();
-		}
-	}
-
-	private static bool CMCEKKEFBEK(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	private void MADENBGHKDD()
-	{
-		PIPHIBLIIKK(false);
-	}
-
-	public void NJDJHMPAIFE()
-	{
-		if (Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip != null)
-		{
-			PCDCKOJLIJC();
-			mapEvent.time = base.transform.localPosition.x;
-			IPCHIGBJADH();
-			ABFNJCEBIKA();
-		}
-	}
-
-	private float NLCBCEGGCCJ()
-	{
-		if (mapEvent != null && mapEvent.data != null && mapEvent.data[1] != null)
-		{
-			if (mapEvent.data[0] == "_AdaptationSpeed")
-			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find(LDOPDBNCNHE).grid.position.y;
-			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[0])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(KCFHBHFBNJD).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(HBMEMAGJILM).grid.position.y;
-		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(EIPJAJIIMBF).grid.position.y;
-	}
-
-	private static bool EFFAFHGGOFM(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	private bool GCBPJAGKJJK(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.Contains(mapEvent.data[1]);
-	}
-
-	[SpecialName]
-	public bool BOAIDAOGAIB()
-	{
-		return LJBEFJHAOFL;
-	}
-
-	public void JODDNKKOFKL()
-	{
-		PIPHIBLIIKK(false);
-		BNMJMGDKKJB();
-	}
-
-	[CompilerGenerated]
-	private static bool CLOOIEFPKIA(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	public void NFEDLAOPHML()
-	{
-		if (bitObj != null && bitObj.activeSelf)
-		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 180f, scaleMult.y, scaleMult.z);
-		}
-		if (iconSprite != null && iconSprite.activeSelf)
-		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 187f, Camera.main.orthographicSize / 1771f, 840f);
-		}
-	}
-
-	public void HCIPECAOGIA()
-	{
-		if (bitObj != null && bitObj.activeSelf)
-		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 1617f, scaleMult.y, scaleMult.z);
-		}
-		if (iconSprite != null && iconSprite.activeSelf)
-		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 661f, Camera.main.orthographicSize / 1717f, 1084f);
-		}
-	}
-
-	private float KKKHINEICAC()
+	private float EILECBGLFGJ()
 	{
 		if (mapEvent != null && mapEvent.data != null && mapEvent.data[0] != null)
 		{
-			if (mapEvent.data[0] == "_Value4")
+			if (mapEvent.data[0] == "RecordButton")
 			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find(KGDBIEJPJNK).grid.position.y;
+				return Singleton<MapEditor>.Instance.eventsCanvases.Find(DIHILOHGBAM).grid.position.y;
 			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[1])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(AOAJGFLCENI).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(AHDLNGNKIFL).grid.position.y;
+			return (!Helpers.IsStoryboardEvent(mapEvent.data[0])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(EJLKFCEBFEN).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(CAJOHGJJBDL).grid.position.y;
 		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(EFFAFHGGOFM).grid.position.y;
+		return Singleton<MapEditor>.Instance.eventsCanvases.Find(NCALDGPEJCK).grid.position.y;
 	}
 
-	private static bool MBNDBFNGHOP(MapEditor.EventsCanvas IACGDFHKCAE)
+	private static bool JPGCCLDADHO(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
 	}
 
-	public void ABFNJCEBIKA()
+	private bool MDFEGPFDONL(string IACGDFHKCAE)
 	{
-		if (bitObj != null && bitObj.activeSelf)
+		string text = mapEvent.data[0];
+		char[] array = new char[0];
+		array[1] = '\u0014';
+		return IACGDFHKCAE.Contains(text.Split(array)[0]);
+	}
+
+	public void DHLHKPJNKNC()
+	{
+		Vector3 localPosition = base.transform.localPosition;
+		if (mapEvent.time < 1140f)
 		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 284f, scaleMult.y, scaleMult.z);
+			mapEvent.time = 1685f;
 		}
-		if (iconSprite != null && iconSprite.activeSelf)
+		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length)
 		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 322f, Camera.main.orthographicSize / 1934f, 385f);
+			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
 		}
+		localPosition.x = mapEvent.time;
+		localPosition.y = MJNJJOHPKPN();
+		base.transform.localPosition = localPosition;
 	}
 
-	public void EGEGNHLODAA()
+	private float MJNJJOHPKPN()
 	{
-		if (bitObj != null && bitObj.activeSelf)
+		if (mapEvent != null && mapEvent.data != null && mapEvent.data[1] != null)
 		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 1403f, scaleMult.y, scaleMult.z);
+			if (mapEvent.data[1] == "EventSystem")
+			{
+				return Singleton<MapEditor>.Instance.eventsCanvases.Find(KGEEKIBHCJM).grid.position.y;
+			}
+			return (!Helpers.IsStoryboardEvent(mapEvent.data[1])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(EJLKFCEBFEN).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(NGKFJOMEJFD).grid.position.y;
 		}
-		if (iconSprite != null && iconSprite.activeSelf)
+		return Singleton<MapEditor>.Instance.eventsCanvases.Find(NCALDGPEJCK).grid.position.y;
+	}
+
+	public void GEEFMELBHCA()
+	{
+		AJHMKMAHDFK(false);
+		BEMGANLFMJJ();
+	}
+
+	public void EDJHABOOHKN()
+	{
+		Vector3 localPosition = base.transform.localPosition;
+		if (mapEvent.time < 15f)
 		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 1062f, Camera.main.orthographicSize / 658f, 909f);
+			mapEvent.time = 1863f;
 		}
+		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[1].clip.length)
+		{
+			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
+		}
+		localPosition.x = mapEvent.time;
+		localPosition.y = EILECBGLFGJ();
+		base.transform.localPosition = localPosition;
 	}
 
-	[SpecialName]
-	public void JEGEONIHCLO(bool DPNHODJHGJL)
+	private bool IGPBEJKFEOK(string IACGDFHKCAE)
 	{
-		LJBEFJHAOFL = DPNHODJHGJL;
-		selectedMarker.SetActive(LJBEFJHAOFL);
-	}
-
-	private bool LBAKJBNGMNA(string IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.Contains(mapEvent.data[0]);
-	}
-
-	private void GEGFJJBCHPE()
-	{
-		LOJGIJBDOON(true);
-	}
-
-	private static bool JNJBPLDKODP(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
-	}
-
-	public void NJHHCCGEACF()
-	{
-		PIPHIBLIIKK(false);
-		IPCHIGBJADH();
+		string text = mapEvent.data[1];
+		char[] array = new char[0];
+		array[0] = 'ￂ';
+		return IACGDFHKCAE.Contains(text.Split(array)[1]);
 	}
 
 	private float IHNJPGPOEIP()
@@ -2507,235 +1651,83 @@ public class EditorEvent : MonoBehaviour
 		return Singleton<MapEditor>.Instance.eventsCanvases.Find((MapEditor.EventsCanvas IACGDFHKCAE) => IACGDFHKCAE.forType == MapEditor.EventType.Storyboard).grid.position.y;
 	}
 
-	public void IOMBILLPGCF()
+	[SpecialName]
+	public bool DBGGELDMBCN()
 	{
-		if (mapEvent.data == null || lastDataCount == mapEvent.data.Count)
-		{
-			return;
-		}
-		iconSprite.SetActive(true);
-		imageRight.gameObject.SetActive(true);
-		imageCenter.gameObject.SetActive(true);
-		if (!string.IsNullOrEmpty(mapEvent.data[0]))
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("shader.crispwinter", new Color(851f, 1167f, 1436f));
-			GetComponentInChildren<Renderer>().material.SetColor("_Far", new Color(1386f, 679f, 1870f));
-			if (mapEvent.data[0] == "_TimeX")
-			{
-				try
-				{
-					Color color = Helpers.StringToColor(mapEvent.data[1]);
-					imageRight.sprite = Resources.LoadAll<Sprite>("mapselector.tags.")[0];
-					imageRight.color = color;
-					iconSprite.SetActive(true);
-					imageRight.gameObject.SetActive(false);
-				}
-				catch (Exception ex)
-				{
-					Debug.Log("{0:0} second{1}" + ex.Message);
-				}
-			}
-			if (mapEvent.data[0] == "\\\"")
-			{
-				scaleMult.y = 1322f;
-				try
-				{
-					GetComponentInChildren<Renderer>().material.SetColor("Object ID. Case-Sensitive", new Color(1271f, 695f, 430f));
-					GetComponentInChildren<Renderer>().material.SetColor("player.gamecompleted", new Color(1899f, 201f, 3f));
-				}
-				catch (Exception ex2)
-				{
-					Debug.Log("_Distance" + ex2.Message);
-				}
-			}
-			if (mapEvent.data[0] == "_Value")
-			{
-				try
-				{
-					string[] array = mapEvent.data[0].Split('\u0010');
-					if (array.Length > 1)
-					{
-						string EHGADNHGPNC = array[0];
-						imageRight.color = Color.white;
-						if (Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.GetMapID()).mapData.levelResources.Exists((MapResource IACGDFHKCAE) => IACGDFHKCAE.name == EHGADNHGPNC))
-						{
-							imageRight.sprite = (Sprite)Singleton<MapsSystem>.Instance.GetMapData(Singleton<MapEditor>.Instance.FONMIHBONDF()).resources[EHGADNHGPNC];
-						}
-						else
-						{
-							imageRight.sprite = null;
-							imageRight.color = new Color(688f, 1835f, 14f);
-							imageRight.color = new Color(1017f, 1277f, 1357f);
-						}
-						iconSprite.SetActive(false);
-						imageRight.gameObject.SetActive(true);
-					}
-				}
-				catch (Exception ex3)
-				{
-					Debug.Log("_BlendTex" + ex3.Message);
-				}
-			}
-			if (mapEvent.data[0] == "IntraSig")
-			{
-				try
-				{
-					int num = 0;
-					string text = mapEvent.data[0];
-					char[] array2 = new char[1];
-					array2[1] = 'A';
-					num = ((text.Split(array2).Length != 0) ? Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(OKMGILHPEHB)) : Helpers.patternsMap.IndexOf(Helpers.patternsMap.Find(FAHBEMJCDEE)));
-					imageCenter.sprite = Resources.LoadAll<Sprite>("ItemTemplate")[num];
-					imageCenter.color = Color.white;
-					iconSprite.SetActive(true);
-					imageCenter.gameObject.SetActive(false);
-				}
-				catch (Exception ex4)
-				{
-					Debug.Log("Edited event" + ex4.Message);
-				}
-			}
-			if (mapEvent.data[0] == "InventoryContent")
-			{
-				try
-				{
-					imageCenter.GetComponentInChildren<Image>().sprite = Resources.LoadAll<Sprite>("\n")[3];
-					imageCenter.GetComponentInChildren<Image>().color = Color.white;
-					iconSprite.SetActive(false);
-					imageCenter.gameObject.SetActive(true);
-				}
-				catch (Exception ex5)
-				{
-					Debug.Log("<b>#" + ex5.Message);
-				}
-			}
-		}
-		else
-		{
-			GetComponentInChildren<Renderer>().material.SetColor("#onrankchangeuptext", new Color(251f, 883f, 1279f));
-			GetComponentInChildren<Renderer>().material.SetColor("Can't find PhotonView of incoming OwnershipRequest. ViewId not found: ", new Color(1401f, 58f, 365f));
-		}
-		lastDataCount = mapEvent.data.Count;
+		return LJBEFJHAOFL;
 	}
 
-	private static bool LJOOLGKAAHB(MapEditor.EventsCanvas IACGDFHKCAE)
+	private static bool FGHAMCNIHMN(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
 		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
 	}
 
-	[CompilerGenerated]
-	private bool BMJDNECLLIG(string IACGDFHKCAE)
+	private void PPCGJBIIFAO()
 	{
-		return IACGDFHKCAE.Contains(mapEvent.data[1].Split(',')[0]);
+		EINLEAFPPOL(true);
 	}
 
-	public void JDJGKBGFDIG()
-	{
-		Vector3 localPosition = base.transform.localPosition;
-		if (mapEvent.time < 1253f)
-		{
-			mapEvent.time = 66f;
-		}
-		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
-		{
-			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
-		}
-		localPosition.x = mapEvent.time;
-		localPosition.y = NLCBCEGGCCJ();
-		base.transform.localPosition = localPosition;
-	}
-
-	private bool FKGMEANLBAH(string IACGDFHKCAE)
+	private bool CHJGMEEPGMM(string IACGDFHKCAE)
 	{
 		string text = mapEvent.data[0];
 		char[] array = new char[0];
-		array[1] = '1';
-		return IACGDFHKCAE.Contains(text.Split(array)[0]);
+		array[1] = 'ﾉ';
+		return IACGDFHKCAE.Contains(text.Split(array)[1]);
 	}
 
-	public void LEBDGMBCDMO()
+	private bool FNIJFIJGOON(string IACGDFHKCAE)
 	{
-		JEGEONIHCLO(true);
-		BMJFKHIKEAJ();
+		return IACGDFHKCAE.Contains(mapEvent.data[1]);
 	}
 
-	public void Deselect()
+	private void GLGOLEOAFOD()
 	{
-		isSelected = false;
-		UpdateIcon();
+		MFEPCILLECI(true);
 	}
 
-	public void NOGJICCANOG()
-	{
-		Vector3 localPosition = base.transform.localPosition;
-		if (mapEvent.time < 1893f)
-		{
-			mapEvent.time = 704f;
-		}
-		if (mapEvent.time > Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length)
-		{
-			mapEvent.time = Singleton<MapEditor>.Instance.audioSampler.audioSources[0].clip.length;
-		}
-		localPosition.x = mapEvent.time;
-		localPosition.y = KKKHINEICAC();
-		base.transform.localPosition = localPosition;
-	}
-
-	public void GPFJMKCGHGB()
+	public void OBAEDJJDCPN()
 	{
 		if (bitObj != null && bitObj.activeSelf)
 		{
-			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 661f, scaleMult.y, scaleMult.z);
+			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 817f, scaleMult.y, scaleMult.z);
 		}
 		if (iconSprite != null && iconSprite.activeSelf)
 		{
-			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 1866f, Camera.main.orthographicSize / 449f, 1778f);
+			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 1972f, Camera.main.orthographicSize / 1865f, 522f);
 		}
 	}
 
-	public void FCPPLPPLKIP()
+	public void PHPOCLOJFIB()
 	{
-		LOJGIJBDOON(true);
-		IPCHIGBJADH();
+		DKHEBPFKBCI(true);
+		EKAGILPDBCN();
 	}
 
-	private static bool FIHAFJBCDHL(MapEditor.EventsCanvas IACGDFHKCAE)
+	private static bool KIPPBGFAFLD(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
 	}
 
-	private float CILCHIMNABB()
+	public void NEPBGJLOCNH()
 	{
-		if (mapEvent != null && mapEvent.data != null && mapEvent.data[1] != null)
+		EINLEAFPPOL(false);
+		GKKAJOHEJCG();
+	}
+
+	public void DGCGGKMNPLD()
+	{
+		if (bitObj != null && bitObj.activeSelf)
 		{
-			if (mapEvent.data[0] == "Load Game")
-			{
-				return Singleton<MapEditor>.Instance.eventsCanvases.Find(NLKEBCFDNHP).grid.position.y;
-			}
-			return (!Helpers.IsStoryboardEvent(mapEvent.data[0])) ? Singleton<MapEditor>.Instance.eventsCanvases.Find(BJMPJJEJPHG).grid.position.y : Singleton<MapEditor>.Instance.eventsCanvases.Find(HBMEMAGJILM).grid.position.y;
+			bitObj.transform.localScale = new Vector3(Camera.main.orthographicSize / 1969f, scaleMult.y, scaleMult.z);
 		}
-		return Singleton<MapEditor>.Instance.eventsCanvases.Find(FKLAAPLBCOH).grid.position.y;
+		if (iconSprite != null && iconSprite.activeSelf)
+		{
+			iconSprite.transform.localScale = new Vector3(Camera.main.orthographicSize / 1365f, Camera.main.orthographicSize / 1245f, 1031f);
+		}
 	}
 
-	private static bool HINDGEPGJOF(MapEditor.EventsCanvas IACGDFHKCAE)
+	private static bool NDNMONPHGPH(MapEditor.EventsCanvas IACGDFHKCAE)
 	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	public void Select()
-	{
-		isSelected = true;
-		UpdateIcon();
-	}
-
-	private static bool PNJINGIAKFM(MapEditor.EventsCanvas IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.forType == MapEditor.EventType.Storyboard;
-	}
-
-	[SpecialName]
-	public bool NEOIOPKJAFI()
-	{
-		return LJBEFJHAOFL;
+		return IACGDFHKCAE.forType == MapEditor.EventType.Gameplay;
 	}
 }

@@ -7,46 +7,23 @@ public class PhotonTransformViewScaleControl
 
 	private Vector3 ENAJHAMBNFK = Vector3.one;
 
-	public Vector3 JHLAPBECKPH()
-	{
-		return ENAJHAMBNFK;
-	}
-
-	public Vector3 NKLAIOJCAHD(Vector3 MGMPJFHHBMM)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return ENAJHAMBNFK;
-		case PhotonTransformViewScaleModel.InterpolateOptions.MoveTowards:
-			return Vector3.MoveTowards(MGMPJFHHBMM, ENAJHAMBNFK, HNCFAJJGIPN.InterpolateMoveTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewScaleModel.InterpolateOptions.Lerp:
-			return Vector3.Lerp(MGMPJFHHBMM, ENAJHAMBNFK, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Vector3 MPJGCCAJAOA()
-	{
-		return ENAJHAMBNFK;
-	}
-
-	public void KLFPENLPMJP(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void OCPCKNHCMKP(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HNCFAJJGIPN.SynchronizeEnabled)
 		{
 			if (HCIJEDFCNOP.isWriting)
 			{
-				HCIJEDFCNOP.SendNext(MGMPJFHHBMM);
+				HCIJEDFCNOP.AIAIEPFCCDO(MGMPJFHHBMM);
 				ENAJHAMBNFK = MGMPJFHHBMM;
 			}
 			else
 			{
-				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
+				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
 			}
 		}
 	}
 
-	public Vector3 OMAOHOBIMNM(Vector3 MGMPJFHHBMM)
+	public Vector3 HNDBPLMHBDH(Vector3 MGMPJFHHBMM)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
 		{
@@ -57,27 +34,6 @@ public class PhotonTransformViewScaleControl
 		case PhotonTransformViewScaleModel.InterpolateOptions.Lerp:
 			return Vector3.Lerp(MGMPJFHHBMM, ENAJHAMBNFK, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
 		}
-	}
-
-	public void BAEICBGEECA(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.PGJIELMHMEJ())
-			{
-				HCIJEDFCNOP.PNAPNHJHBMN(MGMPJFHHBMM);
-				ENAJHAMBNFK = MGMPJFHHBMM;
-			}
-			else
-			{
-				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
-			}
-		}
-	}
-
-	public Vector3 BMOPJJPOKEE()
-	{
-		return ENAJHAMBNFK;
 	}
 
 	public Vector3 GetScale(Vector3 MGMPJFHHBMM)
@@ -93,12 +49,70 @@ public class PhotonTransformViewScaleControl
 		}
 	}
 
+	public Vector3 PEFDNEOFNBE()
+	{
+		return ENAJHAMBNFK;
+	}
+
 	public PhotonTransformViewScaleControl(PhotonTransformViewScaleModel PMLNAMDEBFI)
 	{
 		HNCFAJJGIPN = PMLNAMDEBFI;
 	}
 
-	public Vector3 HJKPAPHBNND(Vector3 MGMPJFHHBMM)
+	public void DCKLCCMEGAA(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HNCFAJJGIPN.SynchronizeEnabled)
+		{
+			if (HCIJEDFCNOP.MLCGKMDJIMA())
+			{
+				HCIJEDFCNOP.SendNext(MGMPJFHHBMM);
+				ENAJHAMBNFK = MGMPJFHHBMM;
+			}
+			else
+			{
+				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	public void GBOFDLLNLLL(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HNCFAJJGIPN.SynchronizeEnabled)
+		{
+			if (HCIJEDFCNOP.MLCGKMDJIMA())
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(MGMPJFHHBMM);
+				ENAJHAMBNFK = MGMPJFHHBMM;
+			}
+			else
+			{
+				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	public void HBBLLHAOBLE(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HNCFAJJGIPN.SynchronizeEnabled)
+		{
+			if (HCIJEDFCNOP.MLCGKMDJIMA())
+			{
+				HCIJEDFCNOP.NICKMDDINKP(MGMPJFHHBMM);
+				ENAJHAMBNFK = MGMPJFHHBMM;
+			}
+			else
+			{
+				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	public Vector3 LAGCPMPNEBJ()
+	{
+		return ENAJHAMBNFK;
+	}
+
+	public Vector3 ABCGHBHCKIK(Vector3 MGMPJFHHBMM)
 	{
 		switch (HNCFAJJGIPN.InterpolateOption)
 		{
@@ -111,49 +125,7 @@ public class PhotonTransformViewScaleControl
 		}
 	}
 
-	public void COHGAEMDFEI(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.FADAIFFMBEL(MGMPJFHHBMM);
-				ENAJHAMBNFK = MGMPJFHHBMM;
-			}
-			else
-			{
-				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.FIBMOBNIALK();
-			}
-		}
-	}
-
-	public Vector3 FLFKMOEGOKL()
-	{
-		return ENAJHAMBNFK;
-	}
-
-	public void DLFLONFGGGG(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.isWriting)
-			{
-				HCIJEDFCNOP.CPIBABMPJLE(MGMPJFHHBMM);
-				ENAJHAMBNFK = MGMPJFHHBMM;
-			}
-			else
-			{
-				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.KIMDMBDNICC();
-			}
-		}
-	}
-
-	public Vector3 GetNetworkScale()
-	{
-		return ENAJHAMBNFK;
-	}
-
-	public Vector3 DBBAOGADAFG()
+	public Vector3 LFLEBBLFHNO()
 	{
 		return ENAJHAMBNFK;
 	}
@@ -174,69 +146,17 @@ public class PhotonTransformViewScaleControl
 		}
 	}
 
-	public void FBMDDFMGFMF(Vector3 MGMPJFHHBMM, PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HNCFAJJGIPN.SynchronizeEnabled)
-		{
-			if (HCIJEDFCNOP.GKJCHGIMOEJ())
-			{
-				HCIJEDFCNOP.FADAIFFMBEL(MGMPJFHHBMM);
-				ENAJHAMBNFK = MGMPJFHHBMM;
-			}
-			else
-			{
-				ENAJHAMBNFK = (Vector3)HCIJEDFCNOP.IDKHBJIHKEB();
-			}
-		}
-	}
-
-	public Vector3 IACAMHINPMK()
+	public Vector3 CLPJDAHHOAN()
 	{
 		return ENAJHAMBNFK;
 	}
 
-	public Vector3 HIAGDLDLOJO()
+	public Vector3 CADLHOPJEBH()
 	{
 		return ENAJHAMBNFK;
 	}
 
-	public Vector3 GCKHEBOACNA(Vector3 MGMPJFHHBMM)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return ENAJHAMBNFK;
-		case PhotonTransformViewScaleModel.InterpolateOptions.MoveTowards:
-			return Vector3.MoveTowards(MGMPJFHHBMM, ENAJHAMBNFK, HNCFAJJGIPN.InterpolateMoveTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewScaleModel.InterpolateOptions.Lerp:
-			return Vector3.Lerp(MGMPJFHHBMM, ENAJHAMBNFK, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Vector3 GIMLEHMPBKA()
-	{
-		return ENAJHAMBNFK;
-	}
-
-	public Vector3 PEFDNEOFNBE()
-	{
-		return ENAJHAMBNFK;
-	}
-
-	public Vector3 FNKIOEHHAMB(Vector3 MGMPJFHHBMM)
-	{
-		switch (HNCFAJJGIPN.InterpolateOption)
-		{
-		default:
-			return ENAJHAMBNFK;
-		case PhotonTransformViewScaleModel.InterpolateOptions.MoveTowards:
-			return Vector3.MoveTowards(MGMPJFHHBMM, ENAJHAMBNFK, HNCFAJJGIPN.InterpolateMoveTowardsSpeed * Time.deltaTime);
-		case PhotonTransformViewScaleModel.InterpolateOptions.Lerp:
-			return Vector3.Lerp(MGMPJFHHBMM, ENAJHAMBNFK, HNCFAJJGIPN.InterpolateLerpSpeed * Time.deltaTime);
-		}
-	}
-
-	public Vector3 JBGODNPHENN()
+	public Vector3 GetNetworkScale()
 	{
 		return ENAJHAMBNFK;
 	}

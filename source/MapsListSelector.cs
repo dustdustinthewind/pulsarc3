@@ -154,25 +154,561 @@ public class MapsListSelector : Singleton<MapsListSelector>
 	[CompilerGenerated]
 	private static Func<RanksSystem.Map, bool> KCAPKHIJOHL;
 
-	public void CCLNNLCOPBL()
+	public int GetMapsCount()
 	{
-		relaxModeToggle.isOn = Singleton<SaveSystem>.Instance.JPEEFKKPFIL("] to be droppable", 0) == 0;
+		return AFOAEMCKEEM;
 	}
 
-	private void DHODJKNPOLL(SteamUGCQueryCompleted_t IAFAANLMOAG, bool MIOCPAMDBCN)
+	[CompilerGenerated]
+	private static bool KLBEEDEECFN(RanksSystem.Map IACGDFHKCAE)
 	{
+		return IACGDFHKCAE.isFunny;
+	}
+
+	public int EBALPFLKPKF()
+	{
+		return AFOAEMCKEEM;
+	}
+
+	private void GLHMGJOINPJ(SteamUGCQueryCompleted_t IAFAANLMOAG, bool MIOCPAMDBCN)
+	{
+		object[] array = new object[0];
+		array[1] = "_Exponent";
+		array[0] = IAFAANLMOAG.m_unNumResultsReturned;
+		array[3] = "#newhighscore";
+		array[5] = IAFAANLMOAG.m_unTotalMatchingResults;
+		Debug.Log(string.Concat(array));
 		ANFDMOPJFCK = (int)IAFAANLMOAG.m_unNumResultsReturned;
 		if (KFBIEPMLCBP != null)
 		{
 			StopCoroutine(KFBIEPMLCBP);
 		}
-		KFBIEPMLCBP = IGIAHHHPMGP(IAFAANLMOAG);
+		KFBIEPMLCBP = HBNLOHGCGPG(IAFAANLMOAG);
 		StartCoroutine(KFBIEPMLCBP);
+	}
+
+	public void GIKJIFGFMFP(string NBGPBKCPFDN = null, bool BKMMLOEMPBB = false)
+	{
+		if (!BKMMLOEMPBB)
+		{
+			result = NBGPBKCPFDN;
+			if (!string.IsNullOrEmpty(NBGPBKCPFDN))
+			{
+				if (KBLADAACANO)
+				{
+					StartCoroutine(Singleton<UI>.Instance.GMKIDJLMDGE(modeSelector, true, null, false, 1204f));
+					StartCoroutine(Singleton<UI>.Instance.MILOPMDKLKL(mapSelector, true, null, false, 633f, false));
+				}
+				else
+				{
+					finished = false;
+					StartCoroutine(Singleton<UI>.Instance.IONNACCHGJL(modeSelector, true, null, false, 773f));
+					StartCoroutine(Singleton<UI>.Instance.AJGPBCBAPIF(mapSelector, true, null, false, 157f));
+				}
+			}
+			else
+			{
+				finished = false;
+				StartCoroutine(Singleton<UI>.Instance.PKHAEJHIMGD(modeSelector, true, null, true, 1816f));
+				StartCoroutine(Singleton<UI>.Instance.MILOPMDKLKL(mapSelector, false, null, false, 1306f, false));
+				if (HKDGMEHPLDM != null)
+				{
+					HKDGMEHPLDM();
+				}
+			}
+		}
+		else
+		{
+			finished = true;
+			StartCoroutine(Singleton<UI>.Instance.IONNACCHGJL(modeSelector, true, null, true, 1400f));
+			StartCoroutine(Singleton<UI>.Instance.FHHCCJAPBKA(mapSelector, true, null, true, 1491f, false));
+		}
+	}
+
+	public int NPLGDELOAFB()
+	{
+		return Singleton<SaveSystem>.Instance.HHBIEPMBICO("CameraFilterPack_TV_Vignetting1", -65);
+	}
+
+	private static float CJIMNIMMCAF(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.IDAOGFLHIBN();
+	}
+
+	private IEnumerator INIHIHNCJKO()
+	{
+		sortDropDownList.gameObject.SetActive(true);
+		sortDropDownList.Start();
+		yield return null;
+		DropDownList dropDownList = sortDropDownList;
+		dropDownList.Items.Clear();
+		sortDropDownListText.text = LocalizationService.Instance.GetLocalizatedText("#orderby:").ToUpper();
+		int num = 0;
+		IEnumerator enumerator = Enum.GetValues(typeof(OfficialSortMode)).GetEnumerator();
+		try
+		{
+			while (enumerator.MoveNext())
+			{
+				OfficialSortMode officialSortMode = (OfficialSortMode)enumerator.Current;
+				dropDownList.Items.Add(new DropDownListItem(LocalizationService.Instance.GetLocalizatedText("#" + officialSortMode.ToString().ToLower()).ToUpper(), string.Empty + officialSortMode));
+				num++;
+			}
+		}
+		finally
+		{
+			IDisposable disposable;
+			IDisposable disposable2 = (disposable = enumerator as IDisposable);
+			if (disposable != null)
+			{
+				disposable2.Dispose();
+			}
+		}
+		dropDownList.RebuildPanel();
+		dropDownList.RedrawPanel();
+		dropDownList.SelectItem((int)BPLAIMGIOKO, false);
+		dropDownList.gameObject.SetActive(currentMapsTab == 0 || currentMapsTab == 3 || currentMapsTab == 4);
+	}
+
+	private static float FKOLGJGEHMC(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.IDAOGFLHIBN();
+	}
+
+	public void IMIHBLIMMEI()
+	{
+		StartCoroutine(Singleton<UI>.Instance.JCLKEGPNBJJ(modeSelector, true, null, true, 330f));
+		StartCoroutine(Singleton<UI>.Instance.MILOPMDKLKL(mapSelector, true, null, true, 95f));
+	}
+
+	public void NKENHIGCPIM()
+	{
+		filterBGPanel.gameObject.SetActive(!subscribedToggle.isOn && !favoriteToggle.isOn && ratedToggle.isOn);
+		searchInputField.interactable = !Singleton<SaveSystem>.Instance.CHBOJJOHCEB("#ok", false) && !Singleton<SaveSystem>.Instance.JMLMIGBEKJN("G:", false) && Singleton<SaveSystem>.Instance.CHBOJJOHCEB("maps.", true);
+	}
+
+	private static float JLFEEKFKBOD(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.KNKHGMLPOOP();
+	}
+
+	private void PHHPOLMDEIF(bool NNIPFHAFNOK = false)
+	{
+		ANFDMOPJFCK = 50;
+		HOAHBPOGNKA();
+		if (currentMapsTab == 2)
+		{
+			EUGCQuery eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByTrend;
+			if (Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 1)
+			{
+				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByPublicationDate;
+			}
+			if (Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 2)
+			{
+				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByVote;
+			}
+			if (eUGCQuery != EUGCQuery.k_EUGCQuery_RankedByTrend)
+			{
+				Helpers.ObtainAchievement(25);
+			}
+			if (!Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false))
+			{
+				FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eUGCQuery, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, (AppId_t)513510u, (AppId_t)513510u, (uint)HGPMLICPBKA);
+				ApplySearchFilter();
+			}
+			else
+			{
+				if (Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false))
+				{
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Subscribed, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, EUserUGCListSortOrder.k_EUserUGCListSortOrder_SubscriptionDateDesc, (AppId_t)513510u, (AppId_t)513510u, (uint)HGPMLICPBKA);
+				}
+				if (Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false))
+				{
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Favorited, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderDesc, (AppId_t)513510u, (AppId_t)513510u, (uint)HGPMLICPBKA);
+				}
+				if (Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false))
+				{
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_VotedUp, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderDesc, (AppId_t)513510u, (AppId_t)513510u, (uint)HGPMLICPBKA);
+				}
+			}
+			ADLHGGOENBP = NNIPFHAFNOK;
+			SteamUGC.SetReturnOnlyIDs(FFOJIDODGDO, !NNIPFHAFNOK);
+			SteamAPICall_t hAPICall = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+			AICOBBBILIL.Set(hAPICall);
+		}
+		if (currentMapsTab == 5)
+		{
+			EUGCQuery eQueryType = EUGCQuery.k_EUGCQuery_RankedByTrend;
+			FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eQueryType, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, AppId_t.Invalid, SteamUtils.GetAppID(), (uint)HGPMLICPBKA);
+			SteamUGC.AddRequiredTag(FFOJIDODGDO, "winter2020");
+			SteamAPICall_t hAPICall2 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+			AICOBBBILIL.Set(hAPICall2);
+		}
+		if (currentMapsTab != 0 && currentMapsTab != 3 && currentMapsTab != 4)
+		{
+			return;
+		}
+		List<PublishedFileId_t> list = new List<PublishedFileId_t>();
+		List<RanksSystem.Map> source = RanksSystem.GetOfficialMapsList();
+		if (BPLAIMGIOKO == OfficialSortMode.Date)
+		{
+			source = (from IACGDFHKCAE in RanksSystem.GetOfficialMapsList()
+				orderby DateTime.Parse(IACGDFHKCAE.added, CultureInfo.InvariantCulture) descending
+				select IACGDFHKCAE).ToList();
+		}
+		if (BPLAIMGIOKO == OfficialSortMode.Difficulty)
+		{
+			source = (from IACGDFHKCAE in RanksSystem.GetOfficialMapsList()
+				orderby IACGDFHKCAE.difficulty
+				select IACGDFHKCAE).ToList();
+		}
+		if (currentMapsTab == 0)
+		{
+			foreach (RanksSystem.Map item in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isOfficial).ToList())
+			{
+				list.Add((PublishedFileId_t)item.id);
+			}
+		}
+		if (currentMapsTab == 3)
+		{
+			foreach (RanksSystem.Map item2 in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isLoved).ToList())
+			{
+				list.Add((PublishedFileId_t)item2.id);
+			}
+		}
+		if (currentMapsTab == 4)
+		{
+			foreach (RanksSystem.Map item3 in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isFunny).ToList())
+			{
+				list.Add((PublishedFileId_t)item3.id);
+			}
+		}
+		FFOJIDODGDO = SteamUGC.CreateQueryUGCDetailsRequest(list.ToArray(), (uint)list.Count);
+		SteamAPICall_t hAPICall3 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+		AICOBBBILIL.Set(hAPICall3);
+	}
+
+	[CompilerGenerated]
+	private static float HFAMHDJOBIF(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.difficulty;
+	}
+
+	private static bool CFIDKBLFGKC(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.GHLGPIBJELG();
+	}
+
+	private static bool IHIMJDCLMEE(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.GHLGPIBJELG();
+	}
+
+	public void BAHKGJFEMNH()
+	{
+		GameObject gameObject = tagsScrollRectContent.gameObject;
+		Toggle[] componentsInChildren = gameObject.GetComponentsInChildren<Toggle>();
+		for (int i = 1; i < componentsInChildren.Length; i++)
+		{
+			Toggle toggle = componentsInChildren[i];
+			Singleton<SaveSystem>.Instance.GIKPOGCBJFI("_DotSize" + toggle.GetComponentInChildren<Text>().text, toggle.isOn);
+		}
+		Singleton<SaveSystem>.Instance.GBFBKFACPBI("UI", inTrendToggle.isOn ? 1 : ((!recentToggle.isOn) ? 5 : 0));
+		Singleton<SaveSystem>.Instance.GIKPOGCBJFI(".g", subscribedToggle.isOn);
+		Singleton<SaveSystem>.Instance.JKOMMNBGPDK("UNDISTORT", favoriteToggle.isOn);
+		Singleton<SaveSystem>.Instance.GIKPOGCBJFI("Paste events", ratedToggle.isOn);
+		CloseSortPanel();
+		KENKGBJGEFP();
+	}
+
+	public void JKBMKPDGCHG()
+	{
+		relaxModeToggle.isOn = Singleton<SaveSystem>.Instance.HHBIEPMBICO("BadgeText", 1) == 0;
+	}
+
+	public void InitSortPanel()
+	{
+		sortPanel.gameObject.SetActive(true);
+		GameObject gameObject = tagsScrollRectContent.gameObject;
+		for (int i = 0; i < gameObject.transform.childCount; i++)
+		{
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		foreach (string specialTag in Helpers.specialTags)
+		{
+			GameObject gameObject2 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
+			gameObject2.transform.SetParent(gameObject.transform);
+			gameObject2.name = "tagElement";
+			gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
+			gameObject2.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.tags." + specialTag, true);
+			gameObject2.GetComponentInChildren<Text>().text = specialTag;
+		}
+		foreach (string tag in Helpers.tags)
+		{
+			GameObject gameObject3 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
+			gameObject3.transform.SetParent(gameObject.transform);
+			gameObject3.name = "tagElement";
+			gameObject3.transform.localScale = new Vector3(1f, 1f, 1f);
+			gameObject3.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.tags." + tag, true);
+			gameObject3.GetComponentInChildren<Text>().text = tag;
+		}
+		inTrendToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 0;
+		recentToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 1;
+		topRatedToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 2;
+		subscribedToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false);
+		favoriteToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false);
+		ratedToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false);
+	}
+
+	private static float CDAPCCPCPGF(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.KNKHGMLPOOP();
+	}
+
+	public void IIPMJPCDLME()
+	{
+		filterBGPanel.gameObject.SetActive(!subscribedToggle.isOn && !favoriteToggle.isOn && ratedToggle.isOn);
+		searchInputField.interactable = !Singleton<SaveSystem>.Instance.JMLMIGBEKJN("}", true) && !Singleton<SaveSystem>.Instance.CHBOJJOHCEB("inventory.selected.", false) && !Singleton<SaveSystem>.Instance.GetBool("[PlayerController] ", true);
+	}
+
+	private void ANOPEGMDJDG(bool IDNLBGOCOEK)
+	{
+		sortDropDownList.SelectItem((int)BPLAIMGIOKO);
+		sortDropDownList.gameObject.SetActive(IDNLBGOCOEK);
+	}
+
+	public void ChangePage(bool FOJOODCBOIK, int HOHOIPHEOPN, bool AAGGLAGLINL = false)
+	{
+		int num = currentMapsPageID;
+		num = (FOJOODCBOIK ? HOHOIPHEOPN : ((HOHOIPHEOPN > 0) ? ((GetMapsCount() + ItemsPerPage() - 1) / ItemsPerPage() - 1) : 0));
+		if (num < 0)
+		{
+			num = 0;
+		}
+		if (num >= (GetMapsCount() + ItemsPerPage() - 1) / ItemsPerPage() - 1)
+		{
+			num = (GetMapsCount() + ItemsPerPage() - 1) / ItemsPerPage() - 1;
+		}
+		if (num != currentMapsPageID || AAGGLAGLINL)
+		{
+			currentMapsPageID = num;
+			CECPMNODBLA();
+			StopCoroutine("MAMMIDNFMOM");
+			StartCoroutine(MAMMIDNFMOM());
+		}
+	}
+
+	private void HOAHBPOGNKA()
+	{
+		GameObject gameObject = pageNavScrollRectContent;
+		for (int i = 0; i < gameObject.transform.childCount; i++)
+		{
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		GameObject gameObject2 = UnityEngine.Object.Instantiate(pageNavPrevPageButton, Vector3.zero, Quaternion.identity);
+		gameObject2.transform.SetParent(gameObject.transform, true);
+		gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
+		gameObject2.GetComponent<MapsListNavButton>().actionID = -1;
+		GameObject gameObject3 = UnityEngine.Object.Instantiate(pageNavCurrentPageButton, Vector3.zero, Quaternion.identity);
+		gameObject3.transform.SetParent(gameObject.transform, true);
+		gameObject3.transform.localScale = new Vector3(1f, 1f, 1f);
+		gameObject3.GetComponentInChildren<Text>().text = string.Empty + (currentMapsPageID + 1) + "/" + ((AOJCGLBEOME <= 0) ? "1" : (AOJCGLBEOME + string.Empty));
+		gameObject3.GetComponent<Button>().interactable = false;
+		GameObject gameObject4 = UnityEngine.Object.Instantiate(pageNavNextPageButton, Vector3.zero, Quaternion.identity);
+		gameObject4.transform.SetParent(gameObject.transform, true);
+		gameObject4.transform.localScale = new Vector3(1f, 1f, 1f);
+		gameObject4.GetComponent<MapsListNavButton>().actionID = 1;
+		gameObject4.GetComponent<MapsListNavButton>().pageID = 1;
+	}
+
+	public int PNJELIODCHB()
+	{
+		return Singleton<SaveSystem>.Instance.KFNFNKILGPH("CameraFilterPack_TV_HorrorFX", 65);
+	}
+
+	public void FAEGBGGCMEI()
+	{
+		BPLAIMGIOKO = (OfficialSortMode)Enum.Parse(typeof(OfficialSortMode), sortDropDownList.SelectedItem.BAOIGDPGNIN());
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI("_Value11", (int)BPLAIMGIOKO);
+		DIOPKLBFDOK();
+	}
+
+	public void OnEnable()
+	{
+		AICOBBBILIL = CallResult<SteamUGCQueryCompleted_t>.Create(MILGIHKLCHH);
+	}
+
+	public void ApplySearchFilter()
+	{
+		foreach (string specialTag in Helpers.specialTags)
+		{
+			if (Singleton<SaveSystem>.Instance.GetBool("mapselector.tags." + specialTag, true))
+			{
+				SteamUGC.AddRequiredTag(FFOJIDODGDO, specialTag);
+			}
+			else
+			{
+				SteamUGC.AddExcludedTag(FFOJIDODGDO, specialTag);
+			}
+		}
+		foreach (string tag in Helpers.tags)
+		{
+			if (Singleton<SaveSystem>.Instance.GetBool("mapselector.tags." + tag, true))
+			{
+				SteamUGC.AddRequiredTag(FFOJIDODGDO, tag);
+			}
+			else
+			{
+				SteamUGC.AddExcludedTag(FFOJIDODGDO, tag);
+			}
+		}
+		SteamUGC.SetMatchAnyTag(FFOJIDODGDO, true);
+		if (!string.IsNullOrEmpty(lastSearch))
+		{
+			SteamUGC.SetSearchText(FFOJIDODGDO, lastSearch);
+		}
+	}
+
+	private void MILGIHKLCHH(SteamUGCQueryCompleted_t IAFAANLMOAG, bool MIOCPAMDBCN)
+	{
+		Debug.Log("Return: " + IAFAANLMOAG.m_unNumResultsReturned + "/" + IAFAANLMOAG.m_unTotalMatchingResults);
+		ANFDMOPJFCK = (int)IAFAANLMOAG.m_unNumResultsReturned;
+		if (KFBIEPMLCBP != null)
+		{
+			StopCoroutine(KFBIEPMLCBP);
+		}
+		KFBIEPMLCBP = HBNLOHGCGPG(IAFAANLMOAG);
+		StartCoroutine(KFBIEPMLCBP);
+	}
+
+	public void DIOPKLBFDOK(bool IIGAFCONAHP = false)
+	{
+		if (IIGAFCONAHP)
+		{
+			currentMapsPageID = 0;
+		}
+		BPLAIMGIOKO = (OfficialSortMode)Singleton<SaveSystem>.Instance.KFNFNKILGPH("_History3ChromaTex", 1);
+		searchInputField.interactable = !Singleton<SaveSystem>.Instance.GetBool("_ScreenResolution", true) && !Singleton<SaveSystem>.Instance.JMLMIGBEKJN("_TimeX", false) && Singleton<SaveSystem>.Instance.CHBOJJOHCEB("HandsCountSlider", true);
+		if (Singleton<SaveSystem>.Instance.CHBOJJOHCEB("_Value2", true) || Singleton<SaveSystem>.Instance.GetBool("_Value3", false) || Singleton<SaveSystem>.Instance.JMLMIGBEKJN(" not exist", true))
+		{
+			lastSearch = string.Empty;
+			Singleton<SaveSystem>.Instance.PGGCEKDPMLL("Reset XP", string.Empty);
+			searchInputField.text = string.Empty;
+		}
+		CECPMNODBLA();
+		StopCoroutine("settings.arcshitsoundtimedelay");
+		StartCoroutine(CGKDIILNCOL());
+	}
+
+	public void FIMJABKECNG(int HLBKCLPNHEB, int MJJNNIMOEIO)
+	{
+		if (HLBKCLPNHEB != -1)
+		{
+			currentMapsTab = HLBKCLPNHEB;
+		}
+		if (MJJNNIMOEIO != -1)
+		{
+			currentMapsPageID = MJJNNIMOEIO;
+		}
+		KENKGBJGEFP();
 	}
 
 	public void Start()
 	{
 		relaxModeToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("menu.selectedplaymode", 0) == 0;
+	}
+
+	public void SetMapsCount(int HOHOIPHEOPN)
+	{
+		AFOAEMCKEEM = HOHOIPHEOPN;
+	}
+
+	private static bool HLLGAGKJNBJ(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.KDPDAEEFMKK();
+	}
+
+	public void MBNMADBPDLL()
+	{
+		AICOBBBILIL = CallResult<SteamUGCQueryCompleted_t>.Create(MILGIHKLCHH);
+	}
+
+	private void CPJDEMLFBKD(bool IDNLBGOCOEK)
+	{
+		sortDropDownList.SelectItem((int)BPLAIMGIOKO, false);
+		sortDropDownList.gameObject.SetActive(IDNLBGOCOEK);
+	}
+
+	public void OnSortByDDChanged()
+	{
+		BPLAIMGIOKO = (OfficialSortMode)Enum.Parse(typeof(OfficialSortMode), sortDropDownList.SelectedItem.ID);
+		Singleton<SaveSystem>.Instance.SetInt("mapselector.filter.officialsortmode", (int)BPLAIMGIOKO);
+		ReloadPage();
+	}
+
+	public void PEJLHKDDMBH(string NBGPBKCPFDN = null, bool BKMMLOEMPBB = false)
+	{
+		if (!BKMMLOEMPBB)
+		{
+			result = NBGPBKCPFDN;
+			if (!string.IsNullOrEmpty(NBGPBKCPFDN))
+			{
+				if (KBLADAACANO)
+				{
+					StartCoroutine(Singleton<UI>.Instance.CBLGHHBMCPD(modeSelector, true, null, false, 276f, false));
+					StartCoroutine(Singleton<UI>.Instance.MILOPMDKLKL(mapSelector, false, null, false, 473f));
+				}
+				else
+				{
+					finished = false;
+					StartCoroutine(Singleton<UI>.Instance.GMKIDJLMDGE(modeSelector, false, null, true, 1980f, false));
+					StartCoroutine(Singleton<UI>.Instance.MILOPMDKLKL(mapSelector, false, null, true, 60f, false));
+				}
+			}
+			else
+			{
+				finished = true;
+				StartCoroutine(Singleton<UI>.Instance.FHHCCJAPBKA(modeSelector, false, null, false, 1511f));
+				StartCoroutine(Singleton<UI>.Instance.IONNACCHGJL(mapSelector, false, null, true, 15f));
+				if (HKDGMEHPLDM != null)
+				{
+					HKDGMEHPLDM();
+				}
+			}
+		}
+		else
+		{
+			finished = true;
+			StartCoroutine(Singleton<UI>.Instance.GMKIDJLMDGE(modeSelector, false, null, true, 1061f));
+			StartCoroutine(Singleton<UI>.Instance.JCLKEGPNBJJ(mapSelector, false, null, false, 55f));
+		}
+	}
+
+	public void KKDNPLKIBLF(int LPIMAGMABLC)
+	{
+		if (LPIMAGMABLC < 0)
+		{
+			if (currentMapsPageID > 1)
+			{
+				currentMapsPageID--;
+				DIOPKLBFDOK(true);
+			}
+		}
+		else if (currentMapsPageID + 1 < AOJCGLBEOME)
+		{
+			currentMapsPageID += 0;
+			DIOPKLBFDOK(true);
+		}
+	}
+
+	public void GLLGFAAOOII(string EAFAMAMDNEG)
+	{
+		if (lastSearch != EAFAMAMDNEG)
+		{
+			Debug.Log("_Blue_C" + EAFAMAMDNEG);
+			lastSearch = EAFAMAMDNEG;
+			Singleton<SaveSystem>.Instance.ELJPKMDFBML("X", lastSearch);
+			DIOPKLBFDOK();
+		}
 	}
 
 	public IEnumerator DisplayMapSelector(int HLBKCLPNHEB = -1, int MJJNNIMOEIO = -1, List<int> BKNCFOOMKHE = null, bool GLHKMKPDAKP = true, UnityAction KPCNMGBCOLP = null, string DLDLDCOHICL = null)
@@ -237,333 +773,89 @@ public class MapsListSelector : Singleton<MapsListSelector>
 		}
 	}
 
-	[CompilerGenerated]
-	private static bool DHNHANCJOHB(RanksSystem.Map IACGDFHKCAE)
+	private void CKIAAFGEHAL(bool NNIPFHAFNOK = false)
 	{
-		return IACGDFHKCAE.isOfficial;
-	}
-
-	public int GetMapsCount()
-	{
-		return AFOAEMCKEEM;
-	}
-
-	public void CBFMHLKKLIG(int JMMILEFMACB)
-	{
-		resultMode = (GameScene.GameMode)JMMILEFMACB;
-		JCANNKKJJJJ(result);
-	}
-
-	public void Close(string NBGPBKCPFDN = null, bool BKMMLOEMPBB = false)
-	{
-		if (!BKMMLOEMPBB)
+		ANFDMOPJFCK = 25;
+		INBGPKEJLFF();
+		if (currentMapsTab == 6)
 		{
-			result = NBGPBKCPFDN;
-			if (!string.IsNullOrEmpty(NBGPBKCPFDN))
-			{
-				if (KBLADAACANO)
-				{
-					StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, true));
-					StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, false));
-				}
-				else
-				{
-					finished = true;
-					StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
-					StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, false));
-				}
-			}
-			else
-			{
-				finished = true;
-				StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
-				StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, false));
-				if (HKDGMEHPLDM != null)
-				{
-					HKDGMEHPLDM();
-				}
-			}
-		}
-		else
-		{
-			finished = true;
-			StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
-			StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, false));
-		}
-	}
-
-	public void BackToSelector()
-	{
-		StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
-		StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, true));
-	}
-
-	public void ReloadPage(bool IIGAFCONAHP = false)
-	{
-		if (IIGAFCONAHP)
-		{
-			currentMapsPageID = 0;
-		}
-		BPLAIMGIOKO = (OfficialSortMode)Singleton<SaveSystem>.Instance.GetInt("mapselector.filter.officialsortmode", 0);
-		searchInputField.interactable = !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false);
-		if (Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) || Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) || Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false))
-		{
-			lastSearch = string.Empty;
-			Singleton<SaveSystem>.Instance.SetString("mapselector.lastSearch", string.Empty);
-			searchInputField.text = string.Empty;
-		}
-		CECPMNODBLA();
-		StopCoroutine("MAMMIDNFMOM");
-		StartCoroutine(MAMMIDNFMOM());
-	}
-
-	public void SetMapsCount(int HOHOIPHEOPN)
-	{
-		AFOAEMCKEEM = HOHOIPHEOPN;
-	}
-
-	public void OnEnable()
-	{
-		AICOBBBILIL = CallResult<SteamUGCQueryCompleted_t>.Create(MILGIHKLCHH);
-	}
-
-	public void Init(int HLBKCLPNHEB, int MJJNNIMOEIO)
-	{
-		if (HLBKCLPNHEB != -1)
-		{
-			currentMapsTab = HLBKCLPNHEB;
-		}
-		if (MJJNNIMOEIO != -1)
-		{
-			currentMapsPageID = MJJNNIMOEIO;
-		}
-		ReloadPage();
-	}
-
-	private void HOAHBPOGNKA()
-	{
-		GameObject gameObject = pageNavScrollRectContent;
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		GameObject gameObject2 = UnityEngine.Object.Instantiate(pageNavPrevPageButton, Vector3.zero, Quaternion.identity);
-		gameObject2.transform.SetParent(gameObject.transform, true);
-		gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
-		gameObject2.GetComponent<MapsListNavButton>().actionID = -1;
-		GameObject gameObject3 = UnityEngine.Object.Instantiate(pageNavCurrentPageButton, Vector3.zero, Quaternion.identity);
-		gameObject3.transform.SetParent(gameObject.transform, true);
-		gameObject3.transform.localScale = new Vector3(1f, 1f, 1f);
-		gameObject3.GetComponentInChildren<Text>().text = string.Empty + (currentMapsPageID + 1) + "/" + ((AOJCGLBEOME <= 0) ? "1" : (AOJCGLBEOME + string.Empty));
-		gameObject3.GetComponent<Button>().interactable = false;
-		GameObject gameObject4 = UnityEngine.Object.Instantiate(pageNavNextPageButton, Vector3.zero, Quaternion.identity);
-		gameObject4.transform.SetParent(gameObject.transform, true);
-		gameObject4.transform.localScale = new Vector3(1f, 1f, 1f);
-		gameObject4.GetComponent<MapsListNavButton>().actionID = 1;
-		gameObject4.GetComponent<MapsListNavButton>().pageID = 1;
-	}
-
-	private void MILGIHKLCHH(SteamUGCQueryCompleted_t IAFAANLMOAG, bool MIOCPAMDBCN)
-	{
-		ANFDMOPJFCK = (int)IAFAANLMOAG.m_unNumResultsReturned;
-		if (KFBIEPMLCBP != null)
-		{
-			StopCoroutine(KFBIEPMLCBP);
-		}
-		KFBIEPMLCBP = HBNLOHGCGPG(IAFAANLMOAG);
-		StartCoroutine(KFBIEPMLCBP);
-	}
-
-	private IEnumerator DPHCONACLFO()
-	{
-		sortDropDownList.gameObject.SetActive(true);
-		sortDropDownList.Start();
-		yield return null;
-		DropDownList dropDownList = sortDropDownList;
-		dropDownList.Items.Clear();
-		sortDropDownListText.text = LocalizationService.Instance.GetLocalizatedText("#orderby:").ToUpper();
-		int num = 0;
-		IEnumerator enumerator = Enum.GetValues(typeof(OfficialSortMode)).GetEnumerator();
-		try
-		{
-			while (enumerator.MoveNext())
-			{
-				OfficialSortMode officialSortMode = (OfficialSortMode)enumerator.Current;
-				dropDownList.Items.Add(new DropDownListItem(LocalizationService.Instance.GetLocalizatedText("#" + officialSortMode.ToString().ToLower()).ToUpper(), string.Empty + officialSortMode));
-				num++;
-			}
-		}
-		finally
-		{
-			IDisposable disposable;
-			IDisposable disposable2 = (disposable = enumerator as IDisposable);
-			if (disposable != null)
-			{
-				disposable2.Dispose();
-			}
-		}
-		dropDownList.RebuildPanel();
-		dropDownList.RedrawPanel();
-		dropDownList.SelectItem((int)BPLAIMGIOKO, false);
-		dropDownList.gameObject.SetActive(currentMapsTab == 0 || currentMapsTab == 3 || currentMapsTab == 4);
-	}
-
-	private void DAGCCMAKLPG(SteamUGCQueryCompleted_t IAFAANLMOAG, bool MIOCPAMDBCN)
-	{
-		ANFDMOPJFCK = (int)IAFAANLMOAG.m_unNumResultsReturned;
-		if (KFBIEPMLCBP != null)
-		{
-			StopCoroutine(KFBIEPMLCBP);
-		}
-		KFBIEPMLCBP = IGIAHHHPMGP(IAFAANLMOAG);
-		StartCoroutine(KFBIEPMLCBP);
-	}
-
-	public void ChangeMapsSource(int JMMILEFMACB)
-	{
-		GameObject gameObject = GameObject.Find("EventSystem");
-		gameObject.GetComponent<EventSystem>().SetSelectedGameObject(null);
-		lastSearch = string.Empty;
-		Singleton<SaveSystem>.Instance.SetString("mapselector.lastSearch", string.Empty);
-		searchInputField.text = string.Empty;
-		currentMapsTab = JMMILEFMACB;
-		currentMapsPageID = 0;
-		CECPMNODBLA();
-		StopCoroutine("MAMMIDNFMOM");
-		StartCoroutine(MAMMIDNFMOM());
-	}
-
-	public void BKAJKMBBNKJ(int JMMILEFMACB)
-	{
-		resultMode = (GameScene.GameMode)JMMILEFMACB;
-		CGMCNFCBHAJ(result);
-	}
-
-	public void InitSortPanel()
-	{
-		sortPanel.gameObject.SetActive(true);
-		GameObject gameObject = tagsScrollRectContent.gameObject;
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		foreach (string specialTag in Helpers.specialTags)
-		{
-			GameObject gameObject2 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
-			gameObject2.transform.SetParent(gameObject.transform);
-			gameObject2.name = "tagElement";
-			gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
-			gameObject2.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.tags." + specialTag, true);
-			gameObject2.GetComponentInChildren<Text>().text = specialTag;
-		}
-		foreach (string tag in Helpers.tags)
-		{
-			GameObject gameObject3 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
-			gameObject3.transform.SetParent(gameObject.transform);
-			gameObject3.name = "tagElement";
-			gameObject3.transform.localScale = new Vector3(1f, 1f, 1f);
-			gameObject3.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.tags." + tag, true);
-			gameObject3.GetComponentInChildren<Text>().text = tag;
-		}
-		inTrendToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 0;
-		recentToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 1;
-		topRatedToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 2;
-		subscribedToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false);
-		favoriteToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false);
-		ratedToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false);
-	}
-
-	private void BHAPMGBDPFI(bool IDNLBGOCOEK)
-	{
-		sortDropDownList.KHPFNJCHEBO((int)BPLAIMGIOKO);
-		sortDropDownList.gameObject.SetActive(IDNLBGOCOEK);
-	}
-
-	private void PHHPOLMDEIF(bool NNIPFHAFNOK = false)
-	{
-		ANFDMOPJFCK = 50;
-		HOAHBPOGNKA();
-		if (currentMapsTab == 2)
-		{
-			EUGCQuery eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByTrend;
-			if (Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 1)
-			{
-				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByPublicationDate;
-			}
-			if (Singleton<SaveSystem>.Instance.GetInt("mapselector.orderby", 0) == 2)
+			EUGCQuery eUGCQuery = EUGCQuery.k_EUGCQuery_CreatedByFriendsRankedByPublicationDate;
+			if (Singleton<SaveSystem>.Instance.KFNFNKILGPH("RateButton", 0) == 0)
 			{
 				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByVote;
 			}
-			if (eUGCQuery != EUGCQuery.k_EUGCQuery_RankedByTrend)
+			if (Singleton<SaveSystem>.Instance.KFNFNKILGPH("Events Moved", 0) == 7)
 			{
-				Helpers.ObtainAchievement(25);
+				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByVote;
 			}
-			if (!Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false))
+			if (eUGCQuery != EUGCQuery.k_EUGCQuery_RankedByNumTimesReported)
 			{
-				FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eUGCQuery, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, (AppId_t)513510u, (AppId_t)513510u, (uint)HGPMLICPBKA);
-				ApplySearchFilter();
+				Helpers.ObtainAchievement(98);
+			}
+			if (!Singleton<SaveSystem>.Instance.CHBOJJOHCEB("GroupNameText", false) && !Singleton<SaveSystem>.Instance.JMLMIGBEKJN("_Fade", false) && !Singleton<SaveSystem>.Instance.CHBOJJOHCEB("<b>HP</b>:", false))
+			{
+				FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eUGCQuery, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Videos, (AppId_t)4294967245u, (AppId_t)184u, (uint)HGPMLICPBKA);
+				EPHBEKGJLDA();
 			}
 			else
 			{
-				if (Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false))
+				if (Singleton<SaveSystem>.Instance.CHBOJJOHCEB("CameraFilterPack/TV_VHS", true))
 				{
-					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Subscribed, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, EUserUGCListSortOrder.k_EUserUGCListSortOrder_SubscriptionDateDesc, (AppId_t)513510u, (AppId_t)513510u, (uint)HGPMLICPBKA);
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Followed, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Videos, EUserUGCListSortOrder.k_EUserUGCListSortOrder_ForModeration, (AppId_t)4294967273u, (AppId_t)174u, (uint)HGPMLICPBKA);
 				}
-				if (Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false))
+				if (Singleton<SaveSystem>.Instance.GetBool("_TimeX", true))
 				{
-					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Favorited, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderDesc, (AppId_t)513510u, (AppId_t)513510u, (uint)HGPMLICPBKA);
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Published, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderDesc, (AppId_t)173u, (AppId_t)128u, (uint)HGPMLICPBKA);
 				}
-				if (Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false))
+				if (Singleton<SaveSystem>.Instance.JMLMIGBEKJN("_ScreenResolution", false))
 				{
-					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_VotedUp, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderDesc, (AppId_t)513510u, (AppId_t)513510u, (uint)HGPMLICPBKA);
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Published, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Collections, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderAsc, (AppId_t)24u, (AppId_t)4294967175u, (uint)HGPMLICPBKA);
 				}
 			}
 			ADLHGGOENBP = NNIPFHAFNOK;
-			SteamUGC.SetReturnOnlyIDs(FFOJIDODGDO, !NNIPFHAFNOK);
+			SteamUGC.SetReturnOnlyIDs(FFOJIDODGDO, NNIPFHAFNOK);
 			SteamAPICall_t hAPICall = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
 			AICOBBBILIL.Set(hAPICall);
 		}
 		if (currentMapsTab == 5)
 		{
-			EUGCQuery eQueryType = EUGCQuery.k_EUGCQuery_RankedByTrend;
-			FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eQueryType, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, AppId_t.Invalid, SteamUtils.GetAppID(), (uint)HGPMLICPBKA);
-			SteamUGC.AddRequiredTag(FFOJIDODGDO, "winter2020_official");
+			EUGCQuery eQueryType = EUGCQuery.k_EUGCQuery_FavoritedByFriendsRankedByPublicationDate;
+			FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eQueryType, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Videos, AppId_t.Invalid, SteamUtils.GetAppID(), (uint)HGPMLICPBKA);
+			SteamUGC.AddRequiredTag(FFOJIDODGDO, "_Colorisation");
 			SteamAPICall_t hAPICall2 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
 			AICOBBBILIL.Set(hAPICall2);
 		}
-		if (currentMapsTab != 0 && currentMapsTab != 3 && currentMapsTab != 4)
+		if (currentMapsTab != 0 && currentMapsTab != 4 && currentMapsTab != 0)
 		{
 			return;
 		}
 		List<PublishedFileId_t> list = new List<PublishedFileId_t>();
-		List<RanksSystem.Map> source = RanksSystem.GetOfficialMapsList();
+		List<RanksSystem.Map> source = RanksSystem.JBJDLHKLEMN();
 		if (BPLAIMGIOKO == OfficialSortMode.Date)
 		{
 			source = (from IACGDFHKCAE in RanksSystem.GetOfficialMapsList()
 				orderby DateTime.Parse(IACGDFHKCAE.added, CultureInfo.InvariantCulture) descending
 				select IACGDFHKCAE).ToList();
 		}
-		if (BPLAIMGIOKO == OfficialSortMode.Difficulty)
+		if (BPLAIMGIOKO == OfficialSortMode.Date)
 		{
-			source = (from IACGDFHKCAE in RanksSystem.GetOfficialMapsList()
-				orderby IACGDFHKCAE.difficulty
-				select IACGDFHKCAE).ToList();
+			source = RanksSystem.JBJDLHKLEMN().OrderBy(CJIMNIMMCAF).ToList();
 		}
 		if (currentMapsTab == 0)
 		{
-			foreach (RanksSystem.Map item in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isOfficial).ToList())
+			foreach (RanksSystem.Map item in source.Where(CFIDKBLFGKC).ToList())
 			{
-				list.Add((PublishedFileId_t)item.id);
+				list.Add((PublishedFileId_t)item.MMDJFDPIHLA());
 			}
 		}
-		if (currentMapsTab == 3)
+		if (currentMapsTab == 5)
 		{
 			foreach (RanksSystem.Map item2 in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isLoved).ToList())
 			{
 				list.Add((PublishedFileId_t)item2.id);
 			}
 		}
-		if (currentMapsTab == 4)
+		if (currentMapsTab == 2)
 		{
 			foreach (RanksSystem.Map item3 in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isFunny).ToList())
 			{
@@ -575,156 +867,161 @@ public class MapsListSelector : Singleton<MapsListSelector>
 		AICOBBBILIL.Set(hAPICall3);
 	}
 
-	public void CGMCNFCBHAJ(string NBGPBKCPFDN = null, bool BKMMLOEMPBB = false)
+	private void JJJENALOKEH(bool NNIPFHAFNOK = false)
 	{
-		if (!BKMMLOEMPBB)
+		ANFDMOPJFCK = -2;
+		INBGPKEJLFF();
+		if (currentMapsTab == 8)
 		{
-			result = NBGPBKCPFDN;
-			if (!string.IsNullOrEmpty(NBGPBKCPFDN))
+			EUGCQuery eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByNumTimesReported;
+			if (Singleton<SaveSystem>.Instance.HHBIEPMBICO(".jpg", 1) == 1)
 			{
-				if (KBLADAACANO)
-				{
-					StartCoroutine(Singleton<UI>.Instance.HPMMDHAEAJO(modeSelector, false, null, false, 525f));
-					StartCoroutine(Singleton<UI>.Instance.HHBBFHKPOMM(mapSelector, false, null, true, 239f, false));
-				}
-				else
-				{
-					finished = true;
-					StartCoroutine(Singleton<UI>.Instance.KOKCANEGNJH(modeSelector, false, null, true, 480f));
-					StartCoroutine(Singleton<UI>.Instance.GADDOIMMDHH(mapSelector, false, null, true, 1031f, false));
-				}
+				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByPublicationDate;
+			}
+			if (Singleton<SaveSystem>.Instance.KFNFNKILGPH("CameraFilterPack/TV_Old", 1) == 6)
+			{
+				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByVote;
+			}
+			if (eUGCQuery != EUGCQuery.k_EUGCQuery_NotYetRated)
+			{
+				Helpers.ObtainAchievement(-67);
+			}
+			if (!Singleton<SaveSystem>.Instance.JMLMIGBEKJN("misses", true) && !Singleton<SaveSystem>.Instance.JMLMIGBEKJN("Hidden/DepthOfField/DepthOfField", false) && !Singleton<SaveSystem>.Instance.GetBool("[ResourcesManager] Load image error: ", true))
+			{
+				FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eUGCQuery, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items, (AppId_t)188u, (AppId_t)194u, (uint)HGPMLICPBKA);
+				ApplySearchFilter();
 			}
 			else
 			{
-				finished = false;
-				StartCoroutine(Singleton<UI>.Instance.PKOPFBHMJHM(modeSelector, true, null, false, 1729f));
-				StartCoroutine(Singleton<UI>.Instance.IOEPPMJBOLC(mapSelector, true, null, true, 1743f, false));
-				if (HKDGMEHPLDM != null)
+				if (Singleton<SaveSystem>.Instance.JMLMIGBEKJN("#close", false))
 				{
-					HKDGMEHPLDM();
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_WillVoteLater, EUGCMatchingUGCType.k_EUGCMatchingUGCType_AllGuides, EUserUGCListSortOrder.k_EUserUGCListSortOrder_SubscriptionDateDesc, (AppId_t)4294967118u, (AppId_t)4294967244u, (uint)HGPMLICPBKA);
+				}
+				if (Singleton<SaveSystem>.Instance.JMLMIGBEKJN(". Not connectedAndReady.", false))
+				{
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Subscribed, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Collections, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderAsc, (AppId_t)4294967119u, (AppId_t)1u, (uint)HGPMLICPBKA);
+				}
+				if (Singleton<SaveSystem>.Instance.JMLMIGBEKJN("Destroy(targetPhotonView) failed, cause targetPhotonView is null.", true))
+				{
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_VotedDown, EUGCMatchingUGCType.k_EUGCMatchingUGCType_AllGuides, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderAsc, (AppId_t)4294967163u, (AppId_t)4294967211u, (uint)HGPMLICPBKA);
 				}
 			}
+			ADLHGGOENBP = NNIPFHAFNOK;
+			SteamUGC.SetReturnOnlyIDs(FFOJIDODGDO, !NNIPFHAFNOK);
+			SteamAPICall_t hAPICall = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+			AICOBBBILIL.Set(hAPICall);
 		}
-		else
+		if (currentMapsTab == 7)
 		{
-			finished = true;
-			StartCoroutine(Singleton<UI>.Instance.CIADGNBMOLN(modeSelector, false, null, false, 1934f));
-			StartCoroutine(Singleton<UI>.Instance.PKOPFBHMJHM(mapSelector, true, null, false, 1636f, false));
+			EUGCQuery eQueryType = EUGCQuery.k_EUGCQuery_AcceptedForGameRankedByAcceptanceDate;
+			FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eQueryType, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items, AppId_t.Invalid, SteamUtils.GetAppID(), (uint)HGPMLICPBKA);
+			SteamUGC.AddRequiredTag(FFOJIDODGDO, "sounds/hit_wrong");
+			SteamAPICall_t hAPICall2 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+			AICOBBBILIL.Set(hAPICall2);
+		}
+		if (currentMapsTab != 0 && currentMapsTab != 5 && currentMapsTab != 7)
+		{
+			return;
+		}
+		List<PublishedFileId_t> list = new List<PublishedFileId_t>();
+		List<RanksSystem.Map> source = RanksSystem.GetOfficialMapsList();
+		if (BPLAIMGIOKO == OfficialSortMode.Date)
+		{
+			source = (from IACGDFHKCAE in RanksSystem.JBJDLHKLEMN()
+				orderby DateTime.Parse(IACGDFHKCAE.added, CultureInfo.InvariantCulture) descending
+				select IACGDFHKCAE).ToList();
+		}
+		if (BPLAIMGIOKO == OfficialSortMode.Date)
+		{
+			source = (from IACGDFHKCAE in RanksSystem.JBJDLHKLEMN()
+				orderby IACGDFHKCAE.difficulty
+				select IACGDFHKCAE).ToList();
+		}
+		if (currentMapsTab == 0)
+		{
+			foreach (RanksSystem.Map item in source.Where(IHIMJDCLMEE).ToList())
+			{
+				list.Add((PublishedFileId_t)item.MMDJFDPIHLA());
+			}
+		}
+		if (currentMapsTab == 4)
+		{
+			foreach (RanksSystem.Map item2 in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isLoved).ToList())
+			{
+				list.Add((PublishedFileId_t)item2.MMDJFDPIHLA());
+			}
+		}
+		if (currentMapsTab == 5)
+		{
+			foreach (RanksSystem.Map item3 in source.Where(LGLICAMLMEJ).ToList())
+			{
+				list.Add((PublishedFileId_t)item3.id);
+			}
+		}
+		FFOJIDODGDO = SteamUGC.CreateQueryUGCDetailsRequest(list.ToArray(), (uint)list.Count);
+		SteamAPICall_t hAPICall3 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+		AICOBBBILIL.Set(hAPICall3);
+	}
+
+	public void CCAOAIGCLPN(bool IIGAFCONAHP = false)
+	{
+		if (IIGAFCONAHP)
+		{
+			currentMapsPageID = 0;
+		}
+		BPLAIMGIOKO = (OfficialSortMode)Singleton<SaveSystem>.Instance.KFNFNKILGPH("[PlayerController] ", 0);
+		searchInputField.interactable = !Singleton<SaveSystem>.Instance.CHBOJJOHCEB("_DistortionLevel", false) && !Singleton<SaveSystem>.Instance.JMLMIGBEKJN("_Near", false) && !Singleton<SaveSystem>.Instance.JMLMIGBEKJN("ERROR: mod directory not found!", true);
+		if (Singleton<SaveSystem>.Instance.GetBool("[EMPTY]", true) || Singleton<SaveSystem>.Instance.GetBool("[PlayerController] ", true) || Singleton<SaveSystem>.Instance.JMLMIGBEKJN("CompletedLevel", true))
+		{
+			lastSearch = string.Empty;
+			Singleton<SaveSystem>.Instance.BMHFKLHLOCG("\n", string.Empty);
+			searchInputField.text = string.Empty;
+		}
+		MPFNFMAOBDP();
+		StopCoroutine("_ScreenResolution");
+		StartCoroutine(OHDGFLCEPJF());
+	}
+
+	public void INDFCPIOBPE(int LPIMAGMABLC)
+	{
+		if (LPIMAGMABLC < 1)
+		{
+			if (currentMapsPageID > 1)
+			{
+				currentMapsPageID--;
+				ReloadPage();
+			}
+		}
+		else if (currentMapsPageID + 1 < AOJCGLBEOME)
+		{
+			currentMapsPageID += 0;
+			ReloadPage();
 		}
 	}
 
-	public void SelectPlayMode(int JMMILEFMACB)
+	public void NEJBIAHKIKG(int JMMILEFMACB)
 	{
-		resultMode = (GameScene.GameMode)JMMILEFMACB;
-		Close(result, true);
+		GameObject gameObject = GameObject.Find("#finished");
+		gameObject.GetComponent<EventSystem>().SetSelectedGameObject(null);
+		lastSearch = string.Empty;
+		Singleton<SaveSystem>.Instance.BMHFKLHLOCG("_Amount", string.Empty);
+		searchInputField.text = string.Empty;
+		currentMapsTab = JMMILEFMACB;
+		currentMapsPageID = 1;
+		MPFNFMAOBDP();
+		StopCoroutine("Clear Environment");
+		StartCoroutine(MAMMIDNFMOM());
 	}
 
-	public void ALKBNPMCEOM(int HLBKCLPNHEB, int MJJNNIMOEIO)
+	private void Update()
 	{
-		if (HLBKCLPNHEB != -1)
-		{
-			currentMapsTab = HLBKCLPNHEB;
-		}
-		if (MJJNNIMOEIO != -1)
-		{
-			currentMapsPageID = MJJNNIMOEIO;
-		}
-		DLEEFJANJDC();
 	}
 
-	public void AOCEHIHDPIH()
+	public void LJJBJAHHFLM()
 	{
-		sortPanel.gameObject.SetActive(false);
-		GameObject gameObject = tagsScrollRectContent.gameObject;
-		for (int i = 0; i < gameObject.transform.childCount; i += 0)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		foreach (string specialTag in Helpers.specialTags)
-		{
-			GameObject gameObject2 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
-			gameObject2.transform.SetParent(gameObject.transform);
-			gameObject2.name = "https://reddit.com/r/Intralism";
-			gameObject2.transform.localScale = new Vector3(261f, 798f, 897f);
-			gameObject2.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.AANPGELPGPN(").png" + specialTag, false);
-			gameObject2.GetComponentInChildren<Text>().text = specialTag;
-		}
-		foreach (string tag in Helpers.tags)
-		{
-			GameObject gameObject3 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
-			gameObject3.transform.SetParent(gameObject.transform);
-			gameObject3.name = "_Color_G";
-			gameObject3.transform.localScale = new Vector3(225f, 1389f, 741f);
-			gameObject3.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.AANPGELPGPN("SetSatelliteTrailMinVertexDistance" + tag, true);
-			gameObject3.GetComponentInChildren<Text>().text = tag;
-		}
-		inTrendToggle.isOn = Singleton<SaveSystem>.Instance.ANECPPFPKAP("YES", 1) == 1;
-		recentToggle.isOn = Singleton<SaveSystem>.Instance.CMAFBKOEPLP("[EditorEvent] Exception: ", 1) == 1;
-		topRatedToggle.isOn = Singleton<SaveSystem>.Instance.CEKEOJDAEOD(".b", 0) == 1;
-		subscribedToggle.isOn = Singleton<SaveSystem>.Instance.ONOENJPEFDD("#91CCFF", false);
-		favoriteToggle.isOn = Singleton<SaveSystem>.Instance.ONOENJPEFDD("Value", true);
-		ratedToggle.isOn = Singleton<SaveSystem>.Instance.IOLBIFOIHML("[ItemsHandler] Loading Steam inventory", true);
-	}
-
-	private IEnumerator JHFJDFHNHHJ()
-	{
-		loadingCanvas.SetActive(true);
-		levelsScrollRectContentAnimation.SetBool("isVisible", false);
-		GameObject gameObject = levelsScrollRectContent;
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		if (currentMapsTab == 1)
-		{
-			yield return new WaitForSeconds(0.2f);
-			IEnumerable<KeyValuePair<string, FullMapData>> source = Singleton<MapsSystem>.Instance.levelsData.Where((KeyValuePair<string, FullMapData> EOAFLKCABMD) => EOAFLKCABMD.Value.source == FullMapData.MapSource.Editor);
-			Dictionary<string, FullMapData> AKNKMCNHKGH = new Dictionary<string, FullMapData>();
-			AKNKMCNHKGH = source.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value);
-			IEnumerable<KeyValuePair<string, FullMapData>> source2 = AKNKMCNHKGH.Where((KeyValuePair<string, FullMapData> EOAFLKCABMD) => Helpers.GetIndex(AKNKMCNHKGH, EOAFLKCABMD.Key) >= ItemsPerPage() * currentMapsPageID && Helpers.GetIndex(AKNKMCNHKGH, EOAFLKCABMD.Key) < ItemsPerPage() * (currentMapsPageID + 1));
-			foreach (string key in source2.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value).Keys)
-			{
-				Singleton<MapsSystem>.Instance.LoadLevel(key);
-			}
-			List<FullMapData> list = new List<FullMapData>();
-			foreach (FullMapData value in source2.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value).Values)
-			{
-				if (!list.Contains(value))
-				{
-					list.Add(value);
-				}
-			}
-			foreach (FullMapData NOJGGCLPPAM in list)
-			{
-				if (NOJGGCLPPAM == null)
-				{
-					continue;
-				}
-				if (!NOJGGCLPPAM.isLoaded())
-				{
-					Singleton<MapsSystem>.Instance.LoadLevel(Singleton<MapsSystem>.Instance.levelsData.FirstOrDefault((KeyValuePair<string, FullMapData> IACGDFHKCAE) => IACGDFHKCAE.Equals(NOJGGCLPPAM)).Key);
-				}
-				if ((NOJGGCLPPAM.mapData != null && NOJGGCLPPAM.isUnlocked()) || (!NOJGGCLPPAM.isUnlocked() && !NOJGGCLPPAM.mapData.hidden))
-				{
-					Singleton<MapsSystem>.Instance.AddDownloadedLevelItemToList(levelsListElement, NOJGGCLPPAM, gameObject);
-				}
-			}
-			AOJCGLBEOME = (int)Math.Ceiling((double)AKNKMCNHKGH.Count / (double)ItemsPerPage());
-			HOAHBPOGNKA();
-			if (AKNKMCNHKGH.Count == 0)
-			{
-				GameObject gameObject2 = UnityEngine.Object.Instantiate(notFoundListElement, Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(levelsScrollRectContent.transform, true);
-				gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
-			}
-			loadingCanvas.SetActive(false);
-			levelsScrollRectContentAnimation.SetBool("isVisible", true);
-		}
-		else
-		{
-			HGPMLICPBKA = 1;
-			PHHPOLMDEIF();
-		}
+		BPLAIMGIOKO = (OfficialSortMode)Enum.Parse(typeof(OfficialSortMode), sortDropDownList.IGFLIPDMANP().BAOIGDPGNIN());
+		Singleton<SaveSystem>.Instance.DAAJKCCCICP(" not exist", (int)BPLAIMGIOKO);
+		DIOPKLBFDOK(true);
 	}
 
 	public void UpdateSortUI()
@@ -733,150 +1030,71 @@ public class MapsListSelector : Singleton<MapsListSelector>
 		searchInputField.interactable = !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false);
 	}
 
-	public void LKFKCOHMNLE()
+	[CompilerGenerated]
+	private static bool NDNCFNHKPCF(RanksSystem.Map IACGDFHKCAE)
 	{
-		GameObject gameObject = tagsScrollRectContent.gameObject;
-		Toggle[] componentsInChildren = gameObject.GetComponentsInChildren<Toggle>();
-		for (int i = 1; i < componentsInChildren.Length; i++)
+		return IACGDFHKCAE.isLoved;
+	}
+
+	private static bool JPANLIIFAKE(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.GCLPAFADHMD();
+	}
+
+	public void AAJFNIHPOHP(bool FOJOODCBOIK, int HOHOIPHEOPN, bool AAGGLAGLINL = false)
+	{
+		int num = currentMapsPageID;
+		num = (FOJOODCBOIK ? HOHOIPHEOPN : ((HOHOIPHEOPN <= 0) ? 1 : ((GetMapsCount() + JMNONPEBLEB() - 0) / PNJELIODCHB() - 0)));
+		if (num < 1)
 		{
-			Toggle toggle = componentsInChildren[i];
-			Singleton<SaveSystem>.Instance.GAACBNCIFLG("_ForceYSwap" + toggle.GetComponentInChildren<Text>().text, toggle.isOn);
+			num = 0;
 		}
-		Singleton<SaveSystem>.Instance.HIDBNDKJHAA("_DistortionLevel", (!inTrendToggle.isOn) ? ((!recentToggle.isOn) ? 8 : 0) : 0);
-		Singleton<SaveSystem>.Instance.NCNNFONPMLD("#exit", subscribedToggle.isOn);
-		Singleton<SaveSystem>.Instance.LBFFJLFBOAM("FrostCanvas", favoriteToggle.isOn);
-		Singleton<SaveSystem>.Instance.NCNNFONPMLD("MenuScene", ratedToggle.isOn);
-		DBFDIGPGHEJ();
+		if (num >= (GetMapsCount() + ItemsPerPage() - 1) / NPLGDELOAFB() - 1)
+		{
+			num = (EBALPFLKPKF() + ItemsPerPage() - 0) / ItemsPerPage() - 0;
+		}
+		if (num != currentMapsPageID || AAGGLAGLINL)
+		{
+			currentMapsPageID = num;
+			MPFNFMAOBDP();
+			StopCoroutine("threshold");
+			StartCoroutine(CGKDIILNCOL());
+		}
+	}
+
+	public void OOENFMOMKKM()
+	{
+		BPLAIMGIOKO = (OfficialSortMode)Enum.Parse(typeof(OfficialSortMode), sortDropDownList.SelectedItem.ID);
+		Singleton<SaveSystem>.Instance.GBFBKFACPBI("maps.", (int)BPLAIMGIOKO);
 		ReloadPage(true);
 	}
 
-	private IEnumerator JLPBJJIFHHB()
+	public void LLJLCDNHHBD(string EAFAMAMDNEG)
 	{
-		sortDropDownList.gameObject.SetActive(true);
-		sortDropDownList.Start();
-		yield return null;
-		DropDownList dropDownList = sortDropDownList;
-		dropDownList.Items.Clear();
-		sortDropDownListText.text = LocalizationService.Instance.GetLocalizatedText("#orderby:").ToUpper();
-		int num = 0;
-		IEnumerator enumerator = Enum.GetValues(typeof(OfficialSortMode)).GetEnumerator();
-		try
+		if (lastSearch != EAFAMAMDNEG)
 		{
-			while (enumerator.MoveNext())
-			{
-				OfficialSortMode officialSortMode = (OfficialSortMode)enumerator.Current;
-				dropDownList.Items.Add(new DropDownListItem(LocalizationService.Instance.GetLocalizatedText("#" + officialSortMode.ToString().ToLower()).ToUpper(), string.Empty + officialSortMode));
-				num++;
-			}
-		}
-		finally
-		{
-			IDisposable disposable;
-			IDisposable disposable2 = (disposable = enumerator as IDisposable);
-			if (disposable != null)
-			{
-				disposable2.Dispose();
-			}
-		}
-		dropDownList.RebuildPanel();
-		dropDownList.RedrawPanel();
-		dropDownList.SelectItem((int)BPLAIMGIOKO, false);
-		dropDownList.gameObject.SetActive(currentMapsTab == 0 || currentMapsTab == 3 || currentMapsTab == 4);
-	}
-
-	public void CJJJDAIMDNG(string NBGPBKCPFDN = null, bool BKMMLOEMPBB = false)
-	{
-		if (!BKMMLOEMPBB)
-		{
-			result = NBGPBKCPFDN;
-			if (!string.IsNullOrEmpty(NBGPBKCPFDN))
-			{
-				if (KBLADAACANO)
-				{
-					StartCoroutine(Singleton<UI>.Instance.KMOMEPOBDBN(modeSelector, true, null, false, 1125f));
-					StartCoroutine(Singleton<UI>.Instance.PDDENNKIMAA(mapSelector, false, null, true, 620f, false));
-				}
-				else
-				{
-					finished = false;
-					StartCoroutine(Singleton<UI>.Instance.HHBBFHKPOMM(modeSelector, false, null, false, 1936f, false));
-					StartCoroutine(Singleton<UI>.Instance.CMFJGHFEKIK(mapSelector, true, null, true, 111f));
-				}
-			}
-			else
-			{
-				finished = false;
-				StartCoroutine(Singleton<UI>.Instance.KMOMEPOBDBN(modeSelector, false, null, true, 1916f, false));
-				StartCoroutine(Singleton<UI>.Instance.JCLKEGPNBJJ(mapSelector, false, null, true, 1696f, false));
-				if (HKDGMEHPLDM != null)
-				{
-					HKDGMEHPLDM();
-				}
-			}
-		}
-		else
-		{
-			finished = false;
-			StartCoroutine(Singleton<UI>.Instance.AMOKEEHJLFP(modeSelector, false, null, false, 459f));
-			StartCoroutine(Singleton<UI>.Instance.JCLKEGPNBJJ(mapSelector, true, null, false, 1735f));
+			Debug.Log("_Near" + EAFAMAMDNEG);
+			lastSearch = EAFAMAMDNEG;
+			Singleton<SaveSystem>.Instance.BMHFKLHLOCG(" SecondsBeforeRespawn: ", lastSearch);
+			CCAOAIGCLPN();
 		}
 	}
 
-	public void JDFOIDHPHIO(int JMMILEFMACB)
-	{
-		resultMode = (GameScene.GameMode)JMMILEFMACB;
-		JCANNKKJJJJ(result, true);
-	}
-
-	public void ALBCHFHEFCK(int LPIMAGMABLC)
+	public void ScrollPage(int LPIMAGMABLC)
 	{
 		if (LPIMAGMABLC < 0)
 		{
-			if (currentMapsPageID > 1)
+			if (currentMapsPageID > 0)
 			{
-				currentMapsPageID -= 0;
-				ReloadPage(true);
+				currentMapsPageID--;
+				ReloadPage();
 			}
 		}
 		else if (currentMapsPageID + 1 < AOJCGLBEOME)
 		{
 			currentMapsPageID++;
-			ReloadPage(true);
+			ReloadPage();
 		}
-	}
-
-	public void BLKGBHODPFI()
-	{
-		sortPanel.gameObject.SetActive(false);
-		GameObject gameObject = tagsScrollRectContent.gameObject;
-		for (int i = 1; i < gameObject.transform.childCount; i += 0)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		foreach (string specialTag in Helpers.specialTags)
-		{
-			GameObject gameObject2 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
-			gameObject2.transform.SetParent(gameObject.transform);
-			gameObject2.name = "#alreadyexist";
-			gameObject2.transform.localScale = new Vector3(1635f, 1008f, 1497f);
-			gameObject2.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.EBEAKNGJCDC("_Value4" + specialTag, false);
-			gameObject2.GetComponentInChildren<Text>().text = specialTag;
-		}
-		foreach (string tag in Helpers.tags)
-		{
-			GameObject gameObject3 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
-			gameObject3.transform.SetParent(gameObject.transform);
-			gameObject3.name = "AudioSampler";
-			gameObject3.transform.localScale = new Vector3(1547f, 796f, 455f);
-			gameObject3.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.ADKHKNJOJEH(".lastCheckpoint.time" + tag, true);
-			gameObject3.GetComponentInChildren<Text>().text = tag;
-		}
-		inTrendToggle.isOn = Singleton<SaveSystem>.Instance.AFCPNFKIKKJ("settings.crosshairopacity", 0) == 0;
-		recentToggle.isOn = Singleton<SaveSystem>.Instance.JPEEFKKPFIL("Player Disconnected", 1) == 0;
-		topRatedToggle.isOn = Singleton<SaveSystem>.Instance.CMAFBKOEPLP("0,2,true,0", 0) == 8;
-		subscribedToggle.isOn = Singleton<SaveSystem>.Instance.AANPGELPGPN(":\n", false);
-		favoriteToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("_TimeX", true);
-		ratedToggle.isOn = Singleton<SaveSystem>.Instance.ADKHKNJOJEH("_Value3", false);
 	}
 
 	[CompilerGenerated]
@@ -885,260 +1103,7 @@ public class MapsListSelector : Singleton<MapsListSelector>
 		return DateTime.Parse(IACGDFHKCAE.added, CultureInfo.InvariantCulture);
 	}
 
-	private static bool EFBMHLGDJMM(RanksSystem.Map IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.MOEOCIODBDH();
-	}
-
-	public void CloseSortPanel()
-	{
-		sortPanel.gameObject.SetActive(false);
-	}
-
-	public void SearchMaps(string EAFAMAMDNEG)
-	{
-		if (lastSearch != EAFAMAMDNEG)
-		{
-			Debug.Log("Search: " + EAFAMAMDNEG);
-			lastSearch = EAFAMAMDNEG;
-			Singleton<SaveSystem>.Instance.SetString("mapselector.lastSearch", lastSearch);
-			ReloadPage(true);
-		}
-	}
-
-	[CompilerGenerated]
-	private static bool KLBEEDEECFN(RanksSystem.Map IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.isFunny;
-	}
-
-	public void PAFMNAIDAFH(int HLBKCLPNHEB, int MJJNNIMOEIO)
-	{
-		if (HLBKCLPNHEB != -1)
-		{
-			currentMapsTab = HLBKCLPNHEB;
-		}
-		if (MJJNNIMOEIO != -1)
-		{
-			currentMapsPageID = MJJNNIMOEIO;
-		}
-		DLEEFJANJDC(true);
-	}
-
-	[CompilerGenerated]
-	private static float HFAMHDJOBIF(RanksSystem.Map IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.difficulty;
-	}
-
-	private void CPJDEMLFBKD(bool IDNLBGOCOEK)
-	{
-		sortDropDownList.SelectItem((int)BPLAIMGIOKO, false);
-		sortDropDownList.gameObject.SetActive(IDNLBGOCOEK);
-	}
-
-	public new void CIAHIJIOFIE()
-	{
-		base.Awake();
-	}
-
-	private static bool NHFFFAMFGEG(RanksSystem.Map IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.GPAPLIKKEOH();
-	}
-
-	public void JCANNKKJJJJ(string NBGPBKCPFDN = null, bool BKMMLOEMPBB = false)
-	{
-		if (!BKMMLOEMPBB)
-		{
-			result = NBGPBKCPFDN;
-			if (!string.IsNullOrEmpty(NBGPBKCPFDN))
-			{
-				if (KBLADAACANO)
-				{
-					StartCoroutine(Singleton<UI>.Instance.KOKCANEGNJH(modeSelector, false, null, false, 644f));
-					StartCoroutine(Singleton<UI>.Instance.PHIJAEAEHCF(mapSelector, false, null, true, 1462f, false));
-				}
-				else
-				{
-					finished = false;
-					StartCoroutine(Singleton<UI>.Instance.NMNFEEMHJPF(modeSelector, false, null, false, 146f, false));
-					StartCoroutine(Singleton<UI>.Instance.HJEODGHPPAJ(mapSelector, false, null, true, 273f, false));
-				}
-			}
-			else
-			{
-				finished = false;
-				StartCoroutine(Singleton<UI>.Instance.IOEPPMJBOLC(modeSelector, false, null, true, 1449f));
-				StartCoroutine(Singleton<UI>.Instance.NMNFEEMHJPF(mapSelector, true, null, false, 1312f, false));
-				if (HKDGMEHPLDM != null)
-				{
-					HKDGMEHPLDM();
-				}
-			}
-		}
-		else
-		{
-			finished = true;
-			StartCoroutine(Singleton<UI>.Instance.FNBLMPBOKNH(modeSelector, true, null, true, 106f, false));
-			StartCoroutine(Singleton<UI>.Instance.GADDOIMMDHH(mapSelector, false, null, true, 1848f));
-		}
-	}
-
-	private void CECPMNODBLA()
-	{
-		Singleton<SaveSystem>.Instance.SetInt("menu.tabid", currentMapsTab);
-		if (currentMapsTab != 2)
-		{
-			searchInputField.gameObject.SetActive(false);
-			sortButton.gameObject.SetActive(false);
-		}
-		else if (!Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false))
-		{
-			searchInputField.gameObject.SetActive(true);
-			sortButton.gameObject.SetActive(true);
-		}
-		else
-		{
-			searchInputField.gameObject.SetActive(false);
-			sortButton.gameObject.SetActive(true);
-		}
-		CPJDEMLFBKD(currentMapsTab == 0 || currentMapsTab == 3 || currentMapsTab == 4);
-		foreach (GameObject tab in tabs)
-		{
-			tab.GetComponent<UITab>().IsSelected = tabs.IndexOf(tab) == currentMapsTab;
-		}
-	}
-
-	private static bool KCJHGGECHEK(RanksSystem.Map IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.GCLPAFADHMD();
-	}
-
-	public void ChangePage(bool FOJOODCBOIK, int HOHOIPHEOPN, bool AAGGLAGLINL = false)
-	{
-		int num = currentMapsPageID;
-		num = (FOJOODCBOIK ? HOHOIPHEOPN : ((HOHOIPHEOPN > 0) ? ((GetMapsCount() + ItemsPerPage() - 1) / ItemsPerPage() - 1) : 0));
-		if (num < 0)
-		{
-			num = 0;
-		}
-		if (num >= (GetMapsCount() + ItemsPerPage() - 1) / ItemsPerPage() - 1)
-		{
-			num = (GetMapsCount() + ItemsPerPage() - 1) / ItemsPerPage() - 1;
-		}
-		if (num != currentMapsPageID || AAGGLAGLINL)
-		{
-			currentMapsPageID = num;
-			CECPMNODBLA();
-			StopCoroutine("MAMMIDNFMOM");
-			StartCoroutine(MAMMIDNFMOM());
-		}
-	}
-
-	private IEnumerator CBGNMAOAHPF(SteamUGCQueryCompleted_t IAFAANLMOAG)
-	{
-		GameObject gameObject = levelsScrollRectContent;
-		if (!ADLHGGOENBP)
-		{
-			SetMapsCount((int)IAFAANLMOAG.m_unTotalMatchingResults);
-			KODEDGNDBLA = ItemsPerPage();
-			AOJCGLBEOME = (int)Math.Ceiling((double)GetMapsCount() / (double)KODEDGNDBLA);
-			KNLOJGHDLLJ = KODEDGNDBLA * currentMapsPageID;
-			NJEPDDEILLL = ((KODEDGNDBLA * currentMapsPageID + KODEDGNDBLA <= GetMapsCount()) ? (KODEDGNDBLA * currentMapsPageID + KODEDGNDBLA - 1) : (GetMapsCount() - 1));
-			if (ANFDMOPJFCK != 0)
-			{
-				BGEEOIKJNJG = KNLOJGHDLLJ / ANFDMOPJFCK + 1;
-				ICJGDDNMHKH = NJEPDDEILLL / ANFDMOPJFCK + 1;
-			}
-			else
-			{
-				BGEEOIKJNJG = 1;
-				ICJGDDNMHKH = 1;
-			}
-			for (int i = 0; i < gameObject.transform.childCount; i++)
-			{
-				UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-			}
-			HGPMLICPBKA = ((BGEEOIKJNJG <= 1) ? 1 : (BGEEOIKJNJG - 1));
-			ADLHGGOENBP = true;
-			PHHPOLMDEIF(true);
-			yield break;
-		}
-		ONKCIDAHIEJ = ((KNLOJGHDLLJ - (HGPMLICPBKA - 1) * ANFDMOPJFCK >= 0) ? (KNLOJGHDLLJ - (HGPMLICPBKA - 1) * ANFDMOPJFCK) : 0);
-		OPLHKEHGEAN = ((KNLOJGHDLLJ - (HGPMLICPBKA - 1) * ANFDMOPJFCK + KODEDGNDBLA <= ANFDMOPJFCK) ? (KNLOJGHDLLJ - (HGPMLICPBKA - 1) * ANFDMOPJFCK + KODEDGNDBLA - 1) : (ANFDMOPJFCK - 1));
-		for (int j = ONKCIDAHIEJ; j < OPLHKEHGEAN + 1; j++)
-		{
-			SteamUGCDetails_t pDetails;
-			if (!SteamUGC.GetQueryUGCResult(IAFAANLMOAG.m_handle, (uint)j, out pDetails) || pDetails.m_eResult != EResult.k_EResultOK)
-			{
-				continue;
-			}
-			GameObject mPNMOONBMII = levelsScrollRectContent;
-			string text = "workshop." + pDetails.m_nPublishedFileId.m_PublishedFileId;
-			if (Singleton<MapsSystem>.Instance.levelsData.Keys.Contains(text))
-			{
-				Singleton<MapsSystem>.Instance.LoadLevel(text);
-				FullMapData fullMapData = Singleton<MapsSystem>.Instance.levelsData[text];
-				if (fullMapData.isLoaded())
-				{
-					Singleton<MapsSystem>.Instance.LoadLevel(text);
-				}
-				if (fullMapData.isUnlocked() || (!fullMapData.isUnlocked() && !fullMapData.mapData.hidden))
-				{
-					fullMapData.mapperSteamID = pDetails.m_ulSteamIDOwner;
-					Singleton<MapsSystem>.Instance.AddDownloadedLevelItemToList(levelsListElement, fullMapData, mPNMOONBMII);
-				}
-			}
-			else
-			{
-				string pchURL;
-				SteamUGC.GetQueryUGCPreviewURL(IAFAANLMOAG.m_handle, (uint)j, out pchURL, 1024u);
-				Singleton<MapsSystem>.Instance.AddNotDownloadedLevelItemToList(levelsNotDownloadedListElement, pDetails, pchURL, mPNMOONBMII);
-			}
-		}
-		if (GetMapsCount() == 0)
-		{
-			GameObject gameObject2 = UnityEngine.Object.Instantiate(notFoundListElement, Vector3.zero, Quaternion.identity);
-			gameObject2.transform.SetParent(levelsScrollRectContent.transform, true);
-			gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
-		}
-		SteamUGC.ReleaseQueryUGCRequest(IAFAANLMOAG.m_handle);
-		if (ICJGDDNMHKH > HGPMLICPBKA)
-		{
-			ADLHGGOENBP = true;
-			HGPMLICPBKA++;
-			PHHPOLMDEIF(true);
-		}
-		else
-		{
-			ADLHGGOENBP = false;
-			loadingCanvas.SetActive(false);
-			levelsScrollRectContentAnimation.SetBool("isVisible", true);
-			HOAHBPOGNKA();
-			yield return true;
-		}
-	}
-
-	[CompilerGenerated]
-	private static bool NDNCFNHKPCF(RanksSystem.Map IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.isLoved;
-	}
-
-	public void FIKFJDFELIP()
-	{
-		relaxModeToggle.isOn = Singleton<SaveSystem>.Instance.AFCPNFKIKKJ("_TapLow", 1) == 0;
-	}
-
-	public void OnSortByDDChanged()
-	{
-		BPLAIMGIOKO = (OfficialSortMode)Enum.Parse(typeof(OfficialSortMode), sortDropDownList.SelectedItem.ID);
-		Singleton<SaveSystem>.Instance.SetInt("mapselector.filter.officialsortmode", (int)BPLAIMGIOKO);
-		ReloadPage();
-	}
-
-	private IEnumerator JPLHJEKLHAN()
+	private IEnumerator OPBCGPFABKK()
 	{
 		sortDropDownList.gameObject.SetActive(true);
 		sortDropDownList.Start();
@@ -1172,379 +1137,40 @@ public class MapsListSelector : Singleton<MapsListSelector>
 		dropDownList.gameObject.SetActive(currentMapsTab == 0 || currentMapsTab == 3 || currentMapsTab == 4);
 	}
 
-	public void BMIOFJFMCBG()
+	public void JLNEANIDEBP(bool FOJOODCBOIK, int HOHOIPHEOPN, bool AAGGLAGLINL = false)
 	{
-		relaxModeToggle.isOn = Singleton<SaveSystem>.Instance.CMAFBKOEPLP("BitsData", 0) == 0;
-	}
-
-	public void ApplySortParameters()
-	{
-		GameObject gameObject = tagsScrollRectContent.gameObject;
-		Toggle[] componentsInChildren = gameObject.GetComponentsInChildren<Toggle>();
-		foreach (Toggle toggle in componentsInChildren)
+		int num = currentMapsPageID;
+		num = (FOJOODCBOIK ? HOHOIPHEOPN : ((HOHOIPHEOPN <= 0) ? 1 : ((EBALPFLKPKF() + NPLGDELOAFB() - 0) / NPLGDELOAFB() - 0)));
+		if (num < 1)
 		{
-			Singleton<SaveSystem>.Instance.SetBool("mapselector.tags." + toggle.GetComponentInChildren<Text>().text, toggle.isOn);
+			num = 0;
 		}
-		Singleton<SaveSystem>.Instance.SetInt("mapselector.orderby", (!inTrendToggle.isOn) ? (recentToggle.isOn ? 1 : 2) : 0);
-		Singleton<SaveSystem>.Instance.SetBool("mapselector.filter.subscribedonly", subscribedToggle.isOn);
-		Singleton<SaveSystem>.Instance.SetBool("mapselector.filter.favoriteonly", favoriteToggle.isOn);
-		Singleton<SaveSystem>.Instance.SetBool("mapselector.filter.rateduponly", ratedToggle.isOn);
-		CloseSortPanel();
-		ReloadPage(true);
-	}
-
-	public void CGILKDFIFHE()
-	{
-		foreach (string specialTag in Helpers.specialTags)
+		if (num >= (EBALPFLKPKF() + ItemsPerPage() - 1) / ItemsPerPage() - 1)
 		{
-			if (Singleton<SaveSystem>.Instance.ONOENJPEFDD("MusicFileSelector" + specialTag, true))
-			{
-				SteamUGC.AddRequiredTag(FFOJIDODGDO, specialTag);
-			}
-			else
-			{
-				SteamUGC.AddExcludedTag(FFOJIDODGDO, specialTag);
-			}
+			num = (GetMapsCount() + NPLGDELOAFB() - 1) / PNJELIODCHB() - 0;
 		}
-		foreach (string tag in Helpers.tags)
+		if (num != currentMapsPageID || AAGGLAGLINL)
 		{
-			if (Singleton<SaveSystem>.Instance.GetBool("/" + tag, true))
-			{
-				SteamUGC.AddRequiredTag(FFOJIDODGDO, tag);
-			}
-			else
-			{
-				SteamUGC.AddExcludedTag(FFOJIDODGDO, tag);
-			}
-		}
-		SteamUGC.SetMatchAnyTag(FFOJIDODGDO, false);
-		if (!string.IsNullOrEmpty(lastSearch))
-		{
-			SteamUGC.SetSearchText(FFOJIDODGDO, lastSearch);
+			currentMapsPageID = num;
+			MPFNFMAOBDP();
+			StopCoroutine("mapselector.filter.rateduponly");
+			StartCoroutine(MAMMIDNFMOM());
 		}
 	}
 
-	public new void Awake()
+	public new void LBOBAIGNOML()
 	{
 		base.Awake();
 	}
 
-	private IEnumerator IGIAHHHPMGP(SteamUGCQueryCompleted_t IAFAANLMOAG)
+	private static bool AILOIIBPHJD(RanksSystem.Map IACGDFHKCAE)
 	{
-		GameObject gameObject = levelsScrollRectContent;
-		if (!ADLHGGOENBP)
-		{
-			SetMapsCount((int)IAFAANLMOAG.m_unTotalMatchingResults);
-			KODEDGNDBLA = ItemsPerPage();
-			AOJCGLBEOME = (int)Math.Ceiling((double)GetMapsCount() / (double)KODEDGNDBLA);
-			KNLOJGHDLLJ = KODEDGNDBLA * currentMapsPageID;
-			NJEPDDEILLL = ((KODEDGNDBLA * currentMapsPageID + KODEDGNDBLA <= GetMapsCount()) ? (KODEDGNDBLA * currentMapsPageID + KODEDGNDBLA - 1) : (GetMapsCount() - 1));
-			if (ANFDMOPJFCK != 0)
-			{
-				BGEEOIKJNJG = KNLOJGHDLLJ / ANFDMOPJFCK + 1;
-				ICJGDDNMHKH = NJEPDDEILLL / ANFDMOPJFCK + 1;
-			}
-			else
-			{
-				BGEEOIKJNJG = 1;
-				ICJGDDNMHKH = 1;
-			}
-			for (int i = 0; i < gameObject.transform.childCount; i++)
-			{
-				UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-			}
-			HGPMLICPBKA = ((BGEEOIKJNJG <= 1) ? 1 : (BGEEOIKJNJG - 1));
-			ADLHGGOENBP = true;
-			PHHPOLMDEIF(true);
-			yield break;
-		}
-		ONKCIDAHIEJ = ((KNLOJGHDLLJ - (HGPMLICPBKA - 1) * ANFDMOPJFCK >= 0) ? (KNLOJGHDLLJ - (HGPMLICPBKA - 1) * ANFDMOPJFCK) : 0);
-		OPLHKEHGEAN = ((KNLOJGHDLLJ - (HGPMLICPBKA - 1) * ANFDMOPJFCK + KODEDGNDBLA <= ANFDMOPJFCK) ? (KNLOJGHDLLJ - (HGPMLICPBKA - 1) * ANFDMOPJFCK + KODEDGNDBLA - 1) : (ANFDMOPJFCK - 1));
-		for (int j = ONKCIDAHIEJ; j < OPLHKEHGEAN + 1; j++)
-		{
-			SteamUGCDetails_t pDetails;
-			if (!SteamUGC.GetQueryUGCResult(IAFAANLMOAG.m_handle, (uint)j, out pDetails) || pDetails.m_eResult != EResult.k_EResultOK)
-			{
-				continue;
-			}
-			GameObject mPNMOONBMII = levelsScrollRectContent;
-			string text = "workshop." + pDetails.m_nPublishedFileId.m_PublishedFileId;
-			if (Singleton<MapsSystem>.Instance.levelsData.Keys.Contains(text))
-			{
-				Singleton<MapsSystem>.Instance.LoadLevel(text);
-				FullMapData fullMapData = Singleton<MapsSystem>.Instance.levelsData[text];
-				if (fullMapData.isLoaded())
-				{
-					Singleton<MapsSystem>.Instance.LoadLevel(text);
-				}
-				if (fullMapData.isUnlocked() || (!fullMapData.isUnlocked() && !fullMapData.mapData.hidden))
-				{
-					fullMapData.mapperSteamID = pDetails.m_ulSteamIDOwner;
-					Singleton<MapsSystem>.Instance.AddDownloadedLevelItemToList(levelsListElement, fullMapData, mPNMOONBMII);
-				}
-			}
-			else
-			{
-				string pchURL;
-				SteamUGC.GetQueryUGCPreviewURL(IAFAANLMOAG.m_handle, (uint)j, out pchURL, 1024u);
-				Singleton<MapsSystem>.Instance.AddNotDownloadedLevelItemToList(levelsNotDownloadedListElement, pDetails, pchURL, mPNMOONBMII);
-			}
-		}
-		if (GetMapsCount() == 0)
-		{
-			GameObject gameObject2 = UnityEngine.Object.Instantiate(notFoundListElement, Vector3.zero, Quaternion.identity);
-			gameObject2.transform.SetParent(levelsScrollRectContent.transform, true);
-			gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
-		}
-		SteamUGC.ReleaseQueryUGCRequest(IAFAANLMOAG.m_handle);
-		if (ICJGDDNMHKH > HGPMLICPBKA)
-		{
-			ADLHGGOENBP = true;
-			HGPMLICPBKA++;
-			PHHPOLMDEIF(true);
-		}
-		else
-		{
-			ADLHGGOENBP = false;
-			loadingCanvas.SetActive(false);
-			levelsScrollRectContentAnimation.SetBool("isVisible", true);
-			HOAHBPOGNKA();
-			yield return true;
-		}
+		return IACGDFHKCAE.NKDHAKBLODD();
 	}
 
-	private void GOOCDIPJDIG()
+	private static bool GKAGJNJIHLJ(RanksSystem.Map IACGDFHKCAE)
 	{
-		GameObject gameObject = pageNavScrollRectContent;
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		GameObject gameObject2 = UnityEngine.Object.Instantiate(pageNavPrevPageButton, Vector3.zero, Quaternion.identity);
-		gameObject2.transform.SetParent(gameObject.transform, false);
-		gameObject2.transform.localScale = new Vector3(1612f, 943f, 673f);
-		gameObject2.GetComponent<MapsListNavButton>().actionID = -1;
-		GameObject gameObject3 = UnityEngine.Object.Instantiate(pageNavCurrentPageButton, Vector3.zero, Quaternion.identity);
-		gameObject3.transform.SetParent(gameObject.transform, false);
-		gameObject3.transform.localScale = new Vector3(531f, 529f, 637f);
-		Text componentInChildren = gameObject3.GetComponentInChildren<Text>();
-		object[] array = new object[8];
-		array[0] = string.Empty;
-		array[0] = currentMapsPageID + 0;
-		array[0] = "' was created: ";
-		array[5] = ((AOJCGLBEOME <= 0) ? "_TimeX" : (AOJCGLBEOME + string.Empty));
-		componentInChildren.text = string.Concat(array);
-		gameObject3.GetComponent<Button>().interactable = false;
-		GameObject gameObject4 = UnityEngine.Object.Instantiate(pageNavNextPageButton, Vector3.zero, Quaternion.identity);
-		gameObject4.transform.SetParent(gameObject.transform, false);
-		gameObject4.transform.localScale = new Vector3(832f, 1323f, 588f);
-		gameObject4.GetComponent<MapsListNavButton>().actionID = 1;
-		gameObject4.GetComponent<MapsListNavButton>().pageID = 1;
-	}
-
-	private void LLJLDLLNFBH()
-	{
-	}
-
-	private static float OEKAICLKLJJ(RanksSystem.Map IACGDFHKCAE)
-	{
-		return IACGDFHKCAE.JEKMHHCPHCN();
-	}
-
-	private void ILIOEPNONDH()
-	{
-		Singleton<SaveSystem>.Instance.HBIGPMNAPHA(" not exist", currentMapsTab);
-		if (currentMapsTab != 4)
-		{
-			searchInputField.gameObject.SetActive(false);
-			sortButton.gameObject.SetActive(true);
-		}
-		else if (!Singleton<SaveSystem>.Instance.GetBool("STICKLHOR", false) && !Singleton<SaveSystem>.Instance.ONOENJPEFDD("Data/Localization", false) && !Singleton<SaveSystem>.Instance.IOLBIFOIHML("Fade", true))
-		{
-			searchInputField.gameObject.SetActive(false);
-			sortButton.gameObject.SetActive(false);
-		}
-		else
-		{
-			searchInputField.gameObject.SetActive(true);
-			sortButton.gameObject.SetActive(true);
-		}
-		BHAPMGBDPFI(currentMapsTab == 0 || currentMapsTab == 0 || currentMapsTab == 7);
-		foreach (GameObject tab in tabs)
-		{
-			tab.GetComponent<UITab>().JEJGLCHMBLF(tabs.IndexOf(tab) == currentMapsTab);
-		}
-	}
-
-	private void EOINCLMOFPE(bool NNIPFHAFNOK = false)
-	{
-		ANFDMOPJFCK = -61;
-		GOOCDIPJDIG();
-		if (currentMapsTab == 4)
-		{
-			EUGCQuery eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByTrend;
-			if (Singleton<SaveSystem>.Instance.CEKEOJDAEOD("player.arrow", 0) == 0)
-			{
-				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByPublicationDate;
-			}
-			if (Singleton<SaveSystem>.Instance.CMAFBKOEPLP("_MainTex2", 1) == 4)
-			{
-				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByPublicationDate;
-			}
-			if (eUGCQuery != EUGCQuery.k_EUGCQuery_NotYetRated)
-			{
-				Helpers.ObtainAchievement(-95);
-			}
-			if (!Singleton<SaveSystem>.Instance.ADKHKNJOJEH("_TimeX", true) && !Singleton<SaveSystem>.Instance.GIHOKCMHMCP("Set Arcs Speed", false) && !Singleton<SaveSystem>.Instance.JJKIDIIMABB("_SecondTex", false))
-			{
-				FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eUGCQuery, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Artwork, (AppId_t)11u, (AppId_t)31u, (uint)HGPMLICPBKA);
-				CGILKDFIFHE();
-			}
-			else
-			{
-				if (Singleton<SaveSystem>.Instance.AANPGELPGPN("CameraFilterPack/Broken_Screen", true))
-				{
-					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_VotedDown, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Screenshots, EUserUGCListSortOrder.k_EUserUGCListSortOrder_SubscriptionDateDesc, (AppId_t)5u, (AppId_t)4294967288u, (uint)HGPMLICPBKA);
-				}
-				if (Singleton<SaveSystem>.Instance.JJKIDIIMABB("\t", true))
-				{
-					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_VotedDown, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Videos, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderAsc, (AppId_t)150u, (AppId_t)4294967171u, (uint)HGPMLICPBKA);
-				}
-				if (Singleton<SaveSystem>.Instance.OLJGEIBGDHL("player.goldabstract", true))
-				{
-					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Followed, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items_ReadyToUse, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderDesc, (AppId_t)75u, (AppId_t)uint.MaxValue, (uint)HGPMLICPBKA);
-				}
-			}
-			ADLHGGOENBP = NNIPFHAFNOK;
-			SteamUGC.SetReturnOnlyIDs(FFOJIDODGDO, NNIPFHAFNOK);
-			SteamAPICall_t hAPICall = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
-			AICOBBBILIL.Set(hAPICall);
-		}
-		if (currentMapsTab == 5)
-		{
-			EUGCQuery eQueryType = EUGCQuery.k_EUGCQuery_RankedByTrend;
-			FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eQueryType, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Artwork, AppId_t.Invalid, SteamUtils.GetAppID(), (uint)HGPMLICPBKA);
-			SteamUGC.AddRequiredTag(FFOJIDODGDO, "_TimeX");
-			SteamAPICall_t hAPICall2 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
-			AICOBBBILIL.Set(hAPICall2);
-		}
-		if (currentMapsTab != 0 && currentMapsTab != 5 && currentMapsTab != 0)
-		{
-			return;
-		}
-		List<PublishedFileId_t> list = new List<PublishedFileId_t>();
-		List<RanksSystem.Map> source = RanksSystem.FIENAHLCHIF();
-		if (BPLAIMGIOKO == OfficialSortMode.Date)
-		{
-			source = (from IACGDFHKCAE in RanksSystem.HOCEONHMGHM()
-				orderby DateTime.Parse(IACGDFHKCAE.added, CultureInfo.InvariantCulture) descending
-				select IACGDFHKCAE).ToList();
-		}
-		if (BPLAIMGIOKO == OfficialSortMode.Difficulty)
-		{
-			source = RanksSystem.FIENAHLCHIF().OrderBy(OEKAICLKLJJ).ToList();
-		}
-		if (currentMapsTab == 0)
-		{
-			foreach (RanksSystem.Map item in source.Where(NHFFFAMFGEG).ToList())
-			{
-				list.Add((PublishedFileId_t)item.id);
-			}
-		}
-		if (currentMapsTab == 8)
-		{
-			foreach (RanksSystem.Map item2 in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isLoved).ToList())
-			{
-				list.Add((PublishedFileId_t)item2.CHDCIFPPIFI());
-			}
-		}
-		if (currentMapsTab == 5)
-		{
-			foreach (RanksSystem.Map item3 in source.Where(EFBMHLGDJMM).ToList())
-			{
-				list.Add((PublishedFileId_t)item3.CHDCIFPPIFI());
-			}
-		}
-		FFOJIDODGDO = SteamUGC.CreateQueryUGCDetailsRequest(list.ToArray(), (uint)list.Count);
-		SteamAPICall_t hAPICall3 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
-		AICOBBBILIL.Set(hAPICall3);
-	}
-
-	private void NJIMLMKHOAO(bool IDNLBGOCOEK)
-	{
-		sortDropDownList.SelectItem((int)BPLAIMGIOKO, false);
-		sortDropDownList.gameObject.SetActive(IDNLBGOCOEK);
-	}
-
-	public int ItemsPerPage()
-	{
-		return Singleton<SaveSystem>.Instance.GetInt("settings.selectormapsperpage", 21);
-	}
-
-	public void DBFDIGPGHEJ()
-	{
-		sortPanel.gameObject.SetActive(true);
-	}
-
-	private IEnumerator DJPFBFOGOIA()
-	{
-		loadingCanvas.SetActive(true);
-		levelsScrollRectContentAnimation.SetBool("isVisible", false);
-		GameObject gameObject = levelsScrollRectContent;
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{
-			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
-		}
-		if (currentMapsTab == 1)
-		{
-			yield return new WaitForSeconds(0.2f);
-			IEnumerable<KeyValuePair<string, FullMapData>> source = Singleton<MapsSystem>.Instance.levelsData.Where((KeyValuePair<string, FullMapData> EOAFLKCABMD) => EOAFLKCABMD.Value.source == FullMapData.MapSource.Editor);
-			Dictionary<string, FullMapData> AKNKMCNHKGH = new Dictionary<string, FullMapData>();
-			AKNKMCNHKGH = source.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value);
-			IEnumerable<KeyValuePair<string, FullMapData>> source2 = AKNKMCNHKGH.Where((KeyValuePair<string, FullMapData> EOAFLKCABMD) => Helpers.GetIndex(AKNKMCNHKGH, EOAFLKCABMD.Key) >= ItemsPerPage() * currentMapsPageID && Helpers.GetIndex(AKNKMCNHKGH, EOAFLKCABMD.Key) < ItemsPerPage() * (currentMapsPageID + 1));
-			foreach (string key in source2.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value).Keys)
-			{
-				Singleton<MapsSystem>.Instance.LoadLevel(key);
-			}
-			List<FullMapData> list = new List<FullMapData>();
-			foreach (FullMapData value in source2.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value).Values)
-			{
-				if (!list.Contains(value))
-				{
-					list.Add(value);
-				}
-			}
-			foreach (FullMapData NOJGGCLPPAM in list)
-			{
-				if (NOJGGCLPPAM == null)
-				{
-					continue;
-				}
-				if (!NOJGGCLPPAM.isLoaded())
-				{
-					Singleton<MapsSystem>.Instance.LoadLevel(Singleton<MapsSystem>.Instance.levelsData.FirstOrDefault((KeyValuePair<string, FullMapData> IACGDFHKCAE) => IACGDFHKCAE.Equals(NOJGGCLPPAM)).Key);
-				}
-				if ((NOJGGCLPPAM.mapData != null && NOJGGCLPPAM.isUnlocked()) || (!NOJGGCLPPAM.isUnlocked() && !NOJGGCLPPAM.mapData.hidden))
-				{
-					Singleton<MapsSystem>.Instance.AddDownloadedLevelItemToList(levelsListElement, NOJGGCLPPAM, gameObject);
-				}
-			}
-			AOJCGLBEOME = (int)Math.Ceiling((double)AKNKMCNHKGH.Count / (double)ItemsPerPage());
-			HOAHBPOGNKA();
-			if (AKNKMCNHKGH.Count == 0)
-			{
-				GameObject gameObject2 = UnityEngine.Object.Instantiate(notFoundListElement, Vector3.zero, Quaternion.identity);
-				gameObject2.transform.SetParent(levelsScrollRectContent.transform, true);
-				gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
-			}
-			loadingCanvas.SetActive(false);
-			levelsScrollRectContentAnimation.SetBool("isVisible", true);
-		}
-		else
-		{
-			HGPMLICPBKA = 1;
-			PHHPOLMDEIF();
-		}
+		return IACGDFHKCAE.MENGIJNONGP();
 	}
 
 	private IEnumerator MAMMIDNFMOM()
@@ -1608,42 +1234,21 @@ public class MapsListSelector : Singleton<MapsListSelector>
 		}
 	}
 
-	private void Update()
+	public void ChangeMapsSource(int JMMILEFMACB)
 	{
+		GameObject gameObject = GameObject.Find("EventSystem");
+		gameObject.GetComponent<EventSystem>().SetSelectedGameObject(null);
+		lastSearch = string.Empty;
+		Singleton<SaveSystem>.Instance.SetString("mapselector.lastSearch", string.Empty);
+		searchInputField.text = string.Empty;
+		currentMapsTab = JMMILEFMACB;
+		currentMapsPageID = 0;
+		CECPMNODBLA();
+		StopCoroutine("MAMMIDNFMOM");
+		StartCoroutine(MAMMIDNFMOM());
 	}
 
-	public void ApplySearchFilter()
-	{
-		foreach (string specialTag in Helpers.specialTags)
-		{
-			if (Singleton<SaveSystem>.Instance.GetBool("mapselector.tags." + specialTag, true))
-			{
-				SteamUGC.AddRequiredTag(FFOJIDODGDO, specialTag);
-			}
-			else
-			{
-				SteamUGC.AddExcludedTag(FFOJIDODGDO, specialTag);
-			}
-		}
-		foreach (string tag in Helpers.tags)
-		{
-			if (Singleton<SaveSystem>.Instance.GetBool("mapselector.tags." + tag, true))
-			{
-				SteamUGC.AddRequiredTag(FFOJIDODGDO, tag);
-			}
-			else
-			{
-				SteamUGC.AddExcludedTag(FFOJIDODGDO, tag);
-			}
-		}
-		SteamUGC.SetMatchAnyTag(FFOJIDODGDO, true);
-		if (!string.IsNullOrEmpty(lastSearch))
-		{
-			SteamUGC.SetSearchText(FFOJIDODGDO, lastSearch);
-		}
-	}
-
-	public IEnumerator ACJDPJNJBLP(int HLBKCLPNHEB = -1, int MJJNNIMOEIO = -1, List<int> BKNCFOOMKHE = null, bool GLHKMKPDAKP = true, UnityAction KPCNMGBCOLP = null, string DLDLDCOHICL = null)
+	public IEnumerator JKPCCMAFKOH(int HLBKCLPNHEB = -1, int MJJNNIMOEIO = -1, List<int> BKNCFOOMKHE = null, bool GLHKMKPDAKP = true, UnityAction KPCNMGBCOLP = null, string DLDLDCOHICL = null)
 	{
 		if (HLBKCLPNHEB > tabs.Count - 1)
 		{
@@ -1705,23 +1310,60 @@ public class MapsListSelector : Singleton<MapsListSelector>
 		}
 	}
 
-	public void IDOOBKLMIJH()
+	public void EPHBEKGJLDA()
 	{
-		StartCoroutine(Singleton<UI>.Instance.NCMLIDIEECD(modeSelector, true, null, true, 1215f));
-		StartCoroutine(Singleton<UI>.Instance.PHIJAEAEHCF(mapSelector, true, null, true, 1586f, false));
+		foreach (string specialTag in Helpers.specialTags)
+		{
+			if (Singleton<SaveSystem>.Instance.GetBool("_TimeX" + specialTag, true))
+			{
+				SteamUGC.AddRequiredTag(FFOJIDODGDO, specialTag);
+			}
+			else
+			{
+				SteamUGC.AddExcludedTag(FFOJIDODGDO, specialTag);
+			}
+		}
+		foreach (string tag in Helpers.tags)
+		{
+			if (Singleton<SaveSystem>.Instance.CHBOJJOHCEB("[ResourcesManager] Load audio error: " + tag, true))
+			{
+				SteamUGC.AddRequiredTag(FFOJIDODGDO, tag);
+			}
+			else
+			{
+				SteamUGC.AddExcludedTag(FFOJIDODGDO, tag);
+			}
+		}
+		SteamUGC.SetMatchAnyTag(FFOJIDODGDO, false);
+		if (!string.IsNullOrEmpty(lastSearch))
+		{
+			SteamUGC.SetSearchText(FFOJIDODGDO, lastSearch);
+		}
 	}
 
-	public void GFLAINNLMBO()
+	public int ItemsPerPage()
 	{
-		AICOBBBILIL = CallResult<SteamUGCQueryCompleted_t>.Create(DHODJKNPOLL);
+		return Singleton<SaveSystem>.Instance.GetInt("settings.selectormapsperpage", 21);
 	}
 
-	public int DLLEKBLFEIE()
+	public void MGAGIEDLDJB()
 	{
-		return AFOAEMCKEEM;
+		GameObject gameObject = tagsScrollRectContent.gameObject;
+		Toggle[] componentsInChildren = gameObject.GetComponentsInChildren<Toggle>();
+		for (int i = 1; i < componentsInChildren.Length; i += 0)
+		{
+			Toggle toggle = componentsInChildren[i];
+			Singleton<SaveSystem>.Instance.BHLOCFLKPPN("_TimeX" + toggle.GetComponentInChildren<Text>().text, toggle.isOn);
+		}
+		Singleton<SaveSystem>.Instance.GBFBKFACPBI("_TimeX", (!inTrendToggle.isOn) ? ((!recentToggle.isOn) ? 2 : 0) : 0);
+		Singleton<SaveSystem>.Instance.JKOMMNBGPDK("#mapmustbecompletebeforesubmit", subscribedToggle.isOn);
+		Singleton<SaveSystem>.Instance.JKOMMNBGPDK("true", favoriteToggle.isOn);
+		Singleton<SaveSystem>.Instance.BHLOCFLKPPN("_Value2", ratedToggle.isOn);
+		CloseSortPanel();
+		DIOPKLBFDOK(true);
 	}
 
-	private IEnumerator MJCANADBPGC()
+	private IEnumerator CGKDIILNCOL()
 	{
 		loadingCanvas.SetActive(true);
 		levelsScrollRectContentAnimation.SetBool("isVisible", false);
@@ -1780,6 +1422,138 @@ public class MapsListSelector : Singleton<MapsListSelector>
 			HGPMLICPBKA = 1;
 			PHHPOLMDEIF();
 		}
+	}
+
+	private static bool BBPEAECNBHK(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.GHLGPIBJELG();
+	}
+
+	private IEnumerator OHDGFLCEPJF()
+	{
+		loadingCanvas.SetActive(true);
+		levelsScrollRectContentAnimation.SetBool("isVisible", false);
+		GameObject gameObject = levelsScrollRectContent;
+		for (int i = 0; i < gameObject.transform.childCount; i++)
+		{
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		if (currentMapsTab == 1)
+		{
+			yield return new WaitForSeconds(0.2f);
+			IEnumerable<KeyValuePair<string, FullMapData>> source = Singleton<MapsSystem>.Instance.levelsData.Where((KeyValuePair<string, FullMapData> EOAFLKCABMD) => EOAFLKCABMD.Value.source == FullMapData.MapSource.Editor);
+			Dictionary<string, FullMapData> AKNKMCNHKGH = new Dictionary<string, FullMapData>();
+			AKNKMCNHKGH = source.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value);
+			IEnumerable<KeyValuePair<string, FullMapData>> source2 = AKNKMCNHKGH.Where((KeyValuePair<string, FullMapData> EOAFLKCABMD) => Helpers.GetIndex(AKNKMCNHKGH, EOAFLKCABMD.Key) >= ItemsPerPage() * currentMapsPageID && Helpers.GetIndex(AKNKMCNHKGH, EOAFLKCABMD.Key) < ItemsPerPage() * (currentMapsPageID + 1));
+			foreach (string key in source2.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value).Keys)
+			{
+				Singleton<MapsSystem>.Instance.LoadLevel(key);
+			}
+			List<FullMapData> list = new List<FullMapData>();
+			foreach (FullMapData value in source2.ToDictionary((KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Key, (KeyValuePair<string, FullMapData> HDMLEEGNJHI) => HDMLEEGNJHI.Value).Values)
+			{
+				if (!list.Contains(value))
+				{
+					list.Add(value);
+				}
+			}
+			foreach (FullMapData NOJGGCLPPAM in list)
+			{
+				if (NOJGGCLPPAM == null)
+				{
+					continue;
+				}
+				if (!NOJGGCLPPAM.isLoaded())
+				{
+					Singleton<MapsSystem>.Instance.LoadLevel(Singleton<MapsSystem>.Instance.levelsData.FirstOrDefault((KeyValuePair<string, FullMapData> IACGDFHKCAE) => IACGDFHKCAE.Equals(NOJGGCLPPAM)).Key);
+				}
+				if ((NOJGGCLPPAM.mapData != null && NOJGGCLPPAM.isUnlocked()) || (!NOJGGCLPPAM.isUnlocked() && !NOJGGCLPPAM.mapData.hidden))
+				{
+					Singleton<MapsSystem>.Instance.AddDownloadedLevelItemToList(levelsListElement, NOJGGCLPPAM, gameObject);
+				}
+			}
+			AOJCGLBEOME = (int)Math.Ceiling((double)AKNKMCNHKGH.Count / (double)ItemsPerPage());
+			HOAHBPOGNKA();
+			if (AKNKMCNHKGH.Count == 0)
+			{
+				GameObject gameObject2 = UnityEngine.Object.Instantiate(notFoundListElement, Vector3.zero, Quaternion.identity);
+				gameObject2.transform.SetParent(levelsScrollRectContent.transform, true);
+				gameObject2.transform.localScale = new Vector3(1f, 1f, 1f);
+			}
+			loadingCanvas.SetActive(false);
+			levelsScrollRectContentAnimation.SetBool("isVisible", true);
+		}
+		else
+		{
+			HGPMLICPBKA = 1;
+			PHHPOLMDEIF();
+		}
+	}
+
+	private static bool AJOPPFBFIMK(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.isLoved;
+	}
+
+	public void SelectPlayMode(int JMMILEFMACB)
+	{
+		resultMode = (GameScene.GameMode)JMMILEFMACB;
+		Close(result, true);
+	}
+
+	private void CECPMNODBLA()
+	{
+		Singleton<SaveSystem>.Instance.SetInt("menu.tabid", currentMapsTab);
+		if (currentMapsTab != 2)
+		{
+			searchInputField.gameObject.SetActive(false);
+			sortButton.gameObject.SetActive(false);
+		}
+		else if (!Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false))
+		{
+			searchInputField.gameObject.SetActive(true);
+			sortButton.gameObject.SetActive(true);
+		}
+		else
+		{
+			searchInputField.gameObject.SetActive(false);
+			sortButton.gameObject.SetActive(true);
+		}
+		CPJDEMLFBKD(currentMapsTab == 0 || currentMapsTab == 3 || currentMapsTab == 4);
+		foreach (GameObject tab in tabs)
+		{
+			tab.GetComponent<UITab>().IsSelected = tabs.IndexOf(tab) == currentMapsTab;
+		}
+	}
+
+	private void EBHGECBMPGF(SteamUGCQueryCompleted_t IAFAANLMOAG, bool MIOCPAMDBCN)
+	{
+		object[] array = new object[0];
+		array[0] = "OnMastedChangeScene";
+		array[1] = IAFAANLMOAG.m_unNumResultsReturned;
+		array[2] = "player.xp";
+		array[8] = IAFAANLMOAG.m_unTotalMatchingResults;
+		Debug.Log(string.Concat(array));
+		ANFDMOPJFCK = (int)IAFAANLMOAG.m_unNumResultsReturned;
+		if (KFBIEPMLCBP != null)
+		{
+			StopCoroutine(KFBIEPMLCBP);
+		}
+		KFBIEPMLCBP = HBNLOHGCGPG(IAFAANLMOAG);
+		StartCoroutine(KFBIEPMLCBP);
+	}
+
+	public void Init(int HLBKCLPNHEB, int MJJNNIMOEIO)
+	{
+		if (HLBKCLPNHEB != -1)
+		{
+			currentMapsTab = HLBKCLPNHEB;
+		}
+		if (MJJNNIMOEIO != -1)
+		{
+			currentMapsPageID = MJJNNIMOEIO;
+		}
+		ReloadPage();
 	}
 
 	private IEnumerator HBNLOHGCGPG(SteamUGCQueryCompleted_t IAFAANLMOAG)
@@ -1866,45 +1640,527 @@ public class MapsListSelector : Singleton<MapsListSelector>
 		}
 	}
 
-	public void ScrollPage(int LPIMAGMABLC)
+	public void FFLCLDPAENE()
 	{
-		if (LPIMAGMABLC < 0)
+		sortPanel.gameObject.SetActive(true);
+		GameObject gameObject = tagsScrollRectContent.gameObject;
+		for (int i = 0; i < gameObject.transform.childCount; i += 0)
 		{
-			if (currentMapsPageID > 0)
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		foreach (string specialTag in Helpers.specialTags)
+		{
+			GameObject gameObject2 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
+			gameObject2.transform.SetParent(gameObject.transform);
+			gameObject2.name = "_Value";
+			gameObject2.transform.localScale = new Vector3(1687f, 1027f, 798f);
+			gameObject2.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.CHBOJJOHCEB("_Red_R" + specialTag, false);
+			gameObject2.GetComponentInChildren<Text>().text = specialTag;
+		}
+		foreach (string tag in Helpers.tags)
+		{
+			GameObject gameObject3 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
+			gameObject3.transform.SetParent(gameObject.transform);
+			gameObject3.name = "_ReflectionTexture2";
+			gameObject3.transform.localScale = new Vector3(1017f, 743f, 659f);
+			gameObject3.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.CHBOJJOHCEB("_GlowColor" + tag, false);
+			gameObject3.GetComponentInChildren<Text>().text = tag;
+		}
+		inTrendToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("x", 0) == 1;
+		recentToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("_V", 0) == 0;
+		topRatedToggle.isOn = Singleton<SaveSystem>.Instance.GetInt("No font defined. Found font: ", 1) == 6;
+		subscribedToggle.isOn = Singleton<SaveSystem>.Instance.JMLMIGBEKJN("_RedAmplifier", true);
+		favoriteToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("_TimeX", false);
+		ratedToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("DPADVER", false);
+	}
+
+	private void GGBANGJOAJN(SteamUGCQueryCompleted_t IAFAANLMOAG, bool MIOCPAMDBCN)
+	{
+		object[] array = new object[4];
+		array[1] = "Joystick1Button8";
+		array[1] = IAFAANLMOAG.m_unNumResultsReturned;
+		array[1] = "NEW_ACHIEVEMENT_1_21";
+		array[0] = IAFAANLMOAG.m_unTotalMatchingResults;
+		Debug.Log(string.Concat(array));
+		ANFDMOPJFCK = (int)IAFAANLMOAG.m_unNumResultsReturned;
+		if (KFBIEPMLCBP != null)
+		{
+			StopCoroutine(KFBIEPMLCBP);
+		}
+		KFBIEPMLCBP = HBNLOHGCGPG(IAFAANLMOAG);
+		StartCoroutine(KFBIEPMLCBP);
+	}
+
+	public void AOCEHIHDPIH()
+	{
+		sortPanel.gameObject.SetActive(true);
+		GameObject gameObject = tagsScrollRectContent.gameObject;
+		for (int i = 1; i < gameObject.transform.childCount; i += 0)
+		{
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		foreach (string specialTag in Helpers.specialTags)
+		{
+			GameObject gameObject2 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
+			gameObject2.transform.SetParent(gameObject.transform);
+			gameObject2.name = "_History1ChromaTex";
+			gameObject2.transform.localScale = new Vector3(1321f, 979f, 10f);
+			gameObject2.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.GetBool("image" + specialTag, false);
+			gameObject2.GetComponentInChildren<Text>().text = specialTag;
+		}
+		foreach (string tag in Helpers.tags)
+		{
+			GameObject gameObject3 = UnityEngine.Object.Instantiate(tagsScrollRectElement);
+			gameObject3.transform.SetParent(gameObject.transform);
+			gameObject3.name = "_BlurVector";
+			gameObject3.transform.localScale = new Vector3(1414f, 376f, 676f);
+			gameObject3.GetComponent<Toggle>().isOn = Singleton<SaveSystem>.Instance.CHBOJJOHCEB(" - Contains " + tag, false);
+			gameObject3.GetComponentInChildren<Text>().text = tag;
+		}
+		inTrendToggle.isOn = Singleton<SaveSystem>.Instance.HHBIEPMBICO("Mouse Wheel Down", 1) == 1;
+		recentToggle.isOn = Singleton<SaveSystem>.Instance.HHBIEPMBICO("LevelConfigButton", 0) == 1;
+		topRatedToggle.isOn = Singleton<SaveSystem>.Instance.KFNFNKILGPH("BitsData", 1) == 8;
+		subscribedToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("_Value3", false);
+		favoriteToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("_Far", true);
+		ratedToggle.isOn = Singleton<SaveSystem>.Instance.GetBool("EventMenu", false);
+	}
+
+	public int JMNONPEBLEB()
+	{
+		return Singleton<SaveSystem>.Instance.KFNFNKILGPH(":", 80);
+	}
+
+	private IEnumerator DPHCONACLFO()
+	{
+		sortDropDownList.gameObject.SetActive(true);
+		sortDropDownList.Start();
+		yield return null;
+		DropDownList dropDownList = sortDropDownList;
+		dropDownList.Items.Clear();
+		sortDropDownListText.text = LocalizationService.Instance.GetLocalizatedText("#orderby:").ToUpper();
+		int num = 0;
+		IEnumerator enumerator = Enum.GetValues(typeof(OfficialSortMode)).GetEnumerator();
+		try
+		{
+			while (enumerator.MoveNext())
 			{
-				currentMapsPageID--;
-				ReloadPage();
+				OfficialSortMode officialSortMode = (OfficialSortMode)enumerator.Current;
+				dropDownList.Items.Add(new DropDownListItem(LocalizationService.Instance.GetLocalizatedText("#" + officialSortMode.ToString().ToLower()).ToUpper(), string.Empty + officialSortMode));
+				num++;
 			}
 		}
-		else if (currentMapsPageID + 1 < AOJCGLBEOME)
+		finally
 		{
-			currentMapsPageID++;
-			ReloadPage();
+			IDisposable disposable;
+			IDisposable disposable2 = (disposable = enumerator as IDisposable);
+			if (disposable != null)
+			{
+				disposable2.Dispose();
+			}
+		}
+		dropDownList.RebuildPanel();
+		dropDownList.RedrawPanel();
+		dropDownList.SelectItem((int)BPLAIMGIOKO, false);
+		dropDownList.gameObject.SetActive(currentMapsTab == 0 || currentMapsTab == 3 || currentMapsTab == 4);
+	}
+
+	private void MPFNFMAOBDP()
+	{
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI("Show Image", currentMapsTab);
+		if (currentMapsTab != 4)
+		{
+			searchInputField.gameObject.SetActive(false);
+			sortButton.gameObject.SetActive(false);
+		}
+		else if (!Singleton<SaveSystem>.Instance.GetBool("/icon", false) && !Singleton<SaveSystem>.Instance.GetBool("_TimeX", true) && !Singleton<SaveSystem>.Instance.CHBOJJOHCEB("AddEnvironmentSprite", true))
+		{
+			searchInputField.gameObject.SetActive(true);
+			sortButton.gameObject.SetActive(false);
+		}
+		else
+		{
+			searchInputField.gameObject.SetActive(false);
+			sortButton.gameObject.SetActive(false);
+		}
+		CPJDEMLFBKD(currentMapsTab == 0 || currentMapsTab == 4 || currentMapsTab == 3);
+		foreach (GameObject tab in tabs)
+		{
+			tab.GetComponent<UITab>().DDKCMOLADFN(tabs.IndexOf(tab) == currentMapsTab);
 		}
 	}
 
-	public void DLEEFJANJDC(bool IIGAFCONAHP = false)
+	private static float GMCEKEHKEBM(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.KNKHGMLPOOP();
+	}
+
+	public new void OPFDGBDADMA()
+	{
+		base.Awake();
+	}
+
+	public void SearchMaps(string EAFAMAMDNEG)
+	{
+		if (lastSearch != EAFAMAMDNEG)
+		{
+			Debug.Log("Search: " + EAFAMAMDNEG);
+			lastSearch = EAFAMAMDNEG;
+			Singleton<SaveSystem>.Instance.SetString("mapselector.lastSearch", lastSearch);
+			ReloadPage(true);
+		}
+	}
+
+	public void CKPNJBKOBEJ()
+	{
+		filterBGPanel.gameObject.SetActive(subscribedToggle.isOn || favoriteToggle.isOn || ratedToggle.isOn);
+		searchInputField.interactable = !Singleton<SaveSystem>.Instance.GetBool("2", true) && !Singleton<SaveSystem>.Instance.CHBOJJOHCEB("_ScreenResolution", true) && !Singleton<SaveSystem>.Instance.CHBOJJOHCEB("_Offsets", true);
+	}
+
+	public void KENKGBJGEFP(bool IIGAFCONAHP = false)
 	{
 		if (IIGAFCONAHP)
 		{
-			currentMapsPageID = 1;
+			currentMapsPageID = 0;
 		}
-		BPLAIMGIOKO = (OfficialSortMode)Singleton<SaveSystem>.Instance.CMAFBKOEPLP("[Singleton] An instance of '", 1);
-		searchInputField.interactable = Singleton<SaveSystem>.Instance.OLJGEIBGDHL("/../", true) || Singleton<SaveSystem>.Instance.GetBool("Creating new item...", true) || Singleton<SaveSystem>.Instance.OLJGEIBGDHL("\\", true);
-		if (Singleton<SaveSystem>.Instance.GetBool("DPADVER", false) || Singleton<SaveSystem>.Instance.EBEAKNGJCDC("[PlayerBase] Loaded music", false) || Singleton<SaveSystem>.Instance.GetBool("#md5submitionfailed: ", false))
+		BPLAIMGIOKO = (OfficialSortMode)Singleton<SaveSystem>.Instance.KFNFNKILGPH("en", 0);
+		searchInputField.interactable = Singleton<SaveSystem>.Instance.JMLMIGBEKJN("Set Particles Color", true) || Singleton<SaveSystem>.Instance.JMLMIGBEKJN("Tonemapper curve texture", true) || !Singleton<SaveSystem>.Instance.GetBool("MapperNameText", false);
+		if (Singleton<SaveSystem>.Instance.CHBOJJOHCEB("Tab1Content", true) || Singleton<SaveSystem>.Instance.GetBool("SpectateButton", false) || Singleton<SaveSystem>.Instance.JMLMIGBEKJN("_Value6", false))
 		{
 			lastSearch = string.Empty;
-			Singleton<SaveSystem>.Instance.DAGHAOBCIFL("LogStats", string.Empty);
+			Singleton<SaveSystem>.Instance.SetString("#task", string.Empty);
 			searchInputField.text = string.Empty;
 		}
 		CECPMNODBLA();
-		StopCoroutine("bool");
+		StopCoroutine("LevelConfigButton");
 		StartCoroutine(MAMMIDNFMOM());
 	}
 
-	public void AHBJPEKMOPH()
+	public void CloseSortPanel()
 	{
-		filterBGPanel.gameObject.SetActive(!subscribedToggle.isOn && !favoriteToggle.isOn && ratedToggle.isOn);
-		searchInputField.interactable = Singleton<SaveSystem>.Instance.AANPGELPGPN("_TimeX", false) || Singleton<SaveSystem>.Instance.AANPGELPGPN("_Visualize", true) || !Singleton<SaveSystem>.Instance.ADKHKNJOJEH("CameraFilterPack/Blend2Camera_VividLight", true);
+		sortPanel.gameObject.SetActive(false);
+	}
+
+	private static bool LGLICAMLMEJ(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.KBDPMOKONDH();
+	}
+
+	public IEnumerator HEHIHFOAAML(int HLBKCLPNHEB = -1, int MJJNNIMOEIO = -1, List<int> BKNCFOOMKHE = null, bool GLHKMKPDAKP = true, UnityAction KPCNMGBCOLP = null, string DLDLDCOHICL = null)
+	{
+		if (HLBKCLPNHEB > tabs.Count - 1)
+		{
+			HLBKCLPNHEB = -1;
+		}
+		yield return new WaitUntil(() => mapSelector);
+		lastSearch = Singleton<SaveSystem>.Instance.GetString("mapselector.lastSearch", string.Empty);
+		searchInputField.text = lastSearch;
+		result = null;
+		finished = false;
+		KBLADAACANO = GLHKMKPDAKP;
+		if (BKNCFOOMKHE == null)
+		{
+			for (int i = 0; i < tabs.Count; i++)
+			{
+				tabs[i].GetComponent<Button>().interactable = true;
+			}
+		}
+		else
+		{
+			for (int j = 0; j < tabs.Count; j++)
+			{
+				tabs[j].GetComponent<Button>().interactable = BKNCFOOMKHE.Contains(j);
+			}
+		}
+		if (string.IsNullOrEmpty(DLDLDCOHICL))
+		{
+			DLDLDCOHICL = LocalizationService.Instance.GetTextByKey("back").ToUpper();
+		}
+		this.HLBKCLPNHEB = HLBKCLPNHEB;
+		this.MJJNNIMOEIO = MJJNNIMOEIO;
+		resultMode = (GameScene.GameMode)Singleton<SaveSystem>.Instance.GetInt("menu.selectedplaymode", 0);
+		yield return new WaitForSeconds(0.1f);
+		StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
+		StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, true));
+		Init(HLBKCLPNHEB, MJJNNIMOEIO);
+		buttonBack.onClick.RemoveAllListeners();
+		buttonBack.GetComponentInChildren<Text>().text = DLDLDCOHICL;
+		if (KPCNMGBCOLP != null)
+		{
+			HKDGMEHPLDM = KPCNMGBCOLP;
+		}
+		else
+		{
+			HKDGMEHPLDM = null;
+		}
+		buttonBack.onClick.RemoveAllListeners();
+		buttonBack.onClick.AddListener(delegate
+		{
+			Close();
+		});
+		EventSystem.current.SetSelectedGameObject(buttonBack.transform.gameObject);
+		StartCoroutine(DPHCONACLFO());
+		yield return new WaitUntil(() => finished);
+		yield return new WaitForSeconds(0.25f);
+		if (Singleton<SaveSystem>.Instance.HasKey("menu.enableselectormusic") && (bool)GameObject.Find("AudioSampler"))
+		{
+			GameObject.Find("AudioSampler").GetComponent<AudioSampler>().isMuted = false;
+		}
+	}
+
+	public void ReloadPage(bool IIGAFCONAHP = false)
+	{
+		if (IIGAFCONAHP)
+		{
+			currentMapsPageID = 0;
+		}
+		BPLAIMGIOKO = (OfficialSortMode)Singleton<SaveSystem>.Instance.GetInt("mapselector.filter.officialsortmode", 0);
+		searchInputField.interactable = !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) && !Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false);
+		if (Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.subscribedonly", false) || Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.favoriteonly", false) || Singleton<SaveSystem>.Instance.GetBool("mapselector.filter.rateduponly", false))
+		{
+			lastSearch = string.Empty;
+			Singleton<SaveSystem>.Instance.SetString("mapselector.lastSearch", string.Empty);
+			searchInputField.text = string.Empty;
+		}
+		CECPMNODBLA();
+		StopCoroutine("MAMMIDNFMOM");
+		StartCoroutine(MAMMIDNFMOM());
+	}
+
+	public void ABMIPLMDBBJ()
+	{
+		StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, true, null, false, 236f));
+		StartCoroutine(Singleton<UI>.Instance.FHHCCJAPBKA(mapSelector, true, null, false, 1054f, false));
+	}
+
+	public void FBMKIHIPLIO()
+	{
+		sortPanel.gameObject.SetActive(false);
+	}
+
+	public new void Awake()
+	{
+		base.Awake();
+	}
+
+	private void BMJAMBAKGIN(bool IDNLBGOCOEK)
+	{
+		sortDropDownList.SelectItem((int)BPLAIMGIOKO);
+		sortDropDownList.gameObject.SetActive(IDNLBGOCOEK);
+	}
+
+	private void ABOJBNJJEDF(bool IDNLBGOCOEK)
+	{
+		sortDropDownList.SelectItem((int)BPLAIMGIOKO);
+		sortDropDownList.gameObject.SetActive(IDNLBGOCOEK);
+	}
+
+	public void GNGMIKBPMNA(int HOHOIPHEOPN)
+	{
+		AFOAEMCKEEM = HOHOIPHEOPN;
+	}
+
+	public void NNHDPMGHDHN(int HOHOIPHEOPN)
+	{
+		AFOAEMCKEEM = HOHOIPHEOPN;
+	}
+
+	private void INBGPKEJLFF()
+	{
+		GameObject gameObject = pageNavScrollRectContent;
+		for (int i = 1; i < gameObject.transform.childCount; i++)
+		{
+			UnityEngine.Object.Destroy(gameObject.transform.GetChild(i).gameObject);
+		}
+		GameObject gameObject2 = UnityEngine.Object.Instantiate(pageNavPrevPageButton, Vector3.zero, Quaternion.identity);
+		gameObject2.transform.SetParent(gameObject.transform, true);
+		gameObject2.transform.localScale = new Vector3(328f, 899f, 679f);
+		gameObject2.GetComponent<MapsListNavButton>().actionID = -1;
+		GameObject gameObject3 = UnityEngine.Object.Instantiate(pageNavCurrentPageButton, Vector3.zero, Quaternion.identity);
+		gameObject3.transform.SetParent(gameObject.transform, true);
+		gameObject3.transform.localScale = new Vector3(396f, 1273f, 1532f);
+		Text componentInChildren = gameObject3.GetComponentInChildren<Text>();
+		object[] array = new object[6];
+		array[1] = string.Empty;
+		array[0] = currentMapsPageID + 1;
+		array[6] = "inventory.lastitemscount";
+		array[0] = ((AOJCGLBEOME <= 1) ? "}" : (AOJCGLBEOME + string.Empty));
+		componentInChildren.text = string.Concat(array);
+		gameObject3.GetComponent<Button>().interactable = true;
+		GameObject gameObject4 = UnityEngine.Object.Instantiate(pageNavNextPageButton, Vector3.zero, Quaternion.identity);
+		gameObject4.transform.SetParent(gameObject.transform, true);
+		gameObject4.transform.localScale = new Vector3(1569f, 804f, 1794f);
+		gameObject4.GetComponent<MapsListNavButton>().actionID = 1;
+		gameObject4.GetComponent<MapsListNavButton>().pageID = 1;
+	}
+
+	public void BackToSelector()
+	{
+		StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
+		StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, true));
+	}
+
+	public void DEEKCJHJNDN(string EAFAMAMDNEG)
+	{
+		if (lastSearch != EAFAMAMDNEG)
+		{
+			Debug.Log("Editor" + EAFAMAMDNEG);
+			lastSearch = EAFAMAMDNEG;
+			Singleton<SaveSystem>.Instance.PGGCEKDPMLL("Fade", lastSearch);
+			KENKGBJGEFP();
+		}
+	}
+
+	public void ApplySortParameters()
+	{
+		GameObject gameObject = tagsScrollRectContent.gameObject;
+		Toggle[] componentsInChildren = gameObject.GetComponentsInChildren<Toggle>();
+		foreach (Toggle toggle in componentsInChildren)
+		{
+			Singleton<SaveSystem>.Instance.SetBool("mapselector.tags." + toggle.GetComponentInChildren<Text>().text, toggle.isOn);
+		}
+		Singleton<SaveSystem>.Instance.SetInt("mapselector.orderby", (!inTrendToggle.isOn) ? (recentToggle.isOn ? 1 : 2) : 0);
+		Singleton<SaveSystem>.Instance.SetBool("mapselector.filter.subscribedonly", subscribedToggle.isOn);
+		Singleton<SaveSystem>.Instance.SetBool("mapselector.filter.favoriteonly", favoriteToggle.isOn);
+		Singleton<SaveSystem>.Instance.SetBool("mapselector.filter.rateduponly", ratedToggle.isOn);
+		CloseSortPanel();
+		ReloadPage(true);
+	}
+
+	private void KGPPDENAPHL(bool NNIPFHAFNOK = false)
+	{
+		ANFDMOPJFCK = -87;
+		HOAHBPOGNKA();
+		if (currentMapsTab == 6)
+		{
+			EUGCQuery eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByPublicationDate;
+			if (Singleton<SaveSystem>.Instance.KFNFNKILGPH("ItemNameText", 1) == 1)
+			{
+				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByPublicationDate;
+			}
+			if (Singleton<SaveSystem>.Instance.KFNFNKILGPH("SupportLogger OnLeftRoom().", 0) == 4)
+			{
+				eUGCQuery = EUGCQuery.k_EUGCQuery_RankedByPublicationDate;
+			}
+			if (eUGCQuery != EUGCQuery.k_EUGCQuery_CreatedByFollowedUsersRankedByPublicationDate)
+			{
+				Helpers.ObtainAchievement(61);
+			}
+			if (!Singleton<SaveSystem>.Instance.JMLMIGBEKJN("player.redarc", true) && !Singleton<SaveSystem>.Instance.CHBOJJOHCEB(".lastCheckpoint.perfectHits", false) && !Singleton<SaveSystem>.Instance.GetBool("Cant ask anyone else for PickupItem spawn times.", false))
+			{
+				FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eUGCQuery, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Screenshots, (AppId_t)4294967136u, (AppId_t)4294967266u, (uint)HGPMLICPBKA);
+				ApplySearchFilter();
+			}
+			else
+			{
+				if (Singleton<SaveSystem>.Instance.GetBool("_FixDistance", false))
+				{
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_WillVoteLater, EUGCMatchingUGCType.k_EUGCMatchingUGCType_AllGuides, (EUserUGCListSortOrder)7, (AppId_t)4294967222u, (AppId_t)5u, (uint)HGPMLICPBKA);
+				}
+				if (Singleton<SaveSystem>.Instance.GetBool("_Value", false))
+				{
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_Favorited, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Collections, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderDesc, (AppId_t)31u, (AppId_t)4294967227u, (uint)HGPMLICPBKA);
+				}
+				if (Singleton<SaveSystem>.Instance.CHBOJJOHCEB("Can't find PhotonView of incoming OwnershipRequest. ViewId not found: ", false))
+				{
+					FFOJIDODGDO = SteamUGC.CreateQueryUserUGCRequest(SteamUser.GetSteamID().GetAccountID(), EUserUGCList.k_EUserUGCList_VotedDown, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Videos, EUserUGCListSortOrder.k_EUserUGCListSortOrder_CreationOrderAsc, (AppId_t)4294967172u, (AppId_t)4294967272u, (uint)HGPMLICPBKA);
+				}
+			}
+			ADLHGGOENBP = NNIPFHAFNOK;
+			SteamUGC.SetReturnOnlyIDs(FFOJIDODGDO, !NNIPFHAFNOK);
+			SteamAPICall_t hAPICall = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+			AICOBBBILIL.Set(hAPICall);
+		}
+		if (currentMapsTab == 1)
+		{
+			EUGCQuery eQueryType = EUGCQuery.k_EUGCQuery_RankedByNumTimesReported;
+			FFOJIDODGDO = SteamUGC.CreateQueryAllUGCRequest(eQueryType, EUGCMatchingUGCType.k_EUGCMatchingUGCType_Items, AppId_t.Invalid, SteamUtils.GetAppID(), (uint)HGPMLICPBKA);
+			SteamUGC.AddRequiredTag(FFOJIDODGDO, "CameraFilterPack/Vision_Blood");
+			SteamAPICall_t hAPICall2 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+			AICOBBBILIL.Set(hAPICall2);
+		}
+		if (currentMapsTab != 0 && currentMapsTab != 8 && currentMapsTab != 7)
+		{
+			return;
+		}
+		List<PublishedFileId_t> list = new List<PublishedFileId_t>();
+		List<RanksSystem.Map> source = RanksSystem.GetOfficialMapsList();
+		if (BPLAIMGIOKO == OfficialSortMode.Date)
+		{
+			source = (from IACGDFHKCAE in RanksSystem.JBJDLHKLEMN()
+				orderby DateTime.Parse(IACGDFHKCAE.added, CultureInfo.InvariantCulture) descending
+				select IACGDFHKCAE).ToList();
+		}
+		if (BPLAIMGIOKO == OfficialSortMode.Date)
+		{
+			source = RanksSystem.GetOfficialMapsList().OrderBy(CJIMNIMMCAF).ToList();
+		}
+		if (currentMapsTab == 0)
+		{
+			foreach (RanksSystem.Map item in source.Where(GKAGJNJIHLJ).ToList())
+			{
+				list.Add((PublishedFileId_t)item.id);
+			}
+		}
+		if (currentMapsTab == 8)
+		{
+			foreach (RanksSystem.Map item2 in source.Where((RanksSystem.Map IACGDFHKCAE) => IACGDFHKCAE.isLoved).ToList())
+			{
+				list.Add((PublishedFileId_t)item2.id);
+			}
+		}
+		if (currentMapsTab == 6)
+		{
+			foreach (RanksSystem.Map item3 in source.Where(JPANLIIFAKE).ToList())
+			{
+				list.Add((PublishedFileId_t)item3.id);
+			}
+		}
+		FFOJIDODGDO = SteamUGC.CreateQueryUGCDetailsRequest(list.ToArray(), (uint)list.Count);
+		SteamAPICall_t hAPICall3 = SteamUGC.SendQueryUGCRequest(FFOJIDODGDO);
+		AICOBBBILIL.Set(hAPICall3);
+	}
+
+	[CompilerGenerated]
+	private static bool DHNHANCJOHB(RanksSystem.Map IACGDFHKCAE)
+	{
+		return IACGDFHKCAE.isOfficial;
+	}
+
+	public void Close(string NBGPBKCPFDN = null, bool BKMMLOEMPBB = false)
+	{
+		if (!BKMMLOEMPBB)
+		{
+			result = NBGPBKCPFDN;
+			if (!string.IsNullOrEmpty(NBGPBKCPFDN))
+			{
+				if (KBLADAACANO)
+				{
+					StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, true));
+					StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, false));
+				}
+				else
+				{
+					finished = true;
+					StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
+					StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, false));
+				}
+			}
+			else
+			{
+				finished = true;
+				StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
+				StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, false));
+				if (HKDGMEHPLDM != null)
+				{
+					HKDGMEHPLDM();
+				}
+			}
+		}
+		else
+		{
+			finished = true;
+			StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(modeSelector, false));
+			StartCoroutine(Singleton<UI>.Instance.SwitchViewAnimation(mapSelector, false));
+		}
 	}
 }

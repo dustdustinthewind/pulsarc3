@@ -76,7 +76,7 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 
 	private void NBGIMIDICKE()
 	{
-		SCShader = Shader.Find("Source Object: ");
+		SCShader = Shader.Find("Is Clone ?: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -121,13 +121,13 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1558f;
 			}
-			JIBOKBCPDLC().SetFloat("_Value1", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("CorrectHitsScoreText", Alpha);
-			OIMMPLPBLBK().SetFloat("CameraFilterPack_AAA_Blood2", LHFNOLGKGMO);
-			NBPKMLMCHFN.SetFloat("SpawnObj", NEJIJAPDALK);
-			NBPKMLMCHFN.SetFloat("OpCreateRoom()", CCIENBFIKKH);
-			JIBOKBCPDLC().SetVector("Set Object Scale", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1091f, 741f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			OIMMPLPBLBK().SetFloat("_Amount", HBJJOCHGOPH);
+			JIBOKBCPDLC().SetFloat("PerfectHitsScoreText", Alpha);
+			GCDFNHMJMIP().SetFloat("CameraFilterPack_AAA_Blood2", LHFNOLGKGMO);
+			GCDFNHMJMIP().SetFloat("[Right]", NEJIJAPDALK);
+			KAFBNOBOIAJ().SetFloat("OpJoinLobby()", CCIENBFIKKH);
+			OIMMPLPBLBK().SetVector("SetScale", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1091f, 741f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
 		else
 		{
@@ -153,7 +153,7 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("restrictions\n\n#until: ");
+		SCShader = Shader.Find("#forever");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -170,7 +170,7 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 
 	private void DAHFFNNIGML()
 	{
-		SCShader = Shader.Find("CameraFilterPack/FX_Plasma");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -207,13 +207,13 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1461f;
 			}
-			GCDFNHMJMIP().SetFloat("_Value2", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("SetSunMaxSize", Alpha);
-			OIMMPLPBLBK().SetFloat("player.xp", LHFNOLGKGMO);
-			JIBOKBCPDLC().SetFloat("Operation failed: ", NEJIJAPDALK);
-			OIMMPLPBLBK().SetFloat("_TimeX", CCIENBFIKKH);
-			NBPKMLMCHFN.SetVector("Malformed RPC; this should never occur. Content: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 701f, 1196f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			OIMMPLPBLBK().SetFloat("_Value", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Set sun min/max size", Alpha);
+			KAFBNOBOIAJ().SetFloat("player.xp", LHFNOLGKGMO);
+			GCDFNHMJMIP().SetFloat(" could not be executed (yet). Wait for state JoinedLobby or ConnectedToMaster and their callbacks before calling operations. WebRPCs need a server-side configuration. Enum OperationCode helps identify the operation.", NEJIJAPDALK);
+			GCDFNHMJMIP().SetFloat("_TimeX", CCIENBFIKKH);
+			OIMMPLPBLBK().SetVector(", our prefix is ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 701f, 1196f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -249,13 +249,13 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 			{
 				HBJJOCHGOPH = 932f;
 			}
-			OIMMPLPBLBK().SetFloat("Fade", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("513510", Alpha);
-			GCDFNHMJMIP().SetFloat("_TreatBackfaceHitAsMiss", LHFNOLGKGMO);
-			OIMMPLPBLBK().SetFloat("Text", NEJIJAPDALK);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/TV_Posterize", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat("key", Alpha);
+			NBPKMLMCHFN.SetFloat("_AdditiveReflection", LHFNOLGKGMO);
+			OIMMPLPBLBK().SetFloat("Something is setup incorrectly with the dropdownlist component causing a Null Refernece Exception", NEJIJAPDALK);
 			KAFBNOBOIAJ().SetFloat("maps.", CCIENBFIKKH);
-			KAFBNOBOIAJ().SetVector("ViewMenu", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 485f, 1455f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetVector("ViewMenu", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 485f, 1455f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -276,13 +276,13 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 			{
 				HBJJOCHGOPH = 382f;
 			}
-			JIBOKBCPDLC().SetFloat(".", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat(".lastCheckpoint.playerdistance", HBJJOCHGOPH);
 			KAFBNOBOIAJ().SetFloat("_FixDistance", Alpha);
-			NBPKMLMCHFN.SetFloat("offsets", LHFNOLGKGMO);
+			GCDFNHMJMIP().SetFloat("_TapLowForeground", LHFNOLGKGMO);
 			JIBOKBCPDLC().SetFloat("CameraFilterPack/3D_BlackHole", NEJIJAPDALK);
-			OIMMPLPBLBK().SetFloat("{0} seconds ago", CCIENBFIKKH);
+			JIBOKBCPDLC().SetFloat("{0} seconds ago", CCIENBFIKKH);
 			JIBOKBCPDLC().SetVector("menutheme.hunter", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 519f, 254f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -299,11 +299,11 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 			{
 				HBJJOCHGOPH = 671f;
 			}
-			OIMMPLPBLBK().SetFloat("_Distortion", HBJJOCHGOPH);
-			JIBOKBCPDLC().SetFloat("[NetworkManager] Connection failed: ", Alpha);
-			JIBOKBCPDLC().SetFloat(" (inactive)", LHFNOLGKGMO);
-			NBPKMLMCHFN.SetFloat("player.xp", NEJIJAPDALK);
-			GCDFNHMJMIP().SetFloat("_Value2", CCIENBFIKKH);
+			OIMMPLPBLBK().SetFloat("Fade", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("[NetworkManager] Connection failed: ", Alpha);
+			OIMMPLPBLBK().SetFloat(" ", LHFNOLGKGMO);
+			OIMMPLPBLBK().SetFloat("player.xp", NEJIJAPDALK);
+			OIMMPLPBLBK().SetFloat("_Value", CCIENBFIKKH);
 			NBPKMLMCHFN.SetVector("mapselector.filter.favoriteonly", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1131f, 1865f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
@@ -350,13 +350,13 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1292f;
 			}
-			NBPKMLMCHFN.SetFloat("[PlayerController] ", HBJJOCHGOPH);
-			JIBOKBCPDLC().SetFloat("_Curve", Alpha);
-			JIBOKBCPDLC().SetFloat("mapselector.filter.favoriteonly", LHFNOLGKGMO);
+			GCDFNHMJMIP().SetFloat(" not exist", HBJJOCHGOPH);
+			KAFBNOBOIAJ().SetFloat("Hidden/Image Effects/Cinematic/Bloom", Alpha);
+			KAFBNOBOIAJ().SetFloat("mapselector.filter.favoriteonly", LHFNOLGKGMO);
 			OIMMPLPBLBK().SetFloat("Tab2Content", NEJIJAPDALK);
-			KAFBNOBOIAJ().SetFloat("_Value5", CCIENBFIKKH);
-			KAFBNOBOIAJ().SetVector("[MapEditor] Exported to ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1943f, 663f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			OIMMPLPBLBK().SetFloat("_Value5", CCIENBFIKKH);
+			NBPKMLMCHFN.SetVector("#ok", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1943f, 663f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -385,7 +385,7 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("SetSatelliteInput");
+		SCShader = Shader.Find("SetSatelliteColor");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -409,13 +409,13 @@ public class CameraFilterPack_Colors_DarkColor : MonoBehaviour
 			{
 				HBJJOCHGOPH = 667f;
 			}
-			NBPKMLMCHFN.SetFloat("Objects in List: ", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", Alpha);
-			OIMMPLPBLBK().SetFloat(".", LHFNOLGKGMO);
+			OIMMPLPBLBK().SetFloat("ping: {6}[+/-{7}]ms resent:{8} \n\nmax ms between\nsend: {0,4} \ndispatch: {1,4} \n\nlongest dispatch for: \nev({3}):{2,3}ms \nop({5}):{4,3}ms", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("Vertical", Alpha);
+			NBPKMLMCHFN.SetFloat(".lastCheckpoint.playerdistance", LHFNOLGKGMO);
 			GCDFNHMJMIP().SetFloat("SetSunInput", NEJIJAPDALK);
-			OIMMPLPBLBK().SetFloat("_ExposureAdjustment", CCIENBFIKKH);
-			JIBOKBCPDLC().SetVector("LocalPlayer is null or not in mActors! LocalPlayer: {0} mActors==null: {1} newID: {2}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 338f, 1792f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			KAFBNOBOIAJ().SetFloat("_Curve", CCIENBFIKKH);
+			GCDFNHMJMIP().SetVector("Can't execute Disconnect() while not connected. Nothing changed. State: {0}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 338f, 1792f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{

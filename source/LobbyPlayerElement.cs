@@ -21,144 +21,11 @@ public class LobbyPlayerElement : PunBehaviour
 
 	public GameObject contributorGO;
 
-	public void HBIGOLEEFNH()
+	private void NGEGCLCPPCD()
 	{
-		isReady = ((IBKCMBIGOEJ().owner.GetTeam() != 0) ? true : false);
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
 	}
 
-	public void BDMCMMCNMLL()
-	{
-		CSteamID cSteamID = new CSteamID(ulong.Parse(JAEJDHHCJJO().JJFEGIOPFGN().name));
-		Singleton<GameManager>.Instance.MKEGIDHHLIC(Singleton<GameManager>.Instance.CreateServerURL("The given 2D texture ") + cSteamID.m_SteamID, false);
-	}
-
-	public void DAJMBLIMCNM(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("_ScreenResolution");
-		ODNIPBPNKIN();
-	}
-
-	public void OpenProfile()
-	{
-		CSteamID cSteamID = new CSteamID(ulong.Parse(base.photonView.owner.name));
-		Singleton<GameManager>.Instance.OpenURL(Singleton<GameManager>.Instance.CreateServerURL("/?player=") + cSteamID.m_SteamID);
-	}
-
-	public void NJDAJMNCPIA()
-	{
-		isReady = EOOCGIFFKBG().JFCKAGHNNCA().GetTeam() == PunTeams.Team.none && false;
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().FDNCEFHNLNJ();
-	}
-
-	private void EFJDNLGNACH()
-	{
-		if (!GMAHNPNHMFK().DOLKFPIABDD())
-		{
-			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
-			base.transform.localScale = new Vector3(475f, 1090f, 300f);
-			Init();
-		}
-	}
-
-	private void EMKJHNGDAAP()
-	{
-		PhotonNetwork.LeaveRoom();
-		GameObject.Find("LeaderboardsButton").gameObject.SetActive(true);
-		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
-		Singleton<MessageBoxPanel>.Instance.ALHLMBCOILP("SpawnObj", "[MapEditor] Importing map: ", null, true, false, 126f);
-		Singleton<MultiplayerSystem>.Instance.HCIFGHPJKIB();
-	}
-
-	private void Start()
-	{
-		if (!base.photonView.isMine)
-		{
-			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
-			base.transform.localScale = new Vector3(1f, 1f, 1f);
-			Init();
-		}
-	}
-
-	public void EAJPNBCLAEO(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("GlassDistortion");
-		ONIACAFDJNP();
-	}
-
-	private void JILOMOBDPIA()
-	{
-		if (!EOOCGIFFKBG().KCAOJFPDEIP())
-		{
-			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
-			base.transform.localScale = new Vector3(478f, 1470f, 1060f);
-			JLMPMMFKJID();
-		}
-	}
-
-	private void Update()
-	{
-		readyCanvas.SetActive(isReady);
-		removeButton.SetActive(PhotonNetwork.isMasterClient);
-	}
-
-	public void BKLCHHKOMLD()
-	{
-		Debug.Log("yesterday" + GBHNDHLAJLI().JFCKAGHNNCA().name);
-		isReady = true;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(OELHGNKAMEG().JFCKAGHNNCA().name));
-		StartCoroutine(BAMOGGMGKEF(jMMILEFMACB));
-		HBIGOLEEFNH();
-	}
-
-	public void ODNIPBPNKIN()
-	{
-		isReady = ((FFIPLLNKGEN().JFCKAGHNNCA().GetTeam() == PunTeams.Team.none) ? true : false);
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
-	}
-
-	public void FIDKCPFLHEB()
-	{
-		isReady = ((EOOCGIFFKBG().JFCKAGHNNCA().GetTeam() != 0) ? true : false);
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
-	}
-
-	private void JCCIIGINOIE()
-	{
-		PhotonNetwork.LeaveRoom();
-		GameObject.Find("CameraFilterPack_TV_HorrorFX").gameObject.SetActive(false);
-		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(false);
-		Singleton<MessageBoxPanel>.Instance.JCHNDBKFGFP("settings.arcsdestroydelay", "#", null, true, false, 1701f);
-		Singleton<MultiplayerSystem>.Instance.HKFKGLGIIOH();
-	}
-
-	public void DNGHDPKGDIC()
-	{
-		if (PhotonNetwork.isMasterClient)
-		{
-			IHPEKIKCFBL(IBKCMBIGOEJ().owner);
-		}
-	}
-
-	public void CCPBGHOPKEK(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("_Intensity");
-		FIDKCPFLHEB();
-	}
-
-	public void MLFFFAEIOMM(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("_Value7");
-		FIDKCPFLHEB();
-	}
-
-	public void CGLAPGFGBFL(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("SetCrosshairEmission");
-		JOAONIBIKNM();
-	}
-
-	private IEnumerator PPEADOFJLAD(CSteamID JMMILEFMACB)
+	private IEnumerator OCFOOHMLPFC(CSteamID JMMILEFMACB)
 	{
 		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
 		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
@@ -178,23 +45,651 @@ public class LobbyPlayerElement : PunBehaviour
 		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
 	}
 
+	public void IJCIJCDEGJE(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("_Size");
+		BOBDANOFGAE();
+	}
+
+	public void GKOOCOGHOGJ()
+	{
+		isReady = ((GBHNDHLAJLI().GLFNAPCBIJP().GetTeam() != 0) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	private void LJIHHJOAJCN()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	private IEnumerator NBJAFEDELKC(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private IEnumerator FALEDPONNLJ(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	public void ENECFGPADBI(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("RecieveChatActionMessage");
+		JBNINCMJAIG();
+	}
+
+	public void PEGNCEOFBNF(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(-46);
+		}
+		GBMJAPGLMGB().MDHAJGGHKMC(".lastCheckpoint.powerupsScore", JHOEDACNNKK, new object[0]);
+	}
+
+	public void EJGJEMGLGIH()
+	{
+		CSteamID cSteamID = new CSteamID(ulong.Parse(BLMHOKPIMOD().GLFNAPCBIJP().name));
+		Singleton<GameManager>.Instance.COLPGBJFLGM(Singleton<GameManager>.Instance.CreateServerURL("_Value3") + cSteamID.m_SteamID, false);
+	}
+
+	public void FBCMBGFKCAK(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(97);
+		}
+		CIACEFBNDDJ().MDHAJGGHKMC("RarityImage", JHOEDACNNKK, new object[0]);
+	}
+
+	public void KMLHFIHIAON()
+	{
+		Debug.Log("CameraFilterPack/OldFilm_Cutting2" + NABDKNPNEMM().owner.MLIGBALKGCF());
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(BBGIDKNEGHD().GLFNAPCBIJP().MLIGBALKGCF()));
+		StartCoroutine(EJILOCLBCFK(jMMILEFMACB));
+		JBNINCMJAIG();
+	}
+
+	private IEnumerator IEAKJGCLENA(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	public void KECADMPBGMM()
+	{
+		isReady = EOOCGIFFKBG().owner.GetTeam() == PunTeams.Team.none || true;
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	private void MMOKKAPFGAK()
+	{
+		if (!GMAHNPNHMFK().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(810f, 1986f, 454f);
+			JJFLHFCBENC();
+		}
+	}
+
+	public void OCBHIDOBBBN(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("CameraFilterPack/Distortion_FishEye");
+		DBJBPPHHIOE();
+	}
+
+	private void COOHIILCOCO()
+	{
+		if (!EDIJKHEMPAD().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(1668f, 1015f, 572f);
+			NFKKPHKGIEI();
+		}
+	}
+
+	private IEnumerator FLJHFPLJGFD(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private void MDNHCLKNCLE()
+	{
+		if (!EDIJKHEMPAD().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(1219f, 1139f, 1384f);
+			KOKDPAEJECC();
+		}
+	}
+
+	public void LEKKIMDFOIH()
+	{
+		isReady = ((ACPGHFHDCIP().owner.GetTeam() != 0) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void EGANBKHKLBJ(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("Joystick1Button5");
+		JMCLAGKENHN();
+	}
+
+	private IEnumerator IIBNEOFPKLI(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	public void PAGMHKDINLA()
+	{
+		isReady = ((AAMNKPHHHCI().owner.GetTeam() != 0) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	private IEnumerator BEGIHKFNLBP(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	public void KBKHIGFLNIA(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(-87);
+		}
+		GBHNDHLAJLI().RPC("_Value3", JHOEDACNNKK, new object[1]);
+	}
+
+	public void KFDEOJDKLKE()
+	{
+		CSteamID cSteamID = new CSteamID(ulong.Parse(JDBCGCJJIAF().owner.MLIGBALKGCF()));
+		Singleton<GameManager>.Instance.COLPGBJFLGM(Singleton<GameManager>.Instance.CreateServerURL("CameraFilterPack/Color_GrayScale") + cSteamID.m_SteamID, false);
+	}
+
+	public void IFMLDLNFCLC()
+	{
+		CSteamID cSteamID = new CSteamID(ulong.Parse(BLMHOKPIMOD().owner.name));
+		Singleton<GameManager>.Instance.COLPGBJFLGM(Singleton<GameManager>.Instance.JJGKGCBCGGD("{0}") + cSteamID.m_SteamID, false);
+	}
+
+	public void JDAMDEHHGAG()
+	{
+		isReady = IBKCMBIGOEJ().owner.GetTeam() == PunTeams.Team.none || true;
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void IBLBIFMFFOP()
+	{
+		CSteamID cSteamID = new CSteamID(ulong.Parse(PHCBHAFMDEJ().GLFNAPCBIJP().MLIGBALKGCF()));
+		Singleton<GameManager>.Instance.COLPGBJFLGM(Singleton<GameManager>.Instance.CreateServerURL("Item ") + cSteamID.m_SteamID);
+	}
+
+	private void KMCPMOGKDEH()
+	{
+		if (!IFENGKHOKPC().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(553f, 678f, 476f);
+			PBBDHIFJHHC();
+		}
+	}
+
+	private void PHMKCHACLEP()
+	{
+		PhotonNetwork.LeaveRoom();
+		GameObject.Find("TypedLobbyInfo '{0}'[{1}] rooms: {2} players: {3}").gameObject.SetActive(false);
+		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
+		Singleton<MessageBoxPanel>.Instance.JPHEAJOLIGK("_ReflectionTexture1", "_Value2", null, true, true, 948f);
+		Singleton<MultiplayerSystem>.Instance.DBALDPFKNJM();
+	}
+
+	public void IFFPGCAOADA(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(-64);
+		}
+		CIACEFBNDDJ().MDHAJGGHKMC("player.xp", JHOEDACNNKK, new object[1]);
+	}
+
+	public void KOKDPAEJECC()
+	{
+		Debug.Log("skin.hit_wrong" + GMAHNPNHMFK().owner.MLIGBALKGCF());
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(ACPGHFHDCIP().GLFNAPCBIJP().name));
+		StartCoroutine(FEPOGFLFJBL(jMMILEFMACB));
+		LEKKIMDFOIH();
+	}
+
+	private void KFMEAMBLODG()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	public void DGJJMFMACIF()
+	{
+		CSteamID cSteamID = new CSteamID(ulong.Parse(EDIJKHEMPAD().owner.MLIGBALKGCF()));
+		Singleton<GameManager>.Instance.OpenURL(Singleton<GameManager>.Instance.JJGKGCBCGGD("No problem found, so far") + cSteamID.m_SteamID, false);
+	}
+
+	private void IBFJAOINHMK()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	private void COIJKMKIEAK()
+	{
+		if (!IBKCMBIGOEJ().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(778f, 716f, 607f);
+			KMLHFIHIAON();
+		}
+	}
+
+	public void NBIEIGBAKND()
+	{
+		Debug.Log("_TimeX" + OELHGNKAMEG().GLFNAPCBIJP().MLIGBALKGCF());
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(BBGIDKNEGHD().owner.name));
+		StartCoroutine(IIBNEOFPKLI(jMMILEFMACB));
+		BOBDANOFGAE();
+	}
+
+	public void EOFLFKEIJCE(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("_ReflectionBufferSize");
+		JDAMDEHHGAG();
+	}
+
+	public void CheckIsReady()
+	{
+		isReady = ((base.photonView.owner.GetTeam() != 0) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void DAPMMOCIFJA()
+	{
+		isReady = AAMNKPHHHCI().owner.GetTeam() == PunTeams.Team.none || true;
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void OCHADIJNDJK()
+	{
+		Debug.Log("inventory.itemscash" + IFENGKHOKPC().GLFNAPCBIJP().MLIGBALKGCF());
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(BLMHOKPIMOD().GLFNAPCBIJP().name));
+		StartCoroutine(IIDFEAGPOKJ(jMMILEFMACB));
+		JDAMDEHHGAG();
+	}
+
+	public void DLFHOLAOHMK(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(-125);
+		}
+		BLMHOKPIMOD().RPC("s", JHOEDACNNKK);
+	}
+
+	private void ADPLHDFJFID()
+	{
+		if (!IBKCMBIGOEJ().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(1856f, 540f, 1116f);
+			KOKDPAEJECC();
+		}
+	}
+
 	public void AMFKMGPDBHI(PhotonPlayer JHOEDACNNKK)
 	{
 		if (JHOEDACNNKK == PhotonNetwork.player)
 		{
-			Helpers.ObtainAchievement(116);
+			Helpers.ObtainAchievement(106);
 		}
-		JAEJDHHCJJO().DPLELHEFMBE("_MainTex2", JHOEDACNNKK, new object[0]);
+		CIACEFBNDDJ().RPC("MapCreationCanvas", JHOEDACNNKK, new object[1]);
 	}
 
-	private void NBGIMIDICKE()
+	public void NFKKPHKGIEI()
 	{
-		if (!EOOCGIFFKBG().isMine)
+		Debug.Log("Object ID. Case-Sensitive" + AAMNKPHHHCI().GLFNAPCBIJP().name);
+		isReady = true;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(JAEJDHHCJJO().GLFNAPCBIJP().name));
+		StartCoroutine(IIBNEOFPKLI(jMMILEFMACB));
+		JBNINCMJAIG();
+	}
+
+	public void BNLBOEAHFFO()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			IFFPGCAOADA(NABDKNPNEMM().GLFNAPCBIJP());
+		}
+	}
+
+	public void PMPDDNPENEL(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("BitsData");
+		BOBDANOFGAE();
+	}
+
+	private void DIPDEHOOBPG()
+	{
+		if (!IFENGKHOKPC().isMine)
 		{
 			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
-			base.transform.localScale = new Vector3(543f, 447f, 1920f);
-			Init();
+			base.transform.localScale = new Vector3(1379f, 411f, 1005f);
+			CKJCPBPMBFF();
 		}
+	}
+
+	private void KOJKBFDNGDK()
+	{
+		if (!EDIJKHEMPAD().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(1821f, 1772f, 327f);
+			NKLNGGOHLMO();
+		}
+	}
+
+	public void KHFMPFEGBNM()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			DNJNCKDDHDD(IFENGKHOKPC().GLFNAPCBIJP());
+		}
+	}
+
+	public void EOMPBBPIFOH(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("/");
+		KECADMPBGMM();
+	}
+
+	public void HNGGEDAKIGD(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(73);
+		}
+		IBKCMBIGOEJ().RPC("InputField", JHOEDACNNKK);
+	}
+
+	private void HPNNCNNFMGK()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	private void LKJMIODJGCM()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	private IEnumerator JCFPJFHBAEJ(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private void BMOFEBKGLFI()
+	{
+		if (!GMAHNPNHMFK().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(1107f, 1071f, 831f);
+			NBIEIGBAKND();
+		}
+	}
+
+	private void CGDMLHLJIDK()
+	{
+		if (!PHCBHAFMDEJ().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(313f, 15f, 593f);
+			NBIEIGBAKND();
+		}
+	}
+
+	private void OCMKCBBCEFG()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	public void JEPEHKGNDHA()
+	{
+		isReady = ((GBHNDHLAJLI().GLFNAPCBIJP().GetTeam() != 0) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void LJCIGNEGKOD()
+	{
+		Debug.Log("_BlurPass" + GMAHNPNHMFK().GLFNAPCBIJP().MLIGBALKGCF());
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(EOOCGIFFKBG().owner.name));
+		StartCoroutine(LPICKOCJNGJ(jMMILEFMACB));
+		KECADMPBGMM();
+	}
+
+	private void FJDINLDLAHN()
+	{
+		PhotonNetwork.LeaveRoom();
+		GameObject.Find("id").gameObject.SetActive(true);
+		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
+		Singleton<MessageBoxPanel>.Instance.JJEOAFDDLHK("_TimeX", "4,28,true,0", null, true, false, 352f);
+		Singleton<MultiplayerSystem>.Instance.DBALDPFKNJM();
+	}
+
+	private void GDNMGEJDGDP()
+	{
+		PhotonNetwork.LeaveRoom();
+		GameObject.Find("isVisible").gameObject.SetActive(false);
+		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
+		Singleton<MessageBoxPanel>.Instance.HLEOBMODPLO(".workshop", "GlassesColor", null, false, false, 1084f);
+		Singleton<MultiplayerSystem>.Instance.KDOGNHMDLJK();
+	}
+
+	public void JMCLAGKENHN()
+	{
+		isReady = NABDKNPNEMM().GLFNAPCBIJP().GetTeam() == PunTeams.Team.none && false;
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void BHGCNMBOADK(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("_TreatBackfaceHitAsMiss");
+		KECADMPBGMM();
+	}
+
+	private void IEMEHGCFAPD()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	public void NFCCNACGGPI()
+	{
+		isReady = ((IBKCMBIGOEJ().GLFNAPCBIJP().GetTeam() != 0) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	private void IDIIELPAMCJ()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	private void FABKIGNFECE()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	public void PBBDHIFJHHC()
+	{
+		Debug.Log("HighScaleShot" + BLMHOKPIMOD().owner.name);
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(IBKCMBIGOEJ().owner.name));
+		StartCoroutine(BNFCNEHFMOM(jMMILEFMACB));
+		LEKKIMDFOIH();
+	}
+
+	private IEnumerator FEPOGFLFJBL(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	public void FEGHDHBDIJD()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			HGOIEPFFIBH(JDBCGCJJIAF().owner);
+		}
+	}
+
+	public void NOAHPKJIFEL(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(-119);
+		}
+		GBMJAPGLMGB().MDHAJGGHKMC("_ThirdTex", JHOEDACNNKK, new object[0]);
+	}
+
+	public void JJFLHFCBENC()
+	{
+		Debug.Log("CameraFilterPack_TV_Noise2" + IJBFILBDGDO().owner.MLIGBALKGCF());
+		isReady = true;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(JAEJDHHCJJO().owner.name));
+		StartCoroutine(JAKPGMDDEID(jMMILEFMACB));
+		JMCLAGKENHN();
 	}
 
 	public void KickPlayer()
@@ -205,43 +700,188 @@ public class LobbyPlayerElement : PunBehaviour
 		}
 	}
 
-	public void CheckIsReady()
+	public void CKJCPBPMBFF()
 	{
-		isReady = ((base.photonView.owner.GetTeam() != 0) ? true : false);
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+		Debug.Log(" not exist" + PHCBHAFMDEJ().owner.name);
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(ACPGHFHDCIP().owner.name));
+		StartCoroutine(JAKPGMDDEID(jMMILEFMACB));
+		GKOOCOGHOGJ();
 	}
 
-	public void EKLHKNMCPNC()
+	private void JCGPAMAFKEI()
 	{
-		if (PhotonNetwork.isMasterClient)
-		{
-			AIIHFEFLHFE(GBHNDHLAJLI().JFCKAGHNNCA());
-		}
+		PhotonNetwork.LeaveRoom();
+		GameObject.Find("_ScreenResolution").gameObject.SetActive(true);
+		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
+		Singleton<MessageBoxPanel>.Instance.BOKKOAKIDMK("_PColor", "Type \"help\" for list of commands", null, false, false, 800f);
+		Singleton<MultiplayerSystem>.Instance.HideChat();
 	}
 
-	private void GMELGGJOPBB()
+	[PunRPC]
+	public void OnReadyClick(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("[LobbyPlayerElement] On ready click");
+		CheckIsReady();
+	}
+
+	private void LOLHKNKBNPF()
+	{
+	}
+
+	private void AIJGAJIOJDJ()
 	{
 		readyCanvas.SetActive(isReady);
 		removeButton.SetActive(PhotonNetwork.isMasterClient);
 	}
 
-	private void ILCFPCIPENO()
+	public void JCJNGGDMOPJ()
 	{
-		if (!CIACEFBNDDJ().KCAOJFPDEIP())
-		{
-			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
-			base.transform.localScale = new Vector3(1855f, 8f, 1133f);
-			POGJLIDHDIH();
-		}
+		CSteamID cSteamID = new CSteamID(ulong.Parse(BLMHOKPIMOD().owner.MLIGBALKGCF()));
+		Singleton<GameManager>.Instance.COLPGBJFLGM(Singleton<GameManager>.Instance.CreateServerURL("CameraFilterPack/FX_Grid") + cSteamID.m_SteamID);
 	}
 
-	public void ACLBOKCIAAD(PhotonPlayer JHOEDACNNKK)
+	public void SendKickPlayer(PhotonPlayer JHOEDACNNKK)
 	{
 		if (JHOEDACNNKK == PhotonNetwork.player)
 		{
-			Helpers.ObtainAchievement(-93);
+			Helpers.ObtainAchievement(23);
 		}
-		EOOCGIFFKBG().PLMAEOHKJPN("IncorrectHitsScoreText", JHOEDACNNKK, new object[1]);
+		base.photonView.RPC("KickThePlayer", JHOEDACNNKK);
+	}
+
+	public void DNJNCKDDHDD(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(-18);
+		}
+		ACPGHFHDCIP().RPC("SelectionBox component must be placed on a canvas in Screen Space Overlay mode.", JHOEDACNNKK, new object[1]);
+	}
+
+	private void NCPAFCKGJEA()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	public void JOAONIBIKNM()
+	{
+		isReady = ((JDBCGCJJIAF().owner.GetTeam() == PunTeams.Team.none) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	private void MKOMIDCPCDC()
+	{
+		if (!BLMHOKPIMOD().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(1394f, 890f, 1846f);
+			Init();
+		}
+	}
+
+	private IEnumerator LPICKOCJNGJ(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private void OnEnable()
+	{
+	}
+
+	private IEnumerator IIDFEAGPOKJ(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private void BCFPBBBKKNP()
+	{
+		PhotonNetwork.LeaveRoom();
+		GameObject.Find("ItemNameText").gameObject.SetActive(true);
+		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
+		Singleton<MessageBoxPanel>.Instance.POHMPIDHJII("itemid", "LeaderboardsButton", null, true, true, 1336f);
+		Singleton<MultiplayerSystem>.Instance.HideChat();
+	}
+
+	public void KEAMMGPCIBN(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("settings.cameramovements");
+		BOBDANOFGAE();
+	}
+
+	private IEnumerator EJILOCLBCFK(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private IEnumerator DHLMJDFJEAD(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private void CFMJMJOHJII()
+	{
 	}
 
 	private IEnumerator HJFDEEMKFDJ(CSteamID JMMILEFMACB)
@@ -264,167 +904,45 @@ public class LobbyPlayerElement : PunBehaviour
 		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
 	}
 
-	private IEnumerator BAMOGGMGKEF(CSteamID JMMILEFMACB)
+	public void OFFPOJHKKKF()
 	{
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
-		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
-		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
-		{
-			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
-		}
-		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
-		int jMICLAEOFNP = 0;
-		if (loadedRank != null)
-		{
-			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
-		}
-		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
-		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
-		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+		CSteamID cSteamID = new CSteamID(ulong.Parse(ACPGHFHDCIP().owner.name));
+		Singleton<GameManager>.Instance.FMCBLGPDACK(Singleton<GameManager>.Instance.JJGKGCBCGGD(" has been disabled as it's not supported on the current platform.") + cSteamID.m_SteamID);
 	}
 
-	private void AAPMAEFHKEO()
-	{
-	}
-
-	public void NKLCNJEIAFB()
-	{
-		Debug.Log("curScn" + IBKCMBIGOEJ().JFCKAGHNNCA().name);
-		isReady = false;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(EOOCGIFFKBG().JFCKAGHNNCA().name));
-		StartCoroutine(EHGNFNCJCMM(jMMILEFMACB));
-		CheckIsReady();
-	}
-
-	private void DKOPKPBLDHH()
-	{
-		if (!BLMHOKPIMOD().isMine)
-		{
-			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
-			base.transform.localScale = new Vector3(1354f, 1231f, 772f);
-			MDPJHKECLOF();
-		}
-	}
-
-	public void IHPEKIKCFBL(PhotonPlayer JHOEDACNNKK)
-	{
-		if (JHOEDACNNKK == PhotonNetwork.player)
-		{
-			Helpers.ObtainAchievement(-5);
-		}
-		base.photonView.KACECEKIPPP("_Value2", JHOEDACNNKK, new object[0]);
-	}
-
-	public void EAEPPHAHJBP(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("_TimeX");
-		EPHNJNLKJLP();
-	}
-
-	private void IEMEHGCFAPD()
-	{
-		readyCanvas.SetActive(isReady);
-		removeButton.SetActive(PhotonNetwork.isMasterClient);
-	}
-
-	private void IBEAPBDAOCC()
-	{
-	}
-
-	private IEnumerator DEFNIIHFKFA(CSteamID JMMILEFMACB)
-	{
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
-		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
-		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
-		{
-			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
-		}
-		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
-		int jMICLAEOFNP = 0;
-		if (loadedRank != null)
-		{
-			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
-		}
-		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
-		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
-		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
-	}
-
-	private void PDHKMDBNGGN()
-	{
-		if (!IBKCMBIGOEJ().BGJKMGJBPFA())
-		{
-			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
-			base.transform.localScale = new Vector3(213f, 514f, 327f);
-			BKLCHHKOMLD();
-		}
-	}
-
-	private void KLJGNMLPBIG()
-	{
-		PhotonNetwork.LeaveRoom();
-		GameObject.Find("_TimeX").gameObject.SetActive(true);
-		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
-		Singleton<MessageBoxPanel>.Instance.ILNLMMEOALM("SetParticlesCountPerBeat", "_Value6", null, true, true, 125f);
-		Singleton<MultiplayerSystem>.Instance.HKFKGLGIIOH();
-	}
-
-	public void BPDDHMICEBP()
-	{
-		isReady = CIACEFBNDDJ().JJFEGIOPFGN().GetTeam() == PunTeams.Team.none || true;
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().NPAELKPFIKP();
-	}
-
-	public void ANLGHGCGAGP()
+	public void FOKCKLJDHOF()
 	{
 		if (PhotonNetwork.isMasterClient)
 		{
-			IHPEKIKCFBL(base.photonView.JFCKAGHNNCA());
+			KBKHIGFLNIA(PHCBHAFMDEJ().GLFNAPCBIJP());
 		}
 	}
 
-	public void JPEHBKGOBJN()
-	{
-		if (PhotonNetwork.isMasterClient)
-		{
-			AMFKMGPDBHI(CIACEFBNDDJ().owner);
-		}
-	}
-
-	public void LHIEKHPLMFI()
-	{
-		Debug.Log("CameraFilterPack/Light_Water2" + GMAHNPNHMFK().JJFEGIOPFGN().name);
-		isReady = false;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(OELHGNKAMEG().JFCKAGHNNCA().name));
-		StartCoroutine(EHGNFNCJCMM(jMMILEFMACB));
-		ODNIPBPNKIN();
-	}
-
-	private void OKHGJFFIIBA()
-	{
-	}
-
-	private void PFEKDDLJMHJ()
+	private void CNHJEANKGMP()
 	{
 		PhotonNetwork.LeaveRoom();
-		GameObject.Find("maps.").gameObject.SetActive(false);
+		GameObject.Find("SupportLogger OnFailedToConnectToPhoton(").gameObject.SetActive(true);
 		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(false);
-		Singleton<MessageBoxPanel>.Instance.ANCIONGLJAC("_Value4", "_Value", null, true, true, 1959f);
-		Singleton<MultiplayerSystem>.Instance.LCJPNOIOLGJ();
+		Singleton<MessageBoxPanel>.Instance.GNKJLJNJJFP("Horizontal", "SetParticlesCountPerBeat", null, false, true, 538f);
+		Singleton<MultiplayerSystem>.Instance.HideChat();
 	}
 
-	public void GGHCMPKGNGE()
+	public void CPPOPKDOILP()
 	{
-		Debug.Log("_BaseTex" + GMAHNPNHMFK().JJFEGIOPFGN().name);
-		isReady = true;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(AAMNKPHHHCI().JFCKAGHNNCA().name));
-		StartCoroutine(BAMOGGMGKEF(jMMILEFMACB));
-		AMCKGGMDLDB();
+		Debug.Log("GlassesColor" + JDBCGCJJIAF().owner.name);
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(BBGIDKNEGHD().owner.name));
+		StartCoroutine(DHLMJDFJEAD(jMMILEFMACB));
+		LEKKIMDFOIH();
 	}
 
-	private IEnumerator LAGBNPIFBPL(CSteamID JMMILEFMACB)
+	private void JBCNIPJDPJB()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	private IEnumerator EFCOMCEMBMF(CSteamID JMMILEFMACB)
 	{
 		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
 		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
@@ -444,110 +962,22 @@ public class LobbyPlayerElement : PunBehaviour
 		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
 	}
 
-	public void GDJMBJEAPHM()
+	private void DEAEMCDHANH()
 	{
-		Debug.Log("_ColorRGB" + IBKCMBIGOEJ().JFCKAGHNNCA().name);
-		isReady = false;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(GMAHNPNHMFK().JJFEGIOPFGN().name));
-		StartCoroutine(AGEDFEIDJIF(jMMILEFMACB));
-		ODNIPBPNKIN();
+		PhotonNetwork.LeaveRoom();
+		GameObject.Find("Tab2Content").gameObject.SetActive(true);
+		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
+		Singleton<MessageBoxPanel>.Instance.DMDDLAICNDI("Tab2Content", "float,0", null, true, false, 669f);
+		Singleton<MultiplayerSystem>.Instance.KDOGNHMDLJK();
 	}
 
-	public void JMCLAGKENHN()
+	public void OpenProfile()
 	{
-		isReady = ((GBMJAPGLMGB().owner.GetTeam() == PunTeams.Team.none) ? true : false);
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().FDNCEFHNLNJ();
+		CSteamID cSteamID = new CSteamID(ulong.Parse(base.photonView.owner.name));
+		Singleton<GameManager>.Instance.OpenURL(Singleton<GameManager>.Instance.CreateServerURL("/?player=") + cSteamID.m_SteamID);
 	}
 
-	private void HHODKHPIBLG()
-	{
-	}
-
-	public void AOCOABCDFKA()
-	{
-		CSteamID cSteamID = new CSteamID(ulong.Parse(IBKCMBIGOEJ().JFCKAGHNNCA().name));
-		Singleton<GameManager>.Instance.GIBBJCCHOOJ(Singleton<GameManager>.Instance.CreateServerURL("Couldn't color correct with 3D LUT texture. Image Effect will be disabled.") + cSteamID.m_SteamID);
-	}
-
-	public void MLIBNJPMOHK(PhotonPlayer JHOEDACNNKK)
-	{
-		if (JHOEDACNNKK == PhotonNetwork.player)
-		{
-			Helpers.ObtainAchievement(105);
-		}
-		base.photonView.OKHNMAMFDFD("_Value", JHOEDACNNKK, new object[0]);
-	}
-
-	private void PBEPCAPAKLG()
-	{
-		readyCanvas.SetActive(isReady);
-		removeButton.SetActive(PhotonNetwork.isMasterClient);
-	}
-
-	public void AIIHFEFLHFE(PhotonPlayer JHOEDACNNKK)
-	{
-		if (JHOEDACNNKK == PhotonNetwork.player)
-		{
-			Helpers.ObtainAchievement(13);
-		}
-		BLMHOKPIMOD().PLMAEOHKJPN("_History3Weight", JHOEDACNNKK, new object[1]);
-	}
-
-	public void CPFOEFKOJGA()
-	{
-		Debug.Log("_CameraClipInfo" + GMAHNPNHMFK().JJFEGIOPFGN().name);
-		isReady = false;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(ACPGHFHDCIP().JFCKAGHNNCA().name));
-		StartCoroutine(DEFNIIHFKFA(jMMILEFMACB));
-		AMCKGGMDLDB();
-	}
-
-	public void ACPGLLCAEJJ(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("GlassDistortion");
-		EPHNJNLKJLP();
-	}
-
-	public void KMNLLCOGHPM(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("CameraFilterPack/FX_DarkMatter");
-		FIDKCPFLHEB();
-	}
-
-	private void OnEnable()
-	{
-	}
-
-	private void NDAJBJFJGCF()
-	{
-		readyCanvas.SetActive(isReady);
-		removeButton.SetActive(PhotonNetwork.isMasterClient);
-	}
-
-	public void POGJLIDHDIH()
-	{
-		Debug.Log("_ScreenResolution" + CIACEFBNDDJ().owner.name);
-		isReady = false;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(ACPGHFHDCIP().owner.name));
-		StartCoroutine(AGEDFEIDJIF(jMMILEFMACB));
-		JOAONIBIKNM();
-	}
-
-	private void PAHNKEGFGHB()
-	{
-	}
-
-	public void ONIACAFDJNP()
-	{
-		isReady = GBMJAPGLMGB().JFCKAGHNNCA().GetTeam() == PunTeams.Team.none || true;
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().NPAELKPFIKP();
-	}
-
-	private void OAKONCDEPPI()
-	{
-	}
-
-	private IEnumerator EHGNFNCJCMM(CSteamID JMMILEFMACB)
+	private IEnumerator HKNGNCBAGPH(CSteamID JMMILEFMACB)
 	{
 		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
 		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
@@ -567,66 +997,16 @@ public class LobbyPlayerElement : PunBehaviour
 		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
 	}
 
-	private void BBKMHAFFIMD()
-	{
-	}
-
-	public void PDMHGJNBOKA(PhotonPlayer JHOEDACNNKK)
+	public void FHHMDEIGLKN(PhotonPlayer JHOEDACNNKK)
 	{
 		if (JHOEDACNNKK == PhotonNetwork.player)
 		{
-			Helpers.ObtainAchievement(37);
+			Helpers.ObtainAchievement(110);
 		}
-		ACPGHFHDCIP().OKHNMAMFDFD("_SphereSize", JHOEDACNNKK, new object[1]);
+		EOOCGIFFKBG().RPC("_TimeX", JHOEDACNNKK);
 	}
 
-	public void Init()
-	{
-		Debug.Log("[LobbyPlayerElement] Created lpe for " + base.photonView.owner.name);
-		isReady = false;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(base.photonView.owner.name));
-		StartCoroutine(HJFDEEMKFDJ(jMMILEFMACB));
-		CheckIsReady();
-	}
-
-	private void LNIOFCGDDKP()
-	{
-	}
-
-	public void LPHFBIAFHIM(PhotonPlayer JHOEDACNNKK)
-	{
-		if (JHOEDACNNKK == PhotonNetwork.player)
-		{
-			Helpers.ObtainAchievement(-35);
-		}
-		IBKCMBIGOEJ().PLMAEOHKJPN("Instrumental", JHOEDACNNKK, new object[0]);
-	}
-
-	public void MDPJHKECLOF()
-	{
-		Debug.Log("_PColor" + BLMHOKPIMOD().JFCKAGHNNCA().name);
-		isReady = false;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(ACPGHFHDCIP().JFCKAGHNNCA().name));
-		StartCoroutine(EHGNFNCJCMM(jMMILEFMACB));
-		NJDAJMNCPIA();
-	}
-
-	public void GCNKIJDNPMD()
-	{
-		Debug.Log("/icon" + FFIPLLNKGEN().JFCKAGHNNCA().name);
-		isReady = true;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(GBMJAPGLMGB().JJFEGIOPFGN().name));
-		StartCoroutine(HJFDEEMKFDJ(jMMILEFMACB));
-		HBIGOLEEFNH();
-	}
-
-	private void JDGFCEPDKAJ()
-	{
-		readyCanvas.SetActive(isReady);
-		removeButton.SetActive(PhotonNetwork.isMasterClient);
-	}
-
-	private IEnumerator AGEDFEIDJIF(CSteamID JMMILEFMACB)
+	private IEnumerator KBMDGGPOLED(CSteamID JMMILEFMACB)
 	{
 		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
 		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
@@ -646,57 +1026,20 @@ public class LobbyPlayerElement : PunBehaviour
 		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
 	}
 
-	public void LLJNCICEJCG(PhotonPlayer DNFGMNFCBGA)
+	public void KPNMGBDOFGL()
 	{
-		Debug.Log(".highscore");
-		HBIGOLEEFNH();
+		CSteamID cSteamID = new CSteamID(ulong.Parse(EOOCGIFFKBG().owner.MLIGBALKGCF()));
+		Singleton<GameManager>.Instance.HEHKJIHIBLD(Singleton<GameManager>.Instance.CreateServerURL("Can't change CrcCheckEnabled while being connected. CrcCheckEnabled stays ") + cSteamID.m_SteamID);
 	}
 
-	private void PLNLNCDPPGG()
+	private void Start()
 	{
-	}
-
-	private void BMODOIJGIOO()
-	{
-		readyCanvas.SetActive(isReady);
-		removeButton.SetActive(PhotonNetwork.isMasterClient);
-	}
-
-	public void FFEPLLMAACJ(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("pointBuffer");
-		FIDKCPFLHEB();
-	}
-
-	[PunRPC]
-	public void OnReadyClick(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("[LobbyPlayerElement] On ready click");
-		CheckIsReady();
-	}
-
-	public void JLMPMMFKJID()
-	{
-		Debug.Log("CameraFilterPack/FX_Hexagon" + EOOCGIFFKBG().owner.name);
-		isReady = true;
-		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(BLMHOKPIMOD().JFCKAGHNNCA().name));
-		StartCoroutine(MJFFOILDAMG(jMMILEFMACB));
-		ODNIPBPNKIN();
-	}
-
-	public void SendKickPlayer(PhotonPlayer JHOEDACNNKK)
-	{
-		if (JHOEDACNNKK == PhotonNetwork.player)
+		if (!base.photonView.isMine)
 		{
-			Helpers.ObtainAchievement(23);
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(1f, 1f, 1f);
+			Init();
 		}
-		base.photonView.RPC("KickThePlayer", JHOEDACNNKK);
-	}
-
-	public void IBLBIFMFFOP()
-	{
-		CSteamID cSteamID = new CSteamID(ulong.Parse(EOOCGIFFKBG().owner.name));
-		Singleton<GameManager>.Instance.OpenURL(Singleton<GameManager>.Instance.CreateServerURL("Set Satellite Lerp Speed") + cSteamID.m_SteamID, false);
 	}
 
 	[PunRPC]
@@ -709,74 +1052,58 @@ public class LobbyPlayerElement : PunBehaviour
 		Singleton<MultiplayerSystem>.Instance.HideChat();
 	}
 
-	public void FPLIFINHHIN(PhotonPlayer JHOEDACNNKK)
-	{
-		if (JHOEDACNNKK == PhotonNetwork.player)
-		{
-			Helpers.ObtainAchievement(76);
-		}
-		BLMHOKPIMOD().OILIKMGIHFL("Image", JHOEDACNNKK, new object[0]);
-	}
-
-	public void JOAONIBIKNM()
-	{
-		isReady = GMAHNPNHMFK().owner.GetTeam() == PunTeams.Team.none || true;
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
-	}
-
-	public void DCAIMAJDBHL(PhotonPlayer DNFGMNFCBGA)
-	{
-		Debug.Log("_Value2");
-		EPHNJNLKJLP();
-	}
-
-	private void OCHMKJKBAPI()
-	{
-	}
-
-	private void DDBOODLPCAM()
-	{
-		readyCanvas.SetActive(isReady);
-		removeButton.SetActive(PhotonNetwork.isMasterClient);
-	}
-
-	public void EPHNJNLKJLP()
-	{
-		isReady = ((OELHGNKAMEG().JJFEGIOPFGN().GetTeam() == PunTeams.Team.none) ? true : false);
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().NPAELKPFIKP();
-	}
-
-	public void AMCKGGMDLDB()
-	{
-		isReady = ((EDIJKHEMPAD().JJFEGIOPFGN().GetTeam() != 0) ? true : false);
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().NPAELKPFIKP();
-	}
-
-	public void BMOFBBJDOPM()
+	public void FOKKLBJOMCK()
 	{
 		if (PhotonNetwork.isMasterClient)
 		{
-			SendKickPlayer(FFIPLLNKGEN().JJFEGIOPFGN());
+			IFFPGCAOADA(OELHGNKAMEG().owner);
 		}
 	}
 
-	public void HIELBNIEKIH(PhotonPlayer DNFGMNFCBGA)
+	public void HGOIEPFFIBH(PhotonPlayer JHOEDACNNKK)
 	{
-		Debug.Log("EventTimeInputField");
-		AMCKGGMDLDB();
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(93);
+		}
+		CIACEFBNDDJ().RPC(" not exist", JHOEDACNNKK, new object[1]);
 	}
 
-	private void PKLOBJHKFEO()
+	private void KDMKDEKCELE()
 	{
-		if (!FFIPLLNKGEN().BGJKMGJBPFA())
+		if (!IJBFILBDGDO().isMine)
 		{
 			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
-			base.transform.localScale = new Vector3(1644f, 1436f, 964f);
-			LHIEKHPLMFI();
+			base.transform.localScale = new Vector3(351f, 771f, 1330f);
+			KMLHFIHIAON();
 		}
 	}
 
-	private IEnumerator MJFFOILDAMG(CSteamID JMMILEFMACB)
+	private void PAAJFOKEJBN()
+	{
+	}
+
+	public void EACFDOPAEOJ()
+	{
+		CSteamID cSteamID = new CSteamID(ulong.Parse(ACPGHFHDCIP().owner.name));
+		Singleton<GameManager>.Instance.GMOJGDKBHEL(Singleton<GameManager>.Instance.JJGKGCBCGGD("_ColorRGB") + cSteamID.m_SteamID);
+	}
+
+	public void JPEHBKGOBJN()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			SendKickPlayer(IJBFILBDGDO().owner);
+		}
+	}
+
+	public void OBKLOHLELDH(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("threshold");
+		NFCCNACGGPI();
+	}
+
+	private IEnumerator BNFCNEHFMOM(CSteamID JMMILEFMACB)
 	{
 		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
 		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
@@ -796,35 +1123,228 @@ public class LobbyPlayerElement : PunBehaviour
 		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
 	}
 
-	private void EJDACNFJPFK()
+	private void BBLEPIHAEJJ()
 	{
-		PhotonNetwork.LeaveRoom();
-		GameObject.Find("<scene_name> or <id>").gameObject.SetActive(true);
-		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(false);
-		Singleton<MessageBoxPanel>.Instance.LKFALPEABHP("id", "CameraFilterPack/RainFX", null, true, false, 1270f);
-		Singleton<MultiplayerSystem>.Instance.HKFKGLGIIOH();
 	}
 
-	private void JBJNGOGGDMP()
+	public void FMJLAGJDIEJ()
 	{
-		PhotonNetwork.LeaveRoom();
-		GameObject.Find("B").gameObject.SetActive(false);
-		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(false);
-		Singleton<MessageBoxPanel>.Instance.JCHNDBKFGFP("Share", "_TimeX", null, false, false, 244f);
-		Singleton<MultiplayerSystem>.Instance.APEDOOJPKFC();
+		CSteamID cSteamID = new CSteamID(ulong.Parse(NABDKNPNEMM().GLFNAPCBIJP().MLIGBALKGCF()));
+		Singleton<GameManager>.Instance.COLPGBJFLGM(Singleton<GameManager>.Instance.CreateServerURL("_MainTex2") + cSteamID.m_SteamID, false);
 	}
 
-	public void KOJLLDBMPJB()
+	private void GBJCPHJJFID()
+	{
+		PhotonNetwork.LeaveRoom();
+		GameObject.Find(" takes from: ").gameObject.SetActive(true);
+		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(true);
+		Singleton<MessageBoxPanel>.Instance.DisplayMessage("_ScreenResolution", "WARNING: rotation axis set to 0 on ", null, false, true, 1978f);
+		Singleton<MultiplayerSystem>.Instance.KDOGNHMDLJK();
+	}
+
+	public void EIJEJHKDINK()
 	{
 		if (PhotonNetwork.isMasterClient)
 		{
-			LPHFBIAFHIM(EDIJKHEMPAD().JJFEGIOPFGN());
+			HNGGEDAKIGD(IBKCMBIGOEJ().owner);
 		}
 	}
 
-	public void GBBBHJHBOFH()
+	public void JBNINCMJAIG()
 	{
-		isReady = ACPGHFHDCIP().owner.GetTeam() == PunTeams.Team.none && false;
-		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().NPAELKPFIKP();
+		isReady = ((EDIJKHEMPAD().GLFNAPCBIJP().GetTeam() == PunTeams.Team.none) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void NKLNGGOHLMO()
+	{
+		Debug.Log("Parameter levelId must be int or string!" + GBHNDHLAJLI().owner.MLIGBALKGCF());
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(ACPGHFHDCIP().GLFNAPCBIJP().MLIGBALKGCF()));
+		StartCoroutine(IEAKJGCLENA(jMMILEFMACB));
+		LEKKIMDFOIH();
+	}
+
+	private void HIFPDKKBDHJ()
+	{
+	}
+
+	public void AMGJINCKLHB(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(43);
+		}
+		IFENGKHOKPC().RPC("EditMenu", JHOEDACNNKK, new object[1]);
+	}
+
+	public void DBJBPPHHIOE()
+	{
+		isReady = ((BBGIDKNEGHD().GLFNAPCBIJP().GetTeam() != 0) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void KKIGGNBMKIL(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(55);
+		}
+		GMAHNPNHMFK().MDHAJGGHKMC("2", JHOEDACNNKK, new object[1]);
+	}
+
+	private void FFCCNPCMIMA()
+	{
+		PhotonNetwork.LeaveRoom();
+		GameObject.Find("Beat Detected").gameObject.SetActive(true);
+		Object.FindObjectOfType<NetworkMenu>().networkCanvas.SetActive(false);
+		Singleton<MessageBoxPanel>.Instance.CKDBDGFENAF("_Color_R", "EventData0DropDownList", null, true, false, 756f);
+		Singleton<MultiplayerSystem>.Instance.DBALDPFKNJM();
+	}
+
+	public void Init()
+	{
+		Debug.Log("[LobbyPlayerElement] Created lpe for " + base.photonView.owner.name);
+		isReady = false;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(base.photonView.owner.name));
+		StartCoroutine(HJFDEEMKFDJ(jMMILEFMACB));
+		CheckIsReady();
+	}
+
+	private IEnumerator JAKPGMDDEID(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private IEnumerator EMFNKMMGFDE(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	private void Update()
+	{
+		readyCanvas.SetActive(isReady);
+		removeButton.SetActive(PhotonNetwork.isMasterClient);
+	}
+
+	public void AIFJPAPJEIM(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("EventTimeInputField");
+		JBNINCMJAIG();
+	}
+
+	private void LFBGJIIECLD()
+	{
+		if (!DJHCJIJAIJP().isMine)
+		{
+			base.transform.SetParent(((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().playersScrollRectContent.transform);
+			base.transform.localScale = new Vector3(1875f, 947f, 1343f);
+			PBBDHIFJHHC();
+		}
+	}
+
+	public void LHAENMGOBMM()
+	{
+		Debug.Log("string" + EOOCGIFFKBG().GLFNAPCBIJP().name);
+		isReady = true;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(IJBFILBDGDO().owner.name));
+		StartCoroutine(LPICKOCJNGJ(jMMILEFMACB));
+		JEPEHKGNDHA();
+	}
+
+	private void LCOBDKKAGHH()
+	{
+	}
+
+	private void HNNKIOHCDKG()
+	{
+	}
+
+	public void BOBDANOFGAE()
+	{
+		isReady = ((EDIJKHEMPAD().owner.GetTeam() == PunTeams.Team.none) ? true : false);
+		((MenuScene)Singleton<Scene>.Instance).GetComponent<NetworkMenu>().UpdateRoom();
+	}
+
+	public void ONIHOJPDODD()
+	{
+		if (PhotonNetwork.isMasterClient)
+		{
+			PEGNCEOFBNF(AAMNKPHHHCI().GLFNAPCBIJP());
+		}
+	}
+
+	private IEnumerator DINCBFHEPAL(CSteamID JMMILEFMACB)
+	{
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername(JMMILEFMACB));
+		nicknameText.text = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank(JMMILEFMACB, false);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadAvatar(JMMILEFMACB));
+		if ((bool)ResourcesManager.GetLoadedAvatar(JMMILEFMACB))
+		{
+			icon.sprite = ResourcesManager.GetLoadedAvatar(JMMILEFMACB);
+		}
+		RanksSystem.PlayersRank loadedRank = RanksSystem.GetLoadedRank(JMMILEFMACB);
+		int jMICLAEOFNP = 0;
+		if (loadedRank != null)
+		{
+			jMICLAEOFNP = RanksSystem.GetLoadedRank(JMMILEFMACB).place;
+		}
+		bg.color = RanksSystem.GetRankColor(jMICLAEOFNP);
+		yield return StartCoroutine(Singleton<ContributorSystem>.Instance.LoadContributor(JMMILEFMACB));
+		contributorGO.SetActive(Singleton<ContributorSystem>.Instance.IsContributor(JMMILEFMACB));
+	}
+
+	public void EKOAKKNGGGI()
+	{
+		Debug.Log("AllocateViewID() failed. User {0} is out of subIds, as all viewIDs are used." + CIACEFBNDDJ().GLFNAPCBIJP().name);
+		isReady = true;
+		CSteamID jMMILEFMACB = new CSteamID(ulong.Parse(IJBFILBDGDO().GLFNAPCBIJP().name));
+		StartCoroutine(EJILOCLBCFK(jMMILEFMACB));
+		JDAMDEHHGAG();
+	}
+
+	public void KPMNAOLGHED(PhotonPlayer JHOEDACNNKK)
+	{
+		if (JHOEDACNNKK == PhotonNetwork.player)
+		{
+			Helpers.ObtainAchievement(108);
+		}
+		OELHGNKAMEG().MDHAJGGHKMC("inventory.selected.", JHOEDACNNKK, new object[0]);
+	}
+
+	public void GGGNMENIEAE(PhotonPlayer DNFGMNFCBGA)
+	{
+		Debug.Log("CameraFilterPack_WaterDrop");
+		DAPMMOCIFJA();
 	}
 }

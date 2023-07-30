@@ -80,14 +80,14 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 785f;
 			}
-			KBOPGONOCNP().SetFloat("/", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("Received event Leave for unknown player ID: {0}", Fade);
-			FAIFBBGFAIB().SetFloat("Horizontal", Fade_Additive);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", Fade_Distortion);
-			KGOLDDBHIFN().SetFloat("other.dust2", CCIENBFIKKH);
-			NBPKMLMCHFN.SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1526f, 210f));
-			KGOLDDBHIFN().SetTexture("input", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			NBPKMLMCHFN.SetFloat("IconFileSelector", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("HandleEventLeave for player ID: ", Fade);
+			KGOLDDBHIFN().SetFloat("Horizontal", Fade_Additive);
+			LONNIJMNKFB().SetFloat("_ScreenResolution", Fade_Distortion);
+			HHIFMIPPMPF().SetFloat("other.dust1", CCIENBFIKKH);
+			KEMAALEODNH().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1526f, 210f));
+			KEMAALEODNH().SetTexture("Object ID. Case-Sensitive", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -201,8 +201,8 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		FPHEBLMINDA = Resources.Load("#turnoninternet") as Texture2D;
-		SCShader = Shader.Find("STICKLHOR");
+		FPHEBLMINDA = Resources.Load("FPSToggle") as Texture2D;
+		SCShader = Shader.Find("Mouse Y");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -253,8 +253,8 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 
 	private void CGDMLHLJIDK()
 	{
-		FPHEBLMINDA = Resources.Load("Uploading preview image...") as Texture2D;
-		SCShader = Shader.Find("_Value");
+		FPHEBLMINDA = Resources.Load("Preparing configuration...") as Texture2D;
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -282,8 +282,8 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		FPHEBLMINDA = Resources.Load("plogs") as Texture2D;
-		SCShader = Shader.Find("ENABLE_DITHERING");
+		FPHEBLMINDA = Resources.Load("quit") as Texture2D;
+		SCShader = Shader.Find("_CurveTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -307,14 +307,14 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1594f;
 			}
-			NDMPCDHADMJ().SetFloat("&map=", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("Selection Box", Fade);
-			KEMAALEODNH().SetFloat("_Distortion", Fade_Additive);
-			HHIFMIPPMPF().SetFloat(" not exist", Fade_Distortion);
-			NDMPCDHADMJ().SetFloat("_BlurArea", CCIENBFIKKH);
-			HHIFMIPPMPF().SetVector("CameraFilterPack/Blend2Camera_Multiply", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1324f, 1188f));
-			IIJMIPBMMBF().SetTexture("The authentication ticket expired. You need to connect (and authenticate) again. Disconnecting.", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			FAIFBBGFAIB().SetFloat("Search: ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("SelectionBox component must be placed on a canvas in Screen Space Overlay mode.", Fade);
+			NDMPCDHADMJ().SetFloat("_Distortion", Fade_Additive);
+			NDMPCDHADMJ().SetFloat(": ", Fade_Distortion);
+			KGOLDDBHIFN().SetFloat("_ColorBuffer", CCIENBFIKKH);
+			LONNIJMNKFB().SetVector("CameraFilterPack/Blend2Camera_Darken", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1324f, 1188f));
+			FAIFBBGFAIB().SetTexture("Authentication failed: '{0}' Code: {1}", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -366,7 +366,7 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 
 	private void KDMANOEMOCA()
 	{
-		FPHEBLMINDA = Resources.Load("Failed to 'network-remove' GameObject because it's null.") as Texture2D;
+		FPHEBLMINDA = Resources.Load("]. Please verify you have this gameobject in a Resources folder.") as Texture2D;
 		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -387,14 +387,14 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1283f;
 			}
-			LONNIJMNKFB().SetFloat("Tab2Content", HBJJOCHGOPH);
-			NDMPCDHADMJ().SetFloat("[ItemsHandler] No connection to item server: ", Fade);
-			ADBKPGFMNKO().SetFloat("SetSpeed", Fade_Additive);
-			FAIFBBGFAIB().SetFloat("/", Fade_Distortion);
-			KBOPGONOCNP().SetFloat("No font defined. Found font: ", CCIENBFIKKH);
-			FAIFBBGFAIB().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 623f, 1289f));
-			FAIFBBGFAIB().SetTexture("</color>", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			ADBKPGFMNKO().SetFloat("HandsCountSlider", HBJJOCHGOPH);
+			NDMPCDHADMJ().SetFloat("inventory.lastitemscount", Fade);
+			NBMPPNFKFLB().SetFloat(".", Fade_Additive);
+			KGOLDDBHIFN().SetFloat("NewIconFileSelector", Fade_Distortion);
+			KEMAALEODNH().SetFloat("Time Offset: {0}", CCIENBFIKKH);
+			KEMAALEODNH().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 623f, 1289f));
+			HHIFMIPPMPF().SetTexture("<color=white>", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -415,14 +415,14 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1008f;
 			}
-			HHIFMIPPMPF().SetFloat("_Value", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_Metrics", Fade);
-			KEMAALEODNH().SetFloat("\t", Fade_Additive);
-			KBOPGONOCNP().SetFloat("Connect() failed. Can't connect while disconnecting (still). Current state: ", Fade_Distortion);
-			NDMPCDHADMJ().SetFloat("bpmgrid", CCIENBFIKKH);
-			NBMPPNFKFLB().SetVector(".b", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 985f, 1676f));
-			KBOPGONOCNP().SetTexture("_Value2", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
+			ADBKPGFMNKO().SetFloat("_TimeX", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_SearchTex", Fade);
+			NBMPPNFKFLB().SetFloat("\t", Fade_Additive);
+			KBOPGONOCNP().SetFloat("ReconnectAndRejoin() with AuthValues == null is not correct!", Fade_Distortion);
+			NBPKMLMCHFN.SetFloat("EventData0DropDownList", CCIENBFIKKH);
+			KEMAALEODNH().SetVector(".b", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 985f, 1676f));
+			ADBKPGFMNKO().SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
 		}
 		else
 		{
@@ -455,7 +455,7 @@ public class CameraFilterPack_Noise_TV_2 : MonoBehaviour
 	private void IHLMNAGPKDA()
 	{
 		FPHEBLMINDA = Resources.Load("_BlurVector") as Texture2D;
-		SCShader = Shader.Find("_Distortion");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

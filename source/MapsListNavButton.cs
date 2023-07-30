@@ -7,55 +7,59 @@ public class MapsListNavButton : MonoBehaviour
 
 	public int actionID;
 
-	private void FABMDEHEDNO()
+	private void DPIPGGDNGHN()
 	{
 	}
 
-	public void HFGANPKDCJI()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.GOPHKKMKDBH(actionID);
-		}
-	}
-
-	private void CIPKEPDELJB()
+	private void LBPCODPOJAH()
 	{
 	}
 
-	private void PAKPHKPDKGE()
+	private void LMBDNPLDGIJ()
 	{
 	}
 
-	public void JABGIOLEKPG()
-	{
-		if (actionID >= -1 && actionID <= 1)
-		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.KKDNPLKIBLF(actionID);
-		}
-	}
-
-	public void DAPLLJDMJCK()
+	public void EOKMKOGGLPA()
 	{
 		if (actionID >= -1 && actionID <= 0)
 		{
-			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.ILIFIECMPGK(actionID);
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
 		}
 	}
 
-	public void IKKCBILMLMC()
+	public void NHJNFAFBIFP()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MOEOKNEAABK(actionID);
+		}
+	}
+
+	private void JONGNKNLLND()
+	{
+	}
+
+	public void JFMFICMKIAG()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
+		}
+	}
+
+	public void OPHJAILBBEN()
 	{
 		if (actionID >= -1 && actionID <= 1)
 		{
@@ -63,55 +67,135 @@ public class MapsListNavButton : MonoBehaviour
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.KOGHENEIOPB(actionID);
+			Singleton<RanksViewer>.Instance.FOPFEAIAFNA(actionID);
 		}
 	}
 
-	public void DBDCIAIJOKG()
+	private void DKOPKPBLDHH()
 	{
-		if (actionID >= -1 && actionID <= 1)
+	}
+
+	private void IMCKJCHKMKB()
+	{
+	}
+
+	public void GLMCDMOHOKD()
+	{
+		if (actionID >= -1 && actionID <= 0)
 		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.KOGHENEIOPB(actionID);
+			Singleton<RanksViewer>.Instance.MPDGEEBJGGG(actionID);
 		}
 	}
 
-	public void KKBODBLJHOB()
+	private void KOFAMEKHHGD()
+	{
+	}
+
+	private void MNBPNHNAEBK()
+	{
+	}
+
+	private void HMPGIFBJFIK()
+	{
+	}
+
+	private void GCDLIKEDMCF()
+	{
+	}
+
+	private void DNNFHBOOPIN()
+	{
+	}
+
+	public void KFMDOEEADDM()
 	{
 		if (actionID >= -1 && actionID <= 1)
 		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.GJNBPGFDDDE(actionID);
+			Singleton<RanksViewer>.Instance.MJMKAOGFJNE(actionID);
 		}
 	}
 
-	private void CNGAJDBOCLJ()
-	{
-	}
-
-	public void OADJCAIEKNN()
+	public void JPNOHODALMI()
 	{
 		if (actionID >= -1 && actionID <= 1)
 		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.EPKHGBEGEFI(actionID);
+			Singleton<RanksViewer>.Instance.ScrollPage(actionID);
 		}
 	}
 
-	private void OBAEDJJDCPN()
+	private void BMODOIJGIOO()
 	{
 	}
 
-	private void Update()
+	public void LGBJHPMKLDH()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.AAFFDEHNNPL(actionID);
+		}
+	}
+
+	public void KFEDBEGBKNM()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MJMKAOGFJNE(actionID);
+		}
+	}
+
+	private void NBGIMIDICKE()
+	{
+	}
+
+	private void LCHBFNIPBHB()
+	{
+	}
+
+	public void GGCLKOJPPDD()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MPDGEEBJGGG(actionID);
+		}
+	}
+
+	private void AEOLJEIDMDB()
+	{
+	}
+
+	private void PMPKMGKAAJH()
+	{
+	}
+
+	private void LLJLDLLNFBH()
+	{
+	}
+
+	private void ANCKKLFPGDI()
 	{
 	}
 
@@ -119,16 +203,392 @@ public class MapsListNavButton : MonoBehaviour
 	{
 	}
 
+	private void IBFJAOINHMK()
+	{
+	}
+
+	private void ECBILENEOOL()
+	{
+	}
+
+	private void MANDOGNJJBD()
+	{
+	}
+
+	private void JAAJECBCCFM()
+	{
+	}
+
+	public void KBOKCPHKCMI()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.IFOMONJLMFM(actionID);
+		}
+	}
+
+	private void EFJDNLGNACH()
+	{
+	}
+
+	private void DLBODOFAJGM()
+	{
+	}
+
+	public void OADJCAIEKNN()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MPDGEEBJGGG(actionID);
+		}
+	}
+
+	private void KLILJHJNICK()
+	{
+	}
+
+	public void HJICAJKELGI()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
+		}
+	}
+
+	private void JECMJNFGBGC()
+	{
+	}
+
+	public void KCGKCGFKEFN()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.CLLNKICLDED(actionID);
+		}
+	}
+
+	public void DEIMIKBHIIF()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.IKNAEDDCFOM(actionID);
+		}
+	}
+
+	public void KNJHPPILPKH()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MPDGEEBJGGG(actionID);
+		}
+	}
+
+	private void HDDECCMEJKA()
+	{
+	}
+
+	public void MDDGMDDHICG()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MJMKAOGFJNE(actionID);
+		}
+	}
+
+	private void AEEGKLABFLN()
+	{
+	}
+
+	private void GPNAOAKCMHC()
+	{
+	}
+
+	public void ELNBONNJCGN()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
+		}
+	}
+
+	private void LFAFJKJAEEL()
+	{
+	}
+
+	private void KKLMPKLKAEM()
+	{
+	}
+
+	private void BGFJOEPFOPM()
+	{
+	}
+
+	public void HMGMILPKLFK()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
+		}
+	}
+
+	private void AKHCOBHHGJP()
+	{
+	}
+
+	private void KMEONPMCNJG()
+	{
+	}
+
+	private void FEKECCBFGMI()
+	{
+	}
+
+	private void GCHBGCGBMCK()
+	{
+	}
+
+	private void KDJEJBBDILE()
+	{
+	}
+
+	private void IEMEHGCFAPD()
+	{
+	}
+
+	private void KOJKBFDNGDK()
+	{
+	}
+
+	public void BDEGMPGLODD()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MPDGEEBJGGG(actionID);
+		}
+	}
+
+	private void MJNPIDGNJMK()
+	{
+	}
+
+	public void CJFHNNICLEN()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.IFOMONJLMFM(actionID);
+		}
+	}
+
+	private void HAIAHJPCPAG()
+	{
+	}
+
+	private void LKJMIODJGCM()
+	{
+	}
+
+	private void IDIIELPAMCJ()
+	{
+	}
+
+	private void PBEPCAPAKLG()
+	{
+	}
+
+	private void ONMGIPAILOH()
+	{
+	}
+
+	private void CNGAJDBOCLJ()
+	{
+	}
+
+	private void NCNPAKFAFOE()
+	{
+	}
+
+	private void LDDKCCMHMIC()
+	{
+	}
+
+	private void ALJEJJCIMJN()
+	{
+	}
+
+	public void ECPMLDBJIPH()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
+		}
+	}
+
 	public void DJAABMENCCB()
 	{
 		if (actionID >= -1 && actionID <= 0)
 		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.GOPHKKMKDBH(actionID);
+			Singleton<RanksViewer>.Instance.IKNAEDDCFOM(actionID);
 		}
+	}
+
+	public void MOGKDGPDPFL()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.FOPFEAIAFNA(actionID);
+		}
+	}
+
+	private void NNFMIAFHMJM()
+	{
+	}
+
+	public void MMDCENFMKFN()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.FOPFEAIAFNA(actionID);
+		}
+	}
+
+	public void DDLBJCGMACI()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
+		}
+	}
+
+	private void Start()
+	{
+	}
+
+	public void JDNMFCFIDEM()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.ScrollPage(actionID);
+		}
+	}
+
+	public void HFGANPKDCJI()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.IKNAEDDCFOM(actionID);
+		}
+	}
+
+	private void FOLDLDLFFLM()
+	{
+	}
+
+	private void LBIOIEANMGI()
+	{
+	}
+
+	private void BFGIMALGMAJ()
+	{
+	}
+
+	public void CNNIGANMKJD()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.FNIEGFNJDNH(actionID);
+		}
+	}
+
+	public void PFILMFOHFPB()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MJMKAOGFJNE(actionID);
+		}
+	}
+
+	private void FLKEJJEGCFA()
+	{
 	}
 
 	public void MBPKLNFHAFH()
@@ -139,51 +599,11 @@ public class MapsListNavButton : MonoBehaviour
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.ILIFIECMPGK(actionID);
+			Singleton<RanksViewer>.Instance.AAFFDEHNNPL(actionID);
 		}
 	}
 
-	private void NNCCPEBIAKH()
-	{
-	}
-
-	private void HLDFOJMHKNL()
-	{
-	}
-
-	private void OHFOLGANOLC()
-	{
-	}
-
-	private void MAOCOEGAFND()
-	{
-	}
-
-	private void IIFCIDDJHPM()
-	{
-	}
-
-	private void DAHFFNNIGML()
-	{
-	}
-
-	private void BGDPIHMAACO()
-	{
-	}
-
-	private void CHOPDIGHJNH()
-	{
-	}
-
-	private void LLJLDLLNFBH()
-	{
-	}
-
-	private void FHGKIOOMMOH()
-	{
-	}
-
-	public void NOOKJIBJIJF()
+	public void MOHGKNDJFFL()
 	{
 		if (actionID >= -1 && actionID <= 1)
 		{
@@ -191,163 +611,59 @@ public class MapsListNavButton : MonoBehaviour
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.KKDNPLKIBLF(actionID);
+			Singleton<RanksViewer>.Instance.MJMKAOGFJNE(actionID);
 		}
 	}
 
-	private void JOACBIEHHCE()
+	private void HEBOIFKBLGD()
 	{
 	}
 
-	public void LIMLHBICMPL()
+	private void MEBPBNLBECA()
+	{
+	}
+
+	private void KMKLDAJLCNM()
+	{
+	}
+
+	private void FEHCNJLLJMP()
+	{
+	}
+
+	private void KDMANOEMOCA()
+	{
+	}
+
+	private void MFMIODIAKNI()
+	{
+	}
+
+	public void GBIPPMKDALF()
 	{
 		if (actionID >= -1 && actionID <= 1)
 		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.ScrollPage(actionID);
+			Singleton<RanksViewer>.Instance.FNIEGFNJDNH(actionID);
 		}
 	}
 
-	private void CCLNNLCOPBL()
+	private void HIPEHGNBJMN()
 	{
 	}
 
-	private void HLIAEEMGBHN()
+	private void JFJLGJEPEAA()
 	{
 	}
 
-	private void NDAJBJFJGCF()
+	private void Update()
 	{
 	}
 
-	public void GLMCDMOHOKD()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.GJNBPGFDDDE(actionID);
-		}
-	}
-
-	private void HAIAHJPCPAG()
-	{
-	}
-
-	private void Start()
-	{
-	}
-
-	private void EJFJENFKLND()
-	{
-	}
-
-	private void KDMKDEKCELE()
-	{
-	}
-
-	public void KDABDGBBAAN()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.EPKHGBEGEFI(actionID);
-		}
-	}
-
-	private void KCCIEMBMOBA()
-	{
-	}
-
-	public void HHAECEMFKND()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.KOGHENEIOPB(actionID);
-		}
-	}
-
-	public void LJKOEIMJMMD()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.GOPHKKMKDBH(actionID);
-		}
-	}
-
-	public void NLGGGEBBFAH()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.FFDNJKLKMII(actionID);
-		}
-	}
-
-	private void HDDECCMEJKA()
-	{
-	}
-
-	public void DDLBJCGMACI()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.KOGHENEIOPB(actionID);
-		}
-	}
-
-	private void BMODOIJGIOO()
-	{
-	}
-
-	private void AEIJFLJEABG()
-	{
-	}
-
-	private void NCNPAKFAFOE()
-	{
-	}
-
-	public void ELNBONNJCGN()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.ILIFIECMPGK(actionID);
-		}
-	}
-
-	private void BGFJOEPFOPM()
-	{
-	}
-
-	private void KLILJHJNICK()
+	private void PKLOBJHKFEO()
 	{
 	}
 
@@ -363,47 +679,19 @@ public class MapsListNavButton : MonoBehaviour
 		}
 	}
 
-	public void JPNOHODALMI()
+	public void HDMCPBOKPCO()
 	{
 		if (actionID >= -1 && actionID <= 0)
 		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.EPKHGBEGEFI(actionID);
+			Singleton<RanksViewer>.Instance.ScrollPage(actionID);
 		}
 	}
 
-	public void FFBELAHLKDP()
-	{
-		if (actionID >= -1 && actionID <= 0)
-		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.FOGOGFLHDKB(actionID);
-		}
-	}
-
-	public void AKBAPOMKFPE()
-	{
-		if (actionID >= -1 && actionID <= 1)
-		{
-			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
-		}
-		else
-		{
-			Singleton<RanksViewer>.Instance.FFDNJKLKMII(actionID);
-		}
-	}
-
-	private void EGEGNHLODAA()
-	{
-	}
-
-	public void LGBJHPMKLDH()
+	public void BCFJHBFKKHH()
 	{
 		if (actionID >= -1 && actionID <= 0)
 		{
@@ -411,23 +699,19 @@ public class MapsListNavButton : MonoBehaviour
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.GOPHKKMKDBH(actionID);
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
 		}
 	}
 
-	private void FHPFJBFCOOF()
+	private void COOHIILCOCO()
 	{
 	}
 
-	private void DPIPGGDNGHN()
+	private void JOACBIEHHCE()
 	{
 	}
 
-	private void MJNPIDGNJMK()
-	{
-	}
-
-	public void ONNJFFAFGGN()
+	public void MMDIKBDNMLJ()
 	{
 		if (actionID >= -1 && actionID <= 1)
 		{
@@ -435,13 +719,145 @@ public class MapsListNavButton : MonoBehaviour
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.FOGOGFLHDKB(actionID);
+			Singleton<RanksViewer>.Instance.IFOMONJLMFM(actionID);
 		}
 	}
 
-	public void MILJCGDAPKA()
+	private void AEDDNDHCLNN()
+	{
+	}
+
+	public void CJBCKPEOOGI()
 	{
 		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.FOPFEAIAFNA(actionID);
+		}
+	}
+
+	public void LECHOJLKIJO()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.ScrollPage(actionID);
+		}
+	}
+
+	public void DAPLLJDMJCK()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MPDGEEBJGGG(actionID);
+		}
+	}
+
+	public void LAOCNFBGEDE()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.MPDGEEBJGGG(actionID);
+		}
+	}
+
+	private void POJFHDFJOPE()
+	{
+	}
+
+	public void OLKBCDNFPEK()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.ScrollPage(actionID);
+		}
+	}
+
+	private void GLEJGFLCLPJ()
+	{
+	}
+
+	private void EHJJFJCKGAJ()
+	{
+	}
+
+	public void GHDFEDMLPCB()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.INDFCPIOBPE(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.FNIEGFNJDNH(actionID);
+		}
+	}
+
+	public void FHPNIFPJKCK()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.FNIEGFNJDNH(actionID);
+		}
+	}
+
+	private void CHOPDIGHJNH()
+	{
+	}
+
+	public void GCFMLDKFGDK()
+	{
+		if (actionID >= -1 && actionID <= 0)
+		{
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.GLHAMEHGPPE(actionID);
+		}
+	}
+
+	public void DDPFAAGCBOG()
+	{
+		if (actionID >= -1 && actionID <= 1)
+		{
+			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
+		}
+		else
+		{
+			Singleton<RanksViewer>.Instance.CLLNKICLDED(actionID);
+		}
+	}
+
+	private void LGHCJCFHEMF()
+	{
+	}
+
+	public void NNPGOODLNEO()
+	{
+		if (actionID >= -1 && actionID <= 0)
 		{
 			Singleton<MapsListSelector>.Instance.ScrollPage(actionID);
 		}
@@ -451,19 +867,19 @@ public class MapsListNavButton : MonoBehaviour
 		}
 	}
 
-	public void KFEDBEGBKNM()
+	private void LPMINJJPDCH()
 	{
-		if (actionID >= -1 && actionID <= 1)
+	}
+
+	public void BOOPLBOEBLC()
+	{
+		if (actionID >= -1 && actionID <= 0)
 		{
-			Singleton<MapsListSelector>.Instance.ALBCHFHEFCK(actionID);
+			Singleton<MapsListSelector>.Instance.KKDNPLKIBLF(actionID);
 		}
 		else
 		{
-			Singleton<RanksViewer>.Instance.EPKHGBEGEFI(actionID);
+			Singleton<RanksViewer>.Instance.MPDGEEBJGGG(actionID);
 		}
-	}
-
-	private void IBHACCEEFFI()
-	{
 	}
 }

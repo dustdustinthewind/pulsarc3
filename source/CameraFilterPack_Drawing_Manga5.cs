@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Drawing/Manga5")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 {
 	public Shader SCShader;
@@ -52,9 +52,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1513f;
 			}
-			DOHGBNPMBKG().SetFloat("%", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat(" != ", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			IGKFMCPDNOI().SetFloat("%", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Objects in List: ", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
 		}
 		else
 		{
@@ -90,9 +90,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 536f;
 			}
-			ACHNOHCLGOO().SetFloat("There was an error retrieving the NumberOfCurrentPlayers.", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat(" Message: ", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NDMPCDHADMJ());
+			DOHGBNPMBKG().SetFloat("Version 1.0", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat(":", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
 		}
 		else
 		{
@@ -102,7 +102,7 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find("_Size");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -173,7 +173,7 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 
 	private void MMOKKAPFGAK()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/TV_Chromatical2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -189,9 +189,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1666f;
 			}
-			DOHGBNPMBKG().SetFloat("clear", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("KickThePlayer", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			DNLMFEGJJDD().SetFloat("clear", HBJJOCHGOPH);
+			KEMAALEODNH().SetFloat("KickThePlayer", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -208,9 +208,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 636f;
 			}
-			NDMPCDHADMJ().SetFloat("wss://", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("_Radius", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			LNLKMDPHDCC().SetFloat("Using constructor for new PingNativeDynamic()", HBJJOCHGOPH);
+			KEMAALEODNH().SetFloat("_PositionY", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
 		}
 		else
 		{
@@ -247,7 +247,7 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 
 	private void EPEGAEGDJAM()
 	{
-		SCShader = Shader.Find("achievements.21.progress");
+		SCShader = Shader.Find("achievements.21.completed.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -267,9 +267,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1207f;
 			}
-			DOHGBNPMBKG().SetFloat("_Value2", HBJJOCHGOPH);
-			DOHGBNPMBKG().SetFloat("player.playedtutorial", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
+			FAIFBBGFAIB().SetFloat("_Value", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("https://store.steampowered.com/recommended/recommendgame/", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{
@@ -290,9 +290,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1808f;
 			}
-			IGKFMCPDNOI().SetFloat("ItemsCountText", HBJJOCHGOPH);
-			NDMPCDHADMJ().SetFloat("z", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
+			DNLMFEGJJDD().SetFloat("ItemsCountText", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("z", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
 		}
 		else
 		{
@@ -320,9 +320,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1028f;
 			}
-			DOHGBNPMBKG().SetFloat("_Value", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("DataText", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/Vision_Warp2", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("UsernameText", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -354,9 +354,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 663f;
 			}
-			KEMAALEODNH().SetFloat("menu.enableselectormusic", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("(from resources)", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			DNLMFEGJJDD().SetFloat("menu.enableselectormusic", HBJJOCHGOPH);
+			NDMPCDHADMJ().SetFloat("resource id", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -402,7 +402,7 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("plogs");
+		SCShader = Shader.Find("achievements.21.progress");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -453,9 +453,9 @@ public class CameraFilterPack_Drawing_Manga5 : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1353f;
 			}
-			ACHNOHCLGOO().SetFloat("#", HBJJOCHGOPH);
-			DNLMFEGJJDD().SetFloat("bpmgrid", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			FAIFBBGFAIB().SetFloat("<b>", HBJJOCHGOPH);
+			IGKFMCPDNOI().SetFloat("EventData0DropDownList", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
 		}
 		else
 		{

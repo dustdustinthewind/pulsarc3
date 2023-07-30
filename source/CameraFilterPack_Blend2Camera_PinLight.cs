@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/PinLight")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/PinLight")]
 public class CameraFilterPack_Blend2Camera_PinLight : MonoBehaviour
 {
 	private string ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_PinLight";
@@ -98,13 +98,13 @@ public class CameraFilterPack_Blend2Camera_PinLight : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				HNICHJCGJOC().SetTexture("_ScreenResolution", JDMCFBKJHDD);
+				IIJMIPBMMBF().SetTexture("_Value4", JDMCFBKJHDD);
 			}
-			HFBJAOFLCJI().SetFloat("return CheckCondition()", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("_Value6", BlendFX);
-			NBPKMLMCHFN.SetFloat("_MainTex2", SwitchCameraToCamera2);
-			HFBJAOFLCJI().SetVector("_Fade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1227f, 1817f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			IIJMIPBMMBF().SetFloat("StopMusic", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_Value6", BlendFX);
+			IIJMIPBMMBF().SetFloat("_Bullet_12", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("_Fade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1227f, 1817f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -269,12 +269,12 @@ public class CameraFilterPack_Blend2Camera_PinLight : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				HFBJAOFLCJI().SetTexture("Vertical", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("Vertical", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat("_Glow", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", BlendFX);
+			IIJMIPBMMBF().SetFloat("_Glow", HBJJOCHGOPH);
+			LDNADDJMIPK().SetFloat("_Value4", BlendFX);
 			LDNADDJMIPK().SetFloat("_TimeX", SwitchCameraToCamera2);
-			HNICHJCGJOC().SetVector(". Set PhotonNetwork.OnEventCall.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1977f, 1823f));
+			HFBJAOFLCJI().SetVector("Warning: Unhandled Event ErrorInfo (251). Set PhotonNetwork.OnEventCall to the method PUN should call for this event.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1977f, 1823f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
@@ -430,12 +430,12 @@ public class CameraFilterPack_Blend2Camera_PinLight : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				LDNADDJMIPK().SetTexture("TwoHands", JDMCFBKJHDD);
+				LDNADDJMIPK().SetTexture("event", JDMCFBKJHDD);
 			}
 			HNICHJCGJOC().SetFloat("StartButton", HBJJOCHGOPH);
-			IIJMIPBMMBF().SetFloat("BlockCount", BlendFX);
-			HNICHJCGJOC().SetFloat("_VignetteColor", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("_TraceBehindObjects", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 908f, 1593f));
+			IIJMIPBMMBF().SetFloat("_Color", BlendFX);
+			IIJMIPBMMBF().SetFloat("CHROMATIC_ABERRATION", SwitchCameraToCamera2);
+			IIJMIPBMMBF().SetVector("_TreatBackfaceHitAsMiss", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 908f, 1593f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
@@ -492,13 +492,13 @@ public class CameraFilterPack_Blend2Camera_PinLight : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				LDNADDJMIPK().SetTexture("/Segment-[Down]", JDMCFBKJHDD);
+				LDNADDJMIPK().SetTexture("/Segment-[Up]", JDMCFBKJHDD);
 			}
-			IIJMIPBMMBF().SetFloat("_Circle", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("Default UI Material", BlendFX);
+			IIJMIPBMMBF().SetFloat("_Size", HBJJOCHGOPH);
+			IIJMIPBMMBF().SetFloat("LetterSpacing: Missing Text component", BlendFX);
 			NBPKMLMCHFN.SetFloat("connecting", SwitchCameraToCamera2);
-			HNICHJCGJOC().SetVector("Set crosshair color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1286f, 642f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			HFBJAOFLCJI().SetVector("float,10", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1286f, 642f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{

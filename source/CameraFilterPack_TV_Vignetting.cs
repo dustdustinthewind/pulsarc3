@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/TV/Vignetting")]
+[ExecuteInEditMode]
 public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 {
 	public Shader SCShader;
@@ -40,12 +40,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			DKKBFFHBHJE().SetTexture(".completedCount", IJFBACJAHAG);
-			LPDOGGFOBDH().SetFloat("[LobbyPlayerElement] On ready click", Vignetting);
-			KBOPGONOCNP().SetFloat("SetParticlesCountPerBeat", VignettingFull);
-			DOHGBNPMBKG().SetColor("english", VignettingColor);
-			DONENAMLFLF().SetFloat("TBD", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
+			KBOPGONOCNP().SetTexture(",", IJFBACJAHAG);
+			OGMEGHKECAH().SetFloat("[LobbyPlayerElement] On ready click", Vignetting);
+			IIJMIPBMMBF().SetFloat("SetParticlesCountPerBeat", VignettingFull);
+			DONENAMLFLF().SetColor("#", VignettingColor);
+			OGMEGHKECAH().SetFloat("TBD", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
 		}
 		else
 		{
@@ -57,12 +57,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			MFHPKGICPIO().SetTexture("SteamManager", IJFBACJAHAG);
-			BLMPMOIDGMG().SetFloat("x", Vignetting);
-			OGMEGHKECAH().SetFloat("_ScreenResolution", VignettingFull);
-			DNLMFEGJJDD().SetColor("Print the list of scenes, avalable in game.", VignettingColor);
-			OGMEGHKECAH().SetFloat(" ", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
+			DONENAMLFLF().SetTexture("ENABLE_USER_LUT", IJFBACJAHAG);
+			NBPKMLMCHFN.SetFloat("y", Vignetting);
+			LPDOGGFOBDH().SetFloat("_ScreenResolution", VignettingFull);
+			BLMPMOIDGMG().SetColor("< true | false >", VignettingColor);
+			KBOPGONOCNP().SetFloat("\"x", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
 		{
@@ -72,8 +72,8 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Gradients_FireGradient");
-		IJFBACJAHAG = Resources.Load("[") as Texture2D;
+		SCShader = Shader.Find("_ScreenResolution");
+		IJFBACJAHAG = Resources.Load("\n") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -82,8 +82,8 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void CNGAJDBOCLJ()
 	{
-		SCShader = Shader.Find("_RgbDepthTex");
-		IJFBACJAHAG = Resources.Load("ConnectToMaster() disabled the offline mode. No longer offline.") as Texture2D;
+		SCShader = Shader.Find("_RgbTex");
+		IJFBACJAHAG = Resources.Load("ConnectUsingSettings() disabled the offline mode. No longer offline.") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -120,7 +120,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void CGDMLHLJIDK()
 	{
-		SCShader = Shader.Find(".sawoutdatedmessage");
+		SCShader = Shader.Find("_copy");
 		IJFBACJAHAG = Resources.Load("y") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -143,12 +143,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			IONHGBPGCHK().SetTexture("/", IJFBACJAHAG);
-			MFHPKGICPIO().SetFloat("_Value", Vignetting);
-			IONHGBPGCHK().SetFloat("Editor", VignettingFull);
-			IONHGBPGCHK().SetColor(";", VignettingColor);
-			IONHGBPGCHK().SetFloat("_Distortion", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
+			MFHPKGICPIO().SetTexture("OK", IJFBACJAHAG);
+			OGMEGHKECAH().SetFloat("_Value", Vignetting);
+			NBPKMLMCHFN.SetFloat(".sawoutdatedmessage", VignettingFull);
+			LPDOGGFOBDH().SetColor(";", VignettingColor);
+			DOHGBNPMBKG().SetFloat("_Speed", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
 		}
 		else
 		{
@@ -190,12 +190,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			DOHGBNPMBKG().SetTexture("UI/Particles/Hidden", IJFBACJAHAG);
-			BLMPMOIDGMG().SetFloat("CameraFilterPack/FX_DarkMatter", Vignetting);
-			HEINDEMCGIK().SetFloat("_SpherePositionY", VignettingFull);
-			BLMPMOIDGMG().SetColor("\r", VignettingColor);
-			EOCCJGIGEGJ().SetFloat("shader.none", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			MMOODGIODPC().SetTexture("_CutOff", IJFBACJAHAG);
+			MFHPKGICPIO().SetFloat("_ScreenResolution", Vignetting);
+			LNLKMDPHDCC().SetFloat("_SpherePositionY", VignettingFull);
+			GJHPODJOBHL().SetColor("\t", VignettingColor);
+			DKKBFFHBHJE().SetFloat("shader.pixel", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
 		}
 		else
 		{
@@ -276,12 +276,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			DKKBFFHBHJE().SetTexture("{0}", IJFBACJAHAG);
-			DNLMFEGJJDD().SetFloat("_TimeX", Vignetting);
-			MFHPKGICPIO().SetFloat("workshop.", VignettingFull);
-			DOHGBNPMBKG().SetColor("resource", VignettingColor);
-			GJHPODJOBHL().SetFloat("CameraFilterPack_VHS1", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GJHPODJOBHL());
+			NBPKMLMCHFN.SetTexture("[DiscordController] Shutdown", IJFBACJAHAG);
+			IONHGBPGCHK().SetFloat("CameraFilterPack/Gradients_Tech", Vignetting);
+			HEINDEMCGIK().SetFloat("LevelNameText", VignettingFull);
+			MMOODGIODPC().SetColor("resource", VignettingColor);
+			DOHGBNPMBKG().SetFloat("CameraFilterPack/Real_VHS", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
 		{
@@ -318,7 +318,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void COOHIILCOCO()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Glitch");
 		IJFBACJAHAG = Resources.Load("0.00") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -356,7 +356,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		SCShader = Shader.Find("_SecondTex");
+		SCShader = Shader.Find("_Offsets");
 		IJFBACJAHAG = Resources.Load("Hex value #RRGGBB") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -421,7 +421,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("BitsData");
+		SCShader = Shader.Find("Deleted event");
 		IJFBACJAHAG = Resources.Load("_ScreenResolution") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -437,12 +437,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			LNLKMDPHDCC().SetTexture("_Value5", IJFBACJAHAG);
-			OGMEGHKECAH().SetFloat("R1", Vignetting);
-			IONHGBPGCHK().SetFloat("hidden", VignettingFull);
-			DNLMFEGJJDD().SetColor("_LightIntensity", VignettingColor);
-			NBPKMLMCHFN.SetFloat("quit", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
+			GJHPODJOBHL().SetTexture("_Value4", IJFBACJAHAG);
+			LNLKMDPHDCC().SetFloat("Joystick1Button5", Vignetting);
+			MMOODGIODPC().SetFloat("Room: '{0}' {1},{2} {4}/{3} players.\ncustomProps: {5}", VignettingFull);
+			IONHGBPGCHK().SetColor("_FixDistance", VignettingColor);
+			EMDFHOKEGNG().SetFloat("Prints the number of logs currently held by DebugLogs", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MFHPKGICPIO());
 		}
 		else
 		{
@@ -454,12 +454,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			HEINDEMCGIK().SetTexture("_Value3", IJFBACJAHAG);
-			NBPKMLMCHFN.SetFloat("_SoftZDistance", Vignetting);
-			DKKBFFHBHJE().SetFloat("SetBGColor", VignettingFull);
-			DNLMFEGJJDD().SetColor("x", VignettingColor);
-			DOHGBNPMBKG().SetFloat("_Value3", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			IONHGBPGCHK().SetTexture("_Value2", IJFBACJAHAG);
+			MMOODGIODPC().SetFloat("_SoftZDistance", Vignetting);
+			MMOODGIODPC().SetFloat("SetBGColor", VignettingFull);
+			LPDOGGFOBDH().SetColor("z", VignettingColor);
+			EMDFHOKEGNG().SetFloat("_Value", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DKKBFFHBHJE());
 		}
 		else
 		{
@@ -488,7 +488,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void KNBJBNDGCIJ()
 	{
-		SCShader = Shader.Find("mapselector.filter.rateduponly");
+		SCShader = Shader.Find("winter2020");
 		IJFBACJAHAG = Resources.Load("_TimeX") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -498,7 +498,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Value");
 		IJFBACJAHAG = Resources.Load("CameraFilterPack/Blend2Camera_ColorKey") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -552,12 +552,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			DKKBFFHBHJE().SetTexture("^", IJFBACJAHAG);
-			MMOODGIODPC().SetFloat("BloodAlternative1", Vignetting);
-			DONENAMLFLF().SetFloat("checkpoint", VignettingFull);
-			IONHGBPGCHK().SetColor("CameraFilterPack/TV_Old_Movie", VignettingColor);
-			OGMEGHKECAH().SetFloat("_ScreenResolution", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OGMEGHKECAH());
+			DOHGBNPMBKG().SetTexture("settings_bindings_controller_type", IJFBACJAHAG);
+			OJMHIMIPKME().SetFloat("_Value4", Vignetting);
+			OGMEGHKECAH().SetFloat("caret", VignettingFull);
+			LNLKMDPHDCC().SetColor("_TimeX", VignettingColor);
+			LPDOGGFOBDH().SetFloat("_Value2", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -614,12 +614,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			LNLKMDPHDCC().SetTexture("ChatInput", IJFBACJAHAG);
-			DONENAMLFLF().SetFloat("LastNewsButton", Vignetting);
-			DKKBFFHBHJE().SetFloat("Joystick1Button1", VignettingFull);
-			HEINDEMCGIK().SetColor("_Bullet_2", VignettingColor);
-			IIJMIPBMMBF().SetFloat("_Y", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DONENAMLFLF());
+			NBPKMLMCHFN.SetTexture("OnRelease", IJFBACJAHAG);
+			GJHPODJOBHL().SetFloat("LastNewsButton", Vignetting);
+			MFHPKGICPIO().SetFloat("X", VignettingFull);
+			IIJMIPBMMBF().SetColor("_Bullet_1", VignettingColor);
+			KBOPGONOCNP().SetFloat("_Y", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MFHPKGICPIO());
 		}
 		else
 		{
@@ -641,12 +641,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			HEINDEMCGIK().SetTexture("CameraFilterPack_TV_BrokenGlass1", IJFBACJAHAG);
-			MMOODGIODPC().SetFloat("Ev Destroy Failed. Could not find PhotonView with instantiationId ", Vignetting);
-			GJHPODJOBHL().SetFloat("Prints list of commands", VignettingFull);
-			NBPKMLMCHFN.SetColor("runas", VignettingColor);
-			HEINDEMCGIK().SetFloat("player.crystal", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
+			IIJMIPBMMBF().SetTexture("_ScreenResolution", IJFBACJAHAG);
+			IONHGBPGCHK().SetFloat("Error: Someone else(", Vignetting);
+			DNLMFEGJJDD().SetFloat("help", VignettingFull);
+			LPDOGGFOBDH().SetColor("runas", VignettingColor);
+			OGMEGHKECAH().SetFloat("player.circle", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
 		}
 		else
 		{
@@ -658,12 +658,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			EOCCJGIGEGJ().SetTexture("OpJoinRandomRoom()", IJFBACJAHAG);
-			EOCCJGIGEGJ().SetFloat("_Value3", Vignetting);
-			GJHPODJOBHL().SetFloat("_Value3", VignettingFull);
-			EMDFHOKEGNG().SetColor("_Value2", VignettingColor);
-			DONENAMLFLF().SetFloat("_MainTex2", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OJMHIMIPKME());
+			LPDOGGFOBDH().SetTexture("OpCreateRoom()", IJFBACJAHAG);
+			MFHPKGICPIO().SetFloat("_Value2", Vignetting);
+			DNLMFEGJJDD().SetFloat("_Value3", VignettingFull);
+			HEINDEMCGIK().SetColor("_Value", VignettingColor);
+			KBOPGONOCNP().SetFloat("_MainTex2", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -685,7 +685,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		SCShader = Shader.Find("https://reddit.com/r/Intralism");
+		SCShader = Shader.Find("https://vk.com/khb.soft");
 		IJFBACJAHAG = Resources.Load("_Value2") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -712,12 +712,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			HEINDEMCGIK().SetTexture("[SERVER] Selected map: ", IJFBACJAHAG);
-			OJMHIMIPKME().SetFloat("2hands", Vignetting);
-			MMOODGIODPC().SetFloat(" .", VignettingFull);
-			IONHGBPGCHK().SetColor("player", VignettingColor);
-			BLMPMOIDGMG().SetFloat("settings.enableranking", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
+			DKKBFFHBHJE().SetTexture("workshop.", IJFBACJAHAG);
+			EOCCJGIGEGJ().SetFloat(":", Vignetting);
+			LPDOGGFOBDH().SetFloat("Connecting", VignettingFull);
+			KBOPGONOCNP().SetColor("No font defined. Found font: ", VignettingColor);
+			MMOODGIODPC().SetFloat("HPToggle", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DONENAMLFLF());
 		}
 		else
 		{
@@ -733,12 +733,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			KBOPGONOCNP().SetTexture("BitsData", IJFBACJAHAG);
-			DKKBFFHBHJE().SetFloat("AVG Misses:", Vignetting);
-			LNLKMDPHDCC().SetFloat("Gameplay/satellite", VignettingFull);
-			IONHGBPGCHK().SetColor("hitsounds:", VignettingColor);
-			KBOPGONOCNP().SetFloat("RenderTextureUtilityTempTexture", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			DNLMFEGJJDD().SetTexture("Deleted event", IJFBACJAHAG);
+			LNLKMDPHDCC().SetFloat("AVG Misses:", Vignetting);
+			BLMPMOIDGMG().SetFloat("Items/", VignettingFull);
+			NBPKMLMCHFN.SetColor("settings.enablehitsoundsinrelax", VignettingColor);
+			MFHPKGICPIO().SetFloat("Depth textures aren't supported on this device ({0})", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
 		}
 		else
 		{
@@ -748,8 +748,8 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void DBEMDAJDDDA()
 	{
-		SCShader = Shader.Find("ScreenResolutionPanel");
-		IJFBACJAHAG = Resources.Load("Yes") as Texture2D;
+		SCShader = Shader.Find("SettingsCanvas");
+		IJFBACJAHAG = Resources.Load("skin.") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -759,7 +759,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	private void LGHCJCFHEMF()
 	{
 		SCShader = Shader.Find("Drop_With_Obj");
-		IJFBACJAHAG = Resources.Load("_MainTex2") as Texture2D;
+		IJFBACJAHAG = Resources.Load("UseScanLine") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -813,12 +813,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			OJMHIMIPKME().SetTexture("Loading maps", IJFBACJAHAG);
-			HEINDEMCGIK().SetFloat("uploads/Intralism/mods_terms.pdf", Vignetting);
-			OJMHIMIPKME().SetFloat("_ScreenResolution", VignettingFull);
-			HEINDEMCGIK().SetColor(": ", VignettingColor);
-			DONENAMLFLF().SetFloat("closed", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
+			EMDFHOKEGNG().SetTexture("LoadingStatusText", IJFBACJAHAG);
+			OGMEGHKECAH().SetFloat("[Up]", Vignetting);
+			IIJMIPBMMBF().SetFloat("_ScreenResolution", VignettingFull);
+			EMDFHOKEGNG().SetColor("[PlayerController] ", VignettingColor);
+			DOHGBNPMBKG().SetFloat("visible", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GJHPODJOBHL());
 		}
 		else
 		{
@@ -828,8 +828,8 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 
 	private void KOFAMEKHHGD()
 	{
-		SCShader = Shader.Find("_Value4");
-		IJFBACJAHAG = Resources.Load("ping: {6}[+/-{7}]ms resent:{8} \n\nmax ms between\nsend: {0,4} \ndispatch: {1,4} \n\nlongest dispatch for: \nev({3}):{2,3}ms \nop({5}):{4,3}ms") as Texture2D;
+		SCShader = Shader.Find("_Value3");
+		IJFBACJAHAG = Resources.Load("Incoming: \n") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -856,12 +856,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			KBOPGONOCNP().SetTexture("AccuracyScoreText", IJFBACJAHAG);
-			KBOPGONOCNP().SetFloat("Updating...", Vignetting);
-			IONHGBPGCHK().SetFloat("settings_bindings_sec_", VignettingFull);
-			IONHGBPGCHK().SetColor("MenuVolumeSlider", VignettingColor);
-			MFHPKGICPIO().SetFloat("Failed to Destroy objects of playerId: ", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			IIJMIPBMMBF().SetTexture("AccuracyScoreText", IJFBACJAHAG);
+			EOCCJGIGEGJ().SetFloat("Ok", Vignetting);
+			IONHGBPGCHK().SetFloat("settings_bindings_", VignettingFull);
+			DNLMFEGJJDD().SetColor("FullscreenToggle", VignettingColor);
+			DOHGBNPMBKG().SetFloat("]. Please verify you have this gameobject in a Resources folder.", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
 		}
 		else
 		{
@@ -892,7 +892,7 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	private void HIPEHGNBJMN()
 	{
 		SCShader = Shader.Find("_Value6");
-		IJFBACJAHAG = Resources.Load("Yes") as Texture2D;
+		IJFBACJAHAG = Resources.Load("skin.") as Texture2D;
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -903,12 +903,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			EMDFHOKEGNG().SetTexture("[Up-Right-Left]", IJFBACJAHAG);
-			IIJMIPBMMBF().SetFloat("finished", Vignetting);
-			IIJMIPBMMBF().SetFloat("settings.arcsnohitsoundtimedelay", VignettingFull);
-			GJHPODJOBHL().SetColor("_Value2", VignettingColor);
-			NBPKMLMCHFN.SetFloat("_FixDistance", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			OGMEGHKECAH().SetTexture("[Left]", IJFBACJAHAG);
+			DOHGBNPMBKG().SetFloat("ready", Vignetting);
+			DKKBFFHBHJE().SetFloat("ArcsNoHitsoundTimeDelaySlider", VignettingFull);
+			NBPKMLMCHFN.SetColor("_Value", VignettingColor);
+			KBOPGONOCNP().SetFloat("_FixDistance", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -920,12 +920,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			GJHPODJOBHL().SetTexture("_ScreenResolution", IJFBACJAHAG);
-			EMDFHOKEGNG().SetFloat("_TimeX", Vignetting);
-			DONENAMLFLF().SetFloat("#mapalreadyexistupdate", VignettingFull);
-			KBOPGONOCNP().SetColor("_ScreenResolution", VignettingColor);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/Oculus_NightVision5", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			BLMPMOIDGMG().SetTexture("_Distortion", IJFBACJAHAG);
+			LPDOGGFOBDH().SetFloat("_ScreenResolution", Vignetting);
+			OJMHIMIPKME().SetFloat("#no", VignettingFull);
+			MFHPKGICPIO().SetColor("_Distortion", VignettingColor);
+			BLMPMOIDGMG().SetFloat("_ScreenResolution", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -937,12 +937,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			DOHGBNPMBKG().SetTexture("_Value", IJFBACJAHAG);
-			EOCCJGIGEGJ().SetFloat("CameraFilterPack/FX_Glitch1", Vignetting);
-			DKKBFFHBHJE().SetFloat("_Value4", VignettingFull);
-			IONHGBPGCHK().SetColor("_RedAmplifier", VignettingColor);
-			MFHPKGICPIO().SetFloat(".icon", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
+			BLMPMOIDGMG().SetTexture("_Value", IJFBACJAHAG);
+			MMOODGIODPC().SetFloat("_ScreenResolution", Vignetting);
+			BLMPMOIDGMG().SetFloat("_Value3", VignettingFull);
+			IIJMIPBMMBF().SetColor("_TimeX", VignettingColor);
+			BLMPMOIDGMG().SetFloat("skin.", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OJMHIMIPKME());
 		}
 		else
 		{
@@ -954,12 +954,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			LPDOGGFOBDH().SetTexture("_Red_G", IJFBACJAHAG);
-			GJHPODJOBHL().SetFloat("SetTrailZoomSpeed", Vignetting);
-			NBPKMLMCHFN.SetFloat("SetEnvSpriteColor", VignettingFull);
-			OGMEGHKECAH().SetColor("set environment id", VignettingColor);
-			OGMEGHKECAH().SetFloat("_Value", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
+			DNLMFEGJJDD().SetTexture("_Red_R", IJFBACJAHAG);
+			IIJMIPBMMBF().SetFloat("SetSpeed", Vignetting);
+			LNLKMDPHDCC().SetFloat("SetParticlesCountPerBeat", VignettingFull);
+			GJHPODJOBHL().SetColor("set environment id", VignettingColor);
+			DNLMFEGJJDD().SetFloat("CameraFilterPack/Vision_Warp", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GJHPODJOBHL());
 		}
 		else
 		{
@@ -979,12 +979,12 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			DNLMFEGJJDD().SetTexture("_Fade", IJFBACJAHAG);
-			KBOPGONOCNP().SetFloat("1,30,true,0", Vignetting);
-			KBOPGONOCNP().SetFloat("id", VignettingFull);
-			MFHPKGICPIO().SetColor("_DotSize", VignettingColor);
-			NBPKMLMCHFN.SetFloat("Joystick1Button10", VignettingDirt);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
+			GJHPODJOBHL().SetTexture("_TimeX", IJFBACJAHAG);
+			DONENAMLFLF().SetFloat("1,30,true,0", Vignetting);
+			GJHPODJOBHL().SetFloat("id", VignettingFull);
+			GJHPODJOBHL().SetColor("_DotSize", VignettingColor);
+			DNLMFEGJJDD().SetFloat("Joystick1Button9", VignettingDirt);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -996,11 +996,11 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			EMDFHOKEGNG().SetTexture("CameraFilterPack_eyes_vision_1", IJFBACJAHAG);
-			EOCCJGIGEGJ().SetFloat("_TimeX", Vignetting);
-			IONHGBPGCHK().SetFloat("_Offset", VignettingFull);
-			DKKBFFHBHJE().SetColor("1", VignettingColor);
-			KBOPGONOCNP().SetFloat("Connection error: ", VignettingDirt);
+			LPDOGGFOBDH().SetTexture("_ScreenResolution", IJFBACJAHAG);
+			DNLMFEGJJDD().SetFloat("_TimeX", Vignetting);
+			IIJMIPBMMBF().SetFloat("Couldn't color correct with 3D LUT texture. Image Effect will be disabled.", VignettingFull);
+			DKKBFFHBHJE().SetColor("win", VignettingColor);
+			IONHGBPGCHK().SetFloat("#restart", VignettingDirt);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -1024,11 +1024,11 @@ public class CameraFilterPack_TV_Vignetting : MonoBehaviour
 	{
 		if (SCShader != null)
 		{
-			BLMPMOIDGMG().SetTexture("HighScaleShot", IJFBACJAHAG);
-			LNLKMDPHDCC().SetFloat("0", Vignetting);
-			IIJMIPBMMBF().SetFloat("JoinRoom failed. A roomname is required. If you don't know one, how will you join?", VignettingFull);
-			MFHPKGICPIO().SetColor("offsets", VignettingColor);
-			KBOPGONOCNP().SetFloat("_Value9", VignettingDirt);
+			OGMEGHKECAH().SetTexture(").png", IJFBACJAHAG);
+			EOCCJGIGEGJ().SetFloat("0", Vignetting);
+			LPDOGGFOBDH().SetFloat("JoinRoom failed. In offline mode you still have to leave a room to enter another.", VignettingFull);
+			EMDFHOKEGNG().SetColor("offsets", VignettingColor);
+			NBPKMLMCHFN.SetFloat("_Value9", VignettingDirt);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else

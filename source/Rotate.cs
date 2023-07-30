@@ -7,12 +7,107 @@ public class Rotate : MonoBehaviour
 
 	public Transform target;
 
-	private void KLILJHJNICK()
+	private void FBMDHDBELEK()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void KDMKDEKCELE()
 	{
 		if (target == null)
 		{
 			target = base.transform;
 		}
+	}
+
+	private void KMKLDAJLCNM()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void AAPKBNDHBLI()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void AGEJKLMJGDO()
+	{
+		if (target == null)
+		{
+			target = base.transform;
+		}
+	}
+
+	private void FABKIGNFECE()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void BGDONBMDPGM()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void Start()
+	{
+		if (target == null)
+		{
+			target = base.transform;
+		}
+	}
+
+	private void JILOMOBDPIA()
+	{
+		if (target == null)
+		{
+			target = base.transform;
+		}
+	}
+
+	private void LEAHIBJDMBI()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void KMCPMOGKDEH()
+	{
+		if (target == null)
+		{
+			target = base.transform;
+		}
+	}
+
+	private void NCNPAKFAFOE()
+	{
+		if (target == null)
+		{
+			target = base.transform;
+		}
+	}
+
+	private void JBNPEHMDCMI()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void NKLIHNJCHOG()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void EHCGBJDFMHG()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void MAOCOEGAFND()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void AIJGAJIOJDJ()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
 	}
 
 	private void ONMGIPAILOH()
@@ -20,7 +115,7 @@ public class Rotate : MonoBehaviour
 		target.Rotate(Vector3.back * speed * Time.deltaTime);
 	}
 
-	private void DNNFHBOOPIN()
+	private void NPLCENPNJBM()
 	{
 		if (target == null)
 		{
@@ -28,12 +123,17 @@ public class Rotate : MonoBehaviour
 		}
 	}
 
-	private void KCDOMIJBFLL()
+	private void FABMDEHEDNO()
 	{
 		target.Rotate(Vector3.back * speed * Time.deltaTime);
 	}
 
-	private void EGEPLFGKGLI()
+	private void OCMKCBBCEFG()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void CNGAJDBOCLJ()
 	{
 		if (target == null)
 		{
@@ -41,17 +141,43 @@ public class Rotate : MonoBehaviour
 		}
 	}
 
-	private void AEIJFLJEABG()
+	private void HLIAEEMGBHN()
 	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
-	}
-
-	private void GHILDCBCDJI()
-	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
+		if (target == null)
+		{
+			target = base.transform;
+		}
 	}
 
 	private void FIKFJDFELIP()
+	{
+		if (target == null)
+		{
+			target = base.transform;
+		}
+	}
+
+	private void NDAJBJFJGCF()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void LLJLDLLNFBH()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void Update()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void NEKCPLGFOFD()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void CIPKEPDELJB()
 	{
 		if (target == null)
 		{
@@ -67,17 +193,30 @@ public class Rotate : MonoBehaviour
 		}
 	}
 
-	private void AIJGAJIOJDJ()
+	private void GPFJMKCGHGB()
 	{
 		target.Rotate(Vector3.back * speed * Time.deltaTime);
 	}
 
-	private void AAPKBNDHBLI()
+	private void OEENOOGEEHD()
 	{
 		target.Rotate(Vector3.back * speed * Time.deltaTime);
 	}
 
-	private void NPLCENPNJBM()
+	private void MMBPLGGLPDB()
+	{
+		target.Rotate(Vector3.back * speed * Time.deltaTime);
+	}
+
+	private void IHLMNAGPKDA()
+	{
+		if (target == null)
+		{
+			target = base.transform;
+		}
+	}
+
+	private void KIMMMCJFMAB()
 	{
 		if (target == null)
 		{
@@ -90,17 +229,7 @@ public class Rotate : MonoBehaviour
 		target.Rotate(Vector3.back * speed * Time.deltaTime);
 	}
 
-	private void LLJLDLLNFBH()
-	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
-	}
-
-	private void Update()
-	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
-	}
-
-	private void Start()
+	private void MMOKKAPFGAK()
 	{
 		if (target == null)
 		{
@@ -108,76 +237,11 @@ public class Rotate : MonoBehaviour
 		}
 	}
 
-	private void KDMANOEMOCA()
+	private void KLILJHJNICK()
 	{
 		if (target == null)
 		{
 			target = base.transform;
 		}
-	}
-
-	private void IDIIELPAMCJ()
-	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
-	}
-
-	private void DKOPKPBLDHH()
-	{
-		if (target == null)
-		{
-			target = base.transform;
-		}
-	}
-
-	private void IIFCIDDJHPM()
-	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
-	}
-
-	private void NBGIMIDICKE()
-	{
-		if (target == null)
-		{
-			target = base.transform;
-		}
-	}
-
-	private void MFMIODIAKNI()
-	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
-	}
-
-	private void NCNPAKFAFOE()
-	{
-		if (target == null)
-		{
-			target = base.transform;
-		}
-	}
-
-	private void OCMKCBBCEFG()
-	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
-	}
-
-	private void CCLNNLCOPBL()
-	{
-		if (target == null)
-		{
-			target = base.transform;
-		}
-	}
-
-	private void BGDPIHMAACO()
-	{
-		if (target == null)
-		{
-			target = base.transform;
-		}
-	}
-
-	private void FBMDHDBELEK()
-	{
-		target.Rotate(Vector3.back * speed * Time.deltaTime);
 	}
 }

@@ -29,23 +29,14 @@ public class ThreadedJob
 		}
 	}
 
-	protected virtual void CGMJODOBINA()
+	public virtual void AGEJKLMJGDO()
 	{
-	}
-
-	public virtual void HEAPJGAGAGL()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	private void CCCCEEIEBAC()
-	{
-		JAFCCBIPELN();
-		IsDone = true;
+		JHBKBOFFBIJ = new Thread(PPEKEGNDEHL);
+		JHBKBOFFBIJ.Start();
 	}
 
 	[SpecialName]
-	public bool HCCJFONPKNG()
+	public bool FIJCPDOBEEI()
 	{
 		lock (BNNAECCMLCB)
 		{
@@ -53,22 +44,39 @@ public class ThreadedJob
 		}
 	}
 
-	[SpecialName]
-	public void MCKEKOENPKO(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	public virtual void LAAOPGMOANL()
+	public virtual void IECFHDBHBED()
 	{
 		JHBKBOFFBIJ.Abort();
 	}
 
+	protected virtual void CNJDBEKDJPO()
+	{
+	}
+
+	protected virtual void CDDKPLKBMPJ()
+	{
+	}
+
+	public IEnumerator INJIININAKM()
+	{
+		while (!Update())
+		{
+			yield return null;
+		}
+	}
+
+	protected virtual void IOKOCPLIHFK()
+	{
+	}
+
+	public virtual void Start()
+	{
+		JHBKBOFFBIJ = new Thread(CCCCEEIEBAC);
+		JHBKBOFFBIJ.Start();
+	}
+
 	[SpecialName]
-	public void MMIBGKLFGKN(bool DPNHODJHGJL)
+	public void PHGJBMHMCHJ(bool DPNHODJHGJL)
 	{
 		lock (BNNAECCMLCB)
 		{
@@ -76,14 +84,37 @@ public class ThreadedJob
 		}
 	}
 
-	public virtual bool JBCNIPJDPJB()
+	public IEnumerator NJLGBPKAAEB()
 	{
-		if (NJPGLBKALNF())
+		while (!Update())
 		{
-			HHDOHGLHNHI();
+			yield return null;
+		}
+	}
+
+	[SpecialName]
+	public bool BCNIJPGCOOE()
+	{
+		lock (BNNAECCMLCB)
+		{
+			return HNHEJMGLAIG;
+		}
+	}
+
+	public virtual bool JBNPEHMDCMI()
+	{
+		if (IsDone)
+		{
+			IHCBHMKFDMK();
 			return false;
 		}
 		return true;
+	}
+
+	private void PKKHPCOLNGC()
+	{
+		JAFCCBIPELN();
+		AEKHHCHLJJD(true);
 	}
 
 	public IEnumerator PMJNJFLEMMO()
@@ -94,13 +125,7 @@ public class ThreadedJob
 		}
 	}
 
-	private void OEFGKIDPCEE()
-	{
-		KACOCMHIAHP();
-		JGIBKOGBOCL(true);
-	}
-
-	public IEnumerator CINPOEOOEAK()
+	public IEnumerator JPANNALKAFD()
 	{
 		while (!Update())
 		{
@@ -108,90 +133,18 @@ public class ThreadedJob
 		}
 	}
 
-	protected virtual void NHDNCAMNNDP()
+	public virtual void PAKPHKPDKGE()
+	{
+		JHBKBOFFBIJ = new Thread(EBGKDJPBFPI);
+		JHBKBOFFBIJ.Start();
+	}
+
+	protected virtual void ODMOKEHNALI()
 	{
 	}
 
-	[SpecialName]
-	public void NEMELABJNAD(bool DPNHODJHGJL)
+	protected virtual void HOAJKHOOEJI()
 	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	public IEnumerator PIHBFBHOCBN()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	[SpecialName]
-	public void NKJHEMBBEKJ(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	protected virtual void JCFLIHMPFKN()
-	{
-	}
-
-	public virtual void IIKJGEAGILG()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	protected virtual void KACOCMHIAHP()
-	{
-	}
-
-	[SpecialName]
-	public bool HDIOCHHNKAD()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	public virtual bool JAAJECBCCFM()
-	{
-		if (IsDone)
-		{
-			HHDOHGLHNHI();
-			return false;
-		}
-		return true;
-	}
-
-	private void PELOINOKMIE()
-	{
-		HNBCBALPKON();
-		BFHNLICBHGM(false);
-	}
-
-	[SpecialName]
-	public void HECLDMBBBFK(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	[SpecialName]
-	public void NMCILFOEIMF(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
 	}
 
 	public IEnumerator FIGGJJPGOJL()
@@ -202,456 +155,7 @@ public class ThreadedJob
 		}
 	}
 
-	protected virtual void JAFCCBIPELN()
-	{
-	}
-
-	public virtual bool GHILDCBCDJI()
-	{
-		if (BFANLENFGBJ())
-		{
-			NPDCBGFHHAF();
-			return true;
-		}
-		return true;
-	}
-
-	private void KKOOFPMGNBN()
-	{
-		HNBCBALPKON();
-		PHFOAMNOLOI(true);
-	}
-
-	protected virtual void HHDOHGLHNHI()
-	{
-	}
-
-	public IEnumerator LPGHFFEOBJC()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	public virtual void DEEGILEDNBM()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	private void EOPBPOPPOKG()
-	{
-		INEIAMHKAFF();
-		PHFOAMNOLOI(true);
-	}
-
-	protected virtual void BLFNOPKJDGC()
-	{
-	}
-
-	protected virtual void MNOCACNOIPB()
-	{
-	}
-
-	protected virtual void INEIAMHKAFF()
-	{
-	}
-
-	[SpecialName]
-	public void ADPHNKCNFHJ(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	public virtual void MIAKPNFLJDO()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	protected virtual void OLBNEHNLGLO()
-	{
-	}
-
-	[SpecialName]
-	public bool CMANEFCBEBB()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	public virtual void FNCDAPDOBBI()
-	{
-		JHBKBOFFBIJ = new Thread(GHJBLLBNBBM);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public IEnumerator KJPPHFHBPAK()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	[SpecialName]
-	public void GAOKHINEGAD(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	[SpecialName]
-	public void PHFOAMNOLOI(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	private void DAJEGGEMJMA()
-	{
-		CGMJODOBINA();
-		IENPOLLNILL(true);
-	}
-
-	private void AIJAHEOABKJ()
-	{
-		GODPOOJFKEF();
-		NMCILFOEIMF(false);
-	}
-
-	protected virtual void BCPDKGMCFPL()
-	{
-	}
-
-	public virtual void CCLNNLCOPBL()
-	{
-		JHBKBOFFBIJ = new Thread(GHJBLLBNBBM);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual void MODENHKMKOC()
-	{
-		JHBKBOFFBIJ = new Thread(LADLLJDECAM);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual void HDMDKOKOOJC()
-	{
-		JHBKBOFFBIJ = new Thread(AIJAHEOABKJ);
-		JHBKBOFFBIJ.Start();
-	}
-
-	protected virtual void JHJKOHMCKAH()
-	{
-	}
-
-	public IEnumerator LLHCIAKLMHG()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	public virtual void HIPEHGNBJMN()
-	{
-		JHBKBOFFBIJ = new Thread(GGILEEHGNFP);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual void Start()
-	{
-		JHBKBOFFBIJ = new Thread(CCCCEEIEBAC);
-		JHBKBOFFBIJ.Start();
-	}
-
-	private void GBGFCGHHKJL()
-	{
-		HNBCBALPKON();
-		BFHNLICBHGM(false);
-	}
-
-	[SpecialName]
-	public void JGIBKOGBOCL(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	public virtual void HLIGOANMMIB()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	[SpecialName]
-	public void IENPOLLNILL(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	public virtual void DICMBDCKBKH()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	protected virtual void JLAPONBAOHB()
-	{
-	}
-
-	private void FODBDKLKIGD()
-	{
-		JLAPONBAOHB();
-		MMIBGKLFGKN(true);
-	}
-
-	public virtual bool FOLDLDLFFLM()
-	{
-		if (BFANLENFGBJ())
-		{
-			MMKBEAKPBIK();
-			return false;
-		}
-		return true;
-	}
-
-	protected virtual void COOHMDACKGM()
-	{
-	}
-
-	private void BCLEBNAOOGN()
-	{
-		JCFLIHMPFKN();
-		BFHNLICBHGM(true);
-	}
-
-	public virtual void EFJDNLGNACH()
-	{
-		JHBKBOFFBIJ = new Thread(PELOINOKMIE);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual bool EIDKCANPHJE()
-	{
-		if (MNJBDMBMKCN())
-		{
-			DHEBIKHIIAP();
-			return false;
-		}
-		return false;
-	}
-
-	public IEnumerator ADGKLGALNJI()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	[SpecialName]
-	public bool PFLCOPNEOPE()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	public virtual void JFJLGJEPEAA()
-	{
-		JHBKBOFFBIJ = new Thread(OEFGKIDPCEE);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual void JDKHBGDEONK()
-	{
-		JHBKBOFFBIJ = new Thread(OEFGKIDPCEE);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual void OGJJDKENBNC()
-	{
-		JHBKBOFFBIJ = new Thread(GHJBLLBNBBM);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual bool Update()
-	{
-		if (IsDone)
-		{
-			BLFNOPKJDGC();
-			return true;
-		}
-		return false;
-	}
-
-	private void LADLLJDECAM()
-	{
-		KDCODIEELCE();
-		NKJHEMBBEKJ(true);
-	}
-
-	public IEnumerator WaitFor()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	public virtual void IDJKNBDKHBD()
-	{
-		JHBKBOFFBIJ = new Thread(GGILEEHGNFP);
-		JHBKBOFFBIJ.Start();
-	}
-
-	[SpecialName]
-	public void BFHNLICBHGM(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	protected virtual void BOACMLIHMGP()
-	{
-	}
-
-	public virtual void MOJOIOOMBND()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	private void EGJLMGLPLLG()
-	{
-		OIGJMFDCHKL();
-		IENPOLLNILL(true);
-	}
-
-	public IEnumerator PONLOCOEIBC()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	private void GHJBLLBNBBM()
-	{
-		OIGJMFDCHKL();
-		MBMBALOMJOM(false);
-	}
-
-	public virtual bool KCDOMIJBFLL()
-	{
-		if (IsDone)
-		{
-			MNOCACNOIPB();
-			return true;
-		}
-		return true;
-	}
-
-	protected virtual void KDCODIEELCE()
-	{
-	}
-
-	public IEnumerator LPBMGFBKACK()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	protected virtual void DHEBIKHIIAP()
-	{
-	}
-
-	public virtual bool IAJKLKJJKEJ()
-	{
-		if (CMANEFCBEBB())
-		{
-			GLCNIPIBCAA();
-			return true;
-		}
-		return false;
-	}
-
-	public virtual void LDALEDAOINM()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	protected virtual void BCMNBHHMKOP()
-	{
-	}
-
-	public virtual void DMMBIAOENGI()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	[SpecialName]
-	public bool NJPGLBKALNF()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	protected virtual void CNJDBEKDJPO()
-	{
-	}
-
-	public virtual void CKLFGEEELFC()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	public virtual void OMEMPHADKEL()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	private void MEJIHBBNOPM()
-	{
-		NHDNCAMNNDP();
-		NMCILFOEIMF(false);
-	}
-
-	[SpecialName]
-	public void MBMBALOMJOM(bool DPNHODJHGJL)
-	{
-		lock (BNNAECCMLCB)
-		{
-			HNHEJMGLAIG = DPNHODJHGJL;
-		}
-	}
-
-	public virtual void DKEHGPPOKEA()
-	{
-		JHBKBOFFBIJ = new Thread(DAJEGGEMJMA);
-		JHBKBOFFBIJ.Start();
-	}
-
-	protected virtual void FFGILCAEJMD()
+	protected virtual void MNFONFLHHFL()
 	{
 	}
 
@@ -664,279 +168,10 @@ public class ThreadedJob
 		}
 	}
 
-	public virtual void KHIALHDDPEP()
+	private void EBGKDJPBFPI()
 	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	public virtual void KCCIEMBMOBA()
-	{
-		JHBKBOFFBIJ = new Thread(MEJIHBBNOPM);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual void LCMDHDFOGIE()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	public virtual void MGMAOBPPOBJ()
-	{
-		JHBKBOFFBIJ = new Thread(MEJIHBBNOPM);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public IEnumerator KPHILEKHJBL()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	protected virtual void GODPOOJFKEF()
-	{
-	}
-
-	public virtual void BMOFEBKGLFI()
-	{
-		JHBKBOFFBIJ = new Thread(GBGFCGHHKJL);
-		JHBKBOFFBIJ.Start();
-	}
-
-	protected virtual void IHCBHMKFDMK()
-	{
-	}
-
-	private void DOGDFFCDNPA()
-	{
-		BCPDKGMCFPL();
-		GAOKHINEGAD(true);
-	}
-
-	[SpecialName]
-	public bool MNJBDMBMKCN()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	public virtual void OMILIDAPCAJ()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	protected virtual void NPDCBGFHHAF()
-	{
-	}
-
-	private void OKALLNNKFHD()
-	{
-		CGMJODOBINA();
-		NKJHEMBBEKJ(true);
-	}
-
-	public virtual void GNBIIMFLIPK()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	[SpecialName]
-	public bool JBEOCIOKEJA()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	public virtual void Abort()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	public virtual bool BGDONBMDPGM()
-	{
-		if (HNKOKBMLIDI())
-		{
-			IHCBHMKFDMK();
-			return true;
-		}
-		return true;
-	}
-
-	public virtual void CCHMIEFEGFJ()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	public virtual void OKLAJINHPAN()
-	{
-		JHBKBOFFBIJ = new Thread(GBGFCGHHKJL);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual bool BMODOIJGIOO()
-	{
-		if (BCNIJPGCOOE())
-		{
-			COOHMDACKGM();
-			return false;
-		}
-		return true;
-	}
-
-	public virtual bool LJIHHJOAJCN()
-	{
-		if (IsDone)
-		{
-			MMKBEAKPBIK();
-			return false;
-		}
-		return false;
-	}
-
-	public IEnumerator LHCLMIIOCIH()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	[SpecialName]
-	public bool LHLIAPPHDJO()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	protected virtual void EAEAHCKIDCP()
-	{
-	}
-
-	private void GGILEEHGNFP()
-	{
-		BCPDKGMCFPL();
-		JGIBKOGBOCL(false);
-	}
-
-	protected virtual void MMKBEAKPBIK()
-	{
-	}
-
-	protected virtual void OIGJMFDCHKL()
-	{
-	}
-
-	public virtual bool HLDFOJMHKNL()
-	{
-		if (BDHGIHHGLJF())
-		{
-			BOACMLIHMGP();
-			return false;
-		}
-		return true;
-	}
-
-	public virtual void AEMGPJDJGBJ()
-	{
-		JHBKBOFFBIJ = new Thread(DAJEGGEMJMA);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public IEnumerator KOOMMNGHMLC()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	public virtual void JECMJNFGBGC()
-	{
-		JHBKBOFFBIJ = new Thread(KKOOFPMGNBN);
-		JHBKBOFFBIJ.Start();
-	}
-
-	public virtual void MHMFAABEMEK()
-	{
-		JHBKBOFFBIJ.Abort();
-	}
-
-	public IEnumerator LLEFONJNLCL()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	[SpecialName]
-	public bool HNKOKBMLIDI()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	protected virtual void CIFGNLJLCMM()
-	{
-	}
-
-	protected virtual void HNBCBALPKON()
-	{
-	}
-
-	protected virtual void GKEEMJLCCHK()
-	{
-	}
-
-	private void FGMPLDOJGOC()
-	{
-		CGMJODOBINA();
-		MCKEKOENPKO(false);
-	}
-
-	public IEnumerator KAFAJEJLHFP()
-	{
-		while (!Update())
-		{
-			yield return null;
-		}
-	}
-
-	protected virtual void MDEAHHIHOFK()
-	{
-	}
-
-	[SpecialName]
-	public bool BCNIJPGCOOE()
-	{
-		lock (BNNAECCMLCB)
-		{
-			return HNHEJMGLAIG;
-		}
-	}
-
-	public virtual void NCNPAKFAFOE()
-	{
-		JHBKBOFFBIJ = new Thread(PELOINOKMIE);
-		JHBKBOFFBIJ.Start();
-	}
-
-	protected virtual void GLCNIPIBCAA()
-	{
-	}
-
-	public virtual void JEJABONIBAN()
-	{
-		JHBKBOFFBIJ.Abort();
+		CNJDBEKDJPO();
+		PHGJBMHMCHJ(false);
 	}
 
 	public virtual void BKEICCPCDIO()
@@ -944,7 +179,44 @@ public class ThreadedJob
 		JHBKBOFFBIJ.Abort();
 	}
 
-	public IEnumerator IEBGEEIDKKE()
+	public virtual bool Update()
+	{
+		if (IsDone)
+		{
+			BLFNOPKJDGC();
+			return true;
+		}
+		return false;
+	}
+
+	public virtual void LBDJBKEKALL()
+	{
+		JHBKBOFFBIJ.Abort();
+	}
+
+	protected virtual void IHCBHMKFDMK()
+	{
+	}
+
+	[SpecialName]
+	public void AEKHHCHLJJD(bool DPNHODJHGJL)
+	{
+		lock (BNNAECCMLCB)
+		{
+			HNHEJMGLAIG = DPNHODJHGJL;
+		}
+	}
+
+	[SpecialName]
+	public void MMIBGKLFGKN(bool DPNHODJHGJL)
+	{
+		lock (BNNAECCMLCB)
+		{
+			HNHEJMGLAIG = DPNHODJHGJL;
+		}
+	}
+
+	public IEnumerator NMNBACMMHJM()
 	{
 		while (!Update())
 		{
@@ -952,8 +224,54 @@ public class ThreadedJob
 		}
 	}
 
+	public virtual void DAHFFNNIGML()
+	{
+		JHBKBOFFBIJ = new Thread(COKOANLBCCM);
+		JHBKBOFFBIJ.Start();
+	}
+
+	public IEnumerator OMCDMKGMMBP()
+	{
+		while (!Update())
+		{
+			yield return null;
+		}
+	}
+
+	protected virtual void BLFNOPKJDGC()
+	{
+	}
+
+	private void IHCBCILHDHF()
+	{
+		CNJDBEKDJPO();
+		MMIBGKLFGKN(false);
+	}
+
+	public virtual void Abort()
+	{
+		JHBKBOFFBIJ.Abort();
+	}
+
+	public virtual void GEJKOHKEEHF()
+	{
+		JHBKBOFFBIJ.Abort();
+	}
+
+	private void DCAPPAPIBKJ()
+	{
+		CNJDBEKDJPO();
+		PHGJBMHMCHJ(false);
+	}
+
+	private void COKOANLBCCM()
+	{
+		HNBCBALPKON();
+		AEKHHCHLJJD(true);
+	}
+
 	[SpecialName]
-	public bool BFANLENFGBJ()
+	public bool BJAMIKAPFBK()
 	{
 		lock (BNNAECCMLCB)
 		{
@@ -961,9 +279,128 @@ public class ThreadedJob
 		}
 	}
 
-	private void EOEBGHHLPCD()
+	public virtual void IMCKJCHKMKB()
 	{
-		JCFLIHMPFKN();
+		JHBKBOFFBIJ = new Thread(IHMAKINGADF);
+		JHBKBOFFBIJ.Start();
+	}
+
+	private void IHMAKINGADF()
+	{
+		JAFCCBIPELN();
 		IsDone = true;
+	}
+
+	public IEnumerator NMDNIJFCFIE()
+	{
+		while (!Update())
+		{
+			yield return null;
+		}
+	}
+
+	protected virtual void MBPJCAPNFCC()
+	{
+	}
+
+	protected virtual void GKEEMJLCCHK()
+	{
+	}
+
+	public IEnumerator HPDONKGFGGA()
+	{
+		while (!Update())
+		{
+			yield return null;
+		}
+	}
+
+	public virtual void CCEIGFALMML()
+	{
+		JHBKBOFFBIJ.Abort();
+	}
+
+	public virtual void HMCFBEENDMG()
+	{
+		JHBKBOFFBIJ.Abort();
+	}
+
+	protected virtual void JAFCCBIPELN()
+	{
+	}
+
+	private void MFDAIMAAIEE()
+	{
+		GKEEMJLCCHK();
+		IsDone = true;
+	}
+
+	private void PPEKEGNDEHL()
+	{
+		JAFCCBIPELN();
+		AEKHHCHLJJD(false);
+	}
+
+	public virtual void KIMMMCJFMAB()
+	{
+		JHBKBOFFBIJ = new Thread(PKKHPCOLNGC);
+		JHBKBOFFBIJ.Start();
+	}
+
+	public virtual void CIIBLDNFLEL()
+	{
+		JHBKBOFFBIJ.Abort();
+	}
+
+	public virtual void FEHCNJLLJMP()
+	{
+		JHBKBOFFBIJ = new Thread(CCCCEEIEBAC);
+		JHBKBOFFBIJ.Start();
+	}
+
+	public virtual void DNNFHBOOPIN()
+	{
+		JHBKBOFFBIJ = new Thread(PKKHPCOLNGC);
+		JHBKBOFFBIJ.Start();
+	}
+
+	protected virtual void HNBCBALPKON()
+	{
+	}
+
+	private void CCCCEEIEBAC()
+	{
+		JAFCCBIPELN();
+		IsDone = true;
+	}
+
+	public virtual void FANADGBGCPI()
+	{
+		JHBKBOFFBIJ = new Thread(EBGKDJPBFPI);
+		JHBKBOFFBIJ.Start();
+	}
+
+	private void NGDBPHBAECA()
+	{
+		GKEEMJLCCHK();
+		PHGJBMHMCHJ(true);
+	}
+
+	public virtual void FGAMEFONIGF()
+	{
+		JHBKBOFFBIJ.Abort();
+	}
+
+	public IEnumerator WaitFor()
+	{
+		while (!Update())
+		{
+			yield return null;
+		}
+	}
+
+	public virtual void JNJPKDHOKAB()
+	{
+		JHBKBOFFBIJ.Abort();
 	}
 }

@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/LighterColor")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/LighterColor")]
 public class CameraFilterPack_Blend2Camera_LighterColor : MonoBehaviour
 {
 	private string ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_LighterColor";
@@ -131,11 +131,11 @@ public class CameraFilterPack_Blend2Camera_LighterColor : MonoBehaviour
 			{
 				NBPKMLMCHFN.SetTexture("Connection failed: ", JDMCFBKJHDD);
 			}
-			GCDFNHMJMIP().SetFloat("_Value2", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("_Value1", HBJJOCHGOPH);
 			KGOLDDBHIFN().SetFloat("CameraFilterPack/Blend2Camera_Subtract", BlendFX);
-			NBPKMLMCHFN.SetFloat("[GameScene] Submiting rank", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 227f, 1166f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			KGOLDDBHIFN().SetFloat("[GameScene] Submiting rank", SwitchCameraToCamera2);
+			KGOLDDBHIFN().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 227f, 1166f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -168,13 +168,13 @@ public class CameraFilterPack_Blend2Camera_LighterColor : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("_Value", JDMCFBKJHDD);
+				GCDFNHMJMIP().SetTexture("_TimeX", JDMCFBKJHDD);
 			}
 			KGOLDDBHIFN().SetFloat("0,1,false", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat(".a", BlendFX);
+			GCDFNHMJMIP().SetFloat(".b", BlendFX);
 			GCDFNHMJMIP().SetFloat("speed", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("ls", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1665f, 1023f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			GCDFNHMJMIP().SetVector("(((?<x>(?=[,\\r\\n]+))|\"(?<x>([^\"]|\"\")+)\"|(?<x>[^,\\r\\n]+)),?)", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1665f, 1023f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -202,13 +202,13 @@ public class CameraFilterPack_Blend2Camera_LighterColor : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("menu.tabid", JDMCFBKJHDD);
+				GCDFNHMJMIP().SetTexture("menu.tabid", JDMCFBKJHDD);
 			}
-			GCDFNHMJMIP().SetFloat("_TimeX", HBJJOCHGOPH);
-			GCDFNHMJMIP().SetFloat("JoinOrCreateRoom failed. In offline mode you still have to leave a room to enter another.", BlendFX);
-			KGOLDDBHIFN().SetFloat("[BuildInfo] Error: ", SwitchCameraToCamera2);
+			KGOLDDBHIFN().SetFloat("CameraFilterPack/FX_Ascii", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("JoinRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.", BlendFX);
+			GCDFNHMJMIP().SetFloat(" b.", SwitchCameraToCamera2);
 			GCDFNHMJMIP().SetVector("_MainTex2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1828f, 515f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -306,13 +306,13 @@ public class CameraFilterPack_Blend2Camera_LighterColor : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("challenges.", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("challenges", JDMCFBKJHDD);
 			}
-			KGOLDDBHIFN().SetFloat("CameraFilterPack/Color_Noise", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Identity LUT", BlendFX);
-			GCDFNHMJMIP().SetFloat("EnvironmentSlider", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("{0}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 685f, 1207f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("Tonemapper curve texture", BlendFX);
+			NBPKMLMCHFN.SetFloat("Tab2Content", SwitchCameraToCamera2);
+			GCDFNHMJMIP().SetVector("false", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 685f, 1207f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{

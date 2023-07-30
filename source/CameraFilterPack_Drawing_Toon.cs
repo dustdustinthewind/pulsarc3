@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/Drawing/Toon")]
+[ExecuteInEditMode]
 public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 {
 	public Shader SCShader;
@@ -51,10 +51,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 901f;
 			}
-			FEAEGGCNIAA().SetFloat("DPADHOR", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("Joystick1Button2", Threshold);
-			CFEDGDGBCHE().SetFloat(" not exist", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			EOCCJGIGEGJ().SetFloat("DPADHOR", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetFloat("Cross", Threshold);
+			EMDFHOKEGNG().SetFloat(": ", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -107,7 +107,7 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("Adreno");
+		SCShader = Shader.Find("_VignetteSettings");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -132,7 +132,7 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		SCShader = Shader.Find("[MapEditor] Updating top menu");
+		SCShader = Shader.Find("FileMenu");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -167,7 +167,7 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		SCShader = Shader.Find("_Offsets");
+		SCShader = Shader.Find("_BokehParams");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -191,7 +191,7 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 
 	private void AGEJKLMJGDO()
 	{
-		SCShader = Shader.Find("R2");
+		SCShader = Shader.Find("L2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -207,10 +207,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1347f;
 			}
-			IIJMIPBMMBF().SetFloat("#scoresubmitionfailed: ", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Rock", Threshold);
-			CFEDGDGBCHE().SetFloat("]. Please verify you have this gameobject in a Resources folder.", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			EOCCJGIGEGJ().SetFloat("IntraTime", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat("Rock", Threshold);
+			CFEDGDGBCHE().SetFloat(". Should be just one?", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -227,9 +227,9 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1511f;
 			}
-			DBOLLHHMKKN().SetFloat("settings.enablehitsoundsinrelax", HBJJOCHGOPH);
-			EJDPNJAEAKJ().SetFloat(":", Threshold);
-			FEAEGGCNIAA().SetFloat("#forever", DotSize);
+			ADBKPGFMNKO().SetFloat("settings.enablehitsoundsinnormal", HBJJOCHGOPH);
+			EMDFHOKEGNG().SetFloat("Can't connect: Loading settings failed. ServerSettings asset must be in any 'Resources' folder as: PhotonServerSettings", Threshold);
+			KAFBNOBOIAJ().SetFloat("uploads/Intralism/mods_terms.pdf", DotSize);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
@@ -247,10 +247,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 754f;
 			}
-			CFEDGDGBCHE().SetFloat("[PlayerBase] Got checkpoint at ", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetFloat("PlayMapGoal", Threshold);
-			KAFBNOBOIAJ().SetFloat("offsets", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
+			DBOLLHHMKKN().SetFloat("(", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("challenges.", Threshold);
+			EMDFHOKEGNG().SetFloat("offsets", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -267,10 +267,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1240f;
 			}
-			CFEDGDGBCHE().SetFloat("Screen Space Reflections", HBJJOCHGOPH);
+			EJDPNJAEAKJ().SetFloat("_WorldToCameraMatrix", HBJJOCHGOPH);
 			NBPKMLMCHFN.SetFloat("_Value", Threshold);
-			EMDFHOKEGNG().SetFloat("_TimeX", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/Colors_DarkColor", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
 		}
 		else
 		{
@@ -287,9 +287,9 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 901f;
 			}
-			EOCCJGIGEGJ().SetFloat("Received RPC \"", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetFloat("Right ", Threshold);
-			FEAEGGCNIAA().SetFloat("player.blackcat", DotSize);
+			EJDPNJAEAKJ().SetFloat("Malformed RPC; this should never occur. Content: ", HBJJOCHGOPH);
+			EMDFHOKEGNG().SetFloat("Right", Threshold);
+			CFEDGDGBCHE().SetFloat("???", DotSize);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
@@ -307,10 +307,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 96f;
 			}
-			EOCCJGIGEGJ().SetFloat("inventory.itemscash", HBJJOCHGOPH);
-			KAFBNOBOIAJ().SetFloat("F3", Threshold);
-			EJDPNJAEAKJ().SetFloat("ItemsStoreButton", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
+			FEAEGGCNIAA().SetFloat("inventory.itemscash", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetFloat("F3", Threshold);
+			CFEDGDGBCHE().SetFloat("ItemsStoreButton", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -328,7 +328,7 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 
 	private void HMPGIFBJFIK()
 	{
-		SCShader = Shader.Find("Texture2");
+		SCShader = Shader.Find("Coord");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -356,7 +356,7 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 
 	private void KDMKDEKCELE()
 	{
-		SCShader = Shader.Find("_Green_G");
+		SCShader = Shader.Find("_Green_R");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -397,7 +397,7 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 
 	private void FLKEJJEGCFA()
 	{
-		SCShader = Shader.Find("SpectateButton");
+		SCShader = Shader.Find("BestScoreText");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -463,10 +463,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1819f;
 			}
-			EMDFHOKEGNG().SetFloat("_FixDistance", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetFloat("float,0", Threshold);
-			EMDFHOKEGNG().SetFloat("bad", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EJDPNJAEAKJ());
+			DBOLLHHMKKN().SetFloat("_FixDistance", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat("z", Threshold);
+			FEAEGGCNIAA().SetFloat("error", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
 		}
 		else
 		{
@@ -483,10 +483,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1952f;
 			}
-			KAFBNOBOIAJ().SetFloat("DifficultyBG", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("_ToneCurve", Threshold);
-			DBOLLHHMKKN().SetFloat("\" that takes ", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			EMDFHOKEGNG().SetFloat("DifficultyBG", HBJJOCHGOPH);
+			KAFBNOBOIAJ().SetFloat("ENABLE_EYE_ADAPTATION", Threshold);
+			CFEDGDGBCHE().SetFloat(" has ", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -496,7 +496,7 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 
 	private void FNCDAPDOBBI()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Distortion");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -516,10 +516,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 204f;
 			}
-			ADBKPGFMNKO().SetFloat(". Using max value: 255.", HBJJOCHGOPH);
-			KAFBNOBOIAJ().SetFloat("Error: I/O Failure", Threshold);
-			NBPKMLMCHFN.SetFloat("CrosshairOpacitySlider", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
+			KAFBNOBOIAJ().SetFloat("Can't set visible when not in that room.", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Error: I/O Failure", Threshold);
+			EOCCJGIGEGJ().SetFloat("settings.cameramovements", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -571,10 +571,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 579f;
 			}
-			NBPKMLMCHFN.SetFloat("1", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("_BlurCoe", Threshold);
-			ADBKPGFMNKO().SetFloat("SpawnObj", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			EJDPNJAEAKJ().SetFloat("1", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_Offsets", Threshold);
+			CFEDGDGBCHE().SetFloat("[Down]", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
 		}
 		else
 		{
@@ -591,10 +591,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 889f;
 			}
-			EOCCJGIGEGJ().SetFloat("_Value", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("restrictions\n\n#until: ", Threshold);
-			CFEDGDGBCHE().SetFloat("_Value", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			IIJMIPBMMBF().SetFloat("_TimeX", HBJJOCHGOPH);
+			IIJMIPBMMBF().SetFloat("\n\n#", Threshold);
+			IIJMIPBMMBF().SetFloat("_Value", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EJDPNJAEAKJ());
 		}
 		else
 		{
@@ -645,10 +645,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 770f;
 			}
-			DBOLLHHMKKN().SetFloat("Achievement 21 progress reseted", HBJJOCHGOPH);
-			KAFBNOBOIAJ().SetFloat("settings_bindings_sec_", Threshold);
-			DBOLLHHMKKN().SetFloat("settings.hitvariation", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			DBOLLHHMKKN().SetFloat("achievements.21.progress", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetFloat("settings_bindings_sec_", Threshold);
+			EJDPNJAEAKJ().SetFloat("HitVariationSlider", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -685,10 +685,10 @@ public class CameraFilterPack_Drawing_Toon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1550f;
 			}
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			FEAEGGCNIAA().SetFloat("_DistortionSize", Threshold);
-			CFEDGDGBCHE().SetFloat("0.00", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
+			DBOLLHHMKKN().SetFloat("_Value4", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("_DistortionSize", Threshold);
+			EMDFHOKEGNG().SetFloat("TotalTimeLabel", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
 		}
 		else
 		{

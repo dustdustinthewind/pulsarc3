@@ -5,48 +5,51 @@ public class RoomListItem : MonoBehaviour
 {
 	public RoomInfo roomInfo;
 
-	public void NGFFICONECA()
+	private void Start()
 	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
 	}
 
-	public void FCHHFLOOPEK()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	public void DIEAKFLIJAG()
+	public void PHEKBEHFBHO()
 	{
 		PhotonNetwork.JoinRoom(roomInfo.name);
 	}
 
-	private void EHCGBJDFMHG()
+	private void GPFJMKCGHGB()
 	{
 	}
 
-	private void NNCCPEBIAKH()
+	public void BPFGHCBGPBB()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.AFAOFPEFKOL());
+	}
+
+	private void AAPKBNDHBLI()
 	{
 	}
 
-	private void JKFDDNMPOJH()
+	private void OHFOLGANOLC()
 	{
 	}
 
-	public void NKICECDFBOJ()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	private void JHPOIOELNCG()
+	private void ONMGIPAILOH()
 	{
 	}
 
-	public void NNMKLLINNLO()
+	public void CGBNCKKNMDF()
 	{
-		PhotonNetwork.JoinRoom(roomInfo.name);
+		PhotonNetwork.JoinRoom(roomInfo.HBLACMCHNMB());
 	}
 
-	private void GHILDCBCDJI()
+	private void FABMDEHEDNO()
+	{
+	}
+
+	public void EPADBJMDOCO()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.AFAOFPEFKOL());
+	}
+
+	private void DIPDEHOOBPG()
 	{
 	}
 
@@ -55,105 +58,44 @@ public class RoomListItem : MonoBehaviour
 		PhotonNetwork.JoinRoom(roomInfo.name);
 	}
 
-	private void HDDECCMEJKA()
+	private void MFMIODIAKNI()
 	{
 	}
 
-	public void KMBEOOHCELK()
+	private void PDHKMDBNGGN()
 	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
 	}
 
-	public void FCMDENKEAFG()
+	private void JHPOIOELNCG()
+	{
+	}
+
+	private void COIJKMKIEAK()
+	{
+	}
+
+	private void KDMKDEKCELE()
+	{
+	}
+
+	public void CLBOCAFKMNC()
 	{
 		PhotonNetwork.JoinRoom(roomInfo.name);
 	}
 
-	private void NDAJBJFJGCF()
+	private void EHCGBJDFMHG()
 	{
 	}
 
-	private void DAHFFNNIGML()
+	private void MMMDPANNAIO()
 	{
 	}
 
-	private void DLBODOFAJGM()
+	private void FABKIGNFECE()
 	{
 	}
 
-	private void KDMANOEMOCA()
-	{
-	}
-
-	private void AGEJKLMJGDO()
-	{
-	}
-
-	private void CGDMLHLJIDK()
-	{
-	}
-
-	private void FABMDEHEDNO()
-	{
-	}
-
-	private void MKIMDFLBFOM()
-	{
-	}
-
-	private void FHPFJBFCOOF()
-	{
-	}
-
-	public void EPADBJMDOCO()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	private void KMKLDAJLCNM()
-	{
-	}
-
-	private void Start()
-	{
-	}
-
-	private void OMCLOFCJMPG()
-	{
-	}
-
-	private void JOACBIEHHCE()
-	{
-	}
-
-	public void APEMBIBANLN()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	private void LJIHHJOAJCN()
-	{
-	}
-
-	public void PGFIFEPCAHJ()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	private void DIPDEHOOBPG()
-	{
-	}
-
-	public void FGCMJCOOJBC()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	private void JBNPEHMDCMI()
-	{
-	}
-
-	private void DNNFHBOOPIN()
+	private void ILCFPCIPENO()
 	{
 	}
 
@@ -162,112 +104,36 @@ public class RoomListItem : MonoBehaviour
 		PhotonNetwork.JoinRoom(roomInfo.name);
 	}
 
-	private void IMCKJCHKMKB()
+	private void CCLNNLCOPBL()
 	{
 	}
 
-	private void EGEPLFGKGLI()
+	private void FJNCHGLIEMA()
 	{
 	}
 
-	private void CIPKEPDELJB()
+	public void NCEDGFABGGJ()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.HBLACMCHNMB());
+	}
+
+	private void EJFJENFKLND()
 	{
 	}
 
-	private void IBHACCEEFFI()
+	private void IDIIELPAMCJ()
 	{
-	}
-
-	private void OBAEDJJDCPN()
-	{
-	}
-
-	private void KCDOMIJBFLL()
-	{
-	}
-
-	public void EKMLIODJOMN()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	private void HLIAEEMGBHN()
-	{
-	}
-
-	public void BHJGLOCMECH()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	private void FEHCNJLLJMP()
-	{
-	}
-
-	private void AIJGAJIOJDJ()
-	{
-	}
-
-	private void MJNPIDGNJMK()
-	{
-	}
-
-	private void CGBHOELMAOC()
-	{
-	}
-
-	private void DNENFLNCIJP()
-	{
-	}
-
-	public void MLJDLAFHPHD()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.name);
-	}
-
-	private void ILCFPCIPENO()
-	{
-	}
-
-	private void BGDPIHMAACO()
-	{
-	}
-
-	public void NBEMMEDEPNH()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
-	}
-
-	private void PDHKMDBNGGN()
-	{
-	}
-
-	private void MAOCOEGAFND()
-	{
-	}
-
-	private void AEIJFLJEABG()
-	{
-	}
-
-	private void FJHFOBHJEHL()
-	{
-	}
-
-	private void MNBPNHNAEBK()
-	{
-	}
-
-	private void KLILJHJNICK()
-	{
-	}
-
-	public void IEBJBMHAOAA()
-	{
-		PhotonNetwork.JoinRoom(roomInfo.name);
 	}
 
 	private void Update()
+	{
+	}
+
+	private void PKLOBJHKFEO()
+	{
+	}
+
+	private void IIFCIDDJHPM()
 	{
 	}
 
@@ -275,8 +141,160 @@ public class RoomListItem : MonoBehaviour
 	{
 	}
 
+	private void AGMJDGHLBMN()
+	{
+	}
+
+	private void OCMKCBBCEFG()
+	{
+	}
+
+	private void DPIPGGDNGHN()
+	{
+	}
+
+	private void DNNFHBOOPIN()
+	{
+	}
+
+	private void NEKCPLGFOFD()
+	{
+	}
+
+	public void HNALLAIEOEI()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.HBLACMCHNMB());
+	}
+
+	private void NKLIHNJCHOG()
+	{
+	}
+
+	public void AEHLHOJHEAL()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.name);
+	}
+
+	private void IHLMNAGPKDA()
+	{
+	}
+
+	private void PAKPHKPDKGE()
+	{
+	}
+
+	private void EPEGAEGDJAM()
+	{
+	}
+
+	private void KIEJKBNBHMD()
+	{
+	}
+
+	private void HLDFOJMHKNL()
+	{
+	}
+
+	private void BMODOIJGIOO()
+	{
+	}
+
+	private void JOPCCCCHNLI()
+	{
+	}
+
+	public void APAIOHJGIHO()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.name);
+	}
+
+	private void AEEGKLABFLN()
+	{
+	}
+
+	private void DKGBFNCOAEO()
+	{
+	}
+
+	private void KMCPMOGKDEH()
+	{
+	}
+
+	private void MAOCOEGAFND()
+	{
+	}
+
+	private void PMPKMGKAAJH()
+	{
+	}
+
+	private void HPNNCNNFMGK()
+	{
+	}
+
+	public void ONEIAMJPJJK()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.HBLACMCHNMB());
+	}
+
+	private void JKFDDNMPOJH()
+	{
+	}
+
+	public void KANPDINCLGB()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.HBLACMCHNMB());
+	}
+
+	private void OBAEDJJDCPN()
+	{
+	}
+
 	public void JLFCBGLOMGO()
 	{
-		PhotonNetwork.JoinRoom(roomInfo.DPGOJAHONLO());
+		PhotonNetwork.JoinRoom(roomInfo.HBLACMCHNMB());
+	}
+
+	private void OEENOOGEEHD()
+	{
+	}
+
+	private void FBMDHDBELEK()
+	{
+	}
+
+	private void JNBPKNNBMDI()
+	{
+	}
+
+	public void KNCPPHNHCKM()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.AFAOFPEFKOL());
+	}
+
+	public void PGFIFEPCAHJ()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.AFAOFPEFKOL());
+	}
+
+	private void ICILLMAKLMI()
+	{
+	}
+
+	private void LJIHHJOAJCN()
+	{
+	}
+
+	public void APEMBIBANLN()
+	{
+		PhotonNetwork.JoinRoom(roomInfo.name);
+	}
+
+	private void FANADGBGCPI()
+	{
+	}
+
+	private void LPMINJJPDCH()
+	{
 	}
 }

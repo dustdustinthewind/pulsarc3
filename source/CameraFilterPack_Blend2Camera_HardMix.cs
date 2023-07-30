@@ -126,12 +126,12 @@ public class CameraFilterPack_Blend2Camera_HardMix : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IGIAPKPKGPK().SetTexture("player.bluebat", JDMCFBKJHDD);
+				JIBOKBCPDLC().SetTexture("player.bluebat", JDMCFBKJHDD);
 			}
-			GKILCDHJFEG().SetFloat("CheckCombo", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("_MainTex2", BlendFX);
-			GKILCDHJFEG().SetFloat("FPSToggle", SwitchCameraToCamera2);
-			HFBJAOFLCJI().SetVector("#ok", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1261f, 1135f));
+			DEFBJOCJJKF().SetFloat("[PlayerBase] Loaded music", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("_MainTex2", BlendFX);
+			HFBJAOFLCJI().SetFloat("Scene", SwitchCameraToCamera2);
+			PGPEMMBJOOG().SetVector("ResourcesConfig", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1261f, 1135f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
 		}
 		else
@@ -185,11 +185,11 @@ public class CameraFilterPack_Blend2Camera_HardMix : MonoBehaviour
 			{
 				NBPKMLMCHFN.SetTexture("_MainTex2", JDMCFBKJHDD);
 			}
-			PGPEMMBJOOG().SetFloat("deleteall", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("[Up-Left]", BlendFX);
-			GKILCDHJFEG().SetFloat("QuickSave", SwitchCameraToCamera2);
-			GKILCDHJFEG().SetVector(">", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 746f, 137f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			GKILCDHJFEG().SetFloat("deleteall", HBJJOCHGOPH);
+			GKILCDHJFEG().SetFloat("[Up-Down]", BlendFX);
+			PGPEMMBJOOG().SetFloat(" is set to dontSave = true, continuing loop.", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("<color=#", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 746f, 137f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -278,13 +278,13 @@ public class CameraFilterPack_Blend2Camera_HardMix : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				JIBOKBCPDLC().SetTexture("BitsData", JDMCFBKJHDD);
+				JIBOKBCPDLC().SetTexture("tagElement", JDMCFBKJHDD);
 			}
-			DEFBJOCJJKF().SetFloat("/", HBJJOCHGOPH);
-			PGPEMMBJOOG().SetFloat("shader.ghost", BlendFX);
-			NBPKMLMCHFN.SetFloat("_Value2", SwitchCameraToCamera2);
-			IGIAPKPKGPK().SetVector("CheckCombo", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1049f, 1304f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			NBPKMLMCHFN.SetFloat("/", HBJJOCHGOPH);
+			DEFBJOCJJKF().SetFloat("shader.crispwinter", BlendFX);
+			NBPKMLMCHFN.SetFloat("_Value", SwitchCameraToCamera2);
+			JIBOKBCPDLC().SetVector("LevelProgressBar", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1049f, 1304f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -567,13 +567,13 @@ public class CameraFilterPack_Blend2Camera_HardMix : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				GKILCDHJFEG().SetTexture("Set sun min/max size", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("float,0", JDMCFBKJHDD);
 			}
-			GKILCDHJFEG().SetFloat("_TimeX", HBJJOCHGOPH);
-			PGPEMMBJOOG().SetFloat("BitsData", BlendFX);
-			GKILCDHJFEG().SetFloat("workshop.", SwitchCameraToCamera2);
-			IGIAPKPKGPK().SetVector("HandsCountSlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 406f, 1008f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			HFBJAOFLCJI().SetFloat("CameraFilterPack/Colors_NewPosterize", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("event", BlendFX);
+			HFBJAOFLCJI().SetFloat("[NetworkManager] Exited", SwitchCameraToCamera2);
+			HFBJAOFLCJI().SetVector("EnvironmentSlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 406f, 1008f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
 		}
 		else
 		{

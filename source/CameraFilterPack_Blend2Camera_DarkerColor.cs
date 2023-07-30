@@ -136,13 +136,13 @@ public class CameraFilterPack_Blend2Camera_DarkerColor : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("maps.", JDMCFBKJHDD);
+				DBOLLHHMKKN().SetTexture("settings.disablestoryboard", JDMCFBKJHDD);
 			}
-			DBOLLHHMKKN().SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Drop_Near", BlendFX);
-			DBOLLHHMKKN().SetFloat("All bindings reset to default values. PlayerPrefs have been removed for each key.", SwitchCameraToCamera2);
-			DBOLLHHMKKN().SetVector("/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1946f, 845f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("Drop_Near", BlendFX);
+			NBPKMLMCHFN.SetFloat("settings_bindings_controller_type", SwitchCameraToCamera2);
+			DBOLLHHMKKN().SetVector("MapperNameText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1946f, 845f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
 		}
 		else
 		{
@@ -172,13 +172,13 @@ public class CameraFilterPack_Blend2Camera_DarkerColor : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				DBOLLHHMKKN().SetTexture("player.bat", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("player.bat", JDMCFBKJHDD);
 			}
 			DEFBJOCJJKF().SetFloat("CameraFilterPack/Blend2Camera_Luminosity", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Particles/Additive", BlendFX);
-			NBPKMLMCHFN.SetFloat("/", SwitchCameraToCamera2);
-			DBOLLHHMKKN().SetVector("_ConsoleSettings", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1049f, 989f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			DEFBJOCJJKF().SetFloat("_Blend", BlendFX);
+			DBOLLHHMKKN().SetFloat("/", SwitchCameraToCamera2);
+			DEFBJOCJJKF().SetVector("Hidden/Fast Approximate Anti-aliasing", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1049f, 989f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{
@@ -313,13 +313,13 @@ public class CameraFilterPack_Blend2Camera_DarkerColor : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				DBOLLHHMKKN().SetTexture("_Value", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("_TimeX", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat("PointsScoreText", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("checkpoint", BlendFX);
-			DEFBJOCJJKF().SetFloat("_CenterY", SwitchCameraToCamera2);
-			DBOLLHHMKKN().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 534f, 381f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			DEFBJOCJJKF().SetFloat("PointsScoreText", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("checkpoint", BlendFX);
+			DEFBJOCJJKF().SetFloat("_CenterX", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 534f, 381f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DEFBJOCJJKF());
 		}
 		else
 		{

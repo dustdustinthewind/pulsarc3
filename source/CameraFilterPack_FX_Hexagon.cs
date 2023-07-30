@@ -110,7 +110,7 @@ public class CameraFilterPack_FX_Hexagon : MonoBehaviour
 
 	private void FEHCNJLLJMP()
 	{
-		SCShader = Shader.Find("DPADVER");
+		SCShader = Shader.Find("PRESS A KEY");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -143,9 +143,9 @@ public class CameraFilterPack_FX_Hexagon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 75f;
 			}
-			KGOLDDBHIFN().SetFloat("/?player=", HBJJOCHGOPH);
-			LONNIJMNKFB().SetVector("_Value6", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1672f, 1182f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			DOHGBNPMBKG().SetFloat("Left", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetVector("_Value5", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1672f, 1182f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -212,7 +212,7 @@ public class CameraFilterPack_FX_Hexagon : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("_Distortion");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

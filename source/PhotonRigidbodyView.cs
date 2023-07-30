@@ -14,24 +14,40 @@ public class PhotonRigidbodyView : MonoBehaviour, IPunObservable
 
 	private Rigidbody LPFEBLNEEOF;
 
-	private void LOMHIIKFFEP()
+	public void AKPCPGPOKKG(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+		}
+	}
+
+	private void BFIOIDMHPPL()
 	{
 		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 
-	private void IIPMEPPIFCK()
+	public void HGKFNJAKJMH(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		LPFEBLNEEOF = GetComponent<Rigidbody>();
-	}
-
-	private void FAAJAMIGJNK()
-	{
-		LPFEBLNEEOF = GetComponent<Rigidbody>();
-	}
-
-	public void DCKLCCMEGAA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
 			if (m_SynchronizeVelocity)
 			{
@@ -39,70 +55,162 @@ public class PhotonRigidbodyView : MonoBehaviour, IPunObservable
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.BBHGPGBHMML(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.KIMDMBDNICC();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
 			}
 		}
 	}
 
-	public void KAAHPMKNHAD(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	private void NEEIFNDHDOG()
 	{
-		if (HCIJEDFCNOP.FAOJEFAMBFN())
-		{
-			if (m_SynchronizeVelocity)
-			{
-				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
-			}
-			if (m_SynchronizeAngularVelocity)
-			{
-				HCIJEDFCNOP.BBHGPGBHMML(LPFEBLNEEOF.angularVelocity);
-			}
-		}
-		else
-		{
-			if (m_SynchronizeVelocity)
-			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.KIMDMBDNICC();
-			}
-			if (m_SynchronizeAngularVelocity)
-			{
-				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.LNDLNKJPAGO();
-			}
-		}
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 
-	public void HBBLLHAOBLE(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	private void FMAFBLKAJDF()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void DDMBAGEFNLB(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
 		if (HCIJEDFCNOP.isWriting)
 		{
 			if (m_SynchronizeVelocity)
 			{
-				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.CPIBABMPJLE(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
 				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	private void OLFNCABJBHA()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void PPCGJBIIFAO()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void BGFCMMDKCOI()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void BJHJEDJDCEN(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	private void CCDNJPNLGBN()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void IPJENEAMGBP()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void GGEKDHHOOCH(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	private void HCNECNPPEKA()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void LMOILMNEOFE(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
 			}
 		}
 	}
@@ -133,29 +241,214 @@ public class PhotonRigidbodyView : MonoBehaviour, IPunObservable
 		}
 	}
 
+	private void GEGFJJBCHPE()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
 	private void JEEINPBLBDI()
 	{
 		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 
-	public void PKDPLHBMKPM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void JBFGBECPBDO(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		if (HCIJEDFCNOP.FAOJEFAMBFN())
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
 			if (m_SynchronizeVelocity)
 			{
-				HCIJEDFCNOP.CPIBABMPJLE(LPFEBLNEEOF.velocity);
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.BBHGPGBHMML(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.KIEJNJBDAJJ();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	public void MKPBBAPGGND(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+		}
+	}
+
+	private void OJACCGOHBGH()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void LNDBBLLLFDA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	private void NLNAJMCBNDC()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void LJEFMGOBKGE()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void FIABIKEIEKH()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void HHJBBHEBJCJ()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void HMMHABFJHEC(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	private void JPJNECPABBG()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void OBPCMAFGLON()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void KPOIJEKDFBE()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void DMIKIDGJEFC()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void GEJCKOBIHFF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+		}
+	}
+
+	private void AJIKPEIGACI()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void COHGAEMDFEI(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
@@ -164,128 +457,107 @@ public class PhotonRigidbodyView : MonoBehaviour, IPunObservable
 		}
 	}
 
-	private void FMAFBLKAJDF()
+	private void GMIOCKFLJAK()
 	{
 		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 
-	public void GBOFDLLNLLL(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void HODGFKONIFC(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		if (HCIJEDFCNOP.GKJCHGIMOEJ())
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
 			if (m_SynchronizeVelocity)
 			{
-				HCIJEDFCNOP.IBCLJIACBKG(LPFEBLNEEOF.velocity);
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.velocity);
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.FADAIFFMBEL(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.LNDLNKJPAGO();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ACOGAHJKGJH();
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
 			}
 		}
 	}
 
-	private void BODPLDJLFCF()
+	private void JHPKLGGMCBL()
 	{
 		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 
-	public void HPGOHBHACKF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void EOBMGCKFNNL(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		if (HCIJEDFCNOP.FAOJEFAMBFN())
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
 			if (m_SynchronizeVelocity)
 			{
-				HCIJEDFCNOP.CPIBABMPJLE(LPFEBLNEEOF.velocity);
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.CPIBABMPJLE(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.KIMDMBDNICC();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.KIMDMBDNICC();
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
 			}
 		}
 	}
 
-	private void BMAGFLLGDPJ()
+	private void GDHMJGBAGHP()
 	{
 		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 
-	public void BAEICBGEECA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	private void MMPPGDECEHO()
 	{
-		if (HCIJEDFCNOP.GKJCHGIMOEJ())
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void LEPNLHBAHOL(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
 			if (m_SynchronizeVelocity)
 			{
-				HCIJEDFCNOP.PBECMJMDHBI(LPFEBLNEEOF.velocity);
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.IBCLJIACBKG(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.LNDLNKJPAGO();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.LNDLNKJPAGO();
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
 			}
 		}
 	}
 
-	public void COHGAEMDFEI(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	public void ICPOCNHAAEK(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
 	{
-		if (HCIJEDFCNOP.FAOJEFAMBFN())
-		{
-			if (m_SynchronizeVelocity)
-			{
-				HCIJEDFCNOP.PNAPNHJHBMN(LPFEBLNEEOF.velocity);
-			}
-			if (m_SynchronizeAngularVelocity)
-			{
-				HCIJEDFCNOP.PBECMJMDHBI(LPFEBLNEEOF.angularVelocity);
-			}
-		}
-		else
-		{
-			if (m_SynchronizeVelocity)
-			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ACOGAHJKGJH();
-			}
-			if (m_SynchronizeAngularVelocity)
-			{
-				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ACOGAHJKGJH();
-			}
-		}
-	}
-
-	public void HGKFNJAKJMH(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
-	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
 			if (m_SynchronizeVelocity)
 			{
@@ -293,20 +565,25 @@ public class PhotonRigidbodyView : MonoBehaviour, IPunObservable
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.FADAIFFMBEL(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.FIBMOBNIALK();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.LNDLNKJPAGO();
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
 			}
 		}
+	}
+
+	private void JNIPABEGJND()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 
 	private void Awake()
@@ -314,55 +591,725 @@ public class PhotonRigidbodyView : MonoBehaviour, IPunObservable
 		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 
-	public void KLFPENLPMJP(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	private void GGKPLCJNEHF()
 	{
-		if (HCIJEDFCNOP.PGJIELMHMEJ())
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void HHODOGMIJGI(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
 		{
 			if (m_SynchronizeVelocity)
 			{
-				HCIJEDFCNOP.CPIBABMPJLE(LPFEBLNEEOF.velocity);
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.velocity);
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.CPIBABMPJLE(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.FIBMOBNIALK();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.HPPOACOIMOJ();
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
 			}
 		}
 	}
 
-	public void CBIDBNCBLGO(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	private void LHMDCEDONEE()
 	{
-		if (HCIJEDFCNOP.FAOJEFAMBFN())
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void MDOBONJMBKF()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void AAAGGIHAKEH(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
 		{
 			if (m_SynchronizeVelocity)
 			{
-				HCIJEDFCNOP.IBCLJIACBKG(LPFEBLNEEOF.velocity);
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
-				HCIJEDFCNOP.PNAPNHJHBMN(LPFEBLNEEOF.angularVelocity);
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.angularVelocity);
 			}
 		}
 		else
 		{
 			if (m_SynchronizeVelocity)
 			{
-				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.KIMDMBDNICC();
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	public void FMLEIJEFMDK(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
 			}
 			if (m_SynchronizeAngularVelocity)
 			{
 				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
 			}
 		}
+	}
+
+	private void LFHKGIHNONL()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void PIIMBOLGHOE()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void FAAJAMIGJNK()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void JOBBGDGHJMB()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void GDFJJBDODPM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	public void GBOFDLLNLLL(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	private void IIPMEPPIFCK()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void EIFCCFBJKOO()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void CIAHIJIOFIE()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void EOFAACNPFDF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	public void BAEICBGEECA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	private void DAHIMKKFNPH()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void DEJEBOGKMJO()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void GGPOCCFNMDF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	private void MADENBGHKDD()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void MOLNBJLBPOO(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	private void GEPELODHBFN()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void EPCAPPLPFED()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void EMANBHKAONB()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void PEMPABLNJHL()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void LOMHIIKFFEP()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void PCFHKFCIFHF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	public void EJPAMJBIAGM(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	private void EBPAOCJEJGE()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void DAFGPDBLAMA(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+		}
+	}
+
+	public void IOIECPHCEHD(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	public void BEPJPKCOLJH(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	public void JJLDJBFHCGF(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	private void KEKNHAAEPCJ()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void CNMIIGDELGE(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+		}
+	}
+
+	private void EPCGHAAONLN()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void AAKPEHOAMGP(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.isWriting)
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.MABPFPFGCNL();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+		}
+	}
+
+	public void FOHGOGIMPJJ(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	private void MCIEAOAMOIG()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void DNFNPFAJGMG(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.AIAIEPFCCDO(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.ReceiveNext();
+			}
+		}
+	}
+
+	private void OKADMJFLMGP()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void GGHEPDCEHCK()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void IOMCHHBGJEC()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void PJBBBAOPOCC(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.SendNext(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	private void KACPCCMPAHA()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void JNBMKLFJCEM()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void CJHMHIMKILB()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	public void EJPKMLLGMGB(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+		}
+	}
+
+	public void HOGEJPIBJAL(PhotonStream HCIJEDFCNOP, PhotonMessageInfo DAGALCAILLN)
+	{
+		if (HCIJEDFCNOP.MLCGKMDJIMA())
+		{
+			if (m_SynchronizeVelocity)
+			{
+				HCIJEDFCNOP.NICKMDDINKP(LPFEBLNEEOF.velocity);
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				HCIJEDFCNOP.GJDCOKMGHOG(LPFEBLNEEOF.angularVelocity);
+			}
+		}
+		else
+		{
+			if (m_SynchronizeVelocity)
+			{
+				LPFEBLNEEOF.velocity = (Vector3)HCIJEDFCNOP.NLPFEFOCGBC();
+			}
+			if (m_SynchronizeAngularVelocity)
+			{
+				LPFEBLNEEOF.angularVelocity = (Vector3)HCIJEDFCNOP.EDCDHDJNDPF();
+			}
+		}
+	}
+
+	private void HBPLJMJAAHK()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
+	}
+
+	private void BMAGFLLGDPJ()
+	{
+		LPFEBLNEEOF = GetComponent<Rigidbody>();
 	}
 }

@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/AAA/Blood On Screen")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/AAA/Blood On Screen")]
 public class CameraFilterPack_AAA_BloodOnScreen : MonoBehaviour
 {
 	public Shader SCShader;
@@ -46,8 +46,8 @@ public class CameraFilterPack_AAA_BloodOnScreen : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		FPHEBLMINDA = Resources.Load("Editor") as Texture2D;
-		SCShader = Shader.Find("_BlurParams");
+		FPHEBLMINDA = Resources.Load("LoadMapCanvas") as Texture2D;
+		SCShader = Shader.Find("Hidden/DepthOfField/MedianFilter");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -84,7 +84,7 @@ public class CameraFilterPack_AAA_BloodOnScreen : MonoBehaviour
 	private void IMCKJCHKMKB()
 	{
 		FPHEBLMINDA = Resources.Load("_TimeX") as Texture2D;
-		SCShader = Shader.Find("_Value5");
+		SCShader = Shader.Find("_Value4");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -104,8 +104,8 @@ public class CameraFilterPack_AAA_BloodOnScreen : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		FPHEBLMINDA = Resources.Load("0,7,true,0") as Texture2D;
-		SCShader = Shader.Find("_Value3");
+		FPHEBLMINDA = Resources.Load("0. SubBase 20-60 Hz\n1. Bass, 60-250 Hz\n2. LowMidrange 250-500 Hz\n3. Midrange 500-2,000 Hz\n4. UpperMidrange 2,000-4,000 Hz\n5. High 4,000-6000 Hz\n6. VeryHigh 6,000-20,000 Hz\n7. Decibal - use output data instead of frequency data") as Texture2D;
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -129,15 +129,15 @@ public class CameraFilterPack_AAA_BloodOnScreen : MonoBehaviour
 			{
 				HBJJOCHGOPH = 474f;
 			}
-			ADBKPGFMNKO().SetFloat("TwoHands", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("May", Mathf.Clamp(Blood_On_Screen, 1000f, 1844f));
-			LONNIJMNKFB().SetFloat("#tryagain", Mathf.Clamp(Blood_Intensify, 1796f, 201f));
-			LONNIJMNKFB().SetFloat("_EdgeThresholdMin", Mathf.Clamp(Blood_Darkness, 4f, 1773f));
-			LONNIJMNKFB().SetFloat("note.6", Mathf.Clamp(Blood_Fade, 114f, 1077f));
-			PLBEJJIHFPB().SetFloat("SetSunColors", Mathf.Clamp(Blood_Distortion_Speed, 1580f, 1245f));
-			LONNIJMNKFB().SetColor("EventTimeInputField", Blood_Color);
-			ADBKPGFMNKO().SetTexture("CameraFilterPack/Edge_BlackLine", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DBOLLHHMKKN());
+			DBOLLHHMKKN().SetFloat("event", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("Mar", Mathf.Clamp(Blood_On_Screen, 1000f, 1844f));
+			NBPKMLMCHFN.SetFloat("Connection error: ", Mathf.Clamp(Blood_Intensify, 1796f, 201f));
+			NBPKMLMCHFN.SetFloat("_ThirdTex", Mathf.Clamp(Blood_Darkness, 4f, 1773f));
+			DBOLLHHMKKN().SetFloat("note.2", Mathf.Clamp(Blood_Fade, 114f, 1077f));
+			NBPKMLMCHFN.SetFloat("SetPosition", Mathf.Clamp(Blood_Distortion_Speed, 1580f, 1245f));
+			NBPKMLMCHFN.SetColor("LevelEditor/CustomEventEditor-", Blood_Color);
+			ADBKPGFMNKO().SetTexture("_DotSize", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -185,7 +185,7 @@ public class CameraFilterPack_AAA_BloodOnScreen : MonoBehaviour
 	private void NNCCPEBIAKH()
 	{
 		FPHEBLMINDA = Resources.Load("player.licenceaccepted") as Texture2D;
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Factor");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -217,8 +217,8 @@ public class CameraFilterPack_AAA_BloodOnScreen : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		FPHEBLMINDA = Resources.Load(" Maybe GO was destroyed but RPC not cleaned up.") as Texture2D;
-		SCShader = Shader.Find("ExitGames.Client.Photon.SocketWebTcp, Assembly-CSharp-firstpass");
+		FPHEBLMINDA = Resources.Load(" Remote called.") as Texture2D;
+		SCShader = Shader.Find("Using WebSocket to connect NameServer (AuthMode is AuthOnceWss).");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

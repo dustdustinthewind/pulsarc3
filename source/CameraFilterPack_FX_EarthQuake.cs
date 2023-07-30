@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/FX/Earth Quake")]
+[ExecuteInEditMode]
 public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 {
 	public Shader SCShader;
@@ -41,7 +41,7 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 
 	private void DAHFFNNIGML()
 	{
-		SCShader = Shader.Find("Encryption wasn't established: ");
+		SCShader = Shader.Find("Skipping EstablishEncryption. Protocol is secure.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -65,12 +65,12 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 			{
 				HBJJOCHGOPH = 185f;
 			}
-			OIMMPLPBLBK().SetFloat("masterSteamID", HBJJOCHGOPH);
-			KAFBNOBOIAJ().SetFloat("workshop.", Speed);
-			OIMMPLPBLBK().SetFloat("custom", X);
-			OIMMPLPBLBK().SetFloat("[Down]", Y);
-			KAFBNOBOIAJ().SetFloat("Player", CCIENBFIKKH);
-			NBPKMLMCHFN.SetVector(". Current number of cells is ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1778f, 567f));
+			NBPKMLMCHFN.SetFloat("masterSteamID", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("workshop.", Speed);
+			OIMMPLPBLBK().SetFloat("UI", X);
+			NBPKMLMCHFN.SetFloat("Gameplay/sprite", Y);
+			OIMMPLPBLBK().SetFloat("UpdateNewsTileStart", CCIENBFIKKH);
+			NBPKMLMCHFN.SetVector("OnJoinedRoom() called by PUN. Now this client is in a room. From here on, your game would be running. For reference, all callbacks are listed in enum: PhotonNetworkingMessage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1778f, 567f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
@@ -100,12 +100,12 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 			{
 				HBJJOCHGOPH = 761f;
 			}
-			NBPKMLMCHFN.SetFloat("0.00", HBJJOCHGOPH);
+			KAFBNOBOIAJ().SetFloat("0.00", HBJJOCHGOPH);
 			KAFBNOBOIAJ().SetFloat(" GameServer:", Speed);
-			OIMMPLPBLBK().SetFloat("[DiscordController] Join request {0}#{1}: {2}", X);
-			NBPKMLMCHFN.SetFloat("workshop.", Y);
-			KAFBNOBOIAJ().SetFloat("_Near", CCIENBFIKKH);
-			KAFBNOBOIAJ().SetVector("#ok", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 512f, 251f));
+			KAFBNOBOIAJ().SetFloat("[DiscordController] Sectate ({0})", X);
+			OIMMPLPBLBK().SetFloat("[SERVER] Selected mode: ", Y);
+			NBPKMLMCHFN.SetFloat("_Near", CCIENBFIKKH);
+			OIMMPLPBLBK().SetVector("[LevelEditorScene] Map submitted!", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 512f, 251f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
@@ -158,7 +158,7 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Smooth");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -239,7 +239,7 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Blend2Camera_LinearLight");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -248,7 +248,7 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 
 	private void NPLCENPNJBM()
 	{
-		SCShader = Shader.Find("CheckResources () for ");
+		SCShader = Shader.Find("Missing shader in ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -257,7 +257,7 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 
 	private void IMCKJCHKMKB()
 	{
-		SCShader = Shader.Find("_BlurredColor");
+		SCShader = Shader.Find("_Offsets");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -273,13 +273,13 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1193f;
 			}
-			KAFBNOBOIAJ().SetFloat("Vertical", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat(". Using max value: 255.", Speed);
-			NBPKMLMCHFN.SetFloat("_Heigh", X);
-			OIMMPLPBLBK().SetFloat("_Value5", Y);
-			NBPKMLMCHFN.SetFloat("_Luminance", CCIENBFIKKH);
-			NBPKMLMCHFN.SetVector("Identity LUT", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1320f, 1556f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("Aimer Input Module is incompatible with the StandAloneInputSystem, please remove it from the Event System in this scene or disable it when this module is in use", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("Can't set MaxPlayers when not in that room.", Speed);
+			OIMMPLPBLBK().SetFloat("_Heigh", X);
+			NBPKMLMCHFN.SetFloat("_Value5", Y);
+			KAFBNOBOIAJ().SetFloat("_AxialAberration", CCIENBFIKKH);
+			NBPKMLMCHFN.SetVector("Tonemapper curve texture", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1320f, 1556f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -296,12 +296,12 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1599f;
 			}
-			KAFBNOBOIAJ().SetFloat("Editor/", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("settings.arcsdestroydelay", Speed);
-			OIMMPLPBLBK().SetFloat("CameraFilterPack/Blend2Camera_Saturation", X);
-			KAFBNOBOIAJ().SetFloat("_Value2", Y);
-			KAFBNOBOIAJ().SetFloat("_SpawnHeuristic", CCIENBFIKKH);
-			KAFBNOBOIAJ().SetVector("[MapEditor] Item creation successful! Published Item ID: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1193f, 1678f));
+			NBPKMLMCHFN.SetFloat("[MapEditor] Created new map: ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("settings.gamemessagesduration", Speed);
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", X);
+			NBPKMLMCHFN.SetFloat("_Value2", Y);
+			KAFBNOBOIAJ().SetFloat("_Offsets", CCIENBFIKKH);
+			KAFBNOBOIAJ().SetVector("Created", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1193f, 1678f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -319,13 +319,13 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1075f;
 			}
-			OIMMPLPBLBK().SetFloat("_NoisePerChannel", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("Editor/", Speed);
-			OIMMPLPBLBK().SetFloat("elapsed: {0:0.000}", X);
-			KAFBNOBOIAJ().SetFloat("Other", Y);
-			KAFBNOBOIAJ().SetFloat("#", CCIENBFIKKH);
-			OIMMPLPBLBK().SetVector("_Value5", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1849f, 928f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			OIMMPLPBLBK().SetFloat("_DX11NoiseTime", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("/", Speed);
+			OIMMPLPBLBK().SetFloat("st", X);
+			KAFBNOBOIAJ().SetFloat("Soundtrack", Y);
+			OIMMPLPBLBK().SetFloat(">", CCIENBFIKKH);
+			KAFBNOBOIAJ().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1849f, 928f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -342,13 +342,13 @@ public class CameraFilterPack_FX_EarthQuake : MonoBehaviour
 			{
 				HBJJOCHGOPH = 730f;
 			}
-			OIMMPLPBLBK().SetFloat("_CameraToWorldMatrix", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat("_ProjectToPixelMatrix", HBJJOCHGOPH);
 			OIMMPLPBLBK().SetFloat("AddEnvironmentObject", Speed);
-			OIMMPLPBLBK().SetFloat("Error! no audio sources attached to AudioSampler.css", X);
-			NBPKMLMCHFN.SetFloat(". Possible scene loading in progress?", Y);
-			OIMMPLPBLBK().SetFloat("MapEnd", CCIENBFIKKH);
-			NBPKMLMCHFN.SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 499f, 1929f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			KAFBNOBOIAJ().SetFloat("Error! no audio sources attached to AudioSampler.css", X);
+			KAFBNOBOIAJ().SetFloat("RPCs can only be sent in rooms. Call of \"", Y);
+			OIMMPLPBLBK().SetFloat("menu.playedsolo", CCIENBFIKKH);
+			KAFBNOBOIAJ().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 499f, 1929f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{

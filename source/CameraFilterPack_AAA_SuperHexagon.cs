@@ -54,17 +54,17 @@ public class CameraFilterPack_AAA_SuperHexagon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1703f;
 			}
-			KGOLDDBHIFN().SetFloat("_Value4", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("PossibleMapPointsText", HexaSize);
-			NBPKMLMCHFN.SetFloat("\nCreated by Oxy949", center.x);
-			NBPKMLMCHFN.SetFloat("Connected to NameServer.", center.y);
-			KGOLDDBHIFN().SetFloat("(master)", Radius);
+			NBPKMLMCHFN.SetFloat("_Value2", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("PossibleMapPointsText", HexaSize);
+			KGOLDDBHIFN().SetFloat("\nCreated by Oxy949", center.x);
+			IONHGBPGCHK().SetFloat("FindFriends failed to apply the result, as a required value wasn't provided or the friend list length differed from result.", center.y);
+			IONHGBPGCHK().SetFloat("#{0:00}{1}{2}", Radius);
 			IONHGBPGCHK().SetFloat("MessageText", _BorderSize);
-			KGOLDDBHIFN().SetColor("_Blue_B", _BorderColor);
-			IONHGBPGCHK().SetColor("ready", _HexaColor);
-			KGOLDDBHIFN().SetFloat("_ScreenResolution", _AlphaHexa);
-			KGOLDDBHIFN().SetFloat("Couldn't call DestroyAll() as only the master client is allowed to call this.", _SpotSize);
-			IONHGBPGCHK().SetVector(".", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1426f, 1409f));
+			NBPKMLMCHFN.SetColor("_Blue_R", _BorderColor);
+			KGOLDDBHIFN().SetColor("StartButton", _HexaColor);
+			IONHGBPGCHK().SetFloat("_ScreenResolution", _AlphaHexa);
+			KGOLDDBHIFN().SetFloat("Destroy(targetPhotonView) failed, cause targetPhotonView is null.", _SpotSize);
+			KGOLDDBHIFN().SetVector(".lastCheckpoint.playerdistance", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1426f, 1409f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
@@ -98,18 +98,18 @@ public class CameraFilterPack_AAA_SuperHexagon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 667f;
 			}
-			IONHGBPGCHK().SetFloat("SelectorMusicToggle", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("GlassDistortion", HexaSize);
-			KGOLDDBHIFN().SetFloat(" not exist", center.x);
-			KGOLDDBHIFN().SetFloat("Mouse1", center.y);
-			IONHGBPGCHK().SetFloat("SetEnvSpriteColor", Radius);
-			KGOLDDBHIFN().SetFloat("2", _BorderSize);
-			IONHGBPGCHK().SetColor("Sets the boolean value of the Auto Focus Input Field property.", _BorderColor);
-			KGOLDDBHIFN().SetColor("ConnectToRegion: ", _HexaColor);
-			NBPKMLMCHFN.SetFloat("ReconnectToMaster() with AuthValues == null is not correct!", _AlphaHexa);
-			KGOLDDBHIFN().SetFloat("GetLive", _SpotSize);
-			KGOLDDBHIFN().SetVector("_Glitch", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1444f, 103f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("settings.disablestoryboard", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("VisionBlur", HexaSize);
+			IONHGBPGCHK().SetFloat(": ", center.x);
+			KGOLDDBHIFN().SetFloat("Left Click", center.y);
+			NBPKMLMCHFN.SetFloat("SetEnvSpriteColor", Radius);
+			NBPKMLMCHFN.SetFloat("11", _BorderSize);
+			KGOLDDBHIFN().SetColor("setAF", _BorderColor);
+			KGOLDDBHIFN().SetColor("ConnectToRegion() failed. Can only connect while in state 'Disconnected'. Current state: ", _HexaColor);
+			KGOLDDBHIFN().SetFloat("ns.exitgames.com", _AlphaHexa);
+			IONHGBPGCHK().SetFloat("]", _SpotSize);
+			IONHGBPGCHK().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1444f, 103f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -126,17 +126,17 @@ public class CameraFilterPack_AAA_SuperHexagon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1275f;
 			}
-			KGOLDDBHIFN().SetFloat("#{0:X2}{1:X2}{2:X2}", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("_MainTex", HBJJOCHGOPH);
 			KGOLDDBHIFN().SetFloat("CameraFilterPack/Distortion_FishEye", HexaSize);
-			NBPKMLMCHFN.SetFloat("_EmissionColor", center.x);
+			NBPKMLMCHFN.SetFloat("#,0.00", center.x);
 			IONHGBPGCHK().SetFloat("_FixDistance", center.y);
-			NBPKMLMCHFN.SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", Radius);
-			IONHGBPGCHK().SetFloat("_HexaColor", _BorderSize);
-			IONHGBPGCHK().SetColor("_ScreenResolution", _BorderColor);
-			KGOLDDBHIFN().SetColor("_Value3", _HexaColor);
-			KGOLDDBHIFN().SetFloat("_Parameter", _AlphaHexa);
-			IONHGBPGCHK().SetFloat("_Offsets", _SpotSize);
-			KGOLDDBHIFN().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 354f, 873f));
+			IONHGBPGCHK().SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", Radius);
+			KGOLDDBHIFN().SetFloat("_BorderColor", _BorderSize);
+			NBPKMLMCHFN.SetColor("_Blue_C", _BorderColor);
+			KGOLDDBHIFN().SetColor("_Value2", _HexaColor);
+			NBPKMLMCHFN.SetFloat("_Bloom", _AlphaHexa);
+			NBPKMLMCHFN.SetFloat("_Offsets", _SpotSize);
+			IONHGBPGCHK().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 354f, 873f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -217,18 +217,18 @@ public class CameraFilterPack_AAA_SuperHexagon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1924f;
 			}
-			NBPKMLMCHFN.SetFloat("_Value", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("_Value", HBJJOCHGOPH);
 			KGOLDDBHIFN().SetFloat("LeaderboardsButton", HexaSize);
-			IONHGBPGCHK().SetFloat("Set Object Scale", center.x);
-			NBPKMLMCHFN.SetFloat("#FFFFFFFF", center.y);
-			IONHGBPGCHK().SetFloat("From {0} at Index {1} \n", Radius);
-			NBPKMLMCHFN.SetFloat("_Value2", _BorderSize);
-			KGOLDDBHIFN().SetColor("_Smooth", _BorderColor);
-			KGOLDDBHIFN().SetColor(" argument(s): ", _HexaColor);
-			IONHGBPGCHK().SetFloat("id", _AlphaHexa);
-			KGOLDDBHIFN().SetFloat("There are {0} reported logs.", _SpotSize);
-			IONHGBPGCHK().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1678f, 431f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			IONHGBPGCHK().SetFloat("SetScale", center.x);
+			NBPKMLMCHFN.SetFloat("Color's hex value #RRGGBBAA", center.y);
+			KGOLDDBHIFN().SetFloat("Source Object: ", Radius);
+			KGOLDDBHIFN().SetFloat("_Value2", _BorderSize);
+			IONHGBPGCHK().SetColor("_Dist", _BorderColor);
+			NBPKMLMCHFN.SetColor(" methods \"", _HexaColor);
+			KGOLDDBHIFN().SetFloat("id", _AlphaHexa);
+			IONHGBPGCHK().SetFloat(" - {0}", _SpotSize);
+			NBPKMLMCHFN.SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1678f, 431f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -261,18 +261,18 @@ public class CameraFilterPack_AAA_SuperHexagon : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1379f;
 			}
-			NBPKMLMCHFN.SetFloat("HPText", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("_Value5", HexaSize);
-			IONHGBPGCHK().SetFloat("}", center.x);
-			KGOLDDBHIFN().SetFloat("CameraFilterPack/Glow_Glow_Color", center.y);
-			NBPKMLMCHFN.SetFloat("_Params", Radius);
-			NBPKMLMCHFN.SetFloat("#scoresubmitionfailed: ", _BorderSize);
-			KGOLDDBHIFN().SetColor("[SteamManager] Connecting to server", _BorderColor);
-			KGOLDDBHIFN().SetColor("_MainTex2", _HexaColor);
-			KGOLDDBHIFN().SetFloat("Jan", _AlphaHexa);
-			IONHGBPGCHK().SetFloat("CameraFilterPack/Drawing_BluePrint", _SpotSize);
-			KGOLDDBHIFN().SetVector("cancel", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1801f, 1761f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
+			KGOLDDBHIFN().SetFloat("settings.showHP", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("_Value4", HexaSize);
+			IONHGBPGCHK().SetFloat(",", center.x);
+			NBPKMLMCHFN.SetFloat("_MainTex2", center.y);
+			NBPKMLMCHFN.SetFloat("_FarCorner", Radius);
+			KGOLDDBHIFN().SetFloat("request", _BorderSize);
+			KGOLDDBHIFN().SetColor("[Steamworks.NET] Could not load [lib]steam_api.dll/so/dylib. It's likely not in the correct location. Refer to the README for more details.\n", _BorderColor);
+			NBPKMLMCHFN.SetColor("_Amount", _HexaColor);
+			IONHGBPGCHK().SetFloat("yyyy", _AlphaHexa);
+			KGOLDDBHIFN().SetFloat("CameraFilterPack_Paper2", _SpotSize);
+			IONHGBPGCHK().SetVector(",viewkeys", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1801f, 1761f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{

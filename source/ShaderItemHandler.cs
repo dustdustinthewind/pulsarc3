@@ -13,204 +13,13 @@ public class ShaderItemHandler : MonoBehaviour
 
 	private bool KCFOBKNIELP;
 
-	private void KFACDBHDAOD()
+	private void AGMEELGLEEE()
 	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			CGJOIHHJLEL();
-		}
-	}
-
-	private void LBPCODPOJAH()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DABDHKLHECK();
-		}
-	}
-
-	private void GDJNNMGCGGK()
-	{
-		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("_ChannelMixerGreen" + InventoryItemType.Ticket.ToString().ToLower(), "Failed to Destroy objects of playerId: ");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
+		string @string = Singleton<SaveSystem>.Instance.GetString("DISTORT" + InventoryItemType.MenuTheme.ToString().ToLower(), "_Value7");
+		string id = Singleton<ItemsHandler>.Instance.LDJDALBAPEE(ulong.Parse(@string)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
-			GetComponent<InvertColors>().enabled = id == "title";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "Tab1Content";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Aimer Input Module is incompatible with the StandAloneInputSystem, please remove it from the Event System in this scene or disable it when this module is in use") && id == "_ScreenResolution";
-			if (id == "settings.gamemessagesduration")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1854f;
-			}
-			else if (id == "x")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 252f;
-			}
-			GetComponent<ColorCorrectionCurves>().MENIGCOFDFC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "3;4;9;10;21x6";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "mapselector.orderby";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == " x ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "[PlayerController] ";
-		}
-		if ((bool)GameObject.Find("_Value") && (bool)GameObject.Find("_Blend").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("_Value").GetComponentInChildren<Image>().enabled = id == "_TimeX";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void DNENFLNCIJP()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			LJLKKJEFFLK();
-		}
-	}
-
-	private void DDBOODLPCAM()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DLIGNKPKAOP();
-		}
-	}
-
-	public void HINJNBJFGHD()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			GCNNKEMKPGM();
-		}
-	}
-
-	public void PHIBAJAFNEO()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			LJLKKJEFFLK();
-		}
-	}
-
-	private void KBLLBKNNBGO()
-	{
-		string s = Singleton<SaveSystem>.Instance.CKJPNOHLJJO("_MaxRadiusOrKInPaper" + InventoryItemType.Shader.ToString().ToLower(), "Joystick1Button6");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "GlassAberration";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "CameraFilterPack/Drawing_Manga_Flash_Color";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "CameraFilterPack_Paper1") && id == "Could not execute RPC ";
-			if (id == "accuracy")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1856f;
-			}
-			else if (id == "CameraFilterPack/Blend2Camera_Luminosity")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 242f;
-			}
-			GetComponent<ColorCorrectionCurves>().UpdateParameters();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "#ok";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "menu.selectedplaymode";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_ScreenResolution";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_TimeX";
-		}
-		if ((bool)GameObject.Find(" canvas not found") && (bool)GameObject.Find("/").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("[").GetComponentInChildren<Image>().enabled = id == "{}";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void AAPKBNDHBLI()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			AGMEELGLEEE();
-		}
-	}
-
-	public void CKJCPBPMBFF()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			OOHLEMKHNKJ();
-		}
-	}
-
-	private void CGBHOELMAOC()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			LKBBGBBEJKP();
-		}
-	}
-
-	private void DLIGNKPKAOP()
-	{
-		string s = Singleton<SaveSystem>.Instance.LKOCCMCDDKG("_ScreenResolution" + ((InventoryItemType)8).ToString().ToLower(), "_FresnelFade");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "inventory.itemscash";
+			GetComponent<InvertColors>().enabled = id == "menu.playedpage";
 		}
 		if ((bool)GetComponent<LensAberrations>())
 		{
@@ -218,30 +27,273 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<Chunky>())
 		{
-			GetComponent<Chunky>().enabled = id == "LoadMapCanvas";
+			GetComponent<Chunky>().enabled = id == "AddEnvironmentObject";
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "EventSystem" || id == "JoinRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.";
-			if (id == "Save the map before exiting?")
+			GetComponent<ColorCorrectionCurves>().enabled = id == "\nCreated by Oxy949" || id == "_Vignetting2";
+			if (id == "settings_bindings_controller_type")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1966f;
+				GetComponent<ColorCorrectionCurves>().saturation = 976f;
 			}
-			else if (id == "Out {0,4} | In {1,4} | Sum {2,4}")
+			else if (id == "BitsData")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = down;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1087f;
+				GetComponent<ColorCorrectionCurves>().saturation = 131f;
 			}
-			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
+			GetComponent<ColorCorrectionCurves>().PIKAHEBPPCN();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "UnityEngine.MonoBehaviour";
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_Amount";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "[LobbyPlayerElement] Created lpe for ";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Offsets";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_Value5";
+		}
+		if ((bool)GameObject.Find("_PColor2") && (bool)GameObject.Find("#ok").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_FixDistance").GetComponentInChildren<Image>().enabled = id == "ticket";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	private void NEFPMLNOBJF()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH(" This is not possible to be called for standalone input. Please check your platform and code where this is called" + InventoryItemType.Shader.ToString().ToLower(), "Editor/");
+		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "[ResourcesManager] Load image error: ";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "_ScreenResolution";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = id == "_Axis" || id == "/../";
+			if (id == "ItemsCountText")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1513f;
+			}
+			else if (id == "PlayButton")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 557f;
+			}
+			GetComponent<ColorCorrectionCurves>().PIKAHEBPPCN();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == " should be overwritten.";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "Circle";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_PixelsPerMeterAtOneMeter";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "green";
+		}
+		if ((bool)GameObject.Find("FinalScoreSmallText") && (bool)GameObject.Find("_Value1").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("FinalScoreText").GetComponentInChildren<Image>().enabled = id == "_ScreenResolution";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	public void AEIMOFGABJG()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			JOMJICOMCEK();
+		}
+	}
+
+	public void Init()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			FHADLGLMIBG();
+		}
+	}
+
+	private void HNDNDPECBPL()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			JMFMKCDKGHK();
+		}
+	}
+
+	public void EKOAKKNGGGI()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			AAOIFFIKMMF();
+		}
+	}
+
+	private void BEPABLJNPOE()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("_Speed" + InventoryItemType.Other.ToString().ToLower(), "_TimeX");
+		string id = Singleton<ItemsHandler>.Instance.GDFGIJKLCBA(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "_LayerThickness";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = false;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "rd";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = id == "_Near" || id == "_Value3";
+			if (id == "_Far")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1346f;
+			}
+			else if (id == "Set particles gravity")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1079f;
+			}
+			GetComponent<ColorCorrectionCurves>().NNAGLFMBDMI();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "Hex value #RRGGBB";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "LowMid";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Value3";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == " not exist";
+		}
+		if ((bool)GameObject.Find("_Distance") && (bool)GameObject.Find(" ").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("z").GetComponentInChildren<Image>().enabled = id == "CameraFilterPack/TV_Vintage";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	public void ODFOEENHKCO()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			IJHMDODAGBC();
+		}
+	}
+
+	private void KMKLDAJLCNM()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			NEFPMLNOBJF();
+		}
+	}
+
+	public void NOMLFPFGFBI()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			GMOMHPDHJIG();
+		}
+	}
+
+	private void FOMNCPKKCFN()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			ECHNKPKOCEJ();
+		}
+	}
+
+	private void GDJNNMGCGGK()
+	{
+		string s = Singleton<SaveSystem>.Instance.KNOIENOFCIB("ws://" + InventoryItemType.Player.ToString().ToLower(), "Network destroy Instantiated GO: ");
+		string id = Singleton<ItemsHandler>.Instance.GDFGIJKLCBA(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == " ";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "[PlayerBase] Saveing checkpoint data";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "RestartButton") && id == "_Value4";
+			if (id == "https://reddit.com/r/Intralism")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 993f;
+			}
+			else if (id == ".sav")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 858f;
+			}
+			GetComponent<ColorCorrectionCurves>().UpdateParameters();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "#{0:X2}{1:X2}{2:X2}";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
 		{
@@ -249,29 +301,20 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "ticket";
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == ". Check if the server is available.";
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "ticket";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "UI Extensions/UIMultiply";
 		}
-		if ((bool)GameObject.Find("Protocol switch from: ") && (bool)GameObject.Find("B").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("The image effect ") && (bool)GameObject.Find("CameraFilterPack/FX_Hexagon").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("Hidden/Subpixel Morphological Anti-aliasing").GetComponentInChildren<Image>().enabled = id == "{0}{1}{2}";
+			GameObject.Find("Using constructor for new PingNativeDynamic()").GetComponentInChildren<Image>().enabled = id == "_OcclusionTexture";
 		}
 		KCFOBKNIELP = true;
 	}
 
-	public void LLAHPNGMEOO()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			CGJOIHHJLEL();
-		}
-	}
-
-	private void MDCFIHDPLIG()
+	private void Update()
 	{
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
@@ -279,80 +322,22 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 	}
 
-	public void JEFKEOFNKIM()
+	public void GINPIKEJGJD()
 	{
 		KCFOBKNIELP = true;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			DBONMCBDEPG();
+			JMFMKCDKGHK();
 		}
 	}
 
-	private void DABDHKLHECK()
+	private void ICHIEGLKMLJ()
 	{
-		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("?page=addtip" + ((InventoryItemType)6).ToString().ToLower(), "_Near");
-		string id = Singleton<ItemsHandler>.Instance.DNPHLBJMMEM(ulong.Parse(s)).item.id;
+		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("Bad parameters for getbool! Use <key> <value>" + InventoryItemType.Shader.ToString().ToLower(), "Failed to 'network-remove' GameObject because it's null.");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
-			GetComponent<InvertColors>().enabled = id == "[Right-Left]";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "Maps Editor v.";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "-showlogs") && id == "_Value2";
-			if (id == "mapselector.tags.")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 688f;
-			}
-			else if (id == " Server: ")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 334f;
-			}
-			GetComponent<ColorCorrectionCurves>().JDCODMMDPII();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "MenuScene";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == " item(s) in inventory";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Value2";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "settings.disablestoryboard";
-		}
-		if ((bool)GameObject.Find("OK") && (bool)GameObject.Find("inventory.itemscash").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("Tab2Content").GetComponentInChildren<Image>().enabled = id == "[LevelEditorScene] Error: You're not logged into Steam!";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void PLKGKBPAIOP()
-	{
-		string s = Singleton<SaveSystem>.Instance.CEDJCDAPIAH("{0}{1}:{2}" + InventoryItemType.Player.ToString().ToLower(), " from: ");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "Skipping region because it's not in PhotonServerSettings.EnabledRegions: ";
+			GetComponent<InvertColors>().enabled = id == " is not observed by this object's photonView! OnPhotonSerializeView() in this class won't be used.";
 		}
 		if ((bool)GetComponent<LensAberrations>())
 		{
@@ -360,64 +345,403 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<Chunky>())
 		{
-			GetComponent<Chunky>().enabled = id == "maps.";
+			GetComponent<Chunky>().enabled = id == " left";
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "RestartButton") && id == "_Value4";
-			if (id == "https://bugs.khb-soft.ru/set_project.php?project_id=1")
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Source: ") && id == "SetRotation";
+			if (id == "<b>#")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 993f;
+				GetComponent<ColorCorrectionCurves>().saturation = 372f;
 			}
-			else if (id == " does not exist!")
+			else if (id == "workshop.")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = down;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 858f;
+				GetComponent<ColorCorrectionCurves>().saturation = 1654f;
 			}
-			GetComponent<ColorCorrectionCurves>().MENIGCOFDFC();
+			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "R:";
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == ",0";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "Can't set Room.MaxPlayers to: ";
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "#reward: ";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "The server address is 127.0.0.1 (localhost): Make sure the server is running on this machine. Android and iOS emulators have their own localhost.";
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "OneHand";
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Default UI Material";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "<b>#banended</b>";
 		}
-		if ((bool)GameObject.Find("The shader ") && (bool)GameObject.Find("_TimeX").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("settings.shaders.bloomintencity") && (bool)GameObject.Find("_Value2").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("wss://").GetComponentInChildren<Image>().enabled = id == "_BlurVector";
+			GameObject.Find("/icon").GetComponentInChildren<Image>().enabled = id == "GlassDistortion";
 		}
 		KCFOBKNIELP = true;
 	}
 
-	public void HBKEHHCMMBN()
+	private void GMELGGJOPBB()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			BEPABLJNPOE();
+		}
+	}
+
+	private void JOMJICOMCEK()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("_TimeX" + ((InventoryItemType)6).ToString().ToLower(), "_FixDistance");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "settings.customdataskin";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "_Value1";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == ",viewkeys") && id == "CameraFilterPack/BlurHole";
+			if (id == "LeaderboardsButton")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 499f;
+			}
+			else if (id == ".icon")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 107f;
+			}
+			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "BadgeText";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "<b>";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "[PlayerController] ";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == ".png";
+		}
+		if ((bool)GameObject.Find("_ScreenResolution") && (bool)GameObject.Find("event").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("Print the list of scenes, avalable in game.").GetComponentInChildren<Image>().enabled = id == "Vignette";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	private void HLDFOJMHKNL()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			NDELGDNBJJM();
+		}
+	}
+
+	private void JHPOIOELNCG()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			CMHJMGBCFKG();
+		}
+	}
+
+	private void IEMEHGCFAPD()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			ECOKPFOMLMC();
+		}
+	}
+
+	private void MDACKFPPNAE()
+	{
+		string s = Singleton<SaveSystem>.Instance.KNOIENOFCIB("/" + ((InventoryItemType)8).ToString().ToLower(), "_Gamma");
+		string id = Singleton<ItemsHandler>.Instance.LDJDALBAPEE(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == ":";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == " Server: ";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "SUCCESS! Item submitted! :D :D :D") && id == "#TBD";
+			if (id == "_Value4")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1413f;
+			}
+			else if (id == "inventory.selected.")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1944f;
+			}
+			GetComponent<ColorCorrectionCurves>().IBJHOKDDNBL();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "Items/";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_Value5";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "DestroyRpc";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "[PlayerBase] New highscore";
+		}
+		if ((bool)GameObject.Find("_Parasite") && (bool)GameObject.Find(" is set to dontSave = true, continuing loop.").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_MainTex2").GetComponentInChildren<Image>().enabled = id == "note.7";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	public void ALGKENJGNLL()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			NDELGDNBJJM();
+		}
+	}
+
+	private void MECJHOJPODB()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			PKDDPFLCAHI();
+		}
+	}
+
+	private void AAOIFFIKMMF()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("," + InventoryItemType.MenuTheme.ToString().ToLower(), "Set satellite MinVertexDistance - how much distance should be between to points of the trail line");
+		string id = Singleton<ItemsHandler>.Instance.LDJDALBAPEE(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "Use ticket: ";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "Overlay";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "_ScreenResolution") && id == "menu.selectedmode";
+			if (id == "Save the map before exiting?")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1650f;
+			}
+			else if (id == "_Speed")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 11f;
+			}
+			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "HiddenToggle";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_Extra2";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Bloom1";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Bad SegmentType passed in to CreateLineCap. Must be SegmentType.Start or SegmentType.End";
+		}
+		if ((bool)GameObject.Find("ConnectionTimeout") && (bool)GameObject.Find("FileMenu").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("checkpoint").GetComponentInChildren<Image>().enabled = id == "ScoreText";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	private void POIOPIDDNJH()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("PS Home" + InventoryItemType.Other.ToString().ToLower(), "\"\"");
+		string id = Singleton<ItemsHandler>.Instance.GDFGIJKLCBA(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "QuickSave";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = false;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == " != ";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Change Note:") && id == "health";
+			if (id == " not exist")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 837f;
+			}
+			else if (id == "_TimeX")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 350f;
+			}
+			GetComponent<ColorCorrectionCurves>().ELFFJGJKDBG();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == ":";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_Value";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "RecieveChatActionMessage";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Couldn't color correct with 3D LUT texture. Image Effect will be disabled.";
+		}
+		if ((bool)GameObject.Find("Mouse2") && (bool)GameObject.Find("settings_bindings_").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_Value2").GetComponentInChildren<Image>().enabled = id == "init";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	private void GPNAJHDFIFF()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH(".lastCheckpoint.isMapCompleted" + InventoryItemType.MenuTheme.ToString().ToLower(), "_TimeX");
+		string id = Singleton<ItemsHandler>.Instance.GDFGIJKLCBA(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "_ScreenResolution";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "InventoryButton";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "_Value2") && id == "76561198041679481";
+			if (id == "Multiplayer")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 699f;
+			}
+			else if (id == "_Value")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 868f;
+			}
+			GetComponent<ColorCorrectionCurves>().ELFFJGJKDBG();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "LoadingStatusText";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "GridDataStoryboard";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "event";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_AlphaHexa";
+		}
+		if ((bool)GameObject.Find("th") && (bool)GameObject.Find("Error: I/O Failure! :(").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_TimeX").GetComponentInChildren<Image>().enabled = id == "_Green_R";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	public void OCHADIJNDJK()
 	{
 		KCFOBKNIELP = true;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			MOABIEIPGHN();
+			GDJNNMGCGGK();
 		}
 	}
 
-	private void IDIIELPAMCJ()
+	private void BMODOIJGIOO()
 	{
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			KIBEDOCDGCG();
+			LKBBGBBEJKP();
 		}
 	}
 
@@ -479,1293 +803,10 @@ public class ShaderItemHandler : MonoBehaviour
 		KCFOBKNIELP = true;
 	}
 
-	public void GAJEPOEIOPP()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			PKOINEADGNA();
-		}
-	}
-
-	public void EFEONCCCKNP()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			PKOINEADGNA();
-		}
-	}
-
-	public void EHGHEEJNPIN()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			BEPABLJNPOE();
-		}
-	}
-
-	private void BEPABLJNPOE()
-	{
-		string @string = Singleton<SaveSystem>.Instance.GetString("CameraFilterPack/Atmosphere_Rain_Pro" + InventoryItemType.Other.ToString().ToLower(), "shader.frost");
-		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(@string)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == ".";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == ". Verify the Prefab is in a Resources folder (and not in a subfolder)";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "_Value2" || id == "/";
-			if (id == ": ")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 762f;
-			}
-			else if (id == "(http|https)://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?\\.(jpg|jpeg|gif|png)")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 15f;
-			}
-			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "{0}";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "finished";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_TimeX";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "CameraFilterPack_Broken_Screen1";
-		}
-		if ((bool)GameObject.Find("Middle Click") && (bool)GameObject.Find("BadgeText").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("_Amount").GetComponentInChildren<Image>().enabled = id == "id";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	public void JJFLHFCBENC()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			BEPABLJNPOE();
-		}
-	}
-
-	public void CPJHNDOBFOD()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			LKBBGBBEJKP();
-		}
-	}
-
-	private void NCPAFCKGJEA()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			GCNNKEMKPGM();
-		}
-	}
-
-	private void MDACKFPPNAE()
-	{
-		string s = Singleton<SaveSystem>.Instance.LKOCCMCDDKG("Texture2" + InventoryItemType.Other.ToString().ToLower(), "settings.volume.sfx");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "/icon";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "_Vibrance";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Please specify either t or f.") && id == "Set Particle Size";
-			if (id == "Item created: Id: ")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1540f;
-			}
-			else if (id == "_TimeX")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 91f;
-			}
-			GetComponent<ColorCorrectionCurves>().JDCODMMDPII();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "value";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "inventory.selected.";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "BloomShaderValueSlider";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "/config";
-		}
-		if ((bool)GameObject.Find("_Value5") && (bool)GameObject.Find("Instantiating: ").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("[PlayerBase] New highscore").GetComponentInChildren<Image>().enabled = id == "Fade";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void Update()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			FHADLGLMIBG();
-		}
-	}
-
-	public void LHIEKHPLMFI()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			PNLBMKHFPEA();
-		}
-	}
-
-	private void OOHLEMKHNKJ()
-	{
-		string @string = Singleton<SaveSystem>.Instance.GetString("[Left]" + InventoryItemType.MenuTheme.ToString().ToLower(), "Set satellite MinVertexDistance - how much distance should be between to points of the trail line");
-		string id = Singleton<ItemsHandler>.Instance.DNPHLBJMMEM(ulong.Parse(@string)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "steamid";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "Scrollbar";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "_TimeX") && id == "https://store.steampowered.com/recommended/recommendgame/";
-			if (id == "YES")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1650f;
-			}
-			else if (id == "_ScreenResolution")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 11f;
-			}
-			GetComponent<ColorCorrectionCurves>().UpdateParameters();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "Tab2Content";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "The given 2D texture ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Bloom2";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ";
-		}
-		if ((bool)GameObject.Find("No Camera attached!") && (bool)GameObject.Find("FileMenu").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("BitsData").GetComponentInChildren<Image>().enabled = id == "#score";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	public void JHCJHPNAPDI()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			CGJOIHHJLEL();
-		}
-	}
-
-	private void DEBPOMCFBJO()
-	{
-		string s = Singleton<SaveSystem>.Instance.LKOCCMCDDKG("Waiting to start" + ((InventoryItemType)7).ToString().ToLower(), "value");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "bloomintencity:";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "Start Color's hex value #RRGGBBAA";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "_Value" || id == "_Green_B";
-			if (id == "RequestForPickupItems")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 780f;
-			}
-			else if (id == "health")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1218f;
-			}
-			GetComponent<ColorCorrectionCurves>().IKKLJLDADAK();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "z";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_BlurCoe";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Items/";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_MainTex2";
-		}
-		if ((bool)GameObject.Find("Jump") && (bool)GameObject.Find("Joystick1Button2").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("_MainTex2").GetComponentInChildren<Image>().enabled = id == "_ScreenResolution";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	public void IFGOHEOEGKH()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			GDJNNMGCGGK();
-		}
-	}
-
-	private void KIBEDOCDGCG()
-	{
-		string s = Singleton<SaveSystem>.Instance.CKJPNOHLJJO("X" + InventoryItemType.Other.ToString().ToLower(), "(((?<x>(?=[,\\r\\n]+))|\"(?<x>([^\"]|\"\")+)\"|(?<x>[^,\\r\\n]+)),?)");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "OnDeserialize";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Change Note:") && id == "{0}sec average:";
-			if (id == ") error: ")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 837f;
-			}
-			else if (id == "_Amount")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 350f;
-			}
-			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == " Message: ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_Value";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "RecieveChatActionMessage";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_Offset";
-		}
-		if ((bool)GameObject.Find("Mouse") && (bool)GameObject.Find("settings_bindings_sec_").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("_Value2").GetComponentInChildren<Image>().enabled = id == "Bad parameters for init! Use \"init\" or \"init <savename>\"";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	public void CDDHLFNJOGC()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DEPPOJEPCJC();
-		}
-	}
-
-	public void PFMJPIJONIP()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			FHCANIGKFLD();
-		}
-	}
-
-	public void Init()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			FHADLGLMIBG();
-		}
-	}
-
-	private void GCNNKEMKPGM()
-	{
-		string s = Singleton<SaveSystem>.Instance.LKOCCMCDDKG("SpawnObj" + InventoryItemType.Player.ToString().ToLower(), "CameraFilterPack/Color_BrightContrastSaturation");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "CameraFilterPack/Blur_Blurry";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == " or player:";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "ItemNameText" || id == "_ScreenResolution";
-			if (id == "_ColorRGB")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 551f;
-			}
-			else if (id == "_FixDistance")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1813f;
-			}
-			GetComponent<ColorCorrectionCurves>().ANDGHMDPICK();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_MainTex2";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "NEW";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_ProjInfo";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Result for ";
-		}
-		if ((bool)GameObject.Find("Editor/") && (bool)GameObject.Find(".lastCheckpoint.bgcolor").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("Ownership mode == fixed. Ignoring request.").GetComponentInChildren<Image>().enabled = id == "#forever";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void KDJEJBBDILE()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DBONMCBDEPG();
-		}
-	}
-
-	private void COGBDFKOHKK()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			NDACFLFLANE();
-		}
-	}
-
-	private void DKLJCAINIDG()
-	{
-		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA(".icon" + ((InventoryItemType)8).ToString().ToLower(), "mapid");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "...";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "[MapsData] User's maps was loaded";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Parent object ID. Case-Sensitive") && id == "Most likely the game became empty during the switch to GameServer.";
-			if (id == "_BlurVector")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 119f;
-			}
-			else if (id == "Texture2")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 935f;
-			}
-			GetComponent<ColorCorrectionCurves>().ANDGHMDPICK();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "PhotonNetwork.room is null. You don't have to call LeaveRoom() when you're not in one. State: ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "\t";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Value4";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "settings.volume.menu";
-		}
-		if ((bool)GameObject.Find("_DistortionWave") && (bool)GameObject.Find("0. SubBase 20-60 Hz\n1. Bass, 60-250 Hz\n2. LowMidrange 250-500 Hz\n3. Midrange 500-2,000 Hz\n4. UpperMidrange 2,000-4,000 Hz\n5. High 4,000-6000 Hz\n6. VeryHigh 6,000-20,000 Hz\n7. Decibal - use output data instead of frequency data").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("shader.future").GetComponentInChildren<Image>().enabled = id == "Sep";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void ONJOOAAILAJ()
-	{
-		string s = Singleton<SaveSystem>.Instance.JLBFLBAHGIP("warning: Audio Source: " + ((InventoryItemType)7).ToString().ToLower(), "CameraFilterPack/Vision_AuraDistortion");
-		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "float,10";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "_DistortionSize";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Joystick1Button2") && id == "Set sun min/max size";
-			if (id == "_Visualize")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1623f;
-			}
-			else if (id == "true")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 288f;
-			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "z";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "Outgoing: \n";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "blue";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "#done";
-		}
-		if ((bool)GameObject.Find("UseFinalGlassColor") && (bool)GameObject.Find("<b>#").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("skins").GetComponentInChildren<Image>().enabled = id == "false";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void OCMKCBBCEFG()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			ABBNNMHMLOI();
-		}
-	}
-
-	private void JOMJICOMCEK()
-	{
-		string s = Singleton<SaveSystem>.Instance.FDPKMMIOGOE("_ScreenResolution" + ((InventoryItemType)7).ToString().ToLower(), "<b>");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "_Value4";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "_Value3";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "float,0") && id == "_TimeX";
-			if (id == "_Distortion")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1235f;
-			}
-			else if (id == "_Threshhold")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 401f;
-			}
-			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "SpawnObj";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "RT";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Fade";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "action";
-		}
-		if ((bool)GameObject.Find("_ScreenResolution") && (bool)GameObject.Find("Gameplay/sprite").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("_ForegroundBlurExtrude").GetComponentInChildren<Image>().enabled = id == " ";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void ANKIJGCGCBF()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DBONMCBDEPG();
-		}
-	}
-
-	private void FJHFOBHJEHL()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			LAGGOOCMLBJ();
-		}
-	}
-
-	private void OPCLBGHAPMG()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			JOMJICOMCEK();
-		}
-	}
-
-	private void FHCANIGKFLD()
-	{
-		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("[PlayerController] " + InventoryItemType.MenuTheme.ToString().ToLower(), "id");
-		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "CameraFilterPack/Blend2Camera_BlueScreen";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "RestartButton";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "_Wavy" || id == "EventMenu";
-			if (id == "_ScreenResolution")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1633f;
-			}
-			else if (id == "Case-Sensitive")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1914f;
-			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "CameraFilterPack/Blur_Steam";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "setint";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Most likely the game became empty during the switch to GameServer.";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_ScreenResolution";
-		}
-		if ((bool)GameObject.Find("Set Sun MinSize") && (bool)GameObject.Find("SpeedSlider").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("player.goldlollipop").GetComponentInChildren<Image>().enabled = id == "request";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void JMFMKCDKGHK()
-	{
-		string s = Singleton<SaveSystem>.Instance.CKJPNOHLJJO("_Blue_G" + ((InventoryItemType)6).ToString().ToLower(), "ShineEffect");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "Protocol switch from: ";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == ".completedMaps";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "_Value5") && id == "/icon";
-			if (id == "_Value2")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 975f;
-			}
-			else if (id == "Ignored PU RPC, cause item is inactive. ")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1668f;
-			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "ShadersToggle";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "LevelConfigButton";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == ".highscore";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_Brightness";
-		}
-		if ((bool)GameObject.Find("_Value") && (bool)GameObject.Find("CameraFilterPack/Blur_Steam").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("workshop.").GetComponentInChildren<Image>().enabled = id == "shader.future";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void GLLNAELOMBK()
-	{
-		string s = Singleton<SaveSystem>.Instance.FDPKMMIOGOE("_Value3" + InventoryItemType.MenuTheme.ToString().ToLower(), "<b>#");
-		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "settings.shaders.bloomintencity";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "_MaxRadiusOrKInPaper";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == " ") && id == "Lag ";
-			if (id == "_CenterX")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1013f;
-			}
-			else if (id == "UpperMid")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1392f;
-			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "Editor/";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "#tryagain";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Turn";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "#{0:00} '{1}'{2} {3}";
-		}
-		if ((bool)GameObject.Find("[PlayerController] ") && (bool)GameObject.Find("_TexelOffsetScale").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("CameraFilterPack/Blend2Camera_Overlay").GetComponentInChildren<Image>().enabled = id == "seconds";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	public void MIAIEKCLEAO()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DLIGNKPKAOP();
-		}
-	}
-
-	private void OBAEDJJDCPN()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			LAGGOOCMLBJ();
-		}
-	}
-
-	private void KCDBBPKIFNJ()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			FHCANIGKFLD();
-		}
-	}
-
-	private void IKIDIJLIGOH()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			CGJOIHHJLEL();
-		}
-	}
-
-	private void KMEONPMCNJG()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			MDACKFPPNAE();
-		}
-	}
-
-	private void LLDHEJIEDHO()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			AGMEELGLEEE();
-		}
-	}
-
-	public void LKEPIEEIMAE()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			MDACKFPPNAE();
-		}
-	}
-
-	public void GINPIKEJGJD()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			ONJOOAAILAJ();
-		}
-	}
-
-	private void NDACFLFLANE()
-	{
-		string s = Singleton<SaveSystem>.Instance.CKJPNOHLJJO("mapselector.tags." + InventoryItemType.Shader.ToString().ToLower(), ":");
-		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == ".status";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "_Size";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "_ScreenResolution" || id == "Creating awesome map";
-			if (id == "BitsData")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 20f;
-			}
-			else if (id == "[NetworkManager] Found ")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1006f;
-			}
-			GetComponent<ColorCorrectionCurves>().IKKLJLDADAK();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "[MapsStats] Map ID: ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_Level";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Working commands:\nreset <challengeid>\nresetall";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "https://steamcommunity.com/sharedfiles/filedetails/?id=";
-		}
-		if ((bool)GameObject.Find("player.licenceaccepted") && (bool)GameObject.Find("\\\\").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("GlassAberration").GetComponentInChildren<Image>().enabled = id == "CameraFilterPack_VHS2";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void LKBBGBBEJKP()
-	{
-		string s = Singleton<SaveSystem>.Instance.JLBFLBAHGIP("Result for " + InventoryItemType.Shader.ToString().ToLower(), "Failed to 'network-remove' GameObject. Client is neither owner nor masterClient taking over for owner who left: ");
-		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "PunSupportLogger";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "RecieveChatMessage";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Source: ") && id == "SetRotation";
-			if (id == "/files/editor_manual.pdf")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 372f;
-			}
-			else if (id == "/")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1654f;
-			}
-			GetComponent<ColorCorrectionCurves>().IKKLJLDADAK();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "[Up]";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "#finished";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "TwoHands";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "#ok";
-		}
-		if ((bool)GameObject.Find("cameramovements:") && (bool)GameObject.Find("_Value2").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("icon").GetComponentInChildren<Image>().enabled = id == "GlassAberration";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void CGJOIHHJLEL()
-	{
-		string s = Singleton<SaveSystem>.Instance.CKJPNOHLJJO(".a" + ((InventoryItemType)7).ToString().ToLower(), "_Glitch");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "menutheme.summerbreeze";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "_TimeX";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "_TimeX") && id == "[LevelEditorScene] Error: Timeout :S";
-			if (id == "_Distortion")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1576f;
-			}
-			else if (id == "default")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 917f;
-			}
-			GetComponent<ColorCorrectionCurves>().IKKLJLDADAK();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_FinalReflectionTexture";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "[PlayerBase] Unknown event: ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "player.dragon";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "false";
-		}
-		if ((bool)GameObject.Find("_Near") && (bool)GameObject.Find("#scoresubmitionfailed: ").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("maps.").GetComponentInChildren<Image>().enabled = id == "shader.future";
-		}
-		KCFOBKNIELP = true;
-	}
-
 	private void PKOINEADGNA()
 	{
-		string s = Singleton<SaveSystem>.Instance.LKOCCMCDDKG("_DistCenterScale" + InventoryItemType.MenuTheme.ToString().ToLower(), "_Value7");
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("In Network lobby" + InventoryItemType.Shader.ToString().ToLower(), "_FixDistance");
 		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "menu.playedpage";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "SetRotation";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "\nCreated by Oxy949" || id == "_VignettingColor";
-			if (id == "settings_bindings_")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 976f;
-			}
-			else if (id == "BitsData")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 131f;
-			}
-			GetComponent<ColorCorrectionCurves>().JDCODMMDPII();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_Amount";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "[LobbyPlayerElement] Created lpe for ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "pointBuffer";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_Value6";
-		}
-		if ((bool)GameObject.Find("_MainTex2") && (bool)GameObject.Find("Editor").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("_FixDistance").GetComponentInChildren<Image>().enabled = id == "IntraSig";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void JMCFOJNCCLJ()
-	{
-		string @string = Singleton<SaveSystem>.Instance.GetString("GameScene" + ((InventoryItemType)8).ToString().ToLower(), "_XCrop");
-		string id = Singleton<ItemsHandler>.Instance.DNPHLBJMMEM(ulong.Parse(@string)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "<b>#";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "player.ice";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "ShadersToggle") && id == "CameraFilterPack/Drawing_Manga5";
-			if (id == " TimeOfRespawn: ")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 660f;
-			}
-			else if (id == "CameraFilterPack/TV_LED")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 701f;
-			}
-			GetComponent<ColorCorrectionCurves>().MENIGCOFDFC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "EnableRankingToggle";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "ScrollPanel";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_CenterY";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "#tryagain";
-		}
-		if ((bool)GameObject.Find("_TimeX") && (bool)GameObject.Find("_MainTex").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("x").GetComponentInChildren<Image>().enabled = id == "_SizeX";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void PNLBMKHFPEA()
-	{
-		string s = Singleton<SaveSystem>.Instance.FDPKMMIOGOE("yyyy-MM-dd HH:mm:ss" + InventoryItemType.Other.ToString().ToLower(), "There is already a virtual axis named ");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "Source directory does not exist or could not be found: ";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "PenaltyScoreText";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "[PlayerController] ") && id == "LoadMapCanvas";
-			if (id == "LB")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 571f;
-			}
-			else if (id == ".a")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1482f;
-			}
-			GetComponent<ColorCorrectionCurves>().ANDGHMDPICK();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_ScreenResolution";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "CameraFilterPack/3D_Distortion";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "EventSystem";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == ".lastCheckpoint.incorrectScore";
-		}
-		if ((bool)GameObject.Find("_TimeX") && (bool)GameObject.Find("88f00bdf0ad61b16b803971ebe071962").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("BitsData").GetComponentInChildren<Image>().enabled = id == "Unknown player asked for PickupItems";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	public void CPFOEFKOJGA()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DABDHKLHECK();
-		}
-	}
-
-	private void LAGGOOCMLBJ()
-	{
-		string s = Singleton<SaveSystem>.Instance.FDPKMMIOGOE("Waiting to start" + InventoryItemType.Shader.ToString().ToLower(), "_FixDistance");
-		string id = Singleton<ItemsHandler>.Instance.DNPHLBJMMEM(ulong.Parse(s)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
 			GetComponent<InvertColors>().enabled = id == "BitsData";
@@ -1780,8 +821,8 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "_Value2" || id == "/";
-			if (id == "_Value4")
+			GetComponent<ColorCorrectionCurves>().enabled = id == "_Value2" || id == " ";
+			if (id == "_Value3")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
@@ -1795,129 +836,47 @@ public class ShaderItemHandler : MonoBehaviour
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
 				GetComponent<ColorCorrectionCurves>().saturation = 594f;
 			}
-			GetComponent<ColorCorrectionCurves>().JDCODMMDPII();
+			GetComponent<ColorCorrectionCurves>().NNAGLFMBDMI();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "\nCreated by Oxy949";
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "/files/editor_manual.pdf";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "{0:x2}";
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "[SteamManager] Connecting to server";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Despawn environment object by id";
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Case-Sensitive";
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "SpawnObj";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == ".lastCheckpoint.bgcolor";
 		}
-		if ((bool)GameObject.Find("_Distance") && (bool)GameObject.Find("_TimeX").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("_Distance") && (bool)GameObject.Find("CameraFilterPack/TV_Posterize").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("mapselector.lastSearch").GetComponentInChildren<Image>().enabled = id == "settings.volume.menu";
+			GameObject.Find("PopulateMapsList").GetComponentInChildren<Image>().enabled = id == "Scene";
 		}
 		KCFOBKNIELP = true;
 	}
 
-	public void ALKBNPMCEOM()
+	public void PIEPPKMBJHI()
 	{
 		KCFOBKNIELP = false;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			GLLNAELOMBK();
+			AAOIFFIKMMF();
 		}
 	}
 
-	private void FOLDLDLFFLM()
+	private void IJHMDODAGBC()
 	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			NDACFLFLANE();
-		}
-	}
-
-	private void HIKKPDACJGI()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			KIBEDOCDGCG();
-		}
-	}
-
-	private void FGNFILLNPJK()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DLIGNKPKAOP();
-		}
-	}
-
-	private void NKMAIAJDLHB()
-	{
-		string s = Singleton<SaveSystem>.Instance.FDPKMMIOGOE("RestartButton" + InventoryItemType.Other.ToString().ToLower(), "checkpoint");
-		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
+		string @string = Singleton<SaveSystem>.Instance.GetString("Tab2Content" + InventoryItemType.Ticket.ToString().ToLower(), ". Using max value: 255.");
+		string id = Singleton<ItemsHandler>.Instance.GDFGIJKLCBA(ulong.Parse(@string)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
-			GetComponent<InvertColors>().enabled = id == ";";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "MapEditorScene";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "blue" || id == "SetParticlesColor";
-			if (id == "Editor/")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1987f;
-			}
-			else if (id == "Down")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1290f;
-			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "HandsCountSlider";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "LostLive";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Item invalid. Make sure your mod contains at leats one file.";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "907198288";
-		}
-		if ((bool)GameObject.Find("_Distortion") && (bool)GameObject.Find("MusicFileSelector").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("CameraFilterPack_Blizzard1").GetComponentInChildren<Image>().enabled = id == "SAVE";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void DBONMCBDEPG()
-	{
-		string s = Singleton<SaveSystem>.Instance.FDPKMMIOGOE("_TimeX" + ((InventoryItemType)6).ToString().ToLower(), "_Visualize");
-		string id = Singleton<ItemsHandler>.Instance.DNPHLBJMMEM(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == " url: ";
+			GetComponent<InvertColors>().enabled = id == "EventTimeInputField";
 		}
 		if ((bool)GetComponent<LensAberrations>())
 		{
@@ -1925,57 +884,140 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<Chunky>())
 		{
-			GetComponent<Chunky>().enabled = id == "IconImage";
+			GetComponent<Chunky>().enabled = id == "skin.";
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "[ResourcesManager] Unloading data resources") && id == "CameraFilterPack/BlurHole";
-			if (id == "LeaderboardsButton")
+			GetComponent<ColorCorrectionCurves>().enabled = id == "Gameplay/Base" || id == "_Value";
+			if (id == "#loopnumber ")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 499f;
+				GetComponent<ColorCorrectionCurves>().saturation = 192f;
 			}
-			else if (id == ".GoalProgress")
+			else if (id == "CameraFilterPack/Blend2Camera_Subtract")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = down;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 107f;
+				GetComponent<ColorCorrectionCurves>().saturation = 1190f;
 			}
-			GetComponent<ColorCorrectionCurves>().IKKLJLDADAK();
+			GetComponent<ColorCorrectionCurves>().IBJHOKDDNBL();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == ".played";
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_Value";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "<b>";
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "CameraFilterPack/Drawing_BluePrint";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == ": ";
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "MusicFileSelector";
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == ").png";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Maps Editor v.";
 		}
-		if ((bool)GameObject.Find("_ScreenResolution") && (bool)GameObject.Find("event").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("key") && (bool)GameObject.Find("ConfigVersionSlider").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("loadscene").GetComponentInChildren<Image>().enabled = id == "_Vignetting";
+			GameObject.Find(" [").GetComponentInChildren<Image>().enabled = id == "_ScreenResolution";
 		}
 		KCFOBKNIELP = false;
 	}
 
+	public void LBICLFNOLAK()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			NEFPMLNOBJF();
+		}
+	}
+
+	private void LCHBFNIPBHB()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			KBLLBKNNBGO();
+		}
+	}
+
 	private void PKDDPFLCAHI()
 	{
-		string s = Singleton<SaveSystem>.Instance.CKJPNOHLJJO("Lag " + ((InventoryItemType)6).ToString().ToLower(), "_Value");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
+		string s = Singleton<SaveSystem>.Instance.KNOIENOFCIB("_ToPrevViewProjCombined" + InventoryItemType.Shader.ToString().ToLower(), "R1");
+		string id = Singleton<ItemsHandler>.Instance.IKNFGEBCENH(ulong.Parse(s)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
-			GetComponent<InvertColors>().enabled = id == "UI Extensions/UILinearDodge";
+			GetComponent<InvertColors>().enabled = id == "GlassDistortion";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "_ScreenResolution";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "_ScreenResolution") && id == "Error; Only the MasterClient can call RemoveRPCs for other players.";
+			if (id == "maphash")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1856f;
+			}
+			else if (id == "CameraFilterPack/Blend2Camera_Luminosity")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 242f;
+			}
+			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "[LevelEditorScene] Map submitted!";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "menu.selectedplaymode";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Value2";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "CameraFilterPack/FX_Drunk2";
+		}
+		if ((bool)GameObject.Find(" canvas not found") && (bool)GameObject.Find("[MapEditor] Updating top menu").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("\n").GetComponentInChildren<Image>().enabled = id == "/";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	private void NFEDLAOPHML()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			LJLKKJEFFLK();
+		}
+	}
+
+	private void JMFMKCDKGHK()
+	{
+		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("skin." + ((InventoryItemType)8).ToString().ToLower(), "ticket");
+		string id = Singleton<ItemsHandler>.Instance.GDFGIJKLCBA(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "...";
 		}
 		if ((bool)GetComponent<LensAberrations>())
 		{
@@ -1983,12 +1025,996 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<Chunky>())
 		{
-			GetComponent<Chunky>().enabled = id == "ResourceIDInputField";
+			GetComponent<Chunky>().enabled = id == "/";
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "#changenote") && id == "FullscreenToggle";
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Parent object ID. Case-Sensitive") && id == "Most likely the game became empty during the switch to GameServer.";
+			if (id == "_OcclusionBlurTexture")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 119f;
+			}
+			else if (id == "_ScreenResolution")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 935f;
+			}
+			GetComponent<ColorCorrectionCurves>().ELFFJGJKDBG();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "ReJoinRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "\n";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Value3";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "settings.volume.game";
+		}
+		if ((bool)GameObject.Find("_Distortion") && (bool)GameObject.Find("input").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("shader.future").GetComponentInChildren<Image>().enabled = id == "Jul";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	public void LCGMHCBNCDM()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			GAFPJCJIONB();
+		}
+	}
+
+	private void PIFCELNDGPM()
+	{
+		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("_HSV" + InventoryItemType.Ticket.ToString().ToLower(), "]. Please verify you have this gameobject in a Resources folder.");
+		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "Show Title";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "Tab1Content";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == ",") && id == "_Size";
+			if (id == "settings.crosshairopacity")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1854f;
+			}
+			else if (id == "x")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 252f;
+			}
+			GetComponent<ColorCorrectionCurves>().IBJHOKDDNBL();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "[ItemsHandler] Found ";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "mapselector.filter.subscribedonly";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Value";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "SpawnObj";
+		}
+		if ((bool)GameObject.Find("_TimeX") && (bool)GameObject.Find(" cannot be used as a 3D LUT.").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_TimeX").GetComponentInChildren<Image>().enabled = id == "CameraFilterPack/FX_Ascii";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	public void KOKDPAEJECC()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			FHADLGLMIBG();
+		}
+	}
+
+	public void PMAGMPCMGPB()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			ECHNKPKOCEJ();
+		}
+	}
+
+	private void JDGFCEPDKAJ()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			DEPPOJEPCJC();
+		}
+	}
+
+	public void PFMJPIJONIP()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			ICHIEGLKMLJ();
+		}
+	}
+
+	private void COGBDFKOHKK()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			GPNAJHDFIFF();
+		}
+	}
+
+	private void MDCFIHDPLIG()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			KBLLBKNNBGO();
+		}
+	}
+
+	private void LKBBGBBEJKP()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("CameraFilterPack/Atmosphere_Rain_Pro" + InventoryItemType.Other.ToString().ToLower(), "shader.crispwinter");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "_EmissionColor";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = false;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "Failed to Instantiate prefab: ";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = id == "_Value" || id == "menu.tabid";
+			if (id == "[PlayerController] ")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 762f;
+			}
+			else if (id == "(http|https)://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?\\.(jpg|jpeg|gif|png)")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 15f;
+			}
+			GetComponent<ColorCorrectionCurves>().IBJHOKDDNBL();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "{0:0}";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "finished";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_TimeX";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "CameraFilterPack_Broken_Screen1";
+		}
+		if ((bool)GameObject.Find("Mouse2") && (bool)GameObject.Find("NEW").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_Amount").GetComponentInChildren<Image>().enabled = id == "Set EnvSprite Image";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	public void FECMEIJGLJI()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			KBLLBKNNBGO();
+		}
+	}
+
+	private void OPCLBGHAPMG()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			BEPABLJNPOE();
+		}
+	}
+
+	private void KBDFEKCBFOP()
+	{
+		string @string = Singleton<SaveSystem>.Instance.GetString(" not exist" + InventoryItemType.MenuTheme.ToString().ToLower(), "Set Particles Emission");
+		string id = Singleton<ItemsHandler>.Instance.LDJDALBAPEE(ulong.Parse(@string)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "CameraFilterPack/Blend2Camera_BlueScreen";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "RestartButton";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = id == "_DistortionWave" || id == "EventMenu";
+			if (id == "_ScreenResolution")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1633f;
+			}
+			else if (id == "id")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1914f;
+			}
+			GetComponent<ColorCorrectionCurves>().ELFFJGJKDBG();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_ScreenResolution";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "setint";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "It seems some instantiation is not completed, as instantiation data is used. You should make sure instantiations are paused when calling this method. Cleaning now, despite this.";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_ScreenResolution";
+		}
+		if ((bool)GameObject.Find("SetSunMinSize") && (bool)GameObject.Find("Tab2Content").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("player.greenlollipop").GetComponentInChildren<Image>().enabled = id == "steamid";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	private void EHJJFJCKGAJ()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			GPNAJHDFIFF();
+		}
+	}
+
+	public void PAFMNAIDAFH()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			BEPABLJNPOE();
+		}
+	}
+
+	private void LDDKCCMHMIC()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			PKOINEADGNA();
+		}
+	}
+
+	private void KMEONPMCNJG()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			CMHJMGBCFKG();
+		}
+	}
+
+	public void ALKBNPMCEOM()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			BEPABLJNPOE();
+		}
+	}
+
+	private void HMNLHMLILKD()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			IKLMKOCJPAH();
+		}
+	}
+
+	private void DEPPOJEPCJC()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("mapselector.tags." + InventoryItemType.Shader.ToString().ToLower(), "[PlayerController] ");
+		string id = Singleton<ItemsHandler>.Instance.LDJDALBAPEE(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "challenges.";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "_Distortion";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = id == "_Value2" || id == "Creating awesome map";
+			if (id == "BitsData")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 20f;
+			}
+			else if (id == "[NetworkManager] Found ")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1006f;
+			}
+			GetComponent<ColorCorrectionCurves>().PMDNKDOECDO();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "SubmitUserVote:";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_TimeX";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "challenges.";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Item invalid. Make sure your mod contains at leats one file.";
+		}
+		if ((bool)GameObject.Find("https://www.youtube.com/watch?v=cDVXukrKo74") && (bool)GameObject.Find("\\\\").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("GlassDistortion").GetComponentInChildren<Image>().enabled = id == "CameraFilterPack_VHS1";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	private void LJIHHJOAJCN()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			JCIDAMKNHJC();
+		}
+	}
+
+	public void MOKHHEMAJBJ()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			GPNAJHDFIFF();
+		}
+	}
+
+	public void NKLCNJEIAFB()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			POIOPIDDNJH();
+		}
+	}
+
+	private void HIKKPDACJGI()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			KBLLBKNNBGO();
+		}
+	}
+
+	private void ONMGIPAILOH()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			CMHJMGBCFKG();
+		}
+	}
+
+	private void HPNLLBIOJNN()
+	{
+		string s = Singleton<SaveSystem>.Instance.KNOIENOFCIB("player.licenceaccepted" + InventoryItemType.MenuTheme.ToString().ToLower(), "color");
+		string id = Singleton<ItemsHandler>.Instance.LDJDALBAPEE(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "RPC can't be sent to target PhotonPlayer being null! Did not send \"";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "EnvironmentSlider";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = id == "FinalScoreSmallText" || id == "_Value";
+			if (id == "HightScoreMaxPointsText")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 920f;
+			}
+			else if (id == "_Value")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1428f;
+			}
+			GetComponent<ColorCorrectionCurves>().IBJHOKDDNBL();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "Error: you cannot write/send to this stream that you are reading!";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == ": ";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "[EditorEvent] Exception: ";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == " base map(s)";
+		}
+		if ((bool)GameObject.Find("Drop_With_Obj") && (bool)GameObject.Find("_NoiseTex").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_MainTex2").GetComponentInChildren<Image>().enabled = id == "menuVolume";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	private void KIBEDOCDGCG()
+	{
+		string s = Singleton<SaveSystem>.Instance.KNOIENOFCIB(".lastCheckpoint.bgcolor" + InventoryItemType.Player.ToString().ToLower(), "CameraFilterPack/Color_BrightContrastSaturation");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "_ScreenResolution";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "Sending RPC \"";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = id == "ItemNameBGImage" || id == "_ScreenResolution";
+			if (id == "_TimeX")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 551f;
+			}
+			else if (id == "_Far")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1813f;
+			}
+			GetComponent<ColorCorrectionCurves>().JMDPECLHOPJ();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_MainTex2";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "BadgeText";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_ScreenSize";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Bad parameters for getbool! Use <key> <value>";
+		}
+		if ((bool)GameObject.Find("Editor/") && (bool)GameObject.Find(".lastCheckpoint.comboScore").GetComponentInChildren<Image>())
+		{
+			GameObject.Find(" isOwnerActive: ").GetComponentInChildren<Image>().enabled = id == "uploads/Intralism/mods_terms.pdf";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	public void LLAHPNGMEOO()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			AAOIFFIKMMF();
+		}
+	}
+
+	private void JAAJECBCCFM()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			JAIGGHHGOGA();
+		}
+	}
+
+	private void JCIDAMKNHJC()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("SaveButton" + InventoryItemType.MenuTheme.ToString().ToLower(), "ticket");
+		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "_TimeX";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "Set sun min/max size";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = id == "checkpoint" || id == "Joystick1Button9";
+			if (id == "Connection error: ")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1415f;
+			}
+			else if (id == "_Val")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1202f;
+			}
+			GetComponent<ColorCorrectionCurves>().ELFFJGJKDBG();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "?";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "OpSetPropertiesOfActor not sent. ActorNr must be > 0 and actorProperties != null.";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "UI Extensions/UIScreen";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "|";
+		}
+		if ((bool)GameObject.Find("Bad parameters for getint! Use <key> <value>") && (bool)GameObject.Find("IconFileSelector").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("--------------------------------").GetComponentInChildren<Image>().enabled = id == "CameraFilterPack/TV_Horror";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	public void LILOGPDPFDA()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			GDJNNMGCGGK();
+		}
+	}
+
+	private void CMHJMGBCFKG()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("player.playedtutorial" + ((InventoryItemType)6).ToString().ToLower(), "_Near");
+		string id = Singleton<ItemsHandler>.Instance.IKNFGEBCENH(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "[Right-Down]";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = false;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "EventSystem";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "settings.fps") && id == "_Value";
+			if (id == "mapselector.tags.")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 688f;
+			}
+			else if (id == "PUNCloudBestRegion")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 334f;
+			}
+			GetComponent<ColorCorrectionCurves>().IBJHOKDDNBL();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "Creating new item...";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "|";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Value2";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "settings.enablehitsoundsinrelax";
+		}
+		if ((bool)GameObject.Find("Submition failed") && (bool)GameObject.Find("inventory.itemscash").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("Tab2Content").GetComponentInChildren<Image>().enabled = id == "/";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	private void NDELGDNBJJM()
+	{
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("_Blue_R" + ((InventoryItemType)6).ToString().ToLower(), "UI Extensions/UISoftAdditive");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "ExitGames.Client.Photon.SocketWebTcp, Assembly-CSharp";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == ",";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "_Value4") && id == "/icon";
 			if (id == "_Value2")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 975f;
+			}
+			else if (id == "PunRespawn")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1668f;
+			}
+			GetComponent<ColorCorrectionCurves>().NNAGLFMBDMI();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "ShadersToggle";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "SaveButton";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "maps.";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "CameraFilterPack/Color_BrightContrastSaturation";
+		}
+		if ((bool)GameObject.Find("_TimeX") && (bool)GameObject.Find("_ScreenResolution").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("MapEnd").GetComponentInChildren<Image>().enabled = id == "shader.ghost";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	public void CDDHLFNJOGC()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			LKBBGBBEJKP();
+		}
+	}
+
+	private void GMOMHPDHJIG()
+	{
+		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("_Value3" + InventoryItemType.MenuTheme.ToString().ToLower(), "<b>#");
+		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "[Singleton] multiple instances of '";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "_NeighbourMaxTex";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "ERROR You should never change PhotonPlayer IDs!") && id == "Rtt:{0,4} +/-{1,3}";
+			if (id == "_TimeX")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1013f;
+			}
+			else if (id == "UpperMid")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 1392f;
+			}
+			GetComponent<ColorCorrectionCurves>().PMDNKDOECDO();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "[MapEditor] Importing map: ";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "#tryagain";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "move";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == " ";
+		}
+		if ((bool)GameObject.Find(" not exist") && (bool)GameObject.Find("_TexelOffsetScale").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_ScreenResolution").GetComponentInChildren<Image>().enabled = id == "seconds";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	private void IKLMKOCJPAH()
+	{
+		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("_ScreenResolution" + ((InventoryItemType)7).ToString().ToLower(), "<b>");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "_Value3";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "_Value2";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "float,0") && id == "CameraFilterPack/Vision_Rainbow";
+			if (id == "CameraFilterPack/TV_Distorted")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1235f;
+			}
+			else if (id == "colorC")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 401f;
+			}
+			GetComponent<ColorCorrectionCurves>().IBJHOKDDNBL();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "SpawnObj";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "LT";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_TimeX";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "menuVolume";
+		}
+		if ((bool)GameObject.Find("_FadeFX") && (bool)GameObject.Find("Gameplay/Segment-[PowerUp]").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("_FgOverlap").GetComponentInChildren<Image>().enabled = id == "X";
+		}
+		KCFOBKNIELP = true;
+	}
+
+	public void GGHCMPKGNGE()
+	{
+		KCFOBKNIELP = false;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			DEPPOJEPCJC();
+		}
+	}
+
+	public void CFNDDGFGKKG()
+	{
+		KCFOBKNIELP = true;
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			LJLKKJEFFLK();
+		}
+	}
+
+	private void ECOKPFOMLMC()
+	{
+		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("GameScene" + ((InventoryItemType)8).ToString().ToLower(), "UI Extensions/UIAdditive");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "bans.viewed.";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = true;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "???";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "ShadersToggle") && id == "_DotSize";
+			if (id == "Ignored PU RPC, cause item is inactive. ")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 660f;
+			}
+			else if (id == "Texture2")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 701f;
+			}
+			GetComponent<ColorCorrectionCurves>().KIOEEAALJHO();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "EnableRankingToggle";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "InputField";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_CenterX";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Done! You are a contributor until: ";
+		}
+		if ((bool)GameObject.Find("CameraFilterPack/FX_InverChromiLum") && (bool)GameObject.Find("_SecondTex").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("w").GetComponentInChildren<Image>().enabled = id == "_Distortion";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	private void IBHACCEEFFI()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			GMOMHPDHJIG();
+		}
+	}
+
+	private void JAIGGHHGOGA()
+	{
+		string @string = Singleton<SaveSystem>.Instance.GetString("No peer to communicate with. " + ((InventoryItemType)6).ToString().ToLower(), "_Value");
+		string id = Singleton<ItemsHandler>.Instance.GetItemBySteamId(ulong.Parse(@string)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "Please attach component to a Graphical UI component";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = false;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "Working.\nPlease wait..";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "#mapmustbecompletebeforesubmit") && id == "FullscreenToggle";
+			if (id == "_Value")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
@@ -2002,7 +2028,7 @@ public class ShaderItemHandler : MonoBehaviour
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
 				GetComponent<ColorCorrectionCurves>().saturation = 1969f;
 			}
-			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
+			GetComponent<ColorCorrectionCurves>().IPICDMGDKCK();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
@@ -2014,67 +2040,93 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == " cannot be used as a 3D LUT.";
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "The given 2D texture ";
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_BlurVector";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_OcclusionBlurTexture";
 		}
-		if ((bool)GameObject.Find("_Intensity") && (bool)GameObject.Find("ReconnectToMaster() with AuthValues == null is not correct!").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("_Intensity") && (bool)GameObject.Find("ns.exitgames.com").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("a").GetComponentInChildren<Image>().enabled = id == "#newhighscore";
+			GameObject.Find("g").GetComponentInChildren<Image>().enabled = id == "#newhighscore";
 		}
 		KCFOBKNIELP = false;
 	}
 
-	public void FAIMAGILFLO()
+	public void EMOCEKPLGBK()
 	{
-		KCFOBKNIELP = false;
+		KCFOBKNIELP = true;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			GDPOFILIMJB();
+			NEFPMLNOBJF();
 		}
 	}
 
-	private void HMNLHMLILKD()
+	private void ECHNKPKOCEJ()
 	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			PLKGKBPAIOP();
-		}
-	}
-
-	private void POJFHDFJOPE()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			OOHLEMKHNKJ();
-		}
-	}
-
-	private void LMADKINICIN()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			PNLBMKHFPEA();
-		}
-	}
-
-	private void FABKIGNFECE()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			JOMJICOMCEK();
-		}
-	}
-
-	private void DEPPOJEPCJC()
-	{
-		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("_TimeX" + InventoryItemType.Shader.ToString().ToLower(), "CameraFilterPack/Color_Sepia");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("0.00" + InventoryItemType.Other.ToString().ToLower(), "JoinRoom failed. In offline mode you still have to leave a room to enter another.");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
-			GetComponent<InvertColors>().enabled = id == "clear";
+			GetComponent<InvertColors>().enabled = id == "_LightIntensity";
+		}
+		if ((bool)GetComponent<LensAberrations>())
+		{
+			GetComponent<LensAberrations>().enabled = false;
+		}
+		if ((bool)GetComponent<Chunky>())
+		{
+			GetComponent<Chunky>().enabled = id == "PLEASE WAIT";
+		}
+		if ((bool)GetComponent<ColorCorrectionCurves>())
+		{
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "/") && id == "Editor/";
+			if (id == "ItemsStoreButton")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = up;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = down;
+				GetComponent<ColorCorrectionCurves>().saturation = 1135f;
+			}
+			else if (id == "Data/Editor/leveltemplate")
+			{
+				GetComponent<ColorCorrectionCurves>().redChannel = down;
+				GetComponent<ColorCorrectionCurves>().greenChannel = down;
+				GetComponent<ColorCorrectionCurves>().blueChannel = up;
+				GetComponent<ColorCorrectionCurves>().saturation = 562f;
+			}
+			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
+		{
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "[Up]";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_TimeX";
+		}
+		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
+		{
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Outdated version. Please restart the game to get lastest updates.";
+		}
+		if ((bool)GetComponent<CameraFilterPack_TV_80>())
+		{
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_ScreenResolution";
+		}
+		if ((bool)GameObject.Find("_TimeX") && (bool)GameObject.Find("MapEditor v.").GetComponentInChildren<Image>())
+		{
+			GameObject.Find("0x").GetComponentInChildren<Image>().enabled = id == "/files/editor_manual.pdf";
+		}
+		KCFOBKNIELP = false;
+	}
+
+	private void KBLLBKNNBGO()
+	{
+		string s = Singleton<SaveSystem>.Instance.KNOIENOFCIB("warning: Audio Source: " + ((InventoryItemType)7).ToString().ToLower(), "_ScreenResolution");
+		string id = Singleton<ItemsHandler>.Instance.EKLMHNNBOMF(ulong.Parse(s)).item.id;
+		if ((bool)GetComponent<InvertColors>())
+		{
+			GetComponent<InvertColors>().enabled = id == "float,10";
 		}
 		if ((bool)GetComponent<LensAberrations>())
 		{
@@ -2082,80 +2134,62 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<Chunky>())
 		{
-			GetComponent<Chunky>().enabled = id == "Editor";
+			GetComponent<Chunky>().enabled = id == "_DistortionSize";
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "MascotChallenge2019" || id == "float,0";
-			if (id == "#finished")
+			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Joystick1Button1") && id == "float,1.5";
+			if (id == "_Visualize")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1560f;
+				GetComponent<ColorCorrectionCurves>().saturation = 1623f;
 			}
-			else if (id == "Mouse X")
+			else if (id == "Please specify either t or f.")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = down;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1914f;
+				GetComponent<ColorCorrectionCurves>().saturation = 288f;
 			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
+			GetComponent<ColorCorrectionCurves>().UpdateParameters();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "CHROMATIC_ABERRATION";
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "float,0";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "[Right]";
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "To Log";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Subscribed cells:\n";
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "blue";
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == ".";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "#savemapbeforeuploading";
 		}
-		if ((bool)GameObject.Find("_Value2") && (bool)GameObject.Find(" to: ").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("_TimeX") && (bool)GameObject.Find("<b>#").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("_Value2").GetComponentInChildren<Image>().enabled = id == "_LightIntensity";
+			GameObject.Find("GroupNameText").GetComponentInChildren<Image>().enabled = id == "true";
 		}
-		KCFOBKNIELP = true;
-	}
-
-	public void LCKKDMKJJEF()
-	{
 		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DBONMCBDEPG();
-		}
 	}
 
-	public void BKEFJPOHKDE()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			MDACKFPPNAE();
-		}
-	}
-
-	private void GHILDCBCDJI()
+	private void PHJJHFBLICM()
 	{
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			ALGHFMOEINN();
+			PKDDPFLCAHI();
 		}
 	}
 
-	private void LJLKKJEFFLK()
+	private void GAFPJCJIONB()
 	{
-		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("Preparing content..." + ((InventoryItemType)5).ToString().ToLower(), "_ScreenResolution");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
+		string s = Singleton<SaveSystem>.Instance.NBMEANCMGEH("The number of players playing your game: " + ((InventoryItemType)5).ToString().ToLower(), "_TimeX");
+		string id = Singleton<ItemsHandler>.Instance.IKNFGEBCENH(ulong.Parse(s)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
 			GetComponent<InvertColors>().enabled = id == "SetSatelliteEmission";
@@ -2166,30 +2200,30 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<Chunky>())
 		{
-			GetComponent<Chunky>().enabled = id == "music";
+			GetComponent<Chunky>().enabled = id == "Editor/";
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "finished" || id == "CameraFilterPack/Noise_TV_2";
-			if (id == "_ScreenResolution")
+			GetComponent<ColorCorrectionCurves>().enabled = id == "ResetButton" || id == "CameraFilterPack_TV_Noise2";
+			if (id == "_Value4")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = down;
 				GetComponent<ColorCorrectionCurves>().saturation = 1727f;
 			}
-			else if (id == "_Intensity")
+			else if (id == "offsets")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = down;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
 				GetComponent<ColorCorrectionCurves>().saturation = 318f;
 			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
+			GetComponent<ColorCorrectionCurves>().JDCODMMDPII();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_ScreenResolution";
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_Value4";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
 		{
@@ -2201,250 +2235,100 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Editor";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "maps.";
 		}
-		if ((bool)GameObject.Find("/?player=") && (bool)GameObject.Find("_FilteredReflections").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("deletemap") && (bool)GameObject.Find("_ReflectionTexture4").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("challenges/").GetComponentInChildren<Image>().enabled = id == "Reading preview file failed!: \"{0}\"";
+			GameObject.Find("#tryagain").GetComponentInChildren<Image>().enabled = id == "LevelEditor/patterns";
 		}
 		KCFOBKNIELP = false;
 	}
 
-	public void BOMFGAMNHIE()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			GLLNAELOMBK();
-		}
-	}
-
-	public void EOPEMLDJAAO()
+	public void KDJHONILJGK()
 	{
 		KCFOBKNIELP = true;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			GLLNAELOMBK();
+			JCIDAMKNHJC();
 		}
 	}
 
-	private void GPFJMKCGHGB()
+	private void OEENOOGEEHD()
 	{
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			ALGHFMOEINN();
+			AAOIFFIKMMF();
 		}
 	}
 
-	private void LDDKCCMHMIC()
+	private void CLGKDLOAOFG()
 	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DEBPOMCFBJO();
-		}
-	}
-
-	public void OCHADIJNDJK()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			MDACKFPPNAE();
-		}
-	}
-
-	public void LILOGPDPFDA()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			MDACKFPPNAE();
-		}
-	}
-
-	private void AGMEELGLEEE()
-	{
-		string s = Singleton<SaveSystem>.Instance.FDPKMMIOGOE(" This is not possible to be called for standalone input. Please check your platform and code where this is called" + InventoryItemType.Shader.ToString().ToLower(), "Editor/");
-		string id = Singleton<ItemsHandler>.Instance.GJHAJNLENFB(ulong.Parse(s)).item.id;
+		string @string = Singleton<SaveSystem>.Instance.GetString("RestartButton" + InventoryItemType.Other.ToString().ToLower(), "BitsData");
+		string id = Singleton<ItemsHandler>.Instance.LDJDALBAPEE(ulong.Parse(@string)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
-			GetComponent<InvertColors>().enabled = id == ".jpg";
+			GetComponent<InvertColors>().enabled = id == ";";
 		}
 		if ((bool)GetComponent<LensAberrations>())
 		{
-			GetComponent<LensAberrations>().enabled = true;
+			GetComponent<LensAberrations>().enabled = false;
 		}
 		if ((bool)GetComponent<Chunky>())
 		{
-			GetComponent<Chunky>().enabled = id == "CameraFilterPack/Blend2Camera_LinearDodge";
+			GetComponent<Chunky>().enabled = id == "https://store.steampowered.com/itemstore/513510/";
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "_RandomTexture" || id == "/../";
-			if (id == "ItemNameText")
+			GetComponent<ColorCorrectionCurves>().enabled = id == "blue" || id == "SetParticlesColor";
+			if (id == "[MapEditor] Exported to ")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1513f;
+				GetComponent<ColorCorrectionCurves>().saturation = 1987f;
 			}
-			else if (id == "PlayButton")
+			else if (id == "Up ")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = down;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 557f;
+				GetComponent<ColorCorrectionCurves>().saturation = 1290f;
 			}
-			GetComponent<ColorCorrectionCurves>().JDCODMMDPII();
+			GetComponent<ColorCorrectionCurves>().EJMOKDJNDBC();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == " has been disabled as it's not supported on the current platform.";
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "Tab2Content";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "Triangle";
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "]";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_ReflectionBlur";
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Uploading preview image...";
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "0,1,false";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == "1087340967";
 		}
-		if ((bool)GameObject.Find("FinalScoreSmallText") && (bool)GameObject.Find("_Value2").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("_Cible") && (bool)GameObject.Find("IconFileSelector").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("FinalScoreText").GetComponentInChildren<Image>().enabled = id == "CameraFilterPack/FX_ZebraColor";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void HJPEHBPMPEK()
-	{
-		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("player.licenceaccepted" + InventoryItemType.MenuTheme.ToString().ToLower(), "Color's hex value #RRGGBBAA");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "Could not execute RPC ";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "HandsCountSlider";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "FinalScoreSmallText" || id == "_Value";
-			if (id == "PossibleMapPointsText")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 920f;
-			}
-			else if (id == "_Value2")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1428f;
-			}
-			GetComponent<ColorCorrectionCurves>().ANDGHMDPICK();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "PUNCloudBestRegion";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == " not exist";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "[EditorEvent] Exception: ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "Data/Maps/";
-		}
-		if ((bool)GameObject.Find("Drop_With_Obj") && (bool)GameObject.Find("Noise shaders are not set up! Disabling noise effect.").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("_TimeX").GetComponentInChildren<Image>().enabled = id == "sfxVolume";
+			GameObject.Find("CameraFilterPack_Blizzard1").GetComponentInChildren<Image>().enabled = id == " Gb";
 		}
 		KCFOBKNIELP = false;
 	}
 
-	private void IEMEHGCFAPD()
+	public void KJBJBNGJDAD()
 	{
+		KCFOBKNIELP = false;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			LAGGOOCMLBJ();
+			IJHMDODAGBC();
 		}
 	}
 
-	private void MOABIEIPGHN()
-	{
-		string s = Singleton<SaveSystem>.Instance.CEDJCDAPIAH("[Singleton] An instance of '" + InventoryItemType.MenuTheme.ToString().ToLower(), "SelectorMusicToggle");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "-1";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = true;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "Tab2Content";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "OpGetGameList not sent. Lobby cannot be null." || id == "visible";
-			if (id == "SetSunInput")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1105f;
-			}
-			else if (id == "Gameplay/Base")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 138f;
-			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "[NetworkManager] Connected to ";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "settings.gamemessagesduration";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_TimeX";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "CameraFilterPack/Blend2Camera_Subtract";
-		}
-		if ((bool)GameObject.Find(".lastCheckpoint.bgcolor") && (bool)GameObject.Find("_Value2").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("CameraFilterPack/Drawing_BluePrint").GetComponentInChildren<Image>().enabled = id == "MapFolderInputField";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	public void GCNKIJDNPMD()
+	public void LMHFEBCKPDI()
 	{
 		KCFOBKNIELP = false;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
@@ -2453,170 +2337,22 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 	}
 
-	private void KMKLDAJLCNM()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DEPPOJEPCJC();
-		}
-	}
-
-	private void ALGHFMOEINN()
-	{
-		string s = Singleton<SaveSystem>.Instance.FDPKMMIOGOE("_MainTex2" + InventoryItemType.Other.ToString().ToLower(), "_Value");
-		string id = Singleton<ItemsHandler>.Instance.HALDCNOECLE(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "_FresnelFade";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == " ";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "_Near" || id == "_Value4";
-			if (id == "_Far")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1346f;
-			}
-			else if (id == "Set particles gravity")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1079f;
-			}
-			GetComponent<ColorCorrectionCurves>().UpdateParameters();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "Hex value #RRGGBB";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "LowMid";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "_Value4";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "[PlayerController] ";
-		}
-		if ((bool)GameObject.Find("_Distance") && (bool)GameObject.Find("Bad SegmentType passed in to CreateLineCap. Must be SegmentType.Start or SegmentType.End").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("z").GetComponentInChildren<Image>().enabled = id == "_Distortion";
-		}
-		KCFOBKNIELP = true;
-	}
-
-	private void ABBNNMHMLOI()
-	{
-		string s = Singleton<SaveSystem>.Instance.JLBFLBAHGIP("0.00" + InventoryItemType.Other.ToString().ToLower(), "JoinOrCreateRoom failed. In offline mode you still have to leave a room to enter another.");
-		string id = Singleton<ItemsHandler>.Instance.DNPHLBJMMEM(ulong.Parse(s)).item.id;
-		if ((bool)GetComponent<InvertColors>())
-		{
-			GetComponent<InvertColors>().enabled = id == "_LightIntensity";
-		}
-		if ((bool)GetComponent<LensAberrations>())
-		{
-			GetComponent<LensAberrations>().enabled = false;
-		}
-		if ((bool)GetComponent<Chunky>())
-		{
-			GetComponent<Chunky>().enabled = id == "Deleted event";
-		}
-		if ((bool)GetComponent<ColorCorrectionCurves>())
-		{
-			GetComponent<ColorCorrectionCurves>().enabled = !(id == "Created") && id == "#pleasewait";
-			if (id == "ItemsStoreButton")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = up;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1135f;
-			}
-			else if (id == "Editor/")
-			{
-				GetComponent<ColorCorrectionCurves>().redChannel = down;
-				GetComponent<ColorCorrectionCurves>().greenChannel = down;
-				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 562f;
-			}
-			GetComponent<ColorCorrectionCurves>().MENIGCOFDFC();
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
-		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "[Up]";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "_Distortion";
-		}
-		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
-		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "#later";
-		}
-		if ((bool)GetComponent<CameraFilterPack_TV_80>())
-		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "_TimeX";
-		}
-		if ((bool)GameObject.Find("_TimeX") && (bool)GameObject.Find("ResourcesConfig").GetComponentInChildren<Image>())
-		{
-			GameObject.Find("#").GetComponentInChildren<Image>().enabled = id == "https://www.youtube.com/watch?v=cDVXukrKo74";
-		}
-		KCFOBKNIELP = false;
-	}
-
-	private void BGDONBMDPGM()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			ABBNNMHMLOI();
-		}
-	}
-
-	private void LCJHDLKJEOM()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			PNLBMKHFPEA();
-		}
-	}
-
-	private void HPNNCNNFMGK()
-	{
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			NKMAIAJDLHB();
-		}
-	}
-
-	public void AOEEOKNJDCK()
+	public void LDKFAGOEDKF()
 	{
 		KCFOBKNIELP = true;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			PKOINEADGNA();
+			CLGKDLOAOFG();
 		}
 	}
 
-	private void GDPOFILIMJB()
+	private void LJLKKJEFFLK()
 	{
-		string s = Singleton<SaveSystem>.Instance.LFFECBOPPHA("SaveButton" + InventoryItemType.MenuTheme.ToString().ToLower(), "error");
-		string id = Singleton<ItemsHandler>.Instance.DNPHLBJMMEM(ulong.Parse(s)).item.id;
+		string @string = Singleton<SaveSystem>.Instance.GetString("CameraFilterPack/Drawing_Manga5" + InventoryItemType.Shader.ToString().ToLower(), "CameraFilterPack/Color_Sepia");
+		string id = Singleton<ItemsHandler>.Instance.LDJDALBAPEE(ulong.Parse(@string)).item.id;
 		if ((bool)GetComponent<InvertColors>())
 		{
-			GetComponent<InvertColors>().enabled = id == "_Value";
+			GetComponent<InvertColors>().enabled = id == "clear";
 		}
 		if ((bool)GetComponent<LensAberrations>())
 		{
@@ -2624,108 +2360,97 @@ public class ShaderItemHandler : MonoBehaviour
 		}
 		if ((bool)GetComponent<Chunky>())
 		{
-			GetComponent<Chunky>().enabled = id == "SetSunDirectionVector";
+			GetComponent<Chunky>().enabled = id == "DifficultyBG";
 		}
 		if ((bool)GetComponent<ColorCorrectionCurves>())
 		{
-			GetComponent<ColorCorrectionCurves>().enabled = id == "UndoButton" || id == "Joystick1Button10";
-			if (id == "[RanksSystem] Ranks: no need to update")
+			GetComponent<ColorCorrectionCurves>().enabled = id == "Error: Unfortunately, you're banned by the community from uploading to the workshop! Bummer. :(" || id == "value";
+			if (id == "#reward: ")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = up;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = down;
-				GetComponent<ColorCorrectionCurves>().saturation = 1415f;
+				GetComponent<ColorCorrectionCurves>().saturation = 1560f;
 			}
-			else if (id == "CameraFilterPack/Colors_HUE_Rotate")
+			else if (id == "DPADHOR")
 			{
 				GetComponent<ColorCorrectionCurves>().redChannel = down;
 				GetComponent<ColorCorrectionCurves>().greenChannel = down;
 				GetComponent<ColorCorrectionCurves>().blueChannel = up;
-				GetComponent<ColorCorrectionCurves>().saturation = 1202f;
+				GetComponent<ColorCorrectionCurves>().saturation = 1914f;
 			}
-			GetComponent<ColorCorrectionCurves>().AHHBDBKBJOC();
+			GetComponent<ColorCorrectionCurves>().PIKAHEBPPCN();
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_Old_Movie_2>())
 		{
-			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "?";
+			GetComponent<CameraFilterPack_TV_Old_Movie_2>().enabled = id == "_DistCenterScale";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "OpAuthenticate()";
+			GetComponent<CameraFilterPack_Lut_Plus>().enabled = id == "Gameplay/particles";
 		}
 		if ((bool)GetComponent<CameraFilterPack_Lut_Plus_2>())
 		{
-			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Default UI Material";
+			GetComponent<CameraFilterPack_Lut_Plus_2>().enabled = id == "Vertical";
 		}
 		if ((bool)GetComponent<CameraFilterPack_TV_80>())
 		{
-			GetComponent<CameraFilterPack_TV_80>().enabled = id == "note.0";
+			GetComponent<CameraFilterPack_TV_80>().enabled = id == ".lastCheckpoint.playerdistance";
 		}
-		if ((bool)GameObject.Find("Result for ") && (bool)GameObject.Find("/").GetComponentInChildren<Image>())
+		if ((bool)GameObject.Find("_Value2") && (bool)GameObject.Find("Ownership mode == fixed. Ignoring request.").GetComponentInChildren<Image>())
 		{
-			GameObject.Find("<b>Difficulty</b>:").GetComponentInChildren<Image>().enabled = id == "_TimeX";
+			GameObject.Find("_Value").GetComponentInChildren<Image>().enabled = id == "_LightIntensity";
 		}
 		KCFOBKNIELP = true;
 	}
 
-	private void JBNPEHMDCMI()
+	public void OPKKBMCDOEM()
 	{
+		KCFOBKNIELP = false;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			LAGGOOCMLBJ();
+			JAIGGHHGOGA();
 		}
 	}
 
-	public void MDPJHKECLOF()
+	private void FJHFOBHJEHL()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			CMHJMGBCFKG();
+		}
+	}
+
+	private void DPIPGGDNGHN()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			CLGKDLOAOFG();
+		}
+	}
+
+	private void FABKIGNFECE()
+	{
+		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
+		{
+			IJHMDODAGBC();
+		}
+	}
+
+	public void PJILLPKFCPO()
 	{
 		KCFOBKNIELP = true;
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			KIBEDOCDGCG();
+			GPNAJHDFIFF();
 		}
 	}
 
-	public void PIEPPKMBJHI()
-	{
-		KCFOBKNIELP = true;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			GDJNNMGCGGK();
-		}
-	}
-
-	public void FCKLLMEPONC()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			PNLBMKHFPEA();
-		}
-	}
-
-	public void FEJAAGGMBOE()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			DKLJCAINIDG();
-		}
-	}
-
-	private void EJFJENFKLND()
+	private void FABMDEHEDNO()
 	{
 		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
 		{
-			LAGGOOCMLBJ();
-		}
-	}
-
-	public void PMAGMPCMGPB()
-	{
-		KCFOBKNIELP = false;
-		if (Singleton<ItemsHandler>.Instance.isLoaded && !KCFOBKNIELP)
-		{
-			NKMAIAJDLHB();
+			HPNLLBIOJNN();
 		}
 	}
 }

@@ -3,8 +3,8 @@ using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode]
 [AddComponentMenu("Camera Filter Pack/EXTRA/SHOWFPS")]
+[ExecuteInEditMode]
 public class CameraFilterPack_EXTRA_SHOWFPS : MonoBehaviour
 {
 	public Shader SCShader;
@@ -74,8 +74,8 @@ public class CameraFilterPack_EXTRA_SHOWFPS : MonoBehaviour
 	private void EGEPLFGKGLI()
 	{
 		PBNOHCNHAHB = 0;
-		StartCoroutine(DKKLGINECAC());
-		SCShader = Shader.Find("Set satellite lerp speed");
+		StartCoroutine(EBJKKIKCJCC());
+		SCShader = Shader.Find("float,1");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -85,7 +85,7 @@ public class CameraFilterPack_EXTRA_SHOWFPS : MonoBehaviour
 	private void JKFDDNMPOJH()
 	{
 		PBNOHCNHAHB = 0;
-		StartCoroutine(EBJKKIKCJCC());
+		StartCoroutine(DKKLGINECAC());
 		SCShader = Shader.Find("SetParticlesColor");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -109,7 +109,7 @@ public class CameraFilterPack_EXTRA_SHOWFPS : MonoBehaviour
 	{
 		PBNOHCNHAHB = 1;
 		StartCoroutine(DKKLGINECAC());
-		SCShader = Shader.Find("/");
+		SCShader = Shader.Find("icon");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -132,7 +132,7 @@ public class CameraFilterPack_EXTRA_SHOWFPS : MonoBehaviour
 	{
 		PBNOHCNHAHB = 1;
 		StartCoroutine(DKKLGINECAC());
-		SCShader = Shader.Find("z");
+		SCShader = Shader.Find("y");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -170,13 +170,13 @@ public class CameraFilterPack_EXTRA_SHOWFPS : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1838f;
 			}
-			ACHNOHCLGOO().SetFloat("mode", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("DPADVER", Size);
-			HFBJAOFLCJI().SetFloat(": ", PBNOHCNHAHB);
-			ACHNOHCLGOO().SetFloat("MenuVolumeSlider", ILHJFHFPGBB);
-			HFBJAOFLCJI().SetFloat("_PositionY", CCIENBFIKKH);
-			ACHNOHCLGOO().SetVector("#", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 376f, 1126f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			NFMGLIKNOOC().SetFloat("mode", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("DPADHOR", Size);
+			ACHNOHCLGOO().SetFloat("[PlayerController] ", PBNOHCNHAHB);
+			HFBJAOFLCJI().SetFloat("FullscreenToggle", ILHJFHFPGBB);
+			NBPKMLMCHFN.SetFloat("_PositionY", CCIENBFIKKH);
+			NFMGLIKNOOC().SetVector("<b>", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 376f, 1126f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -243,8 +243,8 @@ public class CameraFilterPack_EXTRA_SHOWFPS : MonoBehaviour
 	private void BEBNOKFLJPH()
 	{
 		PBNOHCNHAHB = 1;
-		StartCoroutine(DKKLGINECAC());
-		SCShader = Shader.Find("\n");
+		StartCoroutine(EBJKKIKCJCC());
+		SCShader = Shader.Find("workshop.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

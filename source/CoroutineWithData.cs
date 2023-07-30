@@ -11,186 +11,6 @@ public class CoroutineWithData
 
 	public Coroutine coroutine { get; private set; }
 
-	private IEnumerator PPEKEGNDEHL()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	[SpecialName]
-	public Coroutine LIENFIGHFHC()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	private IEnumerator NGDBPHBAECA()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	private IEnumerator JHBCBKDJBJL()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	public CoroutineWithData(MonoBehaviour DNFGMNFCBGA, IEnumerator MPNMOONBMII)
-	{
-		this.MPNMOONBMII = MPNMOONBMII;
-		coroutine = DNFGMNFCBGA.StartCoroutine(CCCCEEIEBAC());
-	}
-
-	[SpecialName]
-	private void GLAFNIENKON(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public Coroutine JGABKHHGAFH()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	private void KHINBELFJDN(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	private void IJICFGMPEOF(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public Coroutine LEAFCNLKOOK()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public Coroutine LNGBKHOMHAC()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	private void JFGJIDCBJOH(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public Coroutine EHCEHJBJPMJ()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public Coroutine CGEIEILKLPI()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	private void MGAIELIGFJL(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public Coroutine HOLJHPIIAOC()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	private void LFBLEMDBFGG(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public Coroutine DFGAHEKAJAA()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	private IEnumerator JAEPBJEHOON()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	[SpecialName]
-	public Coroutine IAJHILOGCNE()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	private IEnumerator DAJEGGEMJMA()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	[SpecialName]
-	private void IAJICGACKIH(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	private void DOELAIIMDAN(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	private void IHJFILECPNI(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public Coroutine JBJGHKJMOCH()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	private void EFDCDLBLJCF(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	private IEnumerator IHOGJEOKHCG()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
 	private IEnumerator JGCHIJGOOPC()
 	{
 		while (MPNMOONBMII.MoveNext())
@@ -200,40 +20,40 @@ public class CoroutineWithData
 		}
 	}
 
-	private IEnumerator PFCEFAJFFGG()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	private IEnumerator IBDHMCJMBOH()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	private IEnumerator ENJLDNCIKCM()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
 	[SpecialName]
-	private void EBINCIDJIOM(Coroutine DPNHODJHGJL)
+	private void HPKEJEFIGDH(Coroutine DPNHODJHGJL)
 	{
 		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
 	}
 
-	private IEnumerator PKKHPCOLNGC()
+	public CoroutineWithData(MonoBehaviour DNFGMNFCBGA, IEnumerator MPNMOONBMII)
+	{
+		this.MPNMOONBMII = MPNMOONBMII;
+		coroutine = DNFGMNFCBGA.StartCoroutine(CCCCEEIEBAC());
+	}
+
+	[SpecialName]
+	public Coroutine KDGCAJKNBHL()
+	{
+		return _003CHMBMOEHDCMK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	private void JGGIFAJIPMM(Coroutine DPNHODJHGJL)
+	{
+		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private IEnumerator IHCBCILHDHF()
+	{
+		while (MPNMOONBMII.MoveNext())
+		{
+			result = MPNMOONBMII.Current;
+			yield return result;
+		}
+	}
+
+	private IEnumerator CCCCEEIEBAC()
 	{
 		while (MPNMOONBMII.MoveNext())
 		{
@@ -243,15 +63,39 @@ public class CoroutineWithData
 	}
 
 	[SpecialName]
-	public Coroutine FEPBAFALFIG()
+	private void DOLGIFPDKBA(Coroutine DPNHODJHGJL)
 	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
+		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private IEnumerator BCLEBNAOOGN()
+	{
+		while (MPNMOONBMII.MoveNext())
+		{
+			result = MPNMOONBMII.Current;
+			yield return result;
+		}
 	}
 
 	[SpecialName]
-	public Coroutine ODIGPBPHDMN()
+	private void EDJKNNFLJNM(Coroutine DPNHODJHGJL)
 	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
+		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	private void JIHPOKJIAOO(Coroutine DPNHODJHGJL)
+	{
+		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private IEnumerator BBPEGFJIMFF()
+	{
+		while (MPNMOONBMII.MoveNext())
+		{
+			result = MPNMOONBMII.Current;
+			yield return result;
+		}
 	}
 
 	[SpecialName]
@@ -260,37 +104,19 @@ public class CoroutineWithData
 		return _003CHMBMOEHDCMK_003Ek__BackingField;
 	}
 
-	private IEnumerator OFCLOHGEKHK()
+	[SpecialName]
+	public Coroutine KKLMBPJPNJB()
 	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
+		return _003CHMBMOEHDCMK_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	private void LBEIIIFAKII(Coroutine DPNHODJHGJL)
+	private void PJEEMKJOGME(Coroutine DPNHODJHGJL)
 	{
 		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
 	}
 
-	[SpecialName]
-	public Coroutine OOIKDCEENMI()
-	{
-		return _003CHMBMOEHDCMK_003Ek__BackingField;
-	}
-
-	private IEnumerator EBGKDJPBFPI()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	private IEnumerator CBOIBHAJOLL()
+	private IEnumerator LGGENAKEIHK()
 	{
 		while (MPNMOONBMII.MoveNext())
 		{
@@ -300,15 +126,33 @@ public class CoroutineWithData
 	}
 
 	[SpecialName]
-	public Coroutine CPGCBFJDKPG()
+	public Coroutine GDIAKFBHOMK()
 	{
 		return _003CHMBMOEHDCMK_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public Coroutine FFDDNNOJNPO()
+	public Coroutine FEPBAFALFIG()
 	{
 		return _003CHMBMOEHDCMK_003Ek__BackingField;
+	}
+
+	private IEnumerator FGMPLDOJGOC()
+	{
+		while (MPNMOONBMII.MoveNext())
+		{
+			result = MPNMOONBMII.Current;
+			yield return result;
+		}
+	}
+
+	private IEnumerator GJCGFGBAPDC()
+	{
+		while (MPNMOONBMII.MoveNext())
+		{
+			result = MPNMOONBMII.Current;
+			yield return result;
+		}
 	}
 
 	private IEnumerator DDIFJOINBHL()
@@ -321,47 +165,29 @@ public class CoroutineWithData
 	}
 
 	[SpecialName]
-	private void DDKIDKOHJED(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	private IEnumerator CFIKMCKPMCC()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	[SpecialName]
-	private void GIMMABOKAJA(Coroutine DPNHODJHGJL)
-	{
-		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	private IEnumerator GJCGFGBAPDC()
-	{
-		while (MPNMOONBMII.MoveNext())
-		{
-			result = MPNMOONBMII.Current;
-			yield return result;
-		}
-	}
-
-	[SpecialName]
-	public Coroutine FMJBADNLBCL()
+	public Coroutine NEGLNPOGPAA()
 	{
 		return _003CHMBMOEHDCMK_003Ek__BackingField;
 	}
 
-	private IEnumerator CCCCEEIEBAC()
+	[SpecialName]
+	public Coroutine OOIKDCEENMI()
+	{
+		return _003CHMBMOEHDCMK_003Ek__BackingField;
+	}
+
+	private IEnumerator JBMHBGIBDDO()
 	{
 		while (MPNMOONBMII.MoveNext())
 		{
 			result = MPNMOONBMII.Current;
 			yield return result;
 		}
+	}
+
+	[SpecialName]
+	private void HIKCNNMDKNH(Coroutine DPNHODJHGJL)
+	{
+		_003CHMBMOEHDCMK_003Ek__BackingField = DPNHODJHGJL;
 	}
 }

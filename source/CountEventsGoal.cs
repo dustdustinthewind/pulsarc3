@@ -11,173 +11,275 @@ public class CountEventsGoal : ChallengeGoal
 
 	private int HGMKPHILBMM;
 
-	private void LILJBEOPBKP(GameEventInfo DAGALCAILLN)
+	public override void PIKFPFLKBCG()
 	{
-		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.GEI);
-		if (Singleton<LuaEnvironment>.Instance.DFAIJFMEOAC(CBMKNPLELGP))
-		{
-			HGMKPHILBMM += 0;
-			JMMJKHLAIMI(OFIFLHGIMAJ());
-		}
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(IPGKJJJPLOL);
+		base.PIKFPFLKBCG();
 	}
 
-	public override void LoadProgress()
+	public override void OKJDCJIDGCH()
 	{
-		base.LoadProgress();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.GetInt(PHPLKBPIMIH() + ".completedCount", 0);
-		base.GoalProgress = CAOJDEFHMAG();
+		base.HEPLJACPKFO();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.KFNFNKILGPH(KHILCMNLMOJ() + "open", 1);
+		base.GoalProgress = LNACNNOIHMB();
 	}
 
-	public override void MPDGNIEDBCM()
+	public override void ICAAJACIAPH()
 	{
-		Singleton<GameManager>.Instance.AABEGAMPOLA(LILJBEOPBKP);
-		base.DDOBENFDOKL();
+		base.PPPFKGOCMLO();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.HHBIEPMBICO(PHPLKBPIMIH() + "challenges.", 1);
+		BNPNMCFLDNI(GICDHIHBFHI());
 	}
 
-	public override void KMEFHCDNDNF()
+	public override void NMFBGKMIHFA()
 	{
-		Singleton<SaveSystem>.Instance.KOKOJGKDLMP(DIDHNLABPNG() + "_TimeX");
-		base.Reset();
+		Singleton<GameManager>.Instance.OnGameEvent -= BOOHNLOCBDK;
+		base.IOIAOIMIIMA();
 	}
 
-	public override void KAHKKLGKLLF()
+	public override void HLFLMNNEKBJ(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		base.AOPNBBENAKB();
-		Singleton<SaveSystem>.Instance.SetInt(CKOFDGAJCFF() + "settings.crosshairopacity", HGMKPHILBMM);
-	}
-
-	public override void MGLJAMJLIEL()
-	{
-		base.AFGLHMCLJJN();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.ANECPPFPKAP(CKOFDGAJCFF() + "_TimeX", 1);
-		OFPKLCAICJA(BCCHCOFCMMM());
-	}
-
-	public override void Reset()
-	{
-		Singleton<SaveSystem>.Instance.DeleteKey(PHPLKBPIMIH() + ".completedCount");
-		base.Reset();
-	}
-
-	public override void KNNOEGLLDAN()
-	{
-		Singleton<SaveSystem>.Instance.IPCGLFKIANM(DIDHNLABPNG() + "_ScreenResolution");
-		base.EEBGCGFNELO();
-	}
-
-	private float PMLACFKHAIP()
-	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
-	}
-
-	public override void BJKPNPDKIIL(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
-	{
-		base.NMFKKOJOLAB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		string[] array = NOJGGCLPPAM.Split('ﾉ');
-		string s = array[0];
-		List<string> list = array.ToList();
-		list.RemoveAt(1);
-		string cBMKNPLELGP = string.Join("_ScreenResolution", list.ToArray());
-		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowTrailingWhite | NumberStyles.AllowLeadingSign);
-		CBMKNPLELGP = cBMKNPLELGP;
-		Singleton<GameManager>.Instance.OnGameEvent -= NLPFNLACBHB;
-		Singleton<GameManager>.Instance.OnGameEvent += NNFFNFNKFOF;
-		LoadProgress();
-	}
-
-	public override void BFJJMGFNGMN(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
-	{
-		base.HAPELGDNDFN(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		base.LPGHCNKDCKD(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
 		char[] array = new char[1];
-		array[1] = '￥';
+		array[1] = 'e';
 		string[] array2 = NOJGGCLPPAM.Split(array);
 		string s = array2[0];
 		List<string> list = array2.ToList();
 		list.RemoveAt(1);
-		string cBMKNPLELGP = string.Join("CameraFilterPack_Paper4", list.ToArray());
-		MHLPNLMDILP = int.Parse(s, NumberStyles.Integer);
+		string cBMKNPLELGP = string.Join("CameraFilterPack/Blur_Radial", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingWhite | NumberStyles.AllowTrailingWhite);
 		CBMKNPLELGP = cBMKNPLELGP;
-		Singleton<GameManager>.Instance.AABEGAMPOLA(HJFDNOHJMGN);
-		Singleton<GameManager>.Instance.MIEFLJDAOCA(NLPFNLACBHB);
-		JJPHFPDNDEC();
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(FIBINEJFAHF);
+		Singleton<GameManager>.Instance.OnGameEvent += KJKPJNECCAA;
+		EMDHDEGLPPF();
 	}
 
-	public override void CAPPKCBFILL()
+	public override void BMMJGMKOBJL()
 	{
-		Singleton<SaveSystem>.Instance.KNFHMLMGKCJ(PHPLKBPIMIH() + ".lastCheckpoint.playerdistance");
-		base.EEBGCGFNELO();
+		Singleton<GameManager>.Instance.LKMBANBOLHD(CBLPBNNHFDF);
+		base.ALGICFLJJBM();
 	}
 
-	private void HJFDNOHJMGN(GameEventInfo DAGALCAILLN)
+	public override void AIAIAJFFBIN(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.NOCNNNKPEGI());
-		if (Singleton<LuaEnvironment>.Instance.CheckMapEventCondition(CBMKNPLELGP))
+		base.KJJMJJJEGDB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[1];
+		array[1] = '\uffdd';
+		string[] array2 = NOJGGCLPPAM.Split(array);
+		string s = array2[0];
+		List<string> list = array2.ToList();
+		list.RemoveAt(1);
+		string cBMKNPLELGP = string.Join("_Blue_G", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingSign);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(AJNMBKABIMO);
+		Singleton<GameManager>.Instance.OnGameEvent += IPGKJJJPLOL;
+		HEPLJACPKFO();
+	}
+
+	public override void KIBIPGFCBKO()
+	{
+		base.LoadProgress();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.KFNFNKILGPH(JLGGLIMFAFJ() + "_SSAO", 0);
+		JKINKBKCGFP(LNACNNOIHMB());
+	}
+
+	private void CGKBKHDGKNP(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.PPEBDMBKOBD());
+		if (Singleton<LuaEnvironment>.Instance.NILOPHNEAIC(CBMKNPLELGP))
 		{
-			HGMKPHILBMM++;
-			EHAMFOBIPEO(GLLIALLLLLN());
+			HGMKPHILBMM += 0;
+			AHMNICEJLMF(CAOJDEFHMAG());
 		}
 	}
 
-	private float OFIFLHGIMAJ()
+	public override void NGHGLCLLIMP()
+	{
+		base.AGCKLPAKDAK();
+		Singleton<SaveSystem>.Instance.GBFBKFACPBI(KHILCMNLMOJ() + "_Value2", HGMKPHILBMM);
+	}
+
+	public override void ABFLIINAFLC()
+	{
+		base.OPDGBIPHKGC();
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI(JLGGLIMFAFJ() + "IconFileSelector", HGMKPHILBMM);
+	}
+
+	public override void LKGPOLEPAEG()
+	{
+		base.OPDGBIPHKGC();
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI(FJFFJLBABDI() + " at ", HGMKPHILBMM);
+	}
+
+	public override void GOFMABPMLKF()
+	{
+		Singleton<SaveSystem>.Instance.DeleteKey(FJFFJLBABDI() + "_ScreenResolution");
+		base.IJHPPIHFFEA();
+	}
+
+	private void NLPFNLACBHB(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.GEI);
+		if (Singleton<LuaEnvironment>.Instance.CheckMapEventCondition(CBMKNPLELGP))
+		{
+			HGMKPHILBMM++;
+			NHENNCOILPG(CEKIBLKIKEF());
+		}
+	}
+
+	private float CDCIEIOFABB()
 	{
 		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
 	}
 
-	public override void HDLJGOMCLEK()
+	public override void AODLIPCOIAK()
 	{
-		base.CCGAPNPGAOL();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.AFCPNFKIKKJ(FDHGPNBJKMP() + "menu.enableselectormusic", 1);
-		base.GoalProgress = DJLHHDEGBKK();
+		Singleton<GameManager>.Instance.OnGameEvent -= OKLHDAEHLKC;
+		base.ONLIHAEAHOJ();
 	}
 
-	private float PDPIKAEEPKI()
+	private float MBKDOOBIJJJ()
 	{
 		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
 	}
 
-	public override void AFGLHMCLJJN()
+	private void KJKPJNECCAA(GameEventInfo DAGALCAILLN)
 	{
-		base.CCGAPNPGAOL();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.GetInt(PHPLKBPIMIH() + "ERROR: Preview file name in modName.workshop.json doesn't match any file", 1);
-		ENHBNIOEKLF(DLGFNCGHLPK());
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.GEI);
+		if (Singleton<LuaEnvironment>.Instance.CheckMapEventCondition(CBMKNPLELGP))
+		{
+			HGMKPHILBMM++;
+			BNPNMCFLDNI(GICDHIHBFHI());
+		}
 	}
 
-	public override void OKFNEFJMLJI()
+	private float OKMLICIEMEG()
 	{
-		base.DADLEPMJMJL();
-		Singleton<SaveSystem>.Instance.HIDBNDKJHAA(CKOFDGAJCFF() + "\\n", HGMKPHILBMM);
+		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
 	}
 
-	public override void KHNGJNBKHOK()
+	public override void EAEAIFOBPHI(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		base.DKHLEEPCLEL();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.ANECPPFPKAP(PHPLKBPIMIH() + "CameraFilterPack/TV_BrokenGlass", 0);
-		OFPKLCAICJA(PEDNHBAJGPP());
+		base.LPGHCNKDCKD(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[1];
+		array[1] = 'i';
+		string[] array2 = NOJGGCLPPAM.Split(array);
+		string s = array2[0];
+		List<string> list = array2.ToList();
+		list.RemoveAt(1);
+		string cBMKNPLELGP = string.Join("id", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingSign);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(ANGLIEAGDOA);
+		Singleton<GameManager>.Instance.AALMFLNJPDG(AJNMBKABIMO);
+		HEPLJACPKFO();
 	}
 
-	private float DJLHHDEGBKK()
+	private float CAOJDEFHMAG()
 	{
 		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
 	}
 
 	public override void DOPPMCDLPBE()
 	{
-		base.AFFLBJKDKMD();
-		Singleton<SaveSystem>.Instance.HBIGPMNAPHA(PHPLKBPIMIH() + "LevelEditor/CustomEventEditor-Text", HGMKPHILBMM);
+		base.FLEONCKOLNB();
+		Singleton<SaveSystem>.Instance.DAAJKCCCICP(PHPLKBPIMIH() + "CameraFilterPack/Colors_Adjust_ColorRGB", HGMKPHILBMM);
 	}
 
-	private float GLLIALLLLLN()
+	public override void HBEJAGDGJAI()
 	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
+		base.HOEHJFEELNJ();
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI(DNEPKKKEBEA() + "GlassColor", HGMKPHILBMM);
 	}
 
-	public override void PMDFDPGNOOD()
+	public override void DOKEOBBOHEL()
 	{
-		Singleton<GameManager>.Instance.IGIDKGGKODK(AEOMHPDDOGA);
-		base.LMCKEFAMAJG();
+		Singleton<GameManager>.Instance.OnGameEvent -= ANGLIEAGDOA;
+		base.KLEMLMOPEFE();
 	}
 
-	private float PAGNCJJOABL()
+	public override void BJHJCGJACEA()
+	{
+		Singleton<SaveSystem>.Instance.IOJKJDBACPC(KHILCMNLMOJ() + "_TimeX");
+		base.CJPIGOKLKOA();
+	}
+
+	public override void DEDANNMJNOC()
+	{
+		Singleton<SaveSystem>.Instance.IOJKJDBACPC(KHILCMNLMOJ() + ".r");
+		base.Reset();
+	}
+
+	public override void MBLDJHOBIMG(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.NGLEHMAEEKL(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[0];
+		array[1] = 'z';
+		string[] array2 = NOJGGCLPPAM.Split(array);
+		string s = array2[0];
+		List<string> list = array2.ToList();
+		list.RemoveAt(0);
+		string cBMKNPLELGP = string.Join("Can not SetMasterClient(). Not in room or in offlineMode.", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingWhite);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(KCNNFCFHAHI);
+		Singleton<GameManager>.Instance.AALMFLNJPDG(AJNMBKABIMO);
+		HEPLJACPKFO();
+	}
+
+	public override void CHMIIBGANOP()
+	{
+		base.EMDHDEGLPPF();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.GetInt(BGOBKCLKJMD() + "Checkpoint", 0);
+		base.GoalProgress = OKMLICIEMEG();
+	}
+
+	private void CBLPBNNHFDF(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.EKPOOHDFOBN());
+		if (Singleton<LuaEnvironment>.Instance.ENBEECGHGLO(CBMKNPLELGP))
+		{
+			HGMKPHILBMM += 0;
+			JKINKBKCGFP(LNACNNOIHMB());
+		}
+	}
+
+	public override void AFGLHMCLJJN()
+	{
+		base.LoadProgress();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.GetInt(DNEPKKKEBEA() + "_ScreenResolution", 1);
+		AHMNICEJLMF(GICDHIHBFHI());
+	}
+
+	public override void PKFHBBCFEHG()
+	{
+		base.KANOEJEJAJN();
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI(BGOBKCLKJMD() + "Image", HGMKPHILBMM);
+	}
+
+	public override void JODHOODGJGP()
+	{
+		base.OMENGFPFDLL();
+		Singleton<SaveSystem>.Instance.DAAJKCCCICP(DNEPKKKEBEA() + "CameraFilterPack/Distortion_BlackHole", HGMKPHILBMM);
+	}
+
+	public override void BFJJMGFNGMN(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.KHMFEHEPGAM(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		string[] array = NOJGGCLPPAM.Split('ￅ');
+		string s = array[0];
+		List<string> list = array.ToList();
+		list.RemoveAt(1);
+		string cBMKNPLELGP = string.Join("_ScreenResolution", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.None);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(NNFFNFNKFOF);
+		Singleton<GameManager>.Instance.AALMFLNJPDG(KCNNFCFHAHI);
+		HEPLJACPKFO();
+	}
+
+	private float LNACNNOIHMB()
 	{
 		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
 	}
@@ -197,132 +299,73 @@ public class CountEventsGoal : ChallengeGoal
 		LoadProgress();
 	}
 
-	public override void LOKKIADJAFE()
+	public override void KIILJGKMPOA()
 	{
-		Singleton<SaveSystem>.Instance.BPBJMCANMOP(CKOFDGAJCFF() + "/");
-		base.LIMBEFBJNPL();
+		base.EMDHDEGLPPF();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.KFNFNKILGPH(KHILCMNLMOJ() + " ", 1);
+		BNPNMCFLDNI(CAOJDEFHMAG());
 	}
 
-	public override void AFMPCOFDHJI()
+	public override void DMGIOKBHOBL(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		Singleton<GameManager>.Instance.BLOKNDEOACI(OKLHDAEHLKC);
-		base.DDOBENFDOKL();
+		base.LPGHCNKDCKD(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[1];
+		array[1] = '\uffdf';
+		string[] array2 = NOJGGCLPPAM.Split(array);
+		string s = array2[1];
+		List<string> list = array2.ToList();
+		list.RemoveAt(1);
+		string cBMKNPLELGP = string.Join("Edited unlock conditions", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingWhite | NumberStyles.AllowTrailingWhite);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(KCNNFCFHAHI);
+		Singleton<GameManager>.Instance.OnGameEvent += CGKBKHDGKNP;
+		DFBDPJGHEEK();
 	}
 
-	private float DLGFNCGHLPK()
+	public override void DGNLHKLGAMC()
 	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
+		Singleton<SaveSystem>.Instance.JHCDGOMGOBE(JLGGLIMFAFJ() + "Move environment object to the position");
+		base.IJHPPIHFFEA();
 	}
 
-	public override void CMHMIMCABKA()
+	public override void JADEDAEMLBN()
 	{
-		Singleton<GameManager>.Instance.AABEGAMPOLA(NNFFNFNKFOF);
+		Singleton<SaveSystem>.Instance.KGGLDBCMCCM(ADHHBPHLCJO() + "_Value");
+		base.NHJBGDIEGPH();
+	}
+
+	public override void OnCompleted()
+	{
+		Singleton<GameManager>.Instance.OnGameEvent -= OKLHDAEHLKC;
 		base.OnCompleted();
 	}
 
-	public override void SaveProgress()
+	public override void LJOEJPOJPGH(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		base.SaveProgress();
-		Singleton<SaveSystem>.Instance.SetInt(PHPLKBPIMIH() + ".completedCount", HGMKPHILBMM);
+		base.DPIDHAFMFGG(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[0];
+		array[1] = 'ﾠ';
+		string[] array2 = NOJGGCLPPAM.Split(array);
+		string s = array2[0];
+		List<string> list = array2.ToList();
+		list.RemoveAt(0);
+		string cBMKNPLELGP = string.Join("OnPlayerGameMessage", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingSign);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.LKMBANBOLHD(OKLHDAEHLKC);
+		Singleton<GameManager>.Instance.OnGameEvent += NLPFNLACBHB;
+		HEPLJACPKFO();
 	}
 
-	public override void GIHINJKCEHO()
+	private void ANGLIEAGDOA(GameEventInfo DAGALCAILLN)
 	{
-		base.CCGAPNPGAOL();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.JPEEFKKPFIL(CKOFDGAJCFF() + "<command>", 0);
-		NHCKOAMBEDE(PDPIKAEEPKI());
-	}
-
-	public override void APJPLEFJFJP()
-	{
-		base.AOPNBBENAKB();
-		Singleton<SaveSystem>.Instance.HBIGPMNAPHA(DIDHNLABPNG() + "_PColor2", HGMKPHILBMM);
-	}
-
-	public override void JFHDBGECJEI()
-	{
-		base.AOPNBBENAKB();
-		Singleton<SaveSystem>.Instance.HIDBNDKJHAA(PNLACKIPGLD() + "player.xp", HGMKPHILBMM);
-	}
-
-	public override void GCMLEEHGBPA()
-	{
-		Singleton<SaveSystem>.Instance.KNFHMLMGKCJ(PNLACKIPGLD() + "_ScreenResolution");
-		base.EEBGCGFNELO();
-	}
-
-	private float ILKGIJEBJML()
-	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
-	}
-
-	private void NLPFNLACBHB(GameEventInfo DAGALCAILLN)
-	{
-		DAGALCAILLN.NEDLDBBIOGI(Singleton<LuaEnvironment>.Instance.GEI);
-		if (Singleton<LuaEnvironment>.Instance.CheckMapEventCondition(CBMKNPLELGP))
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.EKPOOHDFOBN());
+		if (Singleton<LuaEnvironment>.Instance.GAFCMDALGPH(CBMKNPLELGP))
 		{
 			HGMKPHILBMM++;
-			PNACFCEIEHH(DJLHHDEGBKK());
+			AHMNICEJLMF(LNACNNOIHMB());
 		}
-	}
-
-	public override void EHHOGOOJCHO()
-	{
-		base.DKHLEEPCLEL();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.AFCPNFKIKKJ(PHPLKBPIMIH() + "_BlurRadius4", 1);
-		base.GoalProgress = PEDNHBAJGPP();
-	}
-
-	private void AEOMHPDDOGA(GameEventInfo DAGALCAILLN)
-	{
-		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.GEI);
-		if (Singleton<LuaEnvironment>.Instance.DFAIJFMEOAC(CBMKNPLELGP))
-		{
-			HGMKPHILBMM += 0;
-			OFPKLCAICJA(EBPEPGPPLLE());
-		}
-	}
-
-	private float GCBBPGINAGC()
-	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
-	}
-
-	public override void IDOFOCOFEIE()
-	{
-		Singleton<SaveSystem>.Instance.DeleteKey(FDHGPNBJKMP() + "CameraFilterPack/Drawing_Paper");
-		base.EEBGCGFNELO();
-	}
-
-	private float EBPEPGPPLLE()
-	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
-	}
-
-	private float PEDNHBAJGPP()
-	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
-	}
-
-	private void GDAKPKIBLOA(GameEventInfo DAGALCAILLN)
-	{
-		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.NOCNNNKPEGI());
-		if (Singleton<LuaEnvironment>.Instance.DFAIJFMEOAC(CBMKNPLELGP))
-		{
-			HGMKPHILBMM += 0;
-			base.GoalProgress = GCBBPGINAGC();
-		}
-	}
-
-	private float CAOJDEFHMAG()
-	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
-	}
-
-	public override void KMHCLFLINIO()
-	{
-		Singleton<SaveSystem>.Instance.KNFHMLMGKCJ(PHPLKBPIMIH() + "color");
-		base.EEBGCGFNELO();
 	}
 
 	private void OKLHDAEHLKC(GameEventInfo DAGALCAILLN)
@@ -335,99 +378,313 @@ public class CountEventsGoal : ChallengeGoal
 		}
 	}
 
-	public override void KIBIPGFCBKO()
+	private float CEKIBLKIKEF()
 	{
-		base.JJPHFPDNDEC();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.JPEEFKKPFIL(PHPLKBPIMIH() + "Found best region: '", 0);
-		base.GoalProgress = BCCHCOFCMMM();
+		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
 	}
 
-	public override void GIOJOELJFBD(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	public override void LoadProgress()
 	{
-		base.AAOAGGDLFLI(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		char[] array = new char[1];
-		array[1] = '$';
+		base.LoadProgress();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.GetInt(PHPLKBPIMIH() + ".completedCount", 0);
+		base.GoalProgress = CAOJDEFHMAG();
+	}
+
+	public override void IOFDCAIPEGA()
+	{
+		Singleton<GameManager>.Instance.LKMBANBOLHD(ICCPGBPICFP);
+		base.OnCompleted();
+	}
+
+	public override void CPGAFFIOGCH()
+	{
+		Singleton<SaveSystem>.Instance.JHCDGOMGOBE(ADHHBPHLCJO() + "player.blackwhite");
+		base.CJPIGOKLKOA();
+	}
+
+	private void KCNNFCFHAHI(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.PPEBDMBKOBD());
+		if (Singleton<LuaEnvironment>.Instance.GAFCMDALGPH(CBMKNPLELGP))
+		{
+			HGMKPHILBMM += 0;
+			base.GoalProgress = GICDHIHBFHI();
+		}
+	}
+
+	public override void LHIBPEGLPHM()
+	{
+		Singleton<SaveSystem>.Instance.AGDCACJJAMG(JLGGLIMFAFJ() + "0.00");
+		base.COABGLMKACM();
+	}
+
+	public override void AFMPCOFDHJI()
+	{
+		Singleton<GameManager>.Instance.LKMBANBOLHD(ANGLIEAGDOA);
+		base.IOIAOIMIIMA();
+	}
+
+	public override void KGGEDALAKDA(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.GKCOBIILKMA(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[0];
+		array[1] = 'ﾤ';
 		string[] array2 = NOJGGCLPPAM.Split(array);
 		string s = array2[1];
 		List<string> list = array2.ToList();
-		list.RemoveAt(1);
-		string cBMKNPLELGP = string.Join("_Linecount", list.ToArray());
-		MHLPNLMDILP = int.Parse(s, NumberStyles.None);
+		list.RemoveAt(0);
+		string cBMKNPLELGP = string.Join("Delete events", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingWhite);
 		CBMKNPLELGP = cBMKNPLELGP;
-		Singleton<GameManager>.Instance.IGIDKGGKODK(OKLHDAEHLKC);
-		Singleton<GameManager>.Instance.MIEFLJDAOCA(OKLHDAEHLKC);
-		NAHLBHOLNCG();
+		Singleton<GameManager>.Instance.LKMBANBOLHD(BOOHNLOCBDK);
+		Singleton<GameManager>.Instance.PLHPCLABBIA(IPGKJJJPLOL);
+		LoadProgress();
 	}
 
-	private float CLKJBPKAGFL()
+	public override void KBJAAOIAPCC()
 	{
-		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
+		Singleton<GameManager>.Instance.LKMBANBOLHD(FIBINEJFAHF);
+		base.JNLJADDKPAI();
+	}
+
+	public override void FJMBAIAJIOC(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.OnAccept(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		string[] array = NOJGGCLPPAM.Split('\n');
+		string s = array[0];
+		List<string> list = array.ToList();
+		list.RemoveAt(0);
+		string cBMKNPLELGP = string.Join("CameraFilterPack/Blend2Camera_Overlay", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.Integer);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.LKMBANBOLHD(ANGLIEAGDOA);
+		Singleton<GameManager>.Instance.OnGameEvent += KJKPJNECCAA;
+		HBLGNPFJGBF();
+	}
+
+	public override void PGPMPNANPLM()
+	{
+		base.AGCKLPAKDAK();
+		Singleton<SaveSystem>.Instance.SetInt(IKLKPAJBHGB() + "speed", HGMKPHILBMM);
+	}
+
+	public override void KLBGGKHNLDD()
+	{
+		base.PPPFKGOCMLO();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.KFNFNKILGPH(KOHBJKHPDGK() + "\" that takes ", 1);
+		AHMNICEJLMF(CAOJDEFHMAG());
 	}
 
 	private void NNFFNFNKFOF(GameEventInfo DAGALCAILLN)
 	{
-		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.KNBBEFDHELF());
-		if (Singleton<LuaEnvironment>.Instance.DFAIJFMEOAC(CBMKNPLELGP))
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.EKPOOHDFOBN());
+		if (Singleton<LuaEnvironment>.Instance.NILOPHNEAIC(CBMKNPLELGP))
 		{
 			HGMKPHILBMM += 0;
-			JMMJKHLAIMI(OFIFLHGIMAJ());
+			JKINKBKCGFP(CDCIEIOFABB());
 		}
 	}
 
-	private float BCCHCOFCMMM()
+	public override void ILOBNHKDGPG(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.MOOFNOAOAMF(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[1];
+		array[1] = ',';
+		string[] array2 = NOJGGCLPPAM.Split(array);
+		string s = array2[1];
+		List<string> list = array2.ToList();
+		list.RemoveAt(0);
+		string cBMKNPLELGP = string.Join("Received RPC \"", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingWhite | NumberStyles.AllowTrailingWhite);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.LKMBANBOLHD(KCNNFCFHAHI);
+		Singleton<GameManager>.Instance.OnGameEvent += IPGKJJJPLOL;
+		EMDHDEGLPPF();
+	}
+
+	public override void OGKGIAAACAD()
+	{
+		Singleton<SaveSystem>.Instance.KGGLDBCMCCM(DNEPKKKEBEA() + "Other");
+		base.HIGJLKBIEOK();
+	}
+
+	private void FIBINEJFAHF(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.EKPOOHDFOBN());
+		if (Singleton<LuaEnvironment>.Instance.CheckMapEventCondition(CBMKNPLELGP))
+		{
+			HGMKPHILBMM += 0;
+			NHENNCOILPG(CEKIBLKIKEF());
+		}
+	}
+
+	private void IPGKJJJPLOL(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.DDGJFHBJMPK());
+		if (Singleton<LuaEnvironment>.Instance.ENBEECGHGLO(CBMKNPLELGP))
+		{
+			HGMKPHILBMM++;
+			NHENNCOILPG(LNACNNOIHMB());
+		}
+	}
+
+	public override void MOOFNOAOAMF(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.NOFLEDOPHMO(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		string[] array = NOJGGCLPPAM.Split('ﾑ');
+		string s = array[0];
+		List<string> list = array.ToList();
+		list.RemoveAt(0);
+		string cBMKNPLELGP = string.Join("GlassColor", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingWhite);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.LKMBANBOLHD(KCNNFCFHAHI);
+		Singleton<GameManager>.Instance.PLHPCLABBIA(IPGKJJJPLOL);
+		HEPLJACPKFO();
+	}
+
+	public override void GENNDFFJJNH()
+	{
+		base.HEPLJACPKFO();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.GetInt(PHPLKBPIMIH() + "ScreenResolutionPanel", 1);
+		base.GoalProgress = CEKIBLKIKEF();
+	}
+
+	private float GICDHIHBFHI()
 	{
 		return (float)HGMKPHILBMM / (float)MHLPNLMDILP;
 	}
 
-	public override void MBBHOJMLCBC()
+	public override void SaveProgress()
 	{
-		Singleton<SaveSystem>.Instance.BPBJMCANMOP(DIDHNLABPNG() + "_Value4");
-		base.JGMBGCOFCJI();
+		base.SaveProgress();
+		Singleton<SaveSystem>.Instance.SetInt(PHPLKBPIMIH() + ".completedCount", HGMKPHILBMM);
 	}
 
-	private void LNIAJININIG(GameEventInfo DAGALCAILLN)
+	public override void ADNFLLEGHGH()
 	{
-		DAGALCAILLN.NEDLDBBIOGI(Singleton<LuaEnvironment>.Instance.GEI);
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(ICCPGBPICFP);
+		base.OnCompleted();
+	}
+
+	public override void GMPAPODODHM()
+	{
+		base.LoadProgress();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.HHBIEPMBICO(PHPLKBPIMIH() + "PointsScoreText", 0);
+		NHENNCOILPG(MBKDOOBIJJJ());
+	}
+
+	public override void KOBJAEPJJJM()
+	{
+		Singleton<SaveSystem>.Instance.KGGLDBCMCCM(IKLKPAJBHGB() + "SetSatelliteRotationSpeed");
+		base.LAACNNJDKBI();
+	}
+
+	public override void LEPCANPAJFA()
+	{
+		base.HEPLJACPKFO();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.HHBIEPMBICO(FJFFJLBABDI() + "ready", 0);
+		NHENNCOILPG(GICDHIHBFHI());
+	}
+
+	private void BOOHNLOCBDK(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.PPEBDMBKOBD());
 		if (Singleton<LuaEnvironment>.Instance.CheckMapEventCondition(CBMKNPLELGP))
 		{
 			HGMKPHILBMM++;
-			JMMJKHLAIMI(CAOJDEFHMAG());
+			AHMNICEJLMF(MBKDOOBIJJJ());
 		}
 	}
 
-	public override void HMBLLAECOIL()
+	public override void FPMFLNFMDLN()
 	{
-		Singleton<SaveSystem>.Instance.KNFHMLMGKCJ(PHPLKBPIMIH() + "CreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.");
-		base.DGNLHKLGAMC();
+		base.KANOEJEJAJN();
+		Singleton<SaveSystem>.Instance.SetInt(KOHBJKHPDGK() + "_Value4", HGMKPHILBMM);
 	}
 
-	public override void FMEGNMDMAAJ(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	public override void FHFEHPCEMGI(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
 	{
-		base.DGIEACILHNJ(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
-		char[] array = new char[0];
-		array[0] = '\u0015';
+		base.KJJMJJJEGDB(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[1];
+		array[1] = '5';
 		string[] array2 = NOJGGCLPPAM.Split(array);
-		string s = array2[1];
+		string s = array2[0];
+		List<string> list = array2.ToList();
+		list.RemoveAt(0);
+		string cBMKNPLELGP = string.Join("_VelocityScale", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingSign);
+		CBMKNPLELGP = cBMKNPLELGP;
+		Singleton<GameManager>.Instance.FOKIAPDGFAB(NNFFNFNKFOF);
+		Singleton<GameManager>.Instance.PLHPCLABBIA(KCNNFCFHAHI);
+		EMDHDEGLPPF();
+	}
+
+	private void AJNMBKABIMO(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.EKPOOHDFOBN());
+		if (Singleton<LuaEnvironment>.Instance.ENBEECGHGLO(CBMKNPLELGP))
+		{
+			HGMKPHILBMM++;
+			BNPNMCFLDNI(GICDHIHBFHI());
+		}
+	}
+
+	public override void PCPDMGPGMEF()
+	{
+		Singleton<GameManager>.Instance.LKMBANBOLHD(KJKPJNECCAA);
+		base.KLEMLMOPEFE();
+	}
+
+	private void ICCPGBPICFP(GameEventInfo DAGALCAILLN)
+	{
+		DAGALCAILLN.CopyValues(Singleton<LuaEnvironment>.Instance.EDIJMIINAGB());
+		if (Singleton<LuaEnvironment>.Instance.CheckMapEventCondition(CBMKNPLELGP))
+		{
+			HGMKPHILBMM++;
+			base.GoalProgress = CDCIEIOFABB();
+		}
+	}
+
+	public override void FHPDJMHPLJA(ulong CENMLCAACBF, int KCMHIDFJNKB, string NOJGGCLPPAM)
+	{
+		base.LPGHCNKDCKD(CENMLCAACBF, KCMHIDFJNKB, NOJGGCLPPAM);
+		char[] array = new char[0];
+		array[1] = 'f';
+		string[] array2 = NOJGGCLPPAM.Split(array);
+		string s = array2[0];
 		List<string> list = array2.ToList();
 		list.RemoveAt(1);
-		string cBMKNPLELGP = string.Join("lobby '{0}'[{1}]", list.ToArray());
-		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowLeadingWhite | NumberStyles.AllowTrailingWhite);
+		string cBMKNPLELGP = string.Join("_Value4", list.ToArray());
+		MHLPNLMDILP = int.Parse(s, NumberStyles.AllowTrailingWhite);
 		CBMKNPLELGP = cBMKNPLELGP;
-		Singleton<GameManager>.Instance.OnGameEvent -= LILJBEOPBKP;
-		Singleton<GameManager>.Instance.OnGameEvent += HJFDNOHJMGN;
-		NAHLBHOLNCG();
+		Singleton<GameManager>.Instance.OnGameEvent -= AJNMBKABIMO;
+		Singleton<GameManager>.Instance.OnGameEvent += NLPFNLACBHB;
+		PPPFKGOCMLO();
 	}
 
-	public override void MAHMAEOANMD()
+	public override void DNNEPKGGCAO()
 	{
-		base.IJLBKALOBNO();
-		HGMKPHILBMM = Singleton<SaveSystem>.Instance.CEKEOJDAEOD(PNLACKIPGLD() + "FinalScoreSmallText", 1);
-		ENHBNIOEKLF(PAGNCJJOABL());
+		base.PPPFKGOCMLO();
+		HGMKPHILBMM = Singleton<SaveSystem>.Instance.HHBIEPMBICO(BGOBKCLKJMD() + "_Visualize", 1);
+		AHMNICEJLMF(OKMLICIEMEG());
 	}
 
-	public override void OnCompleted()
+	public override void NNFMEADJLLM()
 	{
-		Singleton<GameManager>.Instance.OnGameEvent -= OKLHDAEHLKC;
+		Singleton<GameManager>.Instance.LKMBANBOLHD(OKLHDAEHLKC);
 		base.OnCompleted();
+	}
+
+	public override void OKFNEFJMLJI()
+	{
+		base.FLEONCKOLNB();
+		Singleton<SaveSystem>.Instance.GBFBKFACPBI(PHPLKBPIMIH() + "Pop", HGMKPHILBMM);
+	}
+
+	public override void Reset()
+	{
+		Singleton<SaveSystem>.Instance.DeleteKey(PHPLKBPIMIH() + ".completedCount");
+		base.Reset();
 	}
 }

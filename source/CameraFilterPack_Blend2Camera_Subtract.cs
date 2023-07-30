@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/Subtract")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Blend 2 Camera/Subtract")]
 public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 {
 	private string ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_Subtract";
@@ -144,13 +144,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IGKFMCPDNOI().SetTexture("\" call.", JDMCFBKJHDD);
+				EFDEIFCDAFG().SetTexture("\" gets executed locally only, if at all.", JDMCFBKJHDD);
 			}
-			IGKFMCPDNOI().SetFloat("_Value1", HBJJOCHGOPH);
-			NJDIODJNGGA().SetFloat("_Value3", BlendFX);
-			GKILCDHJFEG().SetFloat("CameraFilterPack/Drawing_BluePrint", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector("source", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1702f, 60f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NJDIODJNGGA().SetFloat("_Amount", HBJJOCHGOPH);
+			IGKFMCPDNOI().SetFloat("_Value", BlendFX);
+			HCGJCMDJPGD().SetFloat("CameraFilterPack_Paper2", SwitchCameraToCamera2);
+			EFDEIFCDAFG().SetVector("cancel", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1702f, 60f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
 		}
 		else
 		{
@@ -241,13 +241,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NJDIODJNGGA().SetTexture("BloomShaderValueSlider", JDMCFBKJHDD);
+				IGKFMCPDNOI().SetTexture("BloomShaderValueSlider", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat("settings.arcsnohitsoundtimedelay", HBJJOCHGOPH);
-			NJDIODJNGGA().SetFloat("_Value1", BlendFX);
-			NJDIODJNGGA().SetFloat("#ok", SwitchCameraToCamera2);
-			GKILCDHJFEG().SetVector("_MainTex2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1088f, 1794f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
+			LPMLLJKMAMP().SetFloat("ArcsNoHitsoundTimeDelaySlider", HBJJOCHGOPH);
+			LPMLLJKMAMP().SetFloat("ERROR: Steam App ID isn't set! Make sure 'steam_appid.txt' is placed next to the executable file, and contains a single line with the app id.", BlendFX);
+			EFDEIFCDAFG().SetFloat("ResourcesConfig", SwitchCameraToCamera2);
+			NJDIODJNGGA().SetVector("_MainTex2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1088f, 1794f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HCGJCMDJPGD());
 		}
 		else
 		{
@@ -587,13 +587,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				LPMLLJKMAMP().SetTexture("_Value", JDMCFBKJHDD);
+				GKILCDHJFEG().SetTexture("_TimeX", JDMCFBKJHDD);
 			}
-			IGKFMCPDNOI().SetFloat("Electronic", HBJJOCHGOPH);
-			EFDEIFCDAFG().SetFloat("Deleted event", BlendFX);
-			IGKFMCPDNOI().SetFloat(": ", SwitchCameraToCamera2);
-			IGKFMCPDNOI().SetVector("GetGameList failed: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1853f, 1722f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
+			CEKJODEAMGB().SetFloat("Electronic", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("PLEASE WAIT", BlendFX);
+			NJDIODJNGGA().SetFloat("[PlayerController] ", SwitchCameraToCamera2);
+			GKILCDHJFEG().SetVector("JoinRoom failed (room maybe closed by now). Client stays on masterserver: {0}. State: {1}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1853f, 1722f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -621,13 +621,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				GKILCDHJFEG().SetTexture("true", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture(".completedMaps", JDMCFBKJHDD);
 			}
-			CEKJODEAMGB().SetFloat("Image_", HBJJOCHGOPH);
-			IGKFMCPDNOI().SetFloat("player.quantum", BlendFX);
-			EFDEIFCDAFG().SetFloat("_ScreenResolution", SwitchCameraToCamera2);
-			GKILCDHJFEG().SetVector("OK", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 818f, 1333f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
+			HCGJCMDJPGD().SetFloat("Image_", HBJJOCHGOPH);
+			LPMLLJKMAMP().SetFloat("player.quantum", BlendFX);
+			NJDIODJNGGA().SetFloat("_ScreenResolution", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("Submition failed", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 818f, 1333f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
 		}
 		else
 		{
@@ -703,13 +703,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				GKILCDHJFEG().SetTexture(". No ViewIDs are free to use. Max is: ", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("Failed to InstantiateSceneObject prefab:", JDMCFBKJHDD);
 			}
-			CEKJODEAMGB().SetFloat("--------------------------------", HBJJOCHGOPH);
-			IGKFMCPDNOI().SetFloat("Fade", BlendFX);
-			EFDEIFCDAFG().SetFloat("BloodAlternative2", SwitchCameraToCamera2);
+			CEKJODEAMGB().SetFloat("<b>Time</b>:", HBJJOCHGOPH);
+			GKILCDHJFEG().SetFloat("_Value3", BlendFX);
+			NBPKMLMCHFN.SetFloat("_Value4", SwitchCameraToCamera2);
 			NJDIODJNGGA().SetVector("menutheme.coldheat", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 224f, 424f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGKFMCPDNOI());
 		}
 		else
 		{
@@ -746,13 +746,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				GKILCDHJFEG().SetTexture("DestroyRpc", JDMCFBKJHDD);
+				EFDEIFCDAFG().SetTexture("RPC: 'OnAwakeRPC' PhotonView: ", JDMCFBKJHDD);
 			}
-			NJDIODJNGGA().SetFloat("_TimeX", HBJJOCHGOPH);
-			IGKFMCPDNOI().SetFloat("menu.playedsolo", BlendFX);
-			IGKFMCPDNOI().SetFloat(".highscore", SwitchCameraToCamera2);
-			EFDEIFCDAFG().SetVector("Copy from ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 786f, 533f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
+			IGKFMCPDNOI().SetFloat("CameraFilterPack/Glow_Glow", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("MultiplayerButton", BlendFX);
+			HCGJCMDJPGD().SetFloat(".", SwitchCameraToCamera2);
+			EFDEIFCDAFG().SetVector(".", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 786f, 533f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
 		}
 		else
 		{
@@ -795,13 +795,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				GKILCDHJFEG().SetTexture("_VignetteBlur", JDMCFBKJHDD);
+				EFDEIFCDAFG().SetTexture("_BlurPass", JDMCFBKJHDD);
 			}
-			NJDIODJNGGA().SetFloat("id", HBJJOCHGOPH);
-			EFDEIFCDAFG().SetFloat("#,0", BlendFX);
-			NBPKMLMCHFN.SetFloat("LevelURLInputField", SwitchCameraToCamera2);
-			IGKFMCPDNOI().SetVector("[MapEditor] Item creation successful! Published Item ID: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1534f, 200f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("Set Sun Input", HBJJOCHGOPH);
+			HCGJCMDJPGD().SetFloat("#,0.00", BlendFX);
+			NBPKMLMCHFN.SetFloat("ConfigVersionSlider", SwitchCameraToCamera2);
+			CEKJODEAMGB().SetVector("Created", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1534f, 200f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
 		}
 		else
 		{
@@ -824,13 +824,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IGKFMCPDNOI().SetTexture("set", JDMCFBKJHDD);
+				IGKFMCPDNOI().SetTexture("Localization Servise\nWorking commands:\nset <language>\nlist\nkeys", JDMCFBKJHDD);
 			}
-			NJDIODJNGGA().SetFloat("CameraFilterPack/Colors_Adjust_FullColors", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("/", BlendFX);
-			LPMLLJKMAMP().SetFloat("/", SwitchCameraToCamera2);
-			GKILCDHJFEG().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 79f, 1726f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CEKJODEAMGB());
+			LPMLLJKMAMP().SetFloat("CameraFilterPack/Colors_Adjust_FullColors", HBJJOCHGOPH);
+			NJDIODJNGGA().SetFloat("music", BlendFX);
+			IGKFMCPDNOI().SetFloat("FileLabel", SwitchCameraToCamera2);
+			HCGJCMDJPGD().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 79f, 1726f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
 		}
 		else
 		{
@@ -946,13 +946,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("FindFriends failed to apply the result, as a required value wasn't provided or the friend list length differed from result.", JDMCFBKJHDD);
+				IGKFMCPDNOI().SetTexture("JoinRandom failed: {0}.", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat("#orderby:", HBJJOCHGOPH);
-			LPMLLJKMAMP().SetFloat("_Near", BlendFX);
-			GKILCDHJFEG().SetFloat(".lastCheckpoint.powerupsScore", SwitchCameraToCamera2);
-			NBPKMLMCHFN.SetVector(" ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1432f, 1932f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
+			EFDEIFCDAFG().SetFloat("#orderby:", HBJJOCHGOPH);
+			CEKJODEAMGB().SetFloat("_TimeX", BlendFX);
+			NBPKMLMCHFN.SetFloat(".lastCheckpoint.maxLongestCombo", SwitchCameraToCamera2);
+			IGKFMCPDNOI().SetVector("rd", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1432f, 1932f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
 		}
 		else
 		{
@@ -992,13 +992,13 @@ public class CameraFilterPack_Blend2Camera_Subtract : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NJDIODJNGGA().SetTexture("StartCanvas", JDMCFBKJHDD);
+				EFDEIFCDAFG().SetTexture("LoadMapCanvas", JDMCFBKJHDD);
 			}
-			EFDEIFCDAFG().SetFloat("materialsitemid[", HBJJOCHGOPH);
-			GKILCDHJFEG().SetFloat("Editor", BlendFX);
-			IGKFMCPDNOI().SetFloat("Anime", SwitchCameraToCamera2);
+			EFDEIFCDAFG().SetFloat("#random #epic #item", HBJJOCHGOPH);
+			IGKFMCPDNOI().SetFloat("#ok", BlendFX);
+			CEKJODEAMGB().SetFloat("Anime", SwitchCameraToCamera2);
 			IGKFMCPDNOI().SetVector("_Visualize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 750f, 1356f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPMLLJKMAMP());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
 		}
 		else
 		{

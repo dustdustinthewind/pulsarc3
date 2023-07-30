@@ -37,9 +37,9 @@ public class CameraFilterPack_Drawing_Manga : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1075f;
 			}
-			NBPKMLMCHFN.SetFloat("New resource ID. Case-Sensitive", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("/", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			GCDFNHMJMIP().SetFloat("New resource ID. Case-Sensitive", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("settings.enableranking", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KAFBNOBOIAJ());
 		}
 		else
 		{
@@ -57,7 +57,7 @@ public class CameraFilterPack_Drawing_Manga : MonoBehaviour
 
 	private void DIPDEHOOBPG()
 	{
-		SCShader = Shader.Find("setAF");
+		SCShader = Shader.Find("plogs");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -84,9 +84,9 @@ public class CameraFilterPack_Drawing_Manga : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1822f;
 			}
-			DNLMFEGJJDD().SetFloat("Joystick1Button1", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("/../", DotSize);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DNLMFEGJJDD());
+			DNLMFEGJJDD().SetFloat("Joystick1Button0", HBJJOCHGOPH);
+			DBOLLHHMKKN().SetFloat("/../", DotSize);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -109,7 +109,7 @@ public class CameraFilterPack_Drawing_Manga : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("_Value2");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -218,8 +218,8 @@ public class CameraFilterPack_Drawing_Manga : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1112f;
 			}
-			GCDFNHMJMIP().SetFloat("_DistortionSize", HBJJOCHGOPH);
-			DBOLLHHMKKN().SetFloat("Bad parameters for setbool! Use <key> <value>", DotSize);
+			DBOLLHHMKKN().SetFloat("_DistortionLevel", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("Bad parameters for setbool! Use <key> <value>", DotSize);
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else

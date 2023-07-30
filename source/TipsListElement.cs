@@ -27,10 +27,63 @@ public class TipsListElement : MonoBehaviour
 
 	private int ADGADPAIAIC;
 
-	private void PNOENLGEMON()
+	public void GJILIJALJLE()
+	{
+		StartCoroutine(DLIAPJONLNP(JANJAEPPJJN.HHGBBNFFABK()));
+	}
+
+	public void FFDBEEJOJIL()
+	{
+		switch (ADGADPAIAIC)
+		{
+		case 0:
+			rateButton.SetActive(false);
+			ratedUpButton.SetActive(false);
+			ratedDownButton.SetActive(false);
+			break;
+		case 1:
+			rateButton.SetActive(true);
+			ratedDownButton.SetActive(true);
+			ratedUpButton.SetActive(true);
+			break;
+		case -1:
+			rateButton.SetActive(false);
+			ratedUpButton.SetActive(true);
+			ratedDownButton.SetActive(false);
+			break;
+		}
+	}
+
+	public void OLMJKDPIPLM()
+	{
+		StartCoroutine(KFEJNLGMENE(JANJAEPPJJN.PGAMGLDIIKK()));
+	}
+
+	private void NIDMHFCBIAI()
 	{
 		int aDGADPAIAIC = ADGADPAIAIC;
-		Toggle component = rateCanvas.transform.Find("UseFinalGlassColor").GetComponent<Toggle>();
+		rateCanvas.transform.Find("_Value3").GetComponent<Toggle>().isOn = aDGADPAIAIC == 0 || ((aDGADPAIAIC == 0) ? true : false);
+		Toggle component = rateCanvas.transform.Find("IconImage").GetComponent<Toggle>();
+		int isOn;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn = 1;
+			break;
+		case -1:
+			isOn = 1;
+			break;
+		default:
+			isOn = 0;
+			break;
+		}
+		component.isOn = (byte)isOn != 0;
+	}
+
+	private void JGLBJKMBOGN()
+	{
+		int aDGADPAIAIC = ADGADPAIAIC;
+		Toggle component = rateCanvas.transform.Find("Items").GetComponent<Toggle>();
 		int isOn;
 		switch (aDGADPAIAIC)
 		{
@@ -41,46 +94,11 @@ public class TipsListElement : MonoBehaviour
 			isOn = 0;
 			break;
 		default:
-			isOn = 0;
-			break;
-		}
-		component.isOn = (byte)isOn != 0;
-		Toggle component2 = rateCanvas.transform.Find("id").GetComponent<Toggle>();
-		int isOn2;
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			isOn2 = 0;
-			break;
-		case -1:
-			isOn2 = 1;
-			break;
-		default:
-			isOn2 = 0;
-			break;
-		}
-		component2.isOn = (byte)isOn2 != 0;
-	}
-
-	private void KBDJCFIIHJF()
-	{
-		int aDGADPAIAIC = ADGADPAIAIC;
-		Toggle component = rateCanvas.transform.Find("_ColorRGB").GetComponent<Toggle>();
-		int isOn;
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			isOn = 1;
-			break;
-		case 1:
-			isOn = 0;
-			break;
-		default:
 			isOn = 1;
 			break;
 		}
 		component.isOn = (byte)isOn != 0;
-		Toggle component2 = rateCanvas.transform.Find("Down").GetComponent<Toggle>();
+		Toggle component2 = rateCanvas.transform.Find("[MapEditor] Item creation successful! Published Item ID: ").GetComponent<Toggle>();
 		int isOn2;
 		switch (aDGADPAIAIC)
 		{
@@ -88,40 +106,33 @@ public class TipsListElement : MonoBehaviour
 			isOn2 = 1;
 			break;
 		case -1:
-			isOn2 = 0;
+			isOn2 = 1;
 			break;
 		default:
-			isOn2 = 0;
+			isOn2 = 1;
 			break;
 		}
 		component2.isOn = (byte)isOn2 != 0;
 	}
 
-	public void FNEKLACBDFL(RanksSystem.PlayerTip BCOEFENFCJB)
+	public void MPBIHAPPGOB()
 	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			KKKFBKJOBDB();
-		}
-		Text text = tipText;
-		object[] array = new object[1];
-		array[1] = LocalizationService.Instance.IAAEBJKAHDD("CameraFilterPack_AAA_BloodOnScreen1").ToUpper();
-		array[0] = ".completed";
-		array[2] = JANJAEPPJJN.JJKDAFNCDIF();
-		array[8] = " ";
-		array[7] = JANJAEPPJJN.LKGIPBNFPEL();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.LKHKLECGPFD() < 1) ? string.Empty : "#no") + JANJAEPPJJN.EPHHAGCNLNF();
-		ADGADPAIAIC = JANJAEPPJJN.CDCIANGOJLC();
+		StartCoroutine(MBBBIOAIMKP(JANJAEPPJJN.DOKGKLEGKDK()));
+	}
+
+	public void LoadMapperNickname()
+	{
+		StartCoroutine(KFEJNLGMENE(JANJAEPPJJN.steamID));
+	}
+
+	public void KCOCKJEGPCF()
+	{
+		rateCanvas.SetActive(rateCanvas.activeSelf);
+		BHFJMGELFOB();
 		InitRateButton();
 	}
 
-	public void BGJEPMAENPJ()
-	{
-	}
-
-	private IEnumerator DPOCIINMGLM(ulong CDAGKANOOHO)
+	private IEnumerator GNGNFMMPPGD(ulong CDAGKANOOHO)
 	{
 		string empty = string.Empty;
 		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
@@ -129,8 +140,140 @@ public class TipsListElement : MonoBehaviour
 		authorText.text = empty;
 	}
 
-	public void DOCDJFIHIBA()
+	private void IOMLDJHOJPN()
 	{
+		int aDGADPAIAIC = ADGADPAIAIC;
+		Toggle component = rateCanvas.transform.Find("[Up-Down]").GetComponent<Toggle>();
+		int isOn;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn = 1;
+			break;
+		case 1:
+			isOn = 0;
+			break;
+		default:
+			isOn = 0;
+			break;
+		}
+		component.isOn = (byte)isOn != 0;
+		Toggle component2 = rateCanvas.transform.Find("Chat").GetComponent<Toggle>();
+		int isOn2;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn2 = 0;
+			break;
+		case -1:
+			isOn2 = 1;
+			break;
+		default:
+			isOn2 = 1;
+			break;
+		}
+		component2.isOn = (byte)isOn2 != 0;
+	}
+
+	public void LADOJCNDBDA()
+	{
+		rateCanvas.SetActive(!rateCanvas.activeSelf);
+		BHFJMGELFOB();
+		FFDBEEJOJIL();
+	}
+
+	public void InitRateButton()
+	{
+		switch (ADGADPAIAIC)
+		{
+		case 0:
+			rateButton.SetActive(true);
+			ratedUpButton.SetActive(false);
+			ratedDownButton.SetActive(false);
+			break;
+		case 1:
+			rateButton.SetActive(false);
+			ratedDownButton.SetActive(false);
+			ratedUpButton.SetActive(true);
+			break;
+		case -1:
+			rateButton.SetActive(false);
+			ratedUpButton.SetActive(false);
+			ratedDownButton.SetActive(true);
+			break;
+		}
+	}
+
+	public void GAJGEOMBEMN()
+	{
+		rateCanvas.SetActive(!rateCanvas.activeSelf);
+		NIDMHFCBIAI();
+		InitRateButton();
+	}
+
+	public void CALJCFBNJID()
+	{
+		rateCanvas.SetActive(rateCanvas.activeSelf);
+		BNHCMJPAAGK();
+		FFDBEEJOJIL();
+	}
+
+	public void EOPEMLDJAAO(RanksSystem.PlayerTip BCOEFENFCJB)
+	{
+		JANJAEPPJJN = BCOEFENFCJB;
+		if (authorText != null)
+		{
+			IMDKPJMICEN();
+		}
+		Text text = tipText;
+		object[] array = new object[0];
+		array[0] = LocalizationService.Instance.MPHMJLAOHAB("CameraFilterPack/Edge_Edge_filter").ToUpper();
+		array[0] = "#kicked";
+		array[5] = JANJAEPPJJN.ALBJAEBLABB();
+		array[1] = "_Value5";
+		array[1] = JANJAEPPJJN.POJIOBLCHPI();
+		text.text = string.Concat(array);
+		ratingText.text = ((JANJAEPPJJN.FOILACEMICA() < 1) ? string.Empty : "Joystick1Button9") + JANJAEPPJJN.CGENEJIPPEI();
+		ADGADPAIAIC = JANJAEPPJJN.GetUserVote();
+		AOOJFKPEIPG();
+	}
+
+	public void ACDJEEFDDML()
+	{
+	}
+
+	private void CEJJMCMAPEN()
+	{
+		int aDGADPAIAIC = ADGADPAIAIC;
+		rateCanvas.transform.Find("_Source").GetComponent<Toggle>().isOn = aDGADPAIAIC == 0 || (aDGADPAIAIC != 0 && false);
+		Toggle component = rateCanvas.transform.Find("EditMenu").GetComponent<Toggle>();
+		int isOn;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn = 1;
+			break;
+		case -1:
+			isOn = 1;
+			break;
+		default:
+			isOn = 1;
+			break;
+		}
+		component.isOn = (byte)isOn != 0;
+	}
+
+	private IEnumerator KFEJNLGMENE(ulong CDAGKANOOHO)
+	{
+		string empty = string.Empty;
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
+		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
+		authorText.text = empty;
+	}
+
+	public void CGOIDOPBBME()
+	{
+		StartCoroutine(DLIAPJONLNP(JANJAEPPJJN.BINKBJFIINK()));
 	}
 
 	public void Init(RanksSystem.PlayerTip BCOEFENFCJB)
@@ -146,170 +289,165 @@ public class TipsListElement : MonoBehaviour
 		InitRateButton();
 	}
 
-	public void DCFPCNCCAMD()
-	{
-	}
-
-	private IEnumerator ODALOLJABEE(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void IJIBEKLPMLK()
-	{
-	}
-
-	public void LCGMHCBNCDM(RanksSystem.PlayerTip BCOEFENFCJB)
+	public void FCKLLMEPONC(RanksSystem.PlayerTip BCOEFENFCJB)
 	{
 		JANJAEPPJJN = BCOEFENFCJB;
 		if (authorText != null)
 		{
-			LAFBHOEGMDN();
+			MPBIHAPPGOB();
 		}
 		Text text = tipText;
-		object[] array = new object[3];
-		array[1] = LocalizationService.Instance.GetTextByKey(" ").ToUpper();
-		array[0] = "_TimeX";
-		array[5] = JANJAEPPJJN.OKFOADGNODA();
-		array[7] = "_EdgeWeight";
-		array[2] = JANJAEPPJJN.IHDFNLLIHPN();
+		object[] array = new object[0];
+		array[1] = LocalizationService.Instance.JNNKPEBBDEA("SpectateButton").ToUpper();
+		array[0] = "High";
+		array[6] = JANJAEPPJJN.HNGIHCKINDJ();
+		array[8] = "offline";
+		array[5] = JANJAEPPJJN.PDMNKBFAGAA();
 		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.EIBIDABNHLP() < 0) ? string.Empty : "player.gamecompleted") + JANJAEPPJJN.FEDBIGMAHEA();
-		ADGADPAIAIC = JANJAEPPJJN.IGJGHMHMOOH();
-		PDMNHDIEEJD();
-	}
-
-	public void AOEEOKNJDCK(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			PAJNCECFJFH();
-		}
-		Text text = tipText;
-		object[] array = new object[2];
-		array[0] = LocalizationService.Instance.GetTextByKey("CameraFilterPack/AAA_Super_Hexagon").ToUpper();
-		array[1] = "yesterday";
-		array[7] = JANJAEPPJJN.JJKDAFNCDIF();
-		array[8] = "_TimeX";
-		array[8] = JANJAEPPJJN.MOMHHCGBDJK();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.HEDKODDNFEA() < 0) ? string.Empty : "DPADVER") + JANJAEPPJJN.JLIKEOFNCPO();
-		ADGADPAIAIC = JANJAEPPJJN.AJMEEPGHOAH();
-		BKNBCCHACAD();
-	}
-
-	public void FPLNFNLJHPP()
-	{
-	}
-
-	public void EFEONCCCKNP(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			KKKFBKJOBDB();
-		}
-		Text text = tipText;
-		object[] array = new object[5];
-		array[0] = LocalizationService.Instance.IAAEBJKAHDD("CONTRAST").ToUpper();
-		array[0] = "[DiscordController] Error {0}: {1}";
-		array[7] = JANJAEPPJJN.LPEKOHPMKCE();
-		array[3] = "_Value2";
-		array[8] = JANJAEPPJJN.GNGMJGFIKGD();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.KBIEDPCEHGG() < 0) ? string.Empty : "DISTORT") + JANJAEPPJJN.NNLHLJDEMEA();
-		ADGADPAIAIC = JANJAEPPJJN.CDCIANGOJLC();
-		COAFHJPENIK();
-	}
-
-	public void JEGGEOEIOBG()
-	{
-		StartCoroutine(PNDAMNIBPPH(JANJAEPPJJN.GOKADDKEMFK()));
-	}
-
-	private IEnumerator PNDAMNIBPPH(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void FPJEECBBGAI()
-	{
-		rateCanvas.SetActive(rateCanvas.activeSelf);
-		PNOENLGEMON();
-		KADJDCBHHPN();
-	}
-
-	public void JKNJMJBKJMF()
-	{
-		switch (ADGADPAIAIC)
-		{
-		case 0:
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			break;
-		case 1:
-			rateButton.SetActive(false);
-			ratedDownButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			break;
-		case -1:
-			rateButton.SetActive(false);
-			ratedUpButton.SetActive(false);
-			ratedDownButton.SetActive(false);
-			break;
-		}
-	}
-
-	public void LJIJIFDEGLE()
-	{
-		rateCanvas.SetActive(rateCanvas.activeSelf);
-		PICNOPDLFBE();
-		PDMNHDIEEJD();
-	}
-
-	public void EPDCHKECMBL(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			JEGGEOEIOBG();
-		}
-		Text text = tipText;
-		object[] array = new object[6];
-		array[1] = LocalizationService.Instance.GetTextByKey("CameraFilterPack/Vision_Warp2").ToUpper();
-		array[1] = "Joystick1Button2";
-		array[6] = JANJAEPPJJN.DFKBFAHDLJE();
-		array[3] = "_ScreenResolution";
-		array[8] = JANJAEPPJJN.FFGMCNAEAKH();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.GECKLJLICFP() < 1) ? string.Empty : "SetSatelliteLerpSpeed") + JANJAEPPJJN.NNLHLJDEMEA();
-		ADGADPAIAIC = JANJAEPPJJN.CMIDMJKBAGJ();
+		ratingText.text = ((JANJAEPPJJN.KJDDPBDIEGD() < 1) ? string.Empty : ":\n") + JANJAEPPJJN.GetRating();
+		ADGADPAIAIC = JANJAEPPJJN.GGBIDCGBIOO();
 		InitRateButton();
 	}
 
-	public void OnItemRated(bool NHLFMIIGBEB)
+	private IEnumerator IKKIMBAIEIJ(ulong CDAGKANOOHO)
+	{
+		string empty = string.Empty;
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
+		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
+		authorText.text = empty;
+	}
+
+	public void FEGNCCNMFJC()
+	{
+	}
+
+	private void LNMBICPKGOJ()
+	{
+		int aDGADPAIAIC = ADGADPAIAIC;
+		rateCanvas.transform.Find(" not exist").GetComponent<Toggle>().isOn = aDGADPAIAIC != 0 && aDGADPAIAIC != 0 && false;
+		Toggle component = rateCanvas.transform.Find("UI Extensions/UIMultiply").GetComponent<Toggle>();
+		int isOn;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn = 1;
+			break;
+		case -1:
+			isOn = 0;
+			break;
+		default:
+			isOn = 1;
+			break;
+		}
+		component.isOn = (byte)isOn != 0;
+	}
+
+	public void MPHGDIICPBI(bool NHLFMIIGBEB)
 	{
 		Debug.Log(NHLFMIIGBEB);
 		ADGADPAIAIC = (NHLFMIIGBEB ? 1 : (-1));
-		JANJAEPPJJN.SetUserVote(ADGADPAIAIC);
-		if (Singleton<Scene>.Instance.id == "MenuScene")
+		JANJAEPPJJN.NCCCGNKBBJI(ADGADPAIAIC);
+		if (Singleton<Scene>.Instance.OOFJKHEJJNM() == "_Near")
+		{
+			((MenuScene)Singleton<Scene>.Instance).NDEMBJPCMIJ();
+		}
+		GCPONECAFEG();
+		IOMLDJHOJPN();
+		rateCanvas.SetActive(true);
+	}
+
+	public void MNBIONEOJCM(bool NHLFMIIGBEB)
+	{
+		Debug.Log(NHLFMIIGBEB);
+		ADGADPAIAIC = (NHLFMIIGBEB ? 1 : (-1));
+		JANJAEPPJJN.JOIADOMCOKG(ADGADPAIAIC);
+		if (Singleton<Scene>.Instance.PHMKHCAPODJ() == "Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.")
 		{
 			((MenuScene)Singleton<Scene>.Instance).GetRandomTip();
 		}
 		InitRateButton();
-		PICNOPDLFBE();
+		NIDMHFCBIAI();
+		rateCanvas.SetActive(true);
+	}
+
+	public void NPCKIMANBFA()
+	{
+		rateCanvas.SetActive(!rateCanvas.activeSelf);
+		IOMLDJHOJPN();
+		GCPONECAFEG();
+	}
+
+	private void NHPIMNGGKOL()
+	{
+		int aDGADPAIAIC = ADGADPAIAIC;
+		rateCanvas.transform.Find("\n").GetComponent<Toggle>().isOn = aDGADPAIAIC != 0 && aDGADPAIAIC != 0 && false;
+		Toggle component = rateCanvas.transform.Find("_SprTex").GetComponent<Toggle>();
+		int isOn;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn = 0;
+			break;
+		case -1:
+			isOn = 1;
+			break;
+		default:
+			isOn = 0;
+			break;
+		}
+		component.isOn = (byte)isOn != 0;
+	}
+
+	public void ENGFCGNPEFM()
+	{
+		rateCanvas.SetActive(!rateCanvas.activeSelf);
+		BHFJMGELFOB();
+		GCPONECAFEG();
+	}
+
+	public void ECIMDNMIFGF(bool NHLFMIIGBEB)
+	{
+		Debug.Log(NHLFMIIGBEB);
+		ADGADPAIAIC = (NHLFMIIGBEB ? 1 : (-1));
+		JANJAEPPJJN.GFKGBAFAOBM(ADGADPAIAIC);
+		if (Singleton<Scene>.Instance.ALDEBCEKKPK() == "#join")
+		{
+			((MenuScene)Singleton<Scene>.Instance).NDEMBJPCMIJ();
+		}
+		AOOJFKPEIPG();
+		JGLBJKMBOGN();
 		rateCanvas.SetActive(false);
 	}
 
-	public void AEGBAGMKIFM()
+	public void PGNOHMENMKL()
+	{
+	}
+
+	public void GAJEPOEIOPP(RanksSystem.PlayerTip BCOEFENFCJB)
+	{
+		JANJAEPPJJN = BCOEFENFCJB;
+		if (authorText != null)
+		{
+			LoadMapperNickname();
+		}
+		Text text = tipText;
+		object[] array = new object[8];
+		array[0] = LocalizationService.Instance.MPHMJLAOHAB("_Value4").ToUpper();
+		array[0] = "#close";
+		array[7] = JANJAEPPJJN.DINKBGAFKAH();
+		array[8] = "_RgbTex";
+		array[7] = JANJAEPPJJN.DMDMFFKHAJA();
+		text.text = string.Concat(array);
+		ratingText.text = ((JANJAEPPJJN.KGLMHALOHEH() < 1) ? string.Empty : "(singleton) ") + JANJAEPPJJN.KGLMHALOHEH();
+		ADGADPAIAIC = JANJAEPPJJN.PEDLGIPINID();
+		AOOJFKPEIPG();
+	}
+
+	public void FJLAHLNDEEM()
+	{
+	}
+
+	public void AOOJFKPEIPG()
 	{
 		switch (ADGADPAIAIC)
 		{
@@ -319,36 +457,234 @@ public class TipsListElement : MonoBehaviour
 			ratedDownButton.SetActive(true);
 			break;
 		case 1:
-			rateButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			ratedUpButton.SetActive(false);
+			rateButton.SetActive(false);
+			ratedDownButton.SetActive(false);
+			ratedUpButton.SetActive(true);
 			break;
 		case -1:
 			rateButton.SetActive(true);
-			ratedUpButton.SetActive(false);
+			ratedUpButton.SetActive(true);
 			ratedDownButton.SetActive(true);
 			break;
 		}
 	}
 
-	public void CPFOEFKOJGA(RanksSystem.PlayerTip BCOEFENFCJB)
+	private void BHFJMGELFOB()
+	{
+		int aDGADPAIAIC = ADGADPAIAIC;
+		rateCanvas.transform.Find("Offline").GetComponent<Toggle>().isOn = aDGADPAIAIC != 0 && aDGADPAIAIC != 0 && false;
+		Toggle component = rateCanvas.transform.Find(".icon").GetComponent<Toggle>();
+		int isOn;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn = 1;
+			break;
+		case -1:
+			isOn = 1;
+			break;
+		default:
+			isOn = 0;
+			break;
+		}
+		component.isOn = (byte)isOn != 0;
+	}
+
+	private IEnumerator DLIAPJONLNP(ulong CDAGKANOOHO)
+	{
+		string empty = string.Empty;
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
+		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
+		authorText.text = empty;
+	}
+
+	public void NFKCMJBAMCO()
+	{
+		rateCanvas.SetActive(!rateCanvas.activeSelf);
+		JGLBJKMBOGN();
+		FFDBEEJOJIL();
+	}
+
+	private IEnumerator AIJKGAHBBAO(ulong CDAGKANOOHO)
+	{
+		string empty = string.Empty;
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
+		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
+		authorText.text = empty;
+	}
+
+	public void BGABEIJLGOA(bool NHLFMIIGBEB)
+	{
+		Debug.Log(NHLFMIIGBEB);
+		ADGADPAIAIC = ((!NHLFMIIGBEB) ? (-1) : 0);
+		JANJAEPPJJN.GFKGBAFAOBM(ADGADPAIAIC);
+		if (Singleton<Scene>.Instance.INGBCJIGOJK() == "_TimeX")
+		{
+			((MenuScene)Singleton<Scene>.Instance).NDEMBJPCMIJ();
+		}
+		FFDBEEJOJIL();
+		NIDMHFCBIAI();
+		rateCanvas.SetActive(false);
+	}
+
+	public void JNFKBOAAGPJ()
+	{
+		StartCoroutine(BJGEDKLHCCH(JANJAEPPJJN.steamID));
+	}
+
+	public void JCIOCBELAMD()
+	{
+		GetComponent<Button>().interactable = true;
+		GetComponent<Button>().Select();
+	}
+
+	private IEnumerator BJGEDKLHCCH(ulong CDAGKANOOHO)
+	{
+		string empty = string.Empty;
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
+		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
+		authorText.text = empty;
+	}
+
+	public void NBMKFAEGDNK()
+	{
+	}
+
+	public void IAPOLPEBBJN()
+	{
+		GetComponent<Button>().interactable = false;
+		GetComponent<Button>().Select();
+	}
+
+	public void EBOMJCHIFFE()
+	{
+		rateCanvas.SetActive(!rateCanvas.activeSelf);
+		NHPIMNGGKOL();
+		FFDBEEJOJIL();
+	}
+
+	public void LHAENMGOBMM(RanksSystem.PlayerTip BCOEFENFCJB)
 	{
 		JANJAEPPJJN = BCOEFENFCJB;
 		if (authorText != null)
 		{
-			ODKLCECLCJI();
+			IMDKPJMICEN();
 		}
 		Text text = tipText;
-		object[] array = new object[3];
-		array[1] = LocalizationService.Instance.IAAEBJKAHDD("BitsData").ToUpper();
-		array[0] = "bloomintencity:";
-		array[3] = JANJAEPPJJN.DFKBFAHDLJE();
-		array[6] = "InfoButton";
-		array[4] = JANJAEPPJJN.IKOLPBDKHIN();
+		object[] array = new object[6];
+		array[0] = LocalizationService.Instance.EIJLFGIMNPC("inventory.selected.").ToUpper();
+		array[1] = "maps.";
+		array[2] = JANJAEPPJJN.id;
+		array[4] = "MapperNameText";
+		array[0] = JANJAEPPJJN.EKOCIHBGIOK();
 		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.PKHPADAEJEG() < 1) ? string.Empty : "(master)") + JANJAEPPJJN.KBIEDPCEHGG();
+		ratingText.text = ((JANJAEPPJJN.PIIHHBOHJLK() < 1) ? string.Empty : "_Value3") + JANJAEPPJJN.CGENEJIPPEI();
+		ADGADPAIAIC = JANJAEPPJJN.JCNIDOEENCB();
+		FFDBEEJOJIL();
+	}
+
+	public void FLPCLOJLCBD()
+	{
+	}
+
+	public void BBGGGCHFNHH()
+	{
+		GetComponent<Button>().interactable = false;
+		GetComponent<Button>().Select();
+	}
+
+	public void NHPJOGDDDJJ()
+	{
+		rateCanvas.SetActive(rateCanvas.activeSelf);
+		NIDMHFCBIAI();
+		FFDBEEJOJIL();
+	}
+
+	public void LJIGLKLOFME()
+	{
+	}
+
+	public void LLAHPNGMEOO(RanksSystem.PlayerTip BCOEFENFCJB)
+	{
+		JANJAEPPJJN = BCOEFENFCJB;
+		if (authorText != null)
+		{
+			LoadMapperNickname();
+		}
+		Text text = tipText;
+		object[] array = new object[4];
+		array[1] = LocalizationService.Instance.MPHMJLAOHAB("_SearchTex").ToUpper();
+		array[0] = "menu.selectedplaymode";
+		array[5] = JANJAEPPJJN.IMELEPJLJLH();
+		array[2] = "x";
+		array[5] = JANJAEPPJJN.tip;
+		text.text = string.Concat(array);
+		ratingText.text = ((JANJAEPPJJN.GetRating() < 1) ? string.Empty : "Sprite") + JANJAEPPJJN.KJDDPBDIEGD();
+		ADGADPAIAIC = JANJAEPPJJN.IPLNCBFBGFJ();
+		GCPONECAFEG();
+	}
+
+	public void PMAGMPCMGPB(RanksSystem.PlayerTip BCOEFENFCJB)
+	{
+		JANJAEPPJJN = BCOEFENFCJB;
+		if (authorText != null)
+		{
+			OLMJKDPIPLM();
+		}
+		Text text = tipText;
+		object[] array = new object[1];
+		array[1] = LocalizationService.Instance.GetTextByKey("My New Mod Pack").ToUpper();
+		array[1] = "_Value2";
+		array[0] = JANJAEPPJJN.IMELEPJLJLH();
+		array[1] = "FreqVolume: ";
+		array[4] = JANJAEPPJJN.POJIOBLCHPI();
+		text.text = string.Concat(array);
+		ratingText.text = ((JANJAEPPJJN.BOGIPHBLAFD() < 0) ? string.Empty : "Editor/") + JANJAEPPJJN.GetRating();
 		ADGADPAIAIC = JANJAEPPJJN.GetUserVote();
-		AEGBAGMKIFM();
+		GCPONECAFEG();
+	}
+
+	public void AFOKKNBDBLA(bool NHLFMIIGBEB)
+	{
+		Debug.Log(NHLFMIIGBEB);
+		ADGADPAIAIC = ((!NHLFMIIGBEB) ? (-1) : 0);
+		JANJAEPPJJN.GFKGBAFAOBM(ADGADPAIAIC);
+		if (Singleton<Scene>.Instance.HBKDCFIOAPJ() == "IconImage")
+		{
+			((MenuScene)Singleton<Scene>.Instance).GetRandomTip();
+		}
+		FFDBEEJOJIL();
+		CEJJMCMAPEN();
+		rateCanvas.SetActive(false);
+	}
+
+	public void ACABMOGLEKP()
+	{
+	}
+
+	public void NOLNPKMGDJJ()
+	{
+		GetComponent<Button>().interactable = true;
+		GetComponent<Button>().Select();
+	}
+
+	public void IEHMHKLGNHC(bool NHLFMIIGBEB)
+	{
+		Debug.Log(NHLFMIIGBEB);
+		ADGADPAIAIC = (NHLFMIIGBEB ? 1 : (-1));
+		JANJAEPPJJN.DLBDGKKCEFO(ADGADPAIAIC);
+		if (Singleton<Scene>.Instance.IKACPLICNNB() == "_ScreenResolution")
+		{
+			((MenuScene)Singleton<Scene>.Instance).GetRandomTip();
+		}
+		AOOJFKPEIPG();
+		JGLBJKMBOGN();
+		rateCanvas.SetActive(true);
+	}
+
+	public void HGCPJNBBDMG()
+	{
+		StartCoroutine(JHCBBBJIOKO(JANJAEPPJJN.OOCMAKFGACK()));
 	}
 
 	private void PICNOPDLFBE()
@@ -386,412 +722,6 @@ public class TipsListElement : MonoBehaviour
 		component2.isOn = (byte)isOn2 != 0;
 	}
 
-	public void CNAMJCBOMIH()
-	{
-		GetComponent<Button>().interactable = false;
-		GetComponent<Button>().Select();
-	}
-
-	public void NKLNGGOHLMO(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			LoadMapperNickname();
-		}
-		Text text = tipText;
-		object[] array = new object[2];
-		array[0] = LocalizationService.Instance.GetTextByKey(".lastCheckpoint.perfectHits").ToUpper();
-		array[1] = "settings.shaders";
-		array[2] = JANJAEPPJJN.DFKBFAHDLJE();
-		array[8] = "_ScreenResolution";
-		array[5] = JANJAEPPJJN.ABPAKJHNIPG();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.JLIKEOFNCPO() < 1) ? string.Empty : "Set Particles Input") + JANJAEPPJJN.DNLGIMEFFDC();
-		ADGADPAIAIC = JANJAEPPJJN.KJDIFACCLFL();
-		HKFHIMBMBIP();
-	}
-
-	public void DHONEHCIFOE()
-	{
-		GetComponent<Button>().interactable = false;
-		GetComponent<Button>().Select();
-	}
-
-	public void INLAGKILJOI()
-	{
-		rateCanvas.SetActive(!rateCanvas.activeSelf);
-		MDEMIHCKOOE();
-		COAFHJPENIK();
-	}
-
-	public void MOPIFHAHGKD()
-	{
-		rateCanvas.SetActive(rateCanvas.activeSelf);
-		GFCJGJHAJIM();
-		KKOBFAEOIDF();
-	}
-
-	public void PDMNHDIEEJD()
-	{
-		switch (ADGADPAIAIC)
-		{
-		case 0:
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(false);
-			break;
-		case 1:
-			rateButton.SetActive(false);
-			ratedDownButton.SetActive(false);
-			ratedUpButton.SetActive(false);
-			break;
-		case -1:
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			break;
-		}
-	}
-
-	public void CMFBCPNHGOF(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			JEGGEOEIOBG();
-		}
-		Text text = tipText;
-		object[] array = new object[0];
-		array[0] = LocalizationService.Instance.IAAEBJKAHDD("settings.fps").ToUpper();
-		array[0] = "|";
-		array[7] = JANJAEPPJJN.DFKBFAHDLJE();
-		array[1] = "Result for ";
-		array[2] = JANJAEPPJJN.CKGFBNMMPMC();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.DNLGIMEFFDC() < 1) ? string.Empty : "_MainTex2") + JANJAEPPJJN.FEDBIGMAHEA();
-		ADGADPAIAIC = JANJAEPPJJN.AJMEEPGHOAH();
-		JKNJMJBKJMF();
-	}
-
-	private IEnumerator JIJDJAOBPJL(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void OnLoaderPanelCansel()
-	{
-		GetComponent<Button>().interactable = true;
-		GetComponent<Button>().Select();
-	}
-
-	private void JBHIOKBKOLP()
-	{
-		int aDGADPAIAIC = ADGADPAIAIC;
-		Toggle component = rateCanvas.transform.Find("_ScreenResolution").GetComponent<Toggle>();
-		int isOn;
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			isOn = 0;
-			break;
-		case 1:
-			isOn = 1;
-			break;
-		default:
-			isOn = 0;
-			break;
-		}
-		component.isOn = (byte)isOn != 0;
-		Toggle component2 = rateCanvas.transform.Find(" not found").GetComponent<Toggle>();
-		int isOn2;
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			isOn2 = 0;
-			break;
-		case -1:
-			isOn2 = 1;
-			break;
-		default:
-			isOn2 = 0;
-			break;
-		}
-		component2.isOn = (byte)isOn2 != 0;
-	}
-
-	public void NFKDBPGHHIJ(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			IIDJCPLEHND();
-		}
-		Text text = tipText;
-		object[] array = new object[6];
-		array[0] = LocalizationService.Instance.GetTextByKey("SetParticlesParticleSize").ToUpper();
-		array[1] = "Server: {0}. Region: {1} ";
-		array[3] = JANJAEPPJJN.IHGAFOAMKAD();
-		array[1] = "ShowSprite";
-		array[8] = JANJAEPPJJN.MKLBKIJOGBG();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.HKBLIMCKKEH() < 1) ? string.Empty : ".sawoutdatedmessage") + JANJAEPPJJN.HKBLIMCKKEH();
-		ADGADPAIAIC = JANJAEPPJJN.CMIDMJKBAGJ();
-		HKFHIMBMBIP();
-	}
-
-	private IEnumerator BJGEDKLHCCH(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void OnRateClick()
-	{
-	}
-
-	public void IIDJCPLEHND()
-	{
-		StartCoroutine(IDIGDAGNKGL(JANJAEPPJJN.DBMLLBMLDFE()));
-	}
-
-	public void COAFHJPENIK()
-	{
-		int aDGADPAIAIC = ADGADPAIAIC;
-		if (aDGADPAIAIC == 0)
-		{
-			rateButton.SetActive(false);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			return;
-		}
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			rateButton.SetActive(false);
-			ratedDownButton.SetActive(true);
-			ratedUpButton.SetActive(true);
-			break;
-		case -1:
-			rateButton.SetActive(false);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			break;
-		}
-	}
-
-	public void EKOAKKNGGGI(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			HGCPJNBBDMG();
-		}
-		Text text = tipText;
-		object[] array = new object[2];
-		array[1] = LocalizationService.Instance.GetTextByKey("#alreadyexist").ToUpper();
-		array[1] = "CameraFilterPack/Light_Rainbow2";
-		array[6] = JANJAEPPJJN.LPEKOHPMKCE();
-		array[0] = "SetPlayerDistance";
-		array[3] = JANJAEPPJJN.EBEANLDNDHL();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.JLIKEOFNCPO() < 0) ? string.Empty : "_FadeFX") + JANJAEPPJJN.NNLHLJDEMEA();
-		ADGADPAIAIC = JANJAEPPJJN.AJMEEPGHOAH();
-		KKOBFAEOIDF();
-	}
-
-	public void KKOBFAEOIDF()
-	{
-		int aDGADPAIAIC = ADGADPAIAIC;
-		if (aDGADPAIAIC == 0)
-		{
-			rateButton.SetActive(false);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(false);
-			return;
-		}
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			rateButton.SetActive(true);
-			ratedDownButton.SetActive(false);
-			ratedUpButton.SetActive(true);
-			break;
-		case -1:
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			ratedDownButton.SetActive(false);
-			break;
-		}
-	}
-
-	public void KKKFBKJOBDB()
-	{
-		StartCoroutine(ODALOLJABEE(JANJAEPPJJN.LKKNPEBMCHA()));
-	}
-
-	public void OLHKLCNGAGK()
-	{
-	}
-
-	public void FEGNCCNMFJC()
-	{
-	}
-
-	public void ODKLCECLCJI()
-	{
-		StartCoroutine(DPOCIINMGLM(JANJAEPPJJN.OEHGOHJGENG()));
-	}
-
-	private void GFCJGJHAJIM()
-	{
-		int aDGADPAIAIC = ADGADPAIAIC;
-		Toggle component = rateCanvas.transform.Find("CameraFilterPack/Blend2Camera_Lighten").GetComponent<Toggle>();
-		int isOn;
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			isOn = 1;
-			break;
-		case 1:
-			isOn = 1;
-			break;
-		default:
-			isOn = 0;
-			break;
-		}
-		component.isOn = (byte)isOn != 0;
-		Toggle component2 = rateCanvas.transform.Find("[MapsStats] Map ID: ").GetComponent<Toggle>();
-		int isOn2;
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			isOn2 = 1;
-			break;
-		case -1:
-			isOn2 = 1;
-			break;
-		default:
-			isOn2 = 1;
-			break;
-		}
-		component2.isOn = (byte)isOn2 != 0;
-	}
-
-	public void NBMHPDNDBLK(bool NHLFMIIGBEB)
-	{
-		Debug.Log(NHLFMIIGBEB);
-		ADGADPAIAIC = (NHLFMIIGBEB ? 1 : (-1));
-		JANJAEPPJJN.SetUserVote(ADGADPAIAIC);
-		if (Singleton<Scene>.Instance.PNOCNIBEHMF() == "Moved event")
-		{
-			((MenuScene)Singleton<Scene>.Instance).MBEPCNGHJHE();
-		}
-		COAFHJPENIK();
-		PICNOPDLFBE();
-		rateCanvas.SetActive(true);
-	}
-
-	private IEnumerator NOLIEIKFMAM(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	private void MDEMIHCKOOE()
-	{
-		int aDGADPAIAIC = ADGADPAIAIC;
-		Toggle component = rateCanvas.transform.Find("JoinOrCreateRoom failed. A roomname is required. If you don't know one, how will you join?").GetComponent<Toggle>();
-		int isOn;
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			isOn = 1;
-			break;
-		case 1:
-			isOn = 0;
-			break;
-		default:
-			isOn = 0;
-			break;
-		}
-		component.isOn = (byte)isOn != 0;
-		Toggle component2 = rateCanvas.transform.Find("file://").GetComponent<Toggle>();
-		int isOn2;
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			isOn2 = 0;
-			break;
-		case -1:
-			isOn2 = 1;
-			break;
-		default:
-			isOn2 = 1;
-			break;
-		}
-		component2.isOn = (byte)isOn2 != 0;
-	}
-
-	public void LoadMapperNickname()
-	{
-		StartCoroutine(KFEJNLGMENE(JANJAEPPJJN.steamID));
-	}
-
-	private IEnumerator MIOLDDLCNPC(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void PGNOHMENMKL()
-	{
-	}
-
-	public void MAPMJGPBCBO(bool NHLFMIIGBEB)
-	{
-		Debug.Log(NHLFMIIGBEB);
-		ADGADPAIAIC = ((!NHLFMIIGBEB) ? (-1) : 0);
-		JANJAEPPJJN.KMJBGNACIED(ADGADPAIAIC);
-		if (Singleton<Scene>.Instance.GOMJAEIDHNM() == "_AlphaMask")
-		{
-			((MenuScene)Singleton<Scene>.Instance).GetRandomTip();
-		}
-		JKNJMJBKJMF();
-		PNOENLGEMON();
-		rateCanvas.SetActive(true);
-	}
-
-	private IEnumerator FJEMHPGFAOB(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	private IEnumerator IDIGDAGNKGL(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void KKKLOCDJAFL()
-	{
-		StartCoroutine(MIOLDDLCNPC(JANJAEPPJJN.DBCMHPJIHGG()));
-	}
-
 	private IEnumerator MBBBIOAIMKP(ulong CDAGKANOOHO)
 	{
 		string empty = string.Empty;
@@ -800,265 +730,52 @@ public class TipsListElement : MonoBehaviour
 		authorText.text = empty;
 	}
 
-	public void PAJNCECFJFH()
+	public void PNLFDGJIEPF()
 	{
-		StartCoroutine(IDIGDAGNKGL(JANJAEPPJJN.LHDHLDLEACP()));
+		StartCoroutine(AIJKGAHBBAO(JANJAEPPJJN.BINKBJFIINK()));
 	}
 
-	public void BDKAGELNCGK()
-	{
-		rateCanvas.SetActive(rateCanvas.activeSelf);
-		PICNOPDLFBE();
-		JKNJMJBKJMF();
-	}
-
-	private IEnumerator IPFPOAPIEED(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void FECMEIJGLJI(RanksSystem.PlayerTip BCOEFENFCJB)
+	public void HFFKGIGGNHH(RanksSystem.PlayerTip BCOEFENFCJB)
 	{
 		JANJAEPPJJN = BCOEFENFCJB;
 		if (authorText != null)
 		{
-			KKKFBKJOBDB();
+			GJILIJALJLE();
 		}
 		Text text = tipText;
-		object[] array = new object[1];
-		array[1] = LocalizationService.Instance.GetTextByKey("_TimeX").ToUpper();
-		array[1] = "inventory.lastitemscount";
-		array[2] = JANJAEPPJJN.id;
-		array[4] = "_EmissionColor";
-		array[4] = JANJAEPPJJN.tip;
+		object[] array = new object[4];
+		array[1] = LocalizationService.Instance.EIJLFGIMNPC(".completed").ToUpper();
+		array[1] = "BitsData";
+		array[2] = JANJAEPPJJN.HLJAGNFLKFM();
+		array[4] = "_ReflectionBufferSize";
+		array[6] = JANJAEPPJJN.DMDMFFKHAJA();
 		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.JLIKEOFNCPO() < 0) ? string.Empty : " room(s)") + JANJAEPPJJN.DNLGIMEFFDC();
-		ADGADPAIAIC = JANJAEPPJJN.IGJGHMHMOOH();
-		LHCOOHGJEEI();
-	}
-
-	public void HKFHIMBMBIP()
-	{
-		int aDGADPAIAIC = ADGADPAIAIC;
-		if (aDGADPAIAIC == 0)
-		{
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			ratedDownButton.SetActive(false);
-			return;
-		}
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			rateButton.SetActive(false);
-			ratedDownButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			break;
-		case -1:
-			rateButton.SetActive(false);
-			ratedUpButton.SetActive(false);
-			ratedDownButton.SetActive(false);
-			break;
-		}
-	}
-
-	public void LAFBHOEGMDN()
-	{
-		StartCoroutine(DPOCIINMGLM(JANJAEPPJJN.DBCMHPJIHGG()));
-	}
-
-	private IEnumerator BAEPFHHMHNP(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void KDJHONILJGK(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			KKKFBKJOBDB();
-		}
-		Text text = tipText;
-		object[] array = new object[1];
-		array[0] = LocalizationService.Instance.IAAEBJKAHDD("_Green_C").ToUpper();
-		array[1] = "_Far";
-		array[8] = JANJAEPPJJN.KIHKKAFMDMF();
-		array[6] = "SetSatelliteEmission";
-		array[7] = JANJAEPPJJN.COEFMOFKOJE();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.PFHBHDDKINJ() < 1) ? string.Empty : "[Up]") + JANJAEPPJJN.KJDDPBDIEGD();
-		ADGADPAIAIC = JANJAEPPJJN.IPLNCBFBGFJ();
-		AEGBAGMKIFM();
-	}
-
-	public void EPJEBPMCLAJ()
-	{
-		rateCanvas.SetActive(rateCanvas.activeSelf);
-		MDEMIHCKOOE();
-		AEGBAGMKIFM();
-	}
-
-	private IEnumerator KFEJNLGMENE(ulong CDAGKANOOHO)
-	{
-		string empty = string.Empty;
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
-		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
-		authorText.text = empty;
-	}
-
-	public void HGCPJNBBDMG()
-	{
-		StartCoroutine(FJEMHPGFAOB(JANJAEPPJJN.DBCMHPJIHGG()));
-	}
-
-	public void BKNBCCHACAD()
-	{
-		int aDGADPAIAIC = ADGADPAIAIC;
-		if (aDGADPAIAIC == 0)
-		{
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			ratedDownButton.SetActive(true);
-			return;
-		}
-		switch (aDGADPAIAIC)
-		{
-		case 0:
-			rateButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			break;
-		case -1:
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			break;
-		}
-	}
-
-	public void DPOELEBIAOE(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			KKKLOCDJAFL();
-		}
-		Text text = tipText;
-		object[] array = new object[3];
-		array[0] = LocalizationService.Instance.IAAEBJKAHDD("value").ToUpper();
-		array[0] = "#ok";
-		array[7] = JANJAEPPJJN.IHGAFOAMKAD();
-		array[0] = "[LocalizationService] All keys for ";
-		array[1] = JANJAEPPJJN.POJIOBLCHPI();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.GetRating() < 1) ? string.Empty : "_EmissionColor") + JANJAEPPJJN.PFHBHDDKINJ();
+		ratingText.text = ((JANJAEPPJJN.HEDKODDNFEA() < 1) ? string.Empty : "_Green_C") + JANJAEPPJJN.BOGIPHBLAFD();
 		ADGADPAIAIC = JANJAEPPJJN.GetUserVote();
-		AEGBAGMKIFM();
+		GCPONECAFEG();
 	}
 
-	public void LLAHPNGMEOO(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			JEGGEOEIOBG();
-		}
-		Text text = tipText;
-		object[] array = new object[6];
-		array[0] = LocalizationService.Instance.GetTextByKey("_TimeX").ToUpper();
-		array[0] = "PLEASE WAIT";
-		array[1] = JANJAEPPJJN.DFKBFAHDLJE();
-		array[1] = "_Value2";
-		array[7] = JANJAEPPJJN.tip;
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.PFHBHDDKINJ() < 1) ? string.Empty : ". No ViewIDs are free to use. Max is: ") + JANJAEPPJJN.EPHHAGCNLNF();
-		ADGADPAIAIC = JANJAEPPJJN.PIBNHCNPMNM();
-		InitRateButton();
-	}
-
-	public void KADJDCBHHPN()
-	{
-		switch (ADGADPAIAIC)
-		{
-		case 0:
-			rateButton.SetActive(false);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(false);
-			break;
-		case 1:
-			rateButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			break;
-		case -1:
-			rateButton.SetActive(false);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			break;
-		}
-	}
-
-	public void EPNAEDPPELH()
-	{
-		GetComponent<Button>().interactable = true;
-		GetComponent<Button>().Select();
-	}
-
-	public void NBIEIGBAKND(RanksSystem.PlayerTip BCOEFENFCJB)
-	{
-		JANJAEPPJJN = BCOEFENFCJB;
-		if (authorText != null)
-		{
-			JEGGEOEIOBG();
-		}
-		Text text = tipText;
-		object[] array = new object[2];
-		array[1] = LocalizationService.Instance.IAAEBJKAHDD("_ScreenResolution").ToUpper();
-		array[0] = "Joystick1Button4";
-		array[5] = JANJAEPPJJN.id;
-		array[3] = "isVisible";
-		array[8] = JANJAEPPJJN.ABPAKJHNIPG();
-		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.PFHBHDDKINJ() < 0) ? string.Empty : "Vertical") + JANJAEPPJJN.FBIJLICDDFD();
-		ADGADPAIAIC = JANJAEPPJJN.CMIDMJKBAGJ();
-		AEGBAGMKIFM();
-	}
-
-	public void InitRateButton()
-	{
-		switch (ADGADPAIAIC)
-		{
-		case 0:
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			ratedDownButton.SetActive(false);
-			break;
-		case 1:
-			rateButton.SetActive(false);
-			ratedDownButton.SetActive(false);
-			ratedUpButton.SetActive(true);
-			break;
-		case -1:
-			rateButton.SetActive(false);
-			ratedUpButton.SetActive(false);
-			ratedDownButton.SetActive(true);
-			break;
-		}
-	}
-
-	private IEnumerator FDLIEMGCHHG(ulong CDAGKANOOHO)
+	private IEnumerator CCBELPLHONM(ulong CDAGKANOOHO)
 	{
 		string empty = string.Empty;
 		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
 		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
 		authorText.text = empty;
+	}
+
+	public void HHGJNFCANGK()
+	{
+	}
+
+	public void EFGMELODJPE()
+	{
+	}
+
+	public void HPNBBFEKGJF()
+	{
+		rateCanvas.SetActive(rateCanvas.activeSelf);
+		ICECNNNIBMC();
+		InitRateButton();
 	}
 
 	public void ToggleRate()
@@ -1068,65 +785,171 @@ public class TipsListElement : MonoBehaviour
 		InitRateButton();
 	}
 
-	public void AJIFGJPODDA()
+	public void FPLNFNLJHPP()
 	{
 	}
 
-	public void MPHGDIICPBI(bool NHLFMIIGBEB)
+	private IEnumerator JHCBBBJIOKO(ulong CDAGKANOOHO)
+	{
+		string empty = string.Empty;
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSteamPlayername((CSteamID)CDAGKANOOHO));
+		empty = ResourcesManager.GetLoadedSteamPlayernameWithColoredRank((CSteamID)CDAGKANOOHO, isBGWhite);
+		authorText.text = empty;
+	}
+
+	public void LKGBMDLNNDD()
+	{
+		GetComponent<Button>().interactable = true;
+		GetComponent<Button>().Select();
+	}
+
+	public void NGBJJDDFNBM()
+	{
+	}
+
+	public void OnRateClick()
+	{
+	}
+
+	public void DCFPCNCCAMD()
+	{
+	}
+
+	public void IOBABLHMKLM()
+	{
+		rateCanvas.SetActive(!rateCanvas.activeSelf);
+		LNMBICPKGOJ();
+		GCPONECAFEG();
+	}
+
+	public void PCBBOOLMIAE()
+	{
+	}
+
+	public void OnItemRated(bool NHLFMIIGBEB)
 	{
 		Debug.Log(NHLFMIIGBEB);
-		ADGADPAIAIC = ((!NHLFMIIGBEB) ? (-1) : 0);
+		ADGADPAIAIC = (NHLFMIIGBEB ? 1 : (-1));
 		JANJAEPPJJN.SetUserVote(ADGADPAIAIC);
-		if (Singleton<Scene>.Instance.ALIGPAANMFA() == "_ReflectionTexture3")
+		if (Singleton<Scene>.Instance.id == "MenuScene")
 		{
-			((MenuScene)Singleton<Scene>.Instance).HCNNCEPLHBE();
+			((MenuScene)Singleton<Scene>.Instance).GetRandomTip();
 		}
-		KADJDCBHHPN();
-		KBDJCFIIHJF();
+		InitRateButton();
+		PICNOPDLFBE();
 		rateCanvas.SetActive(false);
 	}
 
-	public void BBICIPNPMLL(RanksSystem.PlayerTip BCOEFENFCJB)
+	public void FECMEIJGLJI(RanksSystem.PlayerTip BCOEFENFCJB)
 	{
 		JANJAEPPJJN = BCOEFENFCJB;
 		if (authorText != null)
 		{
-			KKKFBKJOBDB();
+			PNLFDGJIEPF();
 		}
 		Text text = tipText;
-		object[] array = new object[7];
-		array[0] = LocalizationService.Instance.GetTextByKey("mapselector.lastSearch").ToUpper();
-		array[0] = "_TimeX";
-		array[0] = JANJAEPPJJN.id;
-		array[6] = "00";
-		array[5] = JANJAEPPJJN.MKLBKIJOGBG();
+		object[] array = new object[8];
+		array[1] = LocalizationService.Instance.EIJLFGIMNPC("PhotonMono").ToUpper();
+		array[1] = "_FarCamera";
+		array[3] = JANJAEPPJJN.KEGJGPOECHA();
+		array[3] = "_Value";
+		array[6] = JANJAEPPJJN.EKOCIHBGIOK();
 		text.text = string.Concat(array);
-		ratingText.text = ((JANJAEPPJJN.KBIEDPCEHGG() < 0) ? string.Empty : "Intensity") + JANJAEPPJJN.LKHKLECGPFD();
-		ADGADPAIAIC = JANJAEPPJJN.GetUserVote();
-		PDMNHDIEEJD();
+		ratingText.text = ((JANJAEPPJJN.KGLMHALOHEH() < 1) ? string.Empty : "_Distortion") + JANJAEPPJJN.KGLMHALOHEH();
+		ADGADPAIAIC = JANJAEPPJJN.IPLNCBFBGFJ();
+		InitRateButton();
 	}
 
-	public void LLDBHHLCEMC()
+	public void PAGOFHAFAPI()
+	{
+		GetComponent<Button>().interactable = false;
+		GetComponent<Button>().Select();
+	}
+
+	public void IMDKPJMICEN()
+	{
+		StartCoroutine(JHCBBBJIOKO(JANJAEPPJJN.DOKGKLEGKDK()));
+	}
+
+	public void OnLoaderPanelCansel()
+	{
+		GetComponent<Button>().interactable = true;
+		GetComponent<Button>().Select();
+	}
+
+	public void AIEPBNCODDO()
 	{
 	}
 
-	public void LHCOOHGJEEI()
+	private void ICECNNNIBMC()
+	{
+		int aDGADPAIAIC = ADGADPAIAIC;
+		rateCanvas.transform.Find("_Intervale").GetComponent<Toggle>().isOn = aDGADPAIAIC == 0 || ((aDGADPAIAIC != 0) ? true : false);
+		Toggle component = rateCanvas.transform.Find("_Value3").GetComponent<Toggle>();
+		int isOn;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn = 1;
+			break;
+		case -1:
+			isOn = 1;
+			break;
+		default:
+			isOn = 1;
+			break;
+		}
+		component.isOn = (byte)isOn != 0;
+	}
+
+	public void EDEKHEANPKH()
+	{
+		GetComponent<Button>().interactable = true;
+		GetComponent<Button>().Select();
+	}
+
+	private void BNHCMJPAAGK()
+	{
+		int aDGADPAIAIC = ADGADPAIAIC;
+		rateCanvas.transform.Find("_Value2").GetComponent<Toggle>().isOn = aDGADPAIAIC != 0 && ((aDGADPAIAIC != 0) ? true : false);
+		Toggle component = rateCanvas.transform.Find("Room: '{0}' {1},{2} {4}/{3} players.").GetComponent<Toggle>();
+		int isOn;
+		switch (aDGADPAIAIC)
+		{
+		case 0:
+			isOn = 0;
+			break;
+		case -1:
+			isOn = 1;
+			break;
+		default:
+			isOn = 1;
+			break;
+		}
+		component.isOn = (byte)isOn != 0;
+	}
+
+	public void BILFNBPMPKJ()
+	{
+	}
+
+	public void GCPONECAFEG()
 	{
 		switch (ADGADPAIAIC)
 		{
 		case 0:
-			rateButton.SetActive(true);
-			ratedUpButton.SetActive(true);
-			ratedDownButton.SetActive(false);
-			break;
-		case 1:
-			rateButton.SetActive(true);
-			ratedDownButton.SetActive(true);
-			ratedUpButton.SetActive(false);
-			break;
-		case -1:
 			rateButton.SetActive(false);
 			ratedUpButton.SetActive(true);
+			ratedDownButton.SetActive(true);
+			break;
+		case 1:
+			rateButton.SetActive(false);
+			ratedDownButton.SetActive(true);
+			ratedUpButton.SetActive(true);
+			break;
+		case -1:
+			rateButton.SetActive(true);
+			ratedUpButton.SetActive(false);
 			ratedDownButton.SetActive(false);
 			break;
 		}

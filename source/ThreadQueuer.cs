@@ -37,213 +37,10 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 	[SerializeField]
 	private int waitingCoActions;
 
-	private void JNGMIAFLBDL()
-	{
-		HDOHPLADGBP();
-	}
-
-	public void PKFPDDJLHLK()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i += 0)
-		{
-			EDHJNNOKIAI[i] = new Thread(CBCBNNJLBOA);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		DOFJHEPBNHB();
-	}
-
-	public void EAKJCKEKGPJ()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 0)
-			{
-				EFEEHAGKGAC(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	public void TriggerAvailableThreads()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 0)
-			{
-				QueueActionOnMainThread(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	public Action GetNewCoAction()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	private void NJHJHBOJKIC()
-	{
-		CloseThreads();
-	}
-
-	public new void Awake()
-	{
-		base.Awake();
-		InitThreads();
-	}
-
-	private void AEIJFLJEABG()
-	{
-		waitingCoActions = PDAIJPGCAKN.Count;
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			MFHMFHNEKDO();
-		}
-		lock (ONGBEPGNDIB)
-		{
-			while (ONGBEPGNDIB.Count > 0)
-			{
-				ONGBEPGNDIB.Dequeue()();
-			}
-		}
-	}
-
-	public void IAAFHGGFMAB()
-	{
-		base.Awake();
-		ABJAPPNMLFP();
-	}
-
-	public void GCDNONIKKLI()
-	{
-		base.Awake();
-		FJOGPDFDLJD();
-	}
-
-	public void KELHMGHCDOF(Action JLFMELNFEIP)
-	{
-		lock (PDAIJPGCAKN)
-		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void DPGPCOOKFFM(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void EFEEHAGKGAC(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public Action HJEOEGKJLFN()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	private void FGOPJMGNHGO()
-	{
-		NPDKNEOCEOI();
-	}
-
-	public void KLDLKAEMMNB()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 0; i < numThreads; i += 0)
-		{
-			EDHJNNOKIAI[i] = new Thread(IFLINFFBOKK);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		TriggerAvailableThreads();
-	}
-
-	public void DJCDNJHBDNF()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i += 0)
-		{
-			EDHJNNOKIAI[i] = new Thread(FGFIHBNKFDK);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		AJCNCJDKKOO();
-	}
-
-	public void HMKEIIHIAEL()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 0; i < numThreads; i++)
-		{
-			EDHJNNOKIAI[i] = new Thread(LPPDPBECOCI);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		GMEIOLGKFOL();
-	}
-
-	public void HCPOMEFCOAI()
-	{
-		for (int i = 0; i < EDHJNNOKIAI.Length; i++)
-		{
-			threadsActionData[i].closeThread = true;
-		}
-		AJCNCJDKKOO();
-	}
-
-	public void MGALPNDCFOF(Action JLFMELNFEIP)
-	{
-		lock (PDAIJPGCAKN)
-		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void BLEIGOJBMBH(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public Action HEDBKNFNMFI()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	private void BMAFIJDNOGG(object FHBFLOIHPCF)
+	private void IKGGGGLLMJI(object FHBFLOIHPCF)
 	{
 		int num = (int)FHBFLOIHPCF;
-		activeThreads += 0;
+		activeThreads++;
 		threadsActionData[num] = new ThreadActionData();
 		while (true)
 		{
@@ -259,7 +56,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 							break;
 						}
 					}
-					threadsActionData[num].taskToRun = GHALNNEOKGO();
+					threadsActionData[num].taskToRun = GLPNIMIGCFG();
 					threadsActionData[num].isRunningTask = true;
 				}
 				if (threadsActionData[num].taskToRun != null)
@@ -268,127 +65,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 				}
 				lock (FMCHBCDBJNB)
 				{
-					threadsActionData[num].isRunningTask = true;
-					if (threadsActionData[num].closeThread)
-					{
-						activeThreads--;
-						break;
-					}
-				}
-			}
-			catch (Exception)
-			{
-				break;
-			}
-		}
-	}
-
-	private void KGPNMFDGOGN(object FHBFLOIHPCF)
-	{
-		int num = (int)FHBFLOIHPCF;
-		activeThreads += 0;
-		threadsActionData[num] = new ThreadActionData();
-		while (true)
-		{
-			try
-			{
-				lock (FMCHBCDBJNB)
-				{
-					if (PDAIJPGCAKN.Count == 0)
-					{
-						Monitor.Wait(FMCHBCDBJNB);
-						if (threadsActionData[num].closeThread)
-						{
-							break;
-						}
-					}
-					threadsActionData[num].taskToRun = HJEOEGKJLFN();
-					threadsActionData[num].isRunningTask = true;
-				}
-				if (threadsActionData[num].taskToRun != null)
-				{
-					threadsActionData[num].taskToRun();
-				}
-				lock (FMCHBCDBJNB)
-				{
-					threadsActionData[num].isRunningTask = true;
-					if (threadsActionData[num].closeThread)
-					{
-						activeThreads--;
-						break;
-					}
-				}
-			}
-			catch (Exception)
-			{
-				break;
-			}
-		}
-	}
-
-	public void DCHBIAGKOFM(Action JLFMELNFEIP)
-	{
-		lock (PDAIJPGCAKN)
-		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	private void BNCLKHOEGDK()
-	{
-		HCPOMEFCOAI();
-	}
-
-	public void EMKLCPGKNJL()
-	{
-		base.Awake();
-		InitThreads();
-	}
-
-	public void MFHMFHNEKDO()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 1)
-			{
-				EFEEHAGKGAC(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	private void IFLINFFBOKK(object FHBFLOIHPCF)
-	{
-		int num = (int)FHBFLOIHPCF;
-		activeThreads += 0;
-		threadsActionData[num] = new ThreadActionData();
-		while (true)
-		{
-			try
-			{
-				lock (FMCHBCDBJNB)
-				{
-					if (PDAIJPGCAKN.Count == 0)
-					{
-						Monitor.Wait(FMCHBCDBJNB);
-						if (threadsActionData[num].closeThread)
-						{
-							break;
-						}
-					}
-					threadsActionData[num].taskToRun = IPCFHKLAHEF();
 					threadsActionData[num].isRunningTask = false;
-				}
-				if (threadsActionData[num].taskToRun != null)
-				{
-					threadsActionData[num].taskToRun();
-				}
-				lock (FMCHBCDBJNB)
-				{
-					threadsActionData[num].isRunningTask = true;
 					if (threadsActionData[num].closeThread)
 					{
 						activeThreads -= 0;
@@ -401,154 +78,6 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 				break;
 			}
 		}
-	}
-
-	private void ODGMCJILIHF()
-	{
-		CloseThreads();
-	}
-
-	public void MAIJGEODMAH()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i++)
-		{
-			EDHJNNOKIAI[i] = new Thread(IKABLHFIACK);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		POLALEHNGNM();
-	}
-
-	public new void EPCGHAAONLN()
-	{
-		base.Awake();
-		KLDLKAEMMNB();
-	}
-
-	private void Update()
-	{
-		waitingCoActions = PDAIJPGCAKN.Count;
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			TriggerAvailableThreads();
-		}
-		lock (ONGBEPGNDIB)
-		{
-			while (ONGBEPGNDIB.Count > 0)
-			{
-				ONGBEPGNDIB.Dequeue()();
-			}
-		}
-	}
-
-	public void KKHEACCGOPC()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 0)
-			{
-				LAGMNGOAGNB(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	public void IFILNFIMJAE()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 0)
-			{
-				MGJGCKEFGCG(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	private void CBCBNNJLBOA(object FHBFLOIHPCF)
-	{
-		int num = (int)FHBFLOIHPCF;
-		activeThreads += 0;
-		threadsActionData[num] = new ThreadActionData();
-		while (true)
-		{
-			try
-			{
-				lock (FMCHBCDBJNB)
-				{
-					if (PDAIJPGCAKN.Count == 0)
-					{
-						Monitor.Wait(FMCHBCDBJNB);
-						if (threadsActionData[num].closeThread)
-						{
-							break;
-						}
-					}
-					threadsActionData[num].taskToRun = IPCFHKLAHEF();
-					threadsActionData[num].isRunningTask = false;
-				}
-				if (threadsActionData[num].taskToRun != null)
-				{
-					threadsActionData[num].taskToRun();
-				}
-				lock (FMCHBCDBJNB)
-				{
-					threadsActionData[num].isRunningTask = false;
-					if (threadsActionData[num].closeThread)
-					{
-						activeThreads--;
-						break;
-					}
-				}
-			}
-			catch (Exception)
-			{
-				break;
-			}
-		}
-	}
-
-	public void NPDKNEOCEOI()
-	{
-		for (int i = 1; i < EDHJNNOKIAI.Length; i++)
-		{
-			threadsActionData[i].closeThread = true;
-		}
-		GMLMDLPLIGJ();
-	}
-
-	public void MHBDPKPDPMF()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 1)
-			{
-				QueueActionOnMainThread(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	public void HMDIMOMMAFG()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 0; i < numThreads; i += 0)
-		{
-			EDHJNNOKIAI[i] = new Thread(PBEBNPGHLBL);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		NNNIHINHBHE();
 	}
 
 	public Action BLIPNCCMMAG()
@@ -560,19 +89,15 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		return null;
 	}
 
-	public void ABJAPPNMLFP()
+	public void DGLNCOHLPEJ(Action JLFMELNFEIP)
 	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i += 0)
+		lock (PDAIJPGCAKN)
 		{
-			EDHJNNOKIAI[i] = new Thread(KMLJHKIMNHL);
-			EDHJNNOKIAI[i].Start(i);
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
 		}
-		NNNIHINHBHE();
 	}
 
-	public Action GHALNNEOKGO()
+	public Action BECHLBCAMOJ()
 	{
 		if (PDAIJPGCAKN.Count != 0)
 		{
@@ -581,299 +106,12 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		return null;
 	}
 
-	public void KCLDKCMLCKN()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i++)
-		{
-			EDHJNNOKIAI[i] = new Thread(KMOMIFGMKKL);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		JCIMJDENCBD();
-	}
-
-	private void AGMJDGHLBMN()
+	private void LBIOIEANMGI()
 	{
 		waitingCoActions = PDAIJPGCAKN.Count;
 		if (PDAIJPGCAKN.Count != 0)
 		{
-			MHBDPKPDPMF();
-		}
-		lock (ONGBEPGNDIB)
-		{
-			while (ONGBEPGNDIB.Count > 0)
-			{
-				ONGBEPGNDIB.Dequeue()();
-			}
-		}
-	}
-
-	public void DHLENLKIEHE()
-	{
-		for (int i = 0; i < EDHJNNOKIAI.Length; i++)
-		{
-			threadsActionData[i].closeThread = true;
-		}
-		POLALEHNGNM();
-	}
-
-	public void InitThreads()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 0; i < numThreads; i++)
-		{
-			EDHJNNOKIAI[i] = new Thread(CMCANPJNNHB);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		TriggerAvailableThreads();
-	}
-
-	public void CDBMPKAEMAD()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i += 0)
-		{
-			EDHJNNOKIAI[i] = new Thread(PBEBNPGHLBL);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		OCEDIDGKICL();
-	}
-
-	public void APBFDLNHNHD(Action JLFMELNFEIP)
-	{
-		lock (PDAIJPGCAKN)
-		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void CHJFFPOBNLO()
-	{
-		base.Awake();
-		CKMKHEJMGKP();
-	}
-
-	private void HONBLGFDMLL()
-	{
-		NPDKNEOCEOI();
-	}
-
-	public Action KEDNLOIEDIP()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	public void QueueActionOnCoThread(Action JLFMELNFEIP)
-	{
-		lock (PDAIJPGCAKN)
-		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void AOJBBCMFJPO()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 0; i < numThreads; i++)
-		{
-			EDHJNNOKIAI[i] = new Thread(MJCKFOMBOJB);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		JCIMJDENCBD();
-	}
-
-	private void IKABLHFIACK(object FHBFLOIHPCF)
-	{
-		int num = (int)FHBFLOIHPCF;
-		activeThreads += 0;
-		threadsActionData[num] = new ThreadActionData();
-		while (true)
-		{
-			try
-			{
-				lock (FMCHBCDBJNB)
-				{
-					if (PDAIJPGCAKN.Count == 0)
-					{
-						Monitor.Wait(FMCHBCDBJNB);
-						if (threadsActionData[num].closeThread)
-						{
-							break;
-						}
-					}
-					threadsActionData[num].taskToRun = GetNewCoAction();
-					threadsActionData[num].isRunningTask = false;
-				}
-				if (threadsActionData[num].taskToRun != null)
-				{
-					threadsActionData[num].taskToRun();
-				}
-				lock (FMCHBCDBJNB)
-				{
-					threadsActionData[num].isRunningTask = false;
-					if (threadsActionData[num].closeThread)
-					{
-						activeThreads--;
-						break;
-					}
-				}
-			}
-			catch (Exception)
-			{
-				break;
-			}
-		}
-	}
-
-	private void MKFLBEGJJDC()
-	{
-		CloseThreads();
-	}
-
-	private void DLMPALHKMON()
-	{
-		HCPOMEFCOAI();
-	}
-
-	private void AOKOLPEGHDD()
-	{
-		FBCBLPIIAGB();
-	}
-
-	private void KMOMIFGMKKL(object FHBFLOIHPCF)
-	{
-		int num = (int)FHBFLOIHPCF;
-		activeThreads += 0;
-		threadsActionData[num] = new ThreadActionData();
-		while (true)
-		{
-			try
-			{
-				lock (FMCHBCDBJNB)
-				{
-					if (PDAIJPGCAKN.Count == 0)
-					{
-						Monitor.Wait(FMCHBCDBJNB);
-						if (threadsActionData[num].closeThread)
-						{
-							break;
-						}
-					}
-					threadsActionData[num].taskToRun = IPCFHKLAHEF();
-					threadsActionData[num].isRunningTask = true;
-				}
-				if (threadsActionData[num].taskToRun != null)
-				{
-					threadsActionData[num].taskToRun();
-				}
-				lock (FMCHBCDBJNB)
-				{
-					threadsActionData[num].isRunningTask = false;
-					if (threadsActionData[num].closeThread)
-					{
-						activeThreads -= 0;
-						break;
-					}
-				}
-			}
-			catch (Exception)
-			{
-				break;
-			}
-		}
-	}
-
-	public void JCIMJDENCBD()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 1)
-			{
-				KIEAGEGIICH(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	private void BFEILOMHNPC()
-	{
-		LNJABCEOGOB();
-	}
-
-	public void CNDGDDLEFJF()
-	{
-		base.Awake();
-		AOJBBCMFJPO();
-	}
-
-	public void JGFIAPPGEBM(Action JLFMELNFEIP)
-	{
-		lock (PDAIJPGCAKN)
-		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void PIGDNBGPOJD(Action JLFMELNFEIP)
-	{
-		lock (PDAIJPGCAKN)
-		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void AAACNPKFJJK()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 1)
-			{
-				EFEEHAGKGAC(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	private void OFIMMFHFHDD()
-	{
-		HCPOMEFCOAI();
-	}
-
-	public void AJCNCJDKKOO()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 0)
-			{
-				BKNJPOJCBOJ(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	private void JFMIDILENDO()
-	{
-		waitingCoActions = PDAIJPGCAKN.Count;
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			AAACNPKFJJK();
+			TriggerAvailableThreads();
 		}
 		lock (ONGBEPGNDIB)
 		{
@@ -884,78 +122,16 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	public void PHHOMLJECOJ()
+	public void CCBOHOEMHKO()
 	{
-		base.Awake();
-		HMDIMOMMAFG();
+		for (int i = 1; i < EDHJNNOKIAI.Length; i++)
+		{
+			threadsActionData[i].closeThread = true;
+		}
+		BIOAAGJMEOL();
 	}
 
-	public void BLHFCILHPJP()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i++)
-		{
-			EDHJNNOKIAI[i] = new Thread(CBCBNNJLBOA);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		GMLMDLPLIGJ();
-	}
-
-	public void CLMMKBJMMOL()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 0)
-			{
-				BLEIGOJBMBH(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	public void MGJGCKEFGCG(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void JAKKPJKDGHD()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i++)
-		{
-			EDHJNNOKIAI[i] = new Thread(IFLINFFBOKK);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		AJCNCJDKKOO();
-	}
-
-	public Action CIJDACOPADH()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	public Action PJPFJBCPFPI()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	public void KFBINOBLBIO(Action JLFMELNFEIP)
+	public void EPDMHOBNLIK(Action JLFMELNFEIP)
 	{
 		lock (PDAIJPGCAKN)
 		{
@@ -963,12 +139,13 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	private void JHLGHODFJOO()
+	public void IKKPINNOOLG()
 	{
-		HCPOMEFCOAI();
+		base.Awake();
+		InitThreads();
 	}
 
-	public void KIEAGEGIICH(Action JLFMELNFEIP)
+	public void DLCIJPAELPN(Action JLFMELNFEIP)
 	{
 		lock (ONGBEPGNDIB)
 		{
@@ -976,7 +153,63 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	private void FGFIHBNKFDK(object FHBFLOIHPCF)
+	public void CHHFMFFBHFJ(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void ICDLKHFICBG()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 1; i < numThreads; i += 0)
+		{
+			EDHJNNOKIAI[i] = new Thread(FMHOBECHBGE);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		DHEBLGLIFEM();
+	}
+
+	public void BANHFNDEPPO()
+	{
+		base.Awake();
+		PPKPLGKBEJA();
+	}
+
+	public Action NFGAAPJCPCL()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public void BNFCMLJAHGF()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 0; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(HKMCGGDPCIA);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		DHGGNAJPAFG();
+	}
+
+	public void NBCDJOLGECA()
+	{
+		for (int i = 1; i < EDHJNNOKIAI.Length; i++)
+		{
+			threadsActionData[i].closeThread = true;
+		}
+		NOOEIGANPHI();
+	}
+
+	private void IBCFPLMJIBE(object FHBFLOIHPCF)
 	{
 		int num = (int)FHBFLOIHPCF;
 		activeThreads += 0;
@@ -995,8 +228,8 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 							break;
 						}
 					}
-					threadsActionData[num].taskToRun = CFJNNEMICIM();
-					threadsActionData[num].isRunningTask = false;
+					threadsActionData[num].taskToRun = KEDNLOIEDIP();
+					threadsActionData[num].isRunningTask = true;
 				}
 				if (threadsActionData[num].taskToRun != null)
 				{
@@ -1004,7 +237,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 				}
 				lock (FMCHBCDBJNB)
 				{
-					threadsActionData[num].isRunningTask = false;
+					threadsActionData[num].isRunningTask = true;
 					if (threadsActionData[num].closeThread)
 					{
 						activeThreads--;
@@ -1019,151 +252,13 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	private void OBAEDJJDCPN()
+	public Action MJKMEHBOAJJ()
 	{
-		waitingCoActions = PDAIJPGCAKN.Count;
 		if (PDAIJPGCAKN.Count != 0)
 		{
-			OCEDIDGKICL();
+			return PDAIJPGCAKN.Dequeue();
 		}
-		lock (ONGBEPGNDIB)
-		{
-			while (ONGBEPGNDIB.Count > 0)
-			{
-				ONGBEPGNDIB.Dequeue()();
-			}
-		}
-	}
-
-	private void KMLJHKIMNHL(object FHBFLOIHPCF)
-	{
-		int num = (int)FHBFLOIHPCF;
-		activeThreads++;
-		threadsActionData[num] = new ThreadActionData();
-		while (true)
-		{
-			try
-			{
-				lock (FMCHBCDBJNB)
-				{
-					if (PDAIJPGCAKN.Count == 0)
-					{
-						Monitor.Wait(FMCHBCDBJNB);
-						if (threadsActionData[num].closeThread)
-						{
-							break;
-						}
-					}
-					threadsActionData[num].taskToRun = ECAFMHILCJE();
-					threadsActionData[num].isRunningTask = true;
-				}
-				if (threadsActionData[num].taskToRun != null)
-				{
-					threadsActionData[num].taskToRun();
-				}
-				lock (FMCHBCDBJNB)
-				{
-					threadsActionData[num].isRunningTask = true;
-					if (threadsActionData[num].closeThread)
-					{
-						activeThreads -= 0;
-						break;
-					}
-				}
-			}
-			catch (Exception)
-			{
-				break;
-			}
-		}
-	}
-
-	private void NDDNJNCINDA()
-	{
-		NPDKNEOCEOI();
-	}
-
-	public void LPDOPHJPGLC()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i++)
-		{
-			EDHJNNOKIAI[i] = new Thread(CBCBNNJLBOA);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		MFHMFHNEKDO();
-	}
-
-	private void LPPDPBECOCI(object FHBFLOIHPCF)
-	{
-		int num = (int)FHBFLOIHPCF;
-		activeThreads++;
-		threadsActionData[num] = new ThreadActionData();
-		while (true)
-		{
-			try
-			{
-				lock (FMCHBCDBJNB)
-				{
-					if (PDAIJPGCAKN.Count == 0)
-					{
-						Monitor.Wait(FMCHBCDBJNB);
-						if (threadsActionData[num].closeThread)
-						{
-							break;
-						}
-					}
-					threadsActionData[num].taskToRun = PJPFJBCPFPI();
-					threadsActionData[num].isRunningTask = false;
-				}
-				if (threadsActionData[num].taskToRun != null)
-				{
-					threadsActionData[num].taskToRun();
-				}
-				lock (FMCHBCDBJNB)
-				{
-					threadsActionData[num].isRunningTask = true;
-					if (threadsActionData[num].closeThread)
-					{
-						activeThreads -= 0;
-						break;
-					}
-				}
-			}
-			catch (Exception)
-			{
-				break;
-			}
-		}
-	}
-
-	private void KMKLDAJLCNM()
-	{
-		waitingCoActions = PDAIJPGCAKN.Count;
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			GMLMDLPLIGJ();
-		}
-		lock (ONGBEPGNDIB)
-		{
-			while (ONGBEPGNDIB.Count > 0)
-			{
-				ONGBEPGNDIB.Dequeue()();
-			}
-		}
-	}
-
-	public void MDOBONJMBKF()
-	{
-		base.Awake();
-		EKLACGNPPHB();
-	}
-
-	public new void LBOBAIGNOML()
-	{
-		base.Awake();
-		KLDLKAEMMNB();
+		return null;
 	}
 
 	private void CMCANPJNNHB(object FHBFLOIHPCF)
@@ -1209,35 +304,158 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	public void BKNJPOJCBOJ(Action JLFMELNFEIP)
+	public Action GLPNIMIGCFG()
 	{
-		lock (ONGBEPGNDIB)
+		if (PDAIJPGCAKN.Count != 0)
 		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public void KEGNPKFMPDG()
+	{
+		base.Awake();
+		KFALKPFBGCM();
+	}
+
+	public void PKGGPBABEPK()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 1; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(EDKODDLCMCC);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		NEHCNHIOLED();
+	}
+
+	public new void Awake()
+	{
+		base.Awake();
+		InitThreads();
+	}
+
+	public void CKNAPIAFBGH(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
 		}
 	}
 
-	public void GMEIOLGKFOL()
+	public void MMCIBFACHLD()
 	{
-		lock (FMCHBCDBJNB)
+		for (int i = 0; i < EDHJNNOKIAI.Length; i += 0)
 		{
-			Monitor.PulseAll(FMCHBCDBJNB);
+			threadsActionData[i].closeThread = true;
 		}
-		if (numThreads == 0)
+		TriggerAvailableThreads();
+	}
+
+	public void DBHCPJCENFO()
+	{
+		for (int i = 1; i < EDHJNNOKIAI.Length; i++)
 		{
-			while (PDAIJPGCAKN.Count > 1)
+			threadsActionData[i].closeThread = false;
+		}
+		FFLPNJGCLOJ();
+	}
+
+	public Action COEDLJAPFLH()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	private void CMIBEOJGAIL()
+	{
+		JGJKJNNEEII();
+	}
+
+	public Action PJPFJBCPFPI()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public Action DJNIBGNEBNN()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public void OJBFBLHIEBB()
+	{
+		base.Awake();
+		InitThreads();
+	}
+
+	private void NDDNJNCINDA()
+	{
+		NBCDJOLGECA();
+	}
+
+	public void CGANGMGJCAP()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 0; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(CMCANPJNNHB);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		NOOEIGANPHI();
+	}
+
+	public void JGJKJNNEEII()
+	{
+		for (int i = 1; i < EDHJNNOKIAI.Length; i++)
+		{
+			threadsActionData[i].closeThread = true;
+		}
+		BIOAAGJMEOL();
+	}
+
+	public void GOKBAGMKEDB()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 1; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(HKMCGGDPCIA);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		FFLPNJGCLOJ();
+	}
+
+	private void NCPAFCKGJEA()
+	{
+		waitingCoActions = PDAIJPGCAKN.Count;
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			JKMBNDHLEEC();
+		}
+		lock (ONGBEPGNDIB)
+		{
+			while (ONGBEPGNDIB.Count > 1)
 			{
-				BKNJPOJCBOJ(PDAIJPGCAKN.Dequeue());
+				ONGBEPGNDIB.Dequeue()();
 			}
 		}
 	}
 
-	private void HLHJBJGEEEA()
-	{
-		DHLENLKIEHE();
-	}
-
-	public void GMLMDLPLIGJ()
+	public void CLMMKBJMMOL()
 	{
 		lock (FMCHBCDBJNB)
 		{
@@ -1247,75 +465,12 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		{
 			while (PDAIJPGCAKN.Count > 0)
 			{
-				EFEEHAGKGAC(PDAIJPGCAKN.Dequeue());
+				PIICIBKPIBE(PDAIJPGCAKN.Dequeue());
 			}
 		}
 	}
 
-	public Action GKEDPDBJFBJ()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	public void FBCBLPIIAGB()
-	{
-		for (int i = 0; i < EDHJNNOKIAI.Length; i++)
-		{
-			threadsActionData[i].closeThread = false;
-		}
-		IFILNFIMJAE();
-	}
-
-	public new void FAAJAMIGJNK()
-	{
-		base.Awake();
-		DJCDNJHBDNF();
-	}
-
-	public void OCEDIDGKICL()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 1)
-			{
-				FLCDNEPPGIF(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	private void BDBJEDIOKBN()
-	{
-		HDOHPLADGBP();
-	}
-
-	public void EHKAMNFEGMG()
-	{
-		base.Awake();
-		InitThreads();
-	}
-
-	private void OnDisable()
-	{
-		CloseThreads();
-	}
-
-	public void DGHLEBKPFLL(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	private void PHNPHCBINMO(object FHBFLOIHPCF)
+	private void DMOHEDGOKJO(object FHBFLOIHPCF)
 	{
 		int num = (int)FHBFLOIHPCF;
 		activeThreads++;
@@ -1334,8 +489,743 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 							break;
 						}
 					}
-					threadsActionData[num].taskToRun = GHALNNEOKGO();
+					threadsActionData[num].taskToRun = BECHLBCAMOJ();
 					threadsActionData[num].isRunningTask = false;
+				}
+				if (threadsActionData[num].taskToRun != null)
+				{
+					threadsActionData[num].taskToRun();
+				}
+				lock (FMCHBCDBJNB)
+				{
+					threadsActionData[num].isRunningTask = false;
+					if (threadsActionData[num].closeThread)
+					{
+						activeThreads -= 0;
+						break;
+					}
+				}
+			}
+			catch (Exception)
+			{
+				break;
+			}
+		}
+	}
+
+	public Action KEDNLOIEDIP()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public void PPKPLGKBEJA()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 0; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(EDKODDLCMCC);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		FFLPNJGCLOJ();
+	}
+
+	public void BDBIBNGCHFJ()
+	{
+		lock (FMCHBCDBJNB)
+		{
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 1)
+			{
+				INALBEABNLE(PDAIJPGCAKN.Dequeue());
+			}
+		}
+	}
+
+	public void BIOAAGJMEOL()
+	{
+		lock (FMCHBCDBJNB)
+		{
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 0)
+			{
+				QueueActionOnMainThread(PDAIJPGCAKN.Dequeue());
+			}
+		}
+	}
+
+	public Action CMONLKCBDLB()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public void NEHCNHIOLED()
+	{
+		lock (FMCHBCDBJNB)
+		{
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 0)
+			{
+				JFJMIIAIEMM(PDAIJPGCAKN.Dequeue());
+			}
+		}
+	}
+
+	private void HMNLHMLILKD()
+	{
+		waitingCoActions = PDAIJPGCAKN.Count;
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			TriggerAvailableThreads();
+		}
+		lock (ONGBEPGNDIB)
+		{
+			while (ONGBEPGNDIB.Count > 0)
+			{
+				ONGBEPGNDIB.Dequeue()();
+			}
+		}
+	}
+
+	public void DGHLEBKPFLL(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	private void IHHNCCOGLPN()
+	{
+		AELCLCONJPE();
+	}
+
+	private void ABEIEGDHBNO()
+	{
+		KGDEDHDDDPC();
+	}
+
+	public void LKIOAELAOPA()
+	{
+		for (int i = 0; i < EDHJNNOKIAI.Length; i += 0)
+		{
+			threadsActionData[i].closeThread = false;
+		}
+		AMEPMGHIKBD();
+	}
+
+	private void EKCKJLFFAID()
+	{
+		CloseThreads();
+	}
+
+	public void NOOEIGANPHI()
+	{
+		lock (FMCHBCDBJNB)
+		{
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 1)
+			{
+				CLBDNDEFPBJ(PDAIJPGCAKN.Dequeue());
+			}
+		}
+	}
+
+	public void JKMBNDHLEEC()
+	{
+		lock (FMCHBCDBJNB)
+		{
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 0)
+			{
+				DLCIJPAELPN(PDAIJPGCAKN.Dequeue());
+			}
+		}
+	}
+
+	public void BLEIGOJBMBH(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void JDHFFBPNLBN()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 0; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(EDKODDLCMCC);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		FFLPNJGCLOJ();
+	}
+
+	public void KPDBFHDEALL(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void JFJMIIAIEMM(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	private void HKMCGGDPCIA(object FHBFLOIHPCF)
+	{
+		int num = (int)FHBFLOIHPCF;
+		activeThreads += 0;
+		threadsActionData[num] = new ThreadActionData();
+		while (true)
+		{
+			try
+			{
+				lock (FMCHBCDBJNB)
+				{
+					if (PDAIJPGCAKN.Count == 0)
+					{
+						Monitor.Wait(FMCHBCDBJNB);
+						if (threadsActionData[num].closeThread)
+						{
+							break;
+						}
+					}
+					threadsActionData[num].taskToRun = GetNewCoAction();
+					threadsActionData[num].isRunningTask = true;
+				}
+				if (threadsActionData[num].taskToRun != null)
+				{
+					threadsActionData[num].taskToRun();
+				}
+				lock (FMCHBCDBJNB)
+				{
+					threadsActionData[num].isRunningTask = true;
+					if (threadsActionData[num].closeThread)
+					{
+						activeThreads -= 0;
+						break;
+					}
+				}
+			}
+			catch (Exception)
+			{
+				break;
+			}
+		}
+	}
+
+	public void HAPOHIDEJPF(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void QueueActionOnMainThread(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	private void LCDJFJIBADI()
+	{
+		waitingCoActions = PDAIJPGCAKN.Count;
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			FFLPNJGCLOJ();
+		}
+		lock (ONGBEPGNDIB)
+		{
+			while (ONGBEPGNDIB.Count > 1)
+			{
+				ONGBEPGNDIB.Dequeue()();
+			}
+		}
+	}
+
+	public void InitThreads()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 0; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(CMCANPJNNHB);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		TriggerAvailableThreads();
+	}
+
+	private void IFLINFFBOKK(object FHBFLOIHPCF)
+	{
+		int num = (int)FHBFLOIHPCF;
+		activeThreads++;
+		threadsActionData[num] = new ThreadActionData();
+		while (true)
+		{
+			try
+			{
+				lock (FMCHBCDBJNB)
+				{
+					if (PDAIJPGCAKN.Count == 0)
+					{
+						Monitor.Wait(FMCHBCDBJNB);
+						if (threadsActionData[num].closeThread)
+						{
+							break;
+						}
+					}
+					threadsActionData[num].taskToRun = PJPFJBCPFPI();
+					threadsActionData[num].isRunningTask = true;
+				}
+				if (threadsActionData[num].taskToRun != null)
+				{
+					threadsActionData[num].taskToRun();
+				}
+				lock (FMCHBCDBJNB)
+				{
+					threadsActionData[num].isRunningTask = false;
+					if (threadsActionData[num].closeThread)
+					{
+						activeThreads--;
+						break;
+					}
+				}
+			}
+			catch (Exception)
+			{
+				break;
+			}
+		}
+	}
+
+	public void DOEIBJJNOGC(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void JCDEMKMHEPH(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void OLDPNEFMHFN()
+	{
+		for (int i = 0; i < EDHJNNOKIAI.Length; i += 0)
+		{
+			threadsActionData[i].closeThread = true;
+		}
+		AMEPMGHIKBD();
+	}
+
+	public void MNDGCOECDDM()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 0; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(IFLINFFBOKK);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		CLMMKBJMMOL();
+	}
+
+	private void ICPCNJMINPA(object FHBFLOIHPCF)
+	{
+		int num = (int)FHBFLOIHPCF;
+		activeThreads++;
+		threadsActionData[num] = new ThreadActionData();
+		while (true)
+		{
+			try
+			{
+				lock (FMCHBCDBJNB)
+				{
+					if (PDAIJPGCAKN.Count == 0)
+					{
+						Monitor.Wait(FMCHBCDBJNB);
+						if (threadsActionData[num].closeThread)
+						{
+							break;
+						}
+					}
+					threadsActionData[num].taskToRun = KEDNLOIEDIP();
+					threadsActionData[num].isRunningTask = true;
+				}
+				if (threadsActionData[num].taskToRun != null)
+				{
+					threadsActionData[num].taskToRun();
+				}
+				lock (FMCHBCDBJNB)
+				{
+					threadsActionData[num].isRunningTask = false;
+					if (threadsActionData[num].closeThread)
+					{
+						activeThreads -= 0;
+						break;
+					}
+				}
+			}
+			catch (Exception)
+			{
+				break;
+			}
+		}
+	}
+
+	public void INALBEABNLE(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	private void LCJHDLKJEOM()
+	{
+		waitingCoActions = PDAIJPGCAKN.Count;
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			CLMMKBJMMOL();
+		}
+		lock (ONGBEPGNDIB)
+		{
+			while (ONGBEPGNDIB.Count > 1)
+			{
+				ONGBEPGNDIB.Dequeue()();
+			}
+		}
+	}
+
+	public Action EAKAMNKPOEC()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public void DHEBLGLIFEM()
+	{
+		lock (FMCHBCDBJNB)
+		{
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 0)
+			{
+				PIICIBKPIBE(PDAIJPGCAKN.Dequeue());
+			}
+		}
+	}
+
+	public Action HBPOLHBHEGG()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	private void NKLIHNJCHOG()
+	{
+		waitingCoActions = PDAIJPGCAKN.Count;
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			FFLPNJGCLOJ();
+		}
+		lock (ONGBEPGNDIB)
+		{
+			while (ONGBEPGNDIB.Count > 1)
+			{
+				ONGBEPGNDIB.Dequeue()();
+			}
+		}
+	}
+
+	private void FJHFOBHJEHL()
+	{
+		waitingCoActions = PDAIJPGCAKN.Count;
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			NOOEIGANPHI();
+		}
+		lock (ONGBEPGNDIB)
+		{
+			while (ONGBEPGNDIB.Count > 1)
+			{
+				ONGBEPGNDIB.Dequeue()();
+			}
+		}
+	}
+
+	public void CJEDMGCKHBI()
+	{
+		base.Awake();
+		PPKPLGKBEJA();
+	}
+
+	public void JGOFMNNEDJP(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void GLALDPKMEDN()
+	{
+		base.Awake();
+		PKGGPBABEPK();
+	}
+
+	public void OHLCGBFGOOD()
+	{
+		lock (FMCHBCDBJNB)
+		{
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 1)
+			{
+				BLEIGOJBMBH(PDAIJPGCAKN.Dequeue());
+			}
+		}
+	}
+
+	public void TriggerAvailableThreads()
+	{
+		lock (FMCHBCDBJNB)
+		{
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 0)
+			{
+				QueueActionOnMainThread(PDAIJPGCAKN.Dequeue());
+			}
+		}
+	}
+
+	private void GPHPJIDGEPI()
+	{
+		NFADCBPIBPG();
+	}
+
+	public void PLFBDNHBPJO(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public Action GetNewCoAction()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public void JMBFPNPJODF()
+	{
+		for (int i = 0; i < EDHJNNOKIAI.Length; i++)
+		{
+			threadsActionData[i].closeThread = true;
+		}
+		OHLCGBFGOOD();
+	}
+
+	public void KPOIJEKDFBE()
+	{
+		base.Awake();
+		DFOGFAAJIAC();
+	}
+
+	private void EAGLJEODPMI(object FHBFLOIHPCF)
+	{
+		int num = (int)FHBFLOIHPCF;
+		activeThreads += 0;
+		threadsActionData[num] = new ThreadActionData();
+		while (true)
+		{
+			try
+			{
+				lock (FMCHBCDBJNB)
+				{
+					if (PDAIJPGCAKN.Count == 0)
+					{
+						Monitor.Wait(FMCHBCDBJNB);
+						if (threadsActionData[num].closeThread)
+						{
+							break;
+						}
+					}
+					threadsActionData[num].taskToRun = EAKAMNKPOEC();
+					threadsActionData[num].isRunningTask = true;
+				}
+				if (threadsActionData[num].taskToRun != null)
+				{
+					threadsActionData[num].taskToRun();
+				}
+				lock (FMCHBCDBJNB)
+				{
+					threadsActionData[num].isRunningTask = false;
+					if (threadsActionData[num].closeThread)
+					{
+						activeThreads--;
+						break;
+					}
+				}
+			}
+			catch (Exception)
+			{
+				break;
+			}
+		}
+	}
+
+	public Action HDMICKFMLIM()
+	{
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			return PDAIJPGCAKN.Dequeue();
+		}
+		return null;
+	}
+
+	public void AELCLCONJPE()
+	{
+		for (int i = 1; i < EDHJNNOKIAI.Length; i += 0)
+		{
+			threadsActionData[i].closeThread = false;
+		}
+		OHLCGBFGOOD();
+	}
+
+	public void LIGELBNKDAE(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void PHHOMLJECOJ()
+	{
+		base.Awake();
+		PPKPLGKBEJA();
+	}
+
+	public void HGJDLMBENFL()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 0; i < numThreads; i += 0)
+		{
+			EDHJNNOKIAI[i] = new Thread(DMOHEDGOKJO);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		DHGGNAJPAFG();
+	}
+
+	public void OMLBDMCOPCM(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void JMJLKJCLNBH(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void OJACCGOHBGH()
+	{
+		base.Awake();
+		KFALKPFBGCM();
+	}
+
+	public void PIICIBKPIBE(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	private void LCCCJKEFFAJ(object FHBFLOIHPCF)
+	{
+		int num = (int)FHBFLOIHPCF;
+		activeThreads++;
+		threadsActionData[num] = new ThreadActionData();
+		while (true)
+		{
+			try
+			{
+				lock (FMCHBCDBJNB)
+				{
+					if (PDAIJPGCAKN.Count == 0)
+					{
+						Monitor.Wait(FMCHBCDBJNB);
+						if (threadsActionData[num].closeThread)
+						{
+							break;
+						}
+					}
+					threadsActionData[num].taskToRun = HBPOLHBHEGG();
+					threadsActionData[num].isRunningTask = true;
 				}
 				if (threadsActionData[num].taskToRun != null)
 				{
@@ -1358,7 +1248,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	public Action ECAFMHILCJE()
+	public Action PBFPDAJKCHP()
 	{
 		if (PDAIJPGCAKN.Count != 0)
 		{
@@ -1367,41 +1257,29 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		return null;
 	}
 
-	public new void CIAHIJIOFIE()
+	public void KPBNAPNLNPN(Action JLFMELNFEIP)
 	{
-		base.Awake();
-		AOJBBCMFJPO();
-	}
-
-	public void HDOHPLADGBP()
-	{
-		for (int i = 1; i < EDHJNNOKIAI.Length; i++)
+		lock (PDAIJPGCAKN)
 		{
-			threadsActionData[i].closeThread = true;
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
 		}
-		CLMMKBJMMOL();
 	}
 
-	private void GJLKJAOBPJD()
+	private void OnDisable()
 	{
-		FBCBLPIIAGB();
+		CloseThreads();
 	}
 
-	public Action CFJNNEMICIM()
+	public void CHKDKKDFCNB()
 	{
-		if (PDAIJPGCAKN.Count != 0)
+		for (int i = 0; i < EDHJNNOKIAI.Length; i += 0)
 		{
-			return PDAIJPGCAKN.Dequeue();
+			threadsActionData[i].closeThread = false;
 		}
-		return null;
+		TriggerAvailableThreads();
 	}
 
-	private void PGMMBADJIKH()
-	{
-		DHLENLKIEHE();
-	}
-
-	private void MJCKFOMBOJB(object FHBFLOIHPCF)
+	private void EDKODDLCMCC(object FHBFLOIHPCF)
 	{
 		int num = (int)FHBFLOIHPCF;
 		activeThreads++;
@@ -1421,7 +1299,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 						}
 					}
 					threadsActionData[num].taskToRun = NFGAAPJCPCL();
-					threadsActionData[num].isRunningTask = false;
+					threadsActionData[num].isRunningTask = true;
 				}
 				if (threadsActionData[num].taskToRun != null)
 				{
@@ -1429,10 +1307,10 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 				}
 				lock (FMCHBCDBJNB)
 				{
-					threadsActionData[num].isRunningTask = true;
+					threadsActionData[num].isRunningTask = false;
 					if (threadsActionData[num].closeThread)
 					{
-						activeThreads -= 0;
+						activeThreads--;
 						break;
 					}
 				}
@@ -1444,13 +1322,55 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	public void NEEIFNDHDOG()
+	public void LABCAPNDGKN(Action JLFMELNFEIP)
 	{
-		base.Awake();
-		KLDLKAEMMNB();
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
 	}
 
-	public void DOFJHEPBNHB()
+	public void DFOGFAAJIAC()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 1; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(IFLINFFBOKK);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		NEHCNHIOLED();
+	}
+
+	public void AALONHDMCKO()
+	{
+		base.Awake();
+		MNDGCOECDDM();
+	}
+
+	public void JGFIAPPGEBM(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public new void MFAMHKBMBEI()
+	{
+		base.Awake();
+		PKGGPBABEPK();
+	}
+
+	public void LOCBJOCIHMC(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void AMEPMGHIKBD()
 	{
 		lock (FMCHBCDBJNB)
 		{
@@ -1458,30 +1378,42 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 		if (numThreads == 0)
 		{
-			while (PDAIJPGCAKN.Count > 0)
+			while (PDAIJPGCAKN.Count > 1)
 			{
-				DPGPCOOKFFM(PDAIJPGCAKN.Dequeue());
+				QueueActionOnMainThread(PDAIJPGCAKN.Dequeue());
 			}
 		}
 	}
 
-	public void EKLACGNPPHB()
+	private void MFBCLNAHEFO()
+	{
+		JMBFPNPJODF();
+	}
+
+	public void IMCKHPNJNLP()
 	{
 		EDHJNNOKIAI = new Thread[numThreads];
 		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i++)
+		for (int i = 0; i < numThreads; i++)
 		{
-			EDHJNNOKIAI[i] = new Thread(KMOMIFGMKKL);
+			EDHJNNOKIAI[i] = new Thread(IKGGGGLLMJI);
 			EDHJNNOKIAI[i].Start(i);
 		}
-		NNNIHINHBHE();
+		JKMBNDHLEEC();
 	}
 
-	public void ACGOOFLCOCF(Action JLFMELNFEIP)
+	public void FFLPNJGCLOJ()
 	{
-		lock (PDAIJPGCAKN)
+		lock (FMCHBCDBJNB)
 		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+			Monitor.PulseAll(FMCHBCDBJNB);
+		}
+		if (numThreads == 0)
+		{
+			while (PDAIJPGCAKN.Count > 1)
+			{
+				DLCIJPAELPN(PDAIJPGCAKN.Dequeue());
+			}
 		}
 	}
 
@@ -1494,82 +1426,28 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		TriggerAvailableThreads();
 	}
 
-	public Action NFGAAPJCPCL()
+	private void LOMDIOLNFHI()
 	{
+		CCBOHOEMHKO();
+	}
+
+	private void Update()
+	{
+		waitingCoActions = PDAIJPGCAKN.Count;
 		if (PDAIJPGCAKN.Count != 0)
 		{
-			return PDAIJPGCAKN.Dequeue();
+			TriggerAvailableThreads();
 		}
-		return null;
-	}
-
-	public Action KKNAKAMHNJL()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	public void BNKFFGOKGHA(Action JLFMELNFEIP)
-	{
 		lock (ONGBEPGNDIB)
 		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void FLINKKAECJC()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i += 0)
-		{
-			EDHJNNOKIAI[i] = new Thread(LPPDPBECOCI);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		AJCNCJDKKOO();
-	}
-
-	public void GGHEPDCEHCK()
-	{
-		base.Awake();
-		HMKEIIHIAEL();
-	}
-
-	public void QueueActionOnMainThread(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void FLCDNEPPGIF(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void POLALEHNGNM()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 1)
+			while (ONGBEPGNDIB.Count > 0)
 			{
-				FLCDNEPPGIF(PDAIJPGCAKN.Dequeue());
+				ONGBEPGNDIB.Dequeue()();
 			}
 		}
 	}
 
-	public void GBJALJFDDCK(Action JLFMELNFEIP)
+	public void KPJIJLPJLHG(Action JLFMELNFEIP)
 	{
 		lock (PDAIJPGCAKN)
 		{
@@ -1577,7 +1455,28 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	private void NJKCFCMBEAI(object FHBFLOIHPCF)
+	public void NFADCBPIBPG()
+	{
+		for (int i = 1; i < EDHJNNOKIAI.Length; i++)
+		{
+			threadsActionData[i].closeThread = true;
+		}
+		BIOAAGJMEOL();
+	}
+
+	public void CBMJCIHDBNN()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 1; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(ICPCNJMINPA);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		CLMMKBJMMOL();
+	}
+
+	private void EPEBHLPJEIL(object FHBFLOIHPCF)
 	{
 		int num = (int)FHBFLOIHPCF;
 		activeThreads += 0;
@@ -1596,7 +1495,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 							break;
 						}
 					}
-					threadsActionData[num].taskToRun = IPCFHKLAHEF();
+					threadsActionData[num].taskToRun = HDMICKFMLIM();
 					threadsActionData[num].isRunningTask = true;
 				}
 				if (threadsActionData[num].taskToRun != null)
@@ -1605,7 +1504,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 				}
 				lock (FMCHBCDBJNB)
 				{
-					threadsActionData[num].isRunningTask = false;
+					threadsActionData[num].isRunningTask = true;
 					if (threadsActionData[num].closeThread)
 					{
 						activeThreads--;
@@ -1620,74 +1519,10 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	public void LAGMNGOAGNB(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void KDDLJDFOJOP()
-	{
-		lock (FMCHBCDBJNB)
-		{
-			Monitor.PulseAll(FMCHBCDBJNB);
-		}
-		if (numThreads == 0)
-		{
-			while (PDAIJPGCAKN.Count > 1)
-			{
-				GGOMGFHDNBI(PDAIJPGCAKN.Dequeue());
-			}
-		}
-	}
-
-	public void KOODOMJECHB(Action JLFMELNFEIP)
-	{
-		lock (PDAIJPGCAKN)
-		{
-			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	public void GGOMGFHDNBI(Action JLFMELNFEIP)
-	{
-		lock (ONGBEPGNDIB)
-		{
-			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
-		}
-	}
-
-	private void DPIPGGDNGHN()
-	{
-		waitingCoActions = PDAIJPGCAKN.Count;
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			KKHEACCGOPC();
-		}
-		lock (ONGBEPGNDIB)
-		{
-			while (ONGBEPGNDIB.Count > 1)
-			{
-				ONGBEPGNDIB.Dequeue()();
-			}
-		}
-	}
-
-	public Action IPCFHKLAHEF()
-	{
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			return PDAIJPGCAKN.Dequeue();
-		}
-		return null;
-	}
-
-	private void PBEBNPGHLBL(object FHBFLOIHPCF)
+	private void KLBNGCOOBAH(object FHBFLOIHPCF)
 	{
 		int num = (int)FHBFLOIHPCF;
-		activeThreads++;
+		activeThreads += 0;
 		threadsActionData[num] = new ThreadActionData();
 		while (true)
 		{
@@ -1703,7 +1538,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 							break;
 						}
 					}
-					threadsActionData[num].taskToRun = GetNewCoAction();
+					threadsActionData[num].taskToRun = MJKMEHBOAJJ();
 					threadsActionData[num].isRunningTask = false;
 				}
 				if (threadsActionData[num].taskToRun != null)
@@ -1727,10 +1562,10 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	private void HKMCGGDPCIA(object FHBFLOIHPCF)
+	private void FMHOBECHBGE(object FHBFLOIHPCF)
 	{
 		int num = (int)FHBFLOIHPCF;
-		activeThreads++;
+		activeThreads += 0;
 		threadsActionData[num] = new ThreadActionData();
 		while (true)
 		{
@@ -1746,7 +1581,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 							break;
 						}
 					}
-					threadsActionData[num].taskToRun = CIJDACOPADH();
+					threadsActionData[num].taskToRun = CMONLKCBDLB();
 					threadsActionData[num].isRunningTask = false;
 				}
 				if (threadsActionData[num].taskToRun != null)
@@ -1755,7 +1590,7 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 				}
 				lock (FMCHBCDBJNB)
 				{
-					threadsActionData[num].isRunningTask = false;
+					threadsActionData[num].isRunningTask = true;
 					if (threadsActionData[num].closeThread)
 					{
 						activeThreads--;
@@ -1770,16 +1605,157 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 	}
 
-	public void LNJABCEOGOB()
+	private void KMOCDAOKGLI()
 	{
-		for (int i = 0; i < EDHJNNOKIAI.Length; i++)
+		JGJKJNNEEII();
+	}
+
+	public new void BFFHPJMMGHD()
+	{
+		base.Awake();
+		PKGGPBABEPK();
+	}
+
+	public void CLBDNDEFPBJ(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	private void HEBOIFKBLGD()
+	{
+		waitingCoActions = PDAIJPGCAKN.Count;
+		if (PDAIJPGCAKN.Count != 0)
+		{
+			NOOEIGANPHI();
+		}
+		lock (ONGBEPGNDIB)
+		{
+			while (ONGBEPGNDIB.Count > 1)
+			{
+				ONGBEPGNDIB.Dequeue()();
+			}
+		}
+	}
+
+	public void HCPOMEFCOAI()
+	{
+		for (int i = 1; i < EDHJNNOKIAI.Length; i += 0)
 		{
 			threadsActionData[i].closeThread = true;
 		}
-		POLALEHNGNM();
+		FFLPNJGCLOJ();
 	}
 
-	public void NNNIHINHBHE()
+	public void KFALKPFBGCM()
+	{
+		EDHJNNOKIAI = new Thread[numThreads];
+		threadsActionData = new ThreadActionData[numThreads];
+		for (int i = 0; i < numThreads; i++)
+		{
+			EDHJNNOKIAI[i] = new Thread(JPFPEKEHHOK);
+			EDHJNNOKIAI[i].Start(i);
+		}
+		BIOAAGJMEOL();
+	}
+
+	private void HLHJBJGEEEA()
+	{
+		HCPOMEFCOAI();
+	}
+
+	public void AGHDPNCDDEL(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	private void JPFPEKEHHOK(object FHBFLOIHPCF)
+	{
+		int num = (int)FHBFLOIHPCF;
+		activeThreads += 0;
+		threadsActionData[num] = new ThreadActionData();
+		while (true)
+		{
+			try
+			{
+				lock (FMCHBCDBJNB)
+				{
+					if (PDAIJPGCAKN.Count == 0)
+					{
+						Monitor.Wait(FMCHBCDBJNB);
+						if (threadsActionData[num].closeThread)
+						{
+							break;
+						}
+					}
+					threadsActionData[num].taskToRun = CMONLKCBDLB();
+					threadsActionData[num].isRunningTask = true;
+				}
+				if (threadsActionData[num].taskToRun != null)
+				{
+					threadsActionData[num].taskToRun();
+				}
+				lock (FMCHBCDBJNB)
+				{
+					threadsActionData[num].isRunningTask = true;
+					if (threadsActionData[num].closeThread)
+					{
+						activeThreads--;
+						break;
+					}
+				}
+			}
+			catch (Exception)
+			{
+				break;
+			}
+		}
+	}
+
+	public void KIEAGEGIICH(Action JLFMELNFEIP)
+	{
+		lock (ONGBEPGNDIB)
+		{
+			ONGBEPGNDIB.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void HKOAMFDFCLJ(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	private void BNEJMABFKJE()
+	{
+		OLDPNEFMHFN();
+	}
+
+	public void QueueActionOnCoThread(Action JLFMELNFEIP)
+	{
+		lock (PDAIJPGCAKN)
+		{
+			PDAIJPGCAKN.Enqueue(JLFMELNFEIP);
+		}
+	}
+
+	public void KGDEDHDDDPC()
+	{
+		for (int i = 0; i < EDHJNNOKIAI.Length; i += 0)
+		{
+			threadsActionData[i].closeThread = false;
+		}
+		BDBIBNGCHFJ();
+	}
+
+	public void DHGGNAJPAFG()
 	{
 		lock (FMCHBCDBJNB)
 		{
@@ -1787,56 +1763,10 @@ public class ThreadQueuer : Singleton<ThreadQueuer>
 		}
 		if (numThreads == 0)
 		{
-			while (PDAIJPGCAKN.Count > 1)
+			while (PDAIJPGCAKN.Count > 0)
 			{
-				GGOMGFHDNBI(PDAIJPGCAKN.Dequeue());
+				CLBDNDEFPBJ(PDAIJPGCAKN.Dequeue());
 			}
 		}
-	}
-
-	public void KAMMKPFNJJF()
-	{
-		base.Awake();
-		DJCDNJHBDNF();
-	}
-
-	private void BGFJOEPFOPM()
-	{
-		waitingCoActions = PDAIJPGCAKN.Count;
-		if (PDAIJPGCAKN.Count != 0)
-		{
-			EAKJCKEKGPJ();
-		}
-		lock (ONGBEPGNDIB)
-		{
-			while (ONGBEPGNDIB.Count > 0)
-			{
-				ONGBEPGNDIB.Dequeue()();
-			}
-		}
-	}
-
-	public void CKMKHEJMGKP()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 1; i < numThreads; i += 0)
-		{
-			EDHJNNOKIAI[i] = new Thread(PBEBNPGHLBL);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		KDDLJDFOJOP();
-	}
-
-	public void FJOGPDFDLJD()
-	{
-		EDHJNNOKIAI = new Thread[numThreads];
-		threadsActionData = new ThreadActionData[numThreads];
-		for (int i = 0; i < numThreads; i += 0)
-		{
-			EDHJNNOKIAI[i] = new Thread(CMCANPJNNHB);
-			EDHJNNOKIAI[i].Start(i);
-		}
-		JCIMJDENCBD();
 	}
 }

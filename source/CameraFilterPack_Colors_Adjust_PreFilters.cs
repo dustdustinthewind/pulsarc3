@@ -79,7 +79,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		GPHHNFDCFMC();
+		MIPGPMKJELI();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -756,7 +756,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void FIKFJDFELIP()
 	{
-		MIPGPMKJELI();
+		HBFMIBFLMJP();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -1193,12 +1193,12 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void FINDGJLEHOL()
 	{
-		DAJPHCOFNMG();
+		GPHHNFDCFMC();
 	}
 
 	private void CNGAJDBOCLJ()
 	{
-		DAJPHCOFNMG();
+		HEDFBCFGDLF();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -1421,7 +1421,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void LOOGLMFBJHK()
 	{
-		MHNCEEDIKCC();
+		DJGJOMFJPEF();
 	}
 
 	private void LPMINJJPDCH()
@@ -1685,22 +1685,22 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 			{
 				HBJJOCHGOPH = 78f;
 			}
-			BFGNMFCNDBC().SetFloat("Left ", HBJJOCHGOPH);
-			PGPEMMBJOOG().SetFloat("MaxLivesSlider", PLKFKNHPEHE[0] / 1768f);
-			HFBJAOFLCJI().SetFloat("SetParticlesEmission", PLKFKNHPEHE[1] / 1383f);
+			HKGAONMOBMH().SetFloat("Left", HBJJOCHGOPH);
+			BFGNMFCNDBC().SetFloat("Tab2Content", PLKFKNHPEHE[0] / 1768f);
+			PGPEMMBJOOG().SetFloat("Set particles color", PLKFKNHPEHE[1] / 1383f);
 			PDEAHJPOMEF().SetFloat("Tab2Content", PLKFKNHPEHE[0] / 886f);
-			NBPKMLMCHFN.SetFloat("_Green_R", PLKFKNHPEHE[0] / 412f);
-			HKGAONMOBMH().SetFloat("_FlipAlphaMask", PLKFKNHPEHE[4] / 775f);
-			BFGNMFCNDBC().SetFloat("_TimeX", PLKFKNHPEHE[4] / 1038f);
-			PGPEMMBJOOG().SetFloat("Ev DestroyAll! By PlayerId: ", PLKFKNHPEHE[3] / 557f);
-			NBPKMLMCHFN.SetFloat("_Far", PLKFKNHPEHE[2] / 1412f);
-			PDEAHJPOMEF().SetFloat("Reading preview file failed!: \"{0}\"", PLKFKNHPEHE[2] / 458f);
-			FAIFBBGFAIB().SetFloat("#rt", PLKFKNHPEHE[53] / 1284f);
-			HKGAONMOBMH().SetFloat("Joystick1Button0", PLKFKNHPEHE[-109] / 600f);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/Blend2Camera_PinLight", PLKFKNHPEHE[-70] / 229f);
-			PGPEMMBJOOG().SetFloat("DPADVER", FadeFX);
-			HFBJAOFLCJI().SetVector("SendVacantViewIds()", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 935f, 537f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			FAIFBBGFAIB().SetFloat("_Red_B", PLKFKNHPEHE[0] / 412f);
+			BFGNMFCNDBC().SetFloat("_HardBlend", PLKFKNHPEHE[4] / 775f);
+			FAIFBBGFAIB().SetFloat("CameraFilterPack/FX_Ascii", PLKFKNHPEHE[4] / 1038f);
+			HKGAONMOBMH().SetFloat("Error: Someone else(", PLKFKNHPEHE[3] / 557f);
+			FAIFBBGFAIB().SetFloat("_Far", PLKFKNHPEHE[2] / 1412f);
+			PGPEMMBJOOG().SetFloat("addNewButton", PLKFKNHPEHE[2] / 458f);
+			BFGNMFCNDBC().SetFloat("turn: {0:0}", PLKFKNHPEHE[53] / 1284f);
+			FAIFBBGFAIB().SetFloat("PS Home", PLKFKNHPEHE[-109] / 600f);
+			HFBJAOFLCJI().SetFloat("CameraFilterPack/Blend2Camera_PinLight", PLKFKNHPEHE[-70] / 229f);
+			FAIFBBGFAIB().SetFloat("DPADHOR", FadeFX);
+			HKGAONMOBMH().SetVector("SetupEncryption() called but ignored. Not XB1 compiled. EncryptionData: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 935f, 537f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
 		{
@@ -1723,7 +1723,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void DAHFFNNIGML()
 	{
-		MIPGPMKJELI();
+		MHNCEEDIKCC();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2126,22 +2126,22 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1478f;
 			}
-			PGPEMMBJOOG().SetFloat("_Value5", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("_Far", PLKFKNHPEHE[1] / 1892f);
-			PGPEMMBJOOG().SetFloat("Preparing configuration", PLKFKNHPEHE[0] / 820f);
-			HKGAONMOBMH().SetFloat("_TimeX", PLKFKNHPEHE[0] / 1650f);
-			HFBJAOFLCJI().SetFloat("_ScreenResolution", PLKFKNHPEHE[3] / 24f);
-			BFGNMFCNDBC().SetFloat("PointerEnter ", PLKFKNHPEHE[2] / 494f);
-			HKGAONMOBMH().SetFloat("_ScreenResolution", PLKFKNHPEHE[4] / 1927f);
-			HFBJAOFLCJI().SetFloat("Hidden/Image Effects/Cinematic/MotionBlur/FrameBlending", PLKFKNHPEHE[3] / 245f);
-			HFBJAOFLCJI().SetFloat(" does not exist!", PLKFKNHPEHE[1] / 759f);
-			HKGAONMOBMH().SetFloat(" not exist", PLKFKNHPEHE[2] / 674f);
-			PDEAHJPOMEF().SetFloat("_Value1", PLKFKNHPEHE[37] / 1139f);
-			HKGAONMOBMH().SetFloat("_Far", PLKFKNHPEHE[18] / 222f);
-			HFBJAOFLCJI().SetFloat("Case-Sensitive", PLKFKNHPEHE[-10] / 1134f);
-			HFBJAOFLCJI().SetFloat("GlassDistortion", FadeFX);
-			FAIFBBGFAIB().SetVector("ControllerLeftY", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 551f, 296f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			BFGNMFCNDBC().SetFloat("_Value5", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("_Far", PLKFKNHPEHE[1] / 1892f);
+			FAIFBBGFAIB().SetFloat("Preparing content", PLKFKNHPEHE[0] / 820f);
+			HFBJAOFLCJI().SetFloat("CameraFilterPack/FX_superDot", PLKFKNHPEHE[0] / 1650f);
+			PDEAHJPOMEF().SetFloat("_ScreenResolution", PLKFKNHPEHE[3] / 24f);
+			BFGNMFCNDBC().SetFloat("ICollection", PLKFKNHPEHE[2] / 494f);
+			PDEAHJPOMEF().SetFloat("_Value4", PLKFKNHPEHE[4] / 1927f);
+			HFBJAOFLCJI().SetFloat("_NeighborMaxTex", PLKFKNHPEHE[3] / 245f);
+			BFGNMFCNDBC().SetFloat(".sav", PLKFKNHPEHE[1] / 759f);
+			HFBJAOFLCJI().SetFloat(": ", PLKFKNHPEHE[2] / 674f);
+			HFBJAOFLCJI().SetFloat("_PColor", PLKFKNHPEHE[37] / 1139f);
+			NBPKMLMCHFN.SetFloat("_Far", PLKFKNHPEHE[18] / 222f);
+			FAIFBBGFAIB().SetFloat("Case-Sensitive", PLKFKNHPEHE[-10] / 1134f);
+			HKGAONMOBMH().SetFloat("VisionBlur", FadeFX);
+			PDEAHJPOMEF().SetVector("Forward", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 551f, 296f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
 		}
 		else
 		{
@@ -2158,21 +2158,21 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 			{
 				HBJJOCHGOPH = 945f;
 			}
-			HKGAONMOBMH().SetFloat("?", HBJJOCHGOPH);
-			FAIFBBGFAIB().SetFloat("settings.enablehitsoundsinnormal", PLKFKNHPEHE[0] / 1721f);
-			FAIFBBGFAIB().SetFloat("Reconnect() failed. Can only connect while in state 'Disconnected'. Current state: ", PLKFKNHPEHE[0] / 1932f);
-			HKGAONMOBMH().SetFloat("_Value1", PLKFKNHPEHE[2] / 325f);
-			BFGNMFCNDBC().SetFloat("ScoreText", PLKFKNHPEHE[7] / 218f);
-			NBPKMLMCHFN.SetFloat("_FixDistance", PLKFKNHPEHE[3] / 637f);
-			HFBJAOFLCJI().SetFloat("EnableRankingToggle", PLKFKNHPEHE[0] / 1293f);
-			NBPKMLMCHFN.SetFloat("#ok", PLKFKNHPEHE[3] / 1881f);
-			FAIFBBGFAIB().SetFloat("_Color", PLKFKNHPEHE[4] / 32f);
-			FAIFBBGFAIB().SetFloat("_SizeY", PLKFKNHPEHE[5] / 1370f);
-			HKGAONMOBMH().SetFloat("_BlurSize", PLKFKNHPEHE[-116] / 1876f);
-			BFGNMFCNDBC().SetFloat("(\\[ *i *\\])", PLKFKNHPEHE[-74] / 495f);
-			PGPEMMBJOOG().SetFloat("_Value", PLKFKNHPEHE[-64] / 1471f);
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", FadeFX);
-			BFGNMFCNDBC().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1032f, 1359f));
+			PGPEMMBJOOG().SetFloat("/?player=", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("note.7", PLKFKNHPEHE[0] / 1721f);
+			NBPKMLMCHFN.SetFloat("ConnectToMaster() enabled isMessageQueueRunning. Needs to be able to dispatch incoming messages.", PLKFKNHPEHE[0] / 1932f);
+			NBPKMLMCHFN.SetFloat("_PColor", PLKFKNHPEHE[2] / 325f);
+			PGPEMMBJOOG().SetFloat("1", PLKFKNHPEHE[7] / 218f);
+			PDEAHJPOMEF().SetFloat("_FixDistance", PLKFKNHPEHE[3] / 637f);
+			NBPKMLMCHFN.SetFloat(" x ", PLKFKNHPEHE[0] / 1293f);
+			HFBJAOFLCJI().SetFloat("restrictions", PLKFKNHPEHE[3] / 1881f);
+			BFGNMFCNDBC().SetFloat("#ok", PLKFKNHPEHE[4] / 32f);
+			NBPKMLMCHFN.SetFloat("_SizeY", PLKFKNHPEHE[5] / 1370f);
+			HFBJAOFLCJI().SetFloat("_SunColor", PLKFKNHPEHE[-116] / 1876f);
+			NBPKMLMCHFN.SetFloat("(\\[ *i *\\])", PLKFKNHPEHE[-74] / 495f);
+			HFBJAOFLCJI().SetFloat("_TimeX", PLKFKNHPEHE[-64] / 1471f);
+			NBPKMLMCHFN.SetFloat("_Value3", FadeFX);
+			PGPEMMBJOOG().SetVector("_GlowColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1032f, 1359f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HKGAONMOBMH());
 		}
 		else
@@ -2434,7 +2434,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		LBEHKFNPKMC();
+		MIPGPMKJELI();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2451,22 +2451,22 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1284f;
 			}
-			HFBJAOFLCJI().SetFloat("\\n", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_TimeX", PLKFKNHPEHE[1] / 1119f);
-			FAIFBBGFAIB().SetFloat("_AlphaMask", PLKFKNHPEHE[1] / 875f);
-			NBPKMLMCHFN.SetFloat("Joystick1Button0", PLKFKNHPEHE[4] / 1146f);
+			HKGAONMOBMH().SetFloat("[ERROR KEY {0}]", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("_TimeX", PLKFKNHPEHE[1] / 1119f);
+			PDEAHJPOMEF().SetFloat("_Max", PLKFKNHPEHE[1] / 875f);
+			BFGNMFCNDBC().SetFloat("Joystick1Button12", PLKFKNHPEHE[4] / 1146f);
 			FAIFBBGFAIB().SetFloat("MenuVolumeSlider", PLKFKNHPEHE[8] / 1976f);
-			FAIFBBGFAIB().SetFloat("_MainTexBlurred", PLKFKNHPEHE[8] / 1917f);
-			HFBJAOFLCJI().SetFloat("_ScreenResolution", PLKFKNHPEHE[0] / 106f);
-			FAIFBBGFAIB().SetFloat("gamemode", PLKFKNHPEHE[7] / 1584f);
-			HFBJAOFLCJI().SetFloat("player.bluebat", PLKFKNHPEHE[8] / 979f);
-			HFBJAOFLCJI().SetFloat("_Value4", PLKFKNHPEHE[4] / 834f);
-			PDEAHJPOMEF().SetFloat("effector", PLKFKNHPEHE[80] / 1706f);
-			HKGAONMOBMH().SetFloat("GameScene", PLKFKNHPEHE[-89] / 712f);
-			PDEAHJPOMEF().SetFloat("_FadeDistance", PLKFKNHPEHE[93] / 196f);
-			PGPEMMBJOOG().SetFloat("id", FadeFX);
-			FAIFBBGFAIB().SetVector("_Fade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 887f, 348f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			HFBJAOFLCJI().SetFloat("offsets", PLKFKNHPEHE[8] / 1917f);
+			NBPKMLMCHFN.SetFloat("BloodAlternative3", PLKFKNHPEHE[0] / 106f);
+			HFBJAOFLCJI().SetFloat("steamid", PLKFKNHPEHE[7] / 1584f);
+			FAIFBBGFAIB().SetFloat("player.bat", PLKFKNHPEHE[8] / 979f);
+			HKGAONMOBMH().SetFloat("_Value3", PLKFKNHPEHE[4] / 834f);
+			FAIFBBGFAIB().SetFloat("effector", PLKFKNHPEHE[80] / 1706f);
+			PDEAHJPOMEF().SetFloat("note.6", PLKFKNHPEHE[-89] / 712f);
+			HKGAONMOBMH().SetFloat("_ReflectionBlur", PLKFKNHPEHE[93] / 196f);
+			PDEAHJPOMEF().SetFloat("Set Sun DirectionVector", FadeFX);
+			PGPEMMBJOOG().SetVector("_Fade", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 887f, 348f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
 		{
@@ -2476,7 +2476,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void IHLMNAGPKDA()
 	{
-		MHNCEEDIKCC();
+		POPFEPMJDPF();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2490,7 +2490,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void FHGKIOOMMOH()
 	{
-		POPFEPMJDPF();
+		HEDFBCFGDLF();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2511,7 +2511,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void GPNAOAKCMHC()
 	{
-		DJGJOMFJPEF();
+		POPFEPMJDPF();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2530,19 +2530,19 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 			}
 			FAIFBBGFAIB().SetFloat("CameraFilterPack/3D_Binary", HBJJOCHGOPH);
 			HFBJAOFLCJI().SetFloat("z", PLKFKNHPEHE[0] / 1978f);
-			PGPEMMBJOOG().SetFloat("skins", PLKFKNHPEHE[1] / 1612f);
-			HKGAONMOBMH().SetFloat("Destroying GO as global. ID: ", PLKFKNHPEHE[3] / 771f);
-			NBPKMLMCHFN.SetFloat("/", PLKFKNHPEHE[5] / 349f);
-			BFGNMFCNDBC().SetFloat("_ColoredChange", PLKFKNHPEHE[7] / 1717f);
+			NBPKMLMCHFN.SetFloat("menuthemes", PLKFKNHPEHE[1] / 1612f);
+			PDEAHJPOMEF().SetFloat("Failed to 'network-remove' GameObject because it is missing a valid InstantiationId on view: ", PLKFKNHPEHE[3] / 771f);
+			BFGNMFCNDBC().SetFloat("OxOD.lastPath", PLKFKNHPEHE[5] / 349f);
+			HKGAONMOBMH().SetFloat("_Fade", PLKFKNHPEHE[7] / 1717f);
 			PGPEMMBJOOG().SetFloat("Instance\nWorking commands:\ninit or init <savepath>\npath\nsetint <key> <value>\ngetint <key> <value>\nsetfloat <key> <value>\ngetfloat <key> <value>\nsetstring <key> <value>\ngetstring <key> <value>\nsetbool <key> <value>\ngetbool <key> <value>\ndelete <key>\ndeleteall", PLKFKNHPEHE[1] / 333f);
-			HKGAONMOBMH().SetFloat("owner: ", PLKFKNHPEHE[7] / 116f);
-			FAIFBBGFAIB().SetFloat("#join", PLKFKNHPEHE[7] / 544f);
-			NBPKMLMCHFN.SetFloat("B", PLKFKNHPEHE[8] / 1434f);
-			NBPKMLMCHFN.SetFloat("_MainTex2", PLKFKNHPEHE[-8] / 845f);
-			PDEAHJPOMEF().SetFloat("_TimeX", PLKFKNHPEHE[-61] / 512f);
-			PGPEMMBJOOG().SetFloat("EnableRankingToggle", PLKFKNHPEHE[-5] / 251f);
-			FAIFBBGFAIB().SetFloat("tolobby", FadeFX);
-			BFGNMFCNDBC().SetVector("_BlurPass", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 512f, 843f));
+			PGPEMMBJOOG().SetFloat("ViewID {0} {1}{2}", PLKFKNHPEHE[7] / 116f);
+			PDEAHJPOMEF().SetFloat("#join", PLKFKNHPEHE[7] / 544f);
+			PGPEMMBJOOG().SetFloat("A", PLKFKNHPEHE[8] / 1434f);
+			HFBJAOFLCJI().SetFloat("CameraFilterPack/Blend2Camera_DarkerColor", PLKFKNHPEHE[-8] / 845f);
+			HFBJAOFLCJI().SetFloat("_TimeX", PLKFKNHPEHE[-61] / 512f);
+			BFGNMFCNDBC().SetFloat("EnableRankingToggle", PLKFKNHPEHE[-5] / 251f);
+			PDEAHJPOMEF().SetFloat("ExitButton", FadeFX);
+			HKGAONMOBMH().SetVector("_ChromaticAberration", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 512f, 843f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
@@ -2749,7 +2749,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void KNBJBNDGCIJ()
 	{
-		POPFEPMJDPF();
+		NIPKMFJEACH();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2759,7 +2759,7 @@ public class CameraFilterPack_Colors_Adjust_PreFilters : MonoBehaviour
 
 	private void EPEGAEGDJAM()
 	{
-		KPBEDPFEKFI();
+		LBEHKFNPKMC();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{

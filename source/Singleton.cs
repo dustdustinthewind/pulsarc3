@@ -35,55 +35,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void IICACFLHBCP()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void EPCGHAAONLN()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void JIJPHEDDIHC()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void DHNANELONED()
+	public void POHMFMNEPKK()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -99,7 +51,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void LBOBAIGNOML()
+	public void FAAJAMIGJNK()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -115,7 +67,119 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void GEGFJJBCHPE()
+	public void EPCAPPLPFED()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void PPCGJBIIFAO()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void GCDNONIKKLI()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void GOBHPAJFFDB()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void MFAMHKBMBEI()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void HCNECNPPEKA()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void CJHMHIMKILB()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void CNDGDDLEFJF()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -147,12 +211,28 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void POHMFMNEPKK()
+	public void IICACFLHBCP()
 	{
 		if (dontDestroyOnLoad)
 		{
 			Object.DontDestroyOnLoad(base.transform.gameObject);
 			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void CIAHIJIOFIE()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
 			{
 				Object.Destroy(base.gameObject);
 			}
@@ -179,7 +259,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void HHJBBHEBJCJ()
+	public void Awake()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -195,167 +275,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void CCDNJPNLGBN()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void IIPMEPPIFCK()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void LOMHIIKFFEP()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void PEMPABLNJHL()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void AJIKPEIGACI()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 1)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void CJHMHIMKILB()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 1)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void BMAGFLLGDPJ()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void JPJNECPABBG()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void PPCGJBIIFAO()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void OPFDGBDADMA()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 1)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void MMPOJCFOGJJ()
+	public void CEKLAECJCKG()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -387,7 +307,167 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void Awake()
+	public void JHPKLGGMCBL()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void AJIKPEIGACI()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void LOMHIIKFFEP()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void DMIKIDGJEFC()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void OPFDGBDADMA()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void JIJPHEDDIHC()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void IOMCHHBGJEC()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void HHJBBHEBJCJ()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void BHCCNFJKGPD()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void PEMPABLNJHL()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void EMANBHKAONB()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -419,23 +499,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void BFFHPJMMGHD()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 1)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void BFIOIDMHPPL()
+	public void LBOBAIGNOML()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -467,119 +531,183 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
+	public void EIFCCFBJKOO()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void BGFCMMDKCOI()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void IIPMEPPIFCK()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void LFFAKAOAOCN()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void MMPOJCFOGJJ()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void CCDNJPNLGBN()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void EPCGHAAONLN()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void DHNANELONED()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void GGHEPDCEHCK()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void GEGFJJBCHPE()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void EMKLCPGKNJL()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
 	public void PIIMBOLGHOE()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 1)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void KGMCGGIEPDE()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void EPCAPPLPFED()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 1)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void GOBHPAJFFDB()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 1)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void BHCCNFJKGPD()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void DMIKIDGJEFC()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void FMAFBLKAJDF()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void FNMPIAMIKCP()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -611,7 +739,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void CIAHIJIOFIE()
+	public void FMAFBLKAJDF()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -627,55 +755,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void CEKLAECJCKG()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void HCNECNPPEKA()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void EIFCCFBJKOO()
-	{
-		if (dontDestroyOnLoad)
-		{
-			Object.DontDestroyOnLoad(base.transform.gameObject);
-			if (Object.FindObjectsOfType(GetType()).Length > 0)
-			{
-				Object.Destroy(base.gameObject);
-			}
-		}
-		if (!(Object)BFKGHEBNCKL)
-		{
-			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
-		}
-	}
-
-	public void JHPKLGGMCBL()
+	public void IPJENEAMGBP()
 	{
 		if (dontDestroyOnLoad)
 		{
@@ -691,7 +771,135 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 		}
 	}
 
-	public void FAAJAMIGJNK()
+	public void FNMPIAMIKCP()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void OBAIHNFOJGN()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void GDHMJGBAGHP()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void KACPCCMPAHA()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void JPJNECPABBG()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void BFIOIDMHPPL()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void KGMCGGIEPDE()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 0)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void BFFHPJMMGHD()
+	{
+		if (dontDestroyOnLoad)
+		{
+			Object.DontDestroyOnLoad(base.transform.gameObject);
+			if (Object.FindObjectsOfType(GetType()).Length > 1)
+			{
+				Object.Destroy(base.gameObject);
+			}
+		}
+		if (!(Object)BFKGHEBNCKL)
+		{
+			BFKGHEBNCKL = base.gameObject.GetComponent<T>();
+		}
+	}
+
+	public void BMAGFLLGDPJ()
 	{
 		if (dontDestroyOnLoad)
 		{

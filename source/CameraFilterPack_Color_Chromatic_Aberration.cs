@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Colors/Chromatic_Aberration")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Colors/Chromatic_Aberration")]
 public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 {
 	public Shader SCShader;
@@ -77,7 +77,7 @@ public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 
 	private void MMOKKAPFGAK()
 	{
-		SCShader = Shader.Find("#useticket");
+		SCShader = Shader.Find("#failed: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -112,7 +112,7 @@ public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 
 	private void JKFDDNMPOJH()
 	{
-		SCShader = Shader.Find("_Bullet_8");
+		SCShader = Shader.Find("_Bullet_6");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -121,7 +121,7 @@ public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/Drawing_Laplacian");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -226,7 +226,7 @@ public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 
 	private void DLBODOFAJGM()
 	{
-		SCShader = Shader.Find("deletemap");
+		SCShader = Shader.Find("/");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -253,10 +253,10 @@ public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1975f;
 			}
-			BFGNMFCNDBC().SetFloat("speed", HBJJOCHGOPH);
-			DEFBJOCJJKF().SetFloat("_DistCenterScale", Offset);
-			FAIFBBGFAIB().SetVector(" registered.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 174f, 645f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			PGPEMMBJOOG().SetFloat("#FFFFFFFF", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("DISTORT", Offset);
+			KGOLDDBHIFN().SetVector(" registered.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 174f, 645f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EPCGJFCCAFH());
 		}
 		else
 		{
@@ -284,10 +284,10 @@ public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1991f;
 			}
-			PGPEMMBJOOG().SetFloat("{0}\t is: {1}", HBJJOCHGOPH);
-			KGOLDDBHIFN().SetFloat("CameraFilterPack/RainFX", Offset);
-			NFMGLIKNOOC().SetVector("music", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1346f, 858f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			NBPKMLMCHFN.SetFloat("null", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("CameraFilterPack_RainFX_Anm", Offset);
+			DEFBJOCJJKF().SetVector("/music", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1346f, 858f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, BFGNMFCNDBC());
 		}
 		else
 		{
@@ -352,7 +352,7 @@ public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 
 	private void PAKPHKPDKGE()
 	{
-		SCShader = Shader.Find("_Bloom3");
+		SCShader = Shader.Find("_Bloom2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -372,7 +372,7 @@ public class CameraFilterPack_Color_Chromatic_Aberration : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/TV_WideScreenVertical");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

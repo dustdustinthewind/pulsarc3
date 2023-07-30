@@ -86,13 +86,13 @@ public class CameraFilterPack_Blend2Camera_Screen : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("maps.", JDMCFBKJHDD);
+				OIMMPLPBLBK().SetTexture("maps.", JDMCFBKJHDD);
 			}
-			NBPKMLMCHFN.SetFloat(",", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("CameraFilterPack/Drawing_BluePrint", BlendFX);
-			NBPKMLMCHFN.SetFloat("_DistortionSize", SwitchCameraToCamera2);
-			OIMMPLPBLBK().SetVector("[ItemsHandler] Item not found:", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 137f, 444f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHIFMIPPMPF());
+			HNICHJCGJOC().SetFloat(".status", HBJJOCHGOPH);
+			HHIFMIPPMPF().SetFloat("CameraFilterPack_Paper2", BlendFX);
+			ACHNOHCLGOO().SetFloat("_DistortionSize", SwitchCameraToCamera2);
+			HNICHJCGJOC().SetVector("inventory.itemscash", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 137f, 444f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{

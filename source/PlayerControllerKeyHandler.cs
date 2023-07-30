@@ -19,53 +19,200 @@ public class PlayerControllerKeyHandler
 
 	public float attime;
 
-	public void IJHGPCAHDEH()
+	public void ABDEGHLHHHF()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
+	}
+
+	public void Reset()
 	{
 		if (wasPressed)
 		{
-			if (!player.isRecording && player.NLIGEMDBEOA().JAEJDHHCJJO().KCAOJFPDEIP())
+			if (!player.isRecording && player.playerBase.photonView.isMine)
 			{
-				PhotonView photonView = player.JHEFABODNPO().CIACEFBNDDJ();
-				string lBLKDNNPACO = "_Value2";
+				player.playerBase.photonView.RPC("CheckCombo", PhotonTargets.All, player.GetCombo(), handId);
+			}
+			else
+			{
+				player.CheckCombo(player.GetCombo(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void NBOKAGMABPN()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.GKGCHBJANLF().JAEJDHHCJJO().isMine)
+			{
+				PhotonView photonView = player.DFPMJLHLFNK().photonView;
+				string lBLKDNNPACO = "mapselector.orderby";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[3];
+				array[1] = player.KNBOIOEKJID();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.POFBCEKBIDH(player.CNLDGEMKLPP(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void NEKCPLGFOFD()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				HKJJMPCFEPL();
+			}
+			if (wasPressed && currentTimeout > 1970f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 1588f)
+			{
+				BBBNLHALLBN();
+			}
+		}
+		else if (hardInput.EBAHBLEMKKC(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.NABBDBMIHOI().JDBCGCJJIAF().isMine)
+			{
+				PhotonView photonView = player.GENOLDKFAPB().FFIPLLNKGEN();
+				string lBLKDNNPACO = "_TimeX";
+				PhotonTargets mPNMOONBMII = (PhotonTargets)8;
+				object[] array = new object[1] { player.GCBPLIIAODI() };
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.KIPNNNAHGDJ(player.BPJOPJPCKDA(), handId, 1074f);
+			}
+		}
+	}
+
+	public void OBAEDJJDCPN()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.GetKeyDown(buttonKey))
+			{
+				GKFOIOALDFH();
+			}
+			if (wasPressed && currentTimeout > 298f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 1966f)
+			{
+				KHGOJDPMPML();
+			}
+		}
+		else if (hardInput.GetKeyDown(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.NJODHOMKIED().IFENGKHOKPC().isMine)
+			{
+				PhotonView photonView = player.LMENGPDOOJG().AAMNKPHHHCI();
+				string lBLKDNNPACO = "Warning: No Shape Curve set for CurveWaveform.cs on ";
+				PhotonTargets mPNMOONBMII = PhotonTargets.AllBufferedViaServer;
+				object[] array = new object[4];
+				array[1] = player.CNLDGEMKLPP();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.CheckCombo(player.KNBOIOEKJID(), handId, 265f);
+			}
+		}
+	}
+
+	public void ABDHDGNIHHI()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.DMMGMCGNILI().GBMJAPGLMGB().isMine)
+			{
+				PhotonView photonView = player.GKGCHBJANLF().JDBCGCJJIAF();
+				string lBLKDNNPACO = "Localization Servise\nWorking commands:\nset <language>\nlist\nkeys";
 				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
 				object[] array = new object[0];
-				array[0] = player.GBLDJPCFLPC();
+				array[1] = player.CNLDGEMKLPP();
 				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.AIFIMLBHNOM(player.PDKJFCMEIEE(), handId, attime);
+				player.GCPKNBBPAHJ(player.GCBPLIIAODI(), handId, attime);
 			}
 		}
 		player.currentCombo.Clear();
 		wasPressed = true;
 	}
 
-	public void IDOFOCOFEIE()
+	public void FHPPMBEEKBL()
 	{
 		if (wasPressed)
 		{
-			if (!player.isRecording && player.DFLDMFKFBPC().BLMHOKPIMOD().isMine)
+			if (!player.isRecording && player.ENNCFNJBJAG().JDBCGCJJIAF().isMine)
 			{
-				PhotonView photonView = player.NODPGAOEHGL().GBHNDHLAJLI();
-				string lBLKDNNPACO = "Populate Mesh Data";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[7];
-				array[0] = player.BODCFCGDMDA();
-				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
+				PhotonView photonView = player.KJHMNOEDBJJ().GBMJAPGLMGB();
+				string lBLKDNNPACO = "_Value3";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[3];
+				array[1] = player.GCBPLIIAODI();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.NLPAHKLGJMK(player.FPFBFHALAJD(), handId, attime);
+				player.JOAEFBPDEJP(player.GPBFAEIADJD(), handId, attime);
 			}
 		}
 		player.currentCombo.Clear();
 		wasPressed = true;
 	}
 
-	public void MJINNGLCFDC()
+	public void JEKEBJCHOHO()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.MEBPHCDCLCC().EOOCGIFFKBG().isMine)
+			{
+				PhotonView photonView = player.JAGBDKPMBGP().GBMJAPGLMGB();
+				string lBLKDNNPACO = "PopulateMapsList";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[8];
+				array[0] = player.ALKGJEEHEBN();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.CNHOOPMOBPG(player.BHECOHDKMGO(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void KIBLMKAKPOB()
 	{
 		if (player.useComboSystem)
 		{
@@ -74,6 +221,508 @@ public class PlayerControllerKeyHandler
 		}
 		player.currentCombo.Add(direction);
 		wasPressed = true;
+	}
+
+	public void OJECBKEMOBH()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.JAGBDKPMBGP().EDIJKHEMPAD().isMine)
+			{
+				PhotonView photonView = player.NJODHOMKIED().GBHNDHLAJLI();
+				string lBLKDNNPACO = "settings.enablehitsoundsinnormal";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[5];
+				array[1] = player.GPBFAEIADJD();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.GPCPPDDHDAG(player.GCBPLIIAODI(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void LOBIGJMOMCD()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = true;
+	}
+
+	public void DBFBKCFEMDD()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
+	}
+
+	public void LJIHHJOAJCN()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				LJDMIDDBBPA();
+			}
+			if (wasPressed && currentTimeout > 1312f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 1641f)
+			{
+				GGHCBIAEBBH();
+			}
+		}
+		else if (hardInput.EBAHBLEMKKC(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.LMENGPDOOJG().ACPGHFHDCIP().isMine)
+			{
+				PhotonView photonView = player.OBBDJECLANB().OELHGNKAMEG();
+				string lBLKDNNPACO = "/";
+				PhotonTargets mPNMOONBMII = PhotonTargets.AllBufferedViaServer;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, player.GetCombo(), handId, null, null, null, null, null);
+			}
+			else
+			{
+				player.GFGHHDOBFEJ(player.BPJOPJPCKDA(), handId, 757f);
+			}
+		}
+	}
+
+	public void DAMCEJEEBCD()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.GENOLDKFAPB().PHCBHAFMDEJ().isMine)
+			{
+				PhotonView photonView = player.ENNCFNJBJAG().GBMJAPGLMGB();
+				string lBLKDNNPACO = "_SunPosition";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, player.GCBPLIIAODI(), handId, null, null, null, null);
+			}
+			else
+			{
+				player.PHDABEGNCON(player.GPBFAEIADJD(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void CGBHOELMAOC()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				GLHGOGIMHBP();
+			}
+			if (wasPressed && currentTimeout > 1840f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 240f)
+			{
+				FHPPMBEEKBL();
+			}
+		}
+		else if (hardInput.NHJCNJBKDMK(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.KJHMNOEDBJJ().IJBFILBDGDO().isMine)
+			{
+				PhotonView photonView = player.GKGCHBJANLF().PHCBHAFMDEJ();
+				string lBLKDNNPACO = "settings.selectormapsperpage";
+				PhotonTargets mPNMOONBMII = PhotonTargets.AllViaServer;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, player.ALKGJEEHEBN(), handId, null);
+			}
+			else
+			{
+				player.AEDJKCPNEOC(player.BHECOHDKMGO(), handId, 656f);
+			}
+		}
+	}
+
+	public void HLDFOJMHKNL()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				LJDMIDDBBPA();
+			}
+			if (wasPressed && currentTimeout > 1571f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 449f)
+			{
+				GAOMPMFOJNC();
+			}
+		}
+		else if (hardInput.GetKeyDown(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.playerBase.OELHGNKAMEG().isMine)
+			{
+				PhotonView photonView = player.DFPMJLHLFNK().GBMJAPGLMGB();
+				string lBLKDNNPACO = "PlayersScrollRectContent";
+				PhotonTargets mPNMOONBMII = PhotonTargets.MasterClient;
+				object[] array = new object[3];
+				array[1] = player.CNLDGEMKLPP();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.PHDABEGNCON(player.GetCombo(), handId, 1769f);
+			}
+		}
+	}
+
+	public void JAAJECBCCFM()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				PFDPNHHKMCN();
+			}
+			if (wasPressed && currentTimeout > 1899f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 880f)
+			{
+				Reset();
+			}
+		}
+		else if (hardInput.GetKeyDown(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.GKGCHBJANLF().PHCBHAFMDEJ().isMine)
+			{
+				PhotonView photonView = player.FBMHDALMKAL().GBMJAPGLMGB();
+				string lBLKDNNPACO = "CameraFilterPack/FX_DigitalMatrix";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[1];
+				array[1] = player.GPBFAEIADJD();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.CheckCombo(player.GetCombo(), handId, 1408f);
+			}
+		}
+	}
+
+	public void EKPOOJKFJFC()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = true;
+	}
+
+	public void KIEJKBNBHMD()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				OFOHOAPHFBD();
+			}
+			if (wasPressed && currentTimeout > 973f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 108f)
+			{
+				FPKJJBAENGF();
+			}
+		}
+		else if (hardInput.EBAHBLEMKKC(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.KIPGGHFMKLC().AAMNKPHHHCI().isMine)
+			{
+				PhotonView photonView = player.KEFGHEIOHON().IFENGKHOKPC();
+				string lBLKDNNPACO = "achievements.21.progress";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[2];
+				array[0] = player.BHECOHDKMGO();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.JOAEFBPDEJP(player.GetCombo(), handId, 752f);
+			}
+		}
+	}
+
+	public void GGHCBIAEBBH()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.GENOLDKFAPB().BLMHOKPIMOD().isMine)
+			{
+				PhotonView photonView = player.PJFCDBLDDHB().IJBFILBDGDO();
+				string lBLKDNNPACO = "_ScreenResolution";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[4];
+				array[1] = player.KNBOIOEKJID();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.AEDJKCPNEOC(player.FFHJBOCNMMA(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void CLMDACAINOA()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
+	}
+
+	public void AEIJFLJEABG()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.GetKeyDown(buttonKey))
+			{
+				PIPMHJMDHPK();
+			}
+			if (wasPressed && currentTimeout > 1875f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 794f)
+			{
+				DAMCEJEEBCD();
+			}
+		}
+		else if (hardInput.NHJCNJBKDMK(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.NABBDBMIHOI().JDBCGCJJIAF().isMine)
+			{
+				PhotonView photonView = player.playerBase.EOOCGIFFKBG();
+				string lBLKDNNPACO = "_Green_R";
+				PhotonTargets mPNMOONBMII = PhotonTargets.MasterClient;
+				object[] array = new object[1];
+				array[1] = player.BHECOHDKMGO();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.CheckCombo(player.BHECOHDKMGO(), handId, 1439f);
+			}
+		}
+	}
+
+	public void NNNCKCELBCE()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.KEFGHEIOHON().JDBCGCJJIAF().isMine)
+			{
+				PhotonView photonView = player.HEDFKOIPLEM().BLMHOKPIMOD();
+				string lBLKDNNPACO = "CameraFilterPack/3D_Distortion";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[4];
+				array[1] = player.KNBOIOEKJID();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.IPFCGDAKPNE(player.FFHJBOCNMMA(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = true;
+	}
+
+	public void EHCGBJDFMHG()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.NHJCNJBKDMK(buttonKey))
+			{
+				OFOHOAPHFBD();
+			}
+			if (wasPressed && currentTimeout > 1325f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 349f)
+			{
+				BJIKAHNJNEB();
+			}
+		}
+		else if (hardInput.EBAHBLEMKKC(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.playerBase.GMAHNPNHMFK().isMine)
+			{
+				PhotonView photonView = player.KIPGGHFMKLC().EOOCGIFFKBG();
+				string lBLKDNNPACO = "[MapsData] Workshop maps was loaded";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[6];
+				array[1] = player.CNLDGEMKLPP();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.PHDABEGNCON(player.GCBPLIIAODI(), handId, 625f);
+			}
+		}
+	}
+
+	public void MJNPIDGNJMK()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				DBFBKCFEMDD();
+			}
+			if (wasPressed && currentTimeout > 1579f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 865f)
+			{
+				GGHCBIAEBBH();
+			}
+		}
+		else if (hardInput.EBAHBLEMKKC(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.PJFCDBLDDHB().ACPGHFHDCIP().isMine)
+			{
+				PhotonView photonView = player.PJFCDBLDDHB().ACPGHFHDCIP();
+				string lBLKDNNPACO = "set";
+				PhotonTargets mPNMOONBMII = (PhotonTargets)8;
+				object[] array = new object[0];
+				array[1] = player.KNBOIOEKJID();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.KIPNNNAHGDJ(player.GPBFAEIADJD(), handId, 1128f);
+			}
+		}
+	}
+
+	public void OPCLBGHAPMG()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				ABDEGHLHHHF();
+			}
+			if (wasPressed && currentTimeout > 1773f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 735f)
+			{
+				GAOMPMFOJNC();
+			}
+		}
+		else if (hardInput.GetKeyDown(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.GKGCHBJANLF().PHCBHAFMDEJ().isMine)
+			{
+				PhotonView photonView = player.GIGCAEODABJ().IFENGKHOKPC();
+				string lBLKDNNPACO = " scene: ";
+				PhotonTargets mPNMOONBMII = PhotonTargets.AllViaServer;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, player.ALKGJEEHEBN(), handId, null, null, null, null, null);
+			}
+			else
+			{
+				player.DMHHPPDONJG(player.ALKGJEEHEBN(), handId, 1281f);
+			}
+		}
+	}
+
+	public void MANOCIJICLG()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.ENNCFNJBJAG().NABDKNPNEMM().isMine)
+			{
+				PhotonView photonView = player.JAGBDKPMBGP().PHCBHAFMDEJ();
+				string lBLKDNNPACO = "_ScreenResolution";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[0];
+				array[0] = player.CNLDGEMKLPP();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.BIGLPCNFMFA(player.FFHJBOCNMMA(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void GKFOIOALDFH()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
+	}
+
+	public void OFOHOAPHFBD()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
 	}
 
 	public void HNNDLFBNBBO()
@@ -87,7 +736,7 @@ public class PlayerControllerKeyHandler
 		wasPressed = true;
 	}
 
-	public void HGDELHLBLJI()
+	public void PHFLEEBHEFN()
 	{
 		if (player.useComboSystem)
 		{
@@ -95,88 +744,42 @@ public class PlayerControllerKeyHandler
 			currentTimeout = player.currentComboTimeout;
 		}
 		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void BJKJEJJOPLC()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.KEFGHEIOHON().photonView.KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.DMFKOAIAHDC().EOOCGIFFKBG();
-				string lBLKDNNPACO = "CameraFilterPack/Color_Chromatic_Aberration";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[2];
-				array[0] = player.GetCombo();
-				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.NLPAHKLGJMK(player.PDKJFCMEIEE(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
 		wasPressed = false;
 	}
 
-	public void LIMBEFBJNPL()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.KEFGHEIOHON().AAMNKPHHHCI().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.KEFGHEIOHON().JAEJDHHCJJO();
-				string lBLKDNNPACO = "[Left]";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[0];
-				array[0] = player.JPDMLANDOOI();
-				array[0] = handId;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.AIFIMLBHNOM(player.HFKKBJFPABL(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = true;
-	}
-
-	public void OIBMHPIFAKK()
+	public void MAOCOEGAFND()
 	{
 		if (player.useComboSystem)
 		{
-			if (!wasPressed && hardInput.NGFFMGKPMNP(buttonKey))
+			if (!wasPressed && hardInput.GetKeyDown(buttonKey))
 			{
-				GOANPHDJCLL();
+				LOBIGJMOMCD();
 			}
-			if (wasPressed && currentTimeout > 540f)
+			if (wasPressed && currentTimeout > 1004f)
 			{
 				currentTimeout -= Time.deltaTime;
 			}
-			if (wasPressed && currentTimeout <= 1230f)
+			if (wasPressed && currentTimeout <= 363f)
 			{
-				BJIKAHNJNEB();
+				OJECBKEMOBH();
 			}
 		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
+		else if (hardInput.GetKeyDown(buttonKey))
 		{
 			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.NFANBIICAFM().AAMNKPHHHCI().isMine)
+			if (!player.isRecording && player.DMMGMCGNILI().EDIJKHEMPAD().isMine)
 			{
-				PhotonView photonView = player.JHEFABODNPO().IBKCMBIGOEJ();
-				string lBLKDNNPACO = "CameraFilterPack_Atmosphere_Rain_FX";
-				PhotonTargets mPNMOONBMII = PhotonTargets.AllBufferedViaServer;
-				object[] array = new object[5];
-				array[1] = player.GetCombo();
+				PhotonView photonView = player.NABBDBMIHOI().GBMJAPGLMGB();
+				string lBLKDNNPACO = "menu.selectedplaymode";
+				PhotonTargets mPNMOONBMII = PhotonTargets.AllBuffered;
+				object[] array = new object[4];
+				array[0] = player.CNLDGEMKLPP();
 				array[0] = handId;
-				photonView.IKIJDNPJKPM(lBLKDNNPACO, mPNMOONBMII, array);
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.LNAOENCHKGI(player.KNBOIOEKJID(), handId, 1953f);
+				player.BIGLPCNFMFA(player.ALKGJEEHEBN(), handId, 702f);
 			}
 		}
 	}
@@ -192,53 +795,135 @@ public class PlayerControllerKeyHandler
 		wasPressed = true;
 	}
 
-	public void FPKJJBAENGF()
+	public void GOFMABPMLKF()
 	{
 		if (wasPressed)
 		{
-			if (!player.isRecording && player.DFLDMFKFBPC().ACPGHFHDCIP().DOLKFPIABDD())
+			if (!player.isRecording && player.IFACNHFOOAM().EOOCGIFFKBG().isMine)
 			{
-				PhotonView photonView = player.JJPEGCHJJED().BLMHOKPIMOD();
-				string lBLKDNNPACO = "action";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[8];
-				array[0] = player.ALKGJEEHEBN();
-				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.HPBPJKFHMCD(player.GetCombo(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = true;
-	}
-
-	public void EMKKGIEFKML()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.NLIGEMDBEOA().EOOCGIFFKBG().isMine)
-			{
-				PhotonView photonView = player.NODPGAOEHGL().BLMHOKPIMOD();
-				string lBLKDNNPACO = "Uploading preview image...";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				PhotonView photonView = player.FDKFJLHFNMK().IFENGKHOKPC();
+				string lBLKDNNPACO = "settings.enablehitsoundsinnormal";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
 				object[] array = new object[1];
-				array[0] = player.FPFBFHALAJD();
+				array[1] = player.GetCombo();
 				array[1] = handId;
-				photonView.MIAHMDGOOPJ(lBLKDNNPACO, mPNMOONBMII, array);
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.GIGMGMDAJOG(player.KNBOIOEKJID(), handId, attime);
+				player.PHDABEGNCON(player.BPJOPJPCKDA(), handId, attime);
 			}
 		}
 		player.currentCombo.Clear();
 		wasPressed = true;
 	}
 
-	public void BPIGKCAHDGG()
+	public void BMODOIJGIOO()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				OnPressed();
+			}
+			if (wasPressed && currentTimeout > 149f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 1380f)
+			{
+				KHGOJDPMPML();
+			}
+		}
+		else if (hardInput.GetKeyDown(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.LMENGPDOOJG().IFENGKHOKPC().isMine)
+			{
+				PhotonView photonView = player.OBBDJECLANB().GBMJAPGLMGB();
+				string lBLKDNNPACO = "_ScreenResolution";
+				PhotonTargets mPNMOONBMII = PhotonTargets.AllViaServer;
+				object[] array = new object[5];
+				array[0] = player.KNBOIOEKJID();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.CNHOOPMOBPG(player.CNLDGEMKLPP(), handId, 902f);
+			}
+		}
+	}
+
+	public PlayerControllerKeyHandler(PlayerController.Direction LPIMAGMABLC, string CIMJCIDACFJ, int PGJECADBIOI, PlayerController JHOEDACNNKK)
+	{
+		attime = 0f;
+		wasPressed = false;
+		direction = LPIMAGMABLC;
+		buttonKey = CIMJCIDACFJ;
+		player = JHOEDACNNKK;
+		handId = PGJECADBIOI;
+		currentTimeout = 0f;
+	}
+
+	public void PIPMHJMDHPK()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = true;
+	}
+
+	public void KHGOJDPMPML()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.NJODHOMKIED().EOOCGIFFKBG().isMine)
+			{
+				PhotonView photonView = player.KIPGGHFMKLC().JAEJDHHCJJO();
+				string lBLKDNNPACO = "[PlayerBase] Delete checkpoint data";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[5];
+				array[1] = player.GCBPLIIAODI();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.GPCPPDDHDAG(player.FFHJBOCNMMA(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = true;
+	}
+
+	public void PMLPJADKFMG()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.ENNCFNJBJAG().PHCBHAFMDEJ().isMine)
+			{
+				PhotonView photonView = player.JDFCILGMEOJ().PHCBHAFMDEJ();
+				string lBLKDNNPACO = "Set sun audio input";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[5];
+				array[1] = player.GPBFAEIADJD();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.JOAEFBPDEJP(player.GPBFAEIADJD(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = true;
+	}
+
+	public void HKJJMPCFEPL()
 	{
 		if (player.useComboSystem)
 		{
@@ -249,99 +934,264 @@ public class PlayerControllerKeyHandler
 		wasPressed = false;
 	}
 
-	public void OGKGIAAACAD()
+	public void JOACBIEHHCE()
 	{
-		if (wasPressed)
+		if (player.useComboSystem)
 		{
-			if (!player.isRecording && player.PELOCGBHJFO().GMAHNPNHMFK().isMine)
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
 			{
-				PhotonView photonView = player.NLIGEMDBEOA().GBMJAPGLMGB();
-				string lBLKDNNPACO = "Turn";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[3];
-				array[1] = player.JPDMLANDOOI();
+				PFDPNHHKMCN();
+			}
+			if (wasPressed && currentTimeout > 1449f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 855f)
+			{
+				MANOCIJICLG();
+			}
+		}
+		else if (hardInput.GetKeyDown(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.NJODHOMKIED().CIACEFBNDDJ().isMine)
+			{
+				PhotonView photonView = player.KIPGGHFMKLC().EDIJKHEMPAD();
+				string lBLKDNNPACO = "/";
+				PhotonTargets mPNMOONBMII = PhotonTargets.AllViaServer;
+				object[] array = new object[1];
+				array[0] = player.GetCombo();
 				array[1] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.HPBPJKFHMCD(player.ALKGJEEHEBN(), handId, attime);
+				player.IPFCGDAKPNE(player.CNLDGEMKLPP(), handId, 970f);
+			}
+		}
+	}
+
+	public void KMHCLFLINIO()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.DPJHDOFBJLE().CIACEFBNDDJ().isMine)
+			{
+				PhotonView photonView = player.IFACNHFOOAM().OELHGNKAMEG();
+				string lBLKDNNPACO = " (now: ";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[2]
+				{
+					null,
+					player.GetCombo()
+				};
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.CheckCombo(player.CNLDGEMKLPP(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void LJDMIDDBBPA()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
+	}
+
+	public void ILFEAADGHEO()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = true;
+	}
+
+	public void LDGJGONCEND()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.DPJHDOFBJLE().JIOCGDBKGIL().isMine)
+			{
+				PhotonView photonView = player.OBBDJECLANB().IBKCMBIGOEJ();
+				string lBLKDNNPACO = "menutheme.deleted";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[5];
+				array[1] = player.CNLDGEMKLPP();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.GCPKNBBPAHJ(player.KNBOIOEKJID(), handId, attime);
 			}
 		}
 		player.currentCombo.Clear();
 		wasPressed = true;
 	}
 
-	public void LMBDNPLDGIJ()
+	public void KNNOEGLLDAN()
 	{
-		if (player.useComboSystem)
+		if (wasPressed)
 		{
-			if (!wasPressed && hardInput.AADFFLGEJPP(buttonKey))
+			if (!player.isRecording && player.GKGCHBJANLF().BLMHOKPIMOD().isMine)
 			{
-				CLMDACAINOA();
-			}
-			if (wasPressed && currentTimeout > 1354f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 1817f)
-			{
-				PMLPJADKFMG();
-			}
-		}
-		else if (hardInput.CHAJOGCCKDA(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.HBDLLAKOFKJ().CIACEFBNDDJ().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.DGNIAONOGKK().IBKCMBIGOEJ();
-				string lBLKDNNPACO = "_CurTex";
-				PhotonTargets mPNMOONBMII = PhotonTargets.AllBufferedViaServer;
-				object[] array = new object[5];
-				array[1] = player.JPDMLANDOOI();
+				PhotonView photonView = player.FDKFJLHFNMK().photonView;
+				string lBLKDNNPACO = "CameraFilterPack/Oculus_ThermaVision";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[6];
+				array[1] = player.CNLDGEMKLPP();
 				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.CheckCombo(player.KNBOIOEKJID(), handId, 1893f);
+				player.JOAEFBPDEJP(player.BPJOPJPCKDA(), handId, attime);
 			}
 		}
+		player.currentCombo.Clear();
+		wasPressed = true;
+	}
+
+	public void NCPAFCKGJEA()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.NHJCNJBKDMK(buttonKey))
+			{
+				BPJBFPOMCGB();
+			}
+			if (wasPressed && currentTimeout > 1757f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 1625f)
+			{
+				JEKEBJCHOHO();
+			}
+		}
+		else if (hardInput.GetKeyDown(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.DFPMJLHLFNK().PHCBHAFMDEJ().isMine)
+			{
+				PhotonView photonView = player.FDKFJLHFNMK().PHCBHAFMDEJ();
+				string lBLKDNNPACO = "_Value2";
+				PhotonTargets mPNMOONBMII = (PhotonTargets)8;
+				object[] array = new object[1];
+				array[1] = player.GPBFAEIADJD();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.PHDABEGNCON(player.GPBFAEIADJD(), handId, 1648f);
+			}
+		}
+	}
+
+	public void BJHJCGJACEA()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.IDJIIFOLKMG().JAEJDHHCJJO().isMine)
+			{
+				PhotonView photonView = player.JDFCILGMEOJ().JDBCGCJJIAF();
+				string lBLKDNNPACO = "Run a command for the Localization Servise";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[6];
+				array[1] = player.GCBPLIIAODI();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.DMHHPPDONJG(player.KNBOIOEKJID(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void LIMBEFBJNPL()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.EICAMMJELIE().AAMNKPHHHCI().isMine)
+			{
+				PhotonView photonView = player.GENOLDKFAPB().BLMHOKPIMOD();
+				string lBLKDNNPACO = "PlayButton";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[3];
+				array[0] = player.KNBOIOEKJID();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.CNHOOPMOBPG(player.GPBFAEIADJD(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
+	}
+
+	public void MJINNGLCFDC()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
 	}
 
 	public void NKLIHNJCHOG()
 	{
 		if (player.useComboSystem)
 		{
-			if (!wasPressed && hardInput.CHAJOGCCKDA(buttonKey))
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
 			{
-				MAJBGPMBOKB();
+				BPJBFPOMCGB();
 			}
-			if (wasPressed && currentTimeout > 1623f)
+			if (wasPressed && currentTimeout > 267f)
 			{
 				currentTimeout -= Time.deltaTime;
 			}
-			if (wasPressed && currentTimeout <= 156f)
+			if (wasPressed && currentTimeout <= 1830f)
 			{
-				IDOFOCOFEIE();
+				ABDHDGNIHHI();
 			}
 		}
 		else if (hardInput.GetKeyDown(buttonKey))
 		{
 			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.JJPEGCHJJED().EDIJKHEMPAD().DOLKFPIABDD())
+			if (!player.isRecording && player.GIGCAEODABJ().GBMJAPGLMGB().isMine)
 			{
-				PhotonView photonView = player.PELOCGBHJFO().JAEJDHHCJJO();
-				string lBLKDNNPACO = "_Value";
+				PhotonView photonView = player.MEBPHCDCLCC().IFENGKHOKPC();
+				string lBLKDNNPACO = "From {0} at Index {1} \n";
 				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[3];
-				array[1] = player.ALKGJEEHEBN();
-				array[1] = handId;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, array);
+				object[] array = new object[2];
+				array[0] = player.FFHJBOCNMMA();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.GIGMGMDAJOG(player.PDKJFCMEIEE(), handId, 1913f);
+				player.CNHOOPMOBPG(player.KNBOIOEKJID(), handId, 1839f);
 			}
 		}
 	}
@@ -350,123 +1200,162 @@ public class PlayerControllerKeyHandler
 	{
 		if (wasPressed)
 		{
-			if (!player.isRecording && player.JJPEGCHJJED().OELHGNKAMEG().DOLKFPIABDD())
+			if (!player.isRecording && player.FDKFJLHFNMK().EDIJKHEMPAD().isMine)
 			{
-				PhotonView photonView = player.NLIGEMDBEOA().IBKCMBIGOEJ();
-				string lBLKDNNPACO = "_TimeX";
+				PhotonView photonView = player.IFACNHFOOAM().JIOCGDBKGIL();
+				string lBLKDNNPACO = "_ScreenResolution";
 				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[5];
-				array[1] = player.GetCombo();
-				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
+				object[] array = new object[7];
+				array[1] = player.BHECOHDKMGO();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.BHMNLMFCJLE(player.ALKGJEEHEBN(), handId, attime);
+				player.BIGLPCNFMFA(player.GCBPLIIAODI(), handId, attime);
 			}
 		}
 		player.currentCombo.Clear();
-		wasPressed = true;
+		wasPressed = false;
 	}
 
-	public void FJHFOBHJEHL()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.GetKeyDown(buttonKey))
-			{
-				CLMDACAINOA();
-			}
-			if (wasPressed && currentTimeout > 1870f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 420f)
-			{
-				LIMBEFBJNPL();
-			}
-		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.DGNIAONOGKK().JAEJDHHCJJO().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.NLIGEMDBEOA().EOOCGIFFKBG();
-				string lBLKDNNPACO = "_AccumOrig";
-				PhotonTargets mPNMOONBMII = PhotonTargets.AllViaServer;
-				object[] array = new object[2];
-				array[0] = player.MHMBDPMDDAC();
-				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.LNAOENCHKGI(player.GBLDJPCFLPC(), handId, 1802f);
-			}
-		}
-	}
-
-	public void CKCPHFLOLAH()
+	public void IJFMKNEPKEJ()
 	{
 		if (wasPressed)
 		{
-			if (!player.isRecording && player.DMFKOAIAHDC().EOOCGIFFKBG().DOLKFPIABDD())
+			if (!player.isRecording && player.PJFCDBLDDHB().OELHGNKAMEG().isMine)
 			{
-				PhotonView photonView = player.JJPEGCHJJED().CIACEFBNDDJ();
-				string lBLKDNNPACO = "_Parameter";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[3];
-				array[0] = player.HFKKBJFPABL();
+				PhotonView photonView = player.ENNCFNJBJAG().JDBCGCJJIAF();
+				string lBLKDNNPACO = "[ImageLoader] Loaded image from ";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[8];
+				array[0] = player.BHECOHDKMGO();
 				array[0] = handId;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, array);
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.DPOCLHCABII(player.GBLDJPCFLPC(), handId, attime);
+				player.JOAEFBPDEJP(player.ALKGJEEHEBN(), handId, attime);
 			}
 		}
 		player.currentCombo.Clear();
 		wasPressed = true;
 	}
 
-	public void LCJHDLKJEOM()
+	public void JBNPEHMDCMI()
 	{
 		if (player.useComboSystem)
 		{
-			if (!wasPressed && hardInput.AADFFLGEJPP(buttonKey))
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
 			{
-				IPEGECAHFCD();
+				JKOEOMPDFDI();
 			}
-			if (wasPressed && currentTimeout > 1750f)
+			if (wasPressed && currentTimeout > 1902f)
 			{
 				currentTimeout -= Time.deltaTime;
 			}
-			if (wasPressed && currentTimeout <= 720f)
+			if (wasPressed && currentTimeout <= 1717f)
 			{
-				HFFAJNCOJNB();
+				BJIKAHNJNEB();
 			}
 		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
+		else if (hardInput.GetKeyDown(buttonKey))
 		{
 			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.playerBase.GMAHNPNHMFK().KCAOJFPDEIP())
+			if (!player.isRecording && player.OBBDJECLANB().FFIPLLNKGEN().isMine)
 			{
-				PhotonView photonView = player.DGNIAONOGKK().AAMNKPHHHCI();
-				string lBLKDNNPACO = "CameraFilterPack/Distortion_Wave_Horizontal";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, new object[4]
-				{
-					player.GetCombo(),
-					handId,
-					null,
-					null
-				});
+				PhotonView photonView = player.DFPMJLHLFNK().BLMHOKPIMOD();
+				string lBLKDNNPACO = "_Vignette";
+				PhotonTargets mPNMOONBMII = PhotonTargets.All;
+				object[] array = new object[1];
+				array[1] = player.KNBOIOEKJID();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.PPJDDKHHDMP(player.JPDMLANDOOI(), handId, 1737f);
+				player.GCPKNBBPAHJ(player.FFHJBOCNMMA(), handId, 706f);
 			}
 		}
+	}
+
+	public void LPMINJJPDCH()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
+			{
+				OFOHOAPHFBD();
+			}
+			if (wasPressed && currentTimeout > 1052f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 1016f)
+			{
+				Reset();
+			}
+		}
+		else if (hardInput.NHJCNJBKDMK(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.DFPMJLHLFNK().GMAHNPNHMFK().isMine)
+			{
+				PhotonView photonView = player.JHEFABODNPO().EDIJKHEMPAD();
+				string lBLKDNNPACO = ".completed";
+				PhotonTargets mPNMOONBMII = PhotonTargets.AllBuffered;
+				object[] array = new object[6];
+				array[1] = player.GCBPLIIAODI();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.CheckCombo(player.KNBOIOEKJID(), handId, 738f);
+			}
+		}
+	}
+
+	public void GOANPHDJCLL()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
+	}
+
+	public void BJIKAHNJNEB()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.JDFCILGMEOJ().IJBFILBDGDO().isMine)
+			{
+				PhotonView photonView = player.EICAMMJELIE().BLMHOKPIMOD();
+				string lBLKDNNPACO = "Tab2Content";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, player.GCBPLIIAODI(), handId, null, null, null, null, null, null);
+			}
+			else
+			{
+				player.POFBCEKBIDH(player.GCBPLIIAODI(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = true;
+	}
+
+	public void HNGCMCGOECM()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = true;
 	}
 
 	public void Update()
@@ -500,563 +1389,6 @@ public class PlayerControllerKeyHandler
 		}
 	}
 
-	public void CPGAFFIOGCH()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.playerBase.ACPGHFHDCIP().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.JJPEGCHJJED().GBMJAPGLMGB();
-				string lBLKDNNPACO = "_ScreenResolution";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[3];
-				array[1] = player.GetCombo();
-				array[1] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.NLPAHKLGJMK(player.HFKKBJFPABL(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = false;
-	}
-
-	public void AEIJFLJEABG()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.CHAJOGCCKDA(buttonKey))
-			{
-				EJBLHPIOAJF();
-			}
-			if (wasPressed && currentTimeout > 951f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 1953f)
-			{
-				IJHGPCAHDEH();
-			}
-		}
-		else if (hardInput.GetKeyDown(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.CCBCAICCJLD().CIACEFBNDDJ().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.HBDLLAKOFKJ().CIACEFBNDDJ();
-				string lBLKDNNPACO = "PopulateMapsList";
-				PhotonTargets mPNMOONBMII = PhotonTargets.AllBufferedViaServer;
-				object[] array = new object[5];
-				array[1] = player.ALKGJEEHEBN();
-				array[0] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.POFBCEKBIDH(player.ALKGJEEHEBN(), handId, 682f);
-			}
-		}
-	}
-
-	public void MDIDEHPCJBD()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void LNLEHBBCGLM()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void ABDEGHLHHHF()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void KFACDBHDAOD()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.AADFFLGEJPP(buttonKey))
-			{
-				KIBLMKAKPOB();
-			}
-			if (wasPressed && currentTimeout > 1601f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 364f)
-			{
-				OGKGIAAACAD();
-			}
-		}
-		else if (hardInput.CHAJOGCCKDA(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.DMFKOAIAHDC().JAEJDHHCJJO().BGJKMGJBPFA())
-			{
-				PhotonView photonView = player.DFLDMFKFBPC().photonView;
-				string lBLKDNNPACO = "_CenterX";
-				PhotonTargets mPNMOONBMII = PhotonTargets.AllBuffered;
-				object[] array = new object[3];
-				array[1] = player.KNBOIOEKJID();
-				array[0] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.DPOCLHCABII(player.KNBOIOEKJID(), handId, 1952f);
-			}
-		}
-	}
-
-	public void AJAAPDBCKPP()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = false;
-	}
-
-	public void CFOOCBMIFGA()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = false;
-	}
-
-	public PlayerControllerKeyHandler(PlayerController.Direction LPIMAGMABLC, string CIMJCIDACFJ, int PGJECADBIOI, PlayerController JHOEDACNNKK)
-	{
-		attime = 0f;
-		wasPressed = false;
-		direction = LPIMAGMABLC;
-		buttonKey = CIMJCIDACFJ;
-		player = JHOEDACNNKK;
-		handId = PGJECADBIOI;
-		currentTimeout = 0f;
-	}
-
-	public void GANNKLPODAD()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = false;
-	}
-
-	public void OFGMLJJEDMM()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void EGFBPCMCNDJ()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.NLIGEMDBEOA().IBKCMBIGOEJ().BGJKMGJBPFA())
-			{
-				PhotonView photonView = player.JJPEGCHJJED().CIACEFBNDDJ();
-				string lBLKDNNPACO = "settings_bindings_";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[7];
-				array[1] = player.MHMBDPMDDAC();
-				array[0] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.CONKAILPANP(player.MHMBDPMDDAC(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = false;
-	}
-
-	public void ENAANLLCMPK()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void GAOMPMFOJNC()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.EICAMMJELIE().JAEJDHHCJJO().isMine)
-			{
-				PhotonView photonView = player.NLIGEMDBEOA().JAEJDHHCJJO();
-				string lBLKDNNPACO = "_WaveIntensity";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[2];
-				array[0] = player.MHMBDPMDDAC();
-				array[0] = handId;
-				photonView.IKIJDNPJKPM(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.AEDJKCPNEOC(player.HFKKBJFPABL(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = false;
-	}
-
-	public void HFFAJNCOJNB()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.DGNIAONOGKK().GBMJAPGLMGB().BGJKMGJBPFA())
-			{
-				PhotonView photonView = player.DMFKOAIAHDC().GBMJAPGLMGB();
-				string lBLKDNNPACO = "_ChangeBlue";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[5];
-				array[1] = player.HFKKBJFPABL();
-				array[1] = handId;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.NBMHHGHIHDJ(player.ALKGJEEHEBN(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = true;
-	}
-
-	public void KIBLMKAKPOB()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = false;
-	}
-
-	public void GOFMABPMLKF()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.JHEFABODNPO().ACPGHFHDCIP().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.PELOCGBHJFO().FFIPLLNKGEN();
-				string lBLKDNNPACO = "solo";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[0];
-				array[0] = player.FPFBFHALAJD();
-				array[1] = handId;
-				photonView.IKIJDNPJKPM(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.OGACJDOPABH(player.GBLDJPCFLPC(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = true;
-	}
-
-	public void JHPOIOELNCG()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.GetKeyDown(buttonKey))
-			{
-				KIBLMKAKPOB();
-			}
-			if (wasPressed && currentTimeout > 1544f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 334f)
-			{
-				Reset();
-			}
-		}
-		else if (hardInput.CHAJOGCCKDA(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.CCBCAICCJLD().BLMHOKPIMOD().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.NFANBIICAFM().photonView;
-				string lBLKDNNPACO = "_ScreenResolution";
-				PhotonTargets mPNMOONBMII = PhotonTargets.MasterClient;
-				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, player.PDKJFCMEIEE(), handId, null, null, null, null, null, null);
-			}
-			else
-			{
-				player.OGACJDOPABH(player.HFKKBJFPABL(), handId, 428f);
-			}
-		}
-	}
-
-	public void IPEGECAHFCD()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void CLMDACAINOA()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void MAOCOEGAFND()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.NGFFMGKPMNP(buttonKey))
-			{
-				GHGNCNDBHCG();
-			}
-			if (wasPressed && currentTimeout > 1268f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 45f)
-			{
-				JEKEBJCHOHO();
-			}
-		}
-		else if (hardInput.GetKeyDown(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.JJPEGCHJJED().FFIPLLNKGEN().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.HBDLLAKOFKJ().BLMHOKPIMOD();
-				string lBLKDNNPACO = "_Value2";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[5];
-				array[1] = player.GBLDJPCFLPC();
-				array[0] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.LNAOENCHKGI(player.MHMBDPMDDAC(), handId, 1284f);
-			}
-		}
-	}
-
-	public void IDIIELPAMCJ()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.GetKeyDown(buttonKey))
-			{
-				JDDCECNFJAB();
-			}
-			if (wasPressed && currentTimeout > 1685f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 134f)
-			{
-				NNNCKCELBCE();
-			}
-		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.NFANBIICAFM().BLMHOKPIMOD().isMine)
-			{
-				PhotonView photonView = player.NODPGAOEHGL().photonView;
-				string lBLKDNNPACO = "_MainTex2";
-				PhotonTargets mPNMOONBMII = PhotonTargets.MasterClient;
-				object[] array = new object[1];
-				array[1] = player.ALKGJEEHEBN();
-				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.LNAOENCHKGI(player.DJLACMJODFF(), handId, 501f);
-			}
-		}
-	}
-
-	public void PMLPJADKFMG()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.KEFGHEIOHON().GMAHNPNHMFK().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.DNOKKLIKLAM().GMAHNPNHMFK();
-				string lBLKDNNPACO = "' was created: ";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[3];
-				array[1] = player.MHMBDPMDDAC();
-				array[1] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.NBMHHGHIHDJ(player.KNBOIOEKJID(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = true;
-	}
-
-	public void EJBLHPIOAJF()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void GLHGOGIMHBP()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void IAPOBEGCHLG()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.ODHBANOIMPN().EDIJKHEMPAD().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.JHEFABODNPO().AAMNKPHHHCI();
-				string lBLKDNNPACO = "Editor";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[4];
-				array[1] = player.GetCombo();
-				array[0] = handId;
-				photonView.MIAHMDGOOPJ(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.HPBPJKFHMCD(player.JPDMLANDOOI(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = false;
-	}
-
-	public void MFMIODIAKNI()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.AADFFLGEJPP(buttonKey))
-			{
-				ENAANLLCMPK();
-			}
-			if (wasPressed && currentTimeout > 715f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 1717f)
-			{
-				Reset();
-			}
-		}
-		else if (hardInput.CHAJOGCCKDA(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.JHEFABODNPO().OELHGNKAMEG().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.JHEFABODNPO().EOOCGIFFKBG();
-				string lBLKDNNPACO = "_Value3";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[5];
-				array[0] = player.PDKJFCMEIEE();
-				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.POFBCEKBIDH(player.KNBOIOEKJID(), handId, 183f);
-			}
-		}
-	}
-
-	public void BJIKAHNJNEB()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.KEFGHEIOHON().EOOCGIFFKBG().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.DGNIAONOGKK().EDIJKHEMPAD();
-				string lBLKDNNPACO = "CameraFilterPack_Fly_VisionFX";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[5];
-				array[1] = player.BODCFCGDMDA();
-				array[0] = handId;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.LNAOENCHKGI(player.GBLDJPCFLPC(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = true;
-	}
-
 	public void DEJLOIGKEKO()
 	{
 		if (player.useComboSystem)
@@ -1068,286 +1400,161 @@ public class PlayerControllerKeyHandler
 		wasPressed = false;
 	}
 
-	public void KMEONPMCNJG()
+	public void KMEFHCDNDNF()
 	{
-		if (player.useComboSystem)
+		if (wasPressed)
 		{
-			if (!wasPressed && hardInput.NGFFMGKPMNP(buttonKey))
+			if (!player.isRecording && player.KIPGGHFMKLC().FFIPLLNKGEN().isMine)
 			{
-				BPIGKCAHDGG();
-			}
-			if (wasPressed && currentTimeout > 1262f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 690f)
-			{
-				GOFMABPMLKF();
-			}
-		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.DGNIAONOGKK().FFIPLLNKGEN().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.EICAMMJELIE().EOOCGIFFKBG();
-				string lBLKDNNPACO = "id";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[6];
-				array[1] = player.DJLACMJODFF();
-				array[0] = handId;
-				photonView.IKIJDNPJKPM(lBLKDNNPACO, mPNMOONBMII, array);
+				PhotonView photonView = player.KJHMNOEDBJJ().BBGIDKNEGHD();
+				string lBLKDNNPACO = "_MainTex2";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, player.GCBPLIIAODI(), handId, null, null, null, null, null);
 			}
 			else
 			{
-				player.CONKAILPANP(player.ALKGJEEHEBN(), handId, 260f);
+				player.AEDJKCPNEOC(player.GetCombo(), handId, attime);
 			}
 		}
+		player.currentCombo.Clear();
+		wasPressed = true;
 	}
 
-	public void NCPAFCKGJEA()
+	public void GAOMPMFOJNC()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.ENNCFNJBJAG().GBHNDHLAJLI().isMine)
+			{
+				PhotonView photonView = player.JFINMCMCFIL().AAMNKPHHHCI();
+				string lBLKDNNPACO = "#tryagain";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[0];
+				array[0] = player.CNLDGEMKLPP();
+				array[1] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.AEDJKCPNEOC(player.GetCombo(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = true;
+	}
+
+	public void FOMNCPKKCFN()
 	{
 		if (player.useComboSystem)
 		{
-			if (!wasPressed && hardInput.AADFFLGEJPP(buttonKey))
+			if (!wasPressed && hardInput.EBAHBLEMKKC(buttonKey))
 			{
-				ENAANLLCMPK();
+				DBFBKCFEMDD();
 			}
-			if (wasPressed && currentTimeout > 1860f)
+			if (wasPressed && currentTimeout > 1844f)
 			{
 				currentTimeout -= Time.deltaTime;
 			}
-			if (wasPressed && currentTimeout <= 1225f)
+			if (wasPressed && currentTimeout <= 498f)
 			{
-				DABMBPBGPPI();
+				KMHCLFLINIO();
 			}
 		}
-		else if (hardInput.CHAJOGCCKDA(buttonKey))
+		else if (hardInput.NHJCNJBKDMK(buttonKey))
 		{
 			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.JHEFABODNPO().EDIJKHEMPAD().BGJKMGJBPFA())
+			if (!player.isRecording && player.HEDFKOIPLEM().JDBCGCJJIAF().isMine)
 			{
-				PhotonView photonView = player.DMFKOAIAHDC().BLMHOKPIMOD();
-				string lBLKDNNPACO = "Failed to 'GetKeyCode' for key: ";
+				PhotonView photonView = player.NJODHOMKIED().BLMHOKPIMOD();
+				string lBLKDNNPACO = "HightScoreMaxPointsText";
 				PhotonTargets mPNMOONBMII = PhotonTargets.OthersBuffered;
-				object[] array = new object[4];
-				array[1] = player.FPFBFHALAJD();
-				array[0] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.DBKJHNBJBKK(player.KNBOIOEKJID(), handId, 1596f);
-			}
-		}
-	}
-
-	public void HLDFOJMHKNL()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.NGFFMGKPMNP(buttonKey))
-			{
-				KIBLMKAKPOB();
-			}
-			if (wasPressed && currentTimeout > 1292f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 1231f)
-			{
-				GAOMPMFOJNC();
-			}
-		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.PELOCGBHJFO().EDIJKHEMPAD().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.JHEFABODNPO().photonView;
-				string lBLKDNNPACO = "No valid adaptive tonemapper type found!";
-				PhotonTargets mPNMOONBMII = PhotonTargets.OthersBuffered;
-				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, player.ALKGJEEHEBN(), handId, null, null, null, null, null, null);
-			}
-			else
-			{
-				player.OGACJDOPABH(player.KNBOIOEKJID(), handId, 1389f);
-			}
-		}
-	}
-
-	public void LLJLDLLNFBH()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.AADFFLGEJPP(buttonKey))
-			{
-				FFEJFNEFNFD();
-			}
-			if (wasPressed && currentTimeout > 386f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 212f)
-			{
-				BJKJEJJOPLC();
-			}
-		}
-		else if (hardInput.CHAJOGCCKDA(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.JHEFABODNPO().JAEJDHHCJJO().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.PELOCGBHJFO().ACPGHFHDCIP();
-				string lBLKDNNPACO = "Preparing configuration...";
-				PhotonTargets mPNMOONBMII = PhotonTargets.AllBuffered;
-				object[] array = new object[6];
-				array[0] = player.GetCombo();
+				object[] array = new object[3];
+				array[0] = player.GPBFAEIADJD();
 				array[0] = handId;
 				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.HPBPJKFHMCD(player.BODCFCGDMDA(), handId, 1517f);
+				player.CheckCombo(player.KNBOIOEKJID(), handId, 11f);
 			}
 		}
 	}
 
-	public void KCDOMIJBFLL()
+	public void LCJHDLKJEOM()
 	{
 		if (player.useComboSystem)
 		{
-			if (!wasPressed && hardInput.NGFFMGKPMNP(buttonKey))
+			if (!wasPressed && hardInput.GetKeyDown(buttonKey))
 			{
-				BPIGKCAHDGG();
+				DBFBKCFEMDD();
 			}
-			if (wasPressed && currentTimeout > 1147f)
+			if (wasPressed && currentTimeout > 323f)
 			{
 				currentTimeout -= Time.deltaTime;
 			}
-			if (wasPressed && currentTimeout <= 171f)
+			if (wasPressed && currentTimeout <= 1682f)
 			{
-				IJHGPCAHDEH();
+				FPKJJBAENGF();
+			}
+		}
+		else if (hardInput.NHJCNJBKDMK(buttonKey))
+		{
+			player.currentCombo.Add(direction);
+			if (!player.isRecording && player.GKGCHBJANLF().GMAHNPNHMFK().isMine)
+			{
+				PhotonView photonView = player.KEFGHEIOHON().NABDKNPNEMM();
+				string lBLKDNNPACO = "_Green_R";
+				PhotonTargets mPNMOONBMII = PhotonTargets.MasterClient;
+				object[] array = new object[5];
+				array[1] = player.CNLDGEMKLPP();
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.IPFCGDAKPNE(player.BHECOHDKMGO(), handId, 1916f);
+			}
+		}
+	}
+
+	public void OCMKCBBCEFG()
+	{
+		if (player.useComboSystem)
+		{
+			if (!wasPressed && hardInput.GetKeyDown(buttonKey))
+			{
+				ILFEAADGHEO();
+			}
+			if (wasPressed && currentTimeout > 1747f)
+			{
+				currentTimeout -= Time.deltaTime;
+			}
+			if (wasPressed && currentTimeout <= 434f)
+			{
+				PMLPJADKFMG();
 			}
 		}
 		else if (hardInput.GetKeyDown(buttonKey))
 		{
 			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.playerBase.EOOCGIFFKBG().BGJKMGJBPFA())
+			if (!player.isRecording && player.NJODHOMKIED().AAMNKPHHHCI().isMine)
 			{
-				PhotonView photonView = player.playerBase.BLMHOKPIMOD();
-				string lBLKDNNPACO = "OnDeserialize";
+				PhotonView photonView = player.NABBDBMIHOI().BBGIDKNEGHD();
+				string lBLKDNNPACO = "bpmgrid";
 				PhotonTargets mPNMOONBMII = PhotonTargets.MasterClient;
-				object[] array = new object[5];
-				array[1] = player.FPFBFHALAJD();
-				array[1] = handId;
-				photonView.IKIJDNPJKPM(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.CheckCombo(player.KNBOIOEKJID(), handId, 1198f);
-			}
-		}
-	}
-
-	public void GPFJMKCGHGB()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.AADFFLGEJPP(buttonKey))
-			{
-				CFOOCBMIFGA();
-			}
-			if (wasPressed && currentTimeout > 1287f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 195f)
-			{
-				FPKJJBAENGF();
-			}
-		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.DNOKKLIKLAM().EOOCGIFFKBG().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.NFANBIICAFM().CIACEFBNDDJ();
-				string lBLKDNNPACO = "PAUSE [SPACE]";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
 				object[] array = new object[1];
-				array[0] = player.BODCFCGDMDA();
+				array[1] = player.BHECOHDKMGO();
 				array[1] = handId;
 				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.OGACJDOPABH(player.HFKKBJFPABL(), handId, 1948f);
+				player.BIGLPCNFMFA(player.CNLDGEMKLPP(), handId, 201f);
 			}
 		}
 	}
 
-	public void IEMEHGCFAPD()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.CHAJOGCCKDA(buttonKey))
-			{
-				JDDCECNFJAB();
-			}
-			if (wasPressed && currentTimeout > 622f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 1830f)
-			{
-				EGFBPCMCNDJ();
-			}
-		}
-		else if (hardInput.CHAJOGCCKDA(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.DGNIAONOGKK().EOOCGIFFKBG().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.DGNIAONOGKK().AAMNKPHHHCI();
-				string lBLKDNNPACO = "VeryHigh";
-				PhotonTargets mPNMOONBMII = PhotonTargets.OthersBuffered;
-				object[] array = new object[6];
-				array[1] = player.GetCombo();
-				array[1] = handId;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.POFBCEKBIDH(player.PDKJFCMEIEE(), handId, 1066f);
-			}
-		}
-	}
-
-	public void NNNCKCELBCE()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.PELOCGBHJFO().IBKCMBIGOEJ().isMine)
-			{
-				PhotonView photonView = player.NLIGEMDBEOA().BLMHOKPIMOD();
-				string lBLKDNNPACO = "JoinButton";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[8];
-				array[1] = player.PDKJFCMEIEE();
-				array[1] = handId;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.BHMNLMFCJLE(player.FPFBFHALAJD(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = false;
-	}
-
-	public void MAJBGPMBOKB()
+	public void PFDPNHHKMCN()
 	{
 		if (player.useComboSystem)
 		{
@@ -1358,73 +1565,7 @@ public class PlayerControllerKeyHandler
 		wasPressed = true;
 	}
 
-	public void DEDANNMJNOC()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.DNOKKLIKLAM().CIACEFBNDDJ().DOLKFPIABDD())
-			{
-				PhotonView photonView = player.CCBCAICCJLD().EDIJKHEMPAD();
-				string lBLKDNNPACO = "inventory.selected.";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[2]
-				{
-					null,
-					player.DJLACMJODFF()
-				};
-				array[1] = handId;
-				photonView.IKIJDNPJKPM(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.GIGMGMDAJOG(player.MHMBDPMDDAC(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = false;
-	}
-
-	public void LJIHHJOAJCN()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.AADFFLGEJPP(buttonKey))
-			{
-				EJBLHPIOAJF();
-			}
-			if (wasPressed && currentTimeout > 73f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 52f)
-			{
-				GOFMABPMLKF();
-			}
-		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.DMFKOAIAHDC().OELHGNKAMEG().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.JJPEGCHJJED().OELHGNKAMEG();
-				string lBLKDNNPACO = "_Value3";
-				PhotonTargets mPNMOONBMII = PhotonTargets.AllViaServer;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, new object[4]
-				{
-					player.JPDMLANDOOI(),
-					handId,
-					null,
-					null
-				});
-			}
-			else
-			{
-				player.CheckCombo(player.DJLACMJODFF(), handId, 850f);
-			}
-		}
-	}
-
-	public void OFOHOAPHFBD()
+	public void EOGGMDHKKDB()
 	{
 		if (player.useComboSystem)
 		{
@@ -1432,92 +1573,75 @@ public class PlayerControllerKeyHandler
 			currentTimeout = player.currentComboTimeout;
 		}
 		player.currentCombo.Add(direction);
-		wasPressed = false;
+		wasPressed = true;
 	}
 
-	public void DABMBPBGPPI()
+	public void FPKJJBAENGF()
 	{
 		if (wasPressed)
 		{
-			if (!player.isRecording && player.DNOKKLIKLAM().JAEJDHHCJJO().BGJKMGJBPFA())
+			if (!player.isRecording && player.MEBPHCDCLCC().BBGIDKNEGHD().isMine)
 			{
-				PhotonView photonView = player.DFLDMFKFBPC().GBMJAPGLMGB();
-				string lBLKDNNPACO = "SingleplayerButton";
+				PhotonView photonView = player.IDJIIFOLKMG().GBMJAPGLMGB();
+				string lBLKDNNPACO = "_Value";
 				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[4];
-				array[1] = player.MHMBDPMDDAC();
+				object[] array = new object[1];
+				array[1] = player.ALKGJEEHEBN();
 				array[0] = handId;
-				photonView.KEKKFNNMLMG(lBLKDNNPACO, mPNMOONBMII, array);
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
 			}
 			else
 			{
-				player.DPOCLHCABII(player.JPDMLANDOOI(), handId, attime);
+				player.POFBCEKBIDH(player.BHECOHDKMGO(), handId, attime);
 			}
 		}
 		player.currentCombo.Clear();
-		wasPressed = false;
+		wasPressed = true;
 	}
 
-	public void EKPOOJKFJFC()
+	public void OIBMHPIFAKK()
 	{
 		if (player.useComboSystem)
 		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = false;
-	}
-
-	public void GHGNCNDBHCG()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = false;
-	}
-
-	public void KMKLDAJLCNM()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.NGFFMGKPMNP(buttonKey))
+			if (!wasPressed && hardInput.NHJCNJBKDMK(buttonKey))
 			{
-				MAJBGPMBOKB();
+				LOBIGJMOMCD();
 			}
-			if (wasPressed && currentTimeout > 1411f)
+			if (wasPressed && currentTimeout > 675f)
 			{
 				currentTimeout -= Time.deltaTime;
 			}
-			if (wasPressed && currentTimeout <= 9f)
+			if (wasPressed && currentTimeout <= 896f)
 			{
-				Reset();
+				KHGOJDPMPML();
 			}
 		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
+		else if (hardInput.NHJCNJBKDMK(buttonKey))
 		{
 			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.CCBCAICCJLD().GBHNDHLAJLI().DOLKFPIABDD())
+			if (!player.isRecording && player.ENNCFNJBJAG().JAEJDHHCJJO().isMine)
 			{
-				PhotonView photonView = player.NFANBIICAFM().ACPGHFHDCIP();
-				string lBLKDNNPACO = "_ScreenResolution";
-				PhotonTargets mPNMOONBMII = (PhotonTargets)7;
-				object[] array = new object[3];
-				array[1] = player.MHMBDPMDDAC();
-				array[1] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
+				player.DMMGMCGNILI().NABDKNPNEMM().RPC("_Value2", PhotonTargets.AllBufferedViaServer, player.ALKGJEEHEBN(), handId);
 			}
 			else
 			{
-				player.DBKJHNBJBKK(player.PDKJFCMEIEE(), handId, 1934f);
+				player.CheckCombo(player.BHECOHDKMGO(), handId, 1865f);
 			}
 		}
 	}
 
-	public void FFEJFNEFNFD()
+	public void GLHGOGIMHBP()
+	{
+		if (player.useComboSystem)
+		{
+			attime = Singleton<MapEditor>.Instance.currentTime;
+			currentTimeout = player.currentComboTimeout;
+		}
+		player.currentCombo.Add(direction);
+		wasPressed = false;
+	}
+
+	public void JKOEOMPDFDI()
 	{
 		if (player.useComboSystem)
 		{
@@ -1526,6 +1650,28 @@ public class PlayerControllerKeyHandler
 		}
 		player.currentCombo.Add(direction);
 		wasPressed = true;
+	}
+
+	public void IJHGPCAHDEH()
+	{
+		if (wasPressed)
+		{
+			if (!player.isRecording && player.ENNCFNJBJAG().JAEJDHHCJJO().isMine)
+			{
+				PhotonView photonView = player.GENOLDKFAPB().GBHNDHLAJLI();
+				string lBLKDNNPACO = "SetSatelliteInput";
+				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
+				object[] array = new object[1] { player.CNLDGEMKLPP() };
+				array[0] = handId;
+				photonView.RPC(lBLKDNNPACO, mPNMOONBMII, array);
+			}
+			else
+			{
+				player.GCPKNBBPAHJ(player.GCBPLIIAODI(), handId, attime);
+			}
+		}
+		player.currentCombo.Clear();
+		wasPressed = false;
 	}
 
 	public void BPJBFPOMCGB()
@@ -1536,145 +1682,6 @@ public class PlayerControllerKeyHandler
 			currentTimeout = player.currentComboTimeout;
 		}
 		player.currentCombo.Add(direction);
-		wasPressed = true;
-	}
-
-	public void GOANPHDJCLL()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
 		wasPressed = false;
-	}
-
-	public void JEKEBJCHOHO()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.JHEFABODNPO().BLMHOKPIMOD().isMine)
-			{
-				PhotonView photonView = player.JJPEGCHJJED().EDIJKHEMPAD();
-				string lBLKDNNPACO = "_TimeX";
-				PhotonTargets mPNMOONBMII = PhotonTargets.All;
-				object[] array = new object[4];
-				array[0] = player.KNBOIOEKJID();
-				array[0] = handId;
-				photonView.GNFNHDCJOFC(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.BHMNLMFCJLE(player.JPDMLANDOOI(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = false;
-	}
-
-	public void JNBPKNNBMDI()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.CHAJOGCCKDA(buttonKey))
-			{
-				OFOHOAPHFBD();
-			}
-			if (wasPressed && currentTimeout > 1810f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 105f)
-			{
-				HFFAJNCOJNB();
-			}
-		}
-		else if (hardInput.NGFFMGKPMNP(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.JJPEGCHJJED().JAEJDHHCJJO().isMine)
-			{
-				PhotonView photonView = player.HBDLLAKOFKJ().BLMHOKPIMOD();
-				string lBLKDNNPACO = "SetTrailZoomSpeed";
-				PhotonTargets mPNMOONBMII = PhotonTargets.Others;
-				object[] array = new object[2]
-				{
-					null,
-					player.DJLACMJODFF()
-				};
-				array[0] = handId;
-				photonView.PBMFBOOALKA(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.NLPAHKLGJMK(player.GBLDJPCFLPC(), handId, 356f);
-			}
-		}
-	}
-
-	public void DPIPGGDNGHN()
-	{
-		if (player.useComboSystem)
-		{
-			if (!wasPressed && hardInput.NGFFMGKPMNP(buttonKey))
-			{
-				MAJBGPMBOKB();
-			}
-			if (wasPressed && currentTimeout > 1904f)
-			{
-				currentTimeout -= Time.deltaTime;
-			}
-			if (wasPressed && currentTimeout <= 1504f)
-			{
-				NNNCKCELBCE();
-			}
-		}
-		else if (hardInput.CHAJOGCCKDA(buttonKey))
-		{
-			player.currentCombo.Add(direction);
-			if (!player.isRecording && player.NLIGEMDBEOA().AAMNKPHHHCI().KCAOJFPDEIP())
-			{
-				PhotonView photonView = player.PELOCGBHJFO().OELHGNKAMEG();
-				string lBLKDNNPACO = " : ";
-				PhotonTargets mPNMOONBMII = (PhotonTargets)8;
-				object[] array = new object[3];
-				array[0] = player.GetCombo();
-				array[0] = handId;
-				photonView.MIAHMDGOOPJ(lBLKDNNPACO, mPNMOONBMII, array);
-			}
-			else
-			{
-				player.LNAOENCHKGI(player.FPFBFHALAJD(), handId, 562f);
-			}
-		}
-	}
-
-	public void Reset()
-	{
-		if (wasPressed)
-		{
-			if (!player.isRecording && player.playerBase.photonView.isMine)
-			{
-				player.playerBase.photonView.RPC("CheckCombo", PhotonTargets.All, player.GetCombo(), handId);
-			}
-			else
-			{
-				player.CheckCombo(player.GetCombo(), handId, attime);
-			}
-		}
-		player.currentCombo.Clear();
-		wasPressed = false;
-	}
-
-	public void JDDCECNFJAB()
-	{
-		if (player.useComboSystem)
-		{
-			attime = Singleton<MapEditor>.Instance.currentTime;
-			currentTimeout = player.currentComboTimeout;
-		}
-		player.currentCombo.Add(direction);
-		wasPressed = true;
 	}
 }

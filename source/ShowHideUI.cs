@@ -7,584 +7,163 @@ public class ShowHideUI : MonoBehaviour
 
 	private bool HCDGILEEMJH;
 
-	private void BOIJIGCEEKM()
-	{
-		BJFCPHNLBJH.alpha = 1f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void GOOFONGMDPD()
-	{
-		BJFCPHNLBJH.alpha = 65f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	public void BMOFEBKGLFI()
+	public void PMPKMGKAAJH()
 	{
 		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.CEKEOJDAEOD("menu.selectedplaymode", 1) == 0) ? true : false);
-		PEJELGDIIKA();
-	}
-
-	public void JILOMOBDPIA()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.GetInt("GlassAberration", 1) == 0) ? true : false);
-		OMLOBGOAMFJ();
-	}
-
-	private void FDFIAICCFHD()
-	{
-		BJFCPHNLBJH.alpha = 163f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	public void DNENFLNCIJP()
-	{
-		if (Input.GetKeyDown((KeyCode)(-119)) && Input.GetKey((KeyCode)(-53)))
-		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			GFJJHOPDMHO();
-		}
-	}
-
-	public void MNBPNHNAEBK()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.ANECPPFPKAP("id", 0) != 0 && false;
-		CJPFLADMBON();
-	}
-
-	public void MJEFMIPLFAB()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("/", 0) != 0 && false;
-		BAFGFGPMFAD();
-	}
-
-	private void DKMPOMCJDGI()
-	{
-		BJFCPHNLBJH.alpha = 906f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	public void FMFNILJIEIA()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.CEKEOJDAEOD("SingleplayerButton", 0) != 0 && false;
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.KFNFNKILGPH("Created", 0) != 0 && false;
 		DCOOCEMEDCM();
-	}
-
-	private void CCPPNKFOJGP()
-	{
-		if (HCDGILEEMJH)
-		{
-			EGJDFKMPGKL();
-		}
-		else
-		{
-			AJIEDGIAKDP();
-		}
-	}
-
-	private void BJKIIKBOIHP()
-	{
-		BJFCPHNLBJH.alpha = 671f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	private void LPCJBBHJPNJ()
-	{
-		if (HCDGILEEMJH)
-		{
-			EHGCIJIFIJA();
-		}
-		else
-		{
-			FICNHKDOAND();
-		}
-	}
-
-	public void ONMGIPAILOH()
-	{
-		if (Input.GetKeyDown((KeyCode)(-164)) && Input.GetKey((KeyCode)(-5)))
-		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			PEJELGDIIKA();
-		}
-	}
-
-	private void IMHOIDEPIBB()
-	{
-		BJFCPHNLBJH.alpha = 1315f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	private void MPCEFKCKGEM()
-	{
-		BJFCPHNLBJH.alpha = 2f;
-		BJFCPHNLBJH.blocksRaycasts = true;
 	}
 
 	private void DCOOCEMEDCM()
 	{
 		if (HCDGILEEMJH)
 		{
-			EHGCIJIFIJA();
-		}
-		else
-		{
-			LBBKEMJMCIK();
-		}
-	}
-
-	public void KIMMMCJFMAB()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.CEKEOJDAEOD("_TimeX", 1) != 0 && false;
-		CJPFLADMBON();
-	}
-
-	public void DDBOODLPCAM()
-	{
-		if (Input.GetKeyDown(KeyCode.J) && Input.GetKey(KeyCode.Alpha3))
-		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			MCCOFALKNPB();
-		}
-	}
-
-	private void CCJBMJOMLOG()
-	{
-		if (HCDGILEEMJH)
-		{
-			OEBNOCDONFL();
-		}
-		else
-		{
-			DKMPOMCJDGI();
-		}
-	}
-
-	private void NHJHBELNLFP()
-	{
-		if (HCDGILEEMJH)
-		{
-			IEOBCKGAJJM();
-		}
-		else
-		{
-			KFJPCENGBPG();
-		}
-	}
-
-	private void GKGFBJKNKPP()
-	{
-		BJFCPHNLBJH.alpha = 1662f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	public void MGMAOBPPOBJ()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.CEKEOJDAEOD("Obtain promo Item", 0) != 0) ? true : false);
-		OOAHNLKFGIJ();
-	}
-
-	public void APKNAPHOFHC()
-	{
-		if (Input.GetKeyDown((KeyCode)(-5)) && Input.GetKey((KeyCode)(-151)))
-		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			BAFGFGPMFAD();
-		}
-	}
-
-	public void JOACBIEHHCE()
-	{
-		if (Input.GetKeyDown((KeyCode)(-180)) && Input.GetKey((KeyCode)70))
-		{
-			HCDGILEEMJH = HCDGILEEMJH;
-			MCCOFALKNPB();
-		}
-	}
-
-	public void IMCKJCHKMKB()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.AFCPNFKIKKJ("CameraFilterPack/Antialiasing_FXAA", 0) != 0 && false;
-		DCOOCEMEDCM();
-	}
-
-	private void HMLPBHNALPK()
-	{
-		if (HCDGILEEMJH)
-		{
-			GKDLJIFKMMG();
-		}
-		else
-		{
-			KJOCLHFAAFG();
-		}
-	}
-
-	private void IJGDFKKENPL()
-	{
-		BJFCPHNLBJH.alpha = 1547f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void DNNEDBMNCAM()
-	{
-		BJFCPHNLBJH.alpha = 1648f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void HMKGBCLKJAE()
-	{
-		BJFCPHNLBJH.alpha = 1470f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void OEBNOCDONFL()
-	{
-		BJFCPHNLBJH.alpha = 844f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	private void KFFPDIANNLB()
-	{
-		BJFCPHNLBJH.alpha = 118f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void KGKFDGJPEFM()
-	{
-		BJFCPHNLBJH.alpha = 202f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	public void ECBILENEOOL()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.AFCPNFKIKKJ("Drop_With_Obj", 0) != 0 && false;
-		OOMNJAGEFGH();
-	}
-
-	private void MPOKDMODADK()
-	{
-		BJFCPHNLBJH.alpha = 567f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void GFJJHOPDMHO()
-	{
-		if (HCDGILEEMJH)
-		{
 			EGJDFKMPGKL();
 		}
 		else
 		{
-			GLHOENENKNL();
+			JMACFPPAAGL();
 		}
 	}
 
-	public void Update()
+	private void HHLEJFAICKK()
 	{
-		if (Input.GetKeyDown(KeyCode.F1) && Input.GetKey(KeyCode.LeftAlt))
-		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			OOMNJAGEFGH();
-		}
+		BJFCPHNLBJH.alpha = 1679f;
+		BJFCPHNLBJH.blocksRaycasts = true;
 	}
 
-	public void BGFJOEPFOPM()
+	private void FFEGGJJEKHP()
 	{
-		if (Input.GetKeyDown((KeyCode)142) && Input.GetKey(KeyCode.A))
-		{
-			HCDGILEEMJH = HCDGILEEMJH;
-			COANPHEENHM();
-		}
+		BJFCPHNLBJH.alpha = 133f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void BOJJBFKLNFO()
+	{
+		BJFCPHNLBJH.alpha = 1315f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void OMPCAFJLLPG()
+	{
+		BJFCPHNLBJH.alpha = 916f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void EKLDNMFOMJE()
+	{
+		BJFCPHNLBJH.alpha = 138f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	public void MMMDPANNAIO()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("_Value2", 1) != 0 || true;
+		CBIPPNLAJCC();
+	}
+
+	public void IGPCNCJIEOJ()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.KFNFNKILGPH("CameraFilterPack/Gradients_FireGradient", 1) != 0) ? true : false);
+		ENHMPIPKHJL();
+	}
+
+	public void LFBGJIIECLD()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("IEnumerable", 0) != 0 || true;
+		PEJELGDIIKA();
+	}
+
+	private void AOINHMGFJDM()
+	{
+		BJFCPHNLBJH.alpha = 1264f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void PINIIFCPNBE()
+	{
+		BJFCPHNLBJH.alpha = 1796f;
+		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
 	private void JAFNHIDANGN()
 	{
 		if (HCDGILEEMJH)
 		{
-			BIJGDOCOIEK();
+			GNAHJMFJHLA();
 		}
 		else
 		{
-			DNNEDBMNCAM();
+			MLHOLDHLBKD();
 		}
 	}
 
-	public void FEHCNJLLJMP()
+	private void MLEPGBPKFJN()
 	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.GetInt("SetParticlesParticleSize", 0) == 0) ? true : false);
-		CCPPNKFOJGP();
-	}
-
-	public void KMKLDAJLCNM()
-	{
-		if (Input.GetKeyDown((KeyCode)(-162)) && Input.GetKey((KeyCode)(-10)))
-		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			OMLOBGOAMFJ();
-		}
-	}
-
-	private void EHGCIJIFIJA()
-	{
-		BJFCPHNLBJH.alpha = 1309f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	public void PKHPNHBEKHA()
-	{
-		if (Input.GetKeyDown((KeyCode)131) && Input.GetKey(KeyCode.Backslash))
-		{
-			HCDGILEEMJH = HCDGILEEMJH;
-			GFJJHOPDMHO();
-		}
-	}
-
-	public void POJFHDFJOPE()
-	{
-		if (Input.GetKeyDown((KeyCode)137) && Input.GetKey((KeyCode)(-186)))
-		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			CCJBMJOMLOG();
-		}
-	}
-
-	private void ILDJEMBDNLG()
-	{
-		BJFCPHNLBJH.alpha = 1670f;
+		BJFCPHNLBJH.alpha = 273f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	private void COANPHEENHM()
+	private void BCFLCMKFKKM()
 	{
 		if (HCDGILEEMJH)
 		{
-			IPPKPCOPIHM();
+			NBOABKFPNDE();
 		}
 		else
 		{
-			HFMMPGPLHDN();
+			PINIIFCPNBE();
 		}
 	}
 
-	private void EGJDFKMPGKL()
-	{
-		BJFCPHNLBJH.alpha = 0f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	public void JOPCCCCHNLI()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.ANECPPFPKAP("_Value2", 1) != 0 || true;
-		OOMNJAGEFGH();
-	}
-
-	private void EEGFMLCNIEP()
-	{
-		BJFCPHNLBJH.alpha = 1661f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	public void CGDMLHLJIDK()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.ANECPPFPKAP(" with a prefix of ", 1) != 0) ? true : false);
-		LPCJBBHJPNJ();
-	}
-
-	private void BCNPLFDOALB()
-	{
-		BJFCPHNLBJH.alpha = 127f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	public void KLILJHJNICK()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.CMAFBKOEPLP("getbool", 0) != 0 && false;
-		BAFGFGPMFAD();
-	}
-
-	private void FFEGGJJEKHP()
-	{
-		BJFCPHNLBJH.alpha = 1907f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	public void AEEGKLABFLN()
-	{
-		if (Input.GetKeyDown(KeyCode.D) && Input.GetKey(KeyCode.I))
-		{
-			HCDGILEEMJH = HCDGILEEMJH;
-			MCCOFALKNPB();
-		}
-	}
-
-	public void JMEOGJHCONJ()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.CEKEOJDAEOD("AllocateViewID() failed. User {0} is out of subIds, as all viewIDs are used.", 1) != 0 && false;
-		CCPPNKFOJGP();
-	}
-
-	private void CJPFLADMBON()
-	{
-		if (HCDGILEEMJH)
-		{
-			BIJGDOCOIEK();
-		}
-		else
-		{
-			KCCFFBCCCKM();
-		}
-	}
-
-	private void FDJPLJHMNKL()
-	{
-		if (HCDGILEEMJH)
-		{
-			IMHOIDEPIBB();
-		}
-		else
-		{
-			FDFIAICCFHD();
-		}
-	}
-
-	public void Start()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.GetInt("settings.hideui", 0) != 0) ? true : false);
-		OOMNJAGEFGH();
-	}
-
-	public void CNGAJDBOCLJ()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.CEKEOJDAEOD("CameraFilterPack_TV_Vignetting1", 0) != 0) ? true : false);
-		LPCJBBHJPNJ();
-	}
-
-	public void NNFMIAFHMJM()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.ANECPPFPKAP(": ", 1) != 0 && false;
-		CJPFLADMBON();
-	}
-
-	private void MDKPFLOABAA()
-	{
-		BJFCPHNLBJH.alpha = 1679f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	public void BEBNOKFLJPH()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.CMAFBKOEPLP("_Radius", 0) == 0) ? true : false);
-		OOMNJAGEFGH();
-	}
-
-	public void KDJEJBBDILE()
-	{
-		if (Input.GetKeyDown((KeyCode)(-156)) && Input.GetKey((KeyCode)153))
-		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			OOAHNLKFGIJ();
-		}
-	}
-
-	private void KJOCLHFAAFG()
-	{
-		BJFCPHNLBJH.alpha = 959f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	private void NFJBPOLEBED()
-	{
-		BJFCPHNLBJH.alpha = 837f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	private void EOBHFHKMJHO()
-	{
-		BJFCPHNLBJH.alpha = 538f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	private void KFJPCENGBPG()
-	{
-		BJFCPHNLBJH.alpha = 23f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	private void MGKACACPOMG()
-	{
-		BJFCPHNLBJH.alpha = 133f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void FJFODLFPNID()
-	{
-		BJFCPHNLBJH.alpha = 998f;
-		BJFCPHNLBJH.blocksRaycasts = false;
-	}
-
-	private void OMLOBGOAMFJ()
-	{
-		if (HCDGILEEMJH)
-		{
-			EHGCIJIFIJA();
-		}
-		else
-		{
-			MHIDMDFOLOD();
-		}
-	}
-
-	private void NGJLOPMGOEM()
+	private void PCKNGBKAGAI()
 	{
 		BJFCPHNLBJH.alpha = 1074f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	public void EHJJFJCKGAJ()
+	private void LNOIHOCHJGD()
 	{
-		if (Input.GetKeyDown((KeyCode)(-116)) && Input.GetKey((KeyCode)(-187)))
-		{
-			HCDGILEEMJH = HCDGILEEMJH;
-			CCJBMJOMLOG();
-		}
-	}
-
-	public void NNCCPEBIAKH()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("CameraFilterPack/Blend2Camera_HardMix", 1) != 0 && false;
-		NHJHBELNLFP();
-	}
-
-	private void IEOBCKGAJJM()
-	{
-		BJFCPHNLBJH.alpha = 351f;
+		BJFCPHNLBJH.alpha = 223f;
 		BJFCPHNLBJH.blocksRaycasts = true;
 	}
 
-	private void MHIDMDFOLOD()
+	public void AEDDNDHCLNN()
 	{
-		BJFCPHNLBJH.alpha = 501f;
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.KFNFNKILGPH("Set EnvSprite Color", 0) == 0) ? true : false);
+		JAFNHIDANGN();
+	}
+
+	private void GFGHHKEMICL()
+	{
+		BJFCPHNLBJH.alpha = 1952f;
 		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	public void AAPKBNDHBLI()
+	{
+		if (Input.GetKeyDown((KeyCode)(-180)) && Input.GetKey((KeyCode)70))
+		{
+			HCDGILEEMJH = HCDGILEEMJH;
+			HFKIJIDGCCN();
+		}
+	}
+
+	public void DIPDEHOOBPG()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.HHBIEPMBICO("Tab2Content", 1) != 0) ? true : false);
+		BCFLCMKFKKM();
+	}
+
+	private void BHIADOCFDFB()
+	{
+		BJFCPHNLBJH.alpha = 1071f;
+		BJFCPHNLBJH.blocksRaycasts = true;
 	}
 
 	private void OOMNJAGEFGH()
@@ -599,220 +178,789 @@ public class ShowHideUI : MonoBehaviour
 		}
 	}
 
-	public void KMCPMOGKDEH()
+	private void KGKFDGJPEFM()
 	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.CMAFBKOEPLP("Tab2Content", 1) != 0) ? true : false);
-		LPCJBBHJPNJ();
-	}
-
-	private void BAFGFGPMFAD()
-	{
-		if (HCDGILEEMJH)
-		{
-			OEBNOCDONFL();
-		}
-		else
-		{
-			GOOFONGMDPD();
-		}
-	}
-
-	private void IPPKPCOPIHM()
-	{
-		BJFCPHNLBJH.alpha = 1144f;
+		BJFCPHNLBJH.alpha = 1049f;
 		BJFCPHNLBJH.blocksRaycasts = true;
 	}
 
-	private void FICNHKDOAND()
+	public void FOLDLDLFFLM()
 	{
-		BJFCPHNLBJH.alpha = 718f;
+		if (Input.GetKeyDown(KeyCode.Pause) && Input.GetKey((KeyCode)(-32)))
+		{
+			HCDGILEEMJH = HCDGILEEMJH;
+			EPBOOOGHHNE();
+		}
+	}
+
+	public void KFACDBHDAOD()
+	{
+		if (Input.GetKeyDown((KeyCode)(-116)) && Input.GetKey((KeyCode)(-187)))
+		{
+			HCDGILEEMJH = HCDGILEEMJH;
+			CBIPPNLAJCC();
+		}
+	}
+
+	private void HCCHMJDMBBC()
+	{
+		BJFCPHNLBJH.alpha = 1624f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	public void COIJKMKIEAK()
+	private void JHEGLAIINJH()
 	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.AFCPNFKIKKJ("_Value2", 1) != 0 || true;
-		FDJPLJHMNKL();
+		if (HCDGILEEMJH)
+		{
+			AKFFMNEKEHI();
+		}
+		else
+		{
+			MHOMBNHPJGK();
+		}
 	}
 
-	private void MNBPAGICIGI()
+	public void FDNONDCGGCG()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.KFNFNKILGPH("_Value2", 1) == 0) ? true : false);
+		PPMJALDCGIP();
+	}
+
+	public void MKOMIDCPCDC()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.HHBIEPMBICO("_SpotSize", 0) == 0) ? true : false);
+		PHFNKFINBGC();
+	}
+
+	private void BCNPLFDOALB()
+	{
+		BJFCPHNLBJH.alpha = 1470f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void ALAJCMHMMEB()
+	{
+		BJFCPHNLBJH.alpha = 1547f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void BOIJIGCEEKM()
+	{
+		BJFCPHNLBJH.alpha = 1f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	public void PDHKMDBNGGN()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.HHBIEPMBICO("SingleplayerButton", 0) != 0 && false;
+		EPBOOOGHHNE();
+	}
+
+	private void AKBCMNIINKM()
+	{
+		BJFCPHNLBJH.alpha = 1661f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void GDFPCNBJCCN()
+	{
+		if (HCDGILEEMJH)
+		{
+			AKFFMNEKEHI();
+		}
+		else
+		{
+			FJFODLFPNID();
+		}
+	}
+
+	private void DKOFIGJGLHA()
 	{
 		BJFCPHNLBJH.alpha = 1025f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	public void FHGKIOOMMOH()
+	public void MBLDJEFBLFL()
 	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = Singleton<SaveSystem>.Instance.ANECPPFPKAP("float,2", 1) != 0 || true;
-		JAFNHIDANGN();
+		if (Input.GetKeyDown(KeyCode.Percent) && Input.GetKey((KeyCode)(-49)))
+		{
+			HCDGILEEMJH = HCDGILEEMJH;
+			DCOOCEMEDCM();
+		}
 	}
 
-	private void BHNHJLEJLHA()
+	private void MPOKDMODADK()
+	{
+		BJFCPHNLBJH.alpha = 109f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void EPDIGGNIIOD()
+	{
+		BJFCPHNLBJH.alpha = 275f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void KFJPCENGBPG()
+	{
+		BJFCPHNLBJH.alpha = 959f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void HLNHPCBOAAI()
+	{
+		BJFCPHNLBJH.alpha = 501f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void BOCNLFGDMDB()
+	{
+		BJFCPHNLBJH.alpha = 2f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void EEBCDMDFJIL()
+	{
+		BJFCPHNLBJH.alpha = 998f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	public void FOMNCPKKCFN()
+	{
+		if (Input.GetKeyDown(KeyCode.D) && Input.GetKey(KeyCode.I))
+		{
+			HCDGILEEMJH = HCDGILEEMJH;
+			DCOOCEMEDCM();
+		}
+	}
+
+	private void NBOABKFPNDE()
+	{
+		BJFCPHNLBJH.alpha = 127f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	public void FMNPFCHBLJF()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("Drop_With_Obj", 0) != 0 && false;
+		CJLCCNLANOI();
+	}
+
+	public void BFGIMALGMAJ()
+	{
+		if (Input.GetKeyDown((KeyCode)(-65)) && Input.GetKey((KeyCode)26))
+		{
+			HCDGILEEMJH = !HCDGILEEMJH;
+			BCFLCMKFKKM();
+		}
+	}
+
+	private void BKLKJAMPMLI()
+	{
+		BJFCPHNLBJH.alpha = 1648f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void ILJMHOFFOBL()
+	{
+		BJFCPHNLBJH.alpha = 190f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void MLHOLDHLBKD()
+	{
+		BJFCPHNLBJH.alpha = 1754f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	public void LFAFJKJAEEL()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.KFNFNKILGPH("PLEASE WAIT", 1) != 0 || true;
+		OOMNJAGEFGH();
+	}
+
+	public void POJFHDFJOPE()
+	{
+		if (Input.GetKeyDown((KeyCode)131) && Input.GetKey(KeyCode.Backslash))
+		{
+			HCDGILEEMJH = HCDGILEEMJH;
+			CBIPPNLAJCC();
+		}
+	}
+
+	public void MECJHOJPODB()
+	{
+		if (Input.GetKeyDown((KeyCode)137) && Input.GetKey((KeyCode)(-186)))
+		{
+			HCDGILEEMJH = !HCDGILEEMJH;
+			CJLCCNLANOI();
+		}
+	}
+
+	private void KJOLCDACAJF()
+	{
+		BJFCPHNLBJH.alpha = 1661f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void BBFKAEOEFMP()
+	{
+		BJFCPHNLBJH.alpha = 351f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void HNHCGCKKMFI()
+	{
+		BJFCPHNLBJH.alpha = 1391f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void ICNPBFDOHIH()
+	{
+		BJFCPHNLBJH.alpha = 323f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	public void AEMGPJDJGBJ()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.HHBIEPMBICO("LevelFolderInputField", 0) == 0) ? true : false);
+		GDFPCNBJCCN();
+	}
+
+	private void LPHEPJHECJO()
+	{
+		BJFCPHNLBJH.alpha = 202f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void OJHFGCPDDKB()
+	{
+		BJFCPHNLBJH.alpha = 844f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void APBEMEPMMIN()
 	{
 		if (HCDGILEEMJH)
 		{
-			KLDJPNBBCBO();
+			BMOGNBGNEJJ();
 		}
 		else
 		{
-			MHIDMDFOLOD();
+			BLMABFICBFG();
 		}
 	}
 
-	private void ECMKCPBAJGL()
+	public void Start()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.GetInt("settings.hideui", 0) != 0) ? true : false);
+		OOMNJAGEFGH();
+	}
+
+	private void KGCMGLBOADI()
+	{
+		BJFCPHNLBJH.alpha = 27f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	public void CGDMLHLJIDK()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("[PlayerController] ", 1) != 0 && false;
+		CJLCCNLANOI();
+	}
+
+	public void PAKPHKPDKGE()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.GetInt("Received RPC \"", 1) != 0) ? true : false);
+		GDFPCNBJCCN();
+	}
+
+	private void AFMFIPBAJLD()
+	{
+		BJFCPHNLBJH.alpha = 1638f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void HELFELMGNCE()
+	{
+		if (HCDGILEEMJH)
+		{
+			FFEGGJJEKHP();
+		}
+		else
+		{
+			PINIIFCPNBE();
+		}
+	}
+
+	private void PPMJALDCGIP()
+	{
+		if (HCDGILEEMJH)
+		{
+			BBFKAEOEFMP();
+		}
+		else
+		{
+			JBMDBNCDDMB();
+		}
+	}
+
+	public void GCHBGCGBMCK()
+	{
+		if (Input.GetKeyDown((KeyCode)(-5)) && Input.GetKey((KeyCode)(-151)))
+		{
+			HCDGILEEMJH = !HCDGILEEMJH;
+			EPBOOOGHHNE();
+		}
+	}
+
+	public void NBGIMIDICKE()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.HHBIEPMBICO("GlassDistortion", 1) == 0) ? true : false);
+		JHEGLAIINJH();
+	}
+
+	private void AKFFMNEKEHI()
+	{
+		BJFCPHNLBJH.alpha = 773f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	public void IIFCIDDJHPM()
+	{
+		if (Input.GetKeyDown((KeyCode)(-73)) && Input.GetKey((KeyCode)7))
+		{
+			HCDGILEEMJH = !HCDGILEEMJH;
+			APBEMEPMMIN();
+		}
+	}
+
+	private void MLFODNALLLA()
+	{
+		if (HCDGILEEMJH)
+		{
+			AOAAADEKKMK();
+		}
+		else
+		{
+			PCKNGBKAGAI();
+		}
+	}
+
+	private void OMGDDFKANPE()
+	{
+		BJFCPHNLBJH.alpha = 1709f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void GNAHJMFJHLA()
+	{
+		BJFCPHNLBJH.alpha = 1309f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void ENHMPIPKHJL()
+	{
+		if (HCDGILEEMJH)
+		{
+			FFEGGJJEKHP();
+		}
+		else
+		{
+			FEJDCNBIHFD();
+		}
+	}
+
+	public void GPNAOAKCMHC()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("id", 0) != 0 && false;
+		OOMNJAGEFGH();
+	}
+
+	public void IKDNLHLBHID()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.KFNFNKILGPH("offsets", 1) != 0 && false;
+		DCOOCEMEDCM();
+	}
+
+	private void PHFNKFINBGC()
+	{
+		if (HCDGILEEMJH)
+		{
+			PCDCEBIBPBI();
+		}
+		else
+		{
+			FEJDCNBIHFD();
+		}
+	}
+
+	public void JDKHBGDEONK()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.HHBIEPMBICO("f", 1) == 0) ? true : false);
+		BCFLCMKFKKM();
+	}
+
+	private void PCDCEBIBPBI()
+	{
+		BJFCPHNLBJH.alpha = 778f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	public void DKOPKPBLDHH()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.KFNFNKILGPH("menu.selectedplaymode", 1) == 0) ? true : false);
+		CCJBMJOMLOG();
+	}
+
+	private void CCJBMJOMLOG()
+	{
+		if (HCDGILEEMJH)
+		{
+			PCDCEBIBPBI();
+		}
+		else
+		{
+			FJFODLFPNID();
+		}
+	}
+
+	private void CBIPPNLAJCC()
+	{
+		if (HCDGILEEMJH)
+		{
+			ALAJCMHMMEB();
+		}
+		else
+		{
+			MHOMBNHPJGK();
+		}
+	}
+
+	private void MHOMBNHPJGK()
+	{
+		BJFCPHNLBJH.alpha = 1053f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void LKBJBBFJDLD()
+	{
+		if (HCDGILEEMJH)
+		{
+			EPDIGGNIIOD();
+		}
+		else
+		{
+			HLNHPCBOAAI();
+		}
+	}
+
+	public void KLILJHJNICK()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.KFNFNKILGPH("player.currentrank", 0) != 0) ? true : false);
+		PHFNKFINBGC();
+	}
+
+	public void HLIAEEMGBHN()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("Only the Master Client can AllocateSceneViewID(). Check PhotonNetwork.isMasterClient!", 1) != 0 && false;
+		JHEGLAIINJH();
+	}
+
+	private void IOKIDIBJOCP()
+	{
+		BJFCPHNLBJH.alpha = 1679f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void EDACGNCILDA()
+	{
+		BJFCPHNLBJH.alpha = 118f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void NGJLOPMGOEM()
+	{
+		BJFCPHNLBJH.alpha = 1230f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void IJGDFKKENPL()
+	{
+		BJFCPHNLBJH.alpha = 1907f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void NJIANIFFPBE()
 	{
 		BJFCPHNLBJH.alpha = 1148f;
 		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void AOAAADEKKMK()
+	{
+		BJFCPHNLBJH.alpha = 66f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void JJAPMPGCNNA()
+	{
+		if (HCDGILEEMJH)
+		{
+			PCDCEBIBPBI();
+		}
+		else
+		{
+			MLHOLDHLBKD();
+		}
+	}
+
+	private void JMACFPPAAGL()
+	{
+		BJFCPHNLBJH.alpha = 163f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	private void CJLCCNLANOI()
+	{
+		if (HCDGILEEMJH)
+		{
+			LNOIHOCHJGD();
+		}
+		else
+		{
+			BLMABFICBFG();
+		}
+	}
+
+	public void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.F1) && Input.GetKey(KeyCode.LeftAlt))
+		{
+			HCDGILEEMJH = !HCDGILEEMJH;
+			OOMNJAGEFGH();
+		}
+	}
+
+	private void EPBOOOGHHNE()
+	{
+		if (HCDGILEEMJH)
+		{
+			BCNPLFDOALB();
+		}
+		else
+		{
+			PCKNGBKAGAI();
+		}
 	}
 
 	private void PEJELGDIIKA()
 	{
 		if (HCDGILEEMJH)
 		{
-			HMKGBCLKJAE();
+			NBOABKFPNDE();
 		}
 		else
 		{
-			FICNHKDOAND();
+			FJFODLFPNID();
 		}
-	}
-
-	private void IAMBKEBEGOP()
-	{
-		BJFCPHNLBJH.alpha = 190f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void MCCOFALKNPB()
-	{
-		if (HCDGILEEMJH)
-		{
-			KGKFDGJPEFM();
-		}
-		else
-		{
-			BJKIIKBOIHP();
-		}
-	}
-
-	private void OEIIKJNLDID()
-	{
-		BJFCPHNLBJH.alpha = 1709f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void HFMMPGPLHDN()
-	{
-		BJFCPHNLBJH.alpha = 422f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void KEABOLAKABM()
-	{
-		BJFCPHNLBJH.alpha = 323f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void BIJGDOCOIEK()
-	{
-		BJFCPHNLBJH.alpha = 916f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void OMPCAFJLLPG()
-	{
-		BJFCPHNLBJH.alpha = 109f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void OOAHNLKFGIJ()
-	{
-		if (HCDGILEEMJH)
-		{
-			OMPCAFJLLPG();
-		}
-		else
-		{
-			MNBPAGICIGI();
-		}
-	}
-
-	public void IHLMNAGPKDA()
-	{
-		BJFCPHNLBJH = GetComponent<CanvasGroup>();
-		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.AFCPNFKIKKJ("#FFFFFF", 0) != 0) ? true : false);
-		COANPHEENHM();
-	}
-
-	private void GKBMAJDBDCP()
-	{
-		BJFCPHNLBJH.alpha = 1071f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void GDGAHHHMOFF()
-	{
-		BJFCPHNLBJH.alpha = 223f;
-		BJFCPHNLBJH.blocksRaycasts = true;
-	}
-
-	private void AJIEDGIAKDP()
-	{
-		BJFCPHNLBJH.alpha = 1674f;
-		BJFCPHNLBJH.blocksRaycasts = true;
 	}
 
 	private void MNPFOOPEKNL()
 	{
-		BJFCPHNLBJH.alpha = 899f;
+		BJFCPHNLBJH.alpha = 567f;
 		BJFCPHNLBJH.blocksRaycasts = true;
 	}
 
-	private void MHLKGEDOCOB()
+	public void OCMKCBBCEFG()
 	{
-		BJFCPHNLBJH.alpha = 1638f;
+		if (Input.GetKeyDown((KeyCode)(-164)) && Input.GetKey((KeyCode)(-5)))
+		{
+			HCDGILEEMJH = !HCDGILEEMJH;
+			LKBJBBFJDLD();
+		}
+	}
+
+	private void JBMDBNCDDMB()
+	{
+		BJFCPHNLBJH.alpha = 23f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	private void KCCFFBCCCKM()
+	public void ADPLHDFJFID()
 	{
-		BJFCPHNLBJH.alpha = 138f;
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("Tab2Content", 0) != 0 || true;
+		JAFNHIDANGN();
+	}
+
+	private void EJJIEHLABGL()
+	{
+		BJFCPHNLBJH.alpha = 415f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	private void GLHOENENKNL()
+	private void PJFMBOFPBKD()
+	{
+		BJFCPHNLBJH.alpha = 1144f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	public void PBEPCAPAKLG()
+	{
+		if (Input.GetKeyDown(KeyCode.J) && Input.GetKey(KeyCode.Alpha3))
+		{
+			HCDGILEEMJH = !HCDGILEEMJH;
+			JJAPMPGCNNA();
+		}
+	}
+
+	private void EGJDFKMPGKL()
+	{
+		BJFCPHNLBJH.alpha = 0f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void FEJDCNBIHFD()
+	{
+		BJFCPHNLBJH.alpha = 678f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	public void JHANGPCOCIG()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = ((Singleton<SaveSystem>.Instance.HHBIEPMBICO("player.xp", 0) != 0) ? true : false);
+		CCJBMJOMLOG();
+	}
+
+	private void KBFIDLAPEMA()
+	{
+		if (HCDGILEEMJH)
+		{
+			FFEGGJJEKHP();
+		}
+		else
+		{
+			BOIJIGCEEKM();
+		}
+	}
+
+	public void HLDFOJMHKNL()
+	{
+		if (Input.GetKeyDown((KeyCode)(-119)) && Input.GetKey((KeyCode)(-53)))
+		{
+			HCDGILEEMJH = !HCDGILEEMJH;
+			ENHMPIPKHJL();
+		}
+	}
+
+	private void MDKPFLOABAA()
+	{
+		BJFCPHNLBJH.alpha = 1670f;
+		BJFCPHNLBJH.blocksRaycasts = false;
+	}
+
+	private void AIEDKPCFKGL()
+	{
+		if (HCDGILEEMJH)
+		{
+			MLEPGBPKFJN();
+		}
+		else
+		{
+			AFMFIPBAJLD();
+		}
+	}
+
+	public void FNCDAPDOBBI()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.KFNFNKILGPH("_Value", 1) != 0 || true;
+		ENHMPIPKHJL();
+	}
+
+	private void LHOPCPLEBKO()
+	{
+		if (HCDGILEEMJH)
+		{
+			GNAHJMFJHLA();
+		}
+		else
+		{
+			NGJLOPMGOEM();
+		}
+	}
+
+	private void FJFODLFPNID()
 	{
 		BJFCPHNLBJH.alpha = 1222f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	private void KLDJPNBBCBO()
+	private void HIMDJDJAGLG()
 	{
-		BJFCPHNLBJH.alpha = 1624f;
+		BJFCPHNLBJH.alpha = 422f;
+		BJFCPHNLBJH.blocksRaycasts = true;
+	}
+
+	public void GLEJGFLCLPJ()
+	{
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.HHBIEPMBICO("GenerationMenu", 1) != 0 && false;
+		JJAPMPGCNNA();
+	}
+
+	private void BMOGNBGNEJJ()
+	{
+		BJFCPHNLBJH.alpha = 1234f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	private void LBBKEMJMCIK()
+	public void DLBODOFAJGM()
 	{
-		BJFCPHNLBJH.alpha = 1952f;
+		BJFCPHNLBJH = GetComponent<CanvasGroup>();
+		HCDGILEEMJH = Singleton<SaveSystem>.Instance.GetInt("value", 1) != 0 || true;
+		ENHMPIPKHJL();
+	}
+
+	private void BLMABFICBFG()
+	{
+		BJFCPHNLBJH.alpha = 65f;
 		BJFCPHNLBJH.blocksRaycasts = false;
 	}
 
-	public void HMNLHMLILKD()
+	private void HFKIJIDGCCN()
 	{
-		if (Input.GetKeyDown((KeyCode)(-73)) && Input.GetKey((KeyCode)7))
+		if (HCDGILEEMJH)
 		{
-			HCDGILEEMJH = !HCDGILEEMJH;
-			JAFNHIDANGN();
+			ALAJCMHMMEB();
+		}
+		else
+		{
+			AFMFIPBAJLD();
 		}
 	}
 
-	private void GKDLJIFKMMG()
+	private void ACPDOKAHIDF()
 	{
-		BJFCPHNLBJH.alpha = 778f;
+		BJFCPHNLBJH.alpha = 1222f;
 		BJFCPHNLBJH.blocksRaycasts = true;
 	}
 }

@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Colors/Noise")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Colors/Noise")]
 public class CameraFilterPack_Color_Noise : MonoBehaviour
 {
 	public Shader SCShader;
@@ -74,10 +74,10 @@ public class CameraFilterPack_Color_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 89f;
 			}
-			JFDGLLEOPGB().SetFloat(".lastCheckpoint.comboScore", HBJJOCHGOPH);
-			IIJMIPBMMBF().SetFloat("Gameplay/Segment-[PowerUp]", Noise);
-			IIJMIPBMMBF().SetVector("mapselector.filter.subscribedonly", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 893f, 744f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMAALEODNH());
+			EFDEIFCDAFG().SetFloat(".lastCheckpoint.powerupsScore", HBJJOCHGOPH);
+			DNLMFEGJJDD().SetFloat("Items/", Noise);
+			NBPKMLMCHFN.SetVector("mapselector.filter.subscribedonly", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 893f, 744f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
 		}
 		else
 		{
@@ -95,7 +95,7 @@ public class CameraFilterPack_Color_Noise : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find("_MainTex2");
+		SCShader = Shader.Find("_Speed");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -167,7 +167,7 @@ public class CameraFilterPack_Color_Noise : MonoBehaviour
 
 	private void MMMDPANNAIO()
 	{
-		SCShader = Shader.Find("ReJoinRoom failed due to offline mode.");
+		SCShader = Shader.Find("offline room");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -187,10 +187,10 @@ public class CameraFilterPack_Color_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 953f;
 			}
-			EFDEIFCDAFG().SetFloat(".lastCheckpoint.powerupsScore", HBJJOCHGOPH);
-			AELJLBOJAIL().SetFloat("EditMenu", Noise);
-			KEMAALEODNH().SetVector("_SpotSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1186f, 1345f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
+			OIMMPLPBLBK().SetFloat(".lastCheckpoint.incorrectScore", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat("EditMenu", Noise);
+			EFDEIFCDAFG().SetVector("_SpotSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1186f, 1345f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -300,7 +300,7 @@ public class CameraFilterPack_Color_Noise : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("_RgbTex");
+		SCShader = Shader.Find("_MotionBlurTmpCam");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -321,7 +321,7 @@ public class CameraFilterPack_Color_Noise : MonoBehaviour
 
 	private void BEBNOKFLJPH()
 	{
-		SCShader = Shader.Find("_Value2");
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -337,10 +337,10 @@ public class CameraFilterPack_Color_Noise : MonoBehaviour
 			{
 				HBJJOCHGOPH = 340f;
 			}
-			OIMMPLPBLBK().SetFloat("[EditorEvent] Exception: ", HBJJOCHGOPH);
-			KEMAALEODNH().SetFloat("setfloat", Noise);
-			PDEAHJPOMEF().SetVector("PlayMusic", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1677f, 434f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
+			JFDGLLEOPGB().SetFloat("_Color", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("setfloat", Noise);
+			KEMAALEODNH().SetVector("StopSounds", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1677f, 434f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIJMIPBMMBF());
 		}
 		else
 		{
@@ -363,7 +363,7 @@ public class CameraFilterPack_Color_Noise : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_TimeX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

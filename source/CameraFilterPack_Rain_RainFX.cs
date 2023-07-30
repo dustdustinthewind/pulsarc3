@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Weather/New Rain FX")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Weather/New Rain FX")]
 public class CameraFilterPack_Rain_RainFX : MonoBehaviour
 {
 	public Shader SCShader;
@@ -58,9 +58,9 @@ public class CameraFilterPack_Rain_RainFX : MonoBehaviour
 				HBJJOCHGOPH = 945f;
 			}
 			ACHNOHCLGOO().SetFloat("workshop.", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("0.00", Fade);
-			ACHNOHCLGOO().SetFloat("Lag ", Speed);
-			NBPKMLMCHFN.SetVector("Sending RPC \"", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 670f, 372f));
+			NBPKMLMCHFN.SetFloat("PointsScoreText", Fade);
+			ACHNOHCLGOO().SetFloat("Rtt:{0,4} +/-{1,3}", Speed);
+			NBPKMLMCHFN.SetVector(" method: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 670f, 372f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
 			AnimationCurve animationCurve = new AnimationCurve();
 			animationCurve = new AnimationCurve();
@@ -81,11 +81,11 @@ public class CameraFilterPack_Rain_RainFX : MonoBehaviour
 					ref Vector4 reference = ref BAPBIMNEHJN[i];
 					reference = new Vector4(Random.Range(1589f, 430f), Random.Range(746f, 1463f), 1365f, Random.Range(0, 2));
 				}
-				NBPKMLMCHFN.SetVector("_Blue_R" + (i + 0), new Vector4(BAPBIMNEHJN[i].x, BAPBIMNEHJN[i].y, (int)animationCurve.Evaluate(BAPBIMNEHJN[i].z), BAPBIMNEHJN[i].w));
+				ACHNOHCLGOO().SetVector("_Green_B" + (i + 0), new Vector4(BAPBIMNEHJN[i].x, BAPBIMNEHJN[i].y, (int)animationCurve.Evaluate(BAPBIMNEHJN[i].z), BAPBIMNEHJN[i].w));
 			}
-			NBPKMLMCHFN.SetTexture("id", FPHEBLMINDA);
-			ACHNOHCLGOO().SetTexture("CreateRoom failed. In offline mode you still have to leave a room to enter another.", LKKHMFFDPJG);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			NBPKMLMCHFN.SetTexture("Set EnvSprite Color", FPHEBLMINDA);
+			NBPKMLMCHFN.SetTexture("Offline or in OfflineMode. No VitalStats available.", LKKHMFFDPJG);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -95,8 +95,8 @@ public class CameraFilterPack_Rain_RainFX : MonoBehaviour
 
 	private void DNNFHBOOPIN()
 	{
-		FPHEBLMINDA = Resources.Load("_ScreenResolution") as Texture2D;
-		LKKHMFFDPJG = Resources.Load("_Vignetting2") as Texture2D;
+		FPHEBLMINDA = Resources.Load("ZoomSpeed") as Texture2D;
+		LKKHMFFDPJG = Resources.Load("_Vignetting") as Texture2D;
 		SCShader = Shader.Find("menu.playedpage");
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -129,7 +129,7 @@ public class CameraFilterPack_Rain_RainFX : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		FPHEBLMINDA = Resources.Load("workshop.") as Texture2D;
+		FPHEBLMINDA = Resources.Load("?") as Texture2D;
 		LKKHMFFDPJG = Resources.Load("/music") as Texture2D;
 		SCShader = Shader.Find("/");
 		if (!SystemInfo.supportsImageEffects)
@@ -159,9 +159,9 @@ public class CameraFilterPack_Rain_RainFX : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		FPHEBLMINDA = Resources.Load("health") as Texture2D;
-		LKKHMFFDPJG = Resources.Load("_InvViewProj") as Texture2D;
-		SCShader = Shader.Find("settings.enablehitsoundsinnormal");
+		FPHEBLMINDA = Resources.Load(" (inactive)") as Texture2D;
+		LKKHMFFDPJG = Resources.Load("_Parameter") as Texture2D;
+		SCShader = Shader.Find("ready");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -219,9 +219,9 @@ public class CameraFilterPack_Rain_RainFX : MonoBehaviour
 
 	private void CCLNNLCOPBL()
 	{
-		FPHEBLMINDA = Resources.Load("_Value2") as Texture2D;
-		LKKHMFFDPJG = Resources.Load("_Value2") as Texture2D;
-		SCShader = Shader.Find("_EmissionColor");
+		FPHEBLMINDA = Resources.Load("_Value") as Texture2D;
+		LKKHMFFDPJG = Resources.Load("_Value") as Texture2D;
+		SCShader = Shader.Find("\\n");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;

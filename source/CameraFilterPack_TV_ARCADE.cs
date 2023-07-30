@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/TV/ARCADE")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/TV/ARCADE")]
 public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 {
 	public Shader SCShader;
@@ -74,10 +74,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1117f;
 			}
-			NBPKMLMCHFN.SetFloat("_ScreenResolution", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat(".lastCheckpoint.comboScore", Fade);
-			NBMPPNFKFLB().SetVector("OnStatusChanged: {0} current State: {1}", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 86f, 1692f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
+			NBMPPNFKFLB().SetFloat("_Value5", HBJJOCHGOPH);
+			NDMPCDHADMJ().SetFloat(".lastCheckpoint.currentCombo", Fade);
+			DOHGBNPMBKG().SetVector("GetGameList failed: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 86f, 1692f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -94,10 +94,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1704f;
 			}
-			PDEAHJPOMEF().SetFloat("_TapLow", HBJJOCHGOPH);
-			NBMPPNFKFLB().SetFloat("/", Fade);
-			PDEAHJPOMEF().SetVector("New resource ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 246f, 1672f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FAIFBBGFAIB());
+			FAIFBBGFAIB().SetFloat("_InvRenderTargetSize", HBJJOCHGOPH);
+			NDMPCDHADMJ().SetFloat("/../", Fade);
+			NBMPPNFKFLB().SetVector("image", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 246f, 1672f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -120,7 +120,7 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 
 	private void EGEPLFGKGLI()
 	{
-		SCShader = Shader.Find("\" error: ");
+		SCShader = Shader.Find("#checkpoint");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -136,10 +136,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1743f;
 			}
-			NDMPCDHADMJ().SetFloat("Show Title", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/Vision_Drost", Fade);
-			NBPKMLMCHFN.SetVector("CameraFilterPack/Drawing_Halftone", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 204f, 1535f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
+			NBMPPNFKFLB().SetFloat("Show Title", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_ScreenResolution", Fade);
+			NBMPPNFKFLB().SetVector("_SmoothEnd", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 204f, 1535f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -168,7 +168,7 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 
 	private void KDMKDEKCELE()
 	{
-		SCShader = Shader.Find("OpAuthenticate()");
+		SCShader = Shader.Find("OpSetPropertiesOfActor()");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -197,10 +197,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1326f;
 			}
-			FAIFBBGFAIB().SetFloat("_Size", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("[PlayerController] ", Fade);
-			DOHGBNPMBKG().SetVector("_Y", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1742f, 1688f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NDMPCDHADMJ().SetFloat("_CenterY", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat(" not exist", Fade);
+			NBPKMLMCHFN.SetVector("_Y", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1742f, 1688f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
 		}
 		else
 		{
@@ -241,7 +241,7 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 
 	private void DNNFHBOOPIN()
 	{
-		SCShader = Shader.Find("End index must in an integer.");
+		SCShader = Shader.Find("Need to specify a start index and end index.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -277,10 +277,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1083f;
 			}
-			NBMPPNFKFLB().SetFloat("_Value4", HBJJOCHGOPH);
-			DOHGBNPMBKG().SetFloat(".played", Fade);
-			NBMPPNFKFLB().SetVector("_Value2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1669f, 144f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
+			NBPKMLMCHFN.SetFloat("_Value2", HBJJOCHGOPH);
+			NBMPPNFKFLB().SetFloat(".highscore", Fade);
+			NBMPPNFKFLB().SetVector("_Value", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1669f, 144f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -301,10 +301,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 398f;
 			}
-			DOHGBNPMBKG().SetFloat("_Value1", HBJJOCHGOPH);
-			NDMPCDHADMJ().SetFloat("Connecting", Fade);
-			FAIFBBGFAIB().SetVector("Joystick1Button11", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 953f, 508f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("_Value1", HBJJOCHGOPH);
+			FAIFBBGFAIB().SetFloat("player", Fade);
+			NDMPCDHADMJ().SetVector("Left Stick Click", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 953f, 508f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -341,9 +341,9 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1825f;
 			}
-			PDEAHJPOMEF().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
+			DOHGBNPMBKG().SetFloat("Object ID. Case-Sensitive", HBJJOCHGOPH);
 			NDMPCDHADMJ().SetFloat("maps.", Fade);
-			NBMPPNFKFLB().SetVector("_Value5", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1815f, 1419f));
+			DOHGBNPMBKG().SetVector("_Value5", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1815f, 1419f));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
@@ -354,7 +354,7 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 
 	private void KMCPMOGKDEH()
 	{
-		SCShader = Shader.Find(".png");
+		SCShader = Shader.Find(".jpg");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -417,10 +417,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 53f;
 			}
-			NDMPCDHADMJ().SetFloat("Mouse Wheel Up", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_TimeX", Fade);
-			DOHGBNPMBKG().SetVector("PointerEnter ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1012f, 704f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
+			NBPKMLMCHFN.SetFloat("Mouse ", HBJJOCHGOPH);
+			NDMPCDHADMJ().SetFloat("_TimeX", Fade);
+			NDMPCDHADMJ().SetVector("clicked ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1012f, 704f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{
@@ -464,10 +464,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 157f;
 			}
-			NBPKMLMCHFN.SetFloat("*.workshop.json", HBJJOCHGOPH);
-			NDMPCDHADMJ().SetFloat("_Intensity", Fade);
-			NBMPPNFKFLB().SetVector("_DiffuseColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1712f, 1119f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NDMPCDHADMJ());
+			PDEAHJPOMEF().SetFloat("SUBMIT '{0}' FILES", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("_MainTex", Fade);
+			NDMPCDHADMJ().SetVector("[PlayerBase] Ready", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1712f, 1119f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{
@@ -484,10 +484,10 @@ public class CameraFilterPack_TV_ARCADE : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1979f;
 			}
-			DOHGBNPMBKG().SetFloat("Selection Box", HBJJOCHGOPH);
-			PDEAHJPOMEF().SetFloat("Please specify either t or f.", Fade);
-			NBMPPNFKFLB().SetVector("_MainTex2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 603f, 582f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
+			NBPKMLMCHFN.SetFloat("Fake", HBJJOCHGOPH);
+			NBMPPNFKFLB().SetFloat(":", Fade);
+			NDMPCDHADMJ().SetVector("_MainTex2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 603f, 582f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
 		}
 		else
 		{

@@ -50,10 +50,10 @@ public class CameraFilterPack_Colors_HUE_Rotate : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1721f;
 			}
-			IIBLJCKLGFG().SetFloat("_SecondTex", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("USE_DIAG_SEARCH", Speed);
+			HNICHJCGJOC().SetFloat("_Offsets", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("_Params3", Speed);
 			OIMMPLPBLBK().SetVector("MenuScene", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -74,7 +74,7 @@ public class CameraFilterPack_Colors_HUE_Rotate : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		SCShader = Shader.Find("_Value4");
+		SCShader = Shader.Find("_Value2");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -103,7 +103,7 @@ public class CameraFilterPack_Colors_HUE_Rotate : MonoBehaviour
 
 	private void DAHFFNNIGML()
 	{
-		SCShader = Shader.Find("SetSatelliteRotationSpeed");
+		SCShader = Shader.Find("Set satellite beat detection sensitivity");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -194,10 +194,10 @@ public class CameraFilterPack_Colors_HUE_Rotate : MonoBehaviour
 			{
 				HBJJOCHGOPH = 642f;
 			}
-			PDEAHJPOMEF().SetFloat("#", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("#", HBJJOCHGOPH);
 			NBPKMLMCHFN.SetFloat("RoomPlayersCountText", Speed);
-			HNICHJCGJOC().SetVector("_Val2", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			KBOPGONOCNP().SetVector("_Val", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -272,9 +272,9 @@ public class CameraFilterPack_Colors_HUE_Rotate : MonoBehaviour
 			{
 				HBJJOCHGOPH = 740f;
 			}
-			GCDFNHMJMIP().SetFloat("_MainTex2", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("Right Click", Speed);
-			PDEAHJPOMEF().SetVector("907198288", new Vector2(Screen.width, Screen.height));
+			PDEAHJPOMEF().SetFloat("_MainTex2", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("Left Click", Speed);
+			IIBLJCKLGFG().SetVector("1248864821", new Vector2(Screen.width, Screen.height));
 			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
@@ -296,10 +296,10 @@ public class CameraFilterPack_Colors_HUE_Rotate : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1264f;
 			}
-			HNICHJCGJOC().SetFloat("Exception while connecting to: ", HBJJOCHGOPH);
-			OIMMPLPBLBK().SetFloat("_TimeX", Speed);
-			GCDFNHMJMIP().SetVector("_BlurredColor", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			NBPKMLMCHFN.SetFloat("Encryption wasn't established: ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("CameraFilterPack/FX_Glitch2", Speed);
+			GCDFNHMJMIP().SetVector("_Offsets", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -348,10 +348,10 @@ public class CameraFilterPack_Colors_HUE_Rotate : MonoBehaviour
 			{
 				HBJJOCHGOPH = 955f;
 			}
-			DOHGBNPMBKG().SetFloat(" Gb", HBJJOCHGOPH);
-			IIBLJCKLGFG().SetFloat("music", Speed);
-			NBPKMLMCHFN.SetVector(".completed", new Vector2(Screen.width, Screen.height));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOHGBNPMBKG());
+			KBOPGONOCNP().SetFloat(" Kb", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("[MapEditor] Updating map assets", Speed);
+			OIMMPLPBLBK().SetVector("maps.", new Vector2(Screen.width, Screen.height));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -361,7 +361,7 @@ public class CameraFilterPack_Colors_HUE_Rotate : MonoBehaviour
 
 	private void BGDPIHMAACO()
 	{
-		SCShader = Shader.Find("0.00");
+		SCShader = Shader.Find("/");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;

@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Pixelisation/OilPaint")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Pixelisation/OilPaint")]
 public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 {
 	public Shader SCShader;
@@ -43,10 +43,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 204f;
 			}
-			ACHNOHCLGOO().SetFloat("shader.sunny", HBJJOCHGOPH);
-			KEMJNOMIPHN().SetVector("CameraFilterPack/Distortion_Half_Sphere", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1137f, 1421f));
-			FEAEGGCNIAA().SetFloat("00", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
+			ACHNOHCLGOO().SetFloat("FrostCanvas", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1137f, 1421f));
+			GCDFNHMJMIP().SetFloat("00", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -64,7 +64,7 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 
 	private void DKOPKPBLDHH()
 	{
-		SCShader = Shader.Find("https://steamcommunity.com/sharedfiles/filedetails/?id=");
+		SCShader = Shader.Find("Item invalid. Make sure your mod contains at leats one file.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -80,10 +80,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 653f;
 			}
-			CFEDGDGBCHE().SetFloat("_NoiseScale", HBJJOCHGOPH);
-			FEAEGGCNIAA().SetVector("file://", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1076f, 957f));
-			ACHNOHCLGOO().SetFloat("_ScreenResolution", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			GCDFNHMJMIP().SetFloat("_RandomTexture", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetVector(".mp3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1076f, 957f));
+			KBOPGONOCNP().SetFloat("_Value4", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -93,7 +93,7 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 
 	private void JKFDDNMPOJH()
 	{
-		SCShader = Shader.Find("ConnectToMaster() enabled isMessageQueueRunning. Needs to be able to dispatch incoming messages.");
+		SCShader = Shader.Find(":");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -113,10 +113,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1194f;
 			}
-			CFEDGDGBCHE().SetFloat("_Green_C", HBJJOCHGOPH);
-			AELJLBOJAIL().SetVector("Set EnvSprite Image", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1915f, 1874f));
-			KBOPGONOCNP().SetFloat("NewMusicFileSelector", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			LONNIJMNKFB().SetFloat("_Red_C", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetVector("SetEnvSpriteImage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1915f, 1874f));
+			NBPKMLMCHFN.SetFloat("/", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMJNOMIPHN());
 		}
 		else
 		{
@@ -137,10 +137,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 188f;
 			}
-			KBOPGONOCNP().SetFloat(" respawn: ", HBJJOCHGOPH);
-			LDNADDJMIPK().SetVector("Bad SegmentType passed in to CreateLineCap. Must be SegmentType.Start or SegmentType.End", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1305f, 1489f));
-			KBOPGONOCNP().SetFloat("_Value2", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			AELJLBOJAIL().SetFloat("No player left to ask", HBJJOCHGOPH);
+			KEMJNOMIPHN().SetVector(" ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1305f, 1489f));
+			LDNADDJMIPK().SetFloat("_Value2", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -161,7 +161,7 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 
 	private void KLILJHJNICK()
 	{
-		SCShader = Shader.Find("_TimeX");
+		SCShader = Shader.Find("CameraFilterPack/FX_Dot_Circle");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -177,10 +177,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 324f;
 			}
-			AELJLBOJAIL().SetFloat("#getrewardnow ", HBJJOCHGOPH);
-			KEMJNOMIPHN().SetVector("_Value7", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 580f, 46f));
-			CFEDGDGBCHE().SetFloat("menu.enableselectormusic", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			KBOPGONOCNP().SetFloat("#timeuntilend: ", HBJJOCHGOPH);
+			KBOPGONOCNP().SetVector("_Value7", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 580f, 46f));
+			ACHNOHCLGOO().SetFloat("SingleplayerButton", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -197,10 +197,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 653f;
 			}
-			KBOPGONOCNP().SetFloat("GetRegions failed. Can't provide regions list. Error: ", HBJJOCHGOPH);
-			AELJLBOJAIL().SetVector("OpAuthenticate()", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1043f, 811f));
-			LDNADDJMIPK().SetFloat("_Value", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			FEAEGGCNIAA().SetFloat("Received your NickName from server. Updating local value to: {0}", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetVector("OpSetPropertiesOfActor not sent. ActorNr must be > 0 and actorProperties != null.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1043f, 811f));
+			LONNIJMNKFB().SetFloat("_TimeX", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -246,10 +246,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1525f;
 			}
-			LONNIJMNKFB().SetFloat("_TimeX", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetVector(": ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1035f, 1074f));
-			HNICHJCGJOC().SetFloat("SetRotation", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			AELJLBOJAIL().SetFloat("CameraFilterPack/TV_VHS", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetVector("[PlayerController] ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1035f, 1074f));
+			FEAEGGCNIAA().SetFloat("AddEnvironmentObject", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
 		}
 		else
 		{
@@ -296,10 +296,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1475f;
 			}
-			LONNIJMNKFB().SetFloat("_EdgeThresholdMin", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetVector("_Parasite", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 849f, 1470f));
-			LDNADDJMIPK().SetFloat("arcs", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			KEMJNOMIPHN().SetFloat("_ThirdTex", HBJJOCHGOPH);
+			KEMJNOMIPHN().SetVector("_Colorisation", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 849f, 1470f));
+			CFEDGDGBCHE().SetFloat("MascotChallenge2019", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -309,7 +309,7 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 
 	private void KNBJBNDGCIJ()
 	{
-		SCShader = Shader.Find("Joystick1Button0");
+		SCShader = Shader.Find("Trackpad");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -318,7 +318,7 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 
 	private void OHFOLGANOLC()
 	{
-		SCShader = Shader.Find("Hip-hop");
+		SCShader = Shader.Find("Folk");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -346,7 +346,7 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 
 	private void HLIAEEMGBHN()
 	{
-		SCShader = Shader.Find("_ScreenResolution");
+		SCShader = Shader.Find("_Glitch");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -362,10 +362,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 151f;
 			}
-			LONNIJMNKFB().SetFloat("[LevelEditorScene] Map submitted!", HBJJOCHGOPH);
-			AELJLBOJAIL().SetVector("#checkpoint", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1998f, 287f));
-			AELJLBOJAIL().SetFloat("Joystick1Button9", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("[LevelEditorScene] Map submitted!", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetVector("[PlayerBase] SpawnObj error: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1998f, 287f));
+			CFEDGDGBCHE().SetFloat("Joystick1Button8", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
 		}
 		else
 		{
@@ -386,10 +386,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 97f;
 			}
-			GCDFNHMJMIP().SetFloat("_TimeX", HBJJOCHGOPH);
-			AELJLBOJAIL().SetVector("[LevelEditorScene] Error: I/O Failure! :(", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1472f, 745f));
-			HNICHJCGJOC().SetFloat("Tab1Content", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
+			AELJLBOJAIL().SetFloat("CameraFilterPack/FX_Mirror", HBJJOCHGOPH);
+			HNICHJCGJOC().SetVector("Created", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1472f, 745f));
+			LDNADDJMIPK().SetFloat("Tab2Content", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KBOPGONOCNP());
 		}
 		else
 		{
@@ -417,10 +417,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1887f;
 			}
-			ACHNOHCLGOO().SetFloat("_Speed", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetVector("Fake", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 428f, 1054f));
-			AELJLBOJAIL().SetFloat("JoinRandom failed: No open game. Calling: OnPhotonRandomJoinFailed() and staying on master server.", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
+			LONNIJMNKFB().SetFloat("_Speed", HBJJOCHGOPH);
+			LONNIJMNKFB().SetVector("From {0} at Index {1} \n", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 428f, 1054f));
+			HNICHJCGJOC().SetFloat("CreateRoom failed, client stays on masterserver: {0}.", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LDNADDJMIPK());
 		}
 		else
 		{
@@ -437,10 +437,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1381f;
 			}
-			HNICHJCGJOC().SetFloat("_TimeX", HBJJOCHGOPH);
-			AELJLBOJAIL().SetVector("CameraFilterPack/NightVision_4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1125f, 1662f));
-			LDNADDJMIPK().SetFloat("UnAllocateViewID() should be called after the PhotonView was destroyed (GameObject.Destroy()). ViewID: {0} still found in: {1}", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			LONNIJMNKFB().SetFloat("_TimeX", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetVector("_Extra3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1125f, 1662f));
+			LONNIJMNKFB().SetFloat("AllocateViewID() failed. Room (user {0}) is out of 'scene' viewIDs. It seems all available are in use.", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMJNOMIPHN());
 		}
 		else
 		{
@@ -499,10 +499,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1927f;
 			}
-			GCDFNHMJMIP().SetFloat("_TimeX", HBJJOCHGOPH);
+			CFEDGDGBCHE().SetFloat("CameraFilterPack/Distortion_Half_Sphere", HBJJOCHGOPH);
 			CFEDGDGBCHE().SetVector("Set Sun Colors", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1513f, 327f));
-			GCDFNHMJMIP().SetFloat("[PlayerController] ", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			AELJLBOJAIL().SetFloat(" not exist", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -530,10 +530,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1340f;
 			}
-			FEAEGGCNIAA().SetFloat("#FFFFFF", HBJJOCHGOPH);
-			CFEDGDGBCHE().SetVector("[DiscordController] Sectate ({0})", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1319f, 1553f));
-			KEMJNOMIPHN().SetFloat("_Offsets", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HNICHJCGJOC());
+			HNICHJCGJOC().SetFloat("player.currentrank", HBJJOCHGOPH);
+			KBOPGONOCNP().SetVector("[DiscordController] Join ({0})", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1319f, 1553f));
+			LDNADDJMIPK().SetFloat("_Offsets", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, AELJLBOJAIL());
 		}
 		else
 		{
@@ -577,10 +577,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1675f;
 			}
-			HNICHJCGJOC().SetFloat("ok", HBJJOCHGOPH);
-			LONNIJMNKFB().SetVector("SetSunColors", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 196f, 1196f));
-			CFEDGDGBCHE().SetFloat("_MainTex2", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			LONNIJMNKFB().SetFloat("bad", HBJJOCHGOPH);
+			FEAEGGCNIAA().SetVector("SetPosition", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 196f, 1196f));
+			GCDFNHMJMIP().SetFloat("_MainTex2", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMJNOMIPHN());
 		}
 		else
 		{
@@ -641,10 +641,10 @@ public class CameraFilterPack_Pixelisation_OilPaint : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1131f;
 			}
-			KBOPGONOCNP().SetFloat("CloseConnection: Only the masterclient can kick another player.", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 241f, 1998f));
-			ACHNOHCLGOO().SetFloat(" GameServer:", Value);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CFEDGDGBCHE());
+			NBPKMLMCHFN.SetFloat("Failed to InstantiateSceneObject prefab: ", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 241f, 1998f));
+			FEAEGGCNIAA().SetFloat(").", Value);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMJNOMIPHN());
 		}
 		else
 		{

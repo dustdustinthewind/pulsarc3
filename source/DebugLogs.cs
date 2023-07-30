@@ -57,7 +57,7 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		IELAGEFHCEH(log);
+		CGPBBDHGEHL(log);
 	}
 
 	[SpecialName]
@@ -76,12 +76,12 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		NIKKCCMKEBB(log);
+		GMBKCMAIGDE(log);
 	}
 
 	private void AJBHOEBKGDO()
 	{
-		Application.logMessageReceived += FIHFNOKPLOE;
+		Application.logMessageReceived += BFHBLOLBLEB;
 	}
 
 	public void CFOEEAKEICA(Log BAODCKEFHMK)
@@ -95,7 +95,7 @@ public class DebugLogs : ScriptableObject
 
 	public static DebugLogs AAICPABFPMH()
 	{
-		return MNNNKLODJPJ();
+		return PJGGFINJIEG();
 	}
 
 	public void PEPAOAGLKBE(Log BAODCKEFHMK)
@@ -135,7 +135,7 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		IELAGEFHCEH(log);
+		CFOEEAKEICA(log);
 	}
 
 	public void PBAOOLHNKGI(Log BAODCKEFHMK)
@@ -149,7 +149,7 @@ public class DebugLogs : ScriptableObject
 
 	private void DPGHJILBPCE()
 	{
-		Application.logMessageReceived += IMNCPCLALJJ;
+		Application.logMessageReceived += BONGPCHPKGM;
 	}
 
 	public void FMEAEDJNAJE(Log BAODCKEFHMK)
@@ -163,7 +163,7 @@ public class DebugLogs : ScriptableObject
 
 	private void DEPPMIPBPAL()
 	{
-		Application.logMessageReceived -= JNEHFGLHCBD;
+		Application.logMessageReceived -= KJONBKLMPDB;
 	}
 
 	public void NFDOJABJEAJ(Log BAODCKEFHMK)
@@ -217,7 +217,7 @@ public class DebugLogs : ScriptableObject
 
 	private void LOLHKNKBNPF()
 	{
-		Application.logMessageReceived += BNOOOFEECFN;
+		Application.logMessageReceived += KPFDEHBDLOI;
 	}
 
 	private void INMDNNOLNDH(string LGFIJEHLGHP, string HAEHALPHBJK, LogType ELCFJBCLFBP)
@@ -244,7 +244,7 @@ public class DebugLogs : ScriptableObject
 
 	public static DebugLogs OCJEOJGNDKM()
 	{
-		return FLFBBNOFAOL();
+		return FNBAADLJGFH();
 	}
 
 	public void MGEPCIPHOCL()
@@ -266,12 +266,12 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		GMNAJNIKMAO(log);
+		GMBKCMAIGDE(log);
 	}
 
 	private void DMANIBGNIMK()
 	{
-		Application.logMessageReceived -= INMDNNOLNDH;
+		Application.logMessageReceived -= BNOOOFEECFN;
 	}
 
 	[SpecialName]
@@ -304,7 +304,7 @@ public class DebugLogs : ScriptableObject
 
 	public static DebugLogs NEEAJCHBMNL()
 	{
-		return NBPGOMDMGHB();
+		return Instance;
 	}
 
 	[SpecialName]
@@ -319,7 +319,7 @@ public class DebugLogs : ScriptableObject
 
 	private void PELDLDIDGFO()
 	{
-		Application.logMessageReceived -= JNEHFGLHCBD;
+		Application.logMessageReceived -= MJCINHPBLMB;
 	}
 
 	[SpecialName]
@@ -342,12 +342,12 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		PEPAOAGLKBE(log);
+		CFOEEAKEICA(log);
 	}
 
 	public static DebugLogs HGIFFBJPMDN()
 	{
-		return NIFMFBHNMJH();
+		return MNNNKLODJPJ();
 	}
 
 	private void OnDestroy()
@@ -357,7 +357,7 @@ public class DebugLogs : ScriptableObject
 
 	private void JNJMGIFMNBF()
 	{
-		Application.logMessageReceived -= MJCINHPBLMB;
+		Application.logMessageReceived -= FDPACFIMNBC;
 	}
 
 	[SpecialName]
@@ -368,7 +368,7 @@ public class DebugLogs : ScriptableObject
 
 	private void LICOLMAOHKI()
 	{
-		Application.logMessageReceived += MNFAKFGGHNK;
+		Application.logMessageReceived += IMNCPCLALJJ;
 	}
 
 	[SpecialName]
@@ -400,7 +400,7 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		CFOEEAKEICA(log);
+		GMNAJNIKMAO(log);
 	}
 
 	public void NCGIKMIMIAA()
@@ -441,7 +441,7 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		LOGBIMAOOAB(log);
+		GIODPNEBBID(log);
 	}
 
 	public void IELAGEFHCEH(Log BAODCKEFHMK)
@@ -455,7 +455,7 @@ public class DebugLogs : ScriptableObject
 
 	private void OJIHBHNJFBB()
 	{
-		Application.logMessageReceived -= MNFAKFGGHNK;
+		Application.logMessageReceived -= EPECEAPDMKI;
 	}
 
 	[SpecialName]
@@ -478,17 +478,17 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		GMBKCMAIGDE(log);
+		AddLog(log);
 	}
 
 	private void PAHNKEGFGHB()
 	{
-		Application.logMessageReceived += DONICBHGIMP;
+		Application.logMessageReceived += KPFDEHBDLOI;
 	}
 
 	private void FJGNDJGLBEN()
 	{
-		Application.logMessageReceived -= KJONBKLMPDB;
+		Application.logMessageReceived -= BNOOOFEECFN;
 	}
 
 	public void DGEHKEOGNPN(Log BAODCKEFHMK)
@@ -526,7 +526,7 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		FMEAEDJNAJE(log);
+		GMNAJNIKMAO(log);
 	}
 
 	[SpecialName]
@@ -557,7 +557,7 @@ public class DebugLogs : ScriptableObject
 
 	private void HOLDCFBBHHP()
 	{
-		Application.logMessageReceived += MJCINHPBLMB;
+		Application.logMessageReceived += DONICBHGIMP;
 	}
 
 	public void JNDMIAKMHCG()
@@ -571,7 +571,7 @@ public class DebugLogs : ScriptableObject
 
 	public static DebugLogs GBDGMMKNGFC()
 	{
-		return PJGGFINJIEG();
+		return GNOGMOMHIGL();
 	}
 
 	public void ClearLogs()
@@ -594,7 +594,7 @@ public class DebugLogs : ScriptableObject
 
 	public static DebugLogs AFDBDFJHMBN()
 	{
-		return FAGEJPPIDOL();
+		return JEGPKFIGPFP();
 	}
 
 	public void DCLMNOJMHEJ(Log BAODCKEFHMK)
@@ -633,7 +633,7 @@ public class DebugLogs : ScriptableObject
 
 	private void BKAJKNPDEAP()
 	{
-		Application.logMessageReceived -= FIMPKAEMBDE;
+		Application.logMessageReceived -= JNEHFGLHCBD;
 	}
 
 	public void JCNCIGNAGFF(Log BAODCKEFHMK)
@@ -656,7 +656,7 @@ public class DebugLogs : ScriptableObject
 
 	private void NHOFNIIBMDH()
 	{
-		Application.logMessageReceived -= BNOOOFEECFN;
+		Application.logMessageReceived -= BFHBLOLBLEB;
 	}
 
 	[SpecialName]
@@ -667,7 +667,7 @@ public class DebugLogs : ScriptableObject
 
 	private void JOLKPPEBILA()
 	{
-		Application.logMessageReceived += FDPACFIMNBC;
+		Application.logMessageReceived += INMDNNOLNDH;
 	}
 
 	public void JHGPIIIFDNN()
@@ -699,7 +699,7 @@ public class DebugLogs : ScriptableObject
 
 	private void IBFHEDHJDLH()
 	{
-		Application.logMessageReceived += BNOOOFEECFN;
+		Application.logMessageReceived += FDPACFIMNBC;
 	}
 
 	[SpecialName]
@@ -722,7 +722,7 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		DBELJBLKLHE(log);
+		DHILJLCAJOH(log);
 	}
 
 	[SpecialName]
@@ -781,12 +781,12 @@ public class DebugLogs : ScriptableObject
 
 	private void LHGFCBDACBM()
 	{
-		Application.logMessageReceived += BNOOOFEECFN;
+		Application.logMessageReceived += KJONBKLMPDB;
 	}
 
 	public static DebugLogs JNBJGLMJNPB()
 	{
-		return FMEBOFOPHDG();
+		return NIFMFBHNMJH();
 	}
 
 	[SpecialName]
@@ -797,7 +797,7 @@ public class DebugLogs : ScriptableObject
 
 	private void AONJNAGNLIH()
 	{
-		Application.logMessageReceived += MNFAKFGGHNK;
+		Application.logMessageReceived += INMDNNOLNDH;
 	}
 
 	[SpecialName]
@@ -834,12 +834,12 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		GMNAJNIKMAO(log);
+		KJIKIKAEMEH(log);
 	}
 
 	private void BFKGLMLLIHK()
 	{
-		Application.logMessageReceived -= BFHBLOLBLEB;
+		Application.logMessageReceived -= FDPACFIMNBC;
 	}
 
 	[SpecialName]
@@ -916,7 +916,7 @@ public class DebugLogs : ScriptableObject
 
 	private void HEKKABCJLKN()
 	{
-		Application.logMessageReceived -= FHNLBKCJDEE;
+		Application.logMessageReceived -= KPFDEHBDLOI;
 	}
 
 	[SpecialName]
@@ -931,7 +931,7 @@ public class DebugLogs : ScriptableObject
 
 	private void GHLCFKGNNAI()
 	{
-		Application.logMessageReceived -= BFHBLOLBLEB;
+		Application.logMessageReceived -= JNEHFGLHCBD;
 	}
 
 	[SpecialName]
@@ -976,22 +976,22 @@ public class DebugLogs : ScriptableObject
 
 	private void KEBNPDKADDF()
 	{
-		Application.logMessageReceived -= FIHFNOKPLOE;
+		Application.logMessageReceived -= EPECEAPDMKI;
 	}
 
 	private void ICPOEGIAFBL()
 	{
-		Application.logMessageReceived += MJCINHPBLMB;
+		Application.logMessageReceived += EPECEAPDMKI;
 	}
 
 	private void MECBHGPGCFL()
 	{
-		Application.logMessageReceived -= FIHFNOKPLOE;
+		Application.logMessageReceived -= KJONBKLMPDB;
 	}
 
 	private void DLHJMLDBDOK()
 	{
-		Application.logMessageReceived -= FIMPKAEMBDE;
+		Application.logMessageReceived -= INMDNNOLNDH;
 	}
 
 	public void CAAMGHOOPJA()
@@ -1005,12 +1005,12 @@ public class DebugLogs : ScriptableObject
 
 	public static DebugLogs MEKCLHGCIPJ()
 	{
-		return BEPGMCOJFKL();
+		return GLEFOHOMBFC();
 	}
 
 	private void JOPGLJAEBAE()
 	{
-		Application.logMessageReceived -= BONGPCHPKGM;
+		Application.logMessageReceived -= KJONBKLMPDB;
 	}
 
 	private void FHNLBKCJDEE(string LGFIJEHLGHP, string HAEHALPHBJK, LogType ELCFJBCLFBP)
@@ -1023,7 +1023,7 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		KJIKIKAEMEH(log);
+		GMBKCMAIGDE(log);
 	}
 
 	[SpecialName]
@@ -1047,7 +1047,7 @@ public class DebugLogs : ScriptableObject
 
 	private void NFADJOKFCDL()
 	{
-		Application.logMessageReceived -= FIMPKAEMBDE;
+		Application.logMessageReceived -= MNFAKFGGHNK;
 	}
 
 	private void KJONBKLMPDB(string LGFIJEHLGHP, string HAEHALPHBJK, LogType ELCFJBCLFBP)
@@ -1060,12 +1060,12 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		KIBKHEAHMND(log);
+		BFAKEAFBGHN(log);
 	}
 
 	private void MDMDGKHDPKP()
 	{
-		Application.logMessageReceived += BNOOOFEECFN;
+		Application.logMessageReceived += FHNLBKCJDEE;
 	}
 
 	private void MJCINHPBLMB(string LGFIJEHLGHP, string HAEHALPHBJK, LogType ELCFJBCLFBP)
@@ -1078,7 +1078,7 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		CFOEEAKEICA(log);
+		GMNAJNIKMAO(log);
 	}
 
 	public void BFKIFIEPLJH()
@@ -1101,17 +1101,17 @@ public class DebugLogs : ScriptableObject
 
 	private void IFBKMAEMKNN()
 	{
-		Application.logMessageReceived += DONICBHGIMP;
+		Application.logMessageReceived += BFHBLOLBLEB;
 	}
 
 	public static DebugLogs DMMOGDCBFIB()
 	{
-		return MNNNKLODJPJ();
+		return PJGGFINJIEG();
 	}
 
 	private void OBPIMJPMGFA()
 	{
-		Application.logMessageReceived -= EPECEAPDMKI;
+		Application.logMessageReceived -= MNFAKFGGHNK;
 	}
 
 	public static DebugLogs HMJBKJDNJIC()
@@ -1121,12 +1121,12 @@ public class DebugLogs : ScriptableObject
 
 	private void LEFFPPCFNKD()
 	{
-		Application.logMessageReceived += IMNCPCLALJJ;
+		Application.logMessageReceived += EPECEAPDMKI;
 	}
 
 	public static DebugLogs NFEDJIAPJGM()
 	{
-		return PFOGFJMFFGA();
+		return NIFMFBHNMJH();
 	}
 
 	public void KFOHDCNGILO()
@@ -1140,17 +1140,17 @@ public class DebugLogs : ScriptableObject
 
 	private void NKOIECGDEOJ()
 	{
-		Application.logMessageReceived += KPFDEHBDLOI;
+		Application.logMessageReceived += KJONBKLMPDB;
 	}
 
 	private void KMMOLADBHEA()
 	{
-		Application.logMessageReceived += FHNLBKCJDEE;
+		Application.logMessageReceived += BONGPCHPKGM;
 	}
 
 	private void GMLJCGAEMKL()
 	{
-		Application.logMessageReceived += IMNCPCLALJJ;
+		Application.logMessageReceived += KPFDEHBDLOI;
 	}
 
 	private void JNEHFGLHCBD(string LGFIJEHLGHP, string HAEHALPHBJK, LogType ELCFJBCLFBP)
@@ -1163,11 +1163,11 @@ public class DebugLogs : ScriptableObject
 		log.type = ELCFJBCLFBP;
 		log.message = LGFIJEHLGHP;
 		log.stackTrace = HAEHALPHBJK;
-		JCNCIGNAGFF(log);
+		CGPBBDHGEHL(log);
 	}
 
 	private void BLNLHBNBKOH()
 	{
-		Application.logMessageReceived += IMNCPCLALJJ;
+		Application.logMessageReceived += KPFDEHBDLOI;
 	}
 }

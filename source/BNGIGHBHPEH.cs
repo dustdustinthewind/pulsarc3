@@ -1,1463 +1,1644 @@
-// decompiled in dnspy (result from right click -> edit class)
-// cannot recompile
-
+// BNGIGHBHPEH
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using ExitGames.Client.Photon;
 using UnityEngine;
 
-// Token: 0x02000301 RID: 769
 internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 {
-	// Token: 0x1700024F RID: 591
-	// (get) Token: 0x0600AEEE RID: 44782 RVA: 0x0008AA60 File Offset: 0x00088C60
-	// (set) Token: 0x0600AFA3 RID: 44963 RVA: 0x004091C8 File Offset: 0x004073C8
+	protected internal string KAIBLIKEDHM;
+
+	private string JOKLGFENMKE;
+
+	public AuthModeOption AuthMode;
+
+	public EncryptionMode EncryptionMode;
+
+	public const string NameServerHost = "ns.exitgames.com";
+
+	public const string NameServerHttp = "http://ns.exitgamescloud.com:80/photon/n";
+
+	private static readonly Dictionary<ConnectionProtocol, int> AEGGDHEGGCL = new Dictionary<ConnectionProtocol, int>
+	{
+		{
+			ConnectionProtocol.Udp,
+			5058
+		},
+		{
+			ConnectionProtocol.Tcp,
+			4533
+		},
+		{
+			ConnectionProtocol.WebSocket,
+			9093
+		},
+		{
+			ConnectionProtocol.WebSocketSecure,
+			19093
+		}
+	};
+
+	public bool IsInitialConnect;
+
+	public bool insideLobby;
+
+	protected internal List<TypedLobbyInfo> HOBLKOKPJOE = new List<TypedLobbyInfo>();
+
+	public Dictionary<string, RoomInfo> mGameList = new Dictionary<string, RoomInfo>();
+
+	public RoomInfo[] mGameListCopy = new RoomInfo[0];
+
+	private string OBCEIJGMKGB = string.Empty;
+
+	private bool BOKEGDFHBAN;
+
+	private Room NBCIDPIDCDP;
+
+	private JoinType ELNKFMHCMBO;
+
+	protected internal AKBOPCNHFFJ AJFMHFLGCFN;
+
+	private bool DMCPHGDNGDB;
+
+	private string[] BEIPFKHGHPC;
+
+	private int DJIOCIPPBMK;
+
+	private bool POHIMACBDGL;
+
+	public Dictionary<int, PhotonPlayer> mActors = new Dictionary<int, PhotonPlayer>();
+
+	public PhotonPlayer[] mOtherPlayerListCopy = new PhotonPlayer[0];
+
+	public PhotonPlayer[] mPlayerListCopy = new PhotonPlayer[0];
+
+	public bool hasSwitchedMC;
+
+	private HashSet<byte> CHIJNBAJIHE = new HashSet<byte>();
+
+	private HashSet<byte> FFBGBLFBHOK = new HashSet<byte>();
+
+	protected internal Dictionary<int, PhotonView> HFCMPEKPBAM = new Dictionary<int, PhotonView>();
+
+	private readonly PhotonStream CMABENLIOGI = new PhotonStream(false, null);
+
+	private readonly PhotonStream ALPAEKHFHPP = new PhotonStream(true, null);
+
+	private readonly Dictionary<int, ExitGames.Client.Photon.Hashtable> ECMNAOLPNBO = new Dictionary<int, ExitGames.Client.Photon.Hashtable>();
+
+	private readonly Dictionary<int, ExitGames.Client.Photon.Hashtable> ABIMEMLJLPA = new Dictionary<int, ExitGames.Client.Photon.Hashtable>();
+
+	protected internal short PKCNHOKCLJH;
+
+	protected internal bool HMIEGLIHGEM;
+
+	protected internal const string IDPJICOIFIH = "curScn";
+
+	public static bool UsePrefabCache = true;
+
+	internal IPunPrefabPool EGNHNBODKHP;
+
+	public static Dictionary<string, GameObject> PrefabCache = new Dictionary<string, GameObject>();
+
+	private Dictionary<Type, List<MethodInfo>> MNKFMEHFNKJ = new Dictionary<Type, List<MethodInfo>>();
+
+	private readonly Dictionary<string, int> CPLBCMDIGNB;
+
+	private static readonly string BJJEABNGKBF = PhotonNetworkingMessage.OnPhotonInstantiate.ToString();
+
+	private string BLNBCGLIOHP;
+
+	private string KAOMEDGGMEM;
+
+	private ServerConnection PKNIJKPIKAF;
+
+	private bool IDOAHFHJJJE;
+
+	private Dictionary<int, object[]> IDIKEJLLFFP = new Dictionary<int, object[]>();
+
+	public static int ObjectsInOneUpdate = 10;
+
+	private RaiseEventOptions PCFOAMAODBD = new RaiseEventOptions();
+
+	public const int SyncViewId = 0;
+
+	public const int SyncCompressed = 1;
+
+	public const int SyncNullValues = 2;
+
+	public const int SyncFirstValue = 3;
+
+	protected internal string EOCFDCJNAGM => string.Format("{0}_{1}", PhotonNetwork.gameVersion, "1.87");
+
+	public AuthenticationValues AuthValues { get; set; }
+
+	private string LLJDHHLHFME
+	{
+		get
+		{
+			if (AuthMode == AuthModeOption.Auth)
+			{
+				return null;
+			}
+			return (AuthValues == null) ? null : AuthValues.Token;
+		}
+	}
+
+	public bool IsUsingNameServer { get; protected internal set; }
+
+	public string NameServerAddress => IHAJBEOILOE();
+
+	public string MasterServerAddress { get; protected internal set; }
+
+	public string GameServerAddress { get; protected internal set; }
+
+	protected internal ServerConnection EHALCLFLGJF { get; private set; }
+
+	public ClientState State { get; internal set; }
+
+	public TypedLobby lobby { get; set; }
+
+	private bool OGLFGPKHEHH => PhotonNetwork.EnableLobbyStatistics && EHALCLFLGJF == ServerConnection.MasterServer;
+
 	public string PlayerName
 	{
 		get
 		{
-			return this.OBCEIJGMKGB;
+			return OBCEIJGMKGB;
 		}
 		set
 		{
-			if (string.IsNullOrEmpty(value) || value.Equals(this.OBCEIJGMKGB))
+			if (!string.IsNullOrEmpty(value) && !value.Equals(OBCEIJGMKGB))
 			{
-				return;
-			}
-			if (this.LocalPlayer != null)
-			{
-				this.LocalPlayer.NickName = value;
-			}
-			this.OBCEIJGMKGB = value;
-			if (this.CurrentRoom != null)
-			{
-				this.PACEKOIEHKK();
+				if (LocalPlayer != null)
+				{
+					LocalPlayer.NickName = value;
+				}
+				OBCEIJGMKGB = value;
+				if (CurrentRoom != null)
+				{
+					PACEKOIEHKK();
+				}
 			}
 		}
 	}
 
-	// Token: 0x17000258 RID: 600
-	// (get) Token: 0x0600AEEF RID: 44783 RVA: 0x0008AA68 File Offset: 0x00088C68
-	// (set) Token: 0x0600AF5E RID: 44894 RVA: 0x0008ADEF File Offset: 0x00088FEF
+	public Room CurrentRoom
+	{
+		get
+		{
+			if (NBCIDPIDCDP != null && NBCIDPIDCDP.IsLocalClientInside)
+			{
+				return NBCIDPIDCDP;
+			}
+			return null;
+		}
+		private set
+		{
+			NBCIDPIDCDP = value;
+		}
+	}
+
+	public PhotonPlayer LocalPlayer { get; internal set; }
+
+	public int PlayersOnMasterCount { get; internal set; }
+
+	public int PlayersInRoomsCount { get; internal set; }
+
+	public int RoomsCount { get; internal set; }
+
+	protected internal int LALFOLKNJJD => (!POHIMACBDGL && DJIOCIPPBMK != 0) ? (Environment.TickCount - DJIOCIPPBMK) : 0;
+
+	public bool IsAuthorizeSecretAvailable => AuthValues != null && !string.IsNullOrEmpty(AuthValues.Token);
+
+	public List<Region> AvailableRegions { get; protected internal set; }
+
 	public CloudRegionCode CloudRegion { get; protected internal set; }
 
-	// Token: 0x0600AEF0 RID: 44784 RVA: 0x00404EBC File Offset: 0x004030BC
-	public void CleanRpcBufferIfMine(PhotonView DFIHBOEOJPI)
+	public int mMasterClientId
 	{
-		if (DFIHBOEOJPI.ownerId != this.LocalPlayer.ID && !this.LocalPlayer.IsMasterClient)
+		get
 		{
-			Debug.LogError(string.Concat(new object[]
+			if (PhotonNetwork.offlineMode)
 			{
-				"Cannot remove cached RPCs on a PhotonView thats not ours! ",
-				DFIHBOEOJPI.owner,
-				" scene: ",
-				DFIHBOEOJPI.isSceneView
-			}));
-			return;
+				return LocalPlayer.ID;
+			}
+			return (CurrentRoom != null) ? CurrentRoom.EJLAPIIGIMI : 0;
 		}
-		this.OpCleanRpcBuffer(DFIHBOEOJPI);
-	}
-
-	// Token: 0x0600AEF1 RID: 44785 RVA: 0x00404F30 File Offset: 0x00403130
-	private bool LFAPOBNFPPO(object CFKDMFFFPJK, object GOLMELKEAFO)
-	{
-		if (CFKDMFFFPJK == null || GOLMELKEAFO == null)
+		private set
 		{
-			return CFKDMFFFPJK == null && GOLMELKEAFO == null;
-		}
-		if (!CFKDMFFFPJK.Equals(GOLMELKEAFO))
-		{
-			if (CFKDMFFFPJK is Vector3)
+			if (CurrentRoom != null)
 			{
-				Vector3 mpnmoonbmii = (Vector3)CFKDMFFFPJK;
-				Vector3 biccgcfnnlp = (Vector3)GOLMELKEAFO;
-				if (mpnmoonbmii.AlmostEquals(biccgcfnnlp, PhotonNetwork.precisionForVectorSynchronization))
-				{
-					return true;
-				}
+				CurrentRoom.EJLAPIIGIMI = value;
 			}
-			else if (CFKDMFFFPJK is Vector2)
-			{
-				Vector2 mpnmoonbmii2 = (Vector2)CFKDMFFFPJK;
-				Vector2 biccgcfnnlp2 = (Vector2)GOLMELKEAFO;
-				if (mpnmoonbmii2.AlmostEquals(biccgcfnnlp2, PhotonNetwork.precisionForVectorSynchronization))
-				{
-					return true;
-				}
-			}
-			else if (CFKDMFFFPJK is Quaternion)
-			{
-				Quaternion mpnmoonbmii3 = (Quaternion)CFKDMFFFPJK;
-				Quaternion biccgcfnnlp3 = (Quaternion)GOLMELKEAFO;
-				if (mpnmoonbmii3.AlmostEquals(biccgcfnnlp3, PhotonNetwork.precisionForQuaternionSynchronization))
-				{
-					return true;
-				}
-			}
-			else if (CFKDMFFFPJK is float)
-			{
-				float mpnmoonbmii4 = (float)CFKDMFFFPJK;
-				float biccgcfnnlp4 = (float)GOLMELKEAFO;
-				if (mpnmoonbmii4.AlmostEquals(biccgcfnnlp4, PhotonNetwork.precisionForFloatSynchronization))
-				{
-					return true;
-				}
-			}
-			return false;
-		}
-		return true;
-	}
-
-	// Token: 0x0600AEF2 RID: 44786 RVA: 0x0008AA70 File Offset: 0x00088C70
-	private void GKNPNNKFFAL(int HOBFECDCMIL)
-	{
-		this.IDIKEJLLFFP.Remove(HOBFECDCMIL);
-	}
-
-	// Token: 0x0600AEF3 RID: 44787 RVA: 0x00405030 File Offset: 0x00403230
-	private void MOHFIPIDGOH()
-	{
-		ServerConnection serverConnection = this.NJIFBFEHJKH();
-		if (serverConnection != ServerConnection.NameServer)
-		{
-			if (serverConnection != ServerConnection.MasterServer)
-			{
-				if (serverConnection == ServerConnection.GameServer)
-				{
-					this.State = (ClientState)51;
-					base.Disconnect();
-				}
-			}
-			else
-			{
-				this.JNPKDLEMJFN(ClientState.Uninitialized);
-				base.Disconnect();
-			}
-		}
-		else
-		{
-			this.State = (ClientState)(-124);
-			base.Disconnect();
 		}
 	}
 
-	// Token: 0x0600AEF4 RID: 44788 RVA: 0x00405098 File Offset: 0x00403298
-	protected internal void JHCPMMIEDEE(int NADLIACHBNO, int MNFJDHDDGLC)
+	private bool OELIGNFABAJ()
 	{
-		Debug.Log(string.Concat(new object[]
+		AuthenticationValues authenticationValues = AuthValues;
+		if (authenticationValues == null)
 		{
-			"TransferOwnership() view ",
-			NADLIACHBNO,
-			" to: ",
-			MNFJDHDDGLC,
-			" Time: ",
-			Environment.TickCount % 1000
-		}));
-		this.OpRaiseEvent(210, new int[]
+			AuthenticationValues authenticationValues2 = new AuthenticationValues();
+			authenticationValues2.UserId = PlayerName;
+			authenticationValues = authenticationValues2;
+		}
+		AuthenticationValues gPDFHODMOIJ = authenticationValues;
+		if (AuthMode == AuthModeOption.Auth)
 		{
-			NADLIACHBNO,
-			MNFJDHDDGLC
-		}, true, new RaiseEventOptions
-		{
-			Receivers = ReceiverGroup.All
-		});
+			return OpAuthenticate(KAIBLIKEDHM, EOCFDCJNAGM, gPDFHODMOIJ, CloudRegion.ToString(), OGLFGPKHEHH);
+		}
+		return OpAuthenticateOnce(KAIBLIKEDHM, EOCFDCJNAGM, gPDFHODMOIJ, CloudRegion.ToString(), EncryptionMode, PhotonNetwork.PhotonServerSettings.Protocol);
 	}
 
-	// Token: 0x0600AEF5 RID: 44789 RVA: 0x0008AA70 File Offset: 0x00088C70
-	private void ODOMCOJONDI(int HOBFECDCMIL)
+	public void NewSceneLoaded()
 	{
-		this.IDIKEJLLFFP.Remove(HOBFECDCMIL);
-	}
-
-	// Token: 0x0600AEF6 RID: 44790 RVA: 0x0040511C File Offset: 0x0040331C
-	public void ODGFBFPFHNN(OperationResponse FEOMHKNGOAK)
-	{
-		if (PhotonNetwork.JNJJAMNLOHA.EBAJHBFJFCL() == (ClientState)(-1))
+		if (HMIEGLIHGEM)
 		{
-			if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-			{
-				Debug.Log("_Value2" + FEOMHKNGOAK.OperationCode);
-			}
-			return;
+			HMIEGLIHGEM = false;
+			PhotonNetwork.isMessageQueueRunning = true;
 		}
-		if (FEOMHKNGOAK.ReturnCode == 0)
+		List<int> list = new List<int>();
+		foreach (KeyValuePair<int, PhotonView> item in HFCMPEKPBAM)
 		{
-			if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+			PhotonView value = item.Value;
+			if (value == null)
 			{
-				Debug.Log(FEOMHKNGOAK.ToString());
+				list.Add(item.Key);
 			}
 		}
-		else if (FEOMHKNGOAK.ReturnCode == 66)
+		for (int i = 0; i < list.Count; i++)
 		{
-			Debug.LogError("_Value10" + FEOMHKNGOAK.OperationCode + "Tab2Content");
+			int key = list[i];
+			HFCMPEKPBAM.Remove(key);
 		}
-		else if (FEOMHKNGOAK.ReturnCode == 191)
+		if (list.Count > 0 && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
 		{
-			object[] array = new object[0];
-			array[0] = "#no";
-			array[0] = FEOMHKNGOAK.OperationCode;
-			array[0] = "_TimeX";
-			array[5] = FEOMHKNGOAK.DebugMessage;
-			Debug.LogError(string.Concat(array));
-		}
-		else if (FEOMHKNGOAK.ReturnCode == 159)
-		{
-			Debug.LogWarning("_TileTexDebug" + FEOMHKNGOAK.ToStringFull());
-		}
-		else
-		{
-			object[] array2 = new object[3];
-			array2[0] = "original.tutorial";
-			array2[0] = FEOMHKNGOAK.ToStringFull();
-			array2[3] = "SpawnObj";
-			array2[0] = this.IGDBHCGGHFF();
-			Debug.LogError(string.Concat(array2));
-		}
-		if (FEOMHKNGOAK.Parameters.ContainsKey(86))
-		{
-			if (this.AuthValues == null)
-			{
-				this.HBABOJOMPHP(new AuthenticationValues());
-			}
-			this.IJHIEINKMFP().AIOHGAFEHJG(FEOMHKNGOAK[127] as string);
-			this.JOKLGFENMKE = this.AuthValues.IFKGNPNPDDI();
-		}
-		byte operationCode = FEOMHKNGOAK.OperationCode;
-		switch (operationCode)
-		{
-		case 49:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				this.ELEMKNKGNIP(DebugLevel.ERROR, "tolobby" + FEOMHKNGOAK.ToStringFull());
-			}
-			else
-			{
-				this.mGameList = new Dictionary<string, RoomInfo>();
-				ExitGames.Client.Photon.Hashtable hashtable = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[(byte)-44];
-				foreach (object obj in hashtable.Keys)
-				{
-					string text = (string)obj;
-					this.mGameList[text] = new RoomInfo(text, (ExitGames.Client.Photon.Hashtable)hashtable[obj]);
-				}
-				this.mGameListCopy = new RoomInfo[this.mGameList.Count];
-				this.mGameList.Values.CopyTo(this.mGameListCopy, 0);
-				BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)(-82), new object[0]);
-			}
-			break;
-		default:
-			switch (operationCode)
-			{
-			case 143:
-			{
-				ExitGames.Client.Photon.Hashtable faolpblckfj = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[183];
-				ExitGames.Client.Photon.Hashtable mjjmnidhdec = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[37];
-				this.EDMCCPDDDCC(mjjmnidhdec, faolpblckfj, 1);
-				break;
-			}
-			case 144:
-				break;
-			case 145:
-				break;
-			case 146:
-				this.MOHFIPIDGOH();
-				break;
-			default:
-				Debug.LogWarning(string.Format("_Bloom2", FEOMHKNGOAK.ToString()));
-				break;
-			}
-			break;
-		case 51:
-		{
-			PhotonNetworkingMessage lelhnddckco = (PhotonNetworkingMessage)(-72);
-			object[] array3 = new object[0];
-			array3[0] = FEOMHKNGOAK;
-			BNGIGHBHPEH.SendMonoMessage(lelhnddckco, array3);
-			break;
-		}
-		case 52:
-			if (FEOMHKNGOAK.ReturnCode == -102)
-			{
-				Debug.LogError(string.Format("Joystick1Button11", new object[1]));
-				PhotonNetworkingMessage lelhnddckco2 = (PhotonNetworkingMessage)(-62);
-				object[] array4 = new object[0];
-				array4[1] = (DisconnectCause)191;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco2, array4);
-				this.JNPKDLEMJFN((ClientState)69);
-				this.Disconnect();
-			}
-			else if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				object[] array5 = new object[0];
-				array5[1] = "CameraFilterPack/Pixelisation_OilPaint";
-				array5[1] = FEOMHKNGOAK.ReturnCode;
-				array5[7] = "_MiddleGrey";
-				array5[8] = FEOMHKNGOAK.DebugMessage;
-				Debug.LogError(string.Concat(array5));
-			}
-			else
-			{
-				string[] array6 = FEOMHKNGOAK[16] as string[];
-				string[] array7 = FEOMHKNGOAK[102] as string[];
-				if (array6 == null || array7 == null || array6.Length != array7.Length)
-				{
-					object[] array8 = new object[6];
-					array8[1] = "_Value4";
-					array8[0] = (array6 == null);
-					array8[1] = "Lerp speed. Recomended 10";
-					array8[7] = (array7 == null);
-					array8[5] = "InfoButton";
-					array8[1] = FEOMHKNGOAK.ToStringFull();
-					Debug.LogError(string.Concat(array8));
-				}
-				else
-				{
-					this.AvailableRegions = new List<Region>(array6.Length);
-					for (int i = 0; i < array6.Length; i++)
-					{
-						string text2 = array6[i];
-						if (!string.IsNullOrEmpty(text2))
-						{
-							text2 = text2.ToLower();
-							CloudRegionCode cloudRegionCode = Region.EBPHPBNDNDJ(text2);
-							bool flag = true;
-							if (PhotonNetwork.PhotonServerSettings.HostType == (ServerSettings.HostingOption)8 && PhotonNetwork.PhotonServerSettings.EnabledRegions != (CloudRegionFlag)0)
-							{
-								CloudRegionFlag cloudRegionFlag = Region.JFBLMOGHMPF(cloudRegionCode);
-								flag = ((PhotonNetwork.PhotonServerSettings.EnabledRegions & cloudRegionFlag) == CloudRegionFlag.eu);
-								if (!flag && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-								{
-									Debug.Log("[PlayerController] " + cloudRegionCode);
-								}
-							}
-							if (flag)
-							{
-								this.PKIDPHFLDBP().Add(new Region(cloudRegionCode, text2, array7[i]));
-							}
-						}
-					}
-					if (PhotonNetwork.PhotonServerSettings.HostType == (ServerSettings.HostingOption)8)
-					{
-						PhotonHandler.POHJEJCJKPN();
-					}
-				}
-			}
-			break;
-		case 54:
-		{
-			bool[] array9 = FEOMHKNGOAK[0] as bool[];
-			string[] array10 = FEOMHKNGOAK[7] as string[];
-			if (array9 != null && array10 != null && this.BEIPFKHGHPC != null && array9.Length == this.BEIPFKHGHPC.Length)
-			{
-				List<FriendInfo> list = new List<FriendInfo>(this.BEIPFKHGHPC.Length);
-				for (int j = 1; j < this.BEIPFKHGHPC.Length; j += 0)
-				{
-					FriendInfo friendInfo = new FriendInfo();
-					friendInfo.GFEAJNPMNJA(this.BEIPFKHGHPC[j]);
-					friendInfo.NBHGPKNCHCN(array10[j]);
-					friendInfo.CDANICGAPNK(array9[j]);
-					list.Insert(j, friendInfo);
-				}
-				PhotonNetwork.Friends = list;
-			}
-			else
-			{
-				Debug.LogError("time");
-			}
-			this.BEIPFKHGHPC = null;
-			this.POHIMACBDGL = true;
-			this.DJIOCIPPBMK = Environment.TickCount;
-			if (this.DJIOCIPPBMK == 0)
-			{
-				this.DJIOCIPPBMK = 1;
-			}
-			BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)(-98), new object[1]);
-			break;
-		}
-		case 57:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (FEOMHKNGOAK.ReturnCode == 90)
-				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)5)
-					{
-						Debug.Log("[FileSelector] Dialog ended, result: ");
-					}
-				}
-				else if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.LogWarning(string.Format("_TapLow", FEOMHKNGOAK.ToStringFull()));
-				}
-				PhotonNetworkingMessage lelhnddckco3 = (PhotonNetworkingMessage)(-28);
-				object[] array11 = new object[]
-				{
-					null,
-					FEOMHKNGOAK.ReturnCode
-				};
-				array11[1] = FEOMHKNGOAK.DebugMessage;
-				BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco3, array11);
-			}
-			else
-			{
-				string roomName = (string)FEOMHKNGOAK[115];
-				this.AJFMHFLGCFN.RoomName = roomName;
-				this.GameServerAddress = (string)FEOMHKNGOAK[(byte)-11];
-				this.MOHFIPIDGOH();
-			}
-			break;
-		case 58:
-			if (this.NJIFBFEHJKH() != ServerConnection.MasterServer)
-			{
-				if (FEOMHKNGOAK.ReturnCode != 0)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.Log(string.Format("CloseConnection: Only the masterclient can kick another player.", FEOMHKNGOAK.ToStringFull(), this.State));
-					}
-					PhotonNetworkingMessage lelhnddckco4 = PhotonNetworkingMessage.OnLeftRoom;
-					object[] array12 = new object[0];
-					array12[0] = FEOMHKNGOAK.ReturnCode;
-					array12[1] = FEOMHKNGOAK.DebugMessage;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco4, array12);
-				}
-				else
-				{
-					this.GameServerAddress = (string)FEOMHKNGOAK[(byte)-88];
-					this.MOHFIPIDGOH();
-				}
-			}
-			else
-			{
-				this.PCLPOPNEABK(FEOMHKNGOAK);
-			}
-			break;
-		case 59:
-			if (this.EHALCLFLGJF == ServerConnection.MasterServer)
-			{
-				this.PCLPOPNEABK(FEOMHKNGOAK);
-			}
-			else if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.LogWarning(string.Format("_FixDistance", FEOMHKNGOAK.ToStringFull()));
-				}
-				this.JNPKDLEMJFN((!this.insideLobby) ? ((ClientState)116) : ClientState.Authenticated);
-				PhotonNetworkingMessage lelhnddckco5 = PhotonNetworkingMessage.OnJoinedLobby;
-				object[] array13 = new object[7];
-				array13[1] = FEOMHKNGOAK.ReturnCode;
-				array13[0] = FEOMHKNGOAK.DebugMessage;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco5, array13);
-			}
-			else
-			{
-				string text3 = (string)FEOMHKNGOAK[67];
-				if (!string.IsNullOrEmpty(text3))
-				{
-					this.AJFMHFLGCFN.RoomName = text3;
-				}
-				this.GameServerAddress = (string)FEOMHKNGOAK[(byte)-57];
-				this.MOHFIPIDGOH();
-			}
-			break;
-		case 60:
-			this.JNPKDLEMJFN(ClientState.Joining);
-			this.ONELBBFGFOM();
-			break;
-		case 61:
-			this.State = ClientState.Joining;
-			this.insideLobby = false;
-			BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnConnectedToPhoton, new object[0]);
-			break;
-		case 62:
-		case 63:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (FEOMHKNGOAK.ReturnCode == 123)
-				{
-					Debug.LogError(string.Format("NameText" + base.ServerAddress, new object[1]));
-				}
-				else if (FEOMHKNGOAK.ReturnCode == 12)
-				{
-					Debug.LogError(string.Format("+", new object[0]));
-					BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)(-19), new object[]
-					{
-						(DisconnectCause)(-167)
-					});
-				}
-				else if (FEOMHKNGOAK.ReturnCode == -42)
-				{
-					Debug.LogError(string.Format("CameraFilterPack_Fly_VisionFX", new object[0]));
-					BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)79, new object[]
-					{
-						FEOMHKNGOAK.DebugMessage
-					});
-				}
-				else
-				{
-					Debug.LogError(string.Format("EnableRankedNotificationsToggle", FEOMHKNGOAK.DebugMessage, FEOMHKNGOAK.ReturnCode));
-				}
-				this.JNPKDLEMJFN((ClientState)(-53));
-				this.Disconnect();
-				if (FEOMHKNGOAK.ReturnCode == 166)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogWarning(string.Format("_Value", new object[0]));
-					}
-					BNGIGHBHPEH.CLOLHKCFMJP((PhotonNetworkingMessage)(-80), new object[0]);
-					PhotonNetworkingMessage lelhnddckco6 = (PhotonNetworkingMessage)55;
-					object[] array14 = new object[0];
-					array14[1] = (DisconnectCause)187;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco6, array14);
-				}
-				else if (FEOMHKNGOAK.ReturnCode == -17)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogError(string.Format("CameraFilterPack/EXTRA_Rotation", new object[1]));
-					}
-					PhotonNetworkingMessage lelhnddckco7 = (PhotonNetworkingMessage)76;
-					object[] array15 = new object[1];
-					array15[1] = (DisconnectCause)175;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco7, array15);
-				}
-				else if (FEOMHKNGOAK.ReturnCode == -199)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-					{
-						Debug.LogError(string.Format("red", new object[1]));
-					}
-					PhotonNetworkingMessage lelhnddckco8 = (PhotonNetworkingMessage)(-78);
-					object[] array16 = new object[0];
-					array16[1] = (DisconnectCause)132;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco8, array16);
-				}
-			}
-			else
-			{
-				if (this.EHALCLFLGJF == ServerConnection.NameServer || this.NJIFBFEHJKH() == ServerConnection.MasterServer)
-				{
-					if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-143))
-					{
-						string text4 = (string)FEOMHKNGOAK.Parameters[88];
-						if (!string.IsNullOrEmpty(text4))
-						{
-							if (this.AuthValues == null)
-							{
-								this.HBABOJOMPHP(new AuthenticationValues());
-							}
-							this.IJHIEINKMFP().MIHBPLHLFGG(text4);
-							PhotonNetwork.player.UserId = text4;
-							if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-							{
-								this.ELEMKNKGNIP(DebugLevel.ALL, string.Format("MapConfig", text4));
-							}
-						}
-					}
-					if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-83))
-					{
-						this.PlayerName = (string)FEOMHKNGOAK.Parameters[98];
-						if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-						{
-							this.ELEMKNKGNIP((DebugLevel)8, string.Format("float,1.5", this.OBCEIJGMKGB));
-						}
-					}
-					if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-179))
-					{
-						this.BAEBFLIPKKB((Dictionary<byte, object>)FEOMHKNGOAK.Parameters[(byte)-142]);
-					}
-				}
-				if (this.IGDBHCGGHFF() == (ServerConnection)8)
-				{
-					this.MasterServerAddress = (FEOMHKNGOAK[180] as string);
-					this.MOHFIPIDGOH();
-				}
-				else if (this.NJIFBFEHJKH() == ServerConnection.MasterServer)
-				{
-					if (this.AuthMode != AuthModeOption.Auth)
-					{
-						this.OpSettings(this.OGLFGPKHEHH);
-					}
-					if (PhotonNetwork.autoJoinLobby)
-					{
-						this.JNPKDLEMJFN(ClientState.ConnectingToGameserver);
-						this.IEBPDKACDBD(this.GMFCEODBPGN());
-					}
-					else
-					{
-						this.State = (ClientState)(-12);
-						BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)(-24), new object[0]);
-					}
-				}
-				else if (this.IGDBHCGGHFF() == ServerConnection.MasterServer)
-				{
-					this.JNPKDLEMJFN(ClientState.ConnectedToGameserver);
-					this.AJFMHFLGCFN.PlayerProperties = this.HHPBLGDNDOP();
-					this.AJFMHFLGCFN.OnGameServer = false;
-					if (this.ELNKFMHCMBO == JoinType.CreateRoom || this.ELNKFMHCMBO == JoinType.JoinRandomRoom || this.ELNKFMHCMBO == (JoinType)4)
-					{
-						this.PEBMBNGKOBH(this.AJFMHFLGCFN);
-					}
-					else if (this.ELNKFMHCMBO == JoinType.CreateRoom)
-					{
-						this.JCPECILENMF(this.AJFMHFLGCFN);
-					}
-				}
-				if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-38))
-				{
-					Dictionary<string, object> dictionary = (Dictionary<string, object>)FEOMHKNGOAK.Parameters[(byte)-5];
-					if (dictionary != null)
-					{
-						BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)122, new object[]
-						{
-							dictionary
-						});
-					}
-				}
-			}
-			break;
+			Debug.Log("New level loaded. Removed " + list.Count + " scene view IDs from last level.");
 		}
 	}
 
-	// Token: 0x0600AEF7 RID: 44791 RVA: 0x0008AA7F File Offset: 0x00088C7F
-	internal void INOOGEKCLGF(int DPNHODJHGJL)
+	public PhotonView LDCGKJEKICK(int NADLIACHBNO)
 	{
-		this.<BBNAEKGKOKM>k__BackingField = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AEF8 RID: 44792 RVA: 0x0008AA88 File Offset: 0x00088C88
-	public int GHOANKKKIAI()
-	{
-		if (PhotonNetwork.offlineMode)
+		PhotonView value = null;
+		HFCMPEKPBAM.TryGetValue(NADLIACHBNO, out value);
+		if (value == null)
 		{
-			return this.LocalPlayer.ID;
-		}
-		return (this.CurrentRoom != null) ? this.CurrentRoom.LKHBADEOGKO() : 1;
-	}
-
-	// Token: 0x0600AEF9 RID: 44793 RVA: 0x00405E5C File Offset: 0x0040405C
-	protected internal static bool FAAKJJEMNEB(MonoBehaviour KLJMHHFGLCJ, string AOBJJJOJGGF, out MethodInfo MKLKGCPAPOC)
-	{
-		MKLKGCPAPOC = null;
-		if (KLJMHHFGLCJ == null || string.IsNullOrEmpty(AOBJJJOJGGF))
-		{
-			return false;
-		}
-		List<MethodInfo> methods = SupportClass.GetMethods(KLJMHHFGLCJ.GetType(), null);
-		for (int i = 0; i < methods.Count; i++)
-		{
-			MethodInfo methodInfo = methods[i];
-			if (methodInfo.Name.Equals(AOBJJJOJGGF))
+			PhotonView[] array = UnityEngine.Object.FindObjectsOfType(typeof(PhotonView)) as PhotonView[];
+			for (int i = 1; i < array.Length; i++)
 			{
-				MKLKGCPAPOC = methodInfo;
-				return true;
+				PhotonView photonView = array[i];
+				if (photonView.viewID == NADLIACHBNO)
+				{
+					if (photonView.GEKLBLEBECG)
+					{
+						Debug.LogWarning("CameraFilterPack/Blend2Camera_Screen" + photonView);
+					}
+					return photonView;
+				}
 			}
 		}
-		return false;
+		return value;
 	}
 
-	// Token: 0x0600AEFA RID: 44794 RVA: 0x0008AABC File Offset: 0x00088CBC
-	public string AICJDIJHGMA()
+	public void OpCleanRpcBuffer(PhotonView DFIHBOEOJPI)
 	{
-		return this.IHAJBEOILOE();
-	}
-
-	// Token: 0x0600AEFB RID: 44795 RVA: 0x0008AAC4 File Offset: 0x00088CC4
-	public AuthenticationValues IJHIEINKMFP()
-	{
-		return this.<FEGEIIONEMN>k__BackingField;
-	}
-
-	// Token: 0x0600AEFC RID: 44796 RVA: 0x00405EC8 File Offset: 0x004040C8
-	internal ExitGames.Client.Photon.Hashtable JFNIJKNOPAN(string PPFBFGBJOHM, Vector3 JOPCODOJBHD, Quaternion LOMLCCLOIKN, byte PNFBEEBFMKC, int[] BJJMPIBPLEN, object[] NOJGGCLPPAM, bool BLOGDPLEMFH)
-	{
-		int num = BJJMPIBPLEN[0];
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[1] = PPFBFGBJOHM;
-		if (JOPCODOJBHD != Vector3.zero)
-		{
-			hashtable[0] = JOPCODOJBHD;
-		}
-		if (LOMLCCLOIKN != Quaternion.identity)
-		{
-			hashtable[5] = LOMLCCLOIKN;
-		}
-		if (PNFBEEBFMKC != 0)
-		{
-			hashtable[6] = PNFBEEBFMKC;
-		}
-		if (BJJMPIBPLEN.Length > 0)
-		{
-			hashtable[0] = BJJMPIBPLEN;
-		}
-		if (NOJGGCLPPAM != null)
-		{
-			hashtable[6] = NOJGGCLPPAM;
-		}
-		if (this.PKCNHOKCLJH > 0)
-		{
-			hashtable[6] = this.PKCNHOKCLJH;
-		}
-		hashtable[3] = PhotonNetwork.ServerTimestamp;
-		hashtable[7] = num;
-		this.OpRaiseEvent((byte)-147, hashtable, false, new RaiseEventOptions
-		{
-			CachingOption = ((!BLOGDPLEMFH) ? EventCaching.MergeCache : EventCaching.DoNotCache)
-		});
-		return hashtable;
+		hashtable[(byte)0] = DFIHBOEOJPI.viewID;
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = EventCaching.RemoveFromRoomCache;
+		RaiseEventOptions bPLHAPBMGGC = raiseEventOptions;
+		OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC);
 	}
 
-	// Token: 0x0600AEFD RID: 44797 RVA: 0x0008AA70 File Offset: 0x00088C70
-	private void CMCGLCHBKEN(int HOBFECDCMIL)
-	{
-		this.IDIKEJLLFFP.Remove(HOBFECDCMIL);
-	}
-
-	// Token: 0x0600AEFE RID: 44798 RVA: 0x00405FF0 File Offset: 0x004041F0
 	protected internal PhotonPlayer ICMGDHDNIJD(int MHLPNLMDILP)
 	{
-		if (this.mActors == null)
+		if (mActors == null)
 		{
 			return null;
 		}
-		PhotonPlayer result = null;
-		this.mActors.TryGetValue(MHLPNLMDILP, out result);
-		return result;
+		PhotonPlayer value = null;
+		mActors.TryGetValue(MHLPNLMDILP, out value);
+		return value;
 	}
 
-	// Token: 0x0600AEFF RID: 44799 RVA: 0x0040601C File Offset: 0x0040421C
-	public void DestroyPlayerObjects(int PHIGECOLKKN, bool NOKCKEBHIFJ)
+	public bool SetMasterClient(int BONHLGFPNHF)
 	{
-		if (PHIGECOLKKN <= 0)
+		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable.Add((byte)248, BONHLGFPNHF);
+		ExitGames.Client.Photon.Hashtable mJJMNIDHDEC = hashtable;
+		hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable.Add((byte)248, mMasterClientId);
+		ExitGames.Client.Photon.Hashtable kCJIKJDCOAL = hashtable;
+		return HFECLDIOHNJ(mJJMNIDHDEC, kCJIKJDCOAL);
+	}
+
+	[SpecialName]
+	public bool LCKOOPIJBBP()
+	{
+		return _003CDOMFKIAEEAE_003Ek__BackingField;
+	}
+
+	internal ExitGames.Client.Photon.Hashtable HLFMLHKOOFE(string PPFBFGBJOHM, Vector3 JOPCODOJBHD, Quaternion LOMLCCLOIKN, byte PNFBEEBFMKC, int[] BJJMPIBPLEN, object[] NOJGGCLPPAM, bool BLOGDPLEMFH)
+	{
+		int num = BJJMPIBPLEN[0];
+		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable[(byte)1] = PPFBFGBJOHM;
+		if (JOPCODOJBHD != Vector3.zero)
 		{
-			Debug.LogError("Failed to Destroy objects of playerId: " + PHIGECOLKKN);
+			hashtable[(byte)1] = JOPCODOJBHD;
+		}
+		if (LOMLCCLOIKN != Quaternion.identity)
+		{
+			hashtable[(byte)1] = LOMLCCLOIKN;
+		}
+		if (PNFBEEBFMKC != 0)
+		{
+			hashtable[(byte)2] = PNFBEEBFMKC;
+		}
+		if (BJJMPIBPLEN.Length > 1)
+		{
+			hashtable[(byte)0] = BJJMPIBPLEN;
+		}
+		if (NOJGGCLPPAM != null)
+		{
+			hashtable[(byte)1] = NOJGGCLPPAM;
+		}
+		if (PKCNHOKCLJH > 0)
+		{
+			hashtable[(byte)3] = PKCNHOKCLJH;
+		}
+		hashtable[(byte)7] = PhotonNetwork.ServerTimestamp;
+		hashtable[(byte)1] = num;
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = (BLOGDPLEMFH ? EventCaching.ReplaceCache : EventCaching.DoNotCache);
+		ACEDLCAELNF(216, hashtable, false, raiseEventOptions);
+		return hashtable;
+	}
+
+	public void RegisterPhotonView(PhotonView LCJKMJCFDGE)
+	{
+		if (!Application.isPlaying)
+		{
+			HFCMPEKPBAM = new Dictionary<int, PhotonView>();
 			return;
 		}
-		if (!NOKCKEBHIFJ)
+		if (LCJKMJCFDGE.viewID == 0)
 		{
-			this.NGAEPLGAGAL(PHIGECOLKKN);
-			this.OpCleanRpcBuffer(PHIGECOLKKN);
-			this.KCNBFALAJMD(PHIGECOLKKN);
+			Debug.Log("PhotonView register is ignored, because viewID is 0. No id assigned yet to: " + LCJKMJCFDGE);
+			return;
 		}
-		HashSet<GameObject> hashSet = new HashSet<GameObject>();
-		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
+		PhotonView value = null;
+		if (HFCMPEKPBAM.TryGetValue(LCJKMJCFDGE.viewID, out value))
 		{
-			if (photonView != null && photonView.CreatorActorNr == PHIGECOLKKN)
+			if (!(LCJKMJCFDGE != value))
 			{
-				hashSet.Add(photonView.gameObject);
+				return;
 			}
+			Debug.LogError($"PhotonView ID duplicate found: {LCJKMJCFDGE.viewID}. New: {LCJKMJCFDGE} old: {value}. Maybe one wasn't destroyed on scene load?! Check for 'DontDestroyOnLoad'. Destroying old entry, adding new.");
+			EFDAOHIDIIF(value.gameObject, true);
 		}
-		foreach (GameObject obfjphlbfol in hashSet)
+		HFCMPEKPBAM.Add(LCJKMJCFDGE.viewID, LCJKMJCFDGE);
+		if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
 		{
-			this.EFDAOHIDIIF(obfjphlbfol, true);
-		}
-		foreach (PhotonView photonView2 in this.HFCMPEKPBAM.Values)
-		{
-			if (photonView2.ownerId == PHIGECOLKKN)
-			{
-				photonView2.ownerId = photonView2.CreatorActorNr;
-			}
+			Debug.Log("Registered PhotonView: " + LCJKMJCFDGE.viewID);
 		}
 	}
 
-	// Token: 0x0600AF00 RID: 44800 RVA: 0x0008AACC File Offset: 0x00088CCC
+	[SpecialName]
+	protected internal void ONKFAPDCCLE(string DPNHODJHGJL)
+	{
+		_003CGGFFKAEDLBB_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private void ENIDDCEBCDG()
+	{
+		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable[(byte)0] = -1;
+		JCCNCJFOMNB(196, hashtable, false, null);
+	}
+
+	private void EBNDKPFKPIJ()
+	{
+		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable[(byte)0] = -1;
+		OpRaiseEvent(207, hashtable, true, null);
+	}
+
+	private void KIKHKNNMBMN()
+	{
+		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
+		dictionary[244] = (byte)0;
+		dictionary[247] = (byte)7;
+		OpCustom(253, dictionary, true, 0);
+	}
+
+	private string IHAJBEOILOE()
+	{
+		ConnectionProtocol transportProtocol = base.TransportProtocol;
+		int value = 0;
+		AEGGDHEGGCL.TryGetValue(transportProtocol, out value);
+		string arg = string.Empty;
+		switch (transportProtocol)
+		{
+		case ConnectionProtocol.WebSocket:
+			arg = "ws://";
+			break;
+		case ConnectionProtocol.WebSocketSecure:
+			arg = "wss://";
+			break;
+		}
+		return string.Format("{0}{1}:{2}", arg, "ns.exitgames.com", value);
+	}
+
+	public void ChangeLocalID(int LGHIPFAEONM)
+	{
+		if (LocalPlayer == null)
+		{
+			Debug.LogWarning($"LocalPlayer is null or not in mActors! LocalPlayer: {LocalPlayer} mActors==null: {mActors == null} newID: {LGHIPFAEONM}");
+		}
+		if (mActors.ContainsKey(LocalPlayer.ID))
+		{
+			mActors.Remove(LocalPlayer.ID);
+		}
+		LocalPlayer.GOCPHBFMIEN(LGHIPFAEONM);
+		mActors[LocalPlayer.ID] = LocalPlayer;
+		LEMBPMNPHCK();
+	}
+
+	private bool AKIBKCFMMHO()
+	{
+		IDOAHFHJJJE = true;
+		PhotonNetwork.SwitchToProtocol(PhotonNetwork.PhotonServerSettings.Protocol);
+		KHKMFIFGPCH(PKNIJKPIKAF);
+		bool flag = base.Connect(BLNBCGLIOHP, KAOMEDGGMEM, LLJDHHLHFME);
+		if (flag)
+		{
+			switch (PKNIJKPIKAF)
+			{
+			case ServerConnection.NameServer:
+				State = ClientState.ConnectingToNameServer;
+				break;
+			case ServerConnection.MasterServer:
+				State = ClientState.ConnectingToMasterserver;
+				break;
+			case ServerConnection.GameServer:
+				State = ClientState.ConnectingToGameserver;
+				break;
+			}
+		}
+		return flag;
+	}
+
+	private void HBBIHADLDLH(int HOBFECDCMIL, object[] FLFEEAHDHDK)
+	{
+		IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
+	}
+
+	private void ANCHCNAJLOJ(int JBHMEHIOGBE)
+	{
+		bool flag = mMasterClientId == JBHMEHIOGBE;
+		bool flag2 = JBHMEHIOGBE > 0;
+		if (flag2 && !flag)
+		{
+			return;
+		}
+		int num;
+		if (mActors.Count <= 0)
+		{
+			num = LocalPlayer.ID;
+		}
+		else
+		{
+			num = 7;
+			foreach (int key in mActors.Keys)
+			{
+				if (key < num && key != JBHMEHIOGBE)
+				{
+					num = key;
+				}
+			}
+		}
+		mMasterClientId = num;
+		if (flag2)
+		{
+			SendMonoMessage(PhotonNetworkingMessage.OnJoinedLobby, ICMGDHDNIJD(num));
+		}
+	}
+
+	[SpecialName]
+	public int ABDALANPDDH()
+	{
+		return _003CBBNAEKGKOKM_003Ek__BackingField;
+	}
+
 	public void SetApp(string PPNEJGFIAJP, string MHMPNKGMNMJ)
 	{
-		this.KAIBLIKEDHM = PPNEJGFIAJP.Trim();
+		KAIBLIKEDHM = PPNEJGFIAJP.Trim();
 		if (!string.IsNullOrEmpty(MHMPNKGMNMJ))
 		{
 			PhotonNetwork.gameVersion = MHMPNKGMNMJ.Trim();
 		}
 	}
 
-	// Token: 0x0600AF01 RID: 44801 RVA: 0x00406188 File Offset: 0x00404388
-	private bool OELIGNFABAJ()
+	internal GameObject JFOLGKKLFJP(ExitGames.Client.Photon.Hashtable NNNJPMDHPHH, PhotonPlayer OGKJFFANGMC, GameObject HHLFBCNFLAO)
 	{
-		AuthenticationValues authenticationValues;
-		if ((authenticationValues = this.AuthValues) == null)
+		string text = (string)NNNJPMDHPHH[(byte)0];
+		int aMCIAILLAIB = (int)NNNJPMDHPHH[(byte)6];
+		int num = (int)NNNJPMDHPHH[(byte)7];
+		Vector3 vector = ((!NNNJPMDHPHH.ContainsKey((byte)1)) ? Vector3.zero : ((Vector3)NNNJPMDHPHH[(byte)1]));
+		Quaternion quaternion = Quaternion.identity;
+		if (NNNJPMDHPHH.ContainsKey((byte)2))
 		{
-			authenticationValues = new AuthenticationValues
+			quaternion = (Quaternion)NNNJPMDHPHH[(byte)2];
+		}
+		byte b = 0;
+		if (NNNJPMDHPHH.ContainsKey((byte)3))
+		{
+			b = (byte)NNNJPMDHPHH[(byte)3];
+		}
+		short prefix = 0;
+		if (NNNJPMDHPHH.ContainsKey((byte)8))
+		{
+			prefix = (short)NNNJPMDHPHH[(byte)8];
+		}
+		int[] array = ((!NNNJPMDHPHH.ContainsKey((byte)4)) ? new int[1] { num } : ((int[])NNNJPMDHPHH[(byte)4]));
+		object[] array2 = ((!NNNJPMDHPHH.ContainsKey((byte)5)) ? null : ((object[])NNNJPMDHPHH[(byte)5]));
+		if (b != 0 && !CHIJNBAJIHE.Contains(b))
+		{
+			return null;
+		}
+		if (EGNHNBODKHP != null)
+		{
+			GameObject gameObject = EGNHNBODKHP.Instantiate(text, vector, quaternion);
+			PhotonView[] photonViewsInChildren = gameObject.GetPhotonViewsInChildren();
+			if (photonViewsInChildren.Length != array.Length)
 			{
-				UserId = this.PlayerName
-			};
+				throw new Exception("Error in Instantiation! The resource's PhotonView count is not the same as in incoming data.");
+			}
+			for (int i = 0; i < photonViewsInChildren.Length; i++)
+			{
+				photonViewsInChildren[i].GEKLBLEBECG = false;
+				photonViewsInChildren[i].viewID = 0;
+				photonViewsInChildren[i].prefix = prefix;
+				photonViewsInChildren[i].instantiationId = num;
+				photonViewsInChildren[i].isRuntimeInstantiated = true;
+				photonViewsInChildren[i].NJDPOGADFJN = array2;
+				photonViewsInChildren[i].GEKLBLEBECG = true;
+				photonViewsInChildren[i].viewID = array[i];
+			}
+			gameObject.SendMessage(BJJEABNGKBF, new PhotonMessageInfo(OGKJFFANGMC, aMCIAILLAIB, null), SendMessageOptions.DontRequireReceiver);
+			return gameObject;
 		}
-		AuthenticationValues gpdfhodmoij = authenticationValues;
-		if (this.AuthMode == AuthModeOption.Auth)
+		if (HHLFBCNFLAO == null)
 		{
-			return this.OpAuthenticate(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CloudRegion.ToString(), this.OGLFGPKHEHH);
+			if (!UsePrefabCache || !PrefabCache.TryGetValue(text, out HHLFBCNFLAO))
+			{
+				HHLFBCNFLAO = (GameObject)Resources.Load(text, typeof(GameObject));
+				if (UsePrefabCache)
+				{
+					PrefabCache.Add(text, HHLFBCNFLAO);
+				}
+			}
+			if (HHLFBCNFLAO == null)
+			{
+				Debug.LogError("PhotonNetwork error: Could not Instantiate the prefab [" + text + "]. Please verify you have this gameobject in a Resources folder.");
+				return null;
+			}
 		}
-		return this.OpAuthenticateOnce(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CloudRegion.ToString(), this.EncryptionMode, PhotonNetwork.PhotonServerSettings.Protocol);
+		PhotonView[] photonViewsInChildren2 = HHLFBCNFLAO.GetPhotonViewsInChildren();
+		if (photonViewsInChildren2.Length != array.Length)
+		{
+			throw new Exception("Error in Instantiation! The resource's PhotonView count is not the same as in incoming data.");
+		}
+		for (int j = 0; j < array.Length; j++)
+		{
+			photonViewsInChildren2[j].viewID = array[j];
+			photonViewsInChildren2[j].prefix = prefix;
+			photonViewsInChildren2[j].instantiationId = num;
+			photonViewsInChildren2[j].isRuntimeInstantiated = true;
+		}
+		DGEJLOAMLHI(num, array2);
+		GameObject gameObject2 = UnityEngine.Object.Instantiate(HHLFBCNFLAO, vector, quaternion);
+		for (int k = 0; k < array.Length; k++)
+		{
+			photonViewsInChildren2[k].viewID = 0;
+			photonViewsInChildren2[k].prefix = -1;
+			photonViewsInChildren2[k].prefixBackup = -1;
+			photonViewsInChildren2[k].instantiationId = -1;
+			photonViewsInChildren2[k].isRuntimeInstantiated = false;
+		}
+		GKNPNNKFFAL(num);
+		gameObject2.SendMessage(BJJEABNGKBF, new PhotonMessageInfo(OGKJFFANGMC, aMCIAILLAIB, null), SendMessageOptions.DontRequireReceiver);
+		return gameObject2;
 	}
 
-	// Token: 0x0600AF02 RID: 44802 RVA: 0x00406228 File Offset: 0x00404428
-	private void MJLFCEHBMGL()
+	private static int OHKBLAANNDH(PhotonPlayer[] NEJPNIGJLGP, int AIMBEFMGEFM)
 	{
-		Debug.Log("SendVacantViewIds()");
-		List<int> list = new List<int>();
-		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
+		if (NEJPNIGJLGP == null || NEJPNIGJLGP.Length == 0)
 		{
-			if (!photonView.isOwnerActive)
+			return -1;
+		}
+		int num = 84;
+		for (int i = 1; i < NEJPNIGJLGP.Length; i += 0)
+		{
+			PhotonPlayer photonPlayer = NEJPNIGJLGP[i];
+			if (photonPlayer.FHEAKIMCKJC() != AIMBEFMGEFM && photonPlayer.ID < num)
 			{
-				list.Add(photonView.viewID);
+				num = photonPlayer.FHEAKIMCKJC();
 			}
 		}
-		Debug.Log("Sending vacant view IDs. Length: " + list.Count);
-		this.OpRaiseEvent(211, list.ToArray(), true, null);
+		return num;
 	}
 
-	// Token: 0x0600AF03 RID: 44803 RVA: 0x004062D8 File Offset: 0x004044D8
-	private bool JKOFIOHPEAB(object CFKDMFFFPJK, object GOLMELKEAFO)
+	public bool BGBLKGFPHBE()
 	{
-		if (CFKDMFFFPJK == null || GOLMELKEAFO == null)
+		if (PhotonHandler.MBIFDLCKGKN)
 		{
-			return CFKDMFFFPJK != null || GOLMELKEAFO == null;
+			Debug.LogWarning("In Map Editor");
+			return false;
 		}
-		if (!CFKDMFFFPJK.Equals(GOLMELKEAFO))
+		IsUsingNameServer = true;
+		CloudRegion = CloudRegionCode.usw;
+		if (State == (ClientState)(-18))
 		{
-			if (CFKDMFFFPJK is Vector3)
-			{
-				Vector3 mpnmoonbmii = (Vector3)CFKDMFFFPJK;
-				Vector3 biccgcfnnlp = (Vector3)GOLMELKEAFO;
-				if (mpnmoonbmii.AlmostEquals(biccgcfnnlp, PhotonNetwork.precisionForVectorSynchronization))
-				{
-					return true;
-				}
-			}
-			else if (CFKDMFFFPJK is Vector2)
-			{
-				Vector2 mpnmoonbmii2 = (Vector2)CFKDMFFFPJK;
-				Vector2 biccgcfnnlp2 = (Vector2)GOLMELKEAFO;
-				if (mpnmoonbmii2.AlmostEquals(biccgcfnnlp2, PhotonNetwork.precisionForVectorSynchronization))
-				{
-					return false;
-				}
-			}
-			else if (CFKDMFFFPJK is Quaternion)
-			{
-				Quaternion mpnmoonbmii3 = (Quaternion)CFKDMFFFPJK;
-				Quaternion biccgcfnnlp3 = (Quaternion)GOLMELKEAFO;
-				if (mpnmoonbmii3.AlmostEquals(biccgcfnnlp3, PhotonNetwork.precisionForQuaternionSynchronization))
-				{
-					return true;
-				}
-			}
-			else if (CFKDMFFFPJK is float)
-			{
-				float mpnmoonbmii4 = (float)CFKDMFFFPJK;
-				float biccgcfnnlp4 = (float)GOLMELKEAFO;
-				if (mpnmoonbmii4.AlmostEquals(biccgcfnnlp4, PhotonNetwork.precisionForFloatSynchronization))
-				{
-					return false;
-				}
-			}
 			return true;
 		}
+		KHKMFIFGPCH(ServerConnection.GameServer);
+		PKNIJKPIKAF = (ServerConnection)6;
+		BLNBCGLIOHP = BDJGCHOLCJN();
+		KAOMEDGGMEM = "menutheme.27thfloor";
+		if (!base.Connect(BDJGCHOLCJN(), "_Value3", LLJDHHLHFME))
+		{
+			return true;
+		}
+		HNCIIMJABOJ((ClientState)101);
 		return false;
 	}
 
-	// Token: 0x17000249 RID: 585
-	// (get) Token: 0x0600AF04 RID: 44804 RVA: 0x0008AAF0 File Offset: 0x00088CF0
-	// (set) Token: 0x0600AF28 RID: 44840 RVA: 0x0008AC33 File Offset: 0x00088E33
-	public string MasterServerAddress { get; protected internal set; }
-
-	// Token: 0x0600AF05 RID: 44805 RVA: 0x004063D8 File Offset: 0x004045D8
-	protected internal bool FKFMPOMNGJE(int PHIGECOLKKN, bool PANGJAJJOLO)
+	protected internal void OMEPCMPKIJK(bool IJJEEIMFOHD)
 	{
-		bool flag = this.GHOANKKKIAI() != PHIGECOLKKN;
-		if (!flag || !this.mActors.ContainsKey(PHIGECOLKKN))
+		if (IDIKEJLLFFP.Count > 0)
 		{
-			return false;
+			Debug.LogWarning("It seems some instantiation is not completed, as instantiation data is used. You should make sure instantiations are paused when calling this method. Cleaning now, despite this.");
 		}
-		if (PANGJAJJOLO && !this.OIOPKLGHDGM(31, new ExitGames.Client.Photon.Hashtable
+		if (IJJEEIMFOHD)
 		{
+			HashSet<GameObject> hashSet = new HashSet<GameObject>();
+			foreach (PhotonView value in HFCMPEKPBAM.Values)
 			{
-				1,
-				PHIGECOLKKN
+				if (value.isRuntimeInstantiated)
+				{
+					hashSet.Add(value.gameObject);
+				}
 			}
-		}, true, null))
-		{
-			return false;
+			foreach (GameObject item in hashSet)
+			{
+				EFDAOHIDIIF(item, true);
+			}
 		}
-		this.hasSwitchedMC = true;
-		this.CurrentRoom.EJLAPIIGIMI = PHIGECOLKKN;
-		PhotonNetworkingMessage lelhnddckco = PhotonNetworkingMessage.OnLeftLobby;
-		object[] array = new object[0];
-		array[0] = this.NLCNFHENKAJ(PHIGECOLKKN);
-		BNGIGHBHPEH.SendMonoMessage(lelhnddckco, array);
-		return false;
+		IDIKEJLLFFP.Clear();
+		PhotonNetwork.FDMEIPEKMHC = 0;
+		PhotonNetwork.JIOIILCHMJL = 0;
 	}
 
-	// Token: 0x0600AF06 RID: 44806 RVA: 0x0008AA70 File Offset: 0x00088C70
-	private void GAJOHMJPDND(int HOBFECDCMIL)
+	private void CDNPLJILLFC(int JBHMEHIOGBE)
 	{
-		this.IDIKEJLLFFP.Remove(HOBFECDCMIL);
-	}
-
-	// Token: 0x0600AF07 RID: 44807 RVA: 0x0040646C File Offset: 0x0040466C
-	public void RunViewUpdate()
-	{
-		if (!PhotonNetwork.connected || PhotonNetwork.offlineMode || this.mActors == null)
+		bool flag = mMasterClientId == JBHMEHIOGBE;
+		bool flag2 = JBHMEHIOGBE > 0;
+		if (flag2 && !flag)
 		{
 			return;
 		}
-		if (this.mActors.Count <= 1)
+		int num;
+		if (mActors.Count <= 1)
+		{
+			num = LocalPlayer.ID;
+		}
+		else
+		{
+			num = int.MaxValue;
+			foreach (int key in mActors.Keys)
+			{
+				if (key < num && key != JBHMEHIOGBE)
+				{
+					num = key;
+				}
+			}
+		}
+		mMasterClientId = num;
+		if (flag2)
+		{
+			SendMonoMessage(PhotonNetworkingMessage.OnMasterClientSwitched, ICMGDHDNIJD(num));
+		}
+	}
+
+	[SpecialName]
+	internal void HNCIIMJABOJ(ClientState DPNHODJHGJL)
+	{
+		_003CCKEGJBJJPEC_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private static int BBEKGPLBBCA(PhotonPlayer[] NEJPNIGJLGP, int AIMBEFMGEFM)
+	{
+		if (NEJPNIGJLGP == null || NEJPNIGJLGP.Length == 0)
+		{
+			return -1;
+		}
+		int num = int.MaxValue;
+		foreach (PhotonPlayer photonPlayer in NEJPNIGJLGP)
+		{
+			if (photonPlayer.ID != AIMBEFMGEFM && photonPlayer.ID < num)
+			{
+				num = photonPlayer.ID;
+			}
+		}
+		return num;
+	}
+
+	internal ExitGames.Client.Photon.Hashtable JBBJFFKDHNO(string PPFBFGBJOHM, Vector3 JOPCODOJBHD, Quaternion LOMLCCLOIKN, byte PNFBEEBFMKC, int[] BJJMPIBPLEN, object[] NOJGGCLPPAM, bool BLOGDPLEMFH)
+	{
+		int num = BJJMPIBPLEN[0];
+		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable[(byte)0] = PPFBFGBJOHM;
+		if (JOPCODOJBHD != Vector3.zero)
+		{
+			hashtable[(byte)1] = JOPCODOJBHD;
+		}
+		if (LOMLCCLOIKN != Quaternion.identity)
+		{
+			hashtable[(byte)2] = LOMLCCLOIKN;
+		}
+		if (PNFBEEBFMKC != 0)
+		{
+			hashtable[(byte)3] = PNFBEEBFMKC;
+		}
+		if (BJJMPIBPLEN.Length > 1)
+		{
+			hashtable[(byte)4] = BJJMPIBPLEN;
+		}
+		if (NOJGGCLPPAM != null)
+		{
+			hashtable[(byte)5] = NOJGGCLPPAM;
+		}
+		if (PKCNHOKCLJH > 0)
+		{
+			hashtable[(byte)8] = PKCNHOKCLJH;
+		}
+		hashtable[(byte)6] = PhotonNetwork.ServerTimestamp;
+		hashtable[(byte)7] = num;
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = ((!BLOGDPLEMFH) ? EventCaching.AddToRoomCache : EventCaching.AddToRoomCacheGlobal);
+		OpRaiseEvent(202, hashtable, true, raiseEventOptions);
+		return hashtable;
+	}
+
+	public bool ReconnectToMaster()
+	{
+		if (AuthValues == null)
+		{
+			Debug.LogWarning("ReconnectToMaster() with AuthValues == null is not correct!");
+			AuthValues = new AuthenticationValues();
+		}
+		AuthValues.Token = JOKLGFENMKE;
+		return Connect(MasterServerAddress, ServerConnection.MasterServer);
+	}
+
+	private object[] MFKHMJBJDLE(object[] BJIEGLPODKG, object[] BGJHIKDFIMP)
+	{
+		if (BGJHIKDFIMP == null || BJIEGLPODKG == null || BJIEGLPODKG.Length != BGJHIKDFIMP.Length)
+		{
+			return BGJHIKDFIMP;
+		}
+		if (BGJHIKDFIMP.Length <= 3)
+		{
+			return null;
+		}
+		BJIEGLPODKG[1] = false;
+		int num = 0;
+		Queue<int> queue = null;
+		for (int i = 3; i < BGJHIKDFIMP.Length; i++)
+		{
+			object obj = BGJHIKDFIMP[i];
+			object gOLMELKEAFO = BJIEGLPODKG[i];
+			if (LFAPOBNFPPO(obj, gOLMELKEAFO))
+			{
+				num++;
+				BJIEGLPODKG[i] = null;
+				continue;
+			}
+			BJIEGLPODKG[i] = obj;
+			if (obj == null)
+			{
+				if (queue == null)
+				{
+					queue = new Queue<int>(BGJHIKDFIMP.Length);
+				}
+				queue.Enqueue(i);
+			}
+		}
+		if (num > 0)
+		{
+			if (num == BGJHIKDFIMP.Length - 3)
+			{
+				return null;
+			}
+			BJIEGLPODKG[1] = true;
+			if (queue != null)
+			{
+				BJIEGLPODKG[2] = queue.ToArray();
+			}
+		}
+		BJIEGLPODKG[0] = BGJHIKDFIMP[0];
+		return BJIEGLPODKG;
+	}
+
+	protected internal void AHIEJFMHFPG(bool IJJEEIMFOHD)
+	{
+		if (IDIKEJLLFFP.Count > 0)
+		{
+			Debug.LogWarning("_Saturation");
+		}
+		if (IJJEEIMFOHD)
+		{
+			HashSet<GameObject> hashSet = new HashSet<GameObject>();
+			foreach (PhotonView value in HFCMPEKPBAM.Values)
+			{
+				if (value.isRuntimeInstantiated)
+				{
+					hashSet.Add(value.gameObject);
+				}
+			}
+			foreach (GameObject item in hashSet)
+			{
+				EFDAOHIDIIF(item, true);
+			}
+		}
+		IDIKEJLLFFP.Clear();
+		PhotonNetwork.FDMEIPEKMHC = 1;
+		PhotonNetwork.JIOIILCHMJL = 0;
+	}
+
+	public void RunViewUpdate()
+	{
+		if (!PhotonNetwork.connected || PhotonNetwork.offlineMode || mActors == null || mActors.Count <= 1)
 		{
 			return;
 		}
 		int num = 0;
-		this.PCFOAMAODBD.Reset();
+		PCFOAMAODBD.Reset();
 		List<int> list = null;
-		foreach (KeyValuePair<int, PhotonView> keyValuePair in this.HFCMPEKPBAM)
+		Dictionary<int, PhotonView>.Enumerator enumerator = HFCMPEKPBAM.GetEnumerator();
+		while (enumerator.MoveNext())
 		{
-			PhotonView value = keyValuePair.Value;
+			PhotonView value = enumerator.Current.Value;
 			if (value == null)
 			{
-				string format = "PhotonView with ID {0} wasn't properly unregistered! Please report this case to developer@photonengine.com";
-				Dictionary<int, PhotonView>.Enumerator enumerator;
-				KeyValuePair<int, PhotonView> keyValuePair2 = enumerator.Current;
-				Debug.LogError(string.Format(format, keyValuePair2.Key));
+				Debug.LogError($"PhotonView with ID {enumerator.Current.Key} wasn't properly unregistered! Please report this case to developer@photonengine.com");
 				if (list == null)
 				{
 					list = new List<int>(4);
 				}
-				List<int> list2 = list;
-				KeyValuePair<int, PhotonView> keyValuePair3 = enumerator.Current;
-				list2.Add(keyValuePair3.Key);
+				list.Add(enumerator.Current.Key);
 			}
-			else if (value.synchronization != ViewSynchronization.Off && value.isMine && value.gameObject.activeInHierarchy)
+			else
 			{
-				if (!this.FFBGBLFBHOK.Contains(value.group))
+				if (value.synchronization == ViewSynchronization.Off || !value.isMine || !value.gameObject.activeInHierarchy || FFBGBLFBHOK.Contains(value.group))
 				{
-					object[] array = this.OAMPHAGPLEL(value);
-					if (array != null)
+					continue;
+				}
+				object[] array = OAMPHAGPLEL(value);
+				if (array == null)
+				{
+					continue;
+				}
+				if (value.synchronization == ViewSynchronization.ReliableDeltaCompressed || value.PBIDCPBMFKJ)
+				{
+					ExitGames.Client.Photon.Hashtable value2 = null;
+					if (!ECMNAOLPNBO.TryGetValue(value.group, out value2))
 					{
-						if (value.synchronization == ViewSynchronization.ReliableDeltaCompressed || value.PBIDCPBMFKJ)
-						{
-							ExitGames.Client.Photon.Hashtable hashtable = null;
-							if (!this.ECMNAOLPNBO.TryGetValue((int)value.group, out hashtable))
-							{
-								hashtable = new ExitGames.Client.Photon.Hashtable(BNGIGHBHPEH.ObjectsInOneUpdate);
-								this.ECMNAOLPNBO[(int)value.group] = hashtable;
-							}
-							hashtable.Add((byte)(hashtable.Count + 10), array);
-							num++;
-							if (hashtable.Count >= BNGIGHBHPEH.ObjectsInOneUpdate)
-							{
-								num -= hashtable.Count;
-								this.PCFOAMAODBD.InterestGroup = value.group;
-								hashtable[0] = PhotonNetwork.ServerTimestamp;
-								if (this.PKCNHOKCLJH >= 0)
-								{
-									hashtable[1] = this.PKCNHOKCLJH;
-								}
-								this.OpRaiseEvent(206, hashtable, true, this.PCFOAMAODBD);
-								hashtable.Clear();
-							}
-						}
-						else
-						{
-							ExitGames.Client.Photon.Hashtable hashtable2 = null;
-							if (!this.ABIMEMLJLPA.TryGetValue((int)value.group, out hashtable2))
-							{
-								hashtable2 = new ExitGames.Client.Photon.Hashtable(BNGIGHBHPEH.ObjectsInOneUpdate);
-								this.ABIMEMLJLPA[(int)value.group] = hashtable2;
-							}
-							hashtable2.Add((byte)(hashtable2.Count + 10), array);
-							num++;
-							if (hashtable2.Count >= BNGIGHBHPEH.ObjectsInOneUpdate)
-							{
-								num -= hashtable2.Count;
-								this.PCFOAMAODBD.InterestGroup = value.group;
-								hashtable2[0] = PhotonNetwork.ServerTimestamp;
-								if (this.PKCNHOKCLJH >= 0)
-								{
-									hashtable2[1] = this.PKCNHOKCLJH;
-								}
-								this.OpRaiseEvent(201, hashtable2, false, this.PCFOAMAODBD);
-								hashtable2.Clear();
-							}
-						}
+						value2 = new ExitGames.Client.Photon.Hashtable(ObjectsInOneUpdate);
+						ECMNAOLPNBO[value.group] = value2;
 					}
+					value2.Add((byte)(value2.Count + 10), array);
+					num++;
+					if (value2.Count >= ObjectsInOneUpdate)
+					{
+						num -= value2.Count;
+						PCFOAMAODBD.InterestGroup = value.group;
+						value2[(byte)0] = PhotonNetwork.ServerTimestamp;
+						if (PKCNHOKCLJH >= 0)
+						{
+							value2[(byte)1] = PKCNHOKCLJH;
+						}
+						OpRaiseEvent(206, value2, true, PCFOAMAODBD);
+						value2.Clear();
+					}
+					continue;
+				}
+				ExitGames.Client.Photon.Hashtable value3 = null;
+				if (!ABIMEMLJLPA.TryGetValue(value.group, out value3))
+				{
+					value3 = new ExitGames.Client.Photon.Hashtable(ObjectsInOneUpdate);
+					ABIMEMLJLPA[value.group] = value3;
+				}
+				value3.Add((byte)(value3.Count + 10), array);
+				num++;
+				if (value3.Count >= ObjectsInOneUpdate)
+				{
+					num -= value3.Count;
+					PCFOAMAODBD.InterestGroup = value.group;
+					value3[(byte)0] = PhotonNetwork.ServerTimestamp;
+					if (PKCNHOKCLJH >= 0)
+					{
+						value3[(byte)1] = PKCNHOKCLJH;
+					}
+					OpRaiseEvent(201, value3, false, PCFOAMAODBD);
+					value3.Clear();
 				}
 			}
 		}
 		if (list != null)
 		{
 			int i = 0;
-			int count = list.Count;
-			while (i < count)
+			for (int count = list.Count; i < count; i++)
 			{
-				this.HFCMPEKPBAM.Remove(list[i]);
-				i++;
+				HFCMPEKPBAM.Remove(list[i]);
 			}
 		}
 		if (num == 0)
 		{
 			return;
 		}
-		foreach (int num2 in this.ECMNAOLPNBO.Keys)
+		foreach (int key in ECMNAOLPNBO.Keys)
 		{
-			this.PCFOAMAODBD.InterestGroup = (byte)num2;
-			ExitGames.Client.Photon.Hashtable hashtable3 = this.ECMNAOLPNBO[num2];
-			if (hashtable3.Count != 0)
+			PCFOAMAODBD.InterestGroup = (byte)key;
+			ExitGames.Client.Photon.Hashtable hashtable = ECMNAOLPNBO[key];
+			if (hashtable.Count != 0)
 			{
-				hashtable3[0] = PhotonNetwork.ServerTimestamp;
-				if (this.PKCNHOKCLJH >= 0)
+				hashtable[(byte)0] = PhotonNetwork.ServerTimestamp;
+				if (PKCNHOKCLJH >= 0)
 				{
-					hashtable3[1] = this.PKCNHOKCLJH;
+					hashtable[(byte)1] = PKCNHOKCLJH;
 				}
-				this.OpRaiseEvent(206, hashtable3, true, this.PCFOAMAODBD);
-				hashtable3.Clear();
+				OpRaiseEvent(206, hashtable, true, PCFOAMAODBD);
+				hashtable.Clear();
 			}
 		}
-		foreach (int num3 in this.ABIMEMLJLPA.Keys)
+		foreach (int key2 in ABIMEMLJLPA.Keys)
 		{
-			this.PCFOAMAODBD.InterestGroup = (byte)num3;
-			ExitGames.Client.Photon.Hashtable hashtable4 = this.ABIMEMLJLPA[num3];
-			if (hashtable4.Count != 0)
+			PCFOAMAODBD.InterestGroup = (byte)key2;
+			ExitGames.Client.Photon.Hashtable hashtable2 = ABIMEMLJLPA[key2];
+			if (hashtable2.Count != 0)
 			{
-				hashtable4[0] = PhotonNetwork.ServerTimestamp;
-				if (this.PKCNHOKCLJH >= 0)
+				hashtable2[(byte)0] = PhotonNetwork.ServerTimestamp;
+				if (PKCNHOKCLJH >= 0)
 				{
-					hashtable4[1] = this.PKCNHOKCLJH;
+					hashtable2[(byte)1] = PKCNHOKCLJH;
 				}
-				this.OpRaiseEvent(201, hashtable4, false, this.PCFOAMAODBD);
-				hashtable4.Clear();
+				OpRaiseEvent(201, hashtable2, false, PCFOAMAODBD);
+				hashtable2.Clear();
 			}
 		}
 	}
 
-	// Token: 0x0600AF08 RID: 44808 RVA: 0x00406958 File Offset: 0x00404B58
-	private void ODLHBPMCMEB()
+	private void LLMNFGHNIND(int DIODBOKJKHM, int EJOIHHAHDLD, bool FEINGCNNFGM)
 	{
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[0] = -1;
-		this.OpRaiseEvent(116, hashtable, true, null);
-	}
-
-	// Token: 0x0600AF09 RID: 44809 RVA: 0x0008AAF8 File Offset: 0x00088CF8
-	private void FHILECJLHMM(int HOBFECDCMIL, object[] FLFEEAHDHDK)
-	{
-		this.IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
-	}
-
-	// Token: 0x0600AF0A RID: 44810 RVA: 0x0008AB07 File Offset: 0x00088D07
-	private void LNKHKBBMMIA(ServerConnection DPNHODJHGJL)
-	{
-		this.<NFFGNBHFDFM>k__BackingField = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AF0B RID: 44811 RVA: 0x0040698C File Offset: 0x00404B8C
-	public void OpCleanRpcBuffer(int CFLLNEOHNFD)
-	{
-		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
+		hashtable[(byte)7] = DIODBOKJKHM;
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = EventCaching.RemoveFromRoomCache;
+		raiseEventOptions.TargetActors = new int[1] { EJOIHHAHDLD };
+		RaiseEventOptions bPLHAPBMGGC = raiseEventOptions;
+		OpRaiseEvent(202, hashtable, true, bPLHAPBMGGC);
+		ExitGames.Client.Photon.Hashtable hashtable2 = new ExitGames.Client.Photon.Hashtable();
+		hashtable2[(byte)0] = DIODBOKJKHM;
+		bPLHAPBMGGC = null;
+		if (!FEINGCNNFGM)
 		{
-			CachingOption = EventCaching.RemoveFromRoomCache,
-			TargetActors = new int[]
-			{
-				CFLLNEOHNFD
-			}
-		};
-		this.OpRaiseEvent(200, null, true, bplhapbmggc);
-	}
-
-	// Token: 0x0600AF0C RID: 44812 RVA: 0x0008AB10 File Offset: 0x00088D10
-	protected internal string DCHLIDBMJPK()
-	{
-		return string.Format("PhotonView with ID ", PhotonNetwork.gameVersion, ".lastCheckpoint.time");
-	}
-
-	// Token: 0x0600AF0D RID: 44813 RVA: 0x004069C8 File Offset: 0x00404BC8
-	public void BEFPEELGJIE(StatusCode FIIDDDBNCLD)
-	{
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-		{
-			Debug.Log(string.Format("_ProjectionInv", FIIDDDBNCLD.ToString(), this.EBAJHBFJFCL()));
+			bPLHAPBMGGC = new RaiseEventOptions();
+			bPLHAPBMGGC.CachingOption = EventCaching.AddToRoomCacheGlobal;
+			Debug.Log("Destroying GO as global. ID: " + DIODBOKJKHM);
 		}
-		switch (FIIDDDBNCLD)
+		OpRaiseEvent(204, hashtable2, true, bPLHAPBMGGC);
+	}
+
+	private void LEMBPMNPHCK()
+	{
+		mPlayerListCopy = new PhotonPlayer[mActors.Count];
+		mActors.Values.CopyTo(mPlayerListCopy, 0);
+		List<PhotonPlayer> list = new List<PhotonPlayer>();
+		for (int i = 0; i < mPlayerListCopy.Length; i++)
 		{
-		case (StatusCode)(-111):
-		case (StatusCode)(-109):
-		case (StatusCode)(-108):
-		case (StatusCode)(-107):
-			if (this.IsInitialConnect)
+			PhotonPlayer photonPlayer = mPlayerListCopy[i];
+			if (!photonPlayer.IsLocal)
 			{
-				object[] array = new object[0];
-				array[1] = FIIDDDBNCLD;
-				array[1] = "_DistanceParams";
-				array[4] = base.ServerAddress;
-				array[3] = " ";
-				Debug.LogWarning(string.Concat(array));
-				this.IsInitialConnect = false;
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco = (PhotonNetworkingMessage)(-20);
-				object[] array2 = new object[0];
-				array2[1] = disconnectCause;
-				BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco, array2);
+				list.Add(photonPlayer);
+			}
+		}
+		mOtherPlayerListCopy = list.ToArray();
+	}
+
+	public void SetInterestGroups(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
+	{
+		if (JKOIGFLNNCN != null)
+		{
+			if (JKOIGFLNNCN.Length == 0)
+			{
+				CHIJNBAJIHE.Clear();
 			}
 			else
 			{
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnPhotonSerializeView, new object[]
+				foreach (byte b in JKOIGFLNNCN)
 				{
-					disconnectCause
-				});
-			}
-			if (this.IJHIEINKMFP() != null)
-			{
-				this.IJHIEINKMFP().NNIDGJOPJOI(null);
-			}
-			this.Disconnect();
-			return;
-		case (StatusCode)(-110):
-			if (this.IsInitialConnect)
-			{
-				if (!this.IDOAHFHJJJE)
-				{
-					object[] array3 = new object[3];
-					array3[1] = FIIDDDBNCLD;
-					array3[0] = "FileMenu";
-					array3[2] = base.ServerAddress;
-					array3[2] = "_ScreenResolution";
-					Debug.LogWarning(string.Concat(array3));
-					this.IsInitialConnect = true;
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					PhotonNetworkingMessage lelhnddckco2 = (PhotonNetworkingMessage)(-28);
-					object[] array4 = new object[1];
-					array4[1] = disconnectCause;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco2, array4);
+					if (b <= 0)
+					{
+						Debug.LogError("Error: PhotonNetwork.SetInterestGroups was called with an illegal group number: " + b + ". The group number should be at least 1.");
+					}
+					else if (CHIJNBAJIHE.Contains(b))
+					{
+						CHIJNBAJIHE.Remove(b);
+					}
 				}
+			}
+		}
+		if (OBKFHNACHIA != null)
+		{
+			if (OBKFHNACHIA.Length == 0)
+			{
+				for (byte b2 = 0; b2 < byte.MaxValue; b2 = (byte)(b2 + 1))
+				{
+					CHIJNBAJIHE.Add(b2);
+				}
+				CHIJNBAJIHE.Add(byte.MaxValue);
 			}
 			else
 			{
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco3 = (PhotonNetworkingMessage)(-94);
-				object[] array5 = new object[0];
-				array5[0] = disconnectCause;
-				BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco3, array5);
-			}
-			if (this.AuthValues != null)
-			{
-				this.IJHIEINKMFP().AIOHGAFEHJG(null);
-			}
-			this.Disconnect();
-			return;
-		default:
-			switch (FIIDDDBNCLD)
-			{
-			case (StatusCode)(-31):
-			case (StatusCode)(-30):
-			{
-				this.IsInitialConnect = true;
-				this.State = ClientState.PeerCreated;
-				if (this.AuthValues != null)
+				foreach (byte b3 in OBKFHNACHIA)
 				{
-					this.IJHIEINKMFP().AIOHGAFEHJG(null);
+					if (b3 <= 0)
+					{
+						Debug.LogError("Error: PhotonNetwork.SetInterestGroups was called with an illegal group number: " + b3 + ". The group number should be at least 1.");
+					}
+					else
+					{
+						CHIJNBAJIHE.Add(b3);
+					}
 				}
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				BNGIGHBHPEH.CLOLHKCFMJP((PhotonNetworkingMessage)(-29), new object[]
-				{
-					disconnectCause
-				});
+			}
+		}
+		OpChangeGroups(JKOIGFLNNCN, OBKFHNACHIA);
+	}
+
+	private void EGJBHECFAOH(int IJAEJMNLBLK, PhotonPlayer JHOEDACNNKK)
+	{
+		if (!mActors.ContainsKey(IJAEJMNLBLK))
+		{
+			mActors[IJAEJMNLBLK] = JHOEDACNNKK;
+			LEMBPMNPHCK();
+		}
+		else
+		{
+			Debug.LogError("Adding player twice: " + IJAEJMNLBLK);
+		}
+	}
+
+	protected internal bool LGPBHHOJPCA(int PHIGECOLKKN, bool PANGJAJJOLO)
+	{
+		if (mMasterClientId == PHIGECOLKKN || !mActors.ContainsKey(PHIGECOLKKN))
+		{
+			return false;
+		}
+		if (PANGJAJJOLO && !OpRaiseEvent(208, new ExitGames.Client.Photon.Hashtable { 
+		{
+			(byte)1,
+			PHIGECOLKKN
+		} }, true, null))
+		{
+			return false;
+		}
+		hasSwitchedMC = true;
+		CurrentRoom.EJLAPIIGIMI = PHIGECOLKKN;
+		SendMonoMessage(PhotonNetworkingMessage.OnMasterClientSwitched, ICMGDHDNIJD(PHIGECOLKKN));
+		return true;
+	}
+
+	public void DestroyAll(bool NOKCKEBHIFJ)
+	{
+		if (!NOKCKEBHIFJ)
+		{
+			OpRemoveCompleteCache();
+			EBNDKPFKPIJ();
+		}
+		OMEPCMPKIJK(true);
+	}
+
+	public void OnEvent(EventData ADNNKPOCCDJ)
+	{
+		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+		{
+			Debug.Log($"OnEvent: {ADNNKPOCCDJ.ToString()}");
+		}
+		int num = -1;
+		PhotonPlayer photonPlayer = null;
+		if (ADNNKPOCCDJ.Parameters.ContainsKey(254))
+		{
+			num = (int)ADNNKPOCCDJ[254];
+			photonPlayer = ICMGDHDNIJD(num);
+		}
+		switch (ADNNKPOCCDJ.Code)
+		{
+		case 209:
+		{
+			int[] array = (int[])ADNNKPOCCDJ.Parameters[245];
+			int num2 = array[0];
+			int num3 = array[1];
+			PhotonView photonView = PhotonView.Find(num2);
+			if (photonView == null)
+			{
+				Debug.LogWarning("Can't find PhotonView of incoming OwnershipRequest. ViewId not found: " + num2);
 				return;
 			}
-			case (StatusCode)(-29):
-				if (this.State == (ClientState)(-98))
+			if (PhotonNetwork.logLevel == PhotonLogLevel.Informational)
+			{
+				Debug.Log(string.Concat("Ev OwnershipRequest ", photonView.ownershipTransfer, ". ActorNr: ", num, " takes from: ", num3, ". local RequestedView.ownerId: ", photonView.ownerId, " isOwnerActive: ", photonView.isOwnerActive, ". MasterClient: ", mMasterClientId, ". This client's player: ", PhotonNetwork.player.ToStringFull()));
+			}
+			switch (photonView.ownershipTransfer)
+			{
+			case OwnershipOption.Fixed:
+				Debug.LogWarning("Ownership mode == fixed. Ignoring request.");
+				break;
+			case OwnershipOption.Takeover:
+				if (num3 == photonView.ownerId || (num3 == 0 && photonView.ownerId == mMasterClientId) || photonView.ownerId == 0)
 				{
+					photonView.OwnerShipWasTransfered = true;
+					int ownerId = photonView.ownerId;
+					PhotonPlayer photonPlayer2 = ICMGDHDNIJD(ownerId);
+					photonView.ownerId = num;
 					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
 					{
-						Debug.Log(".lastCheckpoint.powerupsScore");
+						Debug.LogWarning(string.Concat(photonView, " ownership transfered to: ", num));
 					}
-					this.LNKHKBBMMIA((ServerConnection)3);
-					if (this.IJHIEINKMFP() != null)
-					{
-						this.IJHIEINKMFP().NJJEJBOAEDG(null);
-					}
+					SendMonoMessage(PhotonNetworkingMessage.OnOwnershipTransfered, photonView, photonPlayer, photonPlayer2);
 				}
-				if (this.State == ClientState.Queued)
+				break;
+			case OwnershipOption.Request:
+				if ((num3 == PhotonNetwork.player.ID || PhotonNetwork.player.IsMasterClient) && (photonView.ownerId == PhotonNetwork.player.ID || (PhotonNetwork.player.IsMasterClient && !photonView.isOwnerActive)))
 				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)6)
-					{
-						Debug.Log("settings.arcsdestroydelay");
-					}
-					this.LNKHKBBMMIA(ServerConnection.GameServer);
-					this.State = ClientState.ConnectedToGameserver;
+					SendMonoMessage(PhotonNetworkingMessage.OnOwnershipRequest, photonView, photonPlayer);
 				}
-				if (this.EBAJHBFJFCL() == (ClientState)(-69))
+				break;
+			}
+			return;
+		}
+		case 210:
+		{
+			int[] array6 = (int[])ADNNKPOCCDJ.Parameters[245];
+			if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+			{
+				Debug.Log("Ev OwnershipTransfer. ViewID " + array6[0] + " to: " + array6[1] + " Time: " + Environment.TickCount % 1000);
+			}
+			int nADLIACHBNO = array6[0];
+			int num5 = array6[1];
+			PhotonView photonView2 = PhotonView.Find(nADLIACHBNO);
+			if (photonView2 != null)
+			{
+				int ownerId2 = photonView2.ownerId;
+				photonView2.OwnerShipWasTransfered = true;
+				photonView2.ownerId = num5;
+				SendMonoMessage(PhotonNetworkingMessage.OnOwnershipTransfered, photonView2, PhotonPlayer.Find(num5), PhotonPlayer.Find(ownerId2));
+			}
+			return;
+		}
+		case 230:
+		{
+			mGameList = new Dictionary<string, RoomInfo>();
+			ExitGames.Client.Photon.Hashtable hashtable = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[222];
+			foreach (object key in hashtable.Keys)
+			{
+				string text = (string)key;
+				mGameList[text] = new RoomInfo(text, (ExitGames.Client.Photon.Hashtable)hashtable[key]);
+			}
+			mGameListCopy = new RoomInfo[mGameList.Count];
+			mGameList.Values.CopyTo(mGameListCopy, 0);
+			SendMonoMessage(PhotonNetworkingMessage.OnReceivedRoomListUpdate);
+			return;
+		}
+		case 229:
+		{
+			ExitGames.Client.Photon.Hashtable hashtable4 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[222];
+			foreach (object key2 in hashtable4.Keys)
+			{
+				string text2 = (string)key2;
+				RoomInfo roomInfo = new RoomInfo(text2, (ExitGames.Client.Photon.Hashtable)hashtable4[key2]);
+				if (roomInfo.removedFromList)
 				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-					{
-						Debug.Log("_TimeX");
-					}
-					this.EHALCLFLGJF = ServerConnection.GameServer;
-					this.JNPKDLEMJFN(ClientState.QueuedComingFromGameserver);
-					if (this.IsInitialConnect)
-					{
-						this.IsInitialConnect = false;
-						BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnLeftRoom, new object[1]);
-					}
-				}
-				if (base.TransportProtocol != (ConnectionProtocol)6)
-				{
-					if (this.IGDBHCGGHFF() == (ServerConnection)8 || this.AuthMode == AuthModeOption.Auth)
-					{
-						base.EstablishEncryption();
-					}
-					return;
-				}
-				if (this.DebugOut == (DebugLevel)8)
-				{
-					Debug.Log("[PlayerBase] Starting game from: ");
-				}
-				goto IL_1AC;
-			case (StatusCode)(-28):
-				this.DMCPHGDNGDB = false;
-				this.POHIMACBDGL = true;
-				if (this.NJIFBFEHJKH() == ServerConnection.MasterServer)
-				{
-					this.BOJKDNJHBNG();
-				}
-				if (this.IGDBHCGGHFF() == ServerConnection.MasterServer)
-				{
-					this.ONELBBFGFOM();
-				}
-				if (this.EBAJHBFJFCL() == ClientState.PeerCreated)
-				{
-					if (this.Connect(this.GameServerAddress, ServerConnection.MasterServer))
-					{
-						this.JNPKDLEMJFN(ClientState.Joining);
-					}
-				}
-				else if (this.State == (ClientState)(-69) || this.State == (ClientState)122)
-				{
-					this.KHKMFIFGPCH(ServerConnection.MasterServer);
-					if (this.Connect(this.MasterServerAddress, ServerConnection.GameServer))
-					{
-						this.State = ClientState.Leaving;
-					}
+					mGameList.Remove(text2);
 				}
 				else
 				{
-					if (this.IDOAHFHJJJE)
-					{
-						return;
-					}
-					if (this.IJHIEINKMFP() != null)
-					{
-						this.IJHIEINKMFP().NJJEJBOAEDG(null);
-					}
-					this.IsInitialConnect = false;
-					this.State = ClientState.Uninitialized;
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnCreatedRoom, new object[0]);
+					mGameList[text2] = roomInfo;
 				}
-				return;
-			case (StatusCode)(-27):
-				if (this.IsInitialConnect)
-				{
-					Debug.LogError("AvatarImage" + base.ServerAddress + ",");
-					if (base.ServerAddress == null || base.ServerAddress.StartsWith("Moved event"))
-					{
-						Debug.LogWarning("_Value6");
-						if (base.ServerAddress == this.GameServerAddress)
-						{
-							Debug.LogWarning("bad");
-						}
-					}
-					this.State = ClientState.Uninitialized;
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					this.IsInitialConnect = true;
-					PhotonNetworkingMessage lelhnddckco4 = (PhotonNetworkingMessage)125;
-					object[] array6 = new object[0];
-					array6[1] = disconnectCause;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco4, array6);
-				}
-				else
-				{
-					this.JNPKDLEMJFN(ClientState.Uninitialized);
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					PhotonNetworkingMessage lelhnddckco5 = (PhotonNetworkingMessage)49;
-					object[] array7 = new object[0];
-					array7[1] = disconnectCause;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco5, array7);
-				}
-				this.Disconnect();
-				return;
-			case (StatusCode)(-23):
-				return;
 			}
-			Debug.LogError("SetScale" + FIIDDDBNCLD);
-			return;
-		case (StatusCode)(-102):
-			break;
-		case (StatusCode)(-101):
-		{
-			Debug.LogError("_Value2" + FIIDDDBNCLD + "Tab2Content");
-			AuthenticationValues authenticationValues;
-			if ((authenticationValues = this.IJHIEINKMFP()) == null)
-			{
-				AuthenticationValues authenticationValues2 = new AuthenticationValues();
-				authenticationValues2.JCECBNKFODG(this.PlayerName);
-				authenticationValues = authenticationValues2;
-			}
-			AuthenticationValues gpdfhodmoij = authenticationValues;
-			this.BCCNNNLOADO(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CloudRegion.ToString(), this.OGLFGPKHEHH);
+			mGameListCopy = new RoomInfo[mGameList.Count];
+			mGameList.Values.CopyTo(mGameListCopy, 0);
+			SendMonoMessage(PhotonNetworkingMessage.OnReceivedRoomListUpdate);
 			return;
 		}
-		}
-		IL_1AC:
-		this.IDOAHFHJJJE = false;
-		if (this.IGDBHCGGHFF() == (ServerConnection)5)
+		case 226:
+			PlayersInRoomsCount = (int)ADNNKPOCCDJ[229];
+			PlayersOnMasterCount = (int)ADNNKPOCCDJ[227];
+			RoomsCount = (int)ADNNKPOCCDJ[228];
+			return;
+		case byte.MaxValue:
 		{
-			this.State = (ClientState)122;
-			if (!this.DMCPHGDNGDB && this.CloudRegion == CloudRegionCode.cae)
+			bool flag = false;
+			ExitGames.Client.Photon.Hashtable eAOBCIPOENN = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[249];
+			if (photonPlayer == null)
 			{
-				this.HFBOBEKKBHK(this.KAIBLIKEDHM);
+				bool nIGBAPGIKDF = LocalPlayer.ID == num;
+				EGJBHECFAOH(num, new PhotonPlayer(nIGBAPGIKDF, num, eAOBCIPOENN));
+				PAOJLLAACDE();
 			}
-		}
-		if (this.NJIFBFEHJKH() != ServerConnection.MasterServer && (this.AuthMode == AuthModeOption.Auth || this.AuthMode == AuthModeOption.Auth))
-		{
-			object[] array8 = new object[7];
-			array8[1] = "Unable to get a reward! Try again?";
-			array8[0] = this.DMCPHGDNGDB;
-			array8[6] = "EventSystem";
-			array8[2] = this.AuthMode;
-			Debug.Log(string.Concat(array8));
-		}
-		else if (!this.DMCPHGDNGDB && (!this.IsUsingNameServer || this.CAFLFPLLMNC() != CloudRegionCode.jp))
-		{
-			this.DMCPHGDNGDB = this.GHBFBICEHBK();
-			if (this.DMCPHGDNGDB)
+			else
 			{
-				this.JNPKDLEMJFN((ClientState)111);
+				flag = photonPlayer.IsInactive;
+				photonPlayer.NPOPPIMCDMN(eAOBCIPOENN);
+				photonPlayer.IsInactive = false;
+			}
+			if (num == LocalPlayer.ID)
+			{
+				int[] hOMAECIGJEJ = (int[])ADNNKPOCCDJ[252];
+				ANEENOJMDOJ(hOMAECIGJEJ);
+				if (ELNKFMHCMBO == JoinType.JoinOrCreateRoom && LocalPlayer.ID == 1)
+				{
+					SendMonoMessage(PhotonNetworkingMessage.OnCreatedRoom);
+				}
+				SendMonoMessage(PhotonNetworkingMessage.OnJoinedRoom);
+			}
+			else
+			{
+				SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerConnected, mActors[num]);
+				if (flag)
+				{
+					SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerActivityChanged, mActors[num]);
+				}
+			}
+			return;
+		}
+		case 254:
+			MJMAJHJLBPJ(num, ADNNKPOCCDJ);
+			return;
+		case 253:
+		{
+			int num4 = (int)ADNNKPOCCDJ[253];
+			ExitGames.Client.Photon.Hashtable mJJMNIDHDEC = null;
+			ExitGames.Client.Photon.Hashtable fAOLPBLCKFJ = null;
+			if (num4 == 0)
+			{
+				mJJMNIDHDEC = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[251];
+			}
+			else
+			{
+				fAOLPBLCKFJ = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[251];
+			}
+			EDMCCPDDDCC(mJJMNIDHDEC, fAOLPBLCKFJ, num4);
+			return;
+		}
+		case 200:
+			MBCHEFNAJFH(ADNNKPOCCDJ[245] as ExitGames.Client.Photon.Hashtable, photonPlayer.ID);
+			return;
+		case 201:
+		case 206:
+		{
+			ExitGames.Client.Photon.Hashtable hashtable3 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245];
+			int bFELEJPLADE = (int)hashtable3[(byte)0];
+			short dKCPAJGKHNI = -1;
+			byte b = 10;
+			int num7 = 1;
+			if (hashtable3.ContainsKey((byte)1))
+			{
+				dKCPAJGKHNI = (short)hashtable3[(byte)1];
+				num7 = 2;
+			}
+			byte b2 = b;
+			while (b2 - b < hashtable3.Count - num7)
+			{
+				CKEAHPJAGOO(hashtable3[b2] as object[], photonPlayer, bFELEJPLADE, dKCPAJGKHNI);
+				b2 = (byte)(b2 + 1);
+			}
+			return;
+		}
+		case 202:
+			JFOLGKKLFJP((ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245], photonPlayer, null);
+			return;
+		case 203:
+			if (photonPlayer == null || !photonPlayer.IsMasterClient)
+			{
+				Debug.LogError(string.Concat("Error: Someone else(", photonPlayer, ") then the masterserver requests a disconnect!"));
+			}
+			else
+			{
+				PhotonNetwork.LeaveRoom();
+			}
+			return;
+		case 207:
+		{
+			ExitGames.Client.Photon.Hashtable hashtable2 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245];
+			int num8 = (int)hashtable2[(byte)0];
+			if (num8 >= 0)
+			{
+				DestroyPlayerObjects(num8, true);
+				return;
+			}
+			if ((int)DebugOut >= 3)
+			{
+				Debug.Log("Ev DestroyAll! By PlayerId: " + num);
+			}
+			DestroyAll(true);
+			return;
+		}
+		case 204:
+		{
+			ExitGames.Client.Photon.Hashtable hashtable2 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245];
+			int num6 = (int)hashtable2[(byte)0];
+			PhotonView value = null;
+			if (HFCMPEKPBAM.TryGetValue(num6, out value))
+			{
+				EFDAOHIDIIF(value.gameObject, true);
+			}
+			else if ((int)DebugOut >= 1)
+			{
+				Debug.LogError("Ev Destroy Failed. Could not find PhotonView with instantiationId " + num6 + ". Sent by actorNr: " + num);
+			}
+			return;
+		}
+		case 208:
+		{
+			ExitGames.Client.Photon.Hashtable hashtable2 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245];
+			int pHIGECOLKKN = (int)hashtable2[(byte)1];
+			LGPBHHOJPCA(pHIGECOLKKN, false);
+			return;
+		}
+		case 224:
+		{
+			string[] array2 = ADNNKPOCCDJ[213] as string[];
+			byte[] array3 = ADNNKPOCCDJ[212] as byte[];
+			int[] array4 = ADNNKPOCCDJ[229] as int[];
+			int[] array5 = ADNNKPOCCDJ[228] as int[];
+			HOBLKOKPJOE.Clear();
+			for (int i = 0; i < array2.Length; i++)
+			{
+				TypedLobbyInfo typedLobbyInfo = new TypedLobbyInfo();
+				typedLobbyInfo.Name = array2[i];
+				typedLobbyInfo.Type = (LobbyType)array3[i];
+				typedLobbyInfo.PlayerCount = array4[i];
+				typedLobbyInfo.RoomCount = array5[i];
+				HOBLKOKPJOE.Add(typedLobbyInfo);
+			}
+			SendMonoMessage(PhotonNetworkingMessage.OnLobbyStatisticsUpdate);
+			return;
+		}
+		case 251:
+			if (PhotonNetwork.OnEventCall != null)
+			{
+				object fKODMINIAEC = ADNNKPOCCDJ[218];
+				PhotonNetwork.OnEventCall(ADNNKPOCCDJ.Code, fKODMINIAEC, num);
+			}
+			else
+			{
+				Debug.LogWarning("Warning: Unhandled Event ErrorInfo (251). Set PhotonNetwork.OnEventCall to the method PUN should call for this event.");
+			}
+			return;
+		case 223:
+			if (AuthValues == null)
+			{
+				AuthValues = new AuthenticationValues();
+			}
+			AuthValues.Token = ADNNKPOCCDJ[221] as string;
+			JOKLGFENMKE = AuthValues.Token;
+			return;
+		}
+		if (ADNNKPOCCDJ.Code < 200)
+		{
+			if (PhotonNetwork.OnEventCall != null)
+			{
+				object fKODMINIAEC2 = ADNNKPOCCDJ[245];
+				PhotonNetwork.OnEventCall(ADNNKPOCCDJ.Code, fKODMINIAEC2, num);
+			}
+			else
+			{
+				Debug.LogWarning(string.Concat("Warning: Unhandled event ", ADNNKPOCCDJ, ". Set PhotonNetwork.OnEventCall."));
 			}
 		}
 	}
 
-	// Token: 0x0600AF0E RID: 44814 RVA: 0x0040701C File Offset: 0x0040521C
-	internal GameObject GMINENGCFOE(ExitGames.Client.Photon.Hashtable NNNJPMDHPHH, PhotonPlayer OGKJFFANGMC, GameObject HHLFBCNFLAO)
+	private bool GDEBGIBOKCD()
 	{
-		string text = (string)NNNJPMDHPHH[0];
-		int amciaillaib = (int)NNNJPMDHPHH[8];
-		int num = (int)NNNJPMDHPHH[1];
-		Vector3 vector;
-		if (NNNJPMDHPHH.ContainsKey(1))
+		AuthenticationValues authenticationValues = AuthValues;
+		if (authenticationValues == null)
 		{
-			vector = (Vector3)NNNJPMDHPHH[1];
+			AuthenticationValues authenticationValues2 = new AuthenticationValues();
+			authenticationValues2.PBCBCAGKCJG(PlayerName);
+			authenticationValues = authenticationValues2;
+		}
+		AuthenticationValues gPDFHODMOIJ = authenticationValues;
+		if (AuthMode == AuthModeOption.Auth)
+		{
+			return LBLCMEBOENM(KAIBLIKEDHM, EOCFDCJNAGM, gPDFHODMOIJ, CloudRegion.ToString(), OGLFGPKHEHH);
+		}
+		return OGKPIFFLGPN(KAIBLIKEDHM, EOCFDCJNAGM, gPDFHODMOIJ, CloudRegion.ToString(), EncryptionMode, PhotonNetwork.PhotonServerSettings.Protocol);
+	}
+
+	public override void Disconnect()
+	{
+		if (base.PeerState == PeerStateValue.Disconnected)
+		{
+			if (!PhotonHandler.MBIFDLCKGKN)
+			{
+				Debug.LogWarning($"Can't execute Disconnect() while not connected. Nothing changed. State: {State}");
+			}
 		}
 		else
 		{
-			vector = Vector3.zero;
-		}
-		Quaternion quaternion = Quaternion.identity;
-		if (NNNJPMDHPHH.ContainsKey(7))
-		{
-			quaternion = (Quaternion)NNNJPMDHPHH[0];
-		}
-		byte b = 1;
-		if (NNNJPMDHPHH.ContainsKey(1))
-		{
-			b = (byte)NNNJPMDHPHH[3];
-		}
-		short num2 = 0;
-		if (NNNJPMDHPHH.ContainsKey(8))
-		{
-			num2 = (short)NNNJPMDHPHH[7];
-		}
-		int[] array;
-		if (NNNJPMDHPHH.ContainsKey(0))
-		{
-			array = (int[])NNNJPMDHPHH[5];
-		}
-		else
-		{
-			int[] array2 = new int[1];
-			array2[1] = num;
-			array = array2;
-		}
-		object[] array3;
-		if (NNNJPMDHPHH.ContainsKey(1))
-		{
-			array3 = (object[])NNNJPMDHPHH[5];
-		}
-		else
-		{
-			array3 = null;
-		}
-		if (b != 0 && !this.CHIJNBAJIHE.Contains(b))
-		{
-			return null;
-		}
-		if (this.EGNHNBODKHP != null)
-		{
-			GameObject gameObject = this.EGNHNBODKHP.Instantiate(text, vector, quaternion);
-			PhotonView[] photonViewsInChildren = gameObject.GetPhotonViewsInChildren();
-			if (photonViewsInChildren.Length != array.Length)
-			{
-				throw new Exception("CameraFilterPack/Blend2Camera_HardLight");
-			}
-			for (int i = 0; i < photonViewsInChildren.Length; i += 0)
-			{
-				photonViewsInChildren[i].GEKLBLEBECG = true;
-				photonViewsInChildren[i].viewID = 1;
-				photonViewsInChildren[i].prefix = (int)num2;
-				photonViewsInChildren[i].instantiationId = num;
-				photonViewsInChildren[i].isRuntimeInstantiated = false;
-				photonViewsInChildren[i].NJDPOGADFJN = array3;
-				photonViewsInChildren[i].GEKLBLEBECG = false;
-				photonViewsInChildren[i].viewID = array[i];
-			}
-			gameObject.SendMessage(BNGIGHBHPEH.BJJEABNGKBF, new PhotonMessageInfo(OGKJFFANGMC, amciaillaib, null), SendMessageOptions.RequireReceiver);
-			return gameObject;
-		}
-		else
-		{
-			if (HHLFBCNFLAO == null)
-			{
-				if (!BNGIGHBHPEH.UsePrefabCache || !BNGIGHBHPEH.PrefabCache.TryGetValue(text, out HHLFBCNFLAO))
-				{
-					HHLFBCNFLAO = (GameObject)Resources.Load(text, typeof(GameObject));
-					if (BNGIGHBHPEH.UsePrefabCache)
-					{
-						BNGIGHBHPEH.PrefabCache.Add(text, HHLFBCNFLAO);
-					}
-				}
-				if (HHLFBCNFLAO == null)
-				{
-					Debug.LogError("#tryagain" + text + "_TimeX");
-					return null;
-				}
-			}
-			PhotonView[] photonViewsInChildren2 = HHLFBCNFLAO.GetPhotonViewsInChildren();
-			if (photonViewsInChildren2.Length != array.Length)
-			{
-				throw new Exception("Using constructor for new PingNativeDynamic()");
-			}
-			for (int j = 1; j < array.Length; j++)
-			{
-				photonViewsInChildren2[j].CHLIDEOBECE(array[j]);
-				photonViewsInChildren2[j].BIMKLKFMOCB((int)num2);
-				photonViewsInChildren2[j].instantiationId = num;
-				photonViewsInChildren2[j].isRuntimeInstantiated = false;
-			}
-			this.MLHNKIDCCHM(num, array3);
-			GameObject gameObject2 = UnityEngine.Object.Instantiate<GameObject>(HHLFBCNFLAO, vector, quaternion);
-			for (int k = 1; k < array.Length; k++)
-			{
-				photonViewsInChildren2[k].viewID = 0;
-				photonViewsInChildren2[k].prefix = -1;
-				photonViewsInChildren2[k].prefixBackup = -1;
-				photonViewsInChildren2[k].instantiationId = -1;
-				photonViewsInChildren2[k].isRuntimeInstantiated = true;
-			}
-			this.GAJOHMJPDND(num);
-			gameObject2.SendMessage(BNGIGHBHPEH.BJJEABNGKBF, new PhotonMessageInfo(OGKJFFANGMC, amciaillaib, null), SendMessageOptions.DontRequireReceiver);
-			return gameObject2;
+			State = ClientState.Disconnecting;
+			base.Disconnect();
 		}
 	}
 
-	// Token: 0x0600AF0F RID: 44815 RVA: 0x004073BC File Offset: 0x004055BC
+	public override bool OpFindFriends(string[] MIMEHFLKIIG)
+	{
+		if (POHIMACBDGL)
+		{
+			return false;
+		}
+		BEIPFKHGHPC = MIMEHFLKIIG;
+		POHIMACBDGL = true;
+		return base.OpFindFriends(MIMEHFLKIIG);
+	}
+
+	public void RemoveRPCsInGroup(int PNFBEEBFMKC)
+	{
+		foreach (PhotonView value in HFCMPEKPBAM.Values)
+		{
+			if (value.group == PNFBEEBFMKC)
+			{
+				CleanRpcBufferIfMine(value);
+			}
+		}
+	}
+
+	private void PAOJLLAACDE()
+	{
+		foreach (PhotonView value in HFCMPEKPBAM.Values)
+		{
+			value.EOENPICKCCO = null;
+		}
+	}
+
+	public void FAPFPBEBONM(PhotonView LCJKMJCFDGE)
+	{
+		if (!Application.isPlaying)
+		{
+			HFCMPEKPBAM = new Dictionary<int, PhotonView>();
+			return;
+		}
+		if (LCJKMJCFDGE.viewID == 0)
+		{
+			Debug.Log("_Distortion" + LCJKMJCFDGE);
+			return;
+		}
+		PhotonView value = null;
+		if (HFCMPEKPBAM.TryGetValue(LCJKMJCFDGE.PLMCHLCIABC(), out value))
+		{
+			if (!(LCJKMJCFDGE != value))
+			{
+				return;
+			}
+			Debug.LogError(string.Format("  |  Events Count: ", LCJKMJCFDGE.viewID, LCJKMJCFDGE, value));
+			EFDAOHIDIIF(value.gameObject, false);
+		}
+		HFCMPEKPBAM.Add(LCJKMJCFDGE.PLMCHLCIABC(), LCJKMJCFDGE);
+		if (PhotonNetwork.logLevel >= (PhotonLogLevel)5)
+		{
+			Debug.Log("_Value4" + LCJKMJCFDGE.viewID);
+		}
+	}
+
+	public void OpRemoveCompleteCache()
+	{
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = EventCaching.RemoveFromRoomCache;
+		raiseEventOptions.Receivers = ReceiverGroup.MasterClient;
+		RaiseEventOptions bPLHAPBMGGC = raiseEventOptions;
+		OpRaiseEvent(0, null, true, bPLHAPBMGGC);
+	}
+
+	protected internal void KHKMFIFGPCH(ServerConnection NKGHPPHEGCO)
+	{
+		ConnectionProtocol connectionProtocol = base.TransportProtocol;
+		if (AuthMode == AuthModeOption.AuthOnceWss)
+		{
+			if (NKGHPPHEGCO != ServerConnection.NameServer)
+			{
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
+				{
+					Debug.LogWarning("Using PhotonServerSettings.Protocol when leaving the NameServer (AuthMode is AuthOnceWss): " + PhotonNetwork.PhotonServerSettings.Protocol);
+				}
+				connectionProtocol = PhotonNetwork.PhotonServerSettings.Protocol;
+			}
+			else
+			{
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
+				{
+					Debug.LogWarning("Using WebSocket to connect NameServer (AuthMode is AuthOnceWss).");
+				}
+				connectionProtocol = ConnectionProtocol.WebSocketSecure;
+			}
+		}
+		Type type = null;
+		type = Type.GetType("ExitGames.Client.Photon.SocketWebTcp, Assembly-CSharp", false);
+		if (type == null)
+		{
+			type = Type.GetType("ExitGames.Client.Photon.SocketWebTcp, Assembly-CSharp-firstpass", false);
+		}
+		if (type != null)
+		{
+			SocketImplementationConfig[ConnectionProtocol.WebSocket] = type;
+			SocketImplementationConfig[ConnectionProtocol.WebSocketSecure] = type;
+		}
+		if (PhotonHandler.LEILCLLNGGH == null)
+		{
+			PhotonHandler.LEILCLLNGGH = typeof(PingMono);
+		}
+		if (base.TransportProtocol != connectionProtocol)
+		{
+			if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
+			{
+				Debug.LogWarning(string.Concat("Protocol switch from: ", base.TransportProtocol, " to: ", connectionProtocol, "."));
+			}
+			base.TransportProtocol = connectionProtocol;
+		}
+	}
+
+	public void SetSendingEnabled(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
+	{
+		if (JKOIGFLNNCN != null)
+		{
+			foreach (byte item in JKOIGFLNNCN)
+			{
+				FFBGBLFBHOK.Add(item);
+			}
+		}
+		if (OBKFHNACHIA != null)
+		{
+			foreach (byte item2 in OBKFHNACHIA)
+			{
+				FFBGBLFBHOK.Remove(item2);
+			}
+		}
+	}
+
+	[SpecialName]
+	private void KOBHAFEHLIE(ServerConnection DPNHODJHGJL)
+	{
+		_003CNFFGNBHFDFM_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private bool NGKMDAKKIOB(ParameterInfo[] LFONMECHEJD, Type[] HAKMJIHLGNI)
+	{
+		if (LFONMECHEJD.Length < HAKMJIHLGNI.Length)
+		{
+			return false;
+		}
+		for (int i = 1; i < HAKMJIHLGNI.Length; i++)
+		{
+			Type parameterType = LFONMECHEJD[i].ParameterType;
+			if (HAKMJIHLGNI[i] != null && !parameterType.IsAssignableFrom(HAKMJIHLGNI[i]) && (!parameterType.IsEnum || !Enum.GetUnderlyingType(parameterType).IsAssignableFrom(HAKMJIHLGNI[i])))
+			{
+				return false;
+			}
+		}
+		return false;
+	}
+
+	private void DGEJLOAMLHI(int HOBFECDCMIL, object[] FLFEEAHDHDK)
+	{
+		IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
+	}
+
+	protected internal void EPGIIBMOHEG(int NADLIACHBNO, int MLBADICEKFF)
+	{
+		Debug.Log("RequestOwnership(): " + NADLIACHBNO + " from: " + MLBADICEKFF + " Time: " + Environment.TickCount % 1000);
+		OpRaiseEvent(209, new int[2] { NADLIACHBNO, MLBADICEKFF }, true, new RaiseEventOptions
+		{
+			Receivers = ReceiverGroup.All
+		});
+	}
+
 	protected internal void DKACLKKBLBO(object EPDDBAPELGI)
 	{
 		if (!PhotonNetwork.automaticallySyncScene || !PhotonNetwork.isMasterClient || PhotonNetwork.room == null)
@@ -1472,11 +1653,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		if (PhotonNetwork.room.CustomProperties.ContainsKey("curScn"))
 		{
 			object obj = PhotonNetwork.room.CustomProperties["curScn"];
-			if (obj is int && SceneManagerHelper.ActiveSceneBuildIndex == (int)obj)
-			{
-				return;
-			}
-			if (obj is string && SceneManagerHelper.ActiveSceneName != null && SceneManagerHelper.ActiveSceneName.Equals((string)obj))
+			if ((obj is int && SceneManagerHelper.ActiveSceneBuildIndex == (int)obj) || (obj is string && SceneManagerHelper.ActiveSceneName != null && SceneManagerHelper.ActiveSceneName.Equals((string)obj)))
 			{
 				return;
 			}
@@ -1494,136 +1671,592 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		{
 			Debug.LogError("Parameter levelId must be int or string!");
 		}
-		PhotonNetwork.room.SetCustomProperties(hashtable, null, false);
-		this.SendOutgoingCommands();
+		PhotonNetwork.room.SetCustomProperties(hashtable);
+		SendOutgoingCommands();
 	}
 
-	// Token: 0x0600AF10 RID: 44816 RVA: 0x004074DC File Offset: 0x004056DC
-	public void OpRemoveCompleteCache()
+	public void DestroyPlayerObjects(int PHIGECOLKKN, bool NOKCKEBHIFJ)
 	{
-		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
+		if (PHIGECOLKKN <= 0)
 		{
-			CachingOption = EventCaching.RemoveFromRoomCache,
-			Receivers = ReceiverGroup.MasterClient
-		};
-		this.OpRaiseEvent(0, null, true, bplhapbmggc);
-	}
-
-	// Token: 0x0600AF11 RID: 44817 RVA: 0x0008AAF8 File Offset: 0x00088CF8
-	private void MIEGGLGIPBJ(int HOBFECDCMIL, object[] FLFEEAHDHDK)
-	{
-		this.IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
-	}
-
-	// Token: 0x0600AF12 RID: 44818 RVA: 0x0040750C File Offset: 0x0040570C
-	public BNGIGHBHPEH(string OBCEIJGMKGB, ConnectionProtocol FDGOINDINNH) : base(FDGOINDINNH)
-	{
-		base.Listener = this;
-		base.LimitOfUnreliableCommands = 40;
-		this.lobby = TypedLobby.Default;
-		this.PlayerName = OBCEIJGMKGB;
-		this.LocalPlayer = new PhotonPlayer(true, -1, this.OBCEIJGMKGB);
-		this.EGJBHECFAOH(this.LocalPlayer.ID, this.LocalPlayer);
-		this.CPLBCMDIGNB = new Dictionary<string, int>(PhotonNetwork.PhotonServerSettings.RpcList.Count);
-		for (int i = 0; i < PhotonNetwork.PhotonServerSettings.RpcList.Count; i++)
-		{
-			string key = PhotonNetwork.PhotonServerSettings.RpcList[i];
-			this.CPLBCMDIGNB[key] = i;
+			Debug.LogError("Failed to Destroy objects of playerId: " + PHIGECOLKKN);
+			return;
 		}
-		this.State = ClientState.PeerCreated;
-	}
-
-	// Token: 0x0600AF13 RID: 44819 RVA: 0x0040768C File Offset: 0x0040588C
-	private void NGAEPLGAGAL(int KHACEEGCPEP)
-	{
-		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
+		if (!NOKCKEBHIFJ)
 		{
-			CachingOption = EventCaching.RemoveFromRoomCache,
-			TargetActors = new int[]
+			NGAEPLGAGAL(PHIGECOLKKN);
+			OpCleanRpcBuffer(PHIGECOLKKN);
+			KCNBFALAJMD(PHIGECOLKKN);
+		}
+		HashSet<GameObject> hashSet = new HashSet<GameObject>();
+		foreach (PhotonView value in HFCMPEKPBAM.Values)
+		{
+			if (value != null && value.CreatorActorNr == PHIGECOLKKN)
 			{
-				KHACEEGCPEP
+				hashSet.Add(value.gameObject);
 			}
-		};
-		this.OpRaiseEvent(202, null, true, bplhapbmggc);
-	}
-
-	// Token: 0x17000255 RID: 597
-	// (get) Token: 0x0600AF14 RID: 44820 RVA: 0x0008AB26 File Offset: 0x00088D26
-	protected internal int LALFOLKNJJD
-	{
-		get
+		}
+		foreach (GameObject item in hashSet)
 		{
-			return (!this.POHIMACBDGL && this.DJIOCIPPBMK != 0) ? (Environment.TickCount - this.DJIOCIPPBMK) : 0;
+			EFDAOHIDIIF(item, true);
+		}
+		foreach (PhotonView value2 in HFCMPEKPBAM.Values)
+		{
+			if (value2.ownerId == PHIGECOLKKN)
+			{
+				value2.ownerId = value2.CreatorActorNr;
+			}
 		}
 	}
 
-	// Token: 0x0600AF15 RID: 44821 RVA: 0x0008AB50 File Offset: 0x00088D50
-	protected internal void POPMDHDDMGJ()
+	public bool CODOJHINMEH(int BONHLGFPNHF)
 	{
-		BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnJoinedLobby, new object[]
+		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable.Add((byte)78, BONHLGFPNHF);
+		ExitGames.Client.Photon.Hashtable mJJMNIDHDEC = hashtable;
+		hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable.Add((byte)121, IMIPAHEMOCN());
+		ExitGames.Client.Photon.Hashtable kCJIKJDCOAL = hashtable;
+		return ENLHKMFBDMG(mJJMNIDHDEC, kCJIKJDCOAL, true);
+	}
+
+	public bool ReconnectAndRejoin()
+	{
+		if (AuthValues == null)
 		{
-			PhotonNetwork.masterClient
-		});
-	}
-
-	// Token: 0x0600AF16 RID: 44822 RVA: 0x0008AB66 File Offset: 0x00088D66
-	protected internal void ENAIECJFPHM(List<Region> DPNHODJHGJL)
-	{
-		this.<GMPLFLCBMGI>k__BackingField = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AF17 RID: 44823 RVA: 0x0008AB6F File Offset: 0x00088D6F
-	public ClientState EBAJHBFJFCL()
-	{
-		return this.<CKEGJBJJPEC>k__BackingField;
-	}
-
-	// Token: 0x0600AF18 RID: 44824 RVA: 0x004076C8 File Offset: 0x004058C8
-	public static void CLOLHKCFMJP(PhotonNetworkingMessage LELHNDDCKCO, object[] GNNEKCBOBEG)
-	{
-		HashSet<GameObject> hashSet;
-		if (PhotonNetwork.SendMonoMessageTargets != null)
+			Debug.LogWarning("ReconnectAndRejoin() with AuthValues == null is not correct!");
+			AuthValues = new AuthenticationValues();
+		}
+		AuthValues.Token = JOKLGFENMKE;
+		if (!string.IsNullOrEmpty(GameServerAddress) && AJFMHFLGCFN != null)
 		{
-			hashSet = PhotonNetwork.SendMonoMessageTargets;
+			ELNKFMHCMBO = JoinType.JoinRoom;
+			AJFMHFLGCFN.RejoinOnly = true;
+			return Connect(GameServerAddress, ServerConnection.GameServer);
+		}
+		return false;
+	}
+
+	public bool Connect(string BPMNPBDOMFO, ServerConnection HMGBJCGOLMI)
+	{
+		if (PhotonHandler.MBIFDLCKGKN)
+		{
+			Debug.LogWarning("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.");
+			return false;
+		}
+		if (State == ClientState.Disconnecting)
+		{
+			Debug.LogError("Connect() failed. Can't connect while disconnecting (still). Current state: " + PhotonNetwork.connectionStateDetailed);
+			return false;
+		}
+		PKNIJKPIKAF = HMGBJCGOLMI;
+		BLNBCGLIOHP = BPMNPBDOMFO;
+		KAOMEDGGMEM = string.Empty;
+		KHKMFIFGPCH(HMGBJCGOLMI);
+		bool flag = base.Connect(BPMNPBDOMFO, string.Empty, LLJDHHLHFME);
+		if (flag)
+		{
+			switch (HMGBJCGOLMI)
+			{
+			case ServerConnection.NameServer:
+				State = ClientState.ConnectingToNameServer;
+				break;
+			case ServerConnection.MasterServer:
+				State = ClientState.ConnectingToMasterserver;
+				break;
+			case ServerConnection.GameServer:
+				State = ClientState.ConnectingToGameserver;
+				break;
+			}
+		}
+		return flag;
+	}
+
+	public void DEECBOGGANC()
+	{
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = EventCaching.AddToRoomCache;
+		raiseEventOptions.Receivers = ReceiverGroup.All;
+		RaiseEventOptions bPLHAPBMGGC = raiseEventOptions;
+		JCCNCJFOMNB(1, null, true, bPLHAPBMGGC);
+	}
+
+	private void CKEAHPJAGOO(object[] NOJGGCLPPAM, PhotonPlayer NFOGDAHIPNP, int BFELEJPLADE, short DKCPAJGKHNI)
+	{
+		int num = (int)NOJGGCLPPAM[0];
+		PhotonView photonView = GetPhotonView(num);
+		if (photonView == null)
+		{
+			Debug.LogWarning("Received OnSerialization for view ID " + num + ". We have no such PhotonView! Ignored this if you're leaving a room. State: " + State);
+		}
+		else if (photonView.prefix > 0 && DKCPAJGKHNI != photonView.prefix)
+		{
+			Debug.LogError("Received OnSerialization for view ID " + num + " with prefix " + DKCPAJGKHNI + ". Our prefix is " + photonView.prefix);
 		}
 		else
 		{
-			hashSet = PhotonNetwork.FindGameObjectsWithComponent(PhotonNetwork.SendMonoMessageTargetType);
-		}
-		string methodName = LELHNDDCKCO.ToString();
-		object value = (GNNEKCBOBEG == null || GNNEKCBOBEG.Length != 0) ? GNNEKCBOBEG : GNNEKCBOBEG[1];
-		foreach (GameObject gameObject in hashSet)
-		{
-			if (gameObject != null)
+			if (photonView.group != 0 && !CHIJNBAJIHE.Contains(photonView.group))
 			{
-				gameObject.SendMessage(methodName, value, SendMessageOptions.DontRequireReceiver);
+				return;
+			}
+			if (photonView.synchronization == ViewSynchronization.ReliableDeltaCompressed)
+			{
+				object[] array = EFKMNFNHJBL(photonView.EMJBOOJPAII, NOJGGCLPPAM);
+				if (array == null)
+				{
+					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+					{
+						Debug.Log("Skipping packet for " + photonView.name + " [" + photonView.viewID + "] as we haven't received a full packet for delta compression yet. This is OK if it happens for the first few frames after joining a game.");
+					}
+					return;
+				}
+				photonView.EMJBOOJPAII = array;
+				NOJGGCLPPAM = array;
+			}
+			if (NFOGDAHIPNP.ID != photonView.ownerId && (!photonView.OwnerShipWasTransfered || photonView.ownerId == 0) && photonView.currentMasterID == -1)
+			{
+				photonView.ownerId = NFOGDAHIPNP.ID;
+			}
+			CMABENLIOGI.SetReadStream(NOJGGCLPPAM, 3);
+			photonView.DeserializeView(DAGALCAILLN: new PhotonMessageInfo(NFOGDAHIPNP, BFELEJPLADE, photonView), HCIJEDFCNOP: CMABENLIOGI);
+		}
+	}
+
+	private void EDMCCPDDDCC(ExitGames.Client.Photon.Hashtable MJJMNIDHDEC, ExitGames.Client.Photon.Hashtable FAOLPBLCKFJ, int AHNMANJKONI)
+	{
+		if (FAOLPBLCKFJ != null && FAOLPBLCKFJ.Count > 0)
+		{
+			if (AHNMANJKONI > 0)
+			{
+				PhotonPlayer photonPlayer = ICMGDHDNIJD(AHNMANJKONI);
+				if (photonPlayer != null)
+				{
+					ExitGames.Client.Photon.Hashtable hashtable = LOCGDJDHCHJ(FAOLPBLCKFJ, AHNMANJKONI);
+					photonPlayer.NPOPPIMCDMN(hashtable);
+					SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerPropertiesChanged, photonPlayer, hashtable);
+				}
+			}
+			else
+			{
+				foreach (object key in FAOLPBLCKFJ.Keys)
+				{
+					int num = (int)key;
+					ExitGames.Client.Photon.Hashtable hashtable2 = (ExitGames.Client.Photon.Hashtable)FAOLPBLCKFJ[key];
+					string eBEHBBDKDFJ = (string)hashtable2[byte.MaxValue];
+					PhotonPlayer photonPlayer2 = ICMGDHDNIJD(num);
+					if (photonPlayer2 == null)
+					{
+						photonPlayer2 = new PhotonPlayer(false, num, eBEHBBDKDFJ);
+						EGJBHECFAOH(num, photonPlayer2);
+					}
+					photonPlayer2.NPOPPIMCDMN(hashtable2);
+					SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerPropertiesChanged, photonPlayer2, hashtable2);
+				}
+			}
+		}
+		if (CurrentRoom != null && MJJMNIDHDEC != null)
+		{
+			CurrentRoom.NPOPPIMCDMN(MJJMNIDHDEC);
+			SendMonoMessage(PhotonNetworkingMessage.OnPhotonCustomRoomPropertiesChanged, MJJMNIDHDEC);
+			if (PhotonNetwork.automaticallySyncScene)
+			{
+				DMCKEABNFPJ();
 			}
 		}
 	}
 
-	// Token: 0x17000247 RID: 583
-	// (get) Token: 0x0600AFC2 RID: 44994 RVA: 0x0008B165 File Offset: 0x00089365
-	// (set) Token: 0x0600AF19 RID: 44825 RVA: 0x0008AB77 File Offset: 0x00088D77
-	public bool IsUsingNameServer { get; protected internal set; }
+	public void OnMessage(object NBCIEBFNLGN)
+	{
+	}
 
-	// Token: 0x0600AF1A RID: 44826 RVA: 0x00407778 File Offset: 0x00405978
+	[SpecialName]
+	public int IMIPAHEMOCN()
+	{
+		if (PhotonNetwork.offlineMode)
+		{
+			return LocalPlayer.FHEAKIMCKJC();
+		}
+		return (CurrentRoom == null) ? 1 : CurrentRoom.EJLAPIIGIMI;
+	}
+
+	public override bool OpJoinRoom(AKBOPCNHFFJ HBJBKOPJDKJ)
+	{
+		if (!(HBJBKOPJDKJ.OnGameServer = EHALCLFLGJF == ServerConnection.GameServer))
+		{
+			AJFMHFLGCFN = HBJBKOPJDKJ;
+		}
+		ELNKFMHCMBO = ((!HBJBKOPJDKJ.CreateIfNotExists) ? JoinType.JoinRoom : JoinType.JoinOrCreateRoom);
+		return base.OpJoinRoom(HBJBKOPJDKJ);
+	}
+
+	private object[] EFKMNFNHJBL(object[] EMJBOOJPAII, object[] JGHJOJFOGCO)
+	{
+		if (!(bool)JGHJOJFOGCO[1])
+		{
+			return JGHJOJFOGCO;
+		}
+		if (EMJBOOJPAII == null)
+		{
+			return null;
+		}
+		int[] array = JGHJOJFOGCO[2] as int[];
+		for (int i = 3; i < JGHJOJFOGCO.Length; i++)
+		{
+			if ((array == null || !array.Contains(i)) && JGHJOJFOGCO[i] == null)
+			{
+				object obj = (JGHJOJFOGCO[i] = EMJBOOJPAII[i]);
+			}
+		}
+		return JGHJOJFOGCO;
+	}
+
+	private void MJMAJHJLBPJ(int IECJKEIJLCP, EventData EKDHPAFJKFA)
+	{
+		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+		{
+			Debug.Log("HandleEventLeave for player ID: " + IECJKEIJLCP + " evLeave: " + EKDHPAFJKFA.ToStringFull());
+		}
+		PhotonPlayer photonPlayer = ICMGDHDNIJD(IECJKEIJLCP);
+		if (photonPlayer == null)
+		{
+			Debug.LogError($"Received event Leave for unknown player ID: {IECJKEIJLCP}");
+			return;
+		}
+		bool isInactive = photonPlayer.IsInactive;
+		if (EKDHPAFJKFA.Parameters.ContainsKey(233))
+		{
+			photonPlayer.IsInactive = (bool)EKDHPAFJKFA.Parameters[233];
+			if (photonPlayer.IsInactive != isInactive)
+			{
+				SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerActivityChanged, photonPlayer);
+			}
+			if (photonPlayer.IsInactive && isInactive)
+			{
+				Debug.LogWarning("HandleEventLeave for player ID: " + IECJKEIJLCP + " isInactive: " + photonPlayer.IsInactive + ". Stopping handling if inactive.");
+				return;
+			}
+		}
+		if (EKDHPAFJKFA.Parameters.ContainsKey(203))
+		{
+			if ((int)EKDHPAFJKFA[203] != 0)
+			{
+				mMasterClientId = (int)EKDHPAFJKFA[203];
+				ELDLAPJAPBJ();
+			}
+		}
+		else if (!CurrentRoom.BDHOOLIDFJO)
+		{
+			CDNPLJILLFC(IECJKEIJLCP);
+		}
+		if (!photonPlayer.IsInactive || isInactive)
+		{
+			if (CurrentRoom != null && CurrentRoom.AutoCleanUp)
+			{
+				DestroyPlayerObjects(IECJKEIJLCP, true);
+			}
+			GPODJOPLJPD(IECJKEIJLCP, photonPlayer);
+			SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerDisconnected, photonPlayer);
+		}
+	}
+
+	private bool IHAJPLJACML(ParameterInfo[] LFONMECHEJD, Type[] HAKMJIHLGNI)
+	{
+		if (LFONMECHEJD.Length < HAKMJIHLGNI.Length)
+		{
+			return false;
+		}
+		for (int i = 0; i < HAKMJIHLGNI.Length; i++)
+		{
+			Type parameterType = LFONMECHEJD[i].ParameterType;
+			if (HAKMJIHLGNI[i] != null && !parameterType.IsAssignableFrom(HAKMJIHLGNI[i]) && (!parameterType.IsEnum || !Enum.GetUnderlyingType(parameterType).IsAssignableFrom(HAKMJIHLGNI[i])))
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private void NDPIAMOMGME()
+	{
+		switch (EHALCLFLGJF)
+		{
+		case ServerConnection.NameServer:
+			State = ClientState.DisconnectingFromNameServer;
+			base.Disconnect();
+			break;
+		case ServerConnection.MasterServer:
+			State = ClientState.DisconnectingFromMasterserver;
+			base.Disconnect();
+			break;
+		case ServerConnection.GameServer:
+			State = ClientState.DisconnectingFromGameserver;
+			base.Disconnect();
+			break;
+		}
+	}
+
+	private ExitGames.Client.Photon.Hashtable HHPBLGDNDOP()
+	{
+		if (PhotonNetwork.player != null)
+		{
+			return PhotonNetwork.player.AllProperties;
+		}
+		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable[byte.MaxValue] = PlayerName;
+		return hashtable;
+	}
+
+	private void BOJKDNJHBNG()
+	{
+		bool flag = CurrentRoom != null;
+		bool flag2 = ((CurrentRoom == null) ? PhotonNetwork.autoCleanUpPlayerObjects : CurrentRoom.AutoCleanUp);
+		hasSwitchedMC = false;
+		CurrentRoom = null;
+		mActors = new Dictionary<int, PhotonPlayer>();
+		mPlayerListCopy = new PhotonPlayer[0];
+		mOtherPlayerListCopy = new PhotonPlayer[0];
+		CHIJNBAJIHE = new HashSet<byte>();
+		FFBGBLFBHOK = new HashSet<byte>();
+		mGameList = new Dictionary<string, RoomInfo>();
+		mGameListCopy = new RoomInfo[0];
+		POHIMACBDGL = false;
+		ChangeLocalID(-1);
+		if (flag2)
+		{
+			OMEPCMPKIJK(true);
+			PhotonNetwork.JMCPHFPJEJC = new List<int>();
+		}
+		if (flag)
+		{
+			SendMonoMessage(PhotonNetworkingMessage.OnLeftRoom);
+		}
+	}
+
+	[SpecialName]
+	public TypedLobby BOBIFHPDAOK()
+	{
+		return _003CIGGEJKPFJJD_003Ek__BackingField;
+	}
+
+	private void GKNPNNKFFAL(int HOBFECDCMIL)
+	{
+		IDIKEJLLFFP.Remove(HOBFECDCMIL);
+	}
+
+	public BNGIGHBHPEH(string OBCEIJGMKGB, ConnectionProtocol FDGOINDINNH)
+		: base(FDGOINDINNH)
+	{
+		base.Listener = this;
+		base.LimitOfUnreliableCommands = 40;
+		lobby = TypedLobby.Default;
+		PlayerName = OBCEIJGMKGB;
+		LocalPlayer = new PhotonPlayer(true, -1, this.OBCEIJGMKGB);
+		EGJBHECFAOH(LocalPlayer.ID, LocalPlayer);
+		CPLBCMDIGNB = new Dictionary<string, int>(PhotonNetwork.PhotonServerSettings.RpcList.Count);
+		for (int i = 0; i < PhotonNetwork.PhotonServerSettings.RpcList.Count; i++)
+		{
+			string key = PhotonNetwork.PhotonServerSettings.RpcList[i];
+			CPLBCMDIGNB[key] = i;
+		}
+		State = ClientState.PeerCreated;
+	}
+
+	internal void HFFGNHGFKPE(PhotonView DFIHBOEOJPI, string LBLKDNNPACO, PhotonTargets MPNMOONBMII, PhotonPlayer JHOEDACNNKK, bool AKFHJNFOCDP, params object[] GNNEKCBOBEG)
+	{
+		if (FFBGBLFBHOK.Contains(DFIHBOEOJPI.group))
+		{
+			return;
+		}
+		if (DFIHBOEOJPI.viewID < 1)
+		{
+			Debug.LogError("Illegal view ID:" + DFIHBOEOJPI.viewID + " method: " + LBLKDNNPACO + " GO:" + DFIHBOEOJPI.gameObject.name);
+		}
+		if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
+		{
+			Debug.Log(string.Concat("Sending RPC \"", LBLKDNNPACO, "\" to target: ", MPNMOONBMII, " or player:", JHOEDACNNKK, "."));
+		}
+		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+		hashtable[(byte)0] = DFIHBOEOJPI.viewID;
+		if (DFIHBOEOJPI.prefix > 0)
+		{
+			hashtable[(byte)1] = (short)DFIHBOEOJPI.prefix;
+		}
+		hashtable[(byte)2] = PhotonNetwork.ServerTimestamp;
+		int value = 0;
+		if (CPLBCMDIGNB.TryGetValue(LBLKDNNPACO, out value))
+		{
+			hashtable[(byte)5] = (byte)value;
+		}
+		else
+		{
+			hashtable[(byte)3] = LBLKDNNPACO;
+		}
+		if (GNNEKCBOBEG != null && GNNEKCBOBEG.Length > 0)
+		{
+			hashtable[(byte)4] = GNNEKCBOBEG;
+		}
+		if (JHOEDACNNKK != null)
+		{
+			if (LocalPlayer.ID == JHOEDACNNKK.ID)
+			{
+				MBCHEFNAJFH(hashtable, JHOEDACNNKK.ID);
+				return;
+			}
+			RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+			raiseEventOptions.TargetActors = new int[1] { JHOEDACNNKK.ID };
+			raiseEventOptions.Encrypt = AKFHJNFOCDP;
+			RaiseEventOptions bPLHAPBMGGC = raiseEventOptions;
+			OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC);
+			return;
+		}
+		switch (MPNMOONBMII)
+		{
+		case PhotonTargets.All:
+		{
+			RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+			raiseEventOptions.InterestGroup = DFIHBOEOJPI.group;
+			raiseEventOptions.Encrypt = AKFHJNFOCDP;
+			RaiseEventOptions bPLHAPBMGGC8 = raiseEventOptions;
+			OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC8);
+			MBCHEFNAJFH(hashtable, LocalPlayer.ID);
+			break;
+		}
+		case PhotonTargets.Others:
+		{
+			RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+			raiseEventOptions.InterestGroup = DFIHBOEOJPI.group;
+			raiseEventOptions.Encrypt = AKFHJNFOCDP;
+			RaiseEventOptions bPLHAPBMGGC7 = raiseEventOptions;
+			OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC7);
+			break;
+		}
+		case PhotonTargets.AllBuffered:
+		{
+			RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+			raiseEventOptions.CachingOption = EventCaching.AddToRoomCache;
+			raiseEventOptions.Encrypt = AKFHJNFOCDP;
+			RaiseEventOptions bPLHAPBMGGC5 = raiseEventOptions;
+			OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC5);
+			MBCHEFNAJFH(hashtable, LocalPlayer.ID);
+			break;
+		}
+		case PhotonTargets.OthersBuffered:
+		{
+			RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+			raiseEventOptions.CachingOption = EventCaching.AddToRoomCache;
+			raiseEventOptions.Encrypt = AKFHJNFOCDP;
+			RaiseEventOptions bPLHAPBMGGC3 = raiseEventOptions;
+			OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC3);
+			break;
+		}
+		case PhotonTargets.MasterClient:
+		{
+			if (mMasterClientId == LocalPlayer.ID)
+			{
+				MBCHEFNAJFH(hashtable, LocalPlayer.ID);
+				break;
+			}
+			RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+			raiseEventOptions.Receivers = ReceiverGroup.MasterClient;
+			raiseEventOptions.Encrypt = AKFHJNFOCDP;
+			RaiseEventOptions bPLHAPBMGGC6 = raiseEventOptions;
+			OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC6);
+			break;
+		}
+		case PhotonTargets.AllViaServer:
+		{
+			RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+			raiseEventOptions.InterestGroup = DFIHBOEOJPI.group;
+			raiseEventOptions.Receivers = ReceiverGroup.All;
+			raiseEventOptions.Encrypt = AKFHJNFOCDP;
+			RaiseEventOptions bPLHAPBMGGC4 = raiseEventOptions;
+			OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC4);
+			if (PhotonNetwork.offlineMode)
+			{
+				MBCHEFNAJFH(hashtable, LocalPlayer.ID);
+			}
+			break;
+		}
+		case PhotonTargets.AllBufferedViaServer:
+		{
+			RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+			raiseEventOptions.InterestGroup = DFIHBOEOJPI.group;
+			raiseEventOptions.Receivers = ReceiverGroup.All;
+			raiseEventOptions.CachingOption = EventCaching.AddToRoomCache;
+			raiseEventOptions.Encrypt = AKFHJNFOCDP;
+			RaiseEventOptions bPLHAPBMGGC2 = raiseEventOptions;
+			OpRaiseEvent(200, hashtable, true, bPLHAPBMGGC2);
+			if (PhotonNetwork.offlineMode)
+			{
+				MBCHEFNAJFH(hashtable, LocalPlayer.ID);
+			}
+			break;
+		}
+		default:
+			Debug.LogError("Unsupported target enum: " + MPNMOONBMII);
+			break;
+		}
+	}
+
+	public override bool GPJCOHMKODA(OpJoinRandomRoomParams IFIMMPPLLHI)
+	{
+		AJFMHFLGCFN = new AKBOPCNHFFJ();
+		AJFMHFLGCFN.Lobby = IFIMMPPLLHI.TypedLobby;
+		AJFMHFLGCFN.ExpectedUsers = IFIMMPPLLHI.ExpectedUsers;
+		ELNKFMHCMBO = (JoinType)4;
+		return base.IDCMLGBBFMG(IFIMMPPLLHI);
+	}
+
+	private void GPODJOPLJPD(int IJAEJMNLBLK, PhotonPlayer JHOEDACNNKK)
+	{
+		mActors.Remove(IJAEJMNLBLK);
+		if (!JHOEDACNNKK.IsLocal)
+		{
+			LEMBPMNPHCK();
+		}
+	}
+
+	public void DebugReturn(DebugLevel DCMIEONIJMA, string JKPJCEMPAGH)
+	{
+		switch (DCMIEONIJMA)
+		{
+		case DebugLevel.ERROR:
+			Debug.LogError(JKPJCEMPAGH);
+			return;
+		case DebugLevel.WARNING:
+			Debug.LogWarning(JKPJCEMPAGH);
+			return;
+		case DebugLevel.INFO:
+			if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+			{
+				Debug.Log(JKPJCEMPAGH);
+				return;
+			}
+			break;
+		}
+		if (DCMIEONIJMA == DebugLevel.ALL && PhotonNetwork.logLevel == PhotonLogLevel.Full)
+		{
+			Debug.Log(JKPJCEMPAGH);
+		}
+	}
+
 	protected internal void MBCHEFNAJFH(ExitGames.Client.Photon.Hashtable LKGFKFMABPG, int BGNEKPOLEEP = 0)
 	{
-		if (LKGFKFMABPG == null || !LKGFKFMABPG.ContainsKey(0))
+		if (LKGFKFMABPG == null || !LKGFKFMABPG.ContainsKey((byte)0))
 		{
 			Debug.LogError("Malformed RPC; this should never occur. Content: " + SupportClass.DictionaryToString(LKGFKFMABPG));
 			return;
 		}
-		int num = (int)LKGFKFMABPG[0];
+		int num = (int)LKGFKFMABPG[(byte)0];
 		int num2 = 0;
-		if (LKGFKFMABPG.ContainsKey(1))
+		if (LKGFKFMABPG.ContainsKey((byte)1))
 		{
-			num2 = (int)((short)LKGFKFMABPG[1]);
+			num2 = (short)LKGFKFMABPG[(byte)1];
 		}
 		string text;
-		if (LKGFKFMABPG.ContainsKey(5))
+		if (LKGFKFMABPG.ContainsKey((byte)5))
 		{
-			int num3 = (int)((byte)LKGFKFMABPG[5]);
+			int num3 = (byte)LKGFKFMABPG[(byte)5];
 			if (num3 > PhotonNetwork.PhotonServerSettings.RpcList.Count - 1)
 			{
 				Debug.LogError("Could not find RPC with index: " + num3 + ". Going to ignore! Check PhotonServerSettings.RpcList");
@@ -1633,68 +2266,36 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 		else
 		{
-			text = (string)LKGFKFMABPG[3];
+			text = (string)LKGFKFMABPG[(byte)3];
 		}
 		object[] array = null;
-		if (LKGFKFMABPG.ContainsKey(4))
+		if (LKGFKFMABPG.ContainsKey((byte)4))
 		{
-			array = (object[])LKGFKFMABPG[4];
+			array = (object[])LKGFKFMABPG[(byte)4];
 		}
 		if (array == null)
 		{
 			array = new object[0];
 		}
-		PhotonView photonView = this.GetPhotonView(num);
+		PhotonView photonView = GetPhotonView(num);
 		if (photonView == null)
 		{
 			int num4 = num / PhotonNetwork.MAX_VIEW_IDS;
-			bool flag = num4 == this.LocalPlayer.ID;
+			bool flag = num4 == LocalPlayer.ID;
 			bool flag2 = num4 == BGNEKPOLEEP;
 			if (flag)
 			{
-				Debug.LogWarning(string.Concat(new object[]
-				{
-					"Received RPC \"",
-					text,
-					"\" for viewID ",
-					num,
-					" but this PhotonView does not exist! View was/is ours.",
-					(!flag2) ? " Remote called." : " Owner called.",
-					" By: ",
-					BGNEKPOLEEP
-				}));
+				Debug.LogWarning("Received RPC \"" + text + "\" for viewID " + num + " but this PhotonView does not exist! View was/is ours." + ((!flag2) ? " Remote called." : " Owner called.") + " By: " + BGNEKPOLEEP);
 			}
 			else
 			{
-				Debug.LogWarning(string.Concat(new object[]
-				{
-					"Received RPC \"",
-					text,
-					"\" for viewID ",
-					num,
-					" but this PhotonView does not exist! Was remote PV.",
-					(!flag2) ? " Remote called." : " Owner called.",
-					" By: ",
-					BGNEKPOLEEP,
-					" Maybe GO was destroyed but RPC not cleaned up."
-				}));
+				Debug.LogWarning("Received RPC \"" + text + "\" for viewID " + num + " but this PhotonView does not exist! Was remote PV." + ((!flag2) ? " Remote called." : " Owner called.") + " By: " + BGNEKPOLEEP + " Maybe GO was destroyed but RPC not cleaned up.");
 			}
 			return;
 		}
 		if (photonView.prefix != num2)
 		{
-			Debug.LogError(string.Concat(new object[]
-			{
-				"Received RPC \"",
-				text,
-				"\" on viewID ",
-				num,
-				" with a prefix of ",
-				num2,
-				", our prefix is ",
-				photonView.prefix,
-				". The RPC has been ignored."
-			}));
+			Debug.LogError("Received RPC \"" + text + "\" on viewID " + num + " with a prefix of " + num2 + ", our prefix is " + photonView.prefix + ". The RPC has been ignored.");
 			return;
 		}
 		if (string.IsNullOrEmpty(text))
@@ -1706,7 +2307,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		{
 			Debug.Log("Received RPC: " + text);
 		}
-		if (photonView.group != 0 && !this.CHIJNBAJIHE.Contains(photonView.group))
+		if (photonView.group != 0 && !CHIJNBAJIHE.Contains(photonView.group))
 		{
 			return;
 		}
@@ -1740,1412 +2341,713 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 			if (monoBehaviour == null)
 			{
 				Debug.LogError("ERROR You have missing MonoBehaviours on your gameobjects!");
+				continue;
 			}
-			else
+			Type type = monoBehaviour.GetType();
+			List<MethodInfo> value = null;
+			if (!MNKFMEHFNKJ.TryGetValue(type, out value))
 			{
-				Type type = monoBehaviour.GetType();
-				List<MethodInfo> list = null;
-				if (!this.MNKFMEHFNKJ.TryGetValue(type, out list))
+				List<MethodInfo> methods = SupportClass.GetMethods(type, typeof(PunRPC));
+				MNKFMEHFNKJ[type] = methods;
+				value = methods;
+			}
+			if (value == null)
+			{
+				continue;
+			}
+			for (int k = 0; k < value.Count; k++)
+			{
+				MethodInfo methodInfo = value[k];
+				if (!methodInfo.Name.Equals(text))
 				{
-					List<MethodInfo> methods = SupportClass.GetMethods(type, typeof(PunRPC));
-					this.MNKFMEHFNKJ[type] = methods;
-					list = methods;
+					continue;
 				}
-				if (list != null)
+				num7++;
+				ParameterInfo[] cachedParemeters = methodInfo.GetCachedParemeters();
+				if (cachedParemeters.Length == array2.Length)
 				{
-					for (int k = 0; k < list.Count; k++)
+					if (IHAJPLJACML(cachedParemeters, array2))
 					{
-						MethodInfo methodInfo = list[k];
-						if (methodInfo.Name.Equals(text))
+						num6++;
+						object obj2 = methodInfo.Invoke(monoBehaviour, array);
+						if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
 						{
-							num7++;
-							ParameterInfo[] cachedParemeters = methodInfo.GetCachedParemeters();
-							if (cachedParemeters.Length == array2.Length)
-							{
-								if (this.IHAJPLJACML(cachedParemeters, array2))
-								{
-									num6++;
-									object obj2 = methodInfo.Invoke(monoBehaviour, array);
-									if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
-									{
-										monoBehaviour.StartCoroutine((IEnumerator)obj2);
-									}
-								}
-							}
-							else if (cachedParemeters.Length - 1 == array2.Length)
-							{
-								if (this.IHAJPLJACML(cachedParemeters, array2) && cachedParemeters[cachedParemeters.Length - 1].ParameterType == typeof(PhotonMessageInfo))
-								{
-									num6++;
-									int amciaillaib = (int)LKGFKFMABPG[2];
-									object[] array3 = new object[array.Length + 1];
-									array.CopyTo(array3, 0);
-									array3[array3.Length - 1] = new PhotonMessageInfo(this.ICMGDHDNIJD(BGNEKPOLEEP), amciaillaib, photonView);
-									object obj3 = methodInfo.Invoke(monoBehaviour, array3);
-									if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
-									{
-										monoBehaviour.StartCoroutine((IEnumerator)obj3);
-									}
-								}
-							}
-							else if (cachedParemeters.Length == 1 && cachedParemeters[0].ParameterType.IsArray)
-							{
-								num6++;
-								object obj4 = methodInfo.Invoke(monoBehaviour, new object[]
-								{
-									array
-								});
-								if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
-								{
-									monoBehaviour.StartCoroutine((IEnumerator)obj4);
-								}
-							}
+							monoBehaviour.StartCoroutine((IEnumerator)obj2);
 						}
+					}
+				}
+				else if (cachedParemeters.Length - 1 == array2.Length)
+				{
+					if (IHAJPLJACML(cachedParemeters, array2) && cachedParemeters[cachedParemeters.Length - 1].ParameterType == typeof(PhotonMessageInfo))
+					{
+						num6++;
+						int aMCIAILLAIB = (int)LKGFKFMABPG[(byte)2];
+						object[] array3 = new object[array.Length + 1];
+						array.CopyTo(array3, 0);
+						array3[array3.Length - 1] = new PhotonMessageInfo(ICMGDHDNIJD(BGNEKPOLEEP), aMCIAILLAIB, photonView);
+						object obj3 = methodInfo.Invoke(monoBehaviour, array3);
+						if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
+						{
+							monoBehaviour.StartCoroutine((IEnumerator)obj3);
+						}
+					}
+				}
+				else if (cachedParemeters.Length == 1 && cachedParemeters[0].ParameterType.IsArray)
+				{
+					num6++;
+					object obj4 = methodInfo.Invoke(monoBehaviour, new object[1] { array });
+					if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
+					{
+						monoBehaviour.StartCoroutine((IEnumerator)obj4);
 					}
 				}
 			}
 		}
-		if (num6 != 1)
+		if (num6 == 1)
 		{
-			string text2 = string.Empty;
-			foreach (Type type2 in array2)
+			return;
+		}
+		string text2 = string.Empty;
+		foreach (Type type2 in array2)
+		{
+			if (text2 != string.Empty)
 			{
-				if (text2 != string.Empty)
-				{
-					text2 += ", ";
-				}
-				if (type2 == null)
-				{
-					text2 += "null";
-				}
-				else
-				{
-					text2 += type2.Name;
-				}
+				text2 += ", ";
 			}
-			if (num6 == 0)
+			text2 = ((type2 != null) ? (text2 + type2.Name) : (text2 + "null"));
+		}
+		if (num6 == 0)
+		{
+			if (num7 == 0)
 			{
-				if (num7 == 0)
-				{
-					Debug.LogError(string.Concat(new object[]
-					{
-						"PhotonView with ID ",
-						num,
-						" has no method \"",
-						text,
-						"\" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: ",
-						text2
-					}));
-				}
-				else
-				{
-					Debug.LogError(string.Concat(new object[]
-					{
-						"PhotonView with ID ",
-						num,
-						" has no method \"",
-						text,
-						"\" that takes ",
-						array2.Length,
-						" argument(s): ",
-						text2
-					}));
-				}
+				Debug.LogError("PhotonView with ID " + num + " has no method \"" + text + "\" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: " + text2);
 			}
 			else
 			{
-				Debug.LogError(string.Concat(new object[]
-				{
-					"PhotonView with ID ",
-					num,
-					" has ",
-					num6,
-					" methods \"",
-					text,
-					"\" that takes ",
-					array2.Length,
-					" argument(s): ",
-					text2,
-					". Should be just one?"
-				}));
+				Debug.LogError("PhotonView with ID " + num + " has no method \"" + text + "\" that takes " + array2.Length + " argument(s): " + text2);
 			}
-		}
-	}
-
-	// Token: 0x0600AF1B RID: 44827 RVA: 0x00407F04 File Offset: 0x00406104
-	public void OpCleanRpcBuffer(PhotonView DFIHBOEOJPI)
-	{
-		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[0] = DFIHBOEOJPI.viewID;
-		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
-		{
-			CachingOption = EventCaching.RemoveFromRoomCache
-		};
-		this.OpRaiseEvent(200, hashtable, true, bplhapbmggc);
-	}
-
-	// Token: 0x0600AF1C RID: 44828 RVA: 0x0008AB80 File Offset: 0x00088D80
-	public virtual bool AKKLKCIHNDO(string[] MIMEHFLKIIG)
-	{
-		if (this.POHIMACBDGL)
-		{
-			return true;
-		}
-		this.BEIPFKHGHPC = MIMEHFLKIIG;
-		this.POHIMACBDGL = true;
-		return base.HGLDGECBKBO(MIMEHFLKIIG);
-	}
-
-	// Token: 0x17000253 RID: 595
-	// (get) Token: 0x0600AF1D RID: 44829 RVA: 0x0008ABA4 File Offset: 0x00088DA4
-	// (set) Token: 0x0600AFD8 RID: 45016 RVA: 0x0008B1BF File Offset: 0x000893BF
-	public int PlayersInRoomsCount { get; internal set; }
-
-	// Token: 0x17000259 RID: 601
-	// (get) Token: 0x0600AF1E RID: 44830 RVA: 0x0008ABAC File Offset: 0x00088DAC
-	// (set) Token: 0x0600AF79 RID: 44921 RVA: 0x0008AE77 File Offset: 0x00089077
-	public int mMasterClientId
-	{
-		get
-		{
-			if (PhotonNetwork.offlineMode)
-			{
-				return this.LocalPlayer.ID;
-			}
-			return (this.CurrentRoom != null) ? this.CurrentRoom.EJLAPIIGIMI : 0;
-		}
-		private set
-		{
-			if (this.CurrentRoom != null)
-			{
-				this.CurrentRoom.EJLAPIIGIMI = value;
-			}
-		}
-	}
-
-	// Token: 0x0600AF1F RID: 44831 RVA: 0x00407F4C File Offset: 0x0040614C
-	public void ChangeLocalID(int LGHIPFAEONM)
-	{
-		if (this.LocalPlayer == null)
-		{
-			Debug.LogWarning(string.Format("LocalPlayer is null or not in mActors! LocalPlayer: {0} mActors==null: {1} newID: {2}", this.LocalPlayer, this.mActors == null, LGHIPFAEONM));
-		}
-		if (this.mActors.ContainsKey(this.LocalPlayer.ID))
-		{
-			this.mActors.Remove(this.LocalPlayer.ID);
-		}
-		this.LocalPlayer.GOCPHBFMIEN(LGHIPFAEONM);
-		this.mActors[this.LocalPlayer.ID] = this.LocalPlayer;
-		this.LEMBPMNPHCK();
-	}
-
-	// Token: 0x0600AF20 RID: 44832 RVA: 0x00407FF0 File Offset: 0x004061F0
-	private static int IOCOEKOOLLA(PhotonPlayer[] NEJPNIGJLGP, int AIMBEFMGEFM)
-	{
-		if (NEJPNIGJLGP == null || NEJPNIGJLGP.Length == 0)
-		{
-			return -1;
-		}
-		int num = 15;
-		for (int i = 0; i < NEJPNIGJLGP.Length; i += 0)
-		{
-			PhotonPlayer photonPlayer = NEJPNIGJLGP[i];
-			if (photonPlayer.ID != AIMBEFMGEFM)
-			{
-				if (photonPlayer.ID < num)
-				{
-					num = photonPlayer.ID;
-				}
-			}
-		}
-		return num;
-	}
-
-	// Token: 0x0600AF21 RID: 44833 RVA: 0x0008ABE0 File Offset: 0x00088DE0
-	public void SetSendingEnabled(byte PNFBEEBFMKC, bool CKALCHJAFBE)
-	{
-		if (!CKALCHJAFBE)
-		{
-			this.FFBGBLFBHOK.Add(PNFBEEBFMKC);
 		}
 		else
 		{
-			this.FFBGBLFBHOK.Remove(PNFBEEBFMKC);
+			Debug.LogError("PhotonView with ID " + num + " has " + num6 + " methods \"" + text + "\" that takes " + array2.Length + " argument(s): " + text2 + ". Should be just one?");
 		}
 	}
 
-	// Token: 0x0600AF22 RID: 44834 RVA: 0x0008AC07 File Offset: 0x00088E07
-	public override bool OpFindFriends(string[] MIMEHFLKIIG)
+	[SpecialName]
+	internal void CNMLBBFHKOD(PhotonPlayer DPNHODJHGJL)
 	{
-		if (this.POHIMACBDGL)
-		{
-			return false;
-		}
-		this.BEIPFKHGHPC = MIMEHFLKIIG;
-		this.POHIMACBDGL = true;
-		return base.OpFindFriends(MIMEHFLKIIG);
+		_003CNHOFDHIGABI_003Ek__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AF23 RID: 44835 RVA: 0x0008AC2B File Offset: 0x00088E2B
-	public List<Region> ILANOBPPIBF()
-	{
-		return this.<GMPLFLCBMGI>k__BackingField;
-	}
-
-	// Token: 0x0600AF24 RID: 44836 RVA: 0x00408050 File Offset: 0x00406250
-	protected internal void ANEENOJMDOJ(int[] HOMAECIGJEJ)
-	{
-		foreach (int num in HOMAECIGJEJ)
-		{
-			if (this.LocalPlayer.ID != num && !this.mActors.ContainsKey(num))
-			{
-				this.EGJBHECFAOH(num, new PhotonPlayer(false, num, string.Empty));
-			}
-		}
-	}
-
-	// Token: 0x0600AF25 RID: 44837 RVA: 0x0008AAF8 File Offset: 0x00088CF8
-	private void DGEJLOAMLHI(int HOBFECDCMIL, object[] FLFEEAHDHDK)
-	{
-		this.IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
-	}
-
-	// Token: 0x0600AF26 RID: 44838 RVA: 0x004080AC File Offset: 0x004062AC
-	protected internal void LBCBHNFEDDF(bool IJJEEIMFOHD)
-	{
-		if (this.IDIKEJLLFFP.Count > 1)
-		{
-			Debug.LogWarning("_Value4");
-		}
-		if (IJJEEIMFOHD)
-		{
-			HashSet<GameObject> hashSet = new HashSet<GameObject>();
-			foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
-			{
-				if (photonView.isRuntimeInstantiated)
-				{
-					hashSet.Add(photonView.gameObject);
-				}
-			}
-			foreach (GameObject obfjphlbfol in hashSet)
-			{
-				this.EFDAOHIDIIF(obfjphlbfol, false);
-			}
-		}
-		this.IDIKEJLLFFP.Clear();
-		PhotonNetwork.FDMEIPEKMHC = 0;
-		PhotonNetwork.JIOIILCHMJL = 0;
-	}
-
-	// Token: 0x0600AF27 RID: 44839 RVA: 0x004081A4 File Offset: 0x004063A4
-	protected internal void HMNMFOJCHBJ(bool IJJEEIMFOHD)
-	{
-		if (this.IDIKEJLLFFP.Count > 1)
-		{
-			Debug.LogWarning("Tab1Content");
-		}
-		if (IJJEEIMFOHD)
-		{
-			HashSet<GameObject> hashSet = new HashSet<GameObject>();
-			foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
-			{
-				if (photonView.isRuntimeInstantiated)
-				{
-					hashSet.Add(photonView.gameObject);
-				}
-			}
-			foreach (GameObject obfjphlbfol in hashSet)
-			{
-				this.EFDAOHIDIIF(obfjphlbfol, false);
-			}
-		}
-		this.IDIKEJLLFFP.Clear();
-		PhotonNetwork.FDMEIPEKMHC = 1;
-		PhotonNetwork.JIOIILCHMJL = 1;
-	}
-
-	// Token: 0x0600AF29 RID: 44841 RVA: 0x0040829C File Offset: 0x0040649C
-	private void GIGMNEGOABN(int DIODBOKJKHM, int EJOIHHAHDLD, bool FEINGCNNFGM)
-	{
-		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[8] = DIODBOKJKHM;
-		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
-		raiseEventOptions.CachingOption = EventCaching.RemoveFromRoomCacheForActorsLeft;
-		RaiseEventOptions raiseEventOptions2 = raiseEventOptions;
-		int[] array = new int[1];
-		array[1] = EJOIHHAHDLD;
-		raiseEventOptions2.TargetActors = array;
-		RaiseEventOptions raiseEventOptions3 = raiseEventOptions;
-		this.LKLAJKINLFG(40, hashtable, false, raiseEventOptions3);
-		ExitGames.Client.Photon.Hashtable hashtable2 = new ExitGames.Client.Photon.Hashtable();
-		hashtable2[0] = DIODBOKJKHM;
-		raiseEventOptions3 = null;
-		if (!FEINGCNNFGM)
-		{
-			raiseEventOptions3 = new RaiseEventOptions();
-			raiseEventOptions3.CachingOption = EventCaching.ReplaceCache;
-			Debug.Log("CameraFilterPack/TV_Old" + DIODBOKJKHM);
-		}
-		this.OpRaiseEvent((byte)-181, hashtable2, false, raiseEventOptions3);
-	}
-
-	// Token: 0x0600AF2A RID: 44842 RVA: 0x00408340 File Offset: 0x00406540
-	private bool MNHBLADFKAH()
-	{
-		AuthenticationValues authenticationValues;
-		if ((authenticationValues = this.AuthValues) == null)
-		{
-			AuthenticationValues authenticationValues2 = new AuthenticationValues();
-			authenticationValues2.JCECBNKFODG(this.PlayerName);
-			authenticationValues = authenticationValues2;
-		}
-		AuthenticationValues gpdfhodmoij = authenticationValues;
-		if (this.AuthMode == AuthModeOption.Auth)
-		{
-			return this.MPELLFNHBGN(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CAFLFPLLMNC().ToString(), this.CGPLAHHGMEO());
-		}
-		return this.OIPJGPKILNF(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CloudRegion.ToString(), this.EncryptionMode, PhotonNetwork.PhotonServerSettings.Protocol);
-	}
-
-	// Token: 0x0600AF2B RID: 44843 RVA: 0x004083E0 File Offset: 0x004065E0
-	private object[] HJOMIJBPHNH(PhotonView DFIHBOEOJPI)
-	{
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Off)
-		{
-			return null;
-		}
-		PhotonMessageInfo dagalcailln = new PhotonMessageInfo(this.LocalPlayer, PhotonNetwork.ServerTimestamp, DFIHBOEOJPI);
-		this.ALPAEKHFHPP.IHFJMFNBJAD();
-		this.ALPAEKHFHPP.CPIBABMPJLE(null);
-		this.ALPAEKHFHPP.FADAIFFMBEL(null);
-		this.ALPAEKHFHPP.SendNext(null);
-		DFIHBOEOJPI.OMADJOEHOGE(this.ALPAEKHFHPP, dagalcailln);
-		if (this.ALPAEKHFHPP.HCOCCCCDJDD() <= 2)
-		{
-			return null;
-		}
-		object[] array = this.ALPAEKHFHPP.NNFAJHPPFBE();
-		array[0] = DFIHBOEOJPI.EIMHMIJGMHG();
-		array[1] = false;
-		array[1] = null;
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.UnreliableOnChange)
-		{
-			return array;
-		}
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Unreliable)
-		{
-			if (this.LFAPOBNFPPO(array, DFIHBOEOJPI.EOENPICKCCO))
-			{
-				if (DFIHBOEOJPI.PBIDCPBMFKJ)
-				{
-					return null;
-				}
-				DFIHBOEOJPI.PBIDCPBMFKJ = true;
-				DFIHBOEOJPI.EOENPICKCCO = array;
-			}
-			else
-			{
-				DFIHBOEOJPI.PBIDCPBMFKJ = false;
-				DFIHBOEOJPI.EOENPICKCCO = array;
-			}
-			return array;
-		}
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.ReliableDeltaCompressed)
-		{
-			object[] result = this.ILACHMNMKGF(DFIHBOEOJPI.EOENPICKCCO, array);
-			DFIHBOEOJPI.EOENPICKCCO = array;
-			return result;
-		}
-		return null;
-	}
-
-	// Token: 0x0600AF2C RID: 44844 RVA: 0x0008ABE0 File Offset: 0x00088DE0
-	public void HOOHJBDOKEO(byte PNFBEEBFMKC, bool CKALCHJAFBE)
-	{
-		if (!CKALCHJAFBE)
-		{
-			this.FFBGBLFBHOK.Add(PNFBEEBFMKC);
-		}
-		else
-		{
-			this.FFBGBLFBHOK.Remove(PNFBEEBFMKC);
-		}
-	}
-
-	// Token: 0x0600AF2D RID: 44845 RVA: 0x0008AC3C File Offset: 0x00088E3C
-	public void GBMLENLLNHD(bool NOKCKEBHIFJ)
-	{
-		if (!NOKCKEBHIFJ)
-		{
-			this.OpRemoveCompleteCache();
-			this.ODLHBPMCMEB();
-		}
-		this.HMNMFOJCHBJ(false);
-	}
-
-	// Token: 0x0600AF2E RID: 44846 RVA: 0x00408504 File Offset: 0x00406704
-	public bool AGAOBGGMCKN(string MDGGHHCAHKF, object GNNEKCBOBEG)
-	{
-		return this.OpCustom(183, new Dictionary<byte, object>
-		{
-			{
-				74,
-				MDGGHHCAHKF
-			},
-			{
-				60,
-				GNNEKCBOBEG
-			}
-		}, true);
-	}
-
-	// Token: 0x0600AF2F RID: 44847 RVA: 0x0040853C File Offset: 0x0040673C
-	public bool OpCreateGame(AKBOPCNHFFJ BDMKOAGEHPM)
-	{
-		bool flag = this.EHALCLFLGJF == ServerConnection.GameServer;
-		BDMKOAGEHPM.OnGameServer = flag;
-		BDMKOAGEHPM.PlayerProperties = this.HHPBLGDNDOP();
-		if (!flag)
-		{
-			this.AJFMHFLGCFN = BDMKOAGEHPM;
-		}
-		this.ELNKFMHCMBO = JoinType.CreateRoom;
-		return base.OpCreateRoom(BDMKOAGEHPM);
-	}
-
-	// Token: 0x0600AF30 RID: 44848 RVA: 0x0008AC57 File Offset: 0x00088E57
-	private void ONELBBFGFOM()
-	{
-		this.mGameList = new Dictionary<string, RoomInfo>();
-		this.mGameListCopy = new RoomInfo[0];
-		if (this.insideLobby)
-		{
-			this.insideLobby = true;
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonCreateRoomFailed, new object[0]);
-		}
-	}
-
-	// Token: 0x0600AF31 RID: 44849 RVA: 0x00408584 File Offset: 0x00406784
-	private bool INCNOLHOHGI(ParameterInfo[] LFONMECHEJD, Type[] HAKMJIHLGNI)
-	{
-		if (LFONMECHEJD.Length < HAKMJIHLGNI.Length)
-		{
-			return true;
-		}
-		for (int i = 1; i < HAKMJIHLGNI.Length; i++)
-		{
-			Type parameterType = LFONMECHEJD[i].ParameterType;
-			if (HAKMJIHLGNI[i] != null && !parameterType.IsAssignableFrom(HAKMJIHLGNI[i]) && (!parameterType.IsEnum || !Enum.GetUnderlyingType(parameterType).IsAssignableFrom(HAKMJIHLGNI[i])))
-			{
-				return false;
-			}
-		}
-		return true;
-	}
-
-	// Token: 0x0600AF32 RID: 44850 RVA: 0x004085F4 File Offset: 0x004067F4
-	public object[] FetchInstantiationData(int HOBFECDCMIL)
-	{
-		object[] result = null;
-		if (HOBFECDCMIL == 0)
-		{
-			return null;
-		}
-		this.IDIKEJLLFFP.TryGetValue(HOBFECDCMIL, out result);
-		return result;
-	}
-
-	// Token: 0x0600AF33 RID: 44851 RVA: 0x0040861C File Offset: 0x0040681C
-	internal ExitGames.Client.Photon.Hashtable JBBJFFKDHNO(string PPFBFGBJOHM, Vector3 JOPCODOJBHD, Quaternion LOMLCCLOIKN, byte PNFBEEBFMKC, int[] BJJMPIBPLEN, object[] NOJGGCLPPAM, bool BLOGDPLEMFH)
-	{
-		int num = BJJMPIBPLEN[0];
-		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[0] = PPFBFGBJOHM;
-		if (JOPCODOJBHD != Vector3.zero)
-		{
-			hashtable[1] = JOPCODOJBHD;
-		}
-		if (LOMLCCLOIKN != Quaternion.identity)
-		{
-			hashtable[2] = LOMLCCLOIKN;
-		}
-		if (PNFBEEBFMKC != 0)
-		{
-			hashtable[3] = PNFBEEBFMKC;
-		}
-		if (BJJMPIBPLEN.Length > 1)
-		{
-			hashtable[4] = BJJMPIBPLEN;
-		}
-		if (NOJGGCLPPAM != null)
-		{
-			hashtable[5] = NOJGGCLPPAM;
-		}
-		if (this.PKCNHOKCLJH > 0)
-		{
-			hashtable[8] = this.PKCNHOKCLJH;
-		}
-		hashtable[6] = PhotonNetwork.ServerTimestamp;
-		hashtable[7] = num;
-		this.OpRaiseEvent(202, hashtable, true, new RaiseEventOptions
-		{
-			CachingOption = ((!BLOGDPLEMFH) ? EventCaching.AddToRoomCache : EventCaching.AddToRoomCacheGlobal)
-		});
-		return hashtable;
-	}
-
-	// Token: 0x0600AF34 RID: 44852 RVA: 0x00408744 File Offset: 0x00406944
-	public bool GetRegions()
-	{
-		if (this.EHALCLFLGJF != ServerConnection.NameServer)
-		{
-			return false;
-		}
-		bool flag = this.OpGetRegions(this.KAIBLIKEDHM);
-		if (flag)
-		{
-			this.AvailableRegions = null;
-		}
-		return flag;
-	}
-
-	// Token: 0x0600AF35 RID: 44853 RVA: 0x0040877C File Offset: 0x0040697C
-	public bool Connect(string BPMNPBDOMFO, ServerConnection HMGBJCGOLMI)
+	public bool ConnectToRegionMaster(CloudRegionCode LPCNAHJGAFK)
 	{
 		if (PhotonHandler.MBIFDLCKGKN)
 		{
 			Debug.LogWarning("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.");
 			return false;
 		}
-		if (this.State == ClientState.Disconnecting)
+		IsUsingNameServer = true;
+		CloudRegion = LPCNAHJGAFK;
+		if (State == ClientState.ConnectedToNameServer)
 		{
-			Debug.LogError("Connect() failed. Can't connect while disconnecting (still). Current state: " + PhotonNetwork.connectionStateDetailed);
+			return OELIGNFABAJ();
+		}
+		PKNIJKPIKAF = ServerConnection.NameServer;
+		BLNBCGLIOHP = NameServerAddress;
+		KAOMEDGGMEM = "ns";
+		KHKMFIFGPCH(ServerConnection.NameServer);
+		if (!base.Connect(NameServerAddress, "ns", LLJDHHLHFME))
+		{
 			return false;
 		}
-		this.PKNIJKPIKAF = HMGBJCGOLMI;
-		this.BLNBCGLIOHP = BPMNPBDOMFO;
-		this.KAOMEDGGMEM = string.Empty;
-		this.KHKMFIFGPCH(HMGBJCGOLMI);
-		bool flag = base.Connect(BPMNPBDOMFO, string.Empty, this.LLJDHHLHFME);
-		if (flag)
+		State = ClientState.ConnectingToNameServer;
+		return true;
+	}
+
+	public void ADIPGEIPMBK(DebugLevel DCMIEONIJMA, string JKPJCEMPAGH)
+	{
+		switch (DCMIEONIJMA)
 		{
-			if (HMGBJCGOLMI != ServerConnection.NameServer)
+		case DebugLevel.OFF:
+			Debug.LogError(JKPJCEMPAGH);
+			return;
+		case DebugLevel.ERROR:
+			Debug.LogWarning(JKPJCEMPAGH);
+			return;
+		case DebugLevel.WARNING:
+			if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
 			{
-				if (HMGBJCGOLMI != ServerConnection.MasterServer)
+				Debug.Log(JKPJCEMPAGH);
+				return;
+			}
+			break;
+		}
+		if (DCMIEONIJMA == (DebugLevel)6 && PhotonNetwork.logLevel == PhotonLogLevel.Full)
+		{
+			Debug.Log(JKPJCEMPAGH);
+		}
+	}
+
+	public override bool Connect(string BPMNPBDOMFO, string KKBGACJIHDP)
+	{
+		Debug.LogError("Avoid using this directly. Thanks.");
+		return false;
+	}
+
+	public bool LocalCleanPhotonView(PhotonView DFIHBOEOJPI)
+	{
+		DFIHBOEOJPI.IHPAIFIHLAE = true;
+		return HFCMPEKPBAM.Remove(DFIHBOEOJPI.viewID);
+	}
+
+	[SpecialName]
+	internal void KJEHFHLGFIM(int DPNHODJHGJL)
+	{
+		_003CBBNAEKGKOKM_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private ExitGames.Client.Photon.Hashtable LOCGDJDHCHJ(ExitGames.Client.Photon.Hashtable FPBCPOGCCBD, int KHACEEGCPEP)
+	{
+		if (FPBCPOGCCBD.ContainsKey(KHACEEGCPEP))
+		{
+			return (ExitGames.Client.Photon.Hashtable)FPBCPOGCCBD[KHACEEGCPEP];
+		}
+		return FPBCPOGCCBD;
+	}
+
+	public void SetLevelPrefix(short MOALALKJCKJ)
+	{
+		PKCNHOKCLJH = MOALALKJCKJ;
+	}
+
+	public override bool NEGBMLGHJPD(byte IMCBEMICJFC, object PEIFAPIIKNJ, bool ANMGHMBBMAO, RaiseEventOptions BPLHAPBMGGC)
+	{
+		if (PhotonNetwork.offlineMode)
+		{
+			return false;
+		}
+		return base.KJNCENGOFBE(IMCBEMICJFC, PEIFAPIIKNJ, ANMGHMBBMAO, BPLHAPBMGGC);
+	}
+
+	private void IFPPBJINADG()
+	{
+		mGameList = new Dictionary<string, RoomInfo>();
+		mGameListCopy = new RoomInfo[0];
+		if (insideLobby)
+		{
+			insideLobby = false;
+			SendMonoMessage(PhotonNetworkingMessage.OnLeftLobby);
+		}
+	}
+
+	private void NGAEPLGAGAL(int KHACEEGCPEP)
+	{
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = EventCaching.RemoveFromRoomCache;
+		raiseEventOptions.TargetActors = new int[1] { KHACEEGCPEP };
+		RaiseEventOptions bPLHAPBMGGC = raiseEventOptions;
+		OpRaiseEvent(202, null, true, bPLHAPBMGGC);
+	}
+
+	private void OPKEDOEIKCO(int IECJKEIJLCP, EventData EKDHPAFJKFA)
+	{
+		if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
+		{
+			object[] array = new object[8];
+			array[0] = "Could not find RPC with index: ";
+			array[1] = IECJKEIJLCP;
+			array[6] = "https://steamcommunity.com/sharedfiles/filedetails/?id=";
+			array[4] = EKDHPAFJKFA.ToStringFull();
+			Debug.Log(string.Concat(array));
+		}
+		PhotonPlayer photonPlayer = ICMGDHDNIJD(IECJKEIJLCP);
+		if (photonPlayer == null)
+		{
+			Debug.LogError(string.Format("_HighlightSuppression", IECJKEIJLCP));
+			return;
+		}
+		bool isInactive = photonPlayer.IsInactive;
+		if (EKDHPAFJKFA.Parameters.ContainsKey(161))
+		{
+			photonPlayer.EJABLLBGMGC((bool)EKDHPAFJKFA.Parameters[36]);
+			if (photonPlayer.IsInactive != isInactive)
+			{
+				object[] array2 = new object[0];
+				array2[0] = photonPlayer;
+				SendMonoMessage((PhotonNetworkingMessage)(-102), array2);
+			}
+			if (photonPlayer.IsInactive && isInactive)
+			{
+				object[] array3 = new object[7];
+				array3[1] = "_Offsets";
+				array3[0] = IECJKEIJLCP;
+				array3[3] = "_TimeX";
+				array3[7] = photonPlayer.IsInactive;
+				array3[5] = "maps.";
+				Debug.LogWarning(string.Concat(array3));
+				return;
+			}
+		}
+		if (EKDHPAFJKFA.Parameters.ContainsKey(44))
+		{
+			if ((int)EKDHPAFJKFA[72] != 0)
+			{
+				mMasterClientId = (int)EKDHPAFJKFA[239];
+				ELDLAPJAPBJ();
+			}
+		}
+		else if (!CurrentRoom.BDHOOLIDFJO)
+		{
+			ANCHCNAJLOJ(IECJKEIJLCP);
+		}
+		if (!photonPlayer.IsInactive || isInactive)
+		{
+			if (CurrentRoom != null && CurrentRoom.HGADABNHIFG())
+			{
+				DestroyPlayerObjects(IECJKEIJLCP, false);
+			}
+			GPODJOPLJPD(IECJKEIJLCP, photonPlayer);
+			object[] array4 = new object[0];
+			array4[1] = photonPlayer;
+			SendMonoMessage(PhotonNetworkingMessage.OnWebRpcResponse, array4);
+		}
+	}
+
+	public override bool OpRaiseEvent(byte IMCBEMICJFC, object PEIFAPIIKNJ, bool ANMGHMBBMAO, RaiseEventOptions BPLHAPBMGGC)
+	{
+		if (PhotonNetwork.offlineMode)
+		{
+			return false;
+		}
+		return base.OpRaiseEvent(IMCBEMICJFC, PEIFAPIIKNJ, ANMGHMBBMAO, BPLHAPBMGGC);
+	}
+
+	public object[] FetchInstantiationData(int HOBFECDCMIL)
+	{
+		object[] value = null;
+		if (HOBFECDCMIL == 0)
+		{
+			return null;
+		}
+		IDIKEJLLFFP.TryGetValue(HOBFECDCMIL, out value);
+		return value;
+	}
+
+	private void KIAFOHLEGJO(int IECJKEIJLCP, EventData EKDHPAFJKFA)
+	{
+		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+		{
+			object[] array = new object[3];
+			array[0] = " ";
+			array[1] = IECJKEIJLCP;
+			array[5] = "_ClutTex";
+			array[4] = EKDHPAFJKFA.ToStringFull();
+			Debug.Log(string.Concat(array));
+		}
+		PhotonPlayer photonPlayer = ICMGDHDNIJD(IECJKEIJLCP);
+		if (photonPlayer == null)
+		{
+			Debug.LogError(string.Format("<b>Time</b>:", IECJKEIJLCP));
+			return;
+		}
+		bool isInactive = photonPlayer.IsInactive;
+		if (EKDHPAFJKFA.Parameters.ContainsKey(49))
+		{
+			photonPlayer.IsInactive = (bool)EKDHPAFJKFA.Parameters[24];
+			if (photonPlayer.IsInactive != isInactive)
+			{
+				object[] array2 = new object[1];
+				array2[1] = photonPlayer;
+				GHLJAECJCKF((PhotonNetworkingMessage)(-8), array2);
+			}
+			if (photonPlayer.IsInactive && isInactive)
+			{
+				object[] array3 = new object[1];
+				array3[0] = "0,7,true,0";
+				array3[1] = IECJKEIJLCP;
+				array3[5] = ";";
+				array3[6] = photonPlayer.IsInactive;
+				array3[7] = "_Value";
+				Debug.LogWarning(string.Concat(array3));
+				return;
+			}
+		}
+		if (EKDHPAFJKFA.Parameters.ContainsKey(72))
+		{
+			if ((int)EKDHPAFJKFA[82] != 0)
+			{
+				mMasterClientId = (int)EKDHPAFJKFA[8];
+				ELDLAPJAPBJ();
+			}
+		}
+		else if (!CurrentRoom.PPODOKJKEHE())
+		{
+			ANCHCNAJLOJ(IECJKEIJLCP);
+		}
+		if (!photonPlayer.IsInactive || isInactive)
+		{
+			if (CurrentRoom != null && CurrentRoom.AutoCleanUp)
+			{
+				DestroyPlayerObjects(IECJKEIJLCP, false);
+			}
+			GPODJOPLJPD(IECJKEIJLCP, photonPlayer);
+			object[] array4 = new object[1];
+			array4[1] = photonPlayer;
+			GHLJAECJCKF((PhotonNetworkingMessage)98, array4);
+		}
+	}
+
+	public void JAAICPFDENO(byte PNFBEEBFMKC, bool CKALCHJAFBE)
+	{
+		if (!CKALCHJAFBE)
+		{
+			FFBGBLFBHOK.Add(PNFBEEBFMKC);
+		}
+		else
+		{
+			FFBGBLFBHOK.Remove(PNFBEEBFMKC);
+		}
+	}
+
+	[SpecialName]
+	public string BDJGCHOLCJN()
+	{
+		return IHAJBEOILOE();
+	}
+
+	protected internal void DLFAOFKNNHF()
+	{
+		if (!PhotonNetwork.automaticallySyncScene || PhotonNetwork.isMasterClient || PhotonNetwork.room == null || !PhotonNetwork.room.CustomProperties.ContainsKey("#discord{0}joinrequest"))
+		{
+			return;
+		}
+		object obj = PhotonNetwork.room.GBLNGKOOEMH()["maps."];
+		if (obj is int)
+		{
+			if (SceneManagerHelper.AKDJMHNDCBO() != (int)obj)
+			{
+				PhotonNetwork.LoadLevel((int)obj);
+			}
+		}
+		else if (obj is string && SceneManagerHelper.JFNAOCLGCFO() != (string)obj)
+		{
+			PhotonNetwork.LoadLevel((string)obj);
+		}
+	}
+
+	public bool OpCreateGame(AKBOPCNHFFJ BDMKOAGEHPM)
+	{
+		bool flag = (BDMKOAGEHPM.OnGameServer = EHALCLFLGJF == ServerConnection.GameServer);
+		BDMKOAGEHPM.PlayerProperties = HHPBLGDNDOP();
+		if (!flag)
+		{
+			AJFMHFLGCFN = BDMKOAGEHPM;
+		}
+		ELNKFMHCMBO = JoinType.CreateRoom;
+		return base.OpCreateRoom(BDMKOAGEHPM);
+	}
+
+	public void OnStatusChanged(StatusCode FIIDDDBNCLD)
+	{
+		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+		{
+			Debug.Log($"OnStatusChanged: {FIIDDDBNCLD.ToString()} current State: {State}");
+		}
+		switch (FIIDDDBNCLD)
+		{
+		case StatusCode.Connect:
+			if (State == ClientState.ConnectingToNameServer)
+			{
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
 				{
-					if (HMGBJCGOLMI == ServerConnection.GameServer)
+					Debug.Log("Connected to NameServer.");
+				}
+				EHALCLFLGJF = ServerConnection.NameServer;
+				if (AuthValues != null)
+				{
+					AuthValues.Token = null;
+				}
+			}
+			if (State == ClientState.ConnectingToGameserver)
+			{
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
+				{
+					Debug.Log("Connected to gameserver.");
+				}
+				EHALCLFLGJF = ServerConnection.GameServer;
+				State = ClientState.ConnectedToGameserver;
+			}
+			if (State == ClientState.ConnectingToMasterserver)
+			{
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
+				{
+					Debug.Log("Connected to masterserver.");
+				}
+				EHALCLFLGJF = ServerConnection.MasterServer;
+				State = ClientState.Authenticating;
+				if (IsInitialConnect)
+				{
+					IsInitialConnect = false;
+					SendMonoMessage(PhotonNetworkingMessage.OnConnectedToPhoton);
+				}
+			}
+			if (base.TransportProtocol != ConnectionProtocol.WebSocketSecure)
+			{
+				if (EHALCLFLGJF == ServerConnection.NameServer || AuthMode == AuthModeOption.Auth)
+				{
+					EstablishEncryption();
+				}
+				break;
+			}
+			if (DebugOut == DebugLevel.INFO)
+			{
+				Debug.Log("Skipping EstablishEncryption. Protocol is secure.");
+			}
+			goto case StatusCode.EncryptionEstablished;
+		case StatusCode.EncryptionEstablished:
+			IDOAHFHJJJE = false;
+			if (EHALCLFLGJF == ServerConnection.NameServer)
+			{
+				State = ClientState.ConnectedToNameServer;
+				if (!DMCPHGDNGDB && CloudRegion == CloudRegionCode.none)
+				{
+					OpGetRegions(KAIBLIKEDHM);
+				}
+			}
+			if (EHALCLFLGJF != ServerConnection.NameServer && (AuthMode == AuthModeOption.AuthOnce || AuthMode == AuthModeOption.AuthOnceWss))
+			{
+				Debug.Log("didAuthenticate " + DMCPHGDNGDB + " AuthMode " + AuthMode);
+			}
+			else if (!DMCPHGDNGDB && (!IsUsingNameServer || CloudRegion != CloudRegionCode.none))
+			{
+				DMCPHGDNGDB = OELIGNFABAJ();
+				if (DMCPHGDNGDB)
+				{
+					State = ClientState.Authenticating;
+				}
+			}
+			break;
+		case StatusCode.EncryptionFailedToEstablish:
+		{
+			Debug.LogError(string.Concat("Encryption wasn't established: ", FIIDDDBNCLD, ". Going to authenticate anyways."));
+			AuthenticationValues authenticationValues = AuthValues;
+			if (authenticationValues == null)
+			{
+				AuthenticationValues authenticationValues2 = new AuthenticationValues();
+				authenticationValues2.UserId = PlayerName;
+				authenticationValues = authenticationValues2;
+			}
+			AuthenticationValues gPDFHODMOIJ = authenticationValues;
+			OpAuthenticate(KAIBLIKEDHM, EOCFDCJNAGM, gPDFHODMOIJ, CloudRegion.ToString(), OGLFGPKHEHH);
+			break;
+		}
+		case StatusCode.Disconnect:
+			DMCPHGDNGDB = false;
+			POHIMACBDGL = false;
+			if (EHALCLFLGJF == ServerConnection.GameServer)
+			{
+				BOJKDNJHBNG();
+			}
+			if (EHALCLFLGJF == ServerConnection.MasterServer)
+			{
+				IFPPBJINADG();
+			}
+			if (State == ClientState.DisconnectingFromMasterserver)
+			{
+				if (Connect(GameServerAddress, ServerConnection.GameServer))
+				{
+					State = ClientState.ConnectingToGameserver;
+				}
+			}
+			else if (State == ClientState.DisconnectingFromGameserver || State == ClientState.DisconnectingFromNameServer)
+			{
+				KHKMFIFGPCH(ServerConnection.MasterServer);
+				if (Connect(MasterServerAddress, ServerConnection.MasterServer))
+				{
+					State = ClientState.ConnectingToMasterserver;
+				}
+			}
+			else if (!IDOAHFHJJJE)
+			{
+				if (AuthValues != null)
+				{
+					AuthValues.Token = null;
+				}
+				IsInitialConnect = false;
+				State = ClientState.PeerCreated;
+				SendMonoMessage(PhotonNetworkingMessage.OnDisconnectedFromPhoton);
+			}
+			break;
+		case StatusCode.SecurityExceptionOnConnect:
+		case StatusCode.ExceptionOnConnect:
+		{
+			IsInitialConnect = false;
+			State = ClientState.PeerCreated;
+			if (AuthValues != null)
+			{
+				AuthValues.Token = null;
+			}
+			DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
+			SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, disconnectCause);
+			break;
+		}
+		case StatusCode.Exception:
+			if (IsInitialConnect)
+			{
+				Debug.LogError("Exception while connecting to: " + base.ServerAddress + ". Check if the server is available.");
+				if (base.ServerAddress == null || base.ServerAddress.StartsWith("127.0.0.1"))
+				{
+					Debug.LogWarning("The server address is 127.0.0.1 (localhost): Make sure the server is running on this machine. Android and iOS emulators have their own localhost.");
+					if (base.ServerAddress == GameServerAddress)
 					{
-						this.State = ClientState.ConnectingToGameserver;
+						Debug.LogWarning("This might be a misconfiguration in the game server config. You need to edit it to a (public) address.");
 					}
 				}
-				else
+				State = ClientState.PeerCreated;
+				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
+				IsInitialConnect = false;
+				SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, disconnectCause);
+			}
+			else
+			{
+				State = ClientState.PeerCreated;
+				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
+				SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, disconnectCause);
+			}
+			Disconnect();
+			break;
+		case StatusCode.TimeoutDisconnect:
+			if (IsInitialConnect)
+			{
+				if (!IDOAHFHJJJE)
 				{
-					this.State = ClientState.ConnectingToMasterserver;
+					Debug.LogWarning(string.Concat(FIIDDDBNCLD, " while connecting to: ", base.ServerAddress, ". Check if the server is available."));
+					IsInitialConnect = false;
+					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
+					SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, disconnectCause);
 				}
 			}
 			else
 			{
-				this.State = ClientState.ConnectingToNameServer;
+				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
+				SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, disconnectCause);
 			}
+			if (AuthValues != null)
+			{
+				AuthValues.Token = null;
+			}
+			Disconnect();
+			break;
+		case StatusCode.ExceptionOnReceive:
+		case StatusCode.DisconnectByServer:
+		case StatusCode.DisconnectByServerUserLimit:
+		case StatusCode.DisconnectByServerLogic:
+			if (IsInitialConnect)
+			{
+				Debug.LogWarning(string.Concat(FIIDDDBNCLD, " while connecting to: ", base.ServerAddress, ". Check if the server is available."));
+				IsInitialConnect = false;
+				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
+				SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, disconnectCause);
+			}
+			else
+			{
+				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
+				SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, disconnectCause);
+			}
+			if (AuthValues != null)
+			{
+				AuthValues.Token = null;
+			}
+			Disconnect();
+			break;
+		case StatusCode.SendError:
+			break;
+		default:
+			Debug.LogError("Received unknown status code: " + FIIDDDBNCLD);
+			break;
+		}
+	}
+
+	public bool GetRegions()
+	{
+		if (EHALCLFLGJF != ServerConnection.NameServer)
+		{
+			return false;
+		}
+		bool flag = OpGetRegions(KAIBLIKEDHM);
+		if (flag)
+		{
+			AvailableRegions = null;
 		}
 		return flag;
 	}
 
-	// Token: 0x0600AF36 RID: 44854 RVA: 0x0008AC8E File Offset: 0x00088E8E
-	public override bool OpJoinRandomRoom(OpJoinRandomRoomParams IFIMMPPLLHI)
+	private bool LFAPOBNFPPO(object CFKDMFFFPJK, object GOLMELKEAFO)
 	{
-		this.AJFMHFLGCFN = new AKBOPCNHFFJ();
-		this.AJFMHFLGCFN.Lobby = IFIMMPPLLHI.TypedLobby;
-		this.AJFMHFLGCFN.ExpectedUsers = IFIMMPPLLHI.ExpectedUsers;
-		this.ELNKFMHCMBO = JoinType.JoinRandomRoom;
-		return base.OpJoinRandomRoom(IFIMMPPLLHI);
-	}
-
-	// Token: 0x0600AF37 RID: 44855 RVA: 0x0008ACCB File Offset: 0x00088ECB
-	private void IFPPBJINADG()
-	{
-		this.mGameList = new Dictionary<string, RoomInfo>();
-		this.mGameListCopy = new RoomInfo[0];
-		if (this.insideLobby)
+		if (CFKDMFFFPJK == null || GOLMELKEAFO == null)
 		{
-			this.insideLobby = false;
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnLeftLobby, new object[0]);
+			return CFKDMFFFPJK == null && GOLMELKEAFO == null;
 		}
-	}
-
-	// Token: 0x0600AF38 RID: 44856 RVA: 0x00408840 File Offset: 0x00406A40
-	public PhotonView GetPhotonView(int NADLIACHBNO)
-	{
-		PhotonView photonView = null;
-		this.HFCMPEKPBAM.TryGetValue(NADLIACHBNO, out photonView);
-		if (photonView == null)
+		if (!CFKDMFFFPJK.Equals(GOLMELKEAFO))
 		{
-			foreach (PhotonView photonView2 in UnityEngine.Object.FindObjectsOfType(typeof(PhotonView)) as PhotonView[])
+			if (CFKDMFFFPJK is Vector3)
 			{
-				if (photonView2.viewID == NADLIACHBNO)
+				Vector3 mPNMOONBMII = (Vector3)CFKDMFFFPJK;
+				Vector3 bICCGCFNNLP = (Vector3)GOLMELKEAFO;
+				if (mPNMOONBMII.AlmostEquals(bICCGCFNNLP, PhotonNetwork.precisionForVectorSynchronization))
 				{
-					if (photonView2.GEKLBLEBECG)
-					{
-						Debug.LogWarning("Had to lookup view that wasn't in photonViewList: " + photonView2);
-					}
-					return photonView2;
+					return true;
 				}
 			}
-		}
-		return photonView;
-	}
-
-	// Token: 0x0600AF39 RID: 44857 RVA: 0x0008AD02 File Offset: 0x00088F02
-	public virtual bool POGJKHNENIK(string[] MIMEHFLKIIG)
-	{
-		if (this.POHIMACBDGL)
-		{
-			return true;
-		}
-		this.BEIPFKHGHPC = MIMEHFLKIIG;
-		this.POHIMACBDGL = false;
-		return base.KLGCDNLPLAO(MIMEHFLKIIG);
-	}
-
-	// Token: 0x0600AF3A RID: 44858 RVA: 0x004088C4 File Offset: 0x00406AC4
-	public void FMAPFMDBMLN(StatusCode FIIDDDBNCLD)
-	{
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-		{
-			Debug.Log(string.Format("CorrectHitsScoreText", FIIDDDBNCLD.ToString(), this.EBAJHBFJFCL()));
-		}
-		switch (FIIDDDBNCLD)
-		{
-		case (StatusCode)(-49):
-		case (StatusCode)(-47):
-		case (StatusCode)(-46):
-		case (StatusCode)(-45):
-			if (this.IsInitialConnect)
+			else if (CFKDMFFFPJK is Vector2)
 			{
-				object[] array = new object[]
+				Vector2 mPNMOONBMII2 = (Vector2)CFKDMFFFPJK;
+				Vector2 bICCGCFNNLP2 = (Vector2)GOLMELKEAFO;
+				if (mPNMOONBMII2.AlmostEquals(bICCGCFNNLP2, PhotonNetwork.precisionForVectorSynchronization))
 				{
-					FIIDDDBNCLD
-				};
-				array[0] = "skin.";
-				array[8] = base.ServerAddress;
-				array[1] = ".lastCheckpoint.time";
-				Debug.LogWarning(string.Concat(array));
-				this.IsInitialConnect = true;
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco = (PhotonNetworkingMessage)106;
-				object[] array2 = new object[0];
-				array2[0] = disconnectCause;
-				BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco, array2);
-			}
-			else
-			{
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco2 = (PhotonNetworkingMessage)40;
-				object[] array3 = new object[0];
-				array3[1] = disconnectCause;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco2, array3);
-			}
-			if (this.IJHIEINKMFP() != null)
-			{
-				this.AuthValues.FNCDLDJFJAM(null);
-			}
-			this.Disconnect();
-			return;
-		case (StatusCode)(-48):
-			if (this.IsInitialConnect)
-			{
-				if (!this.IDOAHFHJJJE)
-				{
-					object[] array4 = new object[0];
-					array4[0] = FIIDDDBNCLD;
-					array4[0] = "StartButton";
-					array4[6] = base.ServerAddress;
-					array4[7] = "OneHand";
-					Debug.LogWarning(string.Concat(array4));
-					this.IsInitialConnect = false;
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					PhotonNetworkingMessage lelhnddckco3 = (PhotonNetworkingMessage)(-78);
-					object[] array5 = new object[0];
-					array5[0] = disconnectCause;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco3, array5);
+					return true;
 				}
 			}
-			else
+			else if (CFKDMFFFPJK is Quaternion)
 			{
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco4 = (PhotonNetworkingMessage)39;
-				object[] array6 = new object[0];
-				array6[0] = disconnectCause;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco4, array6);
+				Quaternion mPNMOONBMII3 = (Quaternion)CFKDMFFFPJK;
+				Quaternion bICCGCFNNLP3 = (Quaternion)GOLMELKEAFO;
+				if (mPNMOONBMII3.AlmostEquals(bICCGCFNNLP3, PhotonNetwork.precisionForQuaternionSynchronization))
+				{
+					return true;
+				}
 			}
-			if (this.AuthValues != null)
+			else if (CFKDMFFFPJK is float)
 			{
-				this.IJHIEINKMFP().FNCDLDJFJAM(null);
+				float mPNMOONBMII4 = (float)CFKDMFFFPJK;
+				float bICCGCFNNLP4 = (float)GOLMELKEAFO;
+				if (mPNMOONBMII4.AlmostEquals(bICCGCFNNLP4, PhotonNetwork.precisionForFloatSynchronization))
+				{
+					return true;
+				}
 			}
-			this.Disconnect();
-			return;
-		default:
-			switch (FIIDDDBNCLD)
-			{
-			case (StatusCode)67:
-			case (StatusCode)68:
-			{
-				this.IsInitialConnect = false;
-				this.State = ClientState.Uninitialized;
-				if (this.AuthValues != null)
-				{
-					this.IJHIEINKMFP().NJJEJBOAEDG(null);
-				}
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco5 = (PhotonNetworkingMessage)(-7);
-				object[] array7 = new object[0];
-				array7[0] = disconnectCause;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco5, array7);
-				return;
-			}
-			case (StatusCode)69:
-				if (this.EBAJHBFJFCL() == (ClientState)(-86))
-				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)4)
-					{
-						Debug.Log(" is not observed by this object's photonView! OnPhotonSerializeView() in this class won't be used.");
-					}
-					this.LNKHKBBMMIA(ServerConnection.NameServer);
-					if (this.IJHIEINKMFP() != null)
-					{
-						this.AuthValues.AIOHGAFEHJG(null);
-					}
-				}
-				if (this.EBAJHBFJFCL() == ClientState.Authenticated)
-				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)6)
-					{
-						Debug.Log("Inside cells:\n");
-					}
-					this.EHALCLFLGJF = ServerConnection.MasterServer;
-					this.JNPKDLEMJFN(ClientState.PeerCreated);
-				}
-				if (this.EBAJHBFJFCL() == (ClientState)(-85))
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.Log("NEW_ACHIEVEMENT_1_26");
-					}
-					this.LNKHKBBMMIA(ServerConnection.MasterServer);
-					this.JNPKDLEMJFN((ClientState)(-72));
-					if (this.IsInitialConnect)
-					{
-						this.IsInitialConnect = true;
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectedToPhoton, new object[1]);
-					}
-				}
-				if (base.TransportProtocol != ConnectionProtocol.Udp)
-				{
-					if (this.EHALCLFLGJF == (ServerConnection)3 || this.AuthMode == AuthModeOption.Auth)
-					{
-						base.EstablishEncryption();
-					}
-					return;
-				}
-				if (this.DebugOut == DebugLevel.INFO)
-				{
-					Debug.Log("true");
-				}
-				goto IL_1AC;
-			case (StatusCode)70:
-				this.DMCPHGDNGDB = false;
-				this.POHIMACBDGL = false;
-				if (this.EHALCLFLGJF == ServerConnection.MasterServer)
-				{
-					this.BJHGKICFMJP();
-				}
-				if (this.IGDBHCGGHFF() == ServerConnection.MasterServer)
-				{
-					this.ONELBBFGFOM();
-				}
-				if (this.EBAJHBFJFCL() == ClientState.Uninitialized)
-				{
-					if (this.Connect(this.GameServerAddress, ServerConnection.MasterServer))
-					{
-						this.JNPKDLEMJFN(ClientState.Queued);
-					}
-				}
-				else if (this.EBAJHBFJFCL() == (ClientState)73 || this.EBAJHBFJFCL() == ClientState.ConnectingToGameserver)
-				{
-					this.KHKMFIFGPCH(ServerConnection.MasterServer);
-					if (this.Connect(this.MasterServerAddress, ServerConnection.GameServer))
-					{
-						this.JNPKDLEMJFN((ClientState)(-49));
-					}
-				}
-				else
-				{
-					if (this.IDOAHFHJJJE)
-					{
-						return;
-					}
-					if (this.IJHIEINKMFP() != null)
-					{
-						this.AuthValues.NNIDGJOPJOI(null);
-					}
-					this.IsInitialConnect = true;
-					this.JNPKDLEMJFN(ClientState.PeerCreated);
-					BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnDisconnectedFromPhoton, new object[0]);
-				}
-				return;
-			case (StatusCode)71:
-				if (this.IsInitialConnect)
-				{
-					Debug.LogError("caret" + base.ServerAddress + " isOwnerActive: ");
-					if (base.ServerAddress == null || base.ServerAddress.StartsWith("_MainTex"))
-					{
-						Debug.LogWarning(" not exist");
-						if (base.ServerAddress == this.GameServerAddress)
-						{
-							Debug.LogWarning("1");
-						}
-					}
-					this.JNPKDLEMJFN(ClientState.PeerCreated);
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					this.IsInitialConnect = true;
-					PhotonNetworkingMessage lelhnddckco6 = (PhotonNetworkingMessage)90;
-					object[] array8 = new object[0];
-					array8[1] = disconnectCause;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco6, array8);
-				}
-				else
-				{
-					this.JNPKDLEMJFN(ClientState.Uninitialized);
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					PhotonNetworkingMessage lelhnddckco7 = PhotonNetworkingMessage.OnPhotonPlayerPropertiesChanged;
-					object[] array9 = new object[0];
-					array9[0] = disconnectCause;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco7, array9);
-				}
-				this.Disconnect();
-				return;
-			case (StatusCode)75:
-				return;
-			}
-			Debug.LogError(".ogg" + FIIDDDBNCLD);
-			return;
-		case (StatusCode)(-40):
-			break;
-		case (StatusCode)(-39):
-		{
-			Debug.LogError("_Value" + FIIDDDBNCLD + ".a");
-			AuthenticationValues authenticationValues;
-			if ((authenticationValues = this.AuthValues) == null)
-			{
-				authenticationValues = new AuthenticationValues
-				{
-					UserId = this.PlayerName
-				};
-			}
-			AuthenticationValues gpdfhodmoij = authenticationValues;
-			this.MPELLFNHBGN(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CloudRegion.ToString(), this.OGLFGPKHEHH);
-			return;
-		}
-		}
-		IL_1AC:
-		this.IDOAHFHJJJE = true;
-		if (this.EHALCLFLGJF == ServerConnection.MasterServer)
-		{
-			this.State = (ClientState)(-94);
-			if (!this.DMCPHGDNGDB && this.CAFLFPLLMNC() == CloudRegionCode.us)
-			{
-				this.CGIPKIOMHCO(this.KAIBLIKEDHM);
-			}
-		}
-		if (this.IGDBHCGGHFF() != (ServerConnection)7 && (this.AuthMode == AuthModeOption.AuthOnce || this.AuthMode == (AuthModeOption)3))
-		{
-			object[] array10 = new object[8];
-			array10[0] = "_InvRenderTargetSize";
-			array10[1] = this.DMCPHGDNGDB;
-			array10[0] = "_MainTex2";
-			array10[8] = this.AuthMode;
-			Debug.Log(string.Concat(array10));
-		}
-		else if (!this.DMCPHGDNGDB && (!this.IsUsingNameServer || this.CloudRegion != CloudRegionCode.au))
-		{
-			this.DMCPHGDNGDB = this.OELIGNFABAJ();
-			if (this.DMCPHGDNGDB)
-			{
-				this.State = (ClientState)(-73);
-			}
-		}
-	}
-
-	// Token: 0x0600AF3B RID: 44859 RVA: 0x00408F18 File Offset: 0x00407118
-	private bool IHAJPLJACML(ParameterInfo[] LFONMECHEJD, Type[] HAKMJIHLGNI)
-	{
-		if (LFONMECHEJD.Length < HAKMJIHLGNI.Length)
-		{
 			return false;
 		}
-		for (int i = 0; i < HAKMJIHLGNI.Length; i++)
-		{
-			Type parameterType = LFONMECHEJD[i].ParameterType;
-			if (HAKMJIHLGNI[i] != null && !parameterType.IsAssignableFrom(HAKMJIHLGNI[i]) && (!parameterType.IsEnum || !Enum.GetUnderlyingType(parameterType).IsAssignableFrom(HAKMJIHLGNI[i])))
-			{
-				return false;
-			}
-		}
 		return true;
 	}
 
-	// Token: 0x0600AF3C RID: 44860 RVA: 0x00408F88 File Offset: 0x00407188
-	protected internal void KHKMFIFGPCH(ServerConnection NKGHPPHEGCO)
-	{
-		ConnectionProtocol connectionProtocol = base.TransportProtocol;
-		if (this.AuthMode == AuthModeOption.AuthOnceWss)
-		{
-			if (NKGHPPHEGCO != ServerConnection.NameServer)
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-				{
-					Debug.LogWarning("Using PhotonServerSettings.Protocol when leaving the NameServer (AuthMode is AuthOnceWss): " + PhotonNetwork.PhotonServerSettings.Protocol);
-				}
-				connectionProtocol = PhotonNetwork.PhotonServerSettings.Protocol;
-			}
-			else
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-				{
-					Debug.LogWarning("Using WebSocket to connect NameServer (AuthMode is AuthOnceWss).");
-				}
-				connectionProtocol = ConnectionProtocol.WebSocketSecure;
-			}
-		}
-		Type type = Type.GetType("ExitGames.Client.Photon.SocketWebTcp, Assembly-CSharp", false);
-		if (type == null)
-		{
-			type = Type.GetType("ExitGames.Client.Photon.SocketWebTcp, Assembly-CSharp-firstpass", false);
-		}
-		if (type != null)
-		{
-			this.SocketImplementationConfig[ConnectionProtocol.WebSocket] = type;
-			this.SocketImplementationConfig[ConnectionProtocol.WebSocketSecure] = type;
-		}
-		if (PhotonHandler.LEILCLLNGGH == null)
-		{
-			PhotonHandler.LEILCLLNGGH = typeof(PingMono);
-		}
-		if (base.TransportProtocol == connectionProtocol)
-		{
-			return;
-		}
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-		{
-			Debug.LogWarning(string.Concat(new object[]
-			{
-				"Protocol switch from: ",
-				base.TransportProtocol,
-				" to: ",
-				connectionProtocol,
-				"."
-			}));
-		}
-		base.TransportProtocol = connectionProtocol;
-	}
-
-	// Token: 0x0600AF3D RID: 44861 RVA: 0x004090B8 File Offset: 0x004072B8
-	private void LLMNFGHNIND(int DIODBOKJKHM, int EJOIHHAHDLD, bool FEINGCNNFGM)
-	{
-		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[7] = DIODBOKJKHM;
-		RaiseEventOptions raiseEventOptions = new RaiseEventOptions
-		{
-			CachingOption = EventCaching.RemoveFromRoomCache,
-			TargetActors = new int[]
-			{
-				EJOIHHAHDLD
-			}
-		};
-		this.OpRaiseEvent(202, hashtable, true, raiseEventOptions);
-		ExitGames.Client.Photon.Hashtable hashtable2 = new ExitGames.Client.Photon.Hashtable();
-		hashtable2[0] = DIODBOKJKHM;
-		raiseEventOptions = null;
-		if (!FEINGCNNFGM)
-		{
-			raiseEventOptions = new RaiseEventOptions();
-			raiseEventOptions.CachingOption = EventCaching.AddToRoomCacheGlobal;
-			Debug.Log("Destroying GO as global. ID: " + DIODBOKJKHM);
-		}
-		this.OpRaiseEvent(204, hashtable2, true, raiseEventOptions);
-	}
-
-	// Token: 0x0600AF3E RID: 44862 RVA: 0x0008AD26 File Offset: 0x00088F26
-	public virtual bool JPMHBPKKGJD(OpJoinRandomRoomParams IFIMMPPLLHI)
-	{
-		this.AJFMHFLGCFN = new AKBOPCNHFFJ();
-		this.AJFMHFLGCFN.Lobby = IFIMMPPLLHI.TypedLobby;
-		this.AJFMHFLGCFN.ExpectedUsers = IFIMMPPLLHI.ExpectedUsers;
-		this.ELNKFMHCMBO = JoinType.JoinOrCreateRoom;
-		return base.DEBJAENPEII(IFIMMPPLLHI);
-	}
-
-	// Token: 0x1700024D RID: 589
-	// (get) Token: 0x0600AF3F RID: 44863 RVA: 0x0008AD63 File Offset: 0x00088F63
-	// (set) Token: 0x0600AF70 RID: 44912 RVA: 0x0008AE6E File Offset: 0x0008906E
-	public TypedLobby lobby { get; set; }
-
-	// Token: 0x0600AF40 RID: 44864 RVA: 0x0008AD6B File Offset: 0x00088F6B
-	private bool CGPLAHHGMEO()
-	{
-		return PhotonNetwork.EnableLobbyStatistics && this.NJIFBFEHJKH() == ServerConnection.MasterServer;
-	}
-
-	// Token: 0x17000251 RID: 593
-	// (get) Token: 0x0600AF41 RID: 44865 RVA: 0x0008AD83 File Offset: 0x00088F83
-	// (set) Token: 0x0600AF49 RID: 44873 RVA: 0x0008ADCB File Offset: 0x00088FCB
-	public PhotonPlayer LocalPlayer { get; internal set; }
-
-	// Token: 0x0600AF42 RID: 44866 RVA: 0x0040915C File Offset: 0x0040735C
-	protected internal static bool IIHAIKHPABG(MonoBehaviour KLJMHHFGLCJ, string AOBJJJOJGGF, out MethodInfo MKLKGCPAPOC)
-	{
-		MKLKGCPAPOC = null;
-		if (KLJMHHFGLCJ == null || string.IsNullOrEmpty(AOBJJJOJGGF))
-		{
-			return true;
-		}
-		List<MethodInfo> methods = SupportClass.GetMethods(KLJMHHFGLCJ.GetType(), null);
-		for (int i = 0; i < methods.Count; i += 0)
-		{
-			MethodInfo methodInfo = methods[i];
-			if (methodInfo.Name.Equals(AOBJJJOJGGF))
-			{
-				MKLKGCPAPOC = methodInfo;
-				return true;
-			}
-		}
-		return true;
-	}
-
-	// Token: 0x0600AF43 RID: 44867 RVA: 0x00408584 File Offset: 0x00406784
-	private bool DHGPFGBOLGO(ParameterInfo[] LFONMECHEJD, Type[] HAKMJIHLGNI)
-	{
-		if (LFONMECHEJD.Length < HAKMJIHLGNI.Length)
-		{
-			return true;
-		}
-		for (int i = 1; i < HAKMJIHLGNI.Length; i++)
-		{
-			Type parameterType = LFONMECHEJD[i].ParameterType;
-			if (HAKMJIHLGNI[i] != null && !parameterType.IsAssignableFrom(HAKMJIHLGNI[i]) && (!parameterType.IsEnum || !Enum.GetUnderlyingType(parameterType).IsAssignableFrom(HAKMJIHLGNI[i])))
-			{
-				return false;
-			}
-		}
-		return true;
-	}
-
-	// Token: 0x0600AF44 RID: 44868 RVA: 0x004091C8 File Offset: 0x004073C8
-	public void MPHFPMJMGJG(string DPNHODJHGJL)
-	{
-		if (string.IsNullOrEmpty(DPNHODJHGJL) || DPNHODJHGJL.Equals(this.OBCEIJGMKGB))
-		{
-			return;
-		}
-		if (this.LocalPlayer != null)
-		{
-			this.LocalPlayer.NickName = DPNHODJHGJL;
-		}
-		this.OBCEIJGMKGB = DPNHODJHGJL;
-		if (this.CurrentRoom != null)
-		{
-			this.PACEKOIEHKK();
-		}
-	}
-
-	// Token: 0x0600AF45 RID: 44869 RVA: 0x00409224 File Offset: 0x00407424
-	private object[] ILACHMNMKGF(object[] BJIEGLPODKG, object[] BGJHIKDFIMP)
-	{
-		if (BGJHIKDFIMP == null || BJIEGLPODKG == null || BJIEGLPODKG.Length != BGJHIKDFIMP.Length)
-		{
-			return BGJHIKDFIMP;
-		}
-		if (BGJHIKDFIMP.Length <= 1)
-		{
-			return null;
-		}
-		BJIEGLPODKG[0] = true;
-		int num = 1;
-		Queue<int> queue = null;
-		for (int i = 7; i < BGJHIKDFIMP.Length; i += 0)
-		{
-			object obj = BGJHIKDFIMP[i];
-			object golmelkeafo = BJIEGLPODKG[i];
-			if (this.DONKMNHEACD(obj, golmelkeafo))
-			{
-				num++;
-				BJIEGLPODKG[i] = null;
-			}
-			else
-			{
-				BJIEGLPODKG[i] = obj;
-				if (obj == null)
-				{
-					if (queue == null)
-					{
-						queue = new Queue<int>(BGJHIKDFIMP.Length);
-					}
-					queue.Enqueue(i);
-				}
-			}
-		}
-		if (num > 0)
-		{
-			if (num == BGJHIKDFIMP.Length - 5)
-			{
-				return null;
-			}
-			BJIEGLPODKG[0] = true;
-			if (queue != null)
-			{
-				BJIEGLPODKG[0] = queue.ToArray();
-			}
-		}
-		BJIEGLPODKG[0] = BGJHIKDFIMP[1];
-		return BJIEGLPODKG;
-	}
-
-	// Token: 0x0600AF46 RID: 44870 RVA: 0x004092F4 File Offset: 0x004074F4
-	public void MKMDDMAAPMI(int PHIGECOLKKN, bool NOKCKEBHIFJ)
-	{
-		if (PHIGECOLKKN <= 0)
-		{
-			Debug.LogError("ping: {6}[+/-{7}]ms resent:{8} \n\nmax ms between\nsend: {0,4} \ndispatch: {1,4} \n\nlongest dispatch for: \nev({3}):{2,3}ms \nop({5}):{4,3}ms" + PHIGECOLKKN);
-			return;
-		}
-		if (!NOKCKEBHIFJ)
-		{
-			this.NGAEPLGAGAL(PHIGECOLKKN);
-			this.OpCleanRpcBuffer(PHIGECOLKKN);
-			this.KCNBFALAJMD(PHIGECOLKKN);
-		}
-		HashSet<GameObject> hashSet = new HashSet<GameObject>();
-		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
-		{
-			if (photonView != null && photonView.CreatorActorNr == PHIGECOLKKN)
-			{
-				hashSet.Add(photonView.gameObject);
-			}
-		}
-		foreach (GameObject obfjphlbfol in hashSet)
-		{
-			this.EFDAOHIDIIF(obfjphlbfol, true);
-		}
-		foreach (PhotonView photonView2 in this.HFCMPEKPBAM.Values)
-		{
-			if (photonView2.ownerId == PHIGECOLKKN)
-			{
-				photonView2.ownerId = photonView2.CreatorActorNr;
-			}
-		}
-	}
-
-	// Token: 0x0600AF47 RID: 44871 RVA: 0x0008AD8B File Offset: 0x00088F8B
-	public override void Disconnect()
-	{
-		if (base.PeerState == PeerStateValue.Disconnected)
-		{
-			if (!PhotonHandler.MBIFDLCKGKN)
-			{
-				Debug.LogWarning(string.Format("Can't execute Disconnect() while not connected. Nothing changed. State: {0}", this.State));
-			}
-			return;
-		}
-		this.State = ClientState.Disconnecting;
-		base.Disconnect();
-	}
-
-	// Token: 0x1700024B RID: 587
-	// (get) Token: 0x0600AF63 RID: 44899 RVA: 0x0008ADF8 File Offset: 0x00088FF8
-	// (set) Token: 0x0600AF48 RID: 44872 RVA: 0x0008AB07 File Offset: 0x00088D07
-	protected internal ServerConnection EHALCLFLGJF { get; private set; }
-
-	// Token: 0x17000245 RID: 581
-	// (get) Token: 0x0600AF6B RID: 44907 RVA: 0x0008AAC4 File Offset: 0x00088CC4
-	// (set) Token: 0x0600AF4A RID: 44874 RVA: 0x0008ADD4 File Offset: 0x00088FD4
-	public AuthenticationValues AuthValues { get; set; }
-
-	// Token: 0x0600AF4B RID: 44875 RVA: 0x00409460 File Offset: 0x00407660
-	public void ELEMKNKGNIP(DebugLevel DCMIEONIJMA, string JKPJCEMPAGH)
-	{
-		if (DCMIEONIJMA == DebugLevel.ERROR)
-		{
-			Debug.LogError(JKPJCEMPAGH);
-		}
-		else if (DCMIEONIJMA == DebugLevel.ERROR)
-		{
-			Debug.LogWarning(JKPJCEMPAGH);
-		}
-		else if (DCMIEONIJMA == (DebugLevel)7 && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-		{
-			Debug.Log(JKPJCEMPAGH);
-		}
-		else if (DCMIEONIJMA == (DebugLevel)6 && PhotonNetwork.logLevel == PhotonLogLevel.ErrorsOnly)
-		{
-			Debug.Log(JKPJCEMPAGH);
-		}
-	}
-
-	// Token: 0x0600AF4C RID: 44876 RVA: 0x004094C8 File Offset: 0x004076C8
-	private static int DAOLLJGIJOI(PhotonPlayer[] NEJPNIGJLGP, int AIMBEFMGEFM)
-	{
-		if (NEJPNIGJLGP == null || NEJPNIGJLGP.Length == 0)
-		{
-			return -1;
-		}
-		int num = 140;
-		foreach (PhotonPlayer photonPlayer in NEJPNIGJLGP)
-		{
-			if (photonPlayer.ONIKFABKELO() != AIMBEFMGEFM)
-			{
-				if (photonPlayer.ONIKFABKELO() < num)
-				{
-					num = photonPlayer.ONIKFABKELO();
-				}
-			}
-		}
-		return num;
-	}
-
-	// Token: 0x0600AF4D RID: 44877 RVA: 0x00409528 File Offset: 0x00407728
-	protected internal void GNFPGMGGDNN(int[] HOMAECIGJEJ)
-	{
-		foreach (int num in HOMAECIGJEJ)
-		{
-			if (this.LocalPlayer.ID != num && !this.mActors.ContainsKey(num))
-			{
-				this.JOANOODGGAG(num, new PhotonPlayer(false, num, string.Empty));
-			}
-		}
-	}
-
-	// Token: 0x0600AF4E RID: 44878 RVA: 0x00409584 File Offset: 0x00407784
-	protected internal void EPGIIBMOHEG(int NADLIACHBNO, int MLBADICEKFF)
-	{
-		Debug.Log(string.Concat(new object[]
-		{
-			"RequestOwnership(): ",
-			NADLIACHBNO,
-			" from: ",
-			MLBADICEKFF,
-			" Time: ",
-			Environment.TickCount % 1000
-		}));
-		this.OpRaiseEvent(209, new int[]
-		{
-			NADLIACHBNO,
-			MLBADICEKFF
-		}, true, new RaiseEventOptions
-		{
-			Receivers = ReceiverGroup.All
-		});
-	}
-
-	// Token: 0x0600AF4F RID: 44879 RVA: 0x00409608 File Offset: 0x00407808
-	private void IJCJBPEELEM(Dictionary<byte, object> FNHGNHCOMBH)
-	{
-		if (this.AuthMode == AuthModeOption.Auth && this.DebugOut == DebugLevel.OFF)
-		{
-			Debug.LogWarning("[ResourcesManager] Load audio error: " + FNHGNHCOMBH.ToStringFull());
-			return;
-		}
-		if (this.DebugOut == (DebugLevel)7)
-		{
-			Debug.Log("_TimeX" + FNHGNHCOMBH.ToStringFull());
-		}
-		EncryptionMode encryptionMode = (EncryptionMode)((byte)FNHGNHCOMBH[1]);
-		if (encryptionMode != EncryptionMode.PayloadEncryption)
-		{
-			if (encryptionMode != (EncryptionMode)87)
-			{
-				throw new ArgumentOutOfRangeException();
-			}
-			byte[] encryptionSecret = (byte[])FNHGNHCOMBH[0];
-			byte[] hmacSecret = (byte[])FNHGNHCOMBH[2];
-			base.InitDatagramEncryption(encryptionSecret, hmacSecret);
-		}
-		else
-		{
-			byte[] secret = (byte[])FNHGNHCOMBH[1];
-			base.InitPayloadEncryption(secret);
-		}
-	}
-
-	// Token: 0x0600AF50 RID: 44880 RVA: 0x004096CC File Offset: 0x004078CC
-	private object[] MFKHMJBJDLE(object[] BJIEGLPODKG, object[] BGJHIKDFIMP)
-	{
-		if (BGJHIKDFIMP == null || BJIEGLPODKG == null || BJIEGLPODKG.Length != BGJHIKDFIMP.Length)
-		{
-			return BGJHIKDFIMP;
-		}
-		if (BGJHIKDFIMP.Length <= 3)
-		{
-			return null;
-		}
-		BJIEGLPODKG[1] = false;
-		int num = 0;
-		Queue<int> queue = null;
-		for (int i = 3; i < BGJHIKDFIMP.Length; i++)
-		{
-			object obj = BGJHIKDFIMP[i];
-			object golmelkeafo = BJIEGLPODKG[i];
-			if (this.LFAPOBNFPPO(obj, golmelkeafo))
-			{
-				num++;
-				BJIEGLPODKG[i] = null;
-			}
-			else
-			{
-				BJIEGLPODKG[i] = obj;
-				if (obj == null)
-				{
-					if (queue == null)
-					{
-						queue = new Queue<int>(BGJHIKDFIMP.Length);
-					}
-					queue.Enqueue(i);
-				}
-			}
-		}
-		if (num > 0)
-		{
-			if (num == BGJHIKDFIMP.Length - 3)
-			{
-				return null;
-			}
-			BJIEGLPODKG[1] = true;
-			if (queue != null)
-			{
-				BJIEGLPODKG[2] = queue.ToArray();
-			}
-		}
-		BJIEGLPODKG[0] = BGJHIKDFIMP[0];
-		return BJIEGLPODKG;
-	}
-
-	// Token: 0x0600AF51 RID: 44881 RVA: 0x0040979C File Offset: 0x0040799C
 	private object[] OAMPHAGPLEL(PhotonView DFIHBOEOJPI)
 	{
 		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Off)
 		{
 			return null;
 		}
-		PhotonMessageInfo dagalcailln = new PhotonMessageInfo(this.LocalPlayer, PhotonNetwork.ServerTimestamp, DFIHBOEOJPI);
-		this.ALPAEKHFHPP.MKNINLEEFNI();
-		this.ALPAEKHFHPP.SendNext(null);
-		this.ALPAEKHFHPP.SendNext(null);
-		this.ALPAEKHFHPP.SendNext(null);
-		DFIHBOEOJPI.SerializeView(this.ALPAEKHFHPP, dagalcailln);
-		if (this.ALPAEKHFHPP.Count <= 3)
+		PhotonMessageInfo dAGALCAILLN = new PhotonMessageInfo(LocalPlayer, PhotonNetwork.ServerTimestamp, DFIHBOEOJPI);
+		ALPAEKHFHPP.MKNINLEEFNI();
+		ALPAEKHFHPP.SendNext(null);
+		ALPAEKHFHPP.SendNext(null);
+		ALPAEKHFHPP.SendNext(null);
+		DFIHBOEOJPI.SerializeView(ALPAEKHFHPP, dAGALCAILLN);
+		if (ALPAEKHFHPP.Count <= 3)
 		{
 			return null;
 		}
-		object[] array = this.ALPAEKHFHPP.ToArray();
+		object[] array = ALPAEKHFHPP.ToArray();
 		array[0] = DFIHBOEOJPI.viewID;
 		array[1] = false;
 		array[2] = null;
@@ -3155,7 +3057,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 		if (DFIHBOEOJPI.synchronization == ViewSynchronization.UnreliableOnChange)
 		{
-			if (this.LFAPOBNFPPO(array, DFIHBOEOJPI.EOENPICKCCO))
+			if (LFAPOBNFPPO(array, DFIHBOEOJPI.EOENPICKCCO))
 			{
 				if (DFIHBOEOJPI.PBIDCPBMFKJ)
 				{
@@ -3173,741 +3075,544 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 		if (DFIHBOEOJPI.synchronization == ViewSynchronization.ReliableDeltaCompressed)
 		{
-			object[] result = this.MFKHMJBJDLE(DFIHBOEOJPI.EOENPICKCCO, array);
+			object[] result = MFKHMJBJDLE(DFIHBOEOJPI.EOENPICKCCO, array);
 			DFIHBOEOJPI.EOENPICKCCO = array;
 			return result;
 		}
 		return null;
 	}
 
-	// Token: 0x0600AF52 RID: 44882 RVA: 0x004098C0 File Offset: 0x00407AC0
-	public virtual bool NKIJJOPNGCB(AKBOPCNHFFJ HBJBKOPJDKJ)
+	private void PCLPOPNEABK(OperationResponse FEOMHKNGOAK)
 	{
-		bool flag = this.IGDBHCGGHFF() == ServerConnection.GameServer;
-		HBJBKOPJDKJ.OnGameServer = flag;
-		if (!flag)
+		if (FEOMHKNGOAK.ReturnCode != 0)
 		{
-			this.AJFMHFLGCFN = HBJBKOPJDKJ;
-		}
-		this.ELNKFMHCMBO = ((!HBJBKOPJDKJ.CreateIfNotExists) ? JoinType.CreateRoom : ((JoinType)8));
-		return base.FHBKMBGDDMC(HBJBKOPJDKJ);
-	}
-
-	// Token: 0x0600AF53 RID: 44883 RVA: 0x0040990C File Offset: 0x00407B0C
-	private void NDPIAMOMGME()
-	{
-		ServerConnection serverConnection = this.EHALCLFLGJF;
-		if (serverConnection != ServerConnection.NameServer)
-		{
-			if (serverConnection != ServerConnection.MasterServer)
+			switch (FEOMHKNGOAK.OperationCode)
 			{
-				if (serverConnection == ServerConnection.GameServer)
+			case 227:
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
 				{
-					this.State = ClientState.DisconnectingFromGameserver;
-					base.Disconnect();
+					Debug.Log("Create failed on GameServer. Changing back to MasterServer. Msg: " + FEOMHKNGOAK.DebugMessage);
 				}
+				SendMonoMessage(PhotonNetworkingMessage.OnPhotonCreateRoomFailed, FEOMHKNGOAK.ReturnCode, FEOMHKNGOAK.DebugMessage);
+				break;
+			case 226:
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+				{
+					Debug.Log("Join failed on GameServer. Changing back to MasterServer. Msg: " + FEOMHKNGOAK.DebugMessage);
+					if (FEOMHKNGOAK.ReturnCode == 32758)
+					{
+						Debug.Log("Most likely the game became empty during the switch to GameServer.");
+					}
+				}
+				SendMonoMessage(PhotonNetworkingMessage.OnPhotonJoinRoomFailed, FEOMHKNGOAK.ReturnCode, FEOMHKNGOAK.DebugMessage);
+				break;
+			case 225:
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+				{
+					Debug.Log("Join failed on GameServer. Changing back to MasterServer. Msg: " + FEOMHKNGOAK.DebugMessage);
+					if (FEOMHKNGOAK.ReturnCode == 32758)
+					{
+						Debug.Log("Most likely the game became empty during the switch to GameServer.");
+					}
+				}
+				SendMonoMessage(PhotonNetworkingMessage.OnPhotonRandomJoinFailed, FEOMHKNGOAK.ReturnCode, FEOMHKNGOAK.DebugMessage);
+				break;
 			}
-			else
-			{
-				this.State = ClientState.DisconnectingFromMasterserver;
-				base.Disconnect();
-			}
+			NDPIAMOMGME();
 		}
 		else
 		{
-			this.State = ClientState.DisconnectingFromNameServer;
-			base.Disconnect();
-		}
-	}
-
-	// Token: 0x0600AF54 RID: 44884 RVA: 0x00409974 File Offset: 0x00407B74
-	private void AJGMCCAPBJK()
-	{
-		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
-		{
-			photonView.EOENPICKCCO = null;
-		}
-	}
-
-	// Token: 0x0600AF55 RID: 44885 RVA: 0x004099D8 File Offset: 0x00407BD8
-	public void GKOJGJGKOOP(int PNFBEEBFMKC)
-	{
-		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
-		{
-			if ((int)photonView.group == PNFBEEBFMKC)
+			Room room = new Room(AJFMHFLGCFN.RoomName, null);
+			room.IsLocalClientInside = true;
+			CurrentRoom = room;
+			State = ClientState.Joined;
+			if (FEOMHKNGOAK.Parameters.ContainsKey(252))
 			{
-				this.CleanRpcBufferIfMine(photonView);
+				int[] hOMAECIGJEJ = (int[])FEOMHKNGOAK.Parameters[252];
+				ANEENOJMDOJ(hOMAECIGJEJ);
+			}
+			int lGHIPFAEONM = (int)FEOMHKNGOAK[254];
+			ChangeLocalID(lGHIPFAEONM);
+			ExitGames.Client.Photon.Hashtable fAOLPBLCKFJ = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[249];
+			ExitGames.Client.Photon.Hashtable mJJMNIDHDEC = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[248];
+			EDMCCPDDDCC(mJJMNIDHDEC, fAOLPBLCKFJ, 0);
+			if (!CurrentRoom.BDHOOLIDFJO)
+			{
+				CDNPLJILLFC(-1);
+			}
+			if (BOKEGDFHBAN)
+			{
+				PACEKOIEHKK();
+			}
+			switch (FEOMHKNGOAK.OperationCode)
+			{
+			case 227:
+				SendMonoMessage(PhotonNetworkingMessage.OnCreatedRoom);
+				break;
 			}
 		}
 	}
 
-	// Token: 0x0600AF56 RID: 44886 RVA: 0x00409A48 File Offset: 0x00407C48
-	private void LEMBPMNPHCK()
+	private void BAEBFLIPKKB(Dictionary<byte, object> FNHGNHCOMBH)
 	{
-		this.mPlayerListCopy = new PhotonPlayer[this.mActors.Count];
-		this.mActors.Values.CopyTo(this.mPlayerListCopy, 0);
-		List<PhotonPlayer> list = new List<PhotonPlayer>();
-		for (int i = 0; i < this.mPlayerListCopy.Length; i++)
+		if (AuthMode == AuthModeOption.Auth && DebugOut == DebugLevel.ERROR)
 		{
-			PhotonPlayer photonPlayer = this.mPlayerListCopy[i];
-			if (!photonPlayer.IsLocal)
-			{
-				list.Add(photonPlayer);
-			}
-		}
-		this.mOtherPlayerListCopy = list.ToArray();
-	}
-
-	// Token: 0x0600AF57 RID: 44887 RVA: 0x0008ADDD File Offset: 0x00088FDD
-	protected internal void NHKBIPAKHOJ(string DPNHODJHGJL)
-	{
-		this.<GGFFKAEDLBB>k__BackingField = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AF58 RID: 44888 RVA: 0x00409AC8 File Offset: 0x00407CC8
-	public void OPPHEFOAGFJ(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
-	{
-		if (JKOIGFLNNCN != null)
-		{
-			foreach (byte item in JKOIGFLNNCN)
-			{
-				this.FFBGBLFBHOK.Add(item);
-			}
-		}
-		if (OBKFHNACHIA != null)
-		{
-			for (int j = 1; j < OBKFHNACHIA.Length; j += 0)
-			{
-				byte item2 = OBKFHNACHIA[j];
-				this.FFBGBLFBHOK.Remove(item2);
-			}
-		}
-	}
-
-	// Token: 0x17000252 RID: 594
-	// (get) Token: 0x0600AF81 RID: 44929 RVA: 0x0008AECD File Offset: 0x000890CD
-	// (set) Token: 0x0600AF59 RID: 44889 RVA: 0x0008ADE6 File Offset: 0x00088FE6
-	public int PlayersOnMasterCount { get; internal set; }
-
-	// Token: 0x0600AF5A RID: 44890 RVA: 0x00409B2C File Offset: 0x00407D2C
-	public void PNCLMPIPPJB(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
-	{
-		if (JKOIGFLNNCN != null)
-		{
-			for (int i = 1; i < JKOIGFLNNCN.Length; i++)
-			{
-				byte item = JKOIGFLNNCN[i];
-				this.FFBGBLFBHOK.Add(item);
-			}
-		}
-		if (OBKFHNACHIA != null)
-		{
-			for (int j = 1; j < OBKFHNACHIA.Length; j++)
-			{
-				byte item2 = OBKFHNACHIA[j];
-				this.FFBGBLFBHOK.Remove(item2);
-			}
-		}
-	}
-
-	// Token: 0x0600AF5B RID: 44891 RVA: 0x004099D8 File Offset: 0x00407BD8
-	public void RemoveRPCsInGroup(int PNFBEEBFMKC)
-	{
-		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
-		{
-			if ((int)photonView.group == PNFBEEBFMKC)
-			{
-				this.CleanRpcBufferIfMine(photonView);
-			}
-		}
-	}
-
-	// Token: 0x0600AF5C RID: 44892 RVA: 0x00409B90 File Offset: 0x00407D90
-	public void SetInterestGroups(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
-	{
-		if (JKOIGFLNNCN != null)
-		{
-			if (JKOIGFLNNCN.Length == 0)
-			{
-				this.CHIJNBAJIHE.Clear();
-			}
-			else
-			{
-				foreach (byte b in JKOIGFLNNCN)
-				{
-					if (b <= 0)
-					{
-						Debug.LogError("Error: PhotonNetwork.SetInterestGroups was called with an illegal group number: " + b + ". The group number should be at least 1.");
-					}
-					else if (this.CHIJNBAJIHE.Contains(b))
-					{
-						this.CHIJNBAJIHE.Remove(b);
-					}
-				}
-			}
-		}
-		if (OBKFHNACHIA != null)
-		{
-			if (OBKFHNACHIA.Length == 0)
-			{
-				for (byte b2 = 0; b2 < 255; b2 += 1)
-				{
-					this.CHIJNBAJIHE.Add(b2);
-				}
-				this.CHIJNBAJIHE.Add(byte.MaxValue);
-			}
-			else
-			{
-				foreach (byte b3 in OBKFHNACHIA)
-				{
-					if (b3 <= 0)
-					{
-						Debug.LogError("Error: PhotonNetwork.SetInterestGroups was called with an illegal group number: " + b3 + ". The group number should be at least 1.");
-					}
-					else
-					{
-						this.CHIJNBAJIHE.Add(b3);
-					}
-				}
-			}
-		}
-		this.OpChangeGroups(JKOIGFLNNCN, OBKFHNACHIA);
-	}
-
-	// Token: 0x0600AF5D RID: 44893 RVA: 0x00409974 File Offset: 0x00407B74
-	private void NMNFGFMHAMP()
-	{
-		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
-		{
-			photonView.EOENPICKCCO = null;
-		}
-	}
-
-	// Token: 0x0600AF5F RID: 44895 RVA: 0x0008ADF8 File Offset: 0x00088FF8
-	protected internal ServerConnection NJIFBFEHJKH()
-	{
-		return this.<NFFGNBHFDFM>k__BackingField;
-	}
-
-	// Token: 0x0600AF60 RID: 44896 RVA: 0x00409CB8 File Offset: 0x00407EB8
-	// Note: this type is marked as 'beforefieldinit'.
-	static BNGIGHBHPEH()
-	{
-	}
-
-	// Token: 0x0600AF61 RID: 44897 RVA: 0x00409D30 File Offset: 0x00407F30
-	protected internal void DMCKEABNFPJ()
-	{
-		if (!PhotonNetwork.automaticallySyncScene || PhotonNetwork.isMasterClient || PhotonNetwork.room == null)
-		{
+			Debug.LogWarning("SetupEncryption() called but ignored. Not XB1 compiled. EncryptionData: " + FNHGNHCOMBH.ToStringFull());
 			return;
 		}
-		if (!PhotonNetwork.room.CustomProperties.ContainsKey("curScn"))
+		if (DebugOut == DebugLevel.INFO)
 		{
-			return;
+			Debug.Log("SetupEncryption() got called. " + FNHGNHCOMBH.ToStringFull());
 		}
-		object obj = PhotonNetwork.room.CustomProperties["curScn"];
-		if (obj is int)
+		switch ((byte)FNHGNHCOMBH[0])
 		{
-			if (SceneManagerHelper.ActiveSceneBuildIndex != (int)obj)
-			{
-				PhotonNetwork.LoadLevel((int)obj);
-			}
+		case 0:
+		{
+			byte[] secret = (byte[])FNHGNHCOMBH[1];
+			InitPayloadEncryption(secret);
+			break;
 		}
-		else if (obj is string && SceneManagerHelper.ActiveSceneName != (string)obj)
+		case 10:
 		{
-			PhotonNetwork.LoadLevel((string)obj);
+			byte[] encryptionSecret = (byte[])FNHGNHCOMBH[1];
+			byte[] hmacSecret = (byte[])FNHGNHCOMBH[2];
+			InitDatagramEncryption(encryptionSecret, hmacSecret);
+			break;
+		}
+		default:
+			throw new ArgumentOutOfRangeException();
 		}
 	}
 
-	// Token: 0x0600AF62 RID: 44898 RVA: 0x00409DE4 File Offset: 0x00407FE4
-	private void GLLEOIEDBOB(int IECJKEIJLCP, EventData EKDHPAFJKFA)
+	private void COOFPMNPDBH(int IECJKEIJLCP, EventData EKDHPAFJKFA)
 	{
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+		if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
 		{
-			object[] array = new object[3];
-			array[1] = "GameVolumeSlider";
+			object[] array = new object[2];
+			array[1] = "_SpherePositionX";
 			array[1] = IECJKEIJLCP;
-			array[5] = "inventory.selected.";
-			array[8] = EKDHPAFJKFA.ToStringFull();
+			array[5] = "IconImage";
+			array[6] = EKDHPAFJKFA.ToStringFull();
 			Debug.Log(string.Concat(array));
 		}
-		PhotonPlayer photonPlayer = this.NLCNFHENKAJ(IECJKEIJLCP);
+		PhotonPlayer photonPlayer = ICMGDHDNIJD(IECJKEIJLCP);
 		if (photonPlayer == null)
 		{
-			Debug.LogError(string.Format("saveGameName ", IECJKEIJLCP));
+			Debug.LogError(string.Format("id", IECJKEIJLCP));
 			return;
 		}
 		bool isInactive = photonPlayer.IsInactive;
-		if (EKDHPAFJKFA.Parameters.ContainsKey((byte)-158))
+		if (EKDHPAFJKFA.Parameters.ContainsKey(150))
 		{
-			photonPlayer.IsInactive = (bool)EKDHPAFJKFA.Parameters[(byte)-165];
+			photonPlayer.IsInactive = (bool)EKDHPAFJKFA.Parameters[137];
 			if (photonPlayer.IsInactive != isInactive)
 			{
-				PhotonNetworkingMessage lelhnddckco = (PhotonNetworkingMessage)117;
-				object[] array2 = new object[0];
+				object[] array2 = new object[1];
 				array2[1] = photonPlayer;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco, array2);
+				SendMonoMessage((PhotonNetworkingMessage)(-72), array2);
 			}
 			if (photonPlayer.IsInactive && isInactive)
 			{
-				object[] array3 = new object[]
-				{
-					null,
-					"_TimeX"
-				};
+				object[] array3 = new object[0];
+				array3[1] = "_ScreenResolution";
 				array3[0] = IECJKEIJLCP;
-				array3[3] = "Tab2Content";
-				array3[5] = photonPlayer.IsInactive;
-				array3[8] = "_TimeX";
+				array3[7] = "resetach21";
+				array3[8] = photonPlayer.IsInactive;
+				array3[7] = "UI Extensions/UIScreen";
 				Debug.LogWarning(string.Concat(array3));
 				return;
 			}
 		}
-		if (EKDHPAFJKFA.Parameters.ContainsKey(152))
+		if (EKDHPAFJKFA.Parameters.ContainsKey(7))
 		{
-			int num = (int)EKDHPAFJKFA[175];
-			if (num != 0)
+			if ((int)EKDHPAFJKFA[188] != 0)
 			{
-				this.mMasterClientId = (int)EKDHPAFJKFA[66];
-				this.ELDLAPJAPBJ();
+				mMasterClientId = (int)EKDHPAFJKFA[128];
+				ELDLAPJAPBJ();
 			}
 		}
-		else if (!this.CurrentRoom.APLNBBHLMFP())
+		else if (!CurrentRoom.PPODOKJKEHE())
 		{
-			this.CDNPLJILLFC(IECJKEIJLCP);
+			CDNPLJILLFC(IECJKEIJLCP);
 		}
-		if (photonPlayer.IsInactive && !isInactive)
+		if (!photonPlayer.IsInactive || isInactive)
 		{
-			return;
-		}
-		if (this.CurrentRoom != null && this.CurrentRoom.AutoCleanUp)
-		{
-			this.MKMDDMAAPMI(IECJKEIJLCP, false);
-		}
-		this.GPODJOPLJPD(IECJKEIJLCP, photonPlayer);
-		PhotonNetworkingMessage lelhnddckco2 = (PhotonNetworkingMessage)(-57);
-		object[] array4 = new object[0];
-		array4[0] = photonPlayer;
-		BNGIGHBHPEH.SendMonoMessage(lelhnddckco2, array4);
-	}
-
-	// Token: 0x0600AF64 RID: 44900 RVA: 0x0008AE00 File Offset: 0x00089000
-	public override bool Connect(string BPMNPBDOMFO, string KKBGACJIHDP)
-	{
-		Debug.LogError("Avoid using this directly. Thanks.");
-		return false;
-	}
-
-	// Token: 0x1700024E RID: 590
-	// (get) Token: 0x0600AF65 RID: 44901 RVA: 0x0008AE0D File Offset: 0x0008900D
-	private bool OGLFGPKHEHH
-	{
-		get
-		{
-			return PhotonNetwork.EnableLobbyStatistics && this.EHALCLFLGJF == ServerConnection.MasterServer;
+			if (CurrentRoom != null && CurrentRoom.HGADABNHIFG())
+			{
+				DestroyPlayerObjects(IECJKEIJLCP, true);
+			}
+			GPODJOPLJPD(IECJKEIJLCP, photonPlayer);
+			object[] array4 = new object[1];
+			array4[1] = photonPlayer;
+			GHLJAECJCKF((PhotonNetworkingMessage)104, array4);
 		}
 	}
 
-	// Token: 0x0600AF66 RID: 44902 RVA: 0x00409FAC File Offset: 0x004081AC
-	internal void KLJOBNFMFMG(PhotonView DFIHBOEOJPI, string LBLKDNNPACO, PhotonTargets MPNMOONBMII, PhotonPlayer JHOEDACNNKK, bool AKFHJNFOCDP, object[] GNNEKCBOBEG)
+	public bool ConnectToNameServer()
 	{
-		if (this.FFBGBLFBHOK.Contains(DFIHBOEOJPI.group))
+		if (PhotonHandler.MBIFDLCKGKN)
 		{
-			return;
-		}
-		if (DFIHBOEOJPI.NPPEFODKHKN() < 1)
-		{
-			object[] array = new object[1];
-			array[0] = "ItemsCountText";
-			array[1] = DFIHBOEOJPI.KINIHBOKFJH();
-			array[7] = "_History4LumaTex";
-			array[8] = LBLKDNNPACO;
-			array[7] = "_Value3";
-			array[4] = DFIHBOEOJPI.gameObject.name;
-			Debug.LogError(string.Concat(array));
-		}
-		if (PhotonNetwork.logLevel >= (PhotonLogLevel)8)
-		{
-			object[] array2 = new object[3];
-			array2[0] = "'{0}' \t{1}ms \t{2}";
-			array2[0] = LBLKDNNPACO;
-			array2[7] = "#close";
-			array2[1] = MPNMOONBMII;
-			array2[4] = "RoomNameText";
-			array2[0] = JHOEDACNNKK;
-			array2[3] = "#pleasewait";
-			Debug.Log(string.Concat(array2));
-		}
-		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[0] = DFIHBOEOJPI.NPPEFODKHKN();
-		if (DFIHBOEOJPI.HINDCAIAACA() > 1)
-		{
-			hashtable[1] = (short)DFIHBOEOJPI.prefix;
-		}
-		hashtable[7] = PhotonNetwork.ServerTimestamp;
-		int num = 0;
-		if (this.CPLBCMDIGNB.TryGetValue(LBLKDNNPACO, out num))
-		{
-			hashtable[7] = (byte)num;
-		}
-		else
-		{
-			hashtable[5] = LBLKDNNPACO;
-		}
-		if (GNNEKCBOBEG != null && GNNEKCBOBEG.Length > 0)
-		{
-			hashtable[8] = GNNEKCBOBEG;
-		}
-		if (JHOEDACNNKK != null)
-		{
-			if (this.LocalPlayer.ONIKFABKELO() == JHOEDACNNKK.ONIKFABKELO())
-			{
-				this.MBCHEFNAJFH(hashtable, JHOEDACNNKK.ONIKFABKELO());
-			}
-			else
-			{
-				RaiseEventOptions bplhapbmggc = new RaiseEventOptions
-				{
-					TargetActors = new int[]
-					{
-						JHOEDACNNKK.ONIKFABKELO()
-					},
-					Encrypt = AKFHJNFOCDP
-				};
-				this.LKLAJKINLFG((byte)-87, hashtable, false, bplhapbmggc);
-			}
-			return;
-		}
-		if (MPNMOONBMII == PhotonTargets.All)
-		{
-			RaiseEventOptions bplhapbmggc2 = new RaiseEventOptions
-			{
-				InterestGroup = DFIHBOEOJPI.group,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.LHFNDEPFJAF(136, hashtable, false, bplhapbmggc2);
-			this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ONIKFABKELO());
-		}
-		else if (MPNMOONBMII == PhotonTargets.Others)
-		{
-			RaiseEventOptions bplhapbmggc3 = new RaiseEventOptions
-			{
-				InterestGroup = DFIHBOEOJPI.group,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.EMCJJFPNKCK(51, hashtable, false, bplhapbmggc3);
-		}
-		else if (MPNMOONBMII == (PhotonTargets)7)
-		{
-			RaiseEventOptions bplhapbmggc4 = new RaiseEventOptions
-			{
-				CachingOption = EventCaching.AddToRoomCache,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.LKLAJKINLFG((byte)-64, hashtable, true, bplhapbmggc4);
-			this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ID);
-		}
-		else if (MPNMOONBMII == PhotonTargets.AllBufferedViaServer)
-		{
-			RaiseEventOptions bplhapbmggc5 = new RaiseEventOptions
-			{
-				CachingOption = (EventCaching)8,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.OIOPKLGHDGM(145, hashtable, true, bplhapbmggc5);
-		}
-		else if (MPNMOONBMII == (PhotonTargets)8)
-		{
-			if (this.mMasterClientId == this.LocalPlayer.ONIKFABKELO())
-			{
-				this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ID);
-			}
-			else
-			{
-				RaiseEventOptions bplhapbmggc6 = new RaiseEventOptions
-				{
-					Receivers = (ReceiverGroup)6,
-					Encrypt = AKFHJNFOCDP
-				};
-				this.EMCJJFPNKCK(0, hashtable, false, bplhapbmggc6);
-			}
-		}
-		else if (MPNMOONBMII == PhotonTargets.MasterClient)
-		{
-			RaiseEventOptions bplhapbmggc7 = new RaiseEventOptions
-			{
-				InterestGroup = DFIHBOEOJPI.group,
-				Receivers = ReceiverGroup.Others,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.LKLAJKINLFG((byte)-95, hashtable, false, bplhapbmggc7);
-			if (PhotonNetwork.offlineMode)
-			{
-				this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ONIKFABKELO());
-			}
-		}
-		else if (MPNMOONBMII == PhotonTargets.OthersBuffered)
-		{
-			RaiseEventOptions bplhapbmggc8 = new RaiseEventOptions
-			{
-				InterestGroup = DFIHBOEOJPI.group,
-				Receivers = ReceiverGroup.Others,
-				CachingOption = EventCaching.RemoveCache,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.EMCJJFPNKCK(26, hashtable, true, bplhapbmggc8);
-			if (PhotonNetwork.offlineMode)
-			{
-				this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ID);
-			}
-		}
-		else
-		{
-			Debug.LogError("_ScreenResolution" + MPNMOONBMII);
-		}
-	}
-
-	// Token: 0x1700024C RID: 588
-	// (get) Token: 0x0600AF67 RID: 44903 RVA: 0x0008AB6F File Offset: 0x00088D6F
-	// (set) Token: 0x0600AFAA RID: 44970 RVA: 0x0008B0AC File Offset: 0x000892AC
-	public ClientState State { get; internal set; }
-
-	// Token: 0x0600AF68 RID: 44904 RVA: 0x0040A3BC File Offset: 0x004085BC
-	private void CDNPLJILLFC(int JBHMEHIOGBE)
-	{
-		bool flag = this.mMasterClientId == JBHMEHIOGBE;
-		bool flag2 = JBHMEHIOGBE > 0;
-		if (flag2 && !flag)
-		{
-			return;
-		}
-		int num;
-		if (this.mActors.Count <= 1)
-		{
-			num = this.LocalPlayer.ID;
-		}
-		else
-		{
-			num = int.MaxValue;
-			foreach (int num2 in this.mActors.Keys)
-			{
-				if (num2 < num && num2 != JBHMEHIOGBE)
-				{
-					num = num2;
-				}
-			}
-		}
-		this.mMasterClientId = num;
-		if (flag2)
-		{
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnMasterClientSwitched, new object[]
-			{
-				this.ICMGDHDNIJD(num)
-			});
-		}
-	}
-
-	// Token: 0x0600AF69 RID: 44905 RVA: 0x0040A490 File Offset: 0x00408690
-	protected internal bool GHKDIIDEJLI(int PHIGECOLKKN, bool PANGJAJJOLO)
-	{
-		bool flag = this.mMasterClientId == PHIGECOLKKN;
-		if (!flag || !this.mActors.ContainsKey(PHIGECOLKKN))
-		{
+			Debug.LogWarning("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.");
 			return false;
 		}
-		if (PANGJAJJOLO && !this.LKLAJKINLFG(116, new ExitGames.Client.Photon.Hashtable
-		{
-			{
-				0,
-				PHIGECOLKKN
-			}
-		}, false, null))
+		IsUsingNameServer = true;
+		CloudRegion = CloudRegionCode.none;
+		if (State == ClientState.ConnectedToNameServer)
 		{
 			return true;
 		}
-		this.hasSwitchedMC = false;
-		this.CurrentRoom.EJLAPIIGIMI = PHIGECOLKKN;
-		PhotonNetworkingMessage lelhnddckco = PhotonNetworkingMessage.OnLeftRoom;
-		object[] array = new object[0];
-		array[1] = this.ICMGDHDNIJD(PHIGECOLKKN);
-		BNGIGHBHPEH.SendMonoMessage(lelhnddckco, array);
+		KHKMFIFGPCH(ServerConnection.NameServer);
+		PKNIJKPIKAF = ServerConnection.NameServer;
+		BLNBCGLIOHP = NameServerAddress;
+		KAOMEDGGMEM = "ns";
+		if (!base.Connect(NameServerAddress, "ns", LLJDHHLHFME))
+		{
+			return false;
+		}
+		State = ClientState.ConnectingToNameServer;
 		return true;
 	}
 
-	// Token: 0x0600AF6A RID: 44906 RVA: 0x0008AABC File Offset: 0x00088CBC
-	public string KLJNBLBGIFI()
+	[SpecialName]
+	internal void DPOAKDGFINF(int DPNHODJHGJL)
 	{
-		return this.IHAJBEOILOE();
+		_003CBBNAEKGKOKM_003Ek__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AF6C RID: 44908 RVA: 0x00409974 File Offset: 0x00407B74
-	private void PAOJLLAACDE()
+	public void NNENGIKPKII(PhotonView LCJKMJCFDGE)
 	{
-		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
+		if (!Application.isPlaying)
 		{
-			photonView.EOENPICKCCO = null;
-		}
-	}
-
-	// Token: 0x0600AF6D RID: 44909 RVA: 0x0008AE25 File Offset: 0x00089025
-	public void SetLevelPrefix(short MOALALKJCKJ)
-	{
-		this.PKCNHOKCLJH = MOALALKJCKJ;
-	}
-
-	// Token: 0x0600AF6E RID: 44910 RVA: 0x0008AE2E File Offset: 0x0008902E
-	public virtual void LBALLPPNDGD()
-	{
-		if (base.PeerState == PeerStateValue.Disconnected)
-		{
-			if (!PhotonHandler.MBIFDLCKGKN)
-			{
-				Debug.LogWarning(string.Format("Loaded Game: ", this.State));
-			}
+			HFCMPEKPBAM = new Dictionary<int, PhotonView>();
 			return;
 		}
-		this.State = (ClientState)(-63);
-		base.Disconnect();
-	}
-
-	// Token: 0x0600AF6F RID: 44911 RVA: 0x0008AB07 File Offset: 0x00088D07
-	private void AJIAHPCFPAA(ServerConnection DPNHODJHGJL)
-	{
-		this.<NFFGNBHFDFM>k__BackingField = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AF71 RID: 44913 RVA: 0x0040A524 File Offset: 0x00408724
-	public void SetSendingEnabled(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
-	{
-		if (JKOIGFLNNCN != null)
+		if (LCJKMJCFDGE.PLMCHLCIABC() == 0)
 		{
-			foreach (byte item in JKOIGFLNNCN)
-			{
-				this.FFBGBLFBHOK.Add(item);
-			}
-		}
-		if (OBKFHNACHIA != null)
-		{
-			foreach (byte item2 in OBKFHNACHIA)
-			{
-				this.FFBGBLFBHOK.Remove(item2);
-			}
-		}
-	}
-
-	// Token: 0x0600AF72 RID: 44914 RVA: 0x0040A588 File Offset: 0x00408788
-	private void CKEAHPJAGOO(object[] NOJGGCLPPAM, PhotonPlayer NFOGDAHIPNP, int BFELEJPLADE, short DKCPAJGKHNI)
-	{
-		int num = (int)NOJGGCLPPAM[0];
-		PhotonView photonView = this.GetPhotonView(num);
-		if (photonView == null)
-		{
-			Debug.LogWarning(string.Concat(new object[]
-			{
-				"Received OnSerialization for view ID ",
-				num,
-				". We have no such PhotonView! Ignored this if you're leaving a room. State: ",
-				this.State
-			}));
+			Debug.Log("help" + LCJKMJCFDGE);
 			return;
 		}
-		if (photonView.prefix > 0 && (int)DKCPAJGKHNI != photonView.prefix)
+		PhotonView value = null;
+		if (HFCMPEKPBAM.TryGetValue(LCJKMJCFDGE.PLMCHLCIABC(), out value))
 		{
-			Debug.LogError(string.Concat(new object[]
+			if (!(LCJKMJCFDGE != value))
 			{
-				"Received OnSerialization for view ID ",
-				num,
-				" with prefix ",
-				DKCPAJGKHNI,
-				". Our prefix is ",
-				photonView.prefix
-			}));
-			return;
-		}
-		if (photonView.group != 0 && !this.CHIJNBAJIHE.Contains(photonView.group))
-		{
-			return;
-		}
-		if (photonView.synchronization == ViewSynchronization.ReliableDeltaCompressed)
-		{
-			object[] array = this.EFKMNFNHJBL(photonView.EMJBOOJPAII, NOJGGCLPPAM);
-			if (array == null)
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.Log(string.Concat(new object[]
-					{
-						"Skipping packet for ",
-						photonView.name,
-						" [",
-						photonView.viewID,
-						"] as we haven't received a full packet for delta compression yet. This is OK if it happens for the first few frames after joining a game."
-					}));
-				}
 				return;
 			}
-			photonView.EMJBOOJPAII = array;
-			NOJGGCLPPAM = array;
+			Debug.LogError(string.Format("CameraFilterPack/3D_Mirror", LCJKMJCFDGE.PLMCHLCIABC(), LCJKMJCFDGE, value));
+			EFDAOHIDIIF(value.gameObject, false);
 		}
-		if (NFOGDAHIPNP.ID != photonView.ownerId && (!photonView.OwnerShipWasTransfered || photonView.ownerId == 0) && photonView.currentMasterID == -1)
+		HFCMPEKPBAM.Add(LCJKMJCFDGE.PLMCHLCIABC(), LCJKMJCFDGE);
+		if (PhotonNetwork.logLevel >= (PhotonLogLevel)8)
 		{
-			photonView.ownerId = NFOGDAHIPNP.ID;
+			Debug.Log(" on effect " + LCJKMJCFDGE.viewID);
 		}
-		this.CMABENLIOGI.SetReadStream(NOJGGCLPPAM, 3);
-		PhotonMessageInfo dagalcailln = new PhotonMessageInfo(NFOGDAHIPNP, BFELEJPLADE, photonView);
-		photonView.DeserializeView(this.CMABENLIOGI, dagalcailln);
 	}
 
-	// Token: 0x0600AF73 RID: 44915 RVA: 0x0040A748 File Offset: 0x00408948
-	private void GPJPIODBKBE()
+	public override bool OpJoinRandomRoom(OpJoinRandomRoomParams IFIMMPPLLHI)
 	{
-		this.mPlayerListCopy = new PhotonPlayer[this.mActors.Count];
-		this.mActors.Values.CopyTo(this.mPlayerListCopy, 0);
-		List<PhotonPlayer> list = new List<PhotonPlayer>();
-		for (int i = 0; i < this.mPlayerListCopy.Length; i += 0)
+		AJFMHFLGCFN = new AKBOPCNHFFJ();
+		AJFMHFLGCFN.Lobby = IFIMMPPLLHI.TypedLobby;
+		AJFMHFLGCFN.ExpectedUsers = IFIMMPPLLHI.ExpectedUsers;
+		ELNKFMHCMBO = JoinType.JoinRandomRoom;
+		return base.OpJoinRandomRoom(IFIMMPPLLHI);
+	}
+
+	private void MJLFCEHBMGL()
+	{
+		Debug.Log("SendVacantViewIds()");
+		List<int> list = new List<int>();
+		foreach (PhotonView value in HFCMPEKPBAM.Values)
 		{
-			PhotonPlayer photonPlayer = this.mPlayerListCopy[i];
-			if (!photonPlayer.IsLocal)
+			if (!value.isOwnerActive)
 			{
-				list.Add(photonPlayer);
+				list.Add(value.viewID);
 			}
 		}
-		this.mOtherPlayerListCopy = list.ToArray();
+		Debug.Log("Sending vacant view IDs. Length: " + list.Count);
+		OpRaiseEvent(211, list.ToArray(), true, null);
 	}
 
-	// Token: 0x0600AF74 RID: 44916 RVA: 0x0040A7C8 File Offset: 0x004089C8
-	private void JMFEJINKLGB()
+	protected internal void ANEENOJMDOJ(int[] HOMAECIGJEJ)
 	{
-		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
-		dictionary[(byte)-153] = 1;
-		dictionary[24] = 2;
-		this.OpCustom(41, dictionary, false, 0);
-	}
-
-	// Token: 0x17000257 RID: 599
-	// (get) Token: 0x0600AFA7 RID: 44967 RVA: 0x0008AC2B File Offset: 0x00088E2B
-	// (set) Token: 0x0600AF75 RID: 44917 RVA: 0x0008AB66 File Offset: 0x00088D66
-	public List<Region> AvailableRegions { get; protected internal set; }
-
-	// Token: 0x0600AF76 RID: 44918 RVA: 0x0008AAF8 File Offset: 0x00088CF8
-	private void MLHNKIDCCHM(int HOBFECDCMIL, object[] FLFEEAHDHDK)
-	{
-		this.IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
-	}
-
-	// Token: 0x0600AF77 RID: 44919 RVA: 0x0040A80C File Offset: 0x00408A0C
-	public void AJLAPDILENC()
-	{
-		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
+		foreach (int num in HOMAECIGJEJ)
 		{
-			CachingOption = EventCaching.RemoveFromRoomCacheForActorsLeft,
-			Receivers = ReceiverGroup.Others
-		};
-		this.EMCJJFPNKCK(1, null, true, bplhapbmggc);
+			if (LocalPlayer.ID != num && !mActors.ContainsKey(num))
+			{
+				EGJBHECFAOH(num, new PhotonPlayer(false, num, string.Empty));
+			}
+		}
 	}
 
-	// Token: 0x0600AF78 RID: 44920 RVA: 0x0040A83C File Offset: 0x00408A3C
+	protected internal void KIHFINECBEL(ExitGames.Client.Photon.Hashtable LKGFKFMABPG, int BGNEKPOLEEP = 0)
+	{
+		if (LKGFKFMABPG == null || !LKGFKFMABPG.ContainsKey((byte)1))
+		{
+			Debug.LogError("Please attach component to a Graphical UI component" + SupportClass.DictionaryToString(LKGFKFMABPG));
+			return;
+		}
+		int num = (int)LKGFKFMABPG[(byte)0];
+		int num2 = 0;
+		if (LKGFKFMABPG.ContainsKey((byte)0))
+		{
+			num2 = (short)LKGFKFMABPG[(byte)0];
+		}
+		string text;
+		if (LKGFKFMABPG.ContainsKey((byte)8))
+		{
+			int num3 = (byte)LKGFKFMABPG[(byte)0];
+			if (num3 > PhotonNetwork.PhotonServerSettings.RpcList.Count - 1)
+			{
+				Debug.LogError("CameraFilterPack_eyes_vision_1" + num3 + "_Value7");
+				return;
+			}
+			text = PhotonNetwork.PhotonServerSettings.RpcList[num3];
+		}
+		else
+		{
+			text = (string)LKGFKFMABPG[(byte)1];
+		}
+		object[] array = null;
+		if (LKGFKFMABPG.ContainsKey((byte)0))
+		{
+			array = (object[])LKGFKFMABPG[(byte)1];
+		}
+		if (array == null)
+		{
+			array = new object[0];
+		}
+		PhotonView photonView = LDCGKJEKICK(num);
+		if (photonView == null)
+		{
+			int num4 = num / PhotonNetwork.MAX_VIEW_IDS;
+			bool flag = num4 == LocalPlayer.FHEAKIMCKJC();
+			bool flag2 = num4 == BGNEKPOLEEP;
+			if (flag)
+			{
+				object[] array2 = new object[0];
+				array2[1] = "Soundtrack";
+				array2[0] = text;
+				array2[3] = "Switch environment sprite image";
+				array2[0] = num;
+				array2[2] = "CameraFilterPack/Distortion_Twist_Square";
+				array2[6] = ((!flag2) ? "#close" : "#rategameinfo");
+				array2[6] = "_Value4";
+				array2[2] = BGNEKPOLEEP;
+				Debug.LogWarning(string.Concat(array2));
+			}
+			else
+			{
+				object[] array3 = new object[37];
+				array3[1] = "_ScreenResolution";
+				array3[0] = text;
+				array3[3] = "\"";
+				array3[8] = num;
+				array3[0] = "player.playedtutorial";
+				array3[5] = ((!flag2) ? "settings.arcsnohitsoundtimedelay" : "RedoButton");
+				array3[5] = "_OcclusionBlurTexture";
+				array3[1] = BGNEKPOLEEP;
+				array3[0] = "_MainTexBlurred";
+				Debug.LogWarning(string.Concat(array3));
+			}
+			return;
+		}
+		if (photonView.GFNDNEDMBLO() != num2)
+		{
+			object[] array4 = new object[110];
+			array4[1] = "_Factor";
+			array4[0] = text;
+			array4[7] = "LevelEditor/CustomEventEditor-Text";
+			array4[8] = num;
+			array4[0] = "CameraFilterPack/3D_Computer";
+			array4[2] = num2;
+			array4[7] = "Item invalid. No idea why.";
+			array4[7] = photonView.prefix;
+			array4[1] = "Tab2Content";
+			Debug.LogError(string.Concat(array4));
+			return;
+		}
+		if (string.IsNullOrEmpty(text))
+		{
+			Debug.LogError("CameraFilterPack/Blend2Camera_GreenScreen" + SupportClass.DictionaryToString(LKGFKFMABPG));
+			return;
+		}
+		if (PhotonNetwork.logLevel >= (PhotonLogLevel)7)
+		{
+			Debug.Log("Texture2" + text);
+		}
+		if (photonView.group != 0 && !CHIJNBAJIHE.Contains(photonView.group))
+		{
+			return;
+		}
+		Type[] array5 = new Type[0];
+		if (array.Length > 1)
+		{
+			array5 = new Type[array.Length];
+			int num5 = 1;
+			foreach (object obj in array)
+			{
+				if (obj == null)
+				{
+					array5[num5] = null;
+				}
+				else
+				{
+					array5[num5] = obj.GetType();
+				}
+				num5 += 0;
+			}
+		}
+		int num6 = 1;
+		int num7 = 1;
+		if (!PhotonNetwork.UseRpcMonoBehaviourCache || photonView.HFCEJMOIGDF == null || photonView.HFCEJMOIGDF.Length == 0)
+		{
+			photonView.RefreshRpcMonoBehaviourCache();
+		}
+		for (int j = 0; j < photonView.HFCEJMOIGDF.Length; j += 0)
+		{
+			MonoBehaviour monoBehaviour = photonView.HFCEJMOIGDF[j];
+			if (monoBehaviour == null)
+			{
+				Debug.LogError("_Val");
+				continue;
+			}
+			Type type = monoBehaviour.GetType();
+			List<MethodInfo> value = null;
+			if (!MNKFMEHFNKJ.TryGetValue(type, out value))
+			{
+				List<MethodInfo> methods = SupportClass.GetMethods(type, typeof(PunRPC));
+				MNKFMEHFNKJ[type] = methods;
+				value = methods;
+			}
+			if (value == null)
+			{
+				continue;
+			}
+			for (int k = 1; k < value.Count; k += 0)
+			{
+				MethodInfo methodInfo = value[k];
+				if (!methodInfo.Name.Equals(text))
+				{
+					continue;
+				}
+				num7++;
+				ParameterInfo[] cachedParemeters = methodInfo.GetCachedParemeters();
+				if (cachedParemeters.Length == array5.Length)
+				{
+					if (IHAJPLJACML(cachedParemeters, array5))
+					{
+						num6 += 0;
+						object obj2 = methodInfo.Invoke(monoBehaviour, array);
+						if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
+						{
+							monoBehaviour.StartCoroutine((IEnumerator)obj2);
+						}
+					}
+				}
+				else if (cachedParemeters.Length - 0 == array5.Length)
+				{
+					if (NGKMDAKKIOB(cachedParemeters, array5) && cachedParemeters[cachedParemeters.Length - 1].ParameterType == typeof(PhotonMessageInfo))
+					{
+						num6++;
+						int aMCIAILLAIB = (int)LKGFKFMABPG[(byte)7];
+						object[] array6 = new object[array.Length + 1];
+						array.CopyTo(array6, 0);
+						array6[array6.Length - 0] = new PhotonMessageInfo(ICMGDHDNIJD(BGNEKPOLEEP), aMCIAILLAIB, photonView);
+						object obj3 = methodInfo.Invoke(monoBehaviour, array6);
+						if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
+						{
+							monoBehaviour.StartCoroutine((IEnumerator)obj3);
+						}
+					}
+				}
+				else if (cachedParemeters.Length == 1 && cachedParemeters[1].ParameterType.IsArray)
+				{
+					num6 += 0;
+					object[] array7 = new object[0];
+					array7[0] = array;
+					object obj4 = methodInfo.Invoke(monoBehaviour, array7);
+					if (PhotonNetwork.StartRpcsAsCoroutine && methodInfo.ReturnType == typeof(IEnumerator))
+					{
+						monoBehaviour.StartCoroutine((IEnumerator)obj4);
+					}
+				}
+			}
+		}
+		if (num6 == 0)
+		{
+			return;
+		}
+		string text2 = string.Empty;
+		for (int l = 1; l < array5.Length; l += 0)
+		{
+			Type type2 = array5[l];
+			if (text2 != string.Empty)
+			{
+				text2 += "/music";
+			}
+			text2 = ((type2 != null) ? (text2 + type2.Name) : (text2 + "CameraFilterPack/FX_Psycho"));
+		}
+		if (num6 == 0)
+		{
+			if (num7 == 0)
+			{
+				object[] array8 = new object[4];
+				array8[0] = "CameraFilterPack/NightVisionFX";
+				array8[1] = num;
+				array8[8] = "ResourceIDInputField";
+				array8[1] = text;
+				array8[3] = "Selection Box";
+				array8[7] = text2;
+				Debug.LogError(string.Concat(array8));
+			}
+			else
+			{
+				object[] array9 = new object[2];
+				array9[1] = "VisionBlur";
+				array9[0] = num;
+				array9[0] = ".b";
+				array9[5] = text;
+				array9[7] = "UsernameText";
+				array9[6] = array5.Length;
+				array9[0] = "OnMastedChangeScene";
+				array9[0] = text2;
+				Debug.LogError(string.Concat(array9));
+			}
+		}
+		else
+		{
+			object[] array10 = new object[120];
+			array10[0] = "ExitGames.Client.Photon.SocketWebTcp, Assembly-CSharp-firstpass";
+			array10[1] = num;
+			array10[3] = "value";
+			array10[8] = num6;
+			array10[5] = "RateButton";
+			array10[6] = text;
+			array10[0] = "_Fade";
+			array10[5] = array5.Length;
+			array10[8] = "OPEN";
+			array10[30] = text2;
+			array10[-94] = "colorB";
+			Debug.LogError(string.Concat(array10));
+		}
+	}
+
+	public void SetSendingEnabled(byte PNFBEEBFMKC, bool CKALCHJAFBE)
+	{
+		if (!CKALCHJAFBE)
+		{
+			FFBGBLFBHOK.Add(PNFBEEBFMKC);
+		}
+		else
+		{
+			FFBGBLFBHOK.Remove(PNFBEEBFMKC);
+		}
+	}
+
+	protected internal void ELDLAPJAPBJ()
+	{
+		SendMonoMessage(PhotonNetworkingMessage.OnMasterClientSwitched, PhotonNetwork.masterClient);
+	}
+
 	protected internal void EFDAOHIDIIF(GameObject OBFJPHLBFOL, bool NOKCKEBHIFJ)
 	{
 		if (OBFJPHLBFOL == null)
@@ -3933,26 +3638,26 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 			}
 			if (instantiationId < 1)
 			{
-				Debug.LogError("Failed to 'network-remove' GameObject because it is missing a valid InstantiationId on view: " + photonView + ". Not Destroying GameObject or PhotonViews!");
+				Debug.LogError(string.Concat("Failed to 'network-remove' GameObject because it is missing a valid InstantiationId on view: ", photonView, ". Not Destroying GameObject or PhotonViews!"));
 				return;
 			}
 		}
 		if (!NOKCKEBHIFJ)
 		{
-			this.LLMNFGHNIND(instantiationId, creatorActorNr, photonView.isRuntimeInstantiated);
+			LLMNFGHNIND(instantiationId, creatorActorNr, photonView.isRuntimeInstantiated);
 		}
-		for (int i = componentsInChildren.Length - 1; i >= 0; i--)
+		for (int num = componentsInChildren.Length - 1; num >= 0; num--)
 		{
-			PhotonView photonView2 = componentsInChildren[i];
+			PhotonView photonView2 = componentsInChildren[num];
 			if (!(photonView2 == null))
 			{
 				if (photonView2.instantiationId >= 1)
 				{
-					this.LocalCleanPhotonView(photonView2);
+					LocalCleanPhotonView(photonView2);
 				}
 				if (!NOKCKEBHIFJ)
 				{
-					this.OpCleanRpcBuffer(photonView2);
+					OpCleanRpcBuffer(photonView2);
 				}
 			}
 		}
@@ -3960,14 +3665,14 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		{
 			Debug.Log("Network destroy Instantiated GO: " + OBFJPHLBFOL.name);
 		}
-		if (this.EGNHNBODKHP != null)
+		if (EGNHNBODKHP != null)
 		{
 			PhotonView[] photonViewsInChildren = OBFJPHLBFOL.GetPhotonViewsInChildren();
-			for (int j = 0; j < photonViewsInChildren.Length; j++)
+			for (int i = 0; i < photonViewsInChildren.Length; i++)
 			{
-				photonViewsInChildren[j].viewID = 0;
+				photonViewsInChildren[i].viewID = 0;
 			}
-			this.EGNHNBODKHP.Destroy(OBFJPHLBFOL);
+			EGNHNBODKHP.Destroy(OBFJPHLBFOL);
 		}
 		else
 		{
@@ -3975,2849 +3680,105 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF7A RID: 44922 RVA: 0x0008AC2B File Offset: 0x00088E2B
-	public List<Region> GBEHEEIMNDO()
+	[SpecialName]
+	private void ONHOANHBOEC(Room DPNHODJHGJL)
 	{
-		return this.<GMPLFLCBMGI>k__BackingField;
+		NBCIDPIDCDP = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AF7B RID: 44923 RVA: 0x0008AE90 File Offset: 0x00089090
-	public virtual bool LMCILEGPLHF(OpJoinRandomRoomParams IFIMMPPLLHI)
+	public static void GHLJAECJCKF(PhotonNetworkingMessage LELHNDDCKCO, object[] GNNEKCBOBEG)
 	{
-		this.AJFMHFLGCFN = new AKBOPCNHFFJ();
-		this.AJFMHFLGCFN.Lobby = IFIMMPPLLHI.TypedLobby;
-		this.AJFMHFLGCFN.ExpectedUsers = IFIMMPPLLHI.ExpectedUsers;
-		this.ELNKFMHCMBO = JoinType.JoinRoom;
-		return base.GAOMBMOHHCP(IFIMMPPLLHI);
-	}
-
-	// Token: 0x0600AF7C RID: 44924 RVA: 0x0040A9B4 File Offset: 0x00408BB4
-	internal void HFFGNHGFKPE(PhotonView DFIHBOEOJPI, string LBLKDNNPACO, PhotonTargets MPNMOONBMII, PhotonPlayer JHOEDACNNKK, bool AKFHJNFOCDP, params object[] GNNEKCBOBEG)
-	{
-		if (this.FFBGBLFBHOK.Contains(DFIHBOEOJPI.group))
+		HashSet<GameObject> hashSet = ((PhotonNetwork.SendMonoMessageTargets == null) ? PhotonNetwork.FindGameObjectsWithComponent(PhotonNetwork.SendMonoMessageTargetType) : PhotonNetwork.SendMonoMessageTargets);
+		string methodName = LELHNDDCKCO.ToString();
+		object value = ((GNNEKCBOBEG == null || GNNEKCBOBEG.Length != 1) ? GNNEKCBOBEG : GNNEKCBOBEG[1]);
+		foreach (GameObject item in hashSet)
 		{
-			return;
-		}
-		if (DFIHBOEOJPI.viewID < 1)
-		{
-			Debug.LogError(string.Concat(new object[]
+			if (item != null)
 			{
-				"Illegal view ID:",
-				DFIHBOEOJPI.viewID,
-				" method: ",
-				LBLKDNNPACO,
-				" GO:",
-				DFIHBOEOJPI.gameObject.name
-			}));
-		}
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
-		{
-			Debug.Log(string.Concat(new object[]
-			{
-				"Sending RPC \"",
-				LBLKDNNPACO,
-				"\" to target: ",
-				MPNMOONBMII,
-				" or player:",
-				JHOEDACNNKK,
-				"."
-			}));
-		}
-		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[0] = DFIHBOEOJPI.viewID;
-		if (DFIHBOEOJPI.prefix > 0)
-		{
-			hashtable[1] = (short)DFIHBOEOJPI.prefix;
-		}
-		hashtable[2] = PhotonNetwork.ServerTimestamp;
-		int num = 0;
-		if (this.CPLBCMDIGNB.TryGetValue(LBLKDNNPACO, out num))
-		{
-			hashtable[5] = (byte)num;
-		}
-		else
-		{
-			hashtable[3] = LBLKDNNPACO;
-		}
-		if (GNNEKCBOBEG != null && GNNEKCBOBEG.Length > 0)
-		{
-			hashtable[4] = GNNEKCBOBEG;
-		}
-		if (JHOEDACNNKK != null)
-		{
-			if (this.LocalPlayer.ID == JHOEDACNNKK.ID)
-			{
-				this.MBCHEFNAJFH(hashtable, JHOEDACNNKK.ID);
+				item.SendMessage(methodName, value, SendMessageOptions.DontRequireReceiver);
 			}
-			else
-			{
-				RaiseEventOptions bplhapbmggc = new RaiseEventOptions
-				{
-					TargetActors = new int[]
-					{
-						JHOEDACNNKK.ID
-					},
-					Encrypt = AKFHJNFOCDP
-				};
-				this.OpRaiseEvent(200, hashtable, true, bplhapbmggc);
-			}
-			return;
-		}
-		if (MPNMOONBMII == PhotonTargets.All)
-		{
-			RaiseEventOptions bplhapbmggc2 = new RaiseEventOptions
-			{
-				InterestGroup = DFIHBOEOJPI.group,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.OpRaiseEvent(200, hashtable, true, bplhapbmggc2);
-			this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ID);
-		}
-		else if (MPNMOONBMII == PhotonTargets.Others)
-		{
-			RaiseEventOptions bplhapbmggc3 = new RaiseEventOptions
-			{
-				InterestGroup = DFIHBOEOJPI.group,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.OpRaiseEvent(200, hashtable, true, bplhapbmggc3);
-		}
-		else if (MPNMOONBMII == PhotonTargets.AllBuffered)
-		{
-			RaiseEventOptions bplhapbmggc4 = new RaiseEventOptions
-			{
-				CachingOption = EventCaching.AddToRoomCache,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.OpRaiseEvent(200, hashtable, true, bplhapbmggc4);
-			this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ID);
-		}
-		else if (MPNMOONBMII == PhotonTargets.OthersBuffered)
-		{
-			RaiseEventOptions bplhapbmggc5 = new RaiseEventOptions
-			{
-				CachingOption = EventCaching.AddToRoomCache,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.OpRaiseEvent(200, hashtable, true, bplhapbmggc5);
-		}
-		else if (MPNMOONBMII == PhotonTargets.MasterClient)
-		{
-			if (this.mMasterClientId == this.LocalPlayer.ID)
-			{
-				this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ID);
-			}
-			else
-			{
-				RaiseEventOptions bplhapbmggc6 = new RaiseEventOptions
-				{
-					Receivers = ReceiverGroup.MasterClient,
-					Encrypt = AKFHJNFOCDP
-				};
-				this.OpRaiseEvent(200, hashtable, true, bplhapbmggc6);
-			}
-		}
-		else if (MPNMOONBMII == PhotonTargets.AllViaServer)
-		{
-			RaiseEventOptions bplhapbmggc7 = new RaiseEventOptions
-			{
-				InterestGroup = DFIHBOEOJPI.group,
-				Receivers = ReceiverGroup.All,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.OpRaiseEvent(200, hashtable, true, bplhapbmggc7);
-			if (PhotonNetwork.offlineMode)
-			{
-				this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ID);
-			}
-		}
-		else if (MPNMOONBMII == PhotonTargets.AllBufferedViaServer)
-		{
-			RaiseEventOptions bplhapbmggc8 = new RaiseEventOptions
-			{
-				InterestGroup = DFIHBOEOJPI.group,
-				Receivers = ReceiverGroup.All,
-				CachingOption = EventCaching.AddToRoomCache,
-				Encrypt = AKFHJNFOCDP
-			};
-			this.OpRaiseEvent(200, hashtable, true, bplhapbmggc8);
-			if (PhotonNetwork.offlineMode)
-			{
-				this.MBCHEFNAJFH(hashtable, this.LocalPlayer.ID);
-			}
-		}
-		else
-		{
-			Debug.LogError("Unsupported target enum: " + MPNMOONBMII);
 		}
 	}
 
-	// Token: 0x0600AF7D RID: 44925 RVA: 0x0040ADC4 File Offset: 0x00408FC4
-	private void IMFCMDEACAD()
+	protected internal static bool FAAKJJEMNEB(MonoBehaviour KLJMHHFGLCJ, string AOBJJJOJGGF, out MethodInfo MKLKGCPAPOC)
 	{
-		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
-		dictionary[(byte)-55] = 1;
-		dictionary[163] = 1;
-		this.OpCustom(108, dictionary, true, 1);
-	}
-
-	// Token: 0x0600AF7E RID: 44926 RVA: 0x0040AE08 File Offset: 0x00409008
-	public void OnEvent(EventData ADNNKPOCCDJ)
-	{
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+		MKLKGCPAPOC = null;
+		if (KLJMHHFGLCJ == null || string.IsNullOrEmpty(AOBJJJOJGGF))
 		{
-			Debug.Log(string.Format("OnEvent: {0}", ADNNKPOCCDJ.ToString()));
+			return false;
 		}
-		int num = -1;
-		PhotonPlayer photonPlayer = null;
-		if (ADNNKPOCCDJ.Parameters.ContainsKey(254))
+		List<MethodInfo> methods = SupportClass.GetMethods(KLJMHHFGLCJ.GetType(), null);
+		for (int i = 0; i < methods.Count; i++)
 		{
-			num = (int)ADNNKPOCCDJ[254];
-			photonPlayer = this.ICMGDHDNIJD(num);
-		}
-		byte code = ADNNKPOCCDJ.Code;
-		switch (code)
-		{
-		case 200:
-			this.MBCHEFNAJFH(ADNNKPOCCDJ[245] as ExitGames.Client.Photon.Hashtable, photonPlayer.ID);
-			break;
-		case 201:
-		case 206:
-		{
-			ExitGames.Client.Photon.Hashtable hashtable = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245];
-			int bfelejplade = (int)hashtable[0];
-			short dkcpajgkhni = -1;
-			byte b = 10;
-			int num2 = 1;
-			if (hashtable.ContainsKey(1))
+			MethodInfo methodInfo = methods[i];
+			if (methodInfo.Name.Equals(AOBJJJOJGGF))
 			{
-				dkcpajgkhni = (short)hashtable[1];
-				num2 = 2;
+				MKLKGCPAPOC = methodInfo;
+				return true;
 			}
-			byte b2 = b;
-			while ((int)(b2 - b) < hashtable.Count - num2)
-			{
-				this.CKEAHPJAGOO(hashtable[b2] as object[], photonPlayer, bfelejplade, dkcpajgkhni);
-				b2 += 1;
-			}
-			break;
-		}
-		case 202:
-			this.JFOLGKKLFJP((ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245], photonPlayer, null);
-			break;
-		case 203:
-			if (photonPlayer == null || !photonPlayer.IsMasterClient)
-			{
-				Debug.LogError("Error: Someone else(" + photonPlayer + ") then the masterserver requests a disconnect!");
-			}
-			else
-			{
-				PhotonNetwork.LeaveRoom();
-			}
-			break;
-		case 204:
-		{
-			ExitGames.Client.Photon.Hashtable hashtable2 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245];
-			int num3 = (int)hashtable2[0];
-			PhotonView photonView = null;
-			if (this.HFCMPEKPBAM.TryGetValue(num3, out photonView))
-			{
-				this.EFDAOHIDIIF(photonView.gameObject, true);
-			}
-			else if (this.DebugOut >= DebugLevel.ERROR)
-			{
-				Debug.LogError(string.Concat(new object[]
-				{
-					"Ev Destroy Failed. Could not find PhotonView with instantiationId ",
-					num3,
-					". Sent by actorNr: ",
-					num
-				}));
-			}
-			break;
-		}
-		default:
-			switch (code)
-			{
-			case 223:
-				if (this.AuthValues == null)
-				{
-					this.AuthValues = new AuthenticationValues();
-				}
-				this.AuthValues.Token = (ADNNKPOCCDJ[221] as string);
-				this.JOKLGFENMKE = this.AuthValues.Token;
-				break;
-			case 224:
-			{
-				string[] array = ADNNKPOCCDJ[213] as string[];
-				byte[] array2 = ADNNKPOCCDJ[212] as byte[];
-				int[] array3 = ADNNKPOCCDJ[229] as int[];
-				int[] array4 = ADNNKPOCCDJ[228] as int[];
-				this.HOBLKOKPJOE.Clear();
-				for (int i = 0; i < array.Length; i++)
-				{
-					TypedLobbyInfo typedLobbyInfo = new TypedLobbyInfo();
-					typedLobbyInfo.Name = array[i];
-					typedLobbyInfo.Type = (LobbyType)array2[i];
-					typedLobbyInfo.PlayerCount = array3[i];
-					typedLobbyInfo.RoomCount = array4[i];
-					this.HOBLKOKPJOE.Add(typedLobbyInfo);
-				}
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnLobbyStatisticsUpdate, new object[0]);
-				break;
-			}
-			default:
-				switch (code)
-				{
-				case 251:
-					if (PhotonNetwork.OnEventCall != null)
-					{
-						object fkodminiaec = ADNNKPOCCDJ[218];
-						PhotonNetwork.OnEventCall(ADNNKPOCCDJ.Code, fkodminiaec, num);
-					}
-					else
-					{
-						Debug.LogWarning("Warning: Unhandled Event ErrorInfo (251). Set PhotonNetwork.OnEventCall to the method PUN should call for this event.");
-					}
-					return;
-				case 253:
-				{
-					int num4 = (int)ADNNKPOCCDJ[253];
-					ExitGames.Client.Photon.Hashtable mjjmnidhdec = null;
-					ExitGames.Client.Photon.Hashtable faolpblckfj = null;
-					if (num4 == 0)
-					{
-						mjjmnidhdec = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[251];
-					}
-					else
-					{
-						faolpblckfj = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[251];
-					}
-					this.EDMCCPDDDCC(mjjmnidhdec, faolpblckfj, num4);
-					return;
-				}
-				case 254:
-					this.MJMAJHJLBPJ(num, ADNNKPOCCDJ);
-					return;
-				case 255:
-				{
-					bool flag = false;
-					ExitGames.Client.Photon.Hashtable eaobcipoenn = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[249];
-					if (photonPlayer == null)
-					{
-						bool nigbapgikdf = this.LocalPlayer.ID == num;
-						this.EGJBHECFAOH(num, new PhotonPlayer(nigbapgikdf, num, eaobcipoenn));
-						this.PAOJLLAACDE();
-					}
-					else
-					{
-						flag = photonPlayer.IsInactive;
-						photonPlayer.NPOPPIMCDMN(eaobcipoenn);
-						photonPlayer.IsInactive = false;
-					}
-					if (num == this.LocalPlayer.ID)
-					{
-						int[] homaecigjej = (int[])ADNNKPOCCDJ[252];
-						this.ANEENOJMDOJ(homaecigjej);
-						if (this.ELNKFMHCMBO == JoinType.JoinOrCreateRoom && this.LocalPlayer.ID == 1)
-						{
-							BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnCreatedRoom, new object[0]);
-						}
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnJoinedRoom, new object[0]);
-					}
-					else
-					{
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerConnected, new object[]
-						{
-							this.mActors[num]
-						});
-						if (flag)
-						{
-							BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerActivityChanged, new object[]
-							{
-								this.mActors[num]
-							});
-						}
-					}
-					return;
-				}
-				}
-				if (ADNNKPOCCDJ.Code < 200)
-				{
-					if (PhotonNetwork.OnEventCall != null)
-					{
-						object fkodminiaec2 = ADNNKPOCCDJ[245];
-						PhotonNetwork.OnEventCall(ADNNKPOCCDJ.Code, fkodminiaec2, num);
-					}
-					else
-					{
-						Debug.LogWarning("Warning: Unhandled event " + ADNNKPOCCDJ + ". Set PhotonNetwork.OnEventCall.");
-					}
-				}
-				break;
-			case 226:
-				this.PlayersInRoomsCount = (int)ADNNKPOCCDJ[229];
-				this.PlayersOnMasterCount = (int)ADNNKPOCCDJ[227];
-				this.RoomsCount = (int)ADNNKPOCCDJ[228];
-				break;
-			case 229:
-			{
-				ExitGames.Client.Photon.Hashtable hashtable3 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[222];
-				foreach (object obj in hashtable3.Keys)
-				{
-					string text = (string)obj;
-					RoomInfo roomInfo = new RoomInfo(text, (ExitGames.Client.Photon.Hashtable)hashtable3[obj]);
-					if (roomInfo.removedFromList)
-					{
-						this.mGameList.Remove(text);
-					}
-					else
-					{
-						this.mGameList[text] = roomInfo;
-					}
-				}
-				this.mGameListCopy = new RoomInfo[this.mGameList.Count];
-				this.mGameList.Values.CopyTo(this.mGameListCopy, 0);
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnReceivedRoomListUpdate, new object[0]);
-				break;
-			}
-			case 230:
-			{
-				this.mGameList = new Dictionary<string, RoomInfo>();
-				ExitGames.Client.Photon.Hashtable hashtable4 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[222];
-				foreach (object obj2 in hashtable4.Keys)
-				{
-					string text2 = (string)obj2;
-					this.mGameList[text2] = new RoomInfo(text2, (ExitGames.Client.Photon.Hashtable)hashtable4[obj2]);
-				}
-				this.mGameListCopy = new RoomInfo[this.mGameList.Count];
-				this.mGameList.Values.CopyTo(this.mGameListCopy, 0);
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnReceivedRoomListUpdate, new object[0]);
-				break;
-			}
-			}
-			break;
-		case 207:
-		{
-			ExitGames.Client.Photon.Hashtable hashtable2 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245];
-			int num5 = (int)hashtable2[0];
-			if (num5 >= 0)
-			{
-				this.DestroyPlayerObjects(num5, true);
-			}
-			else
-			{
-				if (this.DebugOut >= DebugLevel.INFO)
-				{
-					Debug.Log("Ev DestroyAll! By PlayerId: " + num);
-				}
-				this.DestroyAll(true);
-			}
-			break;
-		}
-		case 208:
-		{
-			ExitGames.Client.Photon.Hashtable hashtable2 = (ExitGames.Client.Photon.Hashtable)ADNNKPOCCDJ[245];
-			int phigecolkkn = (int)hashtable2[1];
-			this.LGPBHHOJPCA(phigecolkkn, false);
-			break;
-		}
-		case 209:
-		{
-			int[] array5 = (int[])ADNNKPOCCDJ.Parameters[245];
-			int num6 = array5[0];
-			int num7 = array5[1];
-			PhotonView photonView2 = PhotonView.Find(num6);
-			if (photonView2 == null)
-			{
-				Debug.LogWarning("Can't find PhotonView of incoming OwnershipRequest. ViewId not found: " + num6);
-			}
-			else
-			{
-				if (PhotonNetwork.logLevel == PhotonLogLevel.Informational)
-				{
-					Debug.Log(string.Concat(new object[]
-					{
-						"Ev OwnershipRequest ",
-						photonView2.ownershipTransfer,
-						". ActorNr: ",
-						num,
-						" takes from: ",
-						num7,
-						". local RequestedView.ownerId: ",
-						photonView2.ownerId,
-						" isOwnerActive: ",
-						photonView2.isOwnerActive,
-						". MasterClient: ",
-						this.mMasterClientId,
-						". This client's player: ",
-						PhotonNetwork.player.ToStringFull()
-					}));
-				}
-				switch (photonView2.ownershipTransfer)
-				{
-				case OwnershipOption.Fixed:
-					Debug.LogWarning("Ownership mode == fixed. Ignoring request.");
-					break;
-				case OwnershipOption.Takeover:
-					if (num7 == photonView2.ownerId || (num7 == 0 && photonView2.ownerId == this.mMasterClientId) || photonView2.ownerId == 0)
-					{
-						photonView2.OwnerShipWasTransfered = true;
-						int ownerId = photonView2.ownerId;
-						PhotonPlayer photonPlayer2 = this.ICMGDHDNIJD(ownerId);
-						photonView2.ownerId = num;
-						if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-						{
-							Debug.LogWarning(photonView2 + " ownership transfered to: " + num);
-						}
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnOwnershipTransfered, new object[]
-						{
-							photonView2,
-							photonPlayer,
-							photonPlayer2
-						});
-					}
-					break;
-				case OwnershipOption.Request:
-					if ((num7 == PhotonNetwork.player.ID || PhotonNetwork.player.IsMasterClient) && (photonView2.ownerId == PhotonNetwork.player.ID || (PhotonNetwork.player.IsMasterClient && !photonView2.isOwnerActive)))
-					{
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnOwnershipRequest, new object[]
-						{
-							photonView2,
-							photonPlayer
-						});
-					}
-					break;
-				}
-			}
-			break;
-		}
-		case 210:
-		{
-			int[] array6 = (int[])ADNNKPOCCDJ.Parameters[245];
-			if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-			{
-				Debug.Log(string.Concat(new object[]
-				{
-					"Ev OwnershipTransfer. ViewID ",
-					array6[0],
-					" to: ",
-					array6[1],
-					" Time: ",
-					Environment.TickCount % 1000
-				}));
-			}
-			int nadliachbno = array6[0];
-			int num8 = array6[1];
-			PhotonView photonView3 = PhotonView.Find(nadliachbno);
-			if (photonView3 != null)
-			{
-				int ownerId2 = photonView3.ownerId;
-				photonView3.OwnerShipWasTransfered = true;
-				photonView3.ownerId = num8;
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnOwnershipTransfered, new object[]
-				{
-					photonView3,
-					PhotonPlayer.Find(num8),
-					PhotonPlayer.Find(ownerId2)
-				});
-			}
-			break;
-		}
-		}
-	}
-
-	// Token: 0x0600AF7F RID: 44927 RVA: 0x0008AC2B File Offset: 0x00088E2B
-	public List<Region> PKIDPHFLDBP()
-	{
-		return this.<GMPLFLCBMGI>k__BackingField;
-	}
-
-	// Token: 0x0600AF80 RID: 44928 RVA: 0x0040B96C File Offset: 0x00409B6C
-	private bool DONKMNHEACD(object CFKDMFFFPJK, object GOLMELKEAFO)
-	{
-		if (CFKDMFFFPJK == null || GOLMELKEAFO == null)
-		{
-			return CFKDMFFFPJK == null && GOLMELKEAFO == null;
-		}
-		if (!CFKDMFFFPJK.Equals(GOLMELKEAFO))
-		{
-			if (CFKDMFFFPJK is Vector3)
-			{
-				Vector3 mpnmoonbmii = (Vector3)CFKDMFFFPJK;
-				Vector3 biccgcfnnlp = (Vector3)GOLMELKEAFO;
-				if (mpnmoonbmii.AlmostEquals(biccgcfnnlp, PhotonNetwork.precisionForVectorSynchronization))
-				{
-					return true;
-				}
-			}
-			else if (CFKDMFFFPJK is Vector2)
-			{
-				Vector2 mpnmoonbmii2 = (Vector2)CFKDMFFFPJK;
-				Vector2 biccgcfnnlp2 = (Vector2)GOLMELKEAFO;
-				if (mpnmoonbmii2.AlmostEquals(biccgcfnnlp2, PhotonNetwork.precisionForVectorSynchronization))
-				{
-					return false;
-				}
-			}
-			else if (CFKDMFFFPJK is Quaternion)
-			{
-				Quaternion mpnmoonbmii3 = (Quaternion)CFKDMFFFPJK;
-				Quaternion biccgcfnnlp3 = (Quaternion)GOLMELKEAFO;
-				if (mpnmoonbmii3.AlmostEquals(biccgcfnnlp3, PhotonNetwork.precisionForQuaternionSynchronization))
-				{
-					return false;
-				}
-			}
-			else if (CFKDMFFFPJK is float)
-			{
-				float mpnmoonbmii4 = (float)CFKDMFFFPJK;
-				float biccgcfnnlp4 = (float)GOLMELKEAFO;
-				if (mpnmoonbmii4.AlmostEquals(biccgcfnnlp4, PhotonNetwork.precisionForFloatSynchronization))
-				{
-					return false;
-				}
-			}
-			return true;
 		}
 		return false;
 	}
 
-	// Token: 0x17000250 RID: 592
-	// (get) Token: 0x0600AF82 RID: 44930 RVA: 0x0008AED5 File Offset: 0x000890D5
-	// (set) Token: 0x0600AFCB RID: 45003 RVA: 0x0008B1A0 File Offset: 0x000893A0
-	public Room CurrentRoom
+	private bool KJDCGBCHDEO()
 	{
-		get
-		{
-			if (this.NBCIDPIDCDP != null && this.NBCIDPIDCDP.IsLocalClientInside)
-			{
-				return this.NBCIDPIDCDP;
-			}
-			return null;
-		}
-		private set
-		{
-			this.NBCIDPIDCDP = value;
-		}
-	}
-
-	// Token: 0x0600AF83 RID: 44931 RVA: 0x0040BA6C File Offset: 0x00409C6C
-	private bool LFAPOBNFPPO(object[] OMGHPPEONFN, object[] BGJHIKDFIMP)
-	{
-		if (OMGHPPEONFN == null && BGJHIKDFIMP == null)
-		{
-			return true;
-		}
-		if (OMGHPPEONFN == null || BGJHIKDFIMP == null || OMGHPPEONFN.Length != BGJHIKDFIMP.Length)
-		{
-			return false;
-		}
-		for (int i = 0; i < BGJHIKDFIMP.Length; i++)
-		{
-			object cfkdmfffpjk = BGJHIKDFIMP[i];
-			object golmelkeafo = OMGHPPEONFN[i];
-			if (!this.LFAPOBNFPPO(cfkdmfffpjk, golmelkeafo))
-			{
-				return false;
-			}
-		}
-		return true;
-	}
-
-	// Token: 0x0600AF84 RID: 44932 RVA: 0x0040BACC File Offset: 0x00409CCC
-	public void DebugReturn(DebugLevel DCMIEONIJMA, string JKPJCEMPAGH)
-	{
-		if (DCMIEONIJMA == DebugLevel.ERROR)
-		{
-			Debug.LogError(JKPJCEMPAGH);
-		}
-		else if (DCMIEONIJMA == DebugLevel.WARNING)
-		{
-			Debug.LogWarning(JKPJCEMPAGH);
-		}
-		else if (DCMIEONIJMA == DebugLevel.INFO && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-		{
-			Debug.Log(JKPJCEMPAGH);
-		}
-		else if (DCMIEONIJMA == DebugLevel.ALL && PhotonNetwork.logLevel == PhotonLogLevel.Full)
-		{
-			Debug.Log(JKPJCEMPAGH);
-		}
-	}
-
-	// Token: 0x0600AF85 RID: 44933 RVA: 0x0040BB34 File Offset: 0x00409D34
-	private void BJHGKICFMJP()
-	{
-		bool flag = this.CurrentRoom == null;
-		bool flag2 = (this.CurrentRoom == null) ? PhotonNetwork.autoCleanUpPlayerObjects : this.CurrentRoom.IHKCBNNMLNK();
-		this.hasSwitchedMC = false;
-		this.NLEEJPDKBFH(null);
-		this.mActors = new Dictionary<int, PhotonPlayer>();
-		this.mPlayerListCopy = new PhotonPlayer[0];
-		this.mOtherPlayerListCopy = new PhotonPlayer[1];
-		this.CHIJNBAJIHE = new HashSet<byte>();
-		this.FFBGBLFBHOK = new HashSet<byte>();
-		this.mGameList = new Dictionary<string, RoomInfo>();
-		this.mGameListCopy = new RoomInfo[0];
-		this.POHIMACBDGL = false;
-		this.ChangeLocalID(-1);
-		if (flag2)
-		{
-			this.HMNMFOJCHBJ(false);
-			PhotonNetwork.JMCPHFPJEJC = new List<int>();
-		}
-		if (flag)
-		{
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnLeftRoom, new object[1]);
-		}
-	}
-
-	// Token: 0x0600AF86 RID: 44934 RVA: 0x0008AD63 File Offset: 0x00088F63
-	public TypedLobby GMFCEODBPGN()
-	{
-		return this.<IGGEJKPFJJD>k__BackingField;
-	}
-
-	// Token: 0x0600AF87 RID: 44935 RVA: 0x0008AEFA File Offset: 0x000890FA
-	protected internal string APACDJMLLEH()
-	{
-		return string.Format("?", PhotonNetwork.gameVersion, "mapselector.filter.subscribedonly");
-	}
-
-	// Token: 0x0600AF88 RID: 44936 RVA: 0x0000414C File Offset: 0x0000234C
-	public void OnMessage(object NBCIEBFNLGN)
-	{
-	}
-
-	// Token: 0x0600AF89 RID: 44937 RVA: 0x0008AF10 File Offset: 0x00089110
-	public virtual bool OpLeave()
-	{
-		if (this.State != ClientState.Joined)
-		{
-			Debug.LogWarning("Not sending leave operation. State is not 'Joined': " + this.State);
-			return false;
-		}
-		return this.OpCustom(254, null, true, 0);
-	}
-
-	// Token: 0x0600AF8A RID: 44938 RVA: 0x0008AF49 File Offset: 0x00089149
-	public virtual bool FNPGHPPDNCJ(string[] MIMEHFLKIIG)
-	{
-		if (this.POHIMACBDGL)
-		{
-			return true;
-		}
-		this.BEIPFKHGHPC = MIMEHFLKIIG;
-		this.POHIMACBDGL = false;
-		return base.CKBCKDPCODK(MIMEHFLKIIG);
-	}
-
-	// Token: 0x0600AF8B RID: 44939 RVA: 0x0040BC04 File Offset: 0x00409E04
-	private string IHAJBEOILOE()
-	{
-		ConnectionProtocol transportProtocol = base.TransportProtocol;
-		int num = 0;
-		BNGIGHBHPEH.AEGGDHEGGCL.TryGetValue(transportProtocol, out num);
-		string arg = string.Empty;
-		if (transportProtocol == ConnectionProtocol.WebSocket)
-		{
-			arg = "ws://";
-		}
-		else if (transportProtocol == ConnectionProtocol.WebSocketSecure)
-		{
-			arg = "wss://";
-		}
-		return string.Format("{0}{1}:{2}", arg, "ns.exitgames.com", num);
-	}
-
-	// Token: 0x0600AF8C RID: 44940 RVA: 0x0008AF6D File Offset: 0x0008916D
-	protected internal void NJEJHIPKGKD()
-	{
-		PhotonNetworkingMessage lelhnddckco = PhotonNetworkingMessage.OnConnectedToPhoton;
-		object[] array = new object[1];
-		array[1] = PhotonNetwork.masterClient;
-		BNGIGHBHPEH.SendMonoMessage(lelhnddckco, array);
-	}
-
-	// Token: 0x17000256 RID: 598
-	// (get) Token: 0x0600AF8D RID: 44941 RVA: 0x0008AF83 File Offset: 0x00089183
-	public bool IsAuthorizeSecretAvailable
-	{
-		get
-		{
-			return this.AuthValues != null && !string.IsNullOrEmpty(this.AuthValues.Token);
-		}
-	}
-
-	// Token: 0x0600AF8E RID: 44942 RVA: 0x0008AFA6 File Offset: 0x000891A6
-	protected internal void GBBHGHDFLAB()
-	{
-		BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnLeftLobby, new object[]
-		{
-			PhotonNetwork.masterClient
-		});
-	}
-
-	// Token: 0x0600AF8F RID: 44943 RVA: 0x0040BC68 File Offset: 0x00409E68
-	public void AJJHLPGHNHL(StatusCode FIIDDDBNCLD)
-	{
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-		{
-			Debug.Log(string.Format("_Value2", FIIDDDBNCLD.ToString(), this.EBAJHBFJFCL()));
-		}
-		switch (FIIDDDBNCLD)
-		{
-		case (StatusCode)(-156):
-		case (StatusCode)(-154):
-		case (StatusCode)(-153):
-		case (StatusCode)(-152):
-			if (this.IsInitialConnect)
-			{
-				object[] array = new object[7];
-				array[0] = FIIDDDBNCLD;
-				array[1] = "MenuScene";
-				array[3] = base.ServerAddress;
-				array[3] = "_Noise";
-				Debug.LogWarning(string.Concat(array));
-				this.IsInitialConnect = true;
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco = (PhotonNetworkingMessage)71;
-				object[] array2 = new object[0];
-				array2[0] = disconnectCause;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco, array2);
-			}
-			else
-			{
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco2 = (PhotonNetworkingMessage)38;
-				object[] array3 = new object[0];
-				array3[1] = disconnectCause;
-				BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco2, array3);
-			}
-			if (this.AuthValues != null)
-			{
-				this.IJHIEINKMFP().AIOHGAFEHJG(null);
-			}
-			this.Disconnect();
-			return;
-		case (StatusCode)(-155):
-			if (this.IsInitialConnect)
-			{
-				if (!this.IDOAHFHJJJE)
-				{
-					object[] array4 = new object[4];
-					array4[0] = FIIDDDBNCLD;
-					array4[1] = "_MidGrey";
-					array4[7] = base.ServerAddress;
-					array4[3] = "_Value2";
-					Debug.LogWarning(string.Concat(array4));
-					this.IsInitialConnect = true;
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnCreatedRoom, new object[]
-					{
-						disconnectCause
-					});
-				}
-			}
-			else
-			{
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				PhotonNetworkingMessage lelhnddckco3 = (PhotonNetworkingMessage)(-71);
-				object[] array5 = new object[0];
-				array5[1] = disconnectCause;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco3, array5);
-			}
-			if (this.IJHIEINKMFP() != null)
-			{
-				this.AuthValues.FNCDLDJFJAM(null);
-			}
-			this.Disconnect();
-			return;
-		default:
-			switch (FIIDDDBNCLD)
-			{
-			case (StatusCode)(-172):
-			case (StatusCode)(-171):
-			{
-				this.IsInitialConnect = false;
-				this.State = ClientState.PeerCreated;
-				if (this.AuthValues != null)
-				{
-					this.AuthValues.AIOHGAFEHJG(null);
-				}
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)90, new object[]
-				{
-					disconnectCause
-				});
-				return;
-			}
-			case (StatusCode)(-170):
-				if (this.State == (ClientState)(-62))
-				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)5)
-					{
-						Debug.Log("workshop.");
-					}
-					this.AJIAHPCFPAA((ServerConnection)6);
-					if (this.IJHIEINKMFP() != null)
-					{
-						this.IJHIEINKMFP().FNCDLDJFJAM(null);
-					}
-				}
-				if (this.EBAJHBFJFCL() == ClientState.Uninitialized)
-				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)3)
-					{
-						Debug.Log("player.redarc");
-					}
-					this.EHALCLFLGJF = ServerConnection.MasterServer;
-					this.JNPKDLEMJFN(ClientState.Joining);
-				}
-				if (this.State == (ClientState)59)
-				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)3)
-					{
-						Debug.Log("SetParticlesColor");
-					}
-					this.LNKHKBBMMIA(ServerConnection.MasterServer);
-					this.State = (ClientState)50;
-					if (this.IsInitialConnect)
-					{
-						this.IsInitialConnect = false;
-						BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnConnectedToPhoton, new object[1]);
-					}
-				}
-				if (base.TransportProtocol != ConnectionProtocol.Udp)
-				{
-					if (this.EHALCLFLGJF == (ServerConnection)7 || this.AuthMode == AuthModeOption.Auth)
-					{
-						base.EstablishEncryption();
-					}
-					return;
-				}
-				if (this.DebugOut == DebugLevel.WARNING)
-				{
-					Debug.Log("Joystick1Button9");
-				}
-				goto IL_1AC;
-			case (StatusCode)(-169):
-				this.DMCPHGDNGDB = false;
-				this.POHIMACBDGL = false;
-				if (this.IGDBHCGGHFF() == ServerConnection.MasterServer)
-				{
-					this.BOJKDNJHBNG();
-				}
-				if (this.IGDBHCGGHFF() == ServerConnection.MasterServer)
-				{
-					this.IFPPBJINADG();
-				}
-				if (this.EBAJHBFJFCL() == ClientState.JoinedLobby)
-				{
-					if (this.Connect(this.GameServerAddress, ServerConnection.GameServer))
-					{
-						this.State = ClientState.Uninitialized;
-					}
-				}
-				else if (this.State == (ClientState)102 || this.EBAJHBFJFCL() == (ClientState)46)
-				{
-					this.FKNEKIDFEIA(ServerConnection.MasterServer);
-					if (this.Connect(this.MasterServerAddress, ServerConnection.GameServer))
-					{
-						this.State = (ClientState)(-34);
-					}
-				}
-				else
-				{
-					if (this.IDOAHFHJJJE)
-					{
-						return;
-					}
-					if (this.AuthValues != null)
-					{
-						this.IJHIEINKMFP().NJJEJBOAEDG(null);
-					}
-					this.IsInitialConnect = false;
-					this.JNPKDLEMJFN(ClientState.PeerCreated);
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnLeftLobby, new object[0]);
-				}
-				return;
-			case (StatusCode)(-168):
-				if (this.IsInitialConnect)
-				{
-					Debug.LogError("_Bullet_7" + base.ServerAddress + "settings.enablehitsoundsinrelax");
-					if (base.ServerAddress == null || base.ServerAddress.StartsWith(": "))
-					{
-						Debug.LogWarning("/?page=ranks");
-						if (base.ServerAddress == this.GameServerAddress)
-						{
-							Debug.LogWarning("menu.playedpage");
-						}
-					}
-					this.JNPKDLEMJFN(ClientState.Uninitialized);
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					this.IsInitialConnect = false;
-					PhotonNetworkingMessage lelhnddckco4 = (PhotonNetworkingMessage)(-80);
-					object[] array6 = new object[0];
-					array6[1] = disconnectCause;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco4, array6);
-				}
-				else
-				{
-					this.State = ClientState.Uninitialized;
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					PhotonNetworkingMessage lelhnddckco5 = PhotonNetworkingMessage.OnMasterClientSwitched;
-					object[] array7 = new object[0];
-					array7[0] = disconnectCause;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco5, array7);
-				}
-				this.Disconnect();
-				return;
-			case (StatusCode)(-164):
-				return;
-			}
-			Debug.LogError(": " + FIIDDDBNCLD);
-			return;
-		case (StatusCode)(-147):
-			break;
-		case (StatusCode)(-146):
-		{
-			Debug.LogError("_ScreenResolution" + FIIDDDBNCLD + "No valid adaptive tonemapper type found!");
-			AuthenticationValues authenticationValues;
-			if ((authenticationValues = this.AuthValues) == null)
-			{
-				AuthenticationValues authenticationValues2 = new AuthenticationValues();
-				authenticationValues2.JCECBNKFODG(this.PlayerName);
-				authenticationValues = authenticationValues2;
-			}
-			AuthenticationValues gpdfhodmoij = authenticationValues;
-			this.HIKIDBBNFBM(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CAFLFPLLMNC().ToString(), this.ADPDMHEPOMG());
-			return;
-		}
-		}
-		IL_1AC:
-		this.IDOAHFHJJJE = false;
-		if (this.NJIFBFEHJKH() == ServerConnection.MasterServer)
-		{
-			this.State = (ClientState)68;
-			if (!this.DMCPHGDNGDB && this.CAFLFPLLMNC() == CloudRegionCode.au)
-			{
-				this.MPKLAJGIHGP(this.KAIBLIKEDHM);
-			}
-		}
-		if (this.NJIFBFEHJKH() != (ServerConnection)3 && (this.AuthMode == AuthModeOption.AuthOnce || this.AuthMode == AuthModeOption.AuthOnce))
-		{
-			object[] array8 = new object[3];
-			array8[1] = "settings.enablehitsoundsinnormal";
-			array8[1] = this.DMCPHGDNGDB;
-			array8[6] = "Committing changes...";
-			array8[4] = this.AuthMode;
-			Debug.Log(string.Concat(array8));
-		}
-		else if (!this.DMCPHGDNGDB && (!this.IsUsingNameServer || this.CloudRegion != CloudRegionCode.sa))
-		{
-			this.DMCPHGDNGDB = this.GHBFBICEHBK();
-			if (this.DMCPHGDNGDB)
-			{
-				this.State = (ClientState)53;
-			}
-		}
-	}
-
-	// Token: 0x0600AF90 RID: 44944 RVA: 0x0040C2BC File Offset: 0x0040A4BC
-	public void NewSceneLoaded()
-	{
-		if (this.HMIEGLIHGEM)
-		{
-			this.HMIEGLIHGEM = false;
-			PhotonNetwork.isMessageQueueRunning = true;
-		}
-		List<int> list = new List<int>();
-		foreach (KeyValuePair<int, PhotonView> keyValuePair in this.HFCMPEKPBAM)
-		{
-			PhotonView value = keyValuePair.Value;
-			if (value == null)
-			{
-				list.Add(keyValuePair.Key);
-			}
-		}
-		for (int i = 0; i < list.Count; i++)
-		{
-			int key = list[i];
-			this.HFCMPEKPBAM.Remove(key);
-		}
-		if (list.Count > 0 && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-		{
-			Debug.Log("New level loaded. Removed " + list.Count + " scene view IDs from last level.");
-		}
-	}
-
-	// Token: 0x0600AF91 RID: 44945 RVA: 0x0040C3BC File Offset: 0x0040A5BC
-	private void AMFFFOBFFFM()
-	{
-		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
-		dictionary[108] = 1;
-		dictionary[(byte)-68] = 2;
-		this.OpCustom((byte)-108, dictionary, true, 0);
-	}
-
-	// Token: 0x0600AF92 RID: 44946 RVA: 0x0040C400 File Offset: 0x0040A600
-	public void RegisterPhotonView(PhotonView LCJKMJCFDGE)
-	{
-		if (!Application.isPlaying)
-		{
-			this.HFCMPEKPBAM = new Dictionary<int, PhotonView>();
-			return;
-		}
-		if (LCJKMJCFDGE.viewID == 0)
-		{
-			Debug.Log("PhotonView register is ignored, because viewID is 0. No id assigned yet to: " + LCJKMJCFDGE);
-			return;
-		}
-		PhotonView photonView = null;
-		bool flag = this.HFCMPEKPBAM.TryGetValue(LCJKMJCFDGE.viewID, out photonView);
-		if (flag)
-		{
-			if (!(LCJKMJCFDGE != photonView))
-			{
-				return;
-			}
-			Debug.LogError(string.Format("PhotonView ID duplicate found: {0}. New: {1} old: {2}. Maybe one wasn't destroyed on scene load?! Check for 'DontDestroyOnLoad'. Destroying old entry, adding new.", LCJKMJCFDGE.viewID, LCJKMJCFDGE, photonView));
-			this.EFDAOHIDIIF(photonView.gameObject, true);
-		}
-		this.HFCMPEKPBAM.Add(LCJKMJCFDGE.viewID, LCJKMJCFDGE);
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
-		{
-			Debug.Log("Registered PhotonView: " + LCJKMJCFDGE.viewID);
-		}
-	}
-
-	// Token: 0x0600AF93 RID: 44947 RVA: 0x0008AFBC File Offset: 0x000891BC
-	private void JOANOODGGAG(int IJAEJMNLBLK, PhotonPlayer JHOEDACNNKK)
-	{
-		if (!this.mActors.ContainsKey(IJAEJMNLBLK))
-		{
-			this.mActors[IJAEJMNLBLK] = JHOEDACNNKK;
-			this.LEMBPMNPHCK();
-		}
-		else
-		{
-			Debug.LogError("AddEnvironmentSprite" + IJAEJMNLBLK);
-		}
-	}
-
-	// Token: 0x0600AF94 RID: 44948 RVA: 0x0040C4D0 File Offset: 0x0040A6D0
-	private bool AKIBKCFMMHO()
-	{
-		this.IDOAHFHJJJE = true;
+		IDOAHFHJJJE = false;
 		PhotonNetwork.SwitchToProtocol(PhotonNetwork.PhotonServerSettings.Protocol);
-		this.KHKMFIFGPCH(this.PKNIJKPIKAF);
-		bool flag = base.Connect(this.BLNBCGLIOHP, this.KAOMEDGGMEM, this.LLJDHHLHFME);
+		KHKMFIFGPCH(PKNIJKPIKAF);
+		bool flag = base.Connect(BLNBCGLIOHP, KAOMEDGGMEM, LLJDHHLHFME);
 		if (flag)
 		{
-			ServerConnection pknijkpikaf = this.PKNIJKPIKAF;
-			if (pknijkpikaf != ServerConnection.NameServer)
+			switch (PKNIJKPIKAF)
 			{
-				if (pknijkpikaf != ServerConnection.MasterServer)
-				{
-					if (pknijkpikaf == ServerConnection.GameServer)
-					{
-						this.State = ClientState.ConnectingToGameserver;
-					}
-				}
-				else
-				{
-					this.State = ClientState.ConnectingToMasterserver;
-				}
-			}
-			else
-			{
-				this.State = ClientState.ConnectingToNameServer;
+			case (ServerConnection)8:
+				HNCIIMJABOJ((ClientState)75);
+				break;
+			case ServerConnection.MasterServer:
+				HNCIIMJABOJ((ClientState)(-49));
+				break;
+			case ServerConnection.GameServer:
+				HNCIIMJABOJ(ClientState.JoinedLobby);
+				break;
 			}
 		}
 		return flag;
 	}
 
-	// Token: 0x0600AF95 RID: 44949 RVA: 0x0008AFFC File Offset: 0x000891FC
-	public void DestroyAll(bool NOKCKEBHIFJ)
+	private void PACEKOIEHKK()
 	{
-		if (!NOKCKEBHIFJ)
+		if (State == ClientState.Joining)
 		{
-			this.OpRemoveCompleteCache();
-			this.EBNDKPFKPIJ();
+			BOKEGDFHBAN = true;
 		}
-		this.OMEPCMPKIJK(true);
-	}
-
-	// Token: 0x0600AF96 RID: 44950 RVA: 0x0040C568 File Offset: 0x0040A768
-	private void PCLPOPNEABK(OperationResponse FEOMHKNGOAK)
-	{
-		if (FEOMHKNGOAK.ReturnCode != 0)
+		else if (LocalPlayer != null)
 		{
-			byte operationCode = FEOMHKNGOAK.OperationCode;
-			if (operationCode != 227)
+			LocalPlayer.NickName = PlayerName;
+			ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
+			hashtable[byte.MaxValue] = PlayerName;
+			if (LocalPlayer.ID > 0)
 			{
-				if (operationCode != 226)
-				{
-					if (operationCode == 225)
-					{
-						if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-						{
-							Debug.Log("Join failed on GameServer. Changing back to MasterServer. Msg: " + FEOMHKNGOAK.DebugMessage);
-							if (FEOMHKNGOAK.ReturnCode == 32758)
-							{
-								Debug.Log("Most likely the game became empty during the switch to GameServer.");
-							}
-						}
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonRandomJoinFailed, new object[]
-						{
-							FEOMHKNGOAK.ReturnCode,
-							FEOMHKNGOAK.DebugMessage
-						});
-					}
-				}
-				else
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.Log("Join failed on GameServer. Changing back to MasterServer. Msg: " + FEOMHKNGOAK.DebugMessage);
-						if (FEOMHKNGOAK.ReturnCode == 32758)
-						{
-							Debug.Log("Most likely the game became empty during the switch to GameServer.");
-						}
-					}
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonJoinRoomFailed, new object[]
-					{
-						FEOMHKNGOAK.ReturnCode,
-						FEOMHKNGOAK.DebugMessage
-					});
-				}
-			}
-			else
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.Log("Create failed on GameServer. Changing back to MasterServer. Msg: " + FEOMHKNGOAK.DebugMessage);
-				}
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonCreateRoomFailed, new object[]
-				{
-					FEOMHKNGOAK.ReturnCode,
-					FEOMHKNGOAK.DebugMessage
-				});
-			}
-			this.NDPIAMOMGME();
-			return;
-		}
-		this.CurrentRoom = new Room(this.AJFMHFLGCFN.RoomName, null)
-		{
-			IsLocalClientInside = true
-		};
-		this.State = ClientState.Joined;
-		if (FEOMHKNGOAK.Parameters.ContainsKey(252))
-		{
-			int[] homaecigjej = (int[])FEOMHKNGOAK.Parameters[252];
-			this.ANEENOJMDOJ(homaecigjej);
-		}
-		int lghipfaeonm = (int)FEOMHKNGOAK[254];
-		this.ChangeLocalID(lghipfaeonm);
-		ExitGames.Client.Photon.Hashtable faolpblckfj = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[249];
-		ExitGames.Client.Photon.Hashtable mjjmnidhdec = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[248];
-		this.EDMCCPDDDCC(mjjmnidhdec, faolpblckfj, 0);
-		if (!this.CurrentRoom.BDHOOLIDFJO)
-		{
-			this.CDNPLJILLFC(-1);
-		}
-		if (this.BOKEGDFHBAN)
-		{
-			this.PACEKOIEHKK();
-		}
-		byte operationCode2 = FEOMHKNGOAK.OperationCode;
-		if (operationCode2 != 227)
-		{
-			if (operationCode2 != 226 && operationCode2 != 225)
-			{
-			}
-		}
-		else
-		{
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnCreatedRoom, new object[0]);
-		}
-	}
-
-	// Token: 0x0600AF97 RID: 44951 RVA: 0x0040C7D4 File Offset: 0x0040A9D4
-	private void KIKHKNNMBMN()
-	{
-		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
-		dictionary[244] = 0;
-		dictionary[247] = 7;
-		this.OpCustom(253, dictionary, true, 0);
-	}
-
-	// Token: 0x0600AF98 RID: 44952 RVA: 0x0040C818 File Offset: 0x0040AA18
-	protected internal void FKNEKIDFEIA(ServerConnection NKGHPPHEGCO)
-	{
-		ConnectionProtocol connectionProtocol = base.TransportProtocol;
-		if (this.AuthMode == (AuthModeOption)8)
-		{
-			if (NKGHPPHEGCO != (ServerConnection)3)
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-				{
-					Debug.LogWarning("maps." + PhotonNetwork.PhotonServerSettings.Protocol);
-				}
-				connectionProtocol = PhotonNetwork.PhotonServerSettings.Protocol;
-			}
-			else
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.LogWarning("Can't connect: Loading settings failed. ServerSettings asset must be in any 'Resources' folder as: PhotonServerSettings");
-				}
-				connectionProtocol = ConnectionProtocol.Tcp;
-			}
-		}
-		Type type = Type.GetType("GlassDistortion", true);
-		if (type == null)
-		{
-			type = Type.GetType("BadgeText", false);
-		}
-		if (type != null)
-		{
-			this.SocketImplementationConfig[ConnectionProtocol.Tcp] = type;
-			this.SocketImplementationConfig[(ConnectionProtocol)6] = type;
-		}
-		if (PhotonHandler.LEILCLLNGGH == null)
-		{
-			PhotonHandler.LEILCLLNGGH = typeof(PingMono);
-		}
-		if (base.TransportProtocol == connectionProtocol)
-		{
-			return;
-		}
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-		{
-			object[] array = new object[3];
-			array[1] = "CameraFilterPack/TV_50";
-			array[0] = base.TransportProtocol;
-			array[6] = "CameraFilterPack/TV_WideScreenHV";
-			array[8] = connectionProtocol;
-			array[0] = "COMPLETED";
-			Debug.LogWarning(string.Concat(array));
-		}
-		base.TransportProtocol = connectionProtocol;
-	}
-
-	// Token: 0x0600AF99 RID: 44953 RVA: 0x0040C948 File Offset: 0x0040AB48
-	private bool GHBFBICEHBK()
-	{
-		AuthenticationValues authenticationValues;
-		if ((authenticationValues = this.AuthValues) == null)
-		{
-			AuthenticationValues authenticationValues2 = new AuthenticationValues();
-			authenticationValues2.MIHBPLHLFGG(this.PlayerName);
-			authenticationValues = authenticationValues2;
-		}
-		AuthenticationValues gpdfhodmoij = authenticationValues;
-		if (this.AuthMode == AuthModeOption.Auth)
-		{
-			return this.HIKIDBBNFBM(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CAFLFPLLMNC().ToString(), this.OGLFGPKHEHH);
-		}
-		return this.MDEGPIGGGEE(this.KAIBLIKEDHM, this.DCHLIDBMJPK(), gpdfhodmoij, this.CAFLFPLLMNC().ToString(), this.EncryptionMode, PhotonNetwork.PhotonServerSettings.Protocol);
-	}
-
-	// Token: 0x0600AF9A RID: 44954 RVA: 0x0008AA68 File Offset: 0x00088C68
-	public CloudRegionCode CAFLFPLLMNC()
-	{
-		return this.<JINPEAIHFKC>k__BackingField;
-	}
-
-	// Token: 0x0600AF9B RID: 44955 RVA: 0x0040C9E8 File Offset: 0x0040ABE8
-	private void EBNDKPFKPIJ()
-	{
-		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[0] = -1;
-		this.OpRaiseEvent(207, hashtable, true, null);
-	}
-
-	// Token: 0x0600AF9C RID: 44956 RVA: 0x0040CA1C File Offset: 0x0040AC1C
-	public bool WebRpc(string MDGGHHCAHKF, object GNNEKCBOBEG)
-	{
-		return this.OpCustom(219, new Dictionary<byte, object>
-		{
-			{
-				209,
-				MDGGHHCAHKF
-			},
-			{
-				208,
-				GNNEKCBOBEG
-			}
-		}, true);
-	}
-
-	// Token: 0x0600AF9D RID: 44957 RVA: 0x0040CA54 File Offset: 0x0040AC54
-	public void GEJPEGFKLFM(OperationResponse FEOMHKNGOAK)
-	{
-		if (PhotonNetwork.JNJJAMNLOHA.State == (ClientState)(-8))
-		{
-			if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-			{
-				Debug.Log("/../" + FEOMHKNGOAK.OperationCode);
-			}
-			return;
-		}
-		if (FEOMHKNGOAK.ReturnCode == 0)
-		{
-			if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-			{
-				Debug.Log(FEOMHKNGOAK.ToString());
-			}
-		}
-		else if (FEOMHKNGOAK.ReturnCode == 98)
-		{
-			Debug.LogError("SpawnObj" + FEOMHKNGOAK.OperationCode + "CameraFilterPack/Distortion_FishEye");
-		}
-		else if (FEOMHKNGOAK.ReturnCode == 181)
-		{
-			object[] array = new object[6];
-			array[0] = "Show image from resources by id at the center of the screen at foreground or background";
-			array[1] = FEOMHKNGOAK.OperationCode;
-			array[7] = "/icon";
-			array[7] = FEOMHKNGOAK.DebugMessage;
-			Debug.LogError(string.Concat(array));
-		}
-		else if (FEOMHKNGOAK.ReturnCode == 56)
-		{
-			Debug.LogWarning("player.blackwhite" + FEOMHKNGOAK.ToStringFull());
-		}
-		else
-		{
-			object[] array2 = new object[4];
-			array2[1] = "0 - sun, 1 - satellite, 2 - particles emitter";
-			array2[1] = FEOMHKNGOAK.ToStringFull();
-			array2[1] = "ERROR You have missing MonoBehaviours on your gameobjects!";
-			array2[2] = this.IGDBHCGGHFF();
-			Debug.LogError(string.Concat(array2));
-		}
-		if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-97))
-		{
-			if (this.AuthValues == null)
-			{
-				this.HBABOJOMPHP(new AuthenticationValues());
-			}
-			this.AuthValues.NJJEJBOAEDG(FEOMHKNGOAK[(byte)-96] as string);
-			this.JOKLGFENMKE = this.AuthValues.DGINDFBNNDO();
-		}
-		byte operationCode = FEOMHKNGOAK.OperationCode;
-		switch (operationCode)
-		{
-		case 63:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				this.ELEMKNKGNIP(DebugLevel.ERROR, "player.greenlifering" + FEOMHKNGOAK.ToStringFull());
-			}
-			else
-			{
-				this.mGameList = new Dictionary<string, RoomInfo>();
-				ExitGames.Client.Photon.Hashtable hashtable = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[58];
-				foreach (object obj in hashtable.Keys)
-				{
-					string text = (string)obj;
-					this.mGameList[text] = new RoomInfo(text, (ExitGames.Client.Photon.Hashtable)hashtable[obj]);
-				}
-				this.mGameListCopy = new RoomInfo[this.mGameList.Count];
-				this.mGameList.Values.CopyTo(this.mGameListCopy, 0);
-				BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnDisconnectedFromPhoton, new object[1]);
-			}
-			break;
-		default:
-			switch (operationCode)
-			{
-			case 62:
-			{
-				ExitGames.Client.Photon.Hashtable faolpblckfj = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[(byte)-187];
-				ExitGames.Client.Photon.Hashtable mjjmnidhdec = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[(byte)-133];
-				this.EDMCCPDDDCC(mjjmnidhdec, faolpblckfj, 1);
-				break;
-			}
-			case 63:
-				break;
-			case 64:
-				break;
-			case 65:
-				this.NDPIAMOMGME();
-				break;
-			default:
-				Debug.LogWarning(string.Format("Item ", FEOMHKNGOAK.ToString()));
-				break;
-			}
-			break;
-		case 65:
-		{
-			PhotonNetworkingMessage lelhnddckco = (PhotonNetworkingMessage)120;
-			object[] array3 = new object[0];
-			array3[1] = FEOMHKNGOAK;
-			BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco, array3);
-			break;
-		}
-		case 66:
-			if (FEOMHKNGOAK.ReturnCode == -69)
-			{
-				Debug.LogError(string.Format("_Value4", new object[0]));
-				PhotonNetworkingMessage lelhnddckco2 = (PhotonNetworkingMessage)118;
-				object[] array4 = new object[0];
-				array4[0] = (DisconnectCause)52;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco2, array4);
-				this.JNPKDLEMJFN((ClientState)89);
-				this.Disconnect();
-			}
-			else if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				object[] array5 = new object[3];
-				array5[0] = "_Value";
-				array5[1] = FEOMHKNGOAK.ReturnCode;
-				array5[5] = "_VignettingColor";
-				array5[5] = FEOMHKNGOAK.DebugMessage;
-				Debug.LogError(string.Concat(array5));
-			}
-			else
-			{
-				string[] array6 = FEOMHKNGOAK[(byte)-51] as string[];
-				string[] array7 = FEOMHKNGOAK[(byte)-37] as string[];
-				if (array6 == null || array7 == null || array6.Length != array7.Length)
-				{
-					object[] array8 = new object[3];
-					array8[0] = ".played";
-					array8[0] = (array6 == null);
-					array8[5] = "_OcclusionTexture";
-					array8[5] = (array7 == null);
-					array8[6] = "SetBGColor";
-					array8[7] = FEOMHKNGOAK.ToStringFull();
-					Debug.LogError(string.Concat(array8));
-				}
-				else
-				{
-					this.ENAIECJFPHM(new List<Region>(array6.Length));
-					for (int i = 0; i < array6.Length; i += 0)
-					{
-						string text2 = array6[i];
-						if (!string.IsNullOrEmpty(text2))
-						{
-							text2 = text2.ToLower();
-							CloudRegionCode cloudRegionCode = Region.IAPELPAACFI(text2);
-							bool flag = true;
-							if (PhotonNetwork.PhotonServerSettings.HostType == ServerSettings.HostingOption.BestRegion && PhotonNetwork.PhotonServerSettings.EnabledRegions != (CloudRegionFlag)0)
-							{
-								CloudRegionFlag cloudRegionFlag = Region.GDAKNCCMFEI(cloudRegionCode);
-								flag = ((PhotonNetwork.PhotonServerSettings.EnabledRegions & cloudRegionFlag) != CloudRegionFlag.eu);
-								if (!flag && PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-								{
-									Debug.Log("_Amount" + cloudRegionCode);
-								}
-							}
-							if (flag)
-							{
-								this.PKIDPHFLDBP().Add(new Region(cloudRegionCode, text2, array7[i]));
-							}
-						}
-					}
-					if (PhotonNetwork.PhotonServerSettings.HostType == (ServerSettings.HostingOption)8)
-					{
-						PhotonHandler.HHFBHNGHJFO();
-					}
-				}
-			}
-			break;
-		case 68:
-		{
-			bool[] array9 = FEOMHKNGOAK[1] as bool[];
-			string[] array10 = FEOMHKNGOAK[5] as string[];
-			if (array9 != null && array10 != null && this.BEIPFKHGHPC != null && array9.Length == this.BEIPFKHGHPC.Length)
-			{
-				List<FriendInfo> list = new List<FriendInfo>(this.BEIPFKHGHPC.Length);
-				for (int j = 1; j < this.BEIPFKHGHPC.Length; j++)
-				{
-					FriendInfo friendInfo = new FriendInfo();
-					friendInfo.PCGCFHPAMMB(this.BEIPFKHGHPC[j]);
-					friendInfo.LPHFBDMMCFL(array10[j]);
-					friendInfo.KEACDHPPPPE(array9[j]);
-					list.Insert(j, friendInfo);
-				}
-				PhotonNetwork.Friends = list;
-			}
-			else
-			{
-				Debug.LogError("Scene");
-			}
-			this.BEIPFKHGHPC = null;
-			this.POHIMACBDGL = false;
-			this.DJIOCIPPBMK = Environment.TickCount;
-			if (this.DJIOCIPPBMK == 0)
-			{
-				this.DJIOCIPPBMK = 0;
-			}
-			BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)86, new object[1]);
-			break;
-		}
-		case 71:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (FEOMHKNGOAK.ReturnCode == 138)
-				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)7)
-					{
-						Debug.Log("Joystick1Button8");
-					}
-				}
-				else if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.LogWarning(string.Format("_Value", FEOMHKNGOAK.ToStringFull()));
-				}
-				PhotonNetworkingMessage lelhnddckco3 = PhotonNetworkingMessage.OnPhotonPlayerDisconnected;
-				object[] array11 = new object[5];
-				array11[0] = FEOMHKNGOAK.ReturnCode;
-				array11[0] = FEOMHKNGOAK.DebugMessage;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco3, array11);
-			}
-			else
-			{
-				string roomName = (string)FEOMHKNGOAK[(byte)-99];
-				this.AJFMHFLGCFN.RoomName = roomName;
-				this.NHKBIPAKHOJ((string)FEOMHKNGOAK[(byte)-96]);
-				this.MOHFIPIDGOH();
-			}
-			break;
-		case 72:
-			if (this.NJIFBFEHJKH() != ServerConnection.GameServer)
-			{
-				if (FEOMHKNGOAK.ReturnCode != 0)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-					{
-						Debug.Log(string.Format("Set satellite MinVertexDistance - how much distance should be between to points of the trail line", FEOMHKNGOAK.ToStringFull(), this.EBAJHBFJFCL()));
-					}
-					PhotonNetworkingMessage lelhnddckco4 = PhotonNetworkingMessage.OnConnectedToPhoton;
-					object[] array12 = new object[8];
-					array12[0] = FEOMHKNGOAK.ReturnCode;
-					array12[0] = FEOMHKNGOAK.DebugMessage;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco4, array12);
-				}
-				else
-				{
-					this.GameServerAddress = (string)FEOMHKNGOAK[(byte)-39];
-					this.MOHFIPIDGOH();
-				}
-			}
-			else
-			{
-				this.PCLPOPNEABK(FEOMHKNGOAK);
-			}
-			break;
-		case 73:
-			if (this.NJIFBFEHJKH() == ServerConnection.GameServer)
-			{
-				this.PCLPOPNEABK(FEOMHKNGOAK);
-			}
-			else if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-				{
-					Debug.LogWarning(string.Format("Error: Cannot change the name of a remote player!", FEOMHKNGOAK.ToStringFull()));
-				}
-				this.State = ((!this.insideLobby) ? ((ClientState)64) : ClientState.Joining);
-				PhotonNetworkingMessage lelhnddckco5 = PhotonNetworkingMessage.OnDisconnectedFromPhoton;
-				object[] array13 = new object[3];
-				array13[1] = FEOMHKNGOAK.ReturnCode;
-				array13[1] = FEOMHKNGOAK.DebugMessage;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco5, array13);
-			}
-			else
-			{
-				string text3 = (string)FEOMHKNGOAK[(byte)-66];
-				if (!string.IsNullOrEmpty(text3))
-				{
-					this.AJFMHFLGCFN.RoomName = text3;
-				}
-				this.NHKBIPAKHOJ((string)FEOMHKNGOAK[135]);
-				this.NDPIAMOMGME();
-			}
-			break;
-		case 74:
-			this.State = ClientState.Authenticated;
-			this.IFPPBJINADG();
-			break;
-		case 75:
-			this.JNPKDLEMJFN(ClientState.Queued);
-			this.insideLobby = true;
-			BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnLeftLobby, new object[0]);
-			break;
-		case 76:
-		case 77:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (FEOMHKNGOAK.ReturnCode == 10)
-				{
-					Debug.LogError(string.Format("CameraFilterPack/Pixelisation_Sweater" + base.ServerAddress, new object[1]));
-				}
-				else if (FEOMHKNGOAK.ReturnCode == 136)
-				{
-					Debug.LogError(string.Format("/512px-512px.png", new object[1]));
-					PhotonNetworkingMessage lelhnddckco6 = PhotonNetworkingMessage.OnMasterClientSwitched;
-					object[] array14 = new object[1];
-					array14[1] = (DisconnectCause)42;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco6, array14);
-				}
-				else if (FEOMHKNGOAK.ReturnCode == -44)
-				{
-					Debug.LogError(string.Format("CameraFilterPack/Blend2Camera_Screen", new object[0]));
-					PhotonNetworkingMessage lelhnddckco7 = (PhotonNetworkingMessage)120;
-					object[] array15 = new object[0];
-					array15[1] = FEOMHKNGOAK.DebugMessage;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco7, array15);
-				}
-				else
-				{
-					Debug.LogError(string.Format("_Distortion", FEOMHKNGOAK.DebugMessage, FEOMHKNGOAK.ReturnCode));
-				}
-				this.JNPKDLEMJFN((ClientState)21);
-				this.Disconnect();
-				if (FEOMHKNGOAK.ReturnCode == 115)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogWarning(string.Format("DifficultyBG", new object[0]));
-					}
-					BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)(-27), new object[1]);
-					PhotonNetworkingMessage lelhnddckco8 = (PhotonNetworkingMessage)(-27);
-					object[] array16 = new object[1];
-					array16[1] = (DisconnectCause)51;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco8, array16);
-				}
-				else if (FEOMHKNGOAK.ReturnCode == -134)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogError(string.Format("shader.crispwinter", new object[0]));
-					}
-					PhotonNetworkingMessage lelhnddckco9 = (PhotonNetworkingMessage)101;
-					object[] array17 = new object[1];
-					array17[1] = (DisconnectCause)52;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco9, array17);
-				}
-				else if (FEOMHKNGOAK.ReturnCode == -51)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogError(string.Format("[MapEditor] Reset", new object[0]));
-					}
-					PhotonNetworkingMessage lelhnddckco10 = (PhotonNetworkingMessage)50;
-					object[] array18 = new object[0];
-					array18[1] = (DisconnectCause)(-171);
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco10, array18);
-				}
-			}
-			else
-			{
-				if (this.EHALCLFLGJF == (ServerConnection)6 || this.NJIFBFEHJKH() == ServerConnection.MasterServer)
-				{
-					if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-92))
-					{
-						string text4 = (string)FEOMHKNGOAK.Parameters[(byte)-85];
-						if (!string.IsNullOrEmpty(text4))
-						{
-							if (this.IJHIEINKMFP() == null)
-							{
-								this.AuthValues = new AuthenticationValues();
-							}
-							this.AuthValues.UserId = text4;
-							PhotonNetwork.player.UserId = text4;
-							if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-							{
-								this.ELEMKNKGNIP((DebugLevel)6, string.Format("buttons", text4));
-							}
-						}
-					}
-					if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-68))
-					{
-						this.MPHFPMJMGJG((string)FEOMHKNGOAK.Parameters[52]);
-						if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-						{
-							this.DebugReturn(DebugLevel.INFO, string.Format("BitsData", this.OBCEIJGMKGB));
-						}
-					}
-					if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-118))
-					{
-						this.IJCJBPEELEM((Dictionary<byte, object>)FEOMHKNGOAK.Parameters[(byte)-64]);
-					}
-				}
-				if (this.EHALCLFLGJF == ServerConnection.GameServer)
-				{
-					this.MasterServerAddress = (FEOMHKNGOAK[(byte)-89] as string);
-					this.MOHFIPIDGOH();
-				}
-				else if (this.NJIFBFEHJKH() == ServerConnection.MasterServer)
-				{
-					if (this.AuthMode != AuthModeOption.Auth)
-					{
-						this.KNJOPJNBFCA(this.ADPDMHEPOMG());
-					}
-					if (PhotonNetwork.autoJoinLobby)
-					{
-						this.State = ClientState.PeerCreated;
-						this.FJCMOCPLACC(this.lobby);
-					}
-					else
-					{
-						this.State = (ClientState)(-30);
-						BNGIGHBHPEH.CLOLHKCFMJP((PhotonNetworkingMessage)76, new object[1]);
-					}
-				}
-				else if (this.NJIFBFEHJKH() == ServerConnection.GameServer)
-				{
-					this.JNPKDLEMJFN(ClientState.Joining);
-					this.AJFMHFLGCFN.PlayerProperties = this.HHPBLGDNDOP();
-					this.AJFMHFLGCFN.OnGameServer = false;
-					if (this.ELNKFMHCMBO == JoinType.CreateRoom || this.ELNKFMHCMBO == (JoinType)8 || this.ELNKFMHCMBO == JoinType.JoinRandomRoom)
-					{
-						this.PNKFPJJPELO(this.AJFMHFLGCFN);
-					}
-					else if (this.ELNKFMHCMBO == JoinType.CreateRoom)
-					{
-						this.OpCreateGame(this.AJFMHFLGCFN);
-					}
-				}
-				if (FEOMHKNGOAK.Parameters.ContainsKey(156))
-				{
-					Dictionary<string, object> dictionary = (Dictionary<string, object>)FEOMHKNGOAK.Parameters[(byte)-92];
-					if (dictionary != null)
-					{
-						BNGIGHBHPEH.CLOLHKCFMJP((PhotonNetworkingMessage)(-96), new object[]
-						{
-							dictionary
-						});
-					}
-				}
-			}
-			break;
-		}
-	}
-
-	// Token: 0x0600AF9E RID: 44958 RVA: 0x0008B017 File Offset: 0x00089217
-	protected internal void ELDLAPJAPBJ()
-	{
-		BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnMasterClientSwitched, new object[]
-		{
-			PhotonNetwork.masterClient
-		});
-	}
-
-	// Token: 0x0600AF9F RID: 44959 RVA: 0x0040D794 File Offset: 0x0040B994
-	public static void SendMonoMessage(PhotonNetworkingMessage LELHNDDCKCO, params object[] GNNEKCBOBEG)
-	{
-		HashSet<GameObject> hashSet;
-		if (PhotonNetwork.SendMonoMessageTargets != null)
-		{
-			hashSet = PhotonNetwork.SendMonoMessageTargets;
-		}
-		else
-		{
-			hashSet = PhotonNetwork.FindGameObjectsWithComponent(PhotonNetwork.SendMonoMessageTargetType);
-		}
-		string methodName = LELHNDDCKCO.ToString();
-		object value = (GNNEKCBOBEG == null || GNNEKCBOBEG.Length != 1) ? GNNEKCBOBEG : GNNEKCBOBEG[0];
-		foreach (GameObject gameObject in hashSet)
-		{
-			if (gameObject != null)
-			{
-				gameObject.SendMessage(methodName, value, SendMessageOptions.DontRequireReceiver);
+				LJEFICMOPMO(LocalPlayer.ID, hashtable);
+				BOKEGDFHBAN = false;
 			}
 		}
 	}
 
-	// Token: 0x0600AFA0 RID: 44960 RVA: 0x0040D844 File Offset: 0x0040BA44
-	private void MJMAJHJLBPJ(int IECJKEIJLCP, EventData EKDHPAFJKFA)
+	public virtual bool OpLeave()
 	{
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+		if (State != ClientState.Joined)
 		{
-			Debug.Log(string.Concat(new object[]
-			{
-				"HandleEventLeave for player ID: ",
-				IECJKEIJLCP,
-				" evLeave: ",
-				EKDHPAFJKFA.ToStringFull()
-			}));
-		}
-		PhotonPlayer photonPlayer = this.ICMGDHDNIJD(IECJKEIJLCP);
-		if (photonPlayer == null)
-		{
-			Debug.LogError(string.Format("Received event Leave for unknown player ID: {0}", IECJKEIJLCP));
-			return;
-		}
-		bool isInactive = photonPlayer.IsInactive;
-		if (EKDHPAFJKFA.Parameters.ContainsKey(233))
-		{
-			photonPlayer.IsInactive = (bool)EKDHPAFJKFA.Parameters[233];
-			if (photonPlayer.IsInactive != isInactive)
-			{
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerActivityChanged, new object[]
-				{
-					photonPlayer
-				});
-			}
-			if (photonPlayer.IsInactive && isInactive)
-			{
-				Debug.LogWarning(string.Concat(new object[]
-				{
-					"HandleEventLeave for player ID: ",
-					IECJKEIJLCP,
-					" isInactive: ",
-					photonPlayer.IsInactive,
-					". Stopping handling if inactive."
-				}));
-				return;
-			}
-		}
-		if (EKDHPAFJKFA.Parameters.ContainsKey(203))
-		{
-			int num = (int)EKDHPAFJKFA[203];
-			if (num != 0)
-			{
-				this.mMasterClientId = (int)EKDHPAFJKFA[203];
-				this.ELDLAPJAPBJ();
-			}
-		}
-		else if (!this.CurrentRoom.BDHOOLIDFJO)
-		{
-			this.CDNPLJILLFC(IECJKEIJLCP);
-		}
-		if (photonPlayer.IsInactive && !isInactive)
-		{
-			return;
-		}
-		if (this.CurrentRoom != null && this.CurrentRoom.AutoCleanUp)
-		{
-			this.DestroyPlayerObjects(IECJKEIJLCP, true);
-		}
-		this.GPODJOPLJPD(IECJKEIJLCP, photonPlayer);
-		BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerDisconnected, new object[]
-		{
-			photonPlayer
-		});
-	}
-
-	// Token: 0x0600AFA1 RID: 44961 RVA: 0x0008B02D File Offset: 0x0008922D
-	private ExitGames.Client.Photon.Hashtable LOCGDJDHCHJ(ExitGames.Client.Photon.Hashtable FPBCPOGCCBD, int KHACEEGCPEP)
-	{
-		if (FPBCPOGCCBD.ContainsKey(KHACEEGCPEP))
-		{
-			return (ExitGames.Client.Photon.Hashtable)FPBCPOGCCBD[KHACEEGCPEP];
-		}
-		return FPBCPOGCCBD;
-	}
-
-	// Token: 0x0600AFA2 RID: 44962 RVA: 0x0040DA0C File Offset: 0x0040BC0C
-	private void EDMCCPDDDCC(ExitGames.Client.Photon.Hashtable MJJMNIDHDEC, ExitGames.Client.Photon.Hashtable FAOLPBLCKFJ, int AHNMANJKONI)
-	{
-		if (FAOLPBLCKFJ != null && FAOLPBLCKFJ.Count > 0)
-		{
-			if (AHNMANJKONI > 0)
-			{
-				PhotonPlayer photonPlayer = this.ICMGDHDNIJD(AHNMANJKONI);
-				if (photonPlayer != null)
-				{
-					ExitGames.Client.Photon.Hashtable hashtable = this.LOCGDJDHCHJ(FAOLPBLCKFJ, AHNMANJKONI);
-					photonPlayer.NPOPPIMCDMN(hashtable);
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerPropertiesChanged, new object[]
-					{
-						photonPlayer,
-						hashtable
-					});
-				}
-			}
-			else
-			{
-				foreach (object obj in FAOLPBLCKFJ.Keys)
-				{
-					int num = (int)obj;
-					ExitGames.Client.Photon.Hashtable hashtable2 = (ExitGames.Client.Photon.Hashtable)FAOLPBLCKFJ[obj];
-					string ebehbbdkdfj = (string)hashtable2[byte.MaxValue];
-					PhotonPlayer photonPlayer2 = this.ICMGDHDNIJD(num);
-					if (photonPlayer2 == null)
-					{
-						photonPlayer2 = new PhotonPlayer(false, num, ebehbbdkdfj);
-						this.EGJBHECFAOH(num, photonPlayer2);
-					}
-					photonPlayer2.NPOPPIMCDMN(hashtable2);
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerPropertiesChanged, new object[]
-					{
-						photonPlayer2,
-						hashtable2
-					});
-				}
-			}
-		}
-		if (this.CurrentRoom != null && MJJMNIDHDEC != null)
-		{
-			this.CurrentRoom.NPOPPIMCDMN(MJJMNIDHDEC);
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonCustomRoomPropertiesChanged, new object[]
-			{
-				MJJMNIDHDEC
-			});
-			if (PhotonNetwork.automaticallySyncScene)
-			{
-				this.DMCKEABNFPJ();
-			}
-		}
-	}
-
-	// Token: 0x0600AFA4 RID: 44964 RVA: 0x00405FF0 File Offset: 0x004041F0
-	protected internal PhotonPlayer NLCNFHENKAJ(int MHLPNLMDILP)
-	{
-		if (this.mActors == null)
-		{
-			return null;
-		}
-		PhotonPlayer result = null;
-		this.mActors.TryGetValue(MHLPNLMDILP, out result);
-		return result;
-	}
-
-	// Token: 0x0600AFA5 RID: 44965 RVA: 0x0008B053 File Offset: 0x00089253
-	protected internal void CAEIBLENDBH()
-	{
-		PhotonNetworkingMessage lelhnddckco = PhotonNetworkingMessage.OnJoinedLobby;
-		object[] array = new object[1];
-		array[1] = PhotonNetwork.masterClient;
-		BNGIGHBHPEH.SendMonoMessage(lelhnddckco, array);
-	}
-
-	// Token: 0x17000246 RID: 582
-	// (get) Token: 0x0600AFA6 RID: 44966 RVA: 0x0008B069 File Offset: 0x00089269
-	private string LLJDHHLHFME
-	{
-		get
-		{
-			if (this.AuthMode == AuthModeOption.Auth)
-			{
-				return null;
-			}
-			return (this.AuthValues == null) ? null : this.AuthValues.Token;
-		}
-	}
-
-	// Token: 0x0600AFA8 RID: 44968 RVA: 0x0008AECD File Offset: 0x000890CD
-	public int JCPODEMIBMP()
-	{
-		return this.<EEDBHAJBPLC>k__BackingField;
-	}
-
-	// Token: 0x0600AFA9 RID: 44969 RVA: 0x0008B094 File Offset: 0x00089294
-	private bool ADPDMHEPOMG()
-	{
-		return PhotonNetwork.EnableLobbyStatistics && this.EHALCLFLGJF == ServerConnection.GameServer;
-	}
-
-	// Token: 0x17000254 RID: 596
-	// (get) Token: 0x0600AFBC RID: 44988 RVA: 0x0008B13D File Offset: 0x0008933D
-	// (set) Token: 0x0600AFAB RID: 44971 RVA: 0x0008AA7F File Offset: 0x00088C7F
-	public int RoomsCount { get; internal set; }
-
-	// Token: 0x0600AFAC RID: 44972 RVA: 0x0040DB64 File Offset: 0x0040BD64
-	private void GDDBOALPNDO()
-	{
-		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
-		dictionary[54] = 1;
-		dictionary[(byte)-18] = 1;
-		this.OpCustom(17, dictionary, false, 0);
-	}
-
-	// Token: 0x0600AFAD RID: 44973 RVA: 0x0008B0B5 File Offset: 0x000892B5
-	private void EGJBHECFAOH(int IJAEJMNLBLK, PhotonPlayer JHOEDACNNKK)
-	{
-		if (!this.mActors.ContainsKey(IJAEJMNLBLK))
-		{
-			this.mActors[IJAEJMNLBLK] = JHOEDACNNKK;
-			this.LEMBPMNPHCK();
-		}
-		else
-		{
-			Debug.LogError("Adding player twice: " + IJAEJMNLBLK);
-		}
-	}
-
-	// Token: 0x0600AFAE RID: 44974 RVA: 0x0040DBA8 File Offset: 0x0040BDA8
-	private void KCNBFALAJMD(int KHACEEGCPEP)
-	{
-		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[0] = KHACEEGCPEP;
-		this.OpRaiseEvent(207, hashtable, true, null);
-	}
-
-	// Token: 0x0600AFAF RID: 44975 RVA: 0x0008ADE6 File Offset: 0x00088FE6
-	internal void BNBNGPDLKFF(int DPNHODJHGJL)
-	{
-		this.<EEDBHAJBPLC>k__BackingField = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AFB0 RID: 44976 RVA: 0x0040DBDC File Offset: 0x0040BDDC
-	protected internal void OMEPCMPKIJK(bool IJJEEIMFOHD)
-	{
-		if (this.IDIKEJLLFFP.Count > 0)
-		{
-			Debug.LogWarning("It seems some instantiation is not completed, as instantiation data is used. You should make sure instantiations are paused when calling this method. Cleaning now, despite this.");
-		}
-		if (IJJEEIMFOHD)
-		{
-			HashSet<GameObject> hashSet = new HashSet<GameObject>();
-			foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
-			{
-				if (photonView.isRuntimeInstantiated)
-				{
-					hashSet.Add(photonView.gameObject);
-				}
-			}
-			foreach (GameObject obfjphlbfol in hashSet)
-			{
-				this.EFDAOHIDIIF(obfjphlbfol, true);
-			}
-		}
-		this.IDIKEJLLFFP.Clear();
-		PhotonNetwork.FDMEIPEKMHC = 0;
-		PhotonNetwork.JIOIILCHMJL = 0;
-	}
-
-	// Token: 0x1700024A RID: 586
-	// (get) Token: 0x0600AFB1 RID: 44977 RVA: 0x0008B0F5 File Offset: 0x000892F5
-	// (set) Token: 0x0600AFD0 RID: 45008 RVA: 0x0008ADDD File Offset: 0x00088FDD
-	public string GameServerAddress { get; protected internal set; }
-
-	// Token: 0x0600AFB2 RID: 44978 RVA: 0x0040DCD4 File Offset: 0x0040BED4
-	private object[] HMGGGIGJILH(PhotonView DFIHBOEOJPI)
-	{
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Off)
-		{
-			return null;
-		}
-		PhotonMessageInfo dagalcailln = new PhotonMessageInfo(this.LocalPlayer, PhotonNetwork.ServerTimestamp, DFIHBOEOJPI);
-		this.ALPAEKHFHPP.AKNGAKEGLAD();
-		this.ALPAEKHFHPP.BBHGPGBHMML(null);
-		this.ALPAEKHFHPP.PNAPNHJHBMN(null);
-		this.ALPAEKHFHPP.OLACNHHHOEL(null);
-		DFIHBOEOJPI.OMADJOEHOGE(this.ALPAEKHFHPP, dagalcailln);
-		if (this.ALPAEKHFHPP.NHKIENHLEID() <= 6)
-		{
-			return null;
-		}
-		object[] array = this.ALPAEKHFHPP.CFJBHFNNCFL();
-		array[0] = DFIHBOEOJPI.viewID;
-		array[1] = true;
-		array[8] = null;
-		if (DFIHBOEOJPI.synchronization == (ViewSynchronization)8)
-		{
-			return array;
-		}
-		if (DFIHBOEOJPI.synchronization == (ViewSynchronization)8)
-		{
-			if (this.LFAPOBNFPPO(array, DFIHBOEOJPI.EOENPICKCCO))
-			{
-				if (DFIHBOEOJPI.PBIDCPBMFKJ)
-				{
-					return null;
-				}
-				DFIHBOEOJPI.PBIDCPBMFKJ = false;
-				DFIHBOEOJPI.EOENPICKCCO = array;
-			}
-			else
-			{
-				DFIHBOEOJPI.PBIDCPBMFKJ = true;
-				DFIHBOEOJPI.EOENPICKCCO = array;
-			}
-			return array;
-		}
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.ReliableDeltaCompressed)
-		{
-			object[] result = this.ILJGNDNMNOP(DFIHBOEOJPI.EOENPICKCCO, array);
-			DFIHBOEOJPI.EOENPICKCCO = array;
-			return result;
-		}
-		return null;
-	}
-
-	// Token: 0x0600AFB3 RID: 44979 RVA: 0x0008ADF8 File Offset: 0x00088FF8
-	protected internal ServerConnection IGDBHCGGHFF()
-	{
-		return this.<NFFGNBHFDFM>k__BackingField;
-	}
-
-	// Token: 0x0600AFB4 RID: 44980 RVA: 0x0008ADD4 File Offset: 0x00088FD4
-	public void HBABOJOMPHP(AuthenticationValues DPNHODJHGJL)
-	{
-		this.<FEGEIIONEMN>k__BackingField = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AFB5 RID: 44981 RVA: 0x0040DDF8 File Offset: 0x0040BFF8
-	internal GameObject JFOLGKKLFJP(ExitGames.Client.Photon.Hashtable NNNJPMDHPHH, PhotonPlayer OGKJFFANGMC, GameObject HHLFBCNFLAO)
-	{
-		string text = (string)NNNJPMDHPHH[0];
-		int amciaillaib = (int)NNNJPMDHPHH[6];
-		int num = (int)NNNJPMDHPHH[7];
-		Vector3 vector;
-		if (NNNJPMDHPHH.ContainsKey(1))
-		{
-			vector = (Vector3)NNNJPMDHPHH[1];
-		}
-		else
-		{
-			vector = Vector3.zero;
-		}
-		Quaternion quaternion = Quaternion.identity;
-		if (NNNJPMDHPHH.ContainsKey(2))
-		{
-			quaternion = (Quaternion)NNNJPMDHPHH[2];
-		}
-		byte b = 0;
-		if (NNNJPMDHPHH.ContainsKey(3))
-		{
-			b = (byte)NNNJPMDHPHH[3];
-		}
-		short prefix = 0;
-		if (NNNJPMDHPHH.ContainsKey(8))
-		{
-			prefix = (short)NNNJPMDHPHH[8];
-		}
-		int[] array;
-		if (NNNJPMDHPHH.ContainsKey(4))
-		{
-			array = (int[])NNNJPMDHPHH[4];
-		}
-		else
-		{
-			array = new int[]
-			{
-				num
-			};
-		}
-		object[] array2;
-		if (NNNJPMDHPHH.ContainsKey(5))
-		{
-			array2 = (object[])NNNJPMDHPHH[5];
-		}
-		else
-		{
-			array2 = null;
-		}
-		if (b != 0 && !this.CHIJNBAJIHE.Contains(b))
-		{
-			return null;
-		}
-		if (this.EGNHNBODKHP != null)
-		{
-			GameObject gameObject = this.EGNHNBODKHP.Instantiate(text, vector, quaternion);
-			PhotonView[] photonViewsInChildren = gameObject.GetPhotonViewsInChildren();
-			if (photonViewsInChildren.Length != array.Length)
-			{
-				throw new Exception("Error in Instantiation! The resource's PhotonView count is not the same as in incoming data.");
-			}
-			for (int i = 0; i < photonViewsInChildren.Length; i++)
-			{
-				photonViewsInChildren[i].GEKLBLEBECG = false;
-				photonViewsInChildren[i].viewID = 0;
-				photonViewsInChildren[i].prefix = (int)prefix;
-				photonViewsInChildren[i].instantiationId = num;
-				photonViewsInChildren[i].isRuntimeInstantiated = true;
-				photonViewsInChildren[i].NJDPOGADFJN = array2;
-				photonViewsInChildren[i].GEKLBLEBECG = true;
-				photonViewsInChildren[i].viewID = array[i];
-			}
-			gameObject.SendMessage(BNGIGHBHPEH.BJJEABNGKBF, new PhotonMessageInfo(OGKJFFANGMC, amciaillaib, null), SendMessageOptions.DontRequireReceiver);
-			return gameObject;
-		}
-		else
-		{
-			if (HHLFBCNFLAO == null)
-			{
-				if (!BNGIGHBHPEH.UsePrefabCache || !BNGIGHBHPEH.PrefabCache.TryGetValue(text, out HHLFBCNFLAO))
-				{
-					HHLFBCNFLAO = (GameObject)Resources.Load(text, typeof(GameObject));
-					if (BNGIGHBHPEH.UsePrefabCache)
-					{
-						BNGIGHBHPEH.PrefabCache.Add(text, HHLFBCNFLAO);
-					}
-				}
-				if (HHLFBCNFLAO == null)
-				{
-					Debug.LogError("PhotonNetwork error: Could not Instantiate the prefab [" + text + "]. Please verify you have this gameobject in a Resources folder.");
-					return null;
-				}
-			}
-			PhotonView[] photonViewsInChildren2 = HHLFBCNFLAO.GetPhotonViewsInChildren();
-			if (photonViewsInChildren2.Length != array.Length)
-			{
-				throw new Exception("Error in Instantiation! The resource's PhotonView count is not the same as in incoming data.");
-			}
-			for (int j = 0; j < array.Length; j++)
-			{
-				photonViewsInChildren2[j].viewID = array[j];
-				photonViewsInChildren2[j].prefix = (int)prefix;
-				photonViewsInChildren2[j].instantiationId = num;
-				photonViewsInChildren2[j].isRuntimeInstantiated = true;
-			}
-			this.DGEJLOAMLHI(num, array2);
-			GameObject gameObject2 = UnityEngine.Object.Instantiate<GameObject>(HHLFBCNFLAO, vector, quaternion);
-			for (int k = 0; k < array.Length; k++)
-			{
-				photonViewsInChildren2[k].viewID = 0;
-				photonViewsInChildren2[k].prefix = -1;
-				photonViewsInChildren2[k].prefixBackup = -1;
-				photonViewsInChildren2[k].instantiationId = -1;
-				photonViewsInChildren2[k].isRuntimeInstantiated = false;
-			}
-			this.GKNPNNKFFAL(num);
-			gameObject2.SendMessage(BNGIGHBHPEH.BJJEABNGKBF, new PhotonMessageInfo(OGKJFFANGMC, amciaillaib, null), SendMessageOptions.DontRequireReceiver);
-			return gameObject2;
-		}
-	}
-
-	// Token: 0x0600AFB6 RID: 44982 RVA: 0x0040E198 File Offset: 0x0040C398
-	public void OnStatusChanged(StatusCode FIIDDDBNCLD)
-	{
-		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-		{
-			Debug.Log(string.Format("OnStatusChanged: {0} current State: {1}", FIIDDDBNCLD.ToString(), this.State));
-		}
-		switch (FIIDDDBNCLD)
-		{
-		case StatusCode.ExceptionOnReceive:
-		case StatusCode.DisconnectByServer:
-		case StatusCode.DisconnectByServerUserLimit:
-		case StatusCode.DisconnectByServerLogic:
-			if (this.IsInitialConnect)
-			{
-				Debug.LogWarning(string.Concat(new object[]
-				{
-					FIIDDDBNCLD,
-					" while connecting to: ",
-					base.ServerAddress,
-					". Check if the server is available."
-				}));
-				this.IsInitialConnect = false;
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, new object[]
-				{
-					disconnectCause
-				});
-			}
-			else
-			{
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, new object[]
-				{
-					disconnectCause
-				});
-			}
-			if (this.AuthValues != null)
-			{
-				this.AuthValues.Token = null;
-			}
-			this.Disconnect();
-			return;
-		case StatusCode.TimeoutDisconnect:
-			if (this.IsInitialConnect)
-			{
-				if (!this.IDOAHFHJJJE)
-				{
-					Debug.LogWarning(string.Concat(new object[]
-					{
-						FIIDDDBNCLD,
-						" while connecting to: ",
-						base.ServerAddress,
-						". Check if the server is available."
-					}));
-					this.IsInitialConnect = false;
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, new object[]
-					{
-						disconnectCause
-					});
-				}
-			}
-			else
-			{
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, new object[]
-				{
-					disconnectCause
-				});
-			}
-			if (this.AuthValues != null)
-			{
-				this.AuthValues.Token = null;
-			}
-			this.Disconnect();
-			return;
-		default:
-			switch (FIIDDDBNCLD)
-			{
-			case StatusCode.SecurityExceptionOnConnect:
-			case StatusCode.ExceptionOnConnect:
-			{
-				this.IsInitialConnect = false;
-				this.State = ClientState.PeerCreated;
-				if (this.AuthValues != null)
-				{
-					this.AuthValues.Token = null;
-				}
-				DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, new object[]
-				{
-					disconnectCause
-				});
-				return;
-			}
-			case StatusCode.Connect:
-				if (this.State == ClientState.ConnectingToNameServer)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
-					{
-						Debug.Log("Connected to NameServer.");
-					}
-					this.EHALCLFLGJF = ServerConnection.NameServer;
-					if (this.AuthValues != null)
-					{
-						this.AuthValues.Token = null;
-					}
-				}
-				if (this.State == ClientState.ConnectingToGameserver)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
-					{
-						Debug.Log("Connected to gameserver.");
-					}
-					this.EHALCLFLGJF = ServerConnection.GameServer;
-					this.State = ClientState.ConnectedToGameserver;
-				}
-				if (this.State == ClientState.ConnectingToMasterserver)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)
-					{
-						Debug.Log("Connected to masterserver.");
-					}
-					this.EHALCLFLGJF = ServerConnection.MasterServer;
-					this.State = ClientState.Authenticating;
-					if (this.IsInitialConnect)
-					{
-						this.IsInitialConnect = false;
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectedToPhoton, new object[0]);
-					}
-				}
-				if (base.TransportProtocol != ConnectionProtocol.WebSocketSecure)
-				{
-					if (this.EHALCLFLGJF == ServerConnection.NameServer || this.AuthMode == AuthModeOption.Auth)
-					{
-						base.EstablishEncryption();
-					}
-					return;
-				}
-				if (this.DebugOut == DebugLevel.INFO)
-				{
-					Debug.Log("Skipping EstablishEncryption. Protocol is secure.");
-				}
-				goto IL_1AC;
-			case StatusCode.Disconnect:
-				this.DMCPHGDNGDB = false;
-				this.POHIMACBDGL = false;
-				if (this.EHALCLFLGJF == ServerConnection.GameServer)
-				{
-					this.BOJKDNJHBNG();
-				}
-				if (this.EHALCLFLGJF == ServerConnection.MasterServer)
-				{
-					this.IFPPBJINADG();
-				}
-				if (this.State == ClientState.DisconnectingFromMasterserver)
-				{
-					if (this.Connect(this.GameServerAddress, ServerConnection.GameServer))
-					{
-						this.State = ClientState.ConnectingToGameserver;
-					}
-				}
-				else if (this.State == ClientState.DisconnectingFromGameserver || this.State == ClientState.DisconnectingFromNameServer)
-				{
-					this.KHKMFIFGPCH(ServerConnection.MasterServer);
-					if (this.Connect(this.MasterServerAddress, ServerConnection.MasterServer))
-					{
-						this.State = ClientState.ConnectingToMasterserver;
-					}
-				}
-				else
-				{
-					if (this.IDOAHFHJJJE)
-					{
-						return;
-					}
-					if (this.AuthValues != null)
-					{
-						this.AuthValues.Token = null;
-					}
-					this.IsInitialConnect = false;
-					this.State = ClientState.PeerCreated;
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnDisconnectedFromPhoton, new object[0]);
-				}
-				return;
-			case StatusCode.Exception:
-				if (this.IsInitialConnect)
-				{
-					Debug.LogError("Exception while connecting to: " + base.ServerAddress + ". Check if the server is available.");
-					if (base.ServerAddress == null || base.ServerAddress.StartsWith("127.0.0.1"))
-					{
-						Debug.LogWarning("The server address is 127.0.0.1 (localhost): Make sure the server is running on this machine. Android and iOS emulators have their own localhost.");
-						if (base.ServerAddress == this.GameServerAddress)
-						{
-							Debug.LogWarning("This might be a misconfiguration in the game server config. You need to edit it to a (public) address.");
-						}
-					}
-					this.State = ClientState.PeerCreated;
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					this.IsInitialConnect = false;
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, new object[]
-					{
-						disconnectCause
-					});
-				}
-				else
-				{
-					this.State = ClientState.PeerCreated;
-					DisconnectCause disconnectCause = (DisconnectCause)FIIDDDBNCLD;
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, new object[]
-					{
-						disconnectCause
-					});
-				}
-				this.Disconnect();
-				return;
-			case StatusCode.SendError:
-				return;
-			}
-			Debug.LogError("Received unknown status code: " + FIIDDDBNCLD);
-			return;
-		case StatusCode.EncryptionEstablished:
-			break;
-		case StatusCode.EncryptionFailedToEstablish:
-		{
-			Debug.LogError("Encryption wasn't established: " + FIIDDDBNCLD + ". Going to authenticate anyways.");
-			AuthenticationValues authenticationValues;
-			if ((authenticationValues = this.AuthValues) == null)
-			{
-				authenticationValues = new AuthenticationValues
-				{
-					UserId = this.PlayerName
-				};
-			}
-			AuthenticationValues gpdfhodmoij = authenticationValues;
-			this.OpAuthenticate(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CloudRegion.ToString(), this.OGLFGPKHEHH);
-			return;
-		}
-		}
-		IL_1AC:
-		this.IDOAHFHJJJE = false;
-		if (this.EHALCLFLGJF == ServerConnection.NameServer)
-		{
-			this.State = ClientState.ConnectedToNameServer;
-			if (!this.DMCPHGDNGDB && this.CloudRegion == CloudRegionCode.none)
-			{
-				this.OpGetRegions(this.KAIBLIKEDHM);
-			}
-		}
-		if (this.EHALCLFLGJF != ServerConnection.NameServer && (this.AuthMode == AuthModeOption.AuthOnce || this.AuthMode == AuthModeOption.AuthOnceWss))
-		{
-			Debug.Log(string.Concat(new object[]
-			{
-				"didAuthenticate ",
-				this.DMCPHGDNGDB,
-				" AuthMode ",
-				this.AuthMode
-			}));
-		}
-		else if (!this.DMCPHGDNGDB && (!this.IsUsingNameServer || this.CloudRegion != CloudRegionCode.none))
-		{
-			this.DMCPHGDNGDB = this.OELIGNFABAJ();
-			if (this.DMCPHGDNGDB)
-			{
-				this.State = ClientState.Authenticating;
-			}
-		}
-	}
-
-	// Token: 0x0600AFB7 RID: 44983 RVA: 0x0008B0FD File Offset: 0x000892FD
-	public bool ReconnectToMaster()
-	{
-		if (this.AuthValues == null)
-		{
-			Debug.LogWarning("ReconnectToMaster() with AuthValues == null is not correct!");
-			this.AuthValues = new AuthenticationValues();
-		}
-		this.AuthValues.Token = this.JOKLGFENMKE;
-		return this.Connect(this.MasterServerAddress, ServerConnection.MasterServer);
-	}
-
-	// Token: 0x0600AFB8 RID: 44984 RVA: 0x0040E7EC File Offset: 0x0040C9EC
-	public void MMIMMJOEBNG(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
-	{
-		if (JKOIGFLNNCN != null)
-		{
-			for (int i = 1; i < JKOIGFLNNCN.Length; i += 0)
-			{
-				byte item = JKOIGFLNNCN[i];
-				this.FFBGBLFBHOK.Add(item);
-			}
-		}
-		if (OBKFHNACHIA != null)
-		{
-			for (int j = 1; j < OBKFHNACHIA.Length; j += 0)
-			{
-				byte item2 = OBKFHNACHIA[j];
-				this.FFBGBLFBHOK.Remove(item2);
-			}
-		}
-	}
-
-	// Token: 0x0600AFB9 RID: 44985 RVA: 0x0040E850 File Offset: 0x0040CA50
-	public void HCBFOHMAICA()
-	{
-		if (this.HMIEGLIHGEM)
-		{
-			this.HMIEGLIHGEM = false;
-			PhotonNetwork.isMessageQueueRunning = false;
-		}
-		List<int> list = new List<int>();
-		foreach (KeyValuePair<int, PhotonView> keyValuePair in this.HFCMPEKPBAM)
-		{
-			PhotonView value = keyValuePair.Value;
-			if (value == null)
-			{
-				list.Add(keyValuePair.Key);
-			}
-		}
-		for (int i = 1; i < list.Count; i++)
-		{
-			int key = list[i];
-			this.HFCMPEKPBAM.Remove(key);
-		}
-		if (list.Count > 1 && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-		{
-			Debug.Log("file://" + list.Count + "HandsCountSlider");
-		}
-	}
-
-	// Token: 0x0600AFBA RID: 44986 RVA: 0x0040E950 File Offset: 0x0040CB50
-	public bool ConnectToNameServer()
-	{
-		if (PhotonHandler.MBIFDLCKGKN)
-		{
-			Debug.LogWarning("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.");
+			Debug.LogWarning("Not sending leave operation. State is not 'Joined': " + State);
 			return false;
 		}
-		this.IsUsingNameServer = true;
-		this.CloudRegion = CloudRegionCode.none;
-		if (this.State == ClientState.ConnectedToNameServer)
-		{
-			return true;
-		}
-		this.KHKMFIFGPCH(ServerConnection.NameServer);
-		this.PKNIJKPIKAF = ServerConnection.NameServer;
-		this.BLNBCGLIOHP = this.NameServerAddress;
-		this.KAOMEDGGMEM = "ns";
-		if (!base.Connect(this.NameServerAddress, "ns", this.LLJDHHLHFME))
-		{
-			return false;
-		}
-		this.State = ClientState.ConnectingToNameServer;
-		return true;
+		return OpCustom(254, null, true, 0);
 	}
 
-	// Token: 0x0600AFBB RID: 44987 RVA: 0x0040E9DC File Offset: 0x0040CBDC
-	public override bool OpJoinRoom(AKBOPCNHFFJ HBJBKOPJDKJ)
+	[SpecialName]
+	public string GGICLEMHOEM()
 	{
-		bool flag = this.EHALCLFLGJF == ServerConnection.GameServer;
-		HBJBKOPJDKJ.OnGameServer = flag;
-		if (!flag)
-		{
-			this.AJFMHFLGCFN = HBJBKOPJDKJ;
-		}
-		this.ELNKFMHCMBO = ((!HBJBKOPJDKJ.CreateIfNotExists) ? JoinType.JoinRoom : JoinType.JoinOrCreateRoom);
-		return base.OpJoinRoom(HBJBKOPJDKJ);
+		return _003CKIHCLAFJDGA_003Ek__BackingField;
 	}
 
-	// Token: 0x0600AFBD RID: 44989 RVA: 0x0040EA28 File Offset: 0x0040CC28
-	public void PPDHJGDBHCG(int CFLLNEOHNFD)
-	{
-		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
-		{
-			CachingOption = EventCaching.RemoveFromRoomCache,
-			TargetActors = new int[]
-			{
-				CFLLNEOHNFD
-			}
-		};
-		this.LHOCCIABPNJ(1, null, true, bplhapbmggc);
-	}
-
-	// Token: 0x0600AFBE RID: 44990 RVA: 0x0040EA60 File Offset: 0x0040CC60
-	private object[] EFKMNFNHJBL(object[] EMJBOOJPAII, object[] JGHJOJFOGCO)
-	{
-		if (!(bool)JGHJOJFOGCO[1])
-		{
-			return JGHJOJFOGCO;
-		}
-		if (EMJBOOJPAII == null)
-		{
-			return null;
-		}
-		int[] array = JGHJOJFOGCO[2] as int[];
-		for (int i = 3; i < JGHJOJFOGCO.Length; i++)
-		{
-			if (array == null || !array.Contains(i))
-			{
-				if (JGHJOJFOGCO[i] == null)
-				{
-					object obj = EMJBOOJPAII[i];
-					JGHJOJFOGCO[i] = obj;
-				}
-			}
-		}
-		return JGHJOJFOGCO;
-	}
-
-	// Token: 0x0600AFBF RID: 44991 RVA: 0x0040EACC File Offset: 0x0040CCCC
-	public bool ConnectToRegionMaster(CloudRegionCode LPCNAHJGAFK)
-	{
-		if (PhotonHandler.MBIFDLCKGKN)
-		{
-			Debug.LogWarning("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.");
-			return false;
-		}
-		this.IsUsingNameServer = true;
-		this.CloudRegion = LPCNAHJGAFK;
-		if (this.State == ClientState.ConnectedToNameServer)
-		{
-			return this.OELIGNFABAJ();
-		}
-		this.PKNIJKPIKAF = ServerConnection.NameServer;
-		this.BLNBCGLIOHP = this.NameServerAddress;
-		this.KAOMEDGGMEM = "ns";
-		this.KHKMFIFGPCH(ServerConnection.NameServer);
-		if (!base.Connect(this.NameServerAddress, "ns", this.LLJDHHLHFME))
-		{
-			return false;
-		}
-		this.State = ClientState.ConnectingToNameServer;
-		return true;
-	}
-
-	// Token: 0x0600AFC0 RID: 44992 RVA: 0x0008B145 File Offset: 0x00089345
-	private void GPODJOPLJPD(int IJAEJMNLBLK, PhotonPlayer JHOEDACNNKK)
-	{
-		this.mActors.Remove(IJAEJMNLBLK);
-		if (!JHOEDACNNKK.IsLocal)
-		{
-			this.LEMBPMNPHCK();
-		}
-	}
-
-	// Token: 0x0600AFC1 RID: 44993 RVA: 0x0008B0AC File Offset: 0x000892AC
-	internal void JNPKDLEMJFN(ClientState DPNHODJHGJL)
-	{
-		this.<CKEGJBJJPEC>k__BackingField = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AFC3 RID: 44995 RVA: 0x0008B16D File Offset: 0x0008936D
-	public bool LocalCleanPhotonView(PhotonView DFIHBOEOJPI)
-	{
-		DFIHBOEOJPI.IHPAIFIHLAE = true;
-		return this.HFCMPEKPBAM.Remove(DFIHBOEOJPI.viewID);
-	}
-
-	// Token: 0x0600AFC4 RID: 44996 RVA: 0x0040EB60 File Offset: 0x0040CD60
-	public bool ReconnectAndRejoin()
-	{
-		if (this.AuthValues == null)
-		{
-			Debug.LogWarning("ReconnectAndRejoin() with AuthValues == null is not correct!");
-			this.AuthValues = new AuthenticationValues();
-		}
-		this.AuthValues.Token = this.JOKLGFENMKE;
-		if (!string.IsNullOrEmpty(this.GameServerAddress) && this.AJFMHFLGCFN != null)
-		{
-			this.ELNKFMHCMBO = JoinType.JoinRoom;
-			this.AJFMHFLGCFN.RejoinOnly = true;
-			return this.Connect(this.GameServerAddress, ServerConnection.GameServer);
-		}
-		return false;
-	}
-
-	// Token: 0x0600AFC5 RID: 44997 RVA: 0x0040EBDC File Offset: 0x0040CDDC
-	public bool SetMasterClient(int BONHLGFPNHF)
-	{
-		ExitGames.Client.Photon.Hashtable mjjmnidhdec = new ExitGames.Client.Photon.Hashtable
-		{
-			{
-				248,
-				BONHLGFPNHF
-			}
-		};
-		ExitGames.Client.Photon.Hashtable kcjikjdcoal = new ExitGames.Client.Photon.Hashtable
-		{
-			{
-				248,
-				this.mMasterClientId
-			}
-		};
-		return base.HFECLDIOHNJ(mjjmnidhdec, kcjikjdcoal, false);
-	}
-
-	// Token: 0x0600AFC6 RID: 44998 RVA: 0x0008B187 File Offset: 0x00089387
-	public override bool OpRaiseEvent(byte IMCBEMICJFC, object PEIFAPIIKNJ, bool ANMGHMBBMAO, RaiseEventOptions BPLHAPBMGGC)
-	{
-		return !PhotonNetwork.offlineMode && base.OpRaiseEvent(IMCBEMICJFC, PEIFAPIIKNJ, ANMGHMBBMAO, BPLHAPBMGGC);
-	}
-
-	// Token: 0x0600AFC7 RID: 44999 RVA: 0x0040EC34 File Offset: 0x0040CE34
-	public bool JCPECILENMF(AKBOPCNHFFJ BDMKOAGEHPM)
-	{
-		bool flag = this.IGDBHCGGHFF() == ServerConnection.MasterServer;
-		BDMKOAGEHPM.OnGameServer = flag;
-		BDMKOAGEHPM.PlayerProperties = this.HHPBLGDNDOP();
-		if (!flag)
-		{
-			this.AJFMHFLGCFN = BDMKOAGEHPM;
-		}
-		this.ELNKFMHCMBO = JoinType.CreateRoom;
-		return base.OpCreateRoom(BDMKOAGEHPM);
-	}
-
-	// Token: 0x0600AFC8 RID: 45000 RVA: 0x0040EC7C File Offset: 0x0040CE7C
-	private static int BBEKGPLBBCA(PhotonPlayer[] NEJPNIGJLGP, int AIMBEFMGEFM)
-	{
-		if (NEJPNIGJLGP == null || NEJPNIGJLGP.Length == 0)
-		{
-			return -1;
-		}
-		int num = int.MaxValue;
-		foreach (PhotonPlayer photonPlayer in NEJPNIGJLGP)
-		{
-			if (photonPlayer.ID != AIMBEFMGEFM)
-			{
-				if (photonPlayer.ID < num)
-				{
-					num = photonPlayer.ID;
-				}
-			}
-		}
-		return num;
-	}
-
-	// Token: 0x0600AFC9 RID: 45001 RVA: 0x0040ECDC File Offset: 0x0040CEDC
 	public void OnOperationResponse(OperationResponse FEOMHKNGOAK)
 	{
 		if (PhotonNetwork.JNJJAMNLOHA.State == ClientState.Disconnecting)
@@ -6841,13 +3802,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 		else if (FEOMHKNGOAK.ReturnCode == 32752)
 		{
-			Debug.LogError(string.Concat(new object[]
-			{
-				"Operation ",
-				FEOMHKNGOAK.OperationCode,
-				" failed in a server-side plugin. Check the configuration in the Dashboard. Message from server-plugin: ",
-				FEOMHKNGOAK.DebugMessage
-			}));
+			Debug.LogError("Operation " + FEOMHKNGOAK.OperationCode + " failed in a server-side plugin. Check the configuration in the Dashboard. Message from server-plugin: " + FEOMHKNGOAK.DebugMessage);
 		}
 		else if (FEOMHKNGOAK.ReturnCode == 32760)
 		{
@@ -6855,175 +3810,247 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 		else
 		{
-			Debug.LogError(string.Concat(new object[]
-			{
-				"Operation failed: ",
-				FEOMHKNGOAK.ToStringFull(),
-				" Server: ",
-				this.EHALCLFLGJF
-			}));
+			Debug.LogError("Operation failed: " + FEOMHKNGOAK.ToStringFull() + " Server: " + EHALCLFLGJF);
 		}
 		if (FEOMHKNGOAK.Parameters.ContainsKey(221))
 		{
-			if (this.AuthValues == null)
+			if (AuthValues == null)
 			{
-				this.AuthValues = new AuthenticationValues();
+				AuthValues = new AuthenticationValues();
 			}
-			this.AuthValues.Token = (FEOMHKNGOAK[221] as string);
-			this.JOKLGFENMKE = this.AuthValues.Token;
+			AuthValues.Token = FEOMHKNGOAK[221] as string;
+			JOKLGFENMKE = AuthValues.Token;
 		}
-		byte operationCode = FEOMHKNGOAK.OperationCode;
-		switch (operationCode)
+		switch (FEOMHKNGOAK.OperationCode)
 		{
-		case 217:
+		case 230:
+		case 231:
 			if (FEOMHKNGOAK.ReturnCode != 0)
 			{
-				this.DebugReturn(DebugLevel.ERROR, "GetGameList failed: " + FEOMHKNGOAK.ToStringFull());
-			}
-			else
-			{
-				this.mGameList = new Dictionary<string, RoomInfo>();
-				ExitGames.Client.Photon.Hashtable hashtable = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[222];
-				foreach (object obj in hashtable.Keys)
+				if (FEOMHKNGOAK.ReturnCode == -2)
 				{
-					string text = (string)obj;
-					this.mGameList[text] = new RoomInfo(text, (ExitGames.Client.Photon.Hashtable)hashtable[obj]);
+					Debug.LogError(string.Format("If you host Photon yourself, make sure to start the 'Instance LoadBalancing' " + base.ServerAddress));
 				}
-				this.mGameListCopy = new RoomInfo[this.mGameList.Count];
-				this.mGameList.Values.CopyTo(this.mGameListCopy, 0);
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnReceivedRoomListUpdate, new object[0]);
-			}
-			break;
-		default:
-			switch (operationCode)
-			{
-			case 251:
-			{
-				ExitGames.Client.Photon.Hashtable faolpblckfj = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[249];
-				ExitGames.Client.Photon.Hashtable mjjmnidhdec = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[248];
-				this.EDMCCPDDDCC(mjjmnidhdec, faolpblckfj, 0);
-				break;
-			}
-			case 252:
-				break;
-			case 253:
-				break;
-			case 254:
-				this.NDPIAMOMGME();
-				break;
-			default:
-				Debug.LogWarning(string.Format("OperationResponse unhandled: {0}", FEOMHKNGOAK.ToString()));
-				break;
-			}
-			break;
-		case 219:
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnWebRpcResponse, new object[]
-			{
-				FEOMHKNGOAK
-			});
-			break;
-		case 220:
-			if (FEOMHKNGOAK.ReturnCode == 32767)
-			{
-				Debug.LogError(string.Format("The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.", new object[0]));
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, new object[]
+				else if (FEOMHKNGOAK.ReturnCode == short.MaxValue)
 				{
-					DisconnectCause.InvalidAuthentication
-				});
-				this.State = ClientState.Disconnecting;
-				this.Disconnect();
-			}
-			else if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				Debug.LogError(string.Concat(new object[]
+					Debug.LogError($"The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.");
+					SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, DisconnectCause.InvalidAuthentication);
+				}
+				else if (FEOMHKNGOAK.ReturnCode == 32755)
 				{
-					"GetRegions failed. Can't provide regions list. Error: ",
-					FEOMHKNGOAK.ReturnCode,
-					": ",
-					FEOMHKNGOAK.DebugMessage
-				}));
-			}
-			else
-			{
-				string[] array = FEOMHKNGOAK[210] as string[];
-				string[] array2 = FEOMHKNGOAK[230] as string[];
-				if (array == null || array2 == null || array.Length != array2.Length)
-				{
-					Debug.LogError(string.Concat(new object[]
-					{
-						"The region arrays from Name Server are not ok. Must be non-null and same length. ",
-						array == null,
-						" ",
-						array2 == null,
-						"\n",
-						FEOMHKNGOAK.ToStringFull()
-					}));
+					Debug.LogError($"Custom Authentication failed (either due to user-input or configuration or AuthParameter string format). Calling: OnCustomAuthenticationFailed()");
+					SendMonoMessage(PhotonNetworkingMessage.OnCustomAuthenticationFailed, FEOMHKNGOAK.DebugMessage);
 				}
 				else
 				{
-					this.AvailableRegions = new List<Region>(array.Length);
-					for (int i = 0; i < array.Length; i++)
+					Debug.LogError($"Authentication failed: '{FEOMHKNGOAK.DebugMessage}' Code: {FEOMHKNGOAK.ReturnCode}");
+				}
+				State = ClientState.Disconnecting;
+				Disconnect();
+				if (FEOMHKNGOAK.ReturnCode == 32757)
+				{
+					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
 					{
-						string text2 = array[i];
-						if (!string.IsNullOrEmpty(text2))
+						Debug.LogWarning($"Currently, the limit of users is reached for this title. Try again later. Disconnecting");
+					}
+					SendMonoMessage(PhotonNetworkingMessage.OnPhotonMaxCccuReached);
+					SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, DisconnectCause.MaxCcuReached);
+				}
+				else if (FEOMHKNGOAK.ReturnCode == 32756)
+				{
+					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+					{
+						Debug.LogError($"The used master server address is not available with the subscription currently used. Got to Photon Cloud Dashboard or change URL. Disconnecting.");
+					}
+					SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, DisconnectCause.InvalidRegion);
+				}
+				else if (FEOMHKNGOAK.ReturnCode == 32753)
+				{
+					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+					{
+						Debug.LogError($"The authentication ticket expired. You need to connect (and authenticate) again. Disconnecting.");
+					}
+					SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, DisconnectCause.AuthenticationTicketExpired);
+				}
+				break;
+			}
+			if (EHALCLFLGJF == ServerConnection.NameServer || EHALCLFLGJF == ServerConnection.MasterServer)
+			{
+				if (FEOMHKNGOAK.Parameters.ContainsKey(225))
+				{
+					string text4 = (string)FEOMHKNGOAK.Parameters[225];
+					if (!string.IsNullOrEmpty(text4))
+					{
+						if (AuthValues == null)
 						{
-							text2 = text2.ToLower();
-							CloudRegionCode cloudRegionCode = Region.Parse(text2);
-							bool flag = true;
-							if (PhotonNetwork.PhotonServerSettings.HostType == ServerSettings.HostingOption.BestRegion && PhotonNetwork.PhotonServerSettings.EnabledRegions != (CloudRegionFlag)0)
-							{
-								CloudRegionFlag cloudRegionFlag = Region.JFBLMOGHMPF(cloudRegionCode);
-								flag = ((PhotonNetwork.PhotonServerSettings.EnabledRegions & cloudRegionFlag) != (CloudRegionFlag)0);
-								if (!flag && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-								{
-									Debug.Log("Skipping region because it's not in PhotonServerSettings.EnabledRegions: " + cloudRegionCode);
-								}
-							}
-							if (flag)
-							{
-								this.AvailableRegions.Add(new Region(cloudRegionCode, text2, array2[i]));
-							}
+							AuthValues = new AuthenticationValues();
+						}
+						AuthValues.UserId = text4;
+						PhotonNetwork.player.UserId = text4;
+						if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+						{
+							DebugReturn(DebugLevel.INFO, $"Received your UserID from server. Updating local value to: {text4}");
 						}
 					}
-					if (PhotonNetwork.PhotonServerSettings.HostType == ServerSettings.HostingOption.BestRegion)
+				}
+				if (FEOMHKNGOAK.Parameters.ContainsKey(202))
+				{
+					PlayerName = (string)FEOMHKNGOAK.Parameters[202];
+					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
 					{
-						PhotonHandler.LLHBAPCKHAB();
+						DebugReturn(DebugLevel.INFO, $"Received your NickName from server. Updating local value to: {OBCEIJGMKGB}");
 					}
+				}
+				if (FEOMHKNGOAK.Parameters.ContainsKey(192))
+				{
+					BAEBFLIPKKB((Dictionary<byte, object>)FEOMHKNGOAK.Parameters[192]);
+				}
+			}
+			if (EHALCLFLGJF == ServerConnection.NameServer)
+			{
+				MasterServerAddress = FEOMHKNGOAK[230] as string;
+				NDPIAMOMGME();
+			}
+			else if (EHALCLFLGJF == ServerConnection.MasterServer)
+			{
+				if (AuthMode != 0)
+				{
+					OpSettings(OGLFGPKHEHH);
+				}
+				if (PhotonNetwork.autoJoinLobby)
+				{
+					State = ClientState.Authenticated;
+					OpJoinLobby(lobby);
+				}
+				else
+				{
+					State = ClientState.ConnectedToMaster;
+					SendMonoMessage(PhotonNetworkingMessage.OnConnectedToMaster);
+				}
+			}
+			else if (EHALCLFLGJF == ServerConnection.GameServer)
+			{
+				State = ClientState.Joining;
+				AJFMHFLGCFN.PlayerProperties = HHPBLGDNDOP();
+				AJFMHFLGCFN.OnGameServer = true;
+				if (ELNKFMHCMBO == JoinType.JoinRoom || ELNKFMHCMBO == JoinType.JoinRandomRoom || ELNKFMHCMBO == JoinType.JoinOrCreateRoom)
+				{
+					OpJoinRoom(AJFMHFLGCFN);
+				}
+				else if (ELNKFMHCMBO == JoinType.CreateRoom)
+				{
+					OpCreateGame(AJFMHFLGCFN);
+				}
+			}
+			if (FEOMHKNGOAK.Parameters.ContainsKey(245))
+			{
+				Dictionary<string, object> dictionary = (Dictionary<string, object>)FEOMHKNGOAK.Parameters[245];
+				if (dictionary != null)
+				{
+					SendMonoMessage(PhotonNetworkingMessage.OnCustomAuthenticationResponse, dictionary);
 				}
 			}
 			break;
-		case 222:
+		case 220:
 		{
-			bool[] array3 = FEOMHKNGOAK[1] as bool[];
-			string[] array4 = FEOMHKNGOAK[2] as string[];
-			if (array3 != null && array4 != null && this.BEIPFKHGHPC != null && array3.Length == this.BEIPFKHGHPC.Length)
+			if (FEOMHKNGOAK.ReturnCode == short.MaxValue)
 			{
-				List<FriendInfo> list = new List<FriendInfo>(this.BEIPFKHGHPC.Length);
-				for (int j = 0; j < this.BEIPFKHGHPC.Length; j++)
+				Debug.LogError($"The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.");
+				SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, DisconnectCause.InvalidAuthentication);
+				State = ClientState.Disconnecting;
+				Disconnect();
+				break;
+			}
+			if (FEOMHKNGOAK.ReturnCode != 0)
+			{
+				Debug.LogError("GetRegions failed. Can't provide regions list. Error: " + FEOMHKNGOAK.ReturnCode + ": " + FEOMHKNGOAK.DebugMessage);
+				break;
+			}
+			string[] array3 = FEOMHKNGOAK[210] as string[];
+			string[] array4 = FEOMHKNGOAK[230] as string[];
+			if (array3 == null || array4 == null || array3.Length != array4.Length)
+			{
+				Debug.LogError("The region arrays from Name Server are not ok. Must be non-null and same length. " + (array3 == null) + " " + (array4 == null) + "\n" + FEOMHKNGOAK.ToStringFull());
+				break;
+			}
+			AvailableRegions = new List<Region>(array3.Length);
+			for (int j = 0; j < array3.Length; j++)
+			{
+				string text3 = array3[j];
+				if (string.IsNullOrEmpty(text3))
 				{
-					list.Insert(j, new FriendInfo
-					{
-						Name = this.BEIPFKHGHPC[j],
-						Room = array4[j],
-						IsOnline = array3[j]
-					});
+					continue;
 				}
-				PhotonNetwork.Friends = list;
+				text3 = text3.ToLower();
+				CloudRegionCode cloudRegionCode = Region.Parse(text3);
+				bool flag = true;
+				if (PhotonNetwork.PhotonServerSettings.HostType == ServerSettings.HostingOption.BestRegion && PhotonNetwork.PhotonServerSettings.EnabledRegions != 0)
+				{
+					CloudRegionFlag cloudRegionFlag = Region.JFBLMOGHMPF(cloudRegionCode);
+					flag = (PhotonNetwork.PhotonServerSettings.EnabledRegions & cloudRegionFlag) != 0;
+					if (!flag && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+					{
+						Debug.Log("Skipping region because it's not in PhotonServerSettings.EnabledRegions: " + cloudRegionCode);
+					}
+				}
+				if (flag)
+				{
+					AvailableRegions.Add(new Region(cloudRegionCode, text3, array4[j]));
+				}
+			}
+			if (PhotonNetwork.PhotonServerSettings.HostType == ServerSettings.HostingOption.BestRegion)
+			{
+				PhotonHandler.LLHBAPCKHAB();
+			}
+			break;
+		}
+		case 227:
+			if (EHALCLFLGJF == ServerConnection.GameServer)
+			{
+				PCLPOPNEABK(FEOMHKNGOAK);
+			}
+			else if (FEOMHKNGOAK.ReturnCode != 0)
+			{
+				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+				{
+					Debug.LogWarning($"CreateRoom failed, client stays on masterserver: {FEOMHKNGOAK.ToStringFull()}.");
+				}
+				State = ((!insideLobby) ? ClientState.ConnectedToMaster : ClientState.JoinedLobby);
+				SendMonoMessage(PhotonNetworkingMessage.OnPhotonCreateRoomFailed, FEOMHKNGOAK.ReturnCode, FEOMHKNGOAK.DebugMessage);
 			}
 			else
 			{
-				Debug.LogError("FindFriends failed to apply the result, as a required value wasn't provided or the friend list length differed from result.");
+				string text2 = (string)FEOMHKNGOAK[byte.MaxValue];
+				if (!string.IsNullOrEmpty(text2))
+				{
+					AJFMHFLGCFN.RoomName = text2;
+				}
+				GameServerAddress = (string)FEOMHKNGOAK[230];
+				NDPIAMOMGME();
 			}
-			this.BEIPFKHGHPC = null;
-			this.POHIMACBDGL = false;
-			this.DJIOCIPPBMK = Environment.TickCount;
-			if (this.DJIOCIPPBMK == 0)
-			{
-				this.DJIOCIPPBMK = 1;
-			}
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnUpdatedFriendList, new object[0]);
 			break;
-		}
+		case 226:
+			if (EHALCLFLGJF != ServerConnection.GameServer)
+			{
+				if (FEOMHKNGOAK.ReturnCode != 0)
+				{
+					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
+					{
+						Debug.Log($"JoinRoom failed (room maybe closed by now). Client stays on masterserver: {FEOMHKNGOAK.ToStringFull()}. State: {State}");
+					}
+					SendMonoMessage(PhotonNetworkingMessage.OnPhotonJoinRoomFailed, FEOMHKNGOAK.ReturnCode, FEOMHKNGOAK.DebugMessage);
+				}
+				else
+				{
+					GameServerAddress = (string)FEOMHKNGOAK[230];
+					NDPIAMOMGME();
+				}
+			}
+			else
+			{
+				PCLPOPNEABK(FEOMHKNGOAK);
+			}
+			break;
 		case 225:
 			if (FEOMHKNGOAK.ReturnCode != 0)
 			{
@@ -7036,1139 +4063,234 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 				}
 				else if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
 				{
-					Debug.LogWarning(string.Format("JoinRandom failed: {0}.", FEOMHKNGOAK.ToStringFull()));
+					Debug.LogWarning($"JoinRandom failed: {FEOMHKNGOAK.ToStringFull()}.");
 				}
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonRandomJoinFailed, new object[]
-				{
-					FEOMHKNGOAK.ReturnCode,
-					FEOMHKNGOAK.DebugMessage
-				});
+				SendMonoMessage(PhotonNetworkingMessage.OnPhotonRandomJoinFailed, FEOMHKNGOAK.ReturnCode, FEOMHKNGOAK.DebugMessage);
 			}
 			else
 			{
 				string roomName = (string)FEOMHKNGOAK[byte.MaxValue];
-				this.AJFMHFLGCFN.RoomName = roomName;
-				this.GameServerAddress = (string)FEOMHKNGOAK[230];
-				this.NDPIAMOMGME();
+				AJFMHFLGCFN.RoomName = roomName;
+				GameServerAddress = (string)FEOMHKNGOAK[230];
+				NDPIAMOMGME();
 			}
 			break;
-		case 226:
-			if (this.EHALCLFLGJF != ServerConnection.GameServer)
+		case 217:
+		{
+			if (FEOMHKNGOAK.ReturnCode != 0)
 			{
-				if (FEOMHKNGOAK.ReturnCode != 0)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.Log(string.Format("JoinRoom failed (room maybe closed by now). Client stays on masterserver: {0}. State: {1}", FEOMHKNGOAK.ToStringFull(), this.State));
-					}
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonJoinRoomFailed, new object[]
-					{
-						FEOMHKNGOAK.ReturnCode,
-						FEOMHKNGOAK.DebugMessage
-					});
-				}
-				else
-				{
-					this.GameServerAddress = (string)FEOMHKNGOAK[230];
-					this.NDPIAMOMGME();
-				}
+				DebugReturn(DebugLevel.ERROR, "GetGameList failed: " + FEOMHKNGOAK.ToStringFull());
+				break;
 			}
-			else
+			mGameList = new Dictionary<string, RoomInfo>();
+			ExitGames.Client.Photon.Hashtable hashtable = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[222];
+			foreach (object key in hashtable.Keys)
 			{
-				this.PCLPOPNEABK(FEOMHKNGOAK);
+				string text = (string)key;
+				mGameList[text] = new RoomInfo(text, (ExitGames.Client.Photon.Hashtable)hashtable[key]);
 			}
+			mGameListCopy = new RoomInfo[mGameList.Count];
+			mGameList.Values.CopyTo(mGameListCopy, 0);
+			SendMonoMessage(PhotonNetworkingMessage.OnReceivedRoomListUpdate);
 			break;
-		case 227:
-			if (this.EHALCLFLGJF == ServerConnection.GameServer)
-			{
-				this.PCLPOPNEABK(FEOMHKNGOAK);
-			}
-			else if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.LogWarning(string.Format("CreateRoom failed, client stays on masterserver: {0}.", FEOMHKNGOAK.ToStringFull()));
-				}
-				this.State = ((!this.insideLobby) ? ClientState.ConnectedToMaster : ClientState.JoinedLobby);
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonCreateRoomFailed, new object[]
-				{
-					FEOMHKNGOAK.ReturnCode,
-					FEOMHKNGOAK.DebugMessage
-				});
-			}
-			else
-			{
-				string text3 = (string)FEOMHKNGOAK[byte.MaxValue];
-				if (!string.IsNullOrEmpty(text3))
-				{
-					this.AJFMHFLGCFN.RoomName = text3;
-				}
-				this.GameServerAddress = (string)FEOMHKNGOAK[230];
-				this.NDPIAMOMGME();
-			}
+		}
+		case 229:
+			State = ClientState.JoinedLobby;
+			insideLobby = true;
+			SendMonoMessage(PhotonNetworkingMessage.OnJoinedLobby);
 			break;
 		case 228:
-			this.State = ClientState.Authenticated;
-			this.IFPPBJINADG();
+			State = ClientState.Authenticated;
+			IFPPBJINADG();
 			break;
-		case 229:
-			this.State = ClientState.JoinedLobby;
-			this.insideLobby = true;
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnJoinedLobby, new object[0]);
+		case 254:
+			NDPIAMOMGME();
 			break;
-		case 230:
-		case 231:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (FEOMHKNGOAK.ReturnCode == -2)
-				{
-					Debug.LogError(string.Format("If you host Photon yourself, make sure to start the 'Instance LoadBalancing' " + base.ServerAddress, new object[0]));
-				}
-				else if (FEOMHKNGOAK.ReturnCode == 32767)
-				{
-					Debug.LogError(string.Format("The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.", new object[0]));
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnFailedToConnectToPhoton, new object[]
-					{
-						DisconnectCause.InvalidAuthentication
-					});
-				}
-				else if (FEOMHKNGOAK.ReturnCode == 32755)
-				{
-					Debug.LogError(string.Format("Custom Authentication failed (either due to user-input or configuration or AuthParameter string format). Calling: OnCustomAuthenticationFailed()", new object[0]));
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnCustomAuthenticationFailed, new object[]
-					{
-						FEOMHKNGOAK.DebugMessage
-					});
-				}
-				else
-				{
-					Debug.LogError(string.Format("Authentication failed: '{0}' Code: {1}", FEOMHKNGOAK.DebugMessage, FEOMHKNGOAK.ReturnCode));
-				}
-				this.State = ClientState.Disconnecting;
-				this.Disconnect();
-				if (FEOMHKNGOAK.ReturnCode == 32757)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogWarning(string.Format("Currently, the limit of users is reached for this title. Try again later. Disconnecting", new object[0]));
-					}
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonMaxCccuReached, new object[0]);
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, new object[]
-					{
-						DisconnectCause.MaxCcuReached
-					});
-				}
-				else if (FEOMHKNGOAK.ReturnCode == 32756)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogError(string.Format("The used master server address is not available with the subscription currently used. Got to Photon Cloud Dashboard or change URL. Disconnecting.", new object[0]));
-					}
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, new object[]
-					{
-						DisconnectCause.InvalidRegion
-					});
-				}
-				else if (FEOMHKNGOAK.ReturnCode == 32753)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogError(string.Format("The authentication ticket expired. You need to connect (and authenticate) again. Disconnecting.", new object[0]));
-					}
-					BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectionFail, new object[]
-					{
-						DisconnectCause.AuthenticationTicketExpired
-					});
-				}
-			}
-			else
-			{
-				if (this.EHALCLFLGJF == ServerConnection.NameServer || this.EHALCLFLGJF == ServerConnection.MasterServer)
-				{
-					if (FEOMHKNGOAK.Parameters.ContainsKey(225))
-					{
-						string text4 = (string)FEOMHKNGOAK.Parameters[225];
-						if (!string.IsNullOrEmpty(text4))
-						{
-							if (this.AuthValues == null)
-							{
-								this.AuthValues = new AuthenticationValues();
-							}
-							this.AuthValues.UserId = text4;
-							PhotonNetwork.player.UserId = text4;
-							if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-							{
-								this.DebugReturn(DebugLevel.INFO, string.Format("Received your UserID from server. Updating local value to: {0}", text4));
-							}
-						}
-					}
-					if (FEOMHKNGOAK.Parameters.ContainsKey(202))
-					{
-						this.PlayerName = (string)FEOMHKNGOAK.Parameters[202];
-						if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-						{
-							this.DebugReturn(DebugLevel.INFO, string.Format("Received your NickName from server. Updating local value to: {0}", this.OBCEIJGMKGB));
-						}
-					}
-					if (FEOMHKNGOAK.Parameters.ContainsKey(192))
-					{
-						this.BAEBFLIPKKB((Dictionary<byte, object>)FEOMHKNGOAK.Parameters[192]);
-					}
-				}
-				if (this.EHALCLFLGJF == ServerConnection.NameServer)
-				{
-					this.MasterServerAddress = (FEOMHKNGOAK[230] as string);
-					this.NDPIAMOMGME();
-				}
-				else if (this.EHALCLFLGJF == ServerConnection.MasterServer)
-				{
-					if (this.AuthMode != AuthModeOption.Auth)
-					{
-						this.OpSettings(this.OGLFGPKHEHH);
-					}
-					if (PhotonNetwork.autoJoinLobby)
-					{
-						this.State = ClientState.Authenticated;
-						this.OpJoinLobby(this.lobby);
-					}
-					else
-					{
-						this.State = ClientState.ConnectedToMaster;
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnConnectedToMaster, new object[0]);
-					}
-				}
-				else if (this.EHALCLFLGJF == ServerConnection.GameServer)
-				{
-					this.State = ClientState.Joining;
-					this.AJFMHFLGCFN.PlayerProperties = this.HHPBLGDNDOP();
-					this.AJFMHFLGCFN.OnGameServer = true;
-					if (this.ELNKFMHCMBO == JoinType.JoinRoom || this.ELNKFMHCMBO == JoinType.JoinRandomRoom || this.ELNKFMHCMBO == JoinType.JoinOrCreateRoom)
-					{
-						this.OpJoinRoom(this.AJFMHFLGCFN);
-					}
-					else if (this.ELNKFMHCMBO == JoinType.CreateRoom)
-					{
-						this.OpCreateGame(this.AJFMHFLGCFN);
-					}
-				}
-				if (FEOMHKNGOAK.Parameters.ContainsKey(245))
-				{
-					Dictionary<string, object> dictionary = (Dictionary<string, object>)FEOMHKNGOAK.Parameters[245];
-					if (dictionary != null)
-					{
-						BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnCustomAuthenticationResponse, new object[]
-						{
-							dictionary
-						});
-					}
-				}
-			}
+		case 251:
+		{
+			ExitGames.Client.Photon.Hashtable fAOLPBLCKFJ = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[249];
+			ExitGames.Client.Photon.Hashtable mJJMNIDHDEC = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[248];
+			EDMCCPDDDCC(mJJMNIDHDEC, fAOLPBLCKFJ, 0);
 			break;
 		}
-	}
-
-	// Token: 0x0600AFCA RID: 45002 RVA: 0x0040FA1C File Offset: 0x0040DC1C
-	private object[] FOEPFOMJHKL(PhotonView DFIHBOEOJPI)
-	{
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Off)
-		{
-			return null;
-		}
-		PhotonMessageInfo dagalcailln = new PhotonMessageInfo(this.LocalPlayer, PhotonNetwork.ServerTimestamp, DFIHBOEOJPI);
-		this.ALPAEKHFHPP.IHFJMFNBJAD();
-		this.ALPAEKHFHPP.PBECMJMDHBI(null);
-		this.ALPAEKHFHPP.SendNext(null);
-		this.ALPAEKHFHPP.PBECMJMDHBI(null);
-		DFIHBOEOJPI.IBGILLAEDFA(this.ALPAEKHFHPP, dagalcailln);
-		if (this.ALPAEKHFHPP.HCOCCCCDJDD() <= 7)
-		{
-			return null;
-		}
-		object[] array = this.ALPAEKHFHPP.ICDKEKMNCNC();
-		array[0] = DFIHBOEOJPI.NPPEFODKHKN();
-		array[0] = true;
-		array[4] = null;
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.UnreliableOnChange)
-		{
-			return array;
-		}
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.ReliableDeltaCompressed)
-		{
-			if (this.LFAPOBNFPPO(array, DFIHBOEOJPI.EOENPICKCCO))
-			{
-				if (DFIHBOEOJPI.PBIDCPBMFKJ)
-				{
-					return null;
-				}
-				DFIHBOEOJPI.PBIDCPBMFKJ = false;
-				DFIHBOEOJPI.EOENPICKCCO = array;
-			}
-			else
-			{
-				DFIHBOEOJPI.PBIDCPBMFKJ = false;
-				DFIHBOEOJPI.EOENPICKCCO = array;
-			}
-			return array;
-		}
-		if (DFIHBOEOJPI.synchronization == ViewSynchronization.ReliableDeltaCompressed)
-		{
-			object[] result = this.ILJGNDNMNOP(DFIHBOEOJPI.EOENPICKCCO, array);
-			DFIHBOEOJPI.EOENPICKCCO = array;
-			return result;
-		}
-		return null;
-	}
-
-	// Token: 0x0600AFCC RID: 45004 RVA: 0x0040FB40 File Offset: 0x0040DD40
-	private void BAEBFLIPKKB(Dictionary<byte, object> FNHGNHCOMBH)
-	{
-		if (this.AuthMode == AuthModeOption.Auth && this.DebugOut == DebugLevel.ERROR)
-		{
-			Debug.LogWarning("SetupEncryption() called but ignored. Not XB1 compiled. EncryptionData: " + FNHGNHCOMBH.ToStringFull());
-			return;
-		}
-		if (this.DebugOut == DebugLevel.INFO)
-		{
-			Debug.Log("SetupEncryption() got called. " + FNHGNHCOMBH.ToStringFull());
-		}
-		EncryptionMode encryptionMode = (EncryptionMode)((byte)FNHGNHCOMBH[0]);
-		if (encryptionMode != EncryptionMode.PayloadEncryption)
-		{
-			if (encryptionMode != EncryptionMode.DatagramEncryption)
-			{
-				throw new ArgumentOutOfRangeException();
-			}
-			byte[] encryptionSecret = (byte[])FNHGNHCOMBH[1];
-			byte[] hmacSecret = (byte[])FNHGNHCOMBH[2];
-			base.InitDatagramEncryption(encryptionSecret, hmacSecret);
-		}
-		else
-		{
-			byte[] secret = (byte[])FNHGNHCOMBH[1];
-			base.InitPayloadEncryption(secret);
-		}
-	}
-
-	// Token: 0x0600AFCD RID: 45005 RVA: 0x0008B02D File Offset: 0x0008922D
-	private ExitGames.Client.Photon.Hashtable LNJJOADENLA(ExitGames.Client.Photon.Hashtable FPBCPOGCCBD, int KHACEEGCPEP)
-	{
-		if (FPBCPOGCCBD.ContainsKey(KHACEEGCPEP))
-		{
-			return (ExitGames.Client.Photon.Hashtable)FPBCPOGCCBD[KHACEEGCPEP];
-		}
-		return FPBCPOGCCBD;
-	}
-
-	// Token: 0x17000244 RID: 580
-	// (get) Token: 0x0600AFCE RID: 45006 RVA: 0x0008B1A9 File Offset: 0x000893A9
-	protected internal string EOCFDCJNAGM
-	{
-		get
-		{
-			return string.Format("{0}_{1}", PhotonNetwork.gameVersion, "1.87");
-		}
-	}
-
-	// Token: 0x0600AFCF RID: 45007 RVA: 0x0040FC04 File Offset: 0x0040DE04
-	public void OpRemoveCompleteCacheOfPlayer(int CFLLNEOHNFD)
-	{
-		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
-		{
-			CachingOption = EventCaching.RemoveFromRoomCache,
-			TargetActors = new int[]
-			{
-				CFLLNEOHNFD
-			}
-		};
-		this.OpRaiseEvent(0, null, true, bplhapbmggc);
-	}
-
-	// Token: 0x0600AFD1 RID: 45009 RVA: 0x0040FC3C File Offset: 0x0040DE3C
-	private void BOJKDNJHBNG()
-	{
-		bool flag = this.CurrentRoom != null;
-		bool flag2 = (this.CurrentRoom == null) ? PhotonNetwork.autoCleanUpPlayerObjects : this.CurrentRoom.AutoCleanUp;
-		this.hasSwitchedMC = false;
-		this.CurrentRoom = null;
-		this.mActors = new Dictionary<int, PhotonPlayer>();
-		this.mPlayerListCopy = new PhotonPlayer[0];
-		this.mOtherPlayerListCopy = new PhotonPlayer[0];
-		this.CHIJNBAJIHE = new HashSet<byte>();
-		this.FFBGBLFBHOK = new HashSet<byte>();
-		this.mGameList = new Dictionary<string, RoomInfo>();
-		this.mGameListCopy = new RoomInfo[0];
-		this.POHIMACBDGL = false;
-		this.ChangeLocalID(-1);
-		if (flag2)
-		{
-			this.OMEPCMPKIJK(true);
-			PhotonNetwork.JMCPHFPJEJC = new List<int>();
-		}
-		if (flag)
-		{
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnLeftRoom, new object[0]);
-		}
-	}
-
-	// Token: 0x0600AFD2 RID: 45010 RVA: 0x0040FD0C File Offset: 0x0040DF0C
-	protected internal bool LGPBHHOJPCA(int PHIGECOLKKN, bool PANGJAJJOLO)
-	{
-		bool flag = this.mMasterClientId != PHIGECOLKKN;
-		if (!flag || !this.mActors.ContainsKey(PHIGECOLKKN))
-		{
-			return false;
-		}
-		if (PANGJAJJOLO && !this.OpRaiseEvent(208, new ExitGames.Client.Photon.Hashtable
-		{
-			{
-				1,
-				PHIGECOLKKN
-			}
-		}, true, null))
-		{
-			return false;
-		}
-		this.hasSwitchedMC = true;
-		this.CurrentRoom.EJLAPIIGIMI = PHIGECOLKKN;
-		BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnMasterClientSwitched, new object[]
-		{
-			this.ICMGDHDNIJD(PHIGECOLKKN)
-		});
-		return true;
-	}
-
-	// Token: 0x0600AFD3 RID: 45011 RVA: 0x0040FDA0 File Offset: 0x0040DFA0
-	private void PACEKOIEHKK()
-	{
-		if (this.State == ClientState.Joining)
-		{
-			this.BOKEGDFHBAN = true;
-			return;
-		}
-		if (this.LocalPlayer != null)
-		{
-			this.LocalPlayer.NickName = this.PlayerName;
-			ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-			hashtable[byte.MaxValue] = this.PlayerName;
-			if (this.LocalPlayer.ID > 0)
-			{
-				base.LJEFICMOPMO(this.LocalPlayer.ID, hashtable, null, false);
-				this.BOKEGDFHBAN = false;
-			}
-		}
-	}
-
-	// Token: 0x0600AFD4 RID: 45012 RVA: 0x0040FE28 File Offset: 0x0040E028
-	private object[] ILJGNDNMNOP(object[] BJIEGLPODKG, object[] BGJHIKDFIMP)
-	{
-		if (BGJHIKDFIMP == null || BJIEGLPODKG == null || BJIEGLPODKG.Length != BGJHIKDFIMP.Length)
-		{
-			return BGJHIKDFIMP;
-		}
-		if (BGJHIKDFIMP.Length <= 4)
-		{
-			return null;
-		}
-		BJIEGLPODKG[1] = false;
-		int num = 1;
-		Queue<int> queue = null;
-		for (int i = 1; i < BGJHIKDFIMP.Length; i += 0)
-		{
-			object obj = BGJHIKDFIMP[i];
-			object golmelkeafo = BJIEGLPODKG[i];
-			if (this.JKOFIOHPEAB(obj, golmelkeafo))
-			{
-				num++;
-				BJIEGLPODKG[i] = null;
-			}
-			else
-			{
-				BJIEGLPODKG[i] = obj;
-				if (obj == null)
-				{
-					if (queue == null)
-					{
-						queue = new Queue<int>(BGJHIKDFIMP.Length);
-					}
-					queue.Enqueue(i);
-				}
-			}
-		}
-		if (num > 1)
-		{
-			if (num == BGJHIKDFIMP.Length - 1)
-			{
-				return null;
-			}
-			BJIEGLPODKG[1] = true;
-			if (queue != null)
-			{
-				BJIEGLPODKG[5] = queue.ToArray();
-			}
-		}
-		BJIEGLPODKG[1] = BGJHIKDFIMP[0];
-		return BJIEGLPODKG;
-	}
-
-	// Token: 0x0600AFD5 RID: 45013 RVA: 0x0040FEF8 File Offset: 0x0040E0F8
-	public void KGNBOOOBLHC(OperationResponse FEOMHKNGOAK)
-	{
-		if (PhotonNetwork.JNJJAMNLOHA.State == (ClientState)46)
-		{
-			if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-			{
-				Debug.Log("GenerationMenu" + FEOMHKNGOAK.OperationCode);
-			}
-			return;
-		}
-		if (FEOMHKNGOAK.ReturnCode == 0)
-		{
-			if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-			{
-				Debug.Log(FEOMHKNGOAK.ToString());
-			}
-		}
-		else if (FEOMHKNGOAK.ReturnCode == 96)
-		{
-			Debug.LogError("Testing, the group has toggled [" + FEOMHKNGOAK.OperationCode + "[MenuScene] Error: ");
-		}
-		else if (FEOMHKNGOAK.ReturnCode == -178)
-		{
-			object[] array = new object[4];
-			array[1] = "ViewID {0} {1}{2}";
-			array[1] = FEOMHKNGOAK.OperationCode;
-			array[6] = "workshop.";
-			array[2] = FEOMHKNGOAK.DebugMessage;
-			Debug.LogError(string.Concat(array));
-		}
-		else if (FEOMHKNGOAK.ReturnCode == -98)
-		{
-			Debug.LogWarning("1278033234" + FEOMHKNGOAK.ToStringFull());
-		}
-		else
-		{
-			object[] array2 = new object[]
-			{
-				".sawoutdatedmessage"
-			};
-			array2[0] = FEOMHKNGOAK.ToStringFull();
-			array2[2] = "CameraFilterPack/Blend2Camera_Subtract";
-			array2[4] = this.NJIFBFEHJKH();
-			Debug.LogError(string.Concat(array2));
-		}
-		if (FEOMHKNGOAK.Parameters.ContainsKey(183))
-		{
-			if (this.AuthValues == null)
-			{
-				this.AuthValues = new AuthenticationValues();
-			}
-			this.IJHIEINKMFP().FNCDLDJFJAM(FEOMHKNGOAK[(byte)-166] as string);
-			this.JOKLGFENMKE = this.IJHIEINKMFP().PPFIBJOHICJ();
-		}
-		byte operationCode = FEOMHKNGOAK.OperationCode;
-		switch (operationCode)
-		{
-		case 21:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				this.ELEMKNKGNIP(DebugLevel.ERROR, "<b>" + FEOMHKNGOAK.ToStringFull());
-			}
-			else
-			{
-				this.mGameList = new Dictionary<string, RoomInfo>();
-				ExitGames.Client.Photon.Hashtable hashtable = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[(byte)-109];
-				foreach (object obj in hashtable.Keys)
-				{
-					string text = (string)obj;
-					this.mGameList[text] = new RoomInfo(text, (ExitGames.Client.Photon.Hashtable)hashtable[obj]);
-				}
-				this.mGameListCopy = new RoomInfo[this.mGameList.Count];
-				this.mGameList.Values.CopyTo(this.mGameListCopy, 0);
-				BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnPhotonPlayerPropertiesChanged, new object[1]);
-			}
+		case 252:
+		case 253:
 			break;
-		default:
-			switch (operationCode)
-			{
-			case 191:
-			{
-				ExitGames.Client.Photon.Hashtable faolpblckfj = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[62];
-				ExitGames.Client.Photon.Hashtable mjjmnidhdec = (ExitGames.Client.Photon.Hashtable)FEOMHKNGOAK[101];
-				this.EDMCCPDDDCC(mjjmnidhdec, faolpblckfj, 1);
-				break;
-			}
-			case 192:
-				break;
-			case 193:
-				break;
-			case 194:
-				this.MOHFIPIDGOH();
-				break;
-			default:
-				Debug.LogWarning(string.Format("z", FEOMHKNGOAK.ToString()));
-				break;
-			}
-			break;
-		case 23:
-			BNGIGHBHPEH.CLOLHKCFMJP((PhotonNetworkingMessage)95, new object[]
-			{
-				FEOMHKNGOAK
-			});
-			break;
-		case 24:
-			if (FEOMHKNGOAK.ReturnCode == 150)
-			{
-				Debug.LogError(string.Format("Text", new object[1]));
-				BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnReceivedRoomListUpdate, new object[]
-				{
-					(DisconnectCause)110
-				});
-				this.JNPKDLEMJFN((ClientState)90);
-				this.Disconnect();
-			}
-			else if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				object[] array3 = new object[5];
-				array3[1] = "MaxLivesSlider";
-				array3[1] = FEOMHKNGOAK.ReturnCode;
-				array3[8] = "Beat Detected";
-				array3[1] = FEOMHKNGOAK.DebugMessage;
-				Debug.LogError(string.Concat(array3));
-			}
-			else
-			{
-				string[] array4 = FEOMHKNGOAK[(byte)-5] as string[];
-				string[] array5 = FEOMHKNGOAK[(byte)-153] as string[];
-				if (array4 == null || array5 == null || array4.Length != array5.Length)
-				{
-					object[] array6 = new object[1];
-					array6[0] = "InputField";
-					array6[1] = (array4 == null);
-					array6[1] = "_LightIntensity";
-					array6[0] = (array5 == null);
-					array6[0] = "Uploading preview image";
-					array6[5] = FEOMHKNGOAK.ToStringFull();
-					Debug.LogError(string.Concat(array6));
-				}
-				else
-				{
-					this.ENAIECJFPHM(new List<Region>(array4.Length));
-					for (int i = 0; i < array4.Length; i++)
-					{
-						string text2 = array4[i];
-						if (!string.IsNullOrEmpty(text2))
-						{
-							text2 = text2.ToLower();
-							CloudRegionCode cloudRegionCode = Region.AGLOFMCGLJI(text2);
-							bool flag = true;
-							if (PhotonNetwork.PhotonServerSettings.HostType == ServerSettings.HostingOption.OfflineMode && PhotonNetwork.PhotonServerSettings.EnabledRegions != (CloudRegionFlag)0)
-							{
-								CloudRegionFlag cloudRegionFlag = Region.PEECIJIGOKD(cloudRegionCode);
-								flag = ((PhotonNetwork.PhotonServerSettings.EnabledRegions & cloudRegionFlag) == CloudRegionFlag.eu);
-								if (!flag && PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-								{
-									Debug.Log("PhotonView ID duplicate found: {0}. New: {1} old: {2}. Maybe one wasn't destroyed on scene load?! Check for 'DontDestroyOnLoad'. Destroying old entry, adding new." + cloudRegionCode);
-								}
-							}
-							if (flag)
-							{
-								this.GBEHEEIMNDO().Add(new Region(cloudRegionCode, text2, array5[i]));
-							}
-						}
-					}
-					if (PhotonNetwork.PhotonServerSettings.HostType == ServerSettings.HostingOption.OfflineMode)
-					{
-						PhotonHandler.ILEFPKJIONO();
-					}
-				}
-			}
-			break;
-		case 26:
+		case 222:
 		{
-			bool[] array7 = FEOMHKNGOAK[0] as bool[];
-			string[] array8 = FEOMHKNGOAK[3] as string[];
-			if (array7 != null && array8 != null && this.BEIPFKHGHPC != null && array7.Length == this.BEIPFKHGHPC.Length)
+			bool[] array = FEOMHKNGOAK[1] as bool[];
+			string[] array2 = FEOMHKNGOAK[2] as string[];
+			if (array != null && array2 != null && BEIPFKHGHPC != null && array.Length == BEIPFKHGHPC.Length)
 			{
-				List<FriendInfo> list = new List<FriendInfo>(this.BEIPFKHGHPC.Length);
-				for (int j = 0; j < this.BEIPFKHGHPC.Length; j++)
+				List<FriendInfo> list = new List<FriendInfo>(BEIPFKHGHPC.Length);
+				for (int i = 0; i < BEIPFKHGHPC.Length; i++)
 				{
 					FriendInfo friendInfo = new FriendInfo();
-					friendInfo.JCGINDGJKDH(this.BEIPFKHGHPC[j]);
-					friendInfo.BHFPBHEJJFE(array8[j]);
-					friendInfo.LABJBMDKMDK(array7[j]);
-					list.Insert(j, friendInfo);
+					friendInfo.Name = BEIPFKHGHPC[i];
+					friendInfo.Room = array2[i];
+					friendInfo.IsOnline = array[i];
+					list.Insert(i, friendInfo);
 				}
 				PhotonNetwork.Friends = list;
 			}
 			else
 			{
-				Debug.LogError("winter2020_official");
+				Debug.LogError("FindFriends failed to apply the result, as a required value wasn't provided or the friend list length differed from result.");
 			}
-			this.BEIPFKHGHPC = null;
-			this.POHIMACBDGL = true;
-			this.DJIOCIPPBMK = Environment.TickCount;
-			if (this.DJIOCIPPBMK == 0)
+			BEIPFKHGHPC = null;
+			POHIMACBDGL = false;
+			DJIOCIPPBMK = Environment.TickCount;
+			if (DJIOCIPPBMK == 0)
 			{
-				this.DJIOCIPPBMK = 1;
+				DJIOCIPPBMK = 1;
 			}
-			BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)48, new object[1]);
+			SendMonoMessage(PhotonNetworkingMessage.OnUpdatedFriendList);
 			break;
 		}
-		case 29:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (FEOMHKNGOAK.ReturnCode == -92)
-				{
-					if (PhotonNetwork.logLevel >= (PhotonLogLevel)4)
-					{
-						Debug.Log("_TimeX");
-					}
-				}
-				else if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.LogWarning(string.Format("_ScreenResolution", FEOMHKNGOAK.ToStringFull()));
-				}
-				PhotonNetworkingMessage lelhnddckco = PhotonNetworkingMessage.OnJoinedLobby;
-				object[] array9 = new object[7];
-				array9[1] = FEOMHKNGOAK.ReturnCode;
-				array9[0] = FEOMHKNGOAK.DebugMessage;
-				BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco, array9);
-			}
-			else
-			{
-				string roomName = (string)FEOMHKNGOAK[192];
-				this.AJFMHFLGCFN.RoomName = roomName;
-				this.GameServerAddress = (string)FEOMHKNGOAK[192];
-				this.MOHFIPIDGOH();
-			}
+		case 219:
+			SendMonoMessage(PhotonNetworkingMessage.OnWebRpcResponse, FEOMHKNGOAK);
 			break;
-		case 30:
-			if (this.NJIFBFEHJKH() != ServerConnection.MasterServer)
-			{
-				if (FEOMHKNGOAK.ReturnCode != 0)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.Log(string.Format("_OcclusionTexture", FEOMHKNGOAK.ToStringFull(), this.State));
-					}
-					PhotonNetworkingMessage lelhnddckco2 = PhotonNetworkingMessage.OnMasterClientSwitched;
-					object[] array10 = new object[5];
-					array10[0] = FEOMHKNGOAK.ReturnCode;
-					array10[0] = FEOMHKNGOAK.DebugMessage;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco2, array10);
-				}
-				else
-				{
-					this.GameServerAddress = (string)FEOMHKNGOAK[(byte)-78];
-					this.NDPIAMOMGME();
-				}
-			}
-			else
-			{
-				this.PCLPOPNEABK(FEOMHKNGOAK);
-			}
-			break;
-		case 31:
-			if (this.IGDBHCGGHFF() == ServerConnection.GameServer)
-			{
-				this.PCLPOPNEABK(FEOMHKNGOAK);
-			}
-			else if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-				{
-					Debug.LogWarning(string.Format("Tab2Content", FEOMHKNGOAK.ToStringFull()));
-				}
-				this.JNPKDLEMJFN((!this.insideLobby) ? ((ClientState)87) : ClientState.Authenticated);
-				PhotonNetworkingMessage lelhnddckco3 = PhotonNetworkingMessage.OnLeftLobby;
-				object[] array11 = new object[8];
-				array11[0] = FEOMHKNGOAK.ReturnCode;
-				array11[1] = FEOMHKNGOAK.DebugMessage;
-				BNGIGHBHPEH.SendMonoMessage(lelhnddckco3, array11);
-			}
-			else
-			{
-				string text3 = (string)FEOMHKNGOAK[(byte)-159];
-				if (!string.IsNullOrEmpty(text3))
-				{
-					this.AJFMHFLGCFN.RoomName = text3;
-				}
-				this.NHKBIPAKHOJ((string)FEOMHKNGOAK[162]);
-				this.MOHFIPIDGOH();
-			}
-			break;
-		case 32:
-			this.JNPKDLEMJFN(ClientState.Uninitialized);
-			this.ONELBBFGFOM();
-			break;
-		case 33:
-			this.JNPKDLEMJFN(ClientState.JoinedLobby);
-			this.insideLobby = true;
-			BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnLeftRoom, new object[0]);
-			break;
-		case 34:
-		case 35:
-			if (FEOMHKNGOAK.ReturnCode != 0)
-			{
-				if (FEOMHKNGOAK.ReturnCode == 24)
-				{
-					Debug.LogError(string.Format(").png" + base.ServerAddress, new object[1]));
-				}
-				else if (FEOMHKNGOAK.ReturnCode == -102)
-				{
-					Debug.LogError(string.Format("_Value", new object[0]));
-					PhotonNetworkingMessage lelhnddckco4 = (PhotonNetworkingMessage)(-114);
-					object[] array12 = new object[0];
-					array12[1] = (DisconnectCause)(-2);
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco4, array12);
-				}
-				else if (FEOMHKNGOAK.ReturnCode == 60)
-				{
-					Debug.LogError(string.Format("_ScreenResolution", new object[1]));
-					PhotonNetworkingMessage lelhnddckco5 = (PhotonNetworkingMessage)(-32);
-					object[] array13 = new object[0];
-					array13[0] = FEOMHKNGOAK.DebugMessage;
-					BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco5, array13);
-				}
-				else
-				{
-					Debug.LogError(string.Format("Show Title", FEOMHKNGOAK.DebugMessage, FEOMHKNGOAK.ReturnCode));
-				}
-				this.JNPKDLEMJFN((ClientState)22);
-				this.Disconnect();
-				if (FEOMHKNGOAK.ReturnCode == -85)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-					{
-						Debug.LogWarning(string.Format("/", new object[0]));
-					}
-					BNGIGHBHPEH.CLOLHKCFMJP((PhotonNetworkingMessage)(-73), new object[1]);
-					PhotonNetworkingMessage lelhnddckco6 = (PhotonNetworkingMessage)(-31);
-					object[] array14 = new object[1];
-					array14[1] = (DisconnectCause)(-26);
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco6, array14);
-				}
-				else if (FEOMHKNGOAK.ReturnCode == 111)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-					{
-						Debug.LogError(string.Format("_InvScreenSize", new object[1]));
-					}
-					PhotonNetworkingMessage lelhnddckco7 = PhotonNetworkingMessage.OnConnectedToPhoton;
-					object[] array15 = new object[0];
-					array15[0] = (DisconnectCause)(-71);
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco7, array15);
-				}
-				else if (FEOMHKNGOAK.ReturnCode == -192)
-				{
-					if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-					{
-						Debug.LogError(string.Format("threshold", new object[0]));
-					}
-					PhotonNetworkingMessage lelhnddckco8 = (PhotonNetworkingMessage)(-69);
-					object[] array16 = new object[1];
-					array16[1] = (DisconnectCause)184;
-					BNGIGHBHPEH.SendMonoMessage(lelhnddckco8, array16);
-				}
-			}
-			else
-			{
-				if (this.IGDBHCGGHFF() == ServerConnection.NameServer || this.NJIFBFEHJKH() == ServerConnection.MasterServer)
-				{
-					if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-32))
-					{
-						string text4 = (string)FEOMHKNGOAK.Parameters[47];
-						if (!string.IsNullOrEmpty(text4))
-						{
-							if (this.IJHIEINKMFP() == null)
-							{
-								this.AuthValues = new AuthenticationValues();
-							}
-							this.IJHIEINKMFP().AJBJIDHDDAB(text4);
-							PhotonNetwork.player.UserId = text4;
-							if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
-							{
-								this.DebugReturn((DebugLevel)7, string.Format("_Offsets", text4));
-							}
-						}
-					}
-					if (FEOMHKNGOAK.Parameters.ContainsKey((byte)-18))
-					{
-						this.MPHFPMJMGJG((string)FEOMHKNGOAK.Parameters[9]);
-						if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
-						{
-							this.DebugReturn((DebugLevel)6, string.Format("MenuRecordButton", this.OBCEIJGMKGB));
-						}
-					}
-					if (FEOMHKNGOAK.Parameters.ContainsKey(153))
-					{
-						this.BAEBFLIPKKB((Dictionary<byte, object>)FEOMHKNGOAK.Parameters[168]);
-					}
-				}
-				if (this.NJIFBFEHJKH() == ServerConnection.GameServer)
-				{
-					this.MasterServerAddress = (FEOMHKNGOAK[136] as string);
-					this.NDPIAMOMGME();
-				}
-				else if (this.IGDBHCGGHFF() == ServerConnection.MasterServer)
-				{
-					if (this.AuthMode != AuthModeOption.Auth)
-					{
-						this.CDDNMNDHELA(this.CGPLAHHGMEO());
-					}
-					if (PhotonNetwork.autoJoinLobby)
-					{
-						this.JNPKDLEMJFN(ClientState.Joining);
-						this.OpJoinLobby(this.lobby);
-					}
-					else
-					{
-						this.State = (ClientState)(-113);
-						BNGIGHBHPEH.SendMonoMessage((PhotonNetworkingMessage)103, new object[1]);
-					}
-				}
-				else if (this.IGDBHCGGHFF() == ServerConnection.GameServer)
-				{
-					this.State = ClientState.Queued;
-					this.AJFMHFLGCFN.PlayerProperties = this.HHPBLGDNDOP();
-					this.AJFMHFLGCFN.OnGameServer = true;
-					if (this.ELNKFMHCMBO == JoinType.CreateRoom || this.ELNKFMHCMBO == (JoinType)7 || this.ELNKFMHCMBO == JoinType.JoinRoom)
-					{
-						this.FHBKMBGDDMC(this.AJFMHFLGCFN);
-					}
-					else if (this.ELNKFMHCMBO == JoinType.CreateRoom)
-					{
-						this.JCPECILENMF(this.AJFMHFLGCFN);
-					}
-				}
-				if (FEOMHKNGOAK.Parameters.ContainsKey(176))
-				{
-					Dictionary<string, object> dictionary = (Dictionary<string, object>)FEOMHKNGOAK.Parameters[83];
-					if (dictionary != null)
-					{
-						PhotonNetworkingMessage lelhnddckco9 = (PhotonNetworkingMessage)(-110);
-						object[] array17 = new object[1];
-						array17[1] = dictionary;
-						BNGIGHBHPEH.CLOLHKCFMJP(lelhnddckco9, array17);
-					}
-				}
-			}
+		default:
+			Debug.LogWarning($"OperationResponse unhandled: {FEOMHKNGOAK.ToString()}");
 			break;
 		}
 	}
 
-	// Token: 0x0600AFD6 RID: 45014 RVA: 0x00410C38 File Offset: 0x0040EE38
-	public virtual bool DJJIHHGPELA(AKBOPCNHFFJ HBJBKOPJDKJ)
+	[SpecialName]
+	public int HODDLHHJODM()
 	{
-		bool flag = this.NJIFBFEHJKH() == ServerConnection.GameServer;
-		HBJBKOPJDKJ.OnGameServer = flag;
-		if (!flag)
+		return _003CEEDBHAJBPLC_003Ek__BackingField;
+	}
+
+	protected internal void JHCPMMIEDEE(int NADLIACHBNO, int MNFJDHDDGLC)
+	{
+		Debug.Log("TransferOwnership() view " + NADLIACHBNO + " to: " + MNFJDHDDGLC + " Time: " + Environment.TickCount % 1000);
+		OpRaiseEvent(210, new int[2] { NADLIACHBNO, MNFJDHDDGLC }, true, new RaiseEventOptions
 		{
-			this.AJFMHFLGCFN = HBJBKOPJDKJ;
-		}
-		this.ELNKFMHCMBO = ((!HBJBKOPJDKJ.CreateIfNotExists) ? JoinType.CreateRoom : JoinType.CreateRoom);
-		return base.IPOIGDNKHJN(HBJBKOPJDKJ);
+			Receivers = ReceiverGroup.All
+		});
 	}
 
-	// Token: 0x17000248 RID: 584
-	// (get) Token: 0x0600AFD7 RID: 45015 RVA: 0x0008AABC File Offset: 0x00088CBC
-	public string NameServerAddress
+	public void OpCleanRpcBuffer(int CFLLNEOHNFD)
 	{
-		get
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = EventCaching.RemoveFromRoomCache;
+		raiseEventOptions.TargetActors = new int[1] { CFLLNEOHNFD };
+		RaiseEventOptions bPLHAPBMGGC = raiseEventOptions;
+		OpRaiseEvent(200, null, true, bPLHAPBMGGC);
+	}
+
+	public bool WebRpc(string MDGGHHCAHKF, object GNNEKCBOBEG)
+	{
+		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
+		dictionary.Add(209, MDGGHHCAHKF);
+		dictionary.Add(208, GNNEKCBOBEG);
+		return OpCustom(219, dictionary, true);
+	}
+
+	private bool LFAPOBNFPPO(object[] OMGHPPEONFN, object[] BGJHIKDFIMP)
+	{
+		if (OMGHPPEONFN == null && BGJHIKDFIMP == null)
 		{
-			return this.IHAJBEOILOE();
+			return true;
 		}
-	}
-
-	// Token: 0x0600AFD9 RID: 45017 RVA: 0x0008B1A0 File Offset: 0x000893A0
-	private void NLEEJPDKBFH(Room DPNHODJHGJL)
-	{
-		this.NBCIDPIDCDP = DPNHODJHGJL;
-	}
-
-	// Token: 0x0600AFDA RID: 45018 RVA: 0x00410C84 File Offset: 0x0040EE84
-	private ExitGames.Client.Photon.Hashtable HHPBLGDNDOP()
-	{
-		if (PhotonNetwork.player != null)
+		if (OMGHPPEONFN == null || BGJHIKDFIMP == null || OMGHPPEONFN.Length != BGJHIKDFIMP.Length)
 		{
-			return PhotonNetwork.player.AllProperties;
+			return false;
 		}
+		for (int i = 0; i < BGJHIKDFIMP.Length; i++)
+		{
+			object cFKDMFFFPJK = BGJHIKDFIMP[i];
+			object gOLMELKEAFO = OMGHPPEONFN[i];
+			if (!LFAPOBNFPPO(cFKDMFFFPJK, gOLMELKEAFO))
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private void KCNBFALAJMD(int KHACEEGCPEP)
+	{
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
-		hashtable[byte.MaxValue] = this.PlayerName;
-		return hashtable;
+		hashtable[(byte)0] = KHACEEGCPEP;
+		OpRaiseEvent(207, hashtable, true, null);
 	}
 
-	// Token: 0x0400148E RID: 5262
-	protected internal string KAIBLIKEDHM;
-
-	// Token: 0x04001490 RID: 5264
-	private string JOKLGFENMKE;
-
-	// Token: 0x04001491 RID: 5265
-	public AuthModeOption AuthMode;
-
-	// Token: 0x04001492 RID: 5266
-	public EncryptionMode EncryptionMode;
-
-	// Token: 0x04001494 RID: 5268
-	public const string NameServerHost = "ns.exitgames.com";
-
-	// Token: 0x04001495 RID: 5269
-	public const string NameServerHttp = "http://ns.exitgamescloud.com:80/photon/n";
-
-	// Token: 0x04001496 RID: 5270
-	private static readonly Dictionary<ConnectionProtocol, int> AEGGDHEGGCL = new Dictionary<ConnectionProtocol, int>
+	public static void SendMonoMessage(PhotonNetworkingMessage LELHNDDCKCO, params object[] GNNEKCBOBEG)
 	{
+		HashSet<GameObject> hashSet = ((PhotonNetwork.SendMonoMessageTargets == null) ? PhotonNetwork.FindGameObjectsWithComponent(PhotonNetwork.SendMonoMessageTargetType) : PhotonNetwork.SendMonoMessageTargets);
+		string methodName = LELHNDDCKCO.ToString();
+		object value = ((GNNEKCBOBEG == null || GNNEKCBOBEG.Length != 1) ? GNNEKCBOBEG : GNNEKCBOBEG[0]);
+		foreach (GameObject item in hashSet)
 		{
-			ConnectionProtocol.Udp,
-			5058
-		},
-		{
-			ConnectionProtocol.Tcp,
-			4533
-		},
-		{
-			ConnectionProtocol.WebSocket,
-			9093
-		},
-		{
-			ConnectionProtocol.WebSocketSecure,
-			19093
+			if (item != null)
+			{
+				item.SendMessage(methodName, value, SendMessageOptions.DontRequireReceiver);
+			}
 		}
-	};
+	}
 
-	// Token: 0x0400149B RID: 5275
-	public bool IsInitialConnect;
+	public PhotonView GetPhotonView(int NADLIACHBNO)
+	{
+		PhotonView value = null;
+		HFCMPEKPBAM.TryGetValue(NADLIACHBNO, out value);
+		if (value == null)
+		{
+			PhotonView[] array = UnityEngine.Object.FindObjectsOfType(typeof(PhotonView)) as PhotonView[];
+			foreach (PhotonView photonView in array)
+			{
+				if (photonView.viewID == NADLIACHBNO)
+				{
+					if (photonView.GEKLBLEBECG)
+					{
+						Debug.LogWarning("Had to lookup view that wasn't in photonViewList: " + photonView);
+					}
+					return photonView;
+				}
+			}
+		}
+		return value;
+	}
 
-	// Token: 0x0400149C RID: 5276
-	public bool insideLobby;
+	public void OpRemoveCompleteCacheOfPlayer(int CFLLNEOHNFD)
+	{
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.CachingOption = EventCaching.RemoveFromRoomCache;
+		raiseEventOptions.TargetActors = new int[1] { CFLLNEOHNFD };
+		RaiseEventOptions bPLHAPBMGGC = raiseEventOptions;
+		OpRaiseEvent(0, null, true, bPLHAPBMGGC);
+	}
 
-	// Token: 0x0400149E RID: 5278
-	protected internal List<TypedLobbyInfo> HOBLKOKPJOE = new List<TypedLobbyInfo>();
+	protected internal void DMCKEABNFPJ()
+	{
+		if (!PhotonNetwork.automaticallySyncScene || PhotonNetwork.isMasterClient || PhotonNetwork.room == null || !PhotonNetwork.room.CustomProperties.ContainsKey("curScn"))
+		{
+			return;
+		}
+		object obj = PhotonNetwork.room.CustomProperties["curScn"];
+		if (obj is int)
+		{
+			if (SceneManagerHelper.ActiveSceneBuildIndex != (int)obj)
+			{
+				PhotonNetwork.LoadLevel((int)obj);
+			}
+		}
+		else if (obj is string && SceneManagerHelper.ActiveSceneName != (string)obj)
+		{
+			PhotonNetwork.LoadLevel((string)obj);
+		}
+	}
 
-	// Token: 0x0400149F RID: 5279
-	public Dictionary<string, RoomInfo> mGameList = new Dictionary<string, RoomInfo>();
-
-	// Token: 0x040014A0 RID: 5280
-	public RoomInfo[] mGameListCopy = new RoomInfo[0];
-
-	// Token: 0x040014A1 RID: 5281
-	private string OBCEIJGMKGB = string.Empty;
-
-	// Token: 0x040014A2 RID: 5282
-	private bool BOKEGDFHBAN;
-
-	// Token: 0x040014A3 RID: 5283
-	private Room NBCIDPIDCDP;
-
-	// Token: 0x040014A8 RID: 5288
-	private JoinType ELNKFMHCMBO;
-
-	// Token: 0x040014A9 RID: 5289
-	protected internal AKBOPCNHFFJ AJFMHFLGCFN;
-
-	// Token: 0x040014AA RID: 5290
-	private bool DMCPHGDNGDB;
-
-	// Token: 0x040014AB RID: 5291
-	private string[] BEIPFKHGHPC;
-
-	// Token: 0x040014AC RID: 5292
-	private int DJIOCIPPBMK;
-
-	// Token: 0x040014AD RID: 5293
-	private bool POHIMACBDGL;
-
-	// Token: 0x040014B0 RID: 5296
-	public Dictionary<int, PhotonPlayer> mActors = new Dictionary<int, PhotonPlayer>();
-
-	// Token: 0x040014B1 RID: 5297
-	public PhotonPlayer[] mOtherPlayerListCopy = new PhotonPlayer[0];
-
-	// Token: 0x040014B2 RID: 5298
-	public PhotonPlayer[] mPlayerListCopy = new PhotonPlayer[0];
-
-	// Token: 0x040014B3 RID: 5299
-	public bool hasSwitchedMC;
-
-	// Token: 0x040014B4 RID: 5300
-	private HashSet<byte> CHIJNBAJIHE = new HashSet<byte>();
-
-	// Token: 0x040014B5 RID: 5301
-	private HashSet<byte> FFBGBLFBHOK = new HashSet<byte>();
-
-	// Token: 0x040014B6 RID: 5302
-	protected internal Dictionary<int, PhotonView> HFCMPEKPBAM = new Dictionary<int, PhotonView>();
-
-	// Token: 0x040014B7 RID: 5303
-	private readonly PhotonStream CMABENLIOGI = new PhotonStream(false, null);
-
-	// Token: 0x040014B8 RID: 5304
-	private readonly PhotonStream ALPAEKHFHPP = new PhotonStream(true, null);
-
-	// Token: 0x040014B9 RID: 5305
-	private readonly Dictionary<int, ExitGames.Client.Photon.Hashtable> ECMNAOLPNBO = new Dictionary<int, ExitGames.Client.Photon.Hashtable>();
-
-	// Token: 0x040014BA RID: 5306
-	private readonly Dictionary<int, ExitGames.Client.Photon.Hashtable> ABIMEMLJLPA = new Dictionary<int, ExitGames.Client.Photon.Hashtable>();
-
-	// Token: 0x040014BB RID: 5307
-	protected internal short PKCNHOKCLJH;
-
-	// Token: 0x040014BC RID: 5308
-	protected internal bool HMIEGLIHGEM;
-
-	// Token: 0x040014BD RID: 5309
-	protected internal const string IDPJICOIFIH = "curScn";
-
-	// Token: 0x040014BE RID: 5310
-	public static bool UsePrefabCache = true;
-
-	// Token: 0x040014BF RID: 5311
-	internal IPunPrefabPool EGNHNBODKHP;
-
-	// Token: 0x040014C0 RID: 5312
-	public static Dictionary<string, GameObject> PrefabCache = new Dictionary<string, GameObject>();
-
-	// Token: 0x040014C1 RID: 5313
-	private Dictionary<Type, List<MethodInfo>> MNKFMEHFNKJ = new Dictionary<Type, List<MethodInfo>>();
-
-	// Token: 0x040014C2 RID: 5314
-	private readonly Dictionary<string, int> CPLBCMDIGNB;
-
-	// Token: 0x040014C3 RID: 5315
-	private static readonly string BJJEABNGKBF = PhotonNetworkingMessage.OnPhotonInstantiate.ToString();
-
-	// Token: 0x040014C4 RID: 5316
-	private string BLNBCGLIOHP;
-
-	// Token: 0x040014C5 RID: 5317
-	private string KAOMEDGGMEM;
-
-	// Token: 0x040014C6 RID: 5318
-	private ServerConnection PKNIJKPIKAF;
-
-	// Token: 0x040014C7 RID: 5319
-	private bool IDOAHFHJJJE;
-
-	// Token: 0x040014C8 RID: 5320
-	private Dictionary<int, object[]> IDIKEJLLFFP = new Dictionary<int, object[]>();
-
-	// Token: 0x040014C9 RID: 5321
-	public static int ObjectsInOneUpdate = 10;
-
-	// Token: 0x040014CA RID: 5322
-	private RaiseEventOptions PCFOAMAODBD = new RaiseEventOptions();
-
-	// Token: 0x040014CB RID: 5323
-	public const int SyncViewId = 0;
-
-	// Token: 0x040014CC RID: 5324
-	public const int SyncCompressed = 1;
-
-	// Token: 0x040014CD RID: 5325
-	public const int SyncNullValues = 2;
-
-	// Token: 0x040014CE RID: 5326
-	public const int SyncFirstValue = 3;
+	public void CleanRpcBufferIfMine(PhotonView DFIHBOEOJPI)
+	{
+		if (DFIHBOEOJPI.ownerId != LocalPlayer.ID && !LocalPlayer.IsMasterClient)
+		{
+			Debug.LogError(string.Concat("Cannot remove cached RPCs on a PhotonView thats not ours! ", DFIHBOEOJPI.owner, " scene: ", DFIHBOEOJPI.isSceneView));
+		}
+		else
+		{
+			OpCleanRpcBuffer(DFIHBOEOJPI);
+		}
+	}
 }

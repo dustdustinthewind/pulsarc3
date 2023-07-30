@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/Weather/Blizzard")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/Weather/Blizzard")]
 public class CameraFilterPack_Blizzard : MonoBehaviour
 {
 	public Shader SCShader;
@@ -60,12 +60,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1940f;
 			}
-			PDEAHJPOMEF().SetFloat("_RandomTexture", HBJJOCHGOPH);
-			PGPEMMBJOOG().SetFloat(" registered.", _Speed);
-			NBPKMLMCHFN.SetFloat("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.", _Size);
-			PDEAHJPOMEF().SetFloat("_Value", _Fade);
-			FEAEGGCNIAA().SetTexture("JoinButton", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			LNLKMDPHDCC().SetFloat("_Axis", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("Vertical", _Speed);
+			PGPEMMBJOOG().SetFloat("Avoid using this directly. Thanks.", _Size);
+			NFMGLIKNOOC().SetFloat("_Value", _Fade);
+			LNLKMDPHDCC().SetTexture("JoinButton", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -87,8 +87,8 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 
 	private void KCCIEMBMOBA()
 	{
-		FPHEBLMINDA = Resources.Load("Not sending leave operation. State is not 'Joined': ") as Texture2D;
-		SCShader = Shader.Find("sprite");
+		FPHEBLMINDA = Resources.Load(".") as Texture2D;
+		SCShader = Shader.Find("1");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -134,8 +134,8 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 
 	private void NBGIMIDICKE()
 	{
-		FPHEBLMINDA = Resources.Load("Submit") as Texture2D;
-		SCShader = Shader.Find("_GrainTex");
+		FPHEBLMINDA = Resources.Load(",") as Texture2D;
+		SCShader = Shader.Find("_MainTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -151,12 +151,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1295f;
 			}
-			GKILCDHJFEG().SetFloat(" PhotonView: ", HBJJOCHGOPH);
-			LONNIJMNKFB().SetFloat("HPToggle", _Speed);
-			MMOODGIODPC().SetFloat("The other scroll rect doesnt support scrolling vertically", _Size);
-			LONNIJMNKFB().SetFloat("Set Sun Colors", _Fade);
-			LONNIJMNKFB().SetTexture("#failed", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			LNLKMDPHDCC().SetFloat("OnAwakeRPC", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("menu.enableselectormusic", _Speed);
+			PGPEMMBJOOG().SetFloat("You have added the SecondScrollRect to a scroll view that already has both directions selected", _Size);
+			NFMGLIKNOOC().SetFloat("Set Sun Colors", _Fade);
+			NBPKMLMCHFN.SetTexture("\"", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PDEAHJPOMEF());
 		}
 		else
 		{
@@ -206,12 +206,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 206f;
 			}
-			ACHNOHCLGOO().SetFloat("_Value", HBJJOCHGOPH);
-			LONNIJMNKFB().SetFloat("_Near", _Speed);
-			KGOLDDBHIFN().SetFloat(",", _Size);
-			FEAEGGCNIAA().SetFloat("Set Background Color", _Fade);
-			KGOLDDBHIFN().SetTexture("Trackpad", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
+			LNLKMDPHDCC().SetFloat("_TimeX", HBJJOCHGOPH);
+			FHFLKLMFHOI().SetFloat("_Near", _Speed);
+			NFMGLIKNOOC().SetFloat(",", _Size);
+			LNLKMDPHDCC().SetFloat("SetBGColor", _Fade);
+			IGIAPKPKGPK().SetTexture("JoystickButton13", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -226,7 +226,7 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 	private void FHGKIOOMMOH()
 	{
 		FPHEBLMINDA = Resources.Load("restrictions\n\n#until: ") as Texture2D;
-		SCShader = Shader.Find("[#clicktogetreward]");
+		SCShader = Shader.Find("BlockCount");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -288,12 +288,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 62f;
 			}
-			PDEAHJPOMEF().SetFloat("menu.enableselectormusic", HBJJOCHGOPH);
-			FHFLKLMFHOI().SetFloat("_Params", _Speed);
-			MMOODGIODPC().SetFloat("AvatarImage", _Size);
-			LNLKMDPHDCC().SetFloat("CameraFilterPack/Blend2Camera_HardLight", _Fade);
-			EFDEIFCDAFG().SetTexture("cipherText", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			KGOLDDBHIFN().SetFloat("SingleplayerButton", HBJJOCHGOPH);
+			GKILCDHJFEG().SetFloat("_FarCorner", _Speed);
+			IGIAPKPKGPK().SetFloat("AvatarImage", _Size);
+			LNLKMDPHDCC().SetFloat("_Value7", _Fade);
+			PDEAHJPOMEF().SetTexture("plainText", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GKILCDHJFEG());
 		}
 		else
 		{
@@ -314,8 +314,8 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 
 	private void NCNPAKFAFOE()
 	{
-		FPHEBLMINDA = Resources.Load("menu.selectedplaymode") as Texture2D;
-		SCShader = Shader.Find("request");
+		FPHEBLMINDA = Resources.Load("menu.hardcoreinfo") as Texture2D;
+		SCShader = Shader.Find("IntraSig");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -335,12 +335,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 658f;
 			}
-			FEAEGGCNIAA().SetFloat("_Green_G", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("_Visualize", _Speed);
-			LNLKMDPHDCC().SetFloat("_Distance", _Size);
-			GKILCDHJFEG().SetFloat("menu.tabid", _Fade);
-			EFDEIFCDAFG().SetTexture("_SecondTex", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IGIAPKPKGPK());
+			NFMGLIKNOOC().SetFloat("_Green_R", HBJJOCHGOPH);
+			FHFLKLMFHOI().SetFloat("Lightning", _Speed);
+			GKILCDHJFEG().SetFloat("_Distance", _Size);
+			ACHNOHCLGOO().SetFloat("menu.tabid", _Fade);
+			NBPKMLMCHFN.SetTexture("_BlurCoe", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
 		}
 		else
 		{
@@ -400,8 +400,8 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 
 	private void KDMKDEKCELE()
 	{
-		FPHEBLMINDA = Resources.Load("mapselector.filter.subscribedonly") as Texture2D;
-		SCShader = Shader.Find("\nCreated by Oxy949");
+		FPHEBLMINDA = Resources.Load("mapselector.filter.favoriteonly") as Texture2D;
+		SCShader = Shader.Find("/files/editor_manual.pdf");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -417,12 +417,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 262f;
 			}
-			LNLKMDPHDCC().SetFloat("Items/", HBJJOCHGOPH);
-			EFDEIFCDAFG().SetFloat("_MainTex", _Speed);
-			IGIAPKPKGPK().SetFloat("#mapalreadyexistupdate", _Size);
-			GKILCDHJFEG().SetFloat("[Up-Right]", _Fade);
-			LNLKMDPHDCC().SetTexture("[", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
+			FHFLKLMFHOI().SetFloat("Items/", HBJJOCHGOPH);
+			FHFLKLMFHOI().SetFloat("_SecondTex", _Speed);
+			KGOLDDBHIFN().SetFloat("#no", _Size);
+			PGPEMMBJOOG().SetFloat("[Up-Right]", _Fade);
+			ACHNOHCLGOO().SetTexture("settings.enablehitsoundsinrelax", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{
@@ -450,12 +450,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1402f;
 			}
-			ACHNOHCLGOO().SetFloat("PunRespawn with Position.", HBJJOCHGOPH);
-			LONNIJMNKFB().SetFloat("_ScreenResolution", _Speed);
-			PGPEMMBJOOG().SetFloat("_DiffuseColor", _Size);
-			ACHNOHCLGOO().SetFloat("Error in Instantiation! The resource's PhotonView count is not the same as in incoming data.", _Fade);
-			EFDEIFCDAFG().SetTexture("Is it practically possible?", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			PGPEMMBJOOG().SetFloat("OnPickedUp", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("ZoomSpeed", _Speed);
+			FHFLKLMFHOI().SetFloat("_DiffuseColor", _Size);
+			LONNIJMNKFB().SetFloat("PhotonNetwork error: Could not Instantiate the prefab [", _Fade);
+			NFMGLIKNOOC().SetTexture("Needs to be attached to the Event System component in the scene", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFMGLIKNOOC());
 		}
 		else
 		{
@@ -487,8 +487,8 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 
 	private void BMIOFJFMCBG()
 	{
-		FPHEBLMINDA = Resources.Load("false") as Texture2D;
-		SCShader = Shader.Find("OnDeserialize");
+		FPHEBLMINDA = Resources.Load("f") as Texture2D;
+		SCShader = Shader.Find("saveGameName ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -532,12 +532,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 400f;
 			}
-			LONNIJMNKFB().SetFloat("_MatrixSize", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("th", _Speed);
-			LONNIJMNKFB().SetFloat("y", _Size);
-			NFMGLIKNOOC().SetFloat("float,10", _Fade);
-			FEAEGGCNIAA().SetTexture("_Value", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			NBPKMLMCHFN.SetFloat("_MatrixSize", HBJJOCHGOPH);
+			LNLKMDPHDCC().SetFloat("13", _Speed);
+			LONNIJMNKFB().SetFloat("a", _Size);
+			ACHNOHCLGOO().SetFloat("Lerp speed. Recomended 10", _Fade);
+			GKILCDHJFEG().SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PGPEMMBJOOG());
 		}
 		else
 		{
@@ -566,12 +566,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1119f;
 			}
-			EFDEIFCDAFG().SetFloat("MapConfig", HBJJOCHGOPH);
-			NFMGLIKNOOC().SetFloat("SaveButton", _Speed);
-			MMOODGIODPC().SetFloat("PublishButton", _Size);
-			PDEAHJPOMEF().SetFloat("PS Home", _Fade);
-			KGOLDDBHIFN().SetTexture("ArcsDestroyDelaySlider", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
+			FHFLKLMFHOI().SetFloat("Editor", HBJJOCHGOPH);
+			PDEAHJPOMEF().SetFloat("ViewMenu", _Speed);
+			ACHNOHCLGOO().SetFloat("PublishButton", _Size);
+			LNLKMDPHDCC().SetFloat("Right Stick Click", _Fade);
+			GKILCDHJFEG().SetTexture("ArcsDestroyDelaySlider", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FEAEGGCNIAA());
 		}
 		else
 		{
@@ -606,12 +606,12 @@ public class CameraFilterPack_Blizzard : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1872f;
 			}
-			LNLKMDPHDCC().SetFloat("_Value2", HBJJOCHGOPH);
-			LNLKMDPHDCC().SetFloat("_AdaptationSpeed", _Speed);
-			GKILCDHJFEG().SetFloat("Set Satellite Radius", _Size);
-			PDEAHJPOMEF().SetFloat("_Value", _Fade);
-			MMOODGIODPC().SetTexture("_Value2", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
+			NFMGLIKNOOC().SetFloat("_Value", HBJJOCHGOPH);
+			FHFLKLMFHOI().SetFloat("Hidden/TonemappingColorGrading", _Speed);
+			LNLKMDPHDCC().SetFloat("SetSatelliteRadius", _Size);
+			IGIAPKPKGPK().SetFloat("_TimeX", _Fade);
+			GKILCDHJFEG().SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LNLKMDPHDCC());
 		}
 		else
 		{

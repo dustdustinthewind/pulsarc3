@@ -23,67 +23,78 @@ public class GameState
 		}
 	}
 
-	public void KHJGDOEDODJ(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public void IJJLEONOJFC(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public int KLEPLFNCJBB(string HFEFHOPOLIK)
+	public int NBBIIEGKMIN(string HFEFHOPOLIK)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
 			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
 		}
-		return 0;
+		return 1;
 	}
 
 	[SpecialName]
-	public void MIHJACPDMBN(int DPNHODJHGJL)
+	public void DKHOGIHMMFE(int DPNHODJHGJL)
 	{
 		FFPBGKFKENP = DPNHODJHGJL;
 	}
 
-	[SpecialName]
-	public void OMPFFHOCPOA(int DPNHODJHGJL)
+	public bool CONLNEPIOHM(string HONJLFPGFON)
 	{
-		FFPBGKFKENP = DPNHODJHGJL;
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+	}
+
+	public bool JGJDPHFPDIB(string HONJLFPGFON)
+	{
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
 	}
 
 	[SpecialName]
-	public int GNAMJJFBIIH()
+	public int POMCHEPKFGE()
 	{
 		return FFPBGKFKENP;
 	}
 
-	public void IFNMCNLEJPA(string HFEFHOPOLIK, int DPNHODJHGJL)
+	[SpecialName]
+	public int DCKBPLMPNEM()
+	{
+		return FFPBGKFKENP;
+	}
+
+	[SpecialName]
+	public void KLKLLGLFHMF(int DPNHODJHGJL)
+	{
+		FFPBGKFKENP = DPNHODJHGJL;
+	}
+
+	public bool DLFHDEDBGNE(string HONJLFPGFON)
+	{
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+	}
+
+	public int FHKGANLOPFM(string HFEFHOPOLIK)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
 		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
+		return 1;
+	}
+
+	[SpecialName]
+	public void MALLDCHEEOP(int DPNHODJHGJL)
+	{
+		FFPBGKFKENP = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int KOMMOKMGOHP()
+	{
+		return FFPBGKFKENP;
+	}
+
+	public bool IKINDDJJDCL(string HONJLFPGFON)
+	{
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
 	}
 
 	public void MGOLCKBNLMN(string HONJLFPGFON, bool GMIGAABPDHM)
@@ -102,17 +113,99 @@ public class GameState
 	}
 
 	[SpecialName]
-	public void NHKBECAGNMF(int DPNHODJHGJL)
+	public int OGMIOPLHHFI()
+	{
+		return FFPBGKFKENP;
+	}
+
+	public int OIDNOJOOAAH(string HFEFHOPOLIK)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
+		}
+		return 0;
+	}
+
+	public void EOOGJCFILBH(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		else
+		{
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+	}
+
+	public void SetInt(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		else
+		{
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+	}
+
+	[SpecialName]
+	public void OALDBDDKHIG(int DPNHODJHGJL)
 	{
 		FFPBGKFKENP = DPNHODJHGJL;
 	}
 
-	public bool IINJNLILBNH(string HONJLFPGFON)
+	[SpecialName]
+	public void NLJHNBPIOBM(int DPNHODJHGJL)
 	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+		FFPBGKFKENP = DPNHODJHGJL;
 	}
 
-	public int GJHGEODJOMC(string HFEFHOPOLIK)
+	public void AOCPPOKPMNO(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		else
+		{
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+	}
+
+	public int DHFKBDAFEFF(string HFEFHOPOLIK)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
+		}
+		return 0;
+	}
+
+	public void KAEPEHLANFO(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		else
+		{
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+	}
+
+	public int DNFMJNNMNPE(string HFEFHOPOLIK)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
+		}
+		return 1;
+	}
+
+	public int KOKJPDNJCAA(string HFEFHOPOLIK)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
@@ -122,7 +215,13 @@ public class GameState
 	}
 
 	[SpecialName]
-	public void OAAADLHEAPB(int DPNHODJHGJL)
+	public void AODBMLEILFE(int DPNHODJHGJL)
+	{
+		FFPBGKFKENP = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void NMGIAMIBCFM(int DPNHODJHGJL)
 	{
 		FFPBGKFKENP = DPNHODJHGJL;
 	}
@@ -142,167 +241,7 @@ public class GameState
 		}
 	}
 
-	public bool ELKKBLKBNCK(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void HHDPOFMAJIJ(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public void OKDLCHPEFAJ(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public bool DANKEDNMADL(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	[SpecialName]
-	public int FFJCLMOEGJP()
-	{
-		return FFPBGKFKENP;
-	}
-
-	[SpecialName]
-	public int OCNOMPJFPDH()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public void PNBKMOKMGCA(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	[SpecialName]
-	public void NLJHNBPIOBM(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public void ILEFCAOODPD(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	[SpecialName]
-	public int PIEMAFNAIFJ()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public void CDJGEAAHDCO(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public void PLKCIHMOEDF(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	[SpecialName]
-	public void MOMKPOKGKGG(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public void SetInt(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public int PABBPEFFKIF(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 0;
-	}
-
-	public int EPIDPKPODKM(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public int OJNFPHLBFIK(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	[SpecialName]
-	public void BJIMJIHHAAO(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public void GMOCCPMECNA(string HONJLFPGFON, bool GMIGAABPDHM)
+	public void BCMMKLKAGLO(string HONJLFPGFON, bool GMIGAABPDHM)
 	{
 		if (GMIGAABPDHM)
 		{
@@ -317,7 +256,13 @@ public class GameState
 		}
 	}
 
-	public void FOHCCLDFIPI(string HONJLFPGFON, bool GMIGAABPDHM)
+	[SpecialName]
+	public void EHOCIKECPKC(int DPNHODJHGJL)
+	{
+		FFPBGKFKENP = DPNHODJHGJL;
+	}
+
+	public void KIAELEGLEKF(string HONJLFPGFON, bool GMIGAABPDHM)
 	{
 		if (GMIGAABPDHM)
 		{
@@ -332,10 +277,19 @@ public class GameState
 		}
 	}
 
-	[SpecialName]
-	public int ACFEFOIGPGH()
+	public void ONBLOOKJGJK(string HONJLFPGFON, bool GMIGAABPDHM)
 	{
-		return FFPBGKFKENP;
+		if (GMIGAABPDHM)
+		{
+			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
+			{
+				NOJGGCLPPAM.Add(HONJLFPGFON, false);
+			}
+		}
+		else
+		{
+			NOJGGCLPPAM.Remove(HONJLFPGFON);
+		}
 	}
 
 	public int GetInt(string HFEFHOPOLIK)
@@ -347,57 +301,13 @@ public class GameState
 		return 0;
 	}
 
-	public void AIEGEOFOMAK(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public void ONBLOOKJGJK(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public void GBFBKFACPBI(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
 	[SpecialName]
-	public void EEDFEGBFNEE(int DPNHODJHGJL)
+	public void NLKCAHJEIEI(int DPNHODJHGJL)
 	{
 		FFPBGKFKENP = DPNHODJHGJL;
 	}
 
-	public bool JGJDPHFPDIB(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void IHCHOMIEIMA(string HFEFHOPOLIK, int DPNHODJHGJL)
+	public void PKOHFBFMGMG(string HFEFHOPOLIK, int DPNHODJHGJL)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
@@ -409,13 +319,21 @@ public class GameState
 		}
 	}
 
-	[SpecialName]
-	public int JPLMMEMJDFL()
+	public int PPBFNLHCKCP(string HFEFHOPOLIK)
 	{
-		return FFPBGKFKENP;
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
+		}
+		return 0;
 	}
 
-	public int HHEOBAMLBKO(string HFEFHOPOLIK)
+	public bool FKPEHCOFHAG(string HONJLFPGFON)
+	{
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+	}
+
+	public int POJCOIEGLEF(string HFEFHOPOLIK)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
@@ -424,7 +342,22 @@ public class GameState
 		return 1;
 	}
 
-	public void KAGHFDBFEID(string HFEFHOPOLIK, int DPNHODJHGJL)
+	public int NDGODCIFBOB(string HFEFHOPOLIK)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
+		}
+		return 0;
+	}
+
+	[SpecialName]
+	public int ILCPIPONFDH()
+	{
+		return FFPBGKFKENP;
+	}
+
+	public void GEHIMCGECFN(string HFEFHOPOLIK, int DPNHODJHGJL)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
@@ -437,23 +370,97 @@ public class GameState
 	}
 
 	[SpecialName]
-	public int ADFMPHGIJIB()
+	public int GNAMJJFBIIH()
 	{
 		return FFPBGKFKENP;
 	}
 
-	public void NIHEAIFNFGK(string HONJLFPGFON, bool GMIGAABPDHM)
+	public bool HJDIMDJFOKI(string HONJLFPGFON)
 	{
-		if (GMIGAABPDHM)
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+	}
+
+	public int JNOCPBPGPEM(string HFEFHOPOLIK)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
+		}
+		return 1;
+	}
+
+	public int ENGNFCEFFNM(string HFEFHOPOLIK)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
+		}
+		return 1;
+	}
+
+	[SpecialName]
+	public void ELCHAOMJGPI(int DPNHODJHGJL)
+	{
+		FFPBGKFKENP = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void BIKONAEDNPE(int DPNHODJHGJL)
+	{
+		FFPBGKFKENP = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public void MIBBLKCHNNJ(int DPNHODJHGJL)
+	{
+		FFPBGKFKENP = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public int EFOHNEPOMOE()
+	{
+		return FFPBGKFKENP;
+	}
+
+	[MoonSharpHidden]
+	public GameState()
+	{
+		NOJGGCLPPAM = new Dictionary<string, object>();
+	}
+
+	public void OABLIAPCACF(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
 		}
 		else
 		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+	}
+
+	public void PFJIJPFCOAG(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		else
+		{
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+	}
+
+	public void IGCDDDAPKDM(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		else
+		{
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
 		}
 	}
 
@@ -473,260 +480,12 @@ public class GameState
 	}
 
 	[SpecialName]
-	public void GMNIMJALECK(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public void JCNPPGPPEHF(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	[SpecialName]
-	public int COLMMBOCJLJ()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public void LAJHLIANCJE(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public int KPCOPGALPAH(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 0;
-	}
-
-	public void CJKADOEEHCN(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public void BBABCIKOEMF(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	[SpecialName]
-	public int PMIPMLMPBOI()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public int JOFPMNKAJOD(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public bool EFDCJIJHPOO(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public bool HEMKFLEJGCC(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void OFBNABDMOFC(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public int LDHFNHNCGMM(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public void BCMMKLKAGLO(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public void IJFLFDFLCHP(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public int PKIEJKHMECB(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	[SpecialName]
 	public void OADEMMCFLKA(int DPNHODJHGJL)
 	{
 		FFPBGKFKENP = DPNHODJHGJL;
 	}
 
-	public int EGGJOJMNLBH(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public int AFCPNFKIKKJ(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public bool LNPDOIGOEIO(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void LNOFBDBGDOK(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	[SpecialName]
-	public int IKPMMJBEAHO()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public void KKLFJDENBPM(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public void JPALJEGCCHA(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	[SpecialName]
-	public int CDGFIFOHACK()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public bool PHPNPOGFJJJ(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void MFMOAHDMPDC(string HFEFHOPOLIK, int DPNHODJHGJL)
+	public void DNBMNDPOJMG(string HFEFHOPOLIK, int DPNHODJHGJL)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
@@ -738,37 +497,7 @@ public class GameState
 		}
 	}
 
-	public int POANCKAKLOH(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public void OCINFGEAKDI(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	[SpecialName]
-	public void ALLJLCGOGJH(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public void FNGAMGMAHFM(string HFEFHOPOLIK, int DPNHODJHGJL)
+	public void LHLPPPDBBFA(string HFEFHOPOLIK, int DPNHODJHGJL)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
@@ -781,9 +510,92 @@ public class GameState
 	}
 
 	[SpecialName]
-	public void JMJNKANMANK(int DPNHODJHGJL)
+	public int NFMGEBFBAPA()
 	{
-		FFPBGKFKENP = DPNHODJHGJL;
+		return FFPBGKFKENP;
+	}
+
+	public bool NKEAPCDGNDA(string HONJLFPGFON)
+	{
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+	}
+
+	public void CPBODMLEPDJ(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		else
+		{
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+	}
+
+	public bool ADCHDHONOKA(string HONJLFPGFON)
+	{
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+	}
+
+	public void CNHFMDKHHCJ(string HFEFHOPOLIK, int DPNHODJHGJL)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
+		}
+		else
+		{
+			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
+		}
+	}
+
+	public bool EKIJJKEIJPH(string HONJLFPGFON)
+	{
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+	}
+
+	public void ECLLFPOIKLL(string HONJLFPGFON, bool GMIGAABPDHM)
+	{
+		if (GMIGAABPDHM)
+		{
+			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
+			{
+				NOJGGCLPPAM.Add(HONJLFPGFON, true);
+			}
+		}
+		else
+		{
+			NOJGGCLPPAM.Remove(HONJLFPGFON);
+		}
+	}
+
+	public bool IEJJEBPBKEO(string HONJLFPGFON)
+	{
+		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
+	}
+
+	public int DPLJLKFHPOE(string HFEFHOPOLIK)
+	{
+		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
+		{
+			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
+		}
+		return 1;
+	}
+
+	public void EOCKCGBEOJK(string HONJLFPGFON, bool GMIGAABPDHM)
+	{
+		if (GMIGAABPDHM)
+		{
+			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
+			{
+				NOJGGCLPPAM.Add(HONJLFPGFON, false);
+			}
+		}
+		else
+		{
+			NOJGGCLPPAM.Remove(HONJLFPGFON);
+		}
 	}
 
 	public bool GetFlag(string HONJLFPGFON)
@@ -791,16 +603,7 @@ public class GameState
 		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
 	}
 
-	public int JBLBOBGALKH(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 0;
-	}
-
-	public void OFPCEFFGHPI(string HFEFHOPOLIK, int DPNHODJHGJL)
+	public void ONBDKFBNOLB(string HFEFHOPOLIK, int DPNHODJHGJL)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
@@ -812,37 +615,7 @@ public class GameState
 		}
 	}
 
-	[SpecialName]
-	public void LINOCPHKFOG(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void DKCBLLOBLAM(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int FMHHCMOODOF()
-	{
-		return FFPBGKFKENP;
-	}
-
-	[SpecialName]
-	public void KANLDPOJBHC(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void IKFLAMEGGKK(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public void HOJEBEFDKPD(string HFEFHOPOLIK, int DPNHODJHGJL)
+	public void OKOLFLLLJBK(string HFEFHOPOLIK, int DPNHODJHGJL)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
@@ -854,382 +627,12 @@ public class GameState
 		}
 	}
 
-	public void LFLJNBFMACE(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public bool KMBKOLIKBDL(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	[SpecialName]
-	public void GAMCBGMILFI(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public void AOCPPOKPMNO(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public bool HEBJGNKAKIL(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void IJLFDHOCKIN(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	[SpecialName]
-	public int MKKENABFELP()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public bool DBCNCFEBJBN(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void GAGPLKADFMJ(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	[SpecialName]
-	public void KPDOPNBDBLJ(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void IEOCONPDLLF(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public int ODIGHKEMLLM(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 0;
-	}
-
-	public int KECMHJIDDEI(string HFEFHOPOLIK)
+	public int EOAMAHAPCEL(string HFEFHOPOLIK)
 	{
 		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
 		{
 			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
 		}
 		return 1;
-	}
-
-	[SpecialName]
-	public void MNJBJNECLCK(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public int JNLHMOEFMML(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	[SpecialName]
-	public int ACHEAADDJOB()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public void FOJMLGFIPCB(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public bool CDIIDAAHHPA(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void NNNBGIJFHFH(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public void IFLMHHJKJMC(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	[SpecialName]
-	public int CDPFJGFPKCB()
-	{
-		return FFPBGKFKENP;
-	}
-
-	[MoonSharpHidden]
-	public GameState()
-	{
-		NOJGGCLPPAM = new Dictionary<string, object>();
-	}
-
-	[SpecialName]
-	public void EFHICFFMNGF(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public int DGPINJKDBGL()
-	{
-		return FFPBGKFKENP;
-	}
-
-	[SpecialName]
-	public void EHOCIKECPKC(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public int KPGAODLKMOP(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 0;
-	}
-
-	public bool IBPJPCDBAPP(string HONJLFPGFON)
-	{
-		return NOJGGCLPPAM.ContainsKey(HONJLFPGFON);
-	}
-
-	public void OLDPNKLFGKK(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, true);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public void GPPDNOGOEHC(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public int IGADJGDBHPO(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public int EDOOIBLEGEP(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public int LEOLIDKCBOG(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	public void FFKLBCLMLJM(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	[SpecialName]
-	public void HEKJPGGNHGI(int DPNHODJHGJL)
-	{
-		FFPBGKFKENP = DPNHODJHGJL;
-	}
-
-	public int NDGODCIFBOB(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 0;
-	}
-
-	public void GKPMKFLJEEH(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public void DCINDMCHGID(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
-	}
-
-	public int DFEBLDOCCAC(string HFEFHOPOLIK)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			return (int)NOJGGCLPPAM[HFEFHOPOLIK];
-		}
-		return 1;
-	}
-
-	[SpecialName]
-	public int PDDKGPCIDJA()
-	{
-		return FFPBGKFKENP;
-	}
-
-	public void DKPKHLKNOFN(string HFEFHOPOLIK, int DPNHODJHGJL)
-	{
-		if (NOJGGCLPPAM.ContainsKey(HFEFHOPOLIK))
-		{
-			NOJGGCLPPAM[HFEFHOPOLIK] = DPNHODJHGJL;
-		}
-		else
-		{
-			NOJGGCLPPAM.Add(HFEFHOPOLIK, DPNHODJHGJL);
-		}
-	}
-
-	public void CDPMHHLAPBB(string HONJLFPGFON, bool GMIGAABPDHM)
-	{
-		if (GMIGAABPDHM)
-		{
-			if (!NOJGGCLPPAM.ContainsKey(HONJLFPGFON))
-			{
-				NOJGGCLPPAM.Add(HONJLFPGFON, false);
-			}
-		}
-		else
-		{
-			NOJGGCLPPAM.Remove(HONJLFPGFON);
-		}
 	}
 }

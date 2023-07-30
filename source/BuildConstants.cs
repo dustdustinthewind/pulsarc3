@@ -32,9 +32,9 @@ public static class BuildConstants
 		None
 	}
 
-	public static readonly DateTime buildDate = new DateTime(637306159274859783L);
+	public static readonly DateTime buildDate = new DateTime(637172875801193637L);
 
-	public const string version = "5.5.2.5008";
+	public const string version = "5.5.0.3492";
 
 	public const ReleaseType releaseType = ReleaseType.Release;
 

@@ -12,514 +12,67 @@ public class FriendInfo
 	public bool IsInRoom => IsOnline && !string.IsNullOrEmpty(Room);
 
 	[SpecialName]
-	protected internal void KLPLAIJKLNB(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string MHDLJEPHOOL()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool HJMLMCJAKEP()
-	{
-		return MNDELAHCIGH() && string.IsNullOrEmpty(LNLMOFBNFIA());
-	}
-
-	[SpecialName]
-	public bool LKJGINOADCF()
-	{
-		return BBOLFNOHFAP() && !string.IsNullOrEmpty(CBHCBPMMMBI());
-	}
-
-	[SpecialName]
-	protected internal void CGPMMFBGOBE(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool IGBNPLMMJBK()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void GGLBIDDJICH(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string CBHCBPMMMBI()
+	public string CPCDPPIGAKJ()
 	{
 		return _003CONIAGJGNOJH_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public bool FMIICCKLBIP()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool BBOLFNOHFAP()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool BNGMAPFJBFC()
-	{
-		return FMIICCKLBIP() && !string.IsNullOrEmpty(ONDHOBHEKKL());
-	}
-
-	[SpecialName]
-	public string BPDEKAPOFDK()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string FOFOBAEFFIG()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void HABFAIANBJL(string DPNHODJHGJL)
+	protected internal void IBMOCONJBHL(string DPNHODJHGJL)
 	{
 		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public bool HIKEJGFCHJL()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool EPLPKMONKGJ()
-	{
-		return HIKEJGFCHJL() && string.IsNullOrEmpty(IFJIMKLBOAG());
-	}
-
-	public override string OFMLJFEGKLC()
-	{
-		return string.Format("SetEnvSpriteColor", MHDLJEPHOOL(), (!MNDELAHCIGH()) ? "maps." : ((!FFAABKOKFJO()) ? "_Lift" : ".g"));
-	}
-
-	[SpecialName]
-	public string MFGMEDGLCLD()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string MPCBDPHHBAL()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void GFEAJNPMNJA(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool GHOLCAKLLIG()
-	{
-		return IIJLBFGNIHF() && !string.IsNullOrEmpty(IHHIHGAFMEM());
-	}
-
-	[SpecialName]
-	public bool IIJLBFGNIHF()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void NLLCKMKLBAL(string DPNHODJHGJL)
+	protected internal void INJJPDBDAGE(string DPNHODJHGJL)
 	{
 		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	public override string CJPIOOPNMKH()
 	{
-		return string.Format("RespawnAfter", AAGICNEELCN(), (!MHCLAKPPPNN()) ? "_MainTex2" : ((!HKCIMEMKEBA()) ? "colorB" : "_TimeX"));
+		return string.Format("_Green_B", EJLJGMBEPHE(), (!NLONBIPHJHO()) ? "ConnectToMaster() failed. Can only connect while in state 'Disconnected'. Current state: " : ((!EPLPKMONKGJ()) ? "_TimeX" : "BitsData"));
 	}
 
 	[SpecialName]
-	public string AAMFLNGHIFB()
+	public bool PEOAHFKJKNJ()
 	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
+		return !IsOnline || !string.IsNullOrEmpty(AENCIAJDNCB());
 	}
 
 	[SpecialName]
-	public string AAGICNEELCN()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	public override string BFDPAGJIDAO()
-	{
-		return string.Format("/", HDODGKECAFP(), (!HIKEJGFCHJL()) ? "Aimer Input Module is incompatible with the StandAloneInputSystem, please remove it from the Event System in this scene or disable it when this module is in use" : ((!EPLPKMONKGJ()) ? "_Value2" : "Sent count: "));
-	}
-
-	[SpecialName]
-	public bool CHMILCJMFOL()
-	{
-		return FLPGFCBEDLH() && !string.IsNullOrEmpty(AAMFLNGHIFB());
-	}
-
-	[SpecialName]
-	protected internal void CCIDBNKIAJF(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void NCCPFOFOPEE(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool CEJKCGBBDCP()
-	{
-		return IIJLBFGNIHF() && string.IsNullOrEmpty(CBHCBPMMMBI());
-	}
-
-	[SpecialName]
-	protected internal void EMIMPGPBDDD(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void CFKIAACIFDJ(string DPNHODJHGJL)
+	protected internal void DMEAANBIKII(string DPNHODJHGJL)
 	{
 		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	protected internal void OFDFHAICIFB(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool CNEEKEGNHIK()
-	{
-		return !JNAJFMACOGJ() || !string.IsNullOrEmpty(BLKGKPNDBDL());
-	}
-
-	[SpecialName]
-	protected internal void KEACDHPPPPE(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void CDANICGAPNK(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string FBDJDJOIPKE()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	public override string NDHGLMMFIAP()
-	{
-		return string.Format("_AdaptTex", HDODGKECAFP(), (!BBOLFNOHFAP()) ? "_Value5" : ((!HOADIDIPPOB()) ? "_ScreenResolution" : "Updated!"));
-	}
-
-	[SpecialName]
-	public string LNLMOFBNFIA()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string BLKGKPNDBDL()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool HOADIDIPPOB()
-	{
-		return BBOLFNOHFAP() && string.IsNullOrEmpty(IFJIMKLBOAG());
-	}
-
-	[SpecialName]
-	protected internal void PCGCFHPAMMB(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void LABJBMDKMDK(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string KKLNEKKBBAA()
+	public string CGCGDHAGPCB()
 	{
 		return _003CJACAIPDALBC_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public string HFIJAGMJNBE()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool BPAAKHAPFGH()
-	{
-		return IGBNPLMMJBK() && !string.IsNullOrEmpty(LNLMOFBNFIA());
-	}
-
-	[SpecialName]
-	public bool OMGKFHPNLMO()
-	{
-		return !LGCMNEAHJMM() || !string.IsNullOrEmpty(BLKGKPNDBDL());
-	}
-
-	[SpecialName]
-	public bool HJDLDJFCMFO()
-	{
-		return MNDELAHCIGH() && !string.IsNullOrEmpty(AAMFLNGHIFB());
-	}
-
-	[SpecialName]
-	protected internal void NJINEDKMNPH(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void COEMMKKDIEN(string DPNHODJHGJL)
+	protected internal void JMIODLBELJH(string DPNHODJHGJL)
 	{
 		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	public bool KECAJOHNIKB()
-	{
-		return IIJLBFGNIHF() && string.IsNullOrEmpty(BPDEKAPOFDK());
-	}
-
-	[SpecialName]
-	public bool GFDHPLPDCEM()
+	public bool DMBFOAIEKJK()
 	{
 		return _003CCLBHIJDEKKK_003Ek__BackingField;
 	}
 
-	[SpecialName]
-	protected internal void IIHHKNAEJHE(string DPNHODJHGJL)
+	public override string AAPCGENPDKE()
 	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
+		return string.Format("CameraFilterPack/Blend2Camera_LinearLight", IMMMHNAELHH(), (!DMBFOAIEKJK()) ? "_TimeX" : ((!IsInRoom) ? "Failed to InstantiateSceneObject prefab: " : "RPC can't be sent to target PhotonPlayer being null! Did not send \""));
 	}
 
 	[SpecialName]
-	public string KGOMDCOINGP()
+	public bool PLCNPEFMFJO()
 	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void LOAHALDAADO(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool PNFELKDNFML()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	public override string ENEOGOGJDBP()
-	{
-		return string.Format("mainmenu", Name, (!JNAJFMACOGJ()) ? "x" : ((!BPAAKHAPFGH()) ? "Localization Servise\nWorking commands:\nset <language>\nlist\nkeys" : " cannot be used as a 3D LUT."));
-	}
-
-	[SpecialName]
-	public bool BCOOLCHCODM()
-	{
-		return !IIJLBFGNIHF() || !string.IsNullOrEmpty(MPCBDPHHBAL());
-	}
-
-	[SpecialName]
-	protected internal void INMNDCDFIKB(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public override string EGCPPOHMLNK()
-	{
-		return string.Format("_ExtraLight", Name, (!JNAJFMACOGJ()) ? "_TimeX" : ((!BNGMAPFJBFC()) ? "SetEnvSpriteColor" : "_ScreenResolution"));
-	}
-
-	[SpecialName]
-	protected internal void NBHGPKNCHCN(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool LBKFLGNCBIL()
-	{
-		return BBOLFNOHFAP() && !string.IsNullOrEmpty(MPCBDPHHBAL());
-	}
-
-	[SpecialName]
-	public bool OCGCGKIIJMP()
-	{
-		return MHCLAKPPPNN() && string.IsNullOrEmpty(LOIKJBGAELP());
-	}
-
-	[SpecialName]
-	protected internal void HOCMHFJFGBI(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string CANLMKJEKNK()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	public override string INLHLHDMHNK()
-	{
-		return string.Format("maps.", FOFOBAEFFIG(), (!BBOLFNOHFAP()) ? ".lastCheckpoint.powerupsScore" : ((!BPAAKHAPFGH()) ? "[MenuScene] Error: " : "[LevelEditorScene] Map submitted!"));
-	}
-
-	[SpecialName]
-	public bool MNIIJJPKEJI()
-	{
-		return !PNFELKDNFML() || !string.IsNullOrEmpty(LOIKJBGAELP());
-	}
-
-	[SpecialName]
-	protected internal void FGMJDNNLIOP(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void GNMHPHAKMHL(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public override string CFBMAFAHNAH()
-	{
-		return string.Format("BestScoreText", KKLNEKKBBAA(), (!IIJLBFGNIHF()) ? "value" : ((!HJMLMCJAKEP()) ? "DPADHOR" : "_BlurRadius4"));
-	}
-
-	public override string DHPDGMDACIO()
-	{
-		return string.Format("_BokehParams", KKLNEKKBBAA(), (!GFDHPLPDCEM()) ? "id" : ((!LBKFLGNCBIL()) ? "_Value3" : ".lastCheckpoint.penaltyScore"));
-	}
-
-	[SpecialName]
-	protected internal void PPMAEACLMJD(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void NDOMFJBIAIP(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool HICNFMKCIAE()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool MNDELAHCIGH()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void HMOPLPINOEE(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string IFJIMKLBOAG()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string KBGIGDNIHFN()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	public override string AJLLINNGAHF()
-	{
-		return string.Format("masterSteamID", KGOMDCOINGP(), (!BBOLFNOHFAP()) ? "CameraFilterPack/AAA_Blood" : ((!BCOOLCHCODM()) ? "InventoryButton" : "mapselector.filter.rateduponly"));
-	}
-
-	[SpecialName]
-	protected internal void OEIIPLGFFPJ(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void EDFLKGFHKAL(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public override string PBOFHGKLJEJ()
-	{
-		return string.Format("itemdefid[0]", MHDLJEPHOOL(), (!EGCDPLGNMPD()) ? "SetSpeed" : ((!HOADIDIPPOB()) ? "settings.enableranking" : "#tryagain"));
-	}
-
-	[SpecialName]
-	public string CGPHGEJJENL()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void AGBOIEJCFGO(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool LJDEAFJCJDA()
-	{
-		return !EGCDPLGNMPD() || string.IsNullOrEmpty(CBHCBPMMMBI());
-	}
-
-	[SpecialName]
-	protected internal void IDDALFMFGAP(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
+		return PMCGFJNFKHN() && !string.IsNullOrEmpty(AENCIAJDNCB());
 	}
 
 	[SpecialName]
@@ -529,144 +82,76 @@ public class FriendInfo
 	}
 
 	[SpecialName]
-	protected internal void BHFPBHEJJFE(string DPNHODJHGJL)
+	protected internal void BGPHEPANFOH(string DPNHODJHGJL)
+	{
+		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	public override string GIPLBIGCGOH()
+	{
+		return string.Format("OK", PONIDDEBIJP(), (!BMDHOKFFFHE()) ? "Folk" : ((!IELFIOGHEFF()) ? "maps." : "OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one. Calling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);"));
+	}
+
+	[SpecialName]
+	public bool CEJKCGBBDCP()
+	{
+		return !NLONBIPHJHO() || string.IsNullOrEmpty(AENCIAJDNCB());
+	}
+
+	public override string OGCLCOMELLF()
+	{
+		return string.Format("CameraFilterPack/FX_Drunk2", PJBGKFKKEBP(), (!IsOnline) ? "score" : ((!MNIIJJPKEJI()) ? "mapselector.filter.rateduponly" : "Bad modpack name: {0}"));
+	}
+
+	public override string FJGCOIMIOBF()
+	{
+		return string.Format("_ScreenResolution", NBNOGBKNAIN(), (!JOMLCLIDGFD()) ? "JoinOrCreateRoom failed. A roomname is required. If you don't know one, how will you join?" : ((!HOMMBNPKAFG()) ? "ScrollPanel" : "_MainTex2"));
+	}
+
+	[SpecialName]
+	public bool NLONBIPHJHO()
+	{
+		return _003CCLBHIJDEKKK_003Ek__BackingField;
+	}
+
+	public override string DFHENJBDNGM()
+	{
+		return string.Format("_ScreenResolution", BILEOFIMBAL(), (!NLONBIPHJHO()) ? "_Value4" : ((!KKPLOPMIMLB()) ? "[MenuScene] Error: " : "Metal"));
+	}
+
+	[SpecialName]
+	public bool PBLGDHCEMDE()
+	{
+		return BMDHOKFFFHE() && !string.IsNullOrEmpty(AENCIAJDNCB());
+	}
+
+	[SpecialName]
+	protected internal void NFCGABGELPM(string DPNHODJHGJL)
 	{
 		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
-	protected internal void ODGFKLJGCMO(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string GLHFIJLHEFI()
+	public string KCBCOBFKEMO()
 	{
 		return _003CONIAGJGNOJH_003Ek__BackingField;
 	}
 
-	[SpecialName]
-	protected internal void NEBIPAIDEPL(string DPNHODJHGJL)
+	public override string FJLMNBMCBIP()
 	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
+		return string.Format("settings.shaders", MFGMEDGLCLD(), (!IsOnline) ? "My New Mod Pack" : ((!DGNFMAPDHBK()) ? "_MainTex2" : "_OcclusionBlurTexture"));
 	}
 
 	[SpecialName]
-	protected internal void CJFPOLDHDBA(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool FFAABKOKFJO()
-	{
-		return !BBOLFNOHFAP() || string.IsNullOrEmpty(FBDJDJOIPKE());
-	}
-
-	[SpecialName]
-	public bool EHKPPILFGEP()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void JEAEIEJGEEG(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public override string ToString()
-	{
-		return string.Format("{0}\t is: {1}", Name, (!IsOnline) ? "offline" : ((!IsInRoom) ? "on master" : "playing"));
-	}
-
-	[SpecialName]
-	protected internal void KFPLAFMHHGG(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool KCLEJMKKLMC()
-	{
-		return JNAJFMACOGJ() && !string.IsNullOrEmpty(ONDHOBHEKKL());
-	}
-
-	[SpecialName]
-	protected internal void GDELAAGINMC(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool MJDLOIIDJCN()
-	{
-		return !IIJLBFGNIHF() || !string.IsNullOrEmpty(LOIKJBGAELP());
-	}
-
-	[SpecialName]
-	public bool LGCMNEAHJMM()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	public override string HHGDIJKEPMJ()
-	{
-		return string.Format("_Value", HFIJAGMJNBE(), (!FMIICCKLBIP()) ? "skin.hit_normal" : ((!MJDLOIIDJCN()) ? "SpeedSlider" : "_Value5"));
-	}
-
-	[SpecialName]
-	public string HDODGKECAFP()
+	public string PJBGKFKKEBP()
 	{
 		return _003CJACAIPDALBC_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public bool EGCDPLGNMPD()
+	protected internal void DAHBNLAPNKC(string DPNHODJHGJL)
 	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void JCGINDGJKDH(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public override string OEOLHIGBECD()
-	{
-		return string.Format("Set Player Distance", KKLNEKKBBAA(), (!FLPGFCBEDLH()) ? "InfoButton" : ((!HOMMBNPKAFG()) ? "player.xp" : "Version 1.0"));
-	}
-
-	[SpecialName]
-	public string IHHIHGAFMEM()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool ALLPEILHDNE()
-	{
-		return !HIKEJGFCHJL() || string.IsNullOrEmpty(Room);
-	}
-
-	[SpecialName]
-	protected internal void IFHEMHGGLAL(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void BFPBGMKHDNJ(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string HGOFHHPIBIH()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
+		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
 	}
 
 	[SpecialName]
@@ -676,172 +161,250 @@ public class FriendInfo
 	}
 
 	[SpecialName]
-	public string MNDIKKMONCE()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool FLPGFCBEDLH()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void NMEGMFJGGGC(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void KGMAEIOGAMK(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public override string HCPGNPLIJHH()
-	{
-		return string.Format("_TimeX", KGOMDCOINGP(), (!HICNFMKCIAE()) ? "_SoftZDistance" : ((!ALLPEILHDNE()) ? "_DepthLevel" : "[PlayerController] "));
-	}
-
-	[SpecialName]
-	public bool HKCIMEMKEBA()
-	{
-		return !MNDELAHCIGH() || !string.IsNullOrEmpty(AAMFLNGHIFB());
-	}
-
-	[SpecialName]
-	public bool EEMPAPOFHLM()
-	{
-		return FLPGFCBEDLH() && string.IsNullOrEmpty(IHHIHGAFMEM());
-	}
-
-	[SpecialName]
-	public bool MMMFOAACLIP()
-	{
-		return !FMIICCKLBIP() || !string.IsNullOrEmpty(Room);
-	}
-
-	public override string CFALDCPGMCA()
-	{
-		return string.Format(".sawoutdatedmessage", HGOFHHPIBIH(), (!IGBNPLMMJBK()) ? "[Up]" : ((!HOADIDIPPOB()) ? "Load Game" : " | Level: "));
-	}
-
-	[SpecialName]
-	protected internal void OKDKADAABLC(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void PDKCONLPMAH(string DPNHODJHGJL)
-	{
-		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool KKKCFBPCKOD()
-	{
-		return JNAJFMACOGJ() && string.IsNullOrEmpty(LOIKJBGAELP());
-	}
-
-	[SpecialName]
-	protected internal void HJMLAOEOOGC(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool HOMMBNPKAFG()
-	{
-		return EGCDPLGNMPD() && string.IsNullOrEmpty(Room);
-	}
-
-	[SpecialName]
-	public string IPLIAOGLNEL()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public string LOIKJBGAELP()
-	{
-		return _003CONIAGJGNOJH_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool MHCLAKPPPNN()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void NEOKJGJJMOB(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public string NJMAIKAOLOI()
-	{
-		return _003CJACAIPDALBC_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	public bool JNAJFMACOGJ()
-	{
-		return _003CCLBHIJDEKKK_003Ek__BackingField;
-	}
-
-	[SpecialName]
-	protected internal void LPHFBDMMCFL(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public override string GKEABMIBAEH()
-	{
-		return string.Format("</size>", HDODGKECAFP(), (!HIKEJGFCHJL()) ? "_MaxRayTraceDistance" : ((!FFAABKOKFJO()) ? "steamid" : "[Up-Left]"));
-	}
-
-	[SpecialName]
-	protected internal void OEFEJBKOOOJ(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void IHBCDLLAIDO(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	protected internal void MCINKJKFFHB(string DPNHODJHGJL)
-	{
-		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public override string AJMMDCEJHGN()
-	{
-		return string.Format("http://steamcommunity.com/sharedfiles/filedetails/?id=", IMMMHNAELHH(), (!IsOnline) ? "CameraFilterPack/3D_BlackHole" : ((!LJDEAFJCJDA()) ? "[DiscordController] Responding yes to Ask to Join request" : " or "));
-	}
-
-	[SpecialName]
-	protected internal void MADNADHPJCL(bool DPNHODJHGJL)
-	{
-		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
 	public string IMMMHNAELHH()
 	{
 		return _003CJACAIPDALBC_003Ek__BackingField;
 	}
 
 	[SpecialName]
-	public string ONDHOBHEKKL()
+	protected internal void KCGKFHLCLLP(string DPNHODJHGJL)
+	{
+		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string NBNOGBKNAIN()
+	{
+		return _003CJACAIPDALBC_003Ek__BackingField;
+	}
+
+	public override string ToString()
+	{
+		return string.Format("{0}\t is: {1}", Name, (!IsOnline) ? "offline" : ((!IsInRoom) ? "on master" : "playing"));
+	}
+
+	[SpecialName]
+	public bool AAGEKOPGGDN()
+	{
+		return JOMLCLIDGFD() && string.IsNullOrEmpty(CPCDPPIGAKJ());
+	}
+
+	[SpecialName]
+	public bool BHCBLOJCCPO()
+	{
+		return !IsOnline || !string.IsNullOrEmpty(HCNHMBKKLBJ());
+	}
+
+	[SpecialName]
+	protected internal void ODFNBNEINKK(bool DPNHODJHGJL)
+	{
+		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	protected internal void DHCJPFJOMLF(bool DPNHODJHGJL)
+	{
+		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool DGNFMAPDHBK()
+	{
+		return PMCGFJNFKHN() && string.IsNullOrEmpty(CPCDPPIGAKJ());
+	}
+
+	[SpecialName]
+	protected internal void ICEFGGMFNLP(string DPNHODJHGJL)
+	{
+		_003CONIAGJGNOJH_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	protected internal void LFCGNKJCFJE(bool DPNHODJHGJL)
+	{
+		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool IELFIOGHEFF()
+	{
+		return NLONBIPHJHO() && !string.IsNullOrEmpty(CPCDPPIGAKJ());
+	}
+
+	[SpecialName]
+	protected internal void EHBNIKKINLM(string DPNHODJHGJL)
+	{
+		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	protected internal void DNCMNOGAKOE(bool DPNHODJHGJL)
+	{
+		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool GDPDLHAAGFH()
+	{
+		return !PMCGFJNFKHN() || string.IsNullOrEmpty(AENCIAJDNCB());
+	}
+
+	[SpecialName]
+	public string CICCAOLHDLI()
+	{
+		return _003CJACAIPDALBC_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string EJLJGMBEPHE()
+	{
+		return _003CJACAIPDALBC_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	protected internal void CMEDPMEPLIO(bool DPNHODJHGJL)
+	{
+		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	protected internal void DEFPLALCILM(bool DPNHODJHGJL)
+	{
+		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool MNIIJJPKEJI()
+	{
+		return NLONBIPHJHO() && string.IsNullOrEmpty(CPCDPPIGAKJ());
+	}
+
+	[SpecialName]
+	public string BILEOFIMBAL()
+	{
+		return _003CJACAIPDALBC_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	protected internal void ODKOIBMJOII(bool DPNHODJHGJL)
+	{
+		_003CCLBHIJDEKKK_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool BKPOKIKFBAH()
+	{
+		return PMCGFJNFKHN() && !string.IsNullOrEmpty(AENCIAJDNCB());
+	}
+
+	[SpecialName]
+	public string AENCIAJDNCB()
 	{
 		return _003CONIAGJGNOJH_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string ACMGEJJMPPC()
+	{
+		return _003CJACAIPDALBC_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public bool BMDHOKFFFHE()
+	{
+		return _003CCLBHIJDEKKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public string MFGMEDGLCLD()
+	{
+		return _003CJACAIPDALBC_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	protected internal void AKEADKPKFON(string DPNHODJHGJL)
+	{
+		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool EPLPKMONKGJ()
+	{
+		return DMBFOAIEKJK() && string.IsNullOrEmpty(HCNHMBKKLBJ());
+	}
+
+	[SpecialName]
+	public bool MGBOOONPEGJ()
+	{
+		return PMCGFJNFKHN() && string.IsNullOrEmpty(CPCDPPIGAKJ());
+	}
+
+	[SpecialName]
+	public bool HOMMBNPKAFG()
+	{
+		return DMBFOAIEKJK() && !string.IsNullOrEmpty(KCBCOBFKEMO());
+	}
+
+	[SpecialName]
+	public bool KKPLOPMIMLB()
+	{
+		return DMBFOAIEKJK() && string.IsNullOrEmpty(AENCIAJDNCB());
+	}
+
+	public override string BIJOMIMBEBL()
+	{
+		return string.Format("UseScanLineSize", EJLJGMBEPHE(), (!PMCGFJNFKHN()) ? "[SERVER] Kicked " : ((!PBLGDHCEMDE()) ? "CameraFilterPack/Edge_Sigmoid" : "musicVolume"));
+	}
+
+	[SpecialName]
+	protected internal void CFNEFFGCACJ(string DPNHODJHGJL)
+	{
+		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public string HCNHMBKKLBJ()
+	{
+		return _003CONIAGJGNOJH_003Ek__BackingField;
+	}
+
+	public override string CFBMAFAHNAH()
+	{
+		return string.Format("[LocalizationService] All keys for ", CICCAOLHDLI(), (!DMBFOAIEKJK()) ? "_Far" : ((!BKPOKIKFBAH()) ? "_SpherePositionX" : " Time: "));
+	}
+
+	[SpecialName]
+	public string PONIDDEBIJP()
+	{
+		return _003CJACAIPDALBC_003Ek__BackingField;
+	}
+
+	public override string MJIJPCPAFPJ()
+	{
+		return string.Format("/icon", Name, (!BMDHOKFFFHE()) ? "y" : ((!GDPDLHAAGFH()) ? "_Offsets" : "roomDescription"));
+	}
+
+	[SpecialName]
+	protected internal void FOLBBLOLFDL(string DPNHODJHGJL)
+	{
+		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	[SpecialName]
+	public bool PMCGFJNFKHN()
+	{
+		return _003CCLBHIJDEKKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public bool JOMLCLIDGFD()
+	{
+		return _003CCLBHIJDEKKK_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	protected internal void CDELPGDLMHE(string DPNHODJHGJL)
+	{
+		_003CJACAIPDALBC_003Ek__BackingField = DPNHODJHGJL;
 	}
 }

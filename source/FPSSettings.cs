@@ -7,30 +7,11 @@ public class FPSSettings : MonoBehaviour
 
 	private float JAJEIIFPFBC;
 
-	public bool IsFPSEnabled()
-	{
-		bool result = false;
-		if (Singleton<SaveSystem>.Instance.HasKey("settings.fps"))
-		{
-			result = Singleton<SaveSystem>.Instance.GetInt("settings.fps") == 1;
-		}
-		else
-		{
-			Singleton<SaveSystem>.Instance.SetInt("settings.fps", 0);
-		}
-		return result;
-	}
-
-	private void Start()
-	{
-		InitFPS();
-	}
-
 	public void IKDKFLBJOAK()
 	{
-		if (NDODGACCDKB())
+		if (IsFPSEnabled())
 		{
-			EPHDOFKCPPE();
+			DisableFPS();
 		}
 		else
 		{
@@ -38,54 +19,10 @@ public class FPSSettings : MonoBehaviour
 		}
 	}
 
-	private void MAOCOEGAFND()
+	public void EnableFPS()
 	{
-		if (showFPS)
-		{
-			JAJEIIFPFBC += (Time.deltaTime - JAJEIIFPFBC) * 1930f;
-		}
-	}
-
-	private void NPLCENPNJBM()
-	{
-		FECBELEBCCM();
-	}
-
-	public void BHNDHOCCNDL()
-	{
-		if (DMHLBCHFCNB())
-		{
-			EPHDOFKCPPE();
-		}
-		else
-		{
-			EnableFPS();
-		}
-	}
-
-	public bool GGAAOAEKGIP()
-	{
-		bool result = true;
-		if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO("_Params3"))
-		{
-			result = Singleton<SaveSystem>.Instance.DNBCCNHDJDK("steamid") != 1 || true;
-		}
-		else
-		{
-			Singleton<SaveSystem>.Instance.SetInt("[LevelEditorScene] Print Audio Wave: Done", 0);
-		}
-		return result;
-	}
-
-	public void BFDMGMKFMHC()
-	{
-		Singleton<SaveSystem>.Instance.SetInt("#", 0);
+		Singleton<SaveSystem>.Instance.SetInt("settings.fps", 1);
 		InitFPS();
-	}
-
-	public void FECBELEBCCM()
-	{
-		showFPS = NDODGACCDKB();
 	}
 
 	public void SetFPSEnabled(bool CKALCHJAFBE)
@@ -98,105 +35,6 @@ public class FPSSettings : MonoBehaviour
 		{
 			EnableFPS();
 		}
-	}
-
-	private void Update()
-	{
-		if (showFPS)
-		{
-			JAJEIIFPFBC += (Time.deltaTime - JAJEIIFPFBC) * 0.1f;
-		}
-	}
-
-	public void EPHDOFKCPPE()
-	{
-		Singleton<SaveSystem>.Instance.SetInt("RPC can't be sent to target PhotonPlayer being null! Did not send \"", 0);
-		FECBELEBCCM();
-	}
-
-	public void EnableFPS()
-	{
-		Singleton<SaveSystem>.Instance.SetInt("settings.fps", 1);
-		InitFPS();
-	}
-
-	public bool NDODGACCDKB()
-	{
-		bool result = false;
-		if (Singleton<SaveSystem>.Instance.HasKey("_Value1"))
-		{
-			result = ((Singleton<SaveSystem>.Instance.DNBCCNHDJDK("SupportLogger OnConnectedToPhoton().") == 0) ? true : false);
-		}
-		else
-		{
-			Singleton<SaveSystem>.Instance.NHONGIGFHJB("CameraFilterPack/FX_Plasma", 1);
-		}
-		return result;
-	}
-
-	public void IIGIBCKMDHK()
-	{
-		Singleton<SaveSystem>.Instance.HIDBNDKJHAA("Object ID. Case-Sensitive", 1);
-		InitFPS();
-	}
-
-	public void AHBJJHEDJHD()
-	{
-		if (NDODGACCDKB())
-		{
-			IIGIBCKMDHK();
-		}
-		else
-		{
-			OAGILFGECJI();
-		}
-	}
-
-	public void InitFPS()
-	{
-		showFPS = IsFPSEnabled();
-	}
-
-	public void OBEJJEKIBGM()
-	{
-		Singleton<SaveSystem>.Instance.HIDBNDKJHAA("_ScreenResolution", 1);
-		FECBELEBCCM();
-	}
-
-	public void CHILGHANENG()
-	{
-		Singleton<SaveSystem>.Instance.HBIGPMNAPHA("AudioSampler", 0);
-		InitFPS();
-	}
-
-	public bool BEGHEDBOBKJ()
-	{
-		bool result = true;
-		if (Singleton<SaveSystem>.Instance.PMDOJPLDDKP("\n"))
-		{
-			result = ((Singleton<SaveSystem>.Instance.DNBCCNHDJDK("_Value5") == 0) ? true : false);
-		}
-		else
-		{
-			Singleton<SaveSystem>.Instance.HIDBNDKJHAA("_AccumulationTex", 1);
-		}
-		return result;
-	}
-
-	private void KLILJHJNICK()
-	{
-		InitFPS();
-	}
-
-	private void DIPDEHOOBPG()
-	{
-		InitFPS();
-	}
-
-	public void OAGILFGECJI()
-	{
-		Singleton<SaveSystem>.Instance.HIDBNDKJHAA("_TimeX", 0);
-		FECBELEBCCM();
 	}
 
 	private void OnGUI()
@@ -217,54 +55,95 @@ public class FPSSettings : MonoBehaviour
 		}
 	}
 
-	private void DAHFFNNIGML()
+	public void OAOPINFKCEM()
+	{
+		Singleton<SaveSystem>.Instance.SetInt("_History1Weight", 0);
+		EFMIBGGBKDJ();
+	}
+
+	public void MPOCABBADOL()
+	{
+		showFPS = IsFPSEnabled();
+	}
+
+	private void EGEPLFGKGLI()
+	{
+		EFMIBGGBKDJ();
+	}
+
+	private void Start()
+	{
+		InitFPS();
+	}
+
+	public void NHECLMIOMLF()
+	{
+		if (IsFPSEnabled())
+		{
+			DisableFPS();
+		}
+		else
+		{
+			KAFMOEKFMCN();
+		}
+	}
+
+	public void CLGGKNDCECC()
+	{
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI("#exit", 0);
+		InitFPS();
+	}
+
+	private void JKFDDNMPOJH()
 	{
 		FECBELEBCCM();
 	}
 
-	public bool DMHLBCHFCNB()
+	public void CPHHFOFNOEB(bool CKALCHJAFBE)
 	{
-		bool result = false;
-		if (Singleton<SaveSystem>.Instance.KPLBEJCGOMO("_EmissionColor"))
+		if (!CKALCHJAFBE)
 		{
-			result = Singleton<SaveSystem>.Instance.DNBCCNHDJDK("_Value3") != 0 && false;
+			DisableFPS();
 		}
 		else
 		{
-			Singleton<SaveSystem>.Instance.HIDBNDKJHAA(".lastCheckpoint.maxLongestCombo", 1);
+			LGGPMLJNJLE();
 		}
-		return result;
 	}
 
-	public void DisableFPS()
+	public void EFMIBGGBKDJ()
 	{
-		Singleton<SaveSystem>.Instance.SetInt("settings.fps", 0);
-		InitFPS();
+		showFPS = IsFPSEnabled();
 	}
 
-	private void KIMMMCJFMAB()
+	private void CAEGIHPNLOG()
 	{
-		InitFPS();
-	}
-
-	public bool GBAOHEJBNPC()
-	{
-		bool result = true;
-		if (Singleton<SaveSystem>.Instance.PMDOJPLDDKP("sounds/no_hit"))
+		if (showFPS)
 		{
-			result = Singleton<SaveSystem>.Instance.PPBFNLHCKCP("]") == 1;
+			int width = Screen.width;
+			int height = Screen.height;
+			GUIStyle gUIStyle = new GUIStyle();
+			Rect position = new Rect(919f, 980f, width, height * 4 / -55);
+			gUIStyle.alignment = TextAnchor.UpperLeft;
+			gUIStyle.fontSize = height * 5 / 50;
+			gUIStyle.normal.textColor = new Color(443f, 1521f, 1160f, 680f);
+			float num = JAJEIIFPFBC * 798f;
+			float num2 = 408f / JAJEIIFPFBC;
+			string text = string.Format("PublishButton", num, num2);
+			GUI.Label(position, text, gUIStyle);
 		}
-		else
-		{
-			Singleton<SaveSystem>.Instance.HBIGPMNAPHA("ticket", 1);
-		}
-		return result;
 	}
 
-	public void KAFMOEKFMCN()
+	public void FAGJADBIIIG()
 	{
-		Singleton<SaveSystem>.Instance.HIDBNDKJHAA("_Value4", 0);
-		InitFPS();
+		Singleton<SaveSystem>.Instance.DAAJKCCCICP("DPADHOR", 1);
+		FECBELEBCCM();
+	}
+
+	public void OFCJLLDBDHI()
+	{
+		Singleton<SaveSystem>.Instance.SetInt("_TimeX", 1);
+		MPOCABBADOL();
 	}
 
 	public void ToggleFPS()
@@ -277,5 +156,150 @@ public class FPSSettings : MonoBehaviour
 		{
 			EnableFPS();
 		}
+	}
+
+	public void OLDFGOAONKP()
+	{
+		Singleton<SaveSystem>.Instance.DAAJKCCCICP("Mouse ", 1);
+		EFMIBGGBKDJ();
+	}
+
+	public void DAMKLHPAHFD()
+	{
+		if (IsFPSEnabled())
+		{
+			DisableFPS();
+		}
+		else
+		{
+			FAGJADBIIIG();
+		}
+	}
+
+	public void GMIIFKCPGNB()
+	{
+		if (IsFPSEnabled())
+		{
+			DisableFPS();
+		}
+		else
+		{
+			OAOPINFKCEM();
+		}
+	}
+
+	public void MLEFNOAMLFF(bool CKALCHJAFBE)
+	{
+		if (!CKALCHJAFBE)
+		{
+			DisableFPS();
+		}
+		else
+		{
+			JCGNAENNCNG();
+		}
+	}
+
+	public void PCGCFLLHEJG()
+	{
+		Singleton<SaveSystem>.Instance.SetInt("_TimeX", 1);
+		InitFPS();
+	}
+
+	public bool IsFPSEnabled()
+	{
+		bool result = false;
+		if (Singleton<SaveSystem>.Instance.HasKey("settings.fps"))
+		{
+			result = Singleton<SaveSystem>.Instance.GetInt("settings.fps") == 1;
+		}
+		else
+		{
+			Singleton<SaveSystem>.Instance.SetInt("settings.fps", 0);
+		}
+		return result;
+	}
+
+	public void JPGOPEMPCMP()
+	{
+		if (IsFPSEnabled())
+		{
+			DisableFPS();
+		}
+		else
+		{
+			OLDFGOAONKP();
+		}
+	}
+
+	public void InitFPS()
+	{
+		showFPS = IsFPSEnabled();
+	}
+
+	public void DJGKILFBMAD(bool CKALCHJAFBE)
+	{
+		if (!CKALCHJAFBE)
+		{
+			DisableFPS();
+		}
+		else
+		{
+			OAOPINFKCEM();
+		}
+	}
+
+	private void Update()
+	{
+		if (showFPS)
+		{
+			JAJEIIFPFBC += (Time.deltaTime - JAJEIIFPFBC) * 0.1f;
+		}
+	}
+
+	private void KMCPMOGKDEH()
+	{
+		MPOCABBADOL();
+	}
+
+	public void LGGPMLJNJLE()
+	{
+		Singleton<SaveSystem>.Instance.OFPCEFFGHPI("roomDescription", 0);
+		FECBELEBCCM();
+	}
+
+	public void KAFMOEKFMCN()
+	{
+		Singleton<SaveSystem>.Instance.DAAJKCCCICP("_ScreenResolution", 0);
+		EFMIBGGBKDJ();
+	}
+
+	public void MCIFEGKPICB()
+	{
+		if (IsFPSEnabled())
+		{
+			DisableFPS();
+		}
+		else
+		{
+			EnableFPS();
+		}
+	}
+
+	public void FECBELEBCCM()
+	{
+		showFPS = IsFPSEnabled();
+	}
+
+	public void DisableFPS()
+	{
+		Singleton<SaveSystem>.Instance.SetInt("settings.fps", 0);
+		InitFPS();
+	}
+
+	public void JCGNAENNCNG()
+	{
+		Singleton<SaveSystem>.Instance.SetInt("USE_PREDICATION", 0);
+		MPOCABBADOL();
 	}
 }

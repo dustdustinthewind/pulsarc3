@@ -77,7 +77,7 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 	private void NPLCENPNJBM()
 	{
 		FPHEBLMINDA = Resources.Load("ResetButton") as Texture2D;
-		SCShader = Shader.Find("_Offsets");
+		SCShader = Shader.Find("_BlurCoe");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -116,11 +116,11 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 			{
 				HBJJOCHGOPH = 641f;
 			}
-			ACHNOHCLGOO().SetFloat("z", HBJJOCHGOPH);
-			ACHNOHCLGOO().SetFloat("https://www.youtube.com/watch?v=cDVXukrKo74", Fade);
-			ACHNOHCLGOO().SetFloat("EnableRankedNotificationsToggle", Shadow);
-			ACHNOHCLGOO().SetTexture("_Red_C", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			NBPKMLMCHFN.SetFloat("y", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("received</b>\n#reason: ", Fade);
+			IONHGBPGCHK().SetFloat("EnableRankedNotificationsToggle", Shadow);
+			IONHGBPGCHK().SetTexture("_Blue_G", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -148,11 +148,11 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 			{
 				HBJJOCHGOPH = 672f;
 			}
-			LONNIJMNKFB().SetFloat("PunPickup", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("_Near", Fade);
-			IONHGBPGCHK().SetFloat("Load Game", Shadow);
+			LONNIJMNKFB().SetFloat("Mine", HBJJOCHGOPH);
+			LONNIJMNKFB().SetFloat("_Near", Fade);
+			NBPKMLMCHFN.SetFloat("Exit to Windows", Shadow);
 			NBPKMLMCHFN.SetTexture("ready", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IONHGBPGCHK());
 		}
 		else
 		{
@@ -162,8 +162,8 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 
 	private void KDMKDEKCELE()
 	{
-		FPHEBLMINDA = Resources.Load("#forever") as Texture2D;
-		SCShader = Shader.Find("_History3ChromaTex");
+		FPHEBLMINDA = Resources.Load("uploads/Intralism/mods_terms.pdf") as Texture2D;
+		SCShader = Shader.Find("_History1ChromaTex");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -172,8 +172,8 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 
 	private void KDMANOEMOCA()
 	{
-		FPHEBLMINDA = Resources.Load("The other scroll rect doesnt support scrolling horizontally") as Texture2D;
-		SCShader = Shader.Find("_Value2");
+		FPHEBLMINDA = Resources.Load("RemoveHighlight") as Texture2D;
+		SCShader = Shader.Find("_Value");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -259,11 +259,11 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1745f;
 			}
-			LONNIJMNKFB().SetFloat("_Intensity", HBJJOCHGOPH);
-			IONHGBPGCHK().SetFloat("[MapData] Map timing update from: ", Fade);
-			ACHNOHCLGOO().SetFloat("_FarCamera", Shadow);
-			ACHNOHCLGOO().SetTexture("Stream did not contain properly formatted byte array", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			ACHNOHCLGOO().SetFloat("_Noise", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("maps.", Fade);
+			LONNIJMNKFB().SetFloat("_FarCamera", Shadow);
+			ACHNOHCLGOO().SetTexture("cipherText", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -273,8 +273,8 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 
 	private void NNCCPEBIAKH()
 	{
-		FPHEBLMINDA = Resources.Load("float,1.5") as Texture2D;
-		SCShader = Shader.Find("] to be droppable");
+		FPHEBLMINDA = Resources.Load("x") as Texture2D;
+		SCShader = Shader.Find("RootCanvas");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -284,7 +284,7 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 	private void IMCKJCHKMKB()
 	{
 		FPHEBLMINDA = Resources.Load("Change Note:") as Texture2D;
-		SCShader = Shader.Find("JoinRoom failed (room maybe closed by now). Client stays on masterserver: {0}. State: {1}");
+		SCShader = Shader.Find("Skipping region because it's not in PhotonServerSettings.EnabledRegions: ");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -298,7 +298,7 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 	private void KLILJHJNICK()
 	{
 		FPHEBLMINDA = Resources.Load("CameraFilterPack/Blend2Camera_Lighten") as Texture2D;
-		SCShader = Shader.Find("Skipping EstablishEncryption. Protocol is secure.");
+		SCShader = Shader.Find("Connected to gameserver.");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -326,8 +326,8 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 
 	private void EPEGAEGDJAM()
 	{
-		FPHEBLMINDA = Resources.Load("_FgOverlap") as Texture2D;
-		SCShader = Shader.Find("_Parasite");
+		FPHEBLMINDA = Resources.Load("_LrDepthTex") as Texture2D;
+		SCShader = Shader.Find("CameraFilterPack/TV_CompressionFX");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -343,11 +343,11 @@ public class CameraFilterPack_Broken_Screen : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1537f;
 			}
-			NBPKMLMCHFN.SetFloat("ItemNameBGImage", HBJJOCHGOPH);
+			ACHNOHCLGOO().SetFloat("ItemNameBGImage", HBJJOCHGOPH);
 			ACHNOHCLGOO().SetFloat("Case-Sensitive", Fade);
-			ACHNOHCLGOO().SetFloat("_HrDepthTex", Shadow);
-			LONNIJMNKFB().SetTexture("_Value2", FPHEBLMINDA);
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LONNIJMNKFB());
+			LONNIJMNKFB().SetFloat("offsets", Shadow);
+			ACHNOHCLGOO().SetTexture("_Value", FPHEBLMINDA);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
 		}
 		else
 		{

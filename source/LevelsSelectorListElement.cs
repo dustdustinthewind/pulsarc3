@@ -8,53 +8,7 @@ public class LevelsSelectorListElement : MonoBehaviour
 {
 	public string levelid;
 
-	private void NNCCPEBIAKH()
-	{
-	}
-
-	public void CPECIABOMOL()
-	{
-		StartCoroutine(CPPOOLHICFL());
-	}
-
-	public void BADPFPFPGKP()
-	{
-		StartCoroutine(PIAMGOBOLMP());
-	}
-
-	private void DLBODOFAJGM()
-	{
-	}
-
-	public void POAKODFNAIM()
-	{
-		StartCoroutine(MMHPCINCIJP());
-	}
-
-	private void KMCPMOGKDEH()
-	{
-	}
-
-	public void HHAECEMFKND()
-	{
-		((LevelEditorScene)Singleton<Scene>.Instance).BDOIODEMFHC(levelid);
-	}
-
-	public void AKEIPNLIHNL()
-	{
-		((LevelEditorScene)Singleton<Scene>.Instance).EBAGFEDOKHD(levelid);
-	}
-
-	public void MIHEEHLLAND()
-	{
-		StartCoroutine(MMHPCINCIJP());
-	}
-
-	private void NPLCENPNJBM()
-	{
-	}
-
-	private IEnumerator BLMFNJPDDIE()
+	private IEnumerator GKIINNKBNAA()
 	{
 		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
 		if (Singleton<MessageBoxPanel>.Instance.result == 1)
@@ -64,57 +18,10 @@ public class LevelsSelectorListElement : MonoBehaviour
 		}
 	}
 
-	public void OnClick()
+	private void GPFJMKCGHGB()
 	{
-		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
-	}
-
-	private void Start()
-	{
-	}
-
-	public void EEBOIKAPOOO()
-	{
-		StartCoroutine(PIAMGOBOLMP());
-	}
-
-	public void GGCLKOJPPDD()
-	{
-		((LevelEditorScene)Singleton<Scene>.Instance).BDOIODEMFHC(levelid);
-	}
-
-	private void FIKFJDFELIP()
-	{
-	}
-
-	public void DBDCIAIJOKG()
-	{
-		((LevelEditorScene)Singleton<Scene>.Instance).EBAGFEDOKHD(levelid);
-	}
-
-	private void KLILJHJNICK()
-	{
-	}
-
-	private void BGFJOEPFOPM()
-	{
-		base.transform.Find("play").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || !(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true;
-		base.transform.Find("GameModeText").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
-	}
-
-	public void JCLEGIJAGMG()
-	{
-		StartCoroutine(MMHPCINCIJP());
-	}
-
-	private void DKOPKPBLDHH()
-	{
-	}
-
-	private void AEIJFLJEABG()
-	{
-		base.transform.Find("_MainTex2").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false);
-		base.transform.Find("_Offsets").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid)) ? true : false);
+		base.transform.Find("CameraFilterPack/TV_Noise").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && !(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false;
+		base.transform.Find("CameraFilterPack/FX_Hexagon").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false);
 	}
 
 	private void Update()
@@ -123,12 +30,142 @@ public class LevelsSelectorListElement : MonoBehaviour
 		base.transform.Find("DeleteButton").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid)) ? true : false);
 	}
 
-	private void BEBNOKFLJPH()
+	public void LIMLHBICMPL()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
+	}
+
+	private void EFJDNLGNACH()
 	{
 	}
 
-	private void EPEGAEGDJAM()
+	private void AGMJDGHLBMN()
 	{
+		base.transform.Find("ERROR: Steam App ID isn't set! Make sure 'steam_appid.txt' is placed next to the executable file, and contains a single line with the app id.").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && ((!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid)) ? true : false);
+		base.transform.Find("Misses:").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false);
+	}
+
+	private IEnumerator AIHGPLLFIBP()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	public void MNMFCKOKKPP()
+	{
+		StartCoroutine(EIDAODANKGP());
+	}
+
+	private void CNGAJDBOCLJ()
+	{
+	}
+
+	private IEnumerator IABOOBIAOKL()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	private void MNBPNHNAEBK()
+	{
+	}
+
+	private IEnumerator DEKKKDMNMNL()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	private void CFIAKIJAILI()
+	{
+		base.transform.Find("_ScreenResolution").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid)) ? true : false);
+		base.transform.Find("_ColorLevel").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false);
+	}
+
+	public void FBGMCGIKLHJ()
+	{
+		StartCoroutine(NAMFBBAPKEM());
+	}
+
+	private void FHGKIOOMMOH()
+	{
+	}
+
+	public void FHPNIFPJKCK()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
+	}
+
+	public void JEHPPCLFENL()
+	{
+		StartCoroutine(JFGCNDIJOHP());
+	}
+
+	public void OnClick()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
+	}
+
+	public void OHLIPCGCMLD()
+	{
+		StartCoroutine(BEIEEAKINNJ());
+	}
+
+	private void AEIJFLJEABG()
+	{
+		base.transform.Find("#tryagain").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid)) ? true : false);
+		base.transform.Find("CameraFilterPack/Colors_DarkColor").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || !(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true;
+	}
+
+	private void LLJLDLLNFBH()
+	{
+		base.transform.Find("notready").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
+		base.transform.Find("didAuthenticate ").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && ((!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid)) ? true : false);
+	}
+
+	private IEnumerator IBICOAOJIBG()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	private IEnumerator HDFCPEOPJPE()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	private void KDMANOEMOCA()
+	{
+	}
+
+	private void MMMDPANNAIO()
+	{
+	}
+
+	public void KGJIHFEGPDH()
+	{
+		StartCoroutine(GKIINNKBNAA());
 	}
 
 	private IEnumerator POMLILLIBOI()
@@ -141,15 +178,29 @@ public class LevelsSelectorListElement : MonoBehaviour
 		}
 	}
 
-	public void DFFDCFIFCAL()
+	private IEnumerator ENNLFHLGKMC()
 	{
-		StartCoroutine(POMLILLIBOI());
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
 	}
 
-	private void JHPOIOELNCG()
+	private void POIMNOBDBBN()
 	{
-		base.transform.Find("_ScreenResolution").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && !(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false;
-		base.transform.Find("CameraFilterPack/Colors_HUE_Rotate").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true);
+		base.transform.Find("_Value7").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
+		base.transform.Find(" not exist").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
+	}
+
+	public void EMHMLGCCJHJ()
+	{
+		StartCoroutine(IBICOAOJIBG());
+	}
+
+	private void GPNAOAKCMHC()
+	{
 	}
 
 	private IEnumerator CPPOOLHICFL()
@@ -162,7 +213,27 @@ public class LevelsSelectorListElement : MonoBehaviour
 		}
 	}
 
-	private IEnumerator PIAMGOBOLMP()
+	private void CCLNNLCOPBL()
+	{
+	}
+
+	private void JBNPEHMDCMI()
+	{
+		base.transform.Find("workshop.").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true);
+		base.transform.Find("CameraFilterPack/Color_Switching").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true);
+	}
+
+	public void CPGCBNCCAOA()
+	{
+		StartCoroutine(EIDAODANKGP());
+	}
+
+	public void BKJHOIMIOBF()
+	{
+		StartCoroutine(DEKKKDMNMNL());
+	}
+
+	private IEnumerator NDBOMBCMJEL()
 	{
 		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
 		if (Singleton<MessageBoxPanel>.Instance.result == 1)
@@ -172,14 +243,168 @@ public class LevelsSelectorListElement : MonoBehaviour
 		}
 	}
 
-	private void DAHFFNNIGML()
+	public void CMOBHGHIBKL()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
+	}
+
+	private void KNBJBNDGCIJ()
 	{
 	}
 
-	private void AGMJDGHLBMN()
+	private void Start()
 	{
-		base.transform.Find("caret").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
-		base.transform.Find("PLEASE WAIT").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
+	}
+
+	private IEnumerator ENEGJKOGOCL()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	private IEnumerator NAMFBBAPKEM()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	public void NECOKPEMDKP()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
+	}
+
+	private void IIFCIDDJHPM()
+	{
+		base.transform.Find(":").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || !(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true;
+		base.transform.Find("roomDescription").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
+	}
+
+	private IEnumerator JFGCNDIJOHP()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	public void JABGIOLEKPG()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
+	}
+
+	public void CJFHNNICLEN()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
+	}
+
+	private void LEAHIBJDMBI()
+	{
+		base.transform.Find("player.bluelifering").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid)) ? true : false);
+		base.transform.Find("Mouse1").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false);
+	}
+
+	public void BAEPJAFKPLE()
+	{
+		StartCoroutine(GKIINNKBNAA());
+	}
+
+	private void EGEGNHLODAA()
+	{
+		base.transform.Find("menutheme.melancholicose").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
+		base.transform.Find("Can't SendMove. Turn is finished by this player.").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true);
+	}
+
+	public void DLGGEMDFGIH()
+	{
+		StartCoroutine(EIDAODANKGP());
+	}
+
+	public void ONNJFFAFGGN()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).OpenMap(levelid);
+	}
+
+	private void JDGFCEPDKAJ()
+	{
+		base.transform.Find("CameraFilterPack/Color_BrightContrastSaturation").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false);
+		base.transform.Find("_History3LumaTex").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || !(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true;
+	}
+
+	public void MCFNPLNJKBP()
+	{
+		((LevelEditorScene)Singleton<Scene>.Instance).JLEFKKLJKFF(levelid);
+	}
+
+	private void FOMNCPKKCFN()
+	{
+		base.transform.Find("Despawn environment object by id").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || ((((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) ? true : false);
+		base.transform.Find("LevelEditor/CustomEventEditor-Text").gameObject.GetComponent<Button>().interactable = ((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded && ((!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid)) ? true : false);
+	}
+
+	private void HLIAEEMGBHN()
+	{
+	}
+
+	private IEnumerator EIDAODANKGP()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	private void PDHKMDBNGGN()
+	{
+	}
+
+	private void MGMAOBPPOBJ()
+	{
+	}
+
+	private IEnumerator GJGPECEMPOC()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	public void POAKODFNAIM()
+	{
+		StartCoroutine(IBICOAOJIBG());
+	}
+
+	public void HKEIPOPDBLM()
+	{
+		StartCoroutine(GJGPECEMPOC());
+	}
+
+	private IEnumerator PPEGOJEMDOC()
+	{
+		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
+		if (Singleton<MessageBoxPanel>.Instance.result == 1)
+		{
+			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
+			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
+		}
+	}
+
+	private void FIKFJDFELIP()
+	{
 	}
 
 	public void OnDeleteClick()
@@ -187,7 +412,13 @@ public class LevelsSelectorListElement : MonoBehaviour
 		StartCoroutine(POMLILLIBOI());
 	}
 
-	private IEnumerator MMHPCINCIJP()
+	private void MECJHOJPODB()
+	{
+		base.transform.Find("#timeuntilchallenge: ").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || !(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) || true;
+		base.transform.Find("Data/Skins/").gameObject.GetComponent<Button>().interactable = !((LevelEditorScene)Singleton<Scene>.Instance).isLevelLoaded || (!(((LevelEditorScene)Singleton<Scene>.Instance).mapID == levelid) && false);
+	}
+
+	private IEnumerator BEIEEAKINNJ()
 	{
 		yield return StartCoroutine(Singleton<MessageBoxPanel>.Instance.DisplayDialog(LocalizationService.Instance.GetTextByKey("deletemap"), LocalizationService.Instance.GetTextByKey("yes").ToUpper()));
 		if (Singleton<MessageBoxPanel>.Instance.result == 1)
@@ -195,9 +426,5 @@ public class LevelsSelectorListElement : MonoBehaviour
 			Singleton<MapsSystem>.Instance.DeleteLevel(levelid);
 			((LevelEditorScene)Singleton<Scene>.Instance).OnLoadLevelButton();
 		}
-	}
-
-	private void HLIAEEMGBHN()
-	{
 	}
 }

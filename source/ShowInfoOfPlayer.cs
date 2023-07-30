@@ -15,87 +15,111 @@ public class ShowInfoOfPlayer : Photon.MonoBehaviour
 
 	public bool DisableOnOwnObjects;
 
-	private void BGFJOEPFOPM()
+	private void GHILDCBCDJI()
 	{
-		bool flag = DisableOnOwnObjects && AAMNKPHHHCI().BGJKMGJBPFA();
+		bool flag = !DisableOnOwnObjects || ACPGHFHDCIP().isMine;
 		if (GFLFBLOLIGA != null)
 		{
 			GFLFBLOLIGA.SetActive(flag);
 		}
 		if (flag)
 		{
-			PhotonPlayer photonPlayer = JAEJDHHCJJO().JJFEGIOPFGN();
-			if (photonPlayer != null)
-			{
-				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.NickName : ("_DotSize" + photonPlayer.ID));
-			}
-			else if (GBHNDHLAJLI().FJEMLGIGOCJ())
-			{
-				GFNILPAPGJN.text = "Parent object ID. Case-Sensitive";
-			}
-			else
-			{
-				GFNILPAPGJN.text = ":";
-			}
-		}
-	}
-
-	private void JAAJECBCCFM()
-	{
-		bool flag = DisableOnOwnObjects && OELHGNKAMEG().DOLKFPIABDD();
-		if (GFLFBLOLIGA != null)
-		{
-			GFLFBLOLIGA.SetActive(flag);
-		}
-		if (flag)
-		{
-			PhotonPlayer photonPlayer = GMAHNPNHMFK().JFCKAGHNNCA();
-			if (photonPlayer != null)
-			{
-				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.NickName : ("Warning: No Shape Curve set for CurveWaveform.cs on " + photonPlayer.ID));
-			}
-			else if (base.photonView.FJEMLGIGOCJ())
-			{
-				GFNILPAPGJN.text = "SetEnvSpriteColor";
-			}
-			else
-			{
-				GFNILPAPGJN.text = "D-Pad Down";
-			}
-		}
-	}
-
-	private void CFIAKIJAILI()
-	{
-		bool flag = !DisableOnOwnObjects || EOOCGIFFKBG().BGJKMGJBPFA();
-		if (GFLFBLOLIGA != null)
-		{
-			GFLFBLOLIGA.SetActive(flag);
-		}
-		if (flag)
-		{
-			PhotonPlayer owner = base.photonView.owner;
+			PhotonPlayer owner = IJBFILBDGDO().owner;
 			if (owner != null)
 			{
-				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.NickName)) ? owner.NickName : ("_Params1" + owner.ID));
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.NickName)) ? owner.DBMPNLFFBEB() : ("_ScreenResolution" + owner.ID));
 			}
-			else if (GMAHNPNHMFK().isSceneView)
+			else if (IJBFILBDGDO().isSceneView)
 			{
-				GFNILPAPGJN.text = "win";
+				GFNILPAPGJN.text = "_VignetteColor";
 			}
 			else
 			{
-				GFNILPAPGJN.text = "_Far";
+				GFNILPAPGJN.text = "Waiting for AvailableRegions. State: ";
 			}
 		}
 	}
 
-	private void Start()
+	private void GPFJMKCGHGB()
+	{
+		bool flag = DisableOnOwnObjects && GMAHNPNHMFK().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = BLMHOKPIMOD().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.DBMPNLFFBEB())) ? photonPlayer.DBMPNLFFBEB() : ("PunPickup" + photonPlayer.FHEAKIMCKJC()));
+			}
+			else if (EDIJKHEMPAD().isSceneView)
+			{
+				GFNILPAPGJN.text = "JoinOrCreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "#craftng";
+			}
+		}
+	}
+
+	private void KMKLDAJLCNM()
+	{
+		bool flag = !DisableOnOwnObjects || BLMHOKPIMOD().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = GMAHNPNHMFK().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.OLPCOKMLDFD())) ? photonPlayer.OLPCOKMLDFD() : ("The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account." + photonPlayer.ID));
+			}
+			else if (AAMNKPHHHCI().isSceneView)
+			{
+				GFNILPAPGJN.text = "_Value2";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "_History3Weight";
+			}
+		}
+	}
+
+	private void JILOMOBDPIA()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[1];
+			Debug.LogWarning("Set Arcs Speed" + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject("_Value");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.UpperRight;
+			if (CharacterSize > 914f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void IMCKJCHKMKB()
 	{
 		if (font == null)
 		{
 			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[0];
-			Debug.LogWarning("No font defined. Found font: " + font);
+			Debug.LogWarning("BitsData" + font);
 		}
 		if (GFNILPAPGJN == null)
 		{
@@ -106,109 +130,10 @@ public class ShowInfoOfPlayer : Photon.MonoBehaviour
 			meshRenderer.material = font.material;
 			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
 			GFNILPAPGJN.font = font;
-			GFNILPAPGJN.anchor = TextAnchor.MiddleCenter;
-			if (CharacterSize > 0f)
+			GFNILPAPGJN.anchor = TextAnchor.UpperLeft;
+			if (CharacterSize > 1761f)
 			{
 				GFNILPAPGJN.characterSize = CharacterSize;
-			}
-		}
-	}
-
-	private void MFMIODIAKNI()
-	{
-		bool flag = DisableOnOwnObjects && FFIPLLNKGEN().BGJKMGJBPFA();
-		if (GFLFBLOLIGA != null)
-		{
-			GFLFBLOLIGA.SetActive(flag);
-		}
-		if (flag)
-		{
-			PhotonPlayer photonPlayer = GBHNDHLAJLI().JFCKAGHNNCA();
-			if (photonPlayer != null)
-			{
-				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.NickName : ("/" + photonPlayer.ID));
-			}
-			else if (GBMJAPGLMGB().NADJFHDOFGD())
-			{
-				GFNILPAPGJN.text = ".sawoutdatedmessage";
-			}
-			else
-			{
-				GFNILPAPGJN.text = "_Value2";
-			}
-		}
-	}
-
-	private void OCMKCBBCEFG()
-	{
-		bool flag = DisableOnOwnObjects && GMAHNPNHMFK().BGJKMGJBPFA();
-		if (GFLFBLOLIGA != null)
-		{
-			GFLFBLOLIGA.SetActive(flag);
-		}
-		if (flag)
-		{
-			PhotonPlayer photonPlayer = GMAHNPNHMFK().JJFEGIOPFGN();
-			if (photonPlayer != null)
-			{
-				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.NickName : ("[LocalizationService] All languages: " + photonPlayer.ID));
-			}
-			else if (base.photonView.LIDEPDFOMFC())
-			{
-				GFNILPAPGJN.text = "[Up]";
-			}
-			else
-			{
-				GFNILPAPGJN.text = "_ScreenResolution";
-			}
-		}
-	}
-
-	private void NBGIMIDICKE()
-	{
-		if (font == null)
-		{
-			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[1];
-			Debug.LogWarning("Load scene by name or build id" + font);
-		}
-		if (GFNILPAPGJN == null)
-		{
-			GFLFBLOLIGA = new GameObject("[PlayerController] ");
-			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
-			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
-			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
-			meshRenderer.material = font.material;
-			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
-			GFNILPAPGJN.font = font;
-			GFNILPAPGJN.anchor = TextAnchor.UpperRight;
-			if (CharacterSize > 923f)
-			{
-				GFNILPAPGJN.characterSize = CharacterSize;
-			}
-		}
-	}
-
-	private void LEAHIBJDMBI()
-	{
-		bool flag = DisableOnOwnObjects && IBKCMBIGOEJ().BGJKMGJBPFA();
-		if (GFLFBLOLIGA != null)
-		{
-			GFLFBLOLIGA.SetActive(flag);
-		}
-		if (flag)
-		{
-			PhotonPlayer owner = AAMNKPHHHCI().owner;
-			if (owner != null)
-			{
-				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.NickName)) ? owner.NickName : ("DPADHOR" + owner.ONIKFABKELO()));
-			}
-			else if (ACPGHFHDCIP().LIDEPDFOMFC())
-			{
-				GFNILPAPGJN.text = "Object ID. Case-Sensitive";
-			}
-			else
-			{
-				GFNILPAPGJN.text = "[MapsData] Found ";
 			}
 		}
 	}
@@ -238,48 +163,269 @@ public class ShowInfoOfPlayer : Photon.MonoBehaviour
 		}
 	}
 
-	private void JHPOIOELNCG()
+	private void IDIIELPAMCJ()
 	{
-		bool flag = DisableOnOwnObjects && OELHGNKAMEG().BGJKMGJBPFA();
+		bool flag = !DisableOnOwnObjects || BBGIDKNEGHD().isMine;
 		if (GFLFBLOLIGA != null)
 		{
 			GFLFBLOLIGA.SetActive(flag);
 		}
 		if (flag)
 		{
-			PhotonPlayer owner = BLMHOKPIMOD().owner;
+			PhotonPlayer owner = EDIJKHEMPAD().owner;
 			if (owner != null)
 			{
-				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.NickName)) ? owner.NickName : ("_ScreenResolution" + owner.ONIKFABKELO()));
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.NickName)) ? owner.DBMPNLFFBEB() : ("_Skybox" + owner.ID));
 			}
-			else if (GMAHNPNHMFK().FJEMLGIGOCJ())
+			else if (JAEJDHHCJJO().isSceneView)
 			{
-				GFNILPAPGJN.text = "_Distortion";
+				GFNILPAPGJN.text = " methods \"";
 			}
 			else
 			{
-				GFNILPAPGJN.text = "checkpoint";
+				GFNILPAPGJN.text = "MultiplayerButton";
 			}
 		}
 	}
 
-	private void AAPKBNDHBLI()
+	private void CFIAKIJAILI()
 	{
-		bool flag = !DisableOnOwnObjects || BLMHOKPIMOD().BGJKMGJBPFA();
+		bool flag = !DisableOnOwnObjects || EDIJKHEMPAD().isMine;
 		if (GFLFBLOLIGA != null)
 		{
 			GFLFBLOLIGA.SetActive(flag);
 		}
 		if (flag)
 		{
-			PhotonPlayer owner = GMAHNPNHMFK().owner;
+			PhotonPlayer photonPlayer = AAMNKPHHHCI().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.OLPCOKMLDFD() : ("maps." + photonPlayer.FHEAKIMCKJC()));
+			}
+			else if (GMAHNPNHMFK().isSceneView)
+			{
+				GFNILPAPGJN.text = "JITTER";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "Error: Can not set the OnSerialize rate higher than the overall SendRate.";
+			}
+		}
+	}
+
+	private void OCMKCBBCEFG()
+	{
+		bool flag = !DisableOnOwnObjects || JAEJDHHCJJO().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = JDBCGCJJIAF().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.OLPCOKMLDFD())) ? photonPlayer.OLPCOKMLDFD() : ("HitVariationSlider" + photonPlayer.FHEAKIMCKJC()));
+			}
+			else if (BBGIDKNEGHD().isSceneView)
+			{
+				GFNILPAPGJN.text = "CameraFilterPack/FX_Drunk2";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "_Offsets";
+			}
+		}
+	}
+
+	private void ONMGIPAILOH()
+	{
+		bool flag = !DisableOnOwnObjects || IJBFILBDGDO().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer owner = JDBCGCJJIAF().owner;
 			if (owner != null)
 			{
-				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.NickName)) ? owner.NickName : ("_Value2" + owner.ONIKFABKELO()));
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.NickName)) ? owner.NickName : ("#ok" + owner.FHEAKIMCKJC()));
 			}
-			else if (AAMNKPHHHCI().NADJFHDOFGD())
+			else if (IJBFILBDGDO().isSceneView)
 			{
-				GFNILPAPGJN.text = "ItemsCountText";
+				GFNILPAPGJN.text = "_Value";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "_Offsets";
+			}
+		}
+	}
+
+	private void KMCPMOGKDEH()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[0];
+			Debug.LogWarning("LevelEditor/patterns" + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject(".completedCount");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.MiddleLeft;
+			if (CharacterSize > 1808f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void MAOCOEGAFND()
+	{
+		bool flag = !DisableOnOwnObjects || BLMHOKPIMOD().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = IJBFILBDGDO().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.DBMPNLFFBEB())) ? photonPlayer.NickName : ("0 - background, 1 - foreground" + photonPlayer.ID));
+			}
+			else if (CIACEFBNDDJ().isSceneView)
+			{
+				GFNILPAPGJN.text = "_TimeX";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "_DiffuseColor";
+			}
+		}
+	}
+
+	private void MMBPLGGLPDB()
+	{
+		bool flag = DisableOnOwnObjects && FFIPLLNKGEN().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = OELHGNKAMEG().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.OLPCOKMLDFD() : ("ResourceIDInputField" + photonPlayer.FHEAKIMCKJC()));
+			}
+			else if (IJBFILBDGDO().isSceneView)
+			{
+				GFNILPAPGJN.text = "CameraFilterPack/Blend2Camera_Blend";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "_Value2";
+			}
+		}
+	}
+
+	private void BGDPIHMAACO()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[0];
+			Debug.LogWarning("Error: you cannot read this stream that you are writing!" + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject("type");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.MiddleCenter;
+			if (CharacterSize > 369f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void CIPKEPDELJB()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[0];
+			Debug.LogWarning("Aug" + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject("LobbyCanvas");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.MiddleRight;
+			if (CharacterSize > 929f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void JKFDDNMPOJH()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[1];
+			Debug.LogWarning(".lastCheckpoint.perfectHits" + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject("menu.enableselectormusic");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.LowerRight;
+			if (CharacterSize > 1752f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void LCJHDLKJEOM()
+	{
+		bool flag = !DisableOnOwnObjects || AAMNKPHHHCI().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = EDIJKHEMPAD().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.DBMPNLFFBEB() : ("_TimeX" + photonPlayer.ID));
+			}
+			else if (OELHGNKAMEG().isSceneView)
+			{
+				GFNILPAPGJN.text = "CameraFilterPack_Paper1";
 			}
 			else
 			{
@@ -288,16 +434,165 @@ public class ShowInfoOfPlayer : Photon.MonoBehaviour
 		}
 	}
 
-	private void CCLNNLCOPBL()
+	private void BGFJOEPFOPM()
+	{
+		bool flag = DisableOnOwnObjects && JDBCGCJJIAF().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = OELHGNKAMEG().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.OLPCOKMLDFD())) ? photonPlayer.NickName : ("_Amount" + photonPlayer.ID));
+			}
+			else if (GBHNDHLAJLI().isSceneView)
+			{
+				GFNILPAPGJN.text = "_Value4";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "workshop.";
+			}
+		}
+	}
+
+	private void FABMDEHEDNO()
+	{
+		bool flag = !DisableOnOwnObjects || GMAHNPNHMFK().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer owner = EOOCGIFFKBG().owner;
+			if (owner != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.DBMPNLFFBEB())) ? owner.OLPCOKMLDFD() : ("/Segment-[Down]" + owner.ID));
+			}
+			else if (OELHGNKAMEG().isSceneView)
+			{
+				GFNILPAPGJN.text = "[Right]";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "0.00";
+			}
+		}
+	}
+
+	private void JHPOIOELNCG()
+	{
+		bool flag = DisableOnOwnObjects && IBKCMBIGOEJ().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer owner = EOOCGIFFKBG().owner;
+			if (owner != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.OLPCOKMLDFD())) ? owner.DBMPNLFFBEB() : ("_Value3" + owner.FHEAKIMCKJC()));
+			}
+			else if (JDBCGCJJIAF().isSceneView)
+			{
+				GFNILPAPGJN.text = "note.2";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "mapselector.filter.favoriteonly";
+			}
+		}
+	}
+
+	private void JAAJECBCCFM()
+	{
+		bool flag = DisableOnOwnObjects && BLMHOKPIMOD().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = JDBCGCJJIAF().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.DBMPNLFFBEB())) ? photonPlayer.DBMPNLFFBEB() : ("0x" + photonPlayer.ID));
+			}
+			else if (JIOCGDBKGIL().isSceneView)
+			{
+				GFNILPAPGJN.text = "CameraFilterPack_Atmosphere_Rain_FX";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "CameraFilterPack/Blend2Camera_ColorBurn";
+			}
+		}
+	}
+
+	private void KIMMMCJFMAB()
 	{
 		if (font == null)
 		{
 			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[1];
-			Debug.LogWarning("SetCrosshairColor" + font);
+			Debug.LogWarning("accuracy" + font);
 		}
 		if (GFNILPAPGJN == null)
 		{
-			GFLFBLOLIGA = new GameObject("_Near");
+			GFLFBLOLIGA = new GameObject("menu.playedpage");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.UpperLeft;
+			if (CharacterSize > 299f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void AIJGAJIOJDJ()
+	{
+		bool flag = !DisableOnOwnObjects || JIOCGDBKGIL().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = JAEJDHHCJJO().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.DBMPNLFFBEB() : ("_Value2" + photonPlayer.FHEAKIMCKJC()));
+			}
+			else if (AAMNKPHHHCI().isSceneView)
+			{
+				GFNILPAPGJN.text = "_TimeX";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "/";
+			}
+		}
+	}
+
+	private void Start()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[0];
+			Debug.LogWarning("No font defined. Found font: " + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject("3d text");
 			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
 			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
 			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
@@ -305,7 +600,129 @@ public class ShowInfoOfPlayer : Photon.MonoBehaviour
 			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
 			GFNILPAPGJN.font = font;
 			GFNILPAPGJN.anchor = TextAnchor.MiddleCenter;
-			if (CharacterSize > 358f)
+			if (CharacterSize > 0f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void NKLIHNJCHOG()
+	{
+		bool flag = !DisableOnOwnObjects || PHCBHAFMDEJ().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer photonPlayer = JIOCGDBKGIL().GLFNAPCBIJP();
+			if (photonPlayer != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(photonPlayer.NickName)) ? photonPlayer.NickName : ("Keypad" + photonPlayer.ID));
+			}
+			else if (FFIPLLNKGEN().isSceneView)
+			{
+				GFNILPAPGJN.text = "_TimeX";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "_Distortion";
+			}
+		}
+	}
+
+	private void FEHCNJLLJMP()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[1];
+			Debug.LogWarning("_OcclusionBlurTexture" + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject("inventory.selected.");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.UpperCenter;
+			if (CharacterSize > 832f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void LEAHIBJDMBI()
+	{
+		bool flag = DisableOnOwnObjects && JAEJDHHCJJO().isMine;
+		if (GFLFBLOLIGA != null)
+		{
+			GFLFBLOLIGA.SetActive(flag);
+		}
+		if (flag)
+		{
+			PhotonPlayer owner = EDIJKHEMPAD().owner;
+			if (owner != null)
+			{
+				GFNILPAPGJN.text = ((!string.IsNullOrEmpty(owner.OLPCOKMLDFD())) ? owner.OLPCOKMLDFD() : ("Data/Maps/" + owner.ID));
+			}
+			else if (JIOCGDBKGIL().isSceneView)
+			{
+				GFNILPAPGJN.text = "CameraFilterPack/Blend2Camera_Luminosity";
+			}
+			else
+			{
+				GFNILPAPGJN.text = "TimeBGSlider";
+			}
+		}
+	}
+
+	private void NPLCENPNJBM()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[0];
+			Debug.LogWarning("ZoomSpeed" + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject("Alpha");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.MiddleCenter;
+			if (CharacterSize > 1971f)
+			{
+				GFNILPAPGJN.characterSize = CharacterSize;
+			}
+		}
+	}
+
+	private void BEBNOKFLJPH()
+	{
+		if (font == null)
+		{
+			font = (Font)Resources.FindObjectsOfTypeAll(typeof(Font))[1];
+			Debug.LogWarning("menu.selectedplaymode" + font);
+		}
+		if (GFNILPAPGJN == null)
+		{
+			GFLFBLOLIGA = new GameObject("Saved as: ");
+			GFLFBLOLIGA.transform.parent = base.gameObject.transform;
+			GFLFBLOLIGA.transform.localPosition = Vector3.zero;
+			MeshRenderer meshRenderer = GFLFBLOLIGA.AddComponent<MeshRenderer>();
+			meshRenderer.material = font.material;
+			GFNILPAPGJN = GFLFBLOLIGA.AddComponent<TextMesh>();
+			GFNILPAPGJN.font = font;
+			GFNILPAPGJN.anchor = TextAnchor.MiddleCenter;
+			if (CharacterSize > 853f)
 			{
 				GFNILPAPGJN.characterSize = CharacterSize;
 			}

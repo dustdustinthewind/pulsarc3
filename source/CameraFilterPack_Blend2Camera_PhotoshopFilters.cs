@@ -127,13 +127,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("_BokehParams", JDMCFBKJHDD);
+				LPDOGGFOBDH().SetTexture("_BlurredColor", JDMCFBKJHDD);
 			}
-			PEIMCBBHLBJ().SetFloat("CameraFilterPack/TV_ARCADE_2", HBJJOCHGOPH);
-			NBMPPNFKFLB().SetFloat("LetterSpacing: Missing Text component", BlendFX);
-			LPDOGGFOBDH().SetFloat(".lastCheckpoint.powerupsScore", SwitchCameraToCamera2);
-			KEMJNOMIPHN().SetVector("_SpherePositionY", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 666f, 1045f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPCHMEKDCHI());
+			FKEOGPDLBDD().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			FKEOGPDLBDD().SetFloat("Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ", BlendFX);
+			MPENCEIGLEH().SetFloat(".lastCheckpoint.incorrectScore", SwitchCameraToCamera2);
+			MHBAIEKFBIJ().SetVector("_SpherePositionY", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 666f, 1045f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PEIMCBBHLBJ());
 		}
 		else
 		{
@@ -152,13 +152,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				MHBAIEKFBIJ().SetTexture("_Value4", JDMCFBKJHDD);
+				LDNADDJMIPK().SetTexture("_Value3", JDMCFBKJHDD);
 			}
-			IFMAPIDFNLI().SetFloat("}", HBJJOCHGOPH);
-			IKAEIOAHPKI().SetFloat("[Right]", BlendFX);
-			MFHPKGICPIO().SetFloat("settings_bindings_", SwitchCameraToCamera2);
-			LDNADDJMIPK().SetVector("\n", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1355f, 873f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OCMBHMLNCEK());
+			JIBOKBCPDLC().SetFloat("{", HBJJOCHGOPH);
+			MHBAIEKFBIJ().SetFloat("[Left]", BlendFX);
+			KEMJNOMIPHN().SetFloat("All bindings reset to default values. PlayerPrefs have been removed for each key.", SwitchCameraToCamera2);
+			NBPKMLMCHFN.SetVector("\n", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1355f, 873f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PEIMCBBHLBJ());
 		}
 		else
 		{
@@ -185,13 +185,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				JIBOKBCPDLC().SetTexture("/", JDMCFBKJHDD);
+				OIIDAKBILMI().SetTexture("/", JDMCFBKJHDD);
 			}
-			NBMPPNFKFLB().SetFloat("AudioSampler", HBJJOCHGOPH);
-			NBMPPNFKFLB().SetFloat("Mouse", BlendFX);
-			EFDEIFCDAFG().SetFloat("settings.volume.menu", SwitchCameraToCamera2);
-			LDNADDJMIPK().SetVector("_Offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 46f, 1560f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IKAEIOAHPKI());
+			LDNADDJMIPK().SetFloat("AudioSampler", HBJJOCHGOPH);
+			OKJOKHGJHGF().SetFloat("Mouse ", BlendFX);
+			KEMJNOMIPHN().SetFloat("settings.volume.game", SwitchCameraToCamera2);
+			LPCHMEKDCHI().SetVector("_Offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 46f, 1560f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -203,7 +203,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MPJAFNJLBEF();
+			MELKBLIIFEO();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -263,39 +263,39 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "intensity";
+			ELOFMLPCCEA = "_HrDepthTex";
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "SpawnObj";
+			ELOFMLPCCEA = "[Right]";
 		}
 		if (filterchoice == filters.Screen)
 		{
-			ELOFMLPCCEA = "_ZCurve";
+			ELOFMLPCCEA = "_MotionBlurTmpCam";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/FX_Dot_Circle";
+			ELOFMLPCCEA = "_ScreenResolution";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "L1";
+			ELOFMLPCCEA = "Triangle";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
-			ELOFMLPCCEA = "maps.";
+			ELOFMLPCCEA = " not found";
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/FX_Glitch1";
+			ELOFMLPCCEA = "_ScreenResolution";
 		}
 		if (filterchoice == (filters)105)
 		{
-			ELOFMLPCCEA = "_FadeFX";
+			ELOFMLPCCEA = "_Blue_C";
 		}
 		if (filterchoice == (filters)116)
 		{
@@ -303,7 +303,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.VividLight)
 		{
-			ELOFMLPCCEA = "[Down]";
+			ELOFMLPCCEA = "Gameplay/sprite";
 		}
 		if (filterchoice == (filters)(-20))
 		{
@@ -315,7 +315,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.PinLight)
 		{
-			ELOFMLPCCEA = ":";
+			ELOFMLPCCEA = "ConnectToMaster() disabled the offline mode. No longer offline.";
 		}
 		if (filterchoice == (filters)77)
 		{
@@ -323,31 +323,31 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-70))
 		{
-			ELOFMLPCCEA = "If you host Photon yourself, make sure to start the 'Instance LoadBalancing' ";
+			ELOFMLPCCEA = "Operation failed: ";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "\nv.";
+			ELOFMLPCCEA = "[BuildInfo] Error: ";
 		}
 		if (filterchoice == filters.Subtract)
 		{
-			ELOFMLPCCEA = "ConnectToMaster() failed. Can only connect while in state 'Disconnected'. Current state: ";
+			ELOFMLPCCEA = "You did not select a Hosting Type in your PhotonServerSettings. Please set it up or don't use ConnectUsingSettings().";
 		}
 		if (filterchoice == filters.HardLight)
 		{
-			ELOFMLPCCEA = "Gameplay/sprite";
+			ELOFMLPCCEA = "Gameplay/Segment-[PowerUp]";
 		}
 		if (filterchoice == (filters)78)
 		{
-			ELOFMLPCCEA = "To Log";
+			ELOFMLPCCEA = "stats on";
 		}
 		if (filterchoice == (filters)(-86))
 		{
-			ELOFMLPCCEA = "AccuracyScoreText";
+			ELOFMLPCCEA = "PenaltyScoreText";
 		}
 		if (filterchoice == (filters)(-1))
 		{
-			ELOFMLPCCEA = "achievements.21.completed.workshop.";
+			ELOFMLPCCEA = "1159514800";
 		}
 		if (filterchoice == (filters)(-22))
 		{
@@ -371,7 +371,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -52);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		GBPGJKPMMDN();
+		FEHMFPBAGFG();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -383,7 +383,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			CKFICFFNDFJ();
+			CDOAGLJEKKL();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -404,11 +404,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "[LevelEditorScene] Error: Unfortunately, you're banned by the community from uploading to the workshop! Bummer. :(";
+			ELOFMLPCCEA = "[LevelEditorScene] Error: Timeout :S";
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "uploads/Intralism/mods_terms.pdf";
+			ELOFMLPCCEA = "[Up]";
 		}
 		if (filterchoice == filters.Multiply)
 		{
@@ -416,15 +416,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "Connection failed: ";
+			ELOFMLPCCEA = "masterSteamID";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "cipherText";
+			ELOFMLPCCEA = "plainText";
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/Colors_NewPosterize";
+			ELOFMLPCCEA = "_ScreenResolution";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
@@ -436,19 +436,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Screen)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/Blur_Bloom";
+			ELOFMLPCCEA = "_MainTex2";
 		}
 		if (filterchoice == (filters)106)
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "_Value2";
 		}
 		if (filterchoice == (filters)120)
 		{
-			ELOFMLPCCEA = "#random #rare #item";
+			ELOFMLPCCEA = "recipes";
 		}
 		if (filterchoice == filters.Subtract)
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == (filters)33)
 		{
@@ -456,7 +456,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-44))
 		{
-			ELOFMLPCCEA = "Search: ";
+			ELOFMLPCCEA = "EventSystem";
 		}
 		if (filterchoice == (filters)(-86))
 		{
@@ -464,7 +464,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)90)
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "_Value2";
 		}
 		if (filterchoice == (filters)36)
 		{
@@ -472,23 +472,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)44)
 		{
-			ELOFMLPCCEA = "RequestForPickupItems";
+			ELOFMLPCCEA = " id: ";
 		}
 		if (filterchoice == (filters)(-80))
 		{
-			ELOFMLPCCEA = "</color>";
+			ELOFMLPCCEA = "#";
 		}
 		if (filterchoice == (filters)118)
 		{
-			ELOFMLPCCEA = "Alpha";
+			ELOFMLPCCEA = "STICKRVER";
 		}
 		if (filterchoice == (filters)59)
 		{
-			ELOFMLPCCEA = "grid";
+			ELOFMLPCCEA = "Tab1Content";
 		}
 		if (filterchoice == (filters)(-97))
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "CameraFilterPack/TV_VHS";
 		}
 		if (filterchoice == (filters)120)
 		{
@@ -496,11 +496,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)98)
 		{
-			ELOFMLPCCEA = " not exist";
+			ELOFMLPCCEA = ": ";
 		}
 		if (filterchoice == (filters)44)
 		{
-			ELOFMLPCCEA = "0 - default, 1 - left, 2 - right";
+			ELOFMLPCCEA = "hand";
 		}
 	}
 
@@ -512,7 +512,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, 89);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		NBMEBBHCNMH();
+		MHNCEEDIKCC();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -531,13 +531,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				MFHPKGICPIO().SetTexture("#no", JDMCFBKJHDD);
+				HILDKDFEBPF().SetTexture(".completed", JDMCFBKJHDD);
 			}
-			ADBKPGFMNKO().SetFloat("_Screen", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat(" not exist", BlendFX);
-			JIBOKBCPDLC().SetFloat("YES", SwitchCameraToCamera2);
-			MNLKBFFKHIE().SetVector("CameraFilterPack/Distortion_Half_Sphere", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 850f, 741f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBMPPNFKFLB());
+			LPCHMEKDCHI().SetFloat("pointBuffer", HBJJOCHGOPH);
+			PEIMCBBHLBJ().SetFloat(": ", BlendFX);
+			ECCPAOBFDKP().SetFloat("Exit to menu?", SwitchCameraToCamera2);
+			NBMPPNFKFLB().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 850f, 741f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
 		}
 		else
 		{
@@ -687,7 +687,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -46);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		FEHMFPBAGFG();
+		CDOAGLJEKKL();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -706,13 +706,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				DOMEEFLPEPJ().SetTexture("_ScreenResolution", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture("_Size", JDMCFBKJHDD);
 			}
-			PEIMCBBHLBJ().SetFloat("http://steamcommunity.com/sharedfiles/filedetails/?id=", HBJJOCHGOPH);
-			LDNADDJMIPK().SetFloat("accuracy", BlendFX);
-			MFHPKGICPIO().SetFloat("menu.selectedlevelid", SwitchCameraToCamera2);
-			KEMJNOMIPHN().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1457f, 898f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IKAEIOAHPKI());
+			FKEOGPDLBDD().SetFloat("workshop.", HBJJOCHGOPH);
+			HILDKDFEBPF().SetFloat("maphash", BlendFX);
+			IFMAPIDFNLI().SetFloat("OnReadyClick", SwitchCameraToCamera2);
+			LPDOGGFOBDH().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1457f, 898f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
 		}
 		else
 		{
@@ -724,19 +724,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "ViewMenu";
+			ELOFMLPCCEA = "EventMenu";
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "Item created: Id: ";
-		}
-		if (filterchoice == filters.LinearBurn)
-		{
-			ELOFMLPCCEA = "_ScreenResolution";
-		}
-		if (filterchoice == filters.Darken)
-		{
-			ELOFMLPCCEA = "_EmissionColor";
+			ELOFMLPCCEA = "SUCCESS! Item submitted! :D :D :D";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
@@ -744,7 +736,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "Texture2";
+			ELOFMLPCCEA = "_DiffuseColor";
+		}
+		if (filterchoice == filters.LinearBurn)
+		{
+			ELOFMLPCCEA = "CameraFilterPack/Edge_Sobel";
+		}
+		if (filterchoice == filters.Darken)
+		{
+			ELOFMLPCCEA = "_SweaterSize";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
@@ -752,11 +752,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Screen)
 		{
-			ELOFMLPCCEA = " not exist";
+			ELOFMLPCCEA = ": ";
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "x";
+			ELOFMLPCCEA = "y";
 		}
 		if (filterchoice == (filters)(-98))
 		{
@@ -764,11 +764,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-16))
 		{
-			ELOFMLPCCEA = " not exist";
+			ELOFMLPCCEA = "[PlayerController] ";
 		}
 		if (filterchoice == (filters)(-58))
 		{
-			ELOFMLPCCEA = ".lastCheckpoint.powerupsScore";
+			ELOFMLPCCEA = ".lastCheckpoint.penaltyScore";
 		}
 		if (filterchoice == (filters)(-27))
 		{
@@ -776,11 +776,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)81)
 		{
-			ELOFMLPCCEA = ".lastCheckpoint.bgcolor";
+			ELOFMLPCCEA = "[MapsData] Preloading workshop";
 		}
 		if (filterchoice == (filters)80)
 		{
-			ELOFMLPCCEA = "_MainTex";
+			ELOFMLPCCEA = "_SceneFogMode";
 		}
 		if (filterchoice == (filters)71)
 		{
@@ -788,11 +788,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-106))
 		{
-			ELOFMLPCCEA = "RPC can't be sent to target PhotonPlayer being null! Did not send \"";
+			ELOFMLPCCEA = "RPCs can only be sent in rooms. Call of \"";
 		}
 		if (filterchoice == (filters)(-115))
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "CameraFilterPack/Distortion_Heat";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
@@ -804,23 +804,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)99)
 		{
-			ELOFMLPCCEA = "_Parameter";
+			ELOFMLPCCEA = "vignetteIntensity";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "[LocalizationService] All keys for ";
+			ELOFMLPCCEA = " - Contains ";
 		}
 		if (filterchoice == (filters)(-38))
 		{
-			ELOFMLPCCEA = "--------------------------------";
+			ELOFMLPCCEA = "0.00";
 		}
 		if (filterchoice == (filters)34)
 		{
-			ELOFMLPCCEA = "settings_bindings_controller_type";
+			ELOFMLPCCEA = "settings_bindings_sec_";
 		}
 		if (filterchoice == (filters)(-95))
 		{
-			ELOFMLPCCEA = ". Using max value: 255.";
+			ELOFMLPCCEA = "Can't set MaxPlayers when not in that room.";
 		}
 	}
 
@@ -840,7 +840,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			CGCHMJCJOBB();
+			MENDFOCFMAN();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -957,13 +957,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				HILDKDFEBPF().SetTexture("_MainTex2", JDMCFBKJHDD);
+				KEMJNOMIPHN().SetTexture("_Bullet_11", JDMCFBKJHDD);
 			}
-			LDNADDJMIPK().SetFloat("yyyy-MM-dd HH:mm:ss", HBJJOCHGOPH);
-			OCMBHMLNCEK().SetFloat("https://vk.com/khb.soft", BlendFX);
-			OCMBHMLNCEK().SetFloat("_ScreenResolution", SwitchCameraToCamera2);
-			FKEOGPDLBDD().SetVector("skin.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1406f, 860f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MFHPKGICPIO());
+			HILDKDFEBPF().SetFloat("|", HBJJOCHGOPH);
+			NBMPPNFKFLB().SetFloat("https://twitch.tv/intralism", BlendFX);
+			MHBAIEKFBIJ().SetFloat("_ScreenResolution", SwitchCameraToCamera2);
+			ADBKPGFMNKO().SetVector("end", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1406f, 860f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HILDKDFEBPF());
 		}
 		else
 		{
@@ -975,7 +975,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "_Jitter";
+			ELOFMLPCCEA = "_MinVelocity";
 		}
 		if (filterchoice == filters.Multiply)
 		{
@@ -983,7 +983,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
-			ELOFMLPCCEA = "Tab2Content";
+			ELOFMLPCCEA = "Tab1Content";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
@@ -991,11 +991,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "[MapsData] Found ";
+			ELOFMLPCCEA = "[MapsData] User's maps was loaded";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "#scoresubmitionfailed: ";
+			ELOFMLPCCEA = "IntraTime";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
@@ -1003,11 +1003,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Screen)
 		{
-			ELOFMLPCCEA = "maps.";
+			ELOFMLPCCEA = "[PlayerBase] Loading checkpoint data";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "init";
+			ELOFMLPCCEA = "Instance\nWorking commands:\ninit or init <savepath>\npath\nsetint <key> <value>\ngetint <key> <value>\nsetfloat <key> <value>\ngetfloat <key> <value>\nsetstring <key> <value>\ngetstring <key> <value>\nsetbool <key> <value>\ngetbool <key> <value>\ndelete <key>\ndeleteall";
 		}
 		if (filterchoice == (filters)(-123))
 		{
@@ -1015,7 +1015,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)116)
 		{
-			ELOFMLPCCEA = "z";
+			ELOFMLPCCEA = "y";
 		}
 		if (filterchoice == (filters)(-50))
 		{
@@ -1023,7 +1023,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)78)
 		{
-			ELOFMLPCCEA = "SupportLogger OnJoinedRoom(";
+			ELOFMLPCCEA = "SupportLogger OnJoinedLobby(";
 		}
 		if (filterchoice == (filters)111)
 		{
@@ -1031,7 +1031,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-97))
 		{
-			ELOFMLPCCEA = "<command>";
+			ELOFMLPCCEA = "#challengecomplete";
 		}
 		if (filterchoice == (filters)111)
 		{
@@ -1039,15 +1039,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-125))
 		{
-			ELOFMLPCCEA = "Connection error: ";
+			ELOFMLPCCEA = "#restart";
 		}
 		if (filterchoice == (filters)(-106))
 		{
-			ELOFMLPCCEA = "OnAwakeRPC";
+			ELOFMLPCCEA = "<color=white>";
 		}
 		if (filterchoice == (filters)(-18))
 		{
-			ELOFMLPCCEA = "settings.crosshairopacity";
+			ELOFMLPCCEA = "settings.cameramovements";
 		}
 		if (filterchoice == (filters)(-56))
 		{
@@ -1055,23 +1055,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)121)
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "CameraFilterPack/Special_Bubble";
 		}
 		if (filterchoice == (filters)58)
 		{
-			ELOFMLPCCEA = "_UserLutParams";
+			ELOFMLPCCEA = "_InternalLutParams";
 		}
 		if (filterchoice == (filters)26)
 		{
-			ELOFMLPCCEA = "SetSatelliteColor";
+			ELOFMLPCCEA = "SetSunMaxSize";
 		}
 		if (filterchoice == (filters)(-11))
 		{
-			ELOFMLPCCEA = " | Level: ";
+			ELOFMLPCCEA = "Emergency Help:";
 		}
 		if (filterchoice == (filters)(-63))
 		{
-			ELOFMLPCCEA = "SpawnObj";
+			ELOFMLPCCEA = "[EditorEvent] Exception: ";
 		}
 	}
 
@@ -1079,7 +1079,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			CGCHMJCJOBB();
+			GBPGJKPMMDN();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -1124,7 +1124,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "_EmissionColor";
+			ELOFMLPCCEA = "_DiffuseColor";
 		}
 		if (filterchoice == filters.Lighten)
 		{
@@ -1136,11 +1136,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "Currently, the limit of users is reached for this title. Try again later. Disconnecting";
+			ELOFMLPCCEA = "The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "[MapsStats] Length: ";
+			ELOFMLPCCEA = "[RanksSystem] Map hash: ";
 		}
 		if (filterchoice == filters.Screen)
 		{
@@ -1148,15 +1148,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "speed";
+			ELOFMLPCCEA = "#FFFFFFFF";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
-			ELOFMLPCCEA = "_MainTex2";
+			ELOFMLPCCEA = "_Value5";
 		}
 		if (filterchoice == filters.LighterColor)
 		{
-			ELOFMLPCCEA = "error";
+			ELOFMLPCCEA = "#getrewardfailed: ";
 		}
 		if (filterchoice == (filters)(-76))
 		{
@@ -1164,23 +1164,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)98)
 		{
-			ELOFMLPCCEA = "EventData0DropDownList";
+			ELOFMLPCCEA = "BitsData";
 		}
 		if (filterchoice == (filters)47)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_DarkerColor";
+			ELOFMLPCCEA = "CameraFilterPack/Blend2Camera_LinearBurn";
 		}
 		if (filterchoice == (filters)95)
 		{
-			ELOFMLPCCEA = "JoinRoom failed. A roomname is required. If you don't know one, how will you join?";
+			ELOFMLPCCEA = "CreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.";
 		}
 		if (filterchoice == (filters)110)
 		{
-			ELOFMLPCCEA = "_ColorLevel";
+			ELOFMLPCCEA = "_EdgeSize";
 		}
 		if (filterchoice == (filters)(-56))
 		{
-			ELOFMLPCCEA = "SpawnObj";
+			ELOFMLPCCEA = "[EditorEvent] Exception: ";
 		}
 		if (filterchoice == (filters)(-104))
 		{
@@ -1188,11 +1188,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-71))
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "CameraFilterPack/Glasses_On";
 		}
 		if (filterchoice == (filters)123)
 		{
-			ELOFMLPCCEA = "_EmissionColor";
+			ELOFMLPCCEA = "_DiffuseColor";
 		}
 		if (filterchoice == (filters)85)
 		{
@@ -1200,11 +1200,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.PinLight)
 		{
-			ELOFMLPCCEA = "Maps Editor v.";
+			ELOFMLPCCEA = "EventSystem";
 		}
 		if (filterchoice == (filters)91)
 		{
-			ELOFMLPCCEA = "_DistAmount";
+			ELOFMLPCCEA = "UNDISTORT";
 		}
 		if (filterchoice == (filters)25)
 		{
@@ -1216,7 +1216,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)86)
 		{
-			ELOFMLPCCEA = "<b>Intralism Items Uploader</b> by Oxy949";
+			ELOFMLPCCEA = "Called GetNumberOfCurrentPlayers()";
 		}
 	}
 
@@ -1233,7 +1233,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			GOCIGGGHANF();
+			LGHFFANDDCM();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -1261,13 +1261,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IFMAPIDFNLI().SetTexture(".b", JDMCFBKJHDD);
+				NBPKMLMCHFN.SetTexture(".b", JDMCFBKJHDD);
 			}
-			OCMBHMLNCEK().SetFloat("_EmissionGain", HBJJOCHGOPH);
-			OCMBHMLNCEK().SetFloat("Playing ", BlendFX);
-			MFHPKGICPIO().SetFloat("[MapEditor] Item creation successful! Published Item ID: ", SwitchCameraToCamera2);
-			LDNADDJMIPK().SetVector("colorD", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1625f, 1078f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
+			OIIDAKBILMI().SetFloat("_EmissionGain", HBJJOCHGOPH);
+			JIBOKBCPDLC().SetFloat("Gameplay/Base", BlendFX);
+			JIBOKBCPDLC().SetFloat("Created", SwitchCameraToCamera2);
+			LPCHMEKDCHI().SetVector("colorC", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1625f, 1078f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMJNOMIPHN());
 		}
 		else
 		{
@@ -1279,7 +1279,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MELKBLIIFEO();
+			MBKICIMOCGC();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -1300,7 +1300,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "mapselector.filter.favoriteonly";
+			ELOFMLPCCEA = "mapselector.filter.subscribedonly";
 		}
 		if (filterchoice == filters.Multiply)
 		{
@@ -1312,7 +1312,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
-			ELOFMLPCCEA = "_VignetteSettings";
+			ELOFMLPCCEA = "_VignetteCenter";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
@@ -1328,39 +1328,39 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "Item ";
+			ELOFMLPCCEA = "ItemTemplate";
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
-			ELOFMLPCCEA = "There are a few rules that you must accept before submitting your work. Please select \"RULES\" button, if you haven't read them yet.";
+			ELOFMLPCCEA = "OK";
 		}
 		if (filterchoice == (filters)(-128))
 		{
-			ELOFMLPCCEA = "GlassColor";
+			ELOFMLPCCEA = "GlassesColor2";
 		}
 		if (filterchoice == (filters)124)
 		{
-			ELOFMLPCCEA = "/files/editor_manual.pdf";
+			ELOFMLPCCEA = "<b>#";
 		}
 		if (filterchoice == filters.Overlay)
 		{
-			ELOFMLPCCEA = "_BlurRadius4";
+			ELOFMLPCCEA = "_SunPosition";
 		}
 		if (filterchoice == (filters)(-36))
 		{
-			ELOFMLPCCEA = "Screen Space Reflections";
+			ELOFMLPCCEA = "_WorldToCameraMatrix";
 		}
 		if (filterchoice == (filters)66)
 		{
-			ELOFMLPCCEA = "GlassesColor2";
+			ELOFMLPCCEA = "GlassesColor";
 		}
 		if (filterchoice == (filters)(-8))
 		{
-			ELOFMLPCCEA = "_NoiseTex";
+			ELOFMLPCCEA = "Noise & Grain effect failing as noise texture is not assigned. please assign.";
 		}
 		if (filterchoice == (filters)95)
 		{
-			ELOFMLPCCEA = "OK";
+			ELOFMLPCCEA = "hardcoreinfo";
 		}
 		if (filterchoice == (filters)49)
 		{
@@ -1368,35 +1368,35 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)68)
 		{
-			ELOFMLPCCEA = "_Bloom0";
+			ELOFMLPCCEA = "_LensDirtIntensity";
 		}
 		if (filterchoice == (filters)(-75))
 		{
-			ELOFMLPCCEA = "-showlogs";
+			ELOFMLPCCEA = "settings.fps";
 		}
 		if (filterchoice == (filters)(-68))
 		{
-			ELOFMLPCCEA = "EventMenu";
+			ELOFMLPCCEA = "EditMenu";
 		}
 		if (filterchoice == (filters)(-16))
 		{
-			ELOFMLPCCEA = "shader.crispwinter";
+			ELOFMLPCCEA = "FrostCanvas";
 		}
 		if (filterchoice == (filters)(-122))
 		{
-			ELOFMLPCCEA = " argument(s): ";
+			ELOFMLPCCEA = " methods \"";
 		}
 		if (filterchoice == (filters)(-7))
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == (filters)123)
 		{
-			ELOFMLPCCEA = "GlassesColor2";
+			ELOFMLPCCEA = "GlassesColor";
 		}
 		if (filterchoice == (filters)32)
 		{
-			ELOFMLPCCEA = "https://bugs.khb-soft.ru/set_project.php?project_id=1";
+			ELOFMLPCCEA = "https://reddit.com/r/Intralism";
 		}
 	}
 
@@ -1484,7 +1484,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "_CurveParams";
+			ELOFMLPCCEA = "_Offsets";
 		}
 		if (filterchoice == filters.Screen)
 		{
@@ -1492,11 +1492,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "Triangle";
+			ELOFMLPCCEA = "Circle";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = " not found";
+			ELOFMLPCCEA = "shader.invert";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
@@ -1504,23 +1504,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
-			ELOFMLPCCEA = "_History2ChromaTex";
+			ELOFMLPCCEA = "_History4LumaTex";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "DPADHOR";
+			ELOFMLPCCEA = "DPADVER";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "SetRoomStartTimestamp";
+			ELOFMLPCCEA = "new round";
 		}
 		if (filterchoice == (filters)(-57))
 		{
-			ELOFMLPCCEA = "Changed config";
+			ELOFMLPCCEA = "[EditorEvent] Exception: ";
 		}
 		if (filterchoice == (filters)(-63))
 		{
-			ELOFMLPCCEA = "Set arcs speed. Base value - 15";
+			ELOFMLPCCEA = "1,30,true,0";
 		}
 		if (filterchoice == (filters)(-34))
 		{
@@ -1528,7 +1528,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-48))
 		{
-			ELOFMLPCCEA = "_Value";
+			ELOFMLPCCEA = "_TimeX";
 		}
 		if (filterchoice == (filters)(-28))
 		{
@@ -1540,27 +1540,27 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-7))
 		{
-			ELOFMLPCCEA = "PopulateMapsList";
+			ELOFMLPCCEA = "mapselector.filter.subscribedonly";
 		}
 		if (filterchoice == (filters)80)
 		{
-			ELOFMLPCCEA = "_MainTex2";
+			ELOFMLPCCEA = "_Value13";
 		}
 		if (filterchoice == (filters)(-31))
 		{
-			ELOFMLPCCEA = ".highscore";
+			ELOFMLPCCEA = "maps.";
 		}
 		if (filterchoice == (filters)59)
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "Drop_With_Obj";
 		}
 		if (filterchoice == (filters)45)
 		{
-			ELOFMLPCCEA = "&";
+			ELOFMLPCCEA = "lobby '{0}'[{1}]";
 		}
 		if (filterchoice == (filters)121)
 		{
-			ELOFMLPCCEA = "#rt";
+			ELOFMLPCCEA = "SetRoomStartTimestamp";
 		}
 		if (filterchoice == filters.Saturation)
 		{
@@ -1568,7 +1568,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-25))
 		{
-			ELOFMLPCCEA = "AuthenticationValues UserId: {0}, GetParameters: {1} Token available: {2}";
+			ELOFMLPCCEA = "TypedLobbyInfo '{0}'[{1}] rooms: {2} players: {3}";
 		}
 		if (filterchoice == (filters)(-40))
 		{
@@ -1608,15 +1608,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "FileLabel";
+			ELOFMLPCCEA = "Icon";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = " Path: ";
+			ELOFMLPCCEA = ". Name: ";
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
-			ELOFMLPCCEA = "_Value";
+			ELOFMLPCCEA = "_TimeX";
 		}
 		if (filterchoice == filters.Screen)
 		{
@@ -1624,7 +1624,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "Reconnect() failed. It seems the client wasn't connected before?! Current state: ";
+			ELOFMLPCCEA = "ConnectToMaster() enabled isMessageQueueRunning. Needs to be able to dispatch incoming messages.";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
@@ -1632,23 +1632,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "RT";
+			ELOFMLPCCEA = "LT";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = " respawn: ";
+			ELOFMLPCCEA = "Sent count: ";
 		}
 		if (filterchoice == (filters)42)
 		{
-			ELOFMLPCCEA = "0.00:0.00";
+			ELOFMLPCCEA = "Creating awesome maps";
 		}
 		if (filterchoice == (filters)(-74))
 		{
-			ELOFMLPCCEA = "steamid";
+			ELOFMLPCCEA = "---";
 		}
 		if (filterchoice == (filters)(-56))
 		{
-			ELOFMLPCCEA = "Player";
+			ELOFMLPCCEA = "[Singleton] multiple instances of '";
 		}
 		if (filterchoice == (filters)46)
 		{
@@ -1656,23 +1656,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "rarity";
+			ELOFMLPCCEA = "RarityImage";
 		}
 		if (filterchoice == (filters)61)
 		{
-			ELOFMLPCCEA = "PLEASE WAIT";
+			ELOFMLPCCEA = "#ok";
 		}
 		if (filterchoice == (filters)69)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/Pixelisation_OilPaintHQ";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == (filters)(-49))
 		{
-			ELOFMLPCCEA = "_NoiseAmount";
+			ELOFMLPCCEA = "_NoiseTilingPerChannel";
 		}
 		if (filterchoice == (filters)(-117))
 		{
-			ELOFMLPCCEA = "PunRespawn";
+			ELOFMLPCCEA = "Instantiating: ";
 		}
 		if (filterchoice == (filters)(-3))
 		{
@@ -1684,7 +1684,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)101)
 		{
-			ELOFMLPCCEA = "RecordButton";
+			ELOFMLPCCEA = "#C8C8C8FF";
 		}
 		if (filterchoice == (filters)48)
 		{
@@ -1692,7 +1692,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-20))
 		{
-			ELOFMLPCCEA = "[MapsData] Installed: ";
+			ELOFMLPCCEA = "source";
 		}
 		if (filterchoice == (filters)88)
 		{
@@ -1700,7 +1700,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)35)
 		{
-			ELOFMLPCCEA = "No Name";
+			ELOFMLPCCEA = "music.ogg";
 		}
 	}
 
@@ -1712,7 +1712,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -86);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		MELKBLIIFEO();
+		MBKICIMOCGC();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -1747,7 +1747,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			AFOHBGHNBDI();
+			LBEHKFNPKMC();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -1772,27 +1772,27 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "The image effect ";
+			ELOFMLPCCEA = "CheckResources () for ";
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "{0}";
+			ELOFMLPCCEA = "false";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().";
+			ELOFMLPCCEA = " = ";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "GroupNameText";
+			ELOFMLPCCEA = "Image";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "#close";
+			ELOFMLPCCEA = "#tryagain";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "_Contrast";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
@@ -1800,31 +1800,31 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "Fade";
 		}
 		if (filterchoice == (filters)26)
 		{
-			ELOFMLPCCEA = "EndlessLoopsScoreText";
+			ELOFMLPCCEA = "CheckpointsScoreText";
 		}
 		if (filterchoice == (filters)(-125))
 		{
-			ELOFMLPCCEA = "_Color";
+			ELOFMLPCCEA = "_EmissionColor";
 		}
 		if (filterchoice == (filters)(-78))
 		{
-			ELOFMLPCCEA = "/Segment-[Right]";
+			ELOFMLPCCEA = "LoadPlayerSkin";
 		}
 		if (filterchoice == (filters)(-34))
 		{
-			ELOFMLPCCEA = "Deleted event";
+			ELOFMLPCCEA = "BitsData";
 		}
 		if (filterchoice == (filters)66)
 		{
-			ELOFMLPCCEA = "_OffsetScale";
+			ELOFMLPCCEA = "_EdgeThreshold";
 		}
 		if (filterchoice == (filters)(-71))
 		{
-			ELOFMLPCCEA = "_ReflectionTexture3";
+			ELOFMLPCCEA = "_ReflectionTexture1";
 		}
 		if (filterchoice == filters.Subtract)
 		{
@@ -1832,11 +1832,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)25)
 		{
-			ELOFMLPCCEA = "#ok";
+			ELOFMLPCCEA = "Editor";
 		}
 		if (filterchoice == (filters)(-19))
 		{
-			ELOFMLPCCEA = "Changed config";
+			ELOFMLPCCEA = "[EditorEvent] Exception: ";
 		}
 		if (filterchoice == (filters)(-71))
 		{
@@ -1848,7 +1848,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)44)
 		{
-			ELOFMLPCCEA = "Mouse Wheel Down";
+			ELOFMLPCCEA = "Mouse";
 		}
 		if (filterchoice == (filters)(-95))
 		{
@@ -1856,15 +1856,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)43)
 		{
-			ELOFMLPCCEA = "player.dragon";
+			ELOFMLPCCEA = "player.goldarc";
 		}
 		if (filterchoice == (filters)(-39))
 		{
-			ELOFMLPCCEA = "menu.selectedplaymode";
+			ELOFMLPCCEA = "mapselector.lastSearch";
 		}
 		if (filterchoice == filters.Luminosity)
 		{
-			ELOFMLPCCEA = "880078120";
+			ELOFMLPCCEA = "1427616858";
 		}
 	}
 
@@ -1880,7 +1880,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -43);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		MENDFOCFMAN();
+		LGHFFANDDCM();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -1900,7 +1900,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -32);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		NBMEBBHCNMH();
+		CKFICFFNDFJ();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -1957,13 +1957,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("MenuVolumeSlider", JDMCFBKJHDD);
+				NBMPPNFKFLB().SetTexture("MenuVolumeSlider", JDMCFBKJHDD);
 			}
-			NBMPPNFKFLB().SetFloat("SetBGColor", HBJJOCHGOPH);
-			MFHPKGICPIO().SetFloat("settings.volume.editor", BlendFX);
-			KEMJNOMIPHN().SetFloat("[PlayerBase] Loaded custom model: ", SwitchCameraToCamera2);
-			MHBAIEKFBIJ().SetVector("settings.enablehitsoundsinrelax", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 272f, 466f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPCHMEKDCHI());
+			ADBKPGFMNKO().SetFloat("Show text at the center of the screen. Usefull for quick messages like 'Thanks for playing!'", HBJJOCHGOPH);
+			KEMJNOMIPHN().SetFloat("settings.volume.sfx", BlendFX);
+			KEMJNOMIPHN().SetFloat("Gameplay/sun", SwitchCameraToCamera2);
+			ECCPAOBFDKP().SetVector("win", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 272f, 466f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
 		}
 		else
 		{
@@ -1998,7 +1998,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			IGCBJKFAFEH();
+			MENDFOCFMAN();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -2019,7 +2019,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MPJAFNJLBEF();
+			CDOAGLJEKKL();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -2051,7 +2051,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "[LevelEditorScene] Updated";
+			ELOFMLPCCEA = "/";
 		}
 		if (filterchoice == filters.Multiply)
 		{
@@ -2059,15 +2059,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
-			ELOFMLPCCEA = "_CenterX";
+			ELOFMLPCCEA = "_ScreenResolution";
 		}
 		if (filterchoice == filters.Screen)
 		{
-			ELOFMLPCCEA = "<color=#{0}>{1}</color>";
+			ELOFMLPCCEA = "setAF";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "settings.arcsnohitsoundtimedelay";
+			ELOFMLPCCEA = "settings.arcsdestroydelay";
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
@@ -2075,31 +2075,31 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "_Distortion";
+			ELOFMLPCCEA = "_TimeX";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "maphash";
+			ELOFMLPCCEA = "mapid";
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "note.1";
+			ELOFMLPCCEA = "#ok";
 		}
 		if (filterchoice == (filters)(-64))
 		{
-			ELOFMLPCCEA = "_SceneFogParams";
+			ELOFMLPCCEA = "_HeightParams";
 		}
 		if (filterchoice == (filters)77)
 		{
-			ELOFMLPCCEA = "bad";
+			ELOFMLPCCEA = "error";
 		}
 		if (filterchoice == (filters)(-34))
 		{
-			ELOFMLPCCEA = "InfoText";
+			ELOFMLPCCEA = "rarity";
 		}
 		if (filterchoice == (filters)123)
 		{
-			ELOFMLPCCEA = "0";
+			ELOFMLPCCEA = "LevelEditor/patterns";
 		}
 		if (filterchoice == (filters)(-122))
 		{
@@ -2107,7 +2107,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)69)
 		{
-			ELOFMLPCCEA = "_Threshhold";
+			ELOFMLPCCEA = "colorD";
 		}
 		if (filterchoice == filters.Difference)
 		{
@@ -2115,11 +2115,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)70)
 		{
-			ELOFMLPCCEA = "_ChromaticAberration";
+			ELOFMLPCCEA = "_Blur";
 		}
 		if (filterchoice == (filters)79)
 		{
-			ELOFMLPCCEA = "_Value";
+			ELOFMLPCCEA = "_TimeX";
 		}
 		if (filterchoice == (filters)(-21))
 		{
@@ -2135,11 +2135,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-91))
 		{
-			ELOFMLPCCEA = "Lag ";
+			ELOFMLPCCEA = "No peer to communicate with. ";
 		}
 		if (filterchoice == (filters)(-78))
 		{
-			ELOFMLPCCEA = "_BokehParams";
+			ELOFMLPCCEA = "_BlurredColor";
 		}
 		if (filterchoice == (filters)(-12))
 		{
@@ -2147,7 +2147,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-5))
 		{
-			ELOFMLPCCEA = "ShowSprite";
+			ELOFMLPCCEA = "finished";
 		}
 	}
 
@@ -2215,7 +2215,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -58);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		CGCHMJCJOBB();
+		MBKICIMOCGC();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2227,7 +2227,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MIPGPMKJELI();
+			CDOAGLJEKKL();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -2252,7 +2252,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, 42);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		NBMEBBHCNMH();
+		GOCIGGGHANF();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2273,7 +2273,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			LGHFFANDDCM();
+			MENDFOCFMAN();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -2301,13 +2301,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				KEMJNOMIPHN().SetTexture("offsets", JDMCFBKJHDD);
+				OIIDAKBILMI().SetTexture("offsets", JDMCFBKJHDD);
 			}
-			LPDOGGFOBDH().SetFloat("_Offsets", HBJJOCHGOPH);
-			OKJOKHGJHGF().SetFloat("masterSteamID", BlendFX);
+			MFHPKGICPIO().SetFloat("_BlurParams", HBJJOCHGOPH);
+			JIBOKBCPDLC().SetFloat("Player Disconnected", BlendFX);
 			DOMEEFLPEPJ().SetFloat("_ScreenResolution", SwitchCameraToCamera2);
-			HILDKDFEBPF().SetVector("Set Crosshair Color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 776f, 1646f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EFDEIFCDAFG());
+			OCMBHMLNCEK().SetVector("Set Crosshair Color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 776f, 1646f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -2323,7 +2323,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, 27);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		MPJAFNJLBEF();
+		JOLDJFOBCLO();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2342,13 +2342,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				LPCHMEKDCHI().SetTexture("</color>", JDMCFBKJHDD);
+				PEIMCBBHLBJ().SetTexture(" | ", JDMCFBKJHDD);
 			}
-			LDNADDJMIPK().SetFloat("CameraFilterPack/Film_ColorPerfection", HBJJOCHGOPH);
-			NBMPPNFKFLB().SetFloat("_TimeX", BlendFX);
-			EFDEIFCDAFG().SetFloat("1.87", SwitchCameraToCamera2);
-			OIIDAKBILMI().SetVector("]", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 901f, 1635f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPCHMEKDCHI());
+			MHBAIEKFBIJ().SetFloat("_MainTex2", HBJJOCHGOPH);
+			EFDEIFCDAFG().SetFloat("CameraFilterPack/Drawing_CellShading2", BlendFX);
+			ECCPAOBFDKP().SetFloat(" connected: ", SwitchCameraToCamera2);
+			MPENCEIGLEH().SetVector("-", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 901f, 1635f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KEMJNOMIPHN());
 		}
 		else
 		{
@@ -2367,13 +2367,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				FKEOGPDLBDD().SetTexture("<color=#{0}>{1}</color>", JDMCFBKJHDD);
+				MPENCEIGLEH().SetTexture("Game Version: ", JDMCFBKJHDD);
 			}
-			LDNADDJMIPK().SetFloat("Couldn't call DestroyAll() as only the master client is allowed to call this.", HBJJOCHGOPH);
-			NBMPPNFKFLB().SetFloat(".highscore", BlendFX);
-			EFDEIFCDAFG().SetFloat("Cross", SwitchCameraToCamera2);
-			FKEOGPDLBDD().SetVector("_History4ChromaTex", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1128f, 1845f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MPENCEIGLEH());
+			LPCHMEKDCHI().SetFloat("Destroy(targetPhotonView) failed, cause targetPhotonView is null.", HBJJOCHGOPH);
+			PEIMCBBHLBJ().SetFloat("maps.", BlendFX);
+			MPENCEIGLEH().SetFloat("Square", SwitchCameraToCamera2);
+			EFDEIFCDAFG().SetVector("_History2ChromaTex", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1128f, 1845f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
 		}
 		else
 		{
@@ -2401,7 +2401,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MBKICIMOCGC();
+			IGCBJKFAFEH();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -2431,7 +2431,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MPJAFNJLBEF();
+			GBPGJKPMMDN();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -2459,13 +2459,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				KEMJNOMIPHN().SetTexture("CameraFilterPack/Blend2Camera_LinearLight", JDMCFBKJHDD);
+				PEIMCBBHLBJ().SetTexture("CameraFilterPack/Blend2Camera_LinearLight", JDMCFBKJHDD);
 			}
-			IKAEIOAHPKI().SetFloat("CameraFilterPack/Vision_Hell_Blood", HBJJOCHGOPH);
-			MFHPKGICPIO().SetFloat("UI", BlendFX);
-			IKAEIOAHPKI().SetFloat("y", SwitchCameraToCamera2);
-			LPDOGGFOBDH().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 60f, 1011f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
+			MPENCEIGLEH().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			OKJOKHGJHGF().SetFloat("PlayerBase_", BlendFX);
+			FKEOGPDLBDD().SetFloat("y", SwitchCameraToCamera2);
+			HILDKDFEBPF().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 60f, 1011f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IFMAPIDFNLI());
 		}
 		else
 		{
@@ -2484,13 +2484,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				PEIMCBBHLBJ().SetTexture("CameraFilterPack/Real_VHS", JDMCFBKJHDD);
+				MFHPKGICPIO().SetTexture("Texture3", JDMCFBKJHDD);
 			}
-			LDNADDJMIPK().SetFloat("&page=", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("CameraFilterPack/Edge_Sobel", BlendFX);
-			PEIMCBBHLBJ().SetFloat("SetScale", SwitchCameraToCamera2);
-			ADBKPGFMNKO().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 405f, 651f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JIBOKBCPDLC());
+			DOMEEFLPEPJ().SetFloat("&page=", HBJJOCHGOPH);
+			LPCHMEKDCHI().SetFloat("CameraFilterPack/Edge_Sobel", BlendFX);
+			IFMAPIDFNLI().SetFloat("SetScale", SwitchCameraToCamera2);
+			ECCPAOBFDKP().SetVector("Object ID. Case-Sensitive", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 405f, 651f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HILDKDFEBPF());
 		}
 		else
 		{
@@ -2515,7 +2515,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -28);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		MELKBLIIFEO();
+		MBKICIMOCGC();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -2560,13 +2560,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				IKAEIOAHPKI().SetTexture("skin.hit_perfect", JDMCFBKJHDD);
+				FKEOGPDLBDD().SetTexture("skin.hit_wrong", JDMCFBKJHDD);
 			}
-			NBMPPNFKFLB().SetFloat(" ", HBJJOCHGOPH);
-			OCMBHMLNCEK().SetFloat("_TimeX", BlendFX);
-			LDNADDJMIPK().SetFloat("Error: I/O Failure! :(", SwitchCameraToCamera2);
+			LPCHMEKDCHI().SetFloat("ERROR You should never change PhotonPlayer IDs!", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("_TimeX", BlendFX);
+			LPCHMEKDCHI().SetFloat("https://steamcommunity.com/sharedfiles/filedetails/?id=", SwitchCameraToCamera2);
 			LPDOGGFOBDH().SetVector("_Value7", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 268f, 1638f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIIDAKBILMI());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, LPDOGGFOBDH());
 		}
 		else
 		{
@@ -2578,23 +2578,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = " Also make sure to disable sprite packing for this sprite.";
+			ELOFMLPCCEA = "Text";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "\r";
+			ELOFMLPCCEA = "\t";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "Attempting to remove texture that was not allocated: {0}";
+			ELOFMLPCCEA = "Floating point textures aren't supported on this device ({0})";
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
-			ELOFMLPCCEA = "#ok";
+			ELOFMLPCCEA = "[LevelEditorScene] Map submitted!";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "[DiscordController] Responding no to Ask to Join request";
+			ELOFMLPCCEA = "[DiscordController] Responding yes to Ask to Join request";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
@@ -2602,11 +2602,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "Tab2Content";
+			ELOFMLPCCEA = "MaxLivesSlider";
 		}
 		if (filterchoice == filters.Screen)
 		{
-			ELOFMLPCCEA = "[LocalizationService] Error: ";
+			ELOFMLPCCEA = " = ";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
@@ -2614,11 +2614,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-114))
 		{
-			ELOFMLPCCEA = "[CraftingPanel] Init";
+			ELOFMLPCCEA = "time";
 		}
 		if (filterchoice == (filters)(-101))
 		{
-			ELOFMLPCCEA = "Switch environment sprite image";
+			ELOFMLPCCEA = "New resource ID. Case-Sensitive";
 		}
 		if (filterchoice == (filters)30)
 		{
@@ -2634,19 +2634,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)49)
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "CameraFilterPack/Drawing_EnhancedComics";
 		}
 		if (filterchoice == filters.PinLight)
 		{
-			ELOFMLPCCEA = "Fade";
+			ELOFMLPCCEA = "UseFinalGlassColor";
 		}
 		if (filterchoice == (filters)(-30))
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "_Value6";
 		}
 		if (filterchoice == (filters)36)
 		{
-			ELOFMLPCCEA = "note.2";
+			ELOFMLPCCEA = "note.0";
 		}
 		if (filterchoice == (filters)48)
 		{
@@ -2654,19 +2654,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)90)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/TV_Chromatical2";
+			ELOFMLPCCEA = "Speed";
 		}
 		if (filterchoice == (filters)123)
 		{
-			ELOFMLPCCEA = "Use ticket: ";
+			ELOFMLPCCEA = "Write me to get one for testing :)";
 		}
 		if (filterchoice == (filters)(-101))
 		{
-			ELOFMLPCCEA = "_Bloom2";
+			ELOFMLPCCEA = "_Bloom0";
 		}
 		if (filterchoice == (filters)(-28))
 		{
-			ELOFMLPCCEA = "_EmissionColor";
+			ELOFMLPCCEA = "LevelEditor/icons";
 		}
 		if (filterchoice == (filters)76)
 		{
@@ -2674,7 +2674,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-121))
 		{
-			ELOFMLPCCEA = "_Value";
+			ELOFMLPCCEA = "_TimeX";
 		}
 	}
 
@@ -2702,13 +2702,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				NBPKMLMCHFN.SetTexture("traffic", JDMCFBKJHDD);
+				OKJOKHGJHGF().SetTexture("buttons", JDMCFBKJHDD);
 			}
-			MPENCEIGLEH().SetFloat("uploads/Intralism/mods_terms.pdf", HBJJOCHGOPH);
-			ADBKPGFMNKO().SetFloat("Fade", BlendFX);
-			HILDKDFEBPF().SetFloat("challenges.", SwitchCameraToCamera2);
-			EFDEIFCDAFG().SetVector("SetSunMaxSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1682f, 1371f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MPENCEIGLEH());
+			NBPKMLMCHFN.SetFloat("[Up]", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("UseFinalGlassColor", BlendFX);
+			LPDOGGFOBDH().SetFloat("challenges.", SwitchCameraToCamera2);
+			NBMPPNFKFLB().SetVector("SetSunMaxSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1682f, 1371f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MHBAIEKFBIJ());
 		}
 		else
 		{
@@ -2728,35 +2728,35 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Screen)
 		{
-			ELOFMLPCCEA = "FinalScoreSmallText";
+			ELOFMLPCCEA = "PointsScoreText";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
-			ELOFMLPCCEA = "FindFriends failed to apply the result, as a required value wasn't provided or the friend list length differed from result.";
+			ELOFMLPCCEA = "JoinRandom failed: No open game. Calling: OnPhotonRandomJoinFailed() and staying on master server.";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
-			ELOFMLPCCEA = "_Value4";
+			ELOFMLPCCEA = "_Value3";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "OpGetGameList not sent. LobbyType must be SqlLobby.";
+			ELOFMLPCCEA = "OpGetGameList()";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "_Distance";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "CameraFilterPack_VHS2";
+			ELOFMLPCCEA = "CameraFilterPack_VHS1";
 		}
 		if (filterchoice == (filters)(-61))
 		{
-			ELOFMLPCCEA = "/";
+			ELOFMLPCCEA = "OK";
 		}
 		if (filterchoice == (filters)(-73))
 		{
@@ -2764,19 +2764,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-89))
 		{
-			ELOFMLPCCEA = "Observed type is not serializable: ";
+			ELOFMLPCCEA = "PUN-instantiated '";
 		}
 		if (filterchoice == (filters)82)
 		{
-			ELOFMLPCCEA = "Received RPC: ";
+			ELOFMLPCCEA = ". The RPC has been ignored.";
 		}
 		if (filterchoice == (filters)52)
 		{
-			ELOFMLPCCEA = "CreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.";
+			ELOFMLPCCEA = "Offline or in OfflineMode. No VitalStats available.";
 		}
 		if (filterchoice == (filters)(-60))
 		{
-			ELOFMLPCCEA = "YES";
+			ELOFMLPCCEA = "Map already submited. Update?";
 		}
 		if (filterchoice == (filters)(-86))
 		{
@@ -2784,7 +2784,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-107))
 		{
-			ELOFMLPCCEA = "_Value";
+			ELOFMLPCCEA = "_TimeX";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
@@ -2792,19 +2792,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)26)
 		{
-			ELOFMLPCCEA = ". No ViewIDs are free to use. Max is: ";
+			ELOFMLPCCEA = "Failed to InstantiateSceneObject prefab:";
 		}
 		if (filterchoice == (filters)(-56))
 		{
-			ELOFMLPCCEA = "#tryagain";
+			ELOFMLPCCEA = "#ok";
 		}
 		if (filterchoice == (filters)(-26))
 		{
-			ELOFMLPCCEA = " ";
+			ELOFMLPCCEA = ":";
 		}
 		if (filterchoice == (filters)127)
 		{
-			ELOFMLPCCEA = "_FarCamera";
+			ELOFMLPCCEA = "_Visualize";
 		}
 		if (filterchoice == (filters)82)
 		{
@@ -2812,11 +2812,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-10))
 		{
-			ELOFMLPCCEA = "_Value4";
+			ELOFMLPCCEA = "_Value3";
 		}
 		if (filterchoice == (filters)90)
 		{
-			ELOFMLPCCEA = "ws://";
+			ELOFMLPCCEA = "{0}_{1}";
 		}
 	}
 
@@ -2824,7 +2824,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "player.circle";
+			ELOFMLPCCEA = "menutheme.27thfloor";
 		}
 		if (filterchoice == filters.Darken)
 		{
@@ -2832,15 +2832,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
-			ELOFMLPCCEA = "OnJoinedLobby(). This client is connected and does get a room-list, which gets stored as PhotonNetwork.GetRoomList(). This script now calls: PhotonNetwork.JoinRandomRoom();";
+			ELOFMLPCCEA = ".";
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "EventTimeInputField";
+			ELOFMLPCCEA = "Edited event";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
@@ -2848,11 +2848,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "Texture2";
+			ELOFMLPCCEA = "_ScreenResolution";
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "MaxLivesSlider";
+			ELOFMLPCCEA = "HandsCountSlider";
 		}
 		if (filterchoice == filters.Screen)
 		{
@@ -2864,7 +2864,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)100)
 		{
-			ELOFMLPCCEA = ".lastCheckpoint.incorrectScore";
+			ELOFMLPCCEA = ".lastCheckpoint.correctScore";
 		}
 		if (filterchoice == (filters)80)
 		{
@@ -2872,15 +2872,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)65)
 		{
-			ELOFMLPCCEA = "int";
+			ELOFMLPCCEA = "bool";
 		}
 		if (filterchoice == (filters)52)
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == (filters)37)
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == filters.Subtract)
 		{
@@ -2888,23 +2888,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-75))
 		{
-			ELOFMLPCCEA = "Fill Area";
+			ELOFMLPCCEA = "LevelProgressBar";
 		}
 		if (filterchoice == (filters)(-15))
 		{
-			ELOFMLPCCEA = "checkpoint";
+			ELOFMLPCCEA = "caret";
 		}
 		if (filterchoice == (filters)116)
 		{
-			ELOFMLPCCEA = "The used master server address is not available with the subscription currently used. Got to Photon Cloud Dashboard or change URL. Disconnecting.";
+			ELOFMLPCCEA = "Authentication failed: '{0}' Code: {1}";
 		}
 		if (filterchoice == (filters)(-6))
 		{
-			ELOFMLPCCEA = "player.ice";
+			ELOFMLPCCEA = "???";
 		}
 		if (filterchoice == filters.Hue)
 		{
-			ELOFMLPCCEA = "id";
+			ELOFMLPCCEA = "Set Object Position";
 		}
 		if (filterchoice == (filters)(-53))
 		{
@@ -2920,7 +2920,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-124))
 		{
-			ELOFMLPCCEA = "selector";
+			ELOFMLPCCEA = "cancel";
 		}
 	}
 
@@ -2928,7 +2928,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "_Dist";
+			ELOFMLPCCEA = "_Size";
 		}
 		if (filterchoice == filters.Darken)
 		{
@@ -2940,7 +2940,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "Joystick1Button7";
+			ELOFMLPCCEA = "Joystick1Button6";
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
@@ -2948,15 +2948,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "Item ";
+			ELOFMLPCCEA = "ItemTemplate";
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "SupportLogger OnFailedToConnectToPhoton(";
+			ELOFMLPCCEA = "HostType: {0} ";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "[LevelEditorScene] Error: Timeout :S";
+			ELOFMLPCCEA = "[LevelEditorScene] Error: Unfortunately, you're banned by the community from uploading to the workshop! Bummer. :(";
 		}
 		if (filterchoice == filters.LinearDodge)
 		{
@@ -2964,11 +2964,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-54))
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_TimeX";
 		}
 		if (filterchoice == (filters)83)
 		{
-			ELOFMLPCCEA = "1177138211";
+			ELOFMLPCCEA = "907198288";
 		}
 		if (filterchoice == (filters)(-92))
 		{
@@ -2976,15 +2976,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)102)
 		{
-			ELOFMLPCCEA = "LivesSlider";
+			ELOFMLPCCEA = "MaxLivesSlider";
 		}
 		if (filterchoice == (filters)(-8))
 		{
-			ELOFMLPCCEA = " while connecting to: ";
+			ELOFMLPCCEA = "The server address is 127.0.0.1 (localhost): Make sure the server is running on this machine. Android and iOS emulators have their own localhost.";
 		}
 		if (filterchoice == (filters)125)
 		{
-			ELOFMLPCCEA = "_Vignette";
+			ELOFMLPCCEA = "_Greenness";
 		}
 		if (filterchoice == (filters)74)
 		{
@@ -2992,35 +2992,35 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-45))
 		{
-			ELOFMLPCCEA = "22x3";
+			ELOFMLPCCEA = "3;4;9;10;21x6";
 		}
 		if (filterchoice == (filters)(-93))
 		{
-			ELOFMLPCCEA = "_MainTex2";
+			ELOFMLPCCEA = "_Value5";
 		}
 		if (filterchoice == (filters)58)
 		{
-			ELOFMLPCCEA = "Set Particle Size";
+			ELOFMLPCCEA = "SetParticlesParticleSize";
 		}
 		if (filterchoice == (filters)(-88))
 		{
-			ELOFMLPCCEA = "note.5";
+			ELOFMLPCCEA = "note.1";
 		}
 		if (filterchoice == (filters)(-78))
 		{
-			ELOFMLPCCEA = " This is not possible to be called for standalone input. Please check your platform and code where this is called";
+			ELOFMLPCCEA = "Vertical";
 		}
 		if (filterchoice == (filters)(-103))
 		{
-			ELOFMLPCCEA = "icon_border";
+			ELOFMLPCCEA = " Path: ";
 		}
 		if (filterchoice == (filters)121)
 		{
-			ELOFMLPCCEA = "SetSatelliteTrailMinVertexDistance";
+			ELOFMLPCCEA = "Set satellite trail width";
 		}
 		if (filterchoice == (filters)98)
 		{
-			ELOFMLPCCEA = "PhotonView ID duplicate found: {0}. New: {1} old: {2}. Maybe one wasn't destroyed on scene load?! Check for 'DontDestroyOnLoad'. Destroying old entry, adding new.";
+			ELOFMLPCCEA = "Had to lookup view that wasn't in photonViewList: ";
 		}
 		if (filterchoice == (filters)43)
 		{
@@ -3032,7 +3032,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MHNCEEDIKCC();
+			LGHFFANDDCM();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -3057,7 +3057,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, 74);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		IGCBJKFAFEH();
+		CKFICFFNDFJ();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -3078,7 +3078,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MPJAFNJLBEF();
+			AFOHBGHNBDI();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -3099,7 +3099,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			IGCBJKFAFEH();
+			CGCHMJCJOBB();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -3120,7 +3120,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			FEHMFPBAGFG();
+			CGCHMJCJOBB();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -3145,7 +3145,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, 52);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		GOCIGGGHANF();
+		MIPGPMKJELI();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -3183,27 +3183,27 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "#";
+			ELOFMLPCCEA = "<color=#";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "[Up]";
+			ELOFMLPCCEA = "[Down]";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "Authentication failed: '{0}' Code: {1}";
+			ELOFMLPCCEA = "The appId this client sent is unknown on the server (Cloud). Check settings. If using the Cloud, check account.";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "SpawnObj";
+			ELOFMLPCCEA = "[EditorEvent] Exception: ";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "CameraFilterPack/Color_Noise";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "ShadersToggle";
+			ELOFMLPCCEA = "SettingsCanvas";
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
@@ -3211,31 +3211,31 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "_BloomIntensity";
+			ELOFMLPCCEA = "_EmissionColor";
 		}
 		if (filterchoice == (filters)36)
 		{
-			ELOFMLPCCEA = "_Value";
+			ELOFMLPCCEA = "_TimeX";
 		}
 		if (filterchoice == (filters)(-17))
 		{
-			ELOFMLPCCEA = "maps.";
+			ELOFMLPCCEA = "[PlayerBase] Saveing checkpoint data";
 		}
 		if (filterchoice == (filters)(-28))
 		{
-			ELOFMLPCCEA = "OPEN FILE";
+			ELOFMLPCCEA = "[FileSelector] Starting file dialog";
 		}
 		if (filterchoice == (filters)58)
 		{
-			ELOFMLPCCEA = "_Green_R";
+			ELOFMLPCCEA = "_Red_B";
 		}
 		if (filterchoice == (filters)(-102))
 		{
-			ELOFMLPCCEA = "[Left]";
+			ELOFMLPCCEA = ",";
 		}
 		if (filterchoice == (filters)(-83))
 		{
-			ELOFMLPCCEA = "visible";
+			ELOFMLPCCEA = "closed";
 		}
 		if (filterchoice == (filters)83)
 		{
@@ -3243,19 +3243,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-48))
 		{
-			ELOFMLPCCEA = "127.0.0.1";
+			ELOFMLPCCEA = "Exception while connecting to: ";
 		}
 		if (filterchoice == (filters)(-39))
 		{
-			ELOFMLPCCEA = "_Blue_R";
+			ELOFMLPCCEA = "_Green_B";
 		}
 		if (filterchoice == (filters)(-74))
 		{
-			ELOFMLPCCEA = "Square";
+			ELOFMLPCCEA = "Mouse Y";
 		}
 		if (filterchoice == (filters)(-96))
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "CameraFilterPack/Light_Rainbow";
 		}
 		if (filterchoice == (filters)(-9))
 		{
@@ -3267,15 +3267,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.PinLight)
 		{
-			ELOFMLPCCEA = "USE_PREDICATION";
+			ELOFMLPCCEA = "_SubsampleIndices";
 		}
 		if (filterchoice == (filters)(-57))
 		{
-			ELOFMLPCCEA = "steamid";
+			ELOFMLPCCEA = "ticket";
 		}
 		if (filterchoice == (filters)(-81))
 		{
-			ELOFMLPCCEA = "settings.enablehitsoundsinnormal";
+			ELOFMLPCCEA = "ready";
 		}
 	}
 
@@ -3294,7 +3294,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			FEHMFPBAGFG();
+			CGCHMJCJOBB();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -3315,7 +3315,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "Fade";
 		}
 		if (filterchoice == filters.Multiply)
 		{
@@ -3323,23 +3323,23 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "_TimeX";
+			ELOFMLPCCEA = "CameraFilterPack/Drawing_Manga5";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "_History1Weight";
+			ELOFMLPCCEA = "_History3ChromaTex";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "Set Particles Gravity";
+			ELOFMLPCCEA = "SetParticlesGravity";
 		}
 		if (filterchoice == filters.Lighten)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/FX_DigitalMatrix";
+			ELOFMLPCCEA = "_ScreenResolution";
 		}
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = " AuthMode ";
+			ELOFMLPCCEA = "Skipping EstablishEncryption. Protocol is secure.";
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
@@ -3351,7 +3351,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)33)
 		{
-			ELOFMLPCCEA = "] to be droppable";
+			ELOFMLPCCEA = "RootCanvas";
 		}
 		if (filterchoice == (filters)(-95))
 		{
@@ -3359,31 +3359,31 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-125))
 		{
-			ELOFMLPCCEA = "ReconnectAndRejoin() failed. It seems the client wasn't connected to a game server before (no address).";
+			ELOFMLPCCEA = "Reconnect() enabled isMessageQueueRunning. Needs to be able to dispatch incoming messages.";
 		}
 		if (filterchoice == (filters)84)
 		{
-			ELOFMLPCCEA = "Emergency Help:";
+			ELOFMLPCCEA = "0";
 		}
 		if (filterchoice == (filters)114)
 		{
-			ELOFMLPCCEA = "_SceneFogMode";
+			ELOFMLPCCEA = "_DistanceParams";
 		}
 		if (filterchoice == (filters)(-92))
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "_Value4";
 		}
 		if (filterchoice == (filters)51)
 		{
-			ELOFMLPCCEA = "sfxVolume";
+			ELOFMLPCCEA = "settings.volume.menu";
 		}
 		if (filterchoice == (filters)(-27))
 		{
-			ELOFMLPCCEA = "[PowerUp]";
+			ELOFMLPCCEA = "[Up-Right-Down-Left]";
 		}
 		if (filterchoice == (filters)(-63))
 		{
-			ELOFMLPCCEA = "event";
+			ELOFMLPCCEA = "checkpoint";
 		}
 		if (filterchoice == (filters)39)
 		{
@@ -3391,7 +3391,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-65))
 		{
-			ELOFMLPCCEA = "_Value";
+			ELOFMLPCCEA = "_TimeX";
 		}
 		if (filterchoice == (filters)(-114))
 		{
@@ -3399,19 +3399,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)27)
 		{
-			ELOFMLPCCEA = "Can't set Room.MaxPlayers to: ";
+			ELOFMLPCCEA = "Can't set visible when not in that room.";
 		}
 		if (filterchoice == (filters)(-50))
 		{
-			ELOFMLPCCEA = "QuickSave";
+			ELOFMLPCCEA = "Save Game";
 		}
 		if (filterchoice == (filters)(-126))
 		{
-			ELOFMLPCCEA = "settings.hitvariation";
+			ELOFMLPCCEA = "settings.selectormapsperpage";
 		}
 		if (filterchoice == (filters)37)
 		{
-			ELOFMLPCCEA = "AddEnvironmentSprite";
+			ELOFMLPCCEA = "SetParticlesGravity";
 		}
 	}
 
@@ -3435,7 +3435,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, 69);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		LGHFFANDDCM();
+		FEHMFPBAGFG();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -3459,7 +3459,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			JOLDJFOBCLO();
+			CGCHMJCJOBB();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -3484,7 +3484,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -103);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		NBMEBBHCNMH();
+		GBPGJKPMMDN();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -3500,7 +3500,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			LBEHKFNPKMC();
+			AFOHBGHNBDI();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -3596,13 +3596,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				OCMBHMLNCEK().SetTexture("player.slash", JDMCFBKJHDD);
+				OKJOKHGJHGF().SetTexture("player.slash", JDMCFBKJHDD);
 			}
-			MNLKBFFKHIE().SetFloat("_Blue_B", HBJJOCHGOPH);
-			KEMJNOMIPHN().SetFloat("ConnectionTimeout", BlendFX);
-			NBPKMLMCHFN.SetFloat("ResourcesConfig", SwitchCameraToCamera2);
-			LDNADDJMIPK().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1383f, 679f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
+			IFMAPIDFNLI().SetFloat("_Blue_G", HBJJOCHGOPH);
+			OIIDAKBILMI().SetFloat("error", BlendFX);
+			LDNADDJMIPK().SetFloat("MapEditor v.", SwitchCameraToCamera2);
+			KEMJNOMIPHN().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1383f, 679f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FKEOGPDLBDD());
 		}
 		else
 		{
@@ -3669,7 +3669,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, -54);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		GBPGJKPMMDN();
+		GOCIGGGHANF();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -3685,7 +3685,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			JDMCFBKJHDD = new RenderTexture(Screen.width, Screen.height, 52);
 			Camera2.targetTexture = JDMCFBKJHDD;
 		}
-		MPJAFNJLBEF();
+		CKFICFFNDFJ();
 		SCShader = Shader.Find(ELOFMLPCCEA);
 		if (!SystemInfo.supportsImageEffects)
 		{
@@ -3720,7 +3720,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice != BEHNMDCNKBF)
 		{
-			MELKBLIIFEO();
+			MENDFOCFMAN();
 			SCShader = Shader.Find(ELOFMLPCCEA);
 			Object.DestroyImmediate(BJFKDHHMLJH);
 			if (BJFKDHHMLJH == null)
@@ -3750,7 +3750,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 	{
 		if (filterchoice == filters.Darken)
 		{
-			ELOFMLPCCEA = "_History1Weight";
+			ELOFMLPCCEA = "_History3ChromaTex";
 		}
 		if (filterchoice == filters.Darken)
 		{
@@ -3758,19 +3758,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "_Extra2";
+			ELOFMLPCCEA = "_Extra";
 		}
 		if (filterchoice == filters.Multiply)
 		{
-			ELOFMLPCCEA = "_ScreenResolution";
+			ELOFMLPCCEA = "_Value2";
 		}
 		if (filterchoice == filters.Screen)
 		{
-			ELOFMLPCCEA = "Joystick1Button11";
+			ELOFMLPCCEA = "Joystick1Button10";
 		}
 		if (filterchoice == filters.ColorDodge)
 		{
-			ELOFMLPCCEA = "menu.relaxinfo";
+			ELOFMLPCCEA = "menu.selectedplaymode";
 		}
 		if (filterchoice == filters.ColorBurn)
 		{
@@ -3778,15 +3778,15 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == filters.LinearBurn)
 		{
-			ELOFMLPCCEA = "https://twitch.tv/intralism";
+			ELOFMLPCCEA = "https://discord.gg/intralism";
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "_NoiseTex";
+			ELOFMLPCCEA = "_VelocityScale";
 		}
 		if (filterchoice == (filters)107)
 		{
-			ELOFMLPCCEA = "_CenterY";
+			ELOFMLPCCEA = "_CenterX";
 		}
 		if (filterchoice == (filters)65)
 		{
@@ -3794,11 +3794,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-34))
 		{
-			ELOFMLPCCEA = "OPEN FILE";
+			ELOFMLPCCEA = "_LensDirt";
 		}
 		if (filterchoice == (filters)(-120))
 		{
-			ELOFMLPCCEA = "<b>Difficulty</b>:";
+			ELOFMLPCCEA = "--------------------------------";
 		}
 		if (filterchoice == (filters)100)
 		{
@@ -3806,7 +3806,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)72)
 		{
-			ELOFMLPCCEA = "ZoomFade";
+			ELOFMLPCCEA = "Fade";
 		}
 		if (filterchoice == (filters)107)
 		{
@@ -3814,19 +3814,19 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)115)
 		{
-			ELOFMLPCCEA = "CameraFilterPack/Pixelisation_Dot";
+			ELOFMLPCCEA = "_ScreenResolution";
 		}
 		if (filterchoice == filters.DarkerColor)
 		{
-			ELOFMLPCCEA = "achievements.21.progress";
+			ELOFMLPCCEA = "NEW_ACHIEVEMENT_1_21";
 		}
 		if (filterchoice == (filters)(-33))
 		{
-			ELOFMLPCCEA = "Using constructor for new PingNativeDynamic()";
+			ELOFMLPCCEA = ":";
 		}
 		if (filterchoice == (filters)(-78))
 		{
-			ELOFMLPCCEA = "CountEventsGoal";
+			ELOFMLPCCEA = ",";
 		}
 		if (filterchoice == filters.Luminosity)
 		{
@@ -3834,7 +3834,7 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)(-3))
 		{
-			ELOFMLPCCEA = "Tab2Content";
+			ELOFMLPCCEA = "LevelURLInputField";
 		}
 		if (filterchoice == (filters)(-53))
 		{
@@ -3842,11 +3842,11 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 		}
 		if (filterchoice == (filters)62)
 		{
-			ELOFMLPCCEA = "_Value2";
+			ELOFMLPCCEA = "_Value";
 		}
 		if (filterchoice == (filters)70)
 		{
-			ELOFMLPCCEA = "ERROR: Make sure your mod contains at leats one file!";
+			ELOFMLPCCEA = "EXCEPTION:";
 		}
 	}
 
@@ -3861,13 +3861,13 @@ public class CameraFilterPack_Blend2Camera_PhotoshopFilters : MonoBehaviour
 			}
 			if (Camera2 != null)
 			{
-				ADBKPGFMNKO().SetTexture("stretchWidth", JDMCFBKJHDD);
+				OIIDAKBILMI().SetTexture("offsets", JDMCFBKJHDD);
 			}
-			MFHPKGICPIO().SetFloat("GroupNameText", HBJJOCHGOPH);
-			HILDKDFEBPF().SetFloat(".lastCheckpoint.bgcolor", BlendFX);
-			LPDOGGFOBDH().SetFloat("UseScanLineSize", SwitchCameraToCamera2);
-			OIIDAKBILMI().SetVector("_AdditiveReflection", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1497f, 330f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOMEEFLPEPJ());
+			OCMBHMLNCEK().SetFloat("GroupNameText", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat(".sawoutdatedmessage", BlendFX);
+			OIIDAKBILMI().SetFloat("GlassColor", SwitchCameraToCamera2);
+			NBMPPNFKFLB().SetVector("_TempTexture", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1497f, 330f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{

@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("Camera Filter Pack/3D/Distortion")]
 [ExecuteInEditMode]
+[AddComponentMenu("Camera Filter Pack/3D/Distortion")]
 public class CameraFilterPack_3D_Distortion : MonoBehaviour
 {
 	public Shader SCShader;
@@ -71,7 +71,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 			{
 				HBJJOCHGOPH = 740f;
 			}
-			ADBKPGFMNKO().SetFloat("_Value3", HBJJOCHGOPH);
+			KGOLDDBHIFN().SetFloat("_Value2", HBJJOCHGOPH);
 			if (AutoAnimatedNear)
 			{
 				_Distance += Time.deltaTime * AutoAnimatedNearSpeed;
@@ -83,23 +83,23 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 				{
 					_Distance = 694f;
 				}
-				IIBLJCKLGFG().SetFloat("element", _Distance);
+				PLBEJJIHFPB().SetFloat(",", _Distance);
 			}
 			else
 			{
-				GCDFNHMJMIP().SetFloat("#task", _Distance);
+				IIBLJCKLGFG().SetFloat("[#clicktoacceptchallenge]", _Distance);
 			}
-			HFBJAOFLCJI().SetFloat("maps.", _Size);
-			EPCGJFCCAFH().SetFloat("Working.\nPlease wait..", _FixDistance);
-			PLBEJJIHFPB().SetFloat("CameraFilterPack/Edge_Sigmoid", DistortionLevel * 1926f);
+			ADBKPGFMNKO().SetFloat("[PlayerBase] Saveing checkpoint data", _Size);
+			ADBKPGFMNKO().SetFloat("14", _FixDistance);
+			IIBLJCKLGFG().SetFloat("_ScreenResolution", DistortionLevel * 1926f);
 			KGOLDDBHIFN().SetFloat("Join failed on GameServer. Changing back to MasterServer. Msg: ", DistortionSize * 404f);
-			ADBKPGFMNKO().SetFloat("Keypad", LightIntensity * 991f);
-			ACHNOHCLGOO().SetFloat("_TimeX", _Visualize ? 1 : 0);
+			KGOLDDBHIFN().SetFloat("Keypad", LightIntensity * 991f);
+			KGOLDDBHIFN().SetFloat("CameraFilterPack/Blur_Focus", _Visualize ? 1 : 0);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			IIBLJCKLGFG().SetFloat("return ", 725f / farClipPlane);
-			ADBKPGFMNKO().SetVector("GroupNameText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1220f, 986f));
+			ACHNOHCLGOO().SetFloat(", data: ", 725f / farClipPlane);
+			GCDFNHMJMIP().SetVector("InventoryGrid", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1220f, 986f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -116,7 +116,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 			{
 				HBJJOCHGOPH = 931f;
 			}
-			NBPKMLMCHFN.SetFloat("masterVolume", HBJJOCHGOPH);
+			EPCGJFCCAFH().SetFloat("musicVolume", HBJJOCHGOPH);
 			if (AutoAnimatedNear)
 			{
 				_Distance += Time.deltaTime * AutoAnimatedNearSpeed;
@@ -128,23 +128,23 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 				{
 					_Distance = 104f;
 				}
-				IONHGBPGCHK().SetFloat("Please wait..", _Distance);
+				ADBKPGFMNKO().SetFloat("Please wait..", _Distance);
 			}
 			else
 			{
 				NBPKMLMCHFN.SetFloat("seconds", _Distance);
 			}
-			IONHGBPGCHK().SetFloat("PhotonView with ID ", _Size);
-			OIMMPLPBLBK().SetFloat("0.00", _FixDistance);
+			PLBEJJIHFPB().SetFloat(" has no method \"", _Size);
+			NBPKMLMCHFN.SetFloat(": ", _FixDistance);
 			IONHGBPGCHK().SetFloat("_TimeX", DistortionLevel * 838f);
-			MMOODGIODPC().SetFloat("_ScreenResolution", DistortionSize * 1821f);
-			ADBKPGFMNKO().SetFloat("Could not execute RPC ", LightIntensity * 812f);
-			MMOODGIODPC().SetFloat("note.5", _Visualize ? 1 : 0);
+			ACHNOHCLGOO().SetFloat("_Parasite", DistortionSize * 1821f);
+			HFBJAOFLCJI().SetFloat("\" gets executed locally only, if at all.", LightIntensity * 812f);
+			NBPKMLMCHFN.SetFloat("note.4", _Visualize ? 1 : 0);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			HFBJAOFLCJI().SetFloat(".lastCheckpoint.currentCombo", 437f / farClipPlane);
-			PLBEJJIHFPB().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 387f, 1609f));
+			PLBEJJIHFPB().SetFloat(".lastCheckpoint.penaltyScore", 437f / farClipPlane);
+			PLBEJJIHFPB().SetVector("CameraFilterPack/Gradients_Ansi", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 387f, 1609f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NBPKMLMCHFN);
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{
@@ -171,7 +171,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 
 	private void KIMMMCJFMAB()
 	{
-		SCShader = Shader.Find("Set Particles Emission");
+		SCShader = Shader.Find("SetParticlesEmission");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -237,7 +237,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 			{
 				HBJJOCHGOPH = 825f;
 			}
-			OIMMPLPBLBK().SetFloat("LivesSlider", HBJJOCHGOPH);
+			PLBEJJIHFPB().SetFloat("Tab2Content", HBJJOCHGOPH);
 			if (AutoAnimatedNear)
 			{
 				_Distance += Time.deltaTime * AutoAnimatedNearSpeed;
@@ -249,23 +249,23 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 				{
 					_Distance = 1735f;
 				}
-				IONHGBPGCHK().SetFloat("CameraFilterPack/TV_BrokenGlass2", _Distance);
+				OIMMPLPBLBK().SetFloat("CameraFilterPack_TV_BrokenGlass_2", _Distance);
 			}
 			else
 			{
-				OIMMPLPBLBK().SetFloat("d264dbba9c2410771b4ad918903b3f4cd9e276a9", _Distance);
+				NBPKMLMCHFN.SetFloat("88f00bdf0ad61b16b803971ebe071962", _Distance);
 			}
-			PLBEJJIHFPB().SetFloat(". Stopping handling if inactive.", _Size);
-			MMOODGIODPC().SetFloat("CameraFilterPack/TV_50", _FixDistance);
-			PLBEJJIHFPB().SetFloat("Start Color's hex value #RRGGBBAA", DistortionLevel * 940f);
-			ADBKPGFMNKO().SetFloat("_BlurVector", DistortionSize * 1632f);
-			EPCGJFCCAFH().SetFloat("<color=white>PhotonView Group: ", LightIntensity * 1936f);
-			NBPKMLMCHFN.SetFloat("return ", _Visualize ? 1 : 0);
+			OIMMPLPBLBK().SetFloat("Received event Leave for unknown player ID: {0}", _Size);
+			OIMMPLPBLBK().SetFloat("_ScreenResolution", _FixDistance);
+			KGOLDDBHIFN().SetFloat("color", DistortionLevel * 940f);
+			ACHNOHCLGOO().SetFloat("_BlurVector", DistortionSize * 1632f);
+			PLBEJJIHFPB().SetFloat("Subscribed cells:\n", LightIntensity * 1936f);
+			NBPKMLMCHFN.SetFloat(", data: ", _Visualize ? 1 : 0);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			EPCGJFCCAFH().SetFloat("PunRespawn", 1856f / farClipPlane);
-			HFBJAOFLCJI().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 751f, 600f));
+			EPCGJFCCAFH().SetFloat("Instantiating: ", 1856f / farClipPlane);
+			IIBLJCKLGFG().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 751f, 600f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
 		}
 		else
 		{
@@ -275,7 +275,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 
 	private void JKFDDNMPOJH()
 	{
-		SCShader = Shader.Find("CameraFilterPack/Gradients_Desert");
+		SCShader = Shader.Find("_ScreenResolution");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = false;
@@ -284,7 +284,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 
 	private void JILOMOBDPIA()
 	{
-		SCShader = Shader.Find("Backward");
+		SCShader = Shader.Find("Forward");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -357,7 +357,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 
 	private void NPLCENPNJBM()
 	{
-		SCShader = Shader.Find("SetSatelliteSensitivity");
+		SCShader = Shader.Find("SetSatelliteInput");
 		if (!SystemInfo.supportsImageEffects)
 		{
 			base.enabled = true;
@@ -447,7 +447,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 			{
 				HBJJOCHGOPH = 85f;
 			}
-			PLBEJJIHFPB().SetFloat("[Right]", HBJJOCHGOPH);
+			IONHGBPGCHK().SetFloat("[Left]", HBJJOCHGOPH);
 			if (AutoAnimatedNear)
 			{
 				_Distance += Time.deltaTime * AutoAnimatedNearSpeed;
@@ -459,23 +459,23 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 				{
 					_Distance = 403f;
 				}
-				NBPKMLMCHFN.SetFloat("UseScanLine", _Distance);
+				EPCGJFCCAFH().SetFloat("UseScanLineSize", _Distance);
 			}
 			else
 			{
-				MMOODGIODPC().SetFloat("_MainTex2", _Distance);
+				IONHGBPGCHK().SetFloat("_MainTex2", _Distance);
 			}
-			PLBEJJIHFPB().SetFloat("difficulty", _Size);
-			ADBKPGFMNKO().SetFloat("[MapsData] Preloading workshop", _FixDistance);
-			HFBJAOFLCJI().SetFloat("DISTORT", DistortionLevel * 973f);
-			HFBJAOFLCJI().SetFloat("_Linecount", DistortionSize * 1641f);
-			KGOLDDBHIFN().SetFloat(".lastCheckpoint.currentCombo", LightIntensity * 1139f);
-			GCDFNHMJMIP().SetFloat("DPADVER", (!_Visualize) ? 1 : 0);
+			EPCGJFCCAFH().SetFloat("maphash", _Size);
+			OIMMPLPBLBK().SetFloat("/", _FixDistance);
+			EPCGJFCCAFH().SetFloat("_Luminance", DistortionLevel * 973f);
+			IONHGBPGCHK().SetFloat("_Vignette", DistortionSize * 1641f);
+			NBPKMLMCHFN.SetFloat(".lastCheckpoint.penaltyScore", LightIntensity * 1139f);
+			MMOODGIODPC().SetFloat("DPADVER", (!_Visualize) ? 1 : 0);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			KGOLDDBHIFN().SetFloat(".", 86f / farClipPlane);
-			NBPKMLMCHFN.SetVector("Tab1Content", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1416f, 1734f));
+			ACHNOHCLGOO().SetFloat("[PlayerBase] Loaded spawner data", 86f / farClipPlane);
+			EPCGJFCCAFH().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1416f, 1734f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, MMOODGIODPC());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, KGOLDDBHIFN());
 		}
 		else
 		{
@@ -542,7 +542,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 			{
 				HBJJOCHGOPH = 0f;
 			}
-			PLBEJJIHFPB().SetFloat("CameraFilterPack/Distortion_ShockWave", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("_ScreenResolution", HBJJOCHGOPH);
 			if (AutoAnimatedNear)
 			{
 				_Distance += Time.deltaTime * AutoAnimatedNearSpeed;
@@ -554,23 +554,23 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 				{
 					_Distance = 1588f;
 				}
-				PLBEJJIHFPB().SetFloat("_Value", _Distance);
+				OIMMPLPBLBK().SetFloat("_TimeX", _Distance);
 			}
 			else
 			{
-				NBPKMLMCHFN.SetFloat("Reset", _Distance);
+				MMOODGIODPC().SetFloat("Out {0,4} | In {1,4} | Sum {2,4}", _Distance);
 			}
-			ACHNOHCLGOO().SetFloat("CameraFilterPack/Blend2Camera_Color", _Size);
-			PLBEJJIHFPB().SetFloat("Item ", _FixDistance);
-			ADBKPGFMNKO().SetFloat("IncorrectHitsScoreText", DistortionLevel * 1900f);
-			NBPKMLMCHFN.SetFloat("_LightIntensity", DistortionSize * 1445f);
-			GCDFNHMJMIP().SetFloat("_MainTex2", LightIntensity * 771f);
-			IIBLJCKLGFG().SetFloat("Set Player Distance", _Visualize ? 1 : 0);
+			PLBEJJIHFPB().SetFloat("CameraFilterPack/Blend2Camera_Color", _Size);
+			KGOLDDBHIFN().SetFloat("Something is setup incorrectly with the dropdownlist component causing a Null Refernece Exception", _FixDistance);
+			ADBKPGFMNKO().SetFloat("CorrectHitsScoreText", DistortionLevel * 1900f);
+			IIBLJCKLGFG().SetFloat("_LightIntensity", DistortionSize * 1445f);
+			PLBEJJIHFPB().SetFloat("_MainTex2", LightIntensity * 771f);
+			IIBLJCKLGFG().SetFloat("SetPlayerDistance", _Visualize ? 1 : 0);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			NBPKMLMCHFN.SetFloat("_Value4", 844f / farClipPlane);
-			MMOODGIODPC().SetVector("ArcsDestroyDelaySlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1740f, 199f));
+			NBPKMLMCHFN.SetFloat("_Value3", 844f / farClipPlane);
+			ADBKPGFMNKO().SetVector("settings.gamemessagesduration", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1740f, 199f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.None;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PLBEJJIHFPB());
 		}
 		else
 		{
@@ -595,7 +595,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 			{
 				HBJJOCHGOPH = 426f;
 			}
-			KGOLDDBHIFN().SetFloat(": ", HBJJOCHGOPH);
+			OIMMPLPBLBK().SetFloat(": ", HBJJOCHGOPH);
 			if (AutoAnimatedNear)
 			{
 				_Distance += Time.deltaTime * AutoAnimatedNearSpeed;
@@ -607,23 +607,23 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 				{
 					_Distance = 137f;
 				}
-				KGOLDDBHIFN().SetFloat("%", _Distance);
+				MMOODGIODPC().SetFloat("%", _Distance);
 			}
 			else
 			{
-				MMOODGIODPC().SetFloat("_Value", _Distance);
+				EPCGJFCCAFH().SetFloat("CameraFilterPack/TV_WideScreenHorizontal", _Distance);
 			}
-			HFBJAOFLCJI().SetFloat("Checkpoint", _Size);
-			EPCGJFCCAFH().SetFloat("_FarCamera", _FixDistance);
-			NBPKMLMCHFN.SetFloat("Show Image", DistortionLevel * 10f);
-			ADBKPGFMNKO().SetFloat("MainButton", DistortionSize * 685f);
-			KGOLDDBHIFN().SetFloat("_Vignetting2", LightIntensity * 449f);
-			MMOODGIODPC().SetFloat("Out {0,4} | In {1,4} | Sum {2,4}", _Visualize ? 1 : 0);
+			ACHNOHCLGOO().SetFloat("ShowSprite", _Size);
+			KGOLDDBHIFN().SetFloat("_FarCamera", _FixDistance);
+			HFBJAOFLCJI().SetFloat("Show Image", DistortionLevel * 10f);
+			ACHNOHCLGOO().SetFloat(" ", DistortionSize * 685f);
+			EPCGJFCCAFH().SetFloat("_Vignetting", LightIntensity * 449f);
+			GCDFNHMJMIP().SetFloat("health", _Visualize ? 1 : 0);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			KGOLDDBHIFN().SetFloat("_TimeX", 815f / farClipPlane);
-			IONHGBPGCHK().SetVector("player.circle", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1032f, 441f));
+			MMOODGIODPC().SetFloat("_TimeX", 815f / farClipPlane);
+			MMOODGIODPC().SetVector("menutheme.27thfloor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1032f, 441f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ACHNOHCLGOO());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OIMMPLPBLBK());
 		}
 		else
 		{
@@ -651,7 +651,7 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 			{
 				HBJJOCHGOPH = 769f;
 			}
-			HFBJAOFLCJI().SetFloat("SetParent", HBJJOCHGOPH);
+			ADBKPGFMNKO().SetFloat("ClearEnvironment", HBJJOCHGOPH);
 			if (AutoAnimatedNear)
 			{
 				_Distance += Time.deltaTime * AutoAnimatedNearSpeed;
@@ -663,23 +663,23 @@ public class CameraFilterPack_3D_Distortion : MonoBehaviour
 				{
 					_Distance = 1955f;
 				}
-				MMOODGIODPC().SetFloat("_RgbTex", _Distance);
+				GCDFNHMJMIP().SetFloat("_", _Distance);
 			}
 			else
 			{
-				NBPKMLMCHFN.SetFloat("_DotSize", _Distance);
+				EPCGJFCCAFH().SetFloat("_TimeX", _Distance);
 			}
-			HFBJAOFLCJI().SetFloat("SetTrailZoomSpeed", _Size);
-			NBPKMLMCHFN.SetFloat("_Value", _FixDistance);
-			GCDFNHMJMIP().SetFloat("workshop.", DistortionLevel * 1054f);
-			KGOLDDBHIFN().SetFloat(" cannot be used as a 3D LUT.", DistortionSize * 1551f);
-			HFBJAOFLCJI().SetFloat("_Value3", LightIntensity * 949f);
-			ADBKPGFMNKO().SetFloat("_Value1", (!_Visualize) ? 1 : 1);
+			PLBEJJIHFPB().SetFloat("Set camera (or player) distance. Base player distance - 14", _Size);
+			PLBEJJIHFPB().SetFloat("_TimeX", _FixDistance);
+			IONHGBPGCHK().SetFloat("MapperNameText", DistortionLevel * 1054f);
+			NBPKMLMCHFN.SetFloat("The given 2D texture ", DistortionSize * 1551f);
+			GCDFNHMJMIP().SetFloat("_Value2", LightIntensity * 949f);
+			KGOLDDBHIFN().SetFloat("_Value1", (!_Visualize) ? 1 : 1);
 			float farClipPlane = GetComponent<Camera>().farClipPlane;
-			IIBLJCKLGFG().SetFloat("Year_", 1922f / farClipPlane);
-			ACHNOHCLGOO().SetVector("[MapsStats] Hash: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 302f, 1608f));
+			HFBJAOFLCJI().SetFloat("No child content found, exiting..", 1922f / farClipPlane);
+			MMOODGIODPC().SetVector(" - ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 302f, 1608f));
 			GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, IIBLJCKLGFG());
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, ADBKPGFMNKO());
 		}
 		else
 		{

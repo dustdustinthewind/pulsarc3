@@ -114,11 +114,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1397f;
 			}
-			JCPDCGIJKJD().SetFloat("_TimeX", HBJJOCHGOPH);
-			KDMBOKLMADJ().SetFloat(" not exist", Switch);
-			HEINDEMCGIK().SetFloat("\" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: ", Fade);
-			NFKFAAHHLLM().SetVector("skin.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1187f, 1339f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
+			ABHDNGIHBKE().SetFloat("_TimeX", HBJJOCHGOPH);
+			NFKFAAHHLLM().SetFloat(":", Switch);
+			OLHDPICFBOF().SetFloat("PhotonView with ID ", Fade);
+			INOBFNCKFGK().SetVector("challenges/", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1187f, 1339f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHLFDHNEIAH());
 		}
 		else
 		{
@@ -155,11 +155,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 838f;
 			}
-			INOBFNCKFGK().SetFloat("_NormalAndRoughnessTexture", HBJJOCHGOPH);
-			EOCCJGIGEGJ().SetFloat("ControllerRightX", Switch);
-			OLHDPICFBOF().SetFloat("CameraFilterPack/BlurTiltShift_Hole", Fade);
-			NBPKMLMCHFN.SetVector("CameraFilterPack/Pixelisation_OilPaint", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1533f, 875f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOMEEFLPEPJ());
+			CIAFLBFJLEJ().SetFloat("_History4Weight", HBJJOCHGOPH);
+			NBPKMLMCHFN.SetFloat("MouseX", Switch);
+			NFKFAAHHLLM().SetFloat("CameraFilterPack/BlurTiltShift_Hole", Fade);
+			DOMEEFLPEPJ().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1533f, 875f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -191,11 +191,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 93f;
 			}
-			CIAFLBFJLEJ().SetFloat("_Red_B", HBJJOCHGOPH);
-			EOCCJGIGEGJ().SetFloat("#reward: ", Switch);
-			JFDGLLEOPGB().SetFloat("[LevelEditorScene] Exported to ", Fade);
-			ABHDNGIHBKE().SetVector("?page=addtip", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 180f, 1256f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PGPEMMBJOOG());
+			JFDGLLEOPGB().SetFloat("_Red_G", HBJJOCHGOPH);
+			JFDGLLEOPGB().SetFloat("#status", Switch);
+			OLHDPICFBOF().SetFloat("/", Fade);
+			GCDFNHMJMIP().SetVector("player.playedtutorial", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 180f, 1256f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOMEEFLPEPJ());
 		}
 		else
 		{
@@ -224,11 +224,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1353f;
 			}
-			PGPEMMBJOOG().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			INOBFNCKFGK().SetFloat("_TimeX", HBJJOCHGOPH);
 			HFBJAOFLCJI().SetFloat("Bad parameters for init! Use \"init\" or \"init <savename>\"", Switch);
-			DOMEEFLPEPJ().SetFloat("achievements.21.completed.", Fade);
-			CIAFLBFJLEJ().SetVector("tip", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 670f, 923f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
+			JLHLHKPHDFO().SetFloat("achievements.21.completed.", Fade);
+			OKJOKHGJHGF().SetVector("_EmissionGain", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 670f, 923f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
 		}
 		else
 		{
@@ -262,11 +262,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1818f;
 			}
-			FHFLKLMFHOI().SetFloat("#onrankchangeuptext", HBJJOCHGOPH);
-			HFBJAOFLCJI().SetFloat("CameraFilterPack/Pixelisation_Dot", Switch);
-			OKJOKHGJHGF().SetFloat(">", Fade);
-			OKJOKHGJHGF().SetVector("_BlurParams", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1770f, 1048f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
+			HHLFDHNEIAH().SetFloat("player.currentrank", HBJJOCHGOPH);
+			EMDFHOKEGNG().SetFloat("_FarCamera", Switch);
+			FHFLKLMFHOI().SetFloat("<color=#", Fade);
+			HHLFDHNEIAH().SetVector("_SpawnHeuristic", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1770f, 1048f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -292,11 +292,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 363f;
 			}
-			JCPDCGIJKJD().SetFloat("_EmissionColor", HBJJOCHGOPH);
-			HEINDEMCGIK().SetFloat("SpawnObj", Switch);
-			HEINDEMCGIK().SetFloat("CameraFilterPack_Broken_Screen1", Fade);
-			HEINDEMCGIK().SetVector("x", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1643f, 1177f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
+			INOBFNCKFGK().SetFloat("[EditorEvent] Exception: ", HBJJOCHGOPH);
+			DOMEEFLPEPJ().SetFloat("ShowSprite", Switch);
+			CIAFLBFJLEJ().SetFloat("_MainTex2", Fade);
+			GCDFNHMJMIP().SetVector("w", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1643f, 1177f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -313,11 +313,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1292f;
 			}
-			CIAFLBFJLEJ().SetFloat("CameraFilterPack/TV_Chromatical2", HBJJOCHGOPH);
-			DOMEEFLPEPJ().SetFloat("_DistCenterScale", Switch);
-			CIAFLBFJLEJ().SetFloat("_Value3", Fade);
-			NFKFAAHHLLM().SetVector("TotalHitsScoreText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1515f, 1921f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JFDGLLEOPGB());
+			JLHLHKPHDFO().SetFloat("_ScreenResolution", HBJJOCHGOPH);
+			HEINDEMCGIK().SetFloat("DISTORT", Switch);
+			ABHDNGIHBKE().SetFloat("_Value2", Fade);
+			DOMEEFLPEPJ().SetVector("FinalScoreText", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1515f, 1921f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
 		}
 		else
 		{
@@ -392,11 +392,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 233f;
 			}
-			PGPEMMBJOOG().SetFloat("http://steamcommunity.com/sharedfiles/filedetails/?id=", HBJJOCHGOPH);
-			DOMEEFLPEPJ().SetFloat("\n", Switch);
-			NFKFAAHHLLM().SetFloat("\" gets executed locally only, if at all.", Fade);
-			OLHDPICFBOF().SetVector("</color>", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 290f, 351f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GJHLADDCMFF());
+			HFBJAOFLCJI().SetFloat("workshop.", HBJJOCHGOPH);
+			HEINDEMCGIK().SetFloat("\n", Switch);
+			OLHDPICFBOF().SetFloat("Error; Only the MasterClient can call RemoveRPCs for other players.", Fade);
+			GCDFNHMJMIP().SetVector(">", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 290f, 351f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
 		}
 		else
 		{
@@ -480,11 +480,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1448f;
 			}
-			CIAFLBFJLEJ().SetFloat("_MainTex2", HBJJOCHGOPH);
-			HEINDEMCGIK().SetFloat("CameraFilterPack_Sweater", Switch);
-			JCPDCGIJKJD().SetFloat("Joystick1Button8", Fade);
-			CIAFLBFJLEJ().SetVector(". Verify the Prefab is in a Resources folder (and not in a subfolder)", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 593f, 1778f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
+			JLHLHKPHDFO().SetFloat("_MainTex2", HBJJOCHGOPH);
+			GJHLADDCMFF().SetFloat("_Value", Switch);
+			PGPEMMBJOOG().SetFloat("R2", Fade);
+			DOMEEFLPEPJ().SetVector("Failed to InstantiateSceneObject prefab: ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 593f, 1778f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JCPDCGIJKJD());
 		}
 		else
 		{
@@ -501,11 +501,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1231f;
 			}
-			HHLFDHNEIAH().SetFloat("_MotionBlurTmpCam", HBJJOCHGOPH);
-			INOBFNCKFGK().SetFloat("Despawn environment object by id", Switch);
-			ABHDNGIHBKE().SetFloat("_History1Weight", Fade);
-			CIAFLBFJLEJ().SetVector("SelectorMapsCountSlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1832f, 248f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
+			DOMEEFLPEPJ().SetFloat("_SoftZDistance", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("Despawn environment object by id", Switch);
+			KDMBOKLMADJ().SetFloat("_History3ChromaTex", Fade);
+			HHLFDHNEIAH().SetVector("settings.arcshitsoundtimedelay", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1832f, 248f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
 		}
 		else
 		{
@@ -522,11 +522,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 109f;
 			}
-			INOBFNCKFGK().SetFloat("No info", HBJJOCHGOPH);
-			JLHLHKPHDFO().SetFloat("_TimeX", Switch);
-			GJHLADDCMFF().SetFloat("[MapsData] Preloading workshop", Fade);
-			HHLFDHNEIAH().SetVector("_InternalLutTex", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 876f, 1729f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, DOMEEFLPEPJ());
+			HEINDEMCGIK().SetFloat("No Name", HBJJOCHGOPH);
+			EMDFHOKEGNG().SetFloat("CameraFilterPack/Gradients_Tech", Switch);
+			KDMBOKLMADJ().SetFloat("/", Fade);
+			HHLFDHNEIAH().SetVector("ENABLE_COLOR_GRADING", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 876f, 1729f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JCPDCGIJKJD());
 		}
 		else
 		{
@@ -559,11 +559,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 307f;
 			}
-			OLHDPICFBOF().SetFloat("_Bullet_6", HBJJOCHGOPH);
-			OLHDPICFBOF().SetFloat("ScrollPanel", Switch);
-			NBPKMLMCHFN.SetFloat("settings_bindings_", Fade);
-			GJHLADDCMFF().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 49f, 1892f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EMDFHOKEGNG());
+			INOBFNCKFGK().SetFloat("_Bullet_5", HBJJOCHGOPH);
+			GCDFNHMJMIP().SetFloat("InputField", Switch);
+			EOCCJGIGEGJ().SetFloat("settings_bindings_controller_type", Fade);
+			KDMBOKLMADJ().SetVector("maps.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 49f, 1892f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -674,11 +674,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 390f;
 			}
-			JCPDCGIJKJD().SetFloat("Set Sun Emission", HBJJOCHGOPH);
-			JCPDCGIJKJD().SetFloat("[Down]", Switch);
-			JCPDCGIJKJD().SetFloat("\t", Fade);
-			HEINDEMCGIK().SetVector("RecieveChatActionMessage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1053f, 52f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			GCDFNHMJMIP().SetFloat("SetSunEmission", HBJJOCHGOPH);
+			INOBFNCKFGK().SetFloat("[Down]", Switch);
+			GJHLADDCMFF().SetFloat("\t", Fade);
+			OKJOKHGJHGF().SetVector("RecieveChatMessage", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1053f, 52f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -745,11 +745,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1798f;
 			}
-			GJHLADDCMFF().SetFloat("resource", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_EmissionGain", Switch);
-			JCPDCGIJKJD().SetFloat("CameraFilterPack/Vision_AuraDistortion", Fade);
-			OKJOKHGJHGF().SetVector("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1417f, 1928f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, INOBFNCKFGK());
+			HHLFDHNEIAH().SetFloat("LevelNameInputField", HBJJOCHGOPH);
+			INOBFNCKFGK().SetFloat("_EmissionGain", Switch);
+			NBPKMLMCHFN.SetFloat("_Value5", Fade);
+			JCPDCGIJKJD().SetVector("Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1417f, 1928f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
 		}
 		else
 		{
@@ -801,11 +801,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1587f;
 			}
-			ABHDNGIHBKE().SetFloat("LevelEditor/CustomEventEditor-", HBJJOCHGOPH);
-			ABHDNGIHBKE().SetFloat("#pleasewait", Switch);
-			OLHDPICFBOF().SetFloat("_Intensity", Fade);
-			OLHDPICFBOF().SetVector("_BlurredColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 291f, 1323f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
+			HFBJAOFLCJI().SetFloat("LevelEditor/CustomEventEditor-Text", HBJJOCHGOPH);
+			JFDGLLEOPGB().SetFloat("/", Switch);
+			FHFLKLMFHOI().SetFloat("_Value4", Fade);
+			JCPDCGIJKJD().SetVector("_Offsets", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 291f, 1323f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, NFKFAAHHLLM());
 		}
 		else
 		{
@@ -837,11 +837,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1962f;
 			}
-			GJHLADDCMFF().SetFloat(".lastCheckpoint.lives", HBJJOCHGOPH);
-			GJHLADDCMFF().SetFloat("_DepthLevel", Switch);
-			GJHLADDCMFF().SetFloat("offline room", Fade);
-			NBPKMLMCHFN.SetVector("Up ", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1224f, 825f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			HFBJAOFLCJI().SetFloat(".lastCheckpoint.isMapCompleted", HBJJOCHGOPH);
+			PGPEMMBJOOG().SetFloat("_DepthLevel", Switch);
+			HHLFDHNEIAH().SetFloat("JoinOrCreateRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.", Fade);
+			PGPEMMBJOOG().SetVector("Up", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1224f, 825f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHLFDHNEIAH());
 		}
 		else
 		{
@@ -862,11 +862,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1033f;
 			}
-			NFKFAAHHLLM().SetFloat("CameraFilterPack/TV_Artefact", HBJJOCHGOPH);
-			JLHLHKPHDFO().SetFloat("RoomNameText", Switch);
-			OLHDPICFBOF().SetFloat("CameraFilterPack/RainFX", Fade);
-			NFKFAAHHLLM().SetVector("_Value4", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1112f, 540f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHLFDHNEIAH());
+			JCPDCGIJKJD().SetFloat("_MainTex2", HBJJOCHGOPH);
+			KDMBOKLMADJ().SetFloat("AvatarImage", Switch);
+			GCDFNHMJMIP().SetFloat("CameraFilterPack_RainFX_Anm", Fade);
+			GCDFNHMJMIP().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1112f, 540f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
 		}
 		else
 		{
@@ -883,11 +883,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 535f;
 			}
-			HEINDEMCGIK().SetFloat("[GameEvent] Exeption:", HBJJOCHGOPH);
-			GCDFNHMJMIP().SetFloat("ArcsDestroyDelaySlider", Switch);
-			HEINDEMCGIK().SetFloat("Connection error: ", Fade);
-			JFDGLLEOPGB().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 578f, 846f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JCPDCGIJKJD());
+			JFDGLLEOPGB().SetFloat("maps.", HBJJOCHGOPH);
+			CIAFLBFJLEJ().SetFloat("settings.gamemessagesduration", Switch);
+			EMDFHOKEGNG().SetFloat("#restart", Fade);
+			JFDGLLEOPGB().SetVector("_Value3", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 578f, 846f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
 		}
 		else
 		{
@@ -921,11 +921,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1766f;
 			}
-			GCDFNHMJMIP().SetFloat("FileMenu", HBJJOCHGOPH);
-			GJHLADDCMFF().SetFloat("Copy from ", Switch);
-			HFBJAOFLCJI().SetFloat("{0}\n{1}\n{2}\n{3}\n{4}\n{5}", Fade);
-			OKJOKHGJHGF().SetVector("Hex value #RRGGBB", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1759f, 1071f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
+			EMDFHOKEGNG().SetFloat("EditMenu", HBJJOCHGOPH);
+			OKJOKHGJHGF().SetFloat(".", Switch);
+			FHFLKLMFHOI().SetFloat("Health Stats", Fade);
+			NBPKMLMCHFN.SetVector("color", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1759f, 1071f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
 		}
 		else
 		{
@@ -942,11 +942,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 976f;
 			}
-			GJHLADDCMFF().SetFloat("inventory.selected.", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("settings.volume.sfx", Switch);
-			EMDFHOKEGNG().SetFloat("Most likely the game became empty during the switch to GameServer.", Fade);
-			INOBFNCKFGK().SetVector("_DistortionSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1915f, 223f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, FHFLKLMFHOI());
+			GCDFNHMJMIP().SetFloat("inventory.selected.", HBJJOCHGOPH);
+			OLHDPICFBOF().SetFloat("ItemNameText", Switch);
+			CIAFLBFJLEJ().SetFloat("Join failed on GameServer. Changing back to MasterServer. Msg: ", Fade);
+			JFDGLLEOPGB().SetVector("_DistortionSize", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1915f, 223f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
 		}
 		else
 		{
@@ -1004,11 +1004,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 728f;
 			}
-			HHLFDHNEIAH().SetFloat("_Blue_R", HBJJOCHGOPH);
-			NBPKMLMCHFN.SetFloat("_Blue_B", Switch);
-			EOCCJGIGEGJ().SetFloat("_TimeX", Fade);
-			DOMEEFLPEPJ().SetVector("HandsCountSlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 766f, 874f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JCPDCGIJKJD());
+			JFDGLLEOPGB().SetFloat("_Green_B", HBJJOCHGOPH);
+			CIAFLBFJLEJ().SetFloat("_Blue_R", Switch);
+			DOMEEFLPEPJ().SetFloat("CameraFilterPack/OldFilm_Cutting1", Fade);
+			OLHDPICFBOF().SetVector("EnvironmentSlider", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 766f, 874f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
 		}
 		else
 		{
@@ -1025,11 +1025,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 865f;
 			}
-			NFKFAAHHLLM().SetFloat("CameraFilterPack/Drawing_Laplacian", HBJJOCHGOPH);
-			INOBFNCKFGK().SetFloat("maps.", Switch);
-			KDMBOKLMADJ().SetFloat("settings.volume.sfx", Fade);
-			JCPDCGIJKJD().SetVector("Can't start OFFLINE mode while connected!", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1916f, 432f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
+			HHLFDHNEIAH().SetFloat("_DotSize", HBJJOCHGOPH);
+			KDMBOKLMADJ().SetFloat("maps.", Switch);
+			NFKFAAHHLLM().SetFloat("settings.volume.game", Fade);
+			DOMEEFLPEPJ().SetVector("Using Stopwatch as precision timer for PUN.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1916f, 432f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
 		}
 		else
 		{
@@ -1054,11 +1054,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 906f;
 			}
-			EOCCJGIGEGJ().SetFloat("_Value2", HBJJOCHGOPH);
-			NFKFAAHHLLM().SetFloat("_ScreenResolution", Switch);
-			JFDGLLEOPGB().SetFloat("Custom Authentication failed (either due to user-input or configuration or AuthParameter string format). Calling: OnCustomAuthenticationFailed()", Fade);
-			HEINDEMCGIK().SetVector("Backward", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 671f, 194f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, PGPEMMBJOOG());
+			OKJOKHGJHGF().SetFloat("_Value2", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("_TimeX", Switch);
+			OKJOKHGJHGF().SetFloat("If you host Photon yourself, make sure to start the 'Instance LoadBalancing' ", Fade);
+			GCDFNHMJMIP().SetVector("ControllerLeftX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 671f, 194f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
 		}
 		else
 		{
@@ -1075,11 +1075,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 321f;
 			}
-			HFBJAOFLCJI().SetFloat("SpectateButton", HBJJOCHGOPH);
-			GJHLADDCMFF().SetFloat("#rt", Switch);
-			ABHDNGIHBKE().SetFloat("_FadeFX", Fade);
-			INOBFNCKFGK().SetVector("Texture2", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 839f, 951f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, GCDFNHMJMIP());
+			CIAFLBFJLEJ().SetFloat("SpectateButton", HBJJOCHGOPH);
+			INOBFNCKFGK().SetFloat("turn: {0:0}", Switch);
+			NBPKMLMCHFN.SetFloat("_Blue_C", Fade);
+			ABHDNGIHBKE().SetVector("_ScreenResolution", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 839f, 951f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{
@@ -1190,11 +1190,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 390f;
 			}
-			INOBFNCKFGK().SetFloat("#onrankchangedowntext", HBJJOCHGOPH);
-			NFKFAAHHLLM().SetFloat("_Intensity", Switch);
-			EOCCJGIGEGJ().SetFloat(".highscore", Fade);
-			GCDFNHMJMIP().SetVector("_EmissionColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 683f, 1422f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OLHDPICFBOF());
+			PGPEMMBJOOG().SetFloat("#onrankchangeuptext", HBJJOCHGOPH);
+			JCPDCGIJKJD().SetFloat("_Noise", Switch);
+			CIAFLBFJLEJ().SetFloat(".lastCheckpoint.time", Fade);
+			EOCCJGIGEGJ().SetVector("_DiffuseColor", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 683f, 1422f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HFBJAOFLCJI());
 		}
 		else
 		{
@@ -1266,11 +1266,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1298f;
 			}
-			ABHDNGIHBKE().SetFloat("|", HBJJOCHGOPH);
-			OKJOKHGJHGF().SetFloat("SetRoomStartTimestamp", Switch);
-			PGPEMMBJOOG().SetFloat("_Value2", Fade);
-			HEINDEMCGIK().SetVector("skin.", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1724f, 824f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HHLFDHNEIAH());
+			KDMBOKLMADJ().SetFloat("inventory.itemscash", HBJJOCHGOPH);
+			KDMBOKLMADJ().SetFloat("#rt", Switch);
+			FHFLKLMFHOI().SetFloat("_Value", Fade);
+			FHFLKLMFHOI().SetVector("http", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1724f, 824f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, EOCCJGIGEGJ());
 		}
 		else
 		{
@@ -1334,11 +1334,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1825f;
 			}
-			CIAFLBFJLEJ().SetFloat("_Far", HBJJOCHGOPH);
-			EMDFHOKEGNG().SetFloat("Mine", Switch);
-			DOMEEFLPEPJ().SetFloat("#exit", Fade);
-			HHLFDHNEIAH().SetVector("#mapalreadyexistupdate", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1121f, 842f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JLHLHKPHDFO());
+			ABHDNGIHBKE().SetFloat("_Far", HBJJOCHGOPH);
+			HFBJAOFLCJI().SetFloat("RPC: 'OnAwakeRPC' Parameter: ", Switch);
+			OLHDPICFBOF().SetFloat("#exit", Fade);
+			ABHDNGIHBKE().SetVector("#no", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1121f, 842f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, HEINDEMCGIK());
 		}
 		else
 		{
@@ -1355,11 +1355,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 50f;
 			}
-			FHFLKLMFHOI().SetFloat(": ", HBJJOCHGOPH);
-			FHFLKLMFHOI().SetFloat("_FlipAlphaMask", Switch);
-			EOCCJGIGEGJ().SetFloat("menu.selectedlevelid", Fade);
-			NFKFAAHHLLM().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1766f, 568f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, JCPDCGIJKJD());
+			EMDFHOKEGNG().SetFloat("Received your NickName from server. Updating local value to: {0}", HBJJOCHGOPH);
+			OKJOKHGJHGF().SetFloat("_Min", Switch);
+			ABHDNGIHBKE().SetFloat("menu.selectedlevelid", Fade);
+			HHLFDHNEIAH().SetVector("CameraFilterPack/TV_BrokenGlass", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1766f, 568f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
 		}
 		else
 		{
@@ -1376,11 +1376,11 @@ public class CameraFilterPack_Gradients_NeonGradient : MonoBehaviour
 			{
 				HBJJOCHGOPH = 1561f;
 			}
-			GCDFNHMJMIP().SetFloat("Please attach component to a Graphical UI component", HBJJOCHGOPH);
-			GCDFNHMJMIP().SetFloat("powerup.0", Switch);
-			HHLFDHNEIAH().SetFloat("ItemTemplate", Fade);
-			HFBJAOFLCJI().SetVector("_TimeX", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1369f, 1290f));
-			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, OKJOKHGJHGF());
+			EMDFHOKEGNG().SetFloat("Default UI Material", HBJJOCHGOPH);
+			EOCCJGIGEGJ().SetFloat("note.4", Switch);
+			JCPDCGIJKJD().SetFloat("SlidingArea", Fade);
+			JLHLHKPHDFO().SetVector("CameraFilterPack/Distortion_BigFace", new Vector4(AAACLELCPML.width, AAACLELCPML.height, 1369f, 1290f));
+			Graphics.Blit(AAACLELCPML, BGIKADHFKNF, CIAFLBFJLEJ());
 		}
 		else
 		{

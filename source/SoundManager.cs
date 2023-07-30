@@ -82,52 +82,22 @@ public class SoundManager : Singleton<SoundManager>
 		}
 	}
 
-	[SpecialName]
-	public void CFIAOOLICIC(bool DPNHODJHGJL)
+	public void IABOPJMDMII()
 	{
-		_003CEDKNFIIEBBC_003Ek__BackingField = DPNHODJHGJL;
+		StopAll(1397f);
 	}
 
-	public void CLKGOHFBFFJ(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
+	private void OnApplicationFocus(bool APDBPIMIEBI)
 	{
-		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
-		audioSource.clip = BKGCLBJFADE;
-		audioSource.pitch = MEFEIEEHNDN;
-		audioSource.Play();
-		IGKNDLKJBMO += 0;
-		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
-		{
-			IGKNDLKJBMO = 1;
-		}
+		LFEFAKMMFKF = !APDBPIMIEBI;
 	}
 
-	[SpecialName]
-	public void FHFAPEOFFNC(bool DPNHODJHGJL)
+	public Audio OCECMHPNJOG(AudioClip ICJOJEKDMIF)
 	{
-		_003CNEACNFNFMJK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	private void MFBLPGINLLK(bool APDBPIMIEBI)
-	{
-		LFEFAKMMFKF = APDBPIMIEBI;
-	}
-
-	public void EGCBOMJDHGE()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
 		foreach (int item in list)
 		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Stop();
-		}
-	}
-
-	public Audio GetSoundAudio(AudioClip ICJOJEKDMIF)
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
+			Audio audio = DJBIELKMADE[item];
 			if (audio.clip == ICJOJEKDMIF)
 			{
 				return audio;
@@ -136,27 +106,7 @@ public class SoundManager : Singleton<SoundManager>
 		return null;
 	}
 
-	[SpecialName]
-	public void DKJLJIMLCNO(bool DPNHODJHGJL)
-	{
-		_003CBMMKEGKECGL_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public Audio FCAGHLEHHDN(AudioClip ICJOJEKDMIF)
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			if (audio.clip == ICJOJEKDMIF)
-			{
-				return audio;
-			}
-		}
-		return null;
-	}
-
-	public void POEHFIDCNIJ()
+	public void HDMEHCABMFB()
 	{
 		List<int> list = new List<int>(DJBIELKMADE.Keys);
 		foreach (int item in list)
@@ -166,154 +116,18 @@ public class SoundManager : Singleton<SoundManager>
 		}
 	}
 
-	public Audio GetMusicAudio(int MLICEJKIGHO)
+	public int OGFJFLHLOIL(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL)
 	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			if (MLICEJKIGHO == item)
-			{
-				return DJBIELKMADE[item];
-			}
-		}
-		return null;
+		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, 1588f, 1213f, 1084f, null);
 	}
 
-	public void IHCHGMAOEDP()
+	public void ResumeAll()
 	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			audio.Pause();
-		}
+		ResumeAllMusic();
+		ResumeAllSounds();
 	}
 
-	public int EENFAOEODCK(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, Transform OKDDLALOEME, float PFJOHIMLHEP = 0f, float CNPIACHIHKD = 14f)
-	{
-		if (BKGCLBJFADE == null)
-		{
-			Debug.LogError("SetEnvSpriteImage", BKGCLBJFADE);
-		}
-		if (FEBGJECBJKF())
-		{
-			List<int> list = new List<int>(MECONPJBFIL.Keys);
-			foreach (int item in list)
-			{
-				if (MECONPJBFIL[item].LCIMPPPDCPA().clip == BKGCLBJFADE)
-				{
-					return MECONPJBFIL[item].audioID;
-				}
-			}
-		}
-		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, true, BDICHAELIJE, 502f, 612f, OKDDLALOEME);
-		audio.LCIMPPPDCPA().rolloffMode = AudioRolloffMode.Logarithmic;
-		audio.LCIMPPPDCPA().minDistance = PFJOHIMLHEP;
-		audio.audioSource.maxDistance = CNPIACHIHKD;
-		audio.audioSource.transform.localPosition = new Vector3(1996f, 1131f, 533f);
-		audio.audioSource.outputAudioMixerGroup = sfx_mixer;
-		MECONPJBFIL.Add(audio.audioID, audio);
-		return audio.audioID;
-	}
-
-	public Audio JNFPDAMJBGE(int MLICEJKIGHO)
-	{
-		Audio musicAudio = GetMusicAudio(MLICEJKIGHO);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		musicAudio = FEMGGDJOKFK(MLICEJKIGHO);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		return null;
-	}
-
-	[SpecialName]
-	public void ECNEKLHCKFE(bool DPNHODJHGJL)
-	{
-		_003CNEACNFNFMJK_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public int NPLJGLDMJIJ(AudioClip BKGCLBJFADE, float BDICHAELIJE)
-	{
-		return EENFAOEODCK(BKGCLBJFADE, BDICHAELIJE, true, null, 527f, 1015f);
-	}
-
-	public static void HAPJJNMDBCO(int JMMILEFMACB, float MEFEIEEHNDN)
-	{
-		AudioClip bKGCLBJFADE = null;
-		if (JMMILEFMACB == 0)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.NHPJLPMBNNI;
-		}
-		if (JMMILEFMACB == 1)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.KNBEPPPLNGP;
-		}
-		if (JMMILEFMACB == 1)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.BFMNHKHHIEB;
-		}
-		if (JMMILEFMACB == 0)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.JOHPMPHJJLO;
-		}
-		Singleton<SoundManager>.Instance.LIHPKHMCIGE(bKGCLBJFADE, MEFEIEEHNDN);
-	}
-
-	public int BMBBKJJLFNM(AudioClip BKGCLBJFADE)
-	{
-		return CDHKNHGIHMO(BKGCLBJFADE, 1246f, false, true, 1242f, 989f, 1436f, null);
-	}
-
-	[SpecialName]
-	public bool CFEIHDDKJFF()
-	{
-		return _003CBMMKEGKECGL_003Ek__BackingField;
-	}
-
-	public int LNALJPAGAHL(AudioClip BKGCLBJFADE)
-	{
-		return PlayMusic(BKGCLBJFADE, 1248f, false, false, 1043f, 739f, 208f, null);
-	}
-
-	[SpecialName]
-	public void PMBGCBHAJLF(float DPNHODJHGJL)
-	{
-		music_mixer.audioMixer.SetFloat(" This is not possible to be called for standalone input. Please check your platform and code where this is called", DPNHODJHGJL);
-	}
-
-	public static void PNOOHLGKOFH(int JMMILEFMACB, float MEFEIEEHNDN)
-	{
-		AudioClip bKGCLBJFADE = null;
-		if (JMMILEFMACB == 0)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.NHPJLPMBNNI;
-		}
-		if (JMMILEFMACB == 1)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.KNBEPPPLNGP;
-		}
-		if (JMMILEFMACB == 5)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.BFMNHKHHIEB;
-		}
-		if (JMMILEFMACB == 4)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.JOHPMPHJJLO;
-		}
-		Singleton<SoundManager>.Instance.ECHLNKMPDJD(bKGCLBJFADE, MEFEIEEHNDN);
-	}
-
-	public int EBBDMCEBADA(AudioClip BKGCLBJFADE, float BDICHAELIJE)
-	{
-		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, false, true, 131f, 534f, 156f, null);
-	}
-
-	public void JELKIKFDJPL(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
+	public void PlaySingle(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
 	{
 		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
 		audioSource.clip = BKGCLBJFADE;
@@ -326,132 +140,200 @@ public class SoundManager : Singleton<SoundManager>
 		}
 	}
 
-	public void DOMIHFGGJOL(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
+	public Audio GetAudio(int MLICEJKIGHO)
+	{
+		Audio musicAudio = GetMusicAudio(MLICEJKIGHO);
+		if (musicAudio != null)
+		{
+			return musicAudio;
+		}
+		musicAudio = GetSoundAudio(MLICEJKIGHO);
+		if (musicAudio != null)
+		{
+			return musicAudio;
+		}
+		return null;
+	}
+
+	public int EMCBGFPHICJ(AudioClip BKGCLBJFADE)
+	{
+		return BJPDFJDFOHG(BKGCLBJFADE, 1643f, true, null, 1626f, 876f);
+	}
+
+	public Audio LGJMPDDKIBE()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (audio.AHADHELAKAM())
+			{
+				return audio;
+			}
+		}
+		return null;
+	}
+
+	private void MPICLCABBJB(bool IBNHNGJMBBA)
+	{
+		LFEFAKMMFKF = IBNHNGJMBBA;
+	}
+
+	public Audio EMFACPNCDNM(AudioClip ICJOJEKDMIF)
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (audio.clip == ICJOJEKDMIF)
+			{
+				return audio;
+			}
+		}
+		return null;
+	}
+
+	[SpecialName]
+	public void COGLCMFJOIH(float DPNHODJHGJL)
+	{
+		master_mixer.audioMixer.SetFloat("ItemNameText", DPNHODJHGJL);
+	}
+
+	[SpecialName]
+	public void GPCFJGLMEFA(float DPNHODJHGJL)
+	{
+		sfx_mixer.audioMixer.SetFloat("/", DPNHODJHGJL);
+	}
+
+	public int PlayMusic(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB)
+	{
+		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, EONALHCPKCL, LALICIHGPMB, -1f, null);
+	}
+
+	public void KHMNLKNIPCP(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
 	{
 		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
 		audioSource.clip = BKGCLBJFADE;
 		audioSource.pitch = MEFEIEEHNDN;
 		audioSource.Play();
-		IGKNDLKJBMO++;
+		IGKNDLKJBMO += 0;
 		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
 		{
 			IGKNDLKJBMO = 1;
 		}
 	}
 
-	public void EJINEFNKEAN()
-	{
-		LFABIGKGJOG.Clear();
-		AudioSource[] components = base.gameObject.GetComponents<AudioSource>();
-		for (int i = 1; i < components.Length; i++)
-		{
-			AudioSource obj = components[i];
-			Object.Destroy(obj);
-		}
-		for (int j = 0; j < efxSourcesCount; j += 0)
-		{
-			AudioSource audioSource = base.gameObject.AddComponent<AudioSource>();
-			audioSource.reverbZoneMix = 297f;
-			audioSource.outputAudioMixerGroup = sfx_mixer;
-			audioSource.playOnAwake = false;
-			LFABIGKGJOG.Add(audioSource);
-		}
-		StartCoroutine(AMJHEFCJCPP());
-	}
-
-	public int PlayMusic(AudioClip BKGCLBJFADE)
-	{
-		return PlayMusic(BKGCLBJFADE, 1f, true, false, 1f, 1f, -1f, null);
-	}
-
-	public Audio GHLPIPBEDLO(int MLICEJKIGHO)
+	public Audio MOHNMMPCPCF(AudioClip ICJOJEKDMIF)
 	{
 		List<int> list = new List<int>(DJBIELKMADE.Keys);
 		foreach (int item in list)
 		{
-			if (MLICEJKIGHO == item)
+			Audio audio = DJBIELKMADE[item];
+			if (audio.clip == ICJOJEKDMIF)
 			{
-				return DJBIELKMADE[item];
+				return audio;
 			}
 		}
 		return null;
 	}
 
-	public void PDAGMEBBADG()
+	public void MAKFHOELIIJ()
 	{
-		POEHFIDCNIJ();
-		NIOPHLJDFII();
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = MECONPJBFIL[item];
+			audio.Resume();
+		}
 	}
 
-	public void AIPKJEAGACF(float LALICIHGPMB)
-	{
-		IDMFEEEIECD(LALICIHGPMB);
-		IKKILFDKMKJ();
-	}
-
-	public int KGNMAJLMLBB(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, Transform OKDDLALOEME, float PFJOHIMLHEP = 0f, float CNPIACHIHKD = 14f)
+	public int GDKBCJDNFEN(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
 	{
 		if (BKGCLBJFADE == null)
 		{
-			Debug.LogError("_TimeX", BKGCLBJFADE);
+			Debug.LogError("workshop.", BKGCLBJFADE);
 		}
-		if (ignoreDuplicateSounds)
-		{
-			List<int> list = new List<int>(MECONPJBFIL.Keys);
-			foreach (int item in list)
-			{
-				if (MECONPJBFIL[item].audioSource.clip == BKGCLBJFADE)
-				{
-					return MECONPJBFIL[item].audioID;
-				}
-			}
-		}
-		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, false, BDICHAELIJE, 633f, 1391f, OKDDLALOEME);
-		audio.LCIMPPPDCPA().rolloffMode = AudioRolloffMode.Linear;
-		audio.audioSource.minDistance = PFJOHIMLHEP;
-		audio.LCIMPPPDCPA().maxDistance = CNPIACHIHKD;
-		audio.audioSource.transform.localPosition = new Vector3(1843f, 568f, 555f);
-		audio.LCIMPPPDCPA().outputAudioMixerGroup = sfx_mixer;
-		MECONPJBFIL.Add(audio.audioID, audio);
-		return audio.audioID;
-	}
-
-	public int NMLINDCKPHB(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
-	{
-		if (BKGCLBJFADE == null)
-		{
-			Debug.LogError("_BorderSize", BKGCLBJFADE);
-		}
-		if (ignoreDuplicateMusic)
+		if (ICMNFCFLNOH())
 		{
 			List<int> list = new List<int>(DJBIELKMADE.Keys);
 			foreach (int item in list)
 			{
-				if (DJBIELKMADE[item].LCIMPPPDCPA().clip == BKGCLBJFADE)
+				if (DJBIELKMADE[item].EFBNFACGJLI().clip == BKGCLBJFADE)
 				{
 					return DJBIELKMADE[item].audioID;
 				}
 			}
 		}
 		StopAllMusic(PINGENLHGGC);
-		Audio audio = new Audio(Audio.AudioType.Music, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
-		audio.audioSource.outputAudioMixerGroup = music_mixer;
+		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
+		audio.EFBNFACGJLI().outputAudioMixerGroup = music_mixer;
 		DJBIELKMADE.Add(audio.audioID, audio);
 		return audio.audioID;
 	}
 
-	public void IDMFEEEIECD(float LALICIHGPMB)
+	public Audio HHBOCJNIMAL(AudioClip ICJOJEKDMIF)
+	{
+		Audio musicAudio = GetMusicAudio(ICJOJEKDMIF);
+		if (musicAudio != null)
+		{
+			return musicAudio;
+		}
+		musicAudio = GetSoundAudio(ICJOJEKDMIF);
+		if (musicAudio != null)
+		{
+			return musicAudio;
+		}
+		return null;
+	}
+
+	public void LCKKDMKJJEF()
+	{
+		LFABIGKGJOG.Clear();
+		AudioSource[] components = base.gameObject.GetComponents<AudioSource>();
+		foreach (AudioSource obj in components)
+		{
+			Object.Destroy(obj);
+		}
+		for (int j = 1; j < efxSourcesCount; j++)
+		{
+			AudioSource audioSource = base.gameObject.AddComponent<AudioSource>();
+			audioSource.reverbZoneMix = 182f;
+			audioSource.outputAudioMixerGroup = sfx_mixer;
+			audioSource.playOnAwake = true;
+			LFABIGKGJOG.Add(audioSource);
+		}
+		StartCoroutine(DNPEHHKHCNL());
+	}
+
+	public int PlayMusic(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL)
+	{
+		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, 1f, 1f, -1f, null);
+	}
+
+	public Audio LCJBDBFBFFH(AudioClip ICJOJEKDMIF)
 	{
 		List<int> list = new List<int>(DJBIELKMADE.Keys);
 		foreach (int item in list)
 		{
 			Audio audio = DJBIELKMADE[item];
-			if (LALICIHGPMB > 1045f)
+			if (audio.clip == ICJOJEKDMIF)
 			{
-				audio.fadeOutSeconds = LALICIHGPMB;
+				return audio;
 			}
-			audio.IFBCKEGANBE();
 		}
+		return null;
+	}
+
+	[SpecialName]
+	public bool GDOEDKKJFBO()
+	{
+		return _003CEDKNFIIEBBC_003Ek__BackingField;
+	}
+
+	[SpecialName]
+	public void FAAEJBEGEAO(float DPNHODJHGJL)
+	{
+		music_mixer.audioMixer.SetFloat("_Value4", DPNHODJHGJL);
 	}
 
 	public void ResumeAllSounds()
@@ -464,27 +346,17 @@ public class SoundManager : Singleton<SoundManager>
 		}
 	}
 
-	public Audio JCGEPOMBJCA(int MLICEJKIGHO)
+	public void OBKJEIGKGOO()
 	{
-		Audio musicAudio = GetMusicAudio(MLICEJKIGHO);
-		if (musicAudio != null)
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
 		{
-			return musicAudio;
+			Audio audio = DJBIELKMADE[item];
+			audio.Pause();
 		}
-		musicAudio = FEMGGDJOKFK(MLICEJKIGHO);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		return null;
 	}
 
-	public void StopAllMusic()
-	{
-		StopAllMusic(-1f);
-	}
-
-	public void AMFKNILGNLB()
+	public void BPMBHMFFCDH()
 	{
 		List<int> list = new List<int>(DJBIELKMADE.Keys);
 		foreach (int item in list)
@@ -494,518 +366,9 @@ public class SoundManager : Singleton<SoundManager>
 		}
 	}
 
-	[SpecialName]
-	public void FKLCHKJDNCM(bool DPNHODJHGJL)
-	{
-		_003CBMMKEGKECGL_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public float FFKAPDGBGOO()
-	{
-		float value = 759f;
-		sfx_mixer.audioMixer.GetFloat("GlassColor", out value);
-		return value;
-	}
-
-	[SpecialName]
-	public bool CNHLJHGNAFI()
-	{
-		return _003CNEACNFNFMJK_003Ek__BackingField;
-	}
-
-	public void Reset()
+	public void MANOCIJICLG()
 	{
 		StopAll();
-	}
-
-	public void GDJGIJEMFEN()
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			audio.Resume();
-		}
-	}
-
-	public int JGJHABDDPNO(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB)
-	{
-		return CDHLJNMPHCO(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, EONALHCPKCL, LALICIHGPMB, 1992f, null);
-	}
-
-	public void IKDCLAAHEHB()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Pause();
-		}
-	}
-
-	public void POOIONEDMIB()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Stop();
-		}
-	}
-
-	public void OAFCEPHJCLC()
-	{
-		AIPKJEAGACF(1397f);
-	}
-
-	public int EFNAMFAKIJO(AudioClip BKGCLBJFADE, float BDICHAELIJE)
-	{
-		return GFLKGIJGJHA(BKGCLBJFADE, BDICHAELIJE, false, null, 1712f, 54f);
-	}
-
-	[SpecialName]
-	public void FJHBNOHDHEL(float DPNHODJHGJL)
-	{
-		sfx_mixer.audioMixer.SetFloat("_Value", DPNHODJHGJL);
-	}
-
-	public Audio NEKIAKFCLJK(AudioClip ICJOJEKDMIF)
-	{
-		Audio audio = EDJHENKKJFD(ICJOJEKDMIF);
-		if (audio != null)
-		{
-			return audio;
-		}
-		audio = FCAGHLEHHDN(ICJOJEKDMIF);
-		if (audio != null)
-		{
-			return audio;
-		}
-		return null;
-	}
-
-	[SpecialName]
-	public bool PAHLKOEKGLA()
-	{
-		return _003CEDKNFIIEBBC_003Ek__BackingField;
-	}
-
-	public void MGGNFEPGIJI()
-	{
-		base.Awake();
-		EJINEFNKEAN();
-	}
-
-	public void LJEBHEKCAIK()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Resume();
-		}
-	}
-
-	public int AAIAAGBBNAM(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB)
-	{
-		return KECNAIEBMOB(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, EONALHCPKCL, LALICIHGPMB, 1885f, null);
-	}
-
-	public Audio ILHFGLIBEKP(AudioClip ICJOJEKDMIF)
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			if (audio.clip == ICJOJEKDMIF)
-			{
-				return audio;
-			}
-		}
-		return null;
-	}
-
-	public Audio GetSoundAudio(int MLICEJKIGHO)
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			if (MLICEJKIGHO == item)
-			{
-				return MECONPJBFIL[item];
-			}
-		}
-		return null;
-	}
-
-	public int PlaySound(AudioClip BKGCLBJFADE, bool AIPGGFGKNFE)
-	{
-		return PlaySound(BKGCLBJFADE, 1f, AIPGGFGKNFE, null);
-	}
-
-	[SpecialName]
-	public bool MBOJMCCNOJI()
-	{
-		return _003CEDKNFIIEBBC_003Ek__BackingField;
-	}
-
-	public int OIDCFNHNMCP(AudioClip BKGCLBJFADE)
-	{
-		return GOLFGIMABKJ(BKGCLBJFADE, 1006f, false, null, 362f, 1760f);
-	}
-
-	[SpecialName]
-	public float HECHOPCJIOD()
-	{
-		float value = 1946f;
-		music_mixer.audioMixer.GetFloat("_Value", out value);
-		return value;
-	}
-
-	public Audio GetMusicAudio(AudioClip ICJOJEKDMIF)
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			if (audio.clip == ICJOJEKDMIF)
-			{
-				return audio;
-			}
-		}
-		return null;
-	}
-
-	[SpecialName]
-	public bool FEGIBCIJEKA()
-	{
-		return _003CBMMKEGKECGL_003Ek__BackingField;
-	}
-
-	public int KECNAIEBMOB(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
-	{
-		if (BKGCLBJFADE == null)
-		{
-			Debug.LogError("music", BKGCLBJFADE);
-		}
-		if (ignoreDuplicateMusic)
-		{
-			List<int> list = new List<int>(DJBIELKMADE.Keys);
-			foreach (int item in list)
-			{
-				if (DJBIELKMADE[item].LCIMPPPDCPA().clip == BKGCLBJFADE)
-				{
-					return DJBIELKMADE[item].audioID;
-				}
-			}
-		}
-		StopAllMusic(PINGENLHGGC);
-		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
-		audio.audioSource.outputAudioMixerGroup = music_mixer;
-		DJBIELKMADE.Add(audio.audioID, audio);
-		return audio.audioID;
-	}
-
-	public void DDENFOCKIGA()
-	{
-		LJOOKPFDJGC();
-		OGCBHACICMN();
-	}
-
-	public void KBLHGOIIKMI()
-	{
-		IDMFEEEIECD(401f);
-	}
-
-	public int HKAPBCKDEEO(AudioClip BKGCLBJFADE)
-	{
-		return KGNMAJLMLBB(BKGCLBJFADE, 824f, true, null, 1644f, 1064f);
-	}
-
-	[SpecialName]
-	public void CIBJICEBJBA(float DPNHODJHGJL)
-	{
-		master_mixer.audioMixer.SetFloat("settings.selectormapsperpage", DPNHODJHGJL);
-	}
-
-	private void DAOPOFAHCCE(Scene INCNFKFDPPL, LoadSceneMode JBDCBMAICAN)
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			if (!audio.persist && audio.activated)
-			{
-				Object.Destroy(audio.LCIMPPPDCPA());
-				DJBIELKMADE.Remove(item);
-			}
-		}
-		list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item2 in list)
-		{
-			Audio audio2 = MECONPJBFIL[item2];
-			Object.Destroy(audio2.audioSource);
-			MECONPJBFIL.Remove(item2);
-		}
-	}
-
-	public void StopAll()
-	{
-		StopAll(-1f);
-	}
-
-	public new void Awake()
-	{
-		base.Awake();
-		Init();
-	}
-
-	public Audio ELPDBNJHNHN(int MLICEJKIGHO)
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			if (MLICEJKIGHO == item)
-			{
-				return DJBIELKMADE[item];
-			}
-		}
-		return null;
-	}
-
-	[SpecialName]
-	public void LFIEDGFOEKJ(bool DPNHODJHGJL)
-	{
-		_003CEDKNFIIEBBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public bool NKLOOOJHBKN()
-	{
-		return _003CNEACNFNFMJK_003Ek__BackingField;
-	}
-
-	public void PGBLEMNPOIP()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Stop();
-		}
-	}
-
-	public void PauseAllMusic()
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			audio.Pause();
-		}
-	}
-
-	public void OPNNBPGIDDJ()
-	{
-		IAJIGLGDGBO();
-	}
-
-	public static void PlayHitSfx(int JMMILEFMACB, float MEFEIEEHNDN)
-	{
-		AudioClip bKGCLBJFADE = null;
-		if (JMMILEFMACB == 0)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.NHPJLPMBNNI;
-		}
-		if (JMMILEFMACB == 1)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.KNBEPPPLNGP;
-		}
-		if (JMMILEFMACB == 2)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.BFMNHKHHIEB;
-		}
-		if (JMMILEFMACB == 3)
-		{
-			bKGCLBJFADE = Singleton<SoundManager>.Instance.JOHPMPHJJLO;
-		}
-		Singleton<SoundManager>.Instance.PlaySingle(bKGCLBJFADE, MEFEIEEHNDN);
-	}
-
-	public int CDHLJNMPHCO(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
-	{
-		if (BKGCLBJFADE == null)
-		{
-			Debug.LogError("menu.selectedplaymode", BKGCLBJFADE);
-		}
-		if (ignoreDuplicateMusic)
-		{
-			List<int> list = new List<int>(DJBIELKMADE.Keys);
-			foreach (int item in list)
-			{
-				if (DJBIELKMADE[item].audioSource.clip == BKGCLBJFADE)
-				{
-					return DJBIELKMADE[item].audioID;
-				}
-			}
-		}
-		StopAllMusic(PINGENLHGGC);
-		Audio audio = new Audio(Audio.AudioType.Music, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
-		audio.LCIMPPPDCPA().outputAudioMixerGroup = music_mixer;
-		DJBIELKMADE.Add(audio.audioID, audio);
-		return audio.audioID;
-	}
-
-	public int PlayMusic(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
-	{
-		if (BKGCLBJFADE == null)
-		{
-			Debug.LogError("[Sound Manager] Audio clip is null, cannot play music", BKGCLBJFADE);
-		}
-		if (ignoreDuplicateMusic)
-		{
-			List<int> list = new List<int>(DJBIELKMADE.Keys);
-			foreach (int item in list)
-			{
-				if (DJBIELKMADE[item].audioSource.clip == BKGCLBJFADE)
-				{
-					return DJBIELKMADE[item].audioID;
-				}
-			}
-		}
-		StopAllMusic(PINGENLHGGC);
-		Audio audio = new Audio(Audio.AudioType.Music, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
-		audio.audioSource.outputAudioMixerGroup = music_mixer;
-		DJBIELKMADE.Add(audio.audioID, audio);
-		return audio.audioID;
-	}
-
-	public void ResumeAllMusic()
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			audio.Resume();
-		}
-	}
-
-	public int HFCDOGPNMCE(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL)
-	{
-		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, 347f, 1429f, 440f, null);
-	}
-
-	private void IDKNEKOCLLK(bool APDBPIMIEBI)
-	{
-		LFEFAKMMFKF = !APDBPIMIEBI;
-	}
-
-	public int LBEJIOICNDE(AudioClip BKGCLBJFADE, float BDICHAELIJE)
-	{
-		return EENFAOEODCK(BKGCLBJFADE, BDICHAELIJE, false, null, 431f, 930f);
-	}
-
-	public void FDNKDOOEHBA()
-	{
-		StopAll();
-	}
-
-	public Audio NHKJKDFOAOF(int MLICEJKIGHO)
-	{
-		Audio musicAudio = GetMusicAudio(MLICEJKIGHO);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		musicAudio = FEMGGDJOKFK(MLICEJKIGHO);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		return null;
-	}
-
-	public void ECHLNKMPDJD(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
-	{
-		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
-		audioSource.clip = BKGCLBJFADE;
-		audioSource.pitch = MEFEIEEHNDN;
-		audioSource.Play();
-		IGKNDLKJBMO++;
-		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
-		{
-			IGKNDLKJBMO = 1;
-		}
-	}
-
-	[SpecialName]
-	public float HKAGHFLDAOJ()
-	{
-		float value = 1404f;
-		music_mixer.audioMixer.GetFloat("Preparing content", out value);
-		return value;
-	}
-
-	public int DPNPEKBEPKE(AudioClip BKGCLBJFADE)
-	{
-		return EENFAOEODCK(BKGCLBJFADE, 497f, false, null, 689f, 1524f);
-	}
-
-	public void JOKOOGJGCBC()
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			audio.Pause();
-		}
-	}
-
-	public Audio EEAOJCBKCFI(int MLICEJKIGHO)
-	{
-		Audio audio = ELPDBNJHNHN(MLICEJKIGHO);
-		if (audio != null)
-		{
-			return audio;
-		}
-		audio = BKOMGMACINP(MLICEJKIGHO);
-		if (audio != null)
-		{
-			return audio;
-		}
-		return null;
-	}
-
-	[SpecialName]
-	public void FADMCFCMLOO(float DPNHODJHGJL)
-	{
-		sfx_mixer.audioMixer.SetFloat("_TimeX", DPNHODJHGJL);
-	}
-
-	public Audio EPMCBNDCEEP(AudioClip ICJOJEKDMIF)
-	{
-		Audio audio = ILHFGLIBEKP(ICJOJEKDMIF);
-		if (audio != null)
-		{
-			return audio;
-		}
-		audio = GetSoundAudio(ICJOJEKDMIF);
-		if (audio != null)
-		{
-			return audio;
-		}
-		return null;
-	}
-
-	public void MGDFHAIMEBO()
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			audio.Resume();
-		}
 	}
 
 	public void StopAllMusic(float LALICIHGPMB)
@@ -1022,27 +385,152 @@ public class SoundManager : Singleton<SoundManager>
 		}
 	}
 
-	public int PlayMusic(AudioClip BKGCLBJFADE, float BDICHAELIJE)
+	public void StopAllMusic()
 	{
-		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, true, false, 1f, 1f, -1f, null);
+		StopAllMusic(-1f);
 	}
 
-	public void IAJIGLGDGBO()
+	public int PPGMLLGJDDF(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
 	{
-		StopAll(1906f);
+		if (BKGCLBJFADE == null)
+		{
+			Debug.LogError("_ScreenResolution", BKGCLBJFADE);
+		}
+		if (NFMIINBJIMN())
+		{
+			List<int> list = new List<int>(DJBIELKMADE.Keys);
+			foreach (int item in list)
+			{
+				if (DJBIELKMADE[item].audioSource.clip == BKGCLBJFADE)
+				{
+					return DJBIELKMADE[item].audioID;
+				}
+			}
+		}
+		JKGOFLFCOMG(PINGENLHGGC);
+		Audio audio = new Audio(Audio.AudioType.Music, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
+		audio.AKHKFKHDAEK().outputAudioMixerGroup = music_mixer;
+		DJBIELKMADE.Add(audio.audioID, audio);
+		return audio.audioID;
 	}
 
-	public void NBOKAGMABPN()
+	[SpecialName]
+	public void NFGIOLHBJAM(float DPNHODJHGJL)
 	{
-		FCPOMJINNJK();
+		sfx_mixer.audioMixer.SetFloat("_TimeX", DPNHODJHGJL);
 	}
 
-	public int PlayMusic(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL)
+	public Audio GHEHFAIPPEG(int MLICEJKIGHO)
 	{
-		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, 1f, 1f, -1f, null);
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			if (MLICEJKIGHO == item)
+			{
+				return DJBIELKMADE[item];
+			}
+		}
+		return null;
 	}
 
-	public void IKKILFDKMKJ()
+	public void ALPKKEIJNCP()
+	{
+		OBKJEIGKGOO();
+		PauseAllSounds();
+	}
+
+	public Audio BANDDENJPHO()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (audio.PNEPMOGOEKP())
+			{
+				return audio;
+			}
+		}
+		return null;
+	}
+
+	public Audio GetMusicAudio(AudioClip ICJOJEKDMIF)
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (audio.clip == ICJOJEKDMIF)
+			{
+				return audio;
+			}
+		}
+		return null;
+	}
+
+	public void GDJMBJEAPHM()
+	{
+		LFABIGKGJOG.Clear();
+		AudioSource[] components = base.gameObject.GetComponents<AudioSource>();
+		for (int i = 1; i < components.Length; i++)
+		{
+			AudioSource obj = components[i];
+			Object.Destroy(obj);
+		}
+		for (int j = 0; j < efxSourcesCount; j += 0)
+		{
+			AudioSource audioSource = base.gameObject.AddComponent<AudioSource>();
+			audioSource.reverbZoneMix = 297f;
+			audioSource.outputAudioMixerGroup = sfx_mixer;
+			audioSource.playOnAwake = false;
+			LFABIGKGJOG.Add(audioSource);
+		}
+		StartCoroutine(BAGMAJJFEHK());
+	}
+
+	public void StopAll(float LALICIHGPMB)
+	{
+		StopAllMusic(LALICIHGPMB);
+		StopAllSounds();
+	}
+
+	public void DNBKMFAFLDG()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Pause();
+		}
+	}
+
+	public Audio GetSoundAudio(int MLICEJKIGHO)
+	{
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			if (MLICEJKIGHO == item)
+			{
+				return MECONPJBFIL[item];
+			}
+		}
+		return null;
+	}
+
+	public void JKGOFLFCOMG(float LALICIHGPMB)
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (LALICIHGPMB > 519f)
+			{
+				audio.GKCNAEMPANF(LALICIHGPMB);
+			}
+			audio.Stop();
+		}
+	}
+
+	public void StopAllSounds()
 	{
 		List<int> list = new List<int>(MECONPJBFIL.Keys);
 		foreach (int item in list)
@@ -1052,34 +540,54 @@ public class SoundManager : Singleton<SoundManager>
 		}
 	}
 
-	public int HLDCCELLJMP(AudioClip BKGCLBJFADE)
+	public int BJPDFJDFOHG(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, Transform OKDDLALOEME, float PFJOHIMLHEP = 0f, float CNPIACHIHKD = 14f)
 	{
-		return CDHKNHGIHMO(BKGCLBJFADE, 1519f, true, false, 743f, 112f, 1438f, null);
+		if (BKGCLBJFADE == null)
+		{
+			Debug.LogError("CameraFilterPack/Blend2Camera_LinearBurn", BKGCLBJFADE);
+		}
+		if (GDOEDKKJFBO())
+		{
+			List<int> list = new List<int>(MECONPJBFIL.Keys);
+			foreach (int item in list)
+			{
+				if (MECONPJBFIL[item].audioSource.clip == BKGCLBJFADE)
+				{
+					return MECONPJBFIL[item].audioID;
+				}
+			}
+		}
+		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, true, BDICHAELIJE, 440f, 1221f, OKDDLALOEME);
+		audio.EFBNFACGJLI().rolloffMode = AudioRolloffMode.Logarithmic;
+		audio.AKHKFKHDAEK().minDistance = PFJOHIMLHEP;
+		audio.AKHKFKHDAEK().maxDistance = CNPIACHIHKD;
+		audio.EFBNFACGJLI().transform.localPosition = new Vector3(68f, 1593f, 545f);
+		audio.EFBNFACGJLI().outputAudioMixerGroup = sfx_mixer;
+		MECONPJBFIL.Add(audio.audioID, audio);
+		return audio.audioID;
 	}
 
-	private void OnApplicationFocus(bool APDBPIMIEBI)
+	public void StopAll()
 	{
-		LFEFAKMMFKF = !APDBPIMIEBI;
+		StopAll(-1f);
 	}
 
 	[SpecialName]
-	public void EGCBBEGACFO(float DPNHODJHGJL)
+	public float PLGGICMMDMK()
 	{
-		sfx_mixer.audioMixer.SetFloat("No player left to ask", DPNHODJHGJL);
-	}
-
-	[SpecialName]
-	public void EDMMKPKNALE(float DPNHODJHGJL)
-	{
-		master_mixer.audioMixer.SetFloat("checkpoint", DPNHODJHGJL);
-	}
-
-	[SpecialName]
-	public float DCENOLKHCIN()
-	{
-		float value = 477f;
-		music_mixer.audioMixer.GetFloat("Joystick1Button4", out value);
+		float value = 1806f;
+		music_mixer.audioMixer.GetFloat("_Value", out value);
 		return value;
+	}
+
+	public void Reset()
+	{
+		StopAll();
+	}
+
+	public int PlaySound(AudioClip BKGCLBJFADE, float BDICHAELIJE)
+	{
+		return PlaySound(BKGCLBJFADE, BDICHAELIJE, false, null);
 	}
 
 	public int PlaySound(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, Transform OKDDLALOEME, float PFJOHIMLHEP = 0f, float CNPIACHIHKD = 14f)
@@ -1109,160 +617,28 @@ public class SoundManager : Singleton<SoundManager>
 		return audio.audioID;
 	}
 
-	public void KGCCAFFMIPE(float LALICIHGPMB)
+	public Audio LEPBIOCBIOA(AudioClip ICJOJEKDMIF)
 	{
-		IDMFEEEIECD(LALICIHGPMB);
-		POOIONEDMIB();
-	}
-
-	private IEnumerator IOIEFOBKFFH()
-	{
-		yield return new WaitWhile(() => !SteamManager.isKeyVerified);
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_normal", "sounds/hit_normal"));
-		KNBEPPPLNGP = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_normal");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_perfect", "sounds/hit_perfect"));
-		NHPJLPMBNNI = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_perfect");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_wrong", "sounds/hit_wrong"));
-		BFMNHKHHIEB = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_wrong");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.no_hit", "sounds/no_hit"));
-		JOHPMPHJJLO = (AudioClip)ResourcesManager.GetLoadedResource("skin.no_hit");
-		Debug.Log("[SoundManager] Loaded skin audio");
-	}
-
-	public void FFEDODOHCOH()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
+		Audio audio = LCJBDBFBFFH(ICJOJEKDMIF);
+		if (audio != null)
 		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Pause();
+			return audio;
 		}
-	}
-
-	[SpecialName]
-	public bool GFBNDFKMPDJ()
-	{
-		return _003CEDKNFIIEBBC_003Ek__BackingField;
-	}
-
-	private IEnumerator AMJHEFCJCPP()
-	{
-		yield return new WaitWhile(() => !SteamManager.isKeyVerified);
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_normal", "sounds/hit_normal"));
-		KNBEPPPLNGP = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_normal");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_perfect", "sounds/hit_perfect"));
-		NHPJLPMBNNI = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_perfect");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_wrong", "sounds/hit_wrong"));
-		BFMNHKHHIEB = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_wrong");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.no_hit", "sounds/no_hit"));
-		JOHPMPHJJLO = (AudioClip)ResourcesManager.GetLoadedResource("skin.no_hit");
-		Debug.Log("[SoundManager] Loaded skin audio");
-	}
-
-	[SpecialName]
-	public void CPACHKEJNKO(bool DPNHODJHGJL)
-	{
-		_003CEDKNFIIEBBC_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	[SpecialName]
-	public void KAFAFNKLFOH(float DPNHODJHGJL)
-	{
-		sfx_mixer.audioMixer.SetFloat("EXCEPTION:", DPNHODJHGJL);
-	}
-
-	private void IDNNMNMDKMI(Scene INCNFKFDPPL, LoadSceneMode JBDCBMAICAN)
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
+		audio = GetSoundAudio(ICJOJEKDMIF);
+		if (audio != null)
 		{
-			Audio audio = DJBIELKMADE[item];
-			if (!audio.persist && audio.activated)
-			{
-				Object.Destroy(audio.audioSource);
-				DJBIELKMADE.Remove(item);
-			}
-		}
-		list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item2 in list)
-		{
-			Audio audio2 = MECONPJBFIL[item2];
-			Object.Destroy(audio2.audioSource);
-			MECONPJBFIL.Remove(item2);
-		}
-	}
-
-	public Audio EDJHENKKJFD(AudioClip ICJOJEKDMIF)
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			if (audio.clip == ICJOJEKDMIF)
-			{
-				return audio;
-			}
+			return audio;
 		}
 		return null;
 	}
 
-	public Audio GetAudio(AudioClip ICJOJEKDMIF)
-	{
-		Audio musicAudio = GetMusicAudio(ICJOJEKDMIF);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		musicAudio = GetSoundAudio(ICJOJEKDMIF);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		return null;
-	}
-
-	public void ABDHDGNIHHI()
-	{
-		FCPOMJINNJK();
-	}
-
-	public int OOEDBOONAFO(AudioClip BKGCLBJFADE, float BDICHAELIJE)
-	{
-		return PlaySound(BKGCLBJFADE, BDICHAELIJE, false, null, 972f, 1711f);
-	}
-
-	public void FCPOMJINNJK()
-	{
-		GPNCMIPNCEF(90f);
-	}
-
 	[SpecialName]
-	public void PADMLLEIKGJ(float DPNHODJHGJL)
+	public bool MGFCMOGPBMI()
 	{
-		sfx_mixer.audioMixer.SetFloat("[Sound Manager] Audio clip is null, cannot play sound", DPNHODJHGJL);
+		return _003CBMMKEGKECGL_003Ek__BackingField;
 	}
 
-	private void FFDPEAEPJOM(bool APDBPIMIEBI)
-	{
-		LFEFAKMMFKF = !APDBPIMIEBI;
-	}
-
-	public int PlaySound(AudioClip BKGCLBJFADE)
-	{
-		return PlaySound(BKGCLBJFADE, 1f, false, null);
-	}
-
-	public int OLAHGLBJMAL(AudioClip BKGCLBJFADE)
-	{
-		return GOLFGIMABKJ(BKGCLBJFADE, 305f, true, null, 1177f, 489f);
-	}
-
-	public int PlaySound(AudioClip BKGCLBJFADE, float BDICHAELIJE)
-	{
-		return PlaySound(BKGCLBJFADE, BDICHAELIJE, false, null);
-	}
-
-	public void DFNPEJMJAIH(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
+	public void OPBCPOCKJHF(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
 	{
 		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
 		audioSource.clip = BKGCLBJFADE;
@@ -1271,58 +647,25 @@ public class SoundManager : Singleton<SoundManager>
 		IGKNDLKJBMO += 0;
 		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
 		{
-			IGKNDLKJBMO = 1;
+			IGKNDLKJBMO = 0;
 		}
 	}
 
-	public void LJOOKPFDJGC()
+	private IEnumerator DNPEHHKHCNL()
 	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			audio.Resume();
-		}
+		yield return new WaitWhile(() => !SteamManager.isKeyVerified);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_normal", "sounds/hit_normal"));
+		KNBEPPPLNGP = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_normal");
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_perfect", "sounds/hit_perfect"));
+		NHPJLPMBNNI = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_perfect");
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_wrong", "sounds/hit_wrong"));
+		BFMNHKHHIEB = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_wrong");
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.no_hit", "sounds/no_hit"));
+		JOHPMPHJJLO = (AudioClip)ResourcesManager.GetLoadedResource("skin.no_hit");
+		Debug.Log("Loaded skin audio");
 	}
 
-	public Audio BKOMGMACINP(int MLICEJKIGHO)
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			if (MLICEJKIGHO == item)
-			{
-				return MECONPJBFIL[item];
-			}
-		}
-		return null;
-	}
-
-	public void StopAllSounds()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Stop();
-		}
-	}
-
-	public Audio GetPlayingMusicAudio()
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			if (audio.playing)
-			{
-				return audio;
-			}
-		}
-		return null;
-	}
-
-	public static void FCNBLDODPKG(int JMMILEFMACB, float MEFEIEEHNDN)
+	public static void DMOMDMCBBFI(int JMMILEFMACB, float MEFEIEEHNDN)
 	{
 		AudioClip bKGCLBJFADE = null;
 		if (JMMILEFMACB == 0)
@@ -1333,224 +676,20 @@ public class SoundManager : Singleton<SoundManager>
 		{
 			bKGCLBJFADE = Singleton<SoundManager>.Instance.KNBEPPPLNGP;
 		}
-		if (JMMILEFMACB == 7)
+		if (JMMILEFMACB == 5)
 		{
 			bKGCLBJFADE = Singleton<SoundManager>.Instance.BFMNHKHHIEB;
 		}
-		if (JMMILEFMACB == 1)
+		if (JMMILEFMACB == 4)
 		{
 			bKGCLBJFADE = Singleton<SoundManager>.Instance.JOHPMPHJJLO;
 		}
-		Singleton<SoundManager>.Instance.JELKIKFDJPL(bKGCLBJFADE, MEFEIEEHNDN);
+		Singleton<SoundManager>.Instance.OBHNMDNJEDM(bKGCLBJFADE, MEFEIEEHNDN);
 	}
 
-	public Audio FEMGGDJOKFK(int MLICEJKIGHO)
+	public void HMBLLAECOIL()
 	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			if (MLICEJKIGHO == item)
-			{
-				return MECONPJBFIL[item];
-			}
-		}
-		return null;
-	}
-
-	private void AMNADGKJIIP(bool IBNHNGJMBBA)
-	{
-		LFEFAKMMFKF = IBNHNGJMBBA;
-	}
-
-	public int IFEPJCMGGLH(AudioClip BKGCLBJFADE)
-	{
-		return PlayMusic(BKGCLBJFADE, 1632f, false, false, 95f, 223f, 1418f, null);
-	}
-
-	[SpecialName]
-	public void EDFLHGMKPGC(bool DPNHODJHGJL)
-	{
-		_003CBMMKEGKECGL_003Ek__BackingField = DPNHODJHGJL;
-	}
-
-	public void GPDCFHHLLNG(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
-	{
-		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
-		audioSource.clip = BKGCLBJFADE;
-		audioSource.pitch = MEFEIEEHNDN;
-		audioSource.Play();
-		IGKNDLKJBMO++;
-		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
-		{
-			IGKNDLKJBMO = 0;
-		}
-	}
-
-	public void OAPJFLICLPI()
-	{
-		JOKOOGJGCBC();
-		FFEDODOHCOH();
-	}
-
-	public int MKEHJGPKONL(AudioClip BKGCLBJFADE, float BDICHAELIJE)
-	{
-		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, true, true, 1314f, 1886f, 337f, null);
-	}
-
-	public void GPNCMIPNCEF(float LALICIHGPMB)
-	{
-		StopAllMusic(LALICIHGPMB);
-		POOIONEDMIB();
-	}
-
-	public void FHOCONCMBME()
-	{
-		IHCHGMAOEDP();
-		FFEDODOHCOH();
-	}
-
-	public void PauseAllSounds()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Pause();
-		}
-	}
-
-	[SpecialName]
-	public float CIMAPCBIEBO()
-	{
-		float value = 1058f;
-		sfx_mixer.audioMixer.GetFloat("_Value", out value);
-		return value;
-	}
-
-	public Audio MPOOOFEBNFG(AudioClip ICJOJEKDMIF)
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			if (audio.clip == ICJOJEKDMIF)
-			{
-				return audio;
-			}
-		}
-		return null;
-	}
-
-	public void Init()
-	{
-		LFABIGKGJOG.Clear();
-		AudioSource[] components = base.gameObject.GetComponents<AudioSource>();
-		foreach (AudioSource obj in components)
-		{
-			Object.Destroy(obj);
-		}
-		for (int j = 0; j < efxSourcesCount; j++)
-		{
-			AudioSource audioSource = base.gameObject.AddComponent<AudioSource>();
-			audioSource.reverbZoneMix = 0f;
-			audioSource.outputAudioMixerGroup = sfx_mixer;
-			audioSource.playOnAwake = false;
-			LFABIGKGJOG.Add(audioSource);
-		}
-		StartCoroutine(JFFPGKOIKON());
-	}
-
-	public Audio KHONFICBJOF()
-	{
-		List<int> list = new List<int>(DJBIELKMADE.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = DJBIELKMADE[item];
-			if (audio.LBDDCEHHIPC())
-			{
-				return audio;
-			}
-		}
-		return null;
-	}
-
-	public Audio GetAudio(int MLICEJKIGHO)
-	{
-		Audio musicAudio = GetMusicAudio(MLICEJKIGHO);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		musicAudio = GetSoundAudio(MLICEJKIGHO);
-		if (musicAudio != null)
-		{
-			return musicAudio;
-		}
-		return null;
-	}
-
-	private void LBONINMGAGF(bool APDBPIMIEBI)
-	{
-		LFEFAKMMFKF = APDBPIMIEBI;
-	}
-
-	[SpecialName]
-	public void BPHMLGKCCGD(float DPNHODJHGJL)
-	{
-		music_mixer.audioMixer.SetFloat("_SubsampleIndices", DPNHODJHGJL);
-	}
-
-	[SpecialName]
-	public bool FEBGJECBJKF()
-	{
-		return _003CEDKNFIIEBBC_003Ek__BackingField;
-	}
-
-	public void MBCDCBCLMCI()
-	{
-		base.Awake();
-		Init();
-	}
-
-	public int HEDPGJHLMNF(AudioClip BKGCLBJFADE, bool AIPGGFGKNFE)
-	{
-		return GOLFGIMABKJ(BKGCLBJFADE, 548f, AIPGGFGKNFE, null, 51f, 1280f);
-	}
-
-	public void LIHPKHMCIGE(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
-	{
-		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
-		audioSource.clip = BKGCLBJFADE;
-		audioSource.pitch = MEFEIEEHNDN;
-		audioSource.Play();
-		IGKNDLKJBMO += 0;
-		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
-		{
-			IGKNDLKJBMO = 0;
-		}
-	}
-
-	public void PlaySingle(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
-	{
-		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
-		audioSource.clip = BKGCLBJFADE;
-		audioSource.pitch = MEFEIEEHNDN;
-		audioSource.Play();
-		IGKNDLKJBMO++;
-		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
-		{
-			IGKNDLKJBMO = 0;
-		}
-	}
-
-	private void OnApplicationPause(bool IBNHNGJMBBA)
-	{
-		LFEFAKMMFKF = IBNHNGJMBBA;
-	}
-
-	public int PlayMusic(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB)
-	{
-		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, EONALHCPKCL, LALICIHGPMB, -1f, null);
+		KNDKLKHKLKH();
 	}
 
 	private void Update()
@@ -1579,68 +718,39 @@ public class SoundManager : Singleton<SoundManager>
 		}
 	}
 
-	public int GFLKGIJGJHA(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, Transform OKDDLALOEME, float PFJOHIMLHEP = 0f, float CNPIACHIHKD = 14f)
-	{
-		if (BKGCLBJFADE == null)
-		{
-			Debug.LogError("NEW_ACHIEVEMENT_1_", BKGCLBJFADE);
-		}
-		if (GFBNDFKMPDJ())
-		{
-			List<int> list = new List<int>(MECONPJBFIL.Keys);
-			foreach (int item in list)
-			{
-				if (MECONPJBFIL[item].audioSource.clip == BKGCLBJFADE)
-				{
-					return MECONPJBFIL[item].audioID;
-				}
-			}
-		}
-		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, true, BDICHAELIJE, 1347f, 1780f, OKDDLALOEME);
-		audio.LCIMPPPDCPA().rolloffMode = AudioRolloffMode.Logarithmic;
-		audio.LCIMPPPDCPA().minDistance = PFJOHIMLHEP;
-		audio.LCIMPPPDCPA().maxDistance = CNPIACHIHKD;
-		audio.audioSource.transform.localPosition = new Vector3(864f, 411f, 311f);
-		audio.LCIMPPPDCPA().outputAudioMixerGroup = sfx_mixer;
-		MECONPJBFIL.Add(audio.audioID, audio);
-		return audio.audioID;
-	}
-
-	public void GEHIKFMPALA()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Stop();
-		}
-	}
-
-	[SpecialName]
-	public float GGKGIKOPGIN()
-	{
-		float value = 1332f;
-		music_mixer.audioMixer.GetFloat("_MainTex2", out value);
-		return value;
-	}
-
-	public void NIOPHLJDFII()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Resume();
-		}
-	}
-
-	private void OMCLOFCJMPG()
+	private void KIEJKBNBHMD()
 	{
 		List<int> list = new List<int>(DJBIELKMADE.Keys);
 		foreach (int item in list)
 		{
 			Audio audio = DJBIELKMADE[item];
-			audio.KMKLDAJLCNM();
+			audio.Update();
+			if (!audio.PNEPMOGOEKP() && !audio.paused && !LFEFAKMMFKF)
+			{
+				Object.Destroy(audio._audiosource.gameObject);
+				DJBIELKMADE.Remove(item);
+			}
+		}
+		list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item2 in list)
+		{
+			Audio audio2 = MECONPJBFIL[item2];
+			audio2.HLDFOJMHKNL();
+			if (!audio2.PNEPMOGOEKP() && !audio2.paused && !LFEFAKMMFKF)
+			{
+				Object.Destroy(audio2._audiosource.gameObject);
+				MECONPJBFIL.Remove(item2);
+			}
+		}
+	}
+
+	private void MECJHOJPODB()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Update();
 			if (!audio.playing && !audio.paused && !LFEFAKMMFKF)
 			{
 				Object.Destroy(audio._audiosource.gameObject);
@@ -1651,13 +761,171 @@ public class SoundManager : Singleton<SoundManager>
 		foreach (int item2 in list)
 		{
 			Audio audio2 = MECONPJBFIL[item2];
-			audio2.KMKLDAJLCNM();
-			if (!audio2.playing && !audio2.paused && !LFEFAKMMFKF)
+			audio2.Update();
+			if (!audio2.AHADHELAKAM() && !audio2.paused && !LFEFAKMMFKF)
 			{
 				Object.Destroy(audio2._audiosource.gameObject);
 				MECONPJBFIL.Remove(item2);
 			}
 		}
+	}
+
+	public void JOHMCFOENLH()
+	{
+		DNOKNGHICOO();
+		MAKFHOELIIJ();
+	}
+
+	[SpecialName]
+	public float JEDBKCDOALF()
+	{
+		float value = 66f;
+		music_mixer.audioMixer.GetFloat("Obtain test Item", out value);
+		return value;
+	}
+
+	public void NILMFIAHKBL()
+	{
+		DNBKMFAFLDG();
+		BLIJAAIDNDG();
+	}
+
+	public int NGGDOIJPHII(AudioClip BKGCLBJFADE, float BDICHAELIJE)
+	{
+		return DEOCENIMOED(BKGCLBJFADE, BDICHAELIJE, false, true, 4f, 1159f, 647f, null);
+	}
+
+	public Audio LKOOKOPOFJL(int MLICEJKIGHO)
+	{
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			if (MLICEJKIGHO == item)
+			{
+				return MECONPJBFIL[item];
+			}
+		}
+		return null;
+	}
+
+	public void GCMLEEHGBPA()
+	{
+		IABOPJMDMII();
+	}
+
+	public Audio GetPlayingMusicAudio()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (audio.playing)
+			{
+				return audio;
+			}
+		}
+		return null;
+	}
+
+	public void KAJABEIAEGO()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Pause();
+		}
+	}
+
+	private void IDNNMNMDKMI(Scene INCNFKFDPPL, LoadSceneMode JBDCBMAICAN)
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (!audio.persist && audio.activated)
+			{
+				Object.Destroy(audio.audioSource);
+				DJBIELKMADE.Remove(item);
+			}
+		}
+		list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item2 in list)
+		{
+			Audio audio2 = MECONPJBFIL[item2];
+			Object.Destroy(audio2.audioSource);
+			MECONPJBFIL.Remove(item2);
+		}
+	}
+
+	public int PlaySound(AudioClip BKGCLBJFADE)
+	{
+		return PlaySound(BKGCLBJFADE, 1f, false, null);
+	}
+
+	public void DNFFIOFAIME()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Pause();
+		}
+	}
+
+	public void BLIJAAIDNDG()
+	{
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = MECONPJBFIL[item];
+			audio.Pause();
+		}
+	}
+
+	public int DEOCENIMOED(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
+	{
+		if (BKGCLBJFADE == null)
+		{
+			Debug.LogError("/Assets/MyImage", BKGCLBJFADE);
+		}
+		if (NFMIINBJIMN())
+		{
+			List<int> list = new List<int>(DJBIELKMADE.Keys);
+			foreach (int item in list)
+			{
+				if (DJBIELKMADE[item].audioSource.clip == BKGCLBJFADE)
+				{
+					return DJBIELKMADE[item].audioID;
+				}
+			}
+		}
+		StopAllMusic(PINGENLHGGC);
+		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
+		audio.EFBNFACGJLI().outputAudioMixerGroup = music_mixer;
+		DJBIELKMADE.Add(audio.audioID, audio);
+		return audio.audioID;
+	}
+
+	public Audio GetAudio(AudioClip ICJOJEKDMIF)
+	{
+		Audio musicAudio = GetMusicAudio(ICJOJEKDMIF);
+		if (musicAudio != null)
+		{
+			return musicAudio;
+		}
+		musicAudio = GetSoundAudio(ICJOJEKDMIF);
+		if (musicAudio != null)
+		{
+			return musicAudio;
+		}
+		return null;
+	}
+
+	[SpecialName]
+	public void DONCHIBODCJ(float DPNHODJHGJL)
+	{
+		master_mixer.audioMixer.SetFloat("{0:0} minute{1}, ", DPNHODJHGJL);
 	}
 
 	public void PauseAll()
@@ -1666,7 +934,388 @@ public class SoundManager : Singleton<SoundManager>
 		PauseAllSounds();
 	}
 
-	public Audio HDLDNBBFBNB(AudioClip ICJOJEKDMIF)
+	public int JHJNBPDDIOG(AudioClip BKGCLBJFADE, bool AIPGGFGKNFE)
+	{
+		return BJPDFJDFOHG(BKGCLBJFADE, 9f, AIPGGFGKNFE, null, 1123f, 1158f);
+	}
+
+	public Audio FKNGAFGLFBP(int MLICEJKIGHO)
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			if (MLICEJKIGHO == item)
+			{
+				return DJBIELKMADE[item];
+			}
+		}
+		return null;
+	}
+
+	private void IEMEHGCFAPD()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Update();
+			if (!audio.PNEPMOGOEKP() && !audio.paused && !LFEFAKMMFKF)
+			{
+				Object.Destroy(audio._audiosource.gameObject);
+				DJBIELKMADE.Remove(item);
+			}
+		}
+		list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item2 in list)
+		{
+			Audio audio2 = MECONPJBFIL[item2];
+			audio2.Update();
+			if (!audio2.playing && !audio2.paused && !LFEFAKMMFKF)
+			{
+				Object.Destroy(audio2._audiosource.gameObject);
+				MECONPJBFIL.Remove(item2);
+			}
+		}
+	}
+
+	public int PPJKMFAMPFC(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL)
+	{
+		return OKMIDMIIIMA(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, 1831f, 1792f, 1067f, null);
+	}
+
+	public int PlayMusic(AudioClip BKGCLBJFADE)
+	{
+		return PlayMusic(BKGCLBJFADE, 1f, true, false, 1f, 1f, -1f, null);
+	}
+
+	public void CDILNBNHGLL(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
+	{
+		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
+		audioSource.clip = BKGCLBJFADE;
+		audioSource.pitch = MEFEIEEHNDN;
+		audioSource.Play();
+		IGKNDLKJBMO += 0;
+		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
+		{
+			IGKNDLKJBMO = 0;
+		}
+	}
+
+	public void HGHLPCGPMHM()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Pause();
+		}
+	}
+
+	public void KEKNHAAEPCJ()
+	{
+		base.Awake();
+		LCKKDMKJJEF();
+	}
+
+	public void PauseAllSounds()
+	{
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = MECONPJBFIL[item];
+			audio.Pause();
+		}
+	}
+
+	[SpecialName]
+	public bool ICMNFCFLNOH()
+	{
+		return _003CNEACNFNFMJK_003Ek__BackingField;
+	}
+
+	public int JFALLLNEFDO(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB)
+	{
+		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, EONALHCPKCL, LALICIHGPMB, 836f, null);
+	}
+
+	public new void Awake()
+	{
+		base.Awake();
+		Init();
+	}
+
+	public Audio OCCAAPFDGFJ(int MLICEJKIGHO)
+	{
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			if (MLICEJKIGHO == item)
+			{
+				return MECONPJBFIL[item];
+			}
+		}
+		return null;
+	}
+
+	[SpecialName]
+	public float GPHLHJOANLP()
+	{
+		float value = 1404f;
+		music_mixer.audioMixer.GetFloat("PLEASE WAIT", out value);
+		return value;
+	}
+
+	[SpecialName]
+	public void DBIDPLPNOAN(float DPNHODJHGJL)
+	{
+		sfx_mixer.audioMixer.SetFloat("_MatrixSize", DPNHODJHGJL);
+	}
+
+	public void PauseAllMusic()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Pause();
+		}
+	}
+
+	public Audio PBOPPFONCFF(int MLICEJKIGHO)
+	{
+		Audio audio = GHEHFAIPPEG(MLICEJKIGHO);
+		if (audio != null)
+		{
+			return audio;
+		}
+		audio = GetSoundAudio(MLICEJKIGHO);
+		if (audio != null)
+		{
+			return audio;
+		}
+		return null;
+	}
+
+	public void OPHOGLMEENM()
+	{
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = MECONPJBFIL[item];
+			audio.Resume();
+		}
+	}
+
+	public void JCOKFDKIDJA()
+	{
+		DNBKMFAFLDG();
+		PauseAllSounds();
+	}
+
+	private void LLDHEJIEDHO()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.HLDFOJMHKNL();
+			if (!audio.AHADHELAKAM() && !audio.paused && !LFEFAKMMFKF)
+			{
+				Object.Destroy(audio._audiosource.gameObject);
+				DJBIELKMADE.Remove(item);
+			}
+		}
+		list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item2 in list)
+		{
+			Audio audio2 = MECONPJBFIL[item2];
+			audio2.Update();
+			if (!audio2.PNEPMOGOEKP() && !audio2.paused && !LFEFAKMMFKF)
+			{
+				Object.Destroy(audio2._audiosource.gameObject);
+				MECONPJBFIL.Remove(item2);
+			}
+		}
+	}
+
+	private void OPCLBGHAPMG()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Update();
+			if (!audio.playing && !audio.paused && !LFEFAKMMFKF)
+			{
+				Object.Destroy(audio._audiosource.gameObject);
+				DJBIELKMADE.Remove(item);
+			}
+		}
+		list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item2 in list)
+		{
+			Audio audio2 = MECONPJBFIL[item2];
+			audio2.Update();
+			if (!audio2.AHADHELAKAM() && !audio2.paused && !LFEFAKMMFKF)
+			{
+				Object.Destroy(audio2._audiosource.gameObject);
+				MECONPJBFIL.Remove(item2);
+			}
+		}
+	}
+
+	public int EHGCEMJDLIG(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB)
+	{
+		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, EONALHCPKCL, LALICIHGPMB, 1189f, null);
+	}
+
+	public void Init()
+	{
+		LFABIGKGJOG.Clear();
+		AudioSource[] components = base.gameObject.GetComponents<AudioSource>();
+		foreach (AudioSource obj in components)
+		{
+			Object.Destroy(obj);
+		}
+		for (int j = 0; j < efxSourcesCount; j++)
+		{
+			AudioSource audioSource = base.gameObject.AddComponent<AudioSource>();
+			audioSource.reverbZoneMix = 0f;
+			audioSource.outputAudioMixerGroup = sfx_mixer;
+			audioSource.playOnAwake = false;
+			LFABIGKGJOG.Add(audioSource);
+		}
+		StartCoroutine(JFFPGKOIKON());
+	}
+
+	public void MMMNELCEDDM()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Resume();
+		}
+	}
+
+	public void FHOCONCMBME()
+	{
+		KAJABEIAEGO();
+		BLIJAAIDNDG();
+	}
+
+	public void OMABJDAIMJP()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Resume();
+		}
+	}
+
+	public int PlaySound(AudioClip BKGCLBJFADE, bool AIPGGFGKNFE)
+	{
+		return PlaySound(BKGCLBJFADE, 1f, AIPGGFGKNFE, null);
+	}
+
+	public void GONHOEMAGHN()
+	{
+		KAJABEIAEGO();
+		BLIJAAIDNDG();
+	}
+
+	public void KNDKLKHKLKH()
+	{
+		StopAll(1155f);
+	}
+
+	public Audio KKACNNHLDNI(AudioClip ICJOJEKDMIF)
+	{
+		Audio audio = EMFACPNCDNM(ICJOJEKDMIF);
+		if (audio != null)
+		{
+			return audio;
+		}
+		audio = GetSoundAudio(ICJOJEKDMIF);
+		if (audio != null)
+		{
+			return audio;
+		}
+		return null;
+	}
+
+	public void DNOKNGHICOO()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Resume();
+		}
+	}
+
+	[SpecialName]
+	public void AKIDNCCJGGB(float DPNHODJHGJL)
+	{
+		sfx_mixer.audioMixer.SetFloat("value", DPNHODJHGJL);
+	}
+
+	public int MLDOGKCDPEL(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, Transform OKDDLALOEME, float PFJOHIMLHEP = 0f, float CNPIACHIHKD = 14f)
+	{
+		if (BKGCLBJFADE == null)
+		{
+			Debug.LogError("SetEnvSpriteImage", BKGCLBJFADE);
+		}
+		if (ignoreDuplicateSounds)
+		{
+			List<int> list = new List<int>(MECONPJBFIL.Keys);
+			foreach (int item in list)
+			{
+				if (MECONPJBFIL[item].audioSource.clip == BKGCLBJFADE)
+				{
+					return MECONPJBFIL[item].audioID;
+				}
+			}
+		}
+		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, true, BDICHAELIJE, 502f, 612f, OKDDLALOEME);
+		audio.audioSource.rolloffMode = AudioRolloffMode.Logarithmic;
+		audio.audioSource.minDistance = PFJOHIMLHEP;
+		audio.EFBNFACGJLI().maxDistance = CNPIACHIHKD;
+		audio.audioSource.transform.localPosition = new Vector3(1996f, 1131f, 533f);
+		audio.AKHKFKHDAEK().outputAudioMixerGroup = sfx_mixer;
+		MECONPJBFIL.Add(audio.audioID, audio);
+		return audio.audioID;
+	}
+
+	public int PlayMusic(AudioClip BKGCLBJFADE, float BDICHAELIJE)
+	{
+		return PlayMusic(BKGCLBJFADE, BDICHAELIJE, true, false, 1f, 1f, -1f, null);
+	}
+
+	public static void PlayHitSfx(int JMMILEFMACB, float MEFEIEEHNDN)
+	{
+		AudioClip bKGCLBJFADE = null;
+		if (JMMILEFMACB == 0)
+		{
+			bKGCLBJFADE = Singleton<SoundManager>.Instance.NHPJLPMBNNI;
+		}
+		if (JMMILEFMACB == 1)
+		{
+			bKGCLBJFADE = Singleton<SoundManager>.Instance.KNBEPPPLNGP;
+		}
+		if (JMMILEFMACB == 2)
+		{
+			bKGCLBJFADE = Singleton<SoundManager>.Instance.BFMNHKHHIEB;
+		}
+		if (JMMILEFMACB == 3)
+		{
+			bKGCLBJFADE = Singleton<SoundManager>.Instance.JOHPMPHJJLO;
+		}
+		Singleton<SoundManager>.Instance.PlaySingle(bKGCLBJFADE, MEFEIEEHNDN);
+	}
+
+	public Audio KEDEGDMKAEM(AudioClip ICJOJEKDMIF)
 	{
 		List<int> list = new List<int>(DJBIELKMADE.Keys);
 		foreach (int item in list)
@@ -1680,70 +1329,19 @@ public class SoundManager : Singleton<SoundManager>
 		return null;
 	}
 
-	public int GOLFGIMABKJ(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, Transform OKDDLALOEME, float PFJOHIMLHEP = 0f, float CNPIACHIHKD = 14f)
+	[SpecialName]
+	public void GJDBEPBHINL(float DPNHODJHGJL)
 	{
-		if (BKGCLBJFADE == null)
-		{
-			Debug.LogError("CameraFilterPack/Drawing_NewCellShading", BKGCLBJFADE);
-		}
-		if (PAHLKOEKGLA())
-		{
-			List<int> list = new List<int>(MECONPJBFIL.Keys);
-			foreach (int item in list)
-			{
-				if (MECONPJBFIL[item].LCIMPPPDCPA().clip == BKGCLBJFADE)
-				{
-					return MECONPJBFIL[item].audioID;
-				}
-			}
-		}
-		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, false, BDICHAELIJE, 1342f, 746f, OKDDLALOEME);
-		audio.audioSource.rolloffMode = AudioRolloffMode.Linear;
-		audio.LCIMPPPDCPA().minDistance = PFJOHIMLHEP;
-		audio.audioSource.maxDistance = CNPIACHIHKD;
-		audio.audioSource.transform.localPosition = new Vector3(143f, 595f, 365f);
-		audio.LCIMPPPDCPA().outputAudioMixerGroup = sfx_mixer;
-		MECONPJBFIL.Add(audio.audioID, audio);
-		return audio.audioID;
+		master_mixer.audioMixer.SetFloat("settings.arcshitsoundtimedelay", DPNHODJHGJL);
 	}
 
-	public int FOICOHLNLKN(AudioClip BKGCLBJFADE, float BDICHAELIJE)
-	{
-		return GOLFGIMABKJ(BKGCLBJFADE, BDICHAELIJE, true, null, 1396f, 1060f);
-	}
-
-	public void OGCBHACICMN()
-	{
-		List<int> list = new List<int>(MECONPJBFIL.Keys);
-		foreach (int item in list)
-		{
-			Audio audio = MECONPJBFIL[item];
-			audio.Resume();
-		}
-	}
-
-	public Audio HFKBOMEKKLA(int MLICEJKIGHO)
-	{
-		Audio audio = GHLPIPBEDLO(MLICEJKIGHO);
-		if (audio != null)
-		{
-			return audio;
-		}
-		audio = GetSoundAudio(MLICEJKIGHO);
-		if (audio != null)
-		{
-			return audio;
-		}
-		return null;
-	}
-
-	public Audio OLJBMHOJOFP()
+	public Audio GEKNHCBFFKB(AudioClip ICJOJEKDMIF)
 	{
 		List<int> list = new List<int>(DJBIELKMADE.Keys);
 		foreach (int item in list)
 		{
 			Audio audio = DJBIELKMADE[item];
-			if (audio.LBDDCEHHIPC())
+			if (audio.clip == ICJOJEKDMIF)
 			{
 				return audio;
 			}
@@ -1751,45 +1349,157 @@ public class SoundManager : Singleton<SoundManager>
 		return null;
 	}
 
-	public void KENEOBNJFGG(float LALICIHGPMB)
+	private void NLKGMNIKBKC(Scene INCNFKFDPPL, LoadSceneMode JBDCBMAICAN)
 	{
-		StopAllMusic(LALICIHGPMB);
-		POOIONEDMIB();
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (!audio.persist && audio.activated)
+			{
+				Object.Destroy(audio.EFBNFACGJLI());
+				DJBIELKMADE.Remove(item);
+			}
+		}
+		list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item2 in list)
+		{
+			Audio audio2 = MECONPJBFIL[item2];
+			Object.Destroy(audio2.audioSource);
+			MECONPJBFIL.Remove(item2);
+		}
 	}
 
-	public void StopAll(float LALICIHGPMB)
+	[SpecialName]
+	public bool JGKFONNHGNC()
 	{
-		StopAllMusic(LALICIHGPMB);
-		StopAllSounds();
+		return _003CEDKNFIIEBBC_003Ek__BackingField;
 	}
 
-	public int CDHKNHGIHMO(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
+	public void HPLINLEJOAM(float LALICIHGPMB)
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (LALICIHGPMB > 1943f)
+			{
+				audio.fadeOutSeconds = LALICIHGPMB;
+			}
+			audio.Stop();
+		}
+	}
+
+	public int OKMIDMIIIMA(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
 	{
 		if (BKGCLBJFADE == null)
 		{
-			Debug.LogError(".png", BKGCLBJFADE);
+			Debug.LogError("OpSetPropertiesOfRoom()", BKGCLBJFADE);
 		}
-		if (FLFDHECEEAL())
+		if (ignoreDuplicateMusic)
 		{
 			List<int> list = new List<int>(DJBIELKMADE.Keys);
 			foreach (int item in list)
 			{
-				if (DJBIELKMADE[item].LCIMPPPDCPA().clip == BKGCLBJFADE)
+				if (DJBIELKMADE[item].AKHKFKHDAEK().clip == BKGCLBJFADE)
 				{
 					return DJBIELKMADE[item].audioID;
 				}
 			}
 		}
 		StopAllMusic(PINGENLHGGC);
-		Audio audio = new Audio(Audio.AudioType.Sound, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
-		audio.LCIMPPPDCPA().outputAudioMixerGroup = music_mixer;
+		Audio audio = new Audio(Audio.AudioType.Music, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
+		audio.AKHKFKHDAEK().outputAudioMixerGroup = music_mixer;
 		DJBIELKMADE.Add(audio.audioID, audio);
 		return audio.audioID;
 	}
 
-	public int HPBKEPBFENK(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB)
+	public void PGALMAJLOHK()
 	{
-		return KECNAIEBMOB(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, EONALHCPKCL, LALICIHGPMB, 1189f, null);
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = MECONPJBFIL[item];
+			audio.Pause();
+		}
+	}
+
+	public void FMHBLFELOGC()
+	{
+		KNDKLKHKLKH();
+	}
+
+	[SpecialName]
+	public void BBNEIDHJJJE(float DPNHODJHGJL)
+	{
+		master_mixer.audioMixer.SetFloat("RestartButton", DPNHODJHGJL);
+	}
+
+	private void OnApplicationPause(bool IBNHNGJMBBA)
+	{
+		LFEFAKMMFKF = IBNHNGJMBBA;
+	}
+
+	public Audio CJPHELLFJOO(int MLICEJKIGHO)
+	{
+		Audio audio = GHEHFAIPPEG(MLICEJKIGHO);
+		if (audio != null)
+		{
+			return audio;
+		}
+		audio = OCCAAPFDGFJ(MLICEJKIGHO);
+		if (audio != null)
+		{
+			return audio;
+		}
+		return null;
+	}
+
+	public void OBHNMDNJEDM(AudioClip BKGCLBJFADE, float MEFEIEEHNDN)
+	{
+		AudioSource audioSource = LFABIGKGJOG[IGKNDLKJBMO];
+		audioSource.clip = BKGCLBJFADE;
+		audioSource.pitch = MEFEIEEHNDN;
+		audioSource.Play();
+		IGKNDLKJBMO++;
+		if (IGKNDLKJBMO >= LFABIGKGJOG.Count)
+		{
+			IGKNDLKJBMO = 1;
+		}
+	}
+
+	public Audio GetSoundAudio(AudioClip ICJOJEKDMIF)
+	{
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = MECONPJBFIL[item];
+			if (audio.clip == ICJOJEKDMIF)
+			{
+				return audio;
+			}
+		}
+		return null;
+	}
+
+	[SpecialName]
+	public void KMLGMOCKEME(bool DPNHODJHGJL)
+	{
+		_003CEDKNFIIEBBC_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private IEnumerator BAGMAJJFEHK()
+	{
+		yield return new WaitWhile(() => !SteamManager.isKeyVerified);
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_normal", "sounds/hit_normal"));
+		KNBEPPPLNGP = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_normal");
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_perfect", "sounds/hit_perfect"));
+		NHPJLPMBNNI = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_perfect");
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_wrong", "sounds/hit_wrong"));
+		BFMNHKHHIEB = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_wrong");
+		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.no_hit", "sounds/no_hit"));
+		JOHPMPHJJLO = (AudioClip)ResourcesManager.GetLoadedResource("skin.no_hit");
+		Debug.Log("Loaded skin audio");
 	}
 
 	private IEnumerator JFFPGKOIKON()
@@ -1803,40 +1513,39 @@ public class SoundManager : Singleton<SoundManager>
 		BFMNHKHHIEB = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_wrong");
 		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.no_hit", "sounds/no_hit"));
 		JOHPMPHJJLO = (AudioClip)ResourcesManager.GetLoadedResource("skin.no_hit");
-		Debug.Log("[SoundManager] Loaded skin audio");
+		Debug.Log("Loaded skin audio");
 	}
 
 	[SpecialName]
-	public bool FLFDHECEEAL()
+	public float CCNNLCEKOEK()
 	{
-		return _003CNEACNFNFMJK_003Ek__BackingField;
+		float value = 626f;
+		sfx_mixer.audioMixer.GetFloat("_HSV", out value);
+		return value;
 	}
 
-	public void LOJJBIFHACA()
+	public Audio KGIOEIMBPJG()
 	{
-		StopAll();
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (audio.playing)
+			{
+				return audio;
+			}
+		}
+		return null;
 	}
 
-	public void ResumeAll()
+	public Audio NHFNJEHCAOF(int MLICEJKIGHO)
 	{
-		ResumeAllMusic();
-		ResumeAllSounds();
-	}
-
-	[SpecialName]
-	public bool FFPBLPFLHGJ()
-	{
-		return _003CBMMKEGKECGL_003Ek__BackingField;
-	}
-
-	public Audio IMDDFGKNABH(AudioClip ICJOJEKDMIF)
-	{
-		Audio audio = MPOOOFEBNFG(ICJOJEKDMIF);
+		Audio audio = GHEHFAIPPEG(MLICEJKIGHO);
 		if (audio != null)
 		{
 			return audio;
 		}
-		audio = GetSoundAudio(ICJOJEKDMIF);
+		audio = OCCAAPFDGFJ(MLICEJKIGHO);
 		if (audio != null)
 		{
 			return audio;
@@ -1844,23 +1553,148 @@ public class SoundManager : Singleton<SoundManager>
 		return null;
 	}
 
-	[SpecialName]
-	public bool LJBINCCDKKH()
+	public int BMIFIPNJAKN(AudioClip BKGCLBJFADE, float BDICHAELIJE)
 	{
-		return _003CEDKNFIIEBBC_003Ek__BackingField;
+		return MLDOGKCDPEL(BKGCLBJFADE, BDICHAELIJE, true, null, 142f, 171f);
 	}
 
-	private IEnumerator ELPBCKLNPGM()
+	public int KHHNECCNAMF(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL)
 	{
-		yield return new WaitWhile(() => !SteamManager.isKeyVerified);
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_normal", "sounds/hit_normal"));
-		KNBEPPPLNGP = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_normal");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_perfect", "sounds/hit_perfect"));
-		NHPJLPMBNNI = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_perfect");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.hit_wrong", "sounds/hit_wrong"));
-		BFMNHKHHIEB = (AudioClip)ResourcesManager.GetLoadedResource("skin.hit_wrong");
-		yield return StartCoroutine(Singleton<ResourcesManager>.Instance.LoadSkinSound("skin.no_hit", "sounds/no_hit"));
-		JOHPMPHJJLO = (AudioClip)ResourcesManager.GetLoadedResource("skin.no_hit");
-		Debug.Log("[SoundManager] Loaded skin audio");
+		return DEOCENIMOED(BKGCLBJFADE, BDICHAELIJE, AIPGGFGKNFE, HHBOIFFNPPL, 347f, 1429f, 440f, null);
+	}
+
+	public Audio GetMusicAudio(int MLICEJKIGHO)
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			if (MLICEJKIGHO == item)
+			{
+				return DJBIELKMADE[item];
+			}
+		}
+		return null;
+	}
+
+	[SpecialName]
+	public void IOGOJCDECOE(bool DPNHODJHGJL)
+	{
+		_003CEDKNFIIEBBC_003Ek__BackingField = DPNHODJHGJL;
+	}
+
+	private void DKONBMKHDCK(Scene INCNFKFDPPL, LoadSceneMode JBDCBMAICAN)
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (!audio.persist && audio.JAAOFJFLLHN())
+			{
+				Object.Destroy(audio.AKHKFKHDAEK());
+				DJBIELKMADE.Remove(item);
+			}
+		}
+		list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item2 in list)
+		{
+			Audio audio2 = MECONPJBFIL[item2];
+			Object.Destroy(audio2.EFBNFACGJLI());
+			MECONPJBFIL.Remove(item2);
+		}
+	}
+
+	public void LFOGHDKIMCK()
+	{
+		List<int> list = new List<int>(MECONPJBFIL.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = MECONPJBFIL[item];
+			audio.Stop();
+		}
+	}
+
+	private void LAAAOEAOJFC(bool IBNHNGJMBBA)
+	{
+		LFEFAKMMFKF = IBNHNGJMBBA;
+	}
+
+	public void PIMGPPIHJLH()
+	{
+		JKGOFLFCOMG(380f);
+	}
+
+	public int LFGKEAIJAIB(AudioClip BKGCLBJFADE)
+	{
+		return BJPDFJDFOHG(BKGCLBJFADE, 305f, true, null, 1177f, 489f);
+	}
+
+	public int PlayMusic(AudioClip BKGCLBJFADE, float BDICHAELIJE, bool AIPGGFGKNFE, bool HHBOIFFNPPL, float EONALHCPKCL, float LALICIHGPMB, float PINGENLHGGC, Transform OKDDLALOEME)
+	{
+		if (BKGCLBJFADE == null)
+		{
+			Debug.LogError("[Sound Manager] Audio clip is null, cannot play music", BKGCLBJFADE);
+		}
+		if (ignoreDuplicateMusic)
+		{
+			List<int> list = new List<int>(DJBIELKMADE.Keys);
+			foreach (int item in list)
+			{
+				if (DJBIELKMADE[item].audioSource.clip == BKGCLBJFADE)
+				{
+					return DJBIELKMADE[item].audioID;
+				}
+			}
+		}
+		StopAllMusic(PINGENLHGGC);
+		Audio audio = new Audio(Audio.AudioType.Music, BKGCLBJFADE, AIPGGFGKNFE, HHBOIFFNPPL, BDICHAELIJE, EONALHCPKCL, LALICIHGPMB, OKDDLALOEME);
+		audio.audioSource.outputAudioMixerGroup = music_mixer;
+		DJBIELKMADE.Add(audio.audioID, audio);
+		return audio.audioID;
+	}
+
+	public void NLOGMAMPHNB()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Resume();
+		}
+	}
+
+	public void ResumeAllMusic()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			audio.Resume();
+		}
+	}
+
+	[SpecialName]
+	public void BOIDLCHBLDJ(float DPNHODJHGJL)
+	{
+		sfx_mixer.audioMixer.SetFloat("_TimeX", DPNHODJHGJL);
+	}
+
+	public Audio MOHPPIOCCPF()
+	{
+		List<int> list = new List<int>(DJBIELKMADE.Keys);
+		foreach (int item in list)
+		{
+			Audio audio = DJBIELKMADE[item];
+			if (audio.playing)
+			{
+				return audio;
+			}
+		}
+		return null;
+	}
+
+	[SpecialName]
+	public bool NFMIINBJIMN()
+	{
+		return _003CNEACNFNFMJK_003Ek__BackingField;
 	}
 }
