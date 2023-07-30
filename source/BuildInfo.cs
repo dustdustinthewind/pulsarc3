@@ -1,5 +1,5 @@
 // BuildInfo
-// Deobfuscated
+// code taken from iqol: https://github.com/dustdustinthewind/IQoLDecompiled/blob/main/MainMenu/BuildInfo.cs
 
 using System;
 using Steamworks;
@@ -9,43 +9,27 @@ using UnityEngine.UI;
 public class BuildInfo : MonoBehaviour
 {
 	private string gameVersion;
-
-	private Text copyrightText;
-
-	private string copyrightString;
-
-	private string buildNum;
-
-	private void Update()
-	{
-	}
-
-	private void Start()
-	{
-		copyrightText = GetComponent<Text>();
-		copyrightString = copyrightText.text;
-		gameVersion = Helpers.GetGameVersion();
-		bool flag = false;
-		try
-		{
-			string pchName = "public";
-			int cchNameBufferSize = 8;
-			if (SteamApps.GetCurrentBetaName(out pchName, cchNameBufferSize))
-			{
-				flag = true;
-			}
-			buildNum = " b." + SteamApps.GetAppBuildId();
-		}
-		catch (Exception ex)
-		{
-			Debug.Log("[BuildInfo] Error: " + ex.ToString());
-		}
-		copyrightText.text = copyrightString + "\nv." + gameVersion + buildNum + ((!flag) ? string.Empty : " BETA");
-		StartCoroutine(GetComponent<ContentSizeFitterFx>().RunFix());
-	}
-
+	
 	public BuildInfo()
 	{
 		gameVersion = string.Empty;
+	}
+
+	private void Update() {}
+
+	private void Start()
+	{
+		// C KHB blah blah
+		// dust blah blah
+		// pulsarc3 alpha
+		Text component = base.GetComponent<Text>();
+		component.text = component.text.Replace("2019", "2020") + "\ndust 2020-2023\n" + this.gameVersion;
+		this.gameVersion = "pulsarc3 alpha";//Helpers.GetGameVersion();
+		
+		// credit text when click on
+		((GameObject)base.GetComponent<Button>().onClick.GetPersistentTarget(0)).GetComponentInChildren<Text>().text = "Code, design:\n• Oxy949 (Konstantin Kustov)\n• dust\n\nMaps difficulty algorithm:\n• Dekolator\n• Nikl\n\nSpecial thanks:\n• Dymchick1\n• Darina.Wolf\n• Digit Spirit\n\nThanks for playing!";
+		
+		// idk if needed heh
+		base.StartCoroutine(base.GetComponent<ContentSizeFitterFx>().RunFix());
 	}
 }
