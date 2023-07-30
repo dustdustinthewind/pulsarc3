@@ -1,4 +1,4 @@
-// decompiled in dnspy
+// decompiled in dnspy (right click -> edit class)
 // works in dnspy but not ilspy
 
 using System;
@@ -10,13 +10,13 @@ using UnityEngine;
 [RequireComponent(typeof(PhotonView))]
 public class PickupItemSyncer : Photon.MonoBehaviour
 {
-	// Token: 0x0600C05D RID: 49245
+	// Token: 0x0600C05D RID: 49245 RVA: 0x00092D72 File Offset: 0x00090F72
 	public void DJGAIEJMHEE(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.OICIJCNKHCI(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C05E RID: 49246
+	// Token: 0x0600C05E RID: 49246 RVA: 0x0044EDE8 File Offset: 0x0044CFE8
 	public void NKOMKHEMAAL()
 	{
 		object[] array = new object[]
@@ -35,7 +35,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C05F RID: 49247
+	// Token: 0x0600C05F RID: 49247 RVA: 0x00092D7B File Offset: 0x00090F7B
 	public void ECAAJFBNNCN(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -44,7 +44,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C060 RID: 49248
+	// Token: 0x0600C060 RID: 49248 RVA: 0x00092D8B File Offset: 0x00090F8B
 	public void CPDLFJPOFJG(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -53,7 +53,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C061 RID: 49249
+	// Token: 0x0600C061 RID: 49249 RVA: 0x0044EE5C File Offset: 0x0044D05C
 	public void EAABKPJPPHL()
 	{
 		object[] array = new object[3];
@@ -69,13 +69,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C062 RID: 49250
+	// Token: 0x0600C062 RID: 49250 RVA: 0x00092D9B File Offset: 0x00090F9B
 	public void DCCKANLLCHN(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.PJIMAPMICKB(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C063 RID: 49251
+	// Token: 0x0600C063 RID: 49251 RVA: 0x0044EED0 File Offset: 0x0044D0D0
 	public void NKOEJIBDFLF(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -112,13 +112,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C064 RID: 49252
+	// Token: 0x0600C064 RID: 49252 RVA: 0x00092DA4 File Offset: 0x00090FA4
 	public void LHNLOLAJGJL(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.KPOJJLEBCMO(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C065 RID: 49253
+	// Token: 0x0600C065 RID: 49253 RVA: 0x00092DAD File Offset: 0x00090FAD
 	public void KOABFEFLPDN(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -129,7 +129,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.PGFCEMJCOHL(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C066 RID: 49254
+	// Token: 0x0600C066 RID: 49254 RVA: 0x0044EFB0 File Offset: 0x0044D1B0
 	public void DOKKBCMLGEH()
 	{
 		object[] array = new object[6];
@@ -145,7 +145,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C067 RID: 49255
+	// Token: 0x0600C067 RID: 49255 RVA: 0x0044F024 File Offset: 0x0044D224
 	private void KKOANIFHMKB(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -171,36 +171,36 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[2];
-					array3[0] = pickupItem.BIDKPFPPLDP();
-					array3[0] = "CameraFilterPack/FX_8bits_gb";
-					array3[2] = pickupItem.TimeOfRespawn;
-					array3[7] = "Object ID. Case-Sensitive";
-					array3[1] = num2;
-					array3[4] = "Set Satellite Input";
-					array3[2] = PhotonNetwork.time;
-					array3[8] = "_MainTex2";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[2];
+					array2[0] = pickupItem.BIDKPFPPLDP();
+					array2[0] = "CameraFilterPack/FX_8bits_gb";
+					array2[2] = pickupItem.TimeOfRespawn;
+					array2[7] = "Object ID. Case-Sensitive";
+					array2[1] = num2;
+					array2[4] = "Set Satellite Input";
+					array2[2] = PhotonNetwork.time;
+					array2[8] = "_MainTex2";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.DNEBJBBNLDD());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[7];
-		array4[0] = " - Contains ";
-		array4[0] = list.Count;
-		array4[6] = "CameraFilterPack/Glasses_On";
-		array4[2] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[7];
+		array3[0] = " - Contains ";
+		array3[0] = list.Count;
+		array3[6] = "CameraFilterPack/Glasses_On";
+		array3[2] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.IBKCMBIGOEJ();
 		string lblkdnnpaco = "_Gain";
-		object[] array2 = new object[0];
-		array2[1] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[0];
+		array4[1] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C068 RID: 49256
+	// Token: 0x0600C068 RID: 49256 RVA: 0x0044F1C4 File Offset: 0x0044D3C4
 	private void AHEOHDPHICL(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -226,39 +226,39 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[]
+					object[] array2 = new object[]
 					{
 						null,
 						pickupItem.BIDKPFPPLDP()
 					};
-					array3[1] = "_Value2";
-					array3[2] = pickupItem.TimeOfRespawn;
-					array3[3] = "[PlayerController] ";
-					array3[8] = num2;
-					array3[5] = "The given 2D texture ";
-					array3[4] = PhotonNetwork.time;
-					array3[7] = "<not connected>";
-					Debug.Log(string.Concat(array3));
+					array2[1] = "_Value2";
+					array2[2] = pickupItem.TimeOfRespawn;
+					array2[3] = "[PlayerController] ";
+					array2[8] = num2;
+					array2[5] = "The given 2D texture ";
+					array2[4] = PhotonNetwork.time;
+					array2[7] = "<not connected>";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.BIDKPFPPLDP());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[1];
-		array4[1] = "_Visualize";
-		array4[0] = list.Count;
-		array4[2] = "...";
-		array4[7] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[1];
+		array3[1] = "_Visualize";
+		array3[0] = list.Count;
+		array3[2] = "...";
+		array3[7] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.AAMNKPHHHCI();
 		string lblkdnnpaco = "n/a";
-		object[] array2 = new object[0];
-		array2[0] = PhotonNetwork.time;
-		array2[0] = list.ToArray();
-		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[0];
+		array4[0] = PhotonNetwork.time;
+		array4[0] = list.ToArray();
+		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C069 RID: 49257
+	// Token: 0x0600C069 RID: 49257 RVA: 0x00092DCE File Offset: 0x00090FCE
 	public void OnPhotonPlayerConnected(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -267,7 +267,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C06A RID: 49258
+	// Token: 0x0600C06A RID: 49258 RVA: 0x00092DDE File Offset: 0x00090FDE
 	public void KHEJPFLGFNO(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -276,7 +276,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C06B RID: 49259
+	// Token: 0x0600C06B RID: 49259 RVA: 0x0044F364 File Offset: 0x0044D564
 	public void OnJoinedRoom()
 	{
 		Debug.Log(string.Concat(new object[]
@@ -293,13 +293,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C06C RID: 49260
+	// Token: 0x0600C06C RID: 49260 RVA: 0x00092DEE File Offset: 0x00090FEE
 	public void JNJIDKJMPLL(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.PEBNLLBAJFK(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C06D RID: 49261
+	// Token: 0x0600C06D RID: 49261 RVA: 0x0044F3D8 File Offset: 0x0044D5D8
 	public void FLEEJJMGILL()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -325,7 +325,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C06E RID: 49262
+	// Token: 0x0600C06E RID: 49262 RVA: 0x0044F468 File Offset: 0x0044D668
 	public void DKKJFBKKCJD(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -362,7 +362,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C06F RID: 49263
+	// Token: 0x0600C06F RID: 49263 RVA: 0x00092DF7 File Offset: 0x00090FF7
 	public void PLGFJOKBOPA(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -373,7 +373,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.DNFJIFDLGMK(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C070 RID: 49264
+	// Token: 0x0600C070 RID: 49264 RVA: 0x00092E18 File Offset: 0x00091018
 	public void MMNDOMMPMMB(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -384,7 +384,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.BKAAGPHGGNL(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C071 RID: 49265
+	// Token: 0x0600C071 RID: 49265 RVA: 0x00092E39 File Offset: 0x00091039
 	public void KPOJJLEBCMO(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -395,7 +395,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.CCDJMKJDJGC(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C072 RID: 49266
+	// Token: 0x0600C072 RID: 49266 RVA: 0x00092E5A File Offset: 0x0009105A
 	public void DLLKGGFLEBF(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -406,13 +406,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.NJCPMBLPFCD(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C073 RID: 49267
+	// Token: 0x0600C073 RID: 49267 RVA: 0x00092D9B File Offset: 0x00090F9B
 	public void LPPOMKEGHHL(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.PJIMAPMICKB(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C074 RID: 49268
+	// Token: 0x0600C074 RID: 49268 RVA: 0x0044F54C File Offset: 0x0044D74C
 	private void HILOGFPNNHK(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -438,41 +438,41 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[]
+					object[] array2 = new object[]
 					{
 						null,
 						pickupItem.PKLGNLOHIHG()
 					};
-					array3[0] = "Curve texture";
-					array3[6] = pickupItem.TimeOfRespawn;
-					array3[7] = "LoadingStatusText";
-					array3[6] = num2;
-					array3[8] = "_TimeX";
-					array3[3] = PhotonNetwork.time;
-					array3[2] = "EndlessLoopsScoreText";
-					Debug.Log(string.Concat(array3));
+					array2[0] = "Curve texture";
+					array2[6] = pickupItem.TimeOfRespawn;
+					array2[7] = "LoadingStatusText";
+					array2[6] = num2;
+					array2[8] = "_TimeX";
+					array2[3] = PhotonNetwork.time;
+					array2[2] = "EndlessLoopsScoreText";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.ViewID);
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[3];
-		array4[1] = "init";
-		array4[0] = list.Count;
-		array4[0] = "settings.enableranking";
-		array4[8] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[3];
+		array3[1] = "init";
+		array3[0] = list.Count;
+		array3[0] = "settings.enableranking";
+		array3[8] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.JAEJDHHCJJO();
 		string lblkdnnpaco = "BitsData";
-		object[] array2 = new object[]
+		object[] array4 = new object[]
 		{
 			PhotonNetwork.time
 		};
-		array2[0] = list.ToArray();
-		photonView.OILIKMGIHFL(lblkdnnpaco, MJCDIJOAEPI, array2);
+		array4[0] = list.ToArray();
+		photonView.OILIKMGIHFL(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C075 RID: 49269
+	// Token: 0x0600C075 RID: 49269 RVA: 0x0044F6F0 File Offset: 0x0044D8F0
 	public void MNBOLIEAACD(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -509,7 +509,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C076 RID: 49270
+	// Token: 0x0600C076 RID: 49270 RVA: 0x0044F7D4 File Offset: 0x0044D9D4
 	private void PHOKFNAJMAN(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -564,7 +564,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		});
 	}
 
-	// Token: 0x0600C077 RID: 49271
+	// Token: 0x0600C077 RID: 49271 RVA: 0x0044F970 File Offset: 0x0044DB70
 	public void BHELIGNHBCB()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -590,7 +590,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C078 RID: 49272
+	// Token: 0x0600C078 RID: 49272 RVA: 0x00092E7B File Offset: 0x0009107B
 	public void DIGNPJMKODB(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -599,7 +599,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C079 RID: 49273
+	// Token: 0x0600C079 RID: 49273 RVA: 0x00092E8B File Offset: 0x0009108B
 	public void MPAMPGMCNGA(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -610,7 +610,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.NJCPMBLPFCD(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C07A RID: 49274
+	// Token: 0x0600C07A RID: 49274 RVA: 0x00092EAC File Offset: 0x000910AC
 	public void LCNJFMGHPMH(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -621,7 +621,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.DNFJIFDLGMK(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C07B RID: 49275
+	// Token: 0x0600C07B RID: 49275 RVA: 0x0044FA00 File Offset: 0x0044DC00
 	public void IPCNPOIFNDC()
 	{
 		Debug.Log(string.Concat(new object[]
@@ -638,7 +638,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C07C RID: 49276
+	// Token: 0x0600C07C RID: 49276 RVA: 0x0044FA74 File Offset: 0x0044DC74
 	public void FEOKPMGLJEJ()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -664,13 +664,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C07D RID: 49277
+	// Token: 0x0600C07D RID: 49277 RVA: 0x00092DEE File Offset: 0x00090FEE
 	public void NPHOABHFFOG(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.PEBNLLBAJFK(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C07E RID: 49278
+	// Token: 0x0600C07E RID: 49278 RVA: 0x0044FB04 File Offset: 0x0044DD04
 	public void AIPGHEMJLIO()
 	{
 		object[] array = new object[0];
@@ -686,7 +686,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C07F RID: 49279
+	// Token: 0x0600C07F RID: 49279 RVA: 0x0044FB78 File Offset: 0x0044DD78
 	private void JDOOMFNIDID(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -712,39 +712,39 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[8];
-					array3[0] = pickupItem.EENIOALHGGL();
-					array3[1] = "_MainTex2";
-					array3[8] = pickupItem.TimeOfRespawn;
-					array3[6] = "CameraFilterPack/Colors_Adjust_ColorRGB";
-					array3[5] = num2;
-					array3[3] = "DPADHOR";
-					array3[0] = PhotonNetwork.time;
-					array3[6] = "#onfirstranktext";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[8];
+					array2[0] = pickupItem.EENIOALHGGL();
+					array2[1] = "_MainTex2";
+					array2[8] = pickupItem.TimeOfRespawn;
+					array2[6] = "CameraFilterPack/Colors_Adjust_ColorRGB";
+					array2[5] = num2;
+					array2[3] = "DPADHOR";
+					array2[0] = PhotonNetwork.time;
+					array2[6] = "#onfirstranktext";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.EALIJNCNNKC());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[]
+		object[] array3 = new object[]
 		{
 			null,
 			"#ok"
 		};
-		array4[1] = list.Count;
-		array4[5] = "%";
-		array4[6] = time;
-		Debug.Log(string.Concat(array4));
+		array3[1] = list.Count;
+		array3[5] = "%";
+		array3[6] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.GBHNDHLAJLI();
 		string lblkdnnpaco = "finished";
-		object[] array2 = new object[8];
-		array2[1] = PhotonNetwork.time;
-		array2[0] = list.ToArray();
-		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[8];
+		array4[1] = PhotonNetwork.time;
+		array4[0] = list.ToArray();
+		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C080 RID: 49280
+	// Token: 0x0600C080 RID: 49280 RVA: 0x0044FD18 File Offset: 0x0044DF18
 	public void NBEEEMEODBE()
 	{
 		object[] array = new object[6];
@@ -760,7 +760,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C081 RID: 49281
+	// Token: 0x0600C081 RID: 49281 RVA: 0x0044FD8C File Offset: 0x0044DF8C
 	public void ECIOFPMELCL()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -786,7 +786,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C082 RID: 49282
+	// Token: 0x0600C082 RID: 49282 RVA: 0x00092ECD File Offset: 0x000910CD
 	public void NGAOAFGLLJI(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -797,7 +797,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.MJINJLIKIPN(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C083 RID: 49283
+	// Token: 0x0600C083 RID: 49283 RVA: 0x0044FE1C File Offset: 0x0044E01C
 	public void EIFOLKNOCAI()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -823,13 +823,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C084 RID: 49284
+	// Token: 0x0600C084 RID: 49284 RVA: 0x00092EEE File Offset: 0x000910EE
 	public void JHJGKDLGEHI(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.MPAMPGMCNGA(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C085 RID: 49285
+	// Token: 0x0600C085 RID: 49285 RVA: 0x0044FEAC File Offset: 0x0044E0AC
 	private void DMHMGIBMIDA(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -855,36 +855,36 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[4];
-					array3[0] = pickupItem.ViewID;
-					array3[1] = "Fade";
-					array3[5] = pickupItem.TimeOfRespawn;
-					array3[1] = "_TimeX";
-					array3[5] = num2;
-					array3[7] = "StartButton";
-					array3[8] = PhotonNetwork.time;
-					array3[6] = "_Screen";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[4];
+					array2[0] = pickupItem.ViewID;
+					array2[1] = "Fade";
+					array2[5] = pickupItem.TimeOfRespawn;
+					array2[1] = "_TimeX";
+					array2[5] = num2;
+					array2[7] = "StartButton";
+					array2[8] = PhotonNetwork.time;
+					array2[6] = "_Screen";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.FEOKOFDBLGL());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[3];
-		array4[1] = "Tab1Content";
-		array4[1] = list.Count;
-		array4[4] = "1087340967";
-		array4[8] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[3];
+		array3[1] = "Tab1Content";
+		array3[1] = list.Count;
+		array3[4] = "1087340967";
+		array3[8] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.GMAHNPNHMFK();
 		string lblkdnnpaco = "In Network lobby";
-		object[] array2 = new object[7];
-		array2[0] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[7];
+		array4[0] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C086 RID: 49286
+	// Token: 0x0600C086 RID: 49286 RVA: 0x0045004C File Offset: 0x0044E24C
 	public void LCFDLOHECMM()
 	{
 		object[] array = new object[8];
@@ -900,7 +900,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C087 RID: 49287
+	// Token: 0x0600C087 RID: 49287 RVA: 0x004500C0 File Offset: 0x0044E2C0
 	public void AskForPickupItemSpawnTimes()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -926,7 +926,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C088 RID: 49288
+	// Token: 0x0600C088 RID: 49288 RVA: 0x00450150 File Offset: 0x0044E350
 	private void EDCLINPDMDF(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -952,36 +952,36 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[4];
-					array3[1] = pickupItem.EIKELGOOEAN();
-					array3[0] = "GlassColor";
-					array3[0] = pickupItem.TimeOfRespawn;
-					array3[8] = "ns";
-					array3[4] = num2;
-					array3[0] = ".completed";
-					array3[6] = PhotonNetwork.time;
-					array3[4] = "_Value13";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[4];
+					array2[1] = pickupItem.EIKELGOOEAN();
+					array2[0] = "GlassColor";
+					array2[0] = pickupItem.TimeOfRespawn;
+					array2[8] = "ns";
+					array2[4] = num2;
+					array2[0] = ".completed";
+					array2[6] = PhotonNetwork.time;
+					array2[4] = "_Value13";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.EENIOALHGGL());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[2];
-		array4[0] = "_ScreenResolution";
-		array4[1] = list.Count;
-		array4[4] = "error";
-		array4[3] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[2];
+		array3[0] = "_ScreenResolution";
+		array3[1] = list.Count;
+		array3[4] = "error";
+		array3[3] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.GBHNDHLAJLI();
 		string lblkdnnpaco = "value";
-		object[] array2 = new object[4];
-		array2[1] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[4];
+		array4[1] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C089 RID: 49289
+	// Token: 0x0600C089 RID: 49289 RVA: 0x004502F0 File Offset: 0x0044E4F0
 	public void AFGMHKGMCCE()
 	{
 		object[] array = new object[6];
@@ -997,13 +997,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C08A RID: 49290
+	// Token: 0x0600C08A RID: 49290 RVA: 0x00092EF7 File Offset: 0x000910F7
 	public void HBJOHJIKOHD(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.MMNDOMMPMMB(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C08B RID: 49291
+	// Token: 0x0600C08B RID: 49291 RVA: 0x00450364 File Offset: 0x0044E564
 	private void PACMHBNJGID(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -1015,7 +1015,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		double num = time + 178.0;
 		PickupItem[] array = new PickupItem[PickupItem.DisabledPickupItems.Count];
 		PickupItem.DisabledPickupItems.CopyTo(array);
-		int num3 = array.Length;
+		int num2 = array.Length;
 		List<float> list = new List<float>(0);
 		foreach (PickupItem pickupItem in array)
 		{
@@ -1026,42 +1026,42 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 			}
 			else
 			{
-				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
+				double num3 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array4 = new object[1];
-					array4[1] = pickupItem.EENIOALHGGL();
-					array4[0] = "Clears all text from the debug console";
-					array4[1] = pickupItem.TimeOfRespawn;
-					array4[0] = "Received RPC \"";
-					array4[1] = num2;
-					array4[1] = ").png";
-					array4[2] = PhotonNetwork.time;
-					array4[6] = "_TimeX";
-					Debug.Log(string.Concat(array4));
+					object[] array3 = new object[1];
+					array3[1] = pickupItem.EENIOALHGGL();
+					array3[0] = "Clears all text from the debug console";
+					array3[1] = pickupItem.TimeOfRespawn;
+					array3[0] = "Received RPC \"";
+					array3[1] = num3;
+					array3[1] = ").png";
+					array3[2] = PhotonNetwork.time;
+					array3[6] = "_TimeX";
+					Debug.Log(string.Concat(array3));
 					list.Add((float)pickupItem.EENIOALHGGL());
-					list.Add((float)num2);
+					list.Add((float)num3);
 				}
 			}
 		}
-		object[] array5 = new object[1];
-		array5[0] = "LoadMapCanvas";
-		array5[1] = list.Count;
-		array5[7] = " ";
-		array5[5] = time;
-		Debug.Log(string.Concat(array5));
+		object[] array4 = new object[1];
+		array4[0] = "LoadMapCanvas";
+		array4[1] = list.Count;
+		array4[7] = " ";
+		array4[5] = time;
+		Debug.Log(string.Concat(array4));
 		PhotonView photonView = base.ACPGHFHDCIP();
 		string lblkdnnpaco = "Spawn new environment sprite (image) and sets its id";
-		object[] array2 = new object[]
+		object[] array5 = new object[]
 		{
 			null,
 			PhotonNetwork.time
 		};
-		array2[0] = list.ToArray();
-		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array2);
+		array5[0] = list.ToArray();
+		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array5);
 	}
 
-	// Token: 0x0600C08C RID: 49292
+	// Token: 0x0600C08C RID: 49292 RVA: 0x0045050C File Offset: 0x0044E70C
 	private void DNFJIFDLGMK(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -1073,7 +1073,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		double num = time + 1631.0;
 		PickupItem[] array = new PickupItem[PickupItem.DisabledPickupItems.Count];
 		PickupItem.DisabledPickupItems.CopyTo(array);
-		int num3 = array.Length;
+		int num2 = array.Length;
 		List<float> list = new List<float>(0);
 		for (int i = 0; i < array.Length; i = i)
 		{
@@ -1085,42 +1085,42 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 			}
 			else
 			{
-				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
+				double num3 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[1];
-					array3[1] = pickupItem.KHEHPCAFJBC();
-					array3[0] = "ItemNameText";
-					array3[6] = pickupItem.TimeOfRespawn;
-					array3[5] = ". Client should be in a room. Current connectionStateDetailed: ";
-					array3[4] = num2;
-					array3[6] = "GlassAberration";
-					array3[7] = PhotonNetwork.time;
-					array3[3] = "_MainTex2";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[1];
+					array2[1] = pickupItem.KHEHPCAFJBC();
+					array2[0] = "ItemNameText";
+					array2[6] = pickupItem.TimeOfRespawn;
+					array2[5] = ". Client should be in a room. Current connectionStateDetailed: ";
+					array2[4] = num3;
+					array2[6] = "GlassAberration";
+					array2[7] = PhotonNetwork.time;
+					array2[3] = "_MainTex2";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.FEOKOFDBLGL());
-					list.Add((float)num2);
+					list.Add((float)num3);
 				}
 			}
 		}
-		object[] array4 = new object[]
+		object[] array3 = new object[]
 		{
 			null,
 			"Failed to Instantiate prefab: "
 		};
-		array4[0] = list.Count;
-		array4[7] = "Texture2";
-		array4[4] = time;
-		Debug.Log(string.Concat(array4));
+		array3[0] = list.Count;
+		array3[7] = "Texture2";
+		array3[4] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.photonView;
 		string lblkdnnpaco = "Data/Editor/leveltemplate";
-		object[] array2 = new object[5];
-		array2[1] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.OKHNMAMFDFD(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[5];
+		array4[1] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.OKHNMAMFDFD(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C08D RID: 49293
+	// Token: 0x0600C08D RID: 49293 RVA: 0x004506AC File Offset: 0x0044E8AC
 	public void GKHBAIPDPOL()
 	{
 		object[] array = new object[6];
@@ -1136,7 +1136,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C08E RID: 49294
+	// Token: 0x0600C08E RID: 49294 RVA: 0x00450720 File Offset: 0x0044E920
 	public void GKJPODELLPH(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -1175,7 +1175,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C08F RID: 49295
+	// Token: 0x0600C08F RID: 49295 RVA: 0x00450800 File Offset: 0x0044EA00
 	public void NNGCFPIDMLD()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -1201,7 +1201,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C090 RID: 49296
+	// Token: 0x0600C090 RID: 49296 RVA: 0x00092F00 File Offset: 0x00091100
 	public void PJIMAPMICKB(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -1212,7 +1212,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.PACMHBNJGID(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C091 RID: 49297
+	// Token: 0x0600C091 RID: 49297 RVA: 0x00450890 File Offset: 0x0044EA90
 	private void NJCPMBLPFCD(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -1238,44 +1238,49 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[]
+					object[] array2 = new object[]
 					{
 						pickupItem.FEOKOFDBLGL(),
 						"Xbox Home"
 					};
-					array3[1] = pickupItem.TimeOfRespawn;
-					array3[5] = "_History1ChromaTex";
-					array3[8] = num2;
-					array3[3] = "bloomintencity:";
-					array3[4] = PhotonNetwork.time;
-					array3[3] = "_ColorRGB";
-					Debug.Log(string.Concat(array3));
+					array2[1] = pickupItem.TimeOfRespawn;
+					array2[5] = "_History1ChromaTex";
+					array2[8] = num2;
+					array2[3] = "bloomintencity:";
+					array2[4] = PhotonNetwork.time;
+					array2[3] = "_ColorRGB";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.EALIJNCNNKC());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[0];
-		array4[1] = "CameraFilterPack/TV_WideScreenCircle";
-		array4[1] = list.Count;
-		array4[1] = "inventory.selected.";
-		array4[2] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[0];
+		array3[1] = "CameraFilterPack/TV_WideScreenCircle";
+		array3[1] = list.Count;
+		array3[1] = "inventory.selected.";
+		array3[2] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.IBKCMBIGOEJ();
 		string lblkdnnpaco = "[PlayerController] ";
-		object[] array2 = new object[7];
-		array2[1] = PhotonNetwork.time;
-		array2[0] = list.ToArray();
-		photonView.KACECEKIPPP(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[7];
+		array4[1] = PhotonNetwork.time;
+		array4[0] = list.ToArray();
+		photonView.KACECEKIPPP(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C093 RID: 49299
+	// Token: 0x0600C092 RID: 49298 RVA: 0x0008B212 File Offset: 0x00089412
+	public PickupItemSyncer()
+	{
+	}
+
+	// Token: 0x0600C093 RID: 49299 RVA: 0x00092DA4 File Offset: 0x00090FA4
 	public void GMMFLFIPAHB(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.KPOJJLEBCMO(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C094 RID: 49300
+	// Token: 0x0600C094 RID: 49300 RVA: 0x00092D8B File Offset: 0x00090F8B
 	public void PPGAINMKPCN(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -1284,7 +1289,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C095 RID: 49301
+	// Token: 0x0600C095 RID: 49301 RVA: 0x00092F21 File Offset: 0x00091121
 	public void JNHPFMKIBMO(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -1293,7 +1298,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C096 RID: 49302
+	// Token: 0x0600C096 RID: 49302 RVA: 0x00450A30 File Offset: 0x0044EC30
 	[PunRPC]
 	public void PickupItemInit(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
@@ -1332,7 +1337,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C097 RID: 49303
+	// Token: 0x0600C097 RID: 49303 RVA: 0x00450B14 File Offset: 0x0044ED14
 	public void BLHKMLGLCHJ(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -1369,7 +1374,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C098 RID: 49304
+	// Token: 0x0600C098 RID: 49304 RVA: 0x00092F31 File Offset: 0x00091131
 	[Obsolete("Use RequestForPickupItems(PhotonMessageInfo msgInfo) with corrected typing instead.")]
 	[PunRPC]
 	public void RequestForPickupTimes(PhotonMessageInfo PDBKGCDNLNG)
@@ -1377,7 +1382,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.RequestForPickupItems(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C099 RID: 49305
+	// Token: 0x0600C099 RID: 49305 RVA: 0x00450BF8 File Offset: 0x0044EDF8
 	public void OBFLLMLKMKB(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = true;
@@ -1414,7 +1419,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C09A RID: 49306
+	// Token: 0x0600C09A RID: 49306 RVA: 0x00450CDC File Offset: 0x0044EEDC
 	public void MBCCOOKJLGH(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = true;
@@ -1451,7 +1456,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C09B RID: 49307
+	// Token: 0x0600C09B RID: 49307 RVA: 0x00450DC0 File Offset: 0x0044EFC0
 	private void PGFCEMJCOHL(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -1477,36 +1482,36 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[8];
-					array3[1] = pickupItem.EALIJNCNNKC();
-					array3[1] = "_NoisePerChannel";
-					array3[5] = pickupItem.TimeOfRespawn;
-					array3[4] = "Data/Skins/";
-					array3[5] = num2;
-					array3[6] = "SetSatelliteTrailLength";
-					array3[2] = PhotonNetwork.time;
-					array3[3] = "#lives";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[8];
+					array2[1] = pickupItem.EALIJNCNNKC();
+					array2[1] = "_NoisePerChannel";
+					array2[5] = pickupItem.TimeOfRespawn;
+					array2[4] = "Data/Skins/";
+					array2[5] = num2;
+					array2[6] = "SetSatelliteTrailLength";
+					array2[2] = PhotonNetwork.time;
+					array2[3] = "#lives";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.EALIJNCNNKC());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[5];
-		array4[1] = "_Value7";
-		array4[0] = list.Count;
-		array4[6] = "]";
-		array4[5] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[5];
+		array3[1] = "_Value7";
+		array3[0] = list.Count;
+		array3[6] = "]";
+		array3[5] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.ACPGHFHDCIP();
 		string lblkdnnpaco = "L2";
-		object[] array2 = new object[7];
-		array2[0] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.KACECEKIPPP(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[7];
+		array4[0] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.KACECEKIPPP(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C09C RID: 49308
+	// Token: 0x0600C09C RID: 49308 RVA: 0x00092F3A File Offset: 0x0009113A
 	public void FLBDPCACCOK(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -1515,7 +1520,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C09D RID: 49309
+	// Token: 0x0600C09D RID: 49309 RVA: 0x00092F4A File Offset: 0x0009114A
 	public void HAFNFEJKGEF(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -1526,7 +1531,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.BKAAGPHGGNL(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C09E RID: 49310
+	// Token: 0x0600C09E RID: 49310 RVA: 0x00092F6B File Offset: 0x0009116B
 	public void OICIJCNKHCI(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -1537,7 +1542,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.PGEEHKHMMCG(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C09F RID: 49311
+	// Token: 0x0600C09F RID: 49311 RVA: 0x00450F60 File Offset: 0x0044F160
 	public void FMIHGOACEKK()
 	{
 		object[] array = new object[4];
@@ -1553,7 +1558,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0A0 RID: 49312
+	// Token: 0x0600C0A0 RID: 49312 RVA: 0x00450FD4 File Offset: 0x0044F1D4
 	public void JFNBAEAJKOH()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -1579,7 +1584,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0A1 RID: 49313
+	// Token: 0x0600C0A1 RID: 49313 RVA: 0x00451064 File Offset: 0x0044F264
 	private void PPGKMKFFGJE(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -1605,36 +1610,36 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[3];
-					array3[0] = pickupItem.EENIOALHGGL();
-					array3[1] = "_Value3";
-					array3[0] = pickupItem.TimeOfRespawn;
-					array3[1] = "#accuracy";
-					array3[5] = num2;
-					array3[2] = "[MapEditor] Item creation successful! Published Item ID: ";
-					array3[7] = PhotonNetwork.time;
-					array3[7] = " - {0}";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[3];
+					array2[0] = pickupItem.EENIOALHGGL();
+					array2[1] = "_Value3";
+					array2[0] = pickupItem.TimeOfRespawn;
+					array2[1] = "#accuracy";
+					array2[5] = num2;
+					array2[2] = "[MapEditor] Item creation successful! Published Item ID: ";
+					array2[7] = PhotonNetwork.time;
+					array2[7] = " - {0}";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.FKFHMBGPFHF());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[1];
-		array4[1] = "_TimeX";
-		array4[1] = list.Count;
-		array4[1] = "event";
-		array4[1] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[1];
+		array3[1] = "_TimeX";
+		array3[1] = list.Count;
+		array3[1] = "event";
+		array3[1] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.CIACEFBNDDJ();
 		string lblkdnnpaco = "cancel";
-		object[] array2 = new object[7];
-		array2[1] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[7];
+		array4[1] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0A2 RID: 49314
+	// Token: 0x0600C0A2 RID: 49314 RVA: 0x00092F8C File Offset: 0x0009118C
 	public void FJCADPOONBF(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -1645,7 +1650,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.DMHMGIBMIDA(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C0A3 RID: 49315
+	// Token: 0x0600C0A3 RID: 49315 RVA: 0x00451204 File Offset: 0x0044F404
 	public void DBMDJHMBMGH()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -1671,7 +1676,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0A4 RID: 49316
+	// Token: 0x0600C0A4 RID: 49316 RVA: 0x00451294 File Offset: 0x0044F494
 	public void NKFLPHKKPJH(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = true;
@@ -1708,13 +1713,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0A5 RID: 49317
+	// Token: 0x0600C0A5 RID: 49317 RVA: 0x00092FAD File Offset: 0x000911AD
 	public void GHNBCKLCLCD(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.LCNJFMGHPMH(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C0A6 RID: 49318
+	// Token: 0x0600C0A6 RID: 49318 RVA: 0x00451374 File Offset: 0x0044F574
 	public void POALNDIIBGI()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -1740,7 +1745,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0A7 RID: 49319
+	// Token: 0x0600C0A7 RID: 49319 RVA: 0x00092FB6 File Offset: 0x000911B6
 	public void PEBNLLBAJFK(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -1751,7 +1756,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.PHOKFNAJMAN(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C0A8 RID: 49320
+	// Token: 0x0600C0A8 RID: 49320 RVA: 0x00451404 File Offset: 0x0044F604
 	public void CAAJFPJAOCJ(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -1788,7 +1793,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0A9 RID: 49321
+	// Token: 0x0600C0A9 RID: 49321 RVA: 0x004514E8 File Offset: 0x0044F6E8
 	public void IOIMNDEOLGO(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -1825,7 +1830,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0AA RID: 49322
+	// Token: 0x0600C0AA RID: 49322 RVA: 0x00092FD7 File Offset: 0x000911D7
 	public void KLMPHNPKILJ(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -1834,7 +1839,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0AB RID: 49323
+	// Token: 0x0600C0AB RID: 49323 RVA: 0x004515CC File Offset: 0x0044F7CC
 	public void OGOKEFNPBMC()
 	{
 		object[] array = new object[0];
@@ -1850,7 +1855,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0AC RID: 49324
+	// Token: 0x0600C0AC RID: 49324 RVA: 0x00451640 File Offset: 0x0044F840
 	private void CCDJMKJDJGC(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -1876,42 +1881,42 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[1];
-					array3[1] = pickupItem.FKFHMBGPFHF();
-					array3[1] = "_PositionY";
-					array3[0] = pickupItem.TimeOfRespawn;
-					array3[2] = "z";
-					array3[3] = num2;
-					array3[6] = "Cant ask anyone else for PickupItem spawn times.";
-					array3[3] = PhotonNetwork.time;
-					array3[1] = "_ScreenResolution";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[1];
+					array2[1] = pickupItem.FKFHMBGPFHF();
+					array2[1] = "_PositionY";
+					array2[0] = pickupItem.TimeOfRespawn;
+					array2[2] = "z";
+					array2[3] = num2;
+					array2[6] = "Cant ask anyone else for PickupItem spawn times.";
+					array2[3] = PhotonNetwork.time;
+					array2[1] = "_ScreenResolution";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.EALIJNCNNKC());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[6];
-		array4[0] = "Set Satellite Sensitivity";
-		array4[1] = list.Count;
-		array4[3] = "GroupNameText";
-		array4[7] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[6];
+		array3[0] = "Set Satellite Sensitivity";
+		array3[1] = list.Count;
+		array3[3] = "GroupNameText";
+		array3[7] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.AAMNKPHHHCI();
 		string lblkdnnpaco = "player.orangelifering";
-		object[] array2 = new object[7];
-		array2[1] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[7];
+		array4[1] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0AD RID: 49325
+	// Token: 0x0600C0AD RID: 49325 RVA: 0x00092FE7 File Offset: 0x000911E7
 	public void EMHBADAIGCA(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.FJCADPOONBF(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C0AE RID: 49326
+	// Token: 0x0600C0AE RID: 49326 RVA: 0x004517E0 File Offset: 0x0044F9E0
 	private void BKAAGPHGGNL(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -1937,22 +1942,22 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[3];
-					array3[1] = pickupItem.EALIJNCNNKC();
-					array3[1] = "_Sat";
-					array3[5] = pickupItem.TimeOfRespawn;
-					array3[8] = "/../";
-					array3[0] = num2;
-					array3[0] = "_Value2";
-					array3[6] = PhotonNetwork.time;
-					array3[5] = "Destroy all spawned environment objects";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[3];
+					array2[1] = pickupItem.EALIJNCNNKC();
+					array2[1] = "_Sat";
+					array2[5] = pickupItem.TimeOfRespawn;
+					array2[8] = "/../";
+					array2[0] = num2;
+					array2[0] = "_Value2";
+					array2[6] = PhotonNetwork.time;
+					array2[5] = "Destroy all spawned environment objects";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.EENIOALHGGL());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[]
+		object[] array3 = new object[]
 		{
 			"_Bloom",
 			list.Count,
@@ -1963,17 +1968,17 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 			null,
 			"PunRespawn"
 		};
-		array4[2] = time;
-		Debug.Log(string.Concat(array4));
+		array3[2] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.IBKCMBIGOEJ();
 		string lblkdnnpaco = "_BlurCoe";
-		object[] array2 = new object[0];
-		array2[1] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[0];
+		array4[1] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0AF RID: 49327
+	// Token: 0x0600C0AF RID: 49327 RVA: 0x00092FF0 File Offset: 0x000911F0
 	public void FOKOCCEODFM(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -1982,7 +1987,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0B0 RID: 49328
+	// Token: 0x0600C0B0 RID: 49328 RVA: 0x00451980 File Offset: 0x0044FB80
 	public void CCKDNDCIBEP(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -2019,13 +2024,13 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0B1 RID: 49329
+	// Token: 0x0600C0B1 RID: 49329 RVA: 0x00093000 File Offset: 0x00091200
 	public void MBHDKCNNMJD(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		this.NGAOAFGLLJI(PDBKGCDNLNG);
 	}
 
-	// Token: 0x0600C0B2 RID: 49330
+	// Token: 0x0600C0B2 RID: 49330 RVA: 0x00451A64 File Offset: 0x0044FC64
 	public void PPEKHBDJDKC()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -2051,7 +2056,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0B3 RID: 49331
+	// Token: 0x0600C0B3 RID: 49331 RVA: 0x00451AF4 File Offset: 0x0044FCF4
 	private void FDOPCLKFMOH(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -2077,39 +2082,39 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[6];
-					array3[0] = pickupItem.ViewID;
-					array3[1] = "workshop.";
-					array3[8] = pickupItem.TimeOfRespawn;
-					array3[5] = "_Value3";
-					array3[7] = num2;
-					array3[5] = "GlassAberration";
-					array3[6] = PhotonNetwork.time;
-					array3[4] = "&map=";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[6];
+					array2[0] = pickupItem.ViewID;
+					array2[1] = "workshop.";
+					array2[8] = pickupItem.TimeOfRespawn;
+					array2[5] = "_Value3";
+					array2[7] = num2;
+					array2[5] = "GlassAberration";
+					array2[6] = PhotonNetwork.time;
+					array2[4] = "&map=";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.DHBFALLCHCG());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[2];
-		array4[0] = "<command>";
-		array4[0] = list.Count;
-		array4[6] = "_TimeX";
-		array4[6] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[2];
+		array3[0] = "<command>";
+		array3[0] = list.Count;
+		array3[6] = "_TimeX";
+		array3[6] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.photonView;
 		string lblkdnnpaco = "%]</b> ";
-		object[] array2 = new object[]
+		object[] array4 = new object[]
 		{
 			null,
 			PhotonNetwork.time
 		};
-		array2[1] = list.ToArray();
-		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array2);
+		array4[1] = list.ToArray();
+		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0B4 RID: 49332
+	// Token: 0x0600C0B4 RID: 49332 RVA: 0x00451C98 File Offset: 0x0044FE98
 	public void ACLKLBGNBBN()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -2135,7 +2140,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0B5 RID: 49333
+	// Token: 0x0600C0B5 RID: 49333 RVA: 0x00451D28 File Offset: 0x0044FF28
 	public void PBJIMOILOLE()
 	{
 		object[] array = new object[7];
@@ -2151,7 +2156,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0B6 RID: 49334
+	// Token: 0x0600C0B6 RID: 49334 RVA: 0x00093009 File Offset: 0x00091209
 	[PunRPC]
 	public void RequestForPickupItems(PhotonMessageInfo PDBKGCDNLNG)
 	{
@@ -2163,7 +2168,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.PHOKFNAJMAN(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C0B7 RID: 49335
+	// Token: 0x0600C0B7 RID: 49335 RVA: 0x00451D9C File Offset: 0x0044FF9C
 	public void HHCNFNHEBIF()
 	{
 		object[] array = new object[3];
@@ -2179,7 +2184,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0B8 RID: 49336
+	// Token: 0x0600C0B8 RID: 49336 RVA: 0x00451E10 File Offset: 0x00450010
 	public void GMKMLFAIIAJ()
 	{
 		object[] array = new object[2];
@@ -2195,7 +2200,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0B9 RID: 49337
+	// Token: 0x0600C0B9 RID: 49337 RVA: 0x0009302A File Offset: 0x0009122A
 	public void CMCMLLICMJB(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -2204,7 +2209,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0BA RID: 49338
+	// Token: 0x0600C0BA RID: 49338 RVA: 0x00451E84 File Offset: 0x00450084
 	public void FMPICHEDPFF(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = true;
@@ -2243,7 +2248,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0BB RID: 49339
+	// Token: 0x0600C0BB RID: 49339 RVA: 0x00451F64 File Offset: 0x00450164
 	public void GKKNIJLJABC()
 	{
 		object[] array = new object[1];
@@ -2259,7 +2264,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0BC RID: 49340
+	// Token: 0x0600C0BC RID: 49340 RVA: 0x0009303A File Offset: 0x0009123A
 	public void GJOFHFOCGAB(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -2268,7 +2273,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0BD RID: 49341
+	// Token: 0x0600C0BD RID: 49341 RVA: 0x00092FD7 File Offset: 0x000911D7
 	public void LCNKFALHCOD(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -2277,7 +2282,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0BE RID: 49342
+	// Token: 0x0600C0BE RID: 49342 RVA: 0x00451FD8 File Offset: 0x004501D8
 	private void AOEIIPJAHAJ(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -2303,36 +2308,36 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[6];
-					array3[0] = pickupItem.EIKELGOOEAN();
-					array3[1] = "Hidden/DepthOfField/BokehSplatting";
-					array3[1] = pickupItem.TimeOfRespawn;
-					array3[4] = "ReJoinRoom failed due to offline mode.";
-					array3[6] = num2;
-					array3[6] = "EventMenu";
-					array3[5] = PhotonNetwork.time;
-					array3[3] = "quantity";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[6];
+					array2[0] = pickupItem.EIKELGOOEAN();
+					array2[1] = "Hidden/DepthOfField/BokehSplatting";
+					array2[1] = pickupItem.TimeOfRespawn;
+					array2[4] = "ReJoinRoom failed due to offline mode.";
+					array2[6] = num2;
+					array2[6] = "EventMenu";
+					array2[5] = PhotonNetwork.time;
+					array2[3] = "quantity";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.EALIJNCNNKC());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[1];
-		array4[1] = "Map: ";
-		array4[1] = list.Count;
-		array4[3] = "RecordButton";
-		array4[1] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[1];
+		array3[1] = "Map: ";
+		array3[1] = list.Count;
+		array3[3] = "RecordButton";
+		array3[1] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.GBMJAPGLMGB();
 		string lblkdnnpaco = "LevelConfigButton";
-		object[] array2 = new object[6];
-		array2[0] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[6];
+		array4[0] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0BF RID: 49343
+	// Token: 0x0600C0BF RID: 49343 RVA: 0x0009304A File Offset: 0x0009124A
 	public void FIDCAEAJBII(PhotonPlayer FKKHMGIGLKM)
 	{
 		if (PhotonNetwork.isMasterClient)
@@ -2341,7 +2346,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0C0 RID: 49344
+	// Token: 0x0600C0C0 RID: 49344 RVA: 0x00452178 File Offset: 0x00450378
 	public void LMNKJGJELAB(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -2378,7 +2383,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0C1 RID: 49345
+	// Token: 0x0600C0C1 RID: 49345 RVA: 0x0045225C File Offset: 0x0045045C
 	public void ICMDKGGMCLB(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -2415,7 +2420,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0C2 RID: 49346
+	// Token: 0x0600C0C2 RID: 49346 RVA: 0x00452340 File Offset: 0x00450540
 	public void GNBNAPFGIMD(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = true;
@@ -2452,7 +2457,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0C3 RID: 49347
+	// Token: 0x0600C0C3 RID: 49347 RVA: 0x00452424 File Offset: 0x00450624
 	private void PGEEHKHMMCG(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -2478,36 +2483,36 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[0];
-					array3[1] = pickupItem.FKFHMBGPFHF();
-					array3[0] = "Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ";
-					array3[0] = pickupItem.TimeOfRespawn;
-					array3[2] = "Share";
-					array3[2] = num2;
-					array3[7] = "ItemsCountText";
-					array3[6] = PhotonNetwork.time;
-					array3[5] = "#finished";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[0];
+					array2[1] = pickupItem.FKFHMBGPFHF();
+					array2[0] = "Using clickAlphaThreshold lower than 1 on Image whose sprite texture cannot be read. ";
+					array2[0] = pickupItem.TimeOfRespawn;
+					array2[2] = "Share";
+					array2[2] = num2;
+					array2[7] = "ItemsCountText";
+					array2[6] = PhotonNetwork.time;
+					array2[5] = "#finished";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.FKFHMBGPFHF());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[5];
-		array4[0] = "_Value4";
-		array4[0] = list.Count;
-		array4[3] = "ShadersToggle";
-		array4[3] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[5];
+		array3[0] = "_Value4";
+		array3[0] = list.Count;
+		array3[3] = "ShadersToggle";
+		array3[3] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.OELHGNKAMEG();
 		string lblkdnnpaco = "_TimeX";
-		object[] array2 = new object[8];
-		array2[0] = PhotonNetwork.time;
-		array2[0] = list.ToArray();
-		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[8];
+		array4[0] = PhotonNetwork.time;
+		array4[0] = list.ToArray();
+		photonView.DPLELHEFMBE(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0C4 RID: 49348
+	// Token: 0x0600C0C4 RID: 49348 RVA: 0x004525C4 File Offset: 0x004507C4
 	public void LFBCJFJKDMO()
 	{
 		if (this.IsWaitingForPickupInit)
@@ -2533,7 +2538,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0C5 RID: 49349
+	// Token: 0x0600C0C5 RID: 49349 RVA: 0x0009305A File Offset: 0x0009125A
 	public void HGHPEPCJHPA(PhotonMessageInfo PDBKGCDNLNG)
 	{
 		if (PDBKGCDNLNG.sender == null)
@@ -2544,7 +2549,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		this.PPGKMKFFGJE(PDBKGCDNLNG.sender);
 	}
 
-	// Token: 0x0600C0C6 RID: 49350
+	// Token: 0x0600C0C6 RID: 49350 RVA: 0x00452654 File Offset: 0x00450854
 	private void MJINJLIKIPN(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -2570,36 +2575,36 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[1];
-					array3[0] = pickupItem.KHEHPCAFJBC();
-					array3[1] = ".lastCheckpoint.time";
-					array3[7] = pickupItem.TimeOfRespawn;
-					array3[2] = "LevelInfoInputField";
-					array3[2] = num2;
-					array3[7] = "Fade";
-					array3[6] = PhotonNetwork.time;
-					array3[6] = "Hex value #RRGGBB";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[1];
+					array2[0] = pickupItem.KHEHPCAFJBC();
+					array2[1] = ".lastCheckpoint.time";
+					array2[7] = pickupItem.TimeOfRespawn;
+					array2[2] = "LevelInfoInputField";
+					array2[2] = num2;
+					array2[7] = "Fade";
+					array2[6] = PhotonNetwork.time;
+					array2[6] = "Hex value #RRGGBB";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.ViewID);
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[7];
-		array4[1] = "CameraFilterPack/3D_Myst";
-		array4[1] = list.Count;
-		array4[5] = "_UserLutTex";
-		array4[0] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[7];
+		array3[1] = "CameraFilterPack/3D_Myst";
+		array3[1] = list.Count;
+		array3[5] = "_UserLutTex";
+		array3[0] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.EDIJKHEMPAD();
 		string lblkdnnpaco = "setbool";
-		object[] array2 = new object[8];
-		array2[1] = PhotonNetwork.time;
-		array2[0] = list.ToArray();
-		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[8];
+		array4[1] = PhotonNetwork.time;
+		array4[0] = list.ToArray();
+		photonView.RPC(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0C7 RID: 49351
+	// Token: 0x0600C0C7 RID: 49351 RVA: 0x004527F4 File Offset: 0x004509F4
 	public void IIMFPEICJPG(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = true;
@@ -2636,7 +2641,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0C8 RID: 49352
+	// Token: 0x0600C0C8 RID: 49352 RVA: 0x004528D8 File Offset: 0x00450AD8
 	private void PIMMBDEKEGG(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -2648,7 +2653,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		double num = time + 834.0;
 		PickupItem[] array = new PickupItem[PickupItem.DisabledPickupItems.Count];
 		PickupItem.DisabledPickupItems.CopyTo(array);
-		int num3 = array.Length;
+		int num2 = array.Length;
 		List<float> list = new List<float>(0);
 		for (int i = 1; i < array.Length; i = i)
 		{
@@ -2660,39 +2665,39 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 			}
 			else
 			{
-				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
+				double num3 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[8];
-					array3[1] = pickupItem.OKNPEBGCPEA();
-					array3[1] = "workshop.txt";
-					array3[2] = pickupItem.TimeOfRespawn;
-					array3[5] = "menutheme.idunno";
-					array3[7] = num2;
-					array3[6] = "GlassAberration";
-					array3[6] = PhotonNetwork.time;
-					array3[3] = "Tab1Content";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[8];
+					array2[1] = pickupItem.OKNPEBGCPEA();
+					array2[1] = "workshop.txt";
+					array2[2] = pickupItem.TimeOfRespawn;
+					array2[5] = "menutheme.idunno";
+					array2[7] = num3;
+					array2[6] = "GlassAberration";
+					array2[6] = PhotonNetwork.time;
+					array2[3] = "Tab1Content";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.EENIOALHGGL());
-					list.Add((float)num2);
+					list.Add((float)num3);
 				}
 			}
 		}
-		object[] array4 = new object[6];
-		array4[1] = ":</b> ";
-		array4[0] = list.Count;
-		array4[3] = "menu.selectedplaymode";
-		array4[1] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[6];
+		array3[1] = ":</b> ";
+		array3[0] = list.Count;
+		array3[3] = "menu.selectedplaymode";
+		array3[1] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.GBMJAPGLMGB();
 		string lblkdnnpaco = "LeaderboardsButton";
-		object[] array2 = new object[3];
-		array2[1] = PhotonNetwork.time;
-		array2[1] = list.ToArray();
-		photonView.OILIKMGIHFL(lblkdnnpaco, MJCDIJOAEPI, array2);
+		object[] array4 = new object[3];
+		array4[1] = PhotonNetwork.time;
+		array4[1] = list.ToArray();
+		photonView.OILIKMGIHFL(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0C9 RID: 49353
+	// Token: 0x0600C0C9 RID: 49353 RVA: 0x00452A78 File Offset: 0x00450C78
 	private void FECLHODFCAM(PhotonPlayer MJCDIJOAEPI)
 	{
 		if (MJCDIJOAEPI == null)
@@ -2718,39 +2723,39 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 				double num2 = pickupItem.TimeOfRespawn - PhotonNetwork.time;
 				if (pickupItem.TimeOfRespawn > num)
 				{
-					object[] array3 = new object[4];
-					array3[0] = pickupItem.DHBFALLCHCG();
-					array3[0] = "CameraFilterPack/TV_Distorted";
-					array3[0] = pickupItem.TimeOfRespawn;
-					array3[8] = "GroupNameText";
-					array3[5] = num2;
-					array3[0] = "SetSunMaxSize";
-					array3[6] = PhotonNetwork.time;
-					array3[6] = "elapsed: {0:0.000}";
-					Debug.Log(string.Concat(array3));
+					object[] array2 = new object[4];
+					array2[0] = pickupItem.DHBFALLCHCG();
+					array2[0] = "CameraFilterPack/TV_Distorted";
+					array2[0] = pickupItem.TimeOfRespawn;
+					array2[8] = "GroupNameText";
+					array2[5] = num2;
+					array2[0] = "SetSunMaxSize";
+					array2[6] = PhotonNetwork.time;
+					array2[6] = "elapsed: {0:0.000}";
+					Debug.Log(string.Concat(array2));
 					list.Add((float)pickupItem.DHBFALLCHCG());
 					list.Add((float)num2);
 				}
 			}
 		}
-		object[] array4 = new object[1];
-		array4[1] = "Waiting to start";
-		array4[0] = list.Count;
-		array4[7] = "inventory.selected.";
-		array4[0] = time;
-		Debug.Log(string.Concat(array4));
+		object[] array3 = new object[1];
+		array3[1] = "Waiting to start";
+		array3[0] = list.Count;
+		array3[7] = "inventory.selected.";
+		array3[0] = time;
+		Debug.Log(string.Concat(array3));
 		PhotonView photonView = base.JAEJDHHCJJO();
 		string lblkdnnpaco = "ItemNameText";
-		object[] array2 = new object[]
+		object[] array4 = new object[]
 		{
 			null,
 			PhotonNetwork.time
 		};
-		array2[0] = list.ToArray();
-		photonView.KACECEKIPPP(lblkdnnpaco, MJCDIJOAEPI, array2);
+		array4[0] = list.ToArray();
+		photonView.KACECEKIPPP(lblkdnnpaco, MJCDIJOAEPI, array4);
 	}
 
-	// Token: 0x0600C0CA RID: 49354
+	// Token: 0x0600C0CA RID: 49354 RVA: 0x00452C1C File Offset: 0x00450E1C
 	public void KGHGKOIIAGM(double JAFEJOMIMOD, float[] NMMDICHIDNC)
 	{
 		this.IsWaitingForPickupInit = false;
@@ -2787,7 +2792,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
 		}
 	}
 
-	// Token: 0x0600C0CB RID: 49355
+	// Token: 0x0600C0CB RID: 49355 RVA: 0x00452D00 File Offset: 0x00450F00
 	public void GPMKNJDDLJI()
 	{
 		object[] array = new object[5];

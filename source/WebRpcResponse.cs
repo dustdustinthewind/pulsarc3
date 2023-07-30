@@ -1,4 +1,4 @@
-// decompiled in dnspy
+// decompiled in dnspy (right click -> edit class)
 // cannot recompile
 
 using System;
@@ -8,25 +8,25 @@ using ExitGames.Client.Photon;
 // Token: 0x0200030C RID: 780
 public class WebRpcResponse
 {
-	// Token: 0x0600B1B1 RID: 45489 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1B1 RID: 45489 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void FINEGNBCAGI(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1B2 RID: 45490 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B1B2 RID: 45490 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> BLGOLPHJIPP()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B1B3 RID: 45491 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B1B3 RID: 45491 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> MGGLMAOFEPP()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B1B4 RID: 45492 RVA: 0x00415C5B File Offset: 0x00413E5B
+	// Token: 0x0600B1B4 RID: 45492 RVA: 0x0008BAC0 File Offset: 0x00089CC0
 	public string MLAINMDLNFL()
 	{
 		string format = "CameraFilterPack/AAA_Super_Hexagon";
@@ -38,18 +38,18 @@ public class WebRpcResponse
 		return string.Format(format, array);
 	}
 
-	// Token: 0x0600B1B5 RID: 45493 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1B5 RID: 45493 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void FCLGJCMHMNJ(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
 	// Token: 0x17000262 RID: 610
-	// (get) Token: 0x0600B21C RID: 45596 RVA: 0x00415D54 File Offset: 0x00413F54
-	// (set) Token: 0x0600B1B6 RID: 45494 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// (get) Token: 0x0600B21C RID: 45596 RVA: 0x0008BB1B File Offset: 0x00089D1B
+	// (set) Token: 0x0600B1B6 RID: 45494 RVA: 0x0008BB09 File Offset: 0x00089D09
 	public int ReturnCode { get; private set; }
 
-	// Token: 0x0600B1B7 RID: 45495 RVA: 0x00415CB0 File Offset: 0x00413EB0
+	// Token: 0x0600B1B7 RID: 45495 RVA: 0x00411F04 File Offset: 0x00410104
 	public WebRpcResponse(OperationResponse NEKOLHLOPCJ)
 	{
 		object obj;
@@ -63,109 +63,109 @@ public class WebRpcResponse
 		this.DebugMessage = (obj as string);
 	}
 
-	// Token: 0x0600B1B8 RID: 45496 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1B8 RID: 45496 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void NNDNPAGEJLC(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1B9 RID: 45497 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B1B9 RID: 45497 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int JINAJEJPFKD()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B1BA RID: 45498 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B1BA RID: 45498 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int GNNMPACHPCF()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B1BB RID: 45499 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1BB RID: 45499 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void LOFOEOEEOAD(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1BC RID: 45500 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1BC RID: 45500 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void MCMNLBKECOK(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1BD RID: 45501 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B1BD RID: 45501 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int JMEHGGCMEBD()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B1BE RID: 45502 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B1BE RID: 45502 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string MONALMNMMOH()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B1BF RID: 45503 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B1BF RID: 45503 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string NCIFIMHIMPI()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B1C0 RID: 45504 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B1C0 RID: 45504 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> CBPGFCNCFCH()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B1C1 RID: 45505 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1C1 RID: 45505 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void AKDKAHLDEAG(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1C2 RID: 45506 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1C2 RID: 45506 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void EMEBPEGKOAN(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1C3 RID: 45507 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1C3 RID: 45507 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void JDOMHOBDGMC(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1C4 RID: 45508 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1C4 RID: 45508 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void NHOEPPGHCCO(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1C5 RID: 45509 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1C5 RID: 45509 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void DGHHOKPLGHE(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1C6 RID: 45510 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1C6 RID: 45510 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void AFJGPLAHPBN(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1C7 RID: 45511 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1C7 RID: 45511 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void ICIOLLMAOJL(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1C8 RID: 45512 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1C8 RID: 45512 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void KALFIKJMMHA(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1C9 RID: 45513 RVA: 0x00415D64 File Offset: 0x00413F64
+	// Token: 0x0600B1C9 RID: 45513 RVA: 0x0008BB2B File Offset: 0x00089D2B
 	public string GKIBADAOLHF()
 	{
 		string format = "_ColorRGB";
@@ -177,25 +177,25 @@ public class WebRpcResponse
 		return string.Format(format, array);
 	}
 
-	// Token: 0x0600B1CA RID: 45514 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B1CA RID: 45514 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int EPHAFDIIJCJ()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B1CB RID: 45515 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B1CB RID: 45515 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string KKBCAPBHNME()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B1CC RID: 45516 RVA: 0x00415DA4 File Offset: 0x00413FA4
+	// Token: 0x0600B1CC RID: 45516 RVA: 0x0008BB6B File Offset: 0x00089D6B
 	public string MBAKELMCPHE()
 	{
 		return this.<FCLGMEGCOME>k__BackingField;
 	}
 
-	// Token: 0x0600B1CD RID: 45517 RVA: 0x00415DAC File Offset: 0x00413FAC
+	// Token: 0x0600B1CD RID: 45517 RVA: 0x0008BB73 File Offset: 0x00089D73
 	public string KJBLJAACPHN()
 	{
 		string format = "CameraFilterPack/Blend2Camera_LighterColor";
@@ -207,73 +207,73 @@ public class WebRpcResponse
 		return string.Format(format, array);
 	}
 
-	// Token: 0x0600B1CE RID: 45518 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1CE RID: 45518 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void ANIPEJOOILD(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1CF RID: 45519 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1CF RID: 45519 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void GJEDODNGPHB(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1D0 RID: 45520 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1D0 RID: 45520 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void AGNIFFOMHDH(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1D1 RID: 45521 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B1D1 RID: 45521 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string NLICCMJPLMD()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B1D2 RID: 45522 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B1D2 RID: 45522 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string OCDBIAEPNOA()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B1D3 RID: 45523 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1D3 RID: 45523 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void AFALDNKMGJK(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1D4 RID: 45524 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1D4 RID: 45524 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void EEMFMCKOAMP(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1D5 RID: 45525 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1D5 RID: 45525 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void ENBJDNLCGPH(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1D6 RID: 45526 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B1D6 RID: 45526 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> BAIDNALDFDI()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B1D7 RID: 45527 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1D7 RID: 45527 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void HIKOPJJNPEN(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1D8 RID: 45528 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1D8 RID: 45528 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void MOHDEKCKIAL(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1D9 RID: 45529 RVA: 0x00415DEC File Offset: 0x00413FEC
+	// Token: 0x0600B1D9 RID: 45529 RVA: 0x0008BBB3 File Offset: 0x00089DB3
 	public string KKPBFCFLOMI()
 	{
 		string format = "_TintColor";
@@ -288,71 +288,71 @@ public class WebRpcResponse
 		return string.Format(format, array);
 	}
 
-	// Token: 0x0600B1DA RID: 45530 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1DA RID: 45530 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void OFIBMNFKACG(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1DB RID: 45531 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1DB RID: 45531 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void ILLBPNJEMJN(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1DC RID: 45532 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1DC RID: 45532 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void ALNJOJGFGGA(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1DD RID: 45533 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1DD RID: 45533 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void BCJACHBMNHK(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1DE RID: 45534 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1DE RID: 45534 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void PJEPLCLKBMM(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
 	// Token: 0x17000264 RID: 612
-	// (get) Token: 0x0600B1DF RID: 45535 RVA: 0x00415C53 File Offset: 0x00413E53
-	// (set) Token: 0x0600B1E8 RID: 45544 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// (get) Token: 0x0600B1DF RID: 45535 RVA: 0x0008BAB8 File Offset: 0x00089CB8
+	// (set) Token: 0x0600B1E8 RID: 45544 RVA: 0x0008BB00 File Offset: 0x00089D00
 	public Dictionary<string, object> Parameters { get; private set; }
 
-	// Token: 0x0600B1E0 RID: 45536 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1E0 RID: 45536 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void LIPPAOEOGLJ(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1E1 RID: 45537 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B1E1 RID: 45537 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string OKPDNENLHBD()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B1E2 RID: 45538 RVA: 0x00415DA4 File Offset: 0x00413FA4
+	// Token: 0x0600B1E2 RID: 45538 RVA: 0x0008BB6B File Offset: 0x00089D6B
 	public string KIOAJOBNBLE()
 	{
 		return this.<FCLGMEGCOME>k__BackingField;
 	}
 
 	// Token: 0x17000261 RID: 609
-	// (get) Token: 0x0600B1E3 RID: 45539 RVA: 0x00415D5C File Offset: 0x00413F5C
-	// (set) Token: 0x0600B206 RID: 45574 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// (get) Token: 0x0600B1E3 RID: 45539 RVA: 0x0008BB23 File Offset: 0x00089D23
+	// (set) Token: 0x0600B206 RID: 45574 RVA: 0x0008BB12 File Offset: 0x00089D12
 	public string Name { get; private set; }
 
-	// Token: 0x0600B1E4 RID: 45540 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1E4 RID: 45540 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void EPAEBKIEMHC(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1E5 RID: 45541 RVA: 0x00415E2C File Offset: 0x0041402C
+	// Token: 0x0600B1E5 RID: 45541 RVA: 0x0008BBF3 File Offset: 0x00089DF3
 	public string ToStringFull()
 	{
 		return string.Format("{0}={2}: {1} \"{3}\"", new object[]
@@ -364,85 +364,85 @@ public class WebRpcResponse
 		});
 	}
 
-	// Token: 0x0600B1E6 RID: 45542 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1E6 RID: 45542 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void IDOOAFDPFAK(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1E7 RID: 45543 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1E7 RID: 45543 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void MFGJMFEMGCF(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1E9 RID: 45545 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1E9 RID: 45545 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void LNGAKCGDNCJ(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1EA RID: 45546 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B1EA RID: 45546 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int CNNAHGILLCN()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B1EB RID: 45547 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B1EB RID: 45547 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> DCCLCJJPBFI()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B1EC RID: 45548 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B1EC RID: 45548 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string FBJFAHIKJKP()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B1ED RID: 45549 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1ED RID: 45549 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void KOMLGCEMAIM(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1EE RID: 45550 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1EE RID: 45550 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void HGNIGIKEBGI(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1EF RID: 45551 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1EF RID: 45551 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void MCHKMHLKKEH(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1F0 RID: 45552 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1F0 RID: 45552 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void COCLHHOFEIK(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1F1 RID: 45553 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B1F1 RID: 45553 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string KFDKGMFAMMD()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B1F2 RID: 45554 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1F2 RID: 45554 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void BMJFHGOHHPJ(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1F3 RID: 45555 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1F3 RID: 45555 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void EMHPGIBOIAE(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1F4 RID: 45556 RVA: 0x00415E6C File Offset: 0x0041406C
+	// Token: 0x0600B1F4 RID: 45556 RVA: 0x0008BC33 File Offset: 0x00089E33
 	public string OLOGEPLCOCC()
 	{
 		string format = "/icon";
@@ -454,139 +454,139 @@ public class WebRpcResponse
 		return string.Format(format, array);
 	}
 
-	// Token: 0x0600B1F5 RID: 45557 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B1F5 RID: 45557 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int CKJNNAEHGDM()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B1F6 RID: 45558 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B1F6 RID: 45558 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void KNOIGNDPPAI(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1F7 RID: 45559 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B1F7 RID: 45559 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void JNIDOKANFBI(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1F8 RID: 45560 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1F8 RID: 45560 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void PDKDJKDLMJL(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1F9 RID: 45561 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1F9 RID: 45561 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void DCPGHDHFKJN(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1FA RID: 45562 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1FA RID: 45562 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void MKGHFMOIHPC(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1FB RID: 45563 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1FB RID: 45563 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void NEMHJHBMDKC(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1FC RID: 45564 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1FC RID: 45564 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void PJLKFPDOOHO(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1FD RID: 45565 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B1FD RID: 45565 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void BOEIDDLAOHJ(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1FE RID: 45566 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B1FE RID: 45566 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void NDDPOECCHFG(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B1FF RID: 45567 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B1FF RID: 45567 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> BDAAEEFJPAC()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B200 RID: 45568 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B200 RID: 45568 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int MFMDDHALLBG()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B201 RID: 45569 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B201 RID: 45569 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void JNFPPNFPBGH(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B202 RID: 45570 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B202 RID: 45570 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void PLJEIDJOGKK(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B203 RID: 45571 RVA: 0x00415DA4 File Offset: 0x00413FA4
+	// Token: 0x0600B203 RID: 45571 RVA: 0x0008BB6B File Offset: 0x00089D6B
 	public string KHDHJDGHEDJ()
 	{
 		return this.<FCLGMEGCOME>k__BackingField;
 	}
 
-	// Token: 0x0600B204 RID: 45572 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B204 RID: 45572 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> CINFBCECGKC()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B205 RID: 45573 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B205 RID: 45573 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void FOLBBLOLFDL(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B207 RID: 45575 RVA: 0x00415DA4 File Offset: 0x00413FA4
+	// Token: 0x0600B207 RID: 45575 RVA: 0x0008BB6B File Offset: 0x00089D6B
 	public string FIJBPALDIHD()
 	{
 		return this.<FCLGMEGCOME>k__BackingField;
 	}
 
-	// Token: 0x0600B208 RID: 45576 RVA: 0x00415CA4 File Offset: 0x00413EA4
+	// Token: 0x0600B208 RID: 45576 RVA: 0x0008BB09 File Offset: 0x00089D09
 	private void FJHIMMPIPNM(int DPNHODJHGJL)
 	{
 		this.<MINKOECFGKK>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B209 RID: 45577 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B209 RID: 45577 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string EJLJGMBEPHE()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B20A RID: 45578 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B20A RID: 45578 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void FIIDONOEDIH(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B20B RID: 45579 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B20B RID: 45579 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> DFJLLHDHHND()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B20C RID: 45580 RVA: 0x00415EAC File Offset: 0x004140AC
+	// Token: 0x0600B20C RID: 45580 RVA: 0x0008BC73 File Offset: 0x00089E73
 	public string NNLBMHKCGNH()
 	{
 		string format = "_Value3";
@@ -598,13 +598,13 @@ public class WebRpcResponse
 		return string.Format(format, array);
 	}
 
-	// Token: 0x0600B20D RID: 45581 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B20D RID: 45581 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void MHOFPBJIKDF(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B20E RID: 45582 RVA: 0x00415EEC File Offset: 0x004140EC
+	// Token: 0x0600B20E RID: 45582 RVA: 0x0008BCB3 File Offset: 0x00089EB3
 	public string DCPNIACBMJE()
 	{
 		string format = "SetParticlesParticleSize";
@@ -617,17 +617,17 @@ public class WebRpcResponse
 	}
 
 	// Token: 0x17000263 RID: 611
-	// (get) Token: 0x0600B222 RID: 45602 RVA: 0x00415DA4 File Offset: 0x00413FA4
-	// (set) Token: 0x0600B20F RID: 45583 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// (get) Token: 0x0600B222 RID: 45602 RVA: 0x0008BB6B File Offset: 0x00089D6B
+	// (set) Token: 0x0600B20F RID: 45583 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	public string DebugMessage { get; private set; }
 
-	// Token: 0x0600B210 RID: 45584 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B210 RID: 45584 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void BMCGDPHBNKA(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B211 RID: 45585 RVA: 0x00415F2C File Offset: 0x0041412C
+	// Token: 0x0600B211 RID: 45585 RVA: 0x0008BCF3 File Offset: 0x00089EF3
 	public string FHMPCEFFJHK()
 	{
 		string format = ".completed";
@@ -639,55 +639,55 @@ public class WebRpcResponse
 		return string.Format(format, array);
 	}
 
-	// Token: 0x0600B212 RID: 45586 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B212 RID: 45586 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void CBBJGNANPLI(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B213 RID: 45587 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B213 RID: 45587 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void DKOFCDBAIIJ(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B214 RID: 45588 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B214 RID: 45588 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void IBLLPEKLNFD(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B215 RID: 45589 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B215 RID: 45589 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void OFGBHFMDKCC(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B216 RID: 45590 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B216 RID: 45590 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void NKNOABGKLCF(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B217 RID: 45591 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B217 RID: 45591 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string DFOJDFDKNKJ()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B218 RID: 45592 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B218 RID: 45592 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void JNGMDEMCBAP(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B219 RID: 45593 RVA: 0x00415C4A File Offset: 0x00413E4A
+	// Token: 0x0600B219 RID: 45593 RVA: 0x0008BAAF File Offset: 0x00089CAF
 	private void JKLLIOHMALB(string DPNHODJHGJL)
 	{
 		this.<FCLGMEGCOME>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B21A RID: 45594 RVA: 0x00415F6C File Offset: 0x0041416C
+	// Token: 0x0600B21A RID: 45594 RVA: 0x0008BD33 File Offset: 0x00089F33
 	public string NIDDALHEBFD()
 	{
 		string format = "DPADVER";
@@ -699,43 +699,43 @@ public class WebRpcResponse
 		return string.Format(format, array);
 	}
 
-	// Token: 0x0600B21B RID: 45595 RVA: 0x00415D5C File Offset: 0x00413F5C
+	// Token: 0x0600B21B RID: 45595 RVA: 0x0008BB23 File Offset: 0x00089D23
 	public string KKLNEKKBBAA()
 	{
 		return this.<JACAIPDALBC>k__BackingField;
 	}
 
-	// Token: 0x0600B21D RID: 45597 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B21D RID: 45597 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int DLOBNKDIJJA()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B21E RID: 45598 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B21E RID: 45598 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> DKCFCPMMDNM()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B21F RID: 45599 RVA: 0x00415D4B File Offset: 0x00413F4B
+	// Token: 0x0600B21F RID: 45599 RVA: 0x0008BB12 File Offset: 0x00089D12
 	private void APLNLPALCLA(string DPNHODJHGJL)
 	{
 		this.<JACAIPDALBC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600B220 RID: 45600 RVA: 0x00415C53 File Offset: 0x00413E53
+	// Token: 0x0600B220 RID: 45600 RVA: 0x0008BAB8 File Offset: 0x00089CB8
 	public Dictionary<string, object> IMFKPFFOLHH()
 	{
 		return this.<MBCLJMBCEAD>k__BackingField;
 	}
 
-	// Token: 0x0600B221 RID: 45601 RVA: 0x00415D54 File Offset: 0x00413F54
+	// Token: 0x0600B221 RID: 45601 RVA: 0x0008BB1B File Offset: 0x00089D1B
 	public int FNOOPFIFCLP()
 	{
 		return this.<MINKOECFGKK>k__BackingField;
 	}
 
-	// Token: 0x0600B223 RID: 45603 RVA: 0x00415C9B File Offset: 0x00413E9B
+	// Token: 0x0600B223 RID: 45603 RVA: 0x0008BB00 File Offset: 0x00089D00
 	private void HGIAIBBIODI(Dictionary<string, object> DPNHODJHGJL)
 	{
 		this.<MBCLJMBCEAD>k__BackingField = DPNHODJHGJL;

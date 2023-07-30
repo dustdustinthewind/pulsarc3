@@ -1,4 +1,4 @@
-// decompiled in dnspy
+// decompiled in dnspy (result from right click -> edit class)
 // cannot recompile
 
 using System;
@@ -12,8 +12,8 @@ using UnityEngine;
 internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 {
 	// Token: 0x1700024F RID: 591
-	// (get) Token: 0x0600AEEE RID: 44782 RVA: 0x0040545A File Offset: 0x0040365A
-	// (set) Token: 0x0600AFA3 RID: 44963 RVA: 0x0040E8A8 File Offset: 0x0040CAA8
+	// (get) Token: 0x0600AEEE RID: 44782 RVA: 0x0008AA60 File Offset: 0x00088C60
+	// (set) Token: 0x0600AFA3 RID: 44963 RVA: 0x004091C8 File Offset: 0x004073C8
 	public string PlayerName
 	{
 		get
@@ -39,11 +39,11 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000258 RID: 600
-	// (get) Token: 0x0600AEEF RID: 44783 RVA: 0x00405462 File Offset: 0x00403662
-	// (set) Token: 0x0600AF5E RID: 44894 RVA: 0x0040A738 File Offset: 0x00408938
+	// (get) Token: 0x0600AEEF RID: 44783 RVA: 0x0008AA68 File Offset: 0x00088C68
+	// (set) Token: 0x0600AF5E RID: 44894 RVA: 0x0008ADEF File Offset: 0x00088FEF
 	public CloudRegionCode CloudRegion { get; protected internal set; }
 
-	// Token: 0x0600AEF0 RID: 44784 RVA: 0x0040546C File Offset: 0x0040366C
+	// Token: 0x0600AEF0 RID: 44784 RVA: 0x00404EBC File Offset: 0x004030BC
 	public void CleanRpcBufferIfMine(PhotonView DFIHBOEOJPI)
 	{
 		if (DFIHBOEOJPI.ownerId != this.LocalPlayer.ID && !this.LocalPlayer.IsMasterClient)
@@ -60,7 +60,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpCleanRpcBuffer(DFIHBOEOJPI);
 	}
 
-	// Token: 0x0600AEF1 RID: 44785 RVA: 0x004054E0 File Offset: 0x004036E0
+	// Token: 0x0600AEF1 RID: 44785 RVA: 0x00404F30 File Offset: 0x00403130
 	private bool LFAPOBNFPPO(object CFKDMFFFPJK, object GOLMELKEAFO)
 	{
 		if (CFKDMFFFPJK == null || GOLMELKEAFO == null)
@@ -110,13 +110,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AEF2 RID: 44786 RVA: 0x004055DD File Offset: 0x004037DD
+	// Token: 0x0600AEF2 RID: 44786 RVA: 0x0008AA70 File Offset: 0x00088C70
 	private void GKNPNNKFFAL(int HOBFECDCMIL)
 	{
 		this.IDIKEJLLFFP.Remove(HOBFECDCMIL);
 	}
 
-	// Token: 0x0600AEF3 RID: 44787 RVA: 0x004055EC File Offset: 0x004037EC
+	// Token: 0x0600AEF3 RID: 44787 RVA: 0x00405030 File Offset: 0x00403230
 	private void MOHFIPIDGOH()
 	{
 		ServerConnection serverConnection = this.NJIFBFEHJKH();
@@ -143,7 +143,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AEF4 RID: 44788 RVA: 0x00405654 File Offset: 0x00403854
+	// Token: 0x0600AEF4 RID: 44788 RVA: 0x00405098 File Offset: 0x00403298
 	protected internal void JHCPMMIEDEE(int NADLIACHBNO, int MNFJDHDDGLC)
 	{
 		Debug.Log(string.Concat(new object[]
@@ -165,13 +165,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		});
 	}
 
-	// Token: 0x0600AEF5 RID: 44789 RVA: 0x004055DD File Offset: 0x004037DD
+	// Token: 0x0600AEF5 RID: 44789 RVA: 0x0008AA70 File Offset: 0x00088C70
 	private void ODOMCOJONDI(int HOBFECDCMIL)
 	{
 		this.IDIKEJLLFFP.Remove(HOBFECDCMIL);
 	}
 
-	// Token: 0x0600AEF6 RID: 44790 RVA: 0x004056D8 File Offset: 0x004038D8
+	// Token: 0x0600AEF6 RID: 44790 RVA: 0x0040511C File Offset: 0x0040331C
 	public void ODGFBFPFHNN(OperationResponse FEOMHKNGOAK)
 	{
 		if (PhotonNetwork.JNJJAMNLOHA.EBAJHBFJFCL() == (ClientState)(-1))
@@ -621,13 +621,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AEF7 RID: 44791 RVA: 0x00406418 File Offset: 0x00404618
+	// Token: 0x0600AEF7 RID: 44791 RVA: 0x0008AA7F File Offset: 0x00088C7F
 	internal void INOOGEKCLGF(int DPNHODJHGJL)
 	{
 		this.<BBNAEKGKOKM>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AEF8 RID: 44792 RVA: 0x00406421 File Offset: 0x00404621
+	// Token: 0x0600AEF8 RID: 44792 RVA: 0x0008AA88 File Offset: 0x00088C88
 	public int GHOANKKKIAI()
 	{
 		if (PhotonNetwork.offlineMode)
@@ -637,7 +637,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return (this.CurrentRoom != null) ? this.CurrentRoom.LKHBADEOGKO() : 1;
 	}
 
-	// Token: 0x0600AEF9 RID: 44793 RVA: 0x00406458 File Offset: 0x00404658
+	// Token: 0x0600AEF9 RID: 44793 RVA: 0x00405E5C File Offset: 0x0040405C
 	protected internal static bool FAAKJJEMNEB(MonoBehaviour KLJMHHFGLCJ, string AOBJJJOJGGF, out MethodInfo MKLKGCPAPOC)
 	{
 		MKLKGCPAPOC = null;
@@ -658,19 +658,19 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return false;
 	}
 
-	// Token: 0x0600AEFA RID: 44794 RVA: 0x004064C4 File Offset: 0x004046C4
+	// Token: 0x0600AEFA RID: 44794 RVA: 0x0008AABC File Offset: 0x00088CBC
 	public string AICJDIJHGMA()
 	{
 		return this.IHAJBEOILOE();
 	}
 
-	// Token: 0x0600AEFB RID: 44795 RVA: 0x004064CC File Offset: 0x004046CC
+	// Token: 0x0600AEFB RID: 44795 RVA: 0x0008AAC4 File Offset: 0x00088CC4
 	public AuthenticationValues IJHIEINKMFP()
 	{
 		return this.<FEGEIIONEMN>k__BackingField;
 	}
 
-	// Token: 0x0600AEFC RID: 44796 RVA: 0x004064D4 File Offset: 0x004046D4
+	// Token: 0x0600AEFC RID: 44796 RVA: 0x00405EC8 File Offset: 0x004040C8
 	internal ExitGames.Client.Photon.Hashtable JFNIJKNOPAN(string PPFBFGBJOHM, Vector3 JOPCODOJBHD, Quaternion LOMLCCLOIKN, byte PNFBEEBFMKC, int[] BJJMPIBPLEN, object[] NOJGGCLPPAM, bool BLOGDPLEMFH)
 	{
 		int num = BJJMPIBPLEN[0];
@@ -709,13 +709,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return hashtable;
 	}
 
-	// Token: 0x0600AEFD RID: 44797 RVA: 0x004055DD File Offset: 0x004037DD
+	// Token: 0x0600AEFD RID: 44797 RVA: 0x0008AA70 File Offset: 0x00088C70
 	private void CMCGLCHBKEN(int HOBFECDCMIL)
 	{
 		this.IDIKEJLLFFP.Remove(HOBFECDCMIL);
 	}
 
-	// Token: 0x0600AEFE RID: 44798 RVA: 0x004065FC File Offset: 0x004047FC
+	// Token: 0x0600AEFE RID: 44798 RVA: 0x00405FF0 File Offset: 0x004041F0
 	protected internal PhotonPlayer ICMGDHDNIJD(int MHLPNLMDILP)
 	{
 		if (this.mActors == null)
@@ -727,7 +727,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return result;
 	}
 
-	// Token: 0x0600AEFF RID: 44799 RVA: 0x00406628 File Offset: 0x00404828
+	// Token: 0x0600AEFF RID: 44799 RVA: 0x0040601C File Offset: 0x0040421C
 	public void DestroyPlayerObjects(int PHIGECOLKKN, bool NOKCKEBHIFJ)
 	{
 		if (PHIGECOLKKN <= 0)
@@ -762,7 +762,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF00 RID: 44800 RVA: 0x00406794 File Offset: 0x00404994
+	// Token: 0x0600AF00 RID: 44800 RVA: 0x0008AACC File Offset: 0x00088CCC
 	public void SetApp(string PPNEJGFIAJP, string MHMPNKGMNMJ)
 	{
 		this.KAIBLIKEDHM = PPNEJGFIAJP.Trim();
@@ -772,7 +772,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF01 RID: 44801 RVA: 0x004067B8 File Offset: 0x004049B8
+	// Token: 0x0600AF01 RID: 44801 RVA: 0x00406188 File Offset: 0x00404388
 	private bool OELIGNFABAJ()
 	{
 		AuthenticationValues authenticationValues;
@@ -791,7 +791,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return this.OpAuthenticateOnce(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CloudRegion.ToString(), this.EncryptionMode, PhotonNetwork.PhotonServerSettings.Protocol);
 	}
 
-	// Token: 0x0600AF02 RID: 44802 RVA: 0x00406858 File Offset: 0x00404A58
+	// Token: 0x0600AF02 RID: 44802 RVA: 0x00406228 File Offset: 0x00404428
 	private void MJLFCEHBMGL()
 	{
 		Debug.Log("SendVacantViewIds()");
@@ -807,7 +807,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(211, list.ToArray(), true, null);
 	}
 
-	// Token: 0x0600AF03 RID: 44803 RVA: 0x00406908 File Offset: 0x00404B08
+	// Token: 0x0600AF03 RID: 44803 RVA: 0x004062D8 File Offset: 0x004044D8
 	private bool JKOFIOHPEAB(object CFKDMFFFPJK, object GOLMELKEAFO)
 	{
 		if (CFKDMFFFPJK == null || GOLMELKEAFO == null)
@@ -858,11 +858,11 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000249 RID: 585
-	// (get) Token: 0x0600AF04 RID: 44804 RVA: 0x00406A05 File Offset: 0x00404C05
-	// (set) Token: 0x0600AF28 RID: 44840 RVA: 0x00408A14 File Offset: 0x00406C14
+	// (get) Token: 0x0600AF04 RID: 44804 RVA: 0x0008AAF0 File Offset: 0x00088CF0
+	// (set) Token: 0x0600AF28 RID: 44840 RVA: 0x0008AC33 File Offset: 0x00088E33
 	public string MasterServerAddress { get; protected internal set; }
 
-	// Token: 0x0600AF05 RID: 44805 RVA: 0x00406A10 File Offset: 0x00404C10
+	// Token: 0x0600AF05 RID: 44805 RVA: 0x004063D8 File Offset: 0x004045D8
 	protected internal bool FKFMPOMNGJE(int PHIGECOLKKN, bool PANGJAJJOLO)
 	{
 		bool flag = this.GHOANKKKIAI() != PHIGECOLKKN;
@@ -889,13 +889,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return false;
 	}
 
-	// Token: 0x0600AF06 RID: 44806 RVA: 0x004055DD File Offset: 0x004037DD
+	// Token: 0x0600AF06 RID: 44806 RVA: 0x0008AA70 File Offset: 0x00088C70
 	private void GAJOHMJPDND(int HOBFECDCMIL)
 	{
 		this.IDIKEJLLFFP.Remove(HOBFECDCMIL);
 	}
 
-	// Token: 0x0600AF07 RID: 44807 RVA: 0x00406AA4 File Offset: 0x00404CA4
+	// Token: 0x0600AF07 RID: 44807 RVA: 0x0040646C File Offset: 0x0040466C
 	public void RunViewUpdate()
 	{
 		if (!PhotonNetwork.connected || PhotonNetwork.offlineMode || this.mActors == null)
@@ -1029,7 +1029,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF08 RID: 44808 RVA: 0x00406F90 File Offset: 0x00405190
+	// Token: 0x0600AF08 RID: 44808 RVA: 0x00406958 File Offset: 0x00404B58
 	private void ODLHBPMCMEB()
 	{
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
@@ -1037,19 +1037,19 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(116, hashtable, true, null);
 	}
 
-	// Token: 0x0600AF09 RID: 44809 RVA: 0x00406FC4 File Offset: 0x004051C4
+	// Token: 0x0600AF09 RID: 44809 RVA: 0x0008AAF8 File Offset: 0x00088CF8
 	private void FHILECJLHMM(int HOBFECDCMIL, object[] FLFEEAHDHDK)
 	{
 		this.IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
 	}
 
-	// Token: 0x0600AF0A RID: 44810 RVA: 0x00406FD3 File Offset: 0x004051D3
+	// Token: 0x0600AF0A RID: 44810 RVA: 0x0008AB07 File Offset: 0x00088D07
 	private void LNKHKBBMMIA(ServerConnection DPNHODJHGJL)
 	{
 		this.<NFFGNBHFDFM>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AF0B RID: 44811 RVA: 0x00406FDC File Offset: 0x004051DC
+	// Token: 0x0600AF0B RID: 44811 RVA: 0x0040698C File Offset: 0x00404B8C
 	public void OpCleanRpcBuffer(int CFLLNEOHNFD)
 	{
 		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
@@ -1063,13 +1063,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(200, null, true, bplhapbmggc);
 	}
 
-	// Token: 0x0600AF0C RID: 44812 RVA: 0x00407017 File Offset: 0x00405217
+	// Token: 0x0600AF0C RID: 44812 RVA: 0x0008AB10 File Offset: 0x00088D10
 	protected internal string DCHLIDBMJPK()
 	{
 		return string.Format("PhotonView with ID ", PhotonNetwork.gameVersion, ".lastCheckpoint.time");
 	}
 
-	// Token: 0x0600AF0D RID: 44813 RVA: 0x00407030 File Offset: 0x00405230
+	// Token: 0x0600AF0D RID: 44813 RVA: 0x004069C8 File Offset: 0x00404BC8
 	public void BEFPEELGJIE(StatusCode FIIDDDBNCLD)
 	{
 		if (PhotonNetwork.logLevel >= PhotonLogLevel.ErrorsOnly)
@@ -1335,7 +1335,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF0E RID: 44814 RVA: 0x00407684 File Offset: 0x00405884
+	// Token: 0x0600AF0E RID: 44814 RVA: 0x0040701C File Offset: 0x0040521C
 	internal GameObject GMINENGCFOE(ExitGames.Client.Photon.Hashtable NNNJPMDHPHH, PhotonPlayer OGKJFFANGMC, GameObject HHLFBCNFLAO)
 	{
 		string text = (string)NNNJPMDHPHH[0];
@@ -1457,7 +1457,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF0F RID: 44815 RVA: 0x00407A24 File Offset: 0x00405C24
+	// Token: 0x0600AF0F RID: 44815 RVA: 0x004073BC File Offset: 0x004055BC
 	protected internal void DKACLKKBLBO(object EPDDBAPELGI)
 	{
 		if (!PhotonNetwork.automaticallySyncScene || !PhotonNetwork.isMasterClient || PhotonNetwork.room == null)
@@ -1498,7 +1498,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.SendOutgoingCommands();
 	}
 
-	// Token: 0x0600AF10 RID: 44816 RVA: 0x00407B44 File Offset: 0x00405D44
+	// Token: 0x0600AF10 RID: 44816 RVA: 0x004074DC File Offset: 0x004056DC
 	public void OpRemoveCompleteCache()
 	{
 		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
@@ -1509,13 +1509,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(0, null, true, bplhapbmggc);
 	}
 
-	// Token: 0x0600AF11 RID: 44817 RVA: 0x00406FC4 File Offset: 0x004051C4
+	// Token: 0x0600AF11 RID: 44817 RVA: 0x0008AAF8 File Offset: 0x00088CF8
 	private void MIEGGLGIPBJ(int HOBFECDCMIL, object[] FLFEEAHDHDK)
 	{
 		this.IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
 	}
 
-	// Token: 0x0600AF12 RID: 44818 RVA: 0x00407B74 File Offset: 0x00405D74
+	// Token: 0x0600AF12 RID: 44818 RVA: 0x0040750C File Offset: 0x0040570C
 	public BNGIGHBHPEH(string OBCEIJGMKGB, ConnectionProtocol FDGOINDINNH) : base(FDGOINDINNH)
 	{
 		base.Listener = this;
@@ -1533,7 +1533,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.State = ClientState.PeerCreated;
 	}
 
-	// Token: 0x0600AF13 RID: 44819 RVA: 0x00407CF4 File Offset: 0x00405EF4
+	// Token: 0x0600AF13 RID: 44819 RVA: 0x0040768C File Offset: 0x0040588C
 	private void NGAEPLGAGAL(int KHACEEGCPEP)
 	{
 		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
@@ -1548,7 +1548,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000255 RID: 597
-	// (get) Token: 0x0600AF14 RID: 44820 RVA: 0x00407D2F File Offset: 0x00405F2F
+	// (get) Token: 0x0600AF14 RID: 44820 RVA: 0x0008AB26 File Offset: 0x00088D26
 	protected internal int LALFOLKNJJD
 	{
 		get
@@ -1557,7 +1557,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF15 RID: 44821 RVA: 0x00407D59 File Offset: 0x00405F59
+	// Token: 0x0600AF15 RID: 44821 RVA: 0x0008AB50 File Offset: 0x00088D50
 	protected internal void POPMDHDDMGJ()
 	{
 		BNGIGHBHPEH.CLOLHKCFMJP(PhotonNetworkingMessage.OnJoinedLobby, new object[]
@@ -1566,19 +1566,19 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		});
 	}
 
-	// Token: 0x0600AF16 RID: 44822 RVA: 0x00407D6F File Offset: 0x00405F6F
+	// Token: 0x0600AF16 RID: 44822 RVA: 0x0008AB66 File Offset: 0x00088D66
 	protected internal void ENAIECJFPHM(List<Region> DPNHODJHGJL)
 	{
 		this.<GMPLFLCBMGI>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AF17 RID: 44823 RVA: 0x00407D78 File Offset: 0x00405F78
+	// Token: 0x0600AF17 RID: 44823 RVA: 0x0008AB6F File Offset: 0x00088D6F
 	public ClientState EBAJHBFJFCL()
 	{
 		return this.<CKEGJBJJPEC>k__BackingField;
 	}
 
-	// Token: 0x0600AF18 RID: 44824 RVA: 0x00407D80 File Offset: 0x00405F80
+	// Token: 0x0600AF18 RID: 44824 RVA: 0x004076C8 File Offset: 0x004058C8
 	public static void CLOLHKCFMJP(PhotonNetworkingMessage LELHNDDCKCO, object[] GNNEKCBOBEG)
 	{
 		HashSet<GameObject> hashSet;
@@ -1602,11 +1602,11 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000247 RID: 583
-	// (get) Token: 0x0600AFC2 RID: 44994 RVA: 0x0040FA3D File Offset: 0x0040DC3D
-	// (set) Token: 0x0600AF19 RID: 44825 RVA: 0x00407E30 File Offset: 0x00406030
+	// (get) Token: 0x0600AFC2 RID: 44994 RVA: 0x0008B165 File Offset: 0x00089365
+	// (set) Token: 0x0600AF19 RID: 44825 RVA: 0x0008AB77 File Offset: 0x00088D77
 	public bool IsUsingNameServer { get; protected internal set; }
 
-	// Token: 0x0600AF1A RID: 44826 RVA: 0x00407E3C File Offset: 0x0040603C
+	// Token: 0x0600AF1A RID: 44826 RVA: 0x00407778 File Offset: 0x00405978
 	protected internal void MBCHEFNAJFH(ExitGames.Client.Photon.Hashtable LKGFKFMABPG, int BGNEKPOLEEP = 0)
 	{
 		if (LKGFKFMABPG == null || !LKGFKFMABPG.ContainsKey(0))
@@ -1872,7 +1872,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF1B RID: 44827 RVA: 0x004085C8 File Offset: 0x004067C8
+	// Token: 0x0600AF1B RID: 44827 RVA: 0x00407F04 File Offset: 0x00406104
 	public void OpCleanRpcBuffer(PhotonView DFIHBOEOJPI)
 	{
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
@@ -1884,7 +1884,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(200, hashtable, true, bplhapbmggc);
 	}
 
-	// Token: 0x0600AF1C RID: 44828 RVA: 0x00408610 File Offset: 0x00406810
+	// Token: 0x0600AF1C RID: 44828 RVA: 0x0008AB80 File Offset: 0x00088D80
 	public virtual bool AKKLKCIHNDO(string[] MIMEHFLKIIG)
 	{
 		if (this.POHIMACBDGL)
@@ -1897,13 +1897,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000253 RID: 595
-	// (get) Token: 0x0600AF1D RID: 44829 RVA: 0x00408634 File Offset: 0x00406834
-	// (set) Token: 0x0600AFD8 RID: 45016 RVA: 0x00411BB6 File Offset: 0x0040FDB6
+	// (get) Token: 0x0600AF1D RID: 44829 RVA: 0x0008ABA4 File Offset: 0x00088DA4
+	// (set) Token: 0x0600AFD8 RID: 45016 RVA: 0x0008B1BF File Offset: 0x000893BF
 	public int PlayersInRoomsCount { get; internal set; }
 
 	// Token: 0x17000259 RID: 601
-	// (get) Token: 0x0600AF1E RID: 44830 RVA: 0x0040863C File Offset: 0x0040683C
-	// (set) Token: 0x0600AF79 RID: 44921 RVA: 0x0040B521 File Offset: 0x00409721
+	// (get) Token: 0x0600AF1E RID: 44830 RVA: 0x0008ABAC File Offset: 0x00088DAC
+	// (set) Token: 0x0600AF79 RID: 44921 RVA: 0x0008AE77 File Offset: 0x00089077
 	public int mMasterClientId
 	{
 		get
@@ -1923,7 +1923,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF1F RID: 44831 RVA: 0x00408670 File Offset: 0x00406870
+	// Token: 0x0600AF1F RID: 44831 RVA: 0x00407F4C File Offset: 0x0040614C
 	public void ChangeLocalID(int LGHIPFAEONM)
 	{
 		if (this.LocalPlayer == null)
@@ -1939,7 +1939,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.LEMBPMNPHCK();
 	}
 
-	// Token: 0x0600AF20 RID: 44832 RVA: 0x00408714 File Offset: 0x00406914
+	// Token: 0x0600AF20 RID: 44832 RVA: 0x00407FF0 File Offset: 0x004061F0
 	private static int IOCOEKOOLLA(PhotonPlayer[] NEJPNIGJLGP, int AIMBEFMGEFM)
 	{
 		if (NEJPNIGJLGP == null || NEJPNIGJLGP.Length == 0)
@@ -1961,7 +1961,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return num;
 	}
 
-	// Token: 0x0600AF21 RID: 44833 RVA: 0x00408774 File Offset: 0x00406974
+	// Token: 0x0600AF21 RID: 44833 RVA: 0x0008ABE0 File Offset: 0x00088DE0
 	public void SetSendingEnabled(byte PNFBEEBFMKC, bool CKALCHJAFBE)
 	{
 		if (!CKALCHJAFBE)
@@ -1974,7 +1974,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF22 RID: 44834 RVA: 0x0040879B File Offset: 0x0040699B
+	// Token: 0x0600AF22 RID: 44834 RVA: 0x0008AC07 File Offset: 0x00088E07
 	public override bool OpFindFriends(string[] MIMEHFLKIIG)
 	{
 		if (this.POHIMACBDGL)
@@ -1986,13 +1986,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.OpFindFriends(MIMEHFLKIIG);
 	}
 
-	// Token: 0x0600AF23 RID: 44835 RVA: 0x004087BF File Offset: 0x004069BF
+	// Token: 0x0600AF23 RID: 44835 RVA: 0x0008AC2B File Offset: 0x00088E2B
 	public List<Region> ILANOBPPIBF()
 	{
 		return this.<GMPLFLCBMGI>k__BackingField;
 	}
 
-	// Token: 0x0600AF24 RID: 44836 RVA: 0x004087C8 File Offset: 0x004069C8
+	// Token: 0x0600AF24 RID: 44836 RVA: 0x00408050 File Offset: 0x00406250
 	protected internal void ANEENOJMDOJ(int[] HOMAECIGJEJ)
 	{
 		foreach (int num in HOMAECIGJEJ)
@@ -2004,13 +2004,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF25 RID: 44837 RVA: 0x00406FC4 File Offset: 0x004051C4
+	// Token: 0x0600AF25 RID: 44837 RVA: 0x0008AAF8 File Offset: 0x00088CF8
 	private void DGEJLOAMLHI(int HOBFECDCMIL, object[] FLFEEAHDHDK)
 	{
 		this.IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
 	}
 
-	// Token: 0x0600AF26 RID: 44838 RVA: 0x00408824 File Offset: 0x00406A24
+	// Token: 0x0600AF26 RID: 44838 RVA: 0x004080AC File Offset: 0x004062AC
 	protected internal void LBCBHNFEDDF(bool IJJEEIMFOHD)
 	{
 		if (this.IDIKEJLLFFP.Count > 1)
@@ -2037,7 +2037,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		PhotonNetwork.JIOIILCHMJL = 0;
 	}
 
-	// Token: 0x0600AF27 RID: 44839 RVA: 0x0040891C File Offset: 0x00406B1C
+	// Token: 0x0600AF27 RID: 44839 RVA: 0x004081A4 File Offset: 0x004063A4
 	protected internal void HMNMFOJCHBJ(bool IJJEEIMFOHD)
 	{
 		if (this.IDIKEJLLFFP.Count > 1)
@@ -2064,7 +2064,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		PhotonNetwork.JIOIILCHMJL = 1;
 	}
 
-	// Token: 0x0600AF29 RID: 44841 RVA: 0x00408A20 File Offset: 0x00406C20
+	// Token: 0x0600AF29 RID: 44841 RVA: 0x0040829C File Offset: 0x0040649C
 	private void GIGMNEGOABN(int DIODBOKJKHM, int EJOIHHAHDLD, bool FEINGCNNFGM)
 	{
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
@@ -2089,7 +2089,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent((byte)-181, hashtable2, false, raiseEventOptions3);
 	}
 
-	// Token: 0x0600AF2A RID: 44842 RVA: 0x00408AC4 File Offset: 0x00406CC4
+	// Token: 0x0600AF2A RID: 44842 RVA: 0x00408340 File Offset: 0x00406540
 	private bool MNHBLADFKAH()
 	{
 		AuthenticationValues authenticationValues;
@@ -2107,7 +2107,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return this.OIPJGPKILNF(this.KAIBLIKEDHM, this.EOCFDCJNAGM, gpdfhodmoij, this.CloudRegion.ToString(), this.EncryptionMode, PhotonNetwork.PhotonServerSettings.Protocol);
 	}
 
-	// Token: 0x0600AF2B RID: 44843 RVA: 0x00408B64 File Offset: 0x00406D64
+	// Token: 0x0600AF2B RID: 44843 RVA: 0x004083E0 File Offset: 0x004065E0
 	private object[] HJOMIJBPHNH(PhotonView DFIHBOEOJPI)
 	{
 		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Off)
@@ -2159,7 +2159,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return null;
 	}
 
-	// Token: 0x0600AF2C RID: 44844 RVA: 0x00408774 File Offset: 0x00406974
+	// Token: 0x0600AF2C RID: 44844 RVA: 0x0008ABE0 File Offset: 0x00088DE0
 	public void HOOHJBDOKEO(byte PNFBEEBFMKC, bool CKALCHJAFBE)
 	{
 		if (!CKALCHJAFBE)
@@ -2172,7 +2172,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF2D RID: 44845 RVA: 0x00408C87 File Offset: 0x00406E87
+	// Token: 0x0600AF2D RID: 44845 RVA: 0x0008AC3C File Offset: 0x00088E3C
 	public void GBMLENLLNHD(bool NOKCKEBHIFJ)
 	{
 		if (!NOKCKEBHIFJ)
@@ -2183,7 +2183,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.HMNMFOJCHBJ(false);
 	}
 
-	// Token: 0x0600AF2E RID: 44846 RVA: 0x00408CA4 File Offset: 0x00406EA4
+	// Token: 0x0600AF2E RID: 44846 RVA: 0x00408504 File Offset: 0x00406704
 	public bool AGAOBGGMCKN(string MDGGHHCAHKF, object GNNEKCBOBEG)
 	{
 		return this.OpCustom(183, new Dictionary<byte, object>
@@ -2199,7 +2199,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}, true);
 	}
 
-	// Token: 0x0600AF2F RID: 44847 RVA: 0x00408CDC File Offset: 0x00406EDC
+	// Token: 0x0600AF2F RID: 44847 RVA: 0x0040853C File Offset: 0x0040673C
 	public bool OpCreateGame(AKBOPCNHFFJ BDMKOAGEHPM)
 	{
 		bool flag = this.EHALCLFLGJF == ServerConnection.GameServer;
@@ -2213,7 +2213,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.OpCreateRoom(BDMKOAGEHPM);
 	}
 
-	// Token: 0x0600AF30 RID: 44848 RVA: 0x00408D21 File Offset: 0x00406F21
+	// Token: 0x0600AF30 RID: 44848 RVA: 0x0008AC57 File Offset: 0x00088E57
 	private void ONELBBFGFOM()
 	{
 		this.mGameList = new Dictionary<string, RoomInfo>();
@@ -2225,7 +2225,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF31 RID: 44849 RVA: 0x00408D58 File Offset: 0x00406F58
+	// Token: 0x0600AF31 RID: 44849 RVA: 0x00408584 File Offset: 0x00406784
 	private bool INCNOLHOHGI(ParameterInfo[] LFONMECHEJD, Type[] HAKMJIHLGNI)
 	{
 		if (LFONMECHEJD.Length < HAKMJIHLGNI.Length)
@@ -2243,7 +2243,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AF32 RID: 44850 RVA: 0x00408DC8 File Offset: 0x00406FC8
+	// Token: 0x0600AF32 RID: 44850 RVA: 0x004085F4 File Offset: 0x004067F4
 	public object[] FetchInstantiationData(int HOBFECDCMIL)
 	{
 		object[] result = null;
@@ -2255,7 +2255,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return result;
 	}
 
-	// Token: 0x0600AF33 RID: 44851 RVA: 0x00408DF0 File Offset: 0x00406FF0
+	// Token: 0x0600AF33 RID: 44851 RVA: 0x0040861C File Offset: 0x0040681C
 	internal ExitGames.Client.Photon.Hashtable JBBJFFKDHNO(string PPFBFGBJOHM, Vector3 JOPCODOJBHD, Quaternion LOMLCCLOIKN, byte PNFBEEBFMKC, int[] BJJMPIBPLEN, object[] NOJGGCLPPAM, bool BLOGDPLEMFH)
 	{
 		int num = BJJMPIBPLEN[0];
@@ -2294,7 +2294,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return hashtable;
 	}
 
-	// Token: 0x0600AF34 RID: 44852 RVA: 0x00408F18 File Offset: 0x00407118
+	// Token: 0x0600AF34 RID: 44852 RVA: 0x00408744 File Offset: 0x00406944
 	public bool GetRegions()
 	{
 		if (this.EHALCLFLGJF != ServerConnection.NameServer)
@@ -2309,7 +2309,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return flag;
 	}
 
-	// Token: 0x0600AF35 RID: 44853 RVA: 0x00408F50 File Offset: 0x00407150
+	// Token: 0x0600AF35 RID: 44853 RVA: 0x0040877C File Offset: 0x0040697C
 	public bool Connect(string BPMNPBDOMFO, ServerConnection HMGBJCGOLMI)
 	{
 		if (PhotonHandler.MBIFDLCKGKN)
@@ -2351,7 +2351,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return flag;
 	}
 
-	// Token: 0x0600AF36 RID: 44854 RVA: 0x00409014 File Offset: 0x00407214
+	// Token: 0x0600AF36 RID: 44854 RVA: 0x0008AC8E File Offset: 0x00088E8E
 	public override bool OpJoinRandomRoom(OpJoinRandomRoomParams IFIMMPPLLHI)
 	{
 		this.AJFMHFLGCFN = new AKBOPCNHFFJ();
@@ -2361,7 +2361,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.OpJoinRandomRoom(IFIMMPPLLHI);
 	}
 
-	// Token: 0x0600AF37 RID: 44855 RVA: 0x00409051 File Offset: 0x00407251
+	// Token: 0x0600AF37 RID: 44855 RVA: 0x0008ACCB File Offset: 0x00088ECB
 	private void IFPPBJINADG()
 	{
 		this.mGameList = new Dictionary<string, RoomInfo>();
@@ -2373,7 +2373,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF38 RID: 44856 RVA: 0x00409088 File Offset: 0x00407288
+	// Token: 0x0600AF38 RID: 44856 RVA: 0x00408840 File Offset: 0x00406A40
 	public PhotonView GetPhotonView(int NADLIACHBNO)
 	{
 		PhotonView photonView = null;
@@ -2395,7 +2395,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return photonView;
 	}
 
-	// Token: 0x0600AF39 RID: 44857 RVA: 0x00409109 File Offset: 0x00407309
+	// Token: 0x0600AF39 RID: 44857 RVA: 0x0008AD02 File Offset: 0x00088F02
 	public virtual bool POGJKHNENIK(string[] MIMEHFLKIIG)
 	{
 		if (this.POHIMACBDGL)
@@ -2407,7 +2407,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.KLGCDNLPLAO(MIMEHFLKIIG);
 	}
 
-	// Token: 0x0600AF3A RID: 44858 RVA: 0x00409130 File Offset: 0x00407330
+	// Token: 0x0600AF3A RID: 44858 RVA: 0x004088C4 File Offset: 0x00406AC4
 	public void FMAPFMDBMLN(StatusCode FIIDDDBNCLD)
 	{
 		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
@@ -2676,7 +2676,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF3B RID: 44859 RVA: 0x00409784 File Offset: 0x00407984
+	// Token: 0x0600AF3B RID: 44859 RVA: 0x00408F18 File Offset: 0x00407118
 	private bool IHAJPLJACML(ParameterInfo[] LFONMECHEJD, Type[] HAKMJIHLGNI)
 	{
 		if (LFONMECHEJD.Length < HAKMJIHLGNI.Length)
@@ -2694,7 +2694,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AF3C RID: 44860 RVA: 0x004097F4 File Offset: 0x004079F4
+	// Token: 0x0600AF3C RID: 44860 RVA: 0x00408F88 File Offset: 0x00407188
 	protected internal void KHKMFIFGPCH(ServerConnection NKGHPPHEGCO)
 	{
 		ConnectionProtocol connectionProtocol = base.TransportProtocol;
@@ -2749,7 +2749,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		base.TransportProtocol = connectionProtocol;
 	}
 
-	// Token: 0x0600AF3D RID: 44861 RVA: 0x00409924 File Offset: 0x00407B24
+	// Token: 0x0600AF3D RID: 44861 RVA: 0x004090B8 File Offset: 0x004072B8
 	private void LLMNFGHNIND(int DIODBOKJKHM, int EJOIHHAHDLD, bool FEINGCNNFGM)
 	{
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
@@ -2775,7 +2775,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(204, hashtable2, true, raiseEventOptions);
 	}
 
-	// Token: 0x0600AF3E RID: 44862 RVA: 0x004099C8 File Offset: 0x00407BC8
+	// Token: 0x0600AF3E RID: 44862 RVA: 0x0008AD26 File Offset: 0x00088F26
 	public virtual bool JPMHBPKKGJD(OpJoinRandomRoomParams IFIMMPPLLHI)
 	{
 		this.AJFMHFLGCFN = new AKBOPCNHFFJ();
@@ -2786,22 +2786,22 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x1700024D RID: 589
-	// (get) Token: 0x0600AF3F RID: 44863 RVA: 0x00409A05 File Offset: 0x00407C05
-	// (set) Token: 0x0600AF70 RID: 44912 RVA: 0x0040B089 File Offset: 0x00409289
+	// (get) Token: 0x0600AF3F RID: 44863 RVA: 0x0008AD63 File Offset: 0x00088F63
+	// (set) Token: 0x0600AF70 RID: 44912 RVA: 0x0008AE6E File Offset: 0x0008906E
 	public TypedLobby lobby { get; set; }
 
-	// Token: 0x0600AF40 RID: 44864 RVA: 0x00409A0D File Offset: 0x00407C0D
+	// Token: 0x0600AF40 RID: 44864 RVA: 0x0008AD6B File Offset: 0x00088F6B
 	private bool CGPLAHHGMEO()
 	{
 		return PhotonNetwork.EnableLobbyStatistics && this.NJIFBFEHJKH() == ServerConnection.MasterServer;
 	}
 
 	// Token: 0x17000251 RID: 593
-	// (get) Token: 0x0600AF41 RID: 44865 RVA: 0x00409A25 File Offset: 0x00407C25
-	// (set) Token: 0x0600AF49 RID: 44873 RVA: 0x00409DE4 File Offset: 0x00407FE4
+	// (get) Token: 0x0600AF41 RID: 44865 RVA: 0x0008AD83 File Offset: 0x00088F83
+	// (set) Token: 0x0600AF49 RID: 44873 RVA: 0x0008ADCB File Offset: 0x00088FCB
 	public PhotonPlayer LocalPlayer { get; internal set; }
 
-	// Token: 0x0600AF42 RID: 44866 RVA: 0x00409A30 File Offset: 0x00407C30
+	// Token: 0x0600AF42 RID: 44866 RVA: 0x0040915C File Offset: 0x0040735C
 	protected internal static bool IIHAIKHPABG(MonoBehaviour KLJMHHFGLCJ, string AOBJJJOJGGF, out MethodInfo MKLKGCPAPOC)
 	{
 		MKLKGCPAPOC = null;
@@ -2822,7 +2822,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AF43 RID: 44867 RVA: 0x00409A9C File Offset: 0x00407C9C
+	// Token: 0x0600AF43 RID: 44867 RVA: 0x00408584 File Offset: 0x00406784
 	private bool DHGPFGBOLGO(ParameterInfo[] LFONMECHEJD, Type[] HAKMJIHLGNI)
 	{
 		if (LFONMECHEJD.Length < HAKMJIHLGNI.Length)
@@ -2840,7 +2840,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AF44 RID: 44868 RVA: 0x00409B0C File Offset: 0x00407D0C
+	// Token: 0x0600AF44 RID: 44868 RVA: 0x004091C8 File Offset: 0x004073C8
 	public void MPHFPMJMGJG(string DPNHODJHGJL)
 	{
 		if (string.IsNullOrEmpty(DPNHODJHGJL) || DPNHODJHGJL.Equals(this.OBCEIJGMKGB))
@@ -2858,7 +2858,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF45 RID: 44869 RVA: 0x00409B68 File Offset: 0x00407D68
+	// Token: 0x0600AF45 RID: 44869 RVA: 0x00409224 File Offset: 0x00407424
 	private object[] ILACHMNMKGF(object[] BJIEGLPODKG, object[] BGJHIKDFIMP)
 	{
 		if (BGJHIKDFIMP == null || BJIEGLPODKG == null || BJIEGLPODKG.Length != BGJHIKDFIMP.Length)
@@ -2910,7 +2910,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return BJIEGLPODKG;
 	}
 
-	// Token: 0x0600AF46 RID: 44870 RVA: 0x00409C38 File Offset: 0x00407E38
+	// Token: 0x0600AF46 RID: 44870 RVA: 0x004092F4 File Offset: 0x004074F4
 	public void MKMDDMAAPMI(int PHIGECOLKKN, bool NOKCKEBHIFJ)
 	{
 		if (PHIGECOLKKN <= 0)
@@ -2945,7 +2945,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF47 RID: 44871 RVA: 0x00409DA4 File Offset: 0x00407FA4
+	// Token: 0x0600AF47 RID: 44871 RVA: 0x0008AD8B File Offset: 0x00088F8B
 	public override void Disconnect()
 	{
 		if (base.PeerState == PeerStateValue.Disconnected)
@@ -2961,16 +2961,16 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x1700024B RID: 587
-	// (get) Token: 0x0600AF63 RID: 44899 RVA: 0x0040A741 File Offset: 0x00408941
-	// (set) Token: 0x0600AF48 RID: 44872 RVA: 0x00406FD3 File Offset: 0x004051D3
+	// (get) Token: 0x0600AF63 RID: 44899 RVA: 0x0008ADF8 File Offset: 0x00088FF8
+	// (set) Token: 0x0600AF48 RID: 44872 RVA: 0x0008AB07 File Offset: 0x00088D07
 	protected internal ServerConnection EHALCLFLGJF { get; private set; }
 
 	// Token: 0x17000245 RID: 581
-	// (get) Token: 0x0600AF6B RID: 44907 RVA: 0x004064CC File Offset: 0x004046CC
-	// (set) Token: 0x0600AF4A RID: 44874 RVA: 0x00409DED File Offset: 0x00407FED
+	// (get) Token: 0x0600AF6B RID: 44907 RVA: 0x0008AAC4 File Offset: 0x00088CC4
+	// (set) Token: 0x0600AF4A RID: 44874 RVA: 0x0008ADD4 File Offset: 0x00088FD4
 	public AuthenticationValues AuthValues { get; set; }
 
-	// Token: 0x0600AF4B RID: 44875 RVA: 0x00409DF8 File Offset: 0x00407FF8
+	// Token: 0x0600AF4B RID: 44875 RVA: 0x00409460 File Offset: 0x00407660
 	public void ELEMKNKGNIP(DebugLevel DCMIEONIJMA, string JKPJCEMPAGH)
 	{
 		if (DCMIEONIJMA == DebugLevel.ERROR)
@@ -2991,7 +2991,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF4C RID: 44876 RVA: 0x00409E60 File Offset: 0x00408060
+	// Token: 0x0600AF4C RID: 44876 RVA: 0x004094C8 File Offset: 0x004076C8
 	private static int DAOLLJGIJOI(PhotonPlayer[] NEJPNIGJLGP, int AIMBEFMGEFM)
 	{
 		if (NEJPNIGJLGP == null || NEJPNIGJLGP.Length == 0)
@@ -3012,7 +3012,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return num;
 	}
 
-	// Token: 0x0600AF4D RID: 44877 RVA: 0x00409EC0 File Offset: 0x004080C0
+	// Token: 0x0600AF4D RID: 44877 RVA: 0x00409528 File Offset: 0x00407728
 	protected internal void GNFPGMGGDNN(int[] HOMAECIGJEJ)
 	{
 		foreach (int num in HOMAECIGJEJ)
@@ -3024,7 +3024,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF4E RID: 44878 RVA: 0x00409F1C File Offset: 0x0040811C
+	// Token: 0x0600AF4E RID: 44878 RVA: 0x00409584 File Offset: 0x00407784
 	protected internal void EPGIIBMOHEG(int NADLIACHBNO, int MLBADICEKFF)
 	{
 		Debug.Log(string.Concat(new object[]
@@ -3046,7 +3046,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		});
 	}
 
-	// Token: 0x0600AF4F RID: 44879 RVA: 0x00409FA0 File Offset: 0x004081A0
+	// Token: 0x0600AF4F RID: 44879 RVA: 0x00409608 File Offset: 0x00407808
 	private void IJCJBPEELEM(Dictionary<byte, object> FNHGNHCOMBH)
 	{
 		if (this.AuthMode == AuthModeOption.Auth && this.DebugOut == DebugLevel.OFF)
@@ -3076,7 +3076,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF50 RID: 44880 RVA: 0x0040A064 File Offset: 0x00408264
+	// Token: 0x0600AF50 RID: 44880 RVA: 0x004096CC File Offset: 0x004078CC
 	private object[] MFKHMJBJDLE(object[] BJIEGLPODKG, object[] BGJHIKDFIMP)
 	{
 		if (BGJHIKDFIMP == null || BJIEGLPODKG == null || BJIEGLPODKG.Length != BGJHIKDFIMP.Length)
@@ -3128,7 +3128,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return BJIEGLPODKG;
 	}
 
-	// Token: 0x0600AF51 RID: 44881 RVA: 0x0040A134 File Offset: 0x00408334
+	// Token: 0x0600AF51 RID: 44881 RVA: 0x0040979C File Offset: 0x0040799C
 	private object[] OAMPHAGPLEL(PhotonView DFIHBOEOJPI)
 	{
 		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Off)
@@ -3180,7 +3180,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return null;
 	}
 
-	// Token: 0x0600AF52 RID: 44882 RVA: 0x0040A258 File Offset: 0x00408458
+	// Token: 0x0600AF52 RID: 44882 RVA: 0x004098C0 File Offset: 0x00407AC0
 	public virtual bool NKIJJOPNGCB(AKBOPCNHFFJ HBJBKOPJDKJ)
 	{
 		bool flag = this.IGDBHCGGHFF() == ServerConnection.GameServer;
@@ -3193,7 +3193,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.FHBKMBGDDMC(HBJBKOPJDKJ);
 	}
 
-	// Token: 0x0600AF53 RID: 44883 RVA: 0x0040A2A4 File Offset: 0x004084A4
+	// Token: 0x0600AF53 RID: 44883 RVA: 0x0040990C File Offset: 0x00407B0C
 	private void NDPIAMOMGME()
 	{
 		ServerConnection serverConnection = this.EHALCLFLGJF;
@@ -3220,7 +3220,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF54 RID: 44884 RVA: 0x0040A30C File Offset: 0x0040850C
+	// Token: 0x0600AF54 RID: 44884 RVA: 0x00409974 File Offset: 0x00407B74
 	private void AJGMCCAPBJK()
 	{
 		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
@@ -3229,7 +3229,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF55 RID: 44885 RVA: 0x0040A370 File Offset: 0x00408570
+	// Token: 0x0600AF55 RID: 44885 RVA: 0x004099D8 File Offset: 0x00407BD8
 	public void GKOJGJGKOOP(int PNFBEEBFMKC)
 	{
 		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
@@ -3241,7 +3241,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF56 RID: 44886 RVA: 0x0040A3E0 File Offset: 0x004085E0
+	// Token: 0x0600AF56 RID: 44886 RVA: 0x00409A48 File Offset: 0x00407C48
 	private void LEMBPMNPHCK()
 	{
 		this.mPlayerListCopy = new PhotonPlayer[this.mActors.Count];
@@ -3258,13 +3258,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.mOtherPlayerListCopy = list.ToArray();
 	}
 
-	// Token: 0x0600AF57 RID: 44887 RVA: 0x0040A460 File Offset: 0x00408660
+	// Token: 0x0600AF57 RID: 44887 RVA: 0x0008ADDD File Offset: 0x00088FDD
 	protected internal void NHKBIPAKHOJ(string DPNHODJHGJL)
 	{
 		this.<GGFFKAEDLBB>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AF58 RID: 44888 RVA: 0x0040A46C File Offset: 0x0040866C
+	// Token: 0x0600AF58 RID: 44888 RVA: 0x00409AC8 File Offset: 0x00407CC8
 	public void OPPHEFOAGFJ(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
 	{
 		if (JKOIGFLNNCN != null)
@@ -3285,11 +3285,11 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000252 RID: 594
-	// (get) Token: 0x0600AF81 RID: 44929 RVA: 0x0040C62D File Offset: 0x0040A82D
-	// (set) Token: 0x0600AF59 RID: 44889 RVA: 0x0040A4CF File Offset: 0x004086CF
+	// (get) Token: 0x0600AF81 RID: 44929 RVA: 0x0008AECD File Offset: 0x000890CD
+	// (set) Token: 0x0600AF59 RID: 44889 RVA: 0x0008ADE6 File Offset: 0x00088FE6
 	public int PlayersOnMasterCount { get; internal set; }
 
-	// Token: 0x0600AF5A RID: 44890 RVA: 0x0040A4D8 File Offset: 0x004086D8
+	// Token: 0x0600AF5A RID: 44890 RVA: 0x00409B2C File Offset: 0x00407D2C
 	public void PNCLMPIPPJB(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
 	{
 		if (JKOIGFLNNCN != null)
@@ -3310,7 +3310,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF5B RID: 44891 RVA: 0x0040A53C File Offset: 0x0040873C
+	// Token: 0x0600AF5B RID: 44891 RVA: 0x004099D8 File Offset: 0x00407BD8
 	public void RemoveRPCsInGroup(int PNFBEEBFMKC)
 	{
 		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
@@ -3322,7 +3322,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF5C RID: 44892 RVA: 0x0040A5AC File Offset: 0x004087AC
+	// Token: 0x0600AF5C RID: 44892 RVA: 0x00409B90 File Offset: 0x00407D90
 	public void SetInterestGroups(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
 	{
 		if (JKOIGFLNNCN != null)
@@ -3374,7 +3374,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpChangeGroups(JKOIGFLNNCN, OBKFHNACHIA);
 	}
 
-	// Token: 0x0600AF5D RID: 44893 RVA: 0x0040A6D4 File Offset: 0x004088D4
+	// Token: 0x0600AF5D RID: 44893 RVA: 0x00409974 File Offset: 0x00407B74
 	private void NMNFGFMHAMP()
 	{
 		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
@@ -3383,13 +3383,19 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF5F RID: 44895 RVA: 0x0040A741 File Offset: 0x00408941
+	// Token: 0x0600AF5F RID: 44895 RVA: 0x0008ADF8 File Offset: 0x00088FF8
 	protected internal ServerConnection NJIFBFEHJKH()
 	{
 		return this.<NFFGNBHFDFM>k__BackingField;
 	}
 
-	// Token: 0x0600AF61 RID: 44897 RVA: 0x0040A7C4 File Offset: 0x004089C4
+	// Token: 0x0600AF60 RID: 44896 RVA: 0x00409CB8 File Offset: 0x00407EB8
+	// Note: this type is marked as 'beforefieldinit'.
+	static BNGIGHBHPEH()
+	{
+	}
+
+	// Token: 0x0600AF61 RID: 44897 RVA: 0x00409D30 File Offset: 0x00407F30
 	protected internal void DMCKEABNFPJ()
 	{
 		if (!PhotonNetwork.automaticallySyncScene || PhotonNetwork.isMasterClient || PhotonNetwork.room == null)
@@ -3414,7 +3420,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF62 RID: 44898 RVA: 0x0040A878 File Offset: 0x00408A78
+	// Token: 0x0600AF62 RID: 44898 RVA: 0x00409DE4 File Offset: 0x00407FE4
 	private void GLLEOIEDBOB(int IECJKEIJLCP, EventData EKDHPAFJKFA)
 	{
 		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
@@ -3486,7 +3492,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		BNGIGHBHPEH.SendMonoMessage(lelhnddckco2, array4);
 	}
 
-	// Token: 0x0600AF64 RID: 44900 RVA: 0x0040AA3D File Offset: 0x00408C3D
+	// Token: 0x0600AF64 RID: 44900 RVA: 0x0008AE00 File Offset: 0x00089000
 	public override bool Connect(string BPMNPBDOMFO, string KKBGACJIHDP)
 	{
 		Debug.LogError("Avoid using this directly. Thanks.");
@@ -3494,7 +3500,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x1700024E RID: 590
-	// (get) Token: 0x0600AF65 RID: 44901 RVA: 0x0040AA4A File Offset: 0x00408C4A
+	// (get) Token: 0x0600AF65 RID: 44901 RVA: 0x0008AE0D File Offset: 0x0008900D
 	private bool OGLFGPKHEHH
 	{
 		get
@@ -3503,7 +3509,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF66 RID: 44902 RVA: 0x0040AA64 File Offset: 0x00408C64
+	// Token: 0x0600AF66 RID: 44902 RVA: 0x00409FAC File Offset: 0x004081AC
 	internal void KLJOBNFMFMG(PhotonView DFIHBOEOJPI, string LBLKDNNPACO, PhotonTargets MPNMOONBMII, PhotonPlayer JHOEDACNNKK, bool AKFHJNFOCDP, object[] GNNEKCBOBEG)
 	{
 		if (this.FFBGBLFBHOK.Contains(DFIHBOEOJPI.group))
@@ -3663,11 +3669,11 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x1700024C RID: 588
-	// (get) Token: 0x0600AF67 RID: 44903 RVA: 0x00407D78 File Offset: 0x00405F78
-	// (set) Token: 0x0600AFAA RID: 44970 RVA: 0x0040E989 File Offset: 0x0040CB89
+	// (get) Token: 0x0600AF67 RID: 44903 RVA: 0x0008AB6F File Offset: 0x00088D6F
+	// (set) Token: 0x0600AFAA RID: 44970 RVA: 0x0008B0AC File Offset: 0x000892AC
 	public ClientState State { get; internal set; }
 
-	// Token: 0x0600AF68 RID: 44904 RVA: 0x0040AE74 File Offset: 0x00409074
+	// Token: 0x0600AF68 RID: 44904 RVA: 0x0040A3BC File Offset: 0x004085BC
 	private void CDNPLJILLFC(int JBHMEHIOGBE)
 	{
 		bool flag = this.mMasterClientId == JBHMEHIOGBE;
@@ -3702,7 +3708,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF69 RID: 44905 RVA: 0x0040AF48 File Offset: 0x00409148
+	// Token: 0x0600AF69 RID: 44905 RVA: 0x0040A490 File Offset: 0x00408690
 	protected internal bool GHKDIIDEJLI(int PHIGECOLKKN, bool PANGJAJJOLO)
 	{
 		bool flag = this.mMasterClientId == PHIGECOLKKN;
@@ -3729,13 +3735,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AF6A RID: 44906 RVA: 0x004064C4 File Offset: 0x004046C4
+	// Token: 0x0600AF6A RID: 44906 RVA: 0x0008AABC File Offset: 0x00088CBC
 	public string KLJNBLBGIFI()
 	{
 		return this.IHAJBEOILOE();
 	}
 
-	// Token: 0x0600AF6C RID: 44908 RVA: 0x0040AFDC File Offset: 0x004091DC
+	// Token: 0x0600AF6C RID: 44908 RVA: 0x00409974 File Offset: 0x00407B74
 	private void PAOJLLAACDE()
 	{
 		foreach (PhotonView photonView in this.HFCMPEKPBAM.Values)
@@ -3744,13 +3750,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF6D RID: 44909 RVA: 0x0040B040 File Offset: 0x00409240
+	// Token: 0x0600AF6D RID: 44909 RVA: 0x0008AE25 File Offset: 0x00089025
 	public void SetLevelPrefix(short MOALALKJCKJ)
 	{
 		this.PKCNHOKCLJH = MOALALKJCKJ;
 	}
 
-	// Token: 0x0600AF6E RID: 44910 RVA: 0x0040B049 File Offset: 0x00409249
+	// Token: 0x0600AF6E RID: 44910 RVA: 0x0008AE2E File Offset: 0x0008902E
 	public virtual void LBALLPPNDGD()
 	{
 		if (base.PeerState == PeerStateValue.Disconnected)
@@ -3765,13 +3771,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		base.Disconnect();
 	}
 
-	// Token: 0x0600AF6F RID: 44911 RVA: 0x00406FD3 File Offset: 0x004051D3
+	// Token: 0x0600AF6F RID: 44911 RVA: 0x0008AB07 File Offset: 0x00088D07
 	private void AJIAHPCFPAA(ServerConnection DPNHODJHGJL)
 	{
 		this.<NFFGNBHFDFM>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AF71 RID: 44913 RVA: 0x0040B094 File Offset: 0x00409294
+	// Token: 0x0600AF71 RID: 44913 RVA: 0x0040A524 File Offset: 0x00408724
 	public void SetSendingEnabled(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
 	{
 		if (JKOIGFLNNCN != null)
@@ -3790,7 +3796,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF72 RID: 44914 RVA: 0x0040B0F8 File Offset: 0x004092F8
+	// Token: 0x0600AF72 RID: 44914 RVA: 0x0040A588 File Offset: 0x00408788
 	private void CKEAHPJAGOO(object[] NOJGGCLPPAM, PhotonPlayer NFOGDAHIPNP, int BFELEJPLADE, short DKCPAJGKHNI)
 	{
 		int num = (int)NOJGGCLPPAM[0];
@@ -3853,7 +3859,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		photonView.DeserializeView(this.CMABENLIOGI, dagalcailln);
 	}
 
-	// Token: 0x0600AF73 RID: 44915 RVA: 0x0040B2B8 File Offset: 0x004094B8
+	// Token: 0x0600AF73 RID: 44915 RVA: 0x0040A748 File Offset: 0x00408948
 	private void GPJPIODBKBE()
 	{
 		this.mPlayerListCopy = new PhotonPlayer[this.mActors.Count];
@@ -3870,7 +3876,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.mOtherPlayerListCopy = list.ToArray();
 	}
 
-	// Token: 0x0600AF74 RID: 44916 RVA: 0x0040B338 File Offset: 0x00409538
+	// Token: 0x0600AF74 RID: 44916 RVA: 0x0040A7C8 File Offset: 0x004089C8
 	private void JMFEJINKLGB()
 	{
 		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
@@ -3880,17 +3886,17 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000257 RID: 599
-	// (get) Token: 0x0600AFA7 RID: 44967 RVA: 0x004087BF File Offset: 0x004069BF
-	// (set) Token: 0x0600AF75 RID: 44917 RVA: 0x00407D6F File Offset: 0x00405F6F
+	// (get) Token: 0x0600AFA7 RID: 44967 RVA: 0x0008AC2B File Offset: 0x00088E2B
+	// (set) Token: 0x0600AF75 RID: 44917 RVA: 0x0008AB66 File Offset: 0x00088D66
 	public List<Region> AvailableRegions { get; protected internal set; }
 
-	// Token: 0x0600AF76 RID: 44918 RVA: 0x00406FC4 File Offset: 0x004051C4
+	// Token: 0x0600AF76 RID: 44918 RVA: 0x0008AAF8 File Offset: 0x00088CF8
 	private void MLHNKIDCCHM(int HOBFECDCMIL, object[] FLFEEAHDHDK)
 	{
 		this.IDIKEJLLFFP[HOBFECDCMIL] = FLFEEAHDHDK;
 	}
 
-	// Token: 0x0600AF77 RID: 44919 RVA: 0x0040B37C File Offset: 0x0040957C
+	// Token: 0x0600AF77 RID: 44919 RVA: 0x0040A80C File Offset: 0x00408A0C
 	public void AJLAPDILENC()
 	{
 		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
@@ -3901,7 +3907,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.EMCJJFPNKCK(1, null, true, bplhapbmggc);
 	}
 
-	// Token: 0x0600AF78 RID: 44920 RVA: 0x0040B3AC File Offset: 0x004095AC
+	// Token: 0x0600AF78 RID: 44920 RVA: 0x0040A83C File Offset: 0x00408A3C
 	protected internal void EFDAOHIDIIF(GameObject OBFJPHLBFOL, bool NOKCKEBHIFJ)
 	{
 		if (OBFJPHLBFOL == null)
@@ -3969,13 +3975,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF7A RID: 44922 RVA: 0x004087BF File Offset: 0x004069BF
+	// Token: 0x0600AF7A RID: 44922 RVA: 0x0008AC2B File Offset: 0x00088E2B
 	public List<Region> GBEHEEIMNDO()
 	{
 		return this.<GMPLFLCBMGI>k__BackingField;
 	}
 
-	// Token: 0x0600AF7B RID: 44923 RVA: 0x0040B53A File Offset: 0x0040973A
+	// Token: 0x0600AF7B RID: 44923 RVA: 0x0008AE90 File Offset: 0x00089090
 	public virtual bool LMCILEGPLHF(OpJoinRandomRoomParams IFIMMPPLLHI)
 	{
 		this.AJFMHFLGCFN = new AKBOPCNHFFJ();
@@ -3985,7 +3991,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.GAOMBMOHHCP(IFIMMPPLLHI);
 	}
 
-	// Token: 0x0600AF7C RID: 44924 RVA: 0x0040B578 File Offset: 0x00409778
+	// Token: 0x0600AF7C RID: 44924 RVA: 0x0040A9B4 File Offset: 0x00408BB4
 	internal void HFFGNHGFKPE(PhotonView DFIHBOEOJPI, string LBLKDNNPACO, PhotonTargets MPNMOONBMII, PhotonPlayer JHOEDACNNKK, bool AKFHJNFOCDP, params object[] GNNEKCBOBEG)
 	{
 		if (this.FFBGBLFBHOK.Contains(DFIHBOEOJPI.group))
@@ -4146,7 +4152,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF7D RID: 44925 RVA: 0x0040B988 File Offset: 0x00409B88
+	// Token: 0x0600AF7D RID: 44925 RVA: 0x0040ADC4 File Offset: 0x00408FC4
 	private void IMFCMDEACAD()
 	{
 		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
@@ -4155,7 +4161,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpCustom(108, dictionary, true, 1);
 	}
 
-	// Token: 0x0600AF7E RID: 44926 RVA: 0x0040B9CC File Offset: 0x00409BCC
+	// Token: 0x0600AF7E RID: 44926 RVA: 0x0040AE08 File Offset: 0x00409008
 	public void OnEvent(EventData ADNNKPOCCDJ)
 	{
 		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
@@ -4521,13 +4527,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF7F RID: 44927 RVA: 0x004087BF File Offset: 0x004069BF
+	// Token: 0x0600AF7F RID: 44927 RVA: 0x0008AC2B File Offset: 0x00088E2B
 	public List<Region> PKIDPHFLDBP()
 	{
 		return this.<GMPLFLCBMGI>k__BackingField;
 	}
 
-	// Token: 0x0600AF80 RID: 44928 RVA: 0x0040C530 File Offset: 0x0040A730
+	// Token: 0x0600AF80 RID: 44928 RVA: 0x0040B96C File Offset: 0x00409B6C
 	private bool DONKMNHEACD(object CFKDMFFFPJK, object GOLMELKEAFO)
 	{
 		if (CFKDMFFFPJK == null || GOLMELKEAFO == null)
@@ -4578,8 +4584,8 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000250 RID: 592
-	// (get) Token: 0x0600AF82 RID: 44930 RVA: 0x0040C635 File Offset: 0x0040A835
-	// (set) Token: 0x0600AFCB RID: 45003 RVA: 0x00410A57 File Offset: 0x0040EC57
+	// (get) Token: 0x0600AF82 RID: 44930 RVA: 0x0008AED5 File Offset: 0x000890D5
+	// (set) Token: 0x0600AFCB RID: 45003 RVA: 0x0008B1A0 File Offset: 0x000893A0
 	public Room CurrentRoom
 	{
 		get
@@ -4596,7 +4602,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF83 RID: 44931 RVA: 0x0040C65C File Offset: 0x0040A85C
+	// Token: 0x0600AF83 RID: 44931 RVA: 0x0040BA6C File Offset: 0x00409C6C
 	private bool LFAPOBNFPPO(object[] OMGHPPEONFN, object[] BGJHIKDFIMP)
 	{
 		if (OMGHPPEONFN == null && BGJHIKDFIMP == null)
@@ -4619,7 +4625,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AF84 RID: 44932 RVA: 0x0040C6BC File Offset: 0x0040A8BC
+	// Token: 0x0600AF84 RID: 44932 RVA: 0x0040BACC File Offset: 0x00409CCC
 	public void DebugReturn(DebugLevel DCMIEONIJMA, string JKPJCEMPAGH)
 	{
 		if (DCMIEONIJMA == DebugLevel.ERROR)
@@ -4640,7 +4646,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF85 RID: 44933 RVA: 0x0040C724 File Offset: 0x0040A924
+	// Token: 0x0600AF85 RID: 44933 RVA: 0x0040BB34 File Offset: 0x00409D34
 	private void BJHGKICFMJP()
 	{
 		bool flag = this.CurrentRoom == null;
@@ -4667,24 +4673,24 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF86 RID: 44934 RVA: 0x00409A05 File Offset: 0x00407C05
+	// Token: 0x0600AF86 RID: 44934 RVA: 0x0008AD63 File Offset: 0x00088F63
 	public TypedLobby GMFCEODBPGN()
 	{
 		return this.<IGGEJKPFJJD>k__BackingField;
 	}
 
-	// Token: 0x0600AF87 RID: 44935 RVA: 0x0040C7F4 File Offset: 0x0040A9F4
+	// Token: 0x0600AF87 RID: 44935 RVA: 0x0008AEFA File Offset: 0x000890FA
 	protected internal string APACDJMLLEH()
 	{
 		return string.Format("?", PhotonNetwork.gameVersion, "mapselector.filter.subscribedonly");
 	}
 
-	// Token: 0x0600AF88 RID: 44936 RVA: 0x0002523B File Offset: 0x0002343B
+	// Token: 0x0600AF88 RID: 44936 RVA: 0x0000414C File Offset: 0x0000234C
 	public void OnMessage(object NBCIEBFNLGN)
 	{
 	}
 
-	// Token: 0x0600AF89 RID: 44937 RVA: 0x0040C80A File Offset: 0x0040AA0A
+	// Token: 0x0600AF89 RID: 44937 RVA: 0x0008AF10 File Offset: 0x00089110
 	public virtual bool OpLeave()
 	{
 		if (this.State != ClientState.Joined)
@@ -4695,7 +4701,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return this.OpCustom(254, null, true, 0);
 	}
 
-	// Token: 0x0600AF8A RID: 44938 RVA: 0x0040C843 File Offset: 0x0040AA43
+	// Token: 0x0600AF8A RID: 44938 RVA: 0x0008AF49 File Offset: 0x00089149
 	public virtual bool FNPGHPPDNCJ(string[] MIMEHFLKIIG)
 	{
 		if (this.POHIMACBDGL)
@@ -4707,7 +4713,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.CKBCKDPCODK(MIMEHFLKIIG);
 	}
 
-	// Token: 0x0600AF8B RID: 44939 RVA: 0x0040C868 File Offset: 0x0040AA68
+	// Token: 0x0600AF8B RID: 44939 RVA: 0x0040BC04 File Offset: 0x00409E04
 	private string IHAJBEOILOE()
 	{
 		ConnectionProtocol transportProtocol = base.TransportProtocol;
@@ -4725,7 +4731,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return string.Format("{0}{1}:{2}", arg, "ns.exitgames.com", num);
 	}
 
-	// Token: 0x0600AF8C RID: 44940 RVA: 0x0040C8C9 File Offset: 0x0040AAC9
+	// Token: 0x0600AF8C RID: 44940 RVA: 0x0008AF6D File Offset: 0x0008916D
 	protected internal void NJEJHIPKGKD()
 	{
 		PhotonNetworkingMessage lelhnddckco = PhotonNetworkingMessage.OnConnectedToPhoton;
@@ -4735,7 +4741,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000256 RID: 598
-	// (get) Token: 0x0600AF8D RID: 44941 RVA: 0x0040C8DF File Offset: 0x0040AADF
+	// (get) Token: 0x0600AF8D RID: 44941 RVA: 0x0008AF83 File Offset: 0x00089183
 	public bool IsAuthorizeSecretAvailable
 	{
 		get
@@ -4744,7 +4750,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF8E RID: 44942 RVA: 0x0040C902 File Offset: 0x0040AB02
+	// Token: 0x0600AF8E RID: 44942 RVA: 0x0008AFA6 File Offset: 0x000891A6
 	protected internal void GBBHGHDFLAB()
 	{
 		BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnLeftLobby, new object[]
@@ -4753,7 +4759,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		});
 	}
 
-	// Token: 0x0600AF8F RID: 44943 RVA: 0x0040C918 File Offset: 0x0040AB18
+	// Token: 0x0600AF8F RID: 44943 RVA: 0x0040BC68 File Offset: 0x00409E68
 	public void AJJHLPGHNHL(StatusCode FIIDDDBNCLD)
 	{
 		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
@@ -5019,7 +5025,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF90 RID: 44944 RVA: 0x0040CF6C File Offset: 0x0040B16C
+	// Token: 0x0600AF90 RID: 44944 RVA: 0x0040C2BC File Offset: 0x0040A4BC
 	public void NewSceneLoaded()
 	{
 		if (this.HMIEGLIHGEM)
@@ -5047,7 +5053,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF91 RID: 44945 RVA: 0x0040D06C File Offset: 0x0040B26C
+	// Token: 0x0600AF91 RID: 44945 RVA: 0x0040C3BC File Offset: 0x0040A5BC
 	private void AMFFFOBFFFM()
 	{
 		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
@@ -5056,7 +5062,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpCustom((byte)-108, dictionary, true, 0);
 	}
 
-	// Token: 0x0600AF92 RID: 44946 RVA: 0x0040D0B0 File Offset: 0x0040B2B0
+	// Token: 0x0600AF92 RID: 44946 RVA: 0x0040C400 File Offset: 0x0040A600
 	public void RegisterPhotonView(PhotonView LCJKMJCFDGE)
 	{
 		if (!Application.isPlaying)
@@ -5087,7 +5093,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF93 RID: 44947 RVA: 0x0040D17D File Offset: 0x0040B37D
+	// Token: 0x0600AF93 RID: 44947 RVA: 0x0008AFBC File Offset: 0x000891BC
 	private void JOANOODGGAG(int IJAEJMNLBLK, PhotonPlayer JHOEDACNNKK)
 	{
 		if (!this.mActors.ContainsKey(IJAEJMNLBLK))
@@ -5101,7 +5107,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF94 RID: 44948 RVA: 0x0040D1C0 File Offset: 0x0040B3C0
+	// Token: 0x0600AF94 RID: 44948 RVA: 0x0040C4D0 File Offset: 0x0040A6D0
 	private bool AKIBKCFMMHO()
 	{
 		this.IDOAHFHJJJE = true;
@@ -5133,7 +5139,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return flag;
 	}
 
-	// Token: 0x0600AF95 RID: 44949 RVA: 0x0040D255 File Offset: 0x0040B455
+	// Token: 0x0600AF95 RID: 44949 RVA: 0x0008AFFC File Offset: 0x000891FC
 	public void DestroyAll(bool NOKCKEBHIFJ)
 	{
 		if (!NOKCKEBHIFJ)
@@ -5144,7 +5150,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OMEPCMPKIJK(true);
 	}
 
-	// Token: 0x0600AF96 RID: 44950 RVA: 0x0040D270 File Offset: 0x0040B470
+	// Token: 0x0600AF96 RID: 44950 RVA: 0x0040C568 File Offset: 0x0040A768
 	private void PCLPOPNEABK(OperationResponse FEOMHKNGOAK)
 	{
 		if (FEOMHKNGOAK.ReturnCode != 0)
@@ -5239,7 +5245,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF97 RID: 44951 RVA: 0x0040D4DC File Offset: 0x0040B6DC
+	// Token: 0x0600AF97 RID: 44951 RVA: 0x0040C7D4 File Offset: 0x0040A9D4
 	private void KIKHKNNMBMN()
 	{
 		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
@@ -5248,7 +5254,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpCustom(253, dictionary, true, 0);
 	}
 
-	// Token: 0x0600AF98 RID: 44952 RVA: 0x0040D520 File Offset: 0x0040B720
+	// Token: 0x0600AF98 RID: 44952 RVA: 0x0040C818 File Offset: 0x0040AA18
 	protected internal void FKNEKIDFEIA(ServerConnection NKGHPPHEGCO)
 	{
 		ConnectionProtocol connectionProtocol = base.TransportProtocol;
@@ -5302,7 +5308,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		base.TransportProtocol = connectionProtocol;
 	}
 
-	// Token: 0x0600AF99 RID: 44953 RVA: 0x0040D650 File Offset: 0x0040B850
+	// Token: 0x0600AF99 RID: 44953 RVA: 0x0040C948 File Offset: 0x0040AB48
 	private bool GHBFBICEHBK()
 	{
 		AuthenticationValues authenticationValues;
@@ -5320,13 +5326,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return this.MDEGPIGGGEE(this.KAIBLIKEDHM, this.DCHLIDBMJPK(), gpdfhodmoij, this.CAFLFPLLMNC().ToString(), this.EncryptionMode, PhotonNetwork.PhotonServerSettings.Protocol);
 	}
 
-	// Token: 0x0600AF9A RID: 44954 RVA: 0x00405462 File Offset: 0x00403662
+	// Token: 0x0600AF9A RID: 44954 RVA: 0x0008AA68 File Offset: 0x00088C68
 	public CloudRegionCode CAFLFPLLMNC()
 	{
 		return this.<JINPEAIHFKC>k__BackingField;
 	}
 
-	// Token: 0x0600AF9B RID: 44955 RVA: 0x0040D6F0 File Offset: 0x0040B8F0
+	// Token: 0x0600AF9B RID: 44955 RVA: 0x0040C9E8 File Offset: 0x0040ABE8
 	private void EBNDKPFKPIJ()
 	{
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
@@ -5334,7 +5340,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(207, hashtable, true, null);
 	}
 
-	// Token: 0x0600AF9C RID: 44956 RVA: 0x0040D724 File Offset: 0x0040B924
+	// Token: 0x0600AF9C RID: 44956 RVA: 0x0040CA1C File Offset: 0x0040AC1C
 	public bool WebRpc(string MDGGHHCAHKF, object GNNEKCBOBEG)
 	{
 		return this.OpCustom(219, new Dictionary<byte, object>
@@ -5350,7 +5356,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}, true);
 	}
 
-	// Token: 0x0600AF9D RID: 44957 RVA: 0x0040D75C File Offset: 0x0040B95C
+	// Token: 0x0600AF9D RID: 44957 RVA: 0x0040CA54 File Offset: 0x0040AC54
 	public void GEJPEGFKLFM(OperationResponse FEOMHKNGOAK)
 	{
 		if (PhotonNetwork.JNJJAMNLOHA.State == (ClientState)(-8))
@@ -5797,7 +5803,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AF9E RID: 44958 RVA: 0x0040E49C File Offset: 0x0040C69C
+	// Token: 0x0600AF9E RID: 44958 RVA: 0x0008B017 File Offset: 0x00089217
 	protected internal void ELDLAPJAPBJ()
 	{
 		BNGIGHBHPEH.SendMonoMessage(PhotonNetworkingMessage.OnMasterClientSwitched, new object[]
@@ -5806,7 +5812,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		});
 	}
 
-	// Token: 0x0600AF9F RID: 44959 RVA: 0x0040E4B4 File Offset: 0x0040C6B4
+	// Token: 0x0600AF9F RID: 44959 RVA: 0x0040D794 File Offset: 0x0040B994
 	public static void SendMonoMessage(PhotonNetworkingMessage LELHNDDCKCO, params object[] GNNEKCBOBEG)
 	{
 		HashSet<GameObject> hashSet;
@@ -5829,7 +5835,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFA0 RID: 44960 RVA: 0x0040E564 File Offset: 0x0040C764
+	// Token: 0x0600AFA0 RID: 44960 RVA: 0x0040D844 File Offset: 0x0040BA44
 	private void MJMAJHJLBPJ(int IECJKEIJLCP, EventData EKDHPAFJKFA)
 	{
 		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
@@ -5900,7 +5906,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		});
 	}
 
-	// Token: 0x0600AFA1 RID: 44961 RVA: 0x0040E729 File Offset: 0x0040C929
+	// Token: 0x0600AFA1 RID: 44961 RVA: 0x0008B02D File Offset: 0x0008922D
 	private ExitGames.Client.Photon.Hashtable LOCGDJDHCHJ(ExitGames.Client.Photon.Hashtable FPBCPOGCCBD, int KHACEEGCPEP)
 	{
 		if (FPBCPOGCCBD.ContainsKey(KHACEEGCPEP))
@@ -5910,7 +5916,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return FPBCPOGCCBD;
 	}
 
-	// Token: 0x0600AFA2 RID: 44962 RVA: 0x0040E750 File Offset: 0x0040C950
+	// Token: 0x0600AFA2 RID: 44962 RVA: 0x0040DA0C File Offset: 0x0040BC0C
 	private void EDMCCPDDDCC(ExitGames.Client.Photon.Hashtable MJJMNIDHDEC, ExitGames.Client.Photon.Hashtable FAOLPBLCKFJ, int AHNMANJKONI)
 	{
 		if (FAOLPBLCKFJ != null && FAOLPBLCKFJ.Count > 0)
@@ -5965,7 +5971,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFA4 RID: 44964 RVA: 0x0040E904 File Offset: 0x0040CB04
+	// Token: 0x0600AFA4 RID: 44964 RVA: 0x00405FF0 File Offset: 0x004041F0
 	protected internal PhotonPlayer NLCNFHENKAJ(int MHLPNLMDILP)
 	{
 		if (this.mActors == null)
@@ -5977,7 +5983,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return result;
 	}
 
-	// Token: 0x0600AFA5 RID: 44965 RVA: 0x0040E930 File Offset: 0x0040CB30
+	// Token: 0x0600AFA5 RID: 44965 RVA: 0x0008B053 File Offset: 0x00089253
 	protected internal void CAEIBLENDBH()
 	{
 		PhotonNetworkingMessage lelhnddckco = PhotonNetworkingMessage.OnJoinedLobby;
@@ -5987,7 +5993,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000246 RID: 582
-	// (get) Token: 0x0600AFA6 RID: 44966 RVA: 0x0040E946 File Offset: 0x0040CB46
+	// (get) Token: 0x0600AFA6 RID: 44966 RVA: 0x0008B069 File Offset: 0x00089269
 	private string LLJDHHLHFME
 	{
 		get
@@ -6000,24 +6006,24 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFA8 RID: 44968 RVA: 0x0040C62D File Offset: 0x0040A82D
+	// Token: 0x0600AFA8 RID: 44968 RVA: 0x0008AECD File Offset: 0x000890CD
 	public int JCPODEMIBMP()
 	{
 		return this.<EEDBHAJBPLC>k__BackingField;
 	}
 
-	// Token: 0x0600AFA9 RID: 44969 RVA: 0x0040E971 File Offset: 0x0040CB71
+	// Token: 0x0600AFA9 RID: 44969 RVA: 0x0008B094 File Offset: 0x00089294
 	private bool ADPDMHEPOMG()
 	{
 		return PhotonNetwork.EnableLobbyStatistics && this.EHALCLFLGJF == ServerConnection.GameServer;
 	}
 
 	// Token: 0x17000254 RID: 596
-	// (get) Token: 0x0600AFBC RID: 44988 RVA: 0x0040F8DE File Offset: 0x0040DADE
-	// (set) Token: 0x0600AFAB RID: 44971 RVA: 0x00406418 File Offset: 0x00404618
+	// (get) Token: 0x0600AFBC RID: 44988 RVA: 0x0008B13D File Offset: 0x0008933D
+	// (set) Token: 0x0600AFAB RID: 44971 RVA: 0x0008AA7F File Offset: 0x00088C7F
 	public int RoomsCount { get; internal set; }
 
-	// Token: 0x0600AFAC RID: 44972 RVA: 0x0040E994 File Offset: 0x0040CB94
+	// Token: 0x0600AFAC RID: 44972 RVA: 0x0040DB64 File Offset: 0x0040BD64
 	private void GDDBOALPNDO()
 	{
 		Dictionary<byte, object> dictionary = new Dictionary<byte, object>();
@@ -6026,7 +6032,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpCustom(17, dictionary, false, 0);
 	}
 
-	// Token: 0x0600AFAD RID: 44973 RVA: 0x0040E9D8 File Offset: 0x0040CBD8
+	// Token: 0x0600AFAD RID: 44973 RVA: 0x0008B0B5 File Offset: 0x000892B5
 	private void EGJBHECFAOH(int IJAEJMNLBLK, PhotonPlayer JHOEDACNNKK)
 	{
 		if (!this.mActors.ContainsKey(IJAEJMNLBLK))
@@ -6040,7 +6046,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFAE RID: 44974 RVA: 0x0040EA18 File Offset: 0x0040CC18
+	// Token: 0x0600AFAE RID: 44974 RVA: 0x0040DBA8 File Offset: 0x0040BDA8
 	private void KCNBFALAJMD(int KHACEEGCPEP)
 	{
 		ExitGames.Client.Photon.Hashtable hashtable = new ExitGames.Client.Photon.Hashtable();
@@ -6048,13 +6054,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(207, hashtable, true, null);
 	}
 
-	// Token: 0x0600AFAF RID: 44975 RVA: 0x0040A4CF File Offset: 0x004086CF
+	// Token: 0x0600AFAF RID: 44975 RVA: 0x0008ADE6 File Offset: 0x00088FE6
 	internal void BNBNGPDLKFF(int DPNHODJHGJL)
 	{
 		this.<EEDBHAJBPLC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AFB0 RID: 44976 RVA: 0x0040EA4C File Offset: 0x0040CC4C
+	// Token: 0x0600AFB0 RID: 44976 RVA: 0x0040DBDC File Offset: 0x0040BDDC
 	protected internal void OMEPCMPKIJK(bool IJJEEIMFOHD)
 	{
 		if (this.IDIKEJLLFFP.Count > 0)
@@ -6082,11 +6088,11 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x1700024A RID: 586
-	// (get) Token: 0x0600AFB1 RID: 44977 RVA: 0x0040EB44 File Offset: 0x0040CD44
-	// (set) Token: 0x0600AFD0 RID: 45008 RVA: 0x0040A460 File Offset: 0x00408660
+	// (get) Token: 0x0600AFB1 RID: 44977 RVA: 0x0008B0F5 File Offset: 0x000892F5
+	// (set) Token: 0x0600AFD0 RID: 45008 RVA: 0x0008ADDD File Offset: 0x00088FDD
 	public string GameServerAddress { get; protected internal set; }
 
-	// Token: 0x0600AFB2 RID: 44978 RVA: 0x0040EB4C File Offset: 0x0040CD4C
+	// Token: 0x0600AFB2 RID: 44978 RVA: 0x0040DCD4 File Offset: 0x0040BED4
 	private object[] HMGGGIGJILH(PhotonView DFIHBOEOJPI)
 	{
 		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Off)
@@ -6138,19 +6144,19 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return null;
 	}
 
-	// Token: 0x0600AFB3 RID: 44979 RVA: 0x0040A741 File Offset: 0x00408941
+	// Token: 0x0600AFB3 RID: 44979 RVA: 0x0008ADF8 File Offset: 0x00088FF8
 	protected internal ServerConnection IGDBHCGGHFF()
 	{
 		return this.<NFFGNBHFDFM>k__BackingField;
 	}
 
-	// Token: 0x0600AFB4 RID: 44980 RVA: 0x00409DED File Offset: 0x00407FED
+	// Token: 0x0600AFB4 RID: 44980 RVA: 0x0008ADD4 File Offset: 0x00088FD4
 	public void HBABOJOMPHP(AuthenticationValues DPNHODJHGJL)
 	{
 		this.<FEGEIIONEMN>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AFB5 RID: 44981 RVA: 0x0040EC70 File Offset: 0x0040CE70
+	// Token: 0x0600AFB5 RID: 44981 RVA: 0x0040DDF8 File Offset: 0x0040BFF8
 	internal GameObject JFOLGKKLFJP(ExitGames.Client.Photon.Hashtable NNNJPMDHPHH, PhotonPlayer OGKJFFANGMC, GameObject HHLFBCNFLAO)
 	{
 		string text = (string)NNNJPMDHPHH[0];
@@ -6273,7 +6279,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFB6 RID: 44982 RVA: 0x0040F010 File Offset: 0x0040D210
+	// Token: 0x0600AFB6 RID: 44982 RVA: 0x0040E198 File Offset: 0x0040C398
 	public void OnStatusChanged(StatusCode FIIDDDBNCLD)
 	{
 		if (PhotonNetwork.logLevel >= PhotonLogLevel.Informational)
@@ -6543,7 +6549,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFB7 RID: 44983 RVA: 0x0040F664 File Offset: 0x0040D864
+	// Token: 0x0600AFB7 RID: 44983 RVA: 0x0008B0FD File Offset: 0x000892FD
 	public bool ReconnectToMaster()
 	{
 		if (this.AuthValues == null)
@@ -6555,7 +6561,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return this.Connect(this.MasterServerAddress, ServerConnection.MasterServer);
 	}
 
-	// Token: 0x0600AFB8 RID: 44984 RVA: 0x0040F6A4 File Offset: 0x0040D8A4
+	// Token: 0x0600AFB8 RID: 44984 RVA: 0x0040E7EC File Offset: 0x0040C9EC
 	public void MMIMMJOEBNG(byte[] JKOIGFLNNCN, byte[] OBKFHNACHIA)
 	{
 		if (JKOIGFLNNCN != null)
@@ -6576,7 +6582,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFB9 RID: 44985 RVA: 0x0040F708 File Offset: 0x0040D908
+	// Token: 0x0600AFB9 RID: 44985 RVA: 0x0040E850 File Offset: 0x0040CA50
 	public void HCBFOHMAICA()
 	{
 		if (this.HMIEGLIHGEM)
@@ -6604,7 +6610,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFBA RID: 44986 RVA: 0x0040F808 File Offset: 0x0040DA08
+	// Token: 0x0600AFBA RID: 44986 RVA: 0x0040E950 File Offset: 0x0040CB50
 	public bool ConnectToNameServer()
 	{
 		if (PhotonHandler.MBIFDLCKGKN)
@@ -6630,7 +6636,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AFBB RID: 44987 RVA: 0x0040F894 File Offset: 0x0040DA94
+	// Token: 0x0600AFBB RID: 44987 RVA: 0x0040E9DC File Offset: 0x0040CBDC
 	public override bool OpJoinRoom(AKBOPCNHFFJ HBJBKOPJDKJ)
 	{
 		bool flag = this.EHALCLFLGJF == ServerConnection.GameServer;
@@ -6643,7 +6649,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.OpJoinRoom(HBJBKOPJDKJ);
 	}
 
-	// Token: 0x0600AFBD RID: 44989 RVA: 0x0040F8E8 File Offset: 0x0040DAE8
+	// Token: 0x0600AFBD RID: 44989 RVA: 0x0040EA28 File Offset: 0x0040CC28
 	public void PPDHJGDBHCG(int CFLLNEOHNFD)
 	{
 		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
@@ -6657,7 +6663,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.LHOCCIABPNJ(1, null, true, bplhapbmggc);
 	}
 
-	// Token: 0x0600AFBE RID: 44990 RVA: 0x0040F920 File Offset: 0x0040DB20
+	// Token: 0x0600AFBE RID: 44990 RVA: 0x0040EA60 File Offset: 0x0040CC60
 	private object[] EFKMNFNHJBL(object[] EMJBOOJPAII, object[] JGHJOJFOGCO)
 	{
 		if (!(bool)JGHJOJFOGCO[1])
@@ -6683,7 +6689,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return JGHJOJFOGCO;
 	}
 
-	// Token: 0x0600AFBF RID: 44991 RVA: 0x0040F98C File Offset: 0x0040DB8C
+	// Token: 0x0600AFBF RID: 44991 RVA: 0x0040EACC File Offset: 0x0040CCCC
 	public bool ConnectToRegionMaster(CloudRegionCode LPCNAHJGAFK)
 	{
 		if (PhotonHandler.MBIFDLCKGKN)
@@ -6709,7 +6715,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AFC0 RID: 44992 RVA: 0x0040FA1D File Offset: 0x0040DC1D
+	// Token: 0x0600AFC0 RID: 44992 RVA: 0x0008B145 File Offset: 0x00089345
 	private void GPODJOPLJPD(int IJAEJMNLBLK, PhotonPlayer JHOEDACNNKK)
 	{
 		this.mActors.Remove(IJAEJMNLBLK);
@@ -6719,20 +6725,20 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFC1 RID: 44993 RVA: 0x0040E989 File Offset: 0x0040CB89
+	// Token: 0x0600AFC1 RID: 44993 RVA: 0x0008B0AC File Offset: 0x000892AC
 	internal void JNPKDLEMJFN(ClientState DPNHODJHGJL)
 	{
 		this.<CKEGJBJJPEC>k__BackingField = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AFC3 RID: 44995 RVA: 0x0040FA45 File Offset: 0x0040DC45
+	// Token: 0x0600AFC3 RID: 44995 RVA: 0x0008B16D File Offset: 0x0008936D
 	public bool LocalCleanPhotonView(PhotonView DFIHBOEOJPI)
 	{
 		DFIHBOEOJPI.IHPAIFIHLAE = true;
 		return this.HFCMPEKPBAM.Remove(DFIHBOEOJPI.viewID);
 	}
 
-	// Token: 0x0600AFC4 RID: 44996 RVA: 0x0040FA60 File Offset: 0x0040DC60
+	// Token: 0x0600AFC4 RID: 44996 RVA: 0x0040EB60 File Offset: 0x0040CD60
 	public bool ReconnectAndRejoin()
 	{
 		if (this.AuthValues == null)
@@ -6750,7 +6756,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return false;
 	}
 
-	// Token: 0x0600AFC5 RID: 44997 RVA: 0x0040FADC File Offset: 0x0040DCDC
+	// Token: 0x0600AFC5 RID: 44997 RVA: 0x0040EBDC File Offset: 0x0040CDDC
 	public bool SetMasterClient(int BONHLGFPNHF)
 	{
 		ExitGames.Client.Photon.Hashtable mjjmnidhdec = new ExitGames.Client.Photon.Hashtable
@@ -6770,13 +6776,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.HFECLDIOHNJ(mjjmnidhdec, kcjikjdcoal, false);
 	}
 
-	// Token: 0x0600AFC6 RID: 44998 RVA: 0x0040FB33 File Offset: 0x0040DD33
+	// Token: 0x0600AFC6 RID: 44998 RVA: 0x0008B187 File Offset: 0x00089387
 	public override bool OpRaiseEvent(byte IMCBEMICJFC, object PEIFAPIIKNJ, bool ANMGHMBBMAO, RaiseEventOptions BPLHAPBMGGC)
 	{
 		return !PhotonNetwork.offlineMode && base.OpRaiseEvent(IMCBEMICJFC, PEIFAPIIKNJ, ANMGHMBBMAO, BPLHAPBMGGC);
 	}
 
-	// Token: 0x0600AFC7 RID: 44999 RVA: 0x0040FB4C File Offset: 0x0040DD4C
+	// Token: 0x0600AFC7 RID: 44999 RVA: 0x0040EC34 File Offset: 0x0040CE34
 	public bool JCPECILENMF(AKBOPCNHFFJ BDMKOAGEHPM)
 	{
 		bool flag = this.IGDBHCGGHFF() == ServerConnection.MasterServer;
@@ -6790,7 +6796,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return base.OpCreateRoom(BDMKOAGEHPM);
 	}
 
-	// Token: 0x0600AFC8 RID: 45000 RVA: 0x0040FB94 File Offset: 0x0040DD94
+	// Token: 0x0600AFC8 RID: 45000 RVA: 0x0040EC7C File Offset: 0x0040CE7C
 	private static int BBEKGPLBBCA(PhotonPlayer[] NEJPNIGJLGP, int AIMBEFMGEFM)
 	{
 		if (NEJPNIGJLGP == null || NEJPNIGJLGP.Length == 0)
@@ -6811,7 +6817,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return num;
 	}
 
-	// Token: 0x0600AFC9 RID: 45001 RVA: 0x0040FBF4 File Offset: 0x0040DDF4
+	// Token: 0x0600AFC9 RID: 45001 RVA: 0x0040ECDC File Offset: 0x0040CEDC
 	public void OnOperationResponse(OperationResponse FEOMHKNGOAK)
 	{
 		if (PhotonNetwork.JNJJAMNLOHA.State == ClientState.Disconnecting)
@@ -7261,7 +7267,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFCA RID: 45002 RVA: 0x00410934 File Offset: 0x0040EB34
+	// Token: 0x0600AFCA RID: 45002 RVA: 0x0040FA1C File Offset: 0x0040DC1C
 	private object[] FOEPFOMJHKL(PhotonView DFIHBOEOJPI)
 	{
 		if (DFIHBOEOJPI.synchronization == ViewSynchronization.Off)
@@ -7313,7 +7319,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return null;
 	}
 
-	// Token: 0x0600AFCC RID: 45004 RVA: 0x00410A60 File Offset: 0x0040EC60
+	// Token: 0x0600AFCC RID: 45004 RVA: 0x0040FB40 File Offset: 0x0040DD40
 	private void BAEBFLIPKKB(Dictionary<byte, object> FNHGNHCOMBH)
 	{
 		if (this.AuthMode == AuthModeOption.Auth && this.DebugOut == DebugLevel.ERROR)
@@ -7343,7 +7349,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFCD RID: 45005 RVA: 0x0040E729 File Offset: 0x0040C929
+	// Token: 0x0600AFCD RID: 45005 RVA: 0x0008B02D File Offset: 0x0008922D
 	private ExitGames.Client.Photon.Hashtable LNJJOADENLA(ExitGames.Client.Photon.Hashtable FPBCPOGCCBD, int KHACEEGCPEP)
 	{
 		if (FPBCPOGCCBD.ContainsKey(KHACEEGCPEP))
@@ -7354,7 +7360,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000244 RID: 580
-	// (get) Token: 0x0600AFCE RID: 45006 RVA: 0x00410B22 File Offset: 0x0040ED22
+	// (get) Token: 0x0600AFCE RID: 45006 RVA: 0x0008B1A9 File Offset: 0x000893A9
 	protected internal string EOCFDCJNAGM
 	{
 		get
@@ -7363,7 +7369,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFCF RID: 45007 RVA: 0x00410B38 File Offset: 0x0040ED38
+	// Token: 0x0600AFCF RID: 45007 RVA: 0x0040FC04 File Offset: 0x0040DE04
 	public void OpRemoveCompleteCacheOfPlayer(int CFLLNEOHNFD)
 	{
 		RaiseEventOptions bplhapbmggc = new RaiseEventOptions
@@ -7377,7 +7383,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		this.OpRaiseEvent(0, null, true, bplhapbmggc);
 	}
 
-	// Token: 0x0600AFD1 RID: 45009 RVA: 0x00410B70 File Offset: 0x0040ED70
+	// Token: 0x0600AFD1 RID: 45009 RVA: 0x0040FC3C File Offset: 0x0040DE3C
 	private void BOJKDNJHBNG()
 	{
 		bool flag = this.CurrentRoom != null;
@@ -7404,7 +7410,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFD2 RID: 45010 RVA: 0x00410C40 File Offset: 0x0040EE40
+	// Token: 0x0600AFD2 RID: 45010 RVA: 0x0040FD0C File Offset: 0x0040DF0C
 	protected internal bool LGPBHHOJPCA(int PHIGECOLKKN, bool PANGJAJJOLO)
 	{
 		bool flag = this.mMasterClientId != PHIGECOLKKN;
@@ -7431,7 +7437,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return true;
 	}
 
-	// Token: 0x0600AFD3 RID: 45011 RVA: 0x00410CD4 File Offset: 0x0040EED4
+	// Token: 0x0600AFD3 RID: 45011 RVA: 0x0040FDA0 File Offset: 0x0040DFA0
 	private void PACEKOIEHKK()
 	{
 		if (this.State == ClientState.Joining)
@@ -7452,7 +7458,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFD4 RID: 45012 RVA: 0x00410D5C File Offset: 0x0040EF5C
+	// Token: 0x0600AFD4 RID: 45012 RVA: 0x0040FE28 File Offset: 0x0040E028
 	private object[] ILJGNDNMNOP(object[] BJIEGLPODKG, object[] BGJHIKDFIMP)
 	{
 		if (BGJHIKDFIMP == null || BJIEGLPODKG == null || BJIEGLPODKG.Length != BGJHIKDFIMP.Length)
@@ -7504,7 +7510,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		return BJIEGLPODKG;
 	}
 
-	// Token: 0x0600AFD5 RID: 45013 RVA: 0x00410E2C File Offset: 0x0040F02C
+	// Token: 0x0600AFD5 RID: 45013 RVA: 0x0040FEF8 File Offset: 0x0040E0F8
 	public void KGNBOOOBLHC(OperationResponse FEOMHKNGOAK)
 	{
 		if (PhotonNetwork.JNJJAMNLOHA.State == (ClientState)46)
@@ -7951,7 +7957,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFD6 RID: 45014 RVA: 0x00411B6C File Offset: 0x0040FD6C
+	// Token: 0x0600AFD6 RID: 45014 RVA: 0x00410C38 File Offset: 0x0040EE38
 	public virtual bool DJJIHHGPELA(AKBOPCNHFFJ HBJBKOPJDKJ)
 	{
 		bool flag = this.NJIFBFEHJKH() == ServerConnection.GameServer;
@@ -7965,7 +7971,7 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 	}
 
 	// Token: 0x17000248 RID: 584
-	// (get) Token: 0x0600AFD7 RID: 45015 RVA: 0x004064C4 File Offset: 0x004046C4
+	// (get) Token: 0x0600AFD7 RID: 45015 RVA: 0x0008AABC File Offset: 0x00088CBC
 	public string NameServerAddress
 	{
 		get
@@ -7974,13 +7980,13 @@ internal class BNGIGHBHPEH : OHGAIJCPAJB, IPhotonPeerListener
 		}
 	}
 
-	// Token: 0x0600AFD9 RID: 45017 RVA: 0x00410A57 File Offset: 0x0040EC57
+	// Token: 0x0600AFD9 RID: 45017 RVA: 0x0008B1A0 File Offset: 0x000893A0
 	private void NLEEJPDKBFH(Room DPNHODJHGJL)
 	{
 		this.NBCIDPIDCDP = DPNHODJHGJL;
 	}
 
-	// Token: 0x0600AFDA RID: 45018 RVA: 0x00411BC0 File Offset: 0x0040FDC0
+	// Token: 0x0600AFDA RID: 45018 RVA: 0x00410C84 File Offset: 0x0040EE84
 	private ExitGames.Client.Photon.Hashtable HHPBLGDNDOP()
 	{
 		if (PhotonNetwork.player != null)
