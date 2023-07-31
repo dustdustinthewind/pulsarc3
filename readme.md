@@ -1,9 +1,3 @@
-pulsarc3
+this branch contains a near-vanilla* decompilation and deobfuscation of intralism's code
 
-i'm trying this modding thing again
-
-roadmap:
-1. decompile intralism
-2. deobfuscate intralism
-3. ...?
-4. make pulsarc out of intralism
+*there may be slight differences and not-so-slight bugs between this modded deobfuscated version with vanilla intralism
