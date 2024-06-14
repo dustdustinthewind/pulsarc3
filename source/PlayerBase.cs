@@ -552,6 +552,32 @@ public class PlayerBase : PunBehaviour
 		}
 	}
 
+	public PlayerBase()
+	{
+		this.gameEventInfoList = new List<GameEventInfo>();
+		this.currentArcsSpeed = 50f;
+		this._lives = 5;
+		this.playerDistance = 14f;
+		this.bgcolor = Color.black;
+		this.colorLerpSpeed = 5f;
+		this.moveFSpeed = -1.5f;
+		this.correctScore = 0;
+		this.perfectHits = 0;
+		this.penaltyScore = 0f;
+		this.accuracyScore = 0f;
+		this.incorrectScore = 0;
+		this.powerupsScore = 0;
+		this.checkpointsUsed = 0;
+		this.loopsCount = 0;
+		this.currentCombo = 0;
+		this.comboScore = 0f;
+		this.isPlayerWon = false;
+		this.isMusicLoaded = false;
+		this.environmentObjects = new Dictionary<string, GameObject>();
+		this.isStoryboardEnabled = true;
+		this.remaining_hit_objects = new List<MapEvent>();
+	}
+
 	[SpecialName]
 	public int JNJEAPPKCLA()
 	{
@@ -2475,9 +2501,12 @@ public class PlayerBase : PunBehaviour
 		yield return null;
 	}
 
-	public void PrepareMapTiming(float JFMIIPKLCPA)
+	private List<MapEvent> pulsarc_hit_objects = new List<MapEvent>();
+
+	public void PrepareMapTiming(float checkpoint_time)
 	{
-		Debug.Log("[MapData] Map timing update from: " + JFMIIPKLCPA);
+		UnityEngine.Debug.Log("[MapData] Map timing update from: " + checkpoint_time);
+		/* prolly not needed since we're using valentines 2020 modded as base (no encryption/decryption)
 		if (fullLevelData.mapData.configVersion >= 3 && !string.IsNullOrEmpty(fullLevelData.mapData.e))
 		{
 			try
@@ -2489,32 +2518,32 @@ public class PlayerBase : PunBehaviour
 			{
 			}
 		}
+		*/
 		fullLevelData.mapData.events.Sort((MapEvent DAHCBICJEHO, MapEvent HGONFEPOGHC) => DAHCBICJEHO.time.CompareTo(HGONFEPOGHC.time));
 		float num = fullLevelData.mapData.speed;
-		float num2 = 0f - pspawner.transform.localPosition.z;
+		//float num2 = 0f - pspawner.transform.localPosition.z; not using spawners anymore
 		pretime = 0f;
 		if (fullLevelData.mapData.configVersion >= 2)
 		{
-			foreach (MapEvent @event in fullLevelData.mapData.events)
+			foreach (MapEvent map_event in fullLevelData.mapData.events)
 			{
-				if (@event.data[0] == "SetSpeed")
+				if (map_event.data[0] == "SetSpeed")
 				{
-					num = float.Parse(@event.data[1], CultureInfo.InvariantCulture);
+					num = float.Parse(map_event.data[1], CultureInfo.InvariantCulture);
 				}
-				if (@event.data[0] == "SetPlayerDistance")
+				if (map_event.data[0] == "SetPlayerDistance")
 				{
 				}
-				if (@event.data[0] == "SpawnObj")
+				if (map_event.data[0] == "SpawnObj")
 				{
-					List<string> list = @event.data[1].Split(',').ToList();
-					list.Add(string.Empty + (@event.time + arcsDelay + 0.11f));
-					@event.time -= num2 / num;
-					@event.time += arcsDelay + 0.11f;
-					@event.data[1] = string.Join(",", list.ToArray());
-					if (@event.time < 0f && @event.time < pretime)
+					List<string> list = map_event.data[1].Split(',').ToList();
+					list.Add(string.Empty + (map_event.time + arcsDelay + 0.11f));
+					map_event.data[1] = string.Join(",", list.ToArray());
+					if (map_event.time < 0f && map_event.time < pretime)
 					{
-						pretime = @event.time;
+						pretime = map_event.time;
 					}
+					pulsarc_hit_objects.Add(map_event);
 				}
 			}
 		}
@@ -2527,6 +2556,7 @@ public class PlayerBase : PunBehaviour
 				if (event2.data[0] == "SpawnObj")
 				{
 					event2.time += arcsDelay;
+					pulsarc_hit_objects.Add(event2);
 				}
 				if (event2.time < 0f && event2.time < pretime)
 				{
@@ -2534,6 +2564,11 @@ public class PlayerBase : PunBehaviour
 				}
 			}
 		}
+		/*UnityEngine.Debug.LogError("Hallo:\n");
+		foreach(MapEvent arc in remaining_hit_objects)
+		{
+			UnityEngine.Debug.LogError(arc.data[1]);
+		}*/
 		if (!isStoryboardEnabled)
 		{
 			int EGMPIBBOEMH;
@@ -2549,7 +2584,7 @@ public class PlayerBase : PunBehaviour
 		{
 			foreach (float checkpoint in fullLevelData.mapData.checkpoints)
 			{
-				if (checkpoint > JFMIIPKLCPA)
+				if (checkpoint > checkpoint_time)
 				{
 					fullLevelData.mapData.events.Add(new MapEvent(checkpoint, new List<string>
 					{
@@ -2560,12 +2595,12 @@ public class PlayerBase : PunBehaviour
 			}
 		}
 		fullLevelData.mapData.events.Sort((MapEvent DAHCBICJEHO, MapEvent HGONFEPOGHC) => DAHCBICJEHO.time.CompareTo(HGONFEPOGHC.time));
-		if (JFMIIPKLCPA > 0f)
+		if (checkpoint_time > 0f)
 		{
-			pretime = JFMIIPKLCPA;
+			pretime = checkpoint_time;
 		}
 		pretime -= 1f;
-		Debug.Log("[PlayerBase] Starting game from: " + pretime);
+		UnityEngine.Debug.Log("[PlayerBase] Starting game from: " + pretime);
 		gameScene.HPAnimationTime = pretime;
 		for (int num4 = fullLevelData.mapData.events.Count - 1; num4 >= 0; num4--)
 		{
@@ -3447,8 +3482,9 @@ public class PlayerBase : PunBehaviour
 			}
 			switch (LHCIHJOHGEJ)
 			{
+			// ACTUAL quick hack to remove all arcs
 			case "SpawnObj":
-				if (lives > 0)
+				/*if (lives > 0)
 				{
 					SpawnObj(NOJGGCLPPAM, true);
 					if (base.photonView.isMine)
@@ -3456,6 +3492,7 @@ public class PlayerBase : PunBehaviour
 						base.photonView.RPC("SpawnObj", PhotonTargets.Others, NOJGGCLPPAM, false);
 					}
 				}
+				*/
 				break;
 			case "ShowSprite":
 				ShowSprite(NOJGGCLPPAM);
@@ -4153,12 +4190,10 @@ public class PlayerBase : PunBehaviour
 				component2.iterations = 1;
 			}
 		}
-		/* quick hack to remove vanilla's way of spawning arcs completely
 		if ((bool)gameScene && (bool)gameScene.isGameStarted && !gameScene.IsRoundFinished())
 		{
 			RunMapEvents();
 		}
-		*/
 		if (!gameScene || !gameScene.IsRoundFinished())
 		{
 			return;
