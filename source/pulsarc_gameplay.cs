@@ -13,4 +13,9 @@ public class pulsarc_gameplay : ScriptableObject
 	{
 		hit_objects = new List<MapEvent>();
 	}
+
+	public void Update()
+	{
+		
+	}
 }

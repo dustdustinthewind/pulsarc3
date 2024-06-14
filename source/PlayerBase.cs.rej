@@ -1,0 +1,9 @@
+diff a/source/PlayerBase.cs b/source/PlayerBase.cs	(rejected hunks)
+@@ -2556,6 +2556,7 @@
+ 				if (event2.data[0] == "SpawnObj")
+ 				{
+ 					event2.time += arcsDelay;
++					pulsarc_hit_objects.Add(event2);
+ 				}
+ 				if (event2.time < 0f && event2.time < pretime)
+ 				{

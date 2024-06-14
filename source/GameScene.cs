@@ -605,7 +605,7 @@ public class GameScene : Scene
 		// then update ui and handle restart (what)
 		if ((float)currentMusicTime < calculatedmaptime && !IsRoundFinished() && (bool)isGameStarted)
 		{
-			currentMusicTime = (float)currentMusicTime + Time.deltaTime;
+			currentMusicTime = currentMusicTime <= 0 ? currentMusicTime + Time.deltaTime : asampler.audioSources[0].time;
 			levelProgressBar.GetComponent<Slider>().value = currentMusicTime;
 			PlayerBase spectatedPlayerBase = pbase;
 

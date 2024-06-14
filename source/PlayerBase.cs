@@ -2521,7 +2521,7 @@ public class PlayerBase : PunBehaviour
 		*/
 		fullLevelData.mapData.events.Sort((MapEvent DAHCBICJEHO, MapEvent HGONFEPOGHC) => DAHCBICJEHO.time.CompareTo(HGONFEPOGHC.time));
 		float num = fullLevelData.mapData.speed;
-		//float num2 = 0f - pspawner.transform.localPosition.z; not using spawners anymore
+		float num2 = 0f - pspawner.transform.localPosition.z; // not using spawners anymore?
 		pretime = 0f;
 		if (fullLevelData.mapData.configVersion >= 2)
 		{
@@ -2536,14 +2536,16 @@ public class PlayerBase : PunBehaviour
 				}
 				if (map_event.data[0] == "SpawnObj")
 				{
+					gameplay_engine.hit_objects.Add(map_event);
 					List<string> list = map_event.data[1].Split(',').ToList();
-					list.Add(string.Empty + (map_event.time + arcsDelay + 0.11f));
-					map_event.data[1] = string.Join(",", list.ToArray());
+                    list.Add(string.Empty + (map_event.time + arcsDelay + 0.11f));
+                    map_event.time -= num2 / num;
+                    map_event.time += arcsDelay + 0.11f;
+                    map_event.data[1] = string.Join(",", list.ToArray());
 					if (map_event.time < 0f && map_event.time < pretime)
 					{
 						pretime = map_event.time;
 					}
-					gameplay_engine.hit_objects.Add(map_event);
 				}
 			}
 		}
@@ -2564,11 +2566,11 @@ public class PlayerBase : PunBehaviour
 				}
 			}
 		}
-		UnityEngine.Debug.LogError("Hallo:\n");
+		/*UnityEngine.Debug.LogError("Hallo:\n");
 		foreach(MapEvent arc in gameplay_engine.hit_objects)
 		{
 			UnityEngine.Debug.LogError(arc.data[1]);
-		}
+		}*/
 		if (!isStoryboardEnabled)
 		{
 			int EGMPIBBOEMH;
@@ -3484,7 +3486,7 @@ public class PlayerBase : PunBehaviour
 			{
 			// ACTUAL quick hack to remove all arcs
 			case "SpawnObj":
-				/*if (lives > 0)
+				if (lives > 0)
 				{
 					SpawnObj(NOJGGCLPPAM, true);
 					if (base.photonView.isMine)
@@ -3492,7 +3494,6 @@ public class PlayerBase : PunBehaviour
 						base.photonView.RPC("SpawnObj", PhotonTargets.Others, NOJGGCLPPAM, false);
 					}
 				}
-				*/
 				break;
 			case "ShowSprite":
 				ShowSprite(NOJGGCLPPAM);
