@@ -3478,7 +3478,7 @@ public class PlayerBase : PunBehaviour
 			}
 			catch (Exception ex)
 			{
-				Debug.LogError("[GameEvent] Exeption:" + ex.ToString());
+				UnityEngine.Debug.LogError("[GameEvent] Exeption:" + ex.ToString());
 			}
 			switch (LHCIHJOHGEJ)
 			{
@@ -3533,7 +3533,7 @@ public class PlayerBase : PunBehaviour
 					JAIALEBLCBP(gameObject, array[1], array[2], array[3]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetRotation":
 				if (gameObject != null)
@@ -3541,7 +3541,7 @@ public class PlayerBase : PunBehaviour
 					CPKMCGIIAHC(gameObject, array[1], array[2], array[3]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetScale":
 				if (gameObject != null)
@@ -3549,7 +3549,7 @@ public class PlayerBase : PunBehaviour
 					DGIJAFGLGHC(gameObject, array[1], array[2], array[3]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetParent":
 				if (gameObject != null && gameObject2 != null)
@@ -3557,7 +3557,7 @@ public class PlayerBase : PunBehaviour
 					BJLLDIOIJFB(gameObject, gameObject2);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ":" + array[0] + " or " + array[1] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ":" + array[0] + " or " + array[1] + " not exist");
 				break;
 			case "SetSunColors":
 				if (gameObject != null)
@@ -3565,7 +3565,7 @@ public class PlayerBase : PunBehaviour
 					SetSunColors(gameObject, array[1], array[2]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSunEmission":
 				if (gameObject != null)
@@ -3573,7 +3573,7 @@ public class PlayerBase : PunBehaviour
 					SetSunEmission(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSunInput":
 				if (gameObject != null)
@@ -3581,7 +3581,7 @@ public class PlayerBase : PunBehaviour
 					SetSunInput(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSunMinSize":
 				if (gameObject != null)
@@ -3589,7 +3589,7 @@ public class PlayerBase : PunBehaviour
 					SetSunMinSize(gameObject, array[1], array[2], array[3]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSunMaxSize":
 				if (gameObject != null)
@@ -3597,7 +3597,7 @@ public class PlayerBase : PunBehaviour
 					SetSunMaxSize(gameObject, array[1], array[2], array[3]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSunLerpSpeed":
 				if (gameObject != null)
@@ -3605,7 +3605,7 @@ public class PlayerBase : PunBehaviour
 					SetSunLerpSpeed(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSunSensitivity":
 				if (gameObject != null)
@@ -3613,7 +3613,7 @@ public class PlayerBase : PunBehaviour
 					SetSunSensitivity(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSunDirectionVector":
 				if (gameObject != null)
@@ -3621,7 +3621,7 @@ public class PlayerBase : PunBehaviour
 					SetSunDirectionVector(gameObject, array[1], array[2], array[3]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteColor":
 				if (gameObject != null)
@@ -3629,7 +3629,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteColor(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteEmission":
 				if (gameObject != null)
@@ -3637,7 +3637,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteEmission(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteRotationSpeed":
 				if (gameObject != null)
@@ -3645,7 +3645,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteRotationSpeed(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteRadius":
 				if (gameObject != null)
@@ -3653,7 +3653,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteRadius(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteInput":
 				if (gameObject != null)
@@ -3661,7 +3661,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteInput(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteLerpSpeed":
 				if (gameObject != null)
@@ -3669,7 +3669,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteLerpSpeed(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteTrailLength":
 				if (gameObject != null)
@@ -3677,7 +3677,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteTrailLength(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteTrailWidth":
 				if (gameObject != null)
@@ -3685,7 +3685,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteTrailWidth(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteSensitivity":
 				if (gameObject != null)
@@ -3693,7 +3693,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteSensitivity(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetSatelliteTrailMinVertexDistance":
 				if (gameObject != null)
@@ -3701,7 +3701,7 @@ public class PlayerBase : PunBehaviour
 					SetSatelliteTrailMinVertexDistance(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetCrosshairColor":
 				SetCrosshairColor(Helpers.HexToColor(array[0]), float.Parse(array[1], CultureInfo.InvariantCulture));
@@ -3715,7 +3715,7 @@ public class PlayerBase : PunBehaviour
 					SetParticlesColor(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetParticlesEmission":
 				if (gameObject != null)
@@ -3723,7 +3723,7 @@ public class PlayerBase : PunBehaviour
 					SetParticlesEmission(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetParticlesParticleSize":
 				if (gameObject != null)
@@ -3731,7 +3731,7 @@ public class PlayerBase : PunBehaviour
 					SetParticlesParticleSize(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetParticlesGravity":
 				if (gameObject != null)
@@ -3739,7 +3739,7 @@ public class PlayerBase : PunBehaviour
 					SetParticlesGravity(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetParticlesParticleSpeed":
 				if (gameObject != null)
@@ -3747,7 +3747,7 @@ public class PlayerBase : PunBehaviour
 					SetParticlesParticleSpeed(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetParticlesCountPerBeat":
 				if (gameObject != null)
@@ -3755,7 +3755,7 @@ public class PlayerBase : PunBehaviour
 					SetParticlesCountPerBeat(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "SetParticlesInput":
 				if (gameObject != null)
@@ -3763,7 +3763,7 @@ public class PlayerBase : PunBehaviour
 					SetParticlesInput(gameObject, array[1]);
 					break;
 				}
-				Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
+				UnityEngine.Debug.LogWarning("[PlayerController] " + LHCIHJOHGEJ + ": " + array[0] + " not exist");
 				break;
 			case "AddEnvironmentSprite":
 				AddEnvironmentSprite(array[0], array[1], array[2], array[3]);
@@ -3781,13 +3781,13 @@ public class PlayerBase : PunBehaviour
 				}
 				break;
 			default:
-				Debug.LogWarning("[PlayerBase] Unknown event: " + LHCIHJOHGEJ);
+				UnityEngine.Debug.LogWarning("[PlayerBase] Unknown event: " + LHCIHJOHGEJ);
 				break;
 			}
 		}
 		catch (Exception ex2)
 		{
-			Debug.LogError("[PlayerBase] Invoke event " + LHCIHJOHGEJ + "(" + NOJGGCLPPAM + ") error: " + ex2.ToString());
+			UnityEngine.Debug.LogError("[PlayerBase] Invoke event " + LHCIHJOHGEJ + "(" + NOJGGCLPPAM + ") error: " + ex2.ToString());
 		}
 	}
 
