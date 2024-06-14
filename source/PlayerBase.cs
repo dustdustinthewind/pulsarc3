@@ -575,7 +575,7 @@ public class PlayerBase : PunBehaviour
 		this.isMusicLoaded = false;
 		this.environmentObjects = new Dictionary<string, GameObject>();
 		this.isStoryboardEnabled = true;
-		this.remaining_hit_objects = new List<MapEvent>();
+		this.gameplay_engine = new pulsarc_gameplay();
 	}
 
 	[SpecialName]
@@ -2501,7 +2501,7 @@ public class PlayerBase : PunBehaviour
 		yield return null;
 	}
 
-	private List<MapEvent> pulsarc_hit_objects = new List<MapEvent>();
+	private pulsarc_gameplay gameplay_engine;
 
 	public void PrepareMapTiming(float checkpoint_time)
 	{
@@ -2543,7 +2543,7 @@ public class PlayerBase : PunBehaviour
 					{
 						pretime = map_event.time;
 					}
-					pulsarc_hit_objects.Add(map_event);
+					gameplay_engine.hit_objects.Add(map_event);
 				}
 			}
 		}
@@ -2556,7 +2556,7 @@ public class PlayerBase : PunBehaviour
 				if (event2.data[0] == "SpawnObj")
 				{
 					event2.time += arcsDelay;
-					pulsarc_hit_objects.Add(event2);
+					gameplay_engine.hit_objects.Add(event2);
 				}
 				if (event2.time < 0f && event2.time < pretime)
 				{
@@ -2564,11 +2564,11 @@ public class PlayerBase : PunBehaviour
 				}
 			}
 		}
-		/*UnityEngine.Debug.LogError("Hallo:\n");
-		foreach(MapEvent arc in remaining_hit_objects)
+		UnityEngine.Debug.LogError("Hallo:\n");
+		foreach(MapEvent arc in gameplay_engine.hit_objects)
 		{
 			UnityEngine.Debug.LogError(arc.data[1]);
-		}*/
+		}
 		if (!isStoryboardEnabled)
 		{
 			int EGMPIBBOEMH;
