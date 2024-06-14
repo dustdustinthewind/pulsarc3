@@ -4153,10 +4153,12 @@ public class PlayerBase : PunBehaviour
 				component2.iterations = 1;
 			}
 		}
+		/* quick hack to remove vanilla's way of spawning arcs completely
 		if ((bool)gameScene && (bool)gameScene.isGameStarted && !gameScene.IsRoundFinished())
 		{
 			RunMapEvents();
 		}
+		*/
 		if (!gameScene || !gameScene.IsRoundFinished())
 		{
 			return;
